@@ -20,4 +20,5 @@ Blah blah. Blah Blah.
 
 == Get started
 
-* link:task_shutdown.html[Shutting down the impaired node]
+* link:task_replace_rtc-bat.html[Replaicng the RTC battery]
+* link:task-hutdown.html[Shutting down the impaired node]
