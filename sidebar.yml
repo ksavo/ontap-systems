@@ -1,9 +1,0 @@
-entries:
-  - title: AFF and FAS Docs
-    url: /index.html
-  - title: FRUs
-    entries:
-      - title: Replacing a controller module
-        entries:
-          - title: Shutting down the impaired controller
-            url: /task-shutdown
