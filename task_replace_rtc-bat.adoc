@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar
-permalink:task_replace_rtc-bat.html
+permalink: task_replace_rtc-bat.html
 keywords: AFF, FAS
-summary:
+summary: Replacing the RTC battery
 ---
 
 = Replacing the RTC battery

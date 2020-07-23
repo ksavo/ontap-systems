@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar.html
-permalink:task-shutdown.html
+permalink: task-shutdown.html
 keywords: AFF, FAS
-summary:Shutting down
+summary: Shutting down
 ---
 
 = Shutting down the impaired node
