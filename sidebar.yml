@@ -1,0 +1,11 @@
+entries:
+  - title: AFF and FAS Docs
+    url: /index.html
+  - title: FRUs
+    entries:
+      - title: Replacing an RTC battery
+        entries:
+          - title: Replacing the RTC batter task
+            url: /task_replace_rtc
+          - title: Shutting down the impaired controller
+            url: /task-shutdown
