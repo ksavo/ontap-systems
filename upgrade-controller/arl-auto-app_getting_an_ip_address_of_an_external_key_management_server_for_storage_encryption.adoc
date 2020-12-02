@@ -1,0 +1,111 @@
+---
+sidebar: sidebar
+permalink: arl-auto-app_getting_an_ip_address_of_an_external_key_management_server_for_storage_encryption.html
+keywords:
+summary:
+---
+
+= Getting an IP address of an external key management server for storage encryption
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+//
+// This file was created with NDAC Version 2.0 (August 17, 2020)
+//
+// 2020-12-02 14:33:53.941147
+//
+
+[.lead]
+After upgrading, you must immediately configure Storage Encryption and establish a cluster-wide authentication key to replace the previous node-level authentication keys.
+
+*Steps*
+
+. Install the necessary client and server secure sockets layer (SSL) certificates required to communicate with key management servers by using the following command: 
++
+`security certificate install`
+
+. Configure Storage Encryption on all nodes by using the following command on each node: 
++
+`security key-manager setup`
+
+. Add the IP address for each key management server by using the following command: 
++
+`security key-manager add`
+
+. Verify that the same key management servers are configured and available on all nodes in the cluster by using the following command:
++
+`security key-manager show -status`
+
+. Create a new cluster-wide authentication key by using the following command:
++
+`security key-manager create-key`
+
+. Make a note of the new authentication key ID.
+. Rekey all self-encrypting drives with the new authentication key by using the following command:
++
+`storage encryption disk modify -disk * -data-key-id <authentication_key_id>`
+
+=== Managing authentication using KMIP servers
+
+With ONTAP 9.8, you can use Key Management Interoperability Protocol (KMIP) servers to manage authentication keys.
+
+*Steps*
+
+. Add a new controller by using the following command:
++
+`security key-manager setup -node <new_controller_name>`
+
+. Add the key manager by using the following command:
++
+`security key-manager -add <key_management_server_ip_address>`
+
+. Verify that the key management servers are configured and available to all nodes in the cluster by using the following command:
++
+`security key-manager show -status`
+
+. Restore the authentication keys from all linked key management servers to the new node by using the following command:
++
+`security key-manager restore -node <new_controller_name>`
+
+. Rekey all self-encrypting disks with the new authentication key by using the following command:
++
+`storage encryption disk modify -disk * <-data-key-id nonMSID AK>`
+
+. If you use the Federal Information Processing Standard (FIPS), rekey all self-encrypting disks with the new authentication key by using the following command:
++
+`storage encryption disk* modify -disk * <- fips-key-id nonMSID AK>`
+
+=== Managing storage encryption using Onboard Key Manager
+
+You can use the OKM to manage encryption keys. If you plan to use OKM, you must record the passphrase and backup material before the beginning the upgrade.
+
+*Steps*
+
+. Save the passphrase to a secure location.
+. Create a backup for recovery purposes. Run the following command and save the output.:
++
+`key-manager onboard show-backup`
+
+=== Quiescing the SnapMrror relationships (optional)
+
+Before you proceed with the replacement steps, you must confirm that all the SnapMirror relationships are quiesced. When a SnapMirror relationship is quiesced, it remains quiesced across reboots and failovers.
+
+*Steps*
+
+. Verify the SnapMirror relationship status on the destination cluster by using the following command: 
++
+`snapmirror show`
+
+[NOTE]
+If the status is `Transferring`, you must abort those transfers by using the following command:  
+
+`snapmirror abort -destination-vserver <vserver name>`
+
+The abort fails if the SnapMirror relationship is not in the `Transferring` state.
+
+. Quiesce all relationships between the cluster by using the following command:
++
+`snapmirror quiesce -destination-vserver <vserver name> `

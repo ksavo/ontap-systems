@@ -1,0 +1,30 @@
+---
+sidebar: sidebar
+permalink: arl-auto-app_stage_2_relocating_and_retiring_node1_overview.html
+keywords:
+summary:
+---
+
+= Overview
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+//
+// This file was created with NDAC Version 2.0 (August 17, 2020)
+//
+// 2020-12-02 14:33:54.000815
+//
+
+[.lead]
+During Stage 2, you relocate the node1 aggregates and LIFs to node2, record node1 information, and then retire node1. This process is largely automated; the operation pauses to allow you to check its status. You must manually resume the operation.
+
+*Steps*
+
+. *xref* Relocating non-root aggregates and NAS data LIFs owned by node1 to node2 
+. *xref* Retiring node1 
+. *xref* Preparing for netboot  
+
+
