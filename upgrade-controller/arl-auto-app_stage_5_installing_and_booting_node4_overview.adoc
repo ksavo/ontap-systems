@@ -1,0 +1,32 @@
+---
+sidebar: sidebar
+permalink: arl-auto-app_stage_5_installing_and_booting_node4_overview.html
+keywords:
+summary:
+---
+
+= Overview
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+//
+// This file was created with NDAC Version 2.0 (August 17, 2020)
+//
+// 2020-12-02 14:33:54.983598
+//
+
+[.lead]
+During Stage 5, you install and boot node4, map the cluster and node-management ports from node2 to node4, and verify the node4 installation. You also move the NAS data LIFs owned by node2 from node3 to node4 and relocate node2's aggregates from node3 to node4.
+
+*Steps*
+
+. *Xref *Installing and booting node4 
+. *Xref *Setting the FC or UTA/UTA2 configuration on node4 
+. *Xref *Verifying the node4 installation 
+. *Xref *Restoring key-manager configuration on node4 
+. *Xref *Moving non-root aggregates and NAS data LIFs owned by node2 from node3 to node4 
+
+
