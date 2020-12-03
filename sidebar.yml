@@ -6,6 +6,6 @@ entries:
       - title: Replacing an RTC battery
         entries:
           - title: Replacing the RTC batter task
-            url: /task_replace_rtc.html
+            url: /task_replace_rtc-bat.html
           - title: Shutting down the impaired controller
-            url: /task-shutdown.html
+            url: /task_shutdown.html
