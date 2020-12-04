@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar
 permalink: arl-auto-app_setting_the_fc_or_uta_uta2_configuration_on_node4.html
-keywords:
+keywords: setting, FC, UTA, UTA2, configuration, node4, unifired, target, adapter, ports
 summary:
 ---
 
@@ -26,12 +26,12 @@ If node4 has onboard FC ports, onboard unified target adapter (UTA/UTA2) ports, 
 You might need to complete the *xref* Configuring FC ports on node4 section, the *xref* Checking and configuring UTA/UTA2 ports on node4 section, or both sections.
 
 [NOTE]
-If node4 does not have onboard FC ports, onboard UTA/UTA2 ports, or a UTA/UTA2 card, and you are upgrading a system with storage disks, you can skip to the *xref* Verifying the node4 installation section. However, if you have a V-Series system or have FlexArray Virtualization Software and are connected to storage arrays, and node4 does not have onboard FC ports, onboard UTA/ UTA2 ports, or a UTA/UTA2 card, you must return to the *xref* Installing and booting node4 section and resume at Step *xref* 22 . Make sure that node4 has sufficient rack space. If node4 is in a separate chassis from node2, you can put node4 in the same location as node3. If node2 and node4 are in the same chassis, then node4 is already in its appropriate rack location.
+If node4 does not have onboard FC ports, onboard UTA/UTA2 ports, or a UTA/UTA2 card, and you are upgrading a system with storage disks, you can skip to the link:arl-auto-app_verifying_the_node4_installation.html[Verifying the node4 installation] section. However, if you have a V-Series system or have FlexArray Virtualization Software and are connected to storage arrays, and node4 does not have onboard FC ports, onboard UTA/ UTA2 ports, or a UTA/UTA2 card, you must return to the link:arl-auto-app_installing_and_booting_node4.html[Installing and booting node4] section and resume at Step *xref* 22 . Make sure that node4 has sufficient rack space. If node4 is in a separate chassis from node2, you can put node4 in the same location as node3. If node2 and node4 are in the same chassis, then node4 is already in its appropriate rack location.
 
 ==== Choices
 
-* *xref* Configuring FC ports on node4 
-* *xref* Checking and configuring UTA/UTA2 ports on node4 
+* *xref* Configuring FC ports on node4
+* *xref* Checking and configuring UTA/UTA2 ports on node4
 
 === Configuring FC ports on node4
 
@@ -39,7 +39,7 @@ If node4 has FC ports, either onboard or on an FC adapter, you must set port con
 
 ==== Before you begin
 
-You must have the values of the FC port settings from node2 that you saved in the section *xref* Preparing the nodes for upgrade.
+You must have the values of the FC port settings from node2 that you saved in the section link:arl-auto-app_preparing_the_nodes_for_upgrade.html[Preparing the nodes for upgrade].
 
 ==== About this task
 
@@ -104,7 +104,7 @@ The FC ports must be programmed as initiators.
 a|* Skip this section and go to xref Verifying the node4 installation if node4 does not have a UTA/UTA2 card or UTA/UTA2 onboard ports.
 |Is a V-Series system or has FlexArray Virtualization Software and is connected to storage arrays
 a|* Go to xref Checking and configuring UTA/UTA2 ports on node4 if node4 has a UTA/UTA2 card or UTA/UTA2 onboard ports.
-* Skip the section xref Checking and configuring UTA/UTA2 ports on node4 if node4 does not have a UTA/UTA2 card or UTA/UTA2 onboard ports, return to the section xref Installing and booting node4, and resume the section at xref Step 23. 
+* Skip the section xref Checking and configuring UTA/UTA2 ports on node4 if node4 does not have a UTA/UTA2 card or UTA/UTA2 onboard ports, return to the section xref Installing and booting node4, and resume the section at xref Step 23.
 |===
 
 === Checking and configuring UTA/UTA2 ports on node4
@@ -151,7 +151,7 @@ The system displays output similar to the following examples:
 Node   Adapter    Mode       Type   Mode      Type       Status
 ---- - -  ----- ---   ---------  ---------- --------  ------- --  -------
 f-a    0e    fc         initiator  -          -  online
-f-a    0f    fc        initiator  -         -  online  
+f-a    0f    fc        initiator  -         -  online
 f-a    0g    cna        target     -          -  online
 f-a    0h    cna        target     -          -  online
 f-a    0e    fc        initiator  -          -  online
@@ -257,7 +257,7 @@ f-a2bfctargetcna- online
 |Go to xref Verifying the node4 installation.
 
 |Is a V-Series system or has FlexArray Virtualization Software and is connected to storage arrays
-|Return to the xref Installing and booting node3 and resume the section at xef Step 23. 
+|Return to the xref Installing and booting node3 and resume the section at xef Step 23.
 
 |===
 
@@ -267,9 +267,9 @@ f-a2bfctargetcna- online
 
 . Boot node into boot menu by using the following command:
 +
-`boot_ontap menu`. 
+`boot_ontap menu`.
 +
-If you are upgrading to an A800, go to *xref *Step* *23 
+If you are upgrading to an A800, go to *xref *Step* *23
 
 . On node4, go to the boot menu and using 22/7 and select the hidden option `boot_after_controller_replacement`. At the prompt, enter node2 to reassign the disks of node2 to node4, as per the following example.
 
@@ -342,9 +342,9 @@ This will replace all flash-based configuration with the last backup to disks. A
 .
 .
 Controller Replacement: Provide name of the node you would like to replace:<nodename of the node being replaced>
-Changing sysid of node node1 disks. 
-Fetched sanown old_owner_sysid = 536940063 and calculated old sys id = 536940063 
-Partner sysid = 4294967295, owner sysid = 536940063 
+Changing sysid of node node1 disks.
+Fetched sanown old_owner_sysid = 536940063 and calculated old sys id = 536940063
+Partner sysid = 4294967295, owner sysid = 536940063
 .
 .
 <output truncated>
@@ -390,19 +390,19 @@ In the above console output example, ONTAP will prompt you for the partner node 
 
 . If the system goes into a reboot loop with the message `no disks found`, it indicates that the system has reset the ports back to the target mode and therefore is unable to see any disks. Continue with Steps 17 to 22 to resolve this.
 . Press Ctrl-C during autoboot to stop the node at the `LOADER>` prompt.
-. At the loader prompt, enter maintenance mode by using the following command: 
+. At the loader prompt, enter maintenance mode by using the following command:
 +
 `boot_ontap miant`
 
-. In maintenance mode, display all the previously set initiator ports that are now in target mode by using the following command: 
+. In maintenance mode, display all the previously set initiator ports that are now in target mode by using the following command:
 +
-ucadmin show  
+ucadmin show
 +
-Change the ports back to initiator mode by using the following command: 
+Change the ports back to initiator mode by using the following command:
 +
 `ucadmin modify -m fc -t initiator -f <adapter name>`
 
-. Verify that the ports have been changed to initiator mode by using the following command: 
+. Verify that the ports have been changed to initiator mode by using the following command:
 +
 `ucadmin show `
 
@@ -410,7 +410,7 @@ Change the ports back to initiator mode by using the following command:
 +
 `halt`
 
-. At the loader prompt boot up by using the following command: 
+. At the loader prompt boot up by using the following command:
 +
 `boot_ontap`
 +
@@ -464,5 +464,3 @@ The following shows an example of the command output:
 `                    64-bit`
 -------------------------------------------------------------------------------------------------
 ....
-
-

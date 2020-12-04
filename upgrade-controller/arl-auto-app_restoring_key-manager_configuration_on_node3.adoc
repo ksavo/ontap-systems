@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar
 permalink: arl-auto-app_restoring_key-manager_configuration_on_node3.html
-keywords:
-summary:
+keywords: restoring, key-manager, configuration, node3, NVE, ARL, encrypted
+summary: If you are using Netapp Volume Encryption (NVE) to encrypt volumes on the system you are upgrading.
 ---
 
 = Restoring key-manager configuration on node3
@@ -32,5 +32,3 @@ Synchronize the encryption configuration to the new nodes by performing the foll
 `security key-manager onboard sync`
 
 . Enter the cluster-wide passphrase for the OKM.
-
-

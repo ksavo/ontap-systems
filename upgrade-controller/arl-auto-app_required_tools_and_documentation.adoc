@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar
 permalink: arl-auto-app_required_tools_and_documentation.html
-keywords:
-summary:
+keywords: required, tools, documentation, instal, worksheet, ONTAP
+summary: You must have specific tools to install the new hardware, and you need to reference other documents during the upgrade process.
 ---
 
 = Required tools and documentation
@@ -53,6 +53,4 @@ You need the following tools to perform the upgrade:
 |Contains information about FC and iSCSI topologies and wiring schemes
 |===
 
-The NetApp Support Site also contains documentation about network interface cards (NICs) and other hardware that you might use with your system. It also contains the *Hardware Universe*, which provides information about the hardware that the new system supports. See the ONTAP 9 Documentation Center to access ONTAP 9 product documentation.
-
-*XREF *ONTAP 9 Documentation Center 
+The NetApp Support Site also contains documentation about network interface cards (NICs) and other hardware that you might use with your system. It also contains the *Hardware Universe*, which provides information about the hardware that the new system supports. See the ONTAP 9 Documentation Center to access *XREF ONTAP 9 product documentation.

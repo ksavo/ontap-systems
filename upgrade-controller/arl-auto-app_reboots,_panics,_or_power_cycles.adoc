@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar
 permalink: arl-auto-app_reboots,_panics,_or_power_cycles.html
-keywords:
-summary:
+keywords: reboots, panics, power, cycles, node, crash
+summary: The system might crash – reboot, panic or go through a power cycle.
 ---
 
 = Reboots, panics, or power cycles
@@ -113,7 +113,7 @@ Node2 does not take over but it is still serving data from all non-root aggregat
 
 === Reboots, panics, or power cycles during first resource-regain phase
 
-Node2 crashes during the first resource-regain phase during aggregate relocation 
+Node2 crashes during the first resource-regain phase during aggregate relocation
 
 Node2 has relocated some or all its aggregates of node1 to node3. Node3 serves data from aggregates that were relocated. The HA pair is disabled and hence there is no takeover.
 
@@ -205,5 +205,3 @@ There is an outage for non-root aggregates that were already relocated until nod
 
 . Bring up node4.
 . Continue with the node-pair upgrade procedure.
-
-

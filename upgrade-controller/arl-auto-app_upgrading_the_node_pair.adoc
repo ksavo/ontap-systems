@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar
 permalink: arl-auto-app_upgrading_the_node_pair.html
-keywords:
-summary:
+keywords: upgrading, node pair, prepare, original, decomission
+summary: To upgrade the node pair.
 ---
 
 = Upgrading the node pair

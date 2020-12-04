@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar
 permalink: arl-auto-app_resuming_snapmirror_operations.html
-keywords:
-summary:
+keywords: resuming, snapmirror, operations, transfer, relationship, updates, schedule, complete
+summary: You can resume SnapMirror transfers that were quiesced before upgrade and resume the SnapMirror relationships.
 ---
 
 = Resuming SnapMirror operations

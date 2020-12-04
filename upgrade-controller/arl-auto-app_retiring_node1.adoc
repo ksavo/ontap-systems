@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar
 permalink: arl-auto-app_retiring_node1.html
-keywords:
-summary:
+keywords: retiring, node1, HA, node2, Lonode1. rack, chassis
+summary: To retire node1, you resume the automated operation to disable the HA pair with node2 and shut Lonode1 down properly.
 ---
 
 = Retiring node1
@@ -33,6 +33,4 @@ To retire node1, you resume the automated operation to disable the HA pair with 
 
 ==== After you finish
 
-You can decommission node1 after the upgrade is completed. See *Decommissioning the old system*.
-
-
+You can decommission node1 after the upgrade is completed. See link:arl-auto-app_decommissioning_the_old_system.html[Decommissioning the old system].

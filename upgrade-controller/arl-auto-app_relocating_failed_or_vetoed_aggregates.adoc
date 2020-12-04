@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar
 permalink: arl-auto-app_relocating_failed_or_vetoed_aggregates.html
-keywords:
-summary:
+keywords: relocating, failed, vetoed, aggregates, relocation, operation
+summary: If any aggregates fail to relocate or are vetoed, you must manually relocate the aggregates.
 ---
 
 = Relocating failed or vetoed aggregates
@@ -45,5 +45,3 @@ storage aggregate relocation start -node node1 -destination node2 -aggregate-lis
 |Use the following command:
 storage aggregate relocation start -node node1 -destination node2 -aggregate-list <aggr_list> -ndo-controller-upgrade true -override-vetoes true -override-destination-checks true
 |===
-
-

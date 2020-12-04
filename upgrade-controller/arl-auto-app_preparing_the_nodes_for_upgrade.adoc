@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar
 permalink: arl-auto-app_preparing_the_nodes_for_upgrade.html
-keywords:
-summary:
+keywords: preparing, nodes, upgrade
+summary: Begin the controller replacement process by entering the following command in the ONTAP command line.
 ---
 
 = Preparing the nodes for upgrade
@@ -33,20 +33,20 @@ You will see the following output:
 Warning: 1. Current ONTAP version is 9.8
          Before starting controller replacement operation, ensure that the new
          controllers are running the version 9.5
-         
-         2. Verify that NVMEM or NVRAM batteries of the new nodes are charged, and charge them 
-         if they are not. You need to physically check the new nodes to see if the NVMEM or 
-         NVRAM  batteries are charged. You can check the battery status either by connecting to 
-         a serial console or using SSH, logging into the Service Processor (SP) or 
-         Baseboard Management Controller (BMC) for your system, and use the system sensors to 
+
+         2. Verify that NVMEM or NVRAM batteries of the new nodes are charged, and charge them
+         if they are not. You need to physically check the new nodes to see if the NVMEM or
+         NVRAM  batteries are charged. You can check the battery status either by connecting to
+         a serial console or using SSH, logging into the Service Processor (SP) or
+         Baseboard Management Controller (BMC) for your system, and use the system sensors to
          see if the battery has a sufficient charge.
-       
+
          Attention: Do not try to clear the NVRAM contents. If there is a need to clear the
          contents of NVRAM, contact NetApp technical support.
-       
-         3. If a controller was previously part of a different cluster, run wipeconfig before 
+
+         3. If a controller was previously part of a different cluster, run wipeconfig before
          using it as the replacement controller.
-         
+
 Do you want to continue? {y|n}: y
 ....
 
@@ -90,7 +90,7 @@ If storage failover is not enabled for the controllers, the task fails.
 The nodes should not own any non-local aggregates.
 |Disk Status Check
 |If any nodes being replaced have missing or failed disks, the task fails.
-If any disks are missing, see the ONTAP 9 Disks and Aggregates Power Guide, the ONTAP 9 Logical Storage Management Guide, and the ONTAP 9 High- Availability Configuration Guide in the XREF ONTAP 9 Documentation Center to configure storage for the HA pair.
+If any disks are missing, see the ONTAP 9 Disks and Aggregates Power Guide, the ONTAP 9 Logical Storage Management Guide, and the ONTAP 9 High- Availability Configuration Guide in the *XREF* ONTAP 9 Documentation Center to configure storage for the HA pair.
 |Data LIF Status Check
 |Checks if any of the nodes being replaced have non- local data LIFs.
 The nodes should not contain any data LIFs for which they are not the home owner. If one of the nodes contains non-local data LIFs, the task fails.
@@ -153,7 +153,7 @@ If the Aggregate Status Check fails, you must return aggregates owned by the par
 The following example shows the output of the command when a node is both the current owner and home owner of aggregates:
 
 ....
-cluster::> storage aggregate show -nodes node1 -is-home true -fields owner-name,home-name,state 
+cluster::> storage aggregate show -nodes node1 -is-home true -fields owner-name,home-name,state
 aggregatehome-nameowner-name    state
 ------------- ------------ --  ------------   ------
 aggr1node1node1       online
@@ -175,8 +175,6 @@ When you set up a cluster, the setup wizard prompts you to enter the cluster-bas
 
 If you do not have new license keys, currently licensed features in the cluster are available to the new controller. However, using unlicensed features on the controller might put you out of compliance with your license agreement, so you should install the new license key or keys for the new controller after the upgrade is complete.
 
-You can obtain new 2-character license keys for ONTAP 9.8 on the NetApp Support Site at *XREF *mysupport.netapp.com. The keys are available in the *My Support* section under *Software licenses*. If the site does not have the license keys you need, you can contact your NetApp sales representative.
+You can obtain new 2-character license keys for ONTAP 9.8 on the NetApp Support Site at link:mysupport.netapp.com[mysupport.netapp.com]. The keys are available in the *My Support* section under *Software licenses*. If the site does not have the license keys you need, you can contact your NetApp sales representative.
 
-For detailed information about licensing, see the *System Administration Reference* in the *XREF *ONTAP 9 Documentation Center.
-
-
+For detailed information about licensing, see the *System Administration Reference* in the *XREF* ONTAP 9 Documentation Center.

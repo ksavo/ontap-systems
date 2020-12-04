@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar
 permalink: arl-auto-app_ensuring_that_the_new_controllers_are_set_up_correctly.html
-keywords:
-summary:
+keywords: ensuring, controllers, HA, node3, node4, node2, LIF, cluster
+summary: To ensure correct setup, you must enable the HA pair.
 ---
 
 = Ensuring that the new controllers are set up correctly
@@ -67,7 +67,7 @@ If neither node3 or node4 owns data LIFs home-owned by other nodes in the cluste
 +
 `volume show -node <node4> -state offline`
 
-. If any volumes are offline, compare them with the list of offline volumes that you captured in the section *xref* Preparing the nodes for upgrade, and bring online any of the offline volumes, as required, by using the following command, once for each volume:
+. If any volumes are offline, compare them with the list of offline volumes that you captured in the section link:arl-auto-app_preparing_the_nodes_for_upgrade.html[Preparing the nodes for upgrade], and bring online any of the offline volumes, as required, by using the following command, once for each volume:
 +
 `volume online -vserver <vserver-name> -volume <volume_name>`
 
@@ -149,5 +149,3 @@ If Storage Encryption is enabled on node3 and node4, complete the section *xref*
 ==== Related information
 
 *XREF* ONTAP 9 Documentation Center
-
-

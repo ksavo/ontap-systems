@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar
 permalink: arl-auto-app_verifying_switchover,_healing,_and_switchback.html
-keywords:
-summary:
+keywords: verifying, switchover, healing, switchback, MetroCluster, management, disaster, recovery, guide
+summary: You should verify the switchover, healing, and switchback operations of the MetroCluster configuration.
 ---
 
 = Verifying switchover, healing, and switchback
@@ -23,6 +23,6 @@ You should verify the switchover, healing, and switchback operations of the Metr
 
 *Step*
 
-Use the procedures for negotiated switchover, healing, and switchback that are mentioned in the *MetroCluster Management and Disaster Recovery Guide*. 
+Use the procedures for negotiated switchover, healing, and switchback that are mentioned in the *MetroCluster Management and Disaster Recovery Guide*.
 
 *XREF *MetroCluster management and disaster recovery

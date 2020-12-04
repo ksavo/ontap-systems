@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar
 permalink: arl-auto-app_moving_non-root_aggregates_and_nas_data_lifs_owned_by_node2_from_node3_to_node4.html
-keywords:
-summary:
+keywords: moving, non-root, aggregates, NAS, LIF, node2, node3, node4
+summary: After you verify network configuration on node4 and before you relocate aggregates from node3 to node4.
 ---
 
 = Moving non-root aggregates and NAS data LIFs owned by node2 from node3 to node4
@@ -58,13 +58,13 @@ The system pauses after the resource relocation is complete.
 +
 `system controller replace show-details`
 +
-If the controller replacement procedure is paused, check and correct the error,  if any,  and then issue `resume` to continue the operation. 
+If the controller replacement procedure is paused, check and correct the error,  if any,  and then issue `resume` to continue the operation.
 
-. If necessary, restore and revert any displaced LIFs. List any displaced LIFs by using the following command: 
+. If necessary, restore and revert any displaced LIFs. List any displaced LIFs by using the following command:
 +
 `cluster controller-replacement network displaced-interface show `
 +
-If any LIFs are displaced, restore the home node back to node4 by using the following command: 
+If any LIFs are displaced, restore the home node back to node4 by using the following command:
 +
 `cluster controller-replacement network displaced-interface restore-home-node `
 
