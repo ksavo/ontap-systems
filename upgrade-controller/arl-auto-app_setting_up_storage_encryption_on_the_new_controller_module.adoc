@@ -1,6 +1,6 @@
 ---
-sidebar: sidebar
-permalink: arl-auto-app_setting_up_storage_encryption_on_the_new_controller_module.html
+sidebar: sidebar: upgrade-controller_sidebar
+permalink: upgrade-controller/arl-auto-app_setting_up_storage_encryption_on_the_new_controller_module.html
 keywords:
 summary:
 ---
@@ -55,5 +55,3 @@ You must install the same key management servers that are installed on the exist
 . Restore authentication keys from all linked key management servers to the new node by using the following command:
 +
 `security key-manager restore -node <new_controller_name>`
-
-

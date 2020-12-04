@@ -1,3 +1,4 @@
+prefix: upgrade-controller
 entries:
   - title: NDAC contents
     url: /index.html

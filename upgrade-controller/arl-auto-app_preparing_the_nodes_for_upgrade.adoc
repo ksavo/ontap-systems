@@ -1,6 +1,6 @@
 ---
-sidebar: sidebar
-permalink: arl-auto-app_preparing_the_nodes_for_upgrade.html
+sidebar: sidebar: upgrade-controller_sidebar
+permalink: upgrade-controller/arl-auto-app_preparing_the_nodes_for_upgrade.html
 keywords:
 summary:
 ---
@@ -33,20 +33,20 @@ You will see the following output:
 Warning: 1. Current ONTAP version is 9.8
          Before starting controller replacement operation, ensure that the new
          controllers are running the version 9.5
-         
-         2. Verify that NVMEM or NVRAM batteries of the new nodes are charged, and charge them 
-         if they are not. You need to physically check the new nodes to see if the NVMEM or 
-         NVRAM  batteries are charged. You can check the battery status either by connecting to 
-         a serial console or using SSH, logging into the Service Processor (SP) or 
-         Baseboard Management Controller (BMC) for your system, and use the system sensors to 
+
+         2. Verify that NVMEM or NVRAM batteries of the new nodes are charged, and charge them
+         if they are not. You need to physically check the new nodes to see if the NVMEM or
+         NVRAM  batteries are charged. You can check the battery status either by connecting to
+         a serial console or using SSH, logging into the Service Processor (SP) or
+         Baseboard Management Controller (BMC) for your system, and use the system sensors to
          see if the battery has a sufficient charge.
-       
+
          Attention: Do not try to clear the NVRAM contents. If there is a need to clear the
          contents of NVRAM, contact NetApp technical support.
-       
-         3. If a controller was previously part of a different cluster, run wipeconfig before 
+
+         3. If a controller was previously part of a different cluster, run wipeconfig before
          using it as the replacement controller.
-         
+
 Do you want to continue? {y|n}: y
 ....
 
@@ -153,7 +153,7 @@ If the Aggregate Status Check fails, you must return aggregates owned by the par
 The following example shows the output of the command when a node is both the current owner and home owner of aggregates:
 
 ....
-cluster::> storage aggregate show -nodes node1 -is-home true -fields owner-name,home-name,state 
+cluster::> storage aggregate show -nodes node1 -is-home true -fields owner-name,home-name,state
 aggregatehome-nameowner-name    state
 ------------- ------------ --  ------------   ------
 aggr1node1node1       online
@@ -178,5 +178,3 @@ If you do not have new license keys, currently licensed features in the cluster 
 You can obtain new 2-character license keys for ONTAP 9.8 on the NetApp Support Site at *XREF *mysupport.netapp.com. The keys are available in the *My Support* section under *Software licenses*. If the site does not have the license keys you need, you can contact your NetApp sales representative.
 
 For detailed information about licensing, see the *System Administration Reference* in the *XREF *ONTAP 9 Documentation Center.
-
-

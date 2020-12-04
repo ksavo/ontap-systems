@@ -1,6 +1,6 @@
 ---
-sidebar: sidebar
-permalink: arl-auto-app_setting_the_fc_or_uta_uta2_configuration_on_node3.html
+sidebar: sidebar: upgrade-controller_sidebar
+permalink: upgrade-controller/arl-auto-app_setting_the_fc_or_uta_uta2_configuration_on_node3.html
 keywords:
 summary:
 ---
@@ -33,8 +33,8 @@ NetApp marketing materials might use the term UTA2 to refer to CNA adapters and 
 
 ==== Choices
 
-* *xref* Configuring FC ports on node3 
-* *xref* Checking and configuring UTA/UTA2 ports on node3 
+* *xref* Configuring FC ports on node3
+* *xref* Checking and configuring UTA/UTA2 ports on node3
 
 === Configuring FC ports on node3
 
@@ -53,7 +53,7 @@ You can skip this section if your system does not have FC configurations. If you
 *Steps*
 
 . Compare the FC settings on node3 with the settings that you captured earlier from node1.
-. Take one of the following actions: 
+. Take one of the following actions:
 
 |===
 |If the system that you are upgrading... |Then…
@@ -107,7 +107,7 @@ a|* If node3 has a UTA/UTA2 card or UTA/UTA2 onboard ports, go to the section xr
 |Is a V-Series system or has FlexArray Virtualization Software and is connected to storage arrays
 a|* If node3 has a UTA/UTA2 card or UTA/UTA2 onboard ports, go to the section xref Checking and configuring UTA/UTA2 ports on node3.
 * If node3 does not have a UTA/UTA2 card or UTA/UTA2 onboard ports, skip the section xref Checking and configuring UTA/UTA2 ports on node3 and return to xref Installing and booting node3 and resume the section at xref Step 23.
- 
+
 
 |===
 
@@ -272,7 +272,7 @@ Adapter   Current Mode  Current TypePending ModePending TypeAdminStatus
 |Has storage disks
 |Go to xref Verifying the node3 installation.
 |Is a V-Series system or has FlexArray Virtualization Software and is connected to storage arrays
-|Return to the xref Stage 3 Installing and booting node3 and resume the section at xef Step 23 
+|Return to the xref Stage 3 Installing and booting node3 and resume the section at xef Step 23
 
 |===
 
@@ -280,7 +280,7 @@ Adapter   Current Mode  Current TypePending ModePending TypeAdminStatus
 +
 `halt`
 
-. Boot node into boot menu by running `boot_ontap menu`. If you are upgrading to an A800, go to *xref *Step 23. 
+. Boot node into boot menu by running `boot_ontap menu`. If you are upgrading to an A800, go to *xref *Step 23.
 . On node3, go to the boot menu and using 22/7 and select the hidden option `boot_after_controller_replacement`. At the prompt, enter node1 to reassign the disks of node1 to node3, as per the following example.
 
 ....
@@ -352,9 +352,9 @@ This will replace all flash-based configuration with the last backup to disks. A
 .
 .
 Controller Replacement: Provide name of the node you would like to replace:<nodename of the node being replaced>
-Changing sysid of node node1 disks. 
-Fetched sanown old_owner_sysid = 536940063 and calculated old sys id = 536940063 
-Partner sysid = 4294967295, owner sysid = 536940063 
+Changing sysid of node node1 disks.
+Fetched sanown old_owner_sysid = 536940063 and calculated old sys id = 536940063
+Partner sysid = 4294967295, owner sysid = 536940063
 .
 .
 <output truncated>
@@ -400,19 +400,19 @@ In the above console output example, ONTAP will prompt you for the partner node 
 
 . If the system goes into a reboot loop with the message `no disks found`, it indicates that the system has reset the ports back to the target mode and therefore is unable to see any disks. Continue with Steps 17 to 22 to resolve this.
 . Press Ctrl-C during autoboot to stop the node at the `LOADER>` prompt.
-. At the loader prompt, enter maintenance mode by using the following command: 
+. At the loader prompt, enter maintenance mode by using the following command:
 +
 `boot_ontap miant`
 
-. In maintenance mode, display all the previously set initiator ports that are now in target mode by using the following command: 
+. In maintenance mode, display all the previously set initiator ports that are now in target mode by using the following command:
 +
 `ucadmin show`
 +
-Change the ports back to initiator mode by using the following command: 
+Change the ports back to initiator mode by using the following command:
 +
 `ucadmin modify -m fc -t initiator -f <adapter name>`
 
-. Verify that the ports have been changed to initiator mode by using the following command: 
+. Verify that the ports have been changed to initiator mode by using the following command:
 +
 `ucadmin show `
 
@@ -420,7 +420,7 @@ Change the ports back to initiator mode by using the following command:
 +
 `halt`
 
-. At the loader prompt boot up, by using the following command: 
+. At the loader prompt boot up, by using the following command:
 +
 `boot_ontap`
 +
@@ -474,5 +474,3 @@ The following shows an example of the command output:
 `                    64-bit`
 ------------------------------------------------------------------------------- ------------------
 ....
-
-

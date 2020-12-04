@@ -1,6 +1,6 @@
 ---
-sidebar: sidebar
-permalink: arl-auto-app_stage_1_preparing_for_upgrade.html
+sidebar: sidebar: upgrade-controller_sidebar
+permalink: upgrade-controller/arl-auto-app_stage_1_preparing_for_upgrade.html
 keywords:
 summary:
 ---
@@ -17,5 +17,3 @@ summary:
 //
 // 2020-12-02 14:33:53.827952
 //
-
-

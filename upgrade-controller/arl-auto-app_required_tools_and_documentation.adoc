@@ -1,6 +1,6 @@
 ---
-sidebar: sidebar
-permalink: arl-auto-app_required_tools_and_documentation.html
+sidebar: sidebar: upgrade-controller_sidebar
+permalink: upgrade-controller/arl-auto-app_required_tools_and_documentation.html
 keywords:
 summary:
 ---
@@ -55,4 +55,4 @@ You need the following tools to perform the upgrade:
 
 The NetApp Support Site also contains documentation about network interface cards (NICs) and other hardware that you might use with your system. It also contains the *Hardware Universe*, which provides information about the hardware that the new system supports. See the ONTAP 9 Documentation Center to access ONTAP 9 product documentation.
 
-*XREF *ONTAP 9 Documentation Center 
+*XREF *ONTAP 9 Documentation Center

@@ -1,6 +1,6 @@
 ---
-sidebar: sidebar
-permalink: arl-auto-app_getting_an_ip_address_of_an_external_key_management_server_for_storage_encryption.html
+sidebar: sidebar: upgrade-controller_sidebar
+permalink: upgrade-controller/arl-auto-app_getting_an_ip_address_of_an_external_key_management_server_for_storage_encryption.html
 keywords:
 summary:
 ---
@@ -23,15 +23,15 @@ After upgrading, you must immediately configure Storage Encryption and establish
 
 *Steps*
 
-. Install the necessary client and server secure sockets layer (SSL) certificates required to communicate with key management servers by using the following command: 
+. Install the necessary client and server secure sockets layer (SSL) certificates required to communicate with key management servers by using the following command:
 +
 `security certificate install`
 
-. Configure Storage Encryption on all nodes by using the following command on each node: 
+. Configure Storage Encryption on all nodes by using the following command on each node:
 +
 `security key-manager setup`
 
-. Add the IP address for each key management server by using the following command: 
+. Add the IP address for each key management server by using the following command:
 +
 `security key-manager add`
 
@@ -95,12 +95,12 @@ Before you proceed with the replacement steps, you must confirm that all the Sna
 
 *Steps*
 
-. Verify the SnapMirror relationship status on the destination cluster by using the following command: 
+. Verify the SnapMirror relationship status on the destination cluster by using the following command:
 +
 `snapmirror show`
 
 [NOTE]
-If the status is `Transferring`, you must abort those transfers by using the following command:  
+If the status is `Transferring`, you must abort those transfers by using the following command:
 
 `snapmirror abort -destination-vserver <vserver name>`
 

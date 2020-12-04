@@ -1,6 +1,6 @@
 ---
-sidebar: sidebar
-permalink: arl-auto-app_checking_for_aggregate_relocation_failure.html
+sidebar: sidebar: upgrade-controller_sidebar
+permalink: upgrade-controller/arl-auto-app_checking_for_aggregate_relocation_failure.html
 keywords:
 summary:
 ---
@@ -23,7 +23,7 @@ During the procedure, ARL might fail in Stage 2, Stage 3, or Stage 5.
 
 *Steps*
 
-. Enter the following command and examine its output: 
+. Enter the following command and examine its output:
 +
 `storage aggregate relocation show `
 +
@@ -36,5 +36,3 @@ The `storage aggregate relocation show` command shows you which aggregates were 
 ** Force relocation of the aggregate or aggregates by using the `override-vetoes` option or the `override-destination-checks` option of the `storage aggregate relocation start` command.
 +
 For detailed information about the `storage aggregate relocation start, override- vetoes, `and` override-destination-checks` options, see the *ONTAP 9 Commands: Manual Page Reference.*
-
-

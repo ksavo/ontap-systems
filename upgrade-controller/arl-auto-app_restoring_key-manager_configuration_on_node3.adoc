@@ -1,6 +1,6 @@
 ---
-sidebar: sidebar
-permalink: arl-auto-app_restoring_key-manager_configuration_on_node3.html
+sidebar: sidebar: upgrade-controller_sidebar
+permalink: upgrade-controller/arl-auto-app_restoring_key-manager_configuration_on_node3.html
 keywords:
 summary:
 ---
@@ -32,5 +32,3 @@ Synchronize the encryption configuration to the new nodes by performing the foll
 `security key-manager onboard sync`
 
 . Enter the cluster-wide passphrase for the OKM.
-
-

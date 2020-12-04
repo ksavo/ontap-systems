@@ -1,6 +1,6 @@
 ---
-sidebar: sidebar
-permalink: arl-auto-app_relocating_non-root_aggregates_and_nas_data_lifs_owned_by_node1_to_node2.html
+sidebar: sidebar: upgrade-controller_sidebar
+permalink: upgrade-controller/arl-auto-app_relocating_non-root_aggregates_and_nas_data_lifs_owned_by_node1_to_node2.html
 keywords:
 summary:
 ---
@@ -53,12 +53,12 @@ The operation pauses to allow you to verify whether all node1 non-root aggregate
 The following example shows that the non-root aggregates on node2 are online:
 
 ....
-cluster::> storage aggregate show -node node2 state online -root false 
+cluster::> storage aggregate show -node node2 state online -root false
 Aggregate    Size     Available Used% State #Vols   Nodes           RAID Status
 ---------    -------- --------- ----- ------- ------ ---------------- - ------------
 aggr_1
              744.9GB744.8GB   0%   online      5   node2           raid_dp,
-                                                                       normal 
+                                                                       normal
 aggr_2      825.0GB825.0GB   0%   online     1   node2           raid_dp,
                                                                        normal
 2 entries were displayed.
@@ -81,5 +81,3 @@ The `<vserver-name>` to use with this command is found in the output of the prev
 . If any LIFs are down, set the administrative status of the LIFs to `up` by using the following command, once for each LIF:
 +
 `network interface modify -vserver <vserver_name> - lif <LIF_name> -home-node <nodename> - status-admin up`
-
-

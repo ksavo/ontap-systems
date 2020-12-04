@@ -1,6 +1,6 @@
 ---
-sidebar: sidebar
-permalink: arl-auto-app_relocating_failed_or_vetoed_aggregates.html
+sidebar: sidebar: upgrade-controller_sidebar
+permalink: upgrade-controller/upgrade-controller/arl-auto-app_relocating_failed_or_vetoed_aggregates.html
 keywords:
 summary:
 ---
@@ -45,5 +45,3 @@ storage aggregate relocation start -node node1 -destination node2 -aggregate-lis
 |Use the following command:
 storage aggregate relocation start -node node1 -destination node2 -aggregate-list <aggr_list> -ndo-controller-upgrade true -override-vetoes true -override-destination-checks true
 |===
-
-

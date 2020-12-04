@@ -1,6 +1,6 @@
 ---
-sidebar: sidebar
-permalink: arl-auto-app_checking_for_metrocluster_configuration_errors.html
+sidebar: sidebar: upgrade-controller_sidebar
+permalink: upgrade-controller/arl-auto-app_checking_for_metrocluster_configuration_errors.html
 keywords:
 summary:
 ---

@@ -1,6 +1,6 @@
 ---
-sidebar: sidebar
-permalink: arl-auto-app_verifying_the_health_of_the_metrocluster_configuration.html
+sidebar: sidebar: upgrade-controller_sidebar
+permalink: upgrade-controller/arl-auto-app_verifying_the_health_of_the_metrocluster_configuration.html
 keywords:
 summary:
 ---
@@ -34,7 +34,7 @@ metrocluster_siteA::*> metrocluster check run
 
 The operation runs in the background.
 
-. After the` metrocluster check run` operation completes, view the results by using the following command: 
+. After the` metrocluster check run` operation completes, view the results by using the following command:
 +
 `metrocluster check show`
 +
@@ -47,7 +47,7 @@ Component            Result
 ---------------      -------
 nodes      ok
 lifs           ok
-config-replication   ok 
+config-replication   ok
 aggregates       warning
 clusters       ok
 connections       not-applicable

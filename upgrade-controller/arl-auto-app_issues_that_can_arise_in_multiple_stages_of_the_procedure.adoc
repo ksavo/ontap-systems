@@ -1,6 +1,6 @@
 ---
-sidebar: sidebar
-permalink: arl-auto-app_issues_that_can_arise_in_multiple_stages_of_the_procedure.html
+sidebar: sidebar: upgrade-controller_sidebar
+permalink: upgrade-controller/arl-auto-app_issues_that_can_arise_in_multiple_stages_of_the_procedure.html
 keywords:
 summary:
 ---
@@ -33,11 +33,11 @@ The following example shows the expected output of the `storage failover show` c
 
 ....
 cluster::> storage failover show
-                                  Takeover 
-Node           Partner            PossibleState Description                              
+                                  Takeover
+Node           Partner            PossibleState Description
 -------------  -----------------  ---------  ----------------------------------------------
 node 1         node 2             false      Unknown                                         node2          node1              false      Node owns partner aggregates as part of the non- disruptive head upgrade procedure. Takeover is not possible: Storage failover is disabled.
-    
+
                                                                                           displayed.
 ....
 
@@ -50,7 +50,7 @@ Node         Partner    PossibleState Description
 --------------  ------------- ---  -------- -------------------------------------
 node1   node2         - Unknown
 node2 node1    falseWaiting for node1, Partial giveback, Takeover
-is not possible: Storage failover is disabled                                           
+is not possible: Storage failover is disabled
 2 entries were displayed.
 ....
 
@@ -59,5 +59,3 @@ Although the output says that a node is in partial giveback and that storage fai
 ==== Step
 
 No action is required; continue with the node-pair upgrade procedure.
-
-

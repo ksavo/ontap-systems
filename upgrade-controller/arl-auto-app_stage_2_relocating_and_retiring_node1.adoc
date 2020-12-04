@@ -1,6 +1,6 @@
 ---
-sidebar: sidebar
-permalink: arl-auto-app_stage_2_relocating_and_retiring_node1.html
+sidebar: sidebar: upgrade-controller_sidebar
+permalink: upgrade-controller/arl-auto-app_stage_2_relocating_and_retiring_node1.html
 keywords:
 summary:
 ---
@@ -17,5 +17,3 @@ summary:
 //
 // 2020-12-02 14:33:53.993137
 //
-
-

@@ -1,6 +1,6 @@
 ---
-sidebar: sidebar
-permalink: arl-auto-app_overview_of_the_arl_upgrade.html
+sidebar: sidebar: upgrade-controller_sidebar
+permalink: upgrade-controller/arl-auto-app_overview_of_the_arl_upgrade.html
 keywords:
 summary:
 ---
@@ -47,7 +47,7 @@ Set the FC or (converged network adapter) CNA configuration.
 Map ports from node1 to node3.
 Verify node3 is successfully installed.
 Move non-SAN data LIFs owned by node1 from node2 to node3.
-Relocate non-root aggregates owned by node1 from node2 to node3. 
+Relocate non-root aggregates owned by node1 from node2 to node3.
 Aggregate ownership at the end of Stage 3:
 * Node3 is the home owner and current owner of node1 aggregates.
 * Node2 is the home owner and current owner of node2 aggregates.
