@@ -1,5 +1,5 @@
 ---
-sidebar: sidebar: upgrade-controller_sidebar
+sidebar: upgrade-controller_sidebar
 permalink: upgrade-controller/arl-auto-app_stage_4_relocating_and_retiring_node2_overview.html
 keywords:
 summary:

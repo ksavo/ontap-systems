@@ -1,5 +1,5 @@
 ---
-sidebar: sidebar: upgrade-controller_sidebar
+sidebar: upgrade-controller_sidebar
 permalink: upgrade-controller/arl-auto-app_verifying_switchover,_healing,_and_switchback.html
 keywords:
 summary:

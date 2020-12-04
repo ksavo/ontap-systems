@@ -1,5 +1,5 @@
 ---
-sidebar: sidebar: upgrade-controller_sidebar
+sidebar: upgrade-controller_sidebar
 permalink: upgrade-controller/index.html
 summary: Using system controller replace commands to upgrade controller hardware running ONTAP 9.8
 ---

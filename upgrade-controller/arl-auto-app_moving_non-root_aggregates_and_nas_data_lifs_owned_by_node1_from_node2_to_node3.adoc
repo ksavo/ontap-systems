@@ -1,5 +1,5 @@
 ---
-sidebar: sidebar: upgrade-controller_sidebar
+sidebar: upgrade-controller_sidebar
 permalink: upgrade-controller/arl-auto-app_moving_non-root_aggregates_and_nas_data_lifs_owned_by_node1_from_node2_to_node3.html
 keywords:
 summary:

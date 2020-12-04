@@ -1,5 +1,5 @@
 ---
-sidebar: sidebar: upgrade-controller_sidebar
+sidebar: upgrade-controller_sidebar
 permalink: upgrade-controller/arl-auto-app_upgrading_the_node_pair.html
 keywords:
 summary:
