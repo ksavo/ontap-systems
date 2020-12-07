@@ -1,8 +1,8 @@
 ---
 sidebar: upgrade-controller_sidebar
 permalink: upgrade-controller/arl-auto-app_stage_4_relocating_and_retiring_node2.html
-keywords:
-summary:
+keywords: test
+summary: This is a test summary
 ---
 
 = Stage 4 Relocating and retiring node2

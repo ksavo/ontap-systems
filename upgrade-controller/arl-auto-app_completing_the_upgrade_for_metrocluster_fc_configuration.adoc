@@ -1,8 +1,8 @@
 ---
 sidebar: upgrade-controller_sidebar
 permalink: upgrade-controller/arl-auto-app_completing_the_upgrade_for_metrocluster_fc_configuration.html
-keywords:
-summary:
+keywords: test
+summary: This is a test summary
 ---
 
 = Completing the upgrade for MetroCluster FC configuration

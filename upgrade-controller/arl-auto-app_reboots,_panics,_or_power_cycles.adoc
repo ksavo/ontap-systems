@@ -1,8 +1,8 @@
 ---
 sidebar: upgrade-controller_sidebar
 permalink: upgrade-controller/arl-auto-app_reboots,_panics,_or_power_cycles.html
-keywords:
-summary:
+keywords: test
+summary: This is a test summary
 ---
 
 = Reboots, panics, or power cycles

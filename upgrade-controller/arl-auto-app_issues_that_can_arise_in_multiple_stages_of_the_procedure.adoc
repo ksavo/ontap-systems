@@ -1,8 +1,8 @@
 ---
 sidebar: upgrade-controller_sidebar
 permalink: upgrade-controller/arl-auto-app_issues_that_can_arise_in_multiple_stages_of_the_procedure.html
-keywords:
-summary:
+keywords: test
+summary: This is a test summary
 ---
 
 = Issues that can arise in multiple stages of the procedure

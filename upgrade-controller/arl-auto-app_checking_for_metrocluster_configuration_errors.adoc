@@ -1,8 +1,8 @@
 ---
 sidebar: upgrade-controller_sidebar
 permalink: upgrade-controller/arl-auto-app_checking_for_metrocluster_configuration_errors.html
-keywords:
-summary:
+keywords: test
+summary: This is a test summary
 ---
 
 = Checking for MetroCluster configuration errors

@@ -1,8 +1,8 @@
 ---
 sidebar: upgrade-controller_sidebar
 permalink: upgrade-controller/upgrade-controller/arl-auto-app_relocating_failed_or_vetoed_aggregates.html
-keywords:
-summary:
+keywords: test
+summary: This is a test summary
 ---
 
 = Relocating failed or vetoed aggregates

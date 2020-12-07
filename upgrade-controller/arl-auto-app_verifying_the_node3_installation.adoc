@@ -1,8 +1,8 @@
 ---
 sidebar: upgrade-controller_sidebar
 permalink: upgrade-controller/arl-auto-app_verifying_the_node3_installation.html
-keywords:
-summary:
+keywords: ""
+summary: ""
 ---
 
 = Verifying the node3 installation

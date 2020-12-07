@@ -1,8 +1,8 @@
 ---
 sidebar: upgrade-controller_sidebar
 permalink: upgrade-controller/arl-auto-app_aggregates_originally_on_node1_are_owned_by_node4_after_completion_of_the_upgrade.html
-keywords:
-summary:
+keywords: test
+summary: This is a test summary
 ---
 
 = Aggregates originally on node1 are owned by node4 after completion of the upgrade

@@ -1,8 +1,8 @@
 ---
 sidebar: upgrade-controller_sidebar
 permalink: upgrade-controller/arl-auto-app_stage_3_installing_and_booting_node3.html
-keywords:
-summary:
+keywords: test
+summary: This is a test summary
 ---
 
 = Stage 3 Installing and booting node3

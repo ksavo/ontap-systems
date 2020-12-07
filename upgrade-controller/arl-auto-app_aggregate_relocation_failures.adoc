@@ -1,8 +1,8 @@
 ---
 sidebar: upgrade-controller_sidebar
 permalink: upgrade-controller/arl-auto-app_aggregate_relocation_failures.html
-keywords:
-summary:
+keywords: test
+summary: This is a test summary
 ---
 
 = Aggregate relocation failures

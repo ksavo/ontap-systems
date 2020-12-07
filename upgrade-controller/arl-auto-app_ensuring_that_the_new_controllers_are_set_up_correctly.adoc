@@ -1,8 +1,8 @@
 ---
 sidebar: upgrade-controller_sidebar
 permalink: upgrade-controller/arl-auto-app_ensuring_that_the_new_controllers_are_set_up_correctly.html
-keywords:
-summary:
+keywords: test
+summary: This is a test summary
 ---
 
 = Ensuring that the new controllers are set up correctly

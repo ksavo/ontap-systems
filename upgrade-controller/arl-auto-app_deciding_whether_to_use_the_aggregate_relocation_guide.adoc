@@ -1,8 +1,8 @@
 ---
 sidebar: upgrade-controller_sidebar
 permalink: upgrade-controller/arl-auto-app_deciding_whether_to_use_the_aggregate_relocation_guide.html
-keywords:
-summary:
+keywords: test
+summary: This is a test summary
 ---
 
 = Deciding whether to use the aggregate relocation guide

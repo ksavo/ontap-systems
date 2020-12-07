@@ -1,8 +1,8 @@
 ---
 sidebar: upgrade-controller_sidebar
 permalink: upgrade-controller/arl-auto-app_restoring_key-manager_configuration_on_node3.html
-keywords:
-summary:
+keywords: test
+summary: This is a test summary
 ---
 
 = Restoring key-manager configuration on node3

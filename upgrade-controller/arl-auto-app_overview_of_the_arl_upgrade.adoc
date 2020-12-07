@@ -1,8 +1,8 @@
 ---
 sidebar: upgrade-controller_sidebar
 permalink: upgrade-controller/arl-auto-app_overview_of_the_arl_upgrade.html
-keywords:
-summary:
+keywords: test
+summary: This is a test summary
 ---
 
 = Overview of the ARL upgrade

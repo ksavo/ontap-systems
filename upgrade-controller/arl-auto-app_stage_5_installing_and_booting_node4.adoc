@@ -1,8 +1,8 @@
 ---
 sidebar: upgrade-controller_sidebar
 permalink: upgrade-controller/arl-auto-app_stage_5_installing_and_booting_node4.html
-keywords:
-summary:
+keywords: test
+summary: This is a test summary
 ---
 
 = Stage 5 Installing and booting node4

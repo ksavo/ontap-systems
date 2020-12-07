@@ -1,8 +1,8 @@
 ---
 sidebar: upgrade-controller_sidebar
 permalink: upgrade-controller/arl-auto-app_automating_the_controller_upgrade_process.html
-keywords:
-summary:
+keywords: test
+summary: This is a test summary
 ---
 
 = Automating the controller upgrade process

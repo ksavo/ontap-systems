@@ -1,8 +1,8 @@
 ---
 sidebar: upgrade-controller_sidebar
 permalink: upgrade-controller/arl-auto-app_stage_1_preparing_for_upgrade.html
-keywords:
-summary:
+keywords: test
+summary: This is a test summary
 ---
 
 = Stage 1 Preparing for upgrade

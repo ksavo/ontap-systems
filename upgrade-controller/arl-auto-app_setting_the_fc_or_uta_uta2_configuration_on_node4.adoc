@@ -1,8 +1,8 @@
 ---
 sidebar: upgrade-controller_sidebar
 permalink: upgrade-controller/arl-auto-app_setting_the_fc_or_uta_uta2_configuration_on_node4.html
-keywords:
-summary:
+keywords: test
+summary: This is a test summary
 ---
 
 = Setting the FC or UTA/UTA2 configuration on node4

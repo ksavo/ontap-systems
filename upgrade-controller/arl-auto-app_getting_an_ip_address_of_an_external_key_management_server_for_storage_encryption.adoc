@@ -1,8 +1,8 @@
 ---
 sidebar: upgrade-controller_sidebar
 permalink: upgrade-controller/arl-auto-app_getting_an_ip_address_of_an_external_key_management_server_for_storage_encryption.html
-keywords:
-summary:
+keywords: test
+summary: This is a test summary
 ---
 
 = Getting an IP address of an external key management server for storage encryption

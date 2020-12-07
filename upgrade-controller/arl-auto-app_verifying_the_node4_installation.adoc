@@ -1,7 +1,7 @@
 ---
 sidebar: upgrade-controller_sidebar
 permalink: upgrade-controller/arl-auto-app_verifying_the_node4_installation.html
-keywords:
+keywords: 
 summary:
 ---
 

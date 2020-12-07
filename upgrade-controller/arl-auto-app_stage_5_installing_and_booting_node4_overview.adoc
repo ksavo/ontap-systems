@@ -1,8 +1,8 @@
 ---
 sidebar: upgrade-controller_sidebar
 permalink: upgrade-controller/: upgrade-controller_sidebararl-auto-app_stage_5_installing_and_booting_node4_overview.html
-keywords:
-summary:
+keywords: test
+summary: This is a test summary
 ---
 
 = Overview
