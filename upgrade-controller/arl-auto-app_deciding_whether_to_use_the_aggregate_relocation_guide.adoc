@@ -1,6 +1,6 @@
 ---
-sidebar: sidebar
-permalink: arl-auto-app_deciding_whether_to_use_the_aggregate_relocation_guide.html
+sidebar: upgrade-controller_sidebar
+permalink: upgrade-controller/arl-auto-app_deciding_whether_to_use_the_aggregate_relocation_guide.html
 keywords:
 summary:
 ---
@@ -29,7 +29,7 @@ You should use this guide under the following circumstances:
 * If you are upgrading a MetroCluster configuration, it is a 4-node or higher FC configuration, and all nodes are running ONTAP 9.8.For upgrading MetroCluster IP configurations, refer to MetroCluster Upgrade, Transition, and Expansion Guide
 
 [NOTE]
-You can use NetApp Storage Encryption (NSE) and NetApp Volume Encryption (NVE) with this procedure.  
+You can use NetApp Storage Encryption (NSE) and NetApp Volume Encryption (NVE) with this procedure.
 
 The following table shows the supported model matrix for the controller upgrade.
 
@@ -53,6 +53,6 @@ If you prefer a different method of upgrading the controller hardware and are wi
 
 ==== Related information
 
-*XREF* Controller Hardware Upgrade Express Guide 
+*XREF* Controller Hardware Upgrade Express Guide
 
 *XREF* ONTAP 9 Documentation Center

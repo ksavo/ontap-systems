@@ -1,6 +1,6 @@
 ---
-sidebar: sidebar
-permalink: arl-auto-app_upgrading_the_node_pair.html
+sidebar: upgrade-controller_sidebar
+permalink: upgrade-controller/arl-auto-app_upgrading_the_node_pair.html
 keywords:
 summary:
 ---

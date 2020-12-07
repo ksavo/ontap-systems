@@ -1,6 +1,6 @@
 ---
-sidebar: sidebar
-permalink: arl-auto-app_stage_6_completing_the_upgrade_overview.html
+sidebar: upgrade-controller_sidebar
+permalink: upgrade-controller/arl-auto-app_stage_6_completing_the_upgrade_overview.html
 keywords:
 summary:
 ---
@@ -23,11 +23,9 @@ During stage 6, confirm that the new nodes are set up correctly. If one of the n
 
 *Steps*
 
-. *xref* Completing the upgrade for MetroCluster FC configuration 
-. *xref* Ensuring that the new controllers are set up correctly 
-. *xref* Setting up Storage Encryption on the new controller module 
-. *xref* Setting up NetApp Volume Encryption on the new controller module 
-. *xref* Decommissioning the old system 
-. *xref* Resuming SnapMirror operations 
-
-
+. *xref* Completing the upgrade for MetroCluster FC configuration
+. *xref* Ensuring that the new controllers are set up correctly
+. *xref* Setting up Storage Encryption on the new controller module
+. *xref* Setting up NetApp Volume Encryption on the new controller module
+. *xref* Decommissioning the old system
+. *xref* Resuming SnapMirror operations

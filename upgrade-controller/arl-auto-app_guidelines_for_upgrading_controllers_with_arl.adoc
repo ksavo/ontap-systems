@@ -1,6 +1,6 @@
 ---
-sidebar: sidebar
-permalink: arl-auto-app_guidelines_for_upgrading_controllers_with_arl.html
+sidebar: upgrade-controller_sidebar
+permalink: upgrade-controller/arl-auto-app_guidelines_for_upgrading_controllers_with_arl.html
 keywords:
 summary:
 ---

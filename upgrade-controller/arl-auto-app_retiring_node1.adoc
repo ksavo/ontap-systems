@@ -1,6 +1,6 @@
 ---
-sidebar: sidebar
-permalink: arl-auto-app_retiring_node1.html
+sidebar: upgrade-controller_sidebar
+permalink: upgrade-controller/arl-auto-app_retiring_node1.html
 keywords:
 summary:
 ---
@@ -34,5 +34,3 @@ To retire node1, you resume the automated operation to disable the HA pair with 
 ==== After you finish
 
 You can decommission node1 after the upgrade is completed. See *Decommissioning the old system*.
-
-

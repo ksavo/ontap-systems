@@ -1,6 +1,6 @@
 ---
-sidebar: sidebar
-permalink: arl-auto-app_setting_up_netapp_volume_encryption_on_the_new_controller_module.html
+sidebar: upgrade-controller_sidebar
+permalink: upgrade-controller/arl-auto-app_setting_up_netapp_volume_encryption_on_the_new_controller_module.html
 keywords:
 summary:
 ---
@@ -33,7 +33,7 @@ This procedure includes steps that are performed on the new controller module. Y
 |For this ONTAP version… |Use this command...
 
 |ONTAP 9.6 and later
-|security key-manager key query -node node 
+|security key-manager key query -node node
 |ONTAP 9.5 and earlier
 |security key-manager key show
 |===
@@ -71,8 +71,6 @@ security key-manager onboard sync
 
 ==== After you finish
 
-Check if any volumes were taken offline because authentication keys were not available or external key management servers could not be reached. Bring those volumes back online by using the following command: 
+Check if any volumes were taken offline because authentication keys were not available or external key management servers could not be reached. Bring those volumes back online by using the following command:
 
 `volume online`
-
-

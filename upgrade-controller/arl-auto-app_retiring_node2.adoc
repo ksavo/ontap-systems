@@ -1,6 +1,6 @@
 ---
-sidebar: sidebar
-permalink: arl-auto-app_retiring_node2.html
+sidebar: upgrade-controller_sidebar
+permalink: upgrade-controller/arl-auto-app_retiring_node2.html
 keywords:
 summary:
 ---
@@ -33,4 +33,4 @@ The node halts automatically.
 
 ==== After you finish
 
-You can decommission node2 after the upgrade is completed. See *xref* Decommissioning the old system.  
+You can decommission node2 after the upgrade is completed. See *xref* Decommissioning the old system.

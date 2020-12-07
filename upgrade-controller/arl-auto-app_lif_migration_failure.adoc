@@ -1,6 +1,6 @@
 ---
-sidebar: sidebar
-permalink: arl-auto-app_lif_migration_failure.html
+sidebar: upgrade-controller_sidebar
+permalink: upgrade-controller/arl-auto-app_lif_migration_failure.html
 keywords:
 summary:
 ---

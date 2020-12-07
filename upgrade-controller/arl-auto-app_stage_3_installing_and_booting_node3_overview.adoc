@@ -1,6 +1,6 @@
 ---
-sidebar: sidebar
-permalink: arl-auto-app_stage_3_installing_and_booting_node3_overview.html
+sidebar: upgrade-controller_sidebar
+permalink: upgrade-controller/arl-auto-app_stage_3_installing_and_booting_node3_overview.html
 keywords:
 summary:
 ---
@@ -25,10 +25,8 @@ During Stage 3, you install and boot node3, check that the cluster and node-mana
 
 *Steps*
 
-. *xref *Installing and booting node3 
-. *xref *Setting the FC or UTA/UTA2 configuration on node3 
-. *xref *Verifying the node3 installation 
-. *xref *Restoring key-manager configuration on node3 
-. *xref *Moving non-root aggregates and NAS data LIFs owned by node1 from node2 to node3 
-
-
+. *xref *Installing and booting node3
+. *xref *Setting the FC or UTA/UTA2 configuration on node3
+. *xref *Verifying the node3 installation
+. *xref *Restoring key-manager configuration on node3
+. *xref *Moving non-root aggregates and NAS data LIFs owned by node1 from node2 to node3
