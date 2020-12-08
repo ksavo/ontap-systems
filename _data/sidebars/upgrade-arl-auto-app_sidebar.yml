@@ -109,7 +109,7 @@ entries:
           - title: Aggregates originally on node1 are owned by node4 after completion of the upgrade
             url: /aggregates_originally_on_node1_are_owned_by_node4_after_completion_of_the_upgrade.html
           - title: Reboots, panics, or power cycles
-            url: /reboots,_panics,_or_power_cycles.html
+            url: /reboots_panics_or_power_cycles.html
           - title: Issues that can arise in multiple stages of the procedure
             url: /issues_that_can_arise_in_multiple_stages_of_the_procedure.html
           - title: LIF migration failure
