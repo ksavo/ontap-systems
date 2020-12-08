@@ -34,8 +34,8 @@ Some of the aggregates being relocated have node1 as their home node. For exampl
 When node2 is replaced, aggr_node_1 will come online with node4 as its home node instead of node3.
 +
 You can fix the incorrect ownership problem after Stage 6,  after you have enabled storage failover by completing the following steps:
-+
-*Steps*
+
+.Steps
 
 . Get a list of aggregates by using the following command:
 +

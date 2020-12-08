@@ -21,7 +21,7 @@ summary: To retire node1, you resume the automated operation to disable the HA p
 [.lead]
 To retire node1, you resume the automated operation to disable the HA pair with node2 and shut Lonode1 down properly. You must later remove node1 from the rack or chassis.
 
-*Steps*
+.Steps
 
 . Resume the operation by using the following command:
 +
@@ -33,8 +33,4 @@ To retire node1, you resume the automated operation to disable the HA pair with 
 
 ==== After you finish
 
-<<<<<<< HEAD
 You can decommission node1 after the upgrade is completed. See link:arl-auto-app_decommissioning_the_old_system.html[Decommissioning the old system].
-=======
-You can decommission node1 after the upgrade is completed. See *Decommissioning the old system*.
->>>>>>> 8e297277e6f4b70e682563da7e57876f3fa443e5

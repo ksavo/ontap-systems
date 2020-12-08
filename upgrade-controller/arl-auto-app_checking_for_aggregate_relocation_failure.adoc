@@ -21,7 +21,7 @@ summary: During the procedure, ARL might fail in Stage 2, Stage 3, or Stage 5.
 [.lead]
 During the procedure, ARL might fail in Stage 2, Stage 3, or Stage 5.
 
-*Steps*
+.Steps
 
 . Enter the following command and examine its output:
 +

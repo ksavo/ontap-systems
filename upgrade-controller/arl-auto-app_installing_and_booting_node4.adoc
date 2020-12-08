@@ -25,16 +25,14 @@ You must install node4 in the rack, transfer node2 connections to node4, boot no
 
 The relocation operation is paused at the beginning of this stage. This process is largely automated; the operation pauses to allow you to check its status. You must manually resume the operation. In addition, you must verify the SAN LIFs have successfully moved to node4.
 
-<<<<<<< HEAD
 You need to netboot node34 if it does not have the same version of ONTAP 9 that is installed on node2. After you install node4, boot it from the ONTAP 9 image stored on the web server. You can then download the correct files to the boot media device for subsequent system boots, by following the instructions in link:arl-auto-app_preparing_for_netboot.html[Preparing for netboot].
-=======
-You need to netboot node34 if it does not have the same version of ONTAP 9 that is installed on node2. After you install node4, boot it from the ONTAP 9 image stored on the web server. You can then download the correct files to the boot media device for subsequent system boots, by following the instructions in *xref* Preparing for netboot.
->>>>>>> 8e297277e6f4b70e682563da7e57876f3fa443e5
 
 ==== Important:
 
 * If you are upgrading a V-Series system connected to storage arrays or a system with FlexArray Virtualization software that is connected to storage arrays, you must complete *xref* Step 1 through *xref* Step 21 , then leave this section and follow instructions in the *xref* Configuring FC ports on node4 and *xref* Checking and configuring UTA/UTA2 ports on node4 sections as needed, entering commands in Maintenance mode. You must then return to this section and resume with* xref* Step 23.
-* However, if you are upgrading a system with storage disks, you must complete this entire section and then proceed to *xref* Setting the FC or UTA/UTA2 configuration on node4 entering commands at the cluster prompt.*Steps*
+* However, if you are upgrading a system with storage disks, you must complete this entire section and then proceed to *xref* Setting the FC or UTA/UTA2 configuration on node4 entering commands at the cluster prompt.
+
+.Steps
 
 . Make sure that node4 has sufficient rack space.
 +
@@ -43,7 +41,7 @@ If node4 is in a separate chassis from node2, you can put node4 in the same loca
 . Install node4 in the rack, following the instructions in the Installation and Setup Instructions for the node model.
 . Cable node4, moving the connections from node2 to node4.
 +
-Cable the following connections, using the instructions in the *Installation and Setup Instructions* or the *FlexArray Virtualization Installation Requirements and Reference* for the node4 platform, the appropriate disk shelf guide, and *the ONTAP 9 High-Availability Configuration Guide*:
+Cable the following connections, using the instructions in the *Installation and Setup Instructions* or the link:https://docs.netapp.com/ontap-9/topic/com.netapp.doc.vs-irrg/home.html[FlexArray Virtualization Installation Requirements and Reference] for the node4 platform, the appropriate disk shelf guide, and the link:https://docs.netapp.com/ontap-9/topic/com.netapp.doc.dot-cm-hacg/home.html[ONTAP 9 High-Availability Configuration Guide]:
 
 ** Console (remote management port)
 ** Cluster ports
@@ -72,11 +70,7 @@ WARNING: The battery is unfit to retain data during a power outage. This is like
 .. Allow the battery to charge and the boot process to complete.*Attention*: Do not override the delay; failure to allow the battery to charge could result in a loss of data.
 
 [NOTE]
-<<<<<<< HEAD
-Refer to link:arl-auto-app_preparing_for_netboot.html[Preparing for netboot]..
-=======
-Refer to *xref *Preparing for netboot.
->>>>>>> 8e297277e6f4b70e682563da7e57876f3fa443e5
+Refer to link:arl-auto-app_preparing_for_netboot.html[Preparing for netboot].
 
 . Configure the netboot connection by choosing one of the following actions.
 
@@ -113,11 +107,7 @@ accessible_directory>/netboot/kernel
 accessible_directory>/<ontap_version>_image.tgz
 |===
 
-<<<<<<< HEAD
 The <`path_to_the_web-accessible_directory`> should lead to where you downloaded the `<ontap_version>_image.tgz` in Step 1 in the section link:arl-auto-app_preparing_for_netboot.html[Preparing for netboot]..
-=======
-The <`path_to_the_web-accessible_directory`> should lead to where you downloaded the `<ontap_version>_image.tgz` in Step 1 in the section *xref *Preparing for netboot.
->>>>>>> 8e297277e6f4b70e682563da7e57876f3fa443e5
 
 [NOTE]
 Do not interrupt the boot.
@@ -253,7 +243,3 @@ Installing a new controller module changes the WWPN values associated with each 
 If you do not have FC or UTA/UTA2 configuration, execute Step 15 so that node4 can recognize node2’s disks.
 
 . For MetroCluster configuration, V-Series systems and systems with FlexArray Virtualization software connected to storage arrays go to Step 15.
-
-==== Related information
-
-*XREF* ONTAP 9 Documentation Center

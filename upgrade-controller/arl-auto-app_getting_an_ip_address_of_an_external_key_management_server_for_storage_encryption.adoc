@@ -21,7 +21,7 @@ summary: After upgrading, you must immediately configure Storage Encryption.
 [.lead]
 After upgrading, you must immediately configure Storage Encryption and establish a cluster-wide authentication key to replace the previous node-level authentication keys.
 
-*Steps*
+.Steps
 
 . Install the necessary client and server secure sockets layer (SSL) certificates required to communicate with key management servers by using the following command:
 +

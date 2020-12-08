@@ -32,7 +32,7 @@ Remote LIFs handle traffic to SAN LUNs during the upgrade procedure. Moving SAN 
 [NOTE]
 The home owner for the aggregates and LIFs are not modified; only the current -owner is modified.
 
-*Steps*
+.Steps
 
 . Resume the aggregate relocation and NAS data LIF move operations by using the following command:
 +

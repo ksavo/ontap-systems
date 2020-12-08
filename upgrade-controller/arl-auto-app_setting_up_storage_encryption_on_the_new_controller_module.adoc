@@ -25,7 +25,7 @@ If the replaced controller or the HA partner of the new controller uses Storage 
 
 This procedure includes steps that are performed on the new controller module. You must enter the command on the correct node.
 
-*Steps*
+.Steps
 
 . Verify that the key management servers are still available, their status, and their authentication key information by using the following commands:
 +

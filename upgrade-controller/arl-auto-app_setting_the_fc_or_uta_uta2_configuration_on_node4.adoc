@@ -47,7 +47,7 @@ You can skip this section if your system does not have FC configurations. If you
 
 *Important*: If your system has storage disks, you must enter the commands in this section at the cluster prompt. If you have a V-Series system or a system with FlexArray Virtualization Software connected to storage arrays, you enter commands in this section in Maintenance mode.
 
-*Steps*
+.Steps
 
 . Take one of the following actions:
 
@@ -130,7 +130,7 @@ UTA/UTA2 ports might be on an adapter or on the controller with the following co
 
 *Attention*: If your system has storage disks, you enter the commands in this section at the cluster prompt unless directed to enter Maintenance mode. If you have a MetroCluster FC system, V-Series system or a system with FlexArray Virtualization software that is connected to storage arrays,  you must be in Maintenance mode to configure UTA/UTA2 ports.
 
-*Steps*
+.Steps
 
 . Check how the ports are currently configured by using one of the following commands on node4:
 

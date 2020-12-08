@@ -21,20 +21,11 @@ summary: During stage 6, confirm that the new nodes are set up correctly.
 [.lead]
 During stage 6, confirm that the new nodes are set up correctly. If one of the new nodes has a unified target adapter, you must restore any port configurations and you might need to change the use of the adapter. You should also set up Storage Encryption if the new nodes are encryption-enabled.
 
-*Steps*
+.Steps
 
-<<<<<<< HEAD
 . link:arl-auto-app_completing_the_upgrade_for_metrocluster_fc_configuration.html[Completing the upgrade for MetroCluster FC configuration]
-. list:arl-auto-app_ensuring_that_the_new_controllers_are_set_up_correctly.html[Ensuring that the new controllers are set up correctly]
+. link:arl-auto-app_ensuring_that_the_new_controllers_are_set_up_correctly.html[Ensuring that the new controllers are set up correctly]
 . link:arl-auto-app_setting_up_storage_encryption_on_the_new_controller_module.html[Setting up Storage Encryption on the new controller module]
 . link:arl-auto-app_setting_up_netapp_volume_encryption_on_the_new_controller_module.html[Setting up NetApp Volume Encryption on the new controller module]
 . link:arl-auto-app_decommissioning_the_old_system.html[Decommissioning the old system]
 . link:arl-auto-app_resuming_snapmirror_operations.html[Resuming SnapMirror operations]
-=======
-. *xref* Completing the upgrade for MetroCluster FC configuration
-. *xref* Ensuring that the new controllers are set up correctly
-. *xref* Setting up Storage Encryption on the new controller module
-. *xref* Setting up NetApp Volume Encryption on the new controller module
-. *xref* Decommissioning the old system
-. *xref* Resuming SnapMirror operations
->>>>>>> 8e297277e6f4b70e682563da7e57876f3fa443e5

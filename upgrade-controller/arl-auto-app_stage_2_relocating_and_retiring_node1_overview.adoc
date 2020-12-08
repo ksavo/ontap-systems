@@ -21,14 +21,8 @@ summary: Relocating and retiring node1
 [.lead]
 During Stage 2, you relocate the node1 aggregates and LIFs to node2, record node1 information, and then retire node1. This process is largely automated; the operation pauses to allow you to check its status. You must manually resume the operation.
 
-*Steps*
+.Steps
 
-<<<<<<< HEAD
 . link:arl-auto-app_relocating_non-root_aggregates_and_nas_data_lifs_owned_by_node1_to_node2.html[Relocating non-root aggregates and NAS data LIFs owned by node1 to node2]
 . link:arl-auto-app_retiring_node1.html[Retiring node1]
 . link:arl-auto-app_preparing_for_netboot.html[Preparing for netboot]
-=======
-. *xref* Relocating non-root aggregates and NAS data LIFs owned by node1 to node2
-. *xref* Retiring node1
-. *xref* Preparing for netboot
->>>>>>> 8e297277e6f4b70e682563da7e57876f3fa443e5

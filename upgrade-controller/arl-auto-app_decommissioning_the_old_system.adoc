@@ -21,7 +21,7 @@ summary: After upgrading, you can decommission the old system through the NetApp
 [.lead]
 After upgrading, you can decommission the old system through the NetApp Support Site. Decommissioning the system tells NetApp that the system is no longer in operation and removes it from support databases.
 
-*Steps*
+.Steps
 
 . Navigate to the NetApp Support Site at *XREF* mysupport.netapp.com and log in.
 . Select `Products` `> My Products` from the menu.

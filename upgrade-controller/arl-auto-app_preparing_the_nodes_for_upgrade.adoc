@@ -81,7 +81,7 @@ If the models are not supported, the task fails.
 |Checks that the nodes being replaced run the same version of ONTAP.
 If the ONTAP image versions are different, the task fails.
 The new nodes must have the same version of ONTAP
-9.x installed on them that is installed on the original nodes. If the new nodes have a different version of ONTAP installed, you need to netboot the new controllers after you install them. See the ONTAP 9 Upgrade and Revert/Downgrade Guide for instructions to upgrade ONTAP.
+9.x installed on them that is installed on the original nodes. If the new nodes have a different version of ONTAP installed, you need to netboot the new controllers after you install them. See the link:https://docs.netapp.com/ontap-9/topic/com.netapp.doc.dot-cm-ug-rdg/home.html[ONTAP 9 Upgrade and Revert/Downgrade Guide] for instructions to upgrade ONTAP.
 |HA Status Check
 |Checks if both the nodes being replaced are in a high- availability (HA) pair configuration.
 If storage failover is not enabled for the controllers, the task fails.
@@ -90,7 +90,7 @@ If storage failover is not enabled for the controllers, the task fails.
 The nodes should not own any non-local aggregates.
 |Disk Status Check
 |If any nodes being replaced have missing or failed disks, the task fails.
-If any disks are missing, see the ONTAP 9 Disks and Aggregates Power Guide, the ONTAP 9 Logical Storage Management Guide, and the ONTAP 9 High- Availability Configuration Guide in the *XREF* ONTAP 9 Documentation Center to configure storage for the HA pair.
+If any disks are missing, see the link:https://docs.netapp.com/ontap-9/topic/com.netapp.doc.dot-cm-psmg/home.html[ONTAP 9 Disks and Aggregates Power Guide], the link:https://docs.netapp.com/ontap-9/topic/com.netapp.doc.dot-cm-vsmg/home.html[ONTAP 9 Logical Storage Management Guide], and the link:https://docs.netapp.com/ontap-9/topic/com.netapp.doc.dot-cm-vsmg/home.html[ONTAP 9 High-Availability Configuration Guide] in the link:https://docs.netapp.com/ontap-9/index.jsp[ONTAP 9 Documentation Center] to configure storage for the HA pair.
 |Data LIF Status Check
 |Checks if any of the nodes being replaced have non- local data LIFs.
 The nodes should not contain any data LIFs for which they are not the home owner. If one of the nodes contains non-local data LIFs, the task fails.
@@ -140,7 +140,7 @@ If NetApp Volume Encryption using Onboard Key Manager (OKM) is in use, keep the 
 
 If the Aggregate Status Check fails, you must return aggregates owned by the partner node to the home owner node and initiate the precheck process again.
 
-*Steps*
+.Steps
 
 . Return the aggregates currently owned by the partner node to the home owner node by using the following command:
 +
@@ -175,12 +175,6 @@ When you set up a cluster, the setup wizard prompts you to enter the cluster-bas
 
 If you do not have new license keys, currently licensed features in the cluster are available to the new controller. However, using unlicensed features on the controller might put you out of compliance with your license agreement, so you should install the new license key or keys for the new controller after the upgrade is complete.
 
-<<<<<<< HEAD
 You can obtain new 2-character license keys for ONTAP 9.8 on the NetApp Support Site at link:mysupport.netapp.com[mysupport.netapp.com]. The keys are available in the *My Support* section under *Software licenses*. If the site does not have the license keys you need, you can contact your NetApp sales representative.
 
-For detailed information about licensing, see the *System Administration Reference* in the *XREF* ONTAP 9 Documentation Center.
-=======
-You can obtain new 2-character license keys for ONTAP 9.8 on the NetApp Support Site at *XREF *mysupport.netapp.com. The keys are available in the *My Support* section under *Software licenses*. If the site does not have the license keys you need, you can contact your NetApp sales representative.
-
-For detailed information about licensing, see the *System Administration Reference* in the *XREF *ONTAP 9 Documentation Center.
->>>>>>> 8e297277e6f4b70e682563da7e57876f3fa443e5
+For detailed information about licensing, see the link:https://docs.netapp.com/ontap-9/topic/com.netapp.doc.dot-cm-sag/home.html[System Administration Reference] in the link:https://docs.netapp.com/ontap-9/index.jsp[ONTAP 9 Documentation Center].

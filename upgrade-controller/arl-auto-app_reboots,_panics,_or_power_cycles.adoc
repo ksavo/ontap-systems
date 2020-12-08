@@ -37,7 +37,7 @@ If either node1 or node2 crashes before the pre-check phase, no aggregates have 
 
 Takeover and giveback can proceed normally.
 
-*Steps*
+.Steps
 
 . Check the console for EMS messages that the system might have issued and take the recommended corrective action.
 . Continue with the node-pair upgrade procedure.
@@ -54,7 +54,7 @@ Ownership of aggregates that were relocated look the same as the ownership of no
 
 When node1 enters the `waiting for giveback `state, node2 gives back all of the node1 non- root aggregates.
 
-*Steps*
+.Steps
 
 . After node1 is booted up, all the non-root aggregates of node1 have moved back to node1. You must perform a manual aggregate relocation of the aggregates from node1 to node2 by using the following command:`storage aggregate relocation start -node node1 -destination node2 -aggregate-list * - ndocontroller-upgrade true`
 
@@ -64,7 +64,7 @@ When node1 enters the `waiting for giveback `state, node2 gives back all of the 
 
 Node2 does not take over but it is still serving data from all non-root aggregates.
 
-*Steps*
+.Steps
 
 . Bring up node1.
 . Continue with the node-pair upgrade procedure.
@@ -77,7 +77,7 @@ Node1 has relocated some or all of its aggregates to node2. The HA pair is enabl
 
 Node1 takes over all of node2's aggregates as well as any of its own aggregates that it had relocated to node2. When node2 boots up, the aggregate relocation is completed automatically.
 
-*Steps*
+.Steps
 
 . Bring up node2.
 . Continue with the node-pair upgrade procedure.
@@ -86,7 +86,7 @@ Node1 takes over all of node2's aggregates as well as any of its own aggregates 
 
 Node1 does not take over.
 
-*Steps*
+.Steps
 
 . Bring up node2.
 +
@@ -100,7 +100,7 @@ A client outage occurs for all aggregates while node2 is booting up.
 
 Node3 does not take over following a node2 crash as the HA pair is already disabled.
 
-*Steps*
+.Steps
 
 . Bring up node2.
 +
@@ -112,7 +112,7 @@ A client outage occurs for all aggregates while node2 is booting up.
 
 Node2 does not take over but it is still serving data from all non-root aggregates.
 
-*Steps*
+.Steps
 
 . Bring up node3.
 . Continue with the node-pair upgrade procedure.
@@ -127,7 +127,7 @@ Node2 has relocated some or all its aggregates of node1 to node3. Node3 serves d
 
 There is client outage for aggregates that were not relocated. On booting up node2, the aggregates of node1 are relocated to node3.
 
-*Steps*
+.Steps
 
 . Bring up node2.
 . Continue with the node-pair upgrade procedure.
@@ -140,7 +140,7 @@ If node3 crashes while node2 is relocating aggregates to node3, the task continu
 
 Node2 continues to serve remaining aggregates, but aggregates that were already relocated to node3 encounter client outage while node3 is booting up.
 
-*Steps*
+.Steps
 
 . Bring up node3.
 . Continue with the controller upgrade.
@@ -151,7 +151,7 @@ Node2 continues to serve remaining aggregates, but aggregates that were already 
 
 The HA pair is disabled hence this is no takeover. There is a client outage for aggregates belonging to the node that rebooted.
 
-*Steps*
+.Steps
 
 . Bring up the node.
 . Continue with the node-pair upgrade procedure.
@@ -166,7 +166,7 @@ If node3 crashes while node2 is relocating aggregates, the task continues after 
 
 Node2 continues to serve remaining aggregates but aggregates that were already relocated to node3 and node3's own aggregates encounter client outages while node3 is booting.
 
-*Steps*
+.Steps
 
 . Bring up node3.
 . Continue with the controller upgrade procedure.
@@ -179,7 +179,7 @@ If node2 crashes during aggregate relocation, node2 is not taken over.
 
 Node3 continues to serve the aggregates that have been relocated,  but the aggregates owned by node2 encounter client outages.
 
-*Steps*
+.Steps
 
 . Bring up node2.
 . Continue with the controller upgrade procedure.
@@ -194,7 +194,7 @@ If node3 crashes during this phase, takeover does not happen because the HA pair
 
 There is a client outage for all aggregates until node3 reboots.
 
-*Steps*
+.Steps
 
 . Bring up node3.
 . Continue with the node-pair upgrade procedure.
@@ -207,7 +207,7 @@ If node4 crashes during this phase, takeover does not happen. Node3 serves data 
 
 There is an outage for non-root aggregates that were already relocated until node4 reboots.
 
-*Steps*
+.Steps
 
 . Bring up node4.
 . Continue with the node-pair upgrade procedure.

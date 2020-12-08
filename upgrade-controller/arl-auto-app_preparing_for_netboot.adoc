@@ -32,7 +32,7 @@ You must netboot the new controllers if they do not have the same version of ONT
 
 However, you do not need to netboot the controllers if the same version of ONTAP 9 is installed on them that is installed on the original controllers. If so, you can skip this section and proceed to *xref* Stage 3 Installing and booting node3.
 
-*Steps*
+.Steps
 
 . Access the NetApp Support Site to download the files used for performing the netboot of the system.
 . Download the appropriate ONTAP software from the software download section of the NetApp Support Site and store the `<ontap_version>_image.tgz` file on a web-accessible directory.

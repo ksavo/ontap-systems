@@ -55,11 +55,7 @@ The output of the` health` field should be `true`.
 +
 `system controller replace show-details`
 
-<<<<<<< HEAD
 . If you are working on a MetroCluster system,  verify that the replaced controller is configured correctly for the MetroCluster configuration; the MetroCluster configuration should be in a healthy state. See link:arl-auto-app_verifying_the_health_of_the_metrocluster_configuration.html[Verifying the health of the MetroCluster configuration].
-=======
-. If you are working on a MetroCluster system,  verify that the replaced controller is configured correctly for the MetroCluster configuration; the MetroCluster configuration should be in a healthy state. See *xref *Verifying the health of the MetroCluster configuration.
->>>>>>> 8e297277e6f4b70e682563da7e57876f3fa443e5
 +
 Configure the intercluster LIFs on MetroCluster node node3, and check cluster peering to restore communication between the MetroCluster nodes before proceeding to Step 6.
 +
