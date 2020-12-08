@@ -1,7 +1,7 @@
 ---
-sidebar: sidebar
-permalink: arl-auto-app_relocating_non-root_aggregates_and_nas_data_lifs_from_node2_to_node3.html
-keywords: Relocating, non-root, aggregates, NAS, LIF, node2, node3
+sidebar: upgrade-controller_sidebar
+permalink: upgrade-controller/arl-auto-app_relocating_non-root_aggregates_and_nas_data_lifs_from_node2_to_node3.html
+keywords: relocating, non-root, aggregates, nas, lif, node2, node3
 summary: Before you can replace node2 with node4, you must relocate the non-root aggregates that are owned by node2 to node3.
 ---
 

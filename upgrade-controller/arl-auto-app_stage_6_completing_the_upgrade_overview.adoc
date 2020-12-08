@@ -1,6 +1,6 @@
 ---
-sidebar: sidebar
-permalink: arl-auto-app_stage_6_completing_the_upgrade.html
+sidebar: upgrade-controller_sidebar
+permalink: upgrade-controller/arl-auto-app_stage_6_completing_the_upgrade.html
 keywords: completing, upgrade, node, unified, target, storage, encryption
 summary: During stage 6, confirm that the new nodes are set up correctly.
 ---
@@ -23,9 +23,18 @@ During stage 6, confirm that the new nodes are set up correctly. If one of the n
 
 *Steps*
 
+<<<<<<< HEAD
 . link:arl-auto-app_completing_the_upgrade_for_metrocluster_fc_configuration.html[Completing the upgrade for MetroCluster FC configuration]
 . list:arl-auto-app_ensuring_that_the_new_controllers_are_set_up_correctly.html[Ensuring that the new controllers are set up correctly]
 . link:arl-auto-app_setting_up_storage_encryption_on_the_new_controller_module.html[Setting up Storage Encryption on the new controller module]
 . link:arl-auto-app_setting_up_netapp_volume_encryption_on_the_new_controller_module.html[Setting up NetApp Volume Encryption on the new controller module]
 . link:arl-auto-app_decommissioning_the_old_system.html[Decommissioning the old system]
 . link:arl-auto-app_resuming_snapmirror_operations.html[Resuming SnapMirror operations]
+=======
+. *xref* Completing the upgrade for MetroCluster FC configuration
+. *xref* Ensuring that the new controllers are set up correctly
+. *xref* Setting up Storage Encryption on the new controller module
+. *xref* Setting up NetApp Volume Encryption on the new controller module
+. *xref* Decommissioning the old system
+. *xref* Resuming SnapMirror operations
+>>>>>>> 8e297277e6f4b70e682563da7e57876f3fa443e5

@@ -1,7 +1,7 @@
 ---
-sidebar: sidebar
-permalink: arl-auto-app_overview_of_the_arl_upgrade.html
-keywords: overview, ARL, upgrade, owner, controller, hardware
+sidebar: upgrade-controller_sidebar
+permalink: upgrade-controller/arl-auto-app_overview_of_the_arl_upgrade.html
+keywords: overview, arl, upgrade, owner, controller, hardware
 summary: Before you upgrade the nodes using ARL, you should understand how the procedure works.
 ---
 

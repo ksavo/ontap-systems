@@ -1,6 +1,6 @@
 ---
-sidebar: sidebar
-permalink: arl-auto-app_aggregates_originally_on_node1_are_owned_by_node4_after_completion_of_the_upgrade.html
+sidebar: upgrade-controller_sidebar
+permalink: upgrade-controller/arl-auto-app_aggregates_originally_on_node1_are_owned_by_node4_after_completion_of_the_upgrade.html
 keywords: aggregate, node1, completion, upgrade, node2, node3, node4, node, aggr1, aggr2, aggr3, aggr
 summary: At the end of the upgrade procedure, node3 should be the new home node of aggregates.
 ---

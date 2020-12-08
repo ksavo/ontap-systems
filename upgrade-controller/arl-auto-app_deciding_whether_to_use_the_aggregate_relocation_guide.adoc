@@ -1,7 +1,7 @@
 ---
-sidebar: sidebar
-permalink: arl-auto-app_deciding_whether_to_use_the_aggregate_relocation_guide.html
-keywords: deciding, aggregate, relocation, guide, storage, controllers, administrators, ONTAP, HA
+sidebar: upgrade-controller_sidebar
+permalink: upgrade-controller/arl-auto-app_deciding_whether_to_use_the_aggregate_relocation_guide.html
+keywords: deciding, aggregate, relocation, guide, storage, controllers, administrators, ontap, ha, high, availability
 summary: This guide describes how to upgrade the storage controllers in an HA pair with new controllers.
 ---
 
@@ -49,4 +49,14 @@ The following table shows the supported model matrix for the controller upgrade.
 [NOTE]
 If your controller upgrade model combination is not in the above table, contact technical support.
 
+<<<<<<< HEAD
 If you prefer a different method of upgrading the controller hardware and are willing to do volume moves, use the *xref* Controller Hardware Upgrade Express Guide instead. See the *xref* ONTAP 9 Documentation Center to access ONTAP 9 product documentation.
+=======
+If you prefer a different method of upgrading the controller hardware and are willing to do volume moves, use the Controller Hardware Upgrade Express Guide instead. See the ONTAP 9 Documentation Center to access ONTAP 9 product documentation.
+
+==== Related information
+
+*XREF* Controller Hardware Upgrade Express Guide
+
+*XREF* ONTAP 9 Documentation Center
+>>>>>>> 8e297277e6f4b70e682563da7e57876f3fa443e5

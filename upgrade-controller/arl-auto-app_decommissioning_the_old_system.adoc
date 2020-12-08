@@ -1,7 +1,7 @@
 ---
-sidebar: sidebar
+sidebar: upgrade-controller_sidebar
 permalink: arl-auto-app_decommissioning_the_old_system.html
-keywords: Decommissioning, old, system, upgrading, databses, NetApp, Support, Site, Serial, number, cluster
+keywords: decommissioning, old, system, upgrading, databases, netapp, support, site, serial, number, cluster
 summary: After upgrading, you can decommission the old system through the NetApp Support Site.
 ---
 

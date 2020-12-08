@@ -1,7 +1,7 @@
 ---
-sidebar: sidebar
-permalink: arl-auto-app_verifying_the_health_of_the_metrocluster_configuration.html
-keywords: verifying, health, metrocluster, configuration, fabric
+sidebar: upgrade-controller_sidebar
+permalink: upgrade-controller/arl-auto-app_verifying_the_health_of_the_metrocluster_configuration.html
+keywords: verifying, health, metrocluster, configuration, fabric, mcc
 summary: Before starting upgrade on a Fabric MetroCluster configuration.
 ---
 

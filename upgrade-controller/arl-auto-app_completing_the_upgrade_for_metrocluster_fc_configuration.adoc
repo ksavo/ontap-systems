@@ -1,7 +1,7 @@
 ---
-sidebar: sidebar
-permalink: arl-auto-app_completing_the_upgrade_for_metrocluster_fc_configuration.html
-keywords: Completing, upgrade, Metrocluster, FC, configuration, Mismatch, controller, models
+sidebar: upgrade-controller_sidebar
+permalink: upgrade-controller/arl-auto-app_completing_the_upgrade_for_metrocluster_fc_configuration.html
+keywords: completing, upgrade, metrocluster, fc, configuration, mismatch, controller, models
 summary: For a MetroCluster FC configuration, you must replace the disaster recovery/failover site nodes.
 ---
 

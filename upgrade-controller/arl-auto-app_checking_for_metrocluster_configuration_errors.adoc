@@ -1,7 +1,7 @@
 ---
-sidebar: sidebar
-permalink: arl-auto-app_checking_for_metrocluster_configuration_errors.html
-keywords: metrocluster, configuration, errors, Config, Advisor, NetaApp, Support, Site
+sidebar: upgrade-controller_sidebar
+permalink: upgrade-controller/arl-auto-app_checking_for_metrocluster_configuration_errors.html
+keywords: metrocluster, configuration, errors, config, advisor, netapp, support, site
 summary: You can use the Config Advisor tool available from the NetApp Support Site.
 ---
 

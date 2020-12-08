@@ -1,7 +1,7 @@
 ---
-sidebar: sidebar
-permalink: arl-auto-app_guidelines_for_upgrading_controllers_with_arl.html
-keywords: Guidelines, upgrading, controllers, ARL
+sidebar: upgrade-controller_sidebar
+permalink: upgrade-controller/arl-auto-app_guidelines_for_upgrading_controllers_with_arl.html
+keywords: guidelines, upgrading, controllers, ARL
 summary: To understand whether you can use ARL to upgrade a pair of controllers running ONTAP 9.8.
 ---
 

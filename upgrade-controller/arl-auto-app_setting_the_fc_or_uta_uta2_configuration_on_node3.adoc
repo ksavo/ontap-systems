@@ -1,7 +1,7 @@
 ---
-sidebar: sidebar
-permalink: arl-auto-app_setting_the_fc_or_uta_uta2_configuration_on_node3.html
-keywords: setting, FC, UTA, UTA2, configuration, node3
+sidebar: upgrade-controller_sidebar
+permalink: upgrade-controller/arl-auto-app_setting_the_fc_or_uta_uta2_configuration_on_node3.html
+keywords: setting, fc, uta, uta2 configuration, node
 summary: If node3 has onboard FC ports, onboard unified target adapter (UTA/UTA2) ports, or a UTA/UTA2 card.
 ---
 

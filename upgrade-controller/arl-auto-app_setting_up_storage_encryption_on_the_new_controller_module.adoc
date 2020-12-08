@@ -1,6 +1,6 @@
 ---
-sidebar: sidebar
-permalink: arl-auto-app_setting_up_storage_encryption_on_the_new_controller_module.html
+sidebar: upgrade-controller_sidebar
+permalink: upgrade-controller/arl-auto-app_setting_up_storage_encryption_on_the_new_controller_module.html
 keywords: storage, encryption, controller, module, node
 summary: If the replaced controller or the HA partner of the new controller uses Storage Encryption.
 ---

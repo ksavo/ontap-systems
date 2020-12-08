@@ -1,7 +1,7 @@
 ---
-sidebar: sidebar
-permalink: arl-auto-app_automating_the_controller_upgrade_process.html
-keywords: automating, controller, upgrade, process, network, port, HA,
+sidebar: upgrade-controller_sidebar
+permalink: upgrade-controller/arl-auto-app_automating_the_controller_upgrade_process.html
+keywords: automating, controller, upgrade, process, network, port, ha
 summary: During a controller upgrade, the controller is replaced with another controller.
 ---
 

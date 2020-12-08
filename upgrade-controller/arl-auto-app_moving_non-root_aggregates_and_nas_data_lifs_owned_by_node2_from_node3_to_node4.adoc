@@ -1,7 +1,7 @@
 ---
-sidebar: sidebar
-permalink: arl-auto-app_moving_non-root_aggregates_and_nas_data_lifs_owned_by_node2_from_node3_to_node4.html
-keywords: moving, non-root, aggregates, NAS, LIF, node2, node3, node4
+sidebar: upgrade-controller_sidebar
+permalink: upgrade-controller/arl-auto-app_moving_non-root_aggregates_and_nas_data_lifs_owned_by_node2_from_node3_to_node4.html
+keywords: moving, non-root, aggregates, nas, lif, node2, node3, node4
 summary: After you verify network configuration on node4 and before you relocate aggregates from node3 to node4.
 ---
 

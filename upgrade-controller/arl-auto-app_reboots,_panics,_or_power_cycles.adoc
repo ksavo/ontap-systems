@@ -1,8 +1,14 @@
 ---
-sidebar: sidebar
-permalink: arl-auto-app_reboots,_panics,_or_power_cycles.html
+sidebar: upgrade-controller_sidebar
+permalink: upgrade-controller/arl-auto-app_reboots,_panics,_or_power_cycles.html
 keywords: reboots, panics, power, cycles, node, crash
 summary: The system might crash – reboot, panic or go through a power cycle.
+=======
+sidebar: upgrade-controller_sidebar
+permalink: upgrade-controller/arl-auto-app_reboots,_panics,_or_power_cycles.html
+keywords: test
+summary: This is a test summary
+>>>>>>> 8e297277e6f4b70e682563da7e57876f3fa443e5
 ---
 
 = Reboots, panics, or power cycles

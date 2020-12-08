@@ -1,0 +1,19 @@
+---
+sidebar: upgrade-controller_sidebar
+permalink: upgrade-controller/arl-auto-app_stage_4_relocating_and_retiring_node2.html
+keywords: test
+summary: This is a test summary
+---
+
+= Stage 4 Relocating and retiring node2
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+//
+// This file was created with NDAC Version 2.0 (August 17, 2020)
+//
+// 2020-12-02 14:33:54.894294
+//

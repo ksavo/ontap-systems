@@ -1,7 +1,7 @@
 ---
-sidebar: sidebar
-permalink: arl-auto-app_getting_an_ip_address_of_an_external_key_management_server_for_storage_encryption.html
-keywords: IP, address, external, key, management, server, storage, encryption, upgrading, authentication
+sidebar: upgrade-controller_sidebar
+permalink: upgrade-controller/arl-auto-app_getting_an_ip_address_of_an_external_key_management_server_for_storage_encryption.html
+keywords: ip, address, external, key, management, server, storage, encryption, upgrading, authentication
 summary: After upgrading, you must immediately configure Storage Encryption.
 ---
 

@@ -1,7 +1,7 @@
 ---
-sidebar: sidebar
-permalink: arl-auto-app_using_aggregate_relocation_to_upgrade_controller_hardware_overview.html
-keywords: aggregate, relocation, upgrade, controller, hardware, ONTAP, non-root, ARL, HA
+sidebar: upgrade-controller_sidebar
+permalink: upgrade-controller/arl-auto-app_using_aggregate_relocation_to_upgrade_controller_hardware_overview.html
+keywords: aggregate, relocation, upgrade, controller, hardware, ontap, non-root, arl, ha, high, availability
 summary: You can nondisruptively upgrade the controller hardware on a pair of nodes running ONTAP 9.8.
 ---
 

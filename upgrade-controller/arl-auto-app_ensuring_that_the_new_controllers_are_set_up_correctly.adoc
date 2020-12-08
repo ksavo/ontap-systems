@@ -1,7 +1,7 @@
 ---
-sidebar: sidebar
-permalink: arl-auto-app_ensuring_that_the_new_controllers_are_set_up_correctly.html
-keywords: ensuring, controllers, HA, node3, node4, node2, LIF, cluster
+sidebar: upgrade-controller_sidebar
+permalink: upgrade-controller/arl-auto-app_ensuring_that_the_new_controllers_are_set_up_correctly.html
+keywords: ensuring, controllers, ha, node3, node4, node2, lif, cluster, high, availability
 summary: To ensure correct setup, you must enable the HA pair.
 ---
 

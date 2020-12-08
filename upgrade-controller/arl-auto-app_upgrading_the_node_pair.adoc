@@ -1,7 +1,7 @@
 ---
-sidebar: sidebar
-permalink: arl-auto-app_upgrading_the_node_pair.html
-keywords: upgrading, node pair, prepare, original, decomission
+sidebar: upgrade-controller_sidebar
+permalink: upgrade-controller/arl-auto-app_upgrading_the_node_pair.html
+keywords: upgrading, node pair, prepare, original, decommission
 summary: To upgrade the node pair.
 ---
 

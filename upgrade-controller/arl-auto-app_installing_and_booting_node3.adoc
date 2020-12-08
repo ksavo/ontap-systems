@@ -1,7 +1,7 @@
 ---
-sidebar: sidebar
-permalink: arl-auto-app_installing_and_booting_node3.html
-keywords: installing, booting, node3, ONTAP
+sidebar: upgrade-controller_sidebar
+permalink: upgrade-controller/arl-auto-app_installing_and_booting_node3.html
+keywords: installing, booting, node3, ontap
 summary: You must install node3 in the rack, transfer node1's connections to node3, boot node3, and install ONTAP.
 ---
 
@@ -25,7 +25,11 @@ You must install node3 in the rack, transfer node1's connections to node3, boot 
 
 The relocation operation is paused at the beginning of this stage. This process is largely automated; the operation pauses to allow you to check its status. You must manually resume the operation. In addition, you must verify the SAN LIFs have successfully moved to node3.
 
+<<<<<<< HEAD
 You need to netboot node3 if it does not have the same version of ONTAP 9 that is installed on node1. After you install node3, boot it from the ONTAP 9 image stored on the web server. You can then download the correct files to the boot media device for subsequent system boots, by following the instructions in link:arl-auto-app_preparing_for_netboot.html[Preparing for netboot].
+=======
+You need to netboot node3 if it does not have the same version of ONTAP 9 that is installed on node1. After you install node3, boot it from the ONTAP 9 image stored on the web server. You can then download the correct files to the boot media device for subsequent system boots, by following the instructions in *xref* Preparing for netboot.
+>>>>>>> 8e297277e6f4b70e682563da7e57876f3fa443e5
 
 ==== Important:
 
@@ -79,7 +83,11 @@ WARNING: The battery is unfit to retain data during a power outage. This is like
 .. Allow the battery to charge and the boot process to complete.
 
 [NOTE]
+<<<<<<< HEAD
 Do not override the delay; failure to allow the battery to charge could result in a loss of data. See link:arl-auto-app_preparing_for_netboot.html[Preparing for netboot].
+=======
+Do not override the delay; failure to allow the battery to charge could result in a loss of data. See *xref *Preparing for netboot
+>>>>>>> 8e297277e6f4b70e682563da7e57876f3fa443e5
 
 . Configure the netboot connection by choosing one of the following actions.
 
@@ -116,7 +124,11 @@ accessible_directory>/netboot/kernel
 accessible_directory>/<ontap_version>_image.tgz
 |===
 
+<<<<<<< HEAD
 The <`path_to_the_web-accessible_directory`> should lead to where you downloaded the `<ontap_version>_image.tgz` in Step 1 in the section link:arl-auto-app_preparing_for_netboot.html[Preparing for netboot].
+=======
+The <`path_to_the_web-accessible_directory`> should lead to where you downloaded the `<ontap_version>_image.tgz` in Step 1 in the section *xref *Preparing for netboot.
+>>>>>>> 8e297277e6f4b70e682563da7e57876f3fa443e5
 
 [NOTE]
 Do not interrupt the boot.

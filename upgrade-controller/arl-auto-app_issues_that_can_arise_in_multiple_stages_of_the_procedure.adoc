@@ -1,7 +1,7 @@
 ---
-sidebar: sidebar
-permalink: arl-auto-app_issues_that_can_arise_in_multiple_stages_of_the_procedure.html
-keywords: issues, arise, mutliple, stages, procedure, NDAC
+sidebar: upgrade-controller_sidebar
+permalink: upgrade-controller/arl-auto-app_issues_that_can_arise_in_multiple_stages_of_the_procedure.html
+keywords: issues, arise, multiple, stages, procedure, ndac
 summary: Some issues can occur during different stages of the procedure.
 ---
 

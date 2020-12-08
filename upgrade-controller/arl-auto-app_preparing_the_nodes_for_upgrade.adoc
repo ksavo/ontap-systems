@@ -1,6 +1,6 @@
 ---
-sidebar: sidebar
-permalink: arl-auto-app_preparing_the_nodes_for_upgrade.html
+sidebar: upgrade-controller_sidebar
+permalink: upgrade-controller/arl-auto-app_preparing_the_nodes_for_upgrade.html
 keywords: preparing, nodes, upgrade
 summary: Begin the controller replacement process by entering the following command in the ONTAP command line.
 ---
@@ -175,6 +175,12 @@ When you set up a cluster, the setup wizard prompts you to enter the cluster-bas
 
 If you do not have new license keys, currently licensed features in the cluster are available to the new controller. However, using unlicensed features on the controller might put you out of compliance with your license agreement, so you should install the new license key or keys for the new controller after the upgrade is complete.
 
+<<<<<<< HEAD
 You can obtain new 2-character license keys for ONTAP 9.8 on the NetApp Support Site at link:mysupport.netapp.com[mysupport.netapp.com]. The keys are available in the *My Support* section under *Software licenses*. If the site does not have the license keys you need, you can contact your NetApp sales representative.
 
 For detailed information about licensing, see the *System Administration Reference* in the *XREF* ONTAP 9 Documentation Center.
+=======
+You can obtain new 2-character license keys for ONTAP 9.8 on the NetApp Support Site at *XREF *mysupport.netapp.com. The keys are available in the *My Support* section under *Software licenses*. If the site does not have the license keys you need, you can contact your NetApp sales representative.
+
+For detailed information about licensing, see the *System Administration Reference* in the *XREF *ONTAP 9 Documentation Center.
+>>>>>>> 8e297277e6f4b70e682563da7e57876f3fa443e5

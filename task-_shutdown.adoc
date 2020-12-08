@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar.html
-permalink: task_shutdown.html
+permalink: task-_shutdown.html
 keywords: AFF, FAS
 summary: Shutting down
 ---
