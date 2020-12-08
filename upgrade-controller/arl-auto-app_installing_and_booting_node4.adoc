@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar
 permalink: arl-auto-app_installing_and_booting_node4.html
-keywords:
-summary:
+keywords: installing, booting, node4, ONTAP
+summary: You must install node4 in the rack, transfer node2 connections to node4, boot node4, and install ONTAP.
 ---
 
 = Installing and booting node4
@@ -25,7 +25,7 @@ You must install node4 in the rack, transfer node2 connections to node4, boot no
 
 The relocation operation is paused at the beginning of this stage. This process is largely automated; the operation pauses to allow you to check its status. You must manually resume the operation. In addition, you must verify the SAN LIFs have successfully moved to node4.
 
-You need to netboot node34 if it does not have the same version of ONTAP 9 that is installed on node2. After you install node4, boot it from the ONTAP 9 image stored on the web server. You can then download the correct files to the boot media device for subsequent system boots, by following the instructions in *xref* Preparing for netboot. 
+You need to netboot node34 if it does not have the same version of ONTAP 9 that is installed on node2. After you install node4, boot it from the ONTAP 9 image stored on the web server. You can then download the correct files to the boot media device for subsequent system boots, by following the instructions in link:arl-auto-app_preparing_for_netboot.html[Preparing for netboot].
 
 ==== Important:
 
@@ -68,7 +68,7 @@ WARNING: The battery is unfit to retain data during a power outage. This is like
 .. Allow the battery to charge and the boot process to complete.*Attention*: Do not override the delay; failure to allow the battery to charge could result in a loss of data.
 
 [NOTE]
-Refer to *xref *Preparing for netboot.  
+Refer to link:arl-auto-app_preparing_for_netboot.html[Preparing for netboot]..
 
 . Configure the netboot connection by choosing one of the following actions.
 
@@ -84,7 +84,7 @@ ifconfig e0M -auto
 |Not running
 |Manually configure the connection by entering the following command at the boot environment prompt:
 ifconfig e0M -addr=<filer_addr> -mask=<netmask> -gw=<gateway> - dns=<dns_addr> domain=<dns_domain>
-<filer_addr> is the IP address of the storage system. <netmask> is the network mask of the storage system. 
+<filer_addr> is the IP address of the storage system. <netmask> is the network mask of the storage system.
 <gateway> is the gateway for the storage system.
 <dns_addr> is the IP address of a name server on your network.
 <dns_domain> is the DNS domain name. If you use this optional parameter, you do not need a fully qualified domain name in the netboot server URL; you need only the server's host name.
@@ -105,7 +105,7 @@ accessible_directory>/netboot/kernel
 accessible_directory>/<ontap_version>_image.tgz
 |===
 
-The <`path_to_the_web-accessible_directory`> should lead to where you downloaded the `<ontap_version>_image.tgz` in Step 1 in the section *xref *Preparing for netboot. 
+The <`path_to_the_web-accessible_directory`> should lead to where you downloaded the `<ontap_version>_image.tgz` in Step 1 in the section link:arl-auto-app_preparing_for_netboot.html[Preparing for netboot]..
 
 [NOTE]
 Do not interrupt the boot.
@@ -144,7 +144,7 @@ The controller module reboots but stops at the boot menu because the boot device
 The following example shows the output of the `ha-config show` command:
 
 ....
-Chassis HA configuration: ha 
+Chassis HA configuration: ha
 Controller HA configuration: ha
 ....
 
@@ -153,13 +153,13 @@ System records in a PROM whether they are in an HA pair or stand-alone configura
 
 . If the controller and chassis are not configured as HA, use the following commands to correct the configuration:
 +
-`ha- config modify controller` 
+`ha- config modify controller`
 +
 `ha ha- config modify chassis ha`
 +
 If you have a MetroCluster configuration, use the following commands to modify the controller and chassis:
 +
-`ha-config modify controller mcc` 
+`ha-config modify controller mcc`
 +
 `ha-config modify chassis mcc`
 
@@ -207,7 +207,7 @@ Interrupt the autoboot by pressing Ctrl-C at the boot environment prompt.
 |If your system... |Description
 
 |Has disks and no back-end storage
-|Go to xref Step 23 
+|Go to xref Step 23
 |Is a V-Series system or a system with FlexArray Virtualization software connected to storage arrays
 |Go to section xref Setting the FC or UTA/UTA2 configuration on node4 and complete the subsections in this section.
 Return to this section and complete the remaining steps, beginning with xref Step 23.
@@ -230,11 +230,11 @@ Installing a new controller module changes the WWPN values associated with each 
 . If your configuration uses switch-based zoning, adjust the zoning to reflect the new WWPN values.
 . If NetApp Storage Encryption (NSE) is in use on this configuration, the `setenv` `bootarg.storageencryption.support` command must be set to `true`, and the `kmip.init.maxwait` variable needs to be set to `off` to avoid a boot loop after the node1 configuration is loaded:
 +
-`setenv bootarg.storageencryption.support true` 
+`setenv bootarg.storageencryption.support true`
 +
 `setenv kmip.init.maxwait off`
 
-. Boot node into boot menu by using the following command: 
+. Boot node into boot menu by using the following command:
 +
 `boot_ontap menu`
 +
@@ -245,5 +245,3 @@ If you do not have FC or UTA/UTA2 configuration, execute Step 15 so that node4 c
 ==== Related information
 
 *XREF* ONTAP 9 Documentation Center
-
-

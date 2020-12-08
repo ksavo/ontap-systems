@@ -1,11 +1,11 @@
 ---
 sidebar: sidebar
-permalink: arl-auto-app_stage_5_installing_and_booting_node4_overview.html
-keywords:
-summary:
+permalink: arl-auto-app_stage_5_installing_and_booting_node4.html
+keywords: installing, booting, node4, node2, node-management
+summary: During Stage 5, you install and boot node4, map the cluster and node-management ports from node2 to node4.
 ---
 
-= Overview
+= Stage 5 Installing and booting node4
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -23,10 +23,8 @@ During Stage 5, you install and boot node4, map the cluster and node-management 
 
 *Steps*
 
-. *Xref *Installing and booting node4 
-. *Xref *Setting the FC or UTA/UTA2 configuration on node4 
-. *Xref *Verifying the node4 installation 
-. *Xref *Restoring key-manager configuration on node4 
-. *Xref *Moving non-root aggregates and NAS data LIFs owned by node2 from node3 to node4 
-
-
+. link:arl-auto-app_installing_and_booting_node4.html[Installing and booting node4]
+. link:arl-auto-app_setting_the_fc_or_uta_uta2_configuration_on_node4.html[Setting the FC or UTA/UTA2 configuration on node4]
+. link:arl-auto-app_verifying_the_node4_installation.html[Verifying the node4 installation]
+. link:arl-auto-app_restoring_key-manager_configuration_on_node4.html[Restoring key-manager configuration on node4]
+. link:arl-auto-app_moving_non-root_aggregates_and_nas_data_lifs_owned_by_node2_from_node3_to_node4.html[Moving non-root aggregates and NAS data LIFs owned by node2 from node3 to node4]

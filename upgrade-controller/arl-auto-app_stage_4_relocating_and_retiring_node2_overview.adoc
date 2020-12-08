@@ -1,11 +1,11 @@
 ---
 sidebar: sidebar
-permalink: arl-auto-app_stage_4_relocating_and_retiring_node2_overview.html
-keywords:
-summary:
+permalink: arl-auto-app_stage_4_relocating_and_retiring_node2.html
+keywords: relocating, retiring, node2, LIF, node3
+summary: During Stage 4, all non-root aggregates are relocated from node2 to node3.
 ---
 
-= Overview
+= Stage 4 Relocating and retiring node2
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -23,7 +23,5 @@ During Stage 4, all non-root aggregates are relocated from node2 to node3; the n
 
 *Steps*
 
-. *xref* Relocating non-root aggregates and NAS data LIFs from node2 to node3 
-. *xref* Retiring node2
-
-
+. link:arl-auto-app_relocating_non-root_aggregates_and_nas_data_lifs_from_node2_to_node3.html[Relocating non-root aggregates and NAS data LIFs from node2 to node3]
+. link:arl-auto-app_retiring_node2.html[Retiring node2]

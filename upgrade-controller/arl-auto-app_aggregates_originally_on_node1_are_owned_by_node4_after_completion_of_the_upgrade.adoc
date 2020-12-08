@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar
 permalink: arl-auto-app_aggregates_originally_on_node1_are_owned_by_node4_after_completion_of_the_upgrade.html
-keywords:
-summary:
+keywords: aggregate, node1, completion, upgrade, node2, node3, node4, node, aggr1, aggr2, aggr3, aggr
+summary: At the end of the upgrade procedure, node3 should be the new home node of aggregates.
 ---
 
 = Aggregates originally on node1 are owned by node4 after completion of the upgrade
@@ -41,9 +41,9 @@ You can fix the incorrect ownership problem after Stage 6,  after you have enabl
 +
 `storage aggregate show -nodes <node4> -is-home true`
 +
-To identify aggregates that were not correctly relocated, refer to the list of aggregates with the home owner of node1 that you obtained in the section *xref* Preparing the nodes for upgrade and compare it with output of the above command.
+To identify aggregates that were not correctly relocated, refer to the list of aggregates with the home owner of node1 that you obtained in the section link:arl-auto-app_preparing_the_nodes_for_upgrade.html[Preparing the nodes for upgrade] and compare it with output of the above command.
 
-. Compare the output of Step 1 with the output you captured for node1 in the section *xref* Preparing the nodes for upgrade and note any aggregates that were not correctly relocated.
+. Compare the output of Step 1 with the output you captured for node1 in the section link:arl-auto-app_preparing_the_nodes_for_upgrade.html[Preparing the nodes for upgrade] and note any aggregates that were not correctly relocated.
 . Relocate the aggregates left behind on node4 by using the following command:
 +
 `storage aggregate relocation start -node <node4> - aggr <aggr_node_1> -destination <node3>`
@@ -57,5 +57,3 @@ Do not use the `- ndo-controller-upgrade` parameter during this relocation.
 `<aggr1,aggr2,aggr3...>` is the list of aggregates that had node1 as the original home owner.
 +
 Aggregates that do not have node3 as home owner can be relocated to node3 using the same relocation command in Step 3.
-
-

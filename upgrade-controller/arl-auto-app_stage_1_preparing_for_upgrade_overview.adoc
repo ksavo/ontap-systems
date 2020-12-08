@@ -1,11 +1,11 @@
 ---
 sidebar: sidebar
 permalink: arl-auto-app_stage_1_preparing_for_upgrade_overview.html
-keywords:
-summary:
+keywords: preparing, upgrade, overview, precheck, node
+summary: During Stage 1, you must prepare the nodes for the upgrade and run a series of prechecks.
 ---
 
-= Overview
+= Stage 1 Preparing for upgrade
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -23,7 +23,5 @@ During Stage 1, you must prepare the nodes for the upgrade and run a series of p
 
 *Steps*
 
-. *xref *Preparing the nodes for upgrade 
-. *xref* Getting an IP address of an external key management server for storage encryption 
-
-
+. link:arl-auto-app_preparing_the_nodes_for_upgrade.html[Preparing the nodes for upgrade]
+. link:arl-auto-app_getting_an_ip_address_of_an_external_key_management_server_for_storage_encryption.html[Getting an IP address of an external key management server for storage encryption]

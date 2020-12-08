@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar
 permalink: arl-auto-app_relocating_non-root_aggregates_and_nas_data_lifs_from_node2_to_node3.html
-keywords:
-summary:
+keywords: Relocating, non-root, aggregates, NAS, LIF, node2, node3
+summary: Before you can replace node2 with node4, you must relocate the non-root aggregates that are owned by node2 to node3.
 ---
 
 = Relocating non-root aggregates and NAS data LIFs from node2 to node3
@@ -46,7 +46,7 @@ The following example shows that the non-root aggregates on node2 are online:
 cluster::> storage aggregate show -node node3 state online -root false
 Aggregate     Size        Available   Used%   State #Vols Nodes  RAID   Status
 --------- -     ----- ----    ---------   ------  -----   -----  ----- -   ---- - --  ------
-aggr_1      744.9GB      744.8GB 0% online  5 node2  raid_dp  normal 
+aggr_1      744.9GB      744.8GB 0% online  5 node2  raid_dp  normal
 aggr_2      825.0GB    825.0GB 0% online  1 node2  raid_dp  normal
 2 entries were displayed.
 ....
@@ -76,5 +76,3 @@ The `<vserver-name>` to use with this command is found in the output of the prev
 . Verify that there are no data LIFs remaining on node2 by using the following command and examining the output:
 +
 `network interface show - curr-node <node2> -role data`
-
-

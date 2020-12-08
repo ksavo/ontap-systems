@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar
 permalink: arl-auto-app_preparing_for_netboot.html
-keywords:
-summary:
+keywords: preparing, netboot, NDAC, ONTAP, 9, HTTP
+summary: After you physically rack node3 and node4 later in the procedure, you might need to netboot them.
 ---
 
 = Preparing for netboot
@@ -24,7 +24,7 @@ After you physically rack node3 and node4 later in the procedure, you might need
 ==== Before you begin
 
 * Verify that you can access a HTTP server with the system.
-* You need to download the necessary system files for your platform and the correct version of ONTAP from the NetApp Support Site at *XREF *mysupport.netapp.com.
+* You need to download the necessary system files for your platform and the correct version of ONTAP from the NetApp Support Site at link:mysupport.netapp.com[mysupport.netapp.com].
 
 ==== About this task
 

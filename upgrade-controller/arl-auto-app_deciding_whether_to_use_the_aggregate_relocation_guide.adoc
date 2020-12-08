@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar
 permalink: arl-auto-app_deciding_whether_to_use_the_aggregate_relocation_guide.html
-keywords:
-summary:
+keywords: deciding, aggregate, relocation, guide, storage, controllers, administrators, ONTAP, HA
+summary: This guide describes how to upgrade the storage controllers in an HA pair with new controllers.
 ---
 
 = Deciding whether to use the aggregate relocation guide
@@ -29,7 +29,7 @@ You should use this guide under the following circumstances:
 * If you are upgrading a MetroCluster configuration, it is a 4-node or higher FC configuration, and all nodes are running ONTAP 9.8.For upgrading MetroCluster IP configurations, refer to MetroCluster Upgrade, Transition, and Expansion Guide
 
 [NOTE]
-You can use NetApp Storage Encryption (NSE) and NetApp Volume Encryption (NVE) with this procedure.  
+You can use NetApp Storage Encryption (NSE) and NetApp Volume Encryption (NVE) with this procedure.
 
 The following table shows the supported model matrix for the controller upgrade.
 
@@ -49,10 +49,4 @@ The following table shows the supported model matrix for the controller upgrade.
 [NOTE]
 If your controller upgrade model combination is not in the above table, contact technical support.
 
-If you prefer a different method of upgrading the controller hardware and are willing to do volume moves, use the Controller Hardware Upgrade Express Guide instead. See the ONTAP 9 Documentation Center to access ONTAP 9 product documentation.
-
-==== Related information
-
-*XREF* Controller Hardware Upgrade Express Guide 
-
-*XREF* ONTAP 9 Documentation Center
+If you prefer a different method of upgrading the controller hardware and are willing to do volume moves, use the *xref* Controller Hardware Upgrade Express Guide instead. See the *xref* ONTAP 9 Documentation Center to access ONTAP 9 product documentation.
