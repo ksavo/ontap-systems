@@ -5,7 +5,7 @@ keywords: deciding, aggregate, relocation, guide, storage, controllers, administ
 summary: This guide describes how to upgrade the storage controllers in an HA pair with new controllers.
 ---
 
-= Deciding whether to use the aggregate relocation guide
+= Decide whether to use the aggregate relocation guide
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -26,7 +26,9 @@ You should use this guide under the following circumstances:
 * You are running ONTAP 9.8
 * You do not want to add the new controllers as a new HA pair to the cluster and migrate the data using volume moves.
 * You are experienced in administering ONTAP and are comfortable with the risks of working in the diagnostic privilege mode.
-* If you are upgrading a MetroCluster configuration, it is a 4-node or higher FC configuration, and all nodes are running ONTAP 9.8.For upgrading MetroCluster IP configurations, refer to MetroCluster Upgrade, Transition, and Expansion Guide
+* If you are upgrading a MetroCluster configuration, it is a 4-node or higher FC configuration, and all nodes are running ONTAP 9.8.
+
+For upgrading MetroCluster IP configurations, refer to the link:http://ie-docs.rtp.openeng.netapp.com/ontap-9_chowchow/topic/com.netapp.doc.dot-mcc-upgrade/home.html[MetroCluster Upgrade, Transition, and Expansion Guide^].
 
 NOTE: You can use NetApp Storage Encryption (NSE) and NetApp Volume Encryption (NVE) with this procedure.
 
@@ -42,9 +44,11 @@ The following table shows the supported model matrix for the controller upgrade.
 |FAS8200
 |FAS8700, FAS9000, FAS8300
 |AFF A300
-|AFF A700, AFF A800, AFF A400
+|AFF A700, AFF A800*, AFF A400
 |===
 
 NOTE: If your controller upgrade model combination is not in the above table, contact technical support.
+
+* For the additional steps needed for A800 systems, go to the step that references A800 in section link:setting_the_fc_or_uta_uta2_configuration_on_node3.html#Check-and-configure-UTA/UTA2-ports-on-node3[Checking and configuring UTA/UTA2 ports on node3], or link:setting_the_fc_or_uta_uta2_configuration_on_node4.html#Check-and-configure-UTA/UTA2-ports-on-node4[Checking and configuring UTA/UTA2 ports on node4].
 
 If you prefer a different method of upgrading the controller hardware and are willing to do volume moves, use the link:https://docs.netapp.com/platstor/topic/com.netapp.doc.hw-upgrade-controller/home.html[Controller Hardware Upgrade Express Guide] instead. See the link:https://docs.netapp.com/ontap-9/index.jsp[ONTAP 9 Documentation Center] to access ONTAP 9 product documentation.

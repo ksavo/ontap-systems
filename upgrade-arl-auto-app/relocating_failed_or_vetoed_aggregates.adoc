@@ -5,7 +5,7 @@ keywords: relocating, failed, vetoed, aggregates, relocation, operation
 summary: If any aggregates fail to relocate or are vetoed, you must manually relocate the aggregates.
 ---
 
-= Relocating failed or vetoed aggregates
+= Relocate failed or vetoed aggregates
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -35,6 +35,7 @@ The relocation operation will have paused due to the error.
 . When prompted, enter `y.`
 . You can force relocation by using one of the following methods:
 
+[cols="35,65"]
 |===
 |Option |Description
 

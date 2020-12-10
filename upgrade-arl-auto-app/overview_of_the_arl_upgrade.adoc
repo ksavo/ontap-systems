@@ -29,26 +29,26 @@ Each aggregate has a home owner and current owner. The home owner is the actual 
 |===
 | Stage | Steps
 
-| Stage 1: Preparing for the upgrade
+| Stage 1: Prepare for upgrade
 a| Run prechecks to verify that the operation can be performed.
 
-Prepare for netbooting (optional).
 Aggregate ownership at the end of Stage 1:
 
 * Node1 is the home owner and current owner of the node1 aggregates.
 * Node2 is the home owner and current owner of the node2 aggregates.
 
-|Stage 2: Relocating and retiring node1
+|Stage 2: Relocate and retire node1
 a|Move non-root aggregates from node1 to node2.
 Move non-SAN data LIFs owned by node1 to node2.
 Retire node1.
+Prepare for netbooting (optional).
 
 Aggregate ownership at the end of Stage 2:
 
 * Node2 is the current owner of node1 aggregates.
 * Node2 is the home owner and current owner of node2 aggregates.
 
-|Stage 3: Installing and booting node3
+|Stage 3: Install and boot node3
 a|Install and boot node3.
 Set the FC or (converged network adapter) CNA configuration.
 Map ports from node1 to node3.
@@ -61,7 +61,7 @@ Aggregate ownership at the end of Stage 3:
 * Node3 is the home owner and current owner of node1 aggregates.
 * Node2 is the home owner and current owner of node2 aggregates.
 
-|Stage 4: Relocating and retiring node2
+|Stage 4: Relocate and retire node2
 a|Relocate non-root aggregates from node2 to node3.
 Move non-SAN data LIFs owned by node2 to node 3.
 Retire node2.
@@ -72,7 +72,7 @@ Aggregate ownership at the end of Stage 4:
 * Node2 is the home owner of node2 aggregates.
 * Node3 is the current owner of node2 aggregates.
 
-|Stage 5: Installing and booting node4
+|Stage 5: Install and boot node4
 a|Install and boot node4.
 Set the FC or CNA configuration on node4.
 Map ports from node2 to node4.
@@ -84,7 +84,7 @@ Aggregate ownership at the end of Stage 5:
 * Node3 is the home owner and current owner of the aggregates that originally belonged to node1.
 * Node4 is the home owner and current owner of aggregates that originally belonged to node2.
 
-|Stage 6: Completing the upgrade
+|Stage 6: Complete the upgrade
 |Verify the system is set up correctly.
 Set up Storage Encryption on the new controller module.
 Resume NetApp SnapMirror operations if needed.

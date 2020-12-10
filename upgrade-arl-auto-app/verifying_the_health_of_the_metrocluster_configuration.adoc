@@ -5,7 +5,7 @@ keywords: verifying, health, metrocluster, configuration, fabric, mcc
 summary: Before starting upgrade on a Fabric MetroCluster configuration.
 ---
 
-= Verifying the health of the MetroCluster configuration
+= Verify the health of the MetroCluster configuration
 :hardbreaks:
 :nofooter:
 :icons: font

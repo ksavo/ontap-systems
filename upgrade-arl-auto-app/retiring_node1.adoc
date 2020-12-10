@@ -5,7 +5,7 @@ keywords: retiring, node
 summary: To retire node1, you resume the automated operation to disable the HA pair with node2 and shut Lonode1 down properly.
 ---
 
-= Retiring node1
+= Retire node1
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -19,7 +19,7 @@ summary: To retire node1, you resume the automated operation to disable the HA p
 //
 
 [.lead]
-To retire node1, you resume the automated operation to disable the HA pair with node2 and shut Lonode1 down properly. You must later remove node1 from the rack or chassis.
+To retire node1, you resume the automated operation to disable the HA pair with node2 and shut node1 down properly. You must later remove node1 from the rack or chassis.
 
 .Steps
 

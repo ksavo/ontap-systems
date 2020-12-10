@@ -5,7 +5,7 @@ keywords: relocating, retiring, node1, lif
 summary: Relocating and retiring node1
 ---
 
-= Stage 2 Relocating and retiring node1
+= Overview
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -23,6 +23,6 @@ During Stage 2, you relocate the node1 aggregates and LIFs to node2, record node
 
 .Steps
 
-. link:arl-auto-app_relocating_non-root_aggregates_and_nas_data_lifs_owned_by_node1_to_node2.html[Relocating non-root aggregates and NAS data LIFs owned by node1 to node2]
-. link:arl-auto-app_retiring_node1.html[Retiring node1]
-. link:arl-auto-app_preparing_for_netboot.html[Preparing for netboot]
+. link:arl-auto-app_relocating_non-root_aggregates_and_nas_data_lifs_owned_by_node1_to_node2.html[Relocate non-root aggregates and NAS data LIFs owned by node1 to node2]
+. link:arl-auto-app_retiring_node1.html[Retire node1]
+. link:arl-auto-app_preparing_for_netboot.html[Preparefor netboot]

@@ -5,7 +5,7 @@ keywords: setting, fc, uta, UTA2, configuration, node4, target, adapter, ports
 summary:
 ---
 
-= Setting the FC or UTA/UTA2 configuration on node4
+= Set the FC or UTA/UTA2 configuration on node4
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -32,7 +32,7 @@ NOTE: If node4 does not have onboard FC ports, onboard UTA/UTA2 ports, or a UTA/
 * link:setting_the_fc_or_uta_uta2_configuration_on_node4.html#configuring-fc-ports-on-node4[Configuring FC ports on node4]
 * link:setting_the_fc_or_uta_uta2_configuration_on_node4.html#checking-and-configuring-utauta2-ports-on-node4[Checking and configuring UTA/UTA2 ports on node4]
 
-== Configuring FC ports on node4
+== Configure FC ports on node4
 
 If node4 has FC ports, either onboard or on an FC adapter, you must set port configurations on the node before you bring it into service because the ports are not preconfigured. If the ports are not configured, you might experience a disruption in service.
 
@@ -106,7 +106,7 @@ a|* Go to link:setting_the_fc_or_uta_uta2_configuration_on_node4.html#checking-a
 * Skip the section link:setting_the_fc_or_uta_uta2_configuration_on_node4.html#checking-and-configuring-utauta2-ports-on-node4[Checking and configuring UTA/UTA2 ports on node4] if node4 does not have a UTA/UTA2 card or UTA/UTA2 onboard ports, return to the section link:installing_and_booting_node4.html[Installing and booting node4], and resume the section at xref Step 23.
 |===
 
-== Checking and configuring UTA/UTA2 ports on node4
+== Check and configure UTA/UTA2 ports on node4
 
 If node4 has onboard UTA/UTA2 ports or a UTA/UTA2A card, you must check the configuration of the ports and configure them, depending on how you want to use the upgraded system.
 
