@@ -21,7 +21,7 @@ summary: At the end of the upgrade procedure, node3 should be the new home node 
 [.lead]
 At the end of the upgrade procedure, node3 should be the new home node of aggregates that originally had node1 as the home node. You can relocate them after the upgrade.
 
-==== About this task
+.About this task
 
 Aggregates might fail to relocate properly, that is, they have node1 as their home node instead of node3,  under the following circumstances:
 

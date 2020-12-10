@@ -25,12 +25,11 @@ To understand whether you can use ARL to upgrade a pair of controllers running O
 
 When you upgrade a pair of nodes using this ARL procedure for ONTAP 9.8, you must verify that ARL can be performed on the original and replacement controllers.
 
-You should check the size of all defined aggregates and number of disks supported by the original system. You must then compare the aggregate sizes and number of disks supported to the aggregate size and number of disks supported by the new system. This information is available in the *Hardware Universe* at link:hwu.netapp.com[hwu.netapp.com]. The aggregate size and the number of disks supported by the new system must be equal to or greater than the aggregate size and number of disks supported by the original system.
+You should check the size of all defined aggregates and number of disks supported by the original system. You must then compare the aggregate sizes and number of disks supported to the aggregate size and number of disks supported by the new system. This information is available in the link:hwu.netapp.com[Hardware Universe]. The aggregate size and the number of disks supported by the new system must be equal to or greater than the aggregate size and number of disks supported by the original system.
 
-You should validate in the cluster mixing rules whether new nodes can become part of the cluster with the existing nodes when the original controller is replaced. For more information about cluster mixing rules, see the *Hardware Universe* at link:hwu.netapp.com[hwu.netapp.com].
+You should validate in the cluster mixing rules whether new nodes can become part of the cluster with the existing nodes when the original controller is replaced. For more information about cluster mixing rules, see the link:hwu.netapp.com[Hardware Universe].
 
-[NOTE]
-If you are upgrading a system that supports internal drives (for example an FAS2700 or AFF A250) but does NOT have internal drives, use the procedure in *Using Aggregate Relocation to Manually Upgrade Controller Hardware*
+NOTE: If you are upgrading a system that supports internal drives (for example an FAS2700 or AFF A250) but does NOT have internal drives, use the procedure in *Using Aggregate Relocation to Manually Upgrade Controller Hardware*
 
 Controller upgrade using ARL is supported on systems configured with SnapLock Enterprise and SnapLock Compliance volumes.
 
@@ -44,11 +43,11 @@ You cannot perform the following upgrades:
 
 * To replacement controllers that do not support the disk shelves connected to the original controllers
 +
-See the *Hardware Universe* at link:hwu.netapp.com[hwu.netapp.com] for disk-support information.
+See the link:hwu.netapp.com[Hardware Universe] for disk-support information.
 
 * To entry level controllers with internal drives, for example: an FAS 2500.
 +
-If you want to upgrade entry level controllers with internal drives, see the procedure *Upgrading a pair of nodes running clustered Data ONTAP by moving volumes* in *XREF* *Controller Hardware Upgrade Express Guide*
+If you want to upgrade entry level controllers with internal drives, see the procedure *Upgrading a pair of nodes running clustered Data ONTAP by moving volumes* in the link:https://docs.netapp.com/platstor/topic/com.netapp.doc.hw-upgrade-controller/home.html[Controller Hardware Upgrade Express Guide].
 
 ==== Troubleshooting
 

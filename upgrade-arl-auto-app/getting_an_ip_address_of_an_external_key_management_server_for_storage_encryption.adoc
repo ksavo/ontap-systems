@@ -52,7 +52,7 @@ After upgrading, you must immediately configure Storage Encryption and establish
 
 With ONTAP 9.8, you can use Key Management Interoperability Protocol (KMIP) servers to manage authentication keys.
 
-*Steps*
+.Steps
 
 . Add a new controller by using the following command:
 +
@@ -82,7 +82,7 @@ With ONTAP 9.8, you can use Key Management Interoperability Protocol (KMIP) serv
 
 You can use the OKM to manage encryption keys. If you plan to use OKM, you must record the passphrase and backup material before the beginning the upgrade.
 
-*Steps*
+.Steps
 
 . Save the passphrase to a secure location.
 . Create a backup for recovery purposes. Run the following command and save the output.:
@@ -93,17 +93,14 @@ You can use the OKM to manage encryption keys. If you plan to use OKM, you must 
 
 Before you proceed with the replacement steps, you must confirm that all the SnapMirror relationships are quiesced. When a SnapMirror relationship is quiesced, it remains quiesced across reboots and failovers.
 
-*Steps*
+.Steps
 
 . Verify the SnapMirror relationship status on the destination cluster by using the following command:
 +
 `snapmirror show`
-
-[NOTE]
-If the status is `Transferring`, you must abort those transfers by using the following command:
-
-`snapmirror abort -destination-vserver <vserver name>`
-
++
+NOTE: If the status is `Transferring`, you must abort those transfers by using the following command: `snapmirror abort -destination-vserver <vserver name>`
++
 The abort fails if the SnapMirror relationship is not in the `Transferring` state.
 
 . Quiesce all relationships between the cluster by using the following command:

@@ -23,17 +23,17 @@ After upgrading, you can decommission the old system through the NetApp Support 
 
 .Steps
 
-. Navigate to the NetApp Support Site at *XREF* mysupport.netapp.com and log in.
-. Select `Products` `> My Products` from the menu.
-. On the `View Installed Systems` page, choose which `Selection Criteria` you want to use to display information about your system.
+. Navigate to the link:https://mysupport.netapp.com[NetApp Support Site] and log in.
+. Select *Products > My Products* from the menu.
+. On the *View Installed Systems* page, choose which *Selection Criteria* you want to use to display information about your system.
 +
 You can choose one of the following to locate your system:
 
-** Serial Number (located on the back of the unit)
-** Serial Numbers for My Location
+* Serial Number (located on the back of the unit)
+* Serial Numbers for My Location
 
-. Click `Go!`
+. Click *Go!*
 +
 A table displays cluster information, including the serial numbers.
 
-. Locate the cluster in the table and select `Decommission this system` from the Product Tool Set drop-down menu.
+. Locate the cluster in the table and select *Decommission this system* from the Product Tool Set drop-down menu.

@@ -31,6 +31,6 @@ To retire node1, you resume the automated operation to disable the HA pair with 
 +
 `system controller replace show-details`
 
-==== After you finish
+.After you finish
 
 You can decommission node1 after the upgrade is completed. See link:arl-auto-app_decommissioning_the_old_system.html[Decommissioning the old system].

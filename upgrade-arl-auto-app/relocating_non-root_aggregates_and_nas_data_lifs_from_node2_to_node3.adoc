@@ -21,16 +21,15 @@ summary: Before you can replace node2 with node4, you must relocate the non-root
 [.lead]
 Before you can replace node2 with node4, you must relocate the non-root aggregates that are owned by node2 to node3.
 
-==== Before you begin
+.Before you begin
 
 After the post-checks are completed from the previous stage, the resource release for node2 starts automatically. The non-root aggregates and non-SAN data LIFs are migrated from node2 to node3.
 
-==== About this task
+.About this task
 
 Remote LIFs handle traffic to SAN LUNs during the upgrade procedure. Moving SAN LIFs is not necessary for cluster or service health during the upgrade.
 
-[NOTE]
-The home owner for the aggregates and LIFs are not modified; only the current owner is modified.
+NOTE: The home owner for the aggregates and LIFs are not modified; only the current owner is modified.
 
 After the aggregates and LIFs are migrated, the operation is paused for verification purposes. At this stage, you must verify whether or not all the non-root aggregates and non-SAN data LIFs are migrated to node3.
 

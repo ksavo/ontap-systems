@@ -43,7 +43,7 @@ You need the following tools to perform the upgrade:
 |Contains instructions for installing and cabling the new system
 |FlexArray Virtualization Installation Requirements and Reference Guide
 |Contains cabling instructions and other information for FlexArray Virtualization systems
-|Hardware Universe at XREF hwu.netapp.com
+|link:https://hwu.netapp.com[Hardware Universe]
 |Contains information about system LEDs and system messages to aid troubleshooting
 |The appropriate disk shelf guide
 |Contains instructions for installing and monitoring disk shelves and replacing disk shelf devices

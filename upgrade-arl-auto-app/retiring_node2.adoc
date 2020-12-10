@@ -21,16 +21,14 @@ summary: To retire node2, you need to shut node2 down properly and remove it fro
 [.lead]
 To retire node2, you need to shut node2 down properly and remove it from the rack or chassis.
 
-==== Step
+.Steps
 
-Resume the operation by using the following command:
-
+. Resume the operation by using the following command:
++
 `system controller replace resume`
-
-==== Result
-
++
 The node halts automatically.
 
-==== After you finish
+.After you finish
 
 You can decommission node2 after the upgrade is completed. See link:arl-auto-app_decommissioning_the_old_system.html[Decommissioning the old system].

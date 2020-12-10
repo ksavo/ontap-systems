@@ -21,16 +21,15 @@ summary: Before you can replace node1 with node3, you must move the non-root agg
 [.lead]
 Before you can replace node1 with node3, you must move the non-root aggregates and NAS data LIFs from node1 to node2 before eventually moving node1's resources to node3.
 
-==== Before you begin
+.Before you begin
 
 The operation should already be paused when you begin the task; you must manually resume the operation.
 
-==== About this task
+.About this task
 
 Remote LIFs handle traffic to SAN LUNs during the upgrade procedure. Moving SAN LIFs is not necessary for cluster or service health during the upgrade. You must verify that the LIFs are healthy and located on appropriate ports after you bring node3 online.
 
-[NOTE]
-The home owner for the aggregates and LIFs are not modified; only the current -owner is modified.
+NOTE: The home owner for the aggregates and LIFs are not modified; only the current -owner is modified.
 
 .Steps
 
@@ -51,7 +50,7 @@ The operation pauses to allow you to verify whether all node1 non-root aggregate
 `storage aggregate show -node <node2> -state online -root false`
 +
 The following example shows that the non-root aggregates on node2 are online:
-
++
 ....
 cluster::> storage aggregate show -node node2 state online -root false
 Aggregate    Size     Available Used% State #Vols   Nodes           RAID Status
@@ -63,9 +62,9 @@ aggr_2      825.0GB825.0GB   0%   online     1   node2           raid_dp,
                                                                        normal
 2 entries were displayed.
 ....
-
++
 If the aggregates have gone offline or become foreign on node2, bring them online by using the following command on node2, once for each aggregate:
-
++
 `storage aggregate online -aggregate <aggr_name>`
 
 . Verify that all the volumes are online on node2 by using the following command on node2 and examining its output:

@@ -21,9 +21,9 @@ summary: If node3 has onboard FC ports, onboard unified target adapter (UTA/UTA2
 [.lead]
 If node3 has onboard FC ports, onboard unified target adapter (UTA/UTA2) ports, or a UTA/UTA2 card, you must configure the settings before completing the rest of the procedure.
 
-==== About this task
+.About this task
 
-You might need to complete the section *xref *Configuring FC ports on node3, the section *xref *Checking and configuring UTA/UTA2 ports on node3, or both sections.
+You might need to complete the section link:setting_the_fc_or_uta_uta2_configuration_on_node3.html#configuring-fc-ports-on-node3[Configuring FC ports on node3], the section link:setting_the_fc_or_uta_uta2_configuration_on_node3.html#checking-and-configuring-utauta2-ports-on-node3[Checking and configuring UTA/UTA2 ports on node3], or both sections.
 
 [NOTE]
 NetApp marketing materials might use the term UTA2 to refer to CNA adapters and ports. However, the CLI uses the term CNA.
@@ -31,22 +31,22 @@ NetApp marketing materials might use the term UTA2 to refer to CNA adapters and 
 * If node3 does not have onboard FC ports, onboard UTA/UTA2 ports, or a UTA/UTA2 card, and you are upgrading a system with storage disks, you can skip to the section link:arl-auto-app_verifying_the_node3_installation.html[Verifying the node 3 installation] section.
 * However, if you have a V-Series system or a system with FlexArray Virtualization software with storage arrays, and node3 does not have onboard FC ports, onboard UTA/UTA ports, or a UTA/UTA2 card, return to the section link:arl-auto-app_installing_and_booting_node3.html[Installing and booting node3] and resume the section at *xref* Step 23 .
 
-==== Choices
+.Choices
 
-* *xref* Configuring FC ports on node3
-* *xref* Checking and configuring UTA/UTA2 ports on node3
+* link:setting_the_fc_or_uta_uta2_configuration_on_node3.html#configuring-fc-ports-on-node3[Configuring FC ports on node3]
+* link:setting_the_fc_or_uta_uta2_configuration_on_node3.html#checking-and-configuring-utauta2-ports-on-node3[Checking and configuring UTA/UTA2 ports on node3]
 
-=== Configuring FC ports on node3
+== Configuring FC ports on node3
 
 If node3 has FC ports, either onboard or on an FC adapter, you must set port configurations on the node before you bring it into service because the ports are not preconfigured. If the ports are not configured, you might experience a disruption in service.
 
-==== Before you begin
+.Before you begin
 
 You must have the values of the FC port settings from node1 that you saved in the section link:arl-auto-app_preparing_the_nodes_for_upgrade.html[Preparing the nodes for upgrade].
 
-==== About this task
+.About this task
 
-You can skip this section if your system does not have FC configurations. If your system has onboard UTA/UTA2 ports or a UTA/UTA2 card, you configure them in *xref *Checking and configuring UTA/UTA2 ports on node3.
+You can skip this section if your system does not have FC configurations. If your system has onboard UTA/UTA2 ports or a UTA/UTA2 card, you configure them in link:setting_the_fc_or_uta_uta2_configuration_on_node3.html#checking-and-configuring-utauta2-ports-on-node3[Checking and configuring UTA/UTA2 ports on node3].
 
 *Important*: If your system has storage disks, enter the commands in this section at the cluster prompt. If you have a 'V-Series system' or have FlexArray Virtualization Software and are connected to storage arrays, enter commands in this section in Maintenance mode.
 
@@ -54,7 +54,7 @@ You can skip this section if your system does not have FC configurations. If you
 
 . Compare the FC settings on node3 with the settings that you captured earlier from node1.
 . Take one of the following actions:
-
++
 |===
 |If the system that you are upgrading... |Then…
 
@@ -74,7 +74,7 @@ The FC ports must be programmed as initiators.
 |===
 
 . Take one of the following actions:
-
++
 |===
 |If the system that you are upgrading... |Then…
 
@@ -97,34 +97,31 @@ ucadmin show
 . After you enter the command, wait until the system stops at the boot environment prompt.
 . Select option `5` from the boot menu for maintenance mode.
 . Take one of the following actions:
-
++
 |===
 |If the system that you are upgrading... |Then…
 
 |Has storage disks
-a|* If node3 has a UTA/UTA2 card or UTA/UTA2 onboard ports, go to the section xref Checking and configuring UTA/UTA2 ports on node3.
-* If node3 does not have a UTA/UTA2 card or UTA/UTA2 onboard ports, skip the section xref Checking and configuring UTA/UTA2 ports on node3 and go to the section xref Verifying the node3 installation.
+a|* If node3 has a UTA/UTA2 card or UTA/UTA2 onboard ports, go to the section link:setting_the_fc_or_uta_uta2_configuration_on_node3.html#checking-and-configuring-utauta2-ports-on-node3[Checking and configuring UTA/UTA2 ports on node3].
+* If node3 does not have a UTA/UTA2 card or UTA/UTA2 onboard ports, skip the section link:setting_the_fc_or_uta_uta2_configuration_on_node3.html#checking-and-configuring-utauta2-ports-on-node3[Checking and configuring UTA/UTA2 ports on node3] and go to the section link:verifying_the_node3_installation.html[Verifying the node3 installation].
 |Is a V-Series system or has FlexArray Virtualization Software and is connected to storage arrays
-a|* If node3 has a UTA/UTA2 card or UTA/UTA2 onboard ports, go to the section xref Checking and configuring UTA/UTA2 ports on node3.
-* If node3 does not have a UTA/UTA2 card or UTA/UTA2 onboard ports, skip the section xref Checking and configuring UTA/UTA2 ports on node3 and return to xref Installing and booting node3 and resume the section at xref Step 23.
-
-
+a|* If node3 has a UTA/UTA2 card or UTA/UTA2 onboard ports, go to the section link:setting_the_fc_or_uta_uta2_configuration_on_node3.html#checking-and-configuring-utauta2-ports-on-node3[Checking and configuring UTA/UTA2 ports on node3].
+* If node3 does not have a UTA/UTA2 card or UTA/UTA2 onboard ports, skip the section link:setting_the_fc_or_uta_uta2_configuration_on_node3.html#checking-and-configuring-utauta2-ports-on-node3[Checking and configuring UTA/UTA2 ports on node3] and return to link:installing_and_booting_node3.html[Installing and booting node3] and resume the section at xref Step 23.
 |===
 
-=== Checking and configuring UTA/UTA2 ports on node3
+== Checking and configuring UTA/UTA2 ports on node3
 
 If node3 has onboard UTA/UTA2 ports or a UTA/UTA2 card, you must check the configuration of the ports and possibly reconfigure them, depending on how you want to use the upgraded system.
 
-==== Before you begin
+.Before you begin
 
 You must have the correct SFP+ modules for the UTA/UTA2 ports.
 
-==== About this task
+.About this task
 
 If you want to use a Unified Target Adapter (UTA/UTA2) port for FC, you must first verify how the port is configured.
 
-[NOTE]
-NetApp marketing materials might use the term UTA2 to refer to CNA adapters and ports. However, the CLI uses the term CNA.
+NOTE: NetApp marketing materials might use the term UTA2 to refer to CNA adapters and ports. However, the CLI uses the term CNA.
 
 You can use the `ucadmin show` command to verify the current port configuration:
 
@@ -152,7 +149,7 @@ UTA/UTA2 ports might be found on an adapter or on the controller, and have the f
 .Steps
 
 . Check how the ports are currently configured by entering the following command on node3:
-
++
 |===
 |If the system... |Then…
 
@@ -161,9 +158,9 @@ UTA/UTA2 ports might be found on an adapter or on the controller, and have the f
 |Is a V-Series system or has FlexArray Virtualization Software and is connected to storage arrays
 |ucadmin show
 |===
-
++
 The system displays output similar to the following examples:
-
++
 ....
 *> ucadmin show
 Adapter Current ModeCurrent TypePending ModePending TypeAdmin Status
@@ -185,7 +182,7 @@ Contact your NetApp representative to obtain the correct SFP+ module.
 
 . Examine the output of the `ucadmin show` command and determine whether the UTA/UTA2 ports have the personality you want.
 . Take one of the following actions:
-
++
 |===
 |If the UTA/UTA2 ports... |Then…
 
@@ -197,7 +194,7 @@ Contact your NetApp representative to obtain the correct SFP+ module.
 |===
 
 . Take one of the following actions:
-
++
 |===
 |If you are configuring... |Then…
 
@@ -216,19 +213,18 @@ Adapters in target mode are automatically offline in Maintenance mode.
 . If the current configuration does not match the desired use, change the configuration as needed by using the following command:
 +
 `ucadmin modify -m fc|cna -t initiator|target <adapter_name>`
-
++
 ** `-m` is the personality mode, `fc` or `cna`.
 ** `-t` is the FC4 type, `target` or `initiator`.
-
-[NOTE]
-You must use FC initiator for tape drives, FlexArray Virtualization systems, and MetroCluster configurations. You must use the FC target for SAN clients.
++
+NOTE: You must use FC initiator for tape drives, FlexArray Virtualization systems, and MetroCluster configurations. You must use the FC target for SAN clients.
 
 . Verify the settings by using the following command:
 +
 `ucadmin show`
 
 . Verify the settings by using one of the following commands:
-
++
 |===
 |If the system... |Then…
 
@@ -238,9 +234,9 @@ You must use FC initiator for tape drives, FlexArray Virtualization systems, and
 |ucadmin show
 
 |===
-
++
 The output in the following examples shows that the FC4 type of adapter 1b is changing to `initiator` and that the mode of adapters 2a and 2b is changing to `cna`:
-
++
 ....
 *> ucadmin show
 Adapter   Current Mode  Current TypePending ModePending TypeAdminStatus
@@ -253,7 +249,7 @@ Adapter   Current Mode  Current TypePending ModePending TypeAdminStatus
 ....
 
 . Place any target ports online by entering one of the following commands, once for each port:
-
++
 |===
 |If the system... |Then…
 
@@ -265,15 +261,14 @@ Adapter   Current Mode  Current TypePending ModePending TypeAdminStatus
 
 . Cable the port.
 . Take one of the following actions:
-
++
 |===
 |If the system... |Then…
 
 |Has storage disks
-|Go to xref Verifying the node3 installation.
+|Go to link:verifying_the_node3_installation.html[Verifying the node3 installation].
 |Is a V-Series system or has FlexArray Virtualization Software and is connected to storage arrays
-|Return to the xref Stage 3 Installing and booting node3 and resume the section at xef Step 23
-
+|Return to the link:stage_3_installing_and_booting_node3_overview.html[Stage 3 Installing and booting node3] and resume the section at xef Step 23
 |===
 
 . Exit Maintenance mode by using the following command:
@@ -282,7 +277,7 @@ Adapter   Current Mode  Current TypePending ModePending TypeAdminStatus
 
 . Boot node into boot menu by running `boot_ontap menu`. If you are upgrading to an A800, go to *xref *Step 23.
 . On node3, go to the boot menu and using 22/7 and select the hidden option `boot_after_controller_replacement`. At the prompt, enter node1 to reassign the disks of node1 to node3, as per the following example.
-
++
 ....
 LOADER-A> boot_ontap menu
 .
@@ -394,9 +389,8 @@ Override system ID? {y|n} y
 .
 Login:
 ....
-
-[NOTE]
-In the above console output example, ONTAP will prompt you for the partner node name if the system uses Advanced Disk Partitioning (ADP) disks.
++
+NOTE: In the above console output example, ONTAP will prompt you for the partner node name if the system uses Advanced Disk Partitioning (ADP) disks.
 
 . If the system goes into a reboot loop with the message `no disks found`, it indicates that the system has reset the ports back to the target mode and therefore is unable to see any disks. Continue with Steps 17 to 22 to resolve this.
 . Press Ctrl-C during autoboot to stop the node at the `LOADER>` prompt.
@@ -428,7 +422,7 @@ Now, on booting, the node can detect all the disks that were previously assigned
 
 . If you are upgrading from a system with external disks to a system that supports internal and external disks (AFF A800 systems, for example), set the node1 aggregate as the root aggregate to ensure node3 boots from the root aggregate of node1. To set the root aggregate, go to the boot menu and select option `5` to enter maintenance mode.
 +
-*Warning*: You must perform the following substeps in the exact order shown; failure to do so might cause an outage or even data loss.
+CAUTION: You must perform the following substeps in the exact order shown; failure to do so might cause an outage or even data loss.
 +
 The following procedure sets node3 to boot from the root aggregate of node1:
 
@@ -459,11 +453,11 @@ The following procedure sets node3 to boot from the root aggregate of node1:
 .. Verify that the root aggregate of node3 is offline and the root aggregate for the disks brought over from node1 is online and set to root by using the following command:
 +
 `aggr status`
-
-[NOTE]
-Failing to perform the previous substep might cause node3 to boot from the internal root aggregate, or it might cause the system to assume a new cluster configuration exists or prompt you to identify one.
-
++
+NOTE: Failing to perform the previous substep might cause node3 to boot from the internal root aggregate, or it might cause the system to assume a new cluster configuration exists or prompt you to identify one.
++
 The following shows an example of the command output:
++
 ---------------------------------------------------------------------- ---------------------------
 `      Aggr State  Status    Options `
 `aggr 0_nst_fas8080_15 online    raid_dp, aggr      root,  nosnap=on`
