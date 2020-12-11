@@ -72,11 +72,11 @@ With ONTAP 9.8, you can use Key Management Interoperability Protocol (KMIP) serv
 
 . Rekey all self-encrypting disks with the new authentication key by using the following command:
 +
-`storage encryption disk modify -disk * <-data-key-id nonMSID AK>`
+`storage encryption disk modify -disk * [-data-key-id nonMSID AK]`
 
 . If you use the Federal Information Processing Standard (FIPS), rekey all self-encrypting disks with the new authentication key by using the following command:
 +
-`storage encryption disk* modify -disk * <- fips-key-id nonMSID AK>`
+`storage encryption disk* modify -disk * [-fips-key-id nonMSID AK]`
 
 === Manage storage encryption using Onboard Key Manager
 

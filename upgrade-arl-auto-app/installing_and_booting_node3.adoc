@@ -25,12 +25,12 @@ You must install node3 in the rack, transfer node1's connections to node3, boot 
 
 The relocation operation is paused at the beginning of this stage. This process is largely automated; the operation pauses to allow you to check its status. You must manually resume the operation. In addition, you must verify the SAN LIFs have successfully moved to node3.
 
-You need to netboot node3 if it does not have the same version of ONTAP 9 that is installed on node1. After you install node3, boot it from the ONTAP 9 image stored on the web server. You can then download the correct files to the boot media device for subsequent system boots, by following the instructions in link:arl-auto-app_preparing_for_netboot.html[Preparing for netboot].
+You need to netboot node3 if it does not have the same version of ONTAP 9 that is installed on node1. After you install node3, boot it from the ONTAP 9 image stored on the web server. You can then download the correct files to the boot media device for subsequent system boots, by following the instructions in link:preparing_for_netboot.html[Preparing for netboot].
 
 .Important:
 
-* If you are upgrading a V-Series system connected to storage arrays or a system with FlexArray Virtualization software that is connected to storage arrays, you need to complete <<step1,Step 1>> through <<step21,Step 21>>, then leave this section and follow instructions in the link:arl-auto-app_setting_the_fc_or_uta_uta2_configuration_on_node3.html#configuring-fc-ports-on-node3[Configure FC ports on node3] and link:arl-auto-app_setting_the_fc_or_uta_uta2_configuration_on_node3.html#checking-and-configuring-utauta2-ports-on-node3[Check and configure UTA/UTA2 ports on node3] sections as needed, entering commands in Maintenance mode. You must then return to this section and resume with <<step23,Step 23>>.
-* If you are upgrading a system with storage disks, you need to complete this entire section and then go to the link:setting_the_fc_or_uta_uta2_configuration_on_node3.html#configuring-fc-ports-on-node3[Configure FC ports on node3] and link:arl-auto-app_setting_the_fc_or_uta_uta2_configuration_on_node3.html#checking-and-configuring-utauta2-ports-on-node3[Check and configure UTA/UTA2 ports on node3] sections, entering commands at the cluster prompt.
+* If you are upgrading a V-Series system connected to storage arrays or a system with FlexArray Virtualization software that is connected to storage arrays, you need to complete <<step1,Step 1>> through <<step21,Step 21>>, then leave this section and follow instructions in the link:setting_the_fc_or_uta_uta2_configuration_on_node3.html#configuring-fc-ports-on-node3[Configure FC ports on node3] and link:setting_the_fc_or_uta_uta2_configuration_on_node3.html#checking-and-configuring-utauta2-ports-on-node3[Check and configure UTA/UTA2 ports on node3] sections as needed, entering commands in Maintenance mode. You must then return to this section and resume with <<step23,Step 23>>.
+* If you are upgrading a system with storage disks, you need to complete this entire section and then go to the link:setting_the_fc_or_uta_uta2_configuration_on_node3.html#configuring-fc-ports-on-node3[Configure FC ports on node3] and link:setting_the_fc_or_uta_uta2_configuration_on_node3.html#checking-and-configuring-utauta2-ports-on-node3[Check and configure UTA/UTA2 ports on node3] sections, entering commands at the cluster prompt.
 
 .Steps
 
@@ -38,13 +38,13 @@ You need to netboot node3 if it does not have the same version of ONTAP 9 that i
 +
 If node1 and node2 were in separate chassis, you can put node3 in the same rack location as node1. However, if node1 was in the same chassis with node2, then you need to put node3 into its own rack space, preferably close to the location of node1.
 
-. [[step2]]Install node3 in the rack, following instructions in the *Installation and Setup Instructions* for your node model.
+. [[step2]]Install node3 in the rack, following the *Installation and Setup Instructions* for your node model.
 +
 NOTE: If you are upgrading to a system with both nodes in the same chassis, install node4 in the chassis as well as node3. If you do not, when you boot node3, the node will behave as if it were in a dual-chassis configuration, and when you boot node4, the interconnect between the nodes will not come up.
 
 . [[step3]]Cable node3, moving the connections from node1 to node3.
 +
-Cable the following connections, using the instructions in the *Installation and Setup Instructions* or the link:https://docs.netapp.com/ontap-9/topic/com.netapp.doc.vs-irrg/home.html[FlexArray Virtualization Installation Requirements and Reference] for the node3 platform, the appropriate disk shelf guide, and the link:https://docs.netapp.com/ontap-9/topic/com.netapp.doc.dot-cm-hacg/home.html[ONTAP 9 High-Availability Configuration Guide]:
+Cable the following connections, using the *Installation and Setup Instructions* or the link:https://docs.netapp.com/ontap-9/topic/com.netapp.doc.vs-irrg/home.html[FlexArray Virtualization Installation Requirements and Reference] for the node3 platform, the appropriate disk shelf guide, and the link:https://docs.netapp.com/ontap-9/topic/com.netapp.doc.dot-cm-hacg/home.html[ONTAP 9 High-Availability Configuration Guide]:
 +
 * Console (remote management port)
 * Cluster ports
@@ -64,17 +64,16 @@ If you are upgrading to a system with both nodes in the same chassis, node4 also
 NOTE: When you boot node3, you might see the following warning message:
 +
 ....
-WARNING: The battery is unfit to retain data during a power outage. This is likely because
-         the battery is discharged but could be due to other temporary conditions.
-         When the battery is ready, the boot process will complete and services will be engaged.
-         To override this delay, press 'c' followed by 'Enter'
+WARNING: The battery is unfit to retain data during a power outage. This is likely because the battery is discharged but could be due to other temporary conditions.
+When the battery is ready, the boot process will complete and services will be engaged.
+To override this delay, press 'c' followed by 'Enter'
 ....
 
 . [[step5]]If you see the warning message in <<step4,Step 4>>, take the following actions:
 .. Check for any console messages that might indicate a problem other than a low NVRAM battery, and, if necessary, take any required corrective action.
 .. Allow the battery to charge and the boot process to complete.
 +
-NOTE: Do not override the delay; failure to allow the battery to charge could result in a loss of data. See link:arl-auto-app_preparing_for_netboot.html[Preparing for netboot].
+NOTE: Do not override the delay; failure to allow the battery to charge could result in a loss of data. See link:preparing_for_netboot.html[Preparing for netboot].
 
 
 . [[step6]]Configure the netboot connection by choosing one of the following actions.
@@ -90,13 +89,15 @@ NOTE: You should use the management port and IP as the netboot connection. Do no
 ifconfig e0M -auto
 |Not running
 |Manually configure the connection by using the following command at the boot environment prompt:
-ifconfig e0M -addr=<filer_addr> -mask=<netmask> -gw=<gateway> - dns=<dns_addr> domain=<dns_domain>
+
+`ifconfig e0M -addr=<filer_addr> -mask=<netmask> -gw=<gateway> - dns=<dns_addr> domain=<dns_domain>`
+
 <filer_addr> is the IP address of the storage system. <netmask> is the network mask of the storage system.
 <gateway> is the gateway for the storage system.
 <dns_addr> is the IP address of a name server on your network. This parameter is optional.
 <dns_domain> is the Domain Name Service (DNS) domain name. This parameter is optional.
-NOTE: Other parameters might be necessary for your interface. Enter `help ifconfig` at the firmware prompt for details.
 
+*Note:* Other parameters might be necessary for your interface. Enter `help ifconfig` at the firmware prompt for details.
 |===
 
 . [[step7]]Perform netboot on node3:
@@ -104,14 +105,14 @@ NOTE: Other parameters might be necessary for your interface. Enter `help ifconf
 |===
 |For... |Then...
 |FAS/AFF8000 series systems
-|netboot http://<web_server_ip/path_to_web-
+|netboot \http://<web_server_ip/path_to_web-
 accessible_directory>/netboot/kernel
 |All other systems
-|netboot http://<web_server_ip/path_to_web-
+|netboot \http://<web_server_ip/path_to_web-
 accessible_directory>/<ontap_version>_image.tgz
 |===
 +
-The `<path_to_the_web-accessible_directory>` should lead to where you downloaded the `<ontap_version>_image.tgz` in the section link:arl-auto-app_preparing_for_netboot.html[Prepare for netboot].
+The `<path_to_the_web-accessible_directory>` should lead to where you downloaded the `<ontap_version>_image.tgz` in the section link:preparing_for_netboot.html[Prepare for netboot].
 +
 NOTE: Do not interrupt the boot.
 
@@ -125,7 +126,7 @@ Always use netboot to update the new node to the desired image. If you use anoth
 
 . [[step9]]If you are prompted to continue the procedure, enter `y`, and when prompted for the package, enter the URL:
 +
-`http://<web_server_ip/path_to_web-accessible_directory>/<ontap_version>_image.tgz`
+`\http://<web_server_ip/path_to_web-accessible_directory>/<ontap_version>_image.tgz`
 
 . [[step10]]Complete the following substeps to reboot the controller module:
 .. Enter `n` to skip the backup recovery when you see the following prompt:
@@ -209,7 +210,7 @@ Interrupt the autoboot by pressing Ctrl-C at the boot environment prompt.
 |Has disks and no back-end storage
 |Go to <<step23,Step 23>>
 |Is a V-Series system or a system with FlexArray Virtualization software connected to storage arrays
-|Go to section link:arl-auto-app_setting_the_fc_or_uta_uta2_configuration_on_node3.html[Setting the FC or UTA/UTA2 configuration on node3] and complete the subsections in this section.
+|Go to section link:setting_the_fc_or_uta_uta2_configuration_on_node3.html[Setting the FC or UTA/UTA2 configuration on node3] and complete the subsections in this section.
 Return to this section and complete the remaining steps, beginning with <<step23,Step 23>>.
 
 Important: You must reconfigure FC onboard ports, CNA onboard ports, and CNA cards before you boot ONTAP on the V-Series or system with FlexArray Virtualization software.
@@ -217,7 +218,7 @@ Important: You must reconfigure FC onboard ports, CNA onboard ports, and CNA car
 
 . [[step23]]Add the FC initiator ports of the new node to the switch zones.
 +
-If your system has a tape SAN, then you need zoning for the initiators. If required, modify the onboard ports to initiator by referring to the link:arl-auto-app_setting_the_fc_or_uta_uta2_configuration_on_node3.html#configuring-fc-ports-on-node3[Configuring FC ports on node3]. See your storage array and zoning documentation for further instructions on zoning.
+If your system has a tape SAN, then you need zoning for the initiators. If required, modify the onboard ports to initiator by referring to the link:setting_the_fc_or_uta_uta2_configuration_on_node3.html#configuring-fc-ports-on-node3[Configuring FC ports on node3]. See your storage array and zoning documentation for further instructions on zoning.
 
 . [[step24]]Add the FC initiator ports to the storage array as new hosts, mapping the array LUNs to the new hosts.
 +
@@ -240,4 +241,4 @@ Installing a new controller module changes the WWPN values associated with each 
 +
 If you do not have FC or UTA/UTA2 configuration, execute <<step15,Step 15>> so that node3 can recognize node1’s disks.
 
-. [[step29]]For a MetroCluster configuration, V-Series systems and systems with FlexArray Virtualization software connected to storage arrays,  you must set and configure the FC or UTA/UTA2 ports on node3 to detect the disks attached to the node. To complete this task, go to link:arl-auto-app_setting_the_fc_or_uta_uta2_configuration_on_node3.html[Set the FC or UTA/UTA2 configuration on node3]
+. [[step29]]For a MetroCluster configuration, V-Series systems and systems with FlexArray Virtualization software connected to storage arrays,  you must set and configure the FC or UTA/UTA2 ports on node3 to detect the disks attached to the node. To complete this task, go to link:setting_the_fc_or_uta_uta2_configuration_on_node3.html[Set the FC or UTA/UTA2 configuration on node3]

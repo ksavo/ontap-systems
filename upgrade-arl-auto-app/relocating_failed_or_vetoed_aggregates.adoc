@@ -41,8 +41,8 @@ The relocation operation will have paused due to the error.
 
 |Overriding veto checks
 |Use the following command:
-storage aggregate relocation start -node node1 -destination node2 -aggregate-list <aggr_list> -ndo-controller-upgrade true -override-vetoes true
+`storage aggregate relocation start -node node1 -destination node2 -aggregate-list <aggr_list> -ndo-controller-upgrade true -override-vetoes true`
 |Overriding destination checks
 |Use the following command:
-storage aggregate relocation start -node node1 -destination node2 -aggregate-list <aggr_list> -ndo-controller-upgrade true -override-vetoes true -override-destination-checks true
+`storage aggregate relocation start -node node1 -destination node2 -aggregate-list <aggr_list> -ndo-controller-upgrade true -override-vetoes true -override-destination-checks true`
 |===

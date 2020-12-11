@@ -55,4 +55,4 @@ You do not need to extract the contents of the
 
 |===
 
-You will use the information in the directories in link:arl-auto-app_stage_3_installing_and_booting_node3_overview.html[Stage 3].
+You will use the information in the directories in link:stage_3_installing_and_booting_node3_overview.html[Stage 3].

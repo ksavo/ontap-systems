@@ -23,18 +23,18 @@ If node3 has onboard FC ports, onboard unified target adapter (UTA/UTA2) ports, 
 
 .About this task
 
-You might need to complete the section link:arl-auto-app_setting_the_fc_or_uta_uta2_configuration_on_node3.html#configuring-fc-ports-on-node3[Configure FC ports on node3], the section link:arl-auto-app_setting_the_fc_or_uta_uta2_configuration_on_node3.html#checking-and-configuring-utauta2-ports-on-node3[Check and configure UTA/UTA2 ports on node3], or both sections.
+You might need to complete the section link:setting_the_fc_or_uta_uta2_configuration_on_node3.html#configuring-fc-ports-on-node3[Configure FC ports on node3], the section link:setting_the_fc_or_uta_uta2_configuration_on_node3.html#checking-and-configuring-utauta2-ports-on-node3[Check and configure UTA/UTA2 ports on node3], or both sections.
 
 [NOTE]
 NetApp marketing materials might use the term UTA2 to refer to CNA adapters and ports. However, the CLI uses the term CNA.
 
-* If node3 does not have onboard FC ports, onboard UTA/UTA2 ports, or a UTA/UTA2 card, and you are upgrading a system with storage disks, you can skip to the section link:arl-auto-app_verifying_the_node3_installation.html[Verify the node 3 installation] section.
-* However, if you have a V-Series system or a system with FlexArray Virtualization software with storage arrays, and node3 does not have onboard FC ports, onboard UTA/UTA ports, or a UTA/UTA2 card, return to the section link:arl-auto-app_arl-auto-app_installing_and_booting_node3.html[Install and boot node3] and resume the section at step 23 .
+* If node3 does not have onboard FC ports, onboard UTA/UTA2 ports, or a UTA/UTA2 card, and you are upgrading a system with storage disks, you can skip to the section link:verifying_the_node3_installation.html[Verify the node 3 installation] section.
+* However, if you have a V-Series system or a system with FlexArray Virtualization software with storage arrays, and node3 does not have onboard FC ports, onboard UTA/UTA ports, or a UTA/UTA2 card, return to the section link:installing_and_booting_node3.html[Install and boot node3] and resume the section at step 23 .
 
 .Choices
 
-* link:arl-auto-app_setting_the_fc_or_uta_uta2_configuration_on_node3.html#configuring-fc-ports-on-node3[Configure FC ports on node3]
-* link:arl-auto-app_setting_the_fc_or_uta_uta2_configuration_on_node3.html#checking-and-configuring-utauta2-ports-on-node3[Check and configure UTA/UTA2 ports on node3]
+* link:setting_the_fc_or_uta_uta2_configuration_on_node3.html#configuring-fc-ports-on-node3[Configure FC ports on node3]
+* link:setting_the_fc_or_uta_uta2_configuration_on_node3.html#checking-and-configuring-utauta2-ports-on-node3[Check and configure UTA/UTA2 ports on node3]
 
 == Configure FC ports on node3
 
@@ -42,11 +42,11 @@ If node3 has FC ports, either onboard or on an FC adapter, you must set port con
 
 .Before you begin
 
-You must have the values of the FC port settings from node1 that you saved in the section link:arl-auto-app_preparing_the_nodes_for_upgrade.html[Prepare the nodes for upgrade].
+You must have the values of the FC port settings from node1 that you saved in the section link:preparing_the_nodes_for_upgrade.html[Prepare the nodes for upgrade].
 
 .About this task
 
-You can skip this section if your system does not have FC configurations. If your system has onboard UTA/UTA2 ports or a UTA/UTA2 card, you configure them in link:arl-auto-app_setting_the_fc_or_uta_uta2_configuration_on_node3.html#checking-and-configuring-utauta2-ports-on-node3[Check and configure UTA/UTA2 ports on node3].
+You can skip this section if your system does not have FC configurations. If your system has onboard UTA/UTA2 ports or a UTA/UTA2 card, you configure them in link:setting_the_fc_or_uta_uta2_configuration_on_node3.html#checking-and-configuring-utauta2-ports-on-node3[Check and configure UTA/UTA2 ports on node3].
 
 *Important*: If your system has storage disks, enter the commands in this section at the cluster prompt. If you have a 'V-Series system' or have FlexArray Virtualization Software and are connected to storage arrays, enter commands in this section in Maintenance mode.
 
@@ -61,14 +61,14 @@ You can skip this section if your system does not have FC configurations. If you
 |Has storage disks
 |In maintenance mode (option 5 at boot menu), modify the FC ports on node3 as needed by using one of the following commands:
 * To program target ports:
-ucadmin modify -m fc -t target <adapter>
+`ucadmin modify -m fc -t target <adapter>`
 * To program initiator ports:
-ucadmin modify -m fc -t initiator <adapter>
+`ucadmin modify -m fc -t initiator <adapter>`
 -t is the FC4 type: target or initiator.
 |Is a V-Series system or has FlexArray Virtualization Software and is connected to storage arrays
 
 |In maintenance mode (option 5 at boot menu), modify the FC ports on node3 as needed by using the following command:
-ucadmin modify -m fc -t initiator -f <adapter_port_name>
+`ucadmin modify -m fc -t initiator -f <adapter_port_name>`
 -t is the FC4 type, target or initiator.
 The FC ports must be programmed as initiators.
 |===
@@ -80,10 +80,10 @@ The FC ports must be programmed as initiators.
 
 |Has storage disks
 |Verify the new settings by using the following command and examining the output:
-ucadmin show
+`ucadmin show`
 |Is a V-Series system or has FlexArray Virtualization Software and is connected to storage arrays
 |Verify the new settings by using the following command and examining the output:
-ucadmin show
+`ucadmin show`
 |===
 
 . Exit Maintenance mode by using the following command:
@@ -102,11 +102,11 @@ ucadmin show
 |If the system that you are upgrading... |Then…
 
 |Has storage disks
-a|* If node3 has a UTA/UTA2 card or UTA/UTA2 onboard ports, go to the section link:arl-auto-app_setting_the_fc_or_uta_uta2_configuration_on_node3.html#checking-and-configuring-utauta2-ports-on-node3[Check and configure UTA/UTA2 ports on node3].
-* If node3 does not have a UTA/UTA2 card or UTA/UTA2 onboard ports, skip the section link:arl-auto-app_setting_the_fc_or_uta_uta2_configuration_on_node3.html#checking-and-configuring-utauta2-ports-on-node3[Check and configure UTA/UTA2 ports on node3] and go to the section link:arl-auto-app_verifying_the_node3_installation.html[Verify the node3 installation].
+a|* If node3 has a UTA/UTA2 card or UTA/UTA2 onboard ports, go to the section link:setting_the_fc_or_uta_uta2_configuration_on_node3.html#checking-and-configuring-utauta2-ports-on-node3[Check and configure UTA/UTA2 ports on node3].
+* If node3 does not have a UTA/UTA2 card or UTA/UTA2 onboard ports, skip the section link:setting_the_fc_or_uta_uta2_configuration_on_node3.html#checking-and-configuring-utauta2-ports-on-node3[Check and configure UTA/UTA2 ports on node3] and go to the section link:verifying_the_node3_installation.html[Verify the node3 installation].
 |Is a V-Series system or has FlexArray Virtualization Software and is connected to storage arrays
-a|* If node3 has a UTA/UTA2 card or UTA/UTA2 onboard ports, go to the section link:arl-auto-app_setting_the_fc_or_uta_uta2_configuration_on_node3.html#checking-and-configuring-utauta2-ports-on-node3[Check and configure UTA/UTA2 ports on node3].
-* If node3 does not have a UTA/UTA2 card or UTA/UTA2 onboard ports, skip the section link:arl-auto-app_setting_the_fc_or_uta_uta2_configuration_on_node3.html#checking-and-configuring-utauta2-ports-on-node3[Check and configure UTA/UTA2 ports on node3] and return to link:arl-auto-app_installing_and_booting_node3.html[Install and boot node3] and resume the section at Step 23.
+a|* If node3 has a UTA/UTA2 card or UTA/UTA2 onboard ports, go to the section link:setting_the_fc_or_uta_uta2_configuration_on_node3.html#checking-and-configuring-utauta2-ports-on-node3[Check and configure UTA/UTA2 ports on node3].
+* If node3 does not have a UTA/UTA2 card or UTA/UTA2 onboard ports, skip the section link:setting_the_fc_or_uta_uta2_configuration_on_node3.html#checking-and-configuring-utauta2-ports-on-node3[Check and configure UTA/UTA2 ports on node3] and return to link:installing_and_booting_node3.html[Install and boot node3] and resume the section at Step 23.
 |===
 
 == Check and configure UTA/UTA2 ports on node3
@@ -127,14 +127,13 @@ You can use the `ucadmin show` command to verify the current port configuration:
 
 ....
 *> ucadmin show
-Adapter Current ModeCurrent TypePending ModePending TypeAdmin Status
--------  ------- ----- --------- --- ------- ----- ----------- - ------------
-0e fctarget- initiatoroffline
-0f fctarget- initiatoroffline
-0g fctarget- initiatoroffline
-0h fctarget- initiatoroffline
-1a fctarget- -        online
-1b fctarget- -        online
+Adapter Current Mode Current Type Pending Mode Pending Type Admin Status
+0e      fc           target       -            initiator    offline
+0f      fc           target       -            initiator    offline
+0g      fc           target       -            initiator    offline
+0h      fc           target       -            initiator    offline
+1a      fc           target       -            -            online
+1b      fc           target       -            -            online
 6 entries were displayed.
 ....
 
@@ -165,16 +164,15 @@ The system displays output similar to the following examples:
 +
 ....
 *> ucadmin show
-Adapter Current ModeCurrent TypePending ModePending TypeAdmin Status
--------  ------- ----- --------- --- ------- ----- ------ ------ ------------
-0e fcinitiator- - online
-0f fcinitiator- - online
-0g cnatarget- - online
-0h cnatarget- - online
-0e fcinitiator- - online
-0f fcinitiator- - online
-0g cnatarget- - online
-0h cnatarget- - online
+Adapter Current Mode Current Type Pending Mode Pending Type Admin Status
+0e      fc           initiator    -            -            online
+0f      fc           initiator    -            -            online
+0g      cna          target       -            -            online
+0h      cna          target       -            -            online
+0e      fc           initiator    -            -            online
+0f      fc           initiator    -            -            online
+0g      cna          target       -            -            online
+0h      cna          target       -            -            online
 *>
 ....
 
@@ -267,9 +265,9 @@ Adapter  Current Mode  Current Type  Pending Mode Pending Type Admin Status
 |If the system... |Then…
 
 |Has storage disks
-|Go to link:arl-auto-app_verifying_the_node3_installation.html[Verify the node3 installation].
+|Go to link:verifying_the_node3_installation.html[Verify the node3 installation].
 |Is a V-Series system or has FlexArray Virtualization Software and is connected to storage arrays
-|Return to the link:arl-auto-app_stage_3_installing_and_booting_node3_overview.html[Stage 3 Install and boot node3] and resume the section at Step 23
+|Return to the link:stage_3_installing_and_booting_node3_overview.html[Stage 3 Install and boot node3] and resume the section at Step 23
 |===
 
 . [[step13]]Exit Maintenance mode by using the following command:
@@ -377,7 +375,7 @@ Login:
 +
 NOTE: In the above console output example, ONTAP will prompt you for the partner node name if the system uses Advanced Disk Partitioning (ADP) disks.
 
-. [[step16]]If the system goes into a reboot loop with the message `no disks found`, it indicates that the system has reset the FC or UTA/UTA2 ports back to the target mode and therefore is unable to see any disks. Continue with <<step17,Step 17>> to <<step22,Step 22>> or go to section link:arl-auto-app_verifying_the_node4_installation.html[Verify the node4 installation].
+. [[step16]]If the system goes into a reboot loop with the message `no disks found`, it indicates that the system has reset the FC or UTA/UTA2 ports back to the target mode and therefore is unable to see any disks. Continue with <<step17,Step 17>> to <<step22,Step 22>> or go to section link:verifying_the_node4_installation.html[Verify the node4 installation].
 . [[step17]]Press Ctrl-C during autoboot to stop the node at the `LOADER>` prompt.
 . [[step18]]At the loader prompt, enter maintenance mode by using the following command:
 +
@@ -446,11 +444,9 @@ NOTE: Failing to perform the previous substep might cause node3 to boot from the
 ....
 The following shows an example of the command output:
 +
-      Aggr State  Status    Options
-aggr 0_nst_fas8080_15 online    raid_dp, aggr      root,  nosnap=on
-                                fast zeroed
-                                64-bit
-    aggr0 offline              raid_dp, aggr   diskroot
-                    fast zeroed
-                    64-bit
+Aggr            State   Status    Options
+aggr 0_nst_fas  8080_15 online    raid_dp, aggr root,  nosnap=on
+                                  fast zeroed, 64-bit
+aggr            0       offline   raid_dp, aggr, diskroot
+                                  fast zeroed, 64-bit
 ....

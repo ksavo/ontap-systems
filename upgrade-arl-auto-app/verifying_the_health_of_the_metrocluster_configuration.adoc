@@ -41,13 +41,13 @@ metrocluster_siteA::*> metrocluster check show
 Last Checked On: 4/7/2019 21:15:05
 Component            Result
 ---------------      -------
-nodes      ok
-lifs           ok
+nodes                ok
+lifs                 ok
 config-replication   ok
-aggregates       warning
-clusters       ok
-connections       not-applicable
-volumes      ok
+aggregates           warning
+clusters             ok
+connections          not-applicable
+volumes              ok
 7 entries were displayed.
 ----
 
