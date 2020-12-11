@@ -29,8 +29,8 @@ You need to netboot node3 if it does not have the same version of ONTAP 9 that i
 
 .Important:
 
-* If you are upgrading a V-Series system connected to storage arrays or a system with FlexArray Virtualization software that is connected to storage arrays, you need to complete <<step1,Step 1>> through <<step21,Step 21>>, then leave this section and follow instructions in the link:setting_the_fc_or_uta_uta2_configuration_on_node3.html#configuring-fc-ports-on-node3[Configure FC ports on node3] and link:setting_the_fc_or_uta_uta2_configuration_on_node3.html#checking-and-configuring-utauta2-ports-on-node3[Check and configure UTA/UTA2 ports on node3] sections as needed, entering commands in Maintenance mode. You must then return to this section and resume with <<step23,Step 23>>.
-* If you are upgrading a system with storage disks, you need to complete this entire section and then go to the link:setting_the_fc_or_uta_uta2_configuration_on_node3.html#configuring-fc-ports-on-node3[Configure FC ports on node3] and link:setting_the_fc_or_uta_uta2_configuration_on_node3.html#checking-and-configuring-utauta2-ports-on-node3[Check and configure UTA/UTA2 ports on node3] sections, entering commands at the cluster prompt.
+* If you are upgrading a V-Series system connected to storage arrays or a system with FlexArray Virtualization software that is connected to storage arrays, you need to complete <<step1,Step 1>> through <<step21,Step 21>>, then leave this section and follow instructions in the link:setting_the_fc_or_uta_uta2_configuration_on_node3.html#configure-fc-ports-on-node3[Configure FC ports on node3] and link:setting_the_fc_or_uta_uta2_configuration_on_node3.html#check-and-configure-utauta2-ports-on-node3[Check and configure UTA/UTA2 ports on node3] sections as needed, entering commands in Maintenance mode. You must then return to this section and resume with <<step23,Step 23>>.
+* If you are upgrading a system with storage disks, you need to complete this entire section and then go to the link:setting_the_fc_or_uta_uta2_configuration_on_node3.html#configure-fc-ports-on-node3[Configure FC ports on node3] and link:setting_the_fc_or_uta_uta2_configuration_on_node3.html#check-and-configure-utauta2-ports-on-node3[Check and configure UTA/UTA2 ports on node3] sections, entering commands at the cluster prompt.
 
 .Steps
 
@@ -218,7 +218,7 @@ Important: You must reconfigure FC onboard ports, CNA onboard ports, and CNA car
 
 . [[step23]]Add the FC initiator ports of the new node to the switch zones.
 +
-If your system has a tape SAN, then you need zoning for the initiators. If required, modify the onboard ports to initiator by referring to the link:setting_the_fc_or_uta_uta2_configuration_on_node3.html#configuring-fc-ports-on-node3[Configuring FC ports on node3]. See your storage array and zoning documentation for further instructions on zoning.
+If your system has a tape SAN, then you need zoning for the initiators. If required, modify the onboard ports to initiator by referring to the link:setting_the_fc_or_uta_uta2_configuration_on_node3.html#configure-fc-ports-on-node3[Configuring FC ports on node3]. See your storage array and zoning documentation for further instructions on zoning.
 
 . [[step24]]Add the FC initiator ports to the storage array as new hosts, mapping the array LUNs to the new hosts.
 +

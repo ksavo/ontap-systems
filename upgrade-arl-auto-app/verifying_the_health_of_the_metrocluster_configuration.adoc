@@ -27,6 +27,9 @@ Before starting upgrade on a Fabric MetroCluster configuration, you must check t
 +
 `metrocluster check run`
 +
+....
+metrocluster_siteA::*> metrocluster check run
+....
 
 The operation runs in the background.
 

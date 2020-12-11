@@ -25,7 +25,7 @@ During the procedure, you upgrade the original controller hardware with the repl
 
 Each aggregate has a home owner and current owner. The home owner is the actual owner of the aggregate, and the current owner is the temporary owner.
 
-[cols=2]
+[cols="35,65"]
 |===
 | Stage | Steps
 

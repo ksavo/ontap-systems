@@ -23,18 +23,18 @@ If node3 has onboard FC ports, onboard unified target adapter (UTA/UTA2) ports, 
 
 .About this task
 
-You might need to complete the section link:setting_the_fc_or_uta_uta2_configuration_on_node3.html#configuring-fc-ports-on-node3[Configure FC ports on node3], the section link:setting_the_fc_or_uta_uta2_configuration_on_node3.html#checking-and-configuring-utauta2-ports-on-node3[Check and configure UTA/UTA2 ports on node3], or both sections.
+You might need to complete the section link:setting_the_fc_or_uta_uta2_configuration_on_node3.html#configuring-fc-ports-on-node3[Configure FC ports on node3], the section link:setting_the_fc_or_uta_uta2_configuration_on_node3.html#check-and-configure-utauta2-ports-on-node3[Check and configure UTA/UTA2 ports on node3], or both sections.
 
 [NOTE]
 NetApp marketing materials might use the term UTA2 to refer to CNA adapters and ports. However, the CLI uses the term CNA.
 
-* If node3 does not have onboard FC ports, onboard UTA/UTA2 ports, or a UTA/UTA2 card, and you are upgrading a system with storage disks, you can skip to the section link:verifying_the_node3_installation.html[Verify the node 3 installation] section.
+* If node3 does not have onboard FC ports, onboard UTA/UTA2 ports, or a UTA/UTA2 card, and you are upgrading a system with storage disks, you can skip to the link:verifying_the_node3_installation.html[Verify the node 3 installation] section.
 * However, if you have a V-Series system or a system with FlexArray Virtualization software with storage arrays, and node3 does not have onboard FC ports, onboard UTA/UTA ports, or a UTA/UTA2 card, return to the section link:installing_and_booting_node3.html[Install and boot node3] and resume the section at step 23 .
 
 .Choices
 
-* link:setting_the_fc_or_uta_uta2_configuration_on_node3.html#configuring-fc-ports-on-node3[Configure FC ports on node3]
-* link:setting_the_fc_or_uta_uta2_configuration_on_node3.html#checking-and-configuring-utauta2-ports-on-node3[Check and configure UTA/UTA2 ports on node3]
+* link:setting_the_fc_or_uta_uta2_configuration_on_node3.html#configure-fc-ports-on-node3[Configure FC ports on node3]
+* link:setting_the_fc_or_uta_uta2_configuration_on_node3.html#check-and-configure-utauta2-ports-on-node3[Check and configure UTA/UTA2 ports on node3]
 
 == Configure FC ports on node3
 
@@ -46,7 +46,7 @@ You must have the values of the FC port settings from node1 that you saved in th
 
 .About this task
 
-You can skip this section if your system does not have FC configurations. If your system has onboard UTA/UTA2 ports or a UTA/UTA2 card, you configure them in link:setting_the_fc_or_uta_uta2_configuration_on_node3.html#checking-and-configuring-utauta2-ports-on-node3[Check and configure UTA/UTA2 ports on node3].
+You can skip this section if your system does not have FC configurations. If your system has onboard UTA/UTA2 ports or a UTA/UTA2 card, you configure them in link:setting_the_fc_or_uta_uta2_configuration_on_node3.html#check-and-configure-utauta2-ports-on-node3[Check and configure UTA/UTA2 ports on node3].
 
 *Important*: If your system has storage disks, enter the commands in this section at the cluster prompt. If you have a 'V-Series system' or have FlexArray Virtualization Software and are connected to storage arrays, enter commands in this section in Maintenance mode.
 
@@ -102,11 +102,11 @@ The FC ports must be programmed as initiators.
 |If the system that you are upgrading... |Then…
 
 |Has storage disks
-a|* If node3 has a UTA/UTA2 card or UTA/UTA2 onboard ports, go to the section link:setting_the_fc_or_uta_uta2_configuration_on_node3.html#checking-and-configuring-utauta2-ports-on-node3[Check and configure UTA/UTA2 ports on node3].
-* If node3 does not have a UTA/UTA2 card or UTA/UTA2 onboard ports, skip the section link:setting_the_fc_or_uta_uta2_configuration_on_node3.html#checking-and-configuring-utauta2-ports-on-node3[Check and configure UTA/UTA2 ports on node3] and go to the section link:verifying_the_node3_installation.html[Verify the node3 installation].
+a|* If node3 has a UTA/UTA2 card or UTA/UTA2 onboard ports, go to the section link:setting_the_fc_or_uta_uta2_configuration_on_node3.html#check-and-configure-utauta2-ports-on-node3[Check and configure UTA/UTA2 ports on node3].
+* If node3 does not have a UTA/UTA2 card or UTA/UTA2 onboard ports, skip the section link:setting_the_fc_or_uta_uta2_configuration_on_node3.html#check-and-configure-utauta2-ports-on-node3[Check and configure UTA/UTA2 ports on node3] and go to the section link:verifying_the_node3_installation.html[Verify the node3 installation].
 |Is a V-Series system or has FlexArray Virtualization Software and is connected to storage arrays
-a|* If node3 has a UTA/UTA2 card or UTA/UTA2 onboard ports, go to the section link:setting_the_fc_or_uta_uta2_configuration_on_node3.html#checking-and-configuring-utauta2-ports-on-node3[Check and configure UTA/UTA2 ports on node3].
-* If node3 does not have a UTA/UTA2 card or UTA/UTA2 onboard ports, skip the section link:setting_the_fc_or_uta_uta2_configuration_on_node3.html#checking-and-configuring-utauta2-ports-on-node3[Check and configure UTA/UTA2 ports on node3] and return to link:installing_and_booting_node3.html[Install and boot node3] and resume the section at Step 23.
+a|* If node3 has a UTA/UTA2 card or UTA/UTA2 onboard ports, go to the section link:setting_the_fc_or_uta_uta2_configuration_on_node3.html#check-and-configure-utauta2-ports-on-node3[Check and configure UTA/UTA2 ports on node3].
+* If node3 does not have a UTA/UTA2 card or UTA/UTA2 onboard ports, skip the section link:setting_the_fc_or_uta_uta2_configuration_on_node3.html#check-and-configure-utauta2-ports-on-node3[Check and configure UTA/UTA2 ports on node3] and return to link:installing_and_booting_node3.html[Install and boot node3] and resume the section at Step 23.
 |===
 
 == Check and configure UTA/UTA2 ports on node3

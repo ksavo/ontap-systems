@@ -49,6 +49,6 @@ The following table shows the supported model matrix for the controller upgrade.
 
 NOTE: If your controller upgrade model combination is not in the above table, contact technical support.
 
-* For the additional steps needed for A800 systems, go to the step that references A800 in section link:setting_the_fc_or_uta_uta2_configuration_on_node3.html#check-and-configure-uta_uta2-ports-on-node3[Check and configure UTA/UTA2 ports on node3], or link:setting_the_fc_or_uta_uta2_configuration_on_node4.html#check-and-configure-uta_uta2-ports-on-node4[Checking and configuring UTA/UTA2 ports on node4].
+* For the additional steps needed for A800 systems, go to the step that references A800 in section link:setting_the_fc_or_uta_uta2_configuration_on_node3.html#check-and-configure-utauta2-ports-on-node3[Check and configure UTA/UTA2 ports on node3], or link:setting_the_fc_or_uta_uta2_configuration_on_node4.html#check-and-configure-utauta2-ports-on-node4[Checking and configuring UTA/UTA2 ports on node4].
 
 If you prefer a different method of upgrading the controller hardware and are willing to do volume moves, use the link:https://docs.netapp.com/platstor/topic/com.netapp.doc.hw-upgrade-controller/home.html[Controller Hardware Upgrade Express Guide] instead. See the link:https://docs.netapp.com/ontap-9/index.jsp[ONTAP 9 Documentation Center] to access ONTAP 9 product documentation.

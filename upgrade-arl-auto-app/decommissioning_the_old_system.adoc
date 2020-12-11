@@ -1,11 +1,11 @@
 ---
 sidebar: upgrade-arl-auto-app_sidebar
 permalink: upgrade-arl-auto-app/decommissioning_the_old_system.html
-keywords: decommissioning, old, system, upgrading, databases, netapp, support, site, serial, number, cluster
+keywords: decommission, old system, upgrade, databases, netapp, support, site, serial, number, cluster
 summary: After upgrading, you can decommission the old system through the NetApp Support Site.
 ---
 
-= Decommissioning the old system
+= Decommission the old system
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -37,3 +37,4 @@ You can choose one of the following to locate your system:
 A table displays cluster information, including the serial numbers.
 
 . Locate the cluster in the table and select *Decommission this system* from the Product Tool Set drop-down menu.
+// 11 DEC 2020, thomi, checked
