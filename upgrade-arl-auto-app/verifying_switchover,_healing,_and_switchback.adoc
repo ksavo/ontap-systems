@@ -5,7 +5,7 @@ keywords: verifying, switchover, healing, switchback, metrocluster, management, 
 summary: You should verify the switchover, healing, and switchback operations of the MetroCluster configuration.
 ---
 
-= Verifying switchover, healing, and switchback
+= Verify switchover, healing, and switchback
 :hardbreaks:
 :nofooter:
 :icons: font

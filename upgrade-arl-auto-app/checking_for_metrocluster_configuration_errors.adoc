@@ -5,7 +5,7 @@ keywords: metrocluster, configuration, errors, config, advisor, netapp, support,
 summary: You can use the Config Advisor tool available from the NetApp Support Site.
 ---
 
-= Checking for MetroCluster configuration errors
+= Check for MetroCluster configuration errors
 :hardbreaks:
 :nofooter:
 :icons: font

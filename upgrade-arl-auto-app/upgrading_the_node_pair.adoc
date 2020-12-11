@@ -5,7 +5,7 @@ keywords: upgrading, node pair, prepare, original, decommission
 summary: To upgrade the node pair.
 ---
 
-= Upgrading the node pair
+= Upgrade the node pair
 :hardbreaks:
 :nofooter:
 :icons: font

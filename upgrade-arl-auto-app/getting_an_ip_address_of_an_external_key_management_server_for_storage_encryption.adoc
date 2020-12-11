@@ -5,7 +5,7 @@ keywords: ip, address, external, key, management, server, storage, encryption, u
 summary: After upgrading, you must immediately configure Storage Encryption.
 ---
 
-= Getting an IP address of an external key management server for storage encryption
+= Get an IP address of an external key management server for storage encryption
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -48,7 +48,7 @@ After upgrading, you must immediately configure Storage Encryption and establish
 +
 `storage encryption disk modify -disk * -data-key-id <authentication_key_id>`
 
-=== Managing authentication using KMIP servers
+=== Manage authentication using KMIP servers
 
 With ONTAP 9.8, you can use Key Management Interoperability Protocol (KMIP) servers to manage authentication keys.
 
@@ -72,13 +72,13 @@ With ONTAP 9.8, you can use Key Management Interoperability Protocol (KMIP) serv
 
 . Rekey all self-encrypting disks with the new authentication key by using the following command:
 +
-`storage encryption disk modify -disk * <-data-key-id nonMSID AK>`
+`storage encryption disk modify -disk * [-data-key-id nonMSID AK]`
 
 . If you use the Federal Information Processing Standard (FIPS), rekey all self-encrypting disks with the new authentication key by using the following command:
 +
-`storage encryption disk* modify -disk * <- fips-key-id nonMSID AK>`
+`storage encryption disk* modify -disk * [-fips-key-id nonMSID AK]`
 
-=== Managing storage encryption using Onboard Key Manager
+=== Manage storage encryption using Onboard Key Manager
 
 You can use the OKM to manage encryption keys. If you plan to use OKM, you must record the passphrase and backup material before the beginning the upgrade.
 
@@ -89,7 +89,7 @@ You can use the OKM to manage encryption keys. If you plan to use OKM, you must 
 +
 `key-manager onboard show-backup`
 
-=== Quiescing the SnapMrror relationships (optional)
+=== Quiesce the SnapMrror relationships (optional)
 
 Before you proceed with the replacement steps, you must confirm that all the SnapMirror relationships are quiesced. When a SnapMirror relationship is quiesced, it remains quiesced across reboots and failovers.
 
@@ -101,8 +101,9 @@ Before you proceed with the replacement steps, you must confirm that all the Sna
 +
 NOTE: If the status is `Transferring`, you must abort those transfers by using the following command: `snapmirror abort -destination-vserver <vserver name>`
 +
+
 The abort fails if the SnapMirror relationship is not in the `Transferring` state.
 
 . Quiesce all relationships between the cluster by using the following command:
 +
-`snapmirror quiesce -destination-vserver <vserver name> `
+`snapmirror quiesce -destination-vserver <vserver name>`

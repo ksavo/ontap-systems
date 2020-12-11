@@ -5,7 +5,7 @@ keywords: verifying, health, metrocluster, configuration, fabric, mcc
 summary: Before starting upgrade on a Fabric MetroCluster configuration.
 ---
 
-= Verifying the health of the MetroCluster configuration
+= Verify the health of the MetroCluster configuration
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -27,6 +27,9 @@ Before starting upgrade on a Fabric MetroCluster configuration, you must check t
 +
 `metrocluster check run`
 +
+....
+metrocluster_siteA::*> metrocluster check run
+....
 
 The operation runs in the background.
 
@@ -41,13 +44,13 @@ metrocluster_siteA::*> metrocluster check show
 Last Checked On: 4/7/2019 21:15:05
 Component            Result
 ---------------      -------
-nodes      ok
-lifs           ok
+nodes                ok
+lifs                 ok
 config-replication   ok
-aggregates       warning
-clusters       ok
-connections       not-applicable
-volumes      ok
+aggregates           warning
+clusters             ok
+connections          not-applicable
+volumes              ok
 7 entries were displayed.
 ----
 

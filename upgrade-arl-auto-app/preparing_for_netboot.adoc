@@ -5,7 +5,7 @@ keywords: preparing, netboot, ndac, ontap
 summary: After you physically rack node3 and node4 later in the procedure, you might need to netboot them.
 ---
 
-= Preparing for netboot
+= Prepare for netboot
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -24,13 +24,11 @@ After you physically rack node3 and node4 later in the procedure, you might need
 .Before you begin
 
 * Verify that you can access a HTTP server with the system.
-* You need to download the necessary system files for your platform and the correct version of ONTAP from the NetApp Support Site at link:mysupport.netapp.com[mysupport.netapp.com].
+* You need to download the necessary system files for your platform and the correct version of ONTAP from the NetApp Support Site at link:https://mysupport.netapp.com[mysupport.netapp.com].
 
 .About this task
 
 You must netboot the new controllers if they do not have the same version of ONTAP 9 installed on them that is installed on the original controllers. After you install each new controller, you boot the system from the ONTAP 9 image stored on the web server. You can then download the correct files to the boot media device for subsequent system boots.
-
-However, you do not need to netboot the controllers if the same version of ONTAP 9 is installed on them that is installed on the original controllers. If so, you can skip this section and proceed to link:stage_3_installing_and_booting_node3_overview.html[Stage 3 Installing and booting node3].
 
 .Steps
 
@@ -38,6 +36,7 @@ However, you do not need to netboot the controllers if the same version of ONTAP
 . Download the appropriate ONTAP software from the software download section of the NetApp Support Site and store the `<ontap_version>_image.tgz` file on a web-accessible directory.
 . Change to the web-accessible directory and verify that the files you need are available.
 
+[cols="30,70"]
 |===
 |For... |Then...
 
@@ -48,7 +47,7 @@ tar -zxvf <ontap_version>_image.tgz
 Your directory listing should contain a netboot folder with a kernel file:
 netboot/kernel
 
-|Overriding destination checks
+|All other systems
 |Your directory listing should contain the following file:
 <ontap_version>_image.tgz
 You do not need to extract the contents of the
@@ -56,4 +55,4 @@ You do not need to extract the contents of the
 
 |===
 
-You will use the information in the directories in Stage 3.
+You will use the information in the directories in link:stage_3_installing_and_booting_node3_overview.html[Stage 3].
