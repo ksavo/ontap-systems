@@ -1,0 +1,34 @@
+---
+sidebar: upgrade-arl-auto-app_sidebar
+permalink: upgrade-arl-auto-app/retiring_node2.html
+keywords: retiring, node
+summary: To retire node2, you need to shut node2 down properly and remove it from the rack or chassis.
+---
+
+= Retiring node2
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+//
+// This file was created with NDAC Version 2.0 (August 17, 2020)
+//
+// 2020-12-02 14:33:54.956628
+//
+
+[.lead]
+To retire node2, you need to shut node2 down properly and remove it from the rack or chassis.
+
+.Steps
+
+. Resume the operation by using the following command:
++
+`system controller replace resume`
++
+The node halts automatically.
+
+.After you finish
+
+You can decommission node2 after the upgrade is completed. See link:arl-auto-app_decommissioning_the_old_system.html[Decommissioning the old system].

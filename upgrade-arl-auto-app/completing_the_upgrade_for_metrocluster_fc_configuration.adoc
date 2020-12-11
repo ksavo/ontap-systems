@@ -1,0 +1,22 @@
+---
+sidebar: upgrade-arl-auto-app_sidebar
+permalink: upgrade-arl-auto-app/completing_the_upgrade_for_metrocluster_fc_configuration.html
+keywords: completing, upgrade, metrocluster, fc, configuration, mismatch, controller, models
+summary: For a MetroCluster FC configuration, you must replace the disaster recovery/failover site nodes.
+---
+
+= Completing the upgrade for MetroCluster FC configuration
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+//
+// This file was created with NDAC Version 2.0 (August 17, 2020)
+//
+// 2020-12-02 14:33:55.732560
+//
+
+[.lead]
+For a MetroCluster FC configuration, you must replace the disaster recovery/failover site nodes as soon as possible. Mismatch in controller models within a MetroCluster configuration is not supported because controller model mismatch can cause disaster recovery mirroring to go offline. Use the command `-skip- metrocluster-check true` option to bypass MetroCluster checks when you are replacing nodes at a second site.

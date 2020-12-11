@@ -1,0 +1,12 @@
+---
+sidebar: upgrade-arl-auto-app_sidebar
+permalink: upgrade-arl-auto-app/index.html
+summary: Using system controller replace commands to upgrade controller hardware running ONTAP 9.8
+---
+
+= Using "system controller replace" Commands to Upgrade Controller Hardware Running ONTAP 9.8
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
