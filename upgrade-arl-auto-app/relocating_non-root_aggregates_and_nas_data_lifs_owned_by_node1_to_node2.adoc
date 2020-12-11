@@ -1,0 +1,78 @@
+---
+sidebar: upgrade-arl-auto-app_sidebar
+permalink: upgrade-arl-auto-app/relocating_non-root_aggregates_and_nas_data_lifs_owned_by_node1_to_node2.html
+keywords: relocating, non-root, aggregates, nas, data, lif, node1, node2
+summary: Before you can replace node1 with node3, you must move the non-root aggregates.
+---
+
+= Relocate non-root aggregates and NAS data LIFs owned by node1 to node2
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+//
+// This file was created with NDAC Version 2.0 (August 17, 2020)
+//
+// 2020-12-02 14:33:54.013633
+//
+
+[.lead]
+Before you can replace node1 with node3, you must move the non-root aggregates and NAS data LIFs from node1 to node2 before eventually moving node1's resources to node3.
+
+.Before you begin
+
+The operation should already be paused when you begin the task; you must manually resume the operation.
+
+.About this task
+
+Remote LIFs handle traffic to SAN LUNs during the upgrade procedure. Moving SAN LIFs is not necessary for cluster or service health during the upgrade. You must verify that the LIFs are healthy and located on appropriate ports after you bring node3 online.
+
+NOTE: The home owner for the aggregates and LIFs are not modified; only the current -owner is modified.
+
+.Steps
+
+. Resume the aggregate relocation and NAS data LIF move operations by using the following command:
++
+`system controller replace resume`
++
+All the non-root aggregates and NAS data LIFs are migrated from node1 to node2.
++
+The operation pauses to allow you to verify whether all node1 non-root aggregates and non- SAN data LIFs have been migrated to node2.
+
+. Check the status of the aggregate relocation and NAS data LIF move operations by using the following command:
++
+`system controller replace show-details`
+
+. With the operation still paused, verify that all the non-root aggregates are online for their state on node2 by using the following command:
++
+`storage aggregate show -node <node2> -state online -root false`
++
+The following example shows that the non-root aggregates on node2 are online:
++
+....
+cluster::> storage aggregate show -node node2 state online -root false
+Aggregate Size     Available Used% State  #Vols Nodes  RAID Status
+aggr_1    744.9GB  744.8GB    0%   online   5   node2  raid_dp,normal
+aggr_2    825.0GB  825.0GB    0%   online   1   node2  raid_dp,normal
+2 entries were displayed.
+....
++
+If the aggregates have gone offline or become foreign on node2, bring them online by using the following command on node2, once for each aggregate:
++
+`storage aggregate online -aggregate <aggr_name>`
+
+. Verify that all the volumes are online on node2 by using the following command on node2 and examining its output:
++
+`volume show -node <node2> -state offline`
++
+If any volumes are offline on node2, bring them online by using the following command on node2, once for each volume:
++
+`volume online -vserver <vserver-name> -volume <volume-name>`
++
+The `<vserver-name>` to use with this command is found in the output of the previous volume show command.
+
+. If any LIFs are down, set the administrative status of the LIFs to `up` by using the following command, once for each LIF:
++
+`network interface modify -vserver <vserver_name> - lif <LIF_name> -home-node <nodename> - status-admin up`

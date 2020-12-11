@@ -1,0 +1,24 @@
+---
+sidebar: sidebar
+permalink: index.html
+summary: Welcome to the documentation portal for AFF and FAS platforms.
+---
+
+= AFF and FAS Platform Documentation
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+Blah blah. Blah Blah.
+
+== Discover what's new
+
+* new
+* new
+
+== Get started
+
+* link:task_replace_rtc-bat.html[Replaicng the RTC battery]
+* link:task-_shutdown.html[Shutting down the impaired node]

@@ -1,0 +1,36 @@
+---
+sidebar: upgrade-arl-auto-app_sidebar
+permalink: upgrade-arl-auto-app/retiring_node1.html
+keywords: retiring, node
+summary: To retire node1, you resume the automated operation to disable the HA pair with node2 and shut Lonode1 down properly.
+---
+
+= Retire node1
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+//
+// This file was created with NDAC Version 2.0 (August 17, 2020)
+//
+// 2020-12-02 14:33:54.079045
+//
+
+[.lead]
+To retire node1, you resume the automated operation to disable the HA pair with node2 and shut node1 down properly. You must later remove node1 from the rack or chassis.
+
+.Steps
+
+. Resume the operation by using the following command:
++
+`system controller replace resume`
+
+. Verify that node1 has been halted by using the following command:
++
+`system controller replace show-details`
+
+.After you finish
+
+You can decommission node1 after the upgrade is completed. See link:decommissioning_the_old_system.html[Decommissioning the old system].
