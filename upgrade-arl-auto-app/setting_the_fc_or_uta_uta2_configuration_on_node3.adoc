@@ -267,14 +267,14 @@ Adapter  Current Mode  Current Type  Pending Mode Pending Type Admin Status
 |Has storage disks
 |Go to link:verifying_the_node3_installation.html[Verify the node3 installation].
 |Is a V-Series system or has FlexArray Virtualization Software and is connected to storage arrays
-|Return to the link:stage_3_installing_and_booting_node3_overview.html[Stage 3 Install and boot node3] and resume the section at Step 23
+|Resume at link:stage_3_installing_and_booting_node3_overview.html#step23[Step 23].
 |===
 
 . [[step13]]Exit Maintenance mode by using the following command:
 +
 `halt`
 
-. [[step14]]Boot node into boot menu by running `boot_ontap menu`. If you are upgrading to an A800, go to Step 23.
+. [[step14]]Boot node into boot menu by running `boot_ontap menu`. If you are upgrading to an A800, go to <<step23,Step 23>>.
 . [[step15]]On node3, go to the boot menu and using 22/7 and select the hidden option `boot_after_controller_replacement`. At the prompt, enter node1 to reassign the disks of node1 to node3, as per the following example.
 +
 ....
@@ -375,7 +375,7 @@ Login:
 +
 NOTE: In the above console output example, ONTAP will prompt you for the partner node name if the system uses Advanced Disk Partitioning (ADP) disks.
 
-. [[step16]]If the system goes into a reboot loop with the message `no disks found`, it indicates that the system has reset the FC or UTA/UTA2 ports back to the target mode and therefore is unable to see any disks. Continue with <<step17,Step 17>> to <<step22,Step 22>> or go to section link:verifying_the_node4_installation.html[Verify the node4 installation].
+. [[step16]]If the system goes into a reboot loop with the message `no disks found`, it indicates that the system has reset the FC or UTA/UTA2 ports back to the target mode and therefore is unable to see any disks. To resolve this continue with <<step17,Step 17>> to <<step22,Step 22>>, or go to section link:verifying_the_node3_installation.html[Verify the node3 installation].
 . [[step17]]Press Ctrl-C during autoboot to stop the node at the `LOADER>` prompt.
 . [[step18]]At the loader prompt, enter maintenance mode by using the following command:
 +

@@ -5,7 +5,7 @@ keywords: upgrade, preparing, preparation, prepare, overview
 summary: During Stage 1, you must prepare the nodes for the upgrade and run a series of prechecks.
 ---
 
-= Overview
+= Stage 1. Prepare for upgrade
 :hardbreaks:
 :nofooter:
 :icons: font

@@ -5,7 +5,7 @@ keywords: complete upgrade, node, unified, target, storage, encryption
 summary: During stage 6, confirm that the new nodes are set up correctly.
 ---
 
-= Stage 6.  Complete the upgrade
+= Stage 6. Complete the upgrade
 :hardbreaks:
 :nofooter:
 :icons: font

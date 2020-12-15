@@ -55,7 +55,7 @@ The output of the` health` field should be `true`.
 +
 `system controller replace show-details`
 
-. If you are working on a MetroCluster system,  verify that the replaced controller is configured correctly for the MetroCluster configuration; the MetroCluster configuration should be in a healthy state. See link:verifying_the_health_of_the_metrocluster_configuration.html[Verifying the health of the MetroCluster configuration].
+. If you are working on a MetroCluster system,  verify that the replaced controller is configured correctly for the MetroCluster configuration; the MetroCluster configuration should be in a healthy state. See link:verifying_the_health_of_the_metrocluster_configuration.html[Verify the health of the MetroCluster configuration].
 +
 Reconfigure the intercluster LIFs on MetroCluster node node3, and check cluster peering to restore communication between the MetroCluster nodes before proceeding to Step 6.
 +
@@ -76,12 +76,15 @@ Node             Status                       Error-Action
 Node1(now node3) Paused-for-intervention      Follow the instructions given in
                                               Step Details
 Node2                      None
+
 Step Details:
 --------------------------------------------
 To complete the Network Reachability task, the ONTAP network configuration must be manually adjusted to match the new physical network configuration of the hardware. This includes:
+
 1. Re-create the interface group, if needed, before restoring VLANs. For detailed commands and instructions, refer to the "Re-creating VLANs, ifgrps, and broadcast domains" section of the upgrade controller hardware guide for the ONTAP version running on the new controllers.
 2. Run the command "cluster controller-replacement network displaced-vlans show" to check if any VLAN is displaced.
 3. If any VLAN is displaced, run the command "cluster controller-replacement network displaced-vlans restore" to restore the VLAN on the desired port.
+
 2 entries were displayed.
 ....
 +
@@ -154,11 +157,11 @@ In the above example, node1_node3 is just booted after controller replacement. S
 You shoud see output like the following sample:
 +
 ....
-Cluster ::> reachability repair -node node1 node3 -port e0h
+Cluster ::> reachability repair -node node1_node3 -port e0h
 ....
 +
 ....
-Warning: Repairing port "node1 node3: e0h" may cause it to move into a different broadcast domain, which can cause LIFs to be re-homed away from the port. Are you sure you want to continue? {y|n}:
+Warning: Repairing port "node1_node3: e0h" may cause it to move into a different broadcast domain, which can cause LIFs to be re-homed away from the port. Are you sure you want to continue? {y|n}:
 ....
 +
 A warning message, as shown above, is expected for ports with a reachability status that might be different from the reachability status of the broadcast domain where it is currently located. Review the connectivity of the port and answer `y` or `n` as appropriate.
@@ -233,13 +236,13 @@ entries were displayed.
 The following is an example of restoring VLANs that have been displaced from interface group a0a back onto the same interface group:
 +
 ....
-Cluster::*> displaced-vlans restore -node node1 node3 -port a0a -destination-port a0a
+Cluster::*> displaced-vlans restore -node node1_node3 -port a0a -destination-port a0a
 ....
 +
 The following is an example of restoring displaced VLANs on port e0e to e0h:
 +
 ....
-Cluster::*> displaced-vlans restore -node node1 node3 -port e0e -destination-port e0h
+Cluster::*> displaced-vlans restore -node node1_node3 -port e0e -destination-port e0h
 ....
 +
 When a VLAN restore is successful, the displaced VLANs are created on the specified destination port. The VLAN restore fails if the destination port is a member of an interface group, or if the destination port is down.
@@ -272,7 +275,7 @@ When all ports are correctly configured and added to the correct broadcast domai
 
 .. Restore LIF home nodes and home ports by using the following command:
 +
-`displaced-interface restore-home-node -node <node_name> -vserver <vserver_name> - lif-name <lif_name>`
+`displaced-interface restore-home-node -node <node_name> -vserver <vserver_name> - lif-name <LIF_name>`
 
 . Verify that all LIFs have a home port and are administratively up by using the following command:
 +

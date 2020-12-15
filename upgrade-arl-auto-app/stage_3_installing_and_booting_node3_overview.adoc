@@ -5,7 +5,7 @@ keywords: installing, booting, node3, install, cluster
 summary: During Stage 3, you install and boot node3.
 ---
 
-= Stage 3 Install and boot node3
+= Stage 3. Install and boot node3
 :hardbreaks:
 :nofooter:
 :icons: font

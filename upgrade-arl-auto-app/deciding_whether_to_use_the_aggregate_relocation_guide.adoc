@@ -23,7 +23,7 @@ This guide describes how to upgrade the storage controllers in an HA pair with n
 
 You should use this guide under the following circumstances:
 
-* You are running ONTAP 9.8
+* You are running ONTAP 9.8.
 * You do not want to add the new controllers as a new HA pair to the cluster and migrate the data using volume moves.
 * You are experienced in administering ONTAP and are comfortable with the risks of working in the diagnostic privilege mode.
 * If you are upgrading a MetroCluster configuration, it is a 4-node or higher FC configuration, and all nodes are running ONTAP 9.8.
@@ -40,7 +40,7 @@ The following table shows the supported model matrix for the controller upgrade.
 |FAS8020, FAS8040, FAS8060, FAS8080
 |FAS8200, FAS8300, FAS8700, FAS9000
 |AFF8020, AFF8040, AFF8060, AFF8080
-|AFF A300, AFF A400, AFF A700, AFF A800
+|AFF A300, AFF A400, AFF A700, AFF A800*
 |FAS8200
 |FAS8700, FAS9000, FAS8300
 |AFF A300
@@ -49,6 +49,6 @@ The following table shows the supported model matrix for the controller upgrade.
 
 NOTE: If your controller upgrade model combination is not in the above table, contact technical support.
 
-* For the additional steps needed for A800 systems, go to the step that references A800 in section link:setting_the_fc_or_uta_uta2_configuration_on_node3.html#check-and-configure-utauta2-ports-on-node3[Check and configure UTA/UTA2 ports on node3], or link:setting_the_fc_or_uta_uta2_configuration_on_node4.html#check-and-configure-utauta2-ports-on-node4[Checking and configuring UTA/UTA2 ports on node4].
+* For the additional steps needed for A800 systems, go to the step that references A800 in section link:setting_the_fc_or_uta_uta2_configuration_on_node3.html#step23[Check and configure UTA/UTA2 ports on node3, step 23], or link:setting_the_fc_or_uta_uta2_configuration_on_node4.html#step23[Check and configure UTA/UTA2 ports on node4, step 23].
 
 If you prefer a different method of upgrading the controller hardware and are willing to do volume moves, use the link:https://docs.netapp.com/platstor/topic/com.netapp.doc.hw-upgrade-controller/home.html[Controller Hardware Upgrade Express Guide] instead. See the link:https://docs.netapp.com/ontap-9/index.jsp[ONTAP 9 Documentation Center] to access ONTAP 9 product documentation.

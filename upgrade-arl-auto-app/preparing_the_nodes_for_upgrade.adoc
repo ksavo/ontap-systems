@@ -30,7 +30,7 @@ You will see the following output:
 ....
 Warning:
 1. Current ONTAP version is 9.8
-Before starting controller replacement operation, ensure that the new controllers are running the version 9.5
+Before starting controller replacement operation, ensure that the new controllers are running the version 9.8
 
 2. Verify that NVMEM or NVRAM batteries of the new nodes are charged, and charge them if they are not. You need to physically check the new nodes to see if the NVMEM or NVRAM  batteries are charged. You can check the battery status either by connecting to a serial console or using SSH, logging into the Service Processor (SP) or Baseboard Management Controller (BMC) for your system, and use the system sensors to see if the battery has a sufficient charge.
 
@@ -72,8 +72,7 @@ If the models are not supported, the task fails.
 |Image Version Check
 |Checks that the nodes being replaced run the same version of ONTAP.
 If the ONTAP image versions are different, the task fails.
-The new nodes must have the same version of ONTAP
-9.x installed on them that is installed on the original nodes. If the new nodes have a different version of ONTAP installed, you need to netboot the new controllers after you install them. See the link:https://docs.netapp.com/ontap-9/topic/com.netapp.doc.dot-cm-ug-rdg/home.html[ONTAP 9 Upgrade and Revert/Downgrade Guide] for instructions to upgrade ONTAP.
+The new nodes must have the same version of ONTAP 9.8 installed on them that is installed on the original nodes. If the new nodes have a different version of ONTAP installed, you need to netboot the new controllers after you install them. See the link:https://docs.netapp.com/ontap-9/topic/com.netapp.doc.dot-cm-ug-rdg/home.html[ONTAP 9 Upgrade and Revert/Downgrade Guide] for instructions to upgrade ONTAP.
 |HA Status Check
 |Checks if both the nodes being replaced are in a high- availability (HA) pair configuration.
 If storage failover is not enabled for the controllers, the task fails.
@@ -165,6 +164,6 @@ When you set up a cluster, the setup wizard prompts you to enter the cluster-bas
 
 If you do not have new license keys, currently licensed features in the cluster are available to the new controller. However, using unlicensed features on the controller might put you out of compliance with your license agreement, so you should install the new license key or keys for the new controller after the upgrade is complete.
 
-You can obtain new 2-character license keys for ONTAP 9.8 on the link:https://mysupport.netapp.com[NetApp Support Site]. The keys are available in the *My Support* section under *Software licenses*. If the site does not have the license keys you need, you can contact your NetApp sales representative.
+You can obtain new 2-character license keys for ONTAP 9.8 on the link:https://mysupport.netapp.com[NetApp Support Site]. The keys are available in the _My Support_ section under _Software licenses_. If the site does not have the license keys you need, you can contact your NetApp sales representative.
 
 For detailed information about licensing, see the link:https://docs.netapp.com/ontap-9/topic/com.netapp.doc.dot-cm-sag/home.html[System Administration Reference] in the link:https://docs.netapp.com/ontap-9/index.jsp[ONTAP 9 Documentation Center].
