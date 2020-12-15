@@ -23,5 +23,5 @@ During Stage 1, you must prepare the nodes for the upgrade and run a series of p
 
 .Steps
 
-. link:preparing_the_nodes_for_upgrade.html[Preparing the nodes for upgrade]
-. link:getting_an_ip_address_of_an_external_key_management_server_for_storage_encryption.html[Getting an IP address of an external key management server for storage encryption]
+. link:preparing_the_nodes_for_upgrade.html[Prepare the nodes for upgrade]
+. link:getting_an_ip_address_of_an_external_key_management_server_for_storage_encryption.html[Get an IP address of an external key management server for storage encryption]

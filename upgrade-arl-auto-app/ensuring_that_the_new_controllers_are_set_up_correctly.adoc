@@ -1,11 +1,11 @@
 ---
 sidebar: upgrade-arl-auto-app_sidebar
 permalink: upgrade-arl-auto-app/ensuring_that_the_new_controllers_are_set_up_correctly.html
-keywords: ensuring, controllers, ha, node3, node4, node2, lif, cluster, high, availability
+keywords: ensure, controllers, set up, ha, node3, node4, node2, lif, cluster, high, availability
 summary: To ensure correct setup, you must enable the HA pair.
 ---
 
-= Ensuring that the new controllers are set up correctly
+= Ensure that the new controllers are set up correctly
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -32,11 +32,11 @@ The following example shows the output of the command when storage failover is e
 +
 ....
 cluster::> storage failover show
-                                Takeover
-Node        Partner  Possible   State Description
--------- -----  - ------ -------    --------------  ------------------
-node3        node4            true           Connected to node4
-node4        node3            true           Connected to node3
+                  Takeover
+Node     Partner  Possible   State Description
+-------- -----    -------    ------------------
+node3    node4    true       Connected to node4
+node4    node3    true       Connected to node3
 ....
 
 . Verify that node3 and node4 belong to the same cluster by using the following command and examining the output:
@@ -67,7 +67,7 @@ If neither node3 or node4 owns data LIFs home-owned by other nodes in the cluste
 +
 `volume show -node <node4> -state offline`
 
-. If any volumes are offline, compare them with the list of offline volumes that you captured in the section link:arl-auto-app_preparing_the_nodes_for_upgrade.html[Preparing the nodes for upgrade], and bring online any of the offline volumes, as required, by using the following command, once for each volume:
+. If any volumes are offline, compare them with the list of offline volumes that you captured in the section link:preparing_the_nodes_for_upgrade.html[Prepare the nodes for upgrade], and bring online any of the offline volumes, as required, by using the following command, once for each volume:
 +
 `volume online -vserver <vserver-name> -volume <volume_name>`
 
@@ -93,7 +93,7 @@ The license-code parameter accepts a list of 28 upper-case alphabetic character 
 
 ** Delete a specific license from a cluster by using the following commands on the nodes:
 +
-`system license delete -serial-number <node1 serial number> -package * `
+`system license delete -serial-number <node1 serial number> -package *`
 +
 `system license delete -serial-number <node2 serial number> -package *`
 +
@@ -111,9 +111,9 @@ Enter `y` to remove all of the packages.
 +
 `system license show`
 +
-You might want to compare the output with the output that you captured in the link:preparing_the_nodes_for_upgrade.html[Preparing the nodes for upgrade section].
+You might want to compare the output with the output that you captured in the link:preparing_the_nodes_for_upgrade.html[Prepare the nodes for upgrade].
 
-. If NetApp Storage Encryption (NSE) was in use on the configuration and you set the `setenv bootarg.storageencryption.support` command to `true` with the `<kmip.init.maxwait>` variable `off` (in Step *xref* 27 ), you need to reset the variable:
+. If NetApp Storage Encryption (NSE) was in use on the configuration and you set the `setenv bootarg.storageencryption.support` command to `true` with the `<kmip.init.maxwait>` variable `off` (in Step 27 ), you need to reset the variable:
 +
 `set diag; systemshell -node <nodename> -command sudo kenv -u -p kmip.init.maxwait`
 
@@ -121,9 +121,10 @@ You might want to compare the output with the output that you captured in the li
 +
 `system service-processor network modify -node <node_name>`
 +
-See the link:https://docs.netapp.com/ontap-9/topic/com.netapp.doc.dot-cm-sag/home.html[System Administration Reference] for information about the SPs and the link:https://docs.netapp.com/ontap-9/topic/com.netapp.doc.dot-cm-cmpr-980/home.html[ONTAP 9 Commands: Manual Page Reference] for detailed information about the `system service- processor network modify `command.
+See the link:https://docs.netapp.com/ontap-9/topic/com.netapp.doc.dot-cm-sag/home.html[System Administration Reference] for information about the SPs and the link:https://docs.netapp.com/ontap-9/topic/com.netapp.doc.dot-cm-cmpr-980/home.html[ONTAP 9 Commands: Manual Page Reference] for detailed information about the `system service- processor network modify` command.
 
 . Take the following actions on one of the new nodes:
+
 .. Enter advanced privilege level by using the following command:
 +
 `set -privilege advanced`
@@ -132,8 +133,8 @@ See the link:https://docs.netapp.com/ontap-9/topic/com.netapp.doc.dot-cm-sag/hom
 +
 `storage failover modify -node <node_name> - cifs- ndo-duration default|medium|low`
 +
-* Enter `medium` if the system will have workloads in which 50% to 75% of the operations will be 4 KB or smaller.
-* Enter low if the system will have workloads in which 75% to 100% of the operations will be 4 KB or smaller.
+.. Enter `medium` if the system will have workloads in which 50% to 75% of the operations will be 4 KB or smaller.
+.. Enter low if the system will have workloads in which 75% to 100% of the operations will be 4 KB or smaller.
 
 .. Return to the admin level by using the following command:
 +
@@ -144,4 +145,5 @@ See the link:https://docs.netapp.com/ontap-9/topic/com.netapp.doc.dot-cm-sag/hom
 
 .After you finish
 
-If Storage Encryption is enabled on node3 and node4, complete the section link:setting_up_storage_encryption_on_the_new_controller_module.html[Setting up Storage Encryption on the new controller module]. Otherwise, complete the section link:decommissioning_the_old_system.html[Decommissioning the old system].
+If Storage Encryption is enabled on node3 and node4, complete the section link:setting_up_storage_encryption_on_the_new_controller_module.html[Set up Storage Encryption on the new controller module]. Otherwise, complete the section link:decommissioning_the_old_system.html[Decommission the old system].
+// 11 DEC 2020, thomi, checked

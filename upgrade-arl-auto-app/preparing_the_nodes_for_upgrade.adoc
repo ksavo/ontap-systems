@@ -5,7 +5,7 @@ keywords: preparing, nodes, upgrade
 summary: Begin the controller replacement process by entering the following command in the ONTAP command line.
 ---
 
-= Preparing the nodes for upgrade
+= Prepare the nodes for upgrade
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -28,22 +28,15 @@ NOTE: This command can only be executed at the advanced privilege level: `set -p
 You will see the following output:
 +
 ....
-Warning: 1. Current ONTAP version is 9.8
-         Before starting controller replacement operation, ensure that the new
-         controllers are running the version 9.5
+Warning:
+1. Current ONTAP version is 9.8
+Before starting controller replacement operation, ensure that the new controllers are running the version 9.5
 
-         2. Verify that NVMEM or NVRAM batteries of the new nodes are charged, and charge them
-         if they are not. You need to physically check the new nodes to see if the NVMEM or
-         NVRAM  batteries are charged. You can check the battery status either by connecting to
-         a serial console or using SSH, logging into the Service Processor (SP) or
-         Baseboard Management Controller (BMC) for your system, and use the system sensors to
-         see if the battery has a sufficient charge.
+2. Verify that NVMEM or NVRAM batteries of the new nodes are charged, and charge them if they are not. You need to physically check the new nodes to see if the NVMEM or NVRAM  batteries are charged. You can check the battery status either by connecting to a serial console or using SSH, logging into the Service Processor (SP) or Baseboard Management Controller (BMC) for your system, and use the system sensors to see if the battery has a sufficient charge.
 
-         Attention: Do not try to clear the NVRAM contents. If there is a need to clear the
-         contents of NVRAM, contact NetApp technical support.
+Attention: Do not try to clear the NVRAM contents. If there is a need to clear the contents of NVRAM, contact NetApp technical support.
 
-         3. If a controller was previously part of a different cluster, run wipeconfig before
-         using it as the replacement controller.
+3. If a controller was previously part of a different cluster, run wipeconfig before using it as the replacement controller.
 
 Do you want to continue? {y|n}: y
 ....
@@ -57,6 +50,7 @@ Controller replacement operation has been paused for user intervention.
 +
 The system runs the following prechecks; record the output of each precheck for use later in the procedure:
 +
+[cols="35,65"]
 |===
 |Precheck |Description
 
@@ -114,17 +108,17 @@ If node affinity jobs are running, the check fails.
 You must run and save the output of the following commands individually:
 +
 * vserver services name-service dns show
-* network interface show - curr-node <`nodename`> -role cluster,intercluster,node-mgmt,cluster- mgmt, data
-* network port show -node <`nodename`> -type physical
+* network interface show -curr-node <nodename> -role <cluster,intercluster,node-mgmt,cluster-mgmt,data>
+* network port show -node <node_name> -type physical
 * service-processor show -node * -instance
-* network fcp adapter show -node <`node_name`>
+* network fcp adapter show -node <node_name>
 * network port ifgrp show
-* system node show -instance -node <`nodename`>
-* run -node <`node_name`> sysconfig
-* storage aggregate show -node <`nodename`>
-* volume show -node <`node_name`>
-* storage array config show -switch <`switch_name`>
-* system license show -owner <`node_name`>
+* system node show -instance -node <node_name>
+* run -node <node_name> sysconfig
+* storage aggregate show -node <node_name>
+* volume show -node <node_name>
+* storage array config show -switch <switch_name>
+* system license show -owner <node_name>
 * storage encryption disk show
 * security key-manager backup show
 * security key-manager external show
@@ -133,7 +127,7 @@ You must run and save the output of the following commands individually:
 
 NOTE: If NetApp Volume Encryption using Onboard Key Manager (OKM) is in use, keep the key- manager passphrase ready to complete the key manager resync later in the procedure.
 
-=== Correcting aggregate ownership if an ARL precheck fails
+=== Correct aggregate ownership if an ARL precheck fails
 
 If the Aggregate Status Check fails, you must return aggregates owned by the partner node to the home owner node and initiate the precheck process again.
 
@@ -151,12 +145,11 @@ The following example shows the output of the command when a node is both the cu
 +
 ....
 cluster::> storage aggregate show -nodes node1 -is-home true -fields owner-name,home-name,state
-aggregatehome-nameowner-name    state
-------------- ------------ --  ------------   ------
-aggr1node1node1       online
-aggr2node1node1       online
-aggr3node1node1       online
-aggr4node1node1       online
+aggregate   home-name  owner-name  state
+aggr1       node1      node1       online
+aggr2       node1      node1       online
+aggr3       node1      node1       online
+aggr4       node1      node1       online
 4 entries were displayed.
 ....
 
@@ -166,12 +159,12 @@ You must restart the controller replacement process by using the following comma
 
 `system controller replace start -nodes <node_names>`
 
-=== Licensing
+=== License
 
 When you set up a cluster, the setup wizard prompts you to enter the cluster-base license key. However, some features require additional licenses, which are issued as packages that include one or more features. Each node in the cluster must have its own key for each feature to be used in the cluster.
 
 If you do not have new license keys, currently licensed features in the cluster are available to the new controller. However, using unlicensed features on the controller might put you out of compliance with your license agreement, so you should install the new license key or keys for the new controller after the upgrade is complete.
 
-You can obtain new 2-character license keys for ONTAP 9.8 on the link:mysupport.netapp.com[NetApp Support Site]. The keys are available in the *My Support* section under *Software licenses*. If the site does not have the license keys you need, you can contact your NetApp sales representative.
+You can obtain new 2-character license keys for ONTAP 9.8 on the link:https://mysupport.netapp.com[NetApp Support Site]. The keys are available in the *My Support* section under *Software licenses*. If the site does not have the license keys you need, you can contact your NetApp sales representative.
 
 For detailed information about licensing, see the link:https://docs.netapp.com/ontap-9/topic/com.netapp.doc.dot-cm-sag/home.html[System Administration Reference] in the link:https://docs.netapp.com/ontap-9/index.jsp[ONTAP 9 Documentation Center].

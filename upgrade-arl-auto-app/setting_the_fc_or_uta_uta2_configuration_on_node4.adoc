@@ -1,11 +1,11 @@
 ---
 sidebar: upgrade-arl-auto-app_sidebar
 permalink: upgrade-arl-auto-app/setting_the_fc_or_uta_uta2_configuration_on_node4.html
-keywords: setting, fc, uta, UTA2, configuration, node4, target, adapter, ports
+keywords: fc configuration, uta configuration, UTA2 configuration, configure FC ports, UTA/UTA2 card, node4, target, adapter, ports
 summary:
 ---
 
-= Setting the FC or UTA/UTA2 configuration on node4
+= Set the FC or UTA/UTA2 configuration on node4
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -23,22 +23,23 @@ If node4 has onboard FC ports, onboard unified target adapter (UTA/UTA2) ports, 
 
 .About this task
 
-You might need to complete the link:setting_the_fc_or_uta_uta2_configuration_on_node4.html#configuring-fc-ports-on-node4[Configuring FC ports on node4] section, the link:setting_the_fc_or_uta_uta2_configuration_on_node4.html#checking-and-configuring-utauta2-ports-on-node4[Checking and configuring UTA/UTA2 ports on node4] section, or both sections.
+You might need to complete link:setting_the_fc_or_uta_uta2_configuration_on_node4.html#configuring-fc-ports-on-node4[Configure FC ports on node4], the link:setting_the_fc_or_uta_uta2_configuration_on_node4.html#checking-and-configuring-utauta2-ports-on-node4[Check and configure UTA/UTA2 ports on node4], or both sections.
 
-NOTE: If node4 does not have onboard FC ports, onboard UTA/UTA2 ports, or a UTA/UTA2 card, and you are upgrading a system with storage disks, you can skip to the link:arl-auto-app_verifying_the_node4_installation.html[Verifying the node4 installation] section. However, if you have a V-Series system or have FlexArray Virtualization Software and are connected to storage arrays, and node4 does not have onboard FC ports, onboard UTA/ UTA2 ports, or a UTA/UTA2 card, you must return to the link:arl-auto-app_installing_and_booting_node4.html[Installing and booting node4] section and resume at Step *xref* 22 . Make sure that node4 has sufficient rack space. If node4 is in a separate chassis from node2, you can put node4 in the same location as node3. If node2 and node4 are in the same chassis, then node4 is already in its appropriate rack location.
+NOTE: If node4 does not have onboard FC ports, onboard UTA/UTA2 ports, or a UTA/UTA2 card, and you are upgrading a system with storage disks, you can skip to link:arl-auto-app_verifying_the_node4_installation.html[Verify the node4 installation].
+However, if you have a V-Series system or have FlexArray Virtualization Software and are connected to storage arrays, and node4 does not have onboard FC ports, onboard UTA/ UTA2 ports, or a UTA/UTA2 card, you must return to the link:installing_and_booting_node4.html[Installing and booting node4] section and resume at Step 22. Make sure that node4 has sufficient rack space. If node4 is in a separate chassis from node2, you can put node4 in the same location as node3. If node2 and node4 are in the same chassis, then node4 is already in its appropriate rack location.
 
 .Choices
 
-* link:setting_the_fc_or_uta_uta2_configuration_on_node4.html#configuring-fc-ports-on-node4[Configuring FC ports on node4]
-* link:setting_the_fc_or_uta_uta2_configuration_on_node4.html#checking-and-configuring-utauta2-ports-on-node4[Checking and configuring UTA/UTA2 ports on node4]
+* link:setting_the_fc_or_uta_uta2_configuration_on_node4.html#configuring-fc-ports-on-node4[Configure FC ports on node4]
+* link:setting_the_fc_or_uta_uta2_configuration_on_node4.html#checking-and-configuring-utauta2-ports-on-node4[Check and configure UTA/UTA2 ports on node4]
 
-== Configuring FC ports on node4
+== Configure FC ports on node4
 
 If node4 has FC ports, either onboard or on an FC adapter, you must set port configurations on the node before you bring it into service because the ports are not preconfigured. If the ports are not configured, you might experience a disruption in service.
 
 .Before you begin
 
-You must have the values of the FC port settings from node2 that you saved in the section link:arl-auto-app_preparing_the_nodes_for_upgrade.html[Preparing the nodes for upgrade].
+You must have the values of the FC port settings from node2 that you saved in the section link:arl-auto-app_preparing_the_nodes_for_upgrade.html[Prepare the nodes for upgrade].
 
 .About this task
 
@@ -58,7 +59,7 @@ You can skip this section if your system does not have FC configurations. If you
 system node hardware unified-connect show
 |Is a V-Series system or has FlexArray Virtualization Software and is connected to storage arrays
 |Use the following command:
-ucadmin show
+`ucadmin show`
 |===
 +
 The system displays information about all FC and converged network adapters on the system.
@@ -70,17 +71,19 @@ The system displays information about all FC and converged network adapters on t
 |If the system that you are upgrading... |Then…
 
 |Has storage disks
-a|Modify the FC ports on node4 as needed by using one of the following commands:
+|Modify the FC ports on node4 as needed by using one of the following commands:
 * To program target ports:
-ucadmin modify -m fc -t target <adapter>
+`ucadmin modify -m fc -t target <adapter>`
 * To program initiator ports:
-ucadmin modify -m fc -t initiator <adapter>
--t is the FC4 type: target or initiator.
+`ucadmin modify -m fc -t initiator <adapter>`
++
+`-t` is the FC4 type: target or initiator.
 |Is a V-Series system or has FlexArray Virtualization Software and is connected to storage arrays
 
 |Modify the FC ports on node4 as needed by using one of the following commands:
-ucadmin modify -m fc -t initiator -f <adapter_port_name>
--t is the FC4 type, target or initiator.
+`ucadmin modify -m fc -t initiator -f <adapter_port_name>`
++
+`-t` is the FC4 type, target or initiator.
 The FC ports must be programmed as initiators.
 |===
 
@@ -100,13 +103,13 @@ The FC ports must be programmed as initiators.
 |If the system that you are upgrading... |Then…
 
 |Has storage disks
-a|* Skip this section and go to link:verifying_the_node4_installation.html[Verifying the node4 installation] if node4 does not have a UTA/UTA2 card or UTA/UTA2 onboard ports.
+a|* Skip this section and go to link:verifying_the_node4_installation.html[Verify the node4 installation] if node4 does not have a UTA/UTA2 card or UTA/UTA2 onboard ports.
 |Is a V-Series system or has FlexArray Virtualization Software and is connected to storage arrays
-a|* Go to link:setting_the_fc_or_uta_uta2_configuration_on_node4.html#checking-and-configuring-utauta2-ports-on-node4[Checking and configuring UTA/UTA2 ports on node4] if node4 has a UTA/UTA2 card or UTA/UTA2 onboard ports.
-* Skip the section link:setting_the_fc_or_uta_uta2_configuration_on_node4.html#checking-and-configuring-utauta2-ports-on-node4[Checking and configuring UTA/UTA2 ports on node4] if node4 does not have a UTA/UTA2 card or UTA/UTA2 onboard ports, return to the section link:installing_and_booting_node4.html[Installing and booting node4], and resume the section at xref Step 23.
+a|* Go to link:setting_the_fc_or_uta_uta2_configuration_on_node4.html#checking-and-configuring-utauta2-ports-on-node4[Check and configure UTA/UTA2 ports on node4] if node4 has a UTA/UTA2 card or UTA/UTA2 onboard ports.
+* Skip the section link:setting_the_fc_or_uta_uta2_configuration_on_node4.html#checking-and-configuring-utauta2-ports-on-node4[Check and configure UTA/UTA2 ports on node4] if node4 does not have a UTA/UTA2 card or UTA/UTA2 onboard ports, return to the section link:installing_and_booting_node4.html[Install and boot node4], and resume the section at Step 23.
 |===
 
-== Checking and configuring UTA/UTA2 ports on node4
+== Check and configure UTA/UTA2 ports on node4
 
 If node4 has onboard UTA/UTA2 ports or a UTA/UTA2A card, you must check the configuration of the ports and configure them, depending on how you want to use the upgraded system.
 
@@ -124,7 +127,9 @@ UTA/UTA2 ports might be on an adapter or on the controller with the following co
 
 * UTA/UTA2 cards ordered at the same time as the controller are configured before shipment to have the personality you requested.
 * UTA/UTA2 cards ordered separately from the controller are shipped with the default FC target personality.
-* Onboard UTA/UTA2 ports on new controllers are configured (before shipment) to have the personality you requested.However, you should check the configuration of the UTA/UTA2 ports on node4 and change it, if necessary.
+* Onboard UTA/UTA2 ports on new controllers are configured (before shipment) to have the personality you requested.
+
+However, you should check the configuration of the UTA/UTA2 ports on node4 and change it, if necessary.
 
 *Attention*: If your system has storage disks, you enter the commands in this section at the cluster prompt unless directed to enter Maintenance mode. If you have a MetroCluster FC system, V-Series system or a system with FlexArray Virtualization software that is connected to storage arrays,  you must be in Maintenance mode to configure UTA/UTA2 ports.
 
@@ -136,26 +141,26 @@ UTA/UTA2 ports might be on an adapter or on the controller with the following co
 |If the system... |Then…
 
 |Has storage disks
-|system node hardware unified-connect show
+|`system node hardware unified-connect show`
 |Is a V-Series system or has FlexArray Virtualization Software and is connected to storage arrays
-|ucadmin show
+|`ucadmin show`
 |===
 +
 The system displays output similar to the following examples:
 +
 ....
 *> ucadmin show
-                  Current    Current   Pending   Pending  Admin
-Node   Adapter    Mode       Type   Mode      Type       Status
----- - -  ----- ---   ---------  ---------- --------  ------- --  -------
-f-a    0e    fc         initiator  -          -  online
-f-a    0f    fc        initiator  -         -  online
-f-a    0g    cna        target     -          -  online
-f-a    0h    cna        target     -          -  online
-f-a    0e    fc        initiator  -          -  online
-f-a    0f    fc         initiator  -         -  online
-f-a    0g    cna        target     -          -  online
-f-a    0h    cna        target     -          -  online
+                Current  Current    Pending   Pending   Admin
+Node   Adapter  Mode     Type       Mode      Type      Status
+----   -------  ---      ---------  -------   --------  -------
+f-a    0e       fc       initiator  -          -        online
+f-a    0f       fc       initiator  -          -        online
+f-a    0g       cna      target     -          -        online
+f-a    0h       cna      target     -          -        online
+f-a    0e       fc       initiator  -          -        online
+f-a    0f       fc       initiator  -          -        online
+f-a    0g       cna      target     -          -        online
+f-a    0h       cna      target     -          -        online
 *>
 ....
 
@@ -164,29 +169,30 @@ f-a    0h    cna        target     -          -  online
 Contact your NetApp representative to obtain the correct SFP+ module.
 
 . Examine the output of the `ucadmin show` command and determine whether the UTA/UTA2 ports have the personality you want.
+
 . Take one of the following actions:
 +
 |===
 |If the CNA ports... |Then…
 
 |Do not have the personality that you want
-|Go to xref Step 5.
+|Go to <<Step5,Step 5>>.
 
 |Have the personality that you want
 
-|Skip Step 5 through Step 12 and go to xref Step 13.
+|Skip Step 5 through Step 12 and go to <<Step132, Step 13>>.
 
 |===
 
-. Take one of the following actions:
+. [[Step5]]Take one of the following actions:
 +
 |===
 |If you are configuring... |Then…
 
 |Ports on a UTA/UTA2 card
-|Go to xref Step 7
+|Go to <<Step7,Step 7>>
 |Onboard UTA/UTA2 ports
-|Skip Step 7 and go to xref Step 8.
+|Skip Step 7 and go to <<Step8, Step 8>>.
 |===
 
 . If the adapter is in initiator mode, and if the UTA/UTA2 port is online, take the UTA/UTA2 port offline by using the following command:
@@ -195,7 +201,7 @@ Contact your NetApp representative to obtain the correct SFP+ module.
 +
 Adapters in target mode are automatically offline in Maintenance mode.
 
-. If the current configuration does not match the desired use, change the configuration as needed by using the following command:
+. [[Step7]]If the current configuration does not match the desired use, change the configuration as needed by using the following command:
 +
 `ucadmin modify -m fc|cna -t initiator|target <adapter_name>`
 
@@ -204,7 +210,7 @@ Adapters in target mode are automatically offline in Maintenance mode.
 +
 NOTE: You must use FC initiator for tape drives, FlexArray Virtualization systems, and MetroCluster configurations. You must use the FC target for SAN clients.
 
-. Verify the settings by using the following command:
+. [[Step8]]Verify the settings by using the following command:
 +
 `ucadmin show`
 
@@ -214,9 +220,9 @@ NOTE: You must use FC initiator for tape drives, FlexArray Virtualization system
 |If the system... |Then…
 
 |Has storage disks
-|ucadmin show
+|`ucadmin show`
 |Is a V-Series system or has FlexArray Virtualization Software and is connected to storage arrays
-|ucadmin show
+|`ucadmin show`
 
 |===
 +
@@ -224,12 +230,12 @@ The output in the following examples shows that the FC4 type of adapter 1b is ch
 +
 ....
 *> ucadmin show
-NodeAdapterCurrent ModeCurrent TypePending ModePending TypeAdmin Status
----- ------- -------------  ------------ ------------ ------------ ------------
-f-a1afcinitiator- - online
-f-a1bfctarget- initiatoronline
-f-a2afctargetcna- online
-f-a2bfctargetcna- online
+Node  Adapter  Current Mode  Current Type  Pending Mode  Pending Type  Admin Status
+----  -------  ------------  ------------  ------------  ------------  ------------
+f-a   1a       fc             initiator    -             -             online
+f-a   1b       fc             target       -             initiator     online
+f-a   2a       fc             target       cna           -             online
+f-a   2b       fc             target       cna           -             online
 4 entries were displayed.
 *>
 ....
@@ -240,26 +246,27 @@ f-a2bfctargetcna- online
 |If the system... |Then…
 
 |Has storage disks
-|network fcp adapter modify -node <node_name> -adapter<adapter_name> -state up
+|`network fcp adapter modify -node <node_name> -adapter<adapter_name> -state up`
 |Is a V-Series system or has FlexArray Virtualization Software and is connected to storage arrays
-|fcp config <adapter_name> up
+|`fcp config <adapter_name> up`
 |===
 
 . Cable the port.
+
 . Take one of the following actions:
 +
 |===
 |If the system... |Then…
 
 |Has storage disks
-|Go to link:verifying_the_node4_installation.html[Verifying the node4 installation].
+|Go to link:verifying_the_node4_installation.html[Verify the node4 installation].
 
 |Is a V-Series system or has FlexArray Virtualization Software and is connected to storage arrays
-|Return to the link:installing_and_booting_node3.html[Installing and booting node3] and resume the section at xef Step 23.
+|Return to the link:installing_and_booting_node3.html[Install and boot node3] and resume the section at Step 23.
 
 |===
 
-. Exit Maintenance mode by using the following command:
+. [[Step13,Step 13]]Exit Maintenance mode by using the following command:
 +
 `halt`
 
@@ -267,7 +274,7 @@ f-a2bfctargetcna- online
 +
 `boot_ontap menu`.
 +
-If you are upgrading to an A800, go to *xref *Step* *23
+If you are upgrading to an A800, go to <<Step23,Step 23>>
 
 . On node4, go to the boot menu and using 22/7 and select the hidden option `boot_after_controller_replacement`. At the prompt, enter node2 to reassign the disks of node2 to node4, as per the following example.
 +
@@ -318,7 +325,8 @@ Selection (1-11)? 22/7
 (9c)                                Clean configuration and initialize node with whole disks.
 (9d)                                Reboot the node.
 (9e)                                Return to main boot menu.
-The boot device has changed. System configuration information could be lost. Use option (6) to restore the system configuration, or option (4) to initialize all disks and setup a new system.
+The boot device has changed. System configuration information could be lost. Use option (6) to
+restore the system configuration, or option (4) to initialize all disks and setup a new system.
 Normal Boot is prohibited.
 Please choose one of the following:
 (1)  Normal Boot.
@@ -333,13 +341,15 @@ Please choose one of the following:
 (10) Set Onboard Key Manager recovery secrets.
 (11) Configure node for external key management.
 Selection (1-11)? boot_after_controller_replacement
-This will replace all flash-based configuration with the last backup to disks. Are you sure you want to continue?: yes
+This will replace all flash-based configuration with the last backup to disks. Are you sure
+you want to continue?: yes
 .
 .
 <output truncated>
 .
 .
-Controller Replacement: Provide name of the node you would like to replace:<nodename of the node being replaced>
+Controller Replacement: Provide name of the node you would like to replace:
+<nodename of the node being replaced>
 Changing sysid of node node1 disks.
 Fetched sanown old_owner_sysid = 536940063 and calculated old sys id = 536940063
 Partner sysid = 4294967295, owner sysid = 536940063
@@ -352,7 +362,8 @@ varfs_backup_restore: restore using /mroot/etc/varfs.tgz
 varfs_backup_restore: attempting to restore /var/kmip to the boot device
 varfs_backup_restore: failed to restore /var/kmip to the boot device
 varfs_backup_restore: attempting to restore env file to the boot device
-varfs_backup_restore: successfully restored env file to the boot device wrote key file "/tmp/rndc.key"
+varfs_backup_restore: successfully restored env file to the boot device wrote
+    key file "/tmp/rndc.key"
 varfs_backup_restore: timeout waiting for login
 varfs_backup_restore: Rebooting to load the new varfs
 Terminated
@@ -374,7 +385,8 @@ System rebooting...
 .
 .
 .
-WARNING: System ID mismatch. This usually occurs when replacing a boot device or NVRAM cards!
+WARNING: System ID mismatch. This usually occurs when replacing a
+boot device or NVRAM cards!
 Override system ID? {y|n} y
 .
 .
@@ -385,11 +397,13 @@ Login:
 +
 NOTE: In the above console output example, ONTAP will prompt you for the partner node name if the system uses Advanced Disk Partitioning (ADP) disks.
 
-. If the system goes into a reboot loop with the message `no disks found`, it indicates that the system has reset the ports back to the target mode and therefore is unable to see any disks. Continue with Steps 17 to 22 to resolve this.
-. Press Ctrl-C during autoboot to stop the node at the `LOADER>` prompt.
+. If the system goes into a reboot loop with the message `no disks found`, it indicates that the system has reset the ports back to the target mode and therefore is unable to see any disks. Continue with <<Step17, Step 17>> to <<Step22,Step 22>> to resolve this.
+
+. [[Step17]]Press Ctrl-C during autoboot to stop the node at the `LOADER>` prompt.
+
 . At the loader prompt, enter maintenance mode by using the following command:
 +
-`boot_ontap miant`
+`boot_ontap maint`
 
 . In maintenance mode, display all the previously set initiator ports that are now in target mode by using the following command:
 +
@@ -407,15 +421,16 @@ Change the ports back to initiator mode by using the following command:
 +
 `halt`
 
-. At the loader prompt boot up by using the following command:
+. [[Step22]]At the loader prompt boot up by using the following command:
 +
 `boot_ontap`
 +
 Now, on booting, the node can detect all the disks that were previously assigned to it and can boot up as expected.
 
-. If you are upgrading from a system with external disks to a system that supports internal and external disks (AFF A800 systems, for example), set the node2 aggregate as the root aggregate to ensure node4 boots from the root aggregate of node2. To set the root aggregate, go to the boot menu and select option `5` to enter maintenance mode. .
+. [[Step23]]If you are upgrading from a system with external disks to a system that supports internal and external disks (AFF A800 systems, for example), set the node2 aggregate as the root aggregate to ensure node4 boots from the root aggregate of node2. To set the root aggregate, go to the boot menu and select option `5` to enter maintenance mode. .
 +
-*Warning*: You must perform the following substeps in the exact order shown; failure to do so might cause an outage or even data loss.
+WARNING: *Warning*: You must perform the following substeps in the exact order shown; failure to do so might cause an outage or even data loss.
+
 +
 The following procedure sets node4 to boot from the root aggregate of node2:
 
@@ -448,16 +463,20 @@ The following procedure sets node4 to boot from the root aggregate of node2:
 `aggr status`
 +
 NOTE: Failing to perform the previous substep might cause node4 to boot from the internal root aggregate, or it might cause the system to assume a new cluster configuration exists or prompt you to identify one.
+
 +
 The following shows an example of the command output:
+
 +
--------------------------------------------------------------------------------------------------
-`Aggr State  Status    Options `
-`aggr 0_nst_fas8080_15 online    raid_dp, aggr      root,  nosnap=on`
-`                                fast zeroed `
-`                                64-bit `
-`aggr0 offline              raid_dp, aggr   diskroot`
-`                    fast zeroed`
-`                    64-bit`
--------------------------------------------------------------------------------------------------
 ....
+---------------------------------------------------------------------
+Aggr State                       Status               Options
+aggr 0_nst_fas8080_15 online     raid_dp, aggr        root, nosnap=on
+                                 fast zeroed
+                                 64-bit
+aggr0 offline                    raid_dp, aggr        diskroot
+                                 fast zeroed`
+                                 64-bit
+---------------------------------------------------------------------
+....
+// 11 DEC 2020, thomi, checked

@@ -1,11 +1,11 @@
 ---
 sidebar: upgrade-arl-auto-app_sidebar
 permalink: upgrade-arl-auto-app/setting_up_netapp_volume_encryption_on_the_new_controller_module.html
-keywords: setting, netapp, volume, encryption, controller, module, nve, node
+keywords: set up, netapp volume encryption, controller, module, nve, node
 summary: If the replaced controller or the HA partner of the new controller uses NetApp Volume Encryption.
 ---
 
-= Setting up NetApp Volume Encryption on the new controller module
+= Set up NetApp Volume Encryption on the new controller module
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -30,12 +30,12 @@ This procedure includes steps that are performed on the new controller module. Y
 . Verify that the key management servers are still available, their status, and their authentication key information:
 +
 |===
-|For this ONTAP version… |Use this command...
+|For this ONTAP version... |Use this command...
 
 |ONTAP 9.6 and later
-|security key-manager key query -node node
+|`security key-manager key query -node node`
 |ONTAP 9.5 and earlier
-|security key-manager key show
+|`security key-manager key show`
 |===
 
 . Add the key management servers listed in the previous step to the key management server list in the new controller:
@@ -60,13 +60,13 @@ You must install the same key management servers that are installed on the exist
 . Restore authentication keys from all linked key management servers to the new node:
 +
 |===
-|For … |Use this command...
+|For... |Use this command...
 
 |External Key Manager (EKM)
-|security key-manager external restore
+|`security key-manager external restore`
 |Onboard Key Manager (OKM)
 |This command needs the OKM passphrase
-security key-manager onboard sync
+`security key-manager onboard sync`
 |===
 
 .After you finish
@@ -74,3 +74,4 @@ security key-manager onboard sync
 Check if any volumes were taken offline because authentication keys were not available or external key management servers could not be reached. Bring those volumes back online by using the following command:
 
 `volume online`
+// 11 Dec 2020, thomi, checked

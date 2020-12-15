@@ -5,7 +5,7 @@ keywords: restoring, key-manager, configuration, node3, nve, arl, encryption, ne
 summary: If you are using Netapp Volume Encryption (NVE) to encrypt volumes on the system you are upgrading.
 ---
 
-= Restoring key-manager configuration on node3
+= Restore key-manager configuration on node3
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -19,7 +19,7 @@ summary: If you are using Netapp Volume Encryption (NVE) to encrypt volumes on t
 //
 
 [.lead]
-If you are using Netapp Volume Encryption (NVE) to encrypt volumes on the system you are upgrading, the encryption configuration must be synchronized to the new nodes. Encrypted volumes are taken offline when ARL is complete for node1 aggregates from node2 to node3.
+If you are using NetApp Volume Encryption (NVE) to encrypt volumes on the system you are upgrading, the encryption configuration must be synchronized to the new nodes. Encrypted volumes are taken offline when ARL is complete for node1 aggregates from node2 to node3.
 
 .About this task
 
