@@ -1,24 +1,18 @@
 ---
 sidebar: sidebar
 permalink: index.html
-summary: Welcome to the documentation portal for AFF and FAS platforms.
+summary: ONTAP System Documentation
 ---
 
-= AFF and FAS Platform Documentation
+=  ONTAP 9.8 System Documentation
 :hardbreaks:
 :nofooter:
 :icons: font
 :linkattrs:
 :imagesdir: ./media/
 
-Blah blah. Blah Blah.
+[.lead]
 
-== Discover what's new
+This library provides instructions to upgrade controller hardware for storage systems using the aggregate relocation method.
 
-* new
-* new
-
-== Get started
-
-* link:task_replace_rtc-bat.html[Replaicng the RTC battery]
-* link:task-_shutdown.html[Shutting down the impaired node]
+* link:upgrade-arl-auto-app/index.html[Using "system controller replace” commands to upgrade controller hardware running ONTAP 9.8]
