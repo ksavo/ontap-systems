@@ -39,7 +39,7 @@ At this point in the procedure, the operation will have paused as node3 joins qu
 +
 `cluster show -node node3 -fields health`
 +
-The output of the` health` field should be `true`.
+The output of the `health` field should be `true`.
 
 . Verify that node3 is part of the same cluster as node2 and that it is healthy by using the following command:
 +
@@ -226,7 +226,7 @@ Node      Base Port   VLANs
 
 Node1       a0a       822, 823
             e0e       822, 823
-entries were displayed.
+2 entries were displayed.
 ....
 
 .. Restore VLANs that were displaced from their previous base ports by using the following command:

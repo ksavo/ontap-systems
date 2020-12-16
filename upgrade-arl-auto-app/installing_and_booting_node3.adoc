@@ -104,6 +104,7 @@ ifconfig e0M -auto
 +
 |===
 |For... |Then...
+
 |FAS/AFF8000 series systems
 |netboot \http://<web_server_ip/path_to_web-
 accessible_directory>/netboot/kernel
@@ -207,6 +208,7 @@ Interrupt the autoboot by pressing Ctrl-C at the boot environment prompt.
 +
 |===
 |If your system... |Description
+
 |Has disks and no back-end storage
 |Go to <<step23,Step 23>>
 |Is a V-Series system or a system with FlexArray Virtualization software connected to storage arrays
