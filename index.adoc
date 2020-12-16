@@ -1,12 +1,18 @@
 ---
 sidebar: sidebar
 permalink: index.html
-summary: ONTAP 9.8 Hardware Documentation
+summary: ONTAP System Documentation
 ---
 
-=  ONTAP 9.8 Systems Documentation
+=  ONTAP 9.8 System Documentation
 :hardbreaks:
 :nofooter:
 :icons: font
 :linkattrs:
 :imagesdir: ./media/
+
+[.lead]
+
+This library provides instructions to upgrade controller hardware for storage systems using the aggregate relocation method.
+
+* link:upgrade-arl-auto-app/index.html[Using "system controller replace” commands to upgrade controller hardware running ONTAP 9.8]
