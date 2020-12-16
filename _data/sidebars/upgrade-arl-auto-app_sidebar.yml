@@ -1,7 +1,5 @@
 prefix: upgrade-arl-auto-app
 entries:
-  - title: NDAC contents
-    url: /index.html
   - title: ARL 98
     entries:
       - title: Use aggregate relocation to upgrade controller hardware
