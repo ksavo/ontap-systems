@@ -1,0 +1,12 @@
+---
+sidebar: sidebar
+permalink: index.html
+summary: ONTAP 9.8 Hardware Documentation
+---
+
+=  ONTAP 9.8 Documentation
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/

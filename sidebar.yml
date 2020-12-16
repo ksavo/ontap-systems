@@ -1,11 +1,3 @@
 entries:
-  - title: AFF and FAS Docs
-    url: /index.html
-  - title: FRUs
-    entries:
-      - title: Replacing an RTC battery
-        entries:
-          - title: Replacing the RTC batter task
-            url: /task_replace_rtc-bat.html
-          - title: Shutting down the impaired controller
-            url: /task_shutdown.html
+  - title: Using "system controller replace" Commands to Upgrade Controller Hardware Running ONTAP 9.8
+    url: upgrade-arl-auto-app/index.html
