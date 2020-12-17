@@ -18,6 +18,11 @@ summary: Begin the controller replacement process by entering the following comm
 // 2020-12-02 14:33:53.847218
 //
 
+[.lead]
+You must perform the following steps to prepare the nodes for upgrade.
+
+.Steps
+
 . Begin the controller replacement process by entering the following command in the ONTAP command line:
 +
 `system controller replace start -nodes <node_names>`
@@ -81,7 +86,7 @@ If storage failover is not enabled for the controllers, the task fails.
 The nodes should not own any non-local aggregates.
 |Disk Status Check
 |If any nodes being replaced have missing or failed disks, the task fails.
-If any disks are missing, see the link:https://docs.netapp.com/ontap-9/topic/com.netapp.doc.dot-cm-psmg/home.html[ONTAP 9 Disks and Aggregates Power Guide], the link:https://docs.netapp.com/ontap-9/topic/com.netapp.doc.dot-cm-vsmg/home.html[ONTAP 9 Logical Storage Management Guide], and the link:https://docs.netapp.com/ontap-9/topic/com.netapp.doc.dot-cm-vsmg/home.html[ONTAP 9 High-Availability Configuration Guide] in the link:https://docs.netapp.com/ontap-9/index.jsp[ONTAP 9 Documentation Center] to configure storage for the HA pair.
+If any disks are missing, see the link:https://docs.netapp.com/ontap-9/topic/com.netapp.doc.dot-cm-psmg/home.html[ONTAP 9 Disks and Aggregates Power Guide], the link:https://docs.netapp.com/ontap-9/topic/com.netapp.doc.dot-cm-vsmg/home.html[ONTAP 9 Logical Storage Management Guide], and the link:https://docs.netapp.com/ontap-9/topic/com.netapp.doc.dot-cm-hacg/home.html[ONTAP 9 High-Availability Configuration Guide] in the link:https://docs.netapp.com/ontap-9/index.jsp[ONTAP 9 Documentation Center] to configure storage for the HA pair.
 |Data LIF Status Check
 |Checks if any of the nodes being replaced have non- local data LIFs.
 The nodes should not contain any data LIFs for which they are not the home owner. If one of the nodes contains non-local data LIFs, the task fails.

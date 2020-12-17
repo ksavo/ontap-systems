@@ -59,18 +59,20 @@ You can skip this section if your system does not have FC configurations. If you
 |If the system that you are upgrading... |Then…
 
 |Has storage disks
-|In maintenance mode (option 5 at boot menu), modify the FC ports on node3 as needed by using one of the following commands:
+a|In maintenance mode (option 5 at boot menu), modify the FC ports on node3 as needed by using one of the following commands:
+
 * To program target ports:
 `ucadmin modify -m fc -t target <adapter>`
+
 * To program initiator ports:
 `ucadmin modify -m fc -t initiator <adapter>`
--t is the FC4 type: target or initiator.
+`-t` is the FC4 type: target or initiator.
 |Is a V-Series system or has FlexArray Virtualization Software and is connected to storage arrays
 
 |In maintenance mode (option 5 at boot menu), modify the FC ports on node3 as needed by using the following command:
 `ucadmin modify -m fc -t initiator -f <adapter_port_name>`
--t is the FC4 type, target or initiator.
-The FC ports must be programmed as initiators.
+`-t` is the FC4 type, target or initiator.
+*Note*: The FC ports must be programmed as initiators.
 |===
 
 . Take one of the following actions:
@@ -190,7 +192,7 @@ Contact your NetApp representative to obtain the correct SFP+ module.
 |Go to <<step5,Step 5>>.
 
 |Have the personality that you want
-|Skip <<step5,Step 5>> through <<step12,Step 12>> and go to <<step13,Step 13>>.
+|Skip Step 5 through Step 12 and go to <<step13,Step 13>>.
 |===
 
 . [[step5]]Take one of the following actions:
@@ -199,9 +201,9 @@ Contact your NetApp representative to obtain the correct SFP+ module.
 |If you are configuring... |Then…
 
 |Ports on a UTA/UTA2 card
-|Go to Step 7
+|Go to <<step7,Step 7>>
 |Onboard UTA/UTA2 ports
-|Skip Step 7 and go to Step 8.
+|Skip Step 7 and go to <<step8,Step 8>>.
 |===
 
 . [[step6]]If the adapter is in initiator mode, and if the UTA/UTA2 port is online, take the UTA/UTA2 port offline by using the following command:
@@ -253,9 +255,9 @@ Adapter Current Mode Current Type  Pending Mode Pending Type Admin Status
 |If the system... |Then…
 
 |Has storage disks
-|network fcp adapter modify -node <node_name> -adapter<adapter_name> -state up
+|`network fcp adapter modify -node <node_name> -adapter<adapter_name> -state up`
 |Is a V-Series system or has FlexArray Virtualization Software and is connected to storage arrays
-|fcp config <adapter_name> up
+|`fcp config <adapter_name> up`
 |===
 
 . [[step11]]Cable the port.
@@ -341,7 +343,7 @@ This will replace all flash-based configuration with the last backup to disks. A
 <output truncated>
 .
 Controller Replacement: Provide name of the node you would like to replace:<nodename of the node being replaced>
-Changing sysid of node node2 disks.
+Changing sysid of node node1 disks.
 Fetched sanown old_owner_sysid = 536940063 and calculated old sys id = 536940063
 Partner sysid = 4294967295, owner sysid = 536940063
 .
@@ -440,9 +442,9 @@ The following procedure sets node3 to boot from the root aggregate of node1:
 +
 NOTE: Failing to perform the previous substep might cause node3 to boot from the internal root aggregate, or it might cause the system to assume a new cluster configuration exists or prompt you to identify one.
 +
-
-....
 The following shows an example of the command output:
++
+....
 +
 Aggr            State   Status    Options
 aggr 0_nst_fas  8080_15 online    raid_dp, aggr root,  nosnap=on

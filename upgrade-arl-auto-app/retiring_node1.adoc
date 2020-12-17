@@ -33,4 +33,4 @@ To retire node1, you resume the automated operation to disable the HA pair with 
 
 .After you finish
 
-You can decommission node1 after the upgrade is completed. See link:decommissioning_the_old_system.html[Decommissioning the old system].
+You can decommission node1 after the upgrade is completed. See link:decommissioning_the_old_system.html[Decommission the old system].
