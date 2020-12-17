@@ -23,15 +23,15 @@ If node4 has onboard FC ports, onboard unified target adapter (UTA/UTA2) ports, 
 
 .About this task
 
-You might need to complete link:setting_the_fc_or_uta_uta2_configuration_on_node4.html#configuring-fc-ports-on-node4[Configure FC ports on node4], the link:setting_the_fc_or_uta_uta2_configuration_on_node4.html#checking-and-configuring-utauta2-ports-on-node4[Check and configure UTA/UTA2 ports on node4], or both sections.
+You might need to complete link:setting_the_fc_or_uta_uta2_configuration_on_node4.html#configure-fc-ports-on-node4[Configure FC ports on node4], the link:setting_the_fc_or_uta_uta2_configuration_on_node4.html#check-and-configure-utauta2-ports-on-node4[Check and configure UTA/UTA2 ports on node4], or both sections.
 
-NOTE: If node4 does not have onboard FC ports, onboard UTA/UTA2 ports, or a UTA/UTA2 card, and you are upgrading a system with storage disks, you can skip to link:arl-auto-app_verifying_the_node4_installation.html[Verify the node4 installation].
+NOTE: If node4 does not have onboard FC ports, onboard UTA/UTA2 ports, or a UTA/UTA2 card, and you are upgrading a system with storage disks, you can skip to link:verifying_the_node4_installation.html[Verify the node4 installation].
 However, if you have a V-Series system or have FlexArray Virtualization Software and are connected to storage arrays, and node4 does not have onboard FC ports, onboard UTA/ UTA2 ports, or a UTA/UTA2 card, you must return to the link:installing_and_booting_node4.html[Installing and booting node4] section and resume at Step 22. Make sure that node4 has sufficient rack space. If node4 is in a separate chassis from node2, you can put node4 in the same location as node3. If node2 and node4 are in the same chassis, then node4 is already in its appropriate rack location.
 
 .Choices
 
-* link:setting_the_fc_or_uta_uta2_configuration_on_node4.html#configuring-fc-ports-on-node4[Configure FC ports on node4]
-* link:setting_the_fc_or_uta_uta2_configuration_on_node4.html#checking-and-configuring-utauta2-ports-on-node4[Check and configure UTA/UTA2 ports on node4]
+* link:setting_the_fc_or_uta_uta2_configuration_on_node4.html#configure-fc-ports-on-node4[Configure FC ports on node4]
+* link:setting_the_fc_or_uta_uta2_configuration_on_node4.html#check-and-configure-utauta2-ports-on-node4[Check and configure UTA/UTA2 ports on node4]
 
 == Configure FC ports on node4
 
@@ -39,11 +39,11 @@ If node4 has FC ports, either onboard or on an FC adapter, you must set port con
 
 .Before you begin
 
-You must have the values of the FC port settings from node2 that you saved in the section link:arl-auto-app_preparing_the_nodes_for_upgrade.html[Prepare the nodes for upgrade].
+You must have the values of the FC port settings from node2 that you saved in the section link:preparing_the_nodes_for_upgrade.html[Prepare the nodes for upgrade].
 
 .About this task
 
-You can skip this section if your system does not have FC configurations. If your system has onboard UTA/UTA2 ports or a UTA/UTA2 adapter, you configure them in link:setting_the_fc_or_uta_uta2_configuration_on_node4.html#checking-and-configuring-utauta2-ports-on-node4[Checking and configuring UTA/UTA2 ports on node4].
+You can skip this section if your system does not have FC configurations. If your system has onboard UTA/UTA2 ports or a UTA/UTA2 adapter, you configure them in link:setting_the_fc_or_uta_uta2_configuration_on_node4.html#check-and-configure-utauta2-ports-on-node4[Check and configure UTA/UTA2 ports on node4].
 
 *Important*: If your system has storage disks, you must enter the commands in this section at the cluster prompt. If you have a V-Series system or a system with FlexArray Virtualization Software connected to storage arrays, you enter commands in this section in Maintenance mode.
 
@@ -56,7 +56,7 @@ You can skip this section if your system does not have FC configurations. If you
 
 |Has storage disks
 |Use the following command:
-system node hardware unified-connect show
+`system node hardware unified-connect show`
 |Is a V-Series system or has FlexArray Virtualization Software and is connected to storage arrays
 |Use the following command:
 `ucadmin show`
@@ -71,20 +71,21 @@ The system displays information about all FC and converged network adapters on t
 |If the system that you are upgrading... |Then…
 
 |Has storage disks
-|Modify the FC ports on node4 as needed by using one of the following commands:
+a|Modify the FC ports on node4 as needed by using one of the following commands:
+
 * To program target ports:
 `ucadmin modify -m fc -t target <adapter>`
 * To program initiator ports:
 `ucadmin modify -m fc -t initiator <adapter>`
-+
+
 `-t` is the FC4 type: target or initiator.
 |Is a V-Series system or has FlexArray Virtualization Software and is connected to storage arrays
 
 |Modify the FC ports on node4 as needed by using one of the following commands:
 `ucadmin modify -m fc -t initiator -f <adapter_port_name>`
-+
+
 `-t` is the FC4 type, target or initiator.
-The FC ports must be programmed as initiators.
+*Note*: The FC ports must be programmed as initiators.
 |===
 
 . Exit Maintenance mode by using the following command:
@@ -105,8 +106,8 @@ The FC ports must be programmed as initiators.
 |Has storage disks
 a|* Skip this section and go to link:verifying_the_node4_installation.html[Verify the node4 installation] if node4 does not have a UTA/UTA2 card or UTA/UTA2 onboard ports.
 |Is a V-Series system or has FlexArray Virtualization Software and is connected to storage arrays
-a|* Go to link:setting_the_fc_or_uta_uta2_configuration_on_node4.html#checking-and-configuring-utauta2-ports-on-node4[Check and configure UTA/UTA2 ports on node4] if node4 has a UTA/UTA2 card or UTA/UTA2 onboard ports.
-* Skip the section link:setting_the_fc_or_uta_uta2_configuration_on_node4.html#checking-and-configuring-utauta2-ports-on-node4[Check and configure UTA/UTA2 ports on node4] if node4 does not have a UTA/UTA2 card or UTA/UTA2 onboard ports, return to the section link:installing_and_booting_node4.html[Install and boot node4], and resume the section at Step 23.
+a|* Go to link:setting_the_fc_or_uta_uta2_configuration_on_node4.html#check-and-configure-utauta2-ports-on-node4[Check and configure UTA/UTA2 ports on node4] if node4 has a UTA/UTA2 card or UTA/UTA2 onboard ports.
+* Skip the section _Check and configure UTA/UTA2 ports on node4_ if node4 does not have a UTA/UTA2 card or UTA/UTA2 onboard ports, return to the section _Install and boot node4_, and resume at link:installing_and_booting_node4.html#step23[Step 23].
 |===
 
 == Check and configure UTA/UTA2 ports on node4
@@ -180,7 +181,7 @@ Contact your NetApp representative to obtain the correct SFP+ module.
 
 |Have the personality that you want
 
-|Skip Step 5 through Step 12 and go to <<Step132, Step 13>>.
+|Skip Step 5 through Step 12 and go to <<Step13,Step 13>>.
 
 |===
 
@@ -276,7 +277,7 @@ f-a   2b       fc             target       cna           -             online
 +
 If you are upgrading to an A800, go to <<Step23,Step 23>>
 
-. On node4, go to the boot menu and using 22/7 and select the hidden option `boot_after_controller_replacement`. At the prompt, enter node2 to reassign the disks of node2 to node4, as per the following example.
+. [[Step15]]On node4, go to the boot menu and using 22/7 and select the hidden option `boot_after_controller_replacement`. At the prompt, enter node2 to reassign the disks of node2 to node4, as per the following example.
 +
 ----
 LOADER-A> boot_ontap menu
@@ -427,9 +428,9 @@ Change the ports back to initiator mode by using the following command:
 +
 Now, on booting, the node can detect all the disks that were previously assigned to it and can boot up as expected.
 
-. [[Step23]]If you are upgrading from a system with external disks to a system that supports internal and external disks (AFF A800 systems, for example), set the node2 aggregate as the root aggregate to ensure node4 boots from the root aggregate of node2. To set the root aggregate, go to the boot menu and select option `5` to enter maintenance mode. .
+. [[Step23]]If you are upgrading from a system with external disks to a system that supports internal and external disks (AFF A800 systems, for example), set the node2 aggregate as the root aggregate to ensure node4 boots from the root aggregate of node2. To set the root aggregate, go to the boot menu and select option `5` to enter maintenance mode.
 +
-WARNING: *Warning*: You must perform the following substeps in the exact order shown; failure to do so might cause an outage or even data loss.
+WARNING: You must perform the following substeps in the exact order shown; failure to do so might cause an outage or even data loss.
 
 +
 The following procedure sets node4 to boot from the root aggregate of node2:
