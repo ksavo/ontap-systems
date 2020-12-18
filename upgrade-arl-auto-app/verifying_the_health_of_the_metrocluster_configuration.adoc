@@ -19,7 +19,7 @@ summary: Before starting upgrade on a Fabric MetroCluster configuration.
 //
 
 [.lead]
-Before starting upgrade on a Fabric MetroCluster configuration, you must check the health of the MetroCluster configuration to verify proper operation.
+Before starting an upgrade on a Fabric MetroCluster configuration, you must check the health of the MetroCluster configuration to verify proper operation.
 
 .Steps
 
@@ -30,7 +30,7 @@ Before starting upgrade on a Fabric MetroCluster configuration, you must check t
 ....
 metrocluster_siteA::*> metrocluster check run
 ....
-
++
 The operation runs in the background.
 
 . After the `metrocluster check run` operation completes, view the results by using the following command:

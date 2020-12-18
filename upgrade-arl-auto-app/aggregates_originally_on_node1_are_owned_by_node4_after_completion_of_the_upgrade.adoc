@@ -41,14 +41,14 @@ You can fix the incorrect ownership problem after Stage 6,  after you have enabl
 +
 `storage aggregate show -nodes <node4> -is-home true`
 +
-To identify aggregates that were not correctly relocated, refer to the list of aggregates with the home owner of node1 that you obtained in the section link:arl-auto-app_preparing_the_nodes_for_upgrade.html[Preparing the nodes for upgrade] and compare it with output of the above command.
+To identify aggregates that were not correctly relocated, refer to the list of aggregates with the home owner of node1 that you obtained in the section link:preparing_the_nodes_for_upgrade.html[Prepare the nodes for upgrade] and compare it with the output of the above command.
 
-. Compare the output of Step 1 with the output you captured for node1 in the section link:arl-auto-app_preparing_the_nodes_for_upgrade.html[Preparing the nodes for upgrade] and note any aggregates that were not correctly relocated.
+. Compare the output of Step 1 with the output you captured for node1 in the section link:preparing_the_nodes_for_upgrade.html[Prepare the nodes for upgrade] and note any aggregates that were not correctly relocated.
 . Relocate the aggregates left behind on node4 by using the following command:
 +
 `storage aggregate relocation start -node <node4> - aggr <aggr_node_1> -destination <node3>`
 +
-Do not use the `- ndo-controller-upgrade` parameter during this relocation.
+Do not use the `-ndo-controller-upgrade` parameter during this relocation.
 
 . Verify that node3 is now the home owner of the aggregates by using the following command:
 +

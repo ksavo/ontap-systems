@@ -5,7 +5,7 @@ keywords: resuming, snapmirror, operations, transfer, relationship, updates, sch
 summary: You can resume SnapMirror transfers that were quiesced before upgrade and resume the SnapMirror relationships.
 ---
 
-= Resuming SnapMirror operations
+= Resume SnapMirror operations
 :hardbreaks:
 :nofooter:
 :icons: font

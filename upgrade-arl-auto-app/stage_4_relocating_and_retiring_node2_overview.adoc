@@ -23,6 +23,6 @@ During Stage 4, all non-root aggregates are relocated from node2 to node3; the n
 
 .Steps
 
-. link:arl-auto-app_relocating_non-root_aggregates_and_nas_data_lifs_from_node2_to_node3.html[Relocate non-root aggregates and NAS data LIFs from node2 to node3]
-. link:arl-auto-app_retiring_node2.html[Retire node2]
+. link:relocating_non-root_aggregates_and_nas_data_lifs_from_node2_to_node3.html[Relocate non-root aggregates and NAS data LIFs from node2 to node3]
+. link:retiring_node2.html[Retire node2]
 // 10 Dec 2020, thomi, checked

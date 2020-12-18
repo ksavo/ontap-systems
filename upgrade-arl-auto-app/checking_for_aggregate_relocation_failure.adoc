@@ -35,4 +35,4 @@ The `storage aggregate relocation show` command shows you which aggregates were 
 * Take the appropriate corrective action, depending on the output of the `storage aggregate relocation show` command and the output of the EMS message.
 * Force relocation of the aggregate or aggregates by using the `override-vetoes` option or the `override-destination-checks` option of the `storage aggregate relocation start` command.
 +
-For detailed information about the `storage aggregate relocation start, override- vetoes, `and` override-destination-checks` options, see the *ONTAP 9 Commands: Manual Page Reference.*
+For detailed information about the `storage aggregate relocation start`, `override- vetoes`, and `override-destination-checks` options, see the link:https://docs.netapp.com/ontap-9/topic/com.netapp.doc.dot-cm-cmpr-980/home.html[ONTAP 9.8 Commands: Manual Page Reference].

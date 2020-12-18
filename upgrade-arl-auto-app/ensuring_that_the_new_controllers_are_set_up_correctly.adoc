@@ -113,7 +113,7 @@ Enter `y` to remove all of the packages.
 +
 You might want to compare the output with the output that you captured in the link:preparing_the_nodes_for_upgrade.html[Prepare the nodes for upgrade].
 
-. If NetApp Storage Encryption (NSE) was in use on the configuration and you set the `setenv bootarg.storageencryption.support` command to `true` with the `<kmip.init.maxwait>` variable `off` (in Step 27 ), you need to reset the variable:
+. If NetApp Storage Encryption (NSE) was in use on the configuration and you set the `setenv bootarg.storageencryption.support` command to `true` with the `<kmip.init.maxwait>` variable `off` (in Step 27 ), you need to reset the variable by using the following command:
 +
 `set diag; systemshell -node <nodename> -command sudo kenv -u -p kmip.init.maxwait`
 
@@ -121,7 +121,7 @@ You might want to compare the output with the output that you captured in the li
 +
 `system service-processor network modify -node <node_name>`
 +
-See the link:https://docs.netapp.com/ontap-9/topic/com.netapp.doc.dot-cm-sag/home.html[System Administration Reference] for information about the SPs and the link:https://docs.netapp.com/ontap-9/topic/com.netapp.doc.dot-cm-cmpr-980/home.html[ONTAP 9 Commands: Manual Page Reference] for detailed information about the `system service- processor network modify` command.
+See the link:https://docs.netapp.com/ontap-9/topic/com.netapp.doc.dot-cm-sag/home.html[System Administration Reference] for information about the SPs and the link:https://docs.netapp.com/ontap-9/topic/com.netapp.doc.dot-cm-cmpr-980/home.html[ONTAP 9.8 Commands: Manual Page Reference] for detailed information about the `system service- processor network modify` command.
 
 . Take the following actions on one of the new nodes:
 
@@ -133,13 +133,12 @@ See the link:https://docs.netapp.com/ontap-9/topic/com.netapp.doc.dot-cm-sag/hom
 +
 `storage failover modify -node <node_name> - cifs- ndo-duration default|medium|low`
 +
-.. Enter `medium` if the system will have workloads in which 50% to 75% of the operations will be 4 KB or smaller.
-.. Enter low if the system will have workloads in which 75% to 100% of the operations will be 4 KB or smaller.
-
+* Enter `medium` if the system will have workloads in which 50% to 75% of the operations will be 4 KB or smaller.
+* Enter `low` if the system will have workloads in which 75% to 100% of the operations will be 4 KB or smaller.
++
 .. Return to the admin level by using the following command:
 +
 `set -privilege admin`
-
 .. Reboot the system to ensure that the changes take effect.
 . If you want to set up a switchless cluster on the new nodes, follow the instructions in *Transitioning to a two-node switchless cluster* on the NetApp Support Site.
 
