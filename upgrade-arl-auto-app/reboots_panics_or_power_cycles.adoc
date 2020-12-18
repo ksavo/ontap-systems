@@ -19,7 +19,9 @@ summary: The system might crash – reboot, panic or go through a power cycle.
 //
 
 [.lead]
-The system might crash – reboot, panic or go through a power cycle – during different stages of the upgrade. The solution to these problems depend on when they occur.
+The system might crash – reboot, panic or go through a power cycle – during different stages of the upgrade.
+
+The solution to these problems depends on when they occur.
 
 == Reboots, panics, or power cycles during the pre-check phase
 
@@ -46,11 +48,12 @@ Some or all aggregates have been relocated from node1 to node2, and HA pair is s
 
 Ownership of aggregates that were relocated look the same as the ownership of non-root aggregates that were taken over because the home owner has not changed.
 
-When node1 enters the `waiting for giveback `state, node2 gives back all of the node1 non- root aggregates.
+When node1 enters the `waiting for giveback` state, node2 gives back all of the node1 non- root aggregates.
 
 .Steps
 
-. After node1 is booted up, all the non-root aggregates of node1 have moved back to node1. You must perform a manual aggregate relocation of the aggregates from node1 to node2 by using the following command:`storage aggregate relocation start -node node1 -destination node2 -aggregate-list * - ndocontroller-upgrade true`
+. After node1 is booted up, all the non-root aggregates of node1 have moved back to node1. You must perform a manual aggregate relocation of the aggregates from node1 to node2 by using the following command:
+`storage aggregate relocation start -node node1 -destination node2 -aggregate-list * - ndocontroller-upgrade true`
 
 . Continue with the node-pair upgrade procedure.
 
@@ -113,9 +116,9 @@ Node2 does not take over but it is still serving data from all non-root aggregat
 
 == Reboots, panics, or power cycles during first resource-regain phase
 
-Node2 crashes during the first resource-regain phase during aggregate relocation
+=== Node2 crashes during the first resource-regain phase during aggregate relocation
 
-Node2 has relocated some or all its aggregates of node1 to node3. Node3 serves data from aggregates that were relocated. The HA pair is disabled and hence there is no takeover.
+Node2 has relocated some or all of its aggregates from node1 to node3. Node3 serves data from aggregates that were relocated. The HA pair is disabled and hence there is no takeover.
 
 .About this task
 

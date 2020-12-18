@@ -5,7 +5,7 @@ keywords: relocating, retiring, node1, lif
 summary: Relocating and retiring node1
 ---
 
-= Overview
+= Stage 2. Relocate and retire node1
 :hardbreaks:
 :nofooter:
 :icons: font

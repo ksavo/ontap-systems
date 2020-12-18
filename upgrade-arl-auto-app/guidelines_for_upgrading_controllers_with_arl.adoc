@@ -47,7 +47,7 @@ See the link:https://hwu.netapp.com[Hardware Universe] for disk-support informat
 
 * To entry level controllers with internal drives, for example: an FAS 2500.
 +
-If you want to upgrade entry level controllers with internal drives, see the procedure *Upgrading a pair of nodes running clustered Data ONTAP by moving volumes* in the link:https://docs.netapp.com/platstor/topic/com.netapp.doc.hw-upgrade-controller/home.html[Controller Hardware Upgrade Express Guide].
+If you want to upgrade entry level controllers with internal drives, see the procedure _Upgrading a pair of nodes running clustered Data ONTAP by moving volumes_ in the link:https://docs.netapp.com/platstor/topic/com.netapp.doc.hw-upgrade-controller/home.html[Controller Hardware Upgrade Express Guide].
 
 ==== Troubleshooting
 

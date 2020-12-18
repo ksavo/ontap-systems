@@ -19,7 +19,7 @@ summary: After you verify network configuration on node4 and before you relocate
 //
 
 [.lead]
-After you verify network configuration on node4 and before you relocate aggregates from node3 to node4, you must move the NAS data LIFs belonging to node2 that are currently on node3 from node3 to node4. You must also verify that the SAN LIFs exist on node4.
+After you verify network configuration on node4 and before you relocate aggregates from node3 to node4, you must verify that the NAS data LIFs belonging to node2 that are currently on node3 are relocated from node3 to node4. You must also verify that the SAN LIFs exist on node4.
 
 .About this task
 
@@ -38,9 +38,10 @@ The system performs the following tasks:
 * Image version check
 * Target platform check
 * Network reachability check
+
 +
 The operation pauses at this stage in the network reachability check.
-
+[start=2]
 . Resume the relocation operation by using the following command:
 +
 `system controller replace resume`
@@ -49,11 +50,11 @@ The operation pauses at this stage in the network reachability check.
 +
 * Cluster health check
 * Cluster LIF status check
+
 +
 After performing these checks, the system relocates the non-root aggregates and NAS data LIFs owned by node2 to the new controller, node4.
-+
-The system pauses after the resource relocation is complete.
-
+The controller replacement operation  pauses after the resource relocation is complete.
+[start=4]
 . Check the status of the aggregate relocation and NAS data LIF move operations by using the following command:
 +
 `system controller replace show-details`
