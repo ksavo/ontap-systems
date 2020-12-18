@@ -19,17 +19,11 @@ summary: You can nondisruptively upgrade the controller hardware on a pair of no
 //
 
 [.lead]
-You can nondisruptively upgrade the controller hardware on a pair of nodes running ONTAP 9.8 by migrating non-root aggregates from the original nodes to the new nodes in the same cluster. The data hosted on the nodes that are being upgraded is accessible during the upgrade.
-
-.About this task
-
-This procedure uses a method called aggregate relocation (ARL), which takes advantage of the HA configuration to enable you to move ownership of non-root aggregates from one node to another if they share storage within the same cluster.
-
 During the procedure, you upgrade the original controller hardware with the replacement controller hardware, relocating the ownership of non-root aggregates. You migrate aggregates multiple times from node to node to ensure that at least one node is serving data from the aggregates throughout the upgrade procedure. You also migrate data logical interfaces (LIFs) and assign the network ports on the new controller to the interface groups as you proceed.
 
-NOTE: In this document, the original nodes are called *node1* and *node2*, and the new nodes are called *node3* and *node4*. During the described procedure, node1 is replaced by node3, and node2 is replaced by node4.
-The terms *node1*, *node2*, *node3*, and *node4* are used only to distinguish between the original and new nodes. When following the procedure, you must substitute the real names of your original and new nodes. However, in reality, the names of the nodes do not change: node3 has the name node1, and node4 has the name node2 after the controller hardware is upgraded.
-This document uses the term *systems with FlexArray Virtualization Software* to refer to systems that belong to these new platforms. It uses the term V-Series system to refer to the separate hardware systems that can attach to storage arrays
+NOTE: In this document, the original nodes are called _node1_ and _node2_, and the new nodes are called _node3_ and _node4_. During the described procedure, node1 is replaced by node3, and node2 is replaced by node4.
+The terms _node1_, _node2_, _node3_, and _node4_ are used only to distinguish between the original and new nodes. When following the procedure, you must substitute the real names of your original and new nodes. However, in reality, the names of the nodes do not change: node3 has the name node1, and node4 has the name node2 after the controller hardware is upgraded.
+This document uses the term _systems with FlexArray Virtualization Software_ to refer to systems that belong to these new platforms. It uses the term V-Series system to refer to the separate hardware systems that can attach to storage arrays
 
 ==== Important:
 

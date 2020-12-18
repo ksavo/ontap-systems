@@ -30,7 +30,13 @@ Each aggregate has a home owner and current owner. The home owner is the actual 
 | Stage | Steps
 
 | Stage 1: Prepare for upgrade
-a| Run prechecks to verify that the operation can be performed.
+a| . Run prechecks to verify that the operation can be performed.
+. Correct aggregate ownership if a precheck fails.
+. Enter the cluster-base license keys.
+. Get an IP address for storage encryption.
+. Manage authentication using a KMIP server.
+. Manage storage encryption using an onboard key manager (OKM).
+. Quiesce the SnapMirror relationships (optional).
 
 Aggregate ownership at the end of Stage 1:
 
@@ -38,10 +44,11 @@ Aggregate ownership at the end of Stage 1:
 * Node2 is the home owner and current owner of the node2 aggregates.
 
 |Stage 2: Relocate and retire node1
-a|Move non-root aggregates from node1 to node2.
-Move non-SAN data LIFs owned by node1 to node2.
-Retire node1.
-Prepare for netbooting (optional).
+a| . Relocate non-root aggregates from node1 to node2.
+. Relocate non-SAN data LIFs owned by node1 to node2.
+. Relocate failed or vetoed aggregates.
+. Retire node1.
+. Prepare for netbooting (optional).
 
 Aggregate ownership at the end of Stage 2:
 
@@ -49,12 +56,14 @@ Aggregate ownership at the end of Stage 2:
 * Node2 is the home owner and current owner of node2 aggregates.
 
 |Stage 3: Install and boot node3
-a|Install and boot node3.
-Set the FC or (converged network adapter) CNA configuration.
-Map ports from node1 to node3.
-Verify node3 is successfully installed.
-Move non-SAN data LIFs owned by node1 from node2 to node3.
-Relocate non-root aggregates owned by node1 from node2 to node3.
+a| . Install and boot node3.
+. Set the FC or (converged network adapter) CNA configuration.
+. Configure the FC ports.
+. Check and configure the UTA/UTA2 ports.
+. Verify node3 is successfully installed.
+. Restore node3 network configuration.
+. Move non-SAN data LIFs ownde by node 1 from node2 to node3.
+. Relocate non-root aggregates owned by node1 from node2 to node3.
 
 Aggregate ownership at the end of Stage 3:
 
@@ -62,9 +71,9 @@ Aggregate ownership at the end of Stage 3:
 * Node2 is the home owner and current owner of node2 aggregates.
 
 |Stage 4: Relocate and retire node2
-a|Relocate non-root aggregates from node2 to node3.
-Move non-SAN data LIFs owned by node2 to node 3.
-Retire node2.
+a| . Relocate non-root aggregates from node2 to node3.
+. Relocate non-SAN data LIFs owned by node2 to node 3.
+. Retire node2.
 
 Aggregate ownership at the end of Stage 4:
 
@@ -73,11 +82,13 @@ Aggregate ownership at the end of Stage 4:
 * Node3 is the current owner of node2 aggregates.
 
 |Stage 5: Install and boot node4
-a|Install and boot node4.
-Set the FC or CNA configuration on node4.
-Map ports from node2 to node4.
-Verify the node4 installation.
-Relocate non-SAN data LIFs owned by node2 from node3 to node4 and verify the SAN LIFs on node4.
+a| . Install and boot node4.
+. Set the FC or CNA configuration on node4.
+. Configure the FC ports.
+. Check and configure the UTA/UTA2 ports.
+. Verify node4 is successfully installed.
+. Restore node4 network configuration
+. Relocate non-SAN data LIFs owned by node2 from node3 to node4 and verify the SAN LIFs on node4.
 
 Aggregate ownership at the end of Stage 5:
 
@@ -85,7 +96,9 @@ Aggregate ownership at the end of Stage 5:
 * Node4 is the home owner and current owner of aggregates that originally belonged to node2.
 
 |Stage 6: Complete the upgrade
-|Verify the system is set up correctly.
-Set up Storage Encryption on the new controller module.
-Resume NetApp SnapMirror operations if needed.
+a| . Verify the system is set up correctly.
+. Set up Storage Encryption on the new controller module.
+. Set up NetApp Volume Encryption on the new control module.
+. Decommission the old system.
+. Resume NetApp SnapMirror operations, if needed.
 |===

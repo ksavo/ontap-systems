@@ -41,17 +41,16 @@ You must netboot the new controllers if they do not have the same version of ONT
 |For... |Then...
 
 |FAS/AFF8000 series systems
-|Extract the contents of the <ontap_version>_image.tgz file to the target directory by using the following command:
-tar -zxvf <ontap_version>_image.tgz
- If you are extracting the contents on Windows, use 7-Zip or WinRAR to extract the netboot image.
+|Extract the contents of the `<ontap_version>_image.tgz` file to the target directory by using the following command:
+`tar -zxvf <ontap_version>_image.tgz`
+*Note*: If you are extracting the contents on Windows, use 7-Zip or WinRAR to extract the netboot image.
 Your directory listing should contain a netboot folder with a kernel file:
-netboot/kernel
+`netboot/kernel`
 
 |All other systems
 |Your directory listing should contain the following file:
-<ontap_version>_image.tgz
-You do not need to extract the contents of the
-<ontap_version>_image.tgz file.
+`<ontap_version>_image.tgz`
+*Note*: You do not need to extract the contents of the `<ontap_version>_image.tgz` file.
 
 |===
 

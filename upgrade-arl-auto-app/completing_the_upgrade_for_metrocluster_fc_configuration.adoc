@@ -19,5 +19,5 @@ summary: For a MetroCluster FC configuration, you must replace the disaster reco
 //
 
 [.lead]
-For a MetroCluster FC configuration, you must replace the disaster recovery/failover site nodes as soon as possible. Mismatch in controller models within a MetroCluster configuration is not supported because controller model mismatch can cause disaster recovery mirroring to go offline. Use the command `-skip- metrocluster-check true` option to bypass MetroCluster checks when you are replacing nodes at a second site.
+For a MetroCluster FC configuration, you must replace the disaster recovery/failover site nodes as soon as possible. Mismatch in controller models within a MetroCluster configuration is not supported because controller model mismatch causes disaster recovery mirroring to go offline. Use the command `-skip- metrocluster-check true` option to bypass MetroCluster checks when you are replacing nodes at a second site.
 // 11 DEC 2020, thomi, checked
