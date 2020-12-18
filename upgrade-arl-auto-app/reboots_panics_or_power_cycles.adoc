@@ -21,7 +21,7 @@ summary: The system might crash – reboot, panic or go through a power cycle.
 [.lead]
 The system might crash – reboot, panic or go through a power cycle – during different stages of the upgrade.
 
-The solution to these problems depend on when they occur.
+The solution to these problems depends on when they occur.
 
 == Reboots, panics, or power cycles during the pre-check phase
 

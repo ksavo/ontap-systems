@@ -27,7 +27,7 @@ Capture information about the ports on the new nodes the link:https://hwu.netapp
 
 Physical port layout might vary, depending on the model of the nodes. When the new node boots up, ONTAP will try to determine which ports should host cluster LIFs in order to automatically come into quorum.
 
-If the physical ports on node2 do not map directly to the physical ports on node4, the subsequent section <<Restore network configuration on node4>> can be used to repair the network.
+If the physical ports on node2 do not map directly to the physical ports on node4, the subsequent section <<Restore network configuration on node4>> must be used to repair network connectivity.
 
 After you install and boot node4, you must verify that it is installed correctly. You must wait for node4 to join quorum and then resume the relocation operation.
 
@@ -57,7 +57,7 @@ The output of the `health` field should be `true`.
 
 . If you are working on a MetroCluster system,  verify that the replaced controller is configured correctly for the MetroCluster configuration; the MetroCluster configuration should be in a healthy state. Refer to link:verifying_the_health_of_the_metrocluster_configuration.html[Verify the health of the MetroCluster configuration].
 +
-Configure the intercluster LIFs on MetroCluster node node4, and check cluster peering to restore communication between the MetroCluster nodes before proceeding to Step 6.
+Reconfigure the intercluster LIFs on MetroCluster node node4, and check cluster peering to restore communication between the MetroCluster nodes before proceeding to Step 6.
 +
 Check the MetroCluster node status by using the following command:
 +
@@ -93,7 +93,7 @@ network displaced-vlans restore" to restore the VLAN on the desired port.
 2 entries were displayed.
 ....
 +
-NOTE: Section *Re-creating VLANs, ifgrps, and broadcast domains* has been renamed *Restoring network configuration on node4*.
+NOTE: In this guide, section _Re-creating VLANs, ifgrps, and broadcast domains_ has been renamed _Restoring network configuration on node4_.
 
 . With the controller replacement in a paused state, proceed to the next section of this document to restore network configuration on the node.
 
@@ -128,7 +128,7 @@ clusterA::*> reachability show -node node2_node4
   (network port reachability show)
 Node         Port       Expected Reachability       Reachability Status
 ---------    --------  ---------------------------  ---------------------
-node1_node3
+node2_node4
              a0a        Default:Default             no-reachability
              a0a-822    Default:822                 no-reachability
              a0a-823    Default:823                 no-reachability
@@ -159,11 +159,11 @@ In the above example, node2_node4 is just booted after controller replacement. I
 The output looks like the following example:
 +
 ....
-Cluster ::> reachability repair -node node1 -port e0h
+Cluster ::> reachability repair -node node2_node4 -port e0h
 ....
 +
 ....
-Warning: Repairing port "node1: e0h" may cause it to move into a different broadcast domain, which can cause LIFs to be re-homed away from the port. Are you sure you want to continue? {y|n}:
+Warning: Repairing port "node2_node4: e0h" may cause it to move into a different broadcast domain, which can cause LIFs to be re-homed away from the port. Are you sure you want to continue? {y|n}:
 ....
 +
 A warning message, as shown above, is expected for ports with a reachability status that might be different from the reachability status of the broadcast domain where it is currently located.
@@ -179,11 +179,11 @@ As the reachability repair is performed, ONTAP attempts to place the ports in th
 . If interface group configuration does not match the new controller physical port layout, modify it by using the following steps.
 .. You must first remove physical ports that should be interface group member ports from their broadcast domain membership. You can do this by using the following command:
 +
-`network port broadcast-domain remove-port -node <node_name> - ifgrp <ifgrp> -port <port_name>`
+`network port broadcast-domain remove-ports -broadcast-domain <broadcast_domain_name> -ports <node_name:port_name>`
 
 .. Add a member port to an interface group by using the following command:
 +
-`network port ifgrp add-port -node node1 - ifgrp <ifgrp> -port <port_name>`
+`network port ifgrp add-port -node <node_name> - ifgrp <ifgrp> -port <port_name>`
 
 .. The interface group is automatically added to the broadcast domain about a minute after the first member port is added.
 .. Verify that the interface group was added to the appropriate broadcast domain by using the following command:
@@ -239,13 +239,13 @@ Node1       a0a           822, 823
 The following is an example of restoring VLANs that have been displaced from interface group a0a back onto the same interface group:
 +
 ....
-Cluster::*> displaced-vlans restore -node node1 -port a0a -destination-port a0a
+Cluster::*> displaced-vlans restore -node node2_node4 -port a0a -destination-port a0a
 ....
 +
 The following is an example of restoring displaced VLANs on port e0e to e0h:
 +
 ....
-Cluster::*> displaced-vlans restore -node node1 -port e0e -destination-port e0h
+Cluster::*> displaced-vlans restore -node node2_node4 -port e0e -destination-port e0h
 ....
 +
 When a VLAN restore is successful, the displaced VLANs are created on the specified destination port. The VLAN restore fails if the destination port is a member of an interface group, or if the destination port is down.

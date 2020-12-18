@@ -12,21 +12,8 @@ summary: Using system controller replace commands to upgrade controller hardware
 :imagesdir: ./media/
 
 [.lead]
-This guide describes how to perform a nondisruptive upgrade of the controller hardware on a pair of nodes running ONTAP 9.8 using the aggregate relocation (ARL) method.
+This guide describes how to upgrade of the controller hardware without disruption.
 
-* link:using_aggregate_relocation_to_upgrade_controller_hardware_overview.html[Use aggregate relocation to upgrade controller hardware]
-* link:deciding_whether_to_use_the_aggregate_relocation_guide.html[Decide whether to use the aggregate relocation guide]
-* link:required_tools_and_documentation.html[Required tools and documentation]
-* link:guidelines_for_upgrading_controllers_with_arl.html[Guidelines for upgrading controllers with ARL]
-* link:verifying_the_health_of_the_metrocluster_configuration.html[Verify the health of the MetroCluster configuration]
-* link:checking_for_metrocluster_configuration_errors.html[Check for MetroCluster configuration errors]
-* link:verifying_switchover,_healing,_and_switchback.html[Verify switchover, healing, and switchback]
-* link:overview_of_the_arl_upgrade.html[Overview of the ARL upgrade]
-* link:upgrading_the_node_pair.html[Upgrade the node pair]
-* link:stage_1_preparing_for_upgrade_overview.html[Stage 1. Prepare for upgrade]
-* link:stage_2_relocating_and_retiring_node1_overview.html[Stage 2. Relocate and retire node1]
-* link:stage_3_installing_and_booting_node3_overview.html[Stage 3. Install and boot node3]
-* link:stage_4_relocating_and_retiring_node2_overview.html[Stage 4. Relocate and retire node2]
-* link:stage_5_installing_and_booting_node4_overview.html[Stage 5. Install and boot node4]
-* link:stage_6_completing_the_upgrade_overview.html[Stage 6. Complete the upgrade]
-* link:troubleshooting_overview.html[Troubleshooting]
+You can nondisruptively upgrade the controller hardware on a pair of nodes running ONTAP 9.8 by migrating non-root aggregates from the original nodes to the new nodes in the same cluster. The data hosted on the nodes that are being upgraded is accessible during the upgrade.
+
+This procedure uses a method called ARL, which takes advantage of the HA configuration to enable you to move ownership of non-root aggregates from one node to another if they share storage within the same cluster.

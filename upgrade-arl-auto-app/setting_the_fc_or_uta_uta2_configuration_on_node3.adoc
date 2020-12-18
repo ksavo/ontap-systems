@@ -445,7 +445,6 @@ NOTE: Failing to perform the previous substep might cause node3 to boot from the
 The following shows an example of the command output:
 +
 ....
-+
 Aggr            State   Status    Options
 aggr 0_nst_fas  8080_15 online    raid_dp, aggr root,  nosnap=on
                                   fast zeroed, 64-bit

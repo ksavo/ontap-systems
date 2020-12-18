@@ -351,7 +351,7 @@ you want to continue?: yes
 .
 Controller Replacement: Provide name of the node you would like to replace:
 <nodename of the node being replaced>
-Changing sysid of node node1 disks.
+Changing sysid of node node2 disks.
 Fetched sanown old_owner_sysid = 536940063 and calculated old sys id = 536940063
 Partner sysid = 4294967295, owner sysid = 536940063
 .
@@ -398,7 +398,7 @@ Login:
 +
 NOTE: In the above console output example, ONTAP will prompt you for the partner node name if the system uses Advanced Disk Partitioning (ADP) disks.
 
-. If the system goes into a reboot loop with the message `no disks found`, it indicates that the system has reset the ports back to the target mode and therefore is unable to see any disks. Continue with <<Step17, Step 17>> to <<Step22,Step 22>> to resolve this.
+. If the system goes into a reboot loop with the message `no disks found`, it indicates that the system has reset the FC or UTA/UTA2 ports back to the target mode and therefore is unable to see any disks. To resolve this, continue with <<Step17, Step 17>> to <<Step22,Step 22>> or go to section link:verifying_the_node4_installation.html[Verify the node4 installation].
 
 . [[Step17]]Press Ctrl-C during autoboot to stop the node at the `LOADER>` prompt.
 

@@ -88,7 +88,7 @@ To complete the Network Reachability task, the ONTAP network configuration must 
 2 entries were displayed.
 ....
 +
-NOTE: In this guide, the section *Re-creating VLANs, ifgrps, and broadcast domains* has been renamed *Restore network configuration on node3*.
+NOTE: In this guide, the section _Re-creating VLANs, ifgrps, and broadcast domains_ has been renamed _Restore network configuration on node3_.
 
 . With the controller replacement in a paused state, proceed to the next section of this document to restore network configuration on the node.
 
@@ -108,7 +108,7 @@ For more information on creating and re-creating VLANs, interface groups, and br
 +
 All physical network ports, VLAN ports and interface group ports on the node are displayed. From this output, you can see any physical ports that have been moved into the `Cluster` broadcast domain by ONTAP. You can use this output to aid in deciding which ports should be used as interface group member ports, VLAN base ports or standalone physical ports for hosting LIFs.
 
-. [[step2]]List the broadcast-domains on the cluster by using the following command:
+. [[step2]]List the broadcast domains on the cluster by using the following command:
 +
 `broadcast-domain show`
 

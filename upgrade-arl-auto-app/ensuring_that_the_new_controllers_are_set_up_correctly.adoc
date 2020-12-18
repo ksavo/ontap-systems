@@ -135,7 +135,8 @@ See the link:https://docs.netapp.com/ontap-9/topic/com.netapp.doc.dot-cm-sag/hom
 +
 * Enter `medium` if the system will have workloads in which 50% to 75% of the operations will be 4 KB or smaller.
 * Enter `low` if the system will have workloads in which 75% to 100% of the operations will be 4 KB or smaller.
-* Return to the admin level by using the following command:
++
+.. Return to the admin level by using the following command:
 +
 `set -privilege admin`
 .. Reboot the system to ensure that the changes take effect.

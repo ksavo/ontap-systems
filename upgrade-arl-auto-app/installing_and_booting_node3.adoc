@@ -72,7 +72,7 @@ To override this delay, press 'c' followed by 'Enter'
 .. Check for any console messages that might indicate a problem other than a low NVRAM battery, and, if necessary, take any required corrective action.
 .. Allow the battery to charge and the boot process to complete.
 +
-NOTE: Do not override the delay; failure to allow the battery to charge could result in a loss of data. See link:preparing_for_netboot.html[Prepare for netboot].
+NOTE: *Do not override the delay*; *failure to allow the battery to charge could result in a loss of data*. See link:preparing_for_netboot.html[Prepare for netboot].
 
 
 . [[step6]]Configure the netboot connection by choosing one of the following actions.
@@ -91,7 +91,8 @@ NOTE: You should use the management port and IP as the netboot connection. Do no
 
 `ifconfig e0M -addr=<filer_addr> -mask=<netmask> -gw=<gateway> - dns=<dns_addr> domain=<dns_domain>`
 
-`<filer_addr>` is the IP address of the storage system. <netmask> is the network mask of the storage system.
+`<filer_addr>` is the IP address of the storage system.
+`<netmask>` is the network mask of the storage system.
 `<gateway>` is the gateway for the storage system.
 `<dns_addr>` is the IP address of a name server on your network. This parameter is optional.
 `<dns_domain>` is the Domain Name Service (DNS) domain name. This parameter is optional.
@@ -208,10 +209,10 @@ Interrupt the autoboot by pressing Ctrl-C at the boot environment prompt.
 |Has disks and no back-end storage
 |Go to <<step23,Step 23>>
 |Is a V-Series system or a system with FlexArray Virtualization software connected to storage arrays
-|Go to section link:setting_the_fc_or_uta_uta2_configuration_on_node3.html[Setting the FC or UTA/UTA2 configuration on node3] and complete the subsections in this section.
-Return to this section and complete the remaining steps, beginning with <<step23,Step 23>>.
+a|. Go to section link:setting_the_fc_or_uta_uta2_configuration_on_node3.html[Setting the FC or UTA/UTA2 configuration on node3] and complete the subsections in this section.
+. Return to this section and complete the remaining steps, beginning with <<step23,Step 23>>.
 
-Important: You must reconfigure FC onboard ports, CNA onboard ports, and CNA cards before you boot ONTAP on the V-Series or system with FlexArray Virtualization software.
+*Important*: You must reconfigure FC onboard ports, CNA onboard ports, and CNA cards before you boot ONTAP on the V-Series or system with FlexArray Virtualization software.
 |===
 
 . [[step23]]Add the FC initiator ports of the new node to the switch zones.
@@ -239,4 +240,5 @@ Installing a new controller module changes the WWPN values associated with each 
 +
 If you do not have FC or UTA/UTA2 configuration, execute link:setting_the_fc_or_uta_uta2_configuration_on_node3.html#step15[Check and configure UTA/UTA2 ports on node 3, step 15] so that node3 can recognize node1’s disks.
 
-. [[step29]]For a MetroCluster configuration, V-Series systems and systems with FlexArray Virtualization software connected to storage arrays,  you must set and configure the FC or UTA/UTA2 ports on node3 to detect the disks attached to the node. To complete this task, go to link:setting_the_fc_or_uta_uta2_configuration_on_node3.html[Set the FC or UTA/UTA2 configuration on node3].
+. [[step29]]For a MetroCluster configuration, V-Series systems and systems with FlexArray Virtualization software connected to storage arrays,  you must set and configure the FC or UTA/UTA2 ports on node3 to detect the disks attached to the node.
+To complete this task, go to section link:setting_the_fc_or_uta_uta2_configuration_on_node3.html[Set the FC or UTA/UTA2 configuration on node3].

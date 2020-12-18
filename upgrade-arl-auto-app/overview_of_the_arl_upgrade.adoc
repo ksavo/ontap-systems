@@ -84,10 +84,11 @@ Aggregate ownership at the end of Stage 4:
 |Stage 5: Install and boot node4
 a| . Install and boot node4.
 . Set the FC or CNA configuration on node4.
-. Check the FC ports.
+. Configure the FC ports.
 . Check and configure the UTA/UTA2 ports.
 . Verify node4 is successfully installed.
 . Relocate non-SAN data LIFs owned by node2 from node3 to node4 and verify the SAN LIFs on node4.
+. Restore node4 network configuration
 
 Aggregate ownership at the end of Stage 5:
 
