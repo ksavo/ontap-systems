@@ -32,7 +32,7 @@ The relocation operation will have paused due to the error.
 +
 `storage aggregate relocation start -node <node1> -destination <node2> aggregate-list <aggr_name> -ndo-controller-upgrade true`
 
-. When prompted, enter `y.`
+. When prompted, enter `y`.
 . You can force relocation by using one of the following methods:
 
 [cols="35,65"]

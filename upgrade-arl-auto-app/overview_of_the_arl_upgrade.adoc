@@ -87,8 +87,8 @@ a| . Install and boot node4.
 . Configure the FC ports.
 . Check and configure the UTA/UTA2 ports.
 . Verify node4 is successfully installed.
-. Relocate non-SAN data LIFs owned by node2 from node3 to node4 and verify the SAN LIFs on node4.
 . Restore node4 network configuration
+. Relocate non-SAN data LIFs owned by node2 from node3 to node4 and verify the SAN LIFs on node4.
 
 Aggregate ownership at the end of Stage 5:
 
