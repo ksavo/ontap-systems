@@ -1,0 +1,14 @@
+---
+sidebar: upgrade-arl-manual-app_sidebar
+permalink: upgrade-arl-manual-app/relocate_node2_non_root_aggr_node3_node4.html
+summary:
+---
+
+= Relocate node2's non-root aggregates from node3 to node4
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+[.lead]
