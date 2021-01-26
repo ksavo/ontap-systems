@@ -1,7 +1,7 @@
 ---
 sidebar: upgrade-arl-manual-app_sidebar
 permalink: upgrade-arl-manual-app/required_tools_documentation.html
-summary:
+summary: Tools and documentation you will need during upgrade.
 ---
 
 = Required tools and documentation
@@ -12,3 +12,4 @@ summary:
 :imagesdir: ./media/
 
 [.lead]
+include::_include/ru_app_required_tools_documentation.html[]

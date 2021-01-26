@@ -1,7 +1,7 @@
 ---
 sidebar: upgrade-arl-manual-app_sidebar
 permalink: upgrade-arl-manual-app/manage_authentication_okm.html
-summary:
+summary:  You can use an onboard key manager to manager authentication keys.
 ---
 
 = Manage authentication using an onboard key manager
@@ -12,3 +12,4 @@ summary:
 :imagesdir: ./media/
 
 [.lead]
+include::_include/ru_app_manage_authentication_okm.adoc[]

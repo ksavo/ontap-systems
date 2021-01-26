@@ -19,7 +19,7 @@ summary: During Stage 1, you must prepare the nodes for the upgrade and run a se
 //
 
 [.lead]
-During Stage 1, you must prepare the nodes for the upgrade and run a series of prechecks. You might need to rekey disks for Storage Encryption. You must also prepare to netboot the new controllers.
+include::_include/ru_app_stage1_lead.adoc[]
 
 .Steps
 

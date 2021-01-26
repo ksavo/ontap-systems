@@ -1,7 +1,7 @@
 ---
 sidebar: upgrade-arl-manual-app_sidebar
 permalink: upgrade-arl-manual-app/upgrades_not_supported_for_arl.html
-summary:
+summary: Upgrades not supported for ARL
 ---
 
 = Upgrades not supported for ARL
@@ -12,3 +12,16 @@ summary:
 :imagesdir: ./media/
 
 [.lead]
+You cannot perform the following upgrades:
+
+* To or from controllers that cannot run ONTAP 9.8 or later.
+
+* To replacement controllers that do not support the disk shelves connected to the original controllers.
++
+See the Hardware Universe at hwu.netapp.com for disk-support information.
+
+* From controllers with root aggregates or data aggregates on internal drives.
++
+If you want to upgrade controllers with root aggregates or data aggregates on internal disk drives, see the procedure Upgrading a pair of nodes running clustered Data ONTAP by moving volumes in Controller Hardware Upgrade Express Guide.
++
+NOTE: If you want to upgrade ONTAP on nodes in a cluster, see the ONTAP 9 Upgrade and Revert/Downgrade Guide at the ONTAP 9 Documentation Center.

@@ -1,7 +1,7 @@
 ---
 sidebar: upgrade-arl-manual-app_sidebar
 permalink: upgrade-arl-manual-app/guidelines_upgrade_with_arl.html
-summary:
+summary: Guidelines for upgrade controllers with ARL
 ---
 
 = Guidelines for upgrading controllers with ARL
@@ -12,3 +12,4 @@ summary:
 :imagesdir: ./media/
 
 [.lead]
+To understand whether you can use aggregate relocation (ARL) to upgrade a pair of controllers running ONTAP 9.8 depends on the platform and the configuration of both the original and replacement controllers.

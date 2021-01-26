@@ -1,7 +1,7 @@
 ---
 sidebar: upgrade-arl-manual-app_sidebar
 permalink: upgrade-arl-manual-app/troubleshooting.html
-summary:
+summary: This procedure includes troubleshooting suggestions.
 ---
 
 = Troubleshooting
@@ -12,3 +12,8 @@ summary:
 :imagesdir: ./media/
 
 [.lead]
+This procedure includes troubleshooting suggestions.
+
+If any problems occur while upgrading the controllers, you can refer to the Troubleshooting section at the end of the procedure for more information and possible solutions.
+
+If you do not find a solution to the problem you encountered, you should contact technical support.
