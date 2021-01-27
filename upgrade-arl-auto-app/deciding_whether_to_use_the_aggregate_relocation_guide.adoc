@@ -19,18 +19,12 @@ summary: This guide describes how to upgrade the storage controllers in an HA pa
 //
 
 [.lead]
-This guide describes how to upgrade the storage controllers in an HA pair with new controllers while keeping all the existing data and disks. This is a complex procedure that should be used only by experienced administrators.
-
-You should use this guide under the following circumstances:
-
-* You are running ONTAP 9.8.
-* You do not want to add the new controllers as a new HA pair to the cluster and migrate the data using volume moves.
-* You are experienced in administering ONTAP and are comfortable with the risks of working in the diagnostic privilege mode.
+include::_include/ru_app_decide_chunk_a.adoc[]
 * If you are upgrading a MetroCluster configuration, it is a 4-node or higher FC configuration, and all nodes are running ONTAP 9.8.
-
++
 For upgrading MetroCluster IP configurations, refer to the link:http://ie-docs.rtp.openeng.netapp.com/ontap-9_chowchow/topic/com.netapp.doc.dot-mcc-upgrade/home.html[MetroCluster Upgrade, Transition, and Expansion Guide^].
 
-NOTE: You can use NetApp Storage Encryption (NSE) and NetApp Volume Encryption (NVE) with this procedure.
+include::_include/ru_app_decide_chunk_b.adoc[]
 
 The following table shows the supported model matrix for the controller upgrade.
 
@@ -51,4 +45,4 @@ NOTE: If your controller upgrade model combination is not in the above table, co
 
 * For the additional steps needed for A800 systems, go to the step that references A800 in section link:setting_the_fc_or_uta_uta2_configuration_on_node3.html#step23[Check and configure UTA/UTA2 ports on node3, step 23], or link:setting_the_fc_or_uta_uta2_configuration_on_node4.html#step23[Check and configure UTA/UTA2 ports on node4, step 23].
 
-If you prefer a different method of upgrading the controller hardware and are willing to do volume moves, use the link:https://docs.netapp.com/platstor/topic/com.netapp.doc.hw-upgrade-controller/home.html[Controller Hardware Upgrade Express Guide] instead. See the link:https://docs.netapp.com/ontap-9/index.jsp[ONTAP 9 Documentation Center] to access ONTAP 9 product documentation.
+include::_include/ru_app_decide_chunk_c.adoc[]

@@ -119,7 +119,7 @@ vs0
             rads2        up/down  10.63.0.52/24      node3         e1b     true
 vs1
             lif1         up/up    172.17.176.120/24  node3         e0c     true
-            lif2         up/up    172.17.176.121/24  node3 
+            lif2         up/up    172.17.176.121/24  node3
 ----
 
 .. If node4 has any SAN LIFs or groups of SAN LIFs that are on a port that did not exist on node2, move them to an appropriate port on node4 by entering one of the following commands:

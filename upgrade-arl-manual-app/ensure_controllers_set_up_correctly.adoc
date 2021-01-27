@@ -76,7 +76,7 @@ The license-code parameter accepts a list of 28 upper-case alphabetic character 
 * To delete all expired licenses, enter:
 `system license clean-up -expired`
 * To delete all unused licenses, enter:
-`system license clean-up -unused` 
+`system license clean-up -unused`
 * To delete a specific license from a cluster, enter the following commands on the nodes:
 `system license delete -serial-number <node1 serial number> -package *`
 `system license delete -serial-number <node2 serial number> -package *`
