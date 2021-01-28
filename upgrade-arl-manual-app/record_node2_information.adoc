@@ -1,0 +1,14 @@
+---
+sidebar: upgrade-arl-manual-app_sidebar
+permalink: upgrade-arl-manual-app/record_node2_information.html
+summary:
+---
+
+= Record node2 information
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+[.lead]

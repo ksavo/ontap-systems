@@ -1,0 +1,14 @@
+---
+sidebar: upgrade-arl-manual-app_sidebar
+permalink: upgrade-arl-manual-app/stage2_relocate_retire_node1.html
+summary:
+---
+
+= Stage 2: Relocate and retire node1
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+[.lead]

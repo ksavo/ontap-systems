@@ -1,0 +1,15 @@
+---
+sidebar: upgrade-arl-manual-app_sidebar
+permalink: upgrade-arl-manual-app/upgrade_node_pair.html
+summary: Prepare the original node for upgrade by performing tasks on the original and new nodes.
+---
+
+= Upgrade the node pair
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+[.lead]
+include::_include/ru_app_upgrade_node_pair.adoc[]

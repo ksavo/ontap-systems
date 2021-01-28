@@ -1,0 +1,15 @@
+---
+sidebar: upgrade-arl-manual-app_sidebar
+permalink: upgrade-arl-manual-app/quiesce_snapmirror_relationships.html
+summary: Quiesce all SnapMirror relationships before you netboot the system.
+---
+
+= Quiesce the SnapMirror relationships
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+[.lead]
+include::_include/ru_app_quiesce_snapmirror_relationships.adoc[]
