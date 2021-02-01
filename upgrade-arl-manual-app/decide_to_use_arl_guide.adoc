@@ -13,11 +13,10 @@ summary:
 :includedir: ../_include
 
 [.lead]
+
 include::../_include/ru_app_decide_chunk_a.adoc[]
 * You have a system that uses Fabric MetroCluster 4-mode and 8-mode configurations running ONTAP 9.8 and later.
 
-include::../../_include/ru_app_decide_chunk_b.adoc[]
+include::../_include/ru_app_decide_chunk_b.adoc[]
 
-include::{includedir}/_include/ru_app_decide_chunk_c.adoc[]
-
-include::..\_include\ru_app_decide_chunk_c.adoc[]
+include::../_include/ru_app_decide_chunk_c.adoc[]

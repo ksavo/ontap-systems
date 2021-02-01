@@ -11,5 +11,4 @@ summary: Configure Storage Encryptiion and establish a client authentication key
 :linkattrs:
 :imagesdir: ./media/
 
-[.lead]
-include::_include/ru_app_get_ip_address_external_km_server.adoc[]
+include::../_include/ru_app_get_ip_address_external_km_server.adoc[]

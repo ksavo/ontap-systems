@@ -1,7 +1,7 @@
 ---
 sidebar: upgrade-arl-manual-app_sidebar
 permalink: upgrade-arl-manual-app/arl_upgrade_workflow.html
-summary:
+summary: ARL upgrade workflow
 ---
 
 = ARL upgrade workflow
@@ -12,7 +12,8 @@ summary:
 :imagesdir: ./media/
 
 [.lead]
-include::_include/ru_overview_arl_workflow_chunk_a.adoc[]
+
+include::../_include/ru_app_overview_arl_workflow_chunk_a.adoc[]
 
 [cols="35,65"]
 |===

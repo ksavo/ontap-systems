@@ -1,7 +1,7 @@
 ---
 sidebar: upgrade-arl-manual-app_sidebar
 permalink: upgrade-arl-manual-app/decommission_old_system.html
-summary:
+summary: Decommission the old system
 ---
 
 = Decommission the old system

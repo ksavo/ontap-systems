@@ -12,4 +12,4 @@ summary:
 :imagesdir: ./media/
 
 [.lead]
-include::_include/ru-app-use-arl-overview.adoc[]
+include::../_include/ru-app-use-arl-overview.adoc[]

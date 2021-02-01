@@ -12,4 +12,4 @@ summary: Quiesce all SnapMirror relationships before you netboot the system.
 :imagesdir: ./media/
 
 [.lead]
-include::_include/ru_app_quiesce_snapmirror_relationships.adoc[]
+include::../_include/ru_app_quiesce_snapmirror_relationships.adoc[]

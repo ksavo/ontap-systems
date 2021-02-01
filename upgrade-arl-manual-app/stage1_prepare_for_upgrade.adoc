@@ -12,7 +12,7 @@ summary:
 :imagesdir: ./media/
 
 [.lead]
-include::_include/ru_app_stage1_lead.adoc[]
+include::../_include/ru_app_stage1_lead.adoc[]
 
 .Steps
 
