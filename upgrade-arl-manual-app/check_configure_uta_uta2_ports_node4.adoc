@@ -13,7 +13,7 @@ summary: If node4 has onboard UTA/UTA2 ports or a UTA/UTA2A card, you must check
 
 [.lead]
 
-include::../ru_check_config_UTA_node4_intro_to_step2.adoc[]
+include::../_include/ru_check_config_UTA_node4_intro_to_step2.adoc[]
 
 . Examine the output of the `system node hardware unified-connect show` or `ucadmin show` command and determine whether the UTA/UTA2 ports have the personality you want.
 

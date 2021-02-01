@@ -10,7 +10,6 @@ summary:
 :icons: font
 :linkattrs:
 :imagesdir: ./media/
-:includedir: ../_include
 
 [.lead]
 
