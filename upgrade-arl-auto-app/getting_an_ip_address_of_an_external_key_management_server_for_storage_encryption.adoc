@@ -19,16 +19,16 @@ summary: After upgrading, you must immediately configure Storage Encryption.
 //
 
 [.lead]
-include::_include/ru_app_get_ip_address_external_km_server.adoc[]
+include::../_include/ru_app_get_ip_address_external_km_server.adoc[]
 
 === Manage authentication using KMIP servers
 
-include::_include/ru_app_manage_authentication_kmip.adoc[]
+include::../_include/ru_app_manage_authentication_kmip.adoc[]
 
 === Manage storage encryption using Onboard Key Manager
 
-include::_include/ru_app_manage_authentication_okm.adoc[]
+include::../_include/ru_app_manage_authentication_okm.adoc[]
 
 === Quiesce the SnapMrror relationships (optional)
 
-include::_include/ru_app_quiesce_snapmirror_relationships.adoc[]
+include::../_include/ru_app_quiesce_snapmirror_relationships.adoc[]
