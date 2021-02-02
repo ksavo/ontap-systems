@@ -19,6 +19,6 @@ summary: You can nondisruptively upgrade the controller hardware on a pair of no
 //
 
 [.lead]
-include::_include/ru-app-use-arl-overview.adoc[]
+include::../_include/ru_app_use_arl_overview.adoc[]
 * This procedure applies to systems running 4-node NetApp MetroCluster configuration or higher. Since MetroCluster configuration sites can be at two physically different locations, the automated controller upgrade must be carried out individually at each MetroCluster site for an HA pair.
 * If you are upgrading from an AFF A320 system, you can use volume moves to upgrade controller hardware or contact technical support. If you are willing to do volume moves, see the link:https://docs.netapp.com/platstor/topic/com.netapp.doc.hw-upgrade-controller/home.html[Controller Hardware Upgrade Express Guide].

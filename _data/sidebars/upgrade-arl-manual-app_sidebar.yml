@@ -1,129 +1,129 @@
 entries:
-  - title: Using Aggregate Relocation to Manually Upgrade Controller Hardware Running ONTAP 9.8 and Later
+  - title: "Using Aggregate Relocation to Manually Upgrade Controller Hardware Running ONTAP 9.8 and Later"
     url: /index.html
-  - title: Overview
+  - title: "Overview"
     url: /Overview.html
-  - title: Decide whether to use the aggregate relocation guide
+  - title: "Decide whether to use the aggregate relocation guide"
     url: /decide_to_use_arl_guide.html
-  - title: ARL upgrade workflow
+  - title: "ARL upgrade workflow"
     url: /arl_upgrade_workflow.html
-  - title: Guidelines for upgrading controllers with ARL
+  - title: "Guidelines for upgrading controllers with ARL"
     url: /guidelines_upgrading_with_arl.html
     entries:
-      - title: Supported upgrades for ARL
+      - title: "Supported upgrades for ARL"
         url: /supported_upgrades_for_arl.html
-      - title: Upgrades not supported for ARL
+      - title: "Upgrades not supported for ARL"
         url: /upgrades_not_supported_for_arl.html
-      - title: Assumptions and terminology
+      - title: "Assumptions and terminology"
         url: /assumptions_terminology.html
-      - title: Licensing in ONTAP 9.8 or Later
+      - title: "Licensing in ONTAP 9.8 or Later"
         url: /licensing_ontap_98_later.html
-      - title: Storage Encryption
+      - title: "Storage Encryption"
         url: /storage_encryption.html
-      - title: Troubleshooting
+      - title: "Troubleshooting"
         url: /troubleshooting.html
-  - title: Required tools and documentation
+  - title: "Required tools and documentation"
     url: /required_tools_documentation.html
-  - title:  Worksheet:  Information to collect before and during the controller upgrade
+  - title: " Worksheet:  Information to collect before and during the controller upgrade"
     url: /worksheet_information_before_during_upgrade.html
-  - title: Upgrade the node pair
+  - title: "Upgrade the node pair"
     url: /upgrade_node_pair.html
-  - title: Stage 1: Prepare for upgrade
+  - title: "Stage 1: Prepare for upgrade"
     url: /stage1_prepare_for_upgrade.html
     entries:
-      - title: Determine whether the controller has aggregates on internal disk drives
-       url: /determine_aggregates_on_internal_drives.html
-      - title: Prepare the nodes for upgrade
+      - title: "Determine whether the controller has aggregates on internal disk drives"
+        url: /determine_aggregates_on_internal_drives.html
+      - title: "Prepare the nodes for upgrade"
         url: /prepare_nodes_for_upgrade.html
-      - title: Get an IP address of an external key management server for storage encryption
+      - title: "Get an IP address of an external key management server for storage encryption"
         url: /get_address_key_management_server_encryption.html
-      - title: Manage authentication using KMIP servers
+      - title: "Manage authentication using KMIP servers"
         url: /manage_authentication_kmip.html
-      - title: Manage authentication using on onboard key manager
+      - title: "Manage authentication using on onboard key manager"
         url: /manage_authentication_okm.html
-      - title: Quiesce the SnapMirror relationships
+      - title: "Quiesce the SnapMirror relationships"
         url: /quiesce_snapmirror_relationships.html
-      - title: Prepare for netboot
+      - title: "Prepare for netboot"
         url: /prepare_for_netboot.html
-  - title: Stage 2: Relocate and retire node1
+  - title: "Stage 2: Relocate and retire node1"
     url:  /stage2_relocate_retire_node1.html
     entries:
-      - title: Relocate non-root aggregates from node1 to node2
+      - title: "Relocate non-root aggregates from node1 to node2"
         url: /relocate_non_root_aggr_node1_node2.html
-      - title: Move NAS data LIFs owned by node1 to node2
+      - title: "Move NAS data LIFs owned by node1 to node2"
         url: /move_nas_lifs_node1_node2.html
-      - title: Record node1 information
+      - title: "Record node1 information"
         url: /record_node1_information.html
-      - title: Retire node1
+      - title: "Retire node1"
         url: /retire_node1.html
-  - title: Stage 3: Upgrade the node pair
+  - title: "Stage 3: Upgrade the node pair"
     url: /stage3_install_boot_node3.html
     entries:
-      - title: Install and boot node3
+      - title: "Install and boot node3"
         url: /install_boot_node3.html
-      - title: Set the FC or UTA/UTA2 configuration on node3
+      - title: "Set the FC or UTA/UTA2 configuration on node3"
         url: /set_fc_uta_uta2_config_node3.html
-      - title: Configure Fibre Channel ports on node3
+      - title: "Configure Fibre Channel ports on node3"
         url: /configure_fc_ports_node3.html
-      - title: Check and configure UTA/UTA2 ports on node3
+      - title: "Check and configure UTA/UTA2 ports on node3"
         url: /check_configure_uta_uta2_node3.html
-      - title: Map ports from node1 to node3
+      - title: "Map ports from node1 to node3"
         url: /map_ports_node1_node3.html
-      - title: Move NAS data LIFs owned by node1 from node2 to node3 and verify SAN LIFs on node3
+      - title: "Move NAS data LIFs owned by node1 from node2 to node3 and verify SAN LIFs on node3"
         url: /move_nas_lifs_node1_from_node2_node3_verify_san_lifs.html
-      - title: Relocate non-root aggregates from node2 to node3
+      - title: "Relocate non-root aggregates from node2 to node3"
         url: /relocate_non_root_aggr_node2_node3.html
-      - title: Move NAS data LIFs owned by node2 to node2
+      - title: "Move NAS data LIFs owned by node2 to node2"
         url: /move_nas_lifs_node2_node3.html
-  - title: Stage 4:  Record information and retire node2
+  - title: "Stage 4:  Record information and retire node2"
     url: /stage4_record_info_retire_node2.html
     entries:
-      - title: Record node2 information
+      - title: "Record node2 information"
         url: /record_node2_information.html
-      - title: Retire node2
+      - title: "Retire node2"
         url: /retire_node2.html
-  - title: Stage 5: Install and boot node4
+  - title: "Stage 5: Install and boot node4"
     url: /stage5_install_boot_node4.html
     entries:
-      - title: Install and boot node4
+      - title: "Install and boot node4"
         url: /install_boot_node4.html
-      - title: Set the FC or UTA/UTA2 configuarion on node4
+      - title: "Set the FC or UTA/UTA2 configuarion on node4"
         url: /set_fc_uta_uta2_config_node4.html
-      - title: Configure Fibre Channel ports on node4
+      - title: "Configure Fibre Channel ports on node4"
         url: /config_fc_ports_node4.html
-      - title: Check and configure UTA/UTA2 ports on node4
+      - title: "Check and configure UTA/UTA2 ports on node4"
         url: /check_configure_uta_uta2_ports_node4.html
-      - title: Map ports from node2 to node4
+      - title: "Map ports from node2 to node4"
         url: /map_ports_node2_node4.html
-      - title: Verify the node4 installation
+      - title: "Verify the node4 installation"
         url: /verify_node4_installation.html
-      - title: Move NAS data LIFs owned by node2 from node3 to node4 and verify SAN LIFs on node4
+      - title: "Move NAS data LIFs owned by node2 from node3 to node4 and verify SAN LIFs on node4"
         url: /move_nas_lifs_node2_from_node3_node4_verify_san_lifs_node4.html
-      - title: Relocate node2's non-root aggregates from node3 to node4
+      - title: "Relocate node2's non-root aggregates from node3 to node4"
         url: /relocate_node2_non_root_aggr_node3_node4.html
-- title: Stage 6: Complete the upgrade
-  url: /stage6_complete_upgrade.html
-  entries:
-      - title: Ensure that the new controllers are set up correctly
+  - title: "Stage 6: Complete the upgrade"
+    url: /stage6_complete_upgrade.html
+    entries:
+      - title: "Ensure that the new controllers are set up correctly"
         url: /ensure_controllers_set_up_correctly.html
-      - title: Set up Storage Encryption on the new controller module
+      - title: "Set up Storage Encryption on the new controller module"
         url: /set_up_storage_encryption_new_controller.html
-      - title: Set up NetApp Encryption on the new controller module
+      - title: "Set up NetApp Encryption on the new controller module"
         url: /set_up_netapp_encryption_on_new_controller.html
-      - title: Decommission the old system
+      - title: "Decommission the old system"
         url: /decommission_old_system.html
-      - title: Resume SnapMirror operations
+      - title: "Resume SnapMirror operations"
         url: /resume_snapmirror_ops.html
-- title: Troubleshoot
-  url: /troubleshoot.html
-  entries:
-      - title: Aggregate relocation failures
+  - title: "Troubleshoot"
+    url: /troubleshoot.html
+    entries:
+      - title: "Aggregate relocation failures"
         url: /aggregate_relocation_failures.html
-      - title: Reboots, panics, or power cycles
+      - title: "Reboots, panics, or power cycles"
         url: /reboots_panics_power_cycles.html
-      - title: Issues that can arise in multiple stages of the procedure
+      - title: "Issues that can arise in multiple stages of the procedure"
         url: /issues_multiple_stages_of_procedure.html
-      - title: LIF migration failure
+      - title: "LIF migration failure"
         url: /lif_migration_failure.html
-      - title: LIFs are on invalid ports after upgrade
+      - title: "LIFs are on invalid ports after upgrade"
         url: /lifs_invalid_ports_after_upgrade.html
