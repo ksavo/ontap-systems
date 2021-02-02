@@ -1,7 +1,7 @@
 ---
 sidebar: upgrade-arl-manual-app_sidebar
 permalink: upgrade-arl-manual-app/issues_multiple_stages_of_procedure.html
-summary:
+summary: Issues that can arise in multiple stages of the procedure
 ---
 
 = Issues that can arise in multiple stages of the procedure

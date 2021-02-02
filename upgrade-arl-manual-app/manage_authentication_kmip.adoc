@@ -12,4 +12,4 @@ summary: You can use KMIP servers to manage authentication keys.
 :imagesdir: ./media/
 
 [.lead]
-include::_include/ru_app_manage_authenication_kmip.adoc[]
+include::../_include/ru_app_manage_authenication_kmip.adoc[]

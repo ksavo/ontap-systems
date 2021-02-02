@@ -12,6 +12,7 @@ summary: If node4 has FC ports, either onboard or on an FC adapter, you must set
 :imagesdir: ./media/
 
 [.lead]
+
 If node4 has FC ports, either onboard or on an FC adapter, you must set port configurations on the node before you bring it into service because the ports are not preconfigured. If the ports are not configured, you might experience a disruption in service.
 
 .Before you begin

@@ -1,7 +1,7 @@
 ---
 sidebar: upgrade-arl-manual-app_sidebar
 permalink: upgrade-arl-manual-app/aggregate_relocation_failures.html
-summary:
+summary:  Aggregate relocation failures
 ---
 
 = Aggregate relocation failures

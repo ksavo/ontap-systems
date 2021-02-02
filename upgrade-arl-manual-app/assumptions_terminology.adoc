@@ -1,7 +1,7 @@
 ---
 sidebar: upgrade-arl-manual-app_sidebar
 permalink: upgrade-arl-manual-app/assumptions_terminology.html
-summary: The document uses certain terms and is written using certain assumptions.
+summary: There are certain terms assumptions you should be aware of when using this documentation.
 ---
 
 = Assumptions and terminology

@@ -19,4 +19,4 @@ summary: You must have specific tools to install the new hardware, and you need 
 //
 
 [.lead]
-include::_include/ru_app_required_tools_documentation.html[]
+include::../_include/ru_app_required_tools_documentation.html[]

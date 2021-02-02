@@ -12,4 +12,4 @@ summary: Tools and documentation you will need during upgrade.
 :imagesdir: ./media/
 
 [.lead]
-include::_include/ru_app_required_tools_documentation.html[]
+include::../_include/ru_app_required_tools_documentation.html[]

@@ -12,4 +12,4 @@ summary: Prepare the original node for upgrade by performing tasks on the origin
 :imagesdir: ./media/
 
 [.lead]
-include::_include/ru_app_upgrade_node_pair.adoc[]
+include::../_include/ru_app_upgrade_node_pair.adoc[]

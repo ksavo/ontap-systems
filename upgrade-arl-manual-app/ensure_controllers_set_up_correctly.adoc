@@ -1,7 +1,7 @@
 ---
 sidebar: upgrade-arl-manual-app_sidebar
 permalink: upgrade-arl-manual-app/ensure_controllers_set_up_correctly.html
-summary:
+summary: Ensure that the new controllers are set up correctly
 ---
 
 = Ensure that the new controllers are set up correctly

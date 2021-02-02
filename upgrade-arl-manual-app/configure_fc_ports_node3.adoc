@@ -1,7 +1,7 @@
 ---
 sidebar: upgrade-arl-manual-app_sidebar
 permalink: upgrade-arl-manual-app/configure_fc_ports_node3.html
-summary:
+summary: Configure Fibre Channel ports on node3
 ---
 
 = Configure Fibre Channel ports on node3

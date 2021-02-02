@@ -10,7 +10,7 @@ summary: Using aggregate relocation to manually upgrade controller hardware runn
 :icons: font
 :linkattrs:
 :imagesdir: ./media/
-:includedir: ../../_include
 
 [.lead]
-include::{includedir}/ru_app_index_intro.adoc[]
+
+include::../ru_app_index_intro.adoc[]

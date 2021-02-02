@@ -1,7 +1,7 @@
 ---
 sidebar: upgrade-arl-manual-app_sidebar
 permalink: upgrade-arl-manual-app/lif_migration_failure.html
-summary:
+summary: LIF migration failure
 ---
 
 = LIF migration failure

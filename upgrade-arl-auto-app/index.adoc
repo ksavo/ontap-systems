@@ -12,4 +12,4 @@ summary: Using system controller replace commands to upgrade controller hardware
 :imagesdir: ./media/
 
 [.lead]
-include::_include/ru_app_index_intro.adoc[]
+include::../_include/ru_app_index_intro.adoc[]
