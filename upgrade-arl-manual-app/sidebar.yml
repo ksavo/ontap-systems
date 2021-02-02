@@ -24,11 +24,11 @@ entries:
         url: /troubleshooting.html
   - title: "Required tools and documentation"
     url: /required_tools_documentation.html
-  - title: "Worksheet. Information to collect before and during the controller upgrade"
+  - title: "Worksheet Information to collect before and during the controller upgrade"
     url: /worksheet_information_before_during_upgrade.html
   - title: "Upgrade the node pair"
     url: /upgrade_node_pair.html
-  - title: "Stage 1. Prepare for upgrade"
+  - title: "Stage 1 Prepare for upgrade"
     url: /stage1_prepare_for_upgrade.html
     entries:
       - title: "Determine whether the controller has aggregates on internal disk drives"
@@ -45,7 +45,7 @@ entries:
         url: /quiesce_snapmirror_relationships.html
       - title: "Prepare for netboot"
         url: /prepare_for_netboot.html
-  - title: "Stage 2. Relocate and retire node1"
+  - title: "Stage 2 Relocate and retire node1"
     url:  /stage2_relocate_retire_node1.html
     entries:
       - title: "Relocate non-root aggregates from node1 to node2"
@@ -56,7 +56,7 @@ entries:
         url: /record_node1_information.html
       - title: "Retire node1"
         url: /retire_node1.html
-  - title: "Stage 3. Upgrade the node pair"
+  - title: "Stage 3 Upgrade the node pair"
     url: /stage3_install_boot_node3.html
     entries:
       - title: "Install and boot node3"
@@ -75,14 +75,14 @@ entries:
         url: /relocate_non_root_aggr_node2_node3.html
       - title: "Move NAS data LIFs owned by node2 to node2"
         url: /move_nas_lifs_node2_node3.html
-  - title: "Stage 4. Record information and retire node2"
+  - title: "Stage 4 Record information and retire node2"
     url: /stage4_record_info_retire_node2.html
     entries:
       - title: "Record node2 information"
         url: /record_node2_information.html
       - title: "Retire node2"
         url: /retire_node2.html
-  - title: "Stage 5. Install and boot node4"
+  - title: "Stage 5 Install and boot node4"
     url: /stage5_install_boot_node4.html
     entries:
       - title: "Install and boot node4"
@@ -101,7 +101,7 @@ entries:
         url: /move_nas_lifs_node2_from_node3_node4_verify_san_lifs_node4.html
       - title: "Relocate node2's non-root aggregates from node3 to node4"
         url: /relocate_node2_non_root_aggr_node3_node4.html
-  - title: "Stage 6. Complete the upgrade"
+  - title: "Stage 6 Complete the upgrade"
     url: /stage6_complete_upgrade.html
     entries:
       - title: "Ensure that the new controllers are set up correctly"
