@@ -1,7 +1,7 @@
 ---
 sidebar: upgrade-arl-manual-app_sidebar
 permalink: upgrade-arl-manual-app/config_fc_ports_node4.html
-summary: If node4 has FC ports, either onboard or on an FC adapter, you must set port configurations on the node.
+summary: If node4 has FC ports, either onboard or on an FC adapter, you must set port configurations on the node before you bring it into service.
 ---
 
 = Configure FC ports on node4
@@ -33,11 +33,12 @@ You can skip this section if your system does not have FC configurations. If you
 |If the system that you are upgrading... |Then…
 
 |Has storage disks
-|Go to Step 5.
+|Go to <<Step5,Step 5>>.
 |Is a V-Series system or has FlexArray Virtualization Software and is connected to storage arrays
-|Go to Step 2.
+|Go to <<Step2,Step 2>>.
 |===
-. Access Maintenance mode by entering the following command:
+. [[Step2]]Access Maintenance mode by entering the following command:
++
 `boot_ontap maint`
 . Take one of the following actions:
 +
@@ -52,11 +53,12 @@ You can skip this section if your system does not have FC configurations. If you
 |Enter the following command:
 `ucadmin show`
 |===
++
 The system displays information about all FC and converged network adapters on the system.
 
 . Compare the FC settings on the new nodes with the settings that you captured earlier from the original node.
 
-. Take one of the following actions:
+. [[Step5]]Take one of the following actions:
 +
 |===
 |If the system that you are upgrading... |Then…
@@ -65,9 +67,9 @@ The system displays information about all FC and converged network adapters on t
 a|Modify the FC ports on node4 as needed by entering one of the following commands:
 
 * To program target ports:
-`system node hardware unified-connect modify -type | -t target -adapter <port_name>`
+`system node hardware unified-connect modify -type \| -t target -adapter <port_name>`
 * To program initiator ports:
-`system node unified-connect modify type | -t initiator -adapter <port_name>`
+`system node unified-connect modify type \| -t initiator -adapter <port_name>`
 `-type` is the FC4 type, target or initiator.
 
 |Is a V-Series system or has FlexArray Virtualization Software and is connected to storage arrays
@@ -97,12 +99,13 @@ a|Modify the FC ports on node4 as needed by entering one of the following comman
 |If the default FC settings on the new nodes are... |Then…
 
 |The same as the ones you that captured on the original nodes
-|Go to Step 11.
+|Go to <<Step11,Step 11>>.
 |Different from the ones that you captured on the original nodes
-|Go to Step 8.
+|Go to <<Step8,Step8>>.
 |===
 
-. Exit Maintenance mode by entering the following command:
+. [[Step8]]Exit Maintenance mode by entering the following command:
++
 `halt`
 
 . After you enter the command, wait until the system stops at the boot environment prompt.
@@ -121,7 +124,7 @@ a|Modify the FC ports on node4 as needed by entering one of the following comman
 `boot_ontap`
 |===
 
-. Take one of the following actions:
+. [[Step11]]Take one of the following actions:
 +
 |===
 |If the system that you are upgrading... |Then…

@@ -12,3 +12,4 @@ summary:
 :imagesdir: ./media/
 
 [.lead]
+include::../_include/ru_set_up_storage_encryption_new_controller.adoc[]

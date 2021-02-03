@@ -12,3 +12,4 @@ summary:
 :imagesdir: ./media/
 
 [.lead]
+include::../_include/ru_set_up_netapp_encryption_on_new_controller.adoc[]
