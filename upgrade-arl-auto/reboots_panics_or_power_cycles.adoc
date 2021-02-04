@@ -1,0 +1,17 @@
+---
+sidebar: upgrade-arl-auto_sidebar
+permalink: upgrade-arl-auto/reboots_panics_or_power_cycles.html
+keywords: aggregate relocation, YYYYY
+summary: ZZZZZZ
+---
+
+= Reboots, panics, or power cycles
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+[.lead]
+
+// bottom half of pg. 74, 75, 76, and top half of 77 in PDF.  INCLUDE ALL SUBHEADS and SUB-SUBHEADS. 

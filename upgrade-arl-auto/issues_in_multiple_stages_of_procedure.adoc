@@ -1,0 +1,17 @@
+---
+sidebar: upgrade-arl-auto_sidebar
+permalink: upgrade-arl-auto/issues_in_multiple_stages_of_procedure.html
+keywords: aggregate relocation, YYYYY
+summary: ZZZZZZ
+---
+
+= Issues that can arise in multiple stages of the procedure
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+[.lead]
+
+// bottom half of p. 77, ad top half of 78

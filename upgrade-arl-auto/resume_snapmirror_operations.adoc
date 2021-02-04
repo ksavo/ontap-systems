@@ -1,0 +1,17 @@
+---
+sidebar: upgrade-arl-auto_sidebar
+permalink: upgrade-arl-auto/resume_snapmirror_operations.html
+keywords: aggregate relocation, YYYYY
+summary: ZZZZZZ
+---
+
+= Resume SnapMirror operations
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+[.lead]
+
+// last section onpage 72 in PDF.

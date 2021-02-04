@@ -1,0 +1,17 @@
+---
+sidebar: upgrade-arl-auto_sidebar
+permalink: upgrade-arl-auto/set_up_netapp_volume_encryption_new_module.html
+keywords: aggregate relocation, YYYYY
+summary: ZZZZZZ
+---
+
+= Set up NetApp Volume Encryption on the new controller module
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+[.lead]
+
+// bottom half of page 71, top half of 72 in the PDF.

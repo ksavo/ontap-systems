@@ -1,0 +1,17 @@
+---
+sidebar: upgrade-arl-auto_sidebar
+permalink: upgrade-arl-auto/stage_4_relocate_retire_node2.html
+keywords: aggregate relocation, YYYYY
+summary: ZZZZZZ
+---
+
+= Stage 4: Relocate and retiring node2
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+[.lead]
+
+// top section of pg. 46  in PDF

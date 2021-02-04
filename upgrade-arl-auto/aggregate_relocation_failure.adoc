@@ -1,0 +1,17 @@
+---
+sidebar: upgrade-arl-auto_sidebar
+permalink: upgrade-arl-auto/aggregate_relocation_failure.html
+keywords: aggregate relocation, YYYYY
+summary: ZZZZZZ
+---
+
+= Aggregate relocation failures
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+[.lead]
+
+// page 73 and top of 74 of PDF, include subheads

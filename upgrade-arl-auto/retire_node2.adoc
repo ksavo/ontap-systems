@@ -1,0 +1,17 @@
+---
+sidebar: upgrade-arl-auto_sidebar
+permalink: upgrade-arl-auto/retire_node2.html
+keywords: aggregate relocation, YYYYY
+summary: ZZZZZZ
+---
+
+= Retire node2
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+[.lead]
+
+// bottom of page 47, and 48 in PDF

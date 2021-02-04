@@ -1,0 +1,18 @@
+---
+sidebar: upgrade-arl-auto_sidebar
+permalink: upgrade-arl-auto/ensure_new_controllers_are_set_up_correctly.html
+keywords: aggregate relocation, YYYYY
+summary: ZZZZZZ
+---
+
+= Ensure that the new controllers are set up correctly
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+[.lead]
+
+// 2nd half of page 68, 69, and top half of 70 in PDF
+include::../_include/ru_app_ensure_new_controllers_are_set_up_correctly.adoc[]
