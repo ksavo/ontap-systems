@@ -12,3 +12,5 @@ summary: LIF migration failure
 :imagesdir: ./media/
 
 [.lead]
+
+include::..\_include\ru_lif_migration_failure.adoc[]
