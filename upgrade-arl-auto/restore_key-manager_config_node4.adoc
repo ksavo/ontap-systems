@@ -1,8 +1,8 @@
 ---
 sidebar: upgrade-arl-auto_sidebar
 permalink: upgrade-arl-auto/restore_key-manager_config_node4.html
-keywords: aggregate relocation, YYYYY
-summary: ZZZZZZ
+keywords: restore key-manager, configuration, node4, nve, arl, volume, encryption
+summary: If you are using NVE to encrypt volumes on the system you are upgrading, the encryption configuration must be synchronized to the new nodes.
 ---
 
 = Restore key-manager configuration on node4
@@ -15,7 +15,7 @@ summary: ZZZZZZ
 [.lead]
 
 // small section in middle of page 65 of pdf
-If you are using NetApp Volume Encryption (NVE) to encrypt volumes on the system you are upgrading, the encryption configuration must be synchronized to the new nodes. Encrypted volumes are taken offline when ARL is complete for node1 aggregates from node2 to node4. 
+If you are using NetApp Volume Encryption (NVE) to encrypt volumes on the system you are upgrading, the encryption configuration must be synchronized to the new nodes. Encrypted volumes are taken offline when ARL is complete for node1 aggregates from node2 to node4.
 
 .Steps
 

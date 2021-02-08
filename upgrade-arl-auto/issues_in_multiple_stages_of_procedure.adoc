@@ -1,8 +1,8 @@
 ---
 sidebar: upgrade-arl-auto_sidebar
 permalink: upgrade-arl-auto/issues_in_multiple_stages_of_procedure.html
-keywords: aggregate relocation, YYYYY
-summary: ZZZZZZ
+keywords: issues, arise, multiple, stages, procedure
+summary: Some issues can occur during different stages of the procedure.
 ---
 
 = Issues that can arise in multiple stages of the procedure
@@ -15,3 +15,4 @@ summary: ZZZZZZ
 [.lead]
 
 // bottom half of p. 77, ad top half of 78
+include::../_include\ru_issues_multiple_stages_of_procedure.adoc[]

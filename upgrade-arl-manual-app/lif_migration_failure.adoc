@@ -13,4 +13,4 @@ summary: LIF migration failure
 
 [.lead]
 
-include::..\_include\ru_lif_migration_failure.adoc[]
+include::..\_include\ru_app_lif_migration_failure.adoc[]

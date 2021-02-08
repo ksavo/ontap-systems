@@ -12,3 +12,4 @@ summary:
 :imagesdir: ./media/
 
 [.lead]
+include::../_include\ru_app_resume_snapmirror_operations.adoc[]

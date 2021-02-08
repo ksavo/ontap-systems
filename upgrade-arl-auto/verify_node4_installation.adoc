@@ -1,8 +1,8 @@
 ---
 sidebar: upgrade-arl-auto_sidebar
 permalink: upgrade-arl-auto/verify_node4_installation.html
-keywords: aggregate relocation, YYYYY
-summary: ZZZZZZ
+keywords: verify, node4, installation, MetroCluster
+summary: Verify that node4 is installed correctly.
 ---
 
 = Verify the node4 installation

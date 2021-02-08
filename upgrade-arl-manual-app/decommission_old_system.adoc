@@ -12,4 +12,4 @@ summary: Decommission the old system
 :imagesdir: ./media/
 
 [.lead]
-include::../_include/ru_decommission_old_system.adoc[]
+include::../_include/ru_app_decommission_old_system.adoc[]

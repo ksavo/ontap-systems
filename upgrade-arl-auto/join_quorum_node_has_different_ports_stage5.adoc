@@ -1,8 +1,8 @@
 ---
 sidebar: upgrade-arl-auto_sidebar
 permalink: upgrade-arl-auto/join_quorum_node_has_different_ports_stage5.html
-keywords: aggregate relocation, YYYYY
-summary: ZZZZZZ
+keywords: quorum, cluster, network ports, node, broadcast domain 
+summary: You must ensure that the node successfully joins the quorum.
 ---
 
 = Join the quorum when a node has a different set of network ports

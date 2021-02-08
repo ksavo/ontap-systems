@@ -1,8 +1,8 @@
 ---
 sidebar: upgrade-arl-auto_sidebar
 permalink: upgrade-arl-auto/map_ports_node2_node4.html
-keywords: aggregate relocation, YYYYY
-summary: ZZZZZZ
+keywords: map, node2, ports, cluster, broadcast domains, physical ports 
+summary: You must verify that the physical ports on node2 map correctly to the physical ports on node4.
 ---
 
 = Map ports from node2 to node4
@@ -20,7 +20,7 @@ You must verify that the physical ports on node2 map correctly to the physical p
 
 .About this task
 
-Capture information about the ports on the new nodes from the Hardware Universe at hwu.netapp.com . You will use the information later in this section.
+Capture information about the ports on the new nodes from the link:https://hwu.netapp.com[Hardware Universe]. You will use the information later in this section.
 
 The software configuration of node4 must match the physical connectivity of node4 and IP connectivity must be restored before you continue with the upgrade.
 

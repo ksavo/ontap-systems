@@ -15,3 +15,4 @@ summary: ZZZZZZ
 [.lead]
 
 // top section on page 73 of PDF
+include::../_include/ru_app_troubleshoot.adoc[]

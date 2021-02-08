@@ -1,8 +1,8 @@
 ---
 sidebar: upgrade-arl-auto_sidebar
 permalink: upgrade-arl-auto/set_fc_or_uta_uta2_config_node4.html
-keywords: aggregate relocation, YYYYY
-summary: ZZZZZZ
+keywords: fc configuration, uta configuration, UTA2 configuration, configure FC ports, UTA/UTA2 card, node4, target, adapter, ports
+summary: If node4 has onboard FC ports, UTA/UTA2 ports, or a UTA/UTA2 card, you must configure the settings before completing the rest of the procedure.
 ---
 
 = Set the FC or UTA/UTA2 configuration on node4
@@ -30,11 +30,12 @@ However, if you have a V-Series system or have FlexArray Virtualization Software
 
 include::../_include/ru_config_fc_ports_node4.adoc[]
 
-. Take one of the following actions:
+[start=8]
+. [[step8]]Take one of the following actions:
+
 +
 |===
-|If the system that you are upgrading...
-|Then...
+|If the system that you are upgrading...|Then...
 
 |Has storage disks
 a|* Skip this section and go to link:map_ports_node2_node4.adoc.html[Map ports from node2 to node4] if node4 does not have a UTA/UTA2 card or UTA/UTA2 onboard ports.
@@ -46,7 +47,8 @@ a|* Go to Checking and configuring UTA/UTA2 ports on node4 if node4 has a UTA/UT
 
 include::../_include/ru_check_config_uta_uta2_ports_node4_intro_to_step_11.adoc[]
 
-. Take one of the following actions:
+[start=12]
+. [[step12]]Take one of the following actions:
 +
 |===
 |If the system... |Then...
