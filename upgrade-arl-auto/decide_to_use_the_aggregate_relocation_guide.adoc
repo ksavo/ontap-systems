@@ -1,0 +1,66 @@
+---
+sidebar: upgrade-arl-auto_sidebar
+permalink: upgrade-arl-auto/decide_to_use_the_aggregate_relocation_guide.html
+keywords: aggregate relocation, decide to use, upgrade, model, matrix, replacement, controller
+summary: This guide describes how to upgrade the storage controllers in an HA pair with new controllers while keeping all the existing data and disks.
+---
+
+= Decide whether to use the aggregate relocation guide
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+[.lead]
+This guide describes how to upgrade the storage controllers in an HA pair with new controllers while keeping all the existing data and disks. This is a complex procedure that should be used only by experienced administrators.
+
+You should use this guide under the following circumstances:
+
+* You are upgrading your storage to ONTAP 9.5, 9.6 or 9.7. This document is not applicable to upgrades to ONTAP 9.8.
+
+* You do not want to add the new controllers as a new HA pair to the cluster and migrate the data using volume moves.
+
+* You are experienced in administering ONTAP and are comfortable with the risks of working in the diagnostic privilege mode.
+
+* If you are upgrading a MetroCluster configuration, it is a 4-node or higher FC configuration, and all nodes are running ONTAP 9.6 or 9.7.
+
+NOTE: You can use NetApp Storage Encryption (NSE) and NetApp Volume Encryption (NVE) with this procedure.
+
+=== Supported model matrix for controller upgrades
+
+[cols="50,50"]
+|===
+|Old controller |Replacement controller
+
+|FAS8020, FAS8040, FAS8060, FAS8080
+|FAS8200, FAS8300, FAS8700, FAS9000
+|AFF8020, AFF8040, AFF8060, AFF8080
+|AFF A300, AFF A400, AFF A700*, AFF A800**
+|FAS8200
+|FAS8700, FAS9000, FAS8300\***
+|AFF A300
+|AFF A700*, AFF A800\*\** , AFF A400\****
+|===
+
+----
+  * ARL automated upgrade for the AFF A700 platform is supported from ONTAP 9.7.
+
+ ** If you are updating to an AFF A800 or a system that supports internal and
+ external disks, you must follow specific instructions for the root aggregate
+ on internal NVMe disks. See Step 14 on page 36 and Step 14 on page 58 in
+ _Check and configure UTA/UTA2 ports_.
+
+ *** ARL automated upgrade for AFF A300 to AFF A800 platform is supported
+ from ONTAP 9.7P5.
+
+ **** ARL automated upgrade from AFF A300 to AFF A400 and FAS8200 to FAS8300
+ platform is supported from ONTAP 9.7P8.
+----
+// Not sure how to format these table footnotes above with leading asterisks.  The asterisks are rendered as bullets if the content is outside the 2 sets of 4-dashes.
+
+NOTE: If your controller upgrade model combination is not in the table, contact technical support.
+
+If you prefer a different method of upgrading the controller hardware and are willing to do volume moves, use the _Controller Hardware Upgrade Express Guide_ instead. See the _ONTAP 9 Documentation Center_ to access ONTAP 9 product documentation.
+
+// P. 7 of PDF

@@ -1,0 +1,48 @@
+---
+sidebar: upgrade-arl-auto_sidebar
+permalink: upgrade-arl-auto/relocate_failed_vetoed_aggr.html
+keywords: aggregate, fail, relocate, veto, destination checks, EMS logs
+summary: If any aggregates fail to relocate or are vetoed, you must take manually relocate the aggregates, or
+override either the vetoes or destination checks, if necessary.
+---
+
+= Relocate failed or vetoed aggregates
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+[.lead]
+If any aggregates fail to relocate or are vetoed, you must take manually relocate the aggregates, or override either the vetoes or destination checks, if necessary.
+
+.About this task
+
+The relocation operation will have paused due to the error.
+
+.Steps
+
+. Check the EMS logs to determine why the aggregate failed to relocate or was vetoed.
+
+. Relocate any failed or vetoed aggregates:
++
+`storage aggregate relocation start -node node1 -destination node2 aggregate-list * -ndocontroller-upgrade true`
+
+. When prompted, enter `y`.
+
+. You can force relocation by using one of the following methods:
++
+[cols="35.65"]
+|===
+|Option |Description
+
+|Overriding veto checks
+|Enter the following:
+
+`storage aggregate relocation start -override-vetoes * -ndocontroller-upgrade true`
+|Overriding destination checks
+|Enter the following:
+
+`storage aggregate relocation start -overridedestinationchecks * -ndo-controllerupgrade true`
+|===
+// bottom of pg 23 and top of 24 in PDF

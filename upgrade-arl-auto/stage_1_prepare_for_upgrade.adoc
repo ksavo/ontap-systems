@@ -1,0 +1,25 @@
+---
+sidebar: upgrade-arl-auto_sidebar
+permalink: upgrade-arl-auto/stage_1_prepare_for_upgrade.html
+keywords: Prepare nodes for upgrade, storage encryption, KMS, key management server,
+summary: During Stage 1, you must prepare the nodes for the upgrade and run a series of prechecks.
+---
+
+= Stage 1: Prepare for upgrade
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+[.lead]
+During Stage 1, you must prepare the nodes for the upgrade and run a series of prechecks. You might need to rekey disks for Storage Encryption. You must also prepare to netboot the new controllers.
+
+.Steps
+
+. link:prepare_nodes_for_upgrade.html[Prepare the nodes for upgrade]
+
+. link:get_ip_address_of_external_KMS_for_storage_encryption.html[Get an IP address of an external key management server for storage encryption]
+
+. link:quiesce_snapmirror_relationships.html[Quiesce the SnapMirror relationships (optional)]
+// top of page 16 in pdf
