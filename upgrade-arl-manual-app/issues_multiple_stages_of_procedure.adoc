@@ -12,3 +12,5 @@ summary: Issues that can arise in multiple stages of the procedure
 :imagesdir: ./media/
 
 [.lead]
+
+include::../_include\ru_issues_multiple_stages_of_procedure.adoc[]

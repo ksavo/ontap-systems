@@ -1,0 +1,18 @@
+---
+sidebar: upgrade-arl-auto_sidebar
+permalink: upgrade-arl-auto/troubleshoot.html
+keywords: aggregate relocation, YYYYY
+summary: ZZZZZZ
+---
+
+= Troubleshoot
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+[.lead]
+
+// top section on page 73 of PDF
+include::../_include/ru_app_troubleshoot.adoc[]

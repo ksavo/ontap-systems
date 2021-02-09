@@ -12,3 +12,8 @@ summary:  Aggregate relocation failures
 :imagesdir: ./media/
 
 [.lead]
+include::../_include/ru_app_aggregate_relocation_failures.adoc[]
+
+include::../_include/ru_app_check_aggregate_relocation_failure.adoc[]
+
+include::../_include/ru_app_aggregates_originally_node1_owned_node4_completion_upgrade.adoc[]

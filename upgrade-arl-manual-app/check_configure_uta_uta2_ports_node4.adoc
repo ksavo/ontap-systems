@@ -23,12 +23,12 @@ include::../_include/ru_check_config_UTA_node4_intro_to_step2.adoc[]
 |If the CNA ports... |Then...
 
 |Do not have the personality that you want
-|Go to Step 5.
+|Go to <<Step5,Step 5>>.
 |Have the personality that you want
-|Skip Step 5 through Step 12 and go to Step 13.
+|Skip Step 5 through Step 12 and go to <<Step13,Step 13>>.
 |===
 
-. Take one of the following actions:
+. [[Step5]]Take one of the following actions:
 +
 |===
 |If the system... |Then...
@@ -37,38 +37,42 @@ include::../_include/ru_check_config_UTA_node4_intro_to_step2.adoc[]
 |Boot node4 and enter maintenance mode by entering the following command:
 `boot_ontap maint`
 |Is a V-Series system or has FlexArray Virtualization Software and is connected to storage arrays
-|Go to Step 6.
+|Go to <<Step,Step 6>>.
 You should already be in Maintenance mode.
 |===
 
-. Take one of the following actions:
+. [[Step6]]Take one of the following actions:
 +
 |===
 |If you are configuring... |Then...
 
 |Ports on a UTA/UTA2A card
-|Go to Step 7.
+|Go to <<Step7,Step 7>>.
 |Onboard UTA/UTA2 ports
-|Skip Step 7 and go to Step 8.
+|Skip Step 7 and go to <<Step8,Step 8>>.
 |===
 
 . If the adapter is in initiator mode, and if the UTA/UTA2 port is online, take the UTA/UTA2 port offline by entering the following command:
++
 `storage disable adapter <adapter_name>`
++
 Adapters in target mode are automatically offline in Maintenance mode.
 
 . If the current configuration does not match the desired use, enter the following command to change the configuration as needed:
++
 `ucadmin modify -m fc|cna -t initiator|target <adapter_name>`
 +
 * `-m` is the personality mode: FC or 10GbE UTA.
 * `-t` is the FC4 type: target or initiator.
 
 +
-*Note*: You need to use FC initiator for tape drives and FlexArray Virtualization systems. You need to use the FC target for SAN clients.
+NOTE: You need to use FC initiator for tape drives and FlexArray Virtualization systems. You need to use the FC target for SAN clients.
 
-. Verify the settings by entering the following command and examining its output:
+. [[Step7]]Verify the settings by entering the following command and examining its output:
++
 `ucadmin show`
 
-. Perform one of the following actions:
+. [[Step8]]Perform one of the following actions:
 +
 |===
 |If the system... |Then...
@@ -134,7 +138,8 @@ f-a    2b      fc      target    cna      -          online
 |`fcp config <adapter_name> up`
 |===
 
-. Cable the port.
+. [[Step13]]Cable the port.
+
 . Perform one of the following actions:
 +
 |===
@@ -143,3 +148,4 @@ f-a    2b      fc      target    cna      -          online
 |Has storage disks |Go to  link:map_ports_node2_node4.html[Map ports from node2 to node4].
 |Is a V-Series system or has FlexArray Virtualization Software and is connected to storage arrays
 |Return to link:install_boot_node4.html[Install and boot node4], and resume the section at Step 9.
+|===
