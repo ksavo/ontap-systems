@@ -1,0 +1,18 @@
+---
+sidebar: upgrade-arl-auto_sidebar
+permalink: upgrade-arl-auto/verify_health_of_metrocluster_config.html
+keywords: health, metrocluster, alerts
+summary: Check the health of the MetroCluster configuration to verify proper operation.
+---
+
+= Verify the health of the MetroCluster configuration
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+[.lead]
+include::../_include/ru_verify_health_metrocluster_configuration.adoc[]
+
+// P. 10 of PDF
