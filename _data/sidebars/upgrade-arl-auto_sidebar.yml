@@ -28,7 +28,7 @@ entries:
       - title: Get an IP address of an external key management server for storage encryption
         url: /get_ip_address_of_external_kms_for_storage_encryption.html
       - title: Quiesce the SnapMirror relationships (optional)
-      - url: /quiesce_snapmirror_relationships.html
+        url: /quiesce_snapmirror_relationships.html
   - title: Stage 2 Relocate and retiring node1
     url: /stage_2_relocate_retire_node1.html
     entries:

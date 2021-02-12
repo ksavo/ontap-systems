@@ -1,0 +1,50 @@
+---
+sidebar: upgrade-arl-auto_sidebar
+permalink: upgrade-arl-auto/join_quorum_node_has_different_ports_stage3.html
+keywords: aggregate relocation, YYYYY
+summary: If the new node has a different set of network ports, you must ensure that the node successfully joins the quorum.
+---
+
+= Join the quorum when a node has a different set of network ports
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+[.lead]
+The node with the new controller boots and attempts to join the cluster automatically at first; however if the new node has a different set of network ports, you must perform the following steps to ensure that the node successfully joins the quorum.
+
+.About this task
+
+You can use these instructions for any relevant node. Node3 is used throughout the following
+sample.
+
+.Steps
+
+. Verify that the new cluster ports are in the Cluster broadcast domain by entering the following command and checking its output:
++
+`network port show -node node -port port -fields broadcast-domain`
++
+The following example shows that port "e1a" is in the Cluster domain on node3:
++
+`cluster::> network port show -node node3 -port e1a -fields broadcast-domain
+node port broadcast-domain
+------ ---- ----------------
+node3 e1a Cluster
+2. Add the correct ports to the Cluster broadcast domain by entering the following command and
+checking its output:
+network port modify -node -port -ipspace Cluster -mtu 9000
+This example adds Cluster port e1b on node3:
+network port modify -node node3 -port e1b -ipspace Cluster -mtu 9000
+3. Migrate the cluster LIFs to the new ports, once for each LIF, using the following command:
+network interface migrate -vserver Cluster -lif lif_name -source-node node3 -
+destination-node node3 -destination-port port_name
+4. Modify the home port of the cluster LIFs as follows:
+network interface modify -vserver Cluster -lif lif_name –home-port port_name
+5. If the cluster ports are not in the Cluster broadcast-domain, add them with the following
+command:
+network port broadcast-domain add-ports -ipspace Cluster -broadcastdomain Cluster -
+ports node:port
+// This is for the stage 3 procedure.  There is a similar procedure in Stage 5.
+// Pg 41  and top of 42 in pdf.

@@ -13,6 +13,5 @@ summary: To ensure correct setup, you must enable the HA pair.
 :imagesdir: ./media/
 
 [.lead]
-
-// 2nd half of page 68, 69, and top half of 70 in PDF
 include::../_include/ru_app_ensure_new_controllers_are_set_up_correctly.adoc[]
+// 2nd half of page 68, 69, and top half of 70 in PDF

@@ -1,0 +1,16 @@
+---
+sidebar: upgrade-arl-manual_sidebar
+permalink: upgrade-arl-manual/resume_snapmirror_ops.html
+summary:
+---
+
+= Resume SnapMirror operations
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+[.lead]
+// COPIED FROM 9.8 GUIDE...CHECK FOR REUSE, THEN REMOVE THIS COMMENT
+include::../_include\ru_app_resume_snapmirror_operations.adoc[]

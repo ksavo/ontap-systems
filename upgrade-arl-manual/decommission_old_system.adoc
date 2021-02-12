@@ -1,0 +1,16 @@
+---
+sidebar: upgrade-arl-manual_sidebar
+permalink: upgrade-arl-manual/decommission_old_system.html
+summary: Decommission the old system
+---
+
+= Decommission the old system
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+[.lead]
+// COPIED FROM 9.8 GUIDE...CHECK FOR REUSE, THEN REMOVE THIS COMMENT
+include::../_include/ru_app_decommission_old_system.adoc[]
