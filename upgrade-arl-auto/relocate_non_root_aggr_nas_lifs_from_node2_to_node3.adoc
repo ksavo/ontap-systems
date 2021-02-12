@@ -50,3 +50,4 @@ Distribution Function: ip
 .. If any interface groups are configured on the node, record the names of those groups and the ports assigned to them, and then delete the ports by entering the following command, once for each port:
 +
 `network port ifgrp remove-port -node <nodename> -ifgrp <ifgrp_name> -port <netport>`
+// page 46 and 47 in PDF

@@ -1,0 +1,16 @@
+---
+sidebar: upgrade-arl-manual_sidebar
+permalink: upgrade-arl-manual/required_tools_documentation.html
+summary: Tools and documentation you will need during upgrade.
+---
+
+= Required tools and documentation
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+[.lead]
+// COPIED FROM 9.8 GUIDE...CHECK FOR REUSE, THEN REMOVE THIS COMMENT
+include::../_include/ru_app_required_tools_documentation.html[]

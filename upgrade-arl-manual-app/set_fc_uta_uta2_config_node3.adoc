@@ -1,7 +1,7 @@
 ---
 sidebar: upgrade-arl-manual-app_sidebar
 permalink: upgrade-arl-manual-app/set_fc_uta_uta2_config_node3.html
-summary:
+summary: Settings must be configured befoe completing the upgrade.
 ---
 
 = Set the FC or UTA/UTA2 configuration on node3
@@ -12,3 +12,14 @@ summary:
 :imagesdir: ./media/
 
 [.lead]
+If node3 has onboard FC ports, onboard unified target adapter (UTA/UTA2) ports, or a UTA/UTA2 card, you must configure the settings before completing the rest of the procedure.
+
+.About this task
+
+You might need to complete the section "Configuring FC ports on node3", the section "Checking and configuring UTA/UTA2 ports on node3", or both sections.
+
+NOTE: NetApp marketing materials might use the term UTA2 to refer to CNA adapters and ports. However, the CLI uses the term CNA.
+
+* If node3 does not have onboard FC ports, onboard UTA/UTA2 ports, or a UTA/UTA2 card, and you are upgrading a system with storage disks, you can skip to the section _Mapping ports from node1 to node3_.
+
+* However, if you have a V-Series system or a system with FlexArray Virtualization software with storage arrays, and node3 does not have onboard FC ports, onboard UTA/UTA ports, or a UTA/UTA2 card, return to the section _Installing and booting node3_ and resume the section at Step 22 on page 40.

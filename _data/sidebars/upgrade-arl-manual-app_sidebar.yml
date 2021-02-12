@@ -39,7 +39,7 @@ entries:
         url: /get_address_key_management_server_encryption.html
       - title: "Manage authentication using KMIP servers"
         url: /manage_authentication_kmip.html
-      - title: "Manage authentication using on onboard key manager"
+      - title: "Manage authentication using an onboard key manager"
         url: /manage_authentication_okm.html
       - title: "Quiesce the SnapMirror relationships"
         url: /quiesce_snapmirror_relationships.html
@@ -73,9 +73,9 @@ entries:
         url: /move_nas_lifs_node1_from_node2_node3_verify_san_lifs.html
       - title: "Relocate non-root aggregates from node2 to node3"
         url: /relocate_non_root_aggr_node2_node3.html
-      - title: "Move NAS data LIFs owned by node2 to node2"
+      - title: "Move NAS data LIFs owned by node2 to node3"
         url: /move_nas_lifs_node2_node3.html
-  - title: "Stage 4:  Record information and retire node2"
+  - title: "Stage 4: Record information and retire node2"
     url: /stage4_record_info_retire_node2.html
     entries:
       - title: "Record node2 information"
@@ -108,7 +108,7 @@ entries:
         url: /ensure_controllers_set_up_correctly.html
       - title: "Set up Storage Encryption on the new controller module"
         url: /set_up_storage_encryption_new_controller.html
-      - title: "Set up NetApp Encryption on the new controller module"
+      - title: "Set up NetApp Volume Encryption on the new controller module"
         url: /set_up_netapp_encryption_on_new_controller.html
       - title: "Decommission the old system"
         url: /decommission_old_system.html

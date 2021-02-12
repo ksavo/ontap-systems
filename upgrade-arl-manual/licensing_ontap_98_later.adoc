@@ -1,0 +1,25 @@
+---
+sidebar: upgrade-arl-manual_sidebar
+permalink: upgrade-arl-manual/licensing_ontap_98_later.html
+summary: You need licensing keys for certain features.
+---
+
+= Licensing in ONTAP 9.8 or Later
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+[.lead]
+// COPIED FROM 9.8 GUIDE...CHECK FOR REUSE, THEN REMOVE THIS COMMENT
+When you set up a cluster, the setup wizard prompts you to enter the cluster-base license key.
+
+However, some features require additional licenses, which are issued as packages that include one or more features. Each node in the cluster must have its own key for each feature to be used in the cluster.
+
+If you do not have new license keys, currently licensed features in the cluster are available to the new controller and will continue to work. However, using unlicensed features on the controller might put you out of compliance with your license agreement, so you should install the new license key or keys for the new controller after the upgrade is complete.
+
+All license keys are 28 uppercase alphabetic characters in length. You can obtain new 28-character license keys for ONTAP 9.8 or later at the NetApp Support Site at mysupport.netapp.com. The keys are available in the My Support section under Software licenses. If the site does not have the license keys you need, contact your NetApp sales representative.
+
+For detailed information about licensing, see the System Administration Reference on the ONTAP
+9 Documentation Center.

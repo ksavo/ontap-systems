@@ -1,8 +1,8 @@
-You can use the Config Advisor tool available from the NetApp Support Site to check for common configuration errors.
+You can use the Active IQ Config Advisor tool available from the NetApp Support Site to check for common configuration errors.
 
 .About this task
 
-Config Advisor is a configuration validation and health check tool. You can deploy it at both secure sites and non-secure sites for data collection and system analysis.
+Active IQ Config Advisor is a configuration validation and health check tool. You can deploy it at both secure sites and non-secure sites for data collection and system analysis.
 
 NOTE: Support for Config Advisor is limited, and available only online.
 

@@ -1,0 +1,19 @@
+---
+sidebar: upgrade-arl-manual_sidebar
+permalink: upgrade-arl-manual/stage3_install_boot_node3.html
+summary:
+---
+
+= Stage 3:  Install and boot node3
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+[.lead]
+// COPIED FROM 9.8 GUIDE...CHECK FOR REUSE, THEN REMOVE THIS COMMENT
+During Stage 3, you install and boot node3, map the cluster and node-management ports from node1 to node3, verify the node3 installation, and move data LIFs and SAN LIFs belonging to node1 from node2 to node3.  You also relocate all aggregates from node2 to node3, and move the data LIFs and SAN LIFs owned by node2 to node3.
+
+.Steps
+// add links to subsections.

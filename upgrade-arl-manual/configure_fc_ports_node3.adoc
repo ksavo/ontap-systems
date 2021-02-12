@@ -1,0 +1,102 @@
+---
+sidebar: upgrade-arl-manual_sidebar
+permalink: upgrade-arl-manual/configure_fc_ports_node3.html
+summary: Configure Fibre Channel ports on node3
+---
+
+= Configure Fibre Channel ports on node3
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+[.lead]
+// COPIED FROM 9.8 GUIDE...CHECK FOR REUSE, THEN REMOVE THIS COMMENT
+If node3 has FC ports, either onboard or on an FC adapter, you must set port configurations on the node before you bring it into service because the ports are not preconfigured. If the ports are not configured, you might experience a disruption in service.
+
+
+.Before you begin
+
+You must have the values of the FC port settings from node1 that you saved in the section _Preparing the nodes for upgrade_.
+
+.About this task
+
+You can skip this section if your system does not have FC configurations. If your system has onboard UTA/UTA2 ports or a UTA/UTA2 card, you configure them in _Checking and configuring UTA/UTA2 ports on node3.
+
+NOTE: *Important*: If your system has storage disks, enter the commands in this section at the cluster prompt. If you have a 'V-Series system' or have FlexArray Virtualization Software and are connected to storage arrays, enter commands in this section in Maintenance mode.
+
+.Steps
+
+. Compare the FC settings on node3 with the settings that you captured earlier from node1.
+. Take one of the following actions:
++
+[cols="35,65"]
+|===
+|If the system that you are upgrading... |Then...
+
+|Has storage disks
+|In maintenance mode (option 5 at boot menu), modify the FC ports on node3 as needed by entering one of the following commands:
+
+* To program target ports:
+
+`ucadmin modify -m fc -t target <adapter>`
+
+* To program initiator ports:
+
+`ucadmin modify -m fc -t initiator <adapter>`
+
+-t is the FC4 type: target or initiator.
+
+|Is a V-Series system or has FlexArray Virtualization Software and is connected to storage arrays
+|In maintenance mode (option 5 at boot menu), modify the FC ports on node3 as needed by entering the following command:
+
+`ucadmin modify -m fc -t initiator -f adapter_port_name`
+
+-t is the FC4 type, target or initiator.
+
+*Note*: The FC ports must be programmed as initiators.
+|===
+
+.Take one of the following actions:
++
+[cols="35,65"]
+|===
+|If the system that you are upgrading... |Then...
+
+|Has storage disks
+|Verify the new settings by entering the following command and examining the output:
+
+`ucadmin show`
+
+|Is a V-Series system or has FlexArray Virtualization Software and is connected to storage arrays
+|Verify the new settings by entering the following command and examining the output:
+
+`ucadmin show`
+|===
+
+. Exit Maintenance mode using the command:
++
+`halt`
+
+. Boot the system from loader prompt using the command:
++
+`boot_ontap menu`
+
+. After you enter the command, wait until the system stops at the boot environment prompt.
+
+. Select option *5* from the boot menu for maintenance mode.
+
+. Take one of the following actions:
++
+[cols="35,65"]
+|===
+|If the system that you are upgrading... |Then...
+
+|Has storage disks
+|* If node3 has a UTA/UTA2 card or UTA/UTA2 onboard ports, go to the section _Checking and configuring UTA/UTA2 ports on node3_.
+* If node3 does not have a UTA/UTA2 card or UTA/UTA2 onboard ports, skip the section _Checking and configuring UTA/UTA2 ports on node3_ and go to _Verifying the node3 installation_.
+|Is a V-Series system or has FlexArray Virtualization Software and is connected to storage arrays
+|* If node3 has a UTA/UTA2 card or UTA/UTA2 onboard ports, go to the section Checking and configuring UTA/UTA2 ports on node3.
+* If node3 does not have a UTA/UTA2 card or UTA/UTA2 onboard ports, skip the section _Checking and configuring UTA/UTA2 ports on node3_ and return to _Installing and booting node3_ and resume the section at _Step 22_.
+|===

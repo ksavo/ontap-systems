@@ -1,0 +1,16 @@
+---
+sidebar: upgrade-arl-manual_sidebar
+permalink: upgrade-arl-manual/lif_migration_failure.html
+summary: LIF migration failure
+---
+
+= LIF migration failure
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+[.lead]
+// COPIED FROM 9.8 GUIDE...CHECK FOR REUSE, THEN REMOVE THIS COMMENT
+include::..\_include\ru_app_lif_migration_failure.adoc[]

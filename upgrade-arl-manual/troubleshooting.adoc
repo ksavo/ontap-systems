@@ -1,0 +1,20 @@
+---
+sidebar: upgrade-arl-manual_sidebar
+permalink: upgrade-arl-manual/troubleshooting.html
+summary: This procedure includes troubleshooting suggestions.
+---
+
+= Troubleshooting
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+[.lead]
+// COPIED FROM 9.8 GUIDE...CHECK FOR REUSE, THEN REMOVE THIS COMMENT
+This procedure includes troubleshooting suggestions.
+
+If any problems occur while upgrading the controllers, you can refer to the Troubleshooting section at the end of the procedure for more information and possible solutions.
+
+If you do not find a solution to the problem you encountered, you should contact technical support.

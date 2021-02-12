@@ -1,0 +1,18 @@
+---
+sidebar: upgrade-arl-manual_sidebar
+permalink: upgrade-arl-manual/troubleshoot.html
+summary:
+---
+
+= Troubleshoot
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+[.lead]
+// COPIED FROM 9.8 GUIDE...CHECK FOR REUSE, THEN REMOVE THIS COMMENT
+You might encounter a failure while upgrading the node pair. The node might crash, aggregates might not relocate, or LIFs might not migrate. The cause of the failure and its solution depend on when the failure occurred during the upgrade procedure.
+
+Refer to the table describing the different phases of the procedure in the section link:arl_upgrade_workflow[ARL upgrade workflow]. The information about failures that can occur is listed by the phase of the procedure.

@@ -1,0 +1,20 @@
+---
+sidebar: upgrade-arl-manual_sidebar
+permalink: upgrade-arl-manual/aggregate_relocation_failures.html
+summary:  Aggregate relocation failures
+---
+
+= Aggregate relocation failures
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+[.lead]
+// COPIED FROM 9.8 GUIDE...CHECK FOR REUSE, THEN REMMOVE THIS COMMENT
+include::../_include/ru_app_aggregate_relocation_failures.adoc[]
+
+include::../_include/ru_app_check_aggregate_relocation_failure.adoc[]
+
+include::../_include/ru_app_aggregates_originally_node1_owned_node4_completion_upgrade.adoc[]
