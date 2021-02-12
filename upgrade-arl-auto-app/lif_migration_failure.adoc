@@ -19,4 +19,4 @@ summary: After you migrate LIFs, they might not come online after migration in S
 //
 
 [.lead]
-include::..\_include\ru_app_lif_migration_failure.adoc[]
+include::../_include/ru_app_lif_migration_failure.adoc[]

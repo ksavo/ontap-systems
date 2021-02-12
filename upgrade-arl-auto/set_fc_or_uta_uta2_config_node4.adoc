@@ -13,20 +13,12 @@ summary: If node4 has onboard FC ports, UTA/UTA2 ports, or a UTA/UTA2 card, you 
 :imagesdir: ./media/
 
 [.lead]
+include::../_include/ru_set_fc_or_uta_uta2_config_node4_intro.adoc[]
 
-If node4 has onboard FC ports, onboard unified target adapter (UTA/UTA2) ports, or a UTA/UTA2 card, you must configure the settings before completing the rest of the procedure.
-
-.About this task
-
-You might need to complete the link:config_fc_ports_node4,html[Configure FC ports on node4] section, the link:check_config_uta_uta2_ports_node4[Check and configure UTA/UTA2 ports on node4 section], or both sections.
-
-NOTE: If node4 does not have onboard FC ports, onboard UTA/UTA2 ports, or a UTA/UTA2 card, and you are upgrading a system with storage disks, you can skip to the link:map_ports_node2_node4.html[Mapp ports from node2 to node4] section.
+NOTE: If node4 does not have onboard FC ports, onboard UTA/UTA2 ports, or a UTA/UTA2 card, and you are upgrading a system with storage disks, you can skip to the link:map_ports_node2_node4.html[Map ports from node2 to node4] section.
 However, if you have a V-Series system or have FlexArray Virtualization Software and are connected to storage arrays, and node4 does not have onboard FC ports, onboard UTA/ UTA2 ports, or a UTA/UTA2 card, you must return to the link:install_and_boot_node4.html[Install and boot node4] section and resume at Step 22. Make sure that node4 has sufficient rack space. If node4 is in a separate chassis from node2, you can put node4 in the same location as node3. If node2 and node4 are in the same chassis, then node4 is already in its appropriate rack location.
 
-.Choices
-
-* link:config_fc_ports_node4,html[Configure FC ports on node4]
-* link:check_config_uta_uta2_ports_node4[Check and configure UTA/UTA2 ports on node4 section]
+include::../_include/ru_set_fc_or_uta_uta2_config_node4_choices.adoc[]
 
 include::../_include/ru_config_fc_ports_node4.adoc[]
 
@@ -38,14 +30,14 @@ include::../_include/ru_config_fc_ports_node4.adoc[]
 |If the system that you are upgrading...|Then...
 
 |Has storage disks
-a|* Skip this section and go to link:map_ports_node2_node4.adoc.html[Map ports from node2 to node4] if node4 does not have a UTA/UTA2 card or UTA/UTA2 onboard ports.
+a|* Skip this section and go to link:map_ports_node2_node4.html[Map ports from node2 to node4] if node4 does not have a UTA/UTA2 card or UTA/UTA2 onboard ports.
 
 |Is a V-Series system or has FlexArray Virtualization Software and is connected to storage arrays
 a|* Go to Checking and configuring UTA/UTA2 ports on node4 if node4 has a UTA/UTA2 card or UTA/UTA2 onboard ports.
 * Skip the section Checking and configuring UTA/UTA2 ports on node4 if node4 does not have a UTA/UTA2 card or UTA/UTA2 onboard ports, return to the section link:install_and_boot_node4.html[Install and boot node4], and resume the section at Step 23.
 |===
 
-include::../_include/ru_check_config_uta_uta2_ports_node4_intro_to_step_11.adoc[]
+include::../_include/ru_check_config_uta_uta2_ports_node4_intro_step_11.adoc[]
 
 [start=12]
 . [[step12]]Take one of the following actions:
@@ -53,12 +45,12 @@ include::../_include/ru_check_config_uta_uta2_ports_node4_intro_to_step_11.adoc[
 |===
 |If the system... |Then...
 
-|Has storage disks |Go to the section link:map_ports_node2_node4.html[Mapp ports from node2 to node4].
+|Has storage disks |Go to the section link:map_ports_node2_node4.html[Map ports from node2 to node4].
 |Is a V-Series system or has FlexArray Virtualization Software and is connected to storage arrays
 |Return to the section link:install_and_boot_node4.html[Install and boot node4] and resume the section at step 23.
 |===
 
-. Exit Maintenance mode:
+. [[Step13]]Exit Maintenance mode:
 +
 `halt`
 
@@ -68,7 +60,7 @@ include::../_include/ru_check_config_uta_uta2_ports_node4_intro_to_step_11.adoc[
 +
 If you are upgrading to an A800, go to <<Step23,Step 23>>.
 
-. On node4, go to the boot menu, and using 22/7, select the hidden option 'boot_after_controller_replacement'. At the prompt, enter node2 to reassign the disks of node2 to node4, as per the following example.
+. [[Step15]]On node4, go to the boot menu, and using 22/7, select the hidden option 'boot_after_controller_replacement'. At the prompt, enter node2 to reassign the disks of node2 to node4, as per the following example.
 +
 ----
 LOADER-A> boot_ontap menu ...
@@ -147,4 +139,36 @@ Login: ...
 
 . If the system goes into a reboot loop with the message `no disks found`, this is because it has reset the ports back to the target mode and therefore is unable to see any disks. Continue with <<Step17,Step 17>> through <<Step22,Step 22>> to resolve this.
 
-include::../_include/ru_check_config_uta_uta2_ports_node4_step_17_to_23.adoc[]
+include::../_include/ru_check_config_uta_uta2_ports_node4_step_17_22.adoc[]
+
+[start=23]
+. [[Step23]]If you are upgrading from a system with external disks to a system that supports internal and external disks (AFF A800 systems, for example), set the node2 aggregate as the root aggregate to ensure node4 boots from the root aggregate of node2. To set the root aggregate, go to the boot menu and select option `5` to enter maintenance mode.
++
+WARNING: You must perform the following substeps in the exact order shown; failure to do so might cause an outage or even data loss.
+
++
+The following procedure sets node4 to boot from the root aggregate of node2:
+
+.. Enter maintenance mode by using the following command:
++
+`boot_ontap maint`
+
+.. Check the RAID, plex, and checksum information for the node2 aggregate by using the following command:
++
+`aggr status -r`
+
+.. Check the status of the node2 aggregate by using the following command:
++
+`aggr status`
+
+.. If necessary, bring the node2 aggregate online by using the following command:
++
+`aggr_online root_aggr_from_<node2>`
+
+.. Prevent the node4 from booting from its original root aggregate by using the following command:
++
+`aggr offline <root_aggr_on_node4>`
+
+.. Set the node2 root aggregate as the new root aggregate for node4 by using the following command:
++
+`aggr options aggr_from_<node2> root`

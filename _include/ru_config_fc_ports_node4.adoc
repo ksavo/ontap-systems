@@ -63,3 +63,7 @@ a|Modify the FC ports on node4 as needed by using one of the following commands:
 
 . After you enter the command, wait until the system stops at the boot environment prompt.
 . Select option `5` from the boot menu for maintenance mode.
+
+// This reuse file is used in the following adoc files:
+// upgrade-arl-auto\set_fc_or_uta_uta2_config_node4.adoc
+// upgrade-arl-auto-app\set_fc_or_uta_uta2_config_node4.adoc

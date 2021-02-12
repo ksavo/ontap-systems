@@ -159,3 +159,7 @@ Node3 continues to serve the aggregates that have been relocated,  but the aggre
 
 . Bring up node2.
 . Continue with the controller upgrade procedure.
+
+// This reuse file is used in the following adoc files:
+// upgrade-arl-auto\reboots_panics_or_power_cycles.adoc
+// upgrade-arl-auto-app\reboots_panics_or_power_cycles.adoc

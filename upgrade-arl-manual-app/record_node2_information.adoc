@@ -1,7 +1,8 @@
 ---
 sidebar: upgrade-arl-manual-app_sidebar
 permalink: upgrade-arl-manual-app/record_node2_information.html
-summary:
+keywords: record, node2, information, cluster, network, FC, ports, NVRAM system ID
+summary: Before you can shut down and retire node2, you need to record information about its cluster network, management, and FC ports.
 ---
 
 = Record node2 information
@@ -36,7 +37,7 @@ node2
 4 entries were displayed.
 ----
 +
-NOTE: Your system might not have intercluster LIFs. You will have a cluster management LIF only on one node of a node pair. A cluster management LIF was displayed in the example output of Step 1 in the section _Recording node1 *port* information_.
+NOTE: Your system might not have intercluster LIFs. You will have a cluster management LIF only on one node of a node pair. A cluster management LIF was displayed in the example output of Step 1 in the section _Recording node1 port information_.
 
 . Capture the information in the output to use in the section link:map_ports_node2_node4.html[Map ports from node2 to node4].
 +
@@ -46,7 +47,7 @@ The output information is required to map the new controller ports to the old co
 +
 `network port show -node <node_name> -type physical` +
 +
-`node_name` is the node which is being migrated.
+`<node_name>` is the node which is being migrated.
 +
 The system displays the physical ports on node2, as shown in the following example:
 +
@@ -105,7 +106,7 @@ You will use the information in the section link:map_ports_node2_node4.html[Map 
 
 . Take one of the following actions:
 +
-[cols=2*,options="header",cols="35,65"] 
+[cols=2*,options="header",cols="35,65"]
 |===
 |If you... |Then...
 |Recorded NVRAM System ID number in the section link:prepare_nodes_for_upgrade.html[Prepare the nodes for upgrade]
@@ -116,7 +117,7 @@ You will use the information in the section link:map_ports_node2_node4.html[Map 
 
 . Display the attributes of node 2:
 +
-`system node show -instance -node node2`
+`system node show -instance -node <node2>`
 +
 ----
 cluster::> system node show -instance -node node2

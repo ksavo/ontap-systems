@@ -24,7 +24,7 @@ include::../_include/ru_app_reboots_panics_or_power_cycles.adoc[]
 
 == Reboots, panics, or power cycles during the second verification phase
 
-==== Node3 crashes during the second verification phase
+=== Node3 crashes during the second verification phase
 
 If node3 crashes during this phase, takeover does not happen because the HA pair is already disabled.
 

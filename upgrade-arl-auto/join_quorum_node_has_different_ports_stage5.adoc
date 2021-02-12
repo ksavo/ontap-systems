@@ -1,7 +1,7 @@
 ---
 sidebar: upgrade-arl-auto_sidebar
 permalink: upgrade-arl-auto/join_quorum_node_has_different_ports_stage5.html
-keywords: quorum, cluster, network ports, node, broadcast domain 
+keywords: quorum, cluster, network ports, node, broadcast domain
 summary: You must ensure that the node successfully joins the quorum.
 ---
 
@@ -21,13 +21,14 @@ The node with the new controller boots and attempts to join the cluster automati
 .About this task
 
 You can use these instructions for any relevant node. Node3 is used throughout the following sample.
-Steps
+
+.Steps
 
 . Verify that the new cluster ports are in the Cluster broadcast domain by entering the following command and checking its output:
 +
 `network port show -node node -port port -fields broadcast-domain`
 +
-The following example shows that port e1a is in the Cluster domain on node3:
+The following example shows that port "e1a" is in the Cluster domain on node3:
 +
 ----
 cluster::> network port show -node node3 -port e1a -fields broadcast-domain
@@ -40,7 +41,7 @@ node3   e1a   Cluster
 +
 `network port modify -node -port -ipspace Cluster -mtu 9000`
 +
-This example adds Cluster port e1b on node3:
+This example adds Cluster port "e1b" on node3:
 +
 ----
 network port modify -node node3 -port e1b -ipspace Cluster -mtu 9000
@@ -58,7 +59,7 @@ network port modify -node node3 -port e1b -ipspace Cluster -mtu 9000
 +
 `network port broadcast-domain add-ports -ipspace Cluster -broadcastdomain Cluster ports node:port`
 
-. Remove the old ports from the Cluster broadcast domain. You can use for any relevant node. The following command removes port e0d on node3:
+. Remove the old ports from the Cluster broadcast domain. You can use for any relevant node. The following command removes port "e0d" on node3:
 +
 `network port broadcast-domain remove-ports network port broadcast-domain remove-ports ipspace Cluster -broadcast-domain Cluster ‑ports node3:e0d`
 

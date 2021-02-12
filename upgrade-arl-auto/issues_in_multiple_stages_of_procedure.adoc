@@ -15,4 +15,4 @@ summary: Some issues can occur during different stages of the procedure.
 [.lead]
 
 // bottom half of p. 77, ad top half of 78
-include::../_include\ru_issues_multiple_stages_of_procedure.adoc[]
+include::../_include/ru_issues_multiple_stages_of_procedure.adoc[]

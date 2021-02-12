@@ -37,3 +37,7 @@ Although the output says that a node is in partial giveback and that storage fai
 .Steps
 
 No action is required; continue with the node-pair upgrade procedure.
+
+// This reuse file is used in the following adoc files:
+// upgrade-arl-auto\issues_in_multiple_stages_of_procedure.adoc
+// upgrade-arl-auto-app\issues_in_multiple_stages_of_procedure.adoc

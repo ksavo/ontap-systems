@@ -1,7 +1,8 @@
 ---
 sidebar: upgrade-arl-manual-app_sidebar
 permalink: upgrade-arl-manual-app/retire_node2.html
-summary:
+keywords: retire, node2, cluster, SAN, LIFs
+summary: To retire node2, you need to shut node2 down properly and remove it from the rack or chassis.
 ---
 
 = Retire node2
@@ -43,8 +44,11 @@ High Availability Configured: false
 
 . Check if node2 currently holds epsilon by entering the following command and examining its output:
 +
+`cluster show`
++
+The following example shows that node2 holds epsilon:
++
 ----
-cluster show The following example shows that node2 holds epsilon :
 cluster*::> cluster show
 Node                 Health  Eligibility   Epsilon
 -------------------- ------- ------------  -----------
@@ -56,13 +60,13 @@ Warning: Cluster HA has not been configured. Cluster HA must be configured on a 
 2 entries were displayed.
 ----
 
-. If node2 holds epsilon, mark epsilon as `false` on the node so that it can be transferred to node3 by entering the following command:
+. If node2 holds epsilon, mark epsilon as `false` on the node so that it can be transferred to node3:
 +
 `cluster modify -node <node2> -epsilon false`
 
-. Transfer epsilon to node3 by marking epsilon `true` on node3 by entering the following command:
+. Transfer epsilon to node3 by marking epsilon `true` on node3:
 +
-`cluster modify -node node3 -epsilon true`
+`cluster modify -node <node3> -epsilon true`
 
 . Verify if the setup is a two-node switchless cluster:
 +
@@ -86,7 +90,7 @@ Enable Switchless Cluster: false/true
 +
 The value of this command must match the physical state of the system.
 
-. Return to the admin level by entering the following command:
+. [[Step9]]Return to the admin level:
 +
 `set -privilege admin`
 

@@ -16,3 +16,7 @@ You can choose one of the following to locate your system:
 A table displays cluster information, including the serial numbers.
 
 . Locate the cluster in the table and select *Decommission this system* from the Product Tool Set drop-down menu.
+
+// This reuse file is used in the following adoc files:
+// upgrade-arl-auto\decommission_old_system.adoc
+// upgrade-arl-auto-app\decommission_old_system.adoc

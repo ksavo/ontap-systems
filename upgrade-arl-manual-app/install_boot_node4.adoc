@@ -16,13 +16,15 @@ You need to install node4 in the rack, transfer node2 connections to node4, and 
 
 .About this task
 
-You need to netboot node4 if it does not have the same version of ONTAP 9 that is installed on node2. After you install node4, boot it from the ONTAP 9 image stored on the web server. You can then download the correct files to the boot media device for subsequent system boots by following the instructions in link:Prepare_for_netboot.html[Prepare for netboot]
+You need to netboot node4 if it does not have the same version of ONTAP 9 that is installed on node2. After you install node4, boot it from the ONTAP 9 image stored on the web server. You can then download the correct files to the boot media device for subsequent system boots by following the instructions in link:prepare_for_netboot.html[Prepare for netboot]
 
 However, you do not need to netboot node4 if it has the same or later version of Data ONTAP 9 that is installed on node2.
 
-*Important*: If you are upgrading a V-Series system or a system with FlexArray Virtualization Software that is connected to storage arrays, you need to complete <<Step1,Step 1>> through <<Step7,Step 7>>, leave this section at Step 8 and follow instructions in link:set_fc_uta_uta2_config_node4.html[Set the FC or UTA/UTA2 configuration on node4] as needed, entering the commands in Maintenance mode. You then need to return to this section and resume the procedure at <<Step9,Step 9>>.
+*Important*:
 
-However, if you are upgrading a system with storage disks, you need to complete this entire section and then proceed to the section link:set_fc_uta_uta2_config_node4.html[Set the FC or UTA/UTA2 configuration on node4], entering commands at the cluster prompt.
+* If you are upgrading a V-Series system or a system with FlexArray Virtualization Software that is connected to storage arrays, you need to complete <<Step1,Step 1>> through <<Step7,Step 7>>, leave this section at Step 8 and follow instructions in link:set_fc_uta_uta2_config_node4.html[Set the FC or UTA/UTA2 configuration on node4] as needed, entering the commands in Maintenance mode. You then need to return to this section and resume the procedure at <<Step9,Step 9>>.
+
+* However, if you are upgrading a system with storage disks, you need to complete this entire section and then proceed to the section link:set_fc_uta_uta2_config_node4.html[Set the FC or UTA/UTA2 configuration on node4], entering commands at the cluster prompt.
 
 .Steps
 
@@ -31,11 +33,11 @@ However, if you are upgrading a system with storage disks, you need to complete 
 |===
 |If node4 will be in ... |Then...
 
-|A chassis separate from node3 |Go to Step 2.
+|A chassis separate from node3 |Go to <<Step2,Step 2>>.
 |The same chassis with node3 |Skip Steps 2 and 3 and go to <<Step4,Step 4>>.
 |===
 
-. Make sure that node4 has sufficient rack space.
+. [[Step2]] Make sure that node4 has sufficient rack space.
 +
 If node4 is in a separate chassis from node3, you can put node4 in the same location as node2. If node3 and node4 are in the same chassis, then node4 is already in its appropriate rack location.
 
@@ -83,7 +85,7 @@ WARNING: The battery is unfit to retain data during a power
 .. Check for any console messages that might indicate a problem other than a low NVRAM battery and, if necessary, take any required corrective action.
 .. Allow the battery to charge and the boot process to finish.
 +
-CAUTION: *Attention*: Do not override the delay. Failure to allow the battery to charge could result in a loss of data.
+CAUTION: *Warning: Do not override the delay. Failure to allow the battery to charge could result in a loss of data.*
 
 . [[Step8]]Take one of the following actions:
 +
@@ -121,11 +123,11 @@ The system displays all the array LUNs that are visible to each of the FC initia
 `halt`
 +
 The system stops at the boot environment prompt.
-. Configure node4 for ONTAP by entering the following command:
+. Configure node4 for ONTAP:
 +
 `set-defaults`
 
-. If FDE is used in this configuration, the `setenv bootarg.storageencryption.support` variable must be set to *true*, and the `kmip.init.maxwait` variable needs to be set to *off* to avoid a boot loop after the node2 configuration is loaded:
+. If FDE is used in this configuration, the `setenv bootarg.storageencryption.support` variable must be set to `true`, and the `kmip.init.maxwait` variable needs to be set to `off` to avoid a boot loop after the node2 configuration is loaded:
 `setenv bootarg.storageencryption.support true`
 `setenv kmip.init.maxwait off`
 
@@ -148,24 +150,26 @@ The system stops at the boot environment prompt.
 NOTE: You should use the management port and IP address as the netboot connection. Do not use a data LIF IP address or a data outage might occur while the upgrade is being performed.
 
 +
+[cols=2*,options="header",cols="30,70"]
 |===
 If Dynamic Host Configuration Protocol (DHCP) is... |Then...
 
 |Running |Configure the connection automatically by entering the following command at the boot environment prompt:
 `ifconfig e0M -auto`
 |Not running |Manually configure the connection by entering the following command at the boot environment prompt:
-`ifconfig e0M -addr=filer_addr mask=netmask -gw=gateway dns=dns_addr domain=dns_domain`
-`filer_addr` is the IP address of the storage system.
-`netmask` is the network mask of the storage system.
-`gateway` is the gateway for the storage system.
-`dns_addr` is the IP address of a name server on your network.
-`dns_domain` is the Domain Name Service (DNS) domain name. If you use this optional parameter, you do not need a fully qualified domain name in the netboot server URL; you need only the server's host name.
+`ifconfig e0M -addr=<filer_addr> mask=<netmask> -gw=<gateway> dns=<dns_addr> domain=<dns_domain>`
+`<filer_addr>` is the IP address of the storage system.
+`<netmask>` is the network mask of the storage system.
+`<gateway>` is the gateway for the storage system.
+`<dns_addr>` is the IP address of a name server on your network.
+`<dns_domain>` is the Domain Name Service (DNS) domain name. If you use this optional parameter, you do not need a fully qualified domain name in the netboot server URL; you need only the server's host name.
 
 *Note*: Other parameters might be necessary for your interface. Enter `help ifconfig` at the firmware prompt for details.
 |===
 
 . Perform netboot on node4:
 +
+[cols=2*,options="header",cols="30,70"]
 |===
 |For... |Then...
 
@@ -173,11 +177,13 @@ If Dynamic Host Configuration Protocol (DHCP) is... |Then...
 |All other systems |`netboot \http://<web_server_ip/path_to_webaccessible_directory/ontap_version>_image.tgz`
 |===
 The `<path_to_the_web-accessible_directory>` should lead to where you downloaded the
-`<ontap_version>_image.tgz` in Step 1 in the section link:Prepare_for_netboot.html[Prepare for netboot].
+`<ontap_version>_image.tgz` in Step 1 in the section link:prepare_for_netboot.html[Prepare for netboot].
 +
 NOTE: Do not interrupt the boot.
 
-. From the boot menu, select `option (7) Install new software first`. This menu option downloads and installs the new Data ONTAP image to the boot device.
+. From the boot menu, select `option (7) Install new software first`.
++
+This menu option downloads and installs the new Data ONTAP image to the boot device.
 +
 Disregard the following message: `"This procedure is not supported for NonDisruptive Upgrade on an HA pair"`. The note applies to nondisruptive upgrades of Data ONTAP, and not upgrades of controllers.
 
@@ -186,18 +192,16 @@ Disregard the following message: `"This procedure is not supported for NonDisrup
 `\http://<web_server_ip/path_to_web-accessible_directory/ontap_version>_image.tgz`
 
 . Complete the following substeps:
-.. Enter n to skip the backup recovery when you see the following prompt:
+.. Enter `n` to skip the backup recovery when you see the following prompt:
 +
 ----
 Do you want to restore the backup configuration now? {y|n}
-n
 ----
 
-.. Reboot by entering y when you see the following prompt:
+.. Reboot by entering `y` when you see the following prompt:
 +
 ----
 The node must be rebooted to start using the newly installed software. Do you want to reboot now? {y|n}
-y
 ----
 +
 The controller module reboots but stops at the boot menu because the boot device was reformatted and the configuration data needs to be restored.
@@ -225,7 +229,7 @@ DISK         OWNER                       POOL   SERIAL NUMBER   HOME
 ......
 ----
 
-. Reassign node2's spares, disks belonging to the root, and any non-root aggregates that were not relocated to node3 earlier in section link:relocate_non_root_aggregates_node2_node3[Relocate non-root aggregates from node2 to node3]:
+. Reassign node2's spares, disks belonging to the root, and any non-root aggregates that were not relocated to node3 earlier in section link:relocate_non_root_aggr_node2_node3.html[Relocate non-root aggregates from node2 to node3]:
 +
 |===
 |Disk type .. |Run the command..
@@ -236,9 +240,9 @@ DISK         OWNER                       POOL   SERIAL NUMBER   HOME
 `<node2_sysid> -d <node4_sysid>`
 |===
 +
-For the `<node2_sysid>` value, use the information captured in Step 10 of the link:Record_node2_port_information[Record node2 port information] section. For `<node4_sysid>`, use the information captured in Step 23.
+For the `<node2_sysid>` value, use the information captured in Step 10 of the link:record_node2_information.html[Record node2 information] section. For `<node4_sysid>`, use the information captured in Step 23.
 +
-NOTE: The -p option is only required in maintenance mode when shared disks are present.
+NOTE: The `-p` option is only required in maintenance mode when shared disks are present.
 
 +
 The `disk reassign` command will reassign only those disks for which `<node2_sysid>` is the current owner.
@@ -272,7 +276,7 @@ Do you want to continue (y/n)? y
 
 . If you are upgrading from a system with external disks to a system that supports internal and external disks (A800 systems, for example), set node4 as root to ensure it boots from the root aggregate of node2.
 +
-CAUTION: *Warning*: You must perform the following substeps in the exact order shown; failure to do so might cause an outage or even data loss.
+CAUTION: *Warning: You must perform the following substeps in the exact order shown; failure to do so might cause an outage or even data loss.*
 
 +
 The following procedure sets node4 to boot from the root aggregate of node2:
@@ -317,6 +321,7 @@ If you have a MetroCluster configuration, use the following commands to correct 
 . Exit Maintenance mode:
 +
 `halt`
++
 The system stops at the boot environment prompt.
 
 . On node3, check the system date, time, and time zone:
@@ -345,7 +350,7 @@ The system stops at the boot environment prompt.
 
 . If necessary, set the partner system ID on node4:
 +
-`setenv partner-sysid node3_sysid`
+`setenv partner-sysid <node3_sysid>`
 
 .. Save the settings:
 +

@@ -1,7 +1,7 @@
 ---
 sidebar: upgrade-arl-auto_sidebar
 permalink: upgrade-arl-auto/map_ports_node2_node4.html
-keywords: map, node2, ports, cluster, broadcast domains, physical ports 
+keywords: map, node2, ports, cluster, broadcast domains, physical ports
 summary: You must verify that the physical ports on node2 map correctly to the physical ports on node4.
 ---
 
@@ -114,7 +114,7 @@ This example adds Cluster port e1b on node4:
 .. Migrate the cluster LIFs to the new ports, once for each LIF:
 +
 `network interface migrate -vserver Cluster -lif <lif_name> -source-node node4 destination-node node4 -destination-port <port_name>`
-. Modify the home port of the cluster LIFs:
+.. Modify the home port of the cluster LIFs:
 +
 `network interface modify -vserver Cluster -lif <lif_name> –home-port <port_name>`
 
@@ -143,7 +143,7 @@ This command removes port e0d on node4:
 `network port broadcast-domain remove-ports`
 .. Modify a LIF’s home port:
 +
-`network interface modify -vserver vserver -lif <lif_name> –home-port <port_name>`
+`network interface modify -vserver <vserver> -lif <lif_name> –home-port <port_name>`
 
 . Adjust the intercluster broadcast domains and migrate the intercluster LIFs, if necessary, using the same commands shown in <<Step5,Step 5>>.
 
@@ -157,7 +157,7 @@ This command removes port e0d on node4:
 .. To delete the ports:
 +
 `network port delete -node <node_name> -port <port_name>`
-. Return to the admin level:
+.. Return to the admin level:
 +
 `set -privilege admin`
 
