@@ -35,21 +35,21 @@ At this point in the procedure, the operation will have paused as node4 joins qu
 
 .Steps
 
-. Verify that node4 has joined quorum by using the following command:
+. Verify that node4 has joined quorum:
 +
 `cluster show -node node4 -fields health`
 +
 The output of the `health` field should be `true`.
 
-. Verify that node4 is part of the same cluster as node3 and that it is healthy by using the following command:
+. Verify that node4 is part of the same cluster as node3 and that it is healthy:
 +
 `cluster show`
 
-. Switch to advanced privilege mode by using the following command:
+. Switch to advanced privilege mode:
 +
 `set advanced`
 
-. Check the status of the controller replacement operation and verify that it is in a paused state and in the same state it was in before node2 was halted to perform the physical tasks of installing new controllers and moving cables by using the following commands:
+. Check the status of the controller replacement operation and verify that it is in a paused state and in the same state it was in before node2 was halted to perform the physical tasks of installing new controllers and moving cables:
 +
 `system controller replace show`
 +
@@ -57,13 +57,13 @@ The output of the `health` field should be `true`.
 
 . If you are working on a MetroCluster system,  verify that the replaced controller is configured correctly for the MetroCluster configuration; the MetroCluster configuration should be in a healthy state. Refer to link:verify_health_of_metrocluster_config.html[Verify the health of the MetroCluster configuration].
 +
-Reconfigure the intercluster LIFs on MetroCluster node node4, and check cluster peering to restore communication between the MetroCluster nodes before proceeding to Step 6.
+Reconfigure the intercluster LIFs on MetroCluster node node4, and check cluster peering to restore communication between the MetroCluster nodes before proceeding to <<Step6,Step 6>>.
 +
-Check the MetroCluster node status by using the following command:
+Check the MetroCluster node status:
 +
 `metrocluster node show`
 
-. Resume the controller replacement operation by using the following command.
+. [[Step6]]Resume the controller replacement operation:
 +
 `system controller replace resume`
 
@@ -107,17 +107,17 @@ For more information on creating and re-creating VLANs, interface groups, and br
 
 .Steps
 
-. List all the physical ports that are on upgraded node2 (referred to as node4) by using the following command:
+. List all the physical ports that are on upgraded node2 (referred to as node4):
 +
 `network port show -node node4`
 +
 All physical network ports, VLAN ports and interface group ports on the node are displayed. From this output you can see any physical ports that have been moved into the `Cluster` broadcast domain by ONTAP. You can use this output to aid in deciding which ports should be used as interface group member ports, VLAN base ports or standalone physical ports for hosting LIFs.
 
-. List the broadcast domains on the cluster by using the following command:
+. List the broadcast domains on the cluster:
 +
 `broadcast-domain show`
 
-. List network port reachability of all ports on node4 by using the following command:
+. List network port reachability of all ports on node4:
 +
 `network port reachability show`
 +
@@ -170,7 +170,7 @@ A warning message, as shown above, is expected for ports with a reachability sta
 +
 Review the connectivity of the port and answer `y` or `n` as appropriate.
 +
-Verify that all physical ports have their expected reachability by using the following command:
+Verify that all physical ports have their expected reachability:
 +
 `network port reachability show`
 +
@@ -181,25 +181,25 @@ As the reachability repair is performed, ONTAP attempts to place the ports in th
 +
 `network port broadcast-domain remove-ports -broadcast-domain <broadcast_domain_name> -ports <node_name:port_name>`
 
-.. Add a member port to an interface group by using the following command:
+.. Add a member port to an interface group:
 +
 `network port ifgrp add-port -node <node_name> - ifgrp <ifgrp> -port <port_name>`
 
 .. The interface group is automatically added to the broadcast domain about a minute after the first member port is added.
-.. Verify that the interface group was added to the appropriate broadcast domain by using the following command:
+.. Verify that the interface group was added to the appropriate broadcast domain:
 +
 `network port reachability show -node <node_name> -port <ifgrp>`
 +
-If the interface group’s reachability status is not `ok`, assign it to the appropriate broadcast domain by using the following command:
+If the interface group’s reachability status is not `ok`, assign it to the appropriate broadcast domain:
 +
 `network port broadcast-domain add-ports -broadcast-domain <broadcast_domain_name> -ports <node:port>`
 
-. Assign appropriate physical ports to the `Cluster` broadcast domain by using the following steps:
-.. Determine which ports have reachability to the `Cluster` broadcast domain by using the following command:
+. Assign appropriate physical ports to the `Cluster` broadcast domain:
+.. Determine which ports have reachability to the `Cluster` broadcast domain:
 +
 `network port reachability show -reachable-broadcast-domains Cluster:Cluster`
 
-.. Repair any port with reachability to the `Cluster` broadcast domain, if its reachability status is not `ok` by using the following command:
+.. Repair any port with reachability to the `Cluster` broadcast domain, if its reachability status is not `ok`:
 +
 `network port reachability repair -node <node_name> -port <port_name>`
 
@@ -216,7 +216,7 @@ Verify that there are no unreachable or unexpected ports present. Check the reac
 `network port reachability show -detail`
 
 . Restore any VLANs that might have become displaced by using the following steps:
-.. List displaced VLANs by using the following command:
+.. List displaced VLANs:
 +
 `displaced- vlans show`
 +
@@ -232,7 +232,7 @@ Node1       a0a           822, 823
             e0e           822, 823
 ....
 
-.. Restore VLANs that were displaced from their previous base ports by using the following command:
+.. Restore VLANs that were displaced from their previous base ports:
 +
 `displaced- vlans restore`
 +
@@ -242,7 +242,7 @@ The following is an example of restoring VLANs that have been displaced from int
 Cluster::*> displaced-vlans restore -node node2_node4 -port a0a -destination-port a0a
 ....
 +
-The following is an example of restoring displaced VLANs on port e0e to e0h:
+The following is an example of restoring displaced VLANs on port "e0e" to "e0h":
 +
 ....
 Cluster::*> displaced-vlans restore -node node2_node4 -port e0e -destination-port e0h
@@ -254,34 +254,34 @@ Wait about one minute for newly restored VLANs to be placed into their appropria
 
 .. Create new VLAN ports as needed for VLAN ports that are not in the `displaced- vlans show` output but should be configured on other physical ports.
 
-. Delete any empty broadcast domains after all port repairs have been completed by using the following command.
+. Delete any empty broadcast domains after all port repairs have been completed:
 +
 `broadcast-domain delete -broadcast-domain <broadcast_domain_name>`
 
-. Verify port reachability by using the following command:
+. Verify port reachability:
 +
 `network port reachability show`
 +
 When all ports are correctly configured and added to the correct broadcast domains, the `network port reachability show` command should report the reachability status as `ok` for all connected ports, and the status as `no-reachability` for ports with no physical connectivity. If any ports report a status other than these two, perform the reachability repair and add or remove ports from their broadcast domains as instructed in <<Step4,Step 4>>.
 
-. Verify that all ports have been placed into broadcast domains by using the following command:
+. Verify that all ports have been placed into broadcast domains:
 +
 `network port show`
 
-. Verify that all ports in the broadcast domains have the correct maximum transmission unit (MTU) configured by using the following command:
+. Verify that all ports in the broadcast domains have the correct maximum transmission unit (MTU) configured:
 +
 `network port broadcast-domain show`
 
-. Restore LIF home ports, specifying the Vserver(s) and LIF(s) home ports, if any, that need to be restored by using the following command:
-.. List any LIFs that are displaced by using the following command:
+. Restore LIF home ports, specifying the Vserver(s) and LIF(s) home ports, if any, that need to be restored:
+.. List any LIFs that are displaced:
 +
 `displaced-interface show`
 
-.. Restore LIF home ports by using the following command:
+.. Restore LIF home ports:
 +
 `displaced-interface restore-home-node -node <node_name> -vserver <vserver_name > - lif-name <LIF_name>`
 
-. Verify that all LIFs have a home port and are administratively up by using the following command:
+. Verify that all LIFs have a home port and are administratively up:
 +
 `network interface show -fields home- port,status-admin`
 // 11 DEC 2020, thomi, checked

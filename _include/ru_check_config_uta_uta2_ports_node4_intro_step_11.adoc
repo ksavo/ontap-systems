@@ -26,6 +26,7 @@ However, you should check the configuration of the UTA/UTA2 ports on node4 and c
 
 . Check how the ports are currently configured by using one of the following commands on node4:
 +
+[cols=2*,options="header"cols="30,70"]
 |===
 |If the system... |Then…
 
@@ -61,6 +62,7 @@ Contact your NetApp representative to obtain the correct SFP+ module.
 
 . Take one of the following actions:
 +
+[cols=2*,options="header"cols="30,70"]
 |===
 |If the CNA ports... |Then…
 
@@ -75,6 +77,7 @@ Contact your NetApp representative to obtain the correct SFP+ module.
 
 . [[Step5]]Take one of the following actions:
 +
+[cols=2*,options="header"cols="30,70"]
 |===
 |If you are configuring... |Then…
 
@@ -84,13 +87,13 @@ Contact your NetApp representative to obtain the correct SFP+ module.
 |Skip Step 7 and go to <<Step8, Step 8>>.
 |===
 
-. If the adapter is in initiator mode, and if the UTA/UTA2 port is online, take the UTA/UTA2 port offline by using the following command:
+. If the adapter is in initiator mode, and if the UTA/UTA2 port is online, take the UTA/UTA2 port offline:
 +
 `storage disable adapter <adapter_name>`
 +
 Adapters in target mode are automatically offline in Maintenance mode.
 
-. [[Step7]]If the current configuration does not match the desired use, change the configuration as needed by using the following command:
+. [[Step7]]If the current configuration does not match the desired use, change the configuration as needed:
 +
 `ucadmin modify -m fc|cna -t initiator|target <adapter_name>`
 
@@ -103,8 +106,9 @@ NOTE: You must use FC initiator for tape drives, FlexArray Virtualization system
 +
 `ucadmin show`
 
-. Verify the settings by using one of the following commands:
+. Verify the settings:
 +
+[cols=2*,options="header"cols="40,60"]
 |===
 |If the system... |Then…
 
@@ -131,6 +135,7 @@ f-a   2b       fc             target       cna           -             online
 
 . Place any target ports online by entering one of the following commands, once for each port:
 +
+[cols=2*,options="header"cols="30,70"]
 |===
 |If the system... |Then…
 

@@ -76,7 +76,7 @@ entries:
     url: /stage_5_install_and_boot_node4.html
     entries:
       - title: Install and boot node4
-        url: /install_and_boot_node4.html
+        url: /install_boot_node4.html
       - title: Set the FC or UTA/UTA2 configuration on node4
         url: /set_fc_or_uta_uta2_config_node4.html
         entries:
@@ -96,7 +96,7 @@ entries:
           - title: Restore key-manager configuration on node4
             url: /restore_key-manager_config_node4.html
       - title: Move non-root aggregates and NAS data LIFs owned by node2 from node3 to node4
-        url: /move_non_root_aggr_and_nas_lifs_node2_from_node3_to_node4.html
+        url: /move_non_root_aggr_and_nas_data_lifs_node2_from_node3_to_node4.html 
   - title: Stage 6 Complete the upgrade
     url: /stage_6_complete_the_upgrade.html
     entries:

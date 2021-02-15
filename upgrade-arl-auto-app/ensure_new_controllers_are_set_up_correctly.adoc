@@ -32,5 +32,5 @@ include::../_include/ru_app_ensure_new_controllers_are_set_up_correctly_step_13_
 
 .After you finish
 
-If Storage Encryption is enabled on node3 and node4, complete the section link:setting_up_storage_encryption_on_the_new_controller_module.html[Set up Storage Encryption on the new controller module]. Otherwise, complete the section link:decommissioning_the_old_system.html[Decommission the old system].
+If Storage Encryption is enabled on node3 and node4, complete the section link:set_up_storage_encryption_new_module.html[Set up Storage Encryption on the new controller module]. Otherwise, complete the section link:decommission_old_system.html[Decommission the old system].
 // 11 DEC 2020, thomi, checked

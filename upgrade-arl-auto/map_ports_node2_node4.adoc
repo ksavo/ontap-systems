@@ -88,12 +88,12 @@ cluster::>
 
 . Follow these steps to place node4 into quorum:
 +
-.. Boot node4. See link:install_and_boot_node4.html[Install and boot node4] to boot the node if you have not already done so.
+.. Boot node4. See link:install_boot_node4.html[Install and boot node4] to boot the node if you have not already done so.
 .. Verify that the new cluster ports are in the Cluster broadcast domain:
 +
 `network port show -node <node> -port <port> -fields broadcast-domain`
 +
-The following example shows that port e0a is in the Cluster domain on node4:
+The following example shows that port "e0a" is in the Cluster domain on node4:
 +
 ----
 cluster::> network port show -node node4 -port e0a -fields broadcast-domain
@@ -108,7 +108,7 @@ node4      e0a  Cluster
 +
 `network port modify -node -port -ipspace Cluster -mtu 9000`
 +
-This example adds Cluster port e1b on node4:
+This example adds Cluster port "e1b" on node4:
 +
 `network port modify -node node4 -port e1b -ipspace Cluster -mtu 9000`
 .. Migrate the cluster LIFs to the new ports, once for each LIF:
@@ -122,7 +122,7 @@ This example adds Cluster port e1b on node4:
 +
 `network port broadcast-domain remove-ports`
 +
-This command removes port e0d on node4:
+This command removes port "e0d" on node4:
 +
 `network port broadcast-domain remove-ports -ipspace Cluster -broadcast-domain Cluster ‑ports node4:e0d`
 .. Verify that node4 has rejoined quorum:

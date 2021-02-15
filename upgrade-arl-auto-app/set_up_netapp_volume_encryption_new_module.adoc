@@ -29,6 +29,7 @@ This procedure includes steps that are performed on the new controller module. Y
 
 . Verify that the key management servers are still available, their status, and their authentication key information:
 +
+[cols=2*,options="header",cols="30,70"]
 |===
 |For this ONTAP version... |Use this command...
 
@@ -59,11 +60,13 @@ You must install the same key management servers that are installed on the exist
 .. Complete the steps in the wizard to configure key management servers.
 . Restore authentication keys from all linked key management servers to the new node:
 +
+[cols=2*,options="header",cols="30,70"]
 |===
 |For... |Use this command...
 
 |External Key Manager (EKM)
 |`security key-manager external restore`
+
 This command needs the OKM passphrase
 |Onboard Key Manager (OKM)
 |`security key-manager onboard sync`
@@ -71,7 +74,5 @@ This command needs the OKM passphrase
 
 .After you finish
 
-Check if any volumes were taken offline because authentication keys were not available or external key management servers could not be reached. Bring those volumes back online by using the following command:
-
-`volume online`
+Check if any volumes were taken offline because authentication keys were not available or external key management servers could not be reached. Bring those volumes back online using the `volume online` command.
 // 11 Dec 2020, thomi, checked

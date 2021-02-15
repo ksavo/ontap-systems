@@ -1,27 +1,27 @@
 
 . [[Step17]]Press Ctrl-C during autoboot to stop the node at the `LOADER>` prompt.
 
-. At the loader prompt, enter maintenance mode by using the following command:
+. At the loader prompt, enter maintenance mode:
 +
 `boot_ontap maint`
 
-. In maintenance mode, display all the previously set initiator ports that are now in target mode by using the following command:
+. In maintenance mode, display all the previously set initiator ports that are now in target mode:
 +
 `ucadmin show`
 +
-Change the ports back to initiator mode by using the following command:
+Change the ports back to initiator mode:
 +
 `ucadmin modify -m fc -t initiator -f <adapter name>`
 
-. Verify that the ports have been changed to initiator mode by using the following command:
+. Verify that the ports have been changed to initiator mode:
 +
 `ucadmin show`
 
-. Exit maintenance mode by using the following command:
+. Exit maintenance mode:
 +
 `halt`
 
-. [[Step22]]At the loader prompt boot up by using the following command:
+. [[Step22]]At the loader prompt boot up:
 +
 `boot_ontap`
 +

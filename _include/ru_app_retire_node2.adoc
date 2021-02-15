@@ -2,7 +2,7 @@ To retire node2, you need to shut node2 down properly and remove it from the rac
 
 .Steps
 
-. Resume the operation by using the following command:
+. Resume the operation:
 +
 `system controller replace resume`
 +

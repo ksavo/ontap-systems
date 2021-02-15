@@ -16,7 +16,7 @@ summary: If node4 has onboard FC ports, UTA/UTA2 ports, or a UTA/UTA2 card, you 
 include::../_include/ru_set_fc_or_uta_uta2_config_node4_intro.adoc[]
 
 NOTE: If node4 does not have onboard FC ports, onboard UTA/UTA2 ports, or a UTA/UTA2 card, and you are upgrading a system with storage disks, you can skip to the link:map_ports_node2_node4.html[Map ports from node2 to node4] section.
-However, if you have a V-Series system or have FlexArray Virtualization Software and are connected to storage arrays, and node4 does not have onboard FC ports, onboard UTA/ UTA2 ports, or a UTA/UTA2 card, you must return to the link:install_and_boot_node4.html[Install and boot node4] section and resume at Step 22. Make sure that node4 has sufficient rack space. If node4 is in a separate chassis from node2, you can put node4 in the same location as node3. If node2 and node4 are in the same chassis, then node4 is already in its appropriate rack location.
+However, if you have a V-Series system or have FlexArray Virtualization Software and are connected to storage arrays, and node4 does not have onboard FC ports, onboard UTA/ UTA2 ports, or a UTA/UTA2 card, you must return to the link:install_boot_node4.html[Install and boot node4] section and resume at link:install_boot_node4.html#Step22[Step 22]. Make sure that node4 has sufficient rack space. If node4 is in a separate chassis from node2, you can put node4 in the same location as node3. If node2 and node4 are in the same chassis, then node4 is already in its appropriate rack location.
 
 include::../_include/ru_set_fc_or_uta_uta2_config_node4_choices.adoc[]
 
@@ -26,6 +26,7 @@ include::../_include/ru_config_fc_ports_node4.adoc[]
 . [[step8]]Take one of the following actions:
 
 +
+[cols=2*,options="header",cols="30,70"]
 |===
 |If the system that you are upgrading...|Then...
 
@@ -33,8 +34,8 @@ include::../_include/ru_config_fc_ports_node4.adoc[]
 a|* Skip this section and go to link:map_ports_node2_node4.html[Map ports from node2 to node4] if node4 does not have a UTA/UTA2 card or UTA/UTA2 onboard ports.
 
 |Is a V-Series system or has FlexArray Virtualization Software and is connected to storage arrays
-a|* Go to Checking and configuring UTA/UTA2 ports on node4 if node4 has a UTA/UTA2 card or UTA/UTA2 onboard ports.
-* Skip the section Checking and configuring UTA/UTA2 ports on node4 if node4 does not have a UTA/UTA2 card or UTA/UTA2 onboard ports, return to the section link:install_and_boot_node4.html[Install and boot node4], and resume the section at Step 23.
+a|* Go to link:set_fc_or_uta_uta2_config_node4.html#check-and-configure-utauta2-ports-on-node4[Check and configure UTA/UTA2 ports on node4] if node4 has a UTA/UTA2 card or UTA/UTA2 onboard ports.
+* Skip the section _Check and configure UTA/UTA2 ports on node4_ if node4 does not have a UTA/UTA2 card or UTA/UTA2 onboard ports, return to the section _Install and boot node4_, and resume at link:install_boot_node4.html#Step23[Step 23].
 |===
 
 include::../_include/ru_check_config_uta_uta2_ports_node4_intro_step_11.adoc[]
@@ -42,12 +43,13 @@ include::../_include/ru_check_config_uta_uta2_ports_node4_intro_step_11.adoc[]
 [start=12]
 . [[step12]]Take one of the following actions:
 +
+[cols=2*,options="header",cols="30,70"]
 |===
 |If the system... |Then...
 
 |Has storage disks |Go to the section link:map_ports_node2_node4.html[Map ports from node2 to node4].
 |Is a V-Series system or has FlexArray Virtualization Software and is connected to storage arrays
-|Return to the section link:install_and_boot_node4.html[Install and boot node4] and resume the section at step 23.
+|Return to the section _Install and boot node4_, and resume at link:install_boot_node4.html#Step23[Step 23].
 |===
 
 . [[Step13]]Exit Maintenance mode:
@@ -149,26 +151,26 @@ WARNING: You must perform the following substeps in the exact order shown; failu
 +
 The following procedure sets node4 to boot from the root aggregate of node2:
 
-.. Enter maintenance mode by using the following command:
+.. Enter maintenance mode:
 +
 `boot_ontap maint`
 
-.. Check the RAID, plex, and checksum information for the node2 aggregate by using the following command:
+.. Check the RAID, plex, and checksum information for the node2 aggregate:
 +
 `aggr status -r`
 
-.. Check the status of the node2 aggregate by using the following command:
+.. Check the status of the node2 aggregate:
 +
 `aggr status`
 
-.. If necessary, bring the node2 aggregate online by using the following command:
+.. If necessary, bring the node2 aggregate online:
 +
 `aggr_online root_aggr_from_<node2>`
 
-.. Prevent the node4 from booting from its original root aggregate by using the following command:
+.. Prevent the node4 from booting from its original root aggregate:
 +
 `aggr offline <root_aggr_on_node4>`
 
-.. Set the node2 root aggregate as the new root aggregate for node4 by using the following command:
+.. Set the node2 root aggregate as the new root aggregate for node4:
 +
 `aggr options aggr_from_<node2> root`

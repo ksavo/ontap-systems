@@ -14,7 +14,7 @@ Installing a new controller module changes the WWPN values associated with each 
 +
 `setenv kmip.init.maxwait off`
 
-. Boot node into boot menu by using the following command:
+. Boot node into boot menu:
 +
 `boot_ontap menu`
 +

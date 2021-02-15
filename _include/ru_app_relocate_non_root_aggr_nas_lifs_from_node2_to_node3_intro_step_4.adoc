@@ -14,7 +14,7 @@ NOTE: The home owner for the aggregates and LIFs are not modified; only the curr
 
 .Steps
 
-. Verify that all the non-root aggregates are online and their state on node3 by using the following command:
+. Verify that all the non-root aggregates are online and their state on node3:
 +
 `storage aggregate show -node <node3> -state online -root false`
 +
@@ -34,7 +34,7 @@ If the aggregates have gone offline or become foreign on node3, bring them onlin
 +
 `storage aggregate online -aggregate <aggr_name>`
 
-. Verify that all the volumes are online on node3 by using the following command on node3 and examining its output:
+. Verify that all the volumes are online on node3 by using the following command on node3 and examining the  output:
 +
 `volume show -node <node3> -state offline`
 +
@@ -48,7 +48,7 @@ The `<vserver-name>` to use with this command is found in the output of the prev
 +
 `network interface modify -vserver <vserver_name> - lif <LIF_name> -home-node <nodename> - status-admin up`
 
-. If the ports currently hosting data LIFs will not exist on the new hardware, remove them from the broadcast domain by using the following command:
+. If the ports currently hosting data LIFs will not exist on the new hardware, remove them from the broadcast domain:
 +
 `network port broadcast-domain remove-ports`
 

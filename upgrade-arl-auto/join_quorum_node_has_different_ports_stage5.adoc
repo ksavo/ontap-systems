@@ -24,7 +24,7 @@ You can use these instructions for any relevant node. Node3 is used throughout t
 
 .Steps
 
-. Verify that the new cluster ports are in the Cluster broadcast domain by entering the following command and checking its output:
+. Verify that the new cluster ports are in the Cluster broadcast domain by entering the following command and checking the output:
 +
 `network port show -node node -port port -fields broadcast-domain`
 +
@@ -37,7 +37,7 @@ node    port  broadcast-domain
 node3   e1a   Cluster
 ----
 
-. Add the correct ports to the Cluster broadcast domain by entering the following command and checking its output:
+. Add the correct ports to the Cluster broadcast domain by entering the following command and checking the output:
 +
 `network port modify -node -port -ipspace Cluster -mtu 9000`
 +

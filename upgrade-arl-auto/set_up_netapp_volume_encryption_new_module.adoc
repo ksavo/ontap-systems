@@ -25,7 +25,7 @@ This procedure includes steps that are performed on the new controller module. Y
 
 . Verify that the key management servers are still available, their status, and their authentication key information:
 +
-[cols=2*,options="header"]
+[cols=2*,options="header",cols="30,70"]
 |===
 |For this ONTAP version… |Use this command...
 |ONTAP 9.6 or 9.7 |`security key-manager key query -node node`
@@ -63,7 +63,7 @@ This command needs the OKM passphrase
 +
 * Restore authentication for Onboard Key Manager (OKM):
 +
-[cols=2*,options="header"]
+[cols=2*,options="header",cols="30,70"]
 |===
 |For this ONTAP version… |Use this command...
 |ONTAP 9.5 |`security key-manager setup -node <node_name>`

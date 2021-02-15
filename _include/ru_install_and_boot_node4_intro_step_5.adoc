@@ -1,9 +1,3 @@
-You must install node4 in the rack, transfer node2's connections to node4, boot node4, and install ONTAP. You must then reassign any of node2’s spare disks, any disks belonging to the root volume, and any non-root aggregates that were not relocated to node3 earlier in the process, as outlined in this section.
-
-.About this task
-
-The relocation operation is paused at the beginning of this stage. This process is mostly automated; the operation pauses to allow you to check its status. You must manually resume the operation. In addition, you must verify the NAS data LIFs have successfully moved to node4.
-
 
 You need to netboot node4 if it does not have the same version of ONTAP 9 that is installed on node2. After you install node4, boot it from the ONTAP 9 image stored on the web server. You can then download the correct files to the boot media device for subsequent system boots, by following the instructions in link:prepare_for_netboot.html[Prepare for netboot].
 
