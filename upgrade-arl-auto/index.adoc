@@ -5,7 +5,7 @@ keywords: aggregate, relocation, controller, hardware, terminology, flexarray, m
 summary: You can nondisruptively upgrade the controller hardware on a pair of nodes running ONTAP 9.5 to ONTAP 9.7.
 ---
 
-= Use "system controller replace" Commands to Upgrade Controller Hardware Running ONTAP 9.5 to 9.7
+= Use aggregate relocation to upgrade controller hardware
 :hardbreaks:
 :nofooter:
 :icons: font
