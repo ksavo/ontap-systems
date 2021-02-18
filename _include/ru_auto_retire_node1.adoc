@@ -16,4 +16,4 @@ You can decommission node1 after the upgrade is completed. See link:decommission
 
 // This reuse file is used in the following adoc files:
 // -- upgrade-arl-auto/retire_node1.adoc
-// -- upgrade-arl-auto-app/retiring_node1.adoc
+// -- upgrade-arl-auto-app\retire_node1.adoc

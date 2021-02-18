@@ -74,7 +74,7 @@ If you have a MetroCluster configuration, use the following commands to modify t
 +
 Interrupt the autoboot by pressing Ctrl-C at the boot environment prompt.
 
-. [[Step15]]On node3, check the system date, time, and time zone:
+. [[step15]]On node3, check the system date, time, and time zone:
 +
 `date`
 
@@ -102,7 +102,7 @@ Interrupt the autoboot by pressing Ctrl-C at the boot environment prompt.
 +
 `saveenv`
 
-. [[Step21]]On the new node, in boot loader, the `partner- sysid` parameter must be set. For node4, `partner- sysid` must be that of node3. Verify the `partner- sysid` for node3:
+. [[step21]]On the new node, in boot loader, the `partner- sysid` parameter must be set. For node4, `partner- sysid` must be that of node3. Verify the `partner- sysid` for node3:
 +
 `printenv partner- sysid`
 
@@ -113,10 +113,10 @@ Interrupt the autoboot by pressing Ctrl-C at the boot environment prompt.
 |If your system... |Then...
 
 |Has disks and no back-end storage
-|Go to <<Step23,Step 23>>.
+|Go to <<step23,Step 23>>.
 |Is a V-Series system or a system with FlexArray Virtualization software connected to storage arrays
 a|. Go to section link:set_fc_or_uta_uta2_config_node4.html[Set the FC or UTA/UTA2 configuration on node4] and complete the subsections in this section.
-. [[Step22]]Return to this section and complete the remaining steps, beginning with <<Step23,Step 23>>.
+. [[step22]]Return to this section and complete the remaining steps, beginning with <<step23,Step 23>>.
 
 *Important*: You must reconfigure FC onboard ports, CNA onboard ports, and CNA cards before you boot ONTAP on the V-Series or system with FlexArray Virtualization software.
 |===

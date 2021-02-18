@@ -32,10 +32,11 @@ The system performs the following tasks:
 * Image version check
 * Target platform check
 * Network reachability check
+
 +
 The operation pauses at this stage in the network reachability check.
 
-. Manually verify that the network and all VLANs, ifgrps, and broadcast domains have been configured correctly.
+. Manually verify that the network and all VLANs, interface groups, and broadcast domains have been configured correctly.
 
 . Resume the relocation operation:
 +
@@ -55,13 +56,11 @@ completed? [y/n]
 . Enter `y` to continue.
 
 . The system performs the following checks:
-+
 * Cluster health check
 * Cluster LIF status check
-+
-After performing the three checks, the system relocates the non-root aggregates and NAS data LIFs owned by node1 to the new controller, node3.
 
 +
+After performing the three checks, the system relocates the non-root aggregates and NAS data LIFs owned by node1 to the new controller, node3.
 The system pauses once the resource relocation is complete.
 
 . Check the status of the aggregate relocation and NAS data LIF move operations:
@@ -70,9 +69,9 @@ The system pauses once the resource relocation is complete.
 
 . Verify that the non-root aggregates and NAS data LIFs have been successfully relocated to node3.
 +
-If any aggregates fail to relocate or are vetoed, you must manually relocate the aggregates, or override either the vetoes or destination checks, if necessary. See  <<Relocating failed or vetoed aggregates>> for more information.
+If any aggregates fail to relocate or are vetoed, you must manually relocate the aggregates, or override either the vetoes or destination checks, if necessary. See link:relocate_failed_vetoed_aggr.html[Relocate failed or vetoed aggregates] for more information.
 
-. Ensure that the SAN LIFs are on the correct ports on node3 by completing the following substeps:
+. Verify that the SAN LIFs are on the correct ports on node3 by completing the following substeps:
 
 .. Enter the following command and examine its output:
 +
@@ -104,7 +103,7 @@ vs1
 
 ... Remove the LIF from the port set:
 +
-portset remove -vserver <Vserver_name> -portset <portset_name> -port-name <port_name>
+`portset remove -vserver <Vserver_name> -portset <portset_name> -port-name <port_name>`
 
 ... Enter one of the following commands:
 +
@@ -126,11 +125,11 @@ NOTE: You need to ensure that you move SAN LIFs to a port that has the same link
 +
 `network interface modify -home-port <port_name> -home-node <node3> -lif data -statusadmin up`
 
-.. Enter the following command on either node and examine its output to verify that LIFs have been moved to the correct ports and that the LIFs have the status of "up":
+.. Enter the following command on either node and examine its output to verify that LIFs have been moved to the correct ports and that the LIFs have the status of `up`:
 +
 `network interface show -home-node <node3>-role data`
 
-.. If any LIFs are down, set the administrative status of the LIFs to "up" by entering the following command, once for each LIF:
+.. If any LIFs are down, set the administrative status of the LIFs to `up` by entering the following command, once for each LIF:
 +
 `network interface modify -vserver <Vserver_name> -lif <lif_name> -status-admin up`
 

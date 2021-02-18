@@ -13,5 +13,5 @@ summary: To retire node1, resume the automated operation to disable the HA pair 
 :imagesdir: ./media/
 
 [.lead]
-include::../_include/ru_retire_node1.adoc[]
+include::../_include/ru_auto_retire_node1.adoc[]
 // middle section of pg 24 of pdf

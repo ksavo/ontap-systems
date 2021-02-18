@@ -22,7 +22,7 @@ summary: This guide describes how to upgrade the storage controllers in an HA pa
 include::../_include/ru_app_decide_chunk_a.adoc[]
 * If you are upgrading a MetroCluster configuration, it is a 4-node or higher FC configuration, and all nodes are running ONTAP 9.8.
 +
-For upgrading MetroCluster IP configurations, refer to the link:http://ie-docs.rtp.openeng.netapp.com/ontap-9_chowchow/topic/com.netapp.doc.dot-mcc-upgrade/home.html[MetroCluster Upgrade, Transition, and Expansion Guide^].
+For upgrading MetroCluster IP configurations, refer to the link:https://docs.netapp.com/ontap-9/index.jsp?topic=%2Fcom.netapp.doc.dot-mcc-mgmt-dr%2Fhome.html[MetroCluster Upgrade, Transition, and Expansion Guide].
 
 include::../_include/ru_app_decide_chunk_b.adoc[]
 
@@ -43,6 +43,6 @@ The following table shows the supported model matrix for the controller upgrade.
 
 NOTE: If your controller upgrade model combination is not in the above table, contact technical support.
 
-* For the additional steps needed for A800 systems, go to the step that references A800 in section link:setting_the_fc_or_uta_uta2_configuration_on_node3.html#step23[Check and configure UTA/UTA2 ports on node3, step 23], or link:setting_the_fc_or_uta_uta2_configuration_on_node4.html#step23[Check and configure UTA/UTA2 ports on node4, step 23].
+*For the additional steps needed for A800 systems, go to the step that references A800 in section link:set_fc_or_uta_uta2_config_on_node3.html.html#Step23[Check and configure UTA/UTA2 ports on node3, Step 23], or link:set_fc_or_uta_uta2_config_node4.html#Step23[Check and configure UTA/UTA2 ports on node4, step 23].
 
 include::../_include/ru_app_decide_chunk_c.adoc[]

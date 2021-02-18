@@ -22,7 +22,7 @@ summary: If node4 has onboard FC ports, UTA/UTA2 ports, or a UTA/UTA2 card, you 
 include::../_include/ru_set_fc_or_uta_uta2_config_node4_intro.adoc[]
 
 NOTE: If node4 does not have onboard FC ports, onboard UTA/UTA2 ports, or a UTA/UTA2 card, and you are upgrading a system with storage disks, you can skip to link:verify_node4_installation.html[Verify the node4 installation].
-However, if you have a V-Series system or have FlexArray Virtualization Software and are connected to storage arrays, and node4 does not have onboard FC ports, onboard UTA/ UTA2 ports, or a UTA/UTA2 card, you must return to the link:install_boot_node4.html[Install and boot node4] section and resume at link:install_and_boot_node4.html#Step22[Step 22]. Make sure that node4 has sufficient rack space. If node4 is in a separate chassis from node2, you can put node4 in the same location as node3. If node2 and node4 are in the same chassis, then node4 is already in its appropriate rack location.
+However, if you have a V-Series system or have FlexArray Virtualization Software and are connected to storage arrays, and node4 does not have onboard FC ports, onboard UTA/ UTA2 ports, or a UTA/UTA2 card, you must return to the section _Install and boot node4_ section and resume at link:install_and_boot_node4.html#step22[Step 22]. Make sure that node4 has sufficient rack space. If node4 is in a separate chassis from node2, you can put node4 in the same location as node3. If node2 and node4 are in the same chassis, then node4 is already in its appropriate rack location.
 
 include::../_include/ru_set_fc_or_uta_uta2_config_node4_choices.adoc[]
 
@@ -39,7 +39,7 @@ include::../_include/ru_config_fc_ports_node4.adoc[]
 a|* Skip this section and go to link:verify_node4_installation.html[Verify the node4 installation] if node4 does not have a UTA/UTA2 card or UTA/UTA2 onboard ports.
 |Is a V-Series system or has FlexArray Virtualization Software and is connected to storage arrays
 a|* Go to link:set_fc_or_uta_uta2_config_node4.html#check-and-configure-utauta2-ports-on-node4[Check and configure UTA/UTA2 ports on node4] if node4 has a UTA/UTA2 card or UTA/UTA2 onboard ports.
-* Skip the section _Check and configure UTA/UTA2 ports on node4_ if node4 does not have a UTA/UTA2 card or UTA/UTA2 onboard ports, return to the section _Install and boot node4_, and resume at link:install_boot_node4.html#Step23[Step 23].
+* Skip the section _Check and configure UTA/UTA2 ports on node4_ if node4 does not have a UTA/UTA2 card or UTA/UTA2 onboard ports, return to the section _Install and boot node4_, and resume at link:install_boot_node4.html#step23[Step 23].
 |===
 
 include::../_include/ru_check_config_uta_uta2_ports_node4_intro_step_11.adoc[]
@@ -55,11 +55,11 @@ include::../_include/ru_check_config_uta_uta2_ports_node4_intro_step_11.adoc[]
 |Go to link:verify_node4_installation.html[Verify the node4 installation].
 
 |Is a V-Series system or has FlexArray Virtualization Software and is connected to storage arrays
-|Return to the section _Install and boot node4_, and resume at link:install_boot_node4.html#Step23[Step 23].
+|Return to the section _Install and boot node4_, and resume at link:install_boot_node4.html#step23[Step 23].
 
 |===
 
-. [[Step13,Step 13]]Exit Maintenance mode:
+. [[step13]]Exit Maintenance mode:
 +
 `halt`
 
@@ -67,9 +67,9 @@ include::../_include/ru_check_config_uta_uta2_ports_node4_intro_step_11.adoc[]
 +
 `boot_ontap menu`.
 +
-If you are upgrading to an A800, go to <<Step23,Step 23>>
+If you are upgrading to an A800, go to <<step23,Step 23>>
 
-. [[Step15]]On node4, go to the boot menu and using 22/7 and select the hidden option `boot_after_controller_replacement`. At the prompt, enter node2 to reassign the disks of node2 to node4, as per the following example.
+. [[step15]]On node4, go to the boot menu and using 22/7 and select the hidden option `boot_after_controller_replacement`. At the prompt, enter node2 to reassign the disks of node2 to node4, as per the following example.
 +
 ----
 LOADER-A> boot_ontap menu
@@ -190,12 +190,12 @@ Login:
 +
 NOTE: In the above console output example, ONTAP will prompt you for the partner node name if the system uses Advanced Disk Partitioning (ADP) disks.
 
-. If the system goes into a reboot loop with the message `no disks found`, it indicates that the system has reset the FC or UTA/UTA2 ports back to the target mode and therefore is unable to see any disks. To resolve this, continue with <<Step17, Step 17>> to <<Step22,Step 22>> or go to section link:verify_node4_installation.html[Verify the node4 installation].
+. If the system goes into a reboot loop with the message `no disks found`, it indicates that the system has reset the FC or UTA/UTA2 ports back to the target mode and therefore is unable to see any disks. To resolve this, continue with <<step17, Step 17>> to <<step22,Step 22>> or go to section link:verify_node4_installation.html[Verify the node4 installation].
 
 include::../_include/ru_check_config_uta_uta2_ports_node4_step_17_22.adoc[]
 
 [start=23]
-. [[Step23]]If you are upgrading from a system with external disks to a system that supports internal and external disks (AFF A800 systems, for example), set the node2 aggregate as the root aggregate to ensure node4 boots from the root aggregate of node2. To set the root aggregate, go to the boot menu and select option `5` to enter maintenance mode.
+. [[step23]]If you are upgrading from a system with external disks to a system that supports internal and external disks (AFF A800 systems, for example), set the node2 aggregate as the root aggregate to ensure node4 boots from the root aggregate of node2. To set the root aggregate, go to the boot menu and select option `5` to enter maintenance mode.
 +
 WARNING: You must perform the following substeps in the exact order shown; failure to do so might cause an outage or even data loss.
 

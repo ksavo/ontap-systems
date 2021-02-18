@@ -19,16 +19,14 @@ summary: After upgrading, you must immediately configure Storage Encryption.
 //
 
 [.lead]
-include::../_include/ru_app_get_ip_address_external_km_server.adoc[]
+include::../_include/ru_auto_get_ip_address_external_key_management_server_encryption.adoc[]
 
 === Manage authentication using KMIP servers
 
-include::../_include/ru_app_manage_authentication_kmip.adoc[]
+With ONTAP 9.8, you can use Key Management Interoperability Protocol (KMIP) servers to manage authentication keys.
 
-=== Manage storage encryption using Onboard Key Manager
+include::../_include/ru_auto_manage_authentication_kmip_servers.adoc[]
 
-include::../_include/ru_app_manage_authentication_okm.adoc[]
+include::../_include/ru_auto_manage_storage_encryption_okm.adoc[]
 
-=== Quiesce the SnapMrror relationships (optional)
-
-include::../_include/ru_app_quiesce_snapmirror_relationships.adoc[]
+include::../_include/ru_auto_quiesce_snapmirror_relationships.adoc[]

@@ -8,7 +8,7 @@ Installing a new controller module changes the WWPN values associated with each 
 
 . If your configuration uses switch-based zoning, adjust the zoning to reflect the new WWPN values.
 
-. [[Step27]]If NetApp Storage Encryption (NSE) is in use on this configuration, the `setenv bootarg.storageencryption.support` command must be set to `true`, and the `kmip.init.maxwait` variable needs to be set to `off` to avoid a boot loop after the node2 configuration is loaded:
+. [[step27]]If NetApp Storage Encryption (NSE) is in use on this configuration, the `setenv bootarg.storageencryption.support` command must be set to `true`, and the `kmip.init.maxwait` variable needs to be set to `off` to avoid a boot loop after the node2 configuration is loaded:
 +
 `setenv bootarg.storageencryption.support true`
 +
@@ -18,7 +18,7 @@ Installing a new controller module changes the WWPN values associated with each 
 +
 `boot_ontap menu`
 +
-If you do not have an FC or UTA/UTA2 configuration, execute link:set_fc_or_uta_uta2_config_node4.html#Step15[Check and configure UTA/UTA2 ports on node4, Step 15] so that node4 can recognize node2’s disks.
+If you do not have an FC or UTA/UTA2 configuration, execute link:set_fc_or_uta_uta2_config_node4.html#step15[Check and configure UTA/UTA2 ports on node4, Step 15] so that node4 can recognize node2’s disks.
 
 // This reuse file is used in the following adoc files:
 // upgrade-arl-auto\install_boot_node4.adoc

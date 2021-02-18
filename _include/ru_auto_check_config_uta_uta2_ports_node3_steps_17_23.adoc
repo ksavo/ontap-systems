@@ -1,26 +1,26 @@
 . [[step17]]Press Ctrl-C during autoboot to stop the node at the `LOADER>` prompt.
 
-. [[step18]]At the loader prompt, enter maintenance mode by using the following command:
+. [[step18]]At the loader prompt, enter maintenance mode:
 +
 `boot_ontap maint`
 
-. [[step19]]In maintenance mode, display all the previously set initiator ports that are now in target mode by using the following command:
+. [[step19]]In maintenance mode, display all the previously set initiator ports that are now in target mode:
 +
 `ucadmin show`
 +
-Change the ports back to initiator mode by using the following command:
+Change the ports back to initiator mode:
 +
 `ucadmin modify -m fc -t initiator -f <adapter name>`
 
-. [[step20]]Verify that the ports have been changed to initiator mode by using the following command:
+. [[step20]]Verify that the ports have been changed to initiator mode:
 +
 `ucadmin show`
 
-. [[step21]]Exit maintenance mode by using the following command:
+. [[step21]]Exit maintenance mode:
 +
 `halt`
 
-. [[step22]]At the loader prompt boot up, by using the following command:
+. [[step22]]At the loader prompt boot up:
 +
 `boot_ontap`
 +
@@ -33,31 +33,31 @@ CAUTION: You must perform the following substeps in the exact order shown; failu
 
 The following procedure sets node3 to boot from the root aggregate of node1:
 
-.. Enter maintenance mode by using the following command:
+.. Enter maintenance mode:
 +
 `boot_ontap maint`
 
-.. Check the RAID, plex, and checksum information for the node1 aggregate by using the following command:
+.. Check the RAID, plex, and checksum information for the node1 aggregate:
 +
 `aggr status -r`
 
-.. Check the status of the node1 aggregate by using the following command:
+.. Check the status of the node1 aggregate:
 +
 `aggr status`
 
-.. If necessary, bring the node1 aggregate online by using the following command:
+.. If necessary, bring the node1 aggregate online:
 +
 `aggr_online root_aggr_from_<node1>`
 
-.. Prevent the node3 from booting from its original root aggregate by using the following command:
+.. Prevent the node3 from booting from its original root aggregate:
 +
 `aggr offline <root_aggr_on_node3>`
 
-.. Set the node1 root aggregate as the new root aggregate for node3 by using the following command:
+.. Set the node1 root aggregate as the new root aggregate for node3:
 +
 `aggr options aggr_from_<node1> root`
 
-.. Verify that the root aggregate of node3 is offline and the root aggregate for the disks brought over from node1 is online and set to root by using the following command:
+.. Verify that the root aggregate of node3 is offline and the root aggregate for the disks brought over from node1 is online and set to root:
 +
 `aggr status`
 +
@@ -80,5 +80,5 @@ The following shows an example of the command output:
 ----
 
 // This reuse file is used in the following adoc files:
-// -- upgrade-arl-auto-app/setting_the_fc_oor_uta_uta2_configuration_on_node1.adoc
-// -- upgrade-arl-auto/checl_config_uta_uta2_ports_node3.adoc
+// upgrade-arl-auto\set_fc_or_uta_uta2_config_on_node3.adoc
+// upgrade-arl-auto-app\set_fc_or_uta_uta2_config_on_node3.adoc

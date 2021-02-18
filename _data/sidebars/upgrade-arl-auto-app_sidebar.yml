@@ -1,6 +1,7 @@
 prefix: upgrade-arl-auto-app
 entries:
   - title: "Use aggregate relocation to upgrade controller hardware"
+    url: /index.html  
     entries:
       - title: "Overview"
         url: /use_aggregate_relocation_upgrade_controller_hardware_overview.html
@@ -25,7 +26,7 @@ entries:
   - title: "Stage 1 Prepare for upgrade"
     entries:
       - title: "Overview"
-        url: /stage_1_preparing_for_upgrade_overview.html
+        url: /stage_1_prepare_for_upgrade_overview.html
       - title: "Prepare the nodes for upgrade"
         url: /prepare_nodes_for_upgrade.html
       - title: "Get an IP address of an external key management server for storage encryption"
@@ -33,7 +34,7 @@ entries:
   - title: "Stage 2 Relocate and retiring node1"
     entries:
       - title: "Overview"
-        url: /stage_2_relocating_and_retiring_node1_overview.html
+        url: /stage_2_relocate_and_retire_node1_overview.html
       - title: "Relocate non-root aggregates and NAS data LIFs owned by node1 to node2"
         url: /relocate_non_root_aggr_nas_data_lifs_node1_node2.html
       - title: "Relocate failed or vetoed aggregates"
@@ -45,7 +46,7 @@ entries:
   - title: "Stage 3 Install and boot node3"
     entries:
       - title: "Overview"
-        url: /stage_3_installing_and_booting_node3_overview.html
+        url: /stage_3_install_and_boot_node3_overview.html
       - title: "Install and boot node3"
         url: /install_boot_node3.html
       - title: "Set the FC or UTA/UTA2 configuration on node3"
@@ -59,7 +60,7 @@ entries:
   - title: "Stage 4 Relocate and retiring node2"
     entries:
       - title: "Overview"
-        url: /stage_4_relocating_and_retiring_node2_overview.html
+        url: /stage_4_relocate_and_retire_node2_overview.html
       - title: "Relocate non-root aggregates and NAS data LIFs from node2 to node3"
         url: /relocate_non_root_aggr_nas_lifs_from_node2_to_node3.html
       - title: "Retire node2"
@@ -67,7 +68,7 @@ entries:
   - title: "Stage 5 Install and boot node4"
     entries:
       - title: "Overview"
-        url: /stage_5_installing_and_booting_node4_overview.html
+        url: /stage_5_install_and_boot_node4_overview.html
       - title: "Install and boot node4"
         url: /install_boot_node4.html
       - title: "Set the FC or UTA/UTA2 configuration on node4"
@@ -81,7 +82,7 @@ entries:
   - title: "Stage 6 Complete the upgrade"
     entries:
       - title: "Overview"
-        url: /stage_6_completing_the_upgrade_overview.html
+        url: /stage_6_complete_the_upgrade_overview.html
       - title: "Complete the upgrade for MetroCluster FC configuration"
         url: /complete_upgrade_metrocluster_fc_configuration.html
       - title: "Ensure that the new controllers are set up correctly"
@@ -97,7 +98,7 @@ entries:
   - title: "Troubleshooting"
     entries:
       - title: "Overview"
-        url: /troubleshooting_overview.html
+        url: /troubleshoot.html
       - title: "Aggregate relocation failures"
         url: /aggregate_relocation_failures.html
       - title: "Check for aggregate relocation failure"

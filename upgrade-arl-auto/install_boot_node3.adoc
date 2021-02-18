@@ -13,58 +13,34 @@ summary: Install node3 in the rack, transfer node1's connections to node3, boot 
 :imagesdir: ./media/
 
 [.lead]
-You need to install node3 in the rack, transfer node1's connections to node3, boot node3, and install ONTAP. You then need to reassign any of node1's spare disks, any disks belonging to the root volume, and any non-root aggregates not relocated to node2 earlier.
+include::../_include/ru_auto_install_boot_node3_intro_step_5.adoc[]
 
-.About this task
-
-The relocation operation is paused at the beginning of this stage. This process is largely automated; the operation pauses to allow you to check its status. You must manually resume the operation. In addition, you must verify the SAN LIFs have successfully moved to node3.
-
-You need to netboot node3 if it does not have the same version of ONTAP 9 that is installed on node1. After you install node3, boot it from the ONTAP 9 image stored on the web server. You can then download the correct files to the boot media device for subsequent system boots by following the instructions in link:prepare_for_netboot.html[Prepare for netboot].
-
-.Important:
-
-* If you are upgrading a V-Series system connected to storage arrays or a system with FlexArray Virtualization software that is connected to storage arrays, you need to complete <<step1,Step 1>> through <<step21,Step 21>>, then leave this section and follow instructions in link:config-fc-ports-node3.html[Configure FC ports on node3] and link:check_configure_uta_uta2_ports_node3.html[Check and configure UTA/UTA2 ports on node3] as needed, entering commands in maintenance mode. You must then return to this section and resume with <<step23,Step 23>>.
-
-* If you are upgrading a system with storage disks, you need to complete this entire section and then go to link:config_fc_ports_on_node3[Configure FC ports on node3] and link:check_config_uta_uta2_ports_node3[Check and configure UTA/UTA2 ports on node3], entering commands at the cluster prompt.
-
-.Steps
-
-include::../_include/ru_install_boot_node3_steps_1_5.adoc[]
-
-NOTE: *Do not override the delay*; *failure to allow the battery to charge could result in a loss of data*. See link:prepare_for_netboot.html[Prepare for netboot].
-
-include::../_include/ru_install_boot_node3_steps_6_7.adoc[]
-The `<path_to_the_web-accessible_directory>` should lead to where you downloaded the `<ontap_version>_image.tgz` in the section link:prepare_for_netboot.html[Prepare for netboot].
-
-NOTE: Do not interrupt the boot.
-
-include::../_include/ru_install_boot_node3_steps_8_21.adoc[]
-
-. [[step22]]Take one of the following actions:
+[start=6]
+.  [[step6]]Configure the netboot connection by choosing one of the following actions.
 +
+NOTE: You should use the management port and IP as the netboot connection. Do not use a data LIF IP or a data outage might occur while the upgrade is being performed.
+
++
+[cols=2*,options="header"cols="30,70"]
 |===
-|If your system... |Description
+|If Dynamic Host Configuration Protocol (DHCP) is... |Then...
 
-|Has disks and no back-end storage
-|Go to <<step23,Step 23>>
-|Is a V-Series system or a system with FlexArray Virtualization software connected to storage arrays
-a|. Go to section link:set_fc_or_uta_uta2_config_on_node3.html[Set the FC or UTA/UTA2 configuration on node3] and complete the subsections in this section.
-. Return to this section and complete the remaining steps, beginning with <<step23,Step 23>>.
+|Running
+|Configure the connection automatically by entering the following command at the boot environment prompt:
+`ifconfig e0M -auto`
+|Not running
+|Manually configure the connection by entering the following command at the boot environment prompt:
+`ifconfig e0M -addr=<filer_addr> -mask=<netmask> -gw=<gateway> dns=<dns_addr> domain=<dns_domain>`
+`<filer_addr>` is the IP address of the storage system.
+`<netmask>` is the network mask of the storage system.
+`<gateway>` is the gateway for the storage system.
+`<dns_addr>` is the IP address of a name server on your network.
+`<dns_domain>` is the Domain Name Service (DNS) domain name. If you use this optional parameter, you do not need a fully qualified domain name in the netboot server URL; you need only the server's host name.
 
-*Important*: You must reconfigure FC onboard ports, CNA onboard ports, and CNA cards before you boot ONTAP on the V-Series or system with FlexArray Virtualization software.
+*Note:* Other parameters might be necessary for your interface. Enter `help ifconfig` at the firmware prompt for details.
 |===
 
-. [[step23]]Add the FC initiator ports of the new node to the switch zones.
-+
-If your system has a tape SAN, then you need zoning for the initiators. If required, modify the onboard ports to initiator by referring to the link:config_fc_ports_node3.html[Configuring FC ports on node3]. See your storage array and zoning documentation for further instructions on zoning.
-
-include::..//_include/ru_install_boot_node3_steps_24_27.adoc[]
-
-. [[step28]]Boot node into boot menu by using the following command:
-+
-`boot_ontap menu`
-+
-If you do not have FC or UTA/UTA2 configuration, execute link:check_config_uta_uta2_ports_node3.html#step15[Check and configure UTA/UTA2 ports on node 3, step 15] so that node3 can recognize node1’s disks.
+include::../_include/ru_auto_install_boot_node3_step_7_28.adoc[]
 
 . [[step29]]For a MetroCluster configuration, V-Series systems and systems with FlexArray Virtualization software connected to storage arrays,
 go to link:check_config_uta_uta2_ports_node3.html#step15[Check and configure UTA/UTA2 ports on node 3, step 15].

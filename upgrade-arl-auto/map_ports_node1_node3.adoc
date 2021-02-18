@@ -17,7 +17,7 @@ You must verify that the physical ports on node1 map correctly to the physical p
 
 .About this task
 
-Capture information about the ports on the new nodes from the Hardware Universe at hwu.netapp.com. You will use the information later in this section.
+Capture information about the ports on the new nodes from the link:https://hwu.netapp.com[Hardware Universe]. You will use the information later in this section.
 
 Port settings might vary, depending on the model of the nodes. You must make the port and LIF configuration on the original node compatible with the planned use and configuration of the new node. This is because the new node replays the same configuration when it boots, which means that when you boot node3, ONTAP will try to host LIFs on the same ports that were used on node1.
 
@@ -74,13 +74,13 @@ cluster::>
 
 . Follow these steps to place node3 into quorum:
 
-.. Boot node3. See the Installing and booting node3 on page 26 section to boot the node if you have not already done so.
+.. Boot node3. See link:install_boot_node3.html[Install and boot node3] to boot the node if you have not already done so.
 
 .. Verify that the new cluster ports are in the Cluster broadcast domain:
 +
-`network port show -node node -port port -fields broadcast-domain`
+`network port show -node <node> -port <port> -fields broadcast-domain`
 +
-The following example shows that port e0a is in the Cluster domain on node3:
+The following example shows that port "e0a" is in the Cluster domain on node3:
 +
 ----
  cluster::> network port show -node <node3> -port e0a -fields broadcast-domain
@@ -129,7 +129,7 @@ The following command removes port e0d on node3:
 +
 `cluster show -node node3 -fields health`
 
-. Adjust the broadcast domains hosting your cluster LIFs and node-management/clustermanagement LIFs. Ensure that each broadcast domain contains the correct ports. A port cannot be moved between broadcast domains if it is hosting or is home to a LIF, so you might need to migrate and modify the LIFs as follows:
+. [[step5]]Adjust the broadcast domains hosting your cluster LIFs and node-management/clustermanagement LIFs. Ensure that each broadcast domain contains the correct ports. A port cannot be moved between broadcast domains if it is hosting or is home to a LIF, so you might need to migrate and modify the LIFs as follows:
 
 .. Display the home port of a LIF:
 +
@@ -137,7 +137,7 @@ The following command removes port e0d on node3:
 
 .. Display the broadcast domain containing this port:
 +
-`network port broadcast-domain show -ports node_name:port_name`
+`network port broadcast-domain show -ports <node_name:port_name>`
 
 .. Add or remove ports from broadcast domains:
 +
@@ -147,11 +147,11 @@ The following command removes port e0d on node3:
 
 .. Modify a LIF’s home port:
 +
-`network interface modify -vserver vserver -lif lif_name –home-port port_name`
+`network interface modify -vserver vserver -lif <lif_name> –home-port <port_name>`
 
-. Adjust the broadcast domain membership of network ports used for intercluster LIFs using the same commands shown in Step 5.
+. Adjust the broadcast domain membership of network ports used for intercluster LIFs using the same commands shown in <<step5,Step 5>>.
 
-. Adjust any other broadcast domains and migrate the data LIFs, if necessary, using the same commands shown in Step 5.
+. Adjust any other broadcast domains and migrate the data LIFs, if necessary, using the same commands shown in <<step5,Step 5>>.
 
 . If there were any ports on node1 that no longer exist on node3, follow these steps to delete them:
 
@@ -171,7 +171,7 @@ The following command removes port e0d on node3:
 +
 `network interface modify -failover-group <failover_group> -failover-policy <failover_policy>`
 +
-The following command sets the failover policy to broadcast-domain-wide and uses the ports in failover group "fg1" as failover targets for LIF "data1" on node3:
+The following command sets the failover policy to `broadcast-domain-wide` and uses the ports in failover group "fg1" as failover targets for LIF "data1" on node3:
 +
 `network interface modify -vserver node3 -lif data1 failover-policy broadcast-domainwide -failover-group fg1`
 +

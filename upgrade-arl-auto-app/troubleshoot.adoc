@@ -1,6 +1,6 @@
 ---
 sidebar: upgrade-arl-auto-app_sidebar
-permalink: upgrade-arl-auto-app/troubleshooting_overview.html
+permalink: upgrade-arl-auto-app/troubleshoot.html
 keywords: troubleshooting, node, aggregate, lif, migrate, failure
 summary: You might encounter a failure while upgrading the node pair.
 ---

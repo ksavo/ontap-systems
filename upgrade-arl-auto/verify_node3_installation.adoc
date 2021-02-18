@@ -35,6 +35,6 @@ At this point in the procedure, the operation will have paused as node3 joins qu
 +
 If the configuration is different for node3, a system disruption might occur later in the procedure.
 
-. Check that the replaced controller is configured correctly for the MetroCluster configuration, the MetroCluster configuration should be in healthy state and not in switch over mode. Refer to <<Verify the health of the MetroCluster configuration>>.
+. Check that the replaced controller is configured correctly for the MetroCluster configuration, the MetroCluster configuration should be in healthy state and not in switch over mode. Refer to link:verify_health_of_metrocluster_config.html[Verify the health of the MetroCluster configuration].
 
 // bottom half of p. 42. in PDF

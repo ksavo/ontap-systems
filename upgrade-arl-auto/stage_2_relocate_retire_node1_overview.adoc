@@ -1,0 +1,17 @@
+---
+sidebar: upgrade-arl-auto_sidebar
+permalink: upgrade-arl-auto/stage_2_relocate_retire_node1_overview.html
+keywords: relocate, retire, node1, aggregates, LIFs, node2, NAS
+summary: During Stage 2, you relocate the node1 aggregates and LIFs to node2, record node1 information, and then retire node1.
+---
+
+= Stage 2: Relocate and retire node1
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+[.lead]
+include::../_include/ru_auto_stage_2_oberview.adoc[]
+// top only of p.22 of PDF

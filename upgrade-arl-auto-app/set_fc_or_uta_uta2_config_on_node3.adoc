@@ -19,71 +19,47 @@ summary: If node3 has onboard FC ports, onboard unified target adapter (UTA/UTA2
 //
 
 [.lead]
-If node3 has onboard FC ports, onboard unified target adapter (UTA/UTA2) ports, or a UTA/UTA2 card, you must configure the settings before completing the rest of the procedure.
+include::../_include/ru_auto_set_fc_or_uta_uta2_confgig_node3_intro.adoc[]
 
-.About this task
+* If node3 does not have onboard FC ports, onboard UTA/UTA2 ports, or a UTA/UTA2 card, and you are upgrading a system with storage disks, you can skip to the link:verify_node3_installation.html[Verify the node 3 installation] section.
+* However, if you have a V-Series system or a system with FlexArray Virtualization software with storage arrays, and node3 does not have onboard FC ports, onboard UTA/UTA ports, or a UTA/UTA2 card, return to the section _Install and boot node3_ and resume the section at link:install_boot_node3.html#step23[Step 23].
 
-You might need to complete the section link:setting_the_fc_or_uta_uta2_configuration_on_node3.html#configuring-fc-ports-on-node3[Configure FC ports on node3], the section link:setting_the_fc_or_uta_uta2_configuration_on_node3.html#check-and-configure-utauta2-ports-on-node3[Check and configure UTA/UTA2 ports on node3], or both sections.
 
-[NOTE]
-NetApp marketing materials might use the term UTA2 to refer to CNA adapters and ports. However, the CLI uses the term CNA.
+include::../_include/ru_auto_set_fc_or_uta_uta2_confgig_node3_choices.adoc[]
 
-* If node3 does not have onboard FC ports, onboard UTA/UTA2 ports, or a UTA/UTA2 card, and you are upgrading a system with storage disks, you can skip to the link:verifying_the_node3_installation.html[Verify the node 3 installation] section.
-* However, if you have a V-Series system or a system with FlexArray Virtualization software with storage arrays, and node3 does not have onboard FC ports, onboard UTA/UTA ports, or a UTA/UTA2 card, return to the section link:installing_and_booting_node3.html[Install and boot node3] and resume the section at step 23 .
+include::../_include/ru_auto_config_fc_ports_node3.adoc[]
 
-.Choices
-
-* link:setting_the_fc_or_uta_uta2_configuration_on_node3.html#configure-fc-ports-on-node3[Configure FC ports on node3]
-* link:setting_the_fc_or_uta_uta2_configuration_on_node3.html#check-and-configure-utauta2-ports-on-node3[Check and configure UTA/UTA2 ports on node3]
-
-== Configure FC ports on node3
-
-If node3 has FC ports, either onboard or on an FC adapter, you must set port configurations on the node before you bring it into service because the ports are not preconfigured. If the ports are not configured, you might experience a disruption in service.
-
-.Before you begin
-
-You must have the values of the FC port settings from node1 that you saved in the section link:preparing_the_nodes_for_upgrade.html[Prepare the nodes for upgrade].
-
-.About this task
-
-You can skip this section if your system does not have FC configurations. If your system has onboard UTA/UTA2 ports or a UTA/UTA2 card, you configure them in link:setting_the_fc_or_uta_uta2_configuration_on_node3.html#check-and-configure-utauta2-ports-on-node3[Check and configure UTA/UTA2 ports on node3].
-
-*Important*: If your system has storage disks, enter the commands in this section at the cluster prompt. If you have a 'V-Series system' or have FlexArray Virtualization Software and are connected to storage arrays, enter commands in this section in Maintenance mode.
-
-.Steps
-
-include::../_include/ru_config_fc_ports_node3.adoc[]
-
+[start=8]
 . [[step8]]Take one of the following actions:
 +
 |===
 |If the system that you are upgrading... |Then…
 
 |Has storage disks
-a|* If node3 has a UTA/UTA2 card or UTA/UTA2 onboard ports, go to the section link:setting_the_fc_or_uta_uta2_configuration_on_node3.html#check-and-configure-utauta2-ports-on-node3[Check and configure UTA/UTA2 ports on node3].
-* If node3 does not have a UTA/UTA2 card or UTA/UTA2 onboard ports, skip the section link:setting_the_fc_or_uta_uta2_configuration_on_node3.html#check-and-configure-utauta2-ports-on-node3[Check and configure UTA/UTA2 ports on node3] and go to the section link:verifying_the_node3_installation.html[Verify the node3 installation].
+a|* If node3 has a UTA/UTA2 card or UTA/UTA2 onboard ports, go to the section link:set_fc_or_uta_uta2_config_on_node3.html#check-and-configure-utauta2-ports-on-node3[Check and configure UTA/UTA2 ports on node3].
+* If node3 does not have a UTA/UTA2 card or UTA/UTA2 onboard ports, skip the section link:set_fc_or_uta_uta2_config_on_node3.html#check-and-configure-utauta2-ports-on-node3[Check and configure UTA/UTA2 ports on node3] and go to the section link:verify_node3_installation.html[Verify the node3 installation].
 |Is a V-Series system or has FlexArray Virtualization Software and is connected to storage arrays
-a|* If node3 has a UTA/UTA2 card or UTA/UTA2 onboard ports, go to the section link:setting_the_fc_or_uta_uta2_configuration_on_node3.html#check-and-configure-utauta2-ports-on-node3[Check and configure UTA/UTA2 ports on node3].
-* If node3 does not have a UTA/UTA2 card or UTA/UTA2 onboard ports, skip the section link:setting_the_fc_or_uta_uta2_configuration_on_node3.html#check-and-configure-utauta2-ports-on-node3[Check and configure UTA/UTA2 ports on node3] and return to link:installing_and_booting_node3.html[Install and boot node3] and resume the section at Step 23.
+a|* If node3 has a UTA/UTA2 card or UTA/UTA2 onboard ports, go to the section link:set_fc_or_uta_uta2_config_on_node3.html#check-and-configure-utauta2-ports-on-node3[Check and configure UTA/UTA2 ports on node3].
+* If node3 does not have a UTA/UTA2 card or UTA/UTA2 onboard ports, skip the section link:set_fc_or_uta_uta2_config_on_node3.html#check-and-configure-utauta2-ports-on-node3[Check and configure UTA/UTA2 ports on node3] and return to the section _Install and boot node3_ and resume at link:install_boot_node3.html#step23[Step 23].
 |===
 
-== Check and configure UTA/UTA2 ports on node3
+include::../_include/ru_auto_check_config_uta_uta2_ports_node3_intro_step_11.adoc[]
 
-include::../_include/ru_set_fc_top_thru_step_11.adoc[]
-
+[start=12]
 . [[step12]]Take one of the following actions:
 +
 |===
 |If the system... |Then…
 
 |Has storage disks
-|Go to link:verifying_the_node3_installation.html[Verify the node3 installation].
+|Go to link:verify_node3_installation.html[Verify the node3 installation].
 |Is a V-Series system or has FlexArray Virtualization Software and is connected to storage arrays
-|Resume at link:stage_3_installing_and_booting_node3_overview.html#step23[Step 23].
+|Return to the section _Install and boot node3_, and resume at link:install_boot_node3.html#step23[Step 23].
 |===
 
-include::../_include/ru_set_fc_steps_13_14.adoc[]
+include::../_include/ru_auto_check_config_uta_uta2_ports_node3_steps_13_14.adoc[]
 
+[start=15]
 . [[step15]]On node3, go to the boot menu and using 22/7 and select the hidden option `boot_after_controller_replacement`. At the prompt, enter node1 to reassign the disks of node1 to node3, as per the following example.
 +
 ....
@@ -184,6 +160,6 @@ Login:
 +
 NOTE: In the above console output example, ONTAP will prompt you for the partner node name if the system uses Advanced Disk Partitioning (ADP) disks.
 
-. [[step16]]If the system goes into a reboot loop with the message `no disks found`, it indicates that the system has reset the FC or UTA/UTA2 ports back to the target mode and therefore is unable to see any disks. To resolve this continue with <<step17,Step 17>> to <<step22,Step 22>>, or go to section link:verifying_the_node3_installation.html[Verify the node3 installation].
+. [[step16]]If the system goes into a reboot loop with the message `no disks found`, it indicates that the system has reset the FC or UTA/UTA2 ports back to the target mode and therefore is unable to see any disks. To resolve this continue with <<step17,Step 17>> to <<step22,Step 22>>, or go to section link:verify_node3_installation.html[Verify the node3 installation].
 
-include::../_include/ru_set_fc_steps_17_23.adoc[]
+include::../_include/ru_auto_check_config_uta_uta2_ports_node3_steps_17_23.adoc[]
