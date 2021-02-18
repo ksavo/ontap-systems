@@ -4,16 +4,20 @@ When performing the procedures in this guide, you  might need to refer to other 
 |===
 |Document |Contents
 
+|link:https://docs.netapp.com/platstor/topic/com.netapp.doc.hw-upgrade-controller/home.html[Controller Hardware Upgrade Express Guide]
+|Describes how to quickly upgrade controller hardware in a cluster by moving storage or volumes. Also describes how to convert a supported model to a disk shelf.
 |ONTAP 9 Software Setup Guide
 |Describes how to set up and configure NetApp systems
 |ONTAP 9 System Administration Reference
 |Describes how to administer ONTAP systems, shows you how to use the CLI interface, how to access the cluster, how to manage nodes, and much more
-|ONTAP 9 Upgrade and Revert/Downgrade Guide
+|link:https://docs.netapp.com/ontap-9/topic/com.netapp.doc.dot-cm-ug-rdg/home.html[ONTAP 9 Upgrade and Revert/Downgrade Guide]
 |Contains instructions for downloading and upgrading ONTAP
-|ONTAP 9 Disks and Aggregates Power Guide
+|link:https://docs.netapp.com/ontap-9/topic/com.netapp.doc.dot-cm-psmg/home.html[ONTAP 9 Disks and Aggregates Power Guide]
 |Describes how to manage ONTAP physical storage, shows you how to create, expand, and manage aggregates, how to work with Flash Pool aggregates, how to manage disks, and how to manage RAID policies
-|ONTAP 9 Logical Storage Management Guide
+|link:https://docs.netapp.com/ontap-9/topic/com.netapp.doc.dot-cm-vsmg/home.html[ONTAP 9 Logical Storage Management Guide]
 |Describes how to efficiently manage your logical storage resources, using volumes, FlexClone volumes, files and LUNs, FlexCache volumes, deduplication, compression, qtrees, and quotas
+|link:https://docs.netapp.com/ontap-9/topic/com.netapp.doc.dot-cm-hacg/home.html[ONTAP 9 High-Availability Configuration Guide]
+|Describes how to install and manage high-availability clustered configurations, including storage failover and takeover/giveback.
 |Installation and Setup Instructions for the model of the new nodes
 |Contains instructions for installing and cabling the new system
 |FlexArray Virtualization Installation Requirements and Reference Guide

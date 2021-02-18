@@ -13,5 +13,13 @@ summary: You need specific tools to install the new hardware.  Also, you can ref
 :imagesdir: ./media/
 
 [.lead]
-include::../_include/ru_auto_required_tools_documentation.adoc[]
+You must have specific tools to install the new hardware, and you need to reference other documents during the upgrade process. You also need to record information essential to completing the controller upgrade; a worksheet is provided to record information.
+
+You need the following tools to perform the up grade:
+
+* Grounding strap
+* #2 Phillips screwdriver
+
+Go to link:other_references.html[Other referenes] for the list of reference documents. 
+
 // p. 8 of pdf
