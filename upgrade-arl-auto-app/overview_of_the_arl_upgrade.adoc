@@ -19,9 +19,8 @@ summary: Before you upgrade the nodes using ARL, you should understand how the p
 //
 
 [.lead]
-include::../_include/ru_app_overview_arl_workflow_chunk_a.adoc[]
+include::../_include/ru_auto_overview_arl_workflow_top.adoc[]
 
-The following table describes the high-level tasks you perform during each stage and the state of aggregate ownership at the end of the stage.  Detailed steps are provided later in the procedure:
 [cols="35,65"]
 |===
 | Stage | Steps

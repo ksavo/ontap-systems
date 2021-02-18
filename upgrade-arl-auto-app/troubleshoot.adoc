@@ -5,7 +5,7 @@ keywords: troubleshooting, node, aggregate, lif, migrate, failure
 summary: You might encounter a failure while upgrading the node pair.
 ---
 
-= Troubleshooting
+= Troubleshoot
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -19,4 +19,4 @@ summary: You might encounter a failure while upgrading the node pair.
 //
 
 [.lead]
-include::../_include/ru_app_troubleshoot.adoc[]
+include::../_include/ru_auto_troubleshoot.adoc[]

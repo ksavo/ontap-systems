@@ -13,5 +13,5 @@ summary: You need to upgrade the node pair.
 :imagesdir: ./media/
 
 [.lead]
-include::../_include/ru_upgrade_node_pair.adoc[]
+include::../_include/ru_auto_upgrade_node_pair.adoc[]
 // p. 15 of PDF

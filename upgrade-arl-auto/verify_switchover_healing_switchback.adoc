@@ -13,5 +13,6 @@ summary: Verify the switchover, healing, and switchback operations of the MetroC
 :imagesdir: ./media/
 
 [.lead]
-include::../_include/ru_verify_switchover_healing_switchback.adoc[]
+
+include::../_include/ru_auto_verify_switchover_healing_switchback.adoc[]
 // P. 12 of PDF

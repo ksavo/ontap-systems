@@ -19,12 +19,18 @@ summary: This guide describes how to upgrade the storage controllers in an HA pa
 //
 
 [.lead]
-include::../_include/ru_app_decide_chunk_a.adoc[]
+This guide describes how to upgrade the storage controllers in an HA pair with new controllers while keeping all the existing data and disks. This is a complex procedure that should be used only by experienced administrators.
+
+You should use this guide under the following circumstances:
+
+* You are running ONTAP 9.8.
+* You do not want to add the new controllers as a new HA pair to the cluster and migrate the data using volume moves.
+* You are experienced in administering ONTAP and are comfortable with the risks of working in the diagnostic privilege mode.
 * If you are upgrading a MetroCluster configuration, it is a 4-node or higher FC configuration, and all nodes are running ONTAP 9.8.
 +
 For upgrading MetroCluster IP configurations, refer to the link:https://docs.netapp.com/ontap-9/index.jsp?topic=%2Fcom.netapp.doc.dot-mcc-mgmt-dr%2Fhome.html[MetroCluster Upgrade, Transition, and Expansion Guide].
 
-include::../_include/ru_app_decide_chunk_b.adoc[]
+NOTE: You can use NetApp Storage Encryption (NSE) and NetApp Volume Encryption (NVE) with this procedure.
 
 The following table shows the supported model matrix for the controller upgrade.
 
@@ -43,6 +49,6 @@ The following table shows the supported model matrix for the controller upgrade.
 
 NOTE: If your controller upgrade model combination is not in the above table, contact technical support.
 
-*For the additional steps needed for A800 systems, go to the step that references A800 in section link:set_fc_or_uta_uta2_config_on_node3.html.html#Step23[Check and configure UTA/UTA2 ports on node3, Step 23], or link:set_fc_or_uta_uta2_config_node4.html#Step23[Check and configure UTA/UTA2 ports on node4, step 23].
+*For the additional steps needed for A800 systems, go to the step that references A800 in section link:set_fc_or_uta_uta2_config_on_node3.html.html#step23[Check and configure UTA/UTA2 ports on node3, Step 23], or link:set_fc_or_uta_uta2_config_node4.html#step23[Check and configure UTA/UTA2 ports on node4, Step 23].
 
-include::../_include/ru_app_decide_chunk_c.adoc[]
+include::../_include/ru_auto_decide_use_arl_guide_end.adoc[]

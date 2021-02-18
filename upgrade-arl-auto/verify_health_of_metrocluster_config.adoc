@@ -13,6 +13,6 @@ summary: Check the health of the MetroCluster configuration to verify proper ope
 :imagesdir: ./media/
 
 [.lead]
-include::../_include/ru_verify_health_metrocluster_configuration.adoc[]
+include::../_include/ru_auto_verify_health_metrocluster_configuration.adoc[]
 
 // P. 10 of PDF

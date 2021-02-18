@@ -1,0 +1,25 @@
+This guide describes how to upgrade the controller hardware without disruption by using aggregate relocation.
+
+You can nondisruptively upgrade the controller hardware on a pair of nodes running NetApp ONTAP by migrating non-root aggregates from the original nodes to the new nodes in the same cluster. The data hosted on the nodes that are being upgraded is accessible during the upgrade.
+
+This procedure uses a method called aggregate relocation (ARL), which takes advantage of the HA configuration to enable you to move ownership of non-root aggregates from one node to another if they share storage within the same cluster.
+
+Refer to the table below to verify that you are using the correct guide for your ONTAP version and for performing an upgrade using the manual procedure or using system commands.
+
+[cols=3*,options="header",cols"=30,35,35"]
+|===
+|If you’re running this ONTAP version…
+|To manually upgrade, use…
+|To upgrade with system commands, use…
+|9.0 to 9.4
+|Using Aggregate Relocation to Manual Upgrade Controller Hardware Running ONTAP 9.7 and Earlier
+|n/a
+|9.5 to 9.7
+|Using Aggregate Relocation to Manual Upgrade Controller Hardware Running ONTAP 9.7 and Earlier
+|Using "system controller replace" Commands to Upgrade Controller Hardware Running ONTAP 9.5 to 9.7
+|9.8 and Later
+|Using Aggregate Relocation to Manual Upgrade Controller Hardware Running ONTAP 9.8 and Later
+|Using "system controller replace" Commands to Upgrade Controller Hardware Running ONTAP 9.8 and Later
+|===
+
+// This reuse file is used in the index.adoc files of both ARL 9.8 and Later guides
