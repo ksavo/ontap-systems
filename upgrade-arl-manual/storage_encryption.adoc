@@ -1,7 +1,8 @@
 ---
 sidebar: upgrade-arl-manual_sidebar
 permalink: upgrade-arl-manual/storage_encryption.html
-summary:
+keywords:  storage, encryption,
+summary: Verify that storage is still encrypted.
 ---
 
 = Storage Encryption
@@ -12,9 +13,4 @@ summary:
 :imagesdir: ./media/
 
 [.lead]
-// COPIED FROM 9.8 GUIDE...CHECK FOR REUSE, THEN REMOVE THIS COMMENT
-The original nodes or the new nodes might be enabled for Storage Encryption.
-
-In that case, you need to take additional steps in this procedure to verify that Storage Encryption is set up properly.
-
-If you want to use Storage Encryption, all the disk drives associated with the nodes must have self-encrypting disk drives.
+include::../_include/ru_man_storage_encryption.adoc[]

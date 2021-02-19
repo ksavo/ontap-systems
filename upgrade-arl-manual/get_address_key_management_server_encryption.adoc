@@ -1,6 +1,7 @@
 ---
 sidebar: upgrade-arl-manual_sidebar
 permalink: upgrade-arl-manual/get_address_key_management_server_encryption.html
+keywords: storage, encryption, authentication, key, manager, external
 summary: Configure Storage Encryption and establish a client authentication key.
 ---
 
@@ -11,6 +12,4 @@ summary: Configure Storage Encryption and establish a client authentication key.
 :linkattrs:
 :imagesdir: ./media/
 
-[.lead]
-// COPIED FROM 9.8 GUIDE...CHECK FOR REUSE, THEN REMOVE THIS COMMENT
-include::../_include/ru_app_get_ip_address_external_km_server.adoc[]
+include::../_include/ru_man_get_ip_address_external_km_server.adoc[]

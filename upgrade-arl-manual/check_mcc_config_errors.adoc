@@ -1,0 +1,30 @@
+---
+sidebar: upgrade-arl-manual_sidebar
+permalink: upgrade-arl-manual/check_mcc_config_errors.html
+keywords: config advisor, mcc, metrocluster,configuration, configure, error, check
+summary: Use Config Advisor to check for common configuration errors.
+---
+
+= Check for MetroCluster configuration errors
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+[.lead]
+You can use the Config Advisor tool available from the NetApp Support Site to check for common configuration errors.
+
+.About this task
+
+Config Advisor is a configuration validation and health check tool. You can deploy it at both secure sites and non-secure sites for data collection and system analysis.
+
+NOTE: Support for Config Advisor is limited, and available only online.
+
+.Steps
+
+. Download the Config Advisor tool.
++
+link:https://mysupport.netapp.com/tools/info/ECMS1357843I.html?productID=61923[Config Advisor]
+
+. Run Config Advisor, reviewing the output and following its recommendations to address any issues.

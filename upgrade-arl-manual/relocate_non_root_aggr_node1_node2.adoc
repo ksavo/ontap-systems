@@ -1,11 +1,10 @@
 ---
 sidebar: upgrade-arl-manual_sidebar
 permalink: upgrade-arl-manual/relocate_non_root_aggr_node1_node2.html
-summary: Move the non-root aggregates and NAS data
-LIFs from node1 to node2 before moving node1's resources to node3.
+summary: Move the non-root aggregates from node1 to node2 before moving node1's resources to node3.
 ---
 
-= Relocate non-root aggregates and NAS data LIFs owned by node1 to node2
+= Relocate non-root aggregates owned by node1 to node2
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -13,8 +12,7 @@ LIFs from node1 to node2 before moving node1's resources to node3.
 :imagesdir: ./media/
 
 [.lead]
-// COPIED FROM 9.8 GUIDE...CHECK FOR REUSE, THEN REMOVE THIS COMMENT
-Before you can replace node1 with node3, you must move the non-root aggregates and NAS data LIFs from node1 to node2 before eventually moving node1's resources to node3.
+Before you can replace node1 with node3, you must move the non-root aggregates a NAS data LIFs from node1 to node2 before eventually moving node1's resources to node3.
 
 .Before you begin
 
@@ -76,3 +74,4 @@ The `Vserver-name` to use with this command is found in the output of the previo
 . If any LIFs are down, set the administrative status of the LIFs to "up" by entering the following command, once for each LIF:
 +
 `network interface modify -vserver <Vserver_name> -lif <LIF_name> -home-node <node-name> -status-admin up`
+// 18 FEB 2021:  Formatted from the CMS

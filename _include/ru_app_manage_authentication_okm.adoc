@@ -6,6 +6,3 @@ You can use the OKM to manage encryption keys. If you plan to use OKM, you must 
 . Create a backup for recovery purposes. Run the following command and save the output:
 +
 `key-manager onboard show-backup`
-//This reuse file is used in the following adoc files:
-// -- upgrade-arl-auto-app/getting_an_ip_address_of_an_external_key_management_server_for_storage_encryption.adoc (third section)
-// -- upgrade-arl-manual-app/manage_authentication_okm.adoc

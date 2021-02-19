@@ -1,0 +1,16 @@
+---
+sidebar: upgrade-arl-manual_sidebar
+permalink: upgrade-arl-manual/licensing_ontap_97_earlier.html
+keywords: license, licensing, key, package
+summary: You need licensing keys for certain features.
+---
+
+= Licensing in ONTAP 9.7 or earlier
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+[.lead]
+include::../_include/ru_man_licensing.adoc[]

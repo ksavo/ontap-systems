@@ -1,0 +1,10 @@
+To upgrade the node pair, you need to prepare the original nodes and then perform a series of steps on both the original and new nodes. You can then decommission the original nodes.
+
+.Steps
+
+. <<Stage 1: Prepare for upgrade>>
+. <<Stage 2: Relocate and retire node1>>
+. <<Stage 3: Install and boot node3>>
+. <<Stage 4: Record information and retire node2>>
+. <<Stage 5: Install and boot node4>>
+. <<Stage 6: Complete the upgrade>>

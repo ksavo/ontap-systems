@@ -1,6 +1,7 @@
 ---
 sidebar: upgrade-arl-manual-app_sidebar
 permalink: upgrade-arl-manual-app/index.html
+keywords:  aggregate, relocation, moving, manual, upgrade, relocate                                                                                                                                                                           
 summary: Using aggregate relocation to manually upgrade controller hardware running ONTAP 9.8 or later
 ---
 
@@ -12,4 +13,6 @@ summary: Using aggregate relocation to manually upgrade controller hardware runn
 :imagesdir: ./media/
 
 [.lead]
-include::../ru_app_index_intro.adoc[]
+include::../_include/ru_man_index_intro.adoc[]
+
+include::../_include/ru_man_use_arl_overview.adoc[]
