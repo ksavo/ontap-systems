@@ -16,7 +16,3 @@ The abort fails if the SnapMirror relationship is not in the "Transferring" stat
 . Quiesce all relationships between the cluster:
 +
 `snapmirror quiesce -destination-vserver <Vserver name>`
-
-// This reuse file is used in the following adoc files:
-// upgrade-arl-auto\get_ip_address_of_external_kms_for_storage_encryption.adoc
-// upgrade-arl-auto-app\get_ip_address_of_external_kms_for_storage_encryption.adoc

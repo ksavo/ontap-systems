@@ -13,5 +13,5 @@ summary: During Stage 2, you relocate the node1 aggregates and LIFs to node2, re
 :imagesdir: ./media/
 
 [.lead]
-include::../_include/ru_auto_stage_2_oberview.adoc[]
+include::../_include/ru_auto_stage_2_overview.adoc[]
 // top only of p.22 of PDF

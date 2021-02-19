@@ -8,7 +8,3 @@ After you physically rack node3 and node4 later in the procedure, you might need
 .About this task
 
 You must netboot the new controllers if they do not have the same version of ONTAP 9 installed on them that is installed on the original controllers. After you install each new controller, you boot the system from the ONTAP 9 image stored on the web server. You can then download the correct files to the boot media device for subsequent system boots.
-
-// This reuse file is used in the following adoc files:
-// --upgrade-arl-auto/prepare_for_netboot.adoc
-// --upgrade-arl-auto-app\prepare_for_netboot.adoc

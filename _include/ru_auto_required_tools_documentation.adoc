@@ -33,6 +33,3 @@ You need the following tools to perform the up grade:
 |===
 
 The NetApp Support Site also contains documentation about network interface cards (NICs) and other hardware that you might use with your system. It also contains the link:https://hwu.netapp.com[Hardware Universe], which provides information about the hardware that the new system supports. See the link:https://docs.netapp.com/ontap-9/index.jsp[ONTAP 9 Documentation Center] to access ONTAP 9 product documentation.
-// This reuse file is used in the following adoc files:
-// -- upgrade-arl-auto-app/required_tools_and_documentation.adoc
-// -- upgrade-arl-auto/required_tools_and_documentation.adoc

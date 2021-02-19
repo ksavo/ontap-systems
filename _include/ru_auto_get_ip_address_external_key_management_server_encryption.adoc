@@ -26,7 +26,3 @@ After upgrading, you must immediately configure Storage Encryption and establish
 . Rekey all self-encrypting drives with the new authentication key:
 +
 `storage encryption disk modify -disk * -data-key-id <authentication_key_id>`
-
-// This reuse file is used in the following adoc files:
-// upgrade-arl-auto\get_ip_address_of_external_kms_for_storage_encryption.adoc
-// upgrade-arl-auto-app\get_ip_address_of_external_kms_for_storage_encryption.adoc

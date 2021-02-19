@@ -157,7 +157,3 @@ Adapter Current Mode Current Type  Pending Mode Pending Type Admin Status
 |===
 
 . [[step11]]Cable the port.
-
-// This reuse file is used in the following adoc files:
-// upgrade-arl-auto\set_fc_or_uta_uta2_config_on_node3.adoc
-// upgrade-arl-auto-app\set_fc_or_uta_uta2_config_on_node3.adoc

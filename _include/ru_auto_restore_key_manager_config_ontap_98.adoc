@@ -9,7 +9,3 @@ Synchronize the encryption configuration to the new nodes by performing the foll
 `security key-manager onboard sync`
 
 . Enter the cluster-wide passphrase for the OKM.
-
-// This reuse file is used in the following adoc files:
-// upgrade-arl-auto-app\restore_key-manager_configuration_node3.adoc
-// upgrade-arl-auto-app\restore_key-manager_config_node4.adoc

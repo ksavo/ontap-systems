@@ -23,7 +23,3 @@ Your directory listing should contain a netboot folder with a kernel file:
 |===
 +
 You will use the information in the directories in link:stage_3_install_boot_node3_overview.html[Stage 3].
-
-// This reuse file is used in the following adoc files:
-// --upgrade-arl-auto/prepare_for_netboot.adoc
-// --upgrade-arl-auto-app\prepare_for_netboot.adoc

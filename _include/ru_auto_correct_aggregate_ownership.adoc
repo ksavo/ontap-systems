@@ -31,7 +31,3 @@ aggr4       node1      node1       online
 You must restart the controller replacement process:
 
 `system controller replace start -nodes <node_names>`
-
-// This reuse file is used in the following adoc files:
-// upgrade-arl-auto\prepare_nodes_for_upgrade.adoc
-// upgrade-arl-auto-app\prepare_nodes_for_upgrade.adoc

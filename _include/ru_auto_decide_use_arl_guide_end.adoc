@@ -1,4 +1,1 @@
 If you prefer a different method of upgrading the controller hardware and are willing to do volume moves, refer to link:other_references.html[Other references] to link to the _Controller Hardware Upgrade Express Guide_. See the link:https://docs.netapp.com/ontap-9/index.jsp[ONTAP 9 Documentation Center] to access ONTAP 9 product documentation.
-//This reuse file is used in the following files:
-// upgrade-arl-auto\decide_to_use_the_aggregate_relocation_guide.adoc
-// upgrade-arl-auto-app\decide_to_use_the_aggregate_relocation_guide.adoc

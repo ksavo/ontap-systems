@@ -120,7 +120,3 @@ a|. Go to section link:set_fc_or_uta_uta2_config_node4.html[Set the FC or UTA/UT
 
 *Important*: You must reconfigure FC onboard ports, CNA onboard ports, and CNA cards before you boot ONTAP on the V-Series or system with FlexArray Virtualization software.
 |===
-
-// This reuse file is used in the following adoc files:
-// upgrade-arl-auto\install_boot_node4.adoc
-// upgrade-arl-auto-app\install_boot_node4.adoc

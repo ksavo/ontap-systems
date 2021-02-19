@@ -54,7 +54,3 @@ To override this delay, press 'c' followed by 'Enter'
 .ATTENTION: Do not override the delay; failure to allow the battery to charge could result in a loss of data.
 +
 NOTE: Refer to link:prepare_for_netboot.html[Prepare for netboot].
-
-// This reuse file is used in the following adoc files:
-// upgrade-arl-auto\install_boot_node3.adoc
-// upgrade-arl-auto-app\install_boot_node3.adoc

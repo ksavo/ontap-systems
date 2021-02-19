@@ -92,7 +92,7 @@ Enter `y` to remove all of the packages.
 +
 You might want to compare the output with the output that you captured in the section link:prepare_nodes_for_upgrade.html[Prepare the nodes for upgrade].
 
-. If NetApp Storage Encryption (NSE) was in use on the configuration and you set the `setenv bootarg.storageencryption.support` command to `true` with the `<kmip.init.maxwait>` variable `off` (in link:install_boot_node4.html#Step27[Install and boot node4, Step 27]), you need to reset the variable:
+. If NetApp Storage Encryption (NSE) was in use on the configuration and you set the `setenv bootarg.storageencryption.support` command to `true` with the `<kmip.init.maxwait>` variable `off` (in link:install_boot_node4.html#step27[Install and boot node4, Step 27]), you need to reset the variable:
 +
 `set diag; systemshell -node <nodename> -command sudo kenv -u -p kmip.init.maxwait`
 

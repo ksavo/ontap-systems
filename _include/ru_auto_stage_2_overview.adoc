@@ -5,7 +5,3 @@ During Stage 2, you relocate the node1 aggregates and LIFs to node2, record node
 . link:relocate_non_root_aggr_nas_data_lifs_node1_node2.html[Relocate non-root aggregates and NAS data LIFs owned by node1 to node2]
 . link:retire_node1.html[Retire node1]
 . link:prepare_for_netboot.html[Prepare for netboot]
-
-// This reuse file is used in the following adoc files:
-// upgrade-arl-auto\stage_2_relocate_retire_node1_overview.adoc
-// upgrade-arl-auto-app\stage_2_relocate_and_retire_node1_overview.adoc

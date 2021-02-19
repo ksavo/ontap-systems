@@ -19,4 +19,4 @@ summary: Relocating and retiring node1
 //
 
 [.lead]
-include::../_include/ru_auto_stage_2_oberview.adoc[]
+include::../_include/ru_auto_stage_2_overview.adoc[]

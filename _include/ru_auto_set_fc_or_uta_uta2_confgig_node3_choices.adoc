@@ -1,8 +1,4 @@
 .Choices
 
-* link:set_fc_or_uta_uta2_config_on_node3.html#configuring-fc-ports-on-node3[Configure FC ports on node3]
+* link:set_fc_or_uta_uta2_config_on_node3.html#configure-fc-ports-on-node3[Configure FC ports on node3]
 * link:set_fc_or_uta_uta2_config_on_node3.html#check-and-configure-utauta2-ports-on-node3[Check and configure UTA/UTA2 ports on node3]
-
-// This reuse file is used in the following adoc files:
-// upgrade-arl-auto\set_fc_or_uta_uta2_config_on_node3.adoc
-// upgrade-arl-auto-app\set_fc_or_uta_uta2_config_on_node3.adoc

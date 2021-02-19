@@ -10,7 +10,3 @@
 |===
 
 . Enter the cluster-wide passphrase for the Onboard Key Manager.
-
-// This reuse file is used in the following adoc files:
-// upgrade-arl-auto\restore_key_manager_config_node3.adoc
-// upgrade-arl-auto\restore_key-manager_config_node4.adoc

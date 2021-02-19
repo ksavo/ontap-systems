@@ -6,8 +6,4 @@ If you do not have new license keys, currently licensed features in the cluster 
 
 You can obtain new 2-character license keys for ONTAP 9.8 on the link:https://mysupport.netapp.com[NetApp Support Site]. The keys are available in the _My Support_ section under _Software licenses_. If the site does not have the license keys you need, you can contact your NetApp sales representative.
 
-For detailed information about licensing, see the link:https://docs.netapp.com/ontap-9/topic/com.netapp.doc.dot-cm-sag/home.html[System Administration Reference] in the link:https://docs.netapp.com/ontap-9/index.jsp[ONTAP 9 Documentation Center].
-
-// This reuse file is used in the following adoc files:
-// upgrade-arl-auto\prepare_nodes_for_upgrade.adoc
-// upgrade-arl-auto-app\prepare_nodes_for_upgrade.adoc
+For detailed information about licensing, refer to link:other_referenes.html[Other references] link to the _System Administration Reference_ in the link:https://docs.netapp.com/ontap-9/index.jsp[ONTAP 9 Documentation Center].

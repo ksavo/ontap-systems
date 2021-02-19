@@ -23,7 +23,3 @@
 . If you use the Federal Information Processing Standard (FIPS), rekey all self-encrypting disks with the new authentication key:
 +
 `storage encryption disk* modify -disk * [-fips-key-id nonMSID AK]`
-
-// This reuse file is used in the following adoc files:
-// upgrade-arl-auto\get_ip_address_of_external_kms_for_storage_encryption.adoc
-// upgrade-arl-auto-app\get_ip_address_of_external_kms_for_storage_encryption.adoc
