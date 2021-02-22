@@ -20,7 +20,7 @@ After you confirm that node4 is in quorum and can communicate with node3, you mu
 
 .About this task
 
-For more information on creating and re-creating VLANs, interface groups, and broadcast domains, see the link:https://docs.netapp.com/ontap-9/index.jsp?topic=%2Fcom.netapp.doc.dot-cm-nmg%2Fhome.html[ONTAP 9 Network Management Guide].
+For more information on creating and re-creating VLANs, interface groups, and broadcast domains, go to link:other_references.html[Other references] and link to the _ONTAP 9 Network Management Guide_.
 
 .Steps
 

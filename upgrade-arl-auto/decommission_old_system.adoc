@@ -13,5 +13,5 @@ summary: After upgrading, you can decommission the old system through the NetApp
 :imagesdir: ./media/
 
 [.lead]
-include::../_include/ru_app_decommission_old_system.adoc[]
+include::../_include/ru_auto_decommission_old_system.adoc[]
 // middle section of page 72 in PDF

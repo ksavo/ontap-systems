@@ -8,18 +8,25 @@ Documents specific to this upgrade are listed in the table below.
 |Document |Contents
 |link:https://docs.netapp.com/platstor/topic/com.netapp.doc.hw-upgrade-controller/home.html[Controller Hardware Upgrade Express Guide]
 |Describes how to quickly upgrade controller hardware in a cluster by moving storage or volumes. Also describes how to convert a supported model to a disk shelf.
-|FlexArray Virtualization Installation Requirements and Reference Guide
+|link:https://docs.netapp.com/ontap-9/topic/com.netapp.doc.vs-irrg/home.html[FlexArray Virtualization Installation Requirements and Reference]
 |Contains cabling instructions and other information for FlexArray Virtualization systems.
 |Installation and Setup Instructions for the model of the new nodes
 |Contains instructions for installing and cabling the new system.
 |link:https://docs.netapp.com/ontap-9/topic/com.netapp.doc.dot-mcc-mgmt-dr/home.html[MetroCluster Management and Disaster Recovery Guide]
 |Describes how to perform MetroCluster switchover and switchback operations, both in planned maintenance operations or in the event of a disaster.
+|ONTAP 9 Commands: Manual Page
+Reference _reference for 9.7 and earlier_
+|
+|link:https://docs.netapp.com/ontap-9/topic/com.netapp.doc.dot-cm-cmpr-980/home.html[ONTAP 9.8 Commands: Manual Page Reference]
+|Describes syntax and usage of supported ONTAP 9.8 commands.
 |link:https://docs.netapp.com/ontap-9/topic/com.netapp.doc.dot-cm-psmg/home.html[ONTAP 9 Disks and Aggregates Power Guide]
 |Describes how to manage ONTAP physical storage, shows you how to create, expand, and manage aggregates, how to work with Flash Pool aggregates, how to manage disks, and how to manage RAID policies.
 |link:https://docs.netapp.com/ontap-9/topic/com.netapp.doc.dot-cm-hacg/home.html[ONTAP 9 High-Availability Configuration Guide]
 |Describes how to install and manage high-availability clustered configurations, including storage failover and takeover/giveback.
 |link:https://docs.netapp.com/ontap-9/topic/com.netapp.doc.dot-cm-vsmg/home.html[ONTAP 9 Logical Storage Management Guide]
 |Describes how to efficiently manage your logical storage resources, using volumes, FlexClone volumes, files and LUNs, FlexCache volumes, deduplication, compression, qtrees, and quotas.
+|ONTAP 9 Network Management Guide
+|
 |ONTAP 9 SAN Administration Guide
 |Describes how to configure and manage iSCSI and FC protocols for SAN environments.
 |ONTAP 9 SAN Configuration Guide
@@ -42,7 +49,7 @@ Documents specific to this upgrade are listed in the table below.
 |description
 |===
 
-The NetApp Support Site also contains documentation about network interface cards (NICs) and other hardware that you might use with your system. It also contains the link:https://hwu.netapp.com[Hardware Universe], which provides information about the hardware that the new system supports.
+The link:https://mysupport.netapp.com[NetApp Support Site] Site also contains documentation about network interface cards (NICs) and other hardware that you might use with your system. It also contains the link:https://hwu.netapp.com[Hardware Universe], which provides information about the hardware that the new system supports.
 
 See the link:https://docs.netapp.com/ontap-9/index.jsp[ONTAP 9 Documentation Center] to access ONTAP 9 product documentation.
 

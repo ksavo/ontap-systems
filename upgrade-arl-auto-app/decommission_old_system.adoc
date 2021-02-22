@@ -19,5 +19,5 @@ summary: After upgrading, you can decommission the old system through the NetApp
 //
 
 [.lead]
-include::../_include/ru_app_decommission_old_system.adoc[]
+include::../_include/ru_auto_decommission_old_system.adoc[]
 // 11 DEC 2020, thomi, checked

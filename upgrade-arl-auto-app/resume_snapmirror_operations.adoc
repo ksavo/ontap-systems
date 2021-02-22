@@ -19,4 +19,4 @@ summary: You can resume SnapMirror transfers that were quiesced before upgrade a
 //
 
 [.lead]
-include::../_include/ru_app_resume_snapmirror_operations.adoc[]
+include::../_include/ru_auto_resume_snapmirror_operations.adoc[]

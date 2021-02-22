@@ -9,7 +9,3 @@ You can resume SnapMirror transfers that were quiesced before upgrade and resume
 . Resume the SnapMirror relationship:
 +
 `snapmirror resume -destination–vserver <vserver_name>`
-
-// This reuse file is used in the following adoc files:
-// upgrade-arl-auto\resume_snapmirror_operations.adoc
-// upgrade-arl-auto-app\resume_snapmirror_operations.adoc

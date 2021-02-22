@@ -2,7 +2,7 @@ After upgrading, you can decommission the old system through the NetApp Support 
 
 .Steps
 
-. Navigate to the link:https://mysupport.netapp.com[NetApp Support Site] and log in.
+. Refer to link:other_references.html[Other references] to link to the _NetApp Support Site_ and log in.
 . Select *Products > My Products* from the menu.
 . On the *View Installed Systems* page, choose which *Selection Criteria* you want to use to display information about your system.
 +
@@ -16,7 +16,3 @@ You can choose one of the following to locate your system:
 A table displays cluster information, including the serial numbers.
 
 . Locate the cluster in the table and select *Decommission this system* from the Product Tool Set drop-down menu.
-
-// This reuse file is used in the following adoc files:
-// upgrade-arl-auto\decommission_old_system.adoc
-// upgrade-arl-auto-app\decommission_old_system.adoc
