@@ -20,6 +20,6 @@ You need the following tools to perform the up grade:
 * Grounding strap
 * #2 Phillips screwdriver
 
-Go to link:other_references.html[Other referenes] for the list of reference documents. 
+Go to link:other_references.html[Other references] for the list of reference documents.
 
 // p. 8 of pdf

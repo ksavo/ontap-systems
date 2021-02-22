@@ -13,4 +13,4 @@ summary: You can link to other reference guides and websites in this topic.
 :imagesdir: ./media/
 
 [.lead]
-include::../_include/ru_other_references.adoc[]
+include::../_include/ru_all_other_references.adoc[]
