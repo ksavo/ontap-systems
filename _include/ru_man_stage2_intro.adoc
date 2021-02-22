@@ -1,0 +1,14 @@
+During Stage 2, you relocate the node1 aggregates and LIFs to node2, record node1 information, and then retire node1.  This process is largely automated; the operation pauses to allow you to
+check its status. You must manually resume the operation.
+
+.Steps
+
+. link:relocate_non_root_aggr_node1_node2.html[Relocating non-root aggregates and NAS data LIFs owned by node1 to node2]
+
+. link:move_nas_lifs_node1_node2.html[Moving NAS data LIFs owned by node1 to node2]
+
+. link:record_node1_information.html[Recording node1 information]
+
+. link:retire_node1.html[Retire node1]
+
+// 19 FEB 2021:  Formatted from CMS

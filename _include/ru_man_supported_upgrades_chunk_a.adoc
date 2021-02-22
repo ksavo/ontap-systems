@@ -1,0 +1,13 @@
+You can upgrade a pair of nodes using ARL under the following circumstances:
+
+
+* Both the original controllers and the replacement controllers must be running the same version of ONTAP 9 before the upgrade.
+
+* The replacement controllers must have equal or higher capacity than the original controllers. Equal or higher capacity refers to attributes, such as the NVRAM size, volume, LUN, or aggregate count limits; it also refers to the maximum volume or aggregate sizes of the new nodes.
+
+* You can upgrade the following type of systems:
+** A FAS system to a FAS system.
+** A FAS system to a V-Series system or a system with FlexArray Virtualization Software.
+** A V-Series system to a V-Series system or a system with FlexArray Virtualization Software.
+** A V-Series system or a system with FlexArray Virtualization Software to a FAS system, provided that the V-Series system or system with FlexArray Virtualization Software has no array LUNs.
+** An AFF system to an AFF system.

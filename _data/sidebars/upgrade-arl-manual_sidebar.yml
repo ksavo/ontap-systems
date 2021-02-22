@@ -29,13 +29,13 @@ entries:
   - title: "Worksheet: Information to collect before and during the controller upgrade"
     url: /worksheet_information_before_during_upgrade.html
   - title: "Reconfigure the FC switch layout for ONTAP 9.1 or later"
-    url: /reconfigure_fc_switch_layout_91_later.html
+    url: /reconfig_fc_switch_layout.html
     entries:
       - title: "Send a custom AutoSupport message prior to reconfiguring switches"
         url: /send_custom_asup_message_prior_reconfig_switches.html
       - title: "Verify the health of the MetroCluster configuration"
         url: /verify_health_mcc_config.html
-      - title: "Check for metroCluster configuration errors"
+      - title: "Check for MetroCluster configuration errors"
         url: /check_mcc_config_errors.html
       - title: "Persistently disable the switches"
         url: /persist_disable_switches.html
@@ -77,7 +77,7 @@ entries:
         url: /record_node1_information.html
       - title: "Retire node1"
         url: /retire_node1.html
-  - title: "Stage 3: Upgrade the node pair"
+  - title: "Stage 3: Install and boot node3"
     url: /stage3_install_boot_node3.html
     entries:
       - title: "Install and boot node3"
