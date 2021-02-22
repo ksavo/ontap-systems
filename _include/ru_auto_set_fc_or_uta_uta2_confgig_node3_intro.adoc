@@ -2,7 +2,7 @@ If node3 has onboard FC ports, onboard unified target adapter (UTA/UTA2) ports, 
 
 .About this task
 
-You might need to complete the section link:set_fc_or_uta_uta2_config_on_node3.html#configure-fc-ports-on-node3[Configure FC ports on node3], the section link:set_fc_or_uta_uta2_config_on_node3.html#check-and-configure-utauta2-ports-on-node3[Check and configure UTA/UTA2 ports on node3], or both sections.
+You might need to complete the section link:set_fc_or_uta_uta2_config_on_node3.html#configure-fc-ports-on-node3[Configure FC ports on node3], the section link:set_fc_or_uta_uta2_config_on_node3.html#check-and-configure-uta/uta2-ports-on-node3[Check and configure UTA/UTA2 ports on node3], or both sections.
 
 [NOTE]
 NetApp marketing materials might use the term UTA2 to refer to CNA adapters and ports. However, the CLI uses the term CNA.
