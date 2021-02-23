@@ -9,7 +9,3 @@ NOTE: Support for Config Advisor is limited, and available only online.
 . Download the link:https://mysupport.netapp.com/site/tools[Active IQ Config Advisor] tool.
 
 . Run Active IQ Config Advisor, reviewing the output and following its recommendations to address any issues.
-
-// This reuse file is used in the following adoc files:
-// upgrade-arl-auto\check_metrocluster_config_errors.adoc
-// upgrade-arl-auto-app\check_for_metrocluster_config_errors.adoc

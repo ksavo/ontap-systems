@@ -15,4 +15,4 @@ summary: During Stage 4, all non-root aggregates are relocated from node2 to nod
 [.lead]
 
 // top section of pg. 46  in PDF
-include::../_include/ru_stage4_overview.adoc[]
+include::../_include/ru_auto_stage4_overview.adoc[]

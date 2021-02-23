@@ -33,11 +33,11 @@ entries:
   - title: Stage 2 Relocate and retiring node1
     url: /stage_2_relocate_retire_node1_overview.html
     entries:
-      - title: Relocate non-root aggregates and NAS data LIFs owned by node1 to node2
+      - title: "Relocate non-root aggregates and NAS data LIFs owned by node1 to node2"
         url: /relocate_non_root_aggr_nas_data_lifs_node1_node2.html
-      - title: Relocate failed or vetoed aggregates
+      - title: "Relocate failed or vetoed aggregates"
         url: /relocate_failed_vetoed_aggr.html
-      - title: Retire node1
+      - title: "Retire node1"
         url: /retire_node1.html
       - title: Prepare for netboot
         url: /prepare_for_netboot.html

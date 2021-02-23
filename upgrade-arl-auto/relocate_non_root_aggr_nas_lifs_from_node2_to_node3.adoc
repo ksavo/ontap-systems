@@ -15,7 +15,7 @@ summary: Before you can replace node2 with node4, you must relocate the non-root
 [.lead]
 
 // page 46 and 47 in PDF
-include::../_include/ru_app_relocate_non_root_aggr_nas_lifs_from_node2_to_node3_intro_step_4.adoc[]
+include::../_include/ru_auto_relocate_non_root_aggr_nas_lifs_from_node2_to_node3_intro_step_4.adoc[]
 
 [start=5]
 . [[step5]]Verify that there are no data LIFs remaining on node2 by entering the following command and examining the output:

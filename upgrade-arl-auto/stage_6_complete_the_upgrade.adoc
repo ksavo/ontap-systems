@@ -19,4 +19,4 @@ summary: During stage 6, ensure that the new nodes are set up correctly.
 // .For MetroCluster FC configuration
 //
 // You must replace...
-include::../_include/ru_stage6_overview.adoc[]
+include::../_include/ru_auto_stage6_overview.adoc[]

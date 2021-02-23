@@ -11,7 +11,3 @@ During stage 6, ensure that the new nodes are set up correctly. If one of the ne
 .For MetroCluster FC configuration
 
 For MetroCluster FC configuration, you must replace the disaster recovery/failover site nodes as soon as possible. Mismatch in controller models within a MetroCluster is not supported because controller model mismatch can cause disaster recovery mirroring to go offline. Use the command -`skip-metrocluster-check true` option to bypass MetroCluster checks when you are replacing nodes at second site.
-
-// This reuse file is used in the following adoc files:
-// upgrade-arl-auto-app\stage_6_completing_the_upgrade_overview.adoc
-// upgrade-arl-auto\stage_6_complete_the_upgrade.adoc

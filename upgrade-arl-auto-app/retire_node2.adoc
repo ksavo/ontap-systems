@@ -19,5 +19,5 @@ summary: To retire node2, you need to shut node2 down properly and remove it fro
 //
 
 [.lead]
-include::../_include/ru_app_retire_node2.adoc[]
+include::../_include/ru_auto_retire_node2.adoc[]
 // 10 DEC 2020, thomi, checked

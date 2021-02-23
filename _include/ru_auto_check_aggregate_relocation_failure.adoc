@@ -15,7 +15,3 @@ The `storage aggregate relocation show` command shows you which aggregates were 
 +
 * Take the appropriate corrective action, depending on the output of the `storage aggregate relocation show` command and the output of the EMS message.
 * Force relocation of the aggregate or aggregates by using the `override-vetoes` option or the `override-destination-checks` option of the `storage aggregate relocation start` command.
-
-// This reuse file is used in the following adoc files:
-// upgrade-arl-auto\aggregate_relocation_failures.adoc
-// upgrade-arl-auto-app\check_aggregate_relocation_failure.adoc

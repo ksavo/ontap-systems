@@ -78,7 +78,3 @@ The following shows an example of the command output:
                                64-bit
  -----------------------------------------------------------------
 ----
-
-// This reuse file is used in the following adoc files:
-// upgrade-arl-auto\set_fc_or_uta_uta2_config_on_node3.adoc
-// upgrade-arl-auto-app\set_fc_or_uta_uta2_config_on_node3.adoc

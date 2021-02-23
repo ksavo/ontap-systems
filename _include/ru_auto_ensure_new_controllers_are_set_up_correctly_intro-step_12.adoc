@@ -95,7 +95,3 @@ You might want to compare the output with the output that you captured in the se
 . If NetApp Storage Encryption (NSE) was in use on the configuration and you set the `setenv bootarg.storageencryption.support` command to `true` with the `<kmip.init.maxwait>` variable `off` (in link:install_boot_node4.html#step27[Install and boot node4, Step 27]), you need to reset the variable:
 +
 `set diag; systemshell -node <nodename> -command sudo kenv -u -p kmip.init.maxwait`
-
-// This reuse file is used in the following adoc files:
-// upgrade-arl-auto\ensure_new_controllers_are_set_up_correctly.adoc
-// upgrade-arl-auto-app\ensuring_that_the_new_controllers_are_set_up_correctly.adoc

@@ -38,7 +38,7 @@ a|* If node3 has a UTA/UTA2 card or UTA/UTA2 onboard ports, go to the section li
 
 = Check and configure UTA/UTA2 ports on node3
 
-include::../_include/ru_set_fc_top_thru_step11.adoc[]
+include::../_include/ru_auto_check_config_uta_uta2_ports_node4_intro_step_11.adoc[]
 
 [start=12]
 . [[step12]]Take one of the following actions:

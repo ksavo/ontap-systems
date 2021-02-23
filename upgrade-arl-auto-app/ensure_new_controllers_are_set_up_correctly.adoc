@@ -19,7 +19,7 @@ summary: To ensure correct setup, you must enable the HA pair.
 //
 
 [.lead]
-include::../_include/ru_app_ensure_new_controllers_are_set_up_correctly_intro-step_12.adoc[]
+include::../_include/ru_auto_ensure_new_controllers_are_set_up_correctly_intro-step_12.adoc[]
 
 [start=13]
 . [[Step13]]Configure the SPs by using the following command on both nodes:
@@ -28,9 +28,5 @@ include::../_include/ru_app_ensure_new_controllers_are_set_up_correctly_intro-st
 +
 Refer to link:other_references.html[Other references] to link to the _System Administration Reference_ for information about the SPs and the _ONTAP 9.8 Commands: Manual Page Reference_ for detailed information about the system `service-processor network modify` command.
 
-include::../_include/ru_app_ensure_new_controllers_are_set_up_correctly_step_13_15.adoc[]
-
-.After you finish
-
-If Storage Encryption is enabled on node3 and node4, complete the section link:set_up_storage_encryption_new_module.html[Set up Storage Encryption on the new controller module]. Otherwise, complete the section link:decommission_old_system.html[Decommission the old system].
+include::../_include/ru_auto_ensure_new_controllers_are_set_up_correctly_step_14_end.adoc[]
 // 11 DEC 2020, thomi, checked

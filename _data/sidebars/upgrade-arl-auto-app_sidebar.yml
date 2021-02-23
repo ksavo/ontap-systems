@@ -89,15 +89,11 @@ entries:
         url: /decommission_old_system.html
       - title: "Resume SnapMirror operations"
         url: /resume_snapmirror_operations.html
-  - title: "Troubleshooting"
+  - title: "Troubleshoot"
     url: /troubleshoot.html
     entries:
       - title: "Aggregate relocation failures"
         url: /aggregate_relocation_failures.html
-      - title: "Check for aggregate relocation failure"
-        url: /check_aggregate_relocation_failure.html
-      - title: "Aggregates originally on node1 are owned by node4 after completion of the upgrade"
-        url: /aggregates_originally_on_node1_are_owned_by_node4_after_completion_of_the_upgrade.html
       - title: "Reboots, panics, or power cycles"
         url: /reboots_panics_or_power_cycles.html
       - title: "Issues that can arise in multiple stages of the procedure"

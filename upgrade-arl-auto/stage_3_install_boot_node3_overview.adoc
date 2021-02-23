@@ -13,7 +13,7 @@ summary: During Stage 3, you install and boot node3.
 :imagesdir: ./media/
 
 [.lead]
-include::../_include/ru_stage3.adoc[]
+include::../_include/ru_auto_stage3.adoc[]
 
 .Steps
 

@@ -69,7 +69,3 @@ a|In maintenance mode (option 5 at boot menu), modify the FC ports on node3 as n
 . [[step6]]After you enter the command, wait until the system stops at the boot environment prompt.
 
 . Select option `5` from the boot menu for maintenance mode.
-
-// This reuse file is used in the following adoc files:
-// upgrade-arl-auto\set_fc_or_uta_uta2_config_on_node3.adoc
-// upgrade-arl-auto-app\set_fc_or_uta_uta2_config_on_node3.adoc

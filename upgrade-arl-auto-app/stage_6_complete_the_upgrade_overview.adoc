@@ -19,5 +19,5 @@ summary: During stage 6, confirm that the new nodes are set up correctly.
 //
 
 [.lead]
-include::../_include/ru_stage6_overview.adoc[]
+include::../_include/ru_auto_stage6_overview.adoc[]
 // 11 DEC 2020, thomi, checked
