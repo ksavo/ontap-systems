@@ -1,3 +1,4 @@
+---
 sidebar: upgrade-arl-auto_sidebar
 permalink: upgrade-arl-auto/other_references.html
 keywords: other references, documentation, hardware universe, guides, documentation center, information
