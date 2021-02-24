@@ -16,7 +16,7 @@ Before you start, review the list of ARL guides in the tables below to verify th
 |Using "system controller replace" Commands to Upgrade Controller Hardware Running ONTAP 9.5 to 9.7
 |===
 
-[cols=*,options="header",cols="30,70"]
+[cols=2*,options="header",cols="30,70"]
 |===
 |If you’re running this ONTAP version…
 |To manually upgrade, use…
