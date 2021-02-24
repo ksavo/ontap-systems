@@ -1,4 +1,4 @@
-== [[cfcpnode3]]Configure FC ports on node3
+== Configure FC ports on node3
 
 If node3 has FC ports, either onboard or on an FC adapter, you must set port configurations on the node before you bring it into service because the ports are not preconfigured. If the ports are not configured, you might experience a disruption in service.
 
@@ -8,7 +8,7 @@ You must have the values of the FC port settings from node1 that you saved in th
 
 .About this task
 
-You can skip this section if your system does not have FC configurations. If your system has onboard UTA/UTA2 ports or a UTA/UTA2 card, you configure them in link:set_fc_or_uta_uta2_config_on_node3.html#check-and-configure-utauta2-ports-on-node3[Check and configure UTA/UTA2 ports on node3].
+You can skip this section if your system does not have FC configurations. If your system has onboard UTA/UTA2 ports or a UTA/UTA2 card, you configure them in <<Check and configure UTA/UTA2 ports on node3>>.
 
 *Important*: If your system has storage disks, enter the commands in this section at the cluster prompt. If you have a 'V-Series system' or have FlexArray Virtualization Software and are connected to storage arrays, enter commands in this section in Maintenance mode.
 

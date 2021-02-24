@@ -1,4 +1,4 @@
 .Choices
 
-* link:set_fc_or_uta_uta2_config_on_node3.html#cfcpnode3[Configure FC ports on node3]
-* link:set_fc_or_uta_uta2_config_on_node3.html#ccutauta2pnode3[Check and configure UTA/UTA2 ports on node3]
+* <<Configure FC ports on node3>>
+* <<Check and configure UTA/UTA2 ports on node3>>

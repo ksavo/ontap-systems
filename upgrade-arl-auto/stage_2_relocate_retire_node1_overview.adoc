@@ -5,7 +5,7 @@ keywords: relocate, retire, node1, aggregates, LIFs, node2, NAS
 summary: During Stage 2, you relocate the node1 aggregates and LIFs to node2, record node1 information, and then retire node1.
 ---
 
-= Stage 2: Relocate and retire node1
+= Stage 2. Relocate and retire node1
 :hardbreaks:
 :nofooter:
 :icons: font

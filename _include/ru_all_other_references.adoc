@@ -1,6 +1,6 @@
 When performing the procedures in this guide, you  might need to refer to other reference guides or go to other websites.
 
-
+== Other reference guides
 Documents specific to this upgrade are listed in the table below.
 
 [cols="40,60"]
@@ -10,15 +10,23 @@ Documents specific to this upgrade are listed in the table below.
 |Describes how to quickly upgrade controller hardware in a cluster by moving storage or volumes. Also describes how to convert a supported model to a disk shelf.
 |link:https://docs.netapp.com/ontap-9/topic/com.netapp.doc.vs-irrg/home.html[FlexArray Virtualization Installation Requirements and Reference]
 |Contains cabling instructions and other information for FlexArray Virtualization systems.
-|Installation and Setup Instructions for the model of the new nodes
-|Contains instructions for installing and cabling the new system.
 |link:https://docs.netapp.com/ontap-9/topic/com.netapp.doc.dot-mcc-mgmt-dr/home.html[MetroCluster Management and Disaster Recovery Guide]
 |Describes how to perform MetroCluster switchover and switchback operations, both in planned maintenance operations or in the event of a disaster.
-|link:https://docs.netapp.com/ontap-9/index.jsp?topic=%2Fcom.netapp.doc.dot-cm-cmpr-980%2Fhome.html[ONTAP 9.5 Commands: Manual Page Reference]
+|link:https://docs.netapp.com/ontap-9/index.jsp?topic=%2Fcom.netapp.doc.dot-cm-cmpr-900%2Fhome.html[ONTAP 9.0 Commands: Manual Page Reference]
+|Describes syntax and usage of supported ONTAP 9.0 commands.
+|link:https://docs.netapp.com/ontap-9/index.jsp?topic=%2Fcom.netapp.doc.dot-cm-cmpr-910%2Fhome.html[ONTAP 9.1 Commands: Manual Page Reference]
+|Describes syntax and usage of supported ONTAP 9.1 commands.
+|link:https://docs.netapp.com/ontap-9/index.jsp?topic=%2Fcom.netapp.doc.dot-cm-cmpr-920%2Fhome.html[ONTAP 9.2 Commands: Manual Page Reference]
+|Describes syntax and usage of supported ONTAP 9.2 commands.
+|link:https://docs.netapp.com/ontap-9/index.jsp?topic=%2Fcom.netapp.doc.dot-cm-cmpr-930%2Fhome.html[ONTAP 9.3 Commands: Manual Page Reference]
+|Describes syntax and usage of supported ONTAP 9.3 commands.
+|link:https://docs.netapp.com/ontap-9/index.jsp?topic=%2Fcom.netapp.doc.dot-cm-cmpr-940%2Fhome.html[ONTAP 9.4 Commands: Manual Page Reference]
+|Describes syntax and usage of supported ONTAP 9.4 commands.
+|link:https://docs.netapp.com/ontap-9/index.jsp?topic=%2Fcom.netapp.doc.dot-cm-cmpr-950%2Fhome.html[ONTAP 9.5 Commands: Manual Page Reference]
 |Describes syntax and usage of supported ONTAP 9.5 commands.
-|link:https://docs.netapp.com/ontap-9/index.jsp?topic=%2Fcom.netapp.doc.dot-cm-cmpr-980%2Fhome.html[ONTAP 9.6 Commands: Manual Page Reference]
+|link:https://docs.netapp.com/ontap-9/index.jsp?topic=%2Fcom.netapp.doc.dot-cm-cmpr-960%2Fhome.html[ONTAP 9.6 Commands: Manual Page Reference]
 |Describes syntax and usage of supported ONTAP 9.6 commands.
-|link:https://docs.netapp.com/ontap-9/index.jsp?topic=%2Fcom.netapp.doc.dot-cm-cmpr-980%2Fhome.html[ONTAP 9.7 Commands: Manual Page Reference]
+|link:https://docs.netapp.com/ontap-9/index.jsp?topic=%2Fcom.netapp.doc.dot-cm-cmpr-970%2Fhome.html[ONTAP 9.7 Commands: Manual Page Reference]
 |Describes syntax and usage of supported ONTAP 9.7 commands.
 |link:https://docs.netapp.com/ontap-9/topic/com.netapp.doc.dot-cm-cmpr-980/home.html[ONTAP 9.8 Commands: Manual Page Reference]
 |Describes syntax and usage of supported ONTAP 9.8 commands.
@@ -28,39 +36,35 @@ Documents specific to this upgrade are listed in the table below.
 |Describes how to install and manage high-availability clustered configurations, including storage failover and takeover/giveback.
 |link:https://docs.netapp.com/ontap-9/topic/com.netapp.doc.dot-cm-vsmg/home.html[ONTAP 9 Logical Storage Management Guide]
 |Describes how to efficiently manage your logical storage resources, using volumes, FlexClone volumes, files and LUNs, FlexCache volumes, deduplication, compression, qtrees, and quotas.
-|link:https://docs.netapp.com/ontap-9/index.jsp?topic=%2Fcom.netapp.doc.dot-cm-cmpr-980%2Fhome.html[ONTAP 9 Network Management Guide for 9.7 and Earlier]
+|link:https://docs.netapp.com/ontap-9/topic/com.netapp.doc.dot-cm-nmg/home.html[ONTAP 9 Network Management Guide for 9.7 and Earlier]
 |Describes how to configure and manage physical and virtual network ports (VLANs and interface groups), LIFs, routing, and host-resolution services in clusters; optimize network traffic by load balancing; and monitor the cluster by using SNMP.
 |link:https://docs.netapp.com/us-en/ontap/networking-app/index.html[Network Management Guide for ONTAP 9.8 and Later]
 |Describes how to configure and manage physical and virtual network ports (VLANs and interface groups), LIFs, routing, and host-resolution services in clusters; optimize network traffic by load balancing; and monitor the cluster by using SNMP.
-|link:https://docs.netapp.com/ontap-9/index.jsp?topic=%2Fcom.netapp.doc.dot-cm-cmpr-980%2Fhome.html[ONTAP 9 SAN Administration Guide]
+|link:https://docs.netapp.com/ontap-9/topic/com.netapp.doc.dot-cm-sanag/home.html[ONTAP 9 SAN Administration Guide]
 |Describes how to configure and manage the NVMe, iSCSI, FCoE, and FC protocols for SAN environments.
-|link:https://docs.netapp.com/ontap-9/index.jsp?topic=%2Fcom.netapp.doc.dot-cm-cmpr-980%2Fhome.html[ONTAP 9 SAN Configuration Guide]
+|link:https://docs.netapp.com/ontap-9/topic/com.netapp.doc.dot-cm-sanconf/home.html[ONTAP 9 SAN Configuration Guide]
 |Contains information about FC and iSCSI topologies and wiring schemes.
-|ONTAP 9 Software Setup Guide
-|Describes how to set up and configure NetApp systems.
+|link:https://docs.netapp.com/ontap-9/topic/com.netapp.doc.dot-cm-ssg/home.html[ONTAP 9 Software Setup Guide]
+|Describes how to set up and configure ONTAP.
 |link:https://docs.netapp.com/ontap-9/topic/com.netapp.doc.dot-cm-ug-rdg/home.html[ONTAP 9 Upgrade and Revert/Downgrade Guide]
 |Contains instructions for downloading and upgrading ONTAP.
 |link:https://docs.netapp.com/ontap-9/topic/com.netapp.doc.dot-cm-sag/home.html[System Administration Reference]
 |Describes how to administer ONTAP systems, shows you how to use the CLI interface, how to access the cluster, how to manage nodes, and much more.
-|The appropriate disk shelf guide
-|Contains instructions for installing and monitoring disk shelves and replacing disk shelf devices.
+
 |Using "system controller replace" Commands to Upgrade Controller Hardware Running ONTAP 9.5 to ONTAP 9.7
-|Describes the aggregate relocation procedures needed to non-disruptively upgrade controllers running ONTAP 9.5 to ONTAP 9.7 by using "system controller replace" commands
+|Describes the aggregate relocation procedures needed to non-disruptively upgrade controllers running ONTAP 9.5 to ONTAP 9.7 by using "system controller replace" commands.
 |Using "system controller replace" Commands to Upgrade Controller Hardware Running ONTAP 9.8
-|Describes the aggregate relocation procedures needed to non-disruptively upgrade controllers running ONTAP 9.8 by using "system controller replace" commands
+|Describes the aggregate relocation procedures needed to non-disruptively upgrade controllers running ONTAP 9.8 by using "system controller replace" commands.
 |Using Aggregate Relocation to Manually Upgrade Controller Hardware Running ONTAP 9.7 and Earlier
-|description
+|Describes the aggregate relocation procedures needed to perform manual non-disruptive controller upgrades running ONTAP 9.7 or earlier.
 |Using Aggregate Relocation to Manually Upgrade Controller Hardware Running ONTAP 9.8 and Later
-|description
+|Describes the aggregate relocation procedures needed to perform manual non-disruptive controller upgrades running ONTAP 9.8 or later.
 |===
+
+== Other sites
 
 The link:https://mysupport.netapp.com[NetApp Support Site] Site also contains documentation about network interface cards (NICs) and other hardware that you might use with your system. It also contains the link:https://hwu.netapp.com[Hardware Universe], which provides information about the hardware that the new system supports.
 
 See the link:https://docs.netapp.com/ontap-9/index.jsp[ONTAP 9 Documentation Center] to access ONTAP 9 product documentation.
 
-
-// This reuse file is used in the following adoc files:
-// --upgrade-arl-auto-app/other_references.adoc
-// --upgrade-arl-auto/other_references.adoc
-// --upgrade-arl-manual-app/other_references.adoc
-// --upgrade-arl-manual/other_references.adoc
+See the _NetApp Support Site_ to link to the link:https://mysupport.netapp.com/site/tools[Active IQ Config Advisor] tool.
