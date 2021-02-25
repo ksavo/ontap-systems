@@ -42,7 +42,7 @@ entries:
       - title: "Prepare for netboot"
         url: /prepare_for_netboot.html
   - title: "Stage 3 Install and boot node3"
-    url: /stage_3_install_and_boot_node3_overview.html
+    url: /stage_3_install_boot_node3_overview.html
     entries:
       - title: "Install and boot node3"
         url: /install_boot_node3.html
@@ -77,8 +77,6 @@ entries:
   - title: "Stage 6 Complete the upgrade"
     url: /stage_6_complete_the_upgrade_overview.html
     entries:
-      - title: "Complete the upgrade for MetroCluster FC configuration"
-        url: /complete_upgrade_metrocluster_fc_configuration.html
       - title: "Ensure that the new controllers are set up correctly"
         url: /ensure_new_controllers_are_set_up_correctly.html
       - title: "Set up Storage Encryption on the new controller module"

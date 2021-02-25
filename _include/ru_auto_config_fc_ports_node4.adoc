@@ -8,7 +8,7 @@ You must have the values of the FC port settings from node2 that you saved in th
 
 .About this task
 
-You can skip this section if your system does not have FC configurations. If your system has onboard UTA/UTA2 ports or a UTA/UTA2 adapter, you configure them in link:set_fc_or_uta_uta2_config_node4.html#check-and-configure-utauta2-ports-on-node4[Check and configure UTA/UTA2 ports on node4].
+You can skip this section if your system does not have FC configurations. If your system has onboard UTA/UTA2 ports or a UTA/UTA2 adapter, you configure them in <<Check and configure UTA/UTA2 ports on node4>>.
 
 *Important*: If your system has storage disks, you must enter the commands in this section at the cluster prompt. If you have a V-Series system or a system with FlexArray Virtualization Software connected to storage arrays, you enter commands in this section in Maintenance mode.
 

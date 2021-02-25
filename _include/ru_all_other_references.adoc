@@ -12,7 +12,8 @@ Documents specific to this upgrade are listed in the table below.
 |Contains cabling instructions and other information for FlexArray Virtualization systems.
 |link:https://docs.netapp.com/ontap-9/topic/com.netapp.doc.dot-mcc-mgmt-dr/home.html[MetroCluster Management and Disaster Recovery Guide]
 |Describes how to perform MetroCluster switchover and switchback operations, both in planned maintenance operations or in the event of a disaster.
-|link:https://docs.netapp.com/ontap-9/index.jsp?topic=%2Fcom.netapp.doc.dot-cm-cmpr-900%2Fhome.html[ONTAP 9.0 Commands: Manual Page Reference]
+|link:https://docs.netapp.com/ontap-9/topic/com.netapp.doc.dot-mcc-upgrade/home.html[MetroCluster Upgrade, Transition, and Expansion Guide]
+|Describes how to perform MetroCluster switchover and switchback operations, both in planned maintenance operations or in the event of a disaster.|link:https://docs.netapp.com/ontap-9/index.jsp?topic=%2Fcom.netapp.doc.dot-cm-cmpr-900%2Fhome.html[ONTAP 9.0 Commands: Manual Page Reference]
 |Describes syntax and usage of supported ONTAP 9.0 commands.
 |link:https://docs.netapp.com/ontap-9/index.jsp?topic=%2Fcom.netapp.doc.dot-cm-cmpr-910%2Fhome.html[ONTAP 9.1 Commands: Manual Page Reference]
 |Describes syntax and usage of supported ONTAP 9.1 commands.
@@ -38,7 +39,7 @@ Documents specific to this upgrade are listed in the table below.
 |Describes how to efficiently manage your logical storage resources, using volumes, FlexClone volumes, files and LUNs, FlexCache volumes, deduplication, compression, qtrees, and quotas.
 |link:https://docs.netapp.com/ontap-9/topic/com.netapp.doc.dot-cm-nmg/home.html[ONTAP 9 Network Management Guide for 9.7 and Earlier]
 |Describes how to configure and manage physical and virtual network ports (VLANs and interface groups), LIFs, routing, and host-resolution services in clusters; optimize network traffic by load balancing; and monitor the cluster by using SNMP.
-|link:https://docs.netapp.com/us-en/ontap/networking-app/index.html[Network Management Guide for ONTAP 9.8 and Later]
+|link:https://docs.netapp.com/us-en/ontap/networking-app/index.html[ONTAP 9.8 Network Management Guide]
 |Describes how to configure and manage physical and virtual network ports (VLANs and interface groups), LIFs, routing, and host-resolution services in clusters; optimize network traffic by load balancing; and monitor the cluster by using SNMP.
 |link:https://docs.netapp.com/ontap-9/topic/com.netapp.doc.dot-cm-sanag/home.html[ONTAP 9 SAN Administration Guide]
 |Describes how to configure and manage the NVMe, iSCSI, FCoE, and FC protocols for SAN environments.
