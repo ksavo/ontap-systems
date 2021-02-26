@@ -1,6 +1,6 @@
 . Take the following actions on one of the new nodes:
 
-.. Enter advanced privilege level by using the following command:
+.. Enter advanced privilege level:
 +
 `set -privilege advanced`
 
@@ -11,11 +11,11 @@
 * Enter `medium` if the system will have workloads in which 50% to 75% of the operations will be 4 KB or smaller.
 * Enter `low` if the system will have workloads in which 75% to 100% of the operations will be 4 KB or smaller.
 +
-.. Return to the admin level by using the following command:
+.. Return to the admin level:
 +
 `set -privilege admin`
 .. Reboot the system to ensure that the changes take effect.
-. If you want to set up a switchless cluster on the new nodes, follow the instructions in _Transitioning to a two-node switchless cluster_ on the NetApp Support Site.
+. If you want to set up a switchless cluster on the new nodes, refer to link:other_references.html[Other references] to link to the _NetApp Support Site_ and follow the instructions in _Transitioning to a two-node switchless cluster_.
 
 .After you finish
 

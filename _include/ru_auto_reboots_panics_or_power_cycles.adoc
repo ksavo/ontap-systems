@@ -31,7 +31,7 @@ When node1 enters the `waiting for giveback` state, node2 gives back all of the 
 
 .Steps
 
-. After node1 is booted up, all the non-root aggregates of node1 have moved back to node1. You must perform a manual aggregate relocation of the aggregates from node1 to node2 by using the following command:
+. After node1 is booted up, all the non-root aggregates of node1 have moved back to node1. You must perform a manual aggregate relocation of the aggregates from node1 to node2:
 `storage aggregate relocation start -node node1 -destination node2 -aggregate-list * - ndocontroller-upgrade true`
 
 . Continue with the node-pair upgrade procedure.

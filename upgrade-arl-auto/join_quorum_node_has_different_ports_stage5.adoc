@@ -49,11 +49,11 @@ network port modify -node node3 -port e1b -ipspace Cluster -mtu 9000
 
 . Migrate the cluster LIFs to the new ports, once for each LIF, using the following command:
 +
-`network interface migrate -vserver Cluster -lif lif_name -source-node node3 destination-node node3 -destination-port port_name`
+`network interface migrate -vserver Cluster -lif <lif_name> -source-node node3 destination-node node3 -destination-port <port_name>`
 
 . Modify the home port of the cluster LIFs as follows:
 +
-`network interface modify -vserver Cluster -lif lif_name –home-port port_name`
+`network interface modify -vserver Cluster -lif <lif_name> –home-port <port_name>`
 
 . If the cluster ports are not in the Cluster broadcast-domain, add them with the following command:
 +
@@ -74,13 +74,13 @@ network port modify -node node3 -port e1b -ipspace Cluster -mtu 9000
 `network interface show -fields home-node,home-port`
 .. Display the broadcast domain containing this port:
 +
-`network port broadcast-domain show -ports node_name:port_name`
+`network port broadcast-domain show -ports <node_name:port_name>`
 
 .. Add or remove ports from broadcast domains:
 +
 `network port broadcast-domain add-ports network port broadcast-domain remove-port`
 .. Modify a home port of a LIF:
 +
-`network interface modify -vserver vserver -lif lif_name –home-port port_name`
+`network interface modify -vserver <vserver-name> -lif <lif_name> –home-port <port_name>`
 +
 Adjust the intercluster broadcast domains and migrate the intercluster LIFs, if necessary. The data LIFs remain unchanged.

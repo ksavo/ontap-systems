@@ -30,7 +30,7 @@ node4    node3    true       Connected to node3
 +
 `network interface show`
 +
-If neither node3 or node4 owns data LIFs home-owned by other nodes in the cluster, revert the data LIFs to their home owner by using the following command:
+If neither node3 or node4 owns data LIFs home-owned by other nodes in the cluster, revert the data LIFs to their home owner:
 +
 `network interface revert`
 

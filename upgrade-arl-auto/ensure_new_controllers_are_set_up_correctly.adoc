@@ -18,7 +18,7 @@ summary: To ensure correct setup, you must enable the HA pair.
 include::../_include/ru_auto_ensure_new_controllers_are_set_up_correctly_intro-step_12.adoc[]
 
 [start=13]
-. [[step13]]Configure the SPs by performing the following command on both nodes:
+. [[step13]]Configure the SPs by using the following command on both nodes:
 +
 `system service-processor network modify -node node_name`
 +

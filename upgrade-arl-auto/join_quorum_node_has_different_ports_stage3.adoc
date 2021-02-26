@@ -34,8 +34,7 @@ node   port broadcast-domain
 ------ ---- ----------------
 node3  e1a  Cluster
 ----
-. Add the correct ports to the Cluster broadcast domain by entering the following command and
-checking its output:
+. Add the correct ports to the Cluster broadcast domain by entering the following command and checking its output:
 +
 `network port modify -node -port -ipspace Cluster -mtu 9000`
 +
@@ -52,8 +51,7 @@ network port modify -node node3 -port e1b -ipspace Cluster -mtu 9000
 +
 `network interface modify -vserver Cluster -lif <lif_name> –home-port <port_name>`
 
-. If the cluster ports are not in the Cluster broadcast-domain, add them by using the following
-command:
+. If the cluster ports are not in the Cluster broadcast-domain, add them by using the following command:
 +
 `network port broadcast-domain add-ports -ipspace Cluster -broadcastdomain Cluster - ports node:port`
 

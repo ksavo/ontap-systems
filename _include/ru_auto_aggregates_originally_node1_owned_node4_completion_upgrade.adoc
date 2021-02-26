@@ -23,13 +23,13 @@ To identify aggregates that were not correctly relocated, refer to the list of a
 
 . Compare the output of Step 1 with the output you captured for node1 in the section link:prepare_nodes_for_upgrade.html[Prepare the nodes for upgrade] and note any aggregates that were not correctly relocated.
 
-. [[Step3]]Relocate the aggregates left behind on node4 by entering the following command:
+. [[Step3]]Relocate the aggregates left behind on node4:
 +
 `storage aggregate relocation start -node <node4> -aggr <aggr_node_1> -destination <node3>`
 +
 Do not use the `-ndo-controller-upgrade` parameter during this relocation.
 
-. Enter the following command to verify that node3 is now the home owner of the aggregates:
+. Verify that node3 is now the home owner of the aggregates:
 +
 `storage aggregate show -aggregate aggr1,aggr2,aggr3... -fields home-name`
 +

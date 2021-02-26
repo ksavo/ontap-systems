@@ -13,7 +13,7 @@ summary: After you confirm that node3 is in quorum and can communicate with node
 :imagesdir: ./media/
 
 [.lead]
-After you confirm that node3 is in quorum and can communicate with node2, you must re-create node1's VLANs, ifgrps, and broadcast domains on node3. You must also add the node3 ports to the newly re-created broadcast domains.
+After you confirm that node3 is in quorum and can communicate with node2, you must re-create node1's VLANs, interface groups, and broadcast domains on node3. You must also add the node3 ports to the newly re-created broadcast domains.
 
 .About this task
 
