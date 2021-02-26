@@ -16,7 +16,7 @@ summary: You must ensure that the node successfully joins the quorum.
 
 // This is section for Stage 5.  There is a similar topic for Stage 3.
 // pge 63 and a bit on 64 in PDF
-The node with the new controller boots and attempts to join the cluster automatically at first; however if the new node has a different set of network ports, you must perform the following steps to ensure that the node successfully joins the quorum.
+The node with the new controller boots and attempts to join the cluster automatically at first; however, if the new node has a different set of network ports, you must perform the following steps to ensure that the node successfully joins the quorum.
 
 .About this task
 

@@ -13,7 +13,7 @@ summary: If the new node has a different set of network ports, you must ensure t
 :imagesdir: ./media/
 
 [.lead]
-The node with the new controller boots and attempts to join the cluster automatically at first; however if the new node has a different set of network ports, you must perform the following steps to ensure that the node successfully joins the quorum.
+The node with the new controller boots and attempts to join the cluster automatically at first; however, if the new node has a different set of network ports, you must perform the following steps to ensure that the node successfully joins the quorum.
 
 .About this task
 
@@ -72,7 +72,7 @@ command:
 `network interface show -fields home-node,home-port`
 .. Display the broadcast domain containing this port:
 +
-`network port broadcast-domain show -ports <node_name:port_name>` 
+`network port broadcast-domain show -ports <node_name:port_name>`
 .. Add or remove ports from broadcast domains:
 `network port broadcast-domain add-ports network port broadcast-domain remove-port`
 .. Modify a home port of a LIF:
