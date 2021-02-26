@@ -38,19 +38,18 @@ The following tables shows the supported model matrix for the controller upgrade
 |AFF8020, AFF8040, AFF8060, AFF8080
 |AFF A300, AFF A400, AFF A700*, AFF A800**
 |FAS8200
-|FAS8700, FAS9000, FAS8300***
+|FAS8700, FAS9000, FAS8300\****
 |AFF A300
 |AFF A700*, AFF A800\\***, AFF A400\****
 |===
 
-*ARL automated upgrade for the AFF A700 platform is supported from ONTAP 9.7.
+*ARL automated upgrade for the AFF A700 platform is supported from ONTAP 9.7P2.
 
 **If you are updating to an AFF A800 or a system that supports internal and external disks, you must follow specific instructions for the root aggregate on internal NVMe disks. See link:set_fc_or_uta_uta2_config_on_node3.html#step14[Check and configure UTA/UTA2 ports on node3, Step 14] and link:set_fc_or_uta_uta2_config_node4.html#step14[Check and configure UTA/UTA2 ports on node4, Step 14].
 
 ***ARL automated upgrade for AFF A300 to AFF A800 platform is supported from ONTAP 9.7P5.
 
-\****ARL automated upgrade from AFF A300 to AFF A400 and FAS8200 to FAS8300
- platform is supported from ONTAP 9.7P8.
+\****ARL automated upgrade from AFF A300 to AFF A400 and FAS8200 to FAS8300 platform is supported from ONTAP 9.7P8.
 
 NOTE: If your controller upgrade model combination is not in the table, contact technical support.
 

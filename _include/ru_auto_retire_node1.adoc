@@ -2,11 +2,11 @@ To retire node1, you resume the automated operation to disable the HA pair with 
 
 .Steps
 
-. Resume the operation by using the following command:
+. Resume the operation:
 +
 `system controller replace resume`
 
-. Verify that node1 has been halted by using the following command:
+. Verify that node1 has been halted:
 +
 `system controller replace show-details`
 

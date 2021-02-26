@@ -20,7 +20,7 @@ include::../_include/ru_auto_overview_arl_workflow_top.adoc[]
 |===
 | Stage | Steps
 
-|Stage 1: Prepare for the upgrade
+|Stage 1. Prepare for the upgrade
 a|. Run prechecks to verify that the operation can be performed.
 
 . Prepare for netbooting (optional).
@@ -31,7 +31,7 @@ Aggregate ownership at the end of Stage 1:
 
 * Node2 is the home owner and current owner of the node2 aggregates.
 
-|Stage 2: Relocate and retire node1
+|Stage 2. Relocate and retire node1
 a|. Move non-root aggregates from node1 to node2.
 
 . Move non-SAN data LIFs owned by node1 to node2.
@@ -44,7 +44,7 @@ Aggregate ownership at the end of Stage 2:
 
 * Node2 is the home owner and current owner of node2 aggregates.
 
-|Stage 3: Install and boot node3
+|Stage 3. Install and boot node3
 a|. Install and boot node3.
 
 . Set the FC or CNA configuration.
@@ -63,7 +63,7 @@ Aggregate ownership at the end of Stage 3:
 
 * Node2 is the home owner and current owner of node2 aggregates.
 
-|Stage 4: Relocate and retire node2
+|Stage 4. Relocate and retire node2
 a|. Relocate non-root aggregates from node2 to node3.
 
 . Move non-SAN data LIFs owned by node2 to node 3.
@@ -78,7 +78,7 @@ Aggregate ownership at the end of Stage 4:
 
 * Node3 is the current owner of node2 aggregates.
 
-|Stage 5: Install and boot node4
+|Stage 5. Install and boot node4
 a|. Install and boot node4.
 
 . Set the FC or CNA configuration on node4.
@@ -95,7 +95,7 @@ Aggregate ownership at the end of Stage 5:
 
 * Node4 is the home owner and current owner of aggregates that originally belonged to node2.
 
-|Stage 6: Complete the upgrade
+|Stage 6. Complete the upgrade
 a|. Verify the system is set up correctly.
 
 . Set up Storage Encryption on the new controller module.

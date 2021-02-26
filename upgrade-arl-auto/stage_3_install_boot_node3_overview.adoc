@@ -13,7 +13,7 @@ summary: During Stage 3, you install and boot node3.
 :imagesdir: ./media/
 
 [.lead]
-include::../_include/ru_auto_stage3.adoc[]
+During Stage 3, you install and boot node3, map the cluster and node-management ports from node1 to node3, and verify the node3 installation. Non-SAN data LIFs and non-root aggregates belonging to node1 are moved from node2 to node3.
 
 .Steps
 

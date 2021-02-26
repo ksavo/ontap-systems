@@ -1,4 +1,4 @@
-=== Correct aggregate ownership if an ARL precheck fails
+== Correct aggregate ownership if an ARL precheck fails
 
 If the Aggregate Status Check fails, you must return aggregates owned by the partner node to the home owner node and initiate the precheck process again.
 
@@ -10,7 +10,7 @@ If the Aggregate Status Check fails, you must return aggregates owned by the par
 
 . Verify that neither node1 nor node2 still owns aggregates for which it is the current owner (but not the home owner):
 +
-`storage aggregate show -nodes <node_name> -is-home false -fields owner-<name>,home- name,state`
+`storage aggregate show -nodes <node_name> -is-home false -fields owner-name,home- name,state`
 +
 The following example shows the output of the command when a node is both the current owner and home owner of aggregates:
 +

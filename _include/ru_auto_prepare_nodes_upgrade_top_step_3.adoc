@@ -57,7 +57,7 @@ If the models are not supported, the task fails.
 |Image Version Check
 |Checks that the nodes being replaced run the same version of ONTAP.
 If the ONTAP image versions are different, the task fails.
-The new nodes must have the same version of ONTAP 9.8 installed on them that is installed on the original nodes. If the new nodes have a different version of ONTAP installed, you need to netboot the new controllers after you install them. For instructions to upgrade ONTAP, refer to link:other_references.html[Other references] to link to the _ONTAP 9 Upgrade and Revert/Downgrade Guide_.
+The new nodes must have the same version of ONTAP 9.x installed on them that is installed on the original nodes. If the new nodes have a different version of ONTAP installed, you need to netboot the new controllers after you install them. For instructions on how to upgrade ONTAP, refer to link:other_references.html[Other references] to link to the _ONTAP 9 Upgrade and Revert/Downgrade Guide_.
 |HA Status Check
 |Checks if both the nodes being replaced are in a high- availability (HA) pair configuration.
 If storage failover is not enabled for the controllers, the task fails.

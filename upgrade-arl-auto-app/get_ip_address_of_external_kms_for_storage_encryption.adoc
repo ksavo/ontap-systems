@@ -21,7 +21,7 @@ summary: After upgrading, you must immediately configure Storage Encryption.
 [.lead]
 include::../_include/ru_auto_get_ip_address_external_key_management_server_encryption.adoc[]
 
-=== Manage authentication using KMIP servers
+== Manage authentication using KMIP servers
 
 With ONTAP 9.8, you can use Key Management Interoperability Protocol (KMIP) servers to manage authentication keys.
 

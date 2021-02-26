@@ -19,4 +19,18 @@ summary: Before starting upgrade on a Fabric MetroCluster configuration.
 //
 
 [.lead]
+Before starting an upgrade on a Fabric MetroCluster configuration, you must check the health of the MetroCluster configuration to verify proper operation.
+
+.Steps
+
+. Verify that the MetroCluster components are healthy:
++
+`metrocluster check run`
++
+....
+metrocluster_siteA::*> metrocluster check run
+....
++
+The operation runs in the background.
+
 include::../_include/ru_auto_verify_health_metrocluster_configuration.adoc[]

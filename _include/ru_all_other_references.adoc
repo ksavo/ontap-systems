@@ -1,11 +1,15 @@
 When performing the procedures in this guide, you  might need to refer to other reference guides or go to other websites.
 
+* <<Other reference guides>>
+* <<Other sites>>
+
 == Other reference guides
 Documents specific to this upgrade are listed in the table below.
 
 [cols="40,60"]
 |===
 |Document |Contents
+
 |link:https://docs.netapp.com/platstor/topic/com.netapp.doc.hw-upgrade-controller/home.html[Controller Hardware Upgrade Express Guide]
 |Describes how to quickly upgrade controller hardware in a cluster by moving storage or volumes. Also describes how to convert a supported model to a disk shelf.
 |link:https://docs.netapp.com/ontap-9/topic/com.netapp.doc.vs-irrg/home.html[FlexArray Virtualization Installation Requirements and Reference]
@@ -13,7 +17,8 @@ Documents specific to this upgrade are listed in the table below.
 |link:https://docs.netapp.com/ontap-9/topic/com.netapp.doc.dot-mcc-mgmt-dr/home.html[MetroCluster Management and Disaster Recovery Guide]
 |Describes how to perform MetroCluster switchover and switchback operations, both in planned maintenance operations or in the event of a disaster.
 |link:https://docs.netapp.com/ontap-9/topic/com.netapp.doc.dot-mcc-upgrade/home.html[MetroCluster Upgrade, Transition, and Expansion Guide]
-|Describes how to perform MetroCluster switchover and switchback operations, both in planned maintenance operations or in the event of a disaster.|link:https://docs.netapp.com/ontap-9/index.jsp?topic=%2Fcom.netapp.doc.dot-cm-cmpr-900%2Fhome.html[ONTAP 9.0 Commands: Manual Page Reference]
+|Provides procedures for upgrading controller and storage models in the MetroCluster configuration, transitioning from a MetroCluster FC to a MetroCluster IP configuration, and expanding the MetroCluster configuration by adding additional nodes.
+|link:https://docs.netapp.com/ontap-9/index.jsp?topic=%2Fcom.netapp.doc.dot-cm-cmpr-900%2Fhome.html[ONTAP 9.0 Commands: Manual Page Reference]
 |Describes syntax and usage of supported ONTAP 9.0 commands.
 |link:https://docs.netapp.com/ontap-9/index.jsp?topic=%2Fcom.netapp.doc.dot-cm-cmpr-910%2Fhome.html[ONTAP 9.1 Commands: Manual Page Reference]
 |Describes syntax and usage of supported ONTAP 9.1 commands.
@@ -56,9 +61,9 @@ Documents specific to this upgrade are listed in the table below.
 |Describes the aggregate relocation procedures needed to non-disruptively upgrade controllers running ONTAP 9.5 to ONTAP 9.7 by using "system controller replace" commands.
 |link:https://docs.netapp.com/us-en/ontap-systems/upgrade-arl-auto-app/[Using "system controller replace" Commands to Upgrade Controller Hardware Running ONTAP 9.8]
 |Describes the aggregate relocation procedures needed to non-disruptively upgrade controllers running ONTAP 9.8 by using "system controller replace" commands.
-|link:https://docs.netapp.com/us-en/ontap-systems/upgrade-arl-manual/[Using Aggregate Relocation to Manually Upgrade Controller Hardware Running ONTAP 9.7 and Earlier]
+|link:https://docs.netapp.com/us-en/ontap-systems/upgrade-arl-manual/[Using Aggregate Relocation to Manually Upgrade Controller Hardware Running ONTAP 9.7 or Earlier]
 |Describes the aggregate relocation procedures needed to perform manual non-disruptive controller upgrades running ONTAP 9.7 or earlier.
-|link:https://docs.netapp.com/us-en/ontap-systems/upgrade-arl-manual-app/[Using Aggregate Relocation to Manually Upgrade Controller Hardware Running ONTAP 9.8 and Later]
+|link:https://docs.netapp.com/us-en/ontap-systems/upgrade-arl-manual-app/[Using Aggregate Relocation to Manually Upgrade Controller Hardware Running ONTAP 9.8 or Later]
 |Describes the aggregate relocation procedures needed to perform manual non-disruptive controller upgrades running ONTAP 9.8 or later.
 |===
 
