@@ -134,7 +134,7 @@ Login:
 ...
 ----
 
-. [[step16]]If the system goes into a rebott loop with the message `no disks found`, this is because it has reset the ports back to the target mode and therefore is unable to see any disks.  Continue with <<step17,Step 17>> to <<step22,Step 22>> to resolve this.
+. [[step16]]If the system goes into a reboot loop with the message `no disks found`, this is because it has reset the ports back to the target mode and therefore is unable to see any disks.  Continue with <<step17,Step 17>> to <<step22,Step 22>> to resolve this.
 
 include::../_include/ru_auto_check_config_uta_uta2_ports_node3_steps_17_23.adoc[]
 // top section of page 31 in PDF

@@ -58,9 +58,9 @@ NOTE: System records in a PROM whether they are in an HA pair or stand-alone con
 
 . If the controller and chassis are not configured as HA, use the following commands to correct the configuration:
 +
-`ha-config modify controller`
+`ha-config modify controller ha`
 +
-`ha ha-config modify chassis ha`
+`ha-config modify chassis ha`
 +
 If you have a MetroCluster configuration, use the following commands to modify the controller and chassis:
 +
