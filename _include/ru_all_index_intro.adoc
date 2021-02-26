@@ -21,7 +21,13 @@ There are two ARL methods for upgrading your controller hardware, by using syste
 |If you’re running this ONTAP version…
 |To manually upgrade, use…
 |9.8 or later
+<<<<<<< HEAD
 |link:https://docs.netapp.com/us-en/ontap-systems/upgrade-arl-manual-app/[Using Aggregate Relocation to Manually Upgrade Controller Hardware Running ONTAP 9.8 or Later]
 |9.0 to 9.7
 |link:https://docs.netapp.com/us-en/ontap-systems/upgrade-arl-manual/[Using Aggregate Relocation to Manually Upgrade Controller Hardware Running ONTAP 9.7 or Earlier]
+=======
+|link:https://docs.netapp.com/us-en/ontap-systems/upgrade-arl-manual-app/[Using Aggregate Relocation to Manually Upgrade Controller Hardware Running ONTAP 9.8 and Later]
+|9.0 to 9.7
+|link:https://docs.netapp.com/us-en/ontap-systems/upgrade-arl-manual/[Using Aggregate Relocation to Manually Upgrade Controller Hardware Running ONTAP 9.7 and Earlier]
+>>>>>>> fed26d72e3d1a44b3fe94c50698fbbb68036b8e5
 |===
