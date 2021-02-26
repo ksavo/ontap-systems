@@ -1,11 +1,11 @@
 ---
 sidebar: upgrade-arl-auto_sidebar
 permalink: upgrade-arl-auto/retire_node1.html
-keywords: retire, node1, disable, HA pair, halt
-summary: To retire node1, resume the automated operation to disable the HA pair with node2 and shut node1 down properly.
+keywords: retire, node2
+summary: To retire node2, you need to shut node2 down properly and remove it from the rack or chassis.
 ---
 
-= Retire node1
+= Retire node2
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -14,4 +14,3 @@ summary: To retire node1, resume the automated operation to disable the HA pair 
 
 [.lead]
 include::../_include/ru_auto_retire_node1.adoc[]
-// middle section of pg 24 of pdf

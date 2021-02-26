@@ -111,17 +111,17 @@ network port modify -node node4 -port e1b -ipspace Cluster -mtu 9000
 
 .. Migrate the cluster LIFs to the new ports, once for each LIF:
 +
-`network interface migrate -vserver Cluster -lif <LIF_name> -source-node <node3> -destination-node <node3> -destination-port <port_name>`
+`network interface migrate -vserver Cluster -lif <lif_name> -source-node <node3> -destination-node <node3> -destination-port <port_name>`
 
 .. Modify the home port of the cluster LIFs:
 +
-`network interface modify -vserver Cluster -lif <LIF_name> –home-port <port_name>`
+`network interface modify -vserver Cluster -lif <lif_name> –home-port <port_name>`
 
 .. Remove the old ports from the Cluster broadcast domain:
 +
 `network port broadcast-domain remove-ports`
 +
-The following command removes port e0d on node3:
+The following command removes port "e0d" on node3:
 +
 `network port broadcast-domain remove-ports -ipspace Cluster -broadcast-domain Cluster ‑ports node3:e0d`
 

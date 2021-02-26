@@ -1,8 +1,8 @@
 ---
 sidebar: upgrade-arl-auto_sidebar
 permalink: upgrade-arl-auto/stage_2_relocate_retire_node1_overview.html
-keywords: relocate, retire, node1, aggregates, LIFs, node2, NAS
-summary: During Stage 2, you relocate the node1 aggregates and LIFs to node2, record node1 information, and then retire node1.
+keywords: Prepare nodes for upgrade, storage encryption, KMS, key management server,
+summary: During Stage 1, you must prepare the nodes for the upgrade and run a series of prechecks.
 ---
 
 = Stage 2. Relocate and retire node1
@@ -14,4 +14,3 @@ summary: During Stage 2, you relocate the node1 aggregates and LIFs to node2, re
 
 [.lead]
 include::../_include/ru_auto_stage_2_overview.adoc[]
-// top only of p.22 of PDF
