@@ -31,24 +31,23 @@ include::../_include/ru_auto_relocate_non_root_aggr_nas_lifs_from_node1_to_node2
 +
 `network port broadcast-domain remove-ports`
 
-. If any LIFs are down, set the administrative status of the LIFs to "up" by entering the following command, once for each LIF:
+. If any LIFs are down, set the administrative status of the LIFs to `up` by entering the following command, once for each LIF:
 +
-`network interface modify -vserver _Vserver_name -lif _LIF_name_`
-                          `-home-node _nodename_ -status-admin up`
+`network interface modify -vserver <vserver_name> -lif <LIF_name>-home-node <nodename> -status-admin up`
 
 . If you have interface groups or VLANs configured, complete the following substeps:
 
-.. If you have not already saved them, record VLAN and ifgrp information so you can recreate the VLANs and ifgrps on node3 after node3 is booted up.
+.. If you have not already saved them, record the VLAN and interface group information so you can recreate the VLANs and interface groups on node3 after node3 is booted up.
 
-.. Remove the VLANs from the interface groups by entering the following command:
+.. Remove the VLANs from the interface groups:
 +
-`network port vlan delete -node _nodename_ -port _ifgrp_ -vlan-id _VLAN_ID_`
+`network port vlan delete -node <nodename> -port <ifgrp> -vlan-id <VLAN_ID>`
 +
 NOTE: Follow the corrective action to resolve any errors that are suggested by the vlan delete command.
 
 .. Enter the following command and examine its output to see if there are any interface groups configured on the node:
 +
-`network port ifgrp show -node _nodename_ -ifgrp _ifgrp_name_ -instance`
+`network port ifgrp show -node <nodename> -ifgrp <ifgrp_name> -instance`
 +
 The system displays interface group information for the node as shown in the following example:
 +
@@ -67,4 +66,4 @@ Distribution Function: ip
 
 .. If any interface groups are configured on the node, record the names of those groups and the ports assigned to them, and then delete the ports by entering the following command, once for each port:
 +
-`network port ifgrp remove-port -node _nodename_ -ifgrp _ifgrp_name_ -port _netport_`
+`network port ifgrp remove-port -node <nodename> -ifgrp <ifgrp_name> -port <netport>`

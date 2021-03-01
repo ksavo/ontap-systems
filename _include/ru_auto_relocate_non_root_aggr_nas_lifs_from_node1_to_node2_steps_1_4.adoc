@@ -2,7 +2,7 @@ NOTE: The home owner for the aggregates and LIFs are not modified; only the curr
 
 .Steps
 
-. Resume the aggregate relocation and NAS data LIF move operations by using the following command:
+. Resume the aggregate relocation and NAS data LIF move operations:
 +
 `system controller replace resume`
 +
@@ -10,11 +10,11 @@ All the non-root aggregates and NAS data LIFs are migrated from node1 to node2.
 +
 The operation pauses to allow you to verify whether all node1 non-root aggregates and non-SAN data LIFs have been migrated to node2.
 
-. Check the status of the aggregate relocation and NAS data LIF move operations by using the following command:
+. Check the status of the aggregate relocation and NAS data LIF move operations:
 +
 `system controller replace show-details`
 
-. With the operation still paused, verify that all the non-root aggregates are online for their state on node2 by using the following command:
+. With the operation still paused, verify that all the non-root aggregates are online for their state on node2:
 +
 `storage aggregate show -node <node2> -state online -root false`
 +
@@ -42,4 +42,4 @@ If any volumes are offline on node2, bring them online by using the following co
 +
 `volume online -vserver <vserver-name> -volume <volume-name>`
 +
-The `<vserver-name>` to use with this command is found in the output of the previous volume show command.
+The `<vserver-name>` to use with this command is found in the output of the previous `volume show` command.
