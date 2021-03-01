@@ -17,7 +17,6 @@ During Stage 2, you relocate the node1 aggregates and LIFs to node2, record node
 
 .Steps
 
-. link:relocate_failed_vetoed_aggr.html[Relocate failed or vetoed aggregates].
 . link:relocate_non_root_aggr_and_nas_data_lifs_node1_node2.html[Relocate non-root aggregates and NAS data LIFs owned by node1 to node2]
 . link:relocate_failed_or_vetoed_aggr.html[Relocate failed or vetoed aggregates]
 . link:retire_node1.html[Retire node1]
