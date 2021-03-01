@@ -36,7 +36,7 @@ entries:
       - title: Relocate non-root aggregates and NAS data LIFs owned by node1 to node2
         url: /relocate_non_root_aggr_and_nas_data_lifs_node1_node2.html
       - title: Relocate failed or vetoed aggregates
-        url: /link:relocate_failed_or_vetoed_aggr.html
+        url: /relocate_failed_or_vetoed_aggr.html
       - title: "Retire node1"
         url: /retire_node1.html
       - title: Prepare for netboot

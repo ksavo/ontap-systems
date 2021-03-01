@@ -25,7 +25,7 @@ The relocation operation will have paused due to the error.
 
 . Relocate any failed or vetoed aggregates:
 +
-`storage aggregate relocation start -node node1 -destination node2 aggregate-list * -ndocontroller-upgrade true`
+`storage aggregate relocation start -node <node1> -destination <node2> aggregate-list * -ndocontroller-upgrade true`
 
 . When prompted, enter `y`.
 
