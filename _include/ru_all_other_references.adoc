@@ -1,9 +1,9 @@
-When performing the procedures in this guide, you  might need to refer to other reference guides or go to other websites.
+When performing the procedures in this guide, you might need to consult reference guides or go to reference websites.
 
-* <<Other reference guides>>
-* <<Other sites>>
+* <<Reference guides>>
+* <<Reference sites>>
 
-== Other reference guides
+== Reference guides
 Documents specific to this upgrade are listed in the table below.
 
 [cols="40,60"]
@@ -67,7 +67,7 @@ Documents specific to this upgrade are listed in the table below.
 |Describes the aggregate relocation procedures needed to perform manual non-disruptive controller upgrades running ONTAP 9.8 or later.
 |===
 
-== Other sites
+== Reference sites
 
 The link:https://mysupport.netapp.com[NetApp Support Site] Site also contains documentation about network interface cards (NICs) and other hardware that you might use with your system. It also contains the link:https://hwu.netapp.com[Hardware Universe], which provides information about the hardware that the new system supports.
 

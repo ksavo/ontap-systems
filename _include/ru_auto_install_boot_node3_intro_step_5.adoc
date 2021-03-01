@@ -25,7 +25,7 @@ NOTE: If you are upgrading to a system with both nodes in the same chassis, inst
 +
 Cable the following connections, using the _Installation and Setup Instructions_ or the _FlexArray Virtualization Installation Requirements and Reference_ for the node3 platform, the appropriate disk shelf guide, and the _ONTAP 9 High-Availability Configuration Guide_.
 +
-Refer to link:other_references.html[Other references] to link to the _FlexArray Virtualization Installation Requirements and Reference_ and the _ONTAP 9 High-Availability Configuration Guide_.
+Refer to link:other_references.html[References] to link to the _FlexArray Virtualization Installation Requirements and Reference_ and the _ONTAP 9 High-Availability Configuration Guide_.
 +
 * Console (remote management port)
 * Cluster ports
