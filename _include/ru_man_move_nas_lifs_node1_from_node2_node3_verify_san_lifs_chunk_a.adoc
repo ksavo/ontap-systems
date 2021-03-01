@@ -1,0 +1,56 @@
+Before you relocate aggregates from node2 to node3, you need to move the NAS data LIFs belonging to node1 that are currently on node2 from node2 to node3. You also need to verify the SAN LIFs on node3.
+
+.About this task
+
+Remote LIFs handle traffic to SAN LUNs during the upgrade procedure. Moving SAN LIFs is not necessary for cluster or service health during the upgrade. SAN LIFs are not moved unless they need to be mapped to new ports. You will verify that the LIFs are healthy and located on appropriate ports after you bring node3 online.
+
+.Steps
+
+. [[step1]]List all the NAS data LIFs not owned by node2 by entering the following command on either node and capturing the output:
++
+`network interface show -role data -curr-node <node2> -is-home false -home-node <node3>`
+
+. [[step2]]Take one of the following actions:
++
+[cols="60,40"]
+|===
+|If node1... |Then...
+
+|Had interface groups or VLANs configured
+|Go to <<step3,Step 3>>.
+|Did not have interface groups or VLANs configured
+|Skip Step 3 and go to <<step4,Step 4>>.
+|===
+
+. [[step3]]Perform the following substeps to migrate any NAS data LIFs hosted on interface groups and VLANs that were originally on node1 from node2 to node3:
+
+.. Migrate any data LIFs hosted on node2 that previously belonged to node1 on an interface group to a port on node3 that is capable of hosting LIFs on the same network by entering the following command, once for each LIF:
++
+`network interface migrate -vserver <Vserver_name> -lif <LIF_name> -destination-node <node3> –destination-port netport|ifgrp`
+
+.. Modify the home port and home node of the LIF in Substep (a) to the port and node currently hosting the LIFs by entering the following command, once for each LIF:
++
+`network interface modify -vserver <Vserver_name> -lif <LIF_name> -home-node <node3> -home-port netport|ifgrp`
+
+.. Migrate any data LIF hosted on node2 that previously belonged to node1 on a VLAN port to a port on node3 that is capable of hosting LIFs on the same network by entering the following command, once for each LIF:
++
+`network interface migrate -vserver <Vserver_name> -lif <LIF_name> -destination-node <node3> –destination-port netport|ifgrp`
+
+.. Modify the home port and home node of the LIFs in Substep (c) to the port and node currently hosting the LIFs by entering the following command, once for each LIF:
++
+`network interface modify -vserver <Vserver_name> -lif <LIF_name> -home-node <node3> -home-port netport|ifgrp`
+
+. Take one of the following actions:
++
+[cols="25,75"]
+|===
+|If the cluster is configured for... |Then...
+
+|NAS
+|Complete <<step5,Step 5>> and <<step6,Step 6>>, skip Step 7, and complete <<step8,Step 8>> through <<step11,Step 11>>.
+|SAN
+|Disable all the SAN LIFs on the node to take them down for the upgrade:
+
+`network interface modify -vserver <Vserver_name> -lif <LIF_name> -home-node <node_to_upgrade> -home-port netport\|ifgrp -status-admin down`
+|===
+// 24 FEB 2021: formatted from CMS

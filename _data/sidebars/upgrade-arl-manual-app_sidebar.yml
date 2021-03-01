@@ -93,8 +93,6 @@ entries:
         url: /check_configure_uta_uta2_ports_node4.html
       - title: "Map ports from node2 to node4"
         url: /map_ports_node2_node4.html
-      - title: "Verify the node4 installation"
-        url: /verify_node4_installation.html
       - title: "Move NAS data LIFs owned by node2 from node3 to node4 and verify SAN LIFs on node4"
         url: /move_nas_lifs_node2_from_node3_node4_verify_san_lifs_node4.html
       - title: "Relocate node2's non-root aggregates from node3 to node4"

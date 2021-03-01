@@ -4,7 +4,7 @@ permalink: upgrade-arl-manual-app/check_configure_uta_uta2_ports_node4.html
 summary: If node4 has onboard UTA/UTA2 ports or a UTA/UTA2A card, you must check the configuration of the ports.
 ---
 
-= Check and configure UTA/UTA2 ports on node4
+= Check and configure UTA/UTA2 ports on node4 
 :hardbreaks:
 :nofooter:
 :icons: font

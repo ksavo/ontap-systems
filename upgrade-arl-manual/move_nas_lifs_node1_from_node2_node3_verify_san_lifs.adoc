@@ -1,6 +1,7 @@
 ---
 sidebar: upgrade-arl-manual_sidebar
 permalink: upgrade-arl-manual/move_nas_lifs_node1_from_node2_node3_verify_san_lifs.html
+keywords: move, nas, san, lif, ports, broadcast domain, node1, node2, node3
 summary: You need to move the NAS data LIFs belonging to node1 that are currently on node2 from node2
 to node3. You also need to verify the SAN LIFs on node3.
 ---
@@ -13,138 +14,17 @@ to node3. You also need to verify the SAN LIFs on node3.
 :imagesdir: ./media/
 
 [.lead]
-// COPIED FROM 9.8 GUIDE...CHECK FOR REUSE, THEN REMOVE THIS COMMENT
-After you verify the node3 installation and before you relocate aggregates from node2 to node3, you need to move the NAS data LIFs belonging to node1 that are currently on node2 from node2 to node3. You also need to verify the SAN LIFs on node3.
+include::../_include/ru_man_move_nas_lifs_node1_from_node2_node3_verify_san_lifs_chunk_a.adoc[]
 
-.About this task
-
-Remote LIFs handle traffic to SAN LUNs during the upgrade procedure. Moving SAN LIFs is not necessary for cluster or service health during the upgrade. SAN LIFs are not moved unless they need to be mapped to new ports. You will verify that the LIFs are healthy and located on appropriate ports after you bring node3 online.
-
-.Steps
-. List all the NAS data LIFs not owned by node2 by entering the following command on either node and capturing the output:
+. [[step5]]If you have data ports that are not the same on your platforms, add the ports to the broadcast domain:
 +
-`network interface show -role data -curr-node _node2_ -is-home false -home-node _node3_`
-
-. Take one of the following actions:
-+
-[cols="35,65"]
-|===
-|If node1... |Then...
-
-|Had interface groups or VLANs configured
-|Go to Step 3.
-|Did not have interface groups or VLANs configured
-|Skip Step 3 and go to Step 4.
-|===
-
-. Perform the following substeps to migrate any NAS data LIFs hosted on interface groups and VLANs that were originally on node1 from node2 to node3:
-
-.. Migrate any data LIFs hosted on node2 that previously belonged to node1 on an interface group to a port on node3 that is capable of hosting LIFs on the same network by entering the following command, once for each LIF:
-+
-`network interface migrate -vserver _Vserver_name_ -lif _LIF_name_ -destination-node _node3_ –destination-port _netport|ifgrp_`
-
-.. Modify the home port and home node of the LIF in substep a to the port and node currently hosting the LIFs by entering the following command, once for each LIF:
-+
-`network interface modify -vserver _Vserver_name_ -lif _LIF_name_ -home-node _node3_ -home-port _netport|ifgrp_`
-
-.. Migrate any data LIF hosted on node2 that previously belonged to node1 on a VLAN port to a port on node3 that is capable of hosting LIFs on the same network by entering the following command, once for each LIF:
-+
-`network interface migrate -vserver _Vserver_name_ -lif _LIF_name_ -destination-node _node3_ –destination-port _netport|ifgrp_`
-
-.. Modify the home port and home node of the LIFs in Substep "c" to the port and node currently hosting the LIFs by entering the following command, once for each LIF:
-+
-`network interface modify -vserver _Vserver_name_ -lif _LIF_name_ -home-node _node3_ -home-port _netport|ifgrp_`
-
-. Take one of the following actions:
-+
-[cols="25,75"]
-|===
-|If the cluster is configured for... |Then...
-
-|NAS
-|Complete Step 5 and Step 6, skip Step 7, and complete Step 8 through Step 11.
-|SAN
-|Disable all the SAN LIFs on the node to take them down for the upgrade:
-
-`network interface modify -vserver _Vserver_name_ -lif _LIF_name_ -home-node _node_to_upgrade_ -home-port _netport|ifgrp_ -status-admin down`
-|===
-
-. If you have data ports that are not the same on your platforms, add the ports to the broadcast domain:
-+
-`network port broadcast-domain add-ports -ipspace _IPspace_name_ -broadcast-domain mgmt -ports -node:port_`
+`network port broadcast-domain add-ports -ipspace <IPspace_name> -broadcast-domain mgmt -ports <node:port>`
 +
 The following example adds port "e0a" on node "6280-1" and port "e0i" on node "8060-1" to broadcast domain "mgmt" in the IPspace "Default":
 +
-`cluster::> network port broadcast-domain add-ports -ipspace Default -broadcast-domain mgmt -ports 6280-1:e0a, 8060-1:e0i`
-
-. Migrate each NAS data LIF to node3 by entering the following command, once for each LIF:
-+
-`network interface migrate -vserver _Vserver_name_ -lif _LIF_name_ -destination-node _node3_ -destination-port _netport|ifgrp_`
-
-. Make sure that the data migration is persistent:
-
-`network interface modify -vserver _Vserver_name_ -lif _LIF_name_-home-port _netport|ifgrp_ -home-node _node3_`
-
-. Ensure that the SAN LIFs are on the correct ports on node3:
-
-.. Enter the following command and examine its output:
-+
-`network interface show -data-protocol iscsi|fcp -home-node node3`
-+
-The system returns output similar to the following example:
-+
 ----
-cluster::> net int show -data-protocol iscsi|fcp -home-node node3
-              Logical     Status      Network             Current        Current  Is
- Vserver      Interface   Admin/Oper  Address/Mask        Node           Port     Home
- -----------  ----------  ----------  ------------------  -------------  -------  ----
- vs0
-              a0a         up/down     10.63.0.53/24       node3          a0a      true
-              data1       up/up       10.63.0.50/18       node3          e0c      true
-              rads1       up/up       10.63.0.51/18       node3          e1a      true
-              rads2       up/down     10.63.0.52/24       node3          e1b      true
- vs1
-              lif1        up/up       172.17.176.120/24   node3          e0c      true
-              lif2        up/up       172.17.176.121/24   node3          e1a      true
+cluster::> network port broadcast-domain add-ports -ipspace Default -broadcast-domain mgmt -ports 6280-1:e0a, 8060-1:e0i
 ----
 
-.. If node3 has any SAN LIFs or groups of SAN LIFs that are on a port that did not exist on node1 or that need to be mapped to a different port, move them to an appropriate port on node3 by completing the following substeps:
-
-... Set the LIF status to "down":
-+
-`network interface modify -vserver _Vserver_name_ -lif _LIF_name_ -status-admin down`
-
-
-... Remove the LIF from the port set:
-+
-`portset remove -vserver _Vserver_name_ -portset _portset_name_ -port-name _port_name_`
-
-... Enter one of the following commands:
-+
-* Move a single LIF:
-+
-`network interface modify -vserver _Vserver_name_ -lif _LIF_name_ -home-port _new_home_port_`
-* Move all the LIFs on a single nonexistent or incorrect port to a new port:
-+
-`network interface modify {-home-port _port_on_node1_ -home-node _node1_ -role data} -home-port _new_home_port_on_node3_`
-* Add the LIFs back to the port set:
-+
-`portset add -vserver _Vserver_name_ -portset _portset_name_ -port-name _port_name_`
-+
-NOTE: You need to ensure that you move SAN LIFs to a port that has the same link speed as the original port.
-
-. Modify the status of all LIFs to "up" so the LIFs can accept and send traffic on the node:
-+
-`network interface modify -home-port _port_name_ -home-node _node3_ -lif data -status-admin up`
-
-. Enter the following command on either node and examine its output to verify that LIFs have been moved to the correct ports and that the LIFs have the status of "up":
-+
-`network interface show -home-node _node3_ -role data`
-
-. If any LIFs are down, set the administrative status of the LIFs to "up", once for each LIF:
-+
-`network interface modify -vserver _Vserver_name_ -lif _LIF_name_ -status-admin up`
-
-. Send a post-upgrade AutoSupport message to NetApp for node1:
-+
-`system node autosupport invoke -node node3 -type all -message "node1 successfully upgraded from platform_old to platform_new"`
+include::../_include/ru_man_move_nas_lifs_node1_from_node2_node3_verify_san_lifs_chunk_b.adoc[]
+// 24 FEB 2021:  formatted from CMS
