@@ -51,6 +51,6 @@ If you want to upgrade entry level controllers with internal drives,  refer to l
 
 ==== Troubleshooting
 
-If any problems occur while upgrading the controllers, you can refer to the link:troubleshooting_overview.html[Troubleshooting] section at the end of the procedure for more information and possible solutions.
+If any problems occur while upgrading the controllers, you can refer to the link:troubleshoot.html[Troubleshoot] section at the end of the procedure for more information and possible solutions.
 
 If you do not find a solution to the problem you encountered, you should contact technical support.

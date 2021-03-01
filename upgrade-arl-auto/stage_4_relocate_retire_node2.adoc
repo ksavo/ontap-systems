@@ -5,7 +5,7 @@ keywords: relocate, retire, node2, LIF, node3, non-root aggregates
 summary: During Stage 4, all non-root aggregates are relocated from node2 to node3.
 ---
 
-= Stage 4. Relocate and retiring node2
+= Stage 4. Relocate and retire node2
 :hardbreaks:
 :nofooter:
 :icons: font
