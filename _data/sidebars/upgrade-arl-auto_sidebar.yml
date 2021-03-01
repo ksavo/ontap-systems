@@ -30,27 +30,18 @@ entries:
         url: /prepare_nodes_for_upgrade.html
       - title: Get an IP address of an external key management server for storage encryption
         url: /get_ip_address_of_external_kms_for_storage_encryption.html
-  - title: Stage 2 Relocate and retiring node1
+  - title: Stage 2 Relocate and retire node1
     url: /stage_2_relocate_retire_node1_overview.html
     entries:
       - title: "Relocate non-root aggregates and NAS data LIFs owned by node1 to node2"
         url: /relocate_non_root_aggr_nas_data_lifs_node1_node2.html
       - title: "Relocate failed or vetoed aggregates"
         url: /relocate_failed_vetoed_aggr.html
+      - title: Relocate non-root aggregates and NAS data LIFs owned by node1 to node2
+        url: /relocate_non_root_aggr_and_nas_data_lifs_node1_node2.html
       - title: "Retire node1"
         url: /retire_node1.html
       - title: Prepare for netboot
-        url: /prepare_for_netboot.html
-  - title: Stage 2 Relocate and retire node1
-    url: /stage_2_relocate_and_retire_node1_overview.html
-    entries:
-      - title: "Relocate non-root aggregates and NAS data LIFs owned by node1 to node2"
-        url: /relocate_non_root_aggr_nas_data_lifs_node1_node2.html
-      - title: "Relocate failed or vetoed aggregates"
-        url: /relocate_failed_vetoed_aggr.html
-      - title: "Retire node1"
-        url: /retire_node1.html
-      - title: "Prepare for netboot"
         url: /prepare_for_netboot.html
   - title: Stage 3 Install and boot node3
     url: /stage_3_install_boot_node3_overview.html
@@ -72,7 +63,7 @@ entries:
             url: /restore_key_manager_config_node3.html
       - title: Move non-root aggregates and NAS data LIFs owned by node1 from node2 to node3
         url: /move_non_root_aggr_nas_lifs_node1_from_node2_to_node3.html
-  - title: Stage 4 Relocate and retiring node2
+  - title: Stage 4 Relocate and retire node2
     url: /stage_4_relocate_retire_node2.html
     entries:
       - title: Relocate non-root aggregates and NAS data LIFs from node2 to node3
