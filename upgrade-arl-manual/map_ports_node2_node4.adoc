@@ -1,6 +1,6 @@
 ---
 sidebar: upgrade-arl-manual_sidebar
-permalink: upgrade-arl-manualp/map_ports_node2_node4.html
+permalink: upgrade-arl-manual/map_ports_node2_node4.html
 summary: Verify that the physical ports on node2 map correctly to the physical ports on node4.
 ---
 
