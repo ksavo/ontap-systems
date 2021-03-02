@@ -64,7 +64,7 @@ You must install the same key management servers that are installed on the exist
 |===
 |For... |Use this command...
 
-|External Key Manager (EKM)
+|External key manager
 |`security key-manager external restore`
 
 This command needs the OKM passphrase
@@ -74,5 +74,5 @@ This command needs the OKM passphrase
 
 .After you finish
 
-Check if any volumes were taken offline because authentication keys were not available or external key management servers could not be reached. Bring those volumes back online using the `volume online` command.
+Check if any volumes were taken offline because authentication keys were not available or External Key Management servers could not be reached. Bring those volumes back online using the `volume online` command.
 // 11 Dec 2020, thomi, checked

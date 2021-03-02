@@ -80,7 +80,8 @@ Node2
 Step Details:
 --------------------------------------------
 To complete the Network Reachability task, the ONTAP network configuration must be
-manually adjusted to match the new physical network configuration of the hardware. This includes:
+manually adjusted to match the new physical network configuration of the hardware.
+This includes:
 
 1. Re-create the interface group, if needed, before restoring VLANs. For detailed
 commands and instructions, refer to the "Re-creating VLANs, ifgrps, and broadcast

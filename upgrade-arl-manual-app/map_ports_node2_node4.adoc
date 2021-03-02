@@ -16,7 +16,8 @@ You need to make sure that the physical ports on node2 map correctly to the phys
 
 .Before you begin
 
-You must already have information about the ports on the new nodes from the *hwu.netapp.com*. You use the information later in this section.
+You must already have information about the ports on the new nodes, to access this information refer to link:other_references.html[References] to link to the _Hardware Universe_. You use the information later in this section.
+
 The software configuration of node4 must match the physical connectivity of node4, and IP connectivity must be restored before you continue with the upgrade.
 
 .About this task
@@ -51,7 +52,7 @@ The value of this command must match the physical state of the system.
 +
 `network port modify -node <node_name> -port <port_name> -mtu 9000 -ipspace Cluster`
 +
-This example adds Cluster port e1b on "node2":
+This example adds Cluster port "e1b" on "node2":
 +
 `network port modify -node node2 -port e1b -ipspace Cluster -mtu 9000`
 .. Migrate the cluster LIFs to the new ports, once for each LIF:
@@ -150,7 +151,7 @@ When all ports are correctly configured and added to the correct broadcast domai
 `network interface show -vserver <vserver_name> -status-oper down`
 .. Modify any LIFs that need to be modified to have a different home port:
 +
-`network interface modify -vserver <vserver_name> -lif <lif> -home-port <home_port>`
+`network interface modify -vserver <vserver_name> -lif <lif_name> -home-port <home_port>`
 
 +
 NOTE: For iSCSI LIFs, modification of the home port requires the LIF to be administratively down.
