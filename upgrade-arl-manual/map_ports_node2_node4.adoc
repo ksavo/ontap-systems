@@ -1,6 +1,7 @@
 ---
 sidebar: upgrade-arl-manual_sidebar
 permalink: upgrade-arl-manual/map_ports_node2_node4.html
+keywords: map, node2, node4, physical ports, cluster, network, connectivity
 summary: Verify that the physical ports on node2 map correctly to the physical ports on node4.
 ---
 
