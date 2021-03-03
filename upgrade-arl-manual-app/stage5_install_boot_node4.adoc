@@ -1,10 +1,11 @@
 ---
 sidebar: upgrade-arl-manual-app_sidebar
 permalink: upgrade-arl-manual-app/stage5_install_boot_node4.html
-summary: During Stage 5, you install and boot node4, map the cluster and node-management ports from node2 to node4, and verify the node4 installation
+keywords: stage 5, install, boot, node3, node4, relocate, aggregates
+summary: During Stage 5, you install and boot node4, map the cluster and node-management ports from node2 to node4, and verify the node4 installation.
 ---
 
-= Stage5. Install and boot node4
+= Stage5: Install and boot node4
 :hardbreaks:
 :nofooter:
 :icons: font

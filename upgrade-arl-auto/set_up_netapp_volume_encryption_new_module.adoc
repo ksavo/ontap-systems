@@ -59,15 +59,16 @@ You must install the same key management servers that are installed on the exist
 +
 `security key-manager external restore`
 +
-This command needs the OKM passphrase
+This command needs the Onboard Key Manager (OKM) passphrase.
 +
-* Restore authentication for Onboard Key Manager (OKM):
+* Restore authentication for OKM:
 +
 [cols=2*,options="header",cols="30,70"]
 |===
 |For this ONTAP version… |Use this command...
+|ONTAP 9.6 or 9.7 |`security key-manager onboard sync`
 |ONTAP 9.5 |`security key-manager setup -node <node_name>`
-|All other ONTAP versions |`security key-manager onboard sync`
+
 |===
 
 .After you finish
