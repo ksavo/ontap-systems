@@ -65,12 +65,12 @@ Contact your NetApp representative to obtain the correct SFP+ module.
 |===
 |If the CNA ports... |Then...
 |Do not have the personality that you want
-|Go to <<Step5,Step 5>>.
+|Go to <<Step5a,Step 5>>.
 |Have the personality that you want
 |Skip Step 5 through Step 12 and go to <<Step13,Step 13>>.
 |===
 
-. [[Step5]]Take one of the following actions:
+. [[Step5a]]Take one of the following actions:
 +
 [cols=2*,options="header",cols="35,65"]
 |===
@@ -81,7 +81,7 @@ Contact your NetApp representative to obtain the correct SFP+ module.
 
 `boot_ontap maint`
 |Is a V-Series system or has FlexArray Virtualization Software and is connected to storage arrays
-|Go to <<Step,Step 6>>.
+|Go to <<Step6,Step 6>>.
 You should already be in Maintenance mode.
 |===
 
@@ -93,7 +93,7 @@ You should already be in Maintenance mode.
 |Ports on a UTA/UTA2A card
 |Go to <<Step7,Step 7>>.
 |Onboard UTA/UTA2 ports
-|Skip Step 7 and go to <<Step8,Step 8>>.
+|Skip Step 7 and go to <<Step8a,Step 8>>.
 |===
 
 . [[Step7]]If the adapter is in initiator mode, and if the UTA/UTA2 port is online, take the UTA/UTA2 port offline:
@@ -102,7 +102,7 @@ You should already be in Maintenance mode.
 +
 Adapters in target mode are automatically offline in Maintenance mode.
 
-. [[Step8]]If the current configuration does not match the desired use, enter the following command to change the configuration as needed:
+. [[Step8a]]If the current configuration does not match the desired use, enter the following command to change the configuration as needed:
 +
 `ucadmin modify -m fc|cna -t initiator|target <adapter_name>`
 +

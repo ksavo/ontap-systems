@@ -4,7 +4,7 @@ If node4 has FC ports, either onboard or on an FC adapter, you must set port con
 
 .Before you begin
 
-You must have the values of the FC port settings from node2 that you saved in the section link:preparing_the_nodes_for_upgrade.html[Prepare the nodes for upgrade].
+You must have the values of the FC port settings from node2 that you saved in the section link:prepare_nodes_for_upgrade.html[Prepare the nodes for upgrade].
 
 .About this task
 
