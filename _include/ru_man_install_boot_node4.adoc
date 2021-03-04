@@ -90,7 +90,7 @@ a|
 *Important*: You must reconfigure FC onboard ports, UTA/UTA2 onboard ports, and UTA/UTA2 cards before you boot Data ONTAP on the V-Series system.
 |===
 
-. [[step9]]Add the FC initiator ports of the new node to the switch zones.
+. [[Step9]]Add the FC initiator ports of the new node to the switch zones.
 +
 See your storage array and zoning documentation for instructions.
 . Add the FC initiator ports to the storage array as new hosts, mapping the array LUNs to the new hosts.
