@@ -1,6 +1,7 @@
 ---
 sidebar: upgrade-arl-manual-app_sidebar
 permalink: upgrade-arl-manual-app/relocate_node2_non_root_aggr_node3_node4.html
+keywords: relocate, non-root, aggregates, node3, node4
 summary: Having relocated node2's non-root aggregates to node3, you now must relocate them from node3 to node4.
 ---
 
