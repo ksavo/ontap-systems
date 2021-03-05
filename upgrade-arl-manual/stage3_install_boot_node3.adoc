@@ -1,6 +1,6 @@
 ---
-sidebar: upgrade-arl-manual-app_sidebar
-permalink: upgrade-arl-manual-app/stage3_install_boot_node3.html
+sidebar: upgrade-arl-manual_sidebar
+permalink: upgrade-arl-manual/stage3_install_boot_node3.html
 keywords: stage 3, install, boot, node3, map ports, uta, uta2, fc, configure, configuration, san lif, non-root aggregate, nas data
 summary: Stage 3:  Install and boot node3
 ---

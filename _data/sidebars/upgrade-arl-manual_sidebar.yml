@@ -2,7 +2,7 @@ entries:
   - title: "Using Aggregate Relocation to Manually Upgrade Controller Hardware Running ONTAP 9.7 and Earlier"
     url: /index.html
   - title: "Overview"
-    url: /Overview.html
+    url: /overview.html
   - title: "Decide whether to use the aggregate relocation guide"
     url: /decide_to_use_arl_guide.html
   - title: "ARL upgrade workflow"
@@ -91,7 +91,7 @@ entries:
       - title: "Map ports from node1 to node3"
         url: /map_ports_node1_node3.html
       - title: "Verify the node3 installation"
-        url: /verify_node3_install.html
+        url: /verify_node3_installation.html
       - title: "Move NAS data LIFs owned by node1 from node2 to node3 and verify SAN LIFs on node3"
         url: /move_nas_lifs_node1_from_node2_node3_verify_san_lifs.html
       - title: "Relocate non-root aggregates from node2 to node3"
@@ -150,3 +150,5 @@ entries:
         url: /lif_migration_failure.html
       - title: "LIFs are on invalid ports after upgrade"
         url: /lifs_invalid_ports_after_upgrade.html
+  - title: "Other references"
+    url: /other_references.html

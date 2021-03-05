@@ -1,7 +1,8 @@
 ---
 sidebar: upgrade-arl-manual_sidebar
 permalink: upgrade-arl-manual/set_up_netapp_encryption_on_new_controller.html
-summary:
+keywords: set up, netapp volume encryption, encryption, controller, module
+summary: If the replaced controller or the HA partner of the new controller uses NetApp Volume Encryption, you must configure the new controller module for NetApp Volume Encryption.
 ---
 
 = Set up NetApp Volume Encryption on the new controller module
@@ -12,5 +13,5 @@ summary:
 :imagesdir: ./media/
 
 [.lead]
-// COPIED FROM 9.8 GUIDE...CHECK FOR REUSE, THEN REMOVE THIS COMMENT
 include::../_include/ru_set_up_netapp_encryption_on_new_controller.adoc[]
+// 26 FEB 2021:  Formatted from CMS

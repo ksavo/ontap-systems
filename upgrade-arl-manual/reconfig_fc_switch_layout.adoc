@@ -29,18 +29,19 @@ This procedure is nondisruptive and takes approximately four hours to complete (
 
 .Steps
 
-. <<Send a custom AutoSupport message prior to reconfiguring switches>>
+. link:send_customer_asup_message_prior_reconfig_switches.html[Send a custom AutoSupport message prior to reconfiguring switches]
 
-. <<Verify the health of the MetroCluster configuration>>
+. link:verify_health_mcc_config.html[Verify the health of the MetroCluster configuration]
 
-. <<Check for MetroCluster configuration errors>>
+. link:check_mcc_config_errors.html[Check for MetroCluster configuration errors]
 
-. <<Persistently disable the switches>>
+. link:persist_disable_switches.html[Persistently disable the switches]
 
-. <<Determine the new cabling layout>>
+. link:determine_new_cabling_layout.html[Determine the new cabling layout]
 
-. <<Apply RCF files and recable the switches>>
+. link:apply_RCF_files_recable_switches.html[Apply RCF files and recable the switches]
 
-. <<Persistently enable the switches>>
+. link:persist_enable_switches.html[Persistently enable the switches]
 
-. <<Verify switchover, healing, and switchback>>
+. link:verify_switchover_healing_switchback.html[Verify switchover, healing, and switchback]
+// 26 FEB 2021:  Formatted from CMS

@@ -6,4 +6,4 @@ If you do not have new license keys, currently licensed features in the cluster 
 
 All license keys are 28 uppercase alphabetic characters in length. You can obtain new 28-character license keys for ONTAP 9.x at the NetApp Support Site at mysupport.netapp.com. The keys are available in the My Support section under Software licenses. If the site does not have the license keys you need, contact your NetApp sales representative.
 
-For detailed information about licensing, see the _System Administration Reference_ at the ONTAP 9 Documentation Center.
+For detailed information about licensing, go to link:other_references.html[References] to link to the _System Administration Reference_ in the ONTAP 9 Documentation Center.

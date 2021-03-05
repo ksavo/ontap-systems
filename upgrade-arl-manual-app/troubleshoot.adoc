@@ -1,7 +1,7 @@
 ---
 sidebar: upgrade-arl-manual-app_sidebar
 permalink: upgrade-arl-manual-app/troubleshoot.html
-summary:
+summary: troubleshoot, troubleshooting, problem, error, failure
 ---
 
 = Troubleshoot
@@ -12,6 +12,5 @@ summary:
 :imagesdir: ./media/
 
 [.lead]
-You might encounter a failure while upgrading the node pair. The node might crash, aggregates might not relocate, or LIFs might not migrate. The cause of the failure and its solution depend on when the failure occurred during the upgrade procedure.
-
-Refer to the table describing the different phases of the procedure in the section link:arl_upgrade_workflow[ARL upgrade workflow]. The information about failures that can occur is listed by the phase of the procedure.
+include::../_include/ru_man_troubleshoot.adoc[]
+// 02 MAR 2021:  formatted from CMS

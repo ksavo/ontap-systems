@@ -17,9 +17,7 @@ You must apply the appropriate reference configuration (RCF) files to reconfigur
 
 .Before you begin
 
-The FC switch port usage must match the usage described in the Fabric-attached MetroCluster Installation and Configuration Guide so that the RCFs can be used.
-
-link:https://docs.netapp.com/ontap-9/topic/com.netapp.doc.dot-mcc-inst-cnfg-fabric/home.html[Fabric-attached MetroCluster Installation and Configuration Guide]
+The FC switch port usage must match the usage described in the Fabric-attached _MetroCluster Installation and Configuration Guide_ so that the RCFs can be used. Go to link:other_references.html[References] to link to the _MetroCluster Installation and Configuration Guide_.
 
 .Steps
 
@@ -35,7 +33,7 @@ link:http://mysupport.netapp.com/NOW/download/software/metrocluster_cisco/sanswi
 
 . Verify that the switch configuration is saved.
 
-. Cable both of the FC-to-SAS bridges to the FC switches, using the cabling layout you created in <<Determine the new cabling layout>>.
+. Cable both of the FC-to-SAS bridges to the FC switches, using the cabling layout you created in link:determine_new_cabling_layout.html[Determine the new cabling layout].
 
 . Verify that the ports are online:
 +
@@ -49,3 +47,4 @@ link:http://mysupport.netapp.com/NOW/download/software/metrocluster_cisco/sanswi
 `metrocluster interconnect adapter show`
 +
 `metrocluster interconnect mirror show`
+//26 FEB 2021:  formatted from CMS

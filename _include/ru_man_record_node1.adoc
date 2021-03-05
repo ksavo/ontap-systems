@@ -143,10 +143,10 @@ You will use the information in the section Mapping ports from node1 to node3.
 |Recorded the NVRAM System ID number in the section link:prepare_nodes_for_upgrade.html[Prepare the nodes for the upgrade].
 |Go on to the next section, Retiring node1.
 |Did not record the NVRAM System ID number in the section link:prepare_nodes_for_upgrade.html[Prepare the nodes for the upgrade]
-|Complete Step 11 and Step 12 and then go on to link:retire_node1.html[Retire node1].
+|Complete <<step,Step 11>> and <<step12,Step 12>> and then continue to link:retire_node1.html[Retire node1].
 |===
 
-.	Enter the following command on either controller:
+.	[[step11]]Enter the following command on either controller:
 +
 `system node show -instance -node <node1>`
 +
@@ -168,4 +168,4 @@ The system displays information about node1 as shown in the following example:
                        Eligibility: true
 ----
 
-.	Record the NVRAM System ID number to use in the section link:install_boot_node3.html[Install and boot node3].
+.	[[step12]]Record the NVRAM System ID number to use in the section link:install_boot_node3.html[Install and boot node3].

@@ -5,7 +5,7 @@ keywords: verify, node3, install, installation
 summary: After you install and boot node3, you need to verify that it is installed correctly, that it is part of the cluster, and that it can communicate with node2.
 ---
 
-= Verify the node4 installation
+= Verify the node3 installation
 :hardbreaks:
 :nofooter:
 :icons: font
