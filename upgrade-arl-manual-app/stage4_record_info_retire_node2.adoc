@@ -1,0 +1,20 @@
+---
+sidebar: upgrade-arl-manual-app_sidebar
+permalink: upgrade-arl-manual-app/stage4_record_info_retire_node2.html
+summary:
+---
+
+= Stage 4: Record node2 information and retire node2
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+[.lead]
+During Stage 4, you record node2 information and then retire node2.
+
+.Steps
+
+. link:record_node2_information.html[Record node2 information]
+. link:retire_node2.html[Retire node2]

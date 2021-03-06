@@ -1,7 +1,7 @@
 ---
 sidebar: upgrade-arl-auto-app_sidebar
 permalink: upgrade-arl-auto-app/lif_migration_failure.html
-keywords: lif, migration, failure, ndac, mtu
+keywords: lif, migration, failure, mtu
 summary: After you migrate LIFs, they might not come online after migration in Stage 2, Stage 3, or Stage 5.
 ---
 
@@ -19,12 +19,4 @@ summary: After you migrate LIFs, they might not come online after migration in S
 //
 
 [.lead]
-After you migrate LIFs, they might not come online after migration in Stage 2, Stage 3, or Stage 5.
-
-.Steps
-
-. Verify that the port MTU size is the same as that of the source node.
-+
-For example, if the cluster port MTU size is 9000 on the source node, it should be 9000 on the destination node.
-
-. Check the physical connectivity of the network cable if the physical state of the port is `down`.
+include::..\_include\ru_app_lif_migration_failure.adoc[]

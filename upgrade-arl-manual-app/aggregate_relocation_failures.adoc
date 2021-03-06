@@ -1,0 +1,19 @@
+---
+sidebar: upgrade-arl-manual-app_sidebar
+permalink: upgrade-arl-manual-app/aggregate_relocation_failures.html
+summary:  Aggregate relocation failures
+---
+
+= Aggregate relocation failures
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+[.lead]
+include::../_include/ru_app_aggregate_relocation_failures.adoc[]
+
+include::../_include/ru_app_check_aggregate_relocation_failure.adoc[]
+
+include::../_include/ru_app_aggregates_originally_node1_owned_node4_completion_upgrade.adoc[]

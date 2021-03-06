@@ -1,0 +1,14 @@
+---
+sidebar: upgrade-arl-manual-app_sidebar
+permalink: upgrade-arl-manual-app/move_nas_lifs_node1_node2.html
+summary:
+---
+
+= Move NAS data LIFs owned by node1 to node2
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+[.lead]

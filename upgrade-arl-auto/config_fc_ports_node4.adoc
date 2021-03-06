@@ -1,0 +1,17 @@
+---
+sidebar: upgrade-arl-auto_sidebar
+permalink: upgrade-arl-auto/config_fc_ports_node4.html
+keywords: aggregate relocation, YYYYY
+summary: ZZZZZZ
+---
+
+= Configure FC ports on node4
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+[.lead]
+
+// bottom half of page 54, and most of 55. 

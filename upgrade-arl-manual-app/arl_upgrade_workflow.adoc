@@ -1,0 +1,95 @@
+---
+sidebar: upgrade-arl-manual-app_sidebar
+permalink: upgrade-arl-manual-app/arl_upgrade_workflow.html
+summary: ARL upgrade workflow
+---
+
+= ARL upgrade workflow
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+[.lead]
+
+include::../_include/ru_app_overview_arl_workflow_chunk_a.adoc[]
+
+[cols="35,65"]
+|===
+| Stage | Steps
+
+| Stage 1: Prepare for upgrade
+a| . Determine whether the controller has aggregates on internal disk drives.
++
+This step is required only if you are upgrading from a controller with internal disk drive.
+. Prepare the nodes for upgrade.
+. Rekey disks for Storage Encryption.
+. Verify the SnapMirror relationship state on the cluster and quiesce all relationships between the clusters.
+. Prepare for netboot.
+
+Aggregate ownership at the end of Stage 1:
+
+* Node1 is the home owner and current owner of the node1 aggregates.
+* Node2 is the home owner and current owner of the node2 aggregates.
+
+|Stage 2: Retire node1
+a| . Relocate non-root aggregates from node1 to node2.
+. Move non-SAN data LIFSs owned by node1 to node2.
+. Record node1 information.
+. Relocate failed or vetoed aggregates.
+. Retire node1.
+
+Aggregate ownership at the end of Stage 2:
+
+* Node1 is the home owner of node1 aggregates.
+* Node2 is the current owner of node1 aggregates.
+* Node2 is the home owner and current owner of node2 aggregates.
+
+|Stage 3: Install and boot node3
+a| . Install and boot node3.
+. Set the UTA/UTA2 configuration on node3.
+. Map ports from node1 to node3.
+. Verify the node3 installation.
+. Restore node3 network configuration.
+. Move non-SAN data LIFs owned by node 1 from node2 to node3 and verify SNA LIFs on node3.
+. Relocate non-root aggregates from node2 to node3.
+. Move non-SAN data LIFs owned by node2 to node3.
+
+Aggregate ownership at the end of Stage 3:
+
+* Node2 is the home owner of node2 aggregates but not the current owner.
+* Node3 is the home owner and current owner of aggregates originally belonging to node1.
+* Node2 is the home owner and current owner of aggregates belonging to node2 but not the home owner.
+
+|Stage 4: Retire node2
+a| . Record node2 information.
+. Retire node2.
+
+No changes occur in aggregate ownership.
+
+|Stage 5: Install and boot node4
+a| . Install and boot node4.
+. Set the UTA/UTA2 configuration on node4.
+. Map ports from node2 to node4.
+. Verify node4 is successfully installed.
+. Move non-SAN data LIFs owned by node2 from node3 to node4 and verify SNA LIFs on node4.
+. Relocate node2's non-root aggregates from node3 to node4.
+
+Aggregate ownership at the end of Stage 5:
+
+* Node3 is the home owner and current owner of the aggregates that originally belonged to node1.
+* Node4 is the home owner and current owner of aggregates that originally belonged to node2.
+
+|Stage 6: Complete the upgrade
+a| . Ensure the new controllers are set up correctly.
+. Set up Storage Encryption on the new nodes.
++
+This task is required only if you are upgrading to a system with self-encrypting drives.
+. Decommission the old system.
+. Resume NetApp SnapMirror relationships.
++
+.note The storage virtual machine (SVM) disaster recovery updates will not be interrupted as per the schedules assigned.
+
+No changes occur in aggregate ownership.
+|===

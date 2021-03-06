@@ -1,0 +1,14 @@
+---
+sidebar: upgrade-arl-manual-app_sidebar
+permalink: upgrade-arl-manual-app/set_fc_uta_uta2_config_node3.html
+summary:
+---
+
+= Set the FC or UTA/UTA2 configuration on node3
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+[.lead]

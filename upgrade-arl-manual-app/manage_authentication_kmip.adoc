@@ -1,0 +1,15 @@
+---
+sidebar: upgrade-arl-manual-app_sidebar
+permalink: upgrade-arl-manual-app/manage_authentication_kmip.html
+summary: You can use KMIP servers to manage authentication keys.
+---
+
+= Manage authentication using KMIP servers
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+[.lead]
+include::../_include/ru_app_manage_authenication_kmip.adoc[]

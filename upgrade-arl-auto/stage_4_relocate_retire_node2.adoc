@@ -1,0 +1,23 @@
+---
+sidebar: upgrade-arl-auto_sidebar
+permalink: upgrade-arl-auto/stage_4_relocate_retire_node2.html
+keywords: relocate, retire, node2, LIF, node3, non-root aggregates
+summary: During Stage 4, all non-root aggregates are relocated from node2 to node3.
+---
+
+= Stage 4: Relocate and retiring node2
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+[.lead]
+
+// top section of pg. 46  in PDF
+During Stage 4, all non-root aggregates are relocated from node2 to node3; the non-SAN data LIFs owned by node2 are moved to node3. You must record the necessary node2 information and then retire node2.
+
+.Steps
+
+. link:upgrade-arl-auto/relocate_non_root_aggr_nas_lifs_from_node2_to_node3.html[Relocate non-root aggregates and NAS data LIFs from node2 to node3]
+. link:retire_node2.html[Retire node2]

@@ -1,0 +1,15 @@
+---
+sidebar: upgrade-arl-manual-app_sidebar
+permalink: upgrade-arl-manual-app/set_up_netapp_encryption_on_new_controller.html
+summary:
+---
+
+= Set up NetApp Volume Encryption on the new controller module
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+[.lead]
+include::../_include/ru_set_up_netapp_encryption_on_new_controller.adoc[]
