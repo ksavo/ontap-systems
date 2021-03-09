@@ -19,39 +19,40 @@ After you install and boot node4, you need to verify that it is installed correc
 
 . At the system prompt, log in to node4.
 
-. Verify that node4 is both part of the same cluster as node3 and healthy by entering the following command:
+. Verify that node4 is both part of the same cluster as node3 and healthy:
 +
 `cluster show`
 
-. Verify that node4 can communicate with node3 and that all LIFs are up by entering the following command:
+. Verify that node4 can communicate with node3 and that all LIFs are up:
 +
 `network interface show -curr-node <node4>`
 
 . Take one of the following actions:
 +
+[cols=2*,options="header",cols="35,65"]
 |===
 |If node4 is... |Then...
-
 |In a chassis separate from node3
 a| Connect the HA interconnect between the nodes by completing the following steps:
 
 .. Connect the top interconnect port of node3 to the top interconnect port of node4.
 .. Connect the bottom interconnect port of node3 to the bottom interconnect port of node4.
-.. Go to <<step5,Step 5>>.
-|In the same chassis as node3 |Go to <<step5,Step 5>>.
+.. Go to <<Step5,Step 5>>.
+|In the same chassis as node3 |Go to <<Step5,Step 5>>.
 You do not need to manually connect the HA interconnect between the nodes; in same-chassis configurations, the HA interconnect is connected automatically through the backplane.
 |===
 
 . [[Step5]]Take one of the following actions:
 +
+[cols=2*,options="header",cols="35,65"]
 |===
 |If the cluster is... |Then...
 
-|In a SAN environment |Complete Step 6 and go to the section link:move_nas_lifs_node2_from_node3_node4_verify_san_lifs_node4.html[Move NAS data LIFs owned by node2 from node3 to node4 and verify SAN LIFs on node4].
-|Not in a SAN environment |Skip Step 6 go to the sectionlink:move_nas_lifs_node2_from_node3_node4_verify_san_lifs_node4.html[Move NAS data LIFs owned by node2 from node3 to node4 and verify SAN LIFs on node4].
+|In a SAN environment |Complete <<Step6,Step 6>> and go to the section link:move_nas_lifs_node2_from_node3_node4_verify_san_lifs_node4.html[Move NAS data LIFs owned by node2 from node3 to node4 and verify SAN LIFs on node4].
+|Not in a SAN environment |Skip Step 6 go to the section link:move_nas_lifs_node2_from_node3_node4_verify_san_lifs_node4.html[Move NAS data LIFs owned by node2 from node3 to node4 and verify SAN LIFs on node4].
 |===
 
-. Verify that both node3 and node4 are in quorum by entering the following command on one of the nodes:
+. [[Step6]]Verify that both node3 and node4 are in quorum by entering the following command on one of the nodes:
 +
 `event log show -messagename scsiblade.*`
 +

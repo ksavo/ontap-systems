@@ -1,5 +1,5 @@
 
-. [[Step17]]Press `Ctrl-C` during autoboot to stop the node at the `LOADER>` prompt.
+. [[step17]]Press `Ctrl-C` during autoboot to stop the node at the `LOADER>` prompt.
 
 . At the loader prompt, enter maintenance mode:
 +
@@ -21,7 +21,7 @@ Change the ports back to initiator mode:
 +
 `halt`
 
-. [[Step22]]At the loader prompt boot up:
+. [[step22]]At the loader prompt boot up:
 +
 `boot_ontap`
 +

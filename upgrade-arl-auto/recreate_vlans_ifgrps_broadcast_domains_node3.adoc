@@ -17,19 +17,19 @@ After you confirm that node3 is in quorum and can communicate with node2, you mu
 
 .About this task
 
-For more information on creating and re-creating VLANs, interface groups, and broadcast domains, go to link:other_references.html[Other references] and link to the _ONTAP 9 Network Management Guide_.
+For more information on creating and re-creating VLANs, interface groups, and broadcast domains, go to link:other_references.html[References] and link to the _ONTAP 9 Network Management Guide_.
 
 .Steps
 
-. Re-create the VLANs on node3 using the node1 information recorded in the link:relocate_non_root_aggr_nas_data_lifs_node1_node2.html[Relocate non-root aggregates and NAS data LIFs owned by node1 to node2] section:
+. Re-create the VLANs on node3 using the node1 information recorded in the link:relocate_non_root_aggr_and_nas_data_lifs_node1_node2.html[Relocate non-root aggregates and NAS data LIFs owned by node1 to node2] section:
 +
 `network port vlan create -node <node_name> -vlan <vlan-names>`
 
-. Re-create the interface groups on node3 using the node1 information recorded in the link:relocate_non_root_aggr_nas_data_lifs_node1_node2.html[Relocate non-root aggregates and NAS data LIFs owned by node1 to node2] section:
+. Re-create the interface groups on node3 using the node1 information recorded in the link:relocate_non_root_aggr_and_nas_data_lifs_node1_node2.html[Relocate non-root aggregates and NAS data LIFs owned by node1 to node2] section:
 +
 `network port ifgrp create -node node_name -ifgrp port_ifgrp_names-distr-func`
 
-. Re-create the broadcast domains on node3 using the node1 information recorded in the link:relocate_non_root_aggr_nas_data_lifs_node1_node2.html[Relocate non-root aggregates and NAS data LIFs owned by node1 to node2] section:
+. Re-create the broadcast domains on node3 using the node1 information recorded in the link:relocate_non_root_aggr_and_nas_data_lifs_node1_node2.html[Relocate non-root aggregates and NAS data LIFs owned by node1 to node2] section:
 +
 `network port broadcast-domain create -ipspace Default -broadcast-domain <broadcast_domain_names> -mtu <mtu_size> -ports <node_name:port_name,node_name:port_name>`
 

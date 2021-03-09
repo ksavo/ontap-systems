@@ -28,7 +28,7 @@ You should use this guide under the following circumstances:
 * You are experienced in administering ONTAP and are comfortable with the risks of working in the diagnostic privilege mode.
 * If you are upgrading a MetroCluster configuration, it is a 4-node or higher FC configuration, and all nodes are running ONTAP 9.8.
 +
-For upgrading MetroCluster IP configurations, refer to link:other_references.html[Other references] to link to the _MetroCluster Upgrade, Transition, and Expansion Guide_.
+For upgrading MetroCluster IP configurations, refer to link:other_references.html[References] to link to the _MetroCluster Upgrade, Transition, and Expansion Guide_.
 
 NOTE: You can use NetApp Storage Encryption (NSE) and NetApp Volume Encryption (NVE) with this procedure.
 

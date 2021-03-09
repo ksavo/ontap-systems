@@ -75,7 +75,7 @@ Contact your NetApp representative to obtain the correct SFP+ module.
 
 |===
 
-. [[Step5]]Take one of the following actions:
+. [[step5]]Take one of the following actions:
 +
 [cols=2*,options="header"cols="30,70"]
 |===
@@ -84,7 +84,7 @@ Contact your NetApp representative to obtain the correct SFP+ module.
 |Ports on a UTA/UTA2 card
 |Go to <<step7,Step 7>>
 |Onboard UTA/UTA2 ports
-|Skip Step 7 and go to <<step8a, Step 8>>.
+|Skip Step 7 and go to <<step8a,Step 8>>.
 |===
 
 . If the adapter is in initiator mode, and if the UTA/UTA2 port is online, take the UTA/UTA2 port offline:
@@ -93,7 +93,7 @@ Contact your NetApp representative to obtain the correct SFP+ module.
 +
 Adapters in target mode are automatically offline in Maintenance mode.
 
-. [[Step7]]If the current configuration does not match the desired use, change the configuration as needed:
+. [[step7]]If the current configuration does not match the desired use, change the configuration as needed:
 +
 `ucadmin modify -m fc|cna -t initiator|target <adapter_name>`
 
@@ -102,7 +102,7 @@ Adapters in target mode are automatically offline in Maintenance mode.
 +
 NOTE: You must use FC initiator for tape drives, FlexArray Virtualization systems, and MetroCluster configurations. You must use the FC target for SAN clients.
 
-. [[Step8a]]Verify the settings by using the following command and examining its output:
+. [[step8a]]Verify the settings by using the following command and examining its output:
 +
 `ucadmin show`
 

@@ -1,6 +1,7 @@
 ---
 sidebar: upgrade-arl-manual_sidebar
 permalink: upgrade-arl-manual/set_fc_uta_uta2_config_node4.html
+keywords:  fc configuration, uta configuration, uta2 configuration, configure FC ports, uta/uta2 card, node4, target, adapter, ports
 summary: If node4 has onboard FC ports, onboard unified target adapter (UTA/UTA2) ports, or a UTA/UTA2 card.
 ---
 
@@ -12,17 +13,8 @@ summary: If node4 has onboard FC ports, onboard unified target adapter (UTA/UTA2
 :imagesdir: ./media/
 
 [.lead]
-If node4 has onboard FC ports, onboard unified target adapter (UTA/UTA2) ports, or a UTA/UTA2 card, you must configure the settings before completing the rest of the procedure.
+include::../_include/ru_man_set_fc_utauta2_config_node4.adoc[]
 
-.About this task
+include::../_include/ru_man_config_fc_ports_node4.adoc[]
 
-You might need to complete link:config_fc_ports_node4.html[Configure FC ports on node4], the link:check_configure_uta_uta2_ports_node4.html[Check and configure UTA/UTA2 ports on node4], or both sections.
-
-If node4 does not have onboard FC ports, onboard UTA/UTA2 ports, or a UTA/UTA2 card, and you are upgrading a system with storage disks, you can skip to link:map_ports_node2_node4.html[Map ports from node2 to node4].
-
-However, if you have a V-Series system or have FlexArray Virtualization Software and are connected to storage arrays, and node4 does not have onboard FC ports, onboard UTA/ UTA2 ports, or a UTA/UTA2 card, you must return to the link:install_boot_node4.html[Install and boot node4] section and resume at Step 9. Make sure that node4 has sufficient rack space. If node4 is in a separate chassis from node2, you can put node4 in the same location as node3. If node2 and node4 are in the same chassis, then node4 is already in its appropriate rack location.
-
-.Choices
-
-* link:config_fc_ports_node4.html[Configure FC ports on node4]
-* link:check_configure_uta_uta2_ports_node4.html[Check and configure UTA/UTA2 ports on node4]
+include::../_include/ru_man_check_config_UTAUTA2_ports_node4.adoc[]
