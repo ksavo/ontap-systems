@@ -14,3 +14,4 @@ summary: There are certain terms assumptions you should be aware of when using t
 
 [.lead]
 include::../_include/ru_man_assumptions_terminology.adoc[]
+// 26 FEB 2021:  formatted from CMS

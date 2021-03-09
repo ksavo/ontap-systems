@@ -53,7 +53,7 @@ NOTE: *Important*: If your system has storage disks, enter the commands in this 
 |If the default FC settings on the new nodes are... |Then...
 
 |The same as the ones you that captured on node1
-|Go to Step <<step11,Step 11>>.
+|Go to <<step11,Step 11>>.
 |Different from the ones that you captured on node1
 |Go to <<step6,Step 6>>.
 |===

@@ -1,4 +1,4 @@
-You need to install node3 in the rack, transfer node1's connections to node3, boot node3, and install ONTAP. You then need to reassign any of node1's spare disks, any disks belonging to the root volume, and any non-root aggregates not relocated to node2 earlier. 
+You need to install node3 in the rack, transfer node1's connections to node3, boot node3, and install ONTAP. You then need to reassign any of node1's spare disks, any disks belonging to the root volume, and any non-root aggregates not relocated to node2 earlier.
 
 .About this task
 
@@ -7,7 +7,6 @@ You need to netboot node3 if it does not have the same version of ONTAP 9 that i
 However, you do not need to netboot node3 if it has the same or a later version of ONTAP 9 that is installed on node1.
 
 NOTE: *Important*: If you are upgrading a V-Series system connected to storage arrays or a system with FlexArray Virtualization software that is connected to storage arrays, you need to complete <<step1, Step 1>> through <<step5,Step 5>>, leave this section at <<step6,Step 6>> and follow instructions in link:config_fc_ports_node3.html[Configure Fibre Channel ports on node] and link:check_config_cna_ports_node3[Checking and configuring CNA ports on node3]  as needed, entering commands in maintenance mode. You must then return to this section and resume with <<step7,Step 7>>.
-+
 However, if you are upgrading a system with storage disks, you need to complete this entire section and then go to link:config_fc_ports_node3.html[Configure Fibre Channel ports on node] and link:check_config_cna_ports_node3[Checking and configuring CNA ports on node3], entering commands at the cluster prompt.
 
 .Steps
@@ -22,8 +21,15 @@ NOTE: If you are upgrading to a system with both nodes in the same chassis, inst
 
 . [[step3]]Cable node3, moving the connections from node1 to node3.
 +
-Cable the following connections, using the _Installation and Setup Instructions_ or the link:https://docs.netapp.com/ontap-9/topic/com.netapp.doc.vs-irrg/home.html[FlexArray Virtualization Installation Requirements and Reference] for the node3 platform, the appropriate disk shelf guide, and the link:https://docs.netapp.com/ontap-9/topic/com.netapp.doc.dot-cm-hacg/home.html[ONTAP 9 High-Availability Configuration Guide]:
+The following references help you make proper cable connections. Go to link:other_references.html[References] to link to them.
 +
+* _Installation and Setup Instructions_ or _FlexArray Virtualization Installation Requirements and Reference_ for the node3 platform.
+* The appropriate disk shelf guide.
+* The _ONTAP 9 High-Availability Configuration Guide_
+
++
+Cable the following connections:
+
 * Console (remote management port)
 * Cluster ports
 * Data ports
@@ -54,6 +60,7 @@ NOTE: *Attention*: Do not override the delay; failure to allow the battery to ch
 . [[step6]]Take one of the following actions:
 +
 [cols="35,65"]
+|===
 |If your system... |Then...
 
 |Has disks and no back-end storage
@@ -63,7 +70,7 @@ a|.. Go to link:set_onboard_fc_config_node3.html[Setting the onboard Fibre Chann
 
 .. Return to this section and complete the remaining steps, beginning with <<step7,Step 7>>.
 
-*Important*: You must reconfigure FC onboard ports, CNA onboard ports, and CNA cards before you boot ONTAP on the V-Series or system with FlexArray Virtualization software. 
+*Important*: You must reconfigure FC onboard ports, CNA onboard ports, and CNA cards before you boot ONTAP on the V-Series or system with FlexArray Virtualization software.
 |===
 
 . [[step7]]Add the FC initiator ports of the new node to the switch zones.
@@ -106,9 +113,9 @@ The system stops at the boot environment prompt.
 a|.. Switch the console cable from node3 to node4.
 
 .. Turn on the power to node4, and then interrupt the boot process by pressing Ctrl-C at the console terminal to access the boot environment prompt.
-
++
 The power should already be on if both controllers are in the same chassis.
-
++
 *Note*: Leave node4 at the boot environment prompt; you will return to node4 in link:install_boot_node4.html[Install and boot node4].
 
 .. If you see the warning message displayed in <<step4,Step 4>>, follow the instructions in <<step5,Step 5>>
@@ -128,7 +135,7 @@ The power should already be on if both controllers are in the same chassis.
 +
 `setenv kmip.init.maxwait off`
 
-17. If the version of ONTAP installed on node3 is the same or later than the version of ONTAP 9 installed on node1, list and reassign disks to the new node3:
+. [[step17]] If the version of ONTAP installed on node3 is the same or later than the version of ONTAP 9 installed on node1, list and reassign disks to the new node3:
 +
 `boot_ontap`
 +
@@ -151,17 +158,17 @@ running ONTAP running in 7-Mode.
 
 . [[step20]]Configure the netboot connection by choosing one of the following actions.
 +
-NOTE: You should use the management port and IP as the netboot connection. Do not use a data LIF IP or else a data outage might occur while the upgrade is being performed. 
+NOTE: You should use the management port and IP as the netboot connection. Do not use a data LIF IP or else a data outage might occur while the upgrade is being performed.
 +
 [cols="35,65"]
 |===
 |If Dynamic Host Configuration Protocol (DHCP) is... |Then...
 
-|Running 
+|Running
 |Configure the connection automatically by entering the following command at the boot environment prompt:
 
 `ifconfig e0M -auto`
-|Not running 
+|Not running
 |Manually configure the connection by entering the following command at the boot environment prompt:
 
 `ifconfig e0M -addr=<filer_addr> -mask=<netmask. -gw=<gateway> -dns=<dns_addr> domain=<dns_domain>`
@@ -174,7 +181,7 @@ NOTE: You should use the management port and IP as the netboot connection. Do no
 
 <dns_addr> is the IP address of a name server on your network.
 
-<dns_domain> is the Domain Name Service (DNS) domain name. If you use this optional parameter, you do not need a fully qualified domain name in the netboot server URL; you need only the server's host name. 
+<dns_domain> is the Domain Name Service (DNS) domain name. If you use this optional parameter, you do not need a fully qualified domain name in the netboot server URL; you need only the server's host name.
 
 *Note*: Other parameters might be necessary for your interface. Enter `help ifconfig` at the firmware prompt for details.
 |===
@@ -186,9 +193,9 @@ NOTE: You should use the management port and IP as the netboot connection. Do no
 |For... |Then...
 
 
-|FAS/AFF8000 series systems 
+|FAS/AFF8000 series systems
 |`netboot http://<web_server_ip>/<path_to_webaccessible_directory>/netboot/kernel`
-|All other systems 
+|All other systems
 |`netboot http://<web_server_ip>/<path_to_webaccessible_directory>/<ontap_version>_image.tgz`
 |===
 +
@@ -196,12 +203,13 @@ The <path_to_the_web-accessible_directory> should lead to where you downloaded t
 +
 NOTE: Do not interrupt the boot.
 
-. [[step22]]From the boot menu, select option *(7) Install new software* first. 
+. [[step22]]From the boot menu, select option *(7) Install new software* first.
 +
 This menu option downloads and installs the new ONTAP image to the boot device.
 +
-NOTE: Disregard the following message: 
+NOTE: Disregard the following message:
 +
+
 ----
 This procedure is not supported for Non-Disruptive Upgrade on an HA pair.
 ----
@@ -220,14 +228,12 @@ NOTE: Always use netboot to update the new node to the desired image. If you use
 +
 ----
 Do you want to restore the backup configuration now? {y|n}
-*n*
 ----
 
 .. Reboot by entering `y` when you see the following prompt:
 +
 ----
 The node must be rebooted to start using the newly installed software. Do you want to reboot now? {y|n}
-*y*
 ----
 +
 The controller module reboots but stops at the boot menu because the boot device was reformatted and the configuration data needs to be restored.
@@ -262,15 +268,15 @@ procedure.
 
 . [[step28]]Reassign node1's spares, any disks belonging to the root, and any non-root aggregates that were not relocated to node2 earlier in link:relocate_aggr_node1_node2.html[Relocating aggregates from node1 to node2].
 +
-Enter the appropriate form of the disk reassign command based on whether your system has shared disks:
+Enter the appropriate form of the `disk reassign` command based on whether your system has shared disks:
 +
 [cols="35,65"]
 |===
 |If disk type is... |Then run the command...
 
-|With shared disks 
+|With shared disks
 |`disk reassign -s <node1_sysid> -d <node3_sysid> -p <node2_sysid>`
-|Without shared disks 
+|Without shared disks
 |`disk reassign -s <node1_sysid> -d <node3_sysid>`
 |===
 +
@@ -280,12 +286,13 @@ NOTE: The `-p` option is only required in maintenance mode when shared disks are
 +
 The `disk reassign` command reassigns only those disks for which <node1_sysid> is the current owner.
 +
+
 The system displays the following message:
 +
 ----
 Partner node must not be in Takeover mode during disk reassignment from maintenance mode.
 Serious problems could result!!
-Do not proceed with reassignment if the partner is in takeover mode. Abort reassignment (y/n)? n
+Do not proceed with reassignment if the partner is in takeover mode. Abort reassignment (y/n)?
 ----
 
 . [[step29]]Enter `n`.
@@ -294,7 +301,8 @@ The system displays the following message:
 +
 ----
 After the node becomes operational, you must perform a takeover and giveback of the HA partner node to ensure disk reassignment is successful.
-Do you want to continue (y/n)? y
+Do you want to continue (y/n)?
+----
 
 . [[step30]]Enter `y`
 +
@@ -302,13 +310,15 @@ The system displays the following message:
 +
 ----
 Disk ownership will be updated on all disks previously belonging to Filer with sysid <sysid>.
-Do you want to continue (y/n)? y
+Do you want to continue (y/n)?
+----
 
 . [[step31]]Enter `y`.
 
 . [[step32]]If you are upgrading from a system with external disks to a system that supports internal and external disks (AFF A800 systems, for example), set the node1 aggregate as root to ensure node3 boots from the root aggregate of node1.
 +
 WARNING: *Warning*: You must perform the following substeps in the exact order shown; failure to do so might cause an outage or even data loss.
+
 +
 The following procedure sets node3 to boot from the root aggregate of node1:
 +
@@ -321,7 +331,7 @@ The following procedure sets node3 to boot from the root aggregate of node1:
 `aggr status`
 
 .. Bring the node1 aggregate online, if necessary:
-
++
 `aggr_online <root_aggr_from_node1>`
 
 .. Prevent the node3 from booting from its original root aggregate:
@@ -339,6 +349,7 @@ NOTE: Failing to perform the previous substep might cause node3 to boot from the
 
 +
 The following shows an example of the command output:
+
 +
 ----
  ---------------------------------------------------------------
@@ -367,13 +378,13 @@ The following example shows the output of the ha-config show command:
 +
 Systems record in a PROM whether they are in an HA pair or stand-alone configuration. The state must be the same on all components within the stand-alone system or HA pair.
 +
-If the controller and chassis are not configured as "ha", use the following commands to correct the configuration: 
+If the controller and chassis are not configured as "ha", use the following commands to correct the configuration:
 +
 `ha-config modify controller ha`
 +
 `ha-config modify chassis ha`
 +
-If you have a MetroCluster configuration, use the following commands to modify the controller and chassis: 
+If you have a MetroCluster configuration, use the following commands to modify the controller and chassis:
 +
 `ha-config modify controller mcc`
 +
@@ -394,9 +405,9 @@ configurations. Are you sure you want to destroy the local
 mailboxes?
 ----
 
-. [[step35]Enter `y` at the prompt to confirm that you want to destroy the local mailboxes.
+. [[step35]]Enter `y` at the prompt to confirm that you want to destroy the local mailboxes.
 
-36. Exit maintenance mode:
+. [[step36]]Exit maintenance mode:
 +
 `halt`
 +
@@ -440,7 +451,7 @@ Save the settings:
 
 . [[step45]]At the boot menu, select option *(6) Update flash from backup config* by entering `6` at the prompt.
 +
-The system displays the following message: 
+The system displays the following message:
 +
 ----
 This will replace all flash-based configuration with the last backup to disks. Are you sure you want to continue?:
@@ -450,7 +461,7 @@ This will replace all flash-based configuration with the last backup to disks. A
 +
 The boot proceeds normally, and the system then asks you to confirm the system ID mismatch.
 +
-NOTE: The system might reboot twice before displaying the mismatch warning. 
+NOTE: The system might reboot twice before displaying the mismatch warning.
 
 . [[step47]]Confirm the mismatch as shown in the following example:
 +
@@ -463,5 +474,3 @@ The node might go through one round of reboot before booting normally.
 
 . [[step48]]Log in to node3.
 // 22 FEB 2021: Formatted from CMS
-
-

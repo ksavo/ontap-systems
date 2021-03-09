@@ -52,7 +52,7 @@ Internal drives have "00." at the beginning of their ID. The "00." indicates an 
 +
 The system displays the aggregate status of the node, as shown in the partial output in the following example:
 +
-....
+----
 node> aggr status -r
 Aggregate aggr2 (online, raid_dp, parity uninit'd!) (block checksums)
 Plex /aggr2/plex0 (online, normal, active)
@@ -64,9 +64,10 @@ dparity   0a.00.1   0a   0    1  SA:B  0   BSAS 7200 1695466/3472315904 1695759/
 parity    0a.00.3   0a   0    3  SA:B  0   BSAS 7200 1695466/3472315904 1695759/3472914816
 data      0a.00.9   0a   0    9  SA:B  0   BSAS 7200 1695466/3472315904 1695759/3472914816
 ...
-....
-
+----
++
 NOTE: The device used to create the aggregate might not be a physical disk but might be a partition.
+
 
 . Examine the output of the `aggr status -r` command to identify the aggregates using internal disk drives, and then record the information.
 +
@@ -90,7 +91,8 @@ node> aggr status -v
          Volumes: vol6, vol5, vol14
 ...
  aggr0   online   raid_dp, aggr    root, diskroot, nosnap=off, raidtype=raid_dp,
-                  64-bit           raidsize=14, raid_lost_write=on, rlw_on ignore_inconsistent=off,                                      snapmirrored=off,  resyncsnaptime=60, fs_size_fixed=off,
+                  64-bit           raidsize=14, raid_lost_write=on, rlw_on ignore_inconsistent=off,
+                                   snapmirrored=off,  resyncsnaptime=60, fs_size_fixed=off,
                                    lost_write_protect=on, ha_policy=cfo, hybrid_enabled=off,
                                    percent_snapshot_space=0%,  free_space_realloc=off, raid_cv=on
          Volumes: vol0
@@ -104,7 +106,7 @@ Based on the output in Step 4 and Step 6, aggr2 uses three internal drives—"0a
 +
 `exit`
 
-. The one of the following actions:
+. Take one of the following actions:
 +
 [cols="35,65"]
 |===
@@ -115,19 +117,19 @@ Based on the output in Step 4 and Step 6, aggr2 uses three internal drives—"0a
 |Contain aggregates but no volumes on the internal disk drives
 |Continue with this procedure.
 
-*Note*: Before you continue, you must place the aggregates offline, and then destroy the aggregates on the internal disk drives. See the _Disk and Aggregates Power Guide_ for information about managing aggregates.
+*Note*: Before you continue, you must place the aggregates offline, and then destroy the aggregates on the internal disk drives. Refer to link:other_references.html[References] to link to the _Disk and Aggregates Power Guide_ for information about managing aggregates.
 
 |Contain non-root volumes on the internal drives
 |Continue with this procedure.
 
-*Note*: Before you continue, you must move the volumes to an external disk shelf, place the aggregates offline, and then destroy the aggregates on the internal disk drives. See the _Disk and Aggregates Power Guide_ for information about moving volumes.
+*Note*: Before you continue, you must move the volumes to an external disk shelf, place the aggregates offline, and then destroy the aggregates on the internal disk drives. Refer to link:other_references.html[References] to link to the _Disk and Aggregates Power Guide_ for information about moving volumes.
 
 |Contain root volumes on the internal drives
 |Do not continue with this procedure.
 
-You can upgrade the controllers by using the procedure _Upgrading the controller hardware on a pair of nodes running clustered Data ONTAP by moving volumes_ on the NetApp Support Site at link:http://mysupport.netapp.com/[ mysupport.netapp.com].
+You can upgrade the controllers by referring to link:other_references.html[References] to link to the NetApp Support Site and using the procedure _Upgrading the controller hardware on a pair of nodes running clustered Data ONTAP by moving volumes_.
 |Contain non-root volumes on the internal drives and you cannot move the volumes to external storage
 |Do not continue with this procedure.
 
-You can upgrade the controllers by using the procedure _Upgrading the controller hardware on a pair of nodes running clustered Data ONTAP by moving volumes_ on the NetApp Support Site at link:http://mysupport.netapp.com/[ mysupport.netapp.com].
+You can upgrade the controllers by referring to link:other_references.html[References] to link to the NetApp Support Site and using the procedure _Upgrading the controller hardware on a pair of nodes running clustered Data ONTAP by moving volumes_. 
 |===

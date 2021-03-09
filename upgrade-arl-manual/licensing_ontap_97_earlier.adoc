@@ -14,3 +14,4 @@ summary: You need licensing keys for certain features.
 
 [.lead]
 include::../_include/ru_man_licensing.adoc[]
+// 3 MAR 2021:  formatted from CMS

@@ -14,3 +14,4 @@ summary: ARL upgrade workflow
 
 [.lead]
 include::../_include/ru_man_arl_workflow.adoc[]
+// 26 FEB 2021:  Formatted from CMS

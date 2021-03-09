@@ -13,3 +13,4 @@ summary: Configure Storage Encryption and establish a client authentication key.
 :imagesdir: ./media/
 
 include::../_include/ru_man_get_ip_address_external_km_server.adoc[]
+// 26 FEB 2021: formatted from CMS 

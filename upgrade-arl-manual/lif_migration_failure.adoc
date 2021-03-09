@@ -1,6 +1,7 @@
 ---
 sidebar: upgrade-arl-manual_sidebar
 permalink: upgrade-arl-manual/lif_migration_failure.html
+keywords: lif, migration, failure, error, troubleshoot
 summary: LIF migration failure
 ---
 
@@ -12,5 +13,6 @@ summary: LIF migration failure
 :imagesdir: ./media/
 
 [.lead]
-// COPIED FROM 9.8 GUIDE...CHECK FOR REUSE, THEN REMOVE THIS COMMENT
-include::..\_include\ru_app_lif_migration_failure.adoc[]
+
+include::../_include/ru_man_lif_migration_failure.adoc[]
+// 3 MAR 2021:  formatted from CMS

@@ -14,3 +14,4 @@ summary: During stage 6, ensure that the new nodes are set up correctly.
 
 [.lead]
 include::../_include/ru_man_stage6_intro.adoc[]
+// 26 FEB 2021:  formatted from CMS 

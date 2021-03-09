@@ -1,8 +1,8 @@
 ---
 sidebar: upgrade-arl-manual_sidebar
-permalink: upgrade-arl-manual/guidelines_upgrade_with_arl.html
+permalink: upgrade-arl-manual/guidelines_upgrading_with_arl.html
 keywords:  guidelines, upgrade
-summary: Guidelines for upgrade controllers with ARL
+summary: Guidelines for upgrading controllers with ARL
 ---
 
 = Guidelines for upgrading controllers with ARL
@@ -14,3 +14,14 @@ summary: Guidelines for upgrade controllers with ARL
 
 [.lead]
 To understand whether you can use aggregate relocation (ARL) to upgrade a pair of controllers running ONTAP 9.0 to 9.7 depends on the platform and the configuration of both the original and replacement controllers.
+
+.Guidelines
+
+* link:supported_upgrades_for_arl.html[Supported upgrades for ARL]
+* link:upgrades_not_supported_for_arl.html[Upgrades not supported for ARL]
+* link:assumptions_terminology.html[Assumptions and terminology]
+* link:licensing_ontap_97_earlier.html[Licensing in ONTAP 9.7 or earlier]
+* link:storage_encryption.html[Storage Encryption]
+* link:two_node_switchless_clusters.html[Two-node switchless clusters]
+* link:troubleshooting.html[Troubleshooting]
+// 26 FEB 2021:  formatted from CMS

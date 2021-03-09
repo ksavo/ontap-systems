@@ -14,3 +14,4 @@ summary: The nodes must be prepared before you can upgrade.
 
 [.lead]
 include::../_include/ru_man_prepare_nodes_upgrade.adoc[]
+// 26 FEB 2021: formmatted from CMS
