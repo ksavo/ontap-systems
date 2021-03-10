@@ -15,13 +15,49 @@ summary: Guidelines for upgrading controllers with ARL
 [.lead]
 To understand whether you can use aggregate relocation (ARL) to upgrade a pair of controllers running ONTAP 9.0 to 9.7 depends on the platform and the configuration of both the original and replacement controllers.
 
-.Guidelines
+== Supported upgrades for ARL
+include::../_include/ru_man_supported_upgrades_chunk_a.adoc[]
 
-* link:supported_upgrades_for_arl.html[Supported upgrades for ARL]
-* link:upgrades_not_supported_for_arl.html[Upgrades not supported for ARL]
-* link:assumptions_terminology.html[Assumptions and terminology]
-* link:licensing_ontap_97_earlier.html[Licensing in ONTAP 9.7 or earlier]
-* link:storage_encryption.html[Storage Encryption]
-* link:two_node_switchless_clusters.html[Two-node switchless clusters]
-* link:troubleshooting.html[Troubleshooting]
+NOTE: Before performing an AFF system upgrade, you must upgrade ONTAP to release versions 9.3P12, 9.4P6 or 9.5P1 or later. These release levels are required for a successful upgrade.
+
+include::../_include/ru_man_supported_upgrades_chunk_b.adoc[]
+
+== Upgrades not supported for ARL
+
+You cannot perform the following upgrades:
+
+*  To or from controllers that cannot run a version of ONTAP from ONTAP 9.0 to ONTAP 9.7.
++
+For information on controller upgrades for systems running Data ONTAP operating in 7-Mode, refer to link:other_references.html[References] to link to the _NetApp Support Site_.
+
+* To replacement controllers that do not support the disk shelves connected to the original controllers.
++
+For disk-support information, refer to link:other_references.html[References] to link to the _Hardware Universe_.
+
+* From controllers with root aggregates or data aggregates on internal drives.
++
+If you want to upgrade controllers with root aggregates or data aggregates on internal disk drives, refer to link:other_references.html[References] to link to the _Controller Hardware Upgrade Express Guide_ and go to the procedure _Upgrading a pair of nodes running clustered Data ONTAP by moving volumes_.
++
+NOTE: If you want to upgrade ONTAP on nodes in a cluster, refer to link:other_references.html[References] to link to the _ONTAP 9 Upgrade and Revert/Downgrade Guide_.
+
+== Assumptions and terminology
+
+include::../_include/ru_man_assumptions_terminology.adoc[]
+
+== Licensing in ONTAP 9.7 or earlier
+
+include::../_include/ru_man_licensing.adoc[]
+
+== Storage Encryption
+
+include::../_include/ru_man_storage_encryption.adoc[]
+
+== Two-node switchless clusters
+
+In some instances, you do not need to convert switchless clusters.
+
+If you are upgrading nodes in a two-node switchless cluster, you can leave the nodes in the switchless cluster while performing the upgrade. You do not need to convert them to a switched cluster.
+
+== Troubleshooting
+include::../_include/ru_man_troubleshooting.adoc[]
 // 26 FEB 2021:  formatted from CMS

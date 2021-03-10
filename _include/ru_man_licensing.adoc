@@ -4,6 +4,6 @@ However, some features require additional licenses, which are issued as packages
 
 If you do not have new license keys, currently licensed features in the cluster are available to the new controller and will continue to work. However, using unlicensed features on the controller might put you out of compliance with your license agreement, so you should install the new license key or keys for the new controller after the upgrade is complete.
 
-All license keys are 28 uppercase alphabetic characters in length. You can obtain new 28-character license keys for ONTAP 9.x at the NetApp Support Site at mysupport.netapp.com. The keys are available in the My Support section under Software licenses. If the site does not have the license keys you need, contact your NetApp sales representative.
+All license keys are 28 uppercase alphabetic characters in length. Refer to link:other_references.html[References] to link to the _NetApp Support Site_ where you can obtain new 28-character license keys for ONTAP 9. The keys are available in the _My Support_ section under _Software licenses_. If the site does not have the license keys you need, contact your NetApp sales representative.
 
-For detailed information about licensing, go to link:other_references.html[References] to link to the _System Administration Reference_ in the ONTAP 9 Documentation Center.
+For detailed information about licensing, go to link:other_references.html[References] to link to the _System Administration Reference_.

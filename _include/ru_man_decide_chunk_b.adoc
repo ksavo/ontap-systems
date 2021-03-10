@@ -1,3 +1,5 @@
 NOTE: You can use NetApp Storage Encryption (NSE) and NetApp Volume Encryption (NVE) with this procedure.
 
-If you prefer a different method of upgrading the controller hardware and are willing to do volume moves, use the link:https://docs.netapp.com/platstor/topic/com.netapp.doc.hw-upgrade-controller/home.html[Controller Hardware Upgrade Express Guide] instead. See the link:https://docs.netapp.com/ontap-9/index.jsp[ONTAP 9 Documentation Center] to access ONTAP 9 product documentation.
+If you prefer a different method of upgrading the controller hardware and are willing to do volume moves, refer to link:other_references.html[References] to link to the _Controller Hardware Upgrade Express Guide_.
+
+Refer to link:other_references.html[References] to link to the _ONTAP 9 Documentation Center_ where you can access ONTAP 9 product documentation.

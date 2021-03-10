@@ -13,5 +13,5 @@ summary: Use the Config Advisor tool to check for common configuration errors.
 :imagesdir: ./media/
 
 [.lead]
-include::../_include/ru_auto_check_metrocluster_configuration_errors.adoc[]
+include::../_include/ru_all_check_metrocluster_configuration_errors.adoc[]
 // p. 11 of PDF

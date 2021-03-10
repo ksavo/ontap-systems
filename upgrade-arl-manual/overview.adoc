@@ -13,4 +13,5 @@ summary:
 
 [.lead]
 // COPIED FROM 9.8 GUIDE...CHECK FOR REUSE, THEN REMOVE THIS COMMENT
-include::../_include/ru_app_use_arl_overview.adoc[]
+
+include::../_include/ru_man_use_arl_overview.adoc[]

@@ -19,4 +19,4 @@ summary: You can use the Config Advisor tool available from the NetApp Support S
 //
 
 [.lead]
-include::../_include/ru_auto_check_metrocluster_configuration_errors.adoc[]
+include::../_include/ru_all_check_metrocluster_configuration_errors.adoc[]

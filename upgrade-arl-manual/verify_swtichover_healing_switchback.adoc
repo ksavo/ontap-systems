@@ -1,6 +1,6 @@
 ---
 sidebar: upgrade-arl-manual_sidebar
-permalink: upgrade-arl-manual/verify_swtichover_healing_switchback
+permalink: upgrade-arl-manual/verify_swtichover_healing_switchback.html
 keywords: verify,switchover, healing, switchback, negotiated, mcc, metrocluster
 summary: Verify the switchover, healing, and switchback operations.
 ---
