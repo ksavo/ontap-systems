@@ -127,9 +127,9 @@ Based on the output in Step 4 and Step 6, aggr2 uses three internal drives—"0a
 |Contain root volumes on the internal drives
 |Do not continue with this procedure.
 
-You can upgrade the controllers by referring to link:other_references.html[References] to link to the NetApp Support Site and using the procedure _Upgrading the controller hardware on a pair of nodes running clustered Data ONTAP by moving volumes_.
+You can upgrade the controllers by referring to link:other_references.html[References] to link to the _NetApp Support Site_ and using the procedure _Upgrading the controller hardware on a pair of nodes running clustered Data ONTAP by moving volumes_.
 |Contain non-root volumes on the internal drives and you cannot move the volumes to external storage
 |Do not continue with this procedure.
 
-You can upgrade the controllers by referring to link:other_references.html[References] to link to the NetApp Support Site and using the procedure _Upgrading the controller hardware on a pair of nodes running clustered Data ONTAP by moving volumes_. 
+You can upgrade the controllers by referring to link:other_references.html[References] to link to the _NetApp Support Site_ and using the procedure _Upgrading the controller hardware on a pair of nodes running clustered Data ONTAP by moving volumes_. 
 |===

@@ -5,7 +5,7 @@ keywords: configure, configuration, fibre channel, fc, ports, node3, uta, uta2, 
 summary: Configure Fibre Channel ports on node3
 ---
 
-= Configure Fibre Channel ports on node3
+= Configure FC ports on node3
 :hardbreaks:
 :nofooter:
 :icons: font

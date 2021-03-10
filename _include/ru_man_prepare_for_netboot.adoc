@@ -3,7 +3,7 @@ After you physically rack node3 and node4 later in the procedure, you might need
 .Before you begin
 
 * Verify that you can access a HTTP server with the system.
-* You need to download the necessary system files for your platform and the correct version of ONTAP from the NetApp Support Site at mysupport.netapp.com.
+* Refer to link:other_references.html[References] to link to the _NetApp Support Site_ and download the necessary system files for your platform and the correct version of ONTAP.
 
 .About this task
 
@@ -13,7 +13,7 @@ However, you do not need to netboot the controllers if the same version of ONTAP
 
 .Steps
 
-. Access the NetApp Support Site to download the files used for performing the netboot of the system.
+. [[Step1]]Access the NetApp Support Site to download the files used for performing the netboot of the system.
 
 . Download the appropriate ONTAP software from the software download section of the NetApp Support Site and store the `<ontap_version>_image.tgz` file on a web-accessible directory.
 

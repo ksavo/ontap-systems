@@ -13,4 +13,6 @@ summary: During Stage 2, you relocate the node1 aggregates and LIFs to node2, re
 :imagesdir: ./media/
 
 [.lead]
+During Stage 2, you relocate the node1 aggregates and LIFs to node2, record node1 information, and then retire node1.  This process is largely automated; the operation pauses to allow you to check its status. You must manually resume the operation.
+
 include::../_include/ru_man_stage2_intro.adoc[]

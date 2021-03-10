@@ -6,8 +6,8 @@ You need to netboot node3 if it does not have the same version of ONTAP 9 that i
 
 However, you do not need to netboot node3 if it has the same or a later version of ONTAP 9 that is installed on node1.
 
-NOTE: *Important*: If you are upgrading a V-Series system connected to storage arrays or a system with FlexArray Virtualization software that is connected to storage arrays, you need to complete <<step1, Step 1>> through <<step5,Step 5>>, leave this section at <<step6,Step 6>> and follow instructions in link:config_fc_ports_node3.html[Configure Fibre Channel ports on node] and link:check_config_cna_ports_node3[Checking and configuring CNA ports on node3]  as needed, entering commands in maintenance mode. You must then return to this section and resume with <<step7,Step 7>>.
-However, if you are upgrading a system with storage disks, you need to complete this entire section and then go to link:config_fc_ports_node3.html[Configure Fibre Channel ports on node] and link:check_config_cna_ports_node3[Checking and configuring CNA ports on node3], entering commands at the cluster prompt.
+NOTE: *Important*: If you are upgrading a V-Series system connected to storage arrays or a system with FlexArray Virtualization software that is connected to storage arrays, you need to complete <<step1, Step 1>> through <<step5,Step 5>>, leave this section at <<step6,Step 6>> and follow instructions in link:configure_fc_ports_node3.html[Configure FC ports on node] and link:check_configure_uta_uta2_node3.html[Checking and configuring CNA ports on node3]  as needed, entering commands in maintenance mode. You must then return to this section and resume with <<step7,Step 7>>.
+However, if you are upgrading a system with storage disks, you need to complete this entire section and then go to link:configure_fc_ports_node3.html[Configure FC ports on node] and link:check_configure_uta_uta2_node3.html[Checking and configuring CNA ports on node3], entering commands at the cluster prompt.
 
 .Steps
 
@@ -66,7 +66,7 @@ NOTE: *Attention*: Do not override the delay; failure to allow the battery to ch
 |Has disks and no back-end storage
 |Skip <<step7,Step 7>> through <<step12,Step 12>> and go to <<step13,Step 13>>.
 |Is a V-Series system or a system with FlexArray Virtualization software connected to storage arrays
-a|.. Go to link:set_onboard_fc_config_node3.html[Setting the onboard Fibre Channel configuration on node3] and link:config_cna_ports_node3.html[Configuring CNA ports on node3], as appropriate to your system.
+a|.. Go to link:set_onboard_fc_config_node3.html[Setting the onboard FC configuration on node3] and link:config_cna_ports_node3.html[Configuring CNA ports on node3], as appropriate to your system.
 
 .. Return to this section and complete the remaining steps, beginning with <<step7,Step 7>>.
 
@@ -199,7 +199,7 @@ NOTE: You should use the management port and IP as the netboot connection. Do no
 |`netboot http://<web_server_ip>/<path_to_webaccessible_directory>/<ontap_version>_image.tgz`
 |===
 +
-The <path_to_the_web-accessible_directory> should lead to where you downloaded the <ontap_version>_image.tgz in <<step1,Step 1>> in link:prepare_for_netboot.html[Prepare for netboot].
+The <path_to_the_web-accessible_directory> should lead to where you downloaded the <ontap_version>_image.tgz in link:prepare_for_netboot.html#Step1[Step 1] in link:prepare_for_netboot.html[Prepare for netboot].
 +
 NOTE: Do not interrupt the boot.
 
@@ -239,7 +239,7 @@ The node must be rebooted to start using the newly installed software. Do you wa
 The controller module reboots but stops at the boot menu because the boot device was reformatted and the configuration data needs to be restored.
 
 . [[step25]]Select *(5) Maintenance mode boot* by entering `5`, and then enter `y` when prompted to continue with the boot.
-. [[step26]]Before continuing, go to link:set_fc_uta_uta2_config_node3.html[Setting the FC or UTA/UTA2 configuration on node3] to make any necessary changes to the FC or UTA/UTA2 ports on the node.
+. [[step26]]Before continuing, go to link:set_fc_uta_uta2_config_node3.html[Set the FC or UTA/UTA2 configuration on node3] to make any necessary changes to the FC or UTA/UTA2 ports on the node.
 +
 Make the changes recommended in those sections, reboot the node, and go into maintenance mode.
 
@@ -266,7 +266,7 @@ The system displays the system ID of the node and information about its disks, a
 NOTE: You might see the message `disk show: No disks match option -a.` after entering the command. This is not an error message so you can continue with the
 procedure.
 
-. [[step28]]Reassign node1's spares, any disks belonging to the root, and any non-root aggregates that were not relocated to node2 earlier in link:relocate_aggr_node1_node2.html[Relocating aggregates from node1 to node2].
+. [[step28]]Reassign node1's spares, any disks belonging to the root, and any non-root aggregates that were not relocated to node2 earlier in link:relocate_non_root_aggr_node1_node2.html[Relocate non-root aggregates from node1 to node2].
 +
 Enter the appropriate form of the `disk reassign` command based on whether your system has shared disks:
 +
@@ -280,7 +280,7 @@ Enter the appropriate form of the `disk reassign` command based on whether your 
 |`disk reassign -s <node1_sysid> -d <node3_sysid>`
 |===
 +
-For the <node1_sysid> value, use the information captured in link:record_node1_info.html[Recording node1 information]. To obtain the value for <node3_sysid>, use the `sysconfig` command.
+For the <node1_sysid> value, use the information captured in link:record_node1_information.html[Record node1 information]. To obtain the value for <node3_sysid>, use the `sysconfig` command.
 +
 NOTE: The `-p` option is only required in maintenance mode when shared disks are present.
 +
