@@ -22,7 +22,7 @@ node2
 4 entries were displayed.
 ----
 +
-NOTE: Your system might not have intercluster LIFs. You will have a cluster management LIF only on one node of a node pair. A cluster management LIF was displayed in the example output of Step 1 in link:record_node1_information.html[Recording node1 port information].
+NOTE: Your system might not have intercluster LIFs. You will have a cluster management LIF only on one node of a node pair. A cluster management LIF was displayed in the example output of Step 1 in link:record_node1_information.html[Record node1 port information].
 
 . Capture the information in the output to use in the section link:map_ports_node2_node4.html[Map ports from node2 to node4].
 +
@@ -111,4 +111,4 @@ cluster::> system node show -instance -node node2
                            ...
 ----
 
-. [][step10]]Record the NVRAM System ID to use in the section link:install_boot_node4.html[Install and boot node4].
+. [[step10]]Record the NVRAM System ID to use in the section link:install_boot_node4.html[Install and boot node4].

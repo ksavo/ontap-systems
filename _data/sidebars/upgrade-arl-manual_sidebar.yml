@@ -63,16 +63,12 @@ entries:
       - title: "Retire node1"
         url: /retire_node1.html
   - title: "Stage 3: Install and boot node3"
-    url: /stage3_install_boot_node3.html
+    url: /stage_3_install_boot_node3.html
     entries:
       - title: "Install and boot node3"
         url: /install_boot_node3.html
       - title: "Set the FC or UTA/UTA2 configuration on node3"
         url: /set_fc_uta_uta2_config_node3.html
-      - title: "Configure Fibre Channel ports on node3"
-        url: /configure_fc_ports_node3.html
-      - title: "Check and configure UTA/UTA2 ports on node3"
-        url: /check_configure_uta_uta2_node3.html
       - title: "Map ports from node1 to node3"
         url: /map_ports_node1_node3.html
       - title: "Verify the node3 installation"
@@ -131,5 +127,5 @@ entries:
         url: /lif_migration_failure.html
       - title: "LIFs are on invalid ports after upgrade"
         url: /lifs_invalid_ports_after_upgrade.html
-  - title: "Other references"
+  - title: "References"
     url: /other_references.html

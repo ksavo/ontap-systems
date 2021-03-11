@@ -14,5 +14,8 @@ summary: Settings must be configured before completing the upgrade.
 
 [.lead]
 include::../_include/ru_man_set_fc_uta_uta2_config_node3.adoc[]
-// 22 FEB 2021: Formatted from CMS
 
+include::../_include/ru_man_config_fc_ports_node3.adoc[]
+
+include::../_include/ru_man_check_config_uta_uta2_ports_node3.adoc[]
+// 22 FEB 2021: Formatted from CMS
