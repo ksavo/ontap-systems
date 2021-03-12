@@ -16,6 +16,11 @@ summary: Guidelines for upgrading controllers with ARL
 To understand whether you can use aggregate relocation (ARL) to upgrade a pair of controllers running ONTAP 9.0 to 9.7 depends on the platform and the configuration of both the original and replacement controllers.
 
 == Supported upgrades for ARL
+You can upgrade a pair of nodes using ARL under the following circumstances:
+
+
+* Both the original controllers and the replacement controllers must be running the same version of ONTAP 9 before the upgrade.
+
 include::../_include/ru_man_supported_upgrades_chunk_a.adoc[]
 
 NOTE: Before performing an AFF system upgrade, you must upgrade ONTAP to release versions 9.3P12, 9.4P6 or 9.5P1 or later. These release levels are required for a successful upgrade.

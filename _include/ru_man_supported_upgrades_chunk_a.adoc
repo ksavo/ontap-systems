@@ -1,8 +1,3 @@
-You can upgrade a pair of nodes using ARL under the following circumstances:
-
-
-* Both the original controllers and the replacement controllers must be running the same version of ONTAP 9 before the upgrade.
-
 * The replacement controllers must have equal or higher capacity than the original controllers. Equal or higher capacity refers to attributes, such as the NVRAM size, volume, LUN, or aggregate count limits; it also refers to the maximum volume or aggregate sizes of the new nodes.
 
 * You can upgrade the following type of systems:

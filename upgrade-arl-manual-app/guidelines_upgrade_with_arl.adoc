@@ -14,3 +14,48 @@ summary: Guidelines for upgrade controllers with ARL
 
 [.lead]
 To understand whether you can use aggregate relocation (ARL) to upgrade a pair of controllers running ONTAP 9.8 depends on the platform and the configuration of both the original and replacement controllers.
+
+== Supported upgrades for ARL
+You can upgrade a pair of nodes using ARL under the following circumstances:
+
+
+* Both the original controllers and the replacement controllers must be running the same version of ONTAP 9.8 before the upgrade.
+
+include::../_include/ru_man_supported_upgrades_chunk_a.adoc[]
+include::../_include/ru_man_supported_upgrades_chunk_b.adoc[]
+
+== Upgrades not supported for ARL
+
+You cannot perform the following upgrades:
+
+* To or from controllers that cannot run ONTAP 9.8 or later.
+
+* To replacement controllers that do not support the disk shelves connected to the original controllers.
++
+See the Hardware Universe at hwu.netapp.com for disk-support information.
+
+* From controllers with root aggregates or data aggregates on internal drives.
++
+If you want to upgrade controllers with root aggregates or data aggregates on internal disk drives, see the procedure "Upgrading a pair of nodes running clustered Data ONTAP by moving volumes" in the _Controller Hardware Upgrade Express Guide_.
++
+NOTE: If you want to upgrade ONTAP on nodes in a cluster, see the _ONTAP 9 Upgrade and Revert/Downgrade Guide_ at the ONTAP 9 Documentation Center.
+
+== Assumptions and terminology
+
+include::../_include/ru_man_assumptions_terminology.adoc[]
+
+== Licensing in ONTAP 9.8 or Later
+
+include::../_include/ru_man_licensing.adoc[]
+
+== Storage Encryption
+
+include::../_include/ru_man_storage_encryption.adoc[]
+
+== Two-node switchless clusters
+
+If you are upgrading nodes in a two-node switchless cluster, you can leave the nodes in the switchless cluster while performing the upgrade. You do not need to convert them to a switched cluster
+
+== Troubleshooting
+
+include::../_include/ru_man_troubleshooting.adoc[]
