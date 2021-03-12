@@ -44,7 +44,7 @@ entries:
       - title: "Retire node1"
         url: /retire_node1.html
   - title: "Stage 3: Upgrade the node pair"
-    url: /stage3_install_boot_node3.html
+    url: /stage_3_install_boot_node3.html
     entries:
       - title: "Install and boot node3"
         url: /install_boot_node3.html

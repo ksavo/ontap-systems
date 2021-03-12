@@ -21,8 +21,7 @@ Each aggregate has a home owner and current owner. The home owner is the actual 
 
 // Illustration from PDF is not being used
 
-The following table describes the high-level tasks you perform during each stage and the state of aggregate ownership
-at the end of the stage. Detailed steps are provided later in the procedure:
+The following table describes the high-level tasks you perform during each stage and the state of aggregate ownership at the end of the stage. Detailed steps are provided later in the procedure:
 
 [cols="35,65"]
 |===
@@ -34,6 +33,8 @@ a| . Determine whether the controller has aggregates on internal disk drives.
 This step is required only if you are upgrading from a controller with internal disk drive.
 . Prepare the nodes for upgrade.
 . Rekey disks for Storage Encryption.
++
+This task is required only if you are upgrading from a system with self-encrypting drives.
 . Verify the SnapMirror relationship state on the cluster and quiesce all relationships between the clusters.
 . Prepare for netboot.
 
@@ -59,7 +60,6 @@ Aggregate ownership at the end of Stage 2:
 a| . Install and boot node3.
 . Set the UTA/UTA2 configuration on node3.
 . Map ports from node1 to node3.
-. Restore node3 network configuration.
 . Move non-SAN data LIFs owned by node 1 from node2 to node3 and verify SNA LIFs on node3.
 . Relocate non-root aggregates from node2 to node3.
 . Move non-SAN data LIFs owned by node2 to node3.
