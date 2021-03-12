@@ -20,9 +20,9 @@ With ONTAP 9.5 and later, you can use Key Management Interoperability Protocol (
 
 . Rekey all self-encrypting disks with the new authentication key:
 +
-`storage encryption disk modify -disk * <-data-key-id nonMSID AK>`
+`storage encryption disk modify -disk * [-data-key-id nonMSID AK]`
 
 . If you use the Federal Information Processing Standard (FIPS), rekey all self-encrypting disks with the new authentication key:
 +
-`storage encryption disk* modify -disk * <-fips-key-id nonMSID AK>`
+`storage encryption disk* modify -disk * [-fips-key-id nonMSID AK]`
 // 5 MAR 2021:  formatted from CMS

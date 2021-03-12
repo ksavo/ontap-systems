@@ -5,7 +5,7 @@ keywords: stage 3, install, boot, node3, map ports, uta, uta2, fc, configure, co
 summary: Stage 3:  Install and boot node3
 ---
 
-= Stage 3:  Install and boot node3
+= Stage 3: Install and boot node3
 :hardbreaks:
 :nofooter:
 :icons: font
