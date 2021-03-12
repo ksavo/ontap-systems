@@ -1,6 +1,6 @@
 ---
 sidebar: upgrade-arl-manual_sidebar
-permalink: upgrade-arl-manual/guidelines_upgrading_with_arl.html
+permalink: upgrade-arl-manual/guidelines_upgrade_with_arl.html
 keywords:  guidelines, upgrade
 summary: Guidelines for upgrading controllers with ARL
 ---

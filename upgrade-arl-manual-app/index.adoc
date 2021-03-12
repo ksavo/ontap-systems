@@ -23,5 +23,4 @@ node and 8-node configurations running ONTAP 9.8 and later.
 * For MetroCluster IP configurations and additional upgrade options for Fabric MetroCluster
 configurations, go to link:other_references.html[Other references] to link to the _MetroCluster Upgrade, Transition, and Expansion Guide_.
 
-include::../_include/ru_man_use_arl_overview.adoc[]
 // 24 FEB 2021:  Formatted from CMS

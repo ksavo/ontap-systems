@@ -5,7 +5,7 @@ keywords: other references, documentation, hardware universe, guides, documentat
 summary: You can link to other reference guides and websites in this topic.
 ---
 
-= Other references
+= References
 :hardbreaks:
 :nofooter:
 :icons: font

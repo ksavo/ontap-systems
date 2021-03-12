@@ -131,7 +131,7 @@ If the system you are upgrading... |Then...
 |If the system that you are upgrading... |Then...
 
 |Has storage disks
-a|* If node3 has a UTA/UTA2 card or UTA/UTA2 onboard ports, go to link:check_configure_uta_uta2_node3.html[Check and configure UTA/UTA2 ports on node3].
+a|* If node3 has a UTA/UTA2 card or UTA/UTA2 onboard ports, go to <<Check and configure UTA/UTA2 ports on node3>>.
 * If node3 does not have a UTA/UTA2 card or UTA/UTA2 onboard ports, skip <<Check and configure UTA/UTA2 ports on node3>> and go to link:map_ports_node1_node3.html[Map ports from node1 to node3].
 |Is a V-Series system or has FlexArray Virtualization Software and is connected to storage arrays
 a|* If node3 has a card or onboard ports, go to <<Check and configure UTA/UTA2 ports on node3>>.

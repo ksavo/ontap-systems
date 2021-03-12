@@ -1,12 +1,14 @@
 entries:
   - title: "Using Aggregate Relocation to Manually Upgrade Controller Hardware Running ONTAP 9.8 and Later"
     url: /index.html
+  - title: "Overview"
+    url: /overview.html
   - title: "Decide whether to use the aggregate relocation guide"
     url: /decide_to_use_arl_guide.html
   - title: "ARL upgrade workflow"
     url: /arl_upgrade_workflow.html
   - title: "Guidelines for upgrading controllers with ARL"
-    url: /guidelines_upgrading_with_arl.html
+    url: /guidelines_upgrade_with_arl.html
     entries:
       - title: "Supported upgrades for ARL"
         url: /supported_upgrades_for_arl.html

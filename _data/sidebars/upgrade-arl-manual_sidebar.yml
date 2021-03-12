@@ -8,7 +8,7 @@ entries:
   - title: "ARL upgrade workflow"
     url: /arl_upgrade_workflow.html
   - title: "Guidelines for upgrading controllers with ARL"
-    url: /guidelines_upgrading_with_arl.html
+    url: /guidelines_upgrade_with_arl.html
   - title: "Required tools and documentation"
     url: /required_tools_documentation.html
   - title: "Worksheet: Information to collect before and during the controller upgrade"
