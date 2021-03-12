@@ -4,7 +4,7 @@ Before you can replace the original nodes, you must ensure that they are in an H
 
 . Ensure that each of the original nodes has enough resources to adequately support the workload of both nodes during takeover mode.
 +
-Follow the _Best practices for HA pairs_ section in the _ONTAP 9 High-Availability Configuration Guide_. Neither of the original nodes should be running at more than 50 percent utilization; if a node is running at less than 50 percent utilization, it can handle the loads for both nodes during the controller upgrade.
+Refer to link:other_references.html[References] to link to _ONTAP 9 High-Availability Configuration Guide_ and follow the _Best practices for HA pairs_ section. Neither of the original nodes should be running at more than 50 percent utilization; if a node is running at less than 50 percent utilization, it can handle the loads for both nodes during the controller upgrade.
 
 . Complete the following substeps to create a performance baseline for the original nodes:
 
@@ -12,27 +12,27 @@ Follow the _Best practices for HA pairs_ section in the _ONTAP 9 High-Availabili
 +
 *Important*: The diagnostic user account is intended only for low-level diagnostic purposes and should be used only with guidance from technical support.
 +
-*Important*: See _System Administration Reference_ for information about unlocking the user accounts.
+*Important*: For information about unlocking the user accounts, refer to link:other_references.html[References] to link to the _System Administration Reference_.
 
-.. Download the Performance and Statistics Collector (Perfstat Converged) tool from the NetApp Support Site at mysupport.netapp.com.
+.. Refer to link:other_references.html[References] to link to the _NetApp Support Site_ and download the Performance and Statistics Collector (Perfstat Converged).
 +
 The Perfstat Converged tool lets you establish a performance baseline for comparison after the upgrade.
 
 .. Create a performance baseline, following the instructions on the NetApp Support Site.
 
-. Open a support case on the NetApp Support Site at mysupport.netapp.com.
+. Refer to link:other_references.html[References] to link to the _NetApp Support Site_ and open a support case on the NetApp Support Site.
 +
 You can use the case to report any issues that might arise during the upgrade.
 
 . Verify that NVMEM or NVRAM batteries of node3 and node4 are charged, and charge them if they are not.
 +
-You need to physically check node3 and node4 to see if the NVMEM or NVRAM batteries are charged. Check the Hardware Universe at hwu.netapp.com for information about the LEDs for the model of node3 and node4.
+You need to physically check node3 and node4 to see if the NVMEM or NVRAM batteries are charged. For information about the LEDs for the model of node3 and node4, refer to link:other_references.html[References] to link to the _Hardware Universe_.
 +
 WARNING: *Attention* Do not try to clear the NVRAM contents. If there is a need to clear the contents of NVRAM, contact NetApp technical support.
 
 . Check the version of ONTAP on node3 and node4.
 +
-The new nodes must have the same version of ONTAP 9.x installed on them that is installed on the original nodes. If the new nodes have a different version of ONTAP installed, you need to netboot the new controllers after you install them. See the _ONTAP 9 Upgrade and Revert/Downgrade Guide_ for instructions to upgrade ONTAP.
+The new nodes must have the same version of ONTAP 9.x installed on them that is installed on the original nodes. If the new nodes have a different version of ONTAP installed, you need to netboot the new controllers after you install them. For instructions on how to upgrade ONTAP, refer to link:other_references.html[References] to link to the _ONTAP 9 Upgrade and Revert/Downgrade Guide_.
 +
 Information about the version of ONTAP on node3 and node4 should be included in the shipping boxes. The ONTAP version is displayed when the node boots up or you can boot the node to maintenance mode and run the command:
 +
@@ -132,7 +132,7 @@ node1          node2          true     Connected to node2, Partial giveback
 node2          node1          true     Connected to node1
 ....
 +
-If either node is in partial giveback, use the `storage failover giveback` command to perform the giveback, and then use the `storage failover show-giveback` command to make sure that no aggregates still need to be given back. See the _ONTAP 9 High-Availability Configuration Guide_ for detailed information about the commands.
+If either node is in partial giveback, use the `storage failover giveback` command to perform the giveback, and then use the `storage failover show-giveback` command to make sure that no aggregates still need to be given back. For detailed information about the commands, refer to link:other_references.html[References] to link to the _ONTAP 9 High-Availability Configuration Guide_.
 
 . Ensure that neither node1 nor node2 owns the aggregates for which it is the current owner (but not the home owner):
 +
@@ -148,7 +148,7 @@ There are no entries matching your query.
 The following example shows the output of the command for a node named node2 that is the home owner, but not the current owner, of four aggregates:
 +
 ....
-cluster::> storage aggregate show -node <node2> -is-home false
+cluster::> storage aggregate show -node node2 -is-home false
                -fields owner-name,home-name,state
 
 aggregate     home-name    owner-name   state
@@ -168,12 +168,12 @@ aggr4         node1        node2        online
 |If the command in Step 9...|Then...
 
 |Had blank output
-|Skip Step 11 and go to Step 12.
+|Skip Step 11 and go to <<step12,Step 12>>.
 |Had output
-|Go to Step 11.
+|Go to <<step11,Step 11>>.
 |===
 
-. If either node1 or node2 owns aggregates for which it is the current owner but not the home owner, complete the following substeps:
+. [[step11]] If either node1 or node2 owns aggregates for which it is the current owner but not the home owner, complete the following substeps:
 
 .. Return the aggregates currently owned by the partner node to the home owner node:
 +
@@ -181,13 +181,13 @@ aggr4         node1        node2        online
 
 .. Verify that neither node1 nor node2 still owns aggregates for which it is the current owner (but not the home owner):
 +
-`storage aggregate show -nodes <node_name> -is-home false -fields owner-name,homename,state`
+`storage aggregate show -nodes <node_name> -is-home false -fields owner-name,home-name,state`
 +
 The following example shows the output of the command when a node is both the current owner and home owner of aggregates:
 +
 ....
 cluster::> storage aggregate show -nodes node1
- -is-home true -fields owner-name,home-name,state
+          -is-home true -fields owner-name,home-name,state
 
 aggregate     home-name    owner-name   state
 ------------- ------------ ------------ ------
@@ -199,7 +199,7 @@ aggr4         node1        node1        online
 4 entries were displayed.
 ....
 
-. Ensure that node1 and node2 can access each other's storage and verify that no disks are missing:
+. [[step12]] Ensure that node1 and node2 can access each other's storage and verify that no disks are missing:
 +
 `storage failover show -fields local-missing-disks,partner-missing-disks`
 +
@@ -214,7 +214,7 @@ node1    None                None
 node2    None                None
 ....
 +
-If any disks are missing, see the _ONTAP 9 Disks and Aggregates Power Guide_, the _ONTAP 9 Logical Storage Management Guide_, and the _ONTAP 9 High-Availability Configuration Guide_ on the NetApp Support Site at mysupport.netapp.com to configure storage for the HA pair.
+If any disks are missing, refer to link:other_references.html[References] to link to the _ONTAP 9 Disks and Aggregates Power Guide_, the _ONTAP 9 Logical Storage Management Guide_, and the _ONTAP 9 High-Availability Configuration Guide_ to configure storage for the HA pair.
 
 . Ensure that node1 and node2 are healthy and eligible to participate in the cluster:
 +
@@ -255,7 +255,7 @@ node2
 2 entries were displayed.
 ....
 
-. Verify that neither node1 nor node2 owns any data LIFs that belong to other nodes in the cluster and check the Current Node and Is Home columns in the output:
+. Verify that neither node1 nor node2 owns any data LIFs that belong to other nodes in the cluster and check the `Current Node` and `Is Home` columns in the output:
 +
 `network interface show -role data -is-home false -curr-node <node_name>`
 +
@@ -285,13 +285,13 @@ vs0
 +
 `network interface revert -vserver * -lif *`
 +
-See the _ONTAP 9 Commands: Manual Page Reference_ for detailed information about the network interface revert command.
+For detailed information about the `network interface revert` command, refer to link:other_references.html[References] to link to the _ONTAP 9 Commands: Manual Page Reference_.
 
 . Check whether node1 or node2 owns any failed disks:
 +
 `storage disk show -nodelist <node1,node2> -broken`
 +
-If any of the disks have failed, remove them, following instructions in the _ONTAP 9 Disks and Aggregates Power Guide_.
+If any of the disks have failed, remove them, following instructions in the _ONTAP 9 Disks and Aggregates Power Guide_. (Refer to link:other_references.html[References] to link to the _ONTAP 9 Disks and Aggregates Power Guide_.)
 
 . Collect information about node1 and node2 by completing the following substeps and recording the output of each command:
 +
@@ -331,7 +331,7 @@ Make note of whether interface groups or VLANs are configured on node1 or node2;
 
 . Complete the following substeps on both node1 and node2 to ensure that physical ports can be mapped correctly later in the procedure:
 
-.. Enter the following command to see if there are failover groups on the node other than clusterwide:
+.. Enter the following command to see if there are failover groups on the node other than `clusterwide`:
 +
 `network interface failover-groups show`
 +
@@ -354,7 +354,7 @@ fg_6210_e0c         Default           node1:e0c, node1:e0d
 2 entries were displayed.
 ....
 
-.. If there are failover groups present other than clusterwide, record the failover group names and the ports that belong to the failover groups.
+.. If there are failover groups present other than `clusterwide`, record the failover group names and the ports that belong to the failover groups.
 
 .. Enter the following command to see if there are any VLANs configured on the node:
 +
@@ -366,6 +366,7 @@ The system displays VLANs configured on the node, as shown in the following exam
 +
 ....
 cluster::> network port vlan show
+
 Network Network
 Node    VLAN Name Port    VLAN ID MAC Address
 ------  --------- ------- ------- ------------------
@@ -381,12 +382,12 @@ node1   e1b-70    e1b     70      00:15:17:76:7b:69
 |If interface groups or VLANS are... |Then...
 
 |On node1 or node2
-|Complete Step 23 and 24.
+|Complete <<step23,Step 23>> and <<step24,Step 24>>.
 |Not on node1 or node2
-|Go to Step 24.
+|Go to <<step24,Step 24>>.
 |===
 
-. If you do not know if node1 and node2 are in a SAN or non-SAN environment, enter the following command and examine its output:
+. [[step23]] If you do not know if node1 and node2 are in a SAN or non-SAN environment, enter the following command and examine its output:
 +
 `network interface show -vserver <Vserver_name> -data-protocol iscsi|fcp`
 +
@@ -410,7 +411,7 @@ Vserver  Interface  Admin/Oper Address/Mask       Node     Port    Home
 vs1      vs1_lif1   up/down    172.17.176.20/24   node1    0d      true
 ....
 
-. Verify that all the nodes in the cluster are in quorum by completing the following substeps:
+. [[step24]]Verify that all the nodes in the cluster are in quorum by completing the following substeps:
 
 .. Enter the advanced privilege level:
 +
@@ -443,7 +444,7 @@ node1         node1         in-quorum     true          operational
 2 entries were displayed.
 ....
 +
-Nodes in a cluster are in quorum when a simple majority of nodes are healthy and can communicate with each other. For more information, see the _System Administration Reference_.
+Nodes in a cluster are in quorum when a simple majority of nodes are healthy and can communicate with each other. For more information, refer to link:other_references.html[References] to link to the _System Administration Reference_.
 
 .. Return to the administrative privilege level:
 +
@@ -456,12 +457,12 @@ Nodes in a cluster are in quorum when a simple majority of nodes are healthy and
 |If the cluster... |Then...
 
 |Has SAN configured
-|Go to Step 26.
+|Go to <<step26,Step 26>>.
 |Does not have SAN configured
-|Go to Step 29.
+|Go to <<step29,Step 29>>.
 |===
 
-. Verify that there are SAN LIFs on node1 and node2 for each SVM that has either SAN iSCSI or FC service enabled by entering the following command and examining its output:
+. [[step26]]Verify that there are SAN LIFs on node1 and node2 for each SVM that has either SAN iSCSI or FC service enabled by entering the following command and examining its output:
 +
 `network interface show -data-protocol iscsi|fcp -home-node <node_name>`
 +
@@ -538,23 +539,19 @@ node2 0   50  I_1818FAStT_1
 7 entries were displayed.
 ....
 
-. Complete the following substeps:
-
+. [[step29]]Complete the following substeps:
 .. Enter the following command on one of the original nodes and record the output:
 +
 `service-processor show -node * -instance`
 +
 The system displays detailed information about the SP on both nodes.
-
-.. Ensure that the SP status is online.
-
+.. Ensure that the SP status is `online`.
 .. Ensure that the SP network is configured.
-
 .. Record the IP address and other information about the SP.
+
 +
 You might want to reuse the network parameters of the remote management devices, in this case the SPs, from the original system for the SPs on the new nodes.
-+
-For detailed information about the SP, see the _System Administration Reference_ and the _ONTAP 9 Commands: Manual Page Reference_.
+For detailed information about the SP, refer to link:other_references.html[References] to link to the _System Administration Reference_ and the _ONTAP 9 Commands: Manual Page Reference_.
 
 . If you want the new nodes to have the same licensed functionality as the original nodes, enter the following command to see the cluster licenses on the original system:
 +
@@ -578,7 +575,7 @@ SnapVault         site    SnapVault License     -
 6 entries were displayed.
 ....
 
-. Obtain new license keys for the new nodes from the NetApp Support Site at mysupport.netapp.com.
+. Obtain new license keys for the new nodes at the  _NetApp Support Site_. Refer to link:other_references.html[References] to link to _NetApp Support Site_.
 +
 If the site does not have the license keys you need, contact your NetApp sales representative.
 
@@ -606,21 +603,21 @@ node2            enable    Postmaster    -                 mailhost
 |If the original system... |Then...
 
 |Has AutoSupport enabled...
-|*a*. Go to Step 34.
-*b*. Go to the section _Rekeying disks for Storage Encryption_.
+a|.. Go to <<step34,Step 34>>.
+.. Go to the section _Rekeying disks for Storage Encryption_.
 |Does not have AutoSupport enabled...
-|*a*. Enable AutoSupport, following the instructions in the _System Administration Reference_.
-
+a|.. Enable AutoSupport by following the instructions in the _System Administration Reference_. (Refer to link:other_references.html[References] to link to the _System Administration Reference_.)
++
 *Note:*  AutoSupport is enabled by default when you configure your storage system for the first time. Although you can disable AutoSupport at any time, you should leave it enabled. Enabling AutoSupport can significantly help identify problems and solutions should a problem occur on your storage system.
 
-*b*. Go to the _Rekeying disks for Storage Encryption_ section.
+.. Go to the _Rekeying disks for Storage Encryption_ section.
 |===
 
-. Verify that AutoSupport is configured with the correct mailhost details and recipient e-mail IDs by entering the following command on both of the original nodes and examining the output:
+. [[step34]]Verify that AutoSupport is configured with the correct mailhost details and recipient e-mail IDs by entering the following command on both of the original nodes and examining the output:
 +
 `system node autosupport show -node node_name -instance`
 +
-For detailed information about AutoSupport, see the _System Administration Reference_ and the _ONTAP 9 Commands: Manual Page Reference_.
+For detailed information about AutoSupport, refer to link:other_references.html[References] to link to the _System Administration Reference_ and the _ONTAP 9 Commands: Manual Page Reference_.
 
 . [[step35,Step 35]] Send an AutoSupport message to NetApp for node1 by entering the following command:
 +

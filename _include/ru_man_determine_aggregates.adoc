@@ -2,7 +2,7 @@ If you are upgrading controllers with internal disk drives, you need to complete
 
 .About this task
 
-If you are not upgrading controllers with aggregates on internal disk drives, skip this section and go to the section Preparing the nodes for the upgrade.
+If you are not upgrading controllers with aggregates on internal disk drives, skip this section and go to the section link:prepare_nodes_for_upgrade.html[Prepare the nodes for upgrade].
 
 .Steps
 
@@ -94,7 +94,7 @@ node> aggr status -v
                   64-bit           raidsize=14, raid_lost_write=on, rlw_on ignore_inconsistent=off,
                                    snapmirrored=off,  resyncsnaptime=60, fs_size_fixed=off,
                                    lost_write_protect=on, ha_policy=cfo, hybrid_enabled=off,
-                                   percent_snapshot_space=0%,  free_space_realloc=off, raid_cv=on
+                                   percent_snapshot_space=0%, free_space_realloc=off, raid_cv=on
          Volumes: vol0
 ....
 +
@@ -131,5 +131,5 @@ You can upgrade the controllers by referring to link:other_references.html[Refer
 |Contain non-root volumes on the internal drives and you cannot move the volumes to external storage
 |Do not continue with this procedure.
 
-You can upgrade the controllers by referring to link:other_references.html[References] to link to the _NetApp Support Site_ and using the procedure _Upgrading the controller hardware on a pair of nodes running clustered Data ONTAP by moving volumes_. 
+You can upgrade the controllers by referring to link:other_references.html[References] to link to the _NetApp Support Site_ and using the procedure _Upgrading the controller hardware on a pair of nodes running clustered Data ONTAP by moving volumes_.
 |===
