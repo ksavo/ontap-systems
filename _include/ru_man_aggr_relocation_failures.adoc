@@ -18,6 +18,9 @@ The `storage aggregate relocation show` command shows you which aggregates were 
 * Take the appropriate corrective action, depending on the output of the `storage aggregate relocation show` command and the output of the EMS message.
 * Force relocation of the aggregate or aggregates by using the `override-vetoes` option or the `override-destination-checks` option of the `storage aggregate relocation start` command.
 
++
+For detailed information about the `storage aggregate relocation start`, `override-vetoes`, and `override-destination-checks` options, refer to link:other_referenes.html[References] to link to the _ONTAP 9 Commands: Manual Page Reference_.
+
 == Aggregates originally on node1 are owned by node4 after completion of the upgrade
 
 At the end of the upgrade procedure, node3 should be the new home node of aggregates that originally had node1 as the home node. You can relocate them after the upgrade.
