@@ -24,7 +24,7 @@ Some or all aggregates have been relocated from node1 to node2, and HA is still 
 .About this task
 
 Ownership of aggregates that were relocated looks the same as the ownership of non-root aggregates that were taken over because home owner has not changed.
-When node1 enters the waiting for giveback state, node2 will give back all the node1 nonroot aggregates.
+When node1 enters the `waiting for giveback state`, node2 will give back all the node1 nonroot aggregates.
 
 .Steps
 

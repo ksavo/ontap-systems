@@ -1,6 +1,6 @@
 ---
 sidebar: upgrade-arl-manual_sidebar
-permalink: upgrade-arl-manual/move_nas_lifs_node1_from_node2_node3_verify_san_lifs.html
+permalink: upgrade-arl-manual/move_nas_lifs_node1_from_node2_node3_verify_san_lifs_node3.html
 keywords: move, nas, san, lif, ports, broadcast domain, node1, node2, node3
 summary: You need to move the NAS data LIFs belonging to node1 that are currently on node2 from node2
 to node3. You also need to verify the SAN LIFs on node3.
