@@ -44,7 +44,7 @@ entries:
       - title: "Retire node1"
         url: /retire_node1.html
   - title: "Stage 3: Install and boot node3"
-    url: /stage3_install_boot_node3.html
+    url: /stage_3_install_boot_node3.html
     entries:
       - title: "Install and boot node3"
         url: /install_boot_node3.html
@@ -52,6 +52,8 @@ entries:
         url: /set_fc_uta_uta2_config_node3.html
       - title: "Map ports from node1 to node3"
         url: /map_ports_node1_node3.html
+      - title: "Move NAS data LIFs owned by node1 from node2 to node3 and verify SAN LIFs on node3"
+        url: /move_nas_lifs_node1_from_node2_node3_verify_san_lifs_node3.html
       - title: "Relocate non-root aggregates from node2 to node3"
         url: /relocate_non_root_aggr_node2_node3.html
       - title: "Move NAS data LIFs owned by node2 to node3"
