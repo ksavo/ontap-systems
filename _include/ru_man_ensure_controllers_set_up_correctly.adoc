@@ -6,7 +6,7 @@ To ensure correct setup, you must enable the HA pair. You must also verify that 
 +
 `storage failover modify -enabled true -node <node3>`
 
-. Verify that storage failover is enabled by entering the following command:
+. Verify that storage failover is enabled:
 +
 `storage failover show`
 +
@@ -46,12 +46,12 @@ node4          node3          true     Connected to node3
 +
 If either node3 or node4 owns data LIFs home-owned by other nodes in the cluster, use the `network interface revert` command to revert the data LIFs to their home-owner.
 
-. Verify that node3 owns the aggregates from node1 and that node4 owns the aggregates from node2 by entering the following commands:
+. Verify that node3 owns the aggregates from node1 and that node4 owns the aggregates from node2:
 +
 `storage aggregate show -owner-name <node3>`
 `storage aggregate show -owner-name <node4>`
 
-. Determine whether any volumes are offline by entering the following commands:
+. Determine whether any volumes are offline:
 +
 `volume show -node <node3> -state offline`
 `volume show -node <node4> -state offline`
