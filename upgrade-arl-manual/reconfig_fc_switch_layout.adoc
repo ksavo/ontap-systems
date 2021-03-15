@@ -23,7 +23,7 @@ You need the admin password and access to an FTP or SCP server.
 
 .About this task
 
-You must perform this task if your existing FC switch layout was configured prior to ONTAP 9.1 and you are upgrading to a platform model supported in ONTAP 9.1 or later. It is not required if you are upgrading from an existing switch layout that was configured for ONTAP 9.1 or later.
+You must perform this task if your existing FC switch layout was configured prior to ONTAP 9.1 and you are upgrading to a platform model supported in ONTAP 9.1 or later. It is _not_ required if you are upgrading from an existing switch layout that was configured for ONTAP 9.1 or later.
 
 This procedure is nondisruptive and takes approximately four hours to complete (excluding rack and stack) when disks are zeroed.
 

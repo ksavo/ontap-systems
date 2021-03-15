@@ -36,8 +36,7 @@ aggregates          ok
 
 Command completed. Use the "metrocluster check show -instance" command or
 sub-commands in "metrocluster check" directory for detailed results.
-To check if the nodes are ready to do a switchover or switchback operation, run "metrocluster switchover -simulate" or "metrocluster switchback -simulate",
-respectively.
+To check if the nodes are ready to do a switchover or switchback operation, run "metrocluster switchover -simulate" or "metrocluster switchback -simulate", respectively.
 ----
 
 . Verify that there are no health alerts:

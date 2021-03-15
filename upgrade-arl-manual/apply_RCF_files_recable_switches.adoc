@@ -37,8 +37,8 @@ link:http://mysupport.netapp.com/NOW/download/software/metrocluster_cisco/sanswi
 
 . Verify that the ports are online:
 +
-* For Brocade switches, use the switchshow command.
-* For Cisco switches, use the show interface brief command.
+* For Brocade switches, use the `switchshow` command.
+* For Cisco switches, use the show `interface brief` command.
 
 . Cable the FC-VI ports from the controllers to the switches.
 
