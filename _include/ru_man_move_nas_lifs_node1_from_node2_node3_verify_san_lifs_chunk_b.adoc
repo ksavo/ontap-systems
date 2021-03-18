@@ -1,10 +1,10 @@
 . [[step6]]Migrate each NAS data LIF to node3 by entering the following command, once for each LIF:
 +
-`network interface migrate -vserver <Vserver_name> -lif <LIF_name> -destination-node <node3> -destination-port netport|ifgrp`
+`network interface migrate -vserver <vserver_name> -lif <LIF_name> -destination-node <node3> -destination-port <netport|ifgrp>`
 
 . [[step7]]Make sure that the data migration is persistent:
 +
-`network interface modify -vserver <Vserver_name> -lif <LIF_name>-home-port netport|ifgrp -home-node <node3>`
+`network interface modify -vserver <vserver_name> -lif <LIF_name>-home-port <netport|ifgrp> -home-node <node3>`
 
 . [[step8]]Ensure that the SAN LIFs are on the correct ports on node3:
 
@@ -33,24 +33,24 @@ cluster::> net int show -data-protocol iscsi|fcp -home-node node3
 
 ... Set the LIF status to "down":
 +
-`network interface modify -vserver <Vserver_name> -lif <LIF_name> -status-admin down`
+`network interface modify -vserver <vserver_name> -lif <LIF_name> -status-admin down`
 
 
 ... Remove the LIF from the port set:
 +
-`portset remove -vserver <Vserver_name> -portset <portset_name> -port-name <port_name>`
+`portset remove -vserver <vserver_name> -portset <portset_name> -port-name <port_name>`
 
 ... Enter one of the following commands:
 +
 * Move a single LIF:
 +
-`network interface modify -vserver <Vserver_name> -lif <LIF_name> -home-port <new_home_port>`
+`network interface modify -vserver <vserver_name> -lif <LIF_name> -home-port <new_home_port>`
 * Move all the LIFs on a single nonexistent or incorrect port to a new port:
 +
 `network interface modify {-home-port <port_on_node1> -home-node <node1> -role data} -home-port <new_home_port_on_node3>`
 * Add the LIFs back to the port set:
 +
-`portset add -vserver <Vserver_name> -portset <portset_name> -port-name <port_name>`
+`portset add -vserver <vserver_name> -portset <portset_name> -port-name <port_name>`
 +
 NOTE: You need to ensure that you move SAN LIFs to a port that has the same link speed as the original port.
 
@@ -58,14 +58,15 @@ NOTE: You need to ensure that you move SAN LIFs to a port that has the same link
 +
 `network interface modify -home-port <port_name> -home-node <node3> -lif data -status-admin up`
 
-. Enter the following command on either node and examine its output to verify that LIFs have been moved to the correct ports and that the LIFs have the status of "up":
+. Enter the following command on either node and examine its output to verify that LIFs have been moved to the correct ports and that the LIFs have the status of "up" by entering the following command
+on either node and examining the output:
 +
 `network interface show -home-node <node3> -role data`
 
-. If any LIFs are down, set the administrative status of the LIFs to "up", once for each LIF:
+. [[step11]] If any LIFs are down, set the administrative status of the LIFs to "up" by entering the following command, once for each LIF:
 +
-`network interface modify -vserver <Vserver_name> -lif <LIF_name> -status-admin up`
+`network interface modify -vserver <vserver_name> -lif <LIF_name> -status-admin up`
 
 . Send a post-upgrade AutoSupport message to NetApp for node1:
 +
-`system node autosupport invoke -node <node3> -type all -message "<node1> successfully upgraded from <platform_old> to <platform_new>"`
+`system node autosupport invoke -node <node3> -type all -message "node1 successfully upgraded from <platform_old> to <platform_new>"`

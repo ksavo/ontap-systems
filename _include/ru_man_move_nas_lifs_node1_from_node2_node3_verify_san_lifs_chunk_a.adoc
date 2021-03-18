@@ -1,5 +1,3 @@
-Before you relocate aggregates from node2 to node3, you need to move the NAS data LIFs belonging to node1 that are currently on node2 from node2 to node3. You also need to verify the SAN LIFs on node3.
-
 .About this task
 
 Remote LIFs handle traffic to SAN LUNs during the upgrade procedure. Moving SAN LIFs is not necessary for cluster or service health during the upgrade. SAN LIFs are not moved unless they need to be mapped to new ports. You will verify that the LIFs are healthy and located on appropriate ports after you bring node3 online.
@@ -12,7 +10,7 @@ Remote LIFs handle traffic to SAN LUNs during the upgrade procedure. Moving SAN 
 
 . [[step2]]Take one of the following actions:
 +
-[cols="60,40"]
+[cols="35,65"]
 |===
 |If node1... |Then...
 
@@ -26,21 +24,21 @@ Remote LIFs handle traffic to SAN LUNs during the upgrade procedure. Moving SAN 
 
 .. Migrate any data LIFs hosted on node2 that previously belonged to node1 on an interface group to a port on node3 that is capable of hosting LIFs on the same network by entering the following command, once for each LIF:
 +
-`network interface migrate -vserver <Vserver_name> -lif <LIF_name> -destination-node <node3> –destination-port netport|ifgrp`
+`network interface migrate -vserver <vserver_name> -lif <LIF_name> -destination-node <node3> –destination-port <netport|ifgrp>`
 
 .. Modify the home port and home node of the LIF in Substep (a) to the port and node currently hosting the LIFs by entering the following command, once for each LIF:
 +
-`network interface modify -vserver <Vserver_name> -lif <LIF_name> -home-node <node3> -home-port netport|ifgrp`
+`network interface modify -vserver <vserver_name> -lif <LIF_name> -home-node <node3> -home-port <netport|ifgrp>`
 
 .. Migrate any data LIF hosted on node2 that previously belonged to node1 on a VLAN port to a port on node3 that is capable of hosting LIFs on the same network by entering the following command, once for each LIF:
 +
-`network interface migrate -vserver <Vserver_name> -lif <LIF_name> -destination-node <node3> –destination-port netport|ifgrp`
+`network interface migrate -vserver <vserver_name> -lif <LIF_name> -destination-node <node3> –destination-port <netport|ifgrp>`
 
 .. Modify the home port and home node of the LIFs in Substep (c) to the port and node currently hosting the LIFs by entering the following command, once for each LIF:
 +
-`network interface modify -vserver <Vserver_name> -lif <LIF_name> -home-node <node3> -home-port netport|ifgrp`
+`network interface modify -vserver <vserver_name> -lif <LIF_name> -home-node <node3> -home-port <netport|ifgrp>`
 
-. Take one of the following actions:
+. [[step4]]Take one of the following actions:
 +
 [cols="25,75"]
 |===
@@ -51,6 +49,6 @@ Remote LIFs handle traffic to SAN LUNs during the upgrade procedure. Moving SAN 
 |SAN
 |Disable all the SAN LIFs on the node to take them down for the upgrade:
 
-`network interface modify -vserver <Vserver_name> -lif <LIF_name> -home-node <node_to_upgrade> -home-port netport\|ifgrp -status-admin down`
+`network interface modify -vserver <vserver_name> -lif <LIF_name> -home-node <node_to_upgrade> -home-port <netport\|ifgrp> -status-admin down`
 |===
 // 24 FEB 2021: formatted from CMS
