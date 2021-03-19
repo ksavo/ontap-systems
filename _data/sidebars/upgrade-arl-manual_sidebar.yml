@@ -74,7 +74,7 @@ entries:
       - title: "Verify the node3 installation"
         url: /verify_node3_installation.html
       - title: Move NAS data LIFs owned by node1 from node2 to node3 and verify SAN LIFs on node3
-      - url: /move_nas_lifs_node1_from_node2_node3_verify_san_lifs_node3.html
+      - url: /move_nas_lifs_node1_from_node2_node3_verify_san_lifs.html
       - title: "Relocate non-root aggregates from node2 to node3"
         url: /relocate_non_root_aggr_node2_node3.html
       - title: "Move NAS data LIFs owned by node2 to node3"
