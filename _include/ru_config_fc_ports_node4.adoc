@@ -16,15 +16,15 @@ You can skip this section if your system does not have FC configurations. If you
 
 . Take one of the following actions:
 +
+[cols=2*,options="header",cols="30,70"]
 |===
 |If the system that you are upgrading... |Then…
 
 |Has storage disks
-|Use the following command:
+|
 `system node hardware unified-connect show`
 |Is a V-Series system or has FlexArray Virtualization Software and is connected to storage arrays
-|Use the following command:
-`ucadmin show`
+|`ucadmin show`
 |===
 +
 The system displays information about all FC and converged network adapters on the system.
@@ -32,34 +32,43 @@ The system displays information about all FC and converged network adapters on t
 . Compare the FC settings on node4 with the settings that you captured earlier from node1.
 . Take one of the following actions:
 +
+[cols=2*,options="header",cols="30,70"]
 |===
 |If the system that you are upgrading... |Then…
 
 |Has storage disks
-a|Modify the FC ports on node4 as needed by using one of the following commands:
+a|Modify the FC ports on node4 as needed:
 
 * To program target ports:
++
 `ucadmin modify -m fc -t target <adapter>`
 * To program initiator ports:
++
 `ucadmin modify -m fc -t initiator <adapter>`
 
 `-t` is the FC4 type: target or initiator.
 |Is a V-Series system or has FlexArray Virtualization Software and is connected to storage arrays
 
-|Modify the FC ports on node4 as needed by using one of the following commands:
+|Modify the FC ports on node4 as needed:
+
 `ucadmin modify -m fc -t initiator -f <adapter_port_name>`
 
 `-t` is the FC4 type, target or initiator.
+
 *Note*: The FC ports must be programmed as initiators.
 |===
 
-. Exit Maintenance mode by using the following command:
+. Exit Maintenance mode:
 +
 `halt`
 
-. Boot the system from loader prompt by using the following command:
+. Boot the system from loader prompt:
 +
 `boot_ontap menu`
 
 . After you enter the command, wait until the system stops at the boot environment prompt.
 . Select option `5` from the boot menu for maintenance mode.
+
+// This reuse file is used in the following adoc files:
+// upgrade-arl-auto\set_fc_or_uta_uta2_config_node4.adoc
+// upgrade-arl-auto-app\set_fc_or_uta_uta2_config_node4.adoc

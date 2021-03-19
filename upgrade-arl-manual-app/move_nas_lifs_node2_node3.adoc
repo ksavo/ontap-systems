@@ -1,7 +1,8 @@
 ---
 sidebar: upgrade-arl-manual-app_sidebar
 permalink: upgrade-arl-manual-app/move_nas_lifs_node2_node3.html
-summary:
+keywords:  move, nas, lif, node2, node3, san, nfs, cifs, ifgrp
+summary: After you relocate the aggregates from node2 to node3, you need to move the NAS data LIFs owned by node2 to node3.
 ---
 
 = Move NAS data LIFs owned by node2 to node3
@@ -12,3 +13,5 @@ summary:
 :imagesdir: ./media/
 
 [.lead]
+include::../_include/ru_man_move_nas_lifs_node2_node3.adoc[]
+// 24 FEB 2021:  formatted from CMS

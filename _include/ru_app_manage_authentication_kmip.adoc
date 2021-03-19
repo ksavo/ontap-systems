@@ -25,6 +25,3 @@ You can use Key Management Interoperability Protocol (KMIP) servers to manage au
 . If you use the Federal Information Processing Standard (FIPS), rekey all self-encrypting disks with the new authentication key by using the following command:
 +
 `storage encryption disk* modify -disk * [-fips-key-id nonMSID AK]`
-// This reuse file is used in the following adoc files:
-// -- upgrade-arl-auto-app/getting_an_ip_address_of_an_external_key_management_server_for_storage_encryption.adoc (second section)
-// -- upgrade-arl-manual-app/manage_authentication_kmip.adoc

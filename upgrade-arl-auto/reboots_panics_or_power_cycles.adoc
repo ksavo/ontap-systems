@@ -15,7 +15,7 @@ summary: The system might crash – reboot, panic or go through a power cycle.
 [.lead]
 
 // bottom half of pg. 74, 75, 76, and top half of 77 in PDF.  INCLUDE ALL SUBHEADS and SUB-SUBHEADS.
-include::../_include/ru_app_reboots_panics_or_power_cycles.adoc[]
+include::../_include/ru_auto_reboots_panics_or_power_cycles.adoc[]
 
 == Reboots, panics, or power cycles during the second verification phase
 

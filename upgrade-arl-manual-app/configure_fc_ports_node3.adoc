@@ -1,6 +1,7 @@
 ---
 sidebar: upgrade-arl-manual-app_sidebar
 permalink: upgrade-arl-manual-app/configure_fc_ports_node3.html
+keywords: configure, configuration, fibre channel, fc, ports, node3, uta, uta2, v-series, flexarray,
 summary: Configure Fibre Channel ports on node3
 ---
 
@@ -12,3 +13,5 @@ summary: Configure Fibre Channel ports on node3
 :imagesdir: ./media/
 
 [.lead]
+include::../_include/ru_man_config_fc_ports_node3.adoc[]
+// 22 FEB 2021:  Formatted from commands

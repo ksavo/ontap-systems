@@ -1,0 +1,5 @@
+. [[step13]]Exit maintenance mode:
++
+`halt`
+
+. [[step14]]Boot node into boot menu by running `boot_ontap menu`. If you are upgrading to an A800, go to <<step23,Step 23>>.

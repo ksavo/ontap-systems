@@ -15,21 +15,21 @@ summary: Before you can replace node2 with node4, you must relocate the non-root
 [.lead]
 
 // page 46 and 47 in PDF
-include::../_include/ru_app_relocate_non_root_aggr_nas_lifs_from_node2_to_node3.adoc[]
+include::../_include/ru_auto_relocate_non_root_aggr_nas_lifs_from_node2_to_node3_intro_step_4.adoc[]
 
 [start=5]
-. [[step5]]Enter the following command and examine its output to verify that there are no data LIFs remaining on node2:
+. [[step5]]Verify that there are no data LIFs remaining on node2 by entering the following command and examining the output:
 +
 `network interface show -curr-node <node2> -role data`
 
 . If you have interface groups or VLANs configured, complete the following substeps:
 +
-.. Record VLAN and ifgrp information so you can recreate the VLANs and ifgrps on node3 after node3 is booted up.
-.. Remove the VLANs from the interface groups by entering the following command:
+.. Record VLAN and interface group information so you can recreate the VLANs and interface groups on node3 after node3 is booted up.
+.. Remove the VLANs from the interface groups:
 +
 `network port vlan delete -node <nodename> -port <ifgrp> -vlan-id <VLAN_ID>`
 
-.. Enter the following command and examine its output to see if there are any interface groups configured on the node:
+.. Check if there are any interface groups configured on the node by entering the following command and examining its output:
 +
 `network port ifgrp show -node <node2> -ifgrp <ifgrp_name> -instance`
 +
@@ -50,3 +50,4 @@ Distribution Function: ip
 .. If any interface groups are configured on the node, record the names of those groups and the ports assigned to them, and then delete the ports by entering the following command, once for each port:
 +
 `network port ifgrp remove-port -node <nodename> -ifgrp <ifgrp_name> -port <netport>`
+// page 46 and 47 in PDF

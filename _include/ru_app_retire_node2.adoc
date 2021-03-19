@@ -2,7 +2,7 @@ To retire node2, you need to shut node2 down properly and remove it from the rac
 
 .Steps
 
-. Resume the operation by using the following command:
+. Resume the operation:
 +
 `system controller replace resume`
 +
@@ -11,3 +11,7 @@ The node halts automatically.
 .After you finish
 
 You can decommission node2 after the upgrade is completed. See link:decommission_old_system.html[Decommission the old system]
+
+// This reuse file is used in the following adoc files:
+// upgrade-arl-auto\retire_node2.adoc
+// upgrade-arl-auto-app\retire_node2.adoc

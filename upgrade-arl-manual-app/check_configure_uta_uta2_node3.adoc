@@ -1,6 +1,7 @@
 ---
 sidebar: upgrade-arl-manual-app_sidebar
 permalink: upgrade-arl-manual-app/check_configure_uta_uta2_node3.html
+keywords: check, configure, configuration, uta, uta2, node3, v-series, flexarray, target, initiator, adapter, port, sfp+ modules
 summary: Check and configure UTA/UTA2 ports on node 3
 ---
 
@@ -12,3 +13,5 @@ summary: Check and configure UTA/UTA2 ports on node 3
 :imagesdir: ./media/
 
 [.lead]
+include::../_include/ru_man_check_config_uta_uta2_ports_node3.adoc[]
+// 22 FEB 2021:  formatted from CMS

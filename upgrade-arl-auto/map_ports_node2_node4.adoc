@@ -1,7 +1,7 @@
 ---
 sidebar: upgrade-arl-auto_sidebar
 permalink: upgrade-arl-auto/map_ports_node2_node4.html
-keywords: map, node2, ports, cluster, broadcast domains, physical ports 
+keywords: map, node2, ports, cluster, broadcast domains, physical ports
 summary: You must verify that the physical ports on node2 map correctly to the physical ports on node4.
 ---
 
@@ -20,7 +20,7 @@ You must verify that the physical ports on node2 map correctly to the physical p
 
 .About this task
 
-Capture information about the ports on the new nodes from the link:https://hwu.netapp.com[Hardware Universe]. You will use the information later in this section.
+Refer to link:other_references.html[References] to link to the _Hardware Universe_ to capture information about the ports on the new nodes. You will use the information later in this section.
 
 The software configuration of node4 must match the physical connectivity of node4 and IP connectivity must be restored before you continue with the upgrade.
 
@@ -88,12 +88,12 @@ cluster::>
 
 . Follow these steps to place node4 into quorum:
 +
-.. Boot node4. See link:install_and_boot_node4.html[Install and boot node4] to boot the node if you have not already done so.
+.. Boot node4. See link:install_boot_node4.html[Install and boot node4] to boot the node if you have not already done so.
 .. Verify that the new cluster ports are in the Cluster broadcast domain:
 +
 `network port show -node <node> -port <port> -fields broadcast-domain`
 +
-The following example shows that port e0a is in the Cluster domain on node4:
+The following example shows that port "e0a" is in the Cluster domain on node4:
 +
 ----
 cluster::> network port show -node node4 -port e0a -fields broadcast-domain
@@ -108,13 +108,13 @@ node4      e0a  Cluster
 +
 `network port modify -node -port -ipspace Cluster -mtu 9000`
 +
-This example adds Cluster port e1b on node4:
+This example adds Cluster port "e1b" on node4:
 +
 `network port modify -node node4 -port e1b -ipspace Cluster -mtu 9000`
 .. Migrate the cluster LIFs to the new ports, once for each LIF:
 +
 `network interface migrate -vserver Cluster -lif <lif_name> -source-node node4 destination-node node4 -destination-port <port_name>`
-. Modify the home port of the cluster LIFs:
+.. Modify the home port of the cluster LIFs:
 +
 `network interface modify -vserver Cluster -lif <lif_name> –home-port <port_name>`
 
@@ -122,7 +122,7 @@ This example adds Cluster port e1b on node4:
 +
 `network port broadcast-domain remove-ports`
 +
-This command removes port e0d on node4:
+This command removes port "e0d" on node4:
 +
 `network port broadcast-domain remove-ports -ipspace Cluster -broadcast-domain Cluster ‑ports node4:e0d`
 .. Verify that node4 has rejoined quorum:
@@ -143,7 +143,7 @@ This command removes port e0d on node4:
 `network port broadcast-domain remove-ports`
 .. Modify a LIF’s home port:
 +
-`network interface modify -vserver vserver -lif <lif_name> –home-port <port_name>`
+`network interface modify -vserver <vserver> -lif <lif_name> –home-port <port_name>`
 
 . Adjust the intercluster broadcast domains and migrate the intercluster LIFs, if necessary, using the same commands shown in <<Step5,Step 5>>.
 
@@ -157,7 +157,7 @@ This command removes port e0d on node4:
 .. To delete the ports:
 +
 `network port delete -node <node_name> -port <port_name>`
-. Return to the admin level:
+.. Return to the admin level:
 +
 `set -privilege admin`
 
@@ -169,8 +169,7 @@ The following command sets the failover policy to `broadcast-domain-wide` and us
 +
 `network interface modify -vserver node4 -lif data1 failover-policy broadcast-domainwide -failover-group fg1`
 +
-See "Configuring failover settings on a LIF" in the _ONTAP 9 Network Management Guide_ or _ONTAP 9 Commands: Manual Page Reference_ for more information.
-
+Refer to link:other_references.html[References] to link to the _ONTAP 9 Network Management Guide_ or the _ONTAP 9 Commands: Manual Page Reference_ and see _Configuring failover settings on a LIF_ for more information.
 . Verify the changes on node4:
 +
 `network port show -node node4`

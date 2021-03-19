@@ -1,6 +1,7 @@
 ---
 sidebar: upgrade-arl-manual-app_sidebar
 permalink: upgrade-arl-manual-app/manage_authentication_okm.html
+keywords: manage, authentication, onboard key manager, okm, key, passphrase, fips
 summary:  You can use an onboard key manager to manager authentication keys.
 ---
 
@@ -12,4 +13,5 @@ summary:  You can use an onboard key manager to manager authentication keys.
 :imagesdir: ./media/
 
 [.lead]
-include::../_include/ru_app_manage_authentication_okm.adoc[]
+include::../_include/ru_man_manage_authentication_okm.adoc[]
+// 5 MAR 2021:  formatted from CMS

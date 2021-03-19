@@ -1,0 +1,18 @@
+---
+sidebar: upgrade-arl-auto_sidebar
+permalink: upgrade-arl-auto/index.html
+keywords: aggregate, relocation, controller, hardware, terminology, flexarray, metrocluster
+summary: You can nondisruptively upgrade the controller hardware on a pair of nodes running ONTAP 9.5 to ONTAP 9.7.
+---
+
+= Use aggregate relocation to upgrade controller hardware
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+[.lead]
+
+include::../_include/ru_all_index_intro.adoc[]
+// Page 5 in PDF
