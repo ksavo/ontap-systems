@@ -40,10 +40,7 @@ Node                 Health  Eligibility   Epsilon
 node1                true    true          false
 node2                true    true          true
 
-Warning: Cluster HA has not been configured. Cluster HA must be configured on a
- two-node cluster to ensure data access availability in the event of storage
- failover. Use the "cluster ha modify -configured true" command to configure
- cluster HA.
+Warning: Cluster HA has not been configured. Cluster HA must be configured on a two-node cluster to ensure data access availability in the event of storage failover. Use the "cluster ha modify -configured true" command to configure cluster HA.
 
 2 entries were displayed.
 ----

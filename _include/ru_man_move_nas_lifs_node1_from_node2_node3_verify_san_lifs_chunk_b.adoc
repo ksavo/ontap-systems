@@ -58,8 +58,7 @@ NOTE: You need to ensure that you move SAN LIFs to a port that has the same link
 +
 `network interface modify -home-port <port_name> -home-node <node3> -lif data -status-admin up`
 
-. Enter the following command on either node and examine its output to verify that LIFs have been moved to the correct ports and that the LIFs have the status of "up" by entering the following command
-on either node and examining the output:
+. Enter the following command on either node and examine its output to verify that LIFs have been moved to the correct ports and that the LIFs have the status of "up" by entering the following command on either node and examining the output:
 +
 `network interface show -home-node <node3> -role data`
 

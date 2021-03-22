@@ -389,7 +389,7 @@ node1   e1b-70    e1b     70      00:15:17:76:7b:69
 
 . [[step23]] If you do not know if node1 and node2 are in a SAN or non-SAN environment, enter the following command and examine its output:
 +
-`network interface show -vserver <Vserver_name> -data-protocol iscsi|fcp`
+`network interface show -vserver <vserver_name> -data-protocol iscsi|fcp`
 +
 If neither iSCSI nor FC is configured for the SVM, the command will display a message similar to the following example:
 +
@@ -604,13 +604,13 @@ node2            enable    Postmaster    -                 mailhost
 
 |Has AutoSupport enabled...
 a|.. Go to <<step34,Step 34>>.
-.. Go to the section _Rekeying disks for Storage Encryption_.
+.. Go to the section link:get_address_key_management_server_encryption.html[Get an IP address of an external key management server for Storage Encryption].
 |Does not have AutoSupport enabled...
 a|.. Enable AutoSupport by following the instructions in the _System Administration Reference_. (Refer to link:other_references.html[References] to link to the _System Administration Reference_.)
 +
 *Note:*  AutoSupport is enabled by default when you configure your storage system for the first time. Although you can disable AutoSupport at any time, you should leave it enabled. Enabling AutoSupport can significantly help identify problems and solutions should a problem occur on your storage system.
 
-.. Go to the _Rekeying disks for Storage Encryption_ section.
+.. Go to the link:get_address_key_management_server_encryption.html[Get an IP address of an external key management server for Storage Encryption] section.
 |===
 
 . [[step34]]Verify that AutoSupport is configured with the correct mailhost details and recipient e-mail IDs by entering the following command on both of the original nodes and examining the output:

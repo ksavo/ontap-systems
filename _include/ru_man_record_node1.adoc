@@ -132,7 +132,7 @@ The output information is required to map the new FC ports on the new controller
 +
 `network port vlan show`
 +
-You will use the information in the section Mapping ports from node1 to node3.
+You will use the information in the section link:map_ports_node1_node3.html[Map ports from node1 to node3].
 
 .	Take one of the following actions:
 +
@@ -143,7 +143,7 @@ You will use the information in the section Mapping ports from node1 to node3.
 |Recorded the NVRAM System ID number in the section link:prepare_nodes_for_upgrade.html[Prepare the nodes for the upgrade].
 |Go on to the next section, Retiring node1.
 |Did not record the NVRAM System ID number in the section link:prepare_nodes_for_upgrade.html[Prepare the nodes for the upgrade]
-|Complete <<step,Step 11>> and <<step12,Step 12>> and then continue to link:retire_node1.html[Retire node1].
+|Complete <<step11,Step 11>> and <<step12,Step 12>> and then continue to link:retire_node1.html[Retire node1].
 |===
 
 .	[[step11]]Enter the following command on either controller:
