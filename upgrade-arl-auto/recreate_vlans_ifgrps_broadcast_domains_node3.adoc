@@ -27,7 +27,7 @@ For more information on creating and re-creating VLANs, interface groups, and br
 
 . Re-create the interface groups on node3 using the node1 information recorded in the link:relocate_non_root_aggr_and_nas_data_lifs_node1_node2.html[Relocate non-root aggregates and NAS data LIFs owned by node1 to node2] section:
 +
-`network port ifgrp create -node node_name -ifgrp port_ifgrp_names-distr-func`
+`network port ifgrp create -node <node_name> -ifgrp <port_ifgrp_names>-distr-func`
 
 . Re-create the broadcast domains on node3 using the node1 information recorded in the link:relocate_non_root_aggr_and_nas_data_lifs_node1_node2.html[Relocate non-root aggregates and NAS data LIFs owned by node1 to node2] section:
 +

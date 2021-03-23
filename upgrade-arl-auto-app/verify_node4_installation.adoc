@@ -220,7 +220,7 @@ Verify that there are no unreachable or unexpected ports present. Check the reac
 . Restore any VLANs that might have become displaced by using the following steps:
 .. List displaced VLANs:
 +
-`displaced- vlans show`
+`displaced-vlans show`
 +
 Output like the following should display:
 +
@@ -236,7 +236,7 @@ Node1       a0a           822, 823
 
 .. Restore VLANs that were displaced from their previous base ports:
 +
-`displaced- vlans restore`
+`displaced-vlans restore`
 +
 The following is an example of restoring VLANs that have been displaced from interface group a0a back onto the same interface group:
 +
@@ -254,7 +254,7 @@ When a VLAN restore is successful, the displaced VLANs are created on the specif
 +
 Wait about one minute for newly restored VLANs to be placed into their appropriate broadcast domains.
 
-.. Create new VLAN ports as needed for VLAN ports that are not in the `displaced- vlans show` output but should be configured on other physical ports.
+.. Create new VLAN ports as needed for VLAN ports that are not in the `displaced-vlans show` output but should be configured on other physical ports.
 
 . Delete any empty broadcast domains after all port repairs have been completed:
 +
@@ -281,7 +281,7 @@ When all ports are correctly configured and added to the correct broadcast domai
 
 .. Restore LIF home ports:
 +
-`displaced-interface restore-home-node -node <node_name> -vserver <vserver_name > - lif-name <LIF_name>`
+`displaced-interface restore-home-node -node <node_name> -vserver <vserver_name > -lif-name <LIF_name>`
 
 . Verify that all LIFs have a home port and are administratively up:
 +

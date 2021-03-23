@@ -34,4 +34,4 @@ include::../_include/ru_auto_relocate_non_root_aggr_nas_lifs_from_node1_to_node2
 [start=5]
 . [[step5]]If any LIFs are down, set the administrative status of the LIFs to `up` by using the following command, once for each LIF:
 +
-`network interface modify -vserver <vserver_name> - lif <LIF_name> -home-node <nodename> - status-admin up`
+`network interface modify -vserver <vserver_name> -lif <LIF_name> -home-node <nodename> - status-admin up`

@@ -31,8 +31,8 @@ Do not use the `-ndo-controller-upgrade` parameter during this relocation.
 
 . Verify that node3 is now the home owner of the aggregates:
 +
-`storage aggregate show -aggregate aggr1,aggr2,aggr3... -fields home-name`
+`storage aggregate show -aggregate <aggr1,aggr2,aggr3...> -fields home-name`
 +
-`aggr1,aggr2,aggr3...` is the list of aggregates that had node1 as the original home owner.
+`<aggr1,aggr2,aggr3...>` is the list of aggregates that had node1 as the original home owner.
 +
 Aggregates that do not have node3 as home owner can be relocated to node3 using the same relocation command in <<Step3,Step 3>>.
