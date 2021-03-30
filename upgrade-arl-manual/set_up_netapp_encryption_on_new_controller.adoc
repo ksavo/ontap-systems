@@ -60,8 +60,8 @@ This command needs the Onboard Key Manager (OKM) passphrase
 [cols=2*,options="header",cols="35,65"]
 |===
 |For this ONTAP version… |Use this command...
-|All other ONTAP versions |`security key-manager
-|ONTAP 9.5 |`security key-manager setup -node <node_name>` onboard sync`
+|All other ONTAP versions |`security key-manager onboard sync`
+|ONTAP 9.5 |`security key-manager setup -node <node_name>`
 |===
 
 .After you finish
