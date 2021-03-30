@@ -46,11 +46,12 @@ You must install the same key management servers that are installed on the exist
 .. Complete the steps in the wizard to configure key management servers.
 . Restore authentication keys from all linked key management servers to the new node:
 +
+[cols=2*,options="header",cols="35,65"]
 |===
 |For... |Use this command...
-
 |External Key Manager (EKM)
 |`security key-manager external restore`
+
 This command needs the OKM passphrase
 |Onboard Key Manager (OKM)
 |`security key-manager onboard sync`
