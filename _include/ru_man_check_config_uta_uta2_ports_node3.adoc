@@ -102,7 +102,7 @@ Contact your NetApp representative to obtain the correct SFP+ module.
 |Do not have the personality that you want
 |Go to <<step5a,Step 5>>.
 |Have the personality that you want
-|Skip <<step5a,Step 5>> through <<step12a,Step 12>> and go to <<step13a,Step 13>>.
+|Skip Step 5 through Step 12 and go to <<step13a,Step 13>>.
 |===
 
 . [[step5a]]Take one of the following actions:
@@ -130,7 +130,7 @@ You should already be in maintenance mode.
 |Ports on a UTA/UTA2 card
 |Go to <<step7a,Step 7>>.
 |Onboard UTA/UTA2 ports
-|Skip <<step7a,Step 7>> and go to <<step8a,Step 8>>.
+|Skip Step 7 and go to <<step8a,Step 8>>.
 |===
 
 . [[step7a]]If the adapter is in initiator mode, and if the UTA/UTA2 port is online, take the UTA/UTA2 port offline:
@@ -143,8 +143,8 @@ Adapters in target mode are automatically offline in maintenance mode.
 +
 `ucadmin modify -m fc|cna -t initiator|target <adapter_name>`
 +
-* *-m* is the personality mode, "fc" or "cna".
-* *-t* is the FC4 type, "target" or "initiator".
+* `-m` is the personality mode, `fc` or `cna`.
+* `-t` is the FC4 type, `target` or `initiator`.
 +
 NOTE: You need to use the FC initiator for tape drives, FlexArray Virtualization systems, and MetroCluster configurations. You need to use the FC target for SAN clients.
 
@@ -187,7 +187,7 @@ The system stops at the boot environment prompt.
 |`ucadmin show`
 |===
 +
-The output in the following examples show that the FC4 type of adapter 1b is changing to "initiator" and that the mode of adapters 2a and 2b is changing to "cna":
+The output in the following examples show that the FC4 type of adapter "1b" is changing to `initiator` and that the mode of adapters "2a" and "2b" is changing to `cna`:
 +
 ----
  cluster1::> system node hardware unified-connect show

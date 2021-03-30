@@ -31,14 +31,19 @@ If node4 is in a separate chassis from node3, you can put node4 in the same loca
 
 . [[Step4]]Cable node4, moving the connections from node2 to node4.
 +
-For systems with disks, cable the following connections using the instructions in the _Installation and Setup Instructions_ or the _FlexArray Virtualization Installation Requirements and Reference_ for the node4 platform, the appropriate disk shelf guide, and the _ONTAP 9 High-Availability Configuration Guide_.
+The following references help you make proper cable connections. Go to link:other_references.html[References] to link to them.
 +
-Refer to link:other_references.html[References] to link to the _FlexArray Virtualization Installation Requirements and Reference_ and the _ONTAP 9 High-Availability Configuration Guide_.
+* _Installation and Setup Instructions_ or _FlexArray Virtualization Installation Requirements and Reference_ for the node4 platform.
+* The appropriate disk shelf guide.
+* The _ONTAP 9 High-Availability Configuration Guide_
 
-* Console (remote-management port)
++
+Cable the following connections:
+
+* Console (remote management port)
 * Cluster ports
 * Data ports
-* Cluster and node-management ports
+* Cluster and node management ports
 * Storage
 * SAN configurations: iSCSI Ethernet and FC switch ports
 

@@ -30,19 +30,19 @@ a|.. Disable cluster high availability by entering the following command on eith
 
 .. Disable storage failover:
 
-`storage failover modify -node node1 -enabled false`
+`storage failover modify -node <node1> -enabled false`
 
 |A cluster with more than two nodes
 |Disable storage failover:
 
-`storage failover modify -node node1 -enabled false`
+`storage failover modify -node <node1> -enabled false`
 |===
 
 . Verify that storage failover was disabled:
 +
 `storage failover show`
 +
-The following example shows the output of the storage failover show command when storage failover has been disabled for a node:
+The following example shows the output of the `storage failover show` command when storage failover has been disabled for a node:
 +
 ----
  cluster::> storage failover show
@@ -62,9 +62,9 @@ The following example shows the output of the storage failover show command when
 
 . Verify the data LIF status:
 +
-`network interface show -role data -curr-node node2 -home-node node1`
+`network interface show -role data -curr-node <node2> -home-node <node1>`
 +
-Look in the *Status Admin/Oper* column to see if any LIFs are down. If any LIFs are down, consult the "Troubleshooting" section.
+Look in the *Status Admin/Oper* column to see if any LIFs are down. If any LIFs are down, consult the link:troubleshoot.html[Troublehsoot] section.
 
 . Take one of the following actions:
 +
@@ -98,7 +98,7 @@ If cluster HA has not been disabled, repeat <<step2,Step 2>>.
 +
 `cluster show`
 +
-Because there is the possibility of a tie in a cluster that has an even number of nodes, one node has an extra fractional voting weight called epsilon. Refer to link:other_references.html[References} to link to the _System Administration Reference_ for more information.
+Because there is the possibility of a tie in a cluster that has an even number of nodes, one node has an extra fractional voting weight called epsilon. Refer to link:other_references.html[References] to link to the _System Administration Reference_ for more information.
 +
 NOTE: If you have a four-node cluster, epsilon might be on a node in a different HA pair in the cluster.
 
@@ -114,13 +114,13 @@ The following example shows that node1 holds epsilon:
  node2                true    true         false
 ----
 
-. If node1 holds epsilon, then mark epsilon false on the node so that it can be transferred to the node2:
+. If node1 holds epsilon, then mark epsilon `false` on the node so that it can be transferred to the node2:
 +
-`cluster modify -node node1 -epsilon false`
+`cluster modify -node <node1> -epsilon false`
 
-. Transfer epsilon to node2 by marking epsilon true on node2:
+. Transfer epsilon to node2 by marking epsilon `true` on node2:
 +
-`cluster modify -node node2 -epsilon true'
+`cluster modify -node <node2> -epsilon true`
 
 . Verify that the change to node2 occurred:
 +
@@ -154,7 +154,7 @@ The value of this command must match the physical state of the system.
 
 . Halt node1 from the node1 prompt:
 +
-`system node halt -node node1`
+`system node halt -node <node1>`
 +
 WARNING: *Attention*: If node1 is in same chassis as node2, do not power off the chassis by using the power switch or by pulling the power cable. If you do so, node2, which is serving data, will go down.
 

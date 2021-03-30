@@ -31,7 +31,7 @@ The relocation operation will have paused due to the error.
 
 . You can force relocation by using one of the following methods:
 +
-[cols="35.65"]
+[cols="35,65"]
 |===
 |Option |Description
 
@@ -42,5 +42,5 @@ The relocation operation will have paused due to the error.
 |Overriding destination checks
 |Enter the following:
 
-`storage aggregate relocation start -overridedestinationchecks * -ndo-controllerupgrade true`
+`storage aggregate relocation start -overridedestination-checks * -ndo-controllerupgrade true`
 |===

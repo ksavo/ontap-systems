@@ -129,7 +129,7 @@ The power should already be on if both controllers are in the same chassis.
 +
 `set-defaults`
 
-. [[step16]]If NetApp Storage Encryption (NSE) is in use on this configuration, the `setenv bootarg.storageencryption.support` command must be set to true, and the `kmip.init.maxwait` variable needs to be set to off to avoid a boot loop after the node1 configuration is loaded:
+. [[step16]]If NetApp Storage Encryption (NSE) is in use on this configuration, the `setenv bootarg.storageencryption.support` command must be set to `true`, and the `kmip.init.maxwait` variable needs to be set to `off` to avoid a boot loop after the node1 configuration is loaded:
 +
 `setenv bootarg.storageencryption.support true`
 +
@@ -150,7 +150,7 @@ running ONTAP running in 7-Mode.
 |===
 |If the system you are upgrading... |Then...
 
-|Does not have the correct or current ONTAP version on node3
+|Does _not_ have the correct or current ONTAP version on node3
 |Go to <<step20,Step 20>>.
 |Has the correct or current version of ONTAP on node3
 |Go to <<step25,Step 25>>.
@@ -171,17 +171,17 @@ NOTE: You should use the management port and IP as the netboot connection. Do no
 |Not running
 |Manually configure the connection by entering the following command at the boot environment prompt:
 
-`ifconfig e0M -addr=<filer_addr> -mask=<netmask. -gw=<gateway> -dns=<dns_addr> domain=<dns_domain>`
+`ifconfig e0M -addr=<filer_addr> -mask=<netmask> -gw=<gateway> -dns=<dns_addr> domain=<dns_domain>`
 
-<filer_addr> is the IP address of the storage system.
+<`filer_addr`> is the IP address of the storage system.
 
-<netmask> is the network mask of the storage system.
+<`netmask`> is the network mask of the storage system.
 
-<gateway> is the gateway for the storage system.
+<`gateway`> is the gateway for the storage system.
 
-<dns_addr> is the IP address of a name server on your network.
+<`dns_addr`> is the IP address of a name server on your network.
 
-<dns_domain> is the Domain Name Service (DNS) domain name. If you use this optional parameter, you do not need a fully qualified domain name in the netboot server URL; you need only the server's host name.
+<`dns_domain`> is the Domain Name Service (DNS) domain name. If you use this optional parameter, you do not need a fully qualified domain name in the netboot server URL; you need only the server's host name.
 
 *Note*: Other parameters might be necessary for your interface. Enter `help ifconfig` at the firmware prompt for details.
 |===
@@ -194,12 +194,12 @@ NOTE: You should use the management port and IP as the netboot connection. Do no
 
 
 |FAS/AFF8000 series systems
-|`netboot http://<web_server_ip>/<path_to_webaccessible_directory>/netboot/kernel`
+|`\netboot http://<web_server_ip>/<path_to_webaccessible_directory>/netboot/kernel`
 |All other systems
-|`netboot http://<web_server_ip>/<path_to_webaccessible_directory>/<ontap_version>_image.tgz`
+|`\netboot http://<web_server_ip>/<path_to_webaccessible_directory>/<ontap_version>_image.tgz`
 |===
 +
-The <path_to_the_web-accessible_directory> should lead to where you downloaded the <ontap_version>_image.tgz in link:prepare_for_netboot.html#Step1[Step 1] in link:prepare_for_netboot.html[Prepare for netboot].
+The <`path_to_the_web-accessible_directory`> should lead to where you downloaded the `<ontap_version>_image.tgz` in link:prepare_for_netboot.html#Step1[Prepare for netboot, Step 1].
 +
 NOTE: Do not interrupt the boot.
 
@@ -209,7 +209,6 @@ This menu option downloads and installs the new ONTAP image to the boot device.
 +
 NOTE: Disregard the following message:
 +
-
 ----
 This procedure is not supported for Non-Disruptive Upgrade on an HA pair.
 ----
@@ -220,7 +219,7 @@ NOTE: Always use netboot to update the new node to the desired image. If you use
 
 . [[step23]]If you are prompted to continue the procedure, enter `y`, and when prompted for the package, enter the following URL:
 +
-`http://<web_server_ip>/<path_to_web-accessible_directory>/<ontap_version_image>.tgz`
+`\http://<web_server_ip>/<path_to_web-accessible_directory>/<ontap_version_image>.tgz`
 
 . [[step24]]Complete the following substeps:
 +
@@ -280,11 +279,11 @@ Enter the appropriate form of the `disk reassign` command based on whether your 
 |`disk reassign -s <node1_sysid> -d <node3_sysid>`
 |===
 +
-For the <node1_sysid> value, use the information captured in link:record_node1_information.html[Record node1 information]. To obtain the value for <node3_sysid>, use the `sysconfig` command.
+For the `<node1_sysid>` value, use the information captured in link:record_node1_information.html[Record node1 information]. To obtain the value for `<node3_sysid>`, use the `sysconfig` command.
 +
 NOTE: The `-p` option is only required in maintenance mode when shared disks are present.
 +
-The `disk reassign` command reassigns only those disks for which <node1_sysid> is the current owner.
+The `disk reassign` command reassigns only those disks for which `<node1_sysid>` is the current owner.
 +
 
 The system displays the following message:
@@ -339,7 +338,7 @@ The following procedure sets node3 to boot from the root aggregate of node1:
 
 .. Set the node1 root aggregate as the new root aggregate for node3:
 +
-`aggr options <<aggr_from_node1>> root`
+`aggr options <aggr_from_node1> root`
 
 .. Verify that the root aggregate of node3 is offline and the root aggregate for the disks brought over from node1 is online and set to root:
 +
@@ -364,7 +363,7 @@ The following shows an example of the command output:
  ----------------------------------------------------------------------
 ----
 
-. [[step33]]Verify that the controller and chassis are configured as "ha":
+. [[step33]]Verify that the controller and chassis are configured as `ha`:
 +
 `ha-config show`
 +

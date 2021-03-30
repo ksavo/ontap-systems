@@ -34,8 +34,7 @@ config-replication  ok
 aggregates          ok
 4 entries were displayed.
 
-Command completed. Use the "metrocluster check show -instance" command or
-sub-commands in "metrocluster check" directory for detailed results.
+Command completed. Use the "metrocluster check show -instance" command or sub-commands in "metrocluster check" directory for detailed results.
 To check if the nodes are ready to do a switchover or switchback operation, run "metrocluster switchover -simulate" or "metrocluster switchback -simulate", respectively.
 ----
 

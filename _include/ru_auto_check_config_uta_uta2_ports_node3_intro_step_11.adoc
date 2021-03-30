@@ -36,7 +36,7 @@ UTA/UTA2 ports might be found on an adapter or on the controller, and have the f
 * UTA/UTA2 cards ordered separately from the controller are shipped with the default FC target personality.
 * Onboard UTA/UTA2 ports on new controllers are configured before shipment to have the personality you request.
 +
-*Attention*: If your system has storage disks, you enter the commands in this section at the cluster prompt unless directed to enter Maintenance mode. If you have a V- Series system or have FlexArray Virtualization Software and are connected to storage arrays, you enter commands in this section at the Maintenance mode prompt. You must be in Maintenance mode to configure UTA/UTA2 ports.
+WARNING: *Attention*: If your system has storage disks, you enter the commands in this section at the cluster prompt unless directed to enter Maintenance mode. If you have a V- Series system or have FlexArray Virtualization Software and are connected to storage arrays, you enter commands in this section at the Maintenance mode prompt. You must be in Maintenance mode to configure UTA/UTA2 ports.
 
 .Steps
 

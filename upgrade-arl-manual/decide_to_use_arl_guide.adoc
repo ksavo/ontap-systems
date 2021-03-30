@@ -14,7 +14,7 @@ summary: Whether or not to use this guide.
 
 [.lead]
 include::../_include/ru_man_decide_chunk_a.adoc[]
-* You have a system that uses Fabric MetroCluster 4-node and 8-node configurations running ONTAP 9.7 or earlier.
+* You have a system that uses Fabric MetroCluster 4-node and 8-node configurations running ONTAP 9.5 or earlier.
 
 include::../_include/ru_man_decide_chunk_b.adoc[]
 // 26 FEB 2021:  formatted from CMS

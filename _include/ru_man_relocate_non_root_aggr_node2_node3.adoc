@@ -53,28 +53,28 @@ NOTE: You must wait until all of the aggregates that are owned by node2 have bee
 |All aggregates was successful
 |Go to <<step6,Step 6>>.
 |Any aggregates failed, or was vetoed
-a|*a*. Display a detailed status message:
-
+a|.. Display a detailed status message:
++
 `storage aggregate show -instance`
-
++
 You can also check the EMS logs to see the corrective action that is needed.
-
++
 *Note*: The `event log show` command lists any errors that have occurred.
 
-*b*. Perform the corrective action.
+.. Perform the corrective action.
 
-*c*. Set the privilege level to advanced:
-
+.. Set the privilege level to advanced:
++
 `set -privilege advanced`
 
-*d*. Relocate any failed or vetoed aggregates:
-
+.. Relocate any failed or vetoed aggregates:
++
 `storage aggregate relocation start -node <node2> -destination <node3> -aggregate-list * -ndo-controllerupgrade true`
 
-*e*. When prompted, enter `y`.
+.. When prompted, enter `y`.
 
-*f*. Return to the admin privilege level:
-
+.. Return to the admin privilege level:
++
 `set -privilege admin`
 
 If necessary, you can force the relocation by using one of the following methods:
@@ -87,10 +87,10 @@ If necessary, you can force the relocation by using one of the following methods
 +
 `storage aggregate relocation start -override-destination-checks true -ndocontroller-upgrade`
 
-Go to link:other-references.html[Other references] to link to the _ONTAP 9 Disks and Aggregates Power Guide_ and the _ONTAP 9 Commands: Manual Page Reference_ for more information about the storage aggregate relocation commands.
+For more information about the storage aggregate relocation commands, go to link:other-references.html[References] to link to the _ONTAP 9 Disks and Aggregates Power Guide_ and the _ONTAP 9 Commands: Manual Page Reference_.
 |===
 
-. Verify that all of the non-root aggregates are online on node3:
+. [[step6]]Verify that all of the non-root aggregates are online on node3:
 +
 `storage aggregate show -node <node3> -state offline -root false`
 +

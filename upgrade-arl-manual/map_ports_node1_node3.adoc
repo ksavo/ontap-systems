@@ -100,8 +100,7 @@ This example adds Cluster port "e1b" on node3:
 NOTE: For a MetroCluster configuration, you might not be able to change the broadcast domain of a port because it is associated with a port hosting the LIF of a sync-destination SVM and see errors similar to, but not restricted to the following message`:
 +
 ----
-command failed: This operation is not permitted on a Vserver that is configured
-                as the destination of a MetroCluster Vserver relationship.
+command failed: This operation is not permitted on a Vserver that is configured as the destination of a MetroCluster Vserver relationship.
 ----
 +
 Enter the following command from the corresponding sync-source SVM on the remote site to reallocate the sync-destination LIF to an appropriate port:
@@ -176,7 +175,7 @@ network port broadcast-domain remove-ports -ipspace Cluster -broadcast-domain Cl
 +
 `network interface modify -failover-group <failover-group> -failover-policy <failover-policy>`
 +
-The following example sets the failover policy to "broadcast-domain-wide" and uses the ports in failover group "fg1" as failover targets for LIF "data1" on node3:
+The following example sets the failover policy to "broadcast-domain-wide" and uses the ports in failover group "fg1" as failover targets for LIF "data1" on "node3":
 +
 ----
 network interface modify -vserver node3 -lif data1 failover-policy broadcast-domainwide -failover-group fg1
@@ -186,5 +185,5 @@ Go to link:other_references.html[References] to link to the _ONTAP 9 Network Man
 
 . Verify the changes on node3:
 +
-`network port show -node <node3>`
+`network port show -node node3`
 // 24 FEB 2021:  formatted from CMS

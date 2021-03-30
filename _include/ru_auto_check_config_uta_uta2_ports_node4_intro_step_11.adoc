@@ -20,7 +20,7 @@ UTA/UTA2 ports might be on an adapter or on the controller with the following co
 
 However, you should check the configuration of the UTA/UTA2 ports on node4 and change it, if necessary.
 
-*Attention*: If your system has storage disks, you enter the commands in this section at the cluster prompt unless directed to enter Maintenance mode. If you have a MetroCluster FC system, V-Series system or a system with FlexArray Virtualization software that is connected to storage arrays,  you must be in Maintenance mode to configure UTA/UTA2 ports.
+WARNING: *Attention*: If your system has storage disks, you enter the commands in this section at the cluster prompt unless directed to enter Maintenance mode. If you have a MetroCluster FC system, V-Series system or a system with FlexArray Virtualization software that is connected to storage arrays,  you must be in Maintenance mode to configure UTA/UTA2 ports.
 
 .Steps
 

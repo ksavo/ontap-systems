@@ -10,7 +10,7 @@ If you are not upgrading controllers with aggregates on internal disk drives, sk
 +
 `system node run -node <node_name>`
 
-. Display the internal drives.
+. Display the internal drives:
 +
 `sysconfig -av`
 +
@@ -91,8 +91,8 @@ node> aggr status -v
          Volumes: vol6, vol5, vol14
 ...
  aggr0   online   raid_dp, aggr    root, diskroot, nosnap=off, raidtype=raid_dp,
-                  64-bit           raidsize=14, raid_lost_write=on, rlw_on ignore_inconsistent=off,
-                                   snapmirrored=off,  resyncsnaptime=60, fs_size_fixed=off,
+                  64-bit           raidsize=14, raid_lost_write=on, ignore_inconsistent=off,
+                  rlw_on           snapmirrored=off,  resyncsnaptime=60, fs_size_fixed=off,
                                    lost_write_protect=on, ha_policy=cfo, hybrid_enabled=off,
                                    percent_snapshot_space=0%, free_space_realloc=off, raid_cv=on
          Volumes: vol0

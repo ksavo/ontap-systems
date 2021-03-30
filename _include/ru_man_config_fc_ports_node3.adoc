@@ -45,7 +45,8 @@ NOTE: *Important*: If your system has storage disks, enter the commands in this 
 
 `ucadmin show`
 |===
-
++
+The system displays information about all FC and converged network adapters on the system.
 . [[step4]]Compare the FC settings of node3 with the settings that you captured earlier from node1.
 
 . [[step5]]Take one of the following actions:
@@ -75,13 +76,13 @@ a|Modify the FC ports on node3 as needed by entering one of the following comman
 * To program initiator ports:
 `system node hardware unified-connect modify -type \| -t initiator -adapter <port_name>`
 
-*-type* is the FC4 type: target or initiator.
+`-t` is the FC4 type: target or initiator.
 |Is a V-Series system or has FlexArray Virtualization Software and is connected to storage arrays
 |Modify the FC ports on node3 as needed by entering the following command:
 
 `ucadmin modify -m fc -t initiator -f <adapter_port_name>`
 
-*-t* is the FC4 type, target or initiator.
+`-t` is the FC4 type, target or initiator.
 
 *Note*: The FC ports must be programmed as initiators.
 |===

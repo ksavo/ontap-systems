@@ -30,7 +30,7 @@ NOTE: Wait until all non-root aggregates owned by node1 have been relocated to n
 [cols=2*,options="header",cols="35,65"]
 |===
 |If relocation... |Then..
-|Of all aggregates is successful |Go to Step 4.
+|Of all aggregates is successful |Go to <<step4,Step 4>>.
 |Of any aggregates fails or is
 vetoed
 a|.. Check the EMS logs for the corrective action.
@@ -46,10 +46,10 @@ If necessary, you can force the relocation using one of the following methods:
 * Override destination checks:
 `storage aggregate relocation start -override-destination-checks true -ndo-controller-upgrade`
 
-Refer to link:Other_references.html[References] to link to the _Disks and Aggregates Power Guide_ and the _ONTAP 9 Commands: Manual Page Reference_ for more information about storage aggregate relocation commands.
+Refer to link:other_references.html[References] to link to the _Disks and Aggregates Power Guide_ and the _ONTAP 9 Commands: Manual Page Reference_ for more information about storage aggregate relocation commands.
 |===
 
-. Verify that all the non-root aggregates are online and their state on node2:
+. [[step4]] Verify that all the non-root aggregates are online and their state on node2:
 +
 `storage aggregate show -node <node2> -state online -root false`
 +
@@ -88,8 +88,7 @@ The `vserver-name` to use with this command is found in the output of the previo
 The output should display the following message:
 +
 ----
-Node owns partner's aggregates as part of the nondisruptive controller upgrade
-procedure.
+Node owns partner's aggregates as part of the nondisruptive controller upgrade procedure.
 ----
 
 . Verify that node1 does not own any non-root aggregates that are online:
