@@ -177,7 +177,7 @@ If Dynamic Host Configuration Protocol (DHCP) is... |Then...
 |All other systems |`netboot \http://<web_server_ip/path_to_webaccessible_directory/ontap_version>_image.tgz`
 |===
 The `<path_to_the_web-accessible_directory>` should lead to where you downloaded the
-`<ontap_version>_image.tgz` in Step 1 in the section link:prepare_for_netboot.html[Prepare for netboot].
+`<ontap_version>_image.tgz` in link:prepare_for_netboot.html#Step1[Step 1] in the section link:prepare_for_netboot.html[Prepare for netboot].
 +
 NOTE: Do not interrupt the boot.
 

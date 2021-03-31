@@ -2,7 +2,7 @@ Before you can replace node2 with node4, you must send an AutoSupport message fo
 
 .Steps
 
-. Send an AutoSupport message to NetApp for node2:
+. [[step1]] Send an AutoSupport message to NetApp for node2:
 +
 `system node autosupport invoke -node <node2> -type all -message "Upgrading <node2> from <platform_old> to <platform_new>"`
 
@@ -12,7 +12,7 @@ Before you can replace node2 with node4, you must send an AutoSupport message fo
 +
 The fields "Last Subject Sent:"" and "Last Time Sent:"" contain the message title of the last message that was sent and the time when the message was sent.
 
-. Relocate the non-root aggregates:
+. [[step3]]Relocate the non-root aggregates:
 
 .. Set the privilege level to advanced:
 +

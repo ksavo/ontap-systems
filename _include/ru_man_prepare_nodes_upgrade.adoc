@@ -134,7 +134,7 @@ node2          node1          true     Connected to node1
 +
 If either node is in partial giveback, use the `storage failover giveback` command to perform the giveback, and then use the `storage failover show-giveback` command to make sure that no aggregates still need to be given back. For detailed information about the commands, refer to link:other_references.html[References] to link to the _ONTAP 9 High-Availability Configuration Guide_.
 
-. Ensure that neither node1 nor node2 owns the aggregates for which it is the current owner (but not the home owner):
+. [[step9]]Ensure that neither node1 nor node2 owns the aggregates for which it is the current owner (but not the home owner):
 +
 `storage aggregate show -node <node_name> -is-home false -fields owner-name,homename,state`
 +
@@ -165,7 +165,7 @@ aggr4         node1        node2        online
 +
 [cols="35,65"]
 |===
-|If the command in Step 9...|Then...
+|If the command in <<step9,Step 9>>...|Then...
 
 |Had blank output
 |Skip Step 11 and go to <<step12,Step 12>>.

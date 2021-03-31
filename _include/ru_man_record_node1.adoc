@@ -2,7 +2,7 @@ Before you can shut down and retire node1, you need to record information about 
 
 .Steps
 
-.	Enter the following command and capture its output:
+.	[[step1]]Enter the following command and capture its output:
 +
 `network route show`
 +
