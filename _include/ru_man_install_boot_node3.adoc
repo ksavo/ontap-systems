@@ -173,15 +173,15 @@ NOTE: You should use the management port and IP as the netboot connection. Do no
 
 `ifconfig e0M -addr=<filer_addr> -mask=<netmask> -gw=<gateway> -dns=<dns_addr> domain=<dns_domain>`
 
-<`filer_addr`> is the IP address of the storage system.
+`<filer_addr>` is the IP address of the storage system.
 
-<`netmask`> is the network mask of the storage system.
+`<netmask>` is the network mask of the storage system.
 
-<`gateway`> is the gateway for the storage system.
+`<gateway>` is the gateway for the storage system.
 
-<`dns_addr`> is the IP address of a name server on your network.
+`<dns_addr>` is the IP address of a name server on your network.
 
-<`dns_domain`> is the Domain Name Service (DNS) domain name. If you use this optional parameter, you do not need a fully qualified domain name in the netboot server URL; you need only the server's host name.
+`<dns_domain>` is the Domain Name Service (DNS) domain name. If you use this optional parameter, you do not need a fully qualified domain name in the netboot server URL; you need only the server's host name.
 
 *Note*: Other parameters might be necessary for your interface. Enter `help ifconfig` at the firmware prompt for details.
 |===
@@ -194,12 +194,12 @@ NOTE: You should use the management port and IP as the netboot connection. Do no
 
 
 |FAS/AFF8000 series systems
-|`\netboot http://<web_server_ip>/<path_to_webaccessible_directory>/netboot/kernel`
+|`netboot \http://<web_server_ip>/<path_to_webaccessible_directory>/netboot/kernel`
 |All other systems
-|`\netboot http://<web_server_ip>/<path_to_webaccessible_directory>/<ontap_version>_image.tgz`
+|`netboot \http://<web_server_ip>/<path_to_webaccessible_directory>/<ontap_version>_image.tgz`
 |===
 +
-The <`path_to_the_web-accessible_directory`> should lead to where you downloaded the `<ontap_version>_image.tgz` in link:prepare_for_netboot.html#Step1[Prepare for netboot, Step 1].
+The `<path_to_the_web-accessible_directory>` should lead to where you downloaded the `<ontap_version>_image.tgz` in link:prepare_for_netboot.html#Step1[Prepare for netboot, Step 1].
 +
 NOTE: Do not interrupt the boot.
 
@@ -396,12 +396,7 @@ If you have a MetroCluster configuration, use the following commands to modify t
 The console displays the following message:
 +
 ----
-Destroying mailboxes forces a node to create new empty mailboxes,
-which clears any takeover state, removes all knowledge of
-out-of-date plexes of mirrored volumes, and will prevent
-management services from going online in 2-node cluster HA
-configurations. Are you sure you want to destroy the local
-mailboxes?
+Destroying mailboxes forces a node to create new empty mailboxes, which clears any takeover state, removes all knowledge of out-of-date plexes of mirrored volumes, and will prevent management services from going online in 2-node cluster HA configurations. Are you sure you want to destroy the local mailboxes?
 ----
 
 . [[step35]]Enter `y` at the prompt to confirm that you want to destroy the local mailboxes.

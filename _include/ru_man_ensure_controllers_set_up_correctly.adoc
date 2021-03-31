@@ -56,7 +56,7 @@ If either node3 or node4 owns data LIFs home-owned by other nodes in the cluster
 `volume show -node <node3> -state offline`
 `volume show -node <node4> -state offline`
 
-. If any volumes are offline, compare them with the list of offline volumes that you captured in  link:prepare_nodes_for_upgrade.html[Prepare the nodes for upgrade], and bring online any of the offline volumes, as required, by entering the following command, once for each volume:
+. If any volumes are offline, compare them with the list of offline volumes that you captured in  link:prepare_nodes_for_upgrade.html#step19d[Prepare the nodes for upgrade, Step 19 (d)], and bring online any of the offline volumes, as required, by entering the following command, once for each volume:
 +
 `volume online -vserver <vserver-name> -volume <volume_name>`
 
@@ -98,7 +98,7 @@ Enter `y` to remove all of the packages.
 +
 `system license show`
 +
-You might want to compare the output with the output that you captured in link:prepare_nodes_for_upgrade.html[Prepare the nodes for upgrade].
+You might want to compare the output with the output that you captured in link:prepare_nodes_for_upgrade.html#step30[Prepare the nodes for upgrade, Step 30].
 
 . Configure the SPs by performing the following command on both nodes:
 +

@@ -8,7 +8,7 @@ However, you do not need to netboot node4 if it has the same or later version of
 
 *Important*:
 
-* If you are upgrading a V-Series system or a system with FlexArray Virtualization Software that is connected to storage arrays, you need to complete <<Step1,Step 1>> through <<Step7,Step 7>>, leave this section at Step 8 and follow instructions in link:set_fc_uta_uta2_config_node4.html[Set the FC or UTA/UTA2 configuration on node4] as needed, entering the commands in Maintenance mode. You then need to return to this section and resume the procedure at <<Step9,Step 9>>.
+* If you are upgrading a V-Series system or a system with FlexArray Virtualization Software that is connected to storage arrays, you need to complete <<Step1,Step 1>> through <<Step7,Step 7>>, leave this section at <<step8,Step 8>> and follow instructions in link:set_fc_uta_uta2_config_node4.html[Set the FC or UTA/UTA2 configuration on node4] as needed, entering the commands in Maintenance mode. You then need to return to this section and resume the procedure at <<Step9,Step 9>>.
 
 * However, if you are upgrading a system with storage disks, you need to complete this entire section and then proceed to the section link:set_fc_uta_uta2_config_node4.html[Set the FC or UTA/UTA2 configuration on node4], entering commands at the cluster prompt.
 
@@ -80,7 +80,7 @@ WARNING: The battery is unfit to retain data during a power
 +
 WARNING: *Warning: Do not override the delay. Failure to allow the battery to charge could result in a loss of data.*
 
-. [[Step8]]Take one of the following actions:
+. [[step8]]Take one of the following actions:
 +
 [cols=2*,options="header",cols="35,65"]
 |===
@@ -233,7 +233,7 @@ DISK         OWNER                       POOL   SERIAL NUMBER   HOME
 +
 [cols=2*,options="header",cols="35,65"]
 |===
-|Disk type .. |Run the command..
+|Disk type... |Run the command...
 |With shared disks |`disk reassign -s`
 
 `<node2_sysid> -d <node4_sysid> -p <node3_sysid>`
