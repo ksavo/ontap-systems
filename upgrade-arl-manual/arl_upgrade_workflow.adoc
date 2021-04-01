@@ -23,8 +23,7 @@ The following illustration shows the stages of the procedure. The thick, light g
 
 image:arl_upgrade_manual_image1.PNG[Illustration showing the stages of the ARL procedure]
 
-The following table describes the high-level tasks you perform during each stage and the state of aggregate ownership
-at the end of the stage. Detailed steps are provided later in the procedure:
+The following table describes the high-level tasks you perform during each stage and the state of aggregate ownership at the end of the stage. Detailed steps are provided later in the procedure:
 
 [cols="35,65"]
 |===
