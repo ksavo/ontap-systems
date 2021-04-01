@@ -177,7 +177,7 @@ If Dynamic Host Configuration Protocol (DHCP) is... |Then...
 |All other systems |`netboot \http://<web_server_ip/path_to_webaccessible_directory/ontap_version>_image.tgz`
 |===
 The `<path_to_the_web-accessible_directory>` should lead to where you downloaded the
-`<ontap_version>_image.tgz` in link:prepare_for_netboot.html#Step1[Step 1] in the section link:prepare_for_netboot.html[Prepare for netboot].
+`<ontap_version>_image.tgz` in link:prepare_for_netboot.html#Step1[Step 1] in the section _Prepare for netboot_.
 +
 NOTE: Do not interrupt the boot.
 
@@ -185,9 +185,13 @@ NOTE: Do not interrupt the boot.
 +
 This menu option downloads and installs the new Data ONTAP image to the boot device.
 +
-Disregard the following message: `"This procedure is not supported for NonDisruptive Upgrade on an HA pair"`. The note applies to nondisruptive upgrades of Data ONTAP, and not upgrades of controllers.
+Disregard the following message:
++
+`"This procedure is not supported for NonDisruptive Upgrade on an HA pair"`
++
+The note applies to nondisruptive upgrades of Data ONTAP, and not upgrades of controllers.
 
-. If you are prompted to continue the procedure, enter y, and when prompted for the package, enter the URL
+. [[step23]] If you are prompted to continue the procedure, enter y, and when prompted for the package, enter the URL:
 +
 `\http://<web_server_ip/path_to_web-accessible_directory/ontap_version>_image.tgz`
 
@@ -242,7 +246,7 @@ DISK         OWNER                       POOL   SERIAL NUMBER   HOME
 `<node2_sysid> -d <node4_sysid>`
 |===
 +
-For the `<node2_sysid>` value, use the information captured in Step 10 of the link:record_node2_information.html[Record node2 information] section. For `<node4_sysid>`, use the information captured in Step 23.
+For the `<node2_sysid>` value, use the information captured in link:record_node2_information.html#step10[Step 10] of the _Record node2 information_ section. For `<node4_sysid>`, use the information captured in <<step23,Step 23>>.
 +
 NOTE: The `-p` option is only required in maintenance mode when shared disks are present.
 
