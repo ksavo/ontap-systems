@@ -46,7 +46,7 @@ slot 0: SAS Host Adapter 0a (PMC-Sierra PM8001 rev. C, SAS, UP)
 +
 Internal drives have "00." at the beginning of their ID. The "00." indicates an internal disk shelf, and the number after the decimal point indicates the individual disk drive.
 
-. Enter the following command on both controllers:
+. [[step4]]Enter the following command on both controllers:
 +
 `aggr status -r`
 +
@@ -98,7 +98,7 @@ node> aggr status -v
          Volumes: vol0
 ....
 +
-Based on the output in Step 4 and Step 6, aggr2 uses three internal drives—"0a.00.1", "0a.00.3", and "0a.00.9"—and the volumes on "aggr2" are "vol6", "vol5", and "vol14". Also, in the output of Step 6, the readout for "aggr0" contains the word "root" at the beginning of the information for the aggregate. That indicates that it contains a root volume.
+Based on the output in <<step4,Step 4>> and Step 6, aggr2 uses three internal drives—"0a.00.1", "0a.00.3", and "0a.00.9"—and the volumes on "aggr2" are "vol6", "vol5", and "vol14". Also, in the output of Step 6, the readout for "aggr0" contains the word "root" at the beginning of the information for the aggregate. That indicates that it contains a root volume.
 
 . Examine the output of the `aggr status -v` command to identify the volumes belonging to any aggregates that are on an internal drive and whether any of those volumes contain a root volume.
 
@@ -131,5 +131,5 @@ You can upgrade the controllers by referring to link:other_references.html[Refer
 |Contain non-root volumes on the internal drives and you cannot move the volumes to external storage
 |Do not continue with this procedure.
 
-You can upgrade the controllers by referring to link:other_references.html[References] to link to the _NetApp Support Site_ and using the procedure _Upgrading the controller hardware on a pair of nodes running clustered Data ONTAP by moving volumes_.
+You can upgrade the controllers by using the procedure _Upgrading the controller hardware on a pair of nodes running clustered Data ONTAP by moving volumes_. Refer to link:other_references.html[References] to link to the _NetApp Support Site_ where you can access this procedure.
 |===

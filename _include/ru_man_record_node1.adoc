@@ -2,7 +2,7 @@ Before you can shut down and retire node1, you need to record information about 
 
 .Steps
 
-.	Enter the following command and capture its output:
+.	[[step1]]Enter the following command and capture its output:
 +
 `network route show`
 +
@@ -40,7 +40,7 @@ The system displays output similar to the following example:
                           gamma.netapp.com                     10.10.60.20
 ----
 
-.	Find the cluster network and node-management ports on node1 by entering the following command on either controller:
+.	[[step3]]Find the cluster network and node-management ports on node1 by entering the following command on either controller:
 +
 `network interface show -curr-node <node1> -role cluster,intercluster,node-mgmt,cluster-mgmt`
 +
@@ -65,7 +65,7 @@ The system displays the cluster, intercluster, node-management, and cluster-mana
 +
 NOTE: Your system might not have intercluster LIFs.
 
-.	Capture the information in the output of the command in Step 3 to use in the section link:map_ports_node1_node3.html[Map ports from node1 to node3].
+.	Capture the information in the output of the command in <<step3,Step 3>> to use in the section link:map_ports_node1_node3.html[Map ports from node1 to node3].
 +
 The output information is required to map the new controller ports to the old controller ports.
 
@@ -141,7 +141,7 @@ You will use the information in the section link:map_ports_node1_node3.html[Map 
 |If you...	|Then...
 
 |Recorded the NVRAM System ID number in the section link:prepare_nodes_for_upgrade.html[Prepare the nodes for the upgrade].
-|Go on to the next section, Retiring node1.
+|Go on to the next section, link:retire_node1.html[Retire node1].
 |Did not record the NVRAM System ID number in the section link:prepare_nodes_for_upgrade.html[Prepare the nodes for the upgrade]
 |Complete <<step11,Step 11>> and <<step12,Step 12>> and then continue to link:retire_node1.html[Retire node1].
 |===

@@ -8,7 +8,7 @@ However, you do not need to netboot node4 if it has the same or later version of
 
 *Important*:
 
-* If you are upgrading a V-Series system or a system with FlexArray Virtualization Software that is connected to storage arrays, you need to complete <<Step1,Step 1>> through <<Step7,Step 7>>, leave this section at Step 8 and follow instructions in link:set_fc_uta_uta2_config_node4.html[Set the FC or UTA/UTA2 configuration on node4] as needed, entering the commands in Maintenance mode. You then need to return to this section and resume the procedure at <<Step9,Step 9>>.
+* If you are upgrading a V-Series system or a system with FlexArray Virtualization Software that is connected to storage arrays, you need to complete <<Step1,Step 1>> through <<Step7,Step 7>>, leave this section at <<step8,Step 8>> and follow instructions in link:set_fc_uta_uta2_config_node4.html[Set the FC or UTA/UTA2 configuration on node4] as needed, entering the commands in Maintenance mode. You then need to return to this section and resume the procedure at <<Step9,Step 9>>.
 
 * However, if you are upgrading a system with storage disks, you need to complete this entire section and then proceed to the section link:set_fc_uta_uta2_config_node4.html[Set the FC or UTA/UTA2 configuration on node4], entering commands at the cluster prompt.
 
@@ -80,7 +80,7 @@ WARNING: The battery is unfit to retain data during a power
 +
 WARNING: *Warning: Do not override the delay. Failure to allow the battery to charge could result in a loss of data.*
 
-. [[Step8]]Take one of the following actions:
+. [[step8]]Take one of the following actions:
 +
 [cols=2*,options="header",cols="35,65"]
 |===
@@ -177,7 +177,7 @@ If Dynamic Host Configuration Protocol (DHCP) is... |Then...
 |All other systems |`netboot \http://<web_server_ip/path_to_webaccessible_directory/ontap_version>_image.tgz`
 |===
 The `<path_to_the_web-accessible_directory>` should lead to where you downloaded the
-`<ontap_version>_image.tgz` in Step 1 in the section link:prepare_for_netboot.html[Prepare for netboot].
+`<ontap_version>_image.tgz` in link:prepare_for_netboot.html#Step1[Step 1] in the section _Prepare for netboot_.
 +
 NOTE: Do not interrupt the boot.
 
@@ -185,9 +185,13 @@ NOTE: Do not interrupt the boot.
 +
 This menu option downloads and installs the new Data ONTAP image to the boot device.
 +
-Disregard the following message: `"This procedure is not supported for NonDisruptive Upgrade on an HA pair"`. The note applies to nondisruptive upgrades of Data ONTAP, and not upgrades of controllers.
+Disregard the following message:
++
+`"This procedure is not supported for NonDisruptive Upgrade on an HA pair"`
++
+The note applies to nondisruptive upgrades of Data ONTAP, and not upgrades of controllers.
 
-. If you are prompted to continue the procedure, enter y, and when prompted for the package, enter the URL
+. [[step23]] If you are prompted to continue the procedure, enter y, and when prompted for the package, enter the URL:
 +
 `\http://<web_server_ip/path_to_web-accessible_directory/ontap_version>_image.tgz`
 
@@ -233,7 +237,7 @@ DISK         OWNER                       POOL   SERIAL NUMBER   HOME
 +
 [cols=2*,options="header",cols="35,65"]
 |===
-|Disk type .. |Run the command..
+|Disk type... |Run the command...
 |With shared disks |`disk reassign -s`
 
 `<node2_sysid> -d <node4_sysid> -p <node3_sysid>`
@@ -242,7 +246,7 @@ DISK         OWNER                       POOL   SERIAL NUMBER   HOME
 `<node2_sysid> -d <node4_sysid>`
 |===
 +
-For the `<node2_sysid>` value, use the information captured in Step 10 of the link:record_node2_information.html[Record node2 information] section. For `<node4_sysid>`, use the information captured in Step 23.
+For the `<node2_sysid>` value, use the information captured in link:record_node2_information.html#step10[Step 10] of the _Record node2 information_ section. For `<node4_sysid>`, use the information captured in <<step23,Step 23>>.
 +
 NOTE: The `-p` option is only required in maintenance mode when shared disks are present.
 

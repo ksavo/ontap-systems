@@ -29,7 +29,7 @@ This procedure includes steps that are performed on the new controller module. Y
 |===
 |For this ONTAP version… |Use this command...
 |ONTAP 9.6 or 9.7 |`security key-manager key query -node node`
-|ONTAP 9.5 or earlier |`security key-manager key show`
+|ONTAP 9.5 |`security key-manager key show`
 |===
 
 . Add the key management servers listed in the previous step to the key management server list in the new controller:

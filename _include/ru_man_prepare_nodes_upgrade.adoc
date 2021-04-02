@@ -134,7 +134,7 @@ node2          node1          true     Connected to node1
 +
 If either node is in partial giveback, use the `storage failover giveback` command to perform the giveback, and then use the `storage failover show-giveback` command to make sure that no aggregates still need to be given back. For detailed information about the commands, refer to link:other_references.html[References] to link to the _ONTAP 9 High-Availability Configuration Guide_.
 
-. Ensure that neither node1 nor node2 owns the aggregates for which it is the current owner (but not the home owner):
+. [[step9]]Ensure that neither node1 nor node2 owns the aggregates for which it is the current owner (but not the home owner):
 +
 `storage aggregate show -node <node_name> -is-home false -fields owner-name,homename,state`
 +
@@ -165,7 +165,7 @@ aggr4         node1        node2        online
 +
 [cols="35,65"]
 |===
-|If the command in Step 9...|Then...
+|If the command in <<step9,Step 9>>...|Then...
 
 |Had blank output
 |Skip Step 11 and go to <<step12,Step 12>>.
@@ -235,7 +235,7 @@ node2                 true    true
 +
 `set -privilege advanced`
 
-. Ensure that node1 and node2 are running the same ONTAP release:
+. [[step15]] Ensure that node1 and node2 are running the same ONTAP release:
 +
 `system node image show -node <node1,node2> -iscurrent true`
 +
@@ -281,7 +281,7 @@ vs0
 2 entries were displayed.
 ....
 
-. If the output in Step 15 shows that either node1 or node2 owns any data LIFs home-owned by other nodes in the cluster, migrate the data LIFs away from node1 or node2:
+. If the output in <<step15,Step 15>> shows that either node1 or node2 owns any data LIFs home-owned by other nodes in the cluster, migrate the data LIFs away from node1 or node2:
 +
 `network interface revert -vserver * -lif *`
 +
@@ -315,7 +315,7 @@ NOTE: You can use the information to identify parts or accessories that you migh
 +
 NOTE: You can use this information and the information in the following substep to verify that the aggregates and volumes remain online throughout the procedure, except for the brief period when they are offline during relocation.
 
-.. Enter the following command on both node1 and node2 and record the volumes that are offline on both nodes:
+.. [[step19d]]Enter the following command on both node1 and node2 and record the volumes that are offline on both nodes:
 +
 `volume show -node <node_name> -state offline`
 +
@@ -553,7 +553,7 @@ The system displays detailed information about the SP on both nodes.
 You might want to reuse the network parameters of the remote management devices, in this case the SPs, from the original system for the SPs on the new nodes.
 For detailed information about the SP, refer to link:other_references.html[References] to link to the _System Administration Reference_ and the _ONTAP 9 Commands: Manual Page Reference_.
 
-. If you want the new nodes to have the same licensed functionality as the original nodes, enter the following command to see the cluster licenses on the original system:
+. [[step30]]If you want the new nodes to have the same licensed functionality as the original nodes, enter the following command to see the cluster licenses on the original system:
 +
 `system license show -owner *`
 +

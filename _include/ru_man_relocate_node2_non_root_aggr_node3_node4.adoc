@@ -23,7 +23,7 @@ Relocation occurs in the background. It could take anywhere from a few seconds t
 +
 `set -privilege admin`
 
-. Check the relocation status:
+. [[step3]]Check the relocation status:
 +
 `storage aggregate relocation show -node <node3>`
 +

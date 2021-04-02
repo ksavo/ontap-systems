@@ -20,16 +20,16 @@ Remote LIFs handle traffic to SAN LUNs during the upgrade procedure. Moving SAN 
 |===
 
 . [[Step3]]Take the following steps to migrate any NAS data LIFs hosted on interface groups and VLANs that originally were on node2 from node3 to node4.
-.. Migrate any LIFs hosted on node3 that previously belonging to node2 on an interface group to a port on node4 that is capable of hosting LIFs on the same network by entering the following command, once for each LIF:
+.. [[substepa]]Migrate any LIFs hosted on node3 that previously belonging to node2 on an interface group to a port on node4 that is capable of hosting LIFs on the same network by entering the following command, once for each LIF:
 +
 `network interface migrate -vserver <vserver_name> -lif <lif_name> -destination-node node4 –destination-port <netport|ifgrp>`
-.. Modify the home port and home node of the LIFs in Substep "a" to the port and node currently hosting the LIFs by entering the following command, once for each LIF:
+.. Modify the home port and home node of the LIFs in <<substepa,Substep a>> to the port and node currently hosting the LIFs by entering the following command, once for each LIF:
 +
 `network interface modify -vserver <vserver_name> -lif <datalif_name> -home-node node4 home-port <netport|ifgrp>`
-.. Migrate any LIFs hosted on node3 that previously belonged to node2 on a VLAN port to a port on node4 that is capable of hosting LIFs on the same network by entering the following command, once for each LIF:
+.. [[substepc]] Migrate any LIFs hosted on node3 that previously belonged to node2 on a VLAN port to a port on node4 that is capable of hosting LIFs on the same network by entering the following command, once for each LIF:
 +
 `network interface migrate -vserver <vserver_name> -lif <datalif_name> -destination-node node4 –destination-port <netport|ifgrp>`
-.. Modify the home port and home node of the LIFs in Substep "c" to the port and node currently hosting the LIFs by entering the following command, once for each LIF:
+.. Modify the home port and home node of the LIFs in <<substepc,Substep c>> to the port and node currently hosting the LIFs by entering the following command, once for each LIF:
 +
 `network interface modify -vserver <vserver_name> -lif <datalif_name> -home-node <node4> home-port <netport|ifgrp>`
 

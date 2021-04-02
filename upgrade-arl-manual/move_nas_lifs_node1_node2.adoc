@@ -4,7 +4,7 @@ permalink: upgrade-arl-manual/move_nas_lifs_node1_node2.html
 summary: Move the NAS data LIFs owned by node1 to node2 if you have a two-node cluster, or to a third node if your cluster has more than two nodes.
 ---
 
-= Move NAS data LIFs owned by node1 to node2 
+= Move NAS data LIFs owned by node1 to node2
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -58,11 +58,11 @@ Use the `network port vlan show` command to display information about the networ
 
 .	[[step3]]Take the following steps to migrate any NAS data LIFs hosted on interface groups and VLANs on node1:
 
-.. Migrate the LIFs hosted on any interface groups and the VLANs on node1 to a port on node2 that is capable of hosting LIFs on the same network as that of the interface groups by entering the following command, once for each LIF:
+.. [[substepa]]Migrate the LIFs hosted on any interface groups and the VLANs on node1 to a port on node2 that is capable of hosting LIFs on the same network as that of the interface groups by entering the following command, once for each LIF:
 +
 `network interface migrate -vserver <Vserver_name> -lif <LIF_name> -destination-node <node2> –destination-port <netport|ifgrp>`
 
-..	Modify the home port and the home node of the LIFs and VLANs in Substep "a" to the port and node currently hosting the LIFs by entering the following command, once for each LIF:
+..	Modify the home port and the home node of the LIFs and VLANs in <<substepa,Substep a>> to the port and node currently hosting the LIFs by entering the following command, once for each LIF:
 +
 `network interface modify -vserver <Vserver_name> -lif <LIF_name> -home-node <node2> - home-port <netport|ifgrp>`
 
@@ -92,7 +92,7 @@ Use the `network port vlan show` command to display information about the networ
 +
 `network interface modify -vserver <Vserver-name> -lif <LIF_name> -home-node <node2> -home-port <port_name>`
 
-.	[[step8]]Verify whether the LIF is using the port as its home or current port. If the port is not home or current port then go to step 9:
+.	[[step8]]Verify whether the LIF is using the port as its home or current port. If the port is not home or current port then go to <<step9,Step 9>>:
 +
 `network interface show -home-node <node2> -home-port <port_name>`
 +
