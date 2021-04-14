@@ -17,7 +17,7 @@ This guide describes how to upgrade the storage controllers in an HA pair with n
 
 You should use this guide under the following circumstances:
 
-* You are upgrading your storage to ONTAP 9.5, 9.6 or 9.7. This document is not applicable to upgrades to ONTAP 9.8.
+* You are upgrading NetApp controllers running ONTAP 9.5, 9.6 or 9.7. This document is not applicable to upgrades to ONTAP 9.8.
 
 * You do not want to add the new controllers as a new HA pair to the cluster and migrate the data using volume moves.
 
