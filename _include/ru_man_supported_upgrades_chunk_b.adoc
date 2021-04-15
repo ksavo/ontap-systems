@@ -1,4 +1,4 @@
-* For some ARL controller upgrades you can use temporary cluster ports on the replacement controller for the upgrade. For example, if you upgrade from an AFF A300 to an AFF A400 system, depending on the AFF A400 configuration, you can use any of the two mezzanine ports or add a four-port 10GbE network interface card to provide temporary cluster ports. After you complete a controller upgrade using temporary cluster ports, you can nondisruptively migrate clusters to 100GbE ports on the replacement controller.
+* For some ARL controller upgrades you can use temporary cluster ports on the replacement controller for the upgrade. For example, if you upgrade from an AFF A300 to an AFF A400 system, depending on the AFF A400 configuration, you can use any of the two mezzanine ports or add a four-port 10 GbE network interface card to provide temporary cluster ports. After you complete a controller upgrade using temporary cluster ports, you can nondisruptively migrate clusters to 100 GbE ports on the replacement controller.
 
 * Controller upgrade using ARL is supported on systems configured with SnapLock Enterprise and SnapLock Compliance volumes.
 
