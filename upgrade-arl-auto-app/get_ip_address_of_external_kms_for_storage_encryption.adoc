@@ -23,7 +23,7 @@ include::../_include/ru_auto_get_ip_address_external_key_management_server_encry
 
 == Manage authentication using KMIP servers
 
-With ONTAP 9.8, you can use Key Management Interoperability Protocol (KMIP) servers to manage authentication keys.
+With ONTAP 9.8 or later, you can use Key Management Interoperability Protocol (KMIP) servers to manage authentication keys.
 
 include::../_include/ru_auto_manage_authentication_kmip_servers.adoc[]
 
