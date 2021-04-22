@@ -1,0 +1,21 @@
+---
+sidebar: sidebar
+permalink: upgrade/index.html
+keywords:  aggregate, relocation, moving, manual, upgrade, relocate
+summary: Using aggregate relocation to manually upgrade controller hardware running ONTAP 9.7 or earlier
+---
+
+= Use aggregate relocation to upgrade controller hardware
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+[.lead]
+include::../_include/ru_all_index_intro.adoc[]
+
+This procedure applies to MetroCluster 4-node and 8-node configurations running ONTAP 9.5 and earlier. For MetroCluster configurations running ONTAP 9.6 and later, go to link:other_references.html[References] to link to _Using “system controller replace” Commands to Upgrade Controller Hardware Running ONTAP 9.5 or Later_.
+
+
+// 24 FEB 2021:  formatted from CMS
