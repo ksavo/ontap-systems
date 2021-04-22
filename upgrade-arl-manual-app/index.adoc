@@ -5,7 +5,7 @@ keywords:  aggregate, relocation, moving, manual, upgrade, relocate, controller
 summary: Using aggregate relocation to manually upgrade controller hardware running ONTAP 9.8 or later
 ---
 
-= Using Aggregate Relocation to Manually Upgrade Controller Hardware Running ONTAP 9.8 or Later
+= Use aggregate relocation to upgrade controller hardware
 :hardbreaks:
 :nofooter:
 :icons: font
