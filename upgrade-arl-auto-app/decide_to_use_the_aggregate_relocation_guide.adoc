@@ -44,14 +44,12 @@ The following table shows the supported model matrix for the controller upgrade.
 |FAS8200
 |FAS8700, FAS9000, FAS8300
 |AFF A300
-|AFF A700, AFF A800*, AFF A400**
+|AFF A700, AFF A800*, AFF A400
 |===
 
 NOTE: If your controller upgrade model combination is not in the above table, contact technical support.
 
 *For the additional steps needed for A800 systems, go to the step that references A800 in section link:set_fc_or_uta_uta2_config_on_node3.html#step23[Check and configure UTA/UTA2 ports on node3, Step 23], or link:set_fc_or_uta_uta2_config_node4.html#step23[Check and configure UTA/UTA2 ports on node4, Step 23].
-
-**ARL automated upgrade for the AFF A400 platform from an AFF A320 platform is supported from ONTAP 9.9.1.
 
 include::../_include/ru_auto_decide_use_arl_guide_end.adoc[]
 
