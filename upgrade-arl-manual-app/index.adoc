@@ -1,8 +1,8 @@
 ---
 sidebar: upgrade-arl-manual-app_sidebar
 permalink: upgrade-arl-manual-app/index.html
-keywords:  aggregate, relocation, moving, manual, upgrade, relocate, controller
-summary: Using aggregate relocation to manually upgrade controller hardware running ONTAP 9.8 or later
+keywords:  controller, aggregate, relocation, flexarray, manual, upgrade, metrocluster
+summary: You upgrade the original controller hardware with the replacement controller hardware, relocating the ownership of non-root aggregates.
 ---
 
 = Use aggregate relocation to upgrade controller hardware
@@ -13,7 +13,7 @@ summary: Using aggregate relocation to manually upgrade controller hardware runn
 :imagesdir: ./media/
 
 [.lead]
-include::../_include/ru_all_index_intro.adoc[]
+include::../_include/ru_man_use_arl_overview.adoc[]
 
 In addition to non-MetroCluster configurations, this procedure applies to Fabric MetroCluster four-node and eight-node configurations running ONTAP 9.8 and later.
 
