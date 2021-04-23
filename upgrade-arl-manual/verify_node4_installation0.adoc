@@ -1,7 +1,8 @@
 ---
 sidebar: upgrade-arl-manual_sidebar
 permalink: upgrade-arl-manual/verify_node4_installation.html
-summary:
+keywords: install, node4, node3, verify, communicate
+summary: After you install and boot node4, you need to verify that it is installed correctly
 ---
 
 = Verify the node4 installation

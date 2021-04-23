@@ -2,7 +2,7 @@
 sidebar: upgrade-arl-manual_sidebar
 permalink: upgrade-arl-manual/worksheet_information_before_during_upgrade.html
 keywords: worksheet, stage, information, node ID, LIF, licensing key, IP address
-summary:
+summary: You must gather certain information to successfully upgrade the original nodes. 
 ---
 
 = Worksheet:  Information to collect before and during controller upgrade
