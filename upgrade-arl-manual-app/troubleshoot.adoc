@@ -1,6 +1,7 @@
 ---
 sidebar: upgrade-arl-manual-app_sidebar
 permalink: upgrade-arl-manual-app/troubleshoot.html
+keywrods: troubleshoot, failure, aggregate, relocate, lifs
 summary: troubleshoot, troubleshooting, problem, error, failure
 ---
 

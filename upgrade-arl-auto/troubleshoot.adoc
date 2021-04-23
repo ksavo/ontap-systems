@@ -1,8 +1,8 @@
 ---
 sidebar: upgrade-arl-auto_sidebar
 permalink: upgrade-arl-auto/troubleshoot.html
-keywords: aggregate relocation, YYYYY
-summary: ZZZZZZ
+keywords: node, failure, upgrading, crash, relocate, solution
+summary: You might encounter a failure while upgrading the node pair.
 ---
 
 = Troubleshoot

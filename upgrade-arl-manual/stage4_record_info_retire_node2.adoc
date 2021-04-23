@@ -1,7 +1,8 @@
 ---
 sidebar: upgrade-arl-manual_sidebar
 permalink: upgrade-arl-manual/stage4_record_info_retire_node2.html
-summary:
+keywords: stage4, record, node2, information, retire
+summary: During Stage 4, you record node2 information and then retire node2.
 ---
 
 = Stage 4: Record node2 information and retire node2

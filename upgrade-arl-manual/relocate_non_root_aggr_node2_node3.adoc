@@ -1,6 +1,7 @@
 ---
 sidebar: upgrade-arl-manual_sidebar
 permalink: upgrade-arl-manual/relocate_non_root_aggr_node2_node3.html
+keywords: node2, node3, node2, aggregates, autosupport 
 summary: Send an AutoSupport message for node2 and then relocate the non-root aggregates that are owned by node2 to node3.
 ---
 

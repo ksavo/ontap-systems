@@ -3,8 +3,6 @@ entries:
   - title: Use "system controller replace" Commands to Upgrade Controller Hardware Running ONTAP 9.5 to 9.7
     url: /index.html
     entries:
-      - title: Overview
-        url: /use_aggregate_relocation_upgrade_controller_hardware_overview.html
       - title: Automate the controller upgrade process
         url: /automate_the_controller_upgrade_process.html
   - title: Decide whether to use the aggregate relocation guide

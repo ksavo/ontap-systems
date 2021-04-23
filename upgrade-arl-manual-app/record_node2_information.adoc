@@ -1,7 +1,7 @@
 ---
 sidebar: upgrade-arl-manual-app_sidebar
 permalink: upgrade-arl-manual-app/record_node2_information.html
-kkeywords: record node2 information
+keywords: record, node2, information
 summary: Before you shut down and retire node2, you need to record information about node2.
 ---
 
