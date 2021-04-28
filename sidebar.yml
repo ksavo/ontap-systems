@@ -1,6 +1,6 @@
 entries:
   - title: Use aggregate relocation to upgrade controller hardware
-    url: /upgrade/index.html
+    url: index.html
     entries:
     - title: Upgrade controller hardware running ONTAP 9.8 or later using "system controller replace" command
       url: /upgrade-arl-auto-app/index.html
