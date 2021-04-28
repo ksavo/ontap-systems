@@ -19,17 +19,13 @@ summary: Before you upgrade the nodes using ARL, you should understand how the p
 //
 
 [.lead]
-Before you upgrade the nodes using ARL, you should understand how the procedure works. In this document, the procedure is broken down into several stages.
-
-During the procedure, you upgrade the original controller hardware with the replacement controller hardware, one controller at a time, taking advantage of the HA pair configuration to relocate the ownership of non-root aggregates. All non-root aggregates must undergo two relocations to reach their final destination, which is the correct upgraded node.
-
-Each aggregate has a home owner and current owner. The home owner is the actual owner of the aggregate, and the current owner is the temporary owner.
+include::../_include/ru_auto_overview_arl_workflow_top.adoc[]
 
 [cols="35,65"]
 |===
 | Stage | Steps
 
-| Stage 1: Prepare for upgrade
+| Stage 1. Prepare for upgrade
 a| . Run prechecks to verify that the operation can be performed.
 . Correct aggregate ownership if a precheck fails.
 . Enter the cluster-base license keys.
@@ -43,7 +39,7 @@ Aggregate ownership at the end of Stage 1:
 * Node1 is the home owner and current owner of the node1 aggregates.
 * Node2 is the home owner and current owner of the node2 aggregates.
 
-|Stage 2: Relocate and retire node1
+|Stage 2. Relocate and retire node1
 a| . Relocate non-root aggregates from node1 to node2.
 . Relocate non-SAN data LIFs owned by node1 to node2.
 . Relocate failed or vetoed aggregates.
@@ -55,7 +51,7 @@ Aggregate ownership at the end of Stage 2:
 * Node2 is the current owner of node1 aggregates.
 * Node2 is the home owner and current owner of node2 aggregates.
 
-|Stage 3: Install and boot node3
+|Stage 3. Install and boot node3
 a| . Install and boot node3.
 . Set the FC or (converged network adapter) CNA configuration.
 . Configure the FC ports.
@@ -70,7 +66,7 @@ Aggregate ownership at the end of Stage 3:
 * Node3 is the home owner and current owner of node1 aggregates.
 * Node2 is the home owner and current owner of node2 aggregates.
 
-|Stage 4: Relocate and retire node2
+|Stage 4. Relocate and retire node2
 a| . Relocate non-root aggregates from node2 to node3.
 . Relocate non-SAN data LIFs owned by node2 to node 3.
 . Retire node2.
@@ -81,7 +77,7 @@ Aggregate ownership at the end of Stage 4:
 * Node2 is the home owner of node2 aggregates.
 * Node3 is the current owner of node2 aggregates.
 
-|Stage 5: Install and boot node4
+|Stage 5. Install and boot node4
 a| . Install and boot node4.
 . Set the FC or CNA configuration on node4.
 . Configure the FC ports.
@@ -95,7 +91,7 @@ Aggregate ownership at the end of Stage 5:
 * Node3 is the home owner and current owner of the aggregates that originally belonged to node1.
 * Node4 is the home owner and current owner of aggregates that originally belonged to node2.
 
-|Stage 6: Complete the upgrade
+|Stage 6. Complete the upgrade
 a| . Verify the system is set up correctly.
 . Set up Storage Encryption on the new controller module.
 . Set up NetApp Volume Encryption on the new control module.

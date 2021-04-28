@@ -19,17 +19,17 @@ summary: To understand whether you can use ARL to upgrade a pair of controllers 
 //
 
 [.lead]
-To understand whether you can use ARL to upgrade a pair of controllers running ONTAP 9.8 depends on the platform and the configuration of both the original and replacement controllers.
+To understand whether you can use ARL to upgrade a pair of controllers running ONTAP 9.8 or later depends on the platform and the configuration of both the original and replacement controllers.
 
 ==== Supported upgrades for ARL
 
-When you upgrade a pair of nodes using this ARL procedure for ONTAP 9.8, you must verify that ARL can be performed on the original and replacement controllers.
+When you upgrade a pair of nodes using this ARL procedure for ONTAP 9.8 or later, you must verify that ARL can be performed on the original and replacement controllers.
 
-You should check the size of all defined aggregates and number of disks supported by the original system. You must then compare the aggregate sizes and number of disks supported to the aggregate size and number of disks supported by the new system. This information is available in the link:https://hwu.netapp.com[Hardware Universe]. The aggregate size and the number of disks supported by the new system must be equal to or greater than the aggregate size and number of disks supported by the original system.
+You should check the size of all defined aggregates and number of disks supported by the original system. You must then compare the aggregate sizes and number of disks supported to the aggregate size and number of disks supported by the new system.  Refer to link:other_references.html[References] to link to the _Hardware Universe_ where this information is available. The aggregate size and the number of disks supported by the new system must be equal to or greater than the aggregate size and number of disks supported by the original system.
 
-You should validate in the cluster mixing rules whether new nodes can become part of the cluster with the existing nodes when the original controller is replaced. For more information about cluster mixing rules, see the link:https://hwu.netapp.com[Hardware Universe].
+You should validate in the cluster mixing rules whether new nodes can become part of the cluster with the existing nodes when the original controller is replaced. For more information about cluster mixing rules, refer to link:other_references.html[References] to link to the _Hardware Universe_.
 
-NOTE: If you are upgrading a system that supports internal drives (for example an FAS2700 or AFF A250) but does NOT have internal drives, use the procedure in _Using Aggregate Relocation to Manually Upgrade Controller Hardware_.
+NOTE: If you are upgrading a system that supports internal drives (for example, an FAS2700 or AFF A250) but does NOT have internal drives, refer to link:other_references.html[References] and use the procedure in the _Aggregate Relocation to Manually Upgrade Controller Hardware_ guide that is correct for your version of ONTAP.
 
 Controller upgrade using ARL is supported on systems configured with SnapLock Enterprise and SnapLock Compliance volumes.
 
@@ -43,14 +43,14 @@ You cannot perform the following upgrades:
 
 * To replacement controllers that do not support the disk shelves connected to the original controllers
 +
-See the link:https://hwu.netapp.com[Hardware Universe] for disk-support information.
+Refer to link:other_references.html[References] to link to the _Hardware Universe_ for disk-support information.
 
 * To entry level controllers with internal drives, for example: an FAS 2500.
 +
-If you want to upgrade entry level controllers with internal drives, see the procedure _Upgrading a pair of nodes running clustered Data ONTAP by moving volumes_ in the link:https://docs.netapp.com/platstor/topic/com.netapp.doc.hw-upgrade-controller/home.html[Controller Hardware Upgrade Express Guide].
+If you want to upgrade entry level controllers with internal drives,  refer to link:other_references.html[References] to link to the _Controller Hardware Upgrade Express Guide_ and go to the procedure _Upgrading a pair of nodes running clustered Data ONTAP by moving volumes_.
 
 ==== Troubleshooting
 
-If any problems occur while upgrading the controllers, you can refer to the link:troubleshooting_overview.html[Troubleshooting] section at the end of the procedure for more information and possible solutions.
+If any problems occur while upgrading the controllers, you can refer to the link:troubleshoot.html[Troubleshoot] section at the end of the procedure for more information and possible solutions.
 
 If you do not find a solution to the problem you encountered, you should contact technical support.
