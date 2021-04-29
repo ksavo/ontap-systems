@@ -1,0 +1,15 @@
+---
+sidebar: greely_sidebar
+permalink: greely/index.html
+keywords: 
+summary:
+---
+
+= Greely
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+[.lead]
