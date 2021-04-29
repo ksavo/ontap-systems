@@ -1,6 +1,6 @@
 ---
-sidebar: sidebar
-permalink: 9336c_install_nx-os_software_and_reference_configuration_files_@rcfs@.html
+sidebar: greeley_sidebar
+permalink: greeley/9336c_install_nx-os_software_and_reference_configuration_files_@rcfs@.html
 keywords:
 summary:
 ---
@@ -99,7 +99,7 @@ Port      IPspace      Broadcast Domain Link MTU  Admin/Oper   Status
 --------- ------------ ---------------- ---- ---- ------------ ------
 e3a       Cluster      Cluster          up   9000  auto/100000 healthy
 e3b       Cluster      Cluster          up   9000  auto/100000 healthy
- 
+
 Node: cluster1-01
                                                   Speed(Mbps)  Health
 Port      IPspace      Broadcast Domain Link MTU  Admin/Oper   Status
@@ -130,18 +130,18 @@ Cluster
 cluster1::*> cluster ping-cluster -node cluster1-02
 Host is cluster1-02
 Getting addresses from network interface table...
-Cluster cluster1-01_clus1 169.254.209.69 cluster1-01     e3a       
-Cluster cluster1-01_clus2 169.254.49.125 cluster1-01     e3b       
-Cluster cluster1-02_clus1 169.254.47.194 cluster1-02     e3a       
-Cluster cluster1-02_clus2 169.254.19.183 cluster1-02     e3b       
+Cluster cluster1-01_clus1 169.254.209.69 cluster1-01     e3a
+Cluster cluster1-01_clus2 169.254.49.125 cluster1-01     e3b
+Cluster cluster1-02_clus1 169.254.47.194 cluster1-02     e3a
+Cluster cluster1-02_clus2 169.254.19.183 cluster1-02     e3b
 Local = 169.254.47.194 169.254.19.183
 Remote = 169.254.209.69 169.254.49.125
 Cluster Vserver Id = 4294967293
 Ping status:
-.... 
+....
 Basic connectivity succeeds on 4 path(s)
 Basic connectivity fails on 0 path(s)
-................ 
+................
 Detected 9000 byte MTU on 4 path(s):
     Local 169.254.19.183 to Remote 169.254.209.69
     Local 169.254.19.183 to Remote 169.254.49.125
@@ -157,9 +157,9 @@ RPC status:
 
 ....
 cluster1::*> network interface show -vserver Cluster -fields auto-revert
-          Logical       
+          Logical
 Vserver   Interface           Auto-revert
---------- ––––––-------------- ------------ 
+--------- ––––––-------------- ------------
 Cluster
           cluster1-01_clus1   true
           cluster1-01_clus2   true
@@ -176,25 +176,25 @@ Cluster
 ....
 cluster1::*> system switch ethernet log setup password
 Enter the switch name: <return>
-The switch name entered is not recognized.                                     
-Choose from the following list: 
+The switch name entered is not recognized.
+Choose from the following list:
 cs1
 cs2
-cluster1::*> system switch ethernet log setup-password 
+cluster1::*> system switch ethernet log setup-password
 Enter the switch name: cs1
 RSA key fingerprint is e5:8b:c6:dc:e2:18:18:09:36:63:d9:63:dd:03:d9:cc
-Do you want to continue? {y|n}::[n] y 
+Do you want to continue? {y|n}::[n] y
 Enter the password: <enter switch password>
 Enter the password again: <enter switch password>
-cluster1::*> system switch ethernet log setup-password 
-Enter the switch name: cs2 
+cluster1::*> system switch ethernet log setup-password
+Enter the switch name: cs2
 RSA key fingerprint is 57:49:86:a1:b9:80:6a:61:9a:86:8e:3c:e3:b7:1f:b1
 Do you want to continue? {y|n}:: [n] y
 Enter the password: <enter switch password>
 Enter the password again: <enter switch password>
-cluster1::*> system  switch ethernet log enable-collection 
-Do you want to enable cluster log collection for all nodes in the cluster? {y|n}: [n] y 
-Enabling cluster switch log collection.                                       
+cluster1::*> system  switch ethernet log enable-collection
+Do you want to enable cluster log collection for all nodes in the cluster? {y|n}: [n] y
+Enabling cluster switch log collection.
 cluster1::*>
 ....
 
@@ -227,12 +227,12 @@ Enter hostname for the sftp server: 172.19.2.1
 Enter username: user1
 Outbound-ReKey for 172.19.2.1:22
 Inbound-ReKey for 172.19.2.1:22
-user1@172.19.2.1's password: 
-sftp> progress 
+user1@172.19.2.1's password:
+sftp> progress
 Progress meter enabled
-sftp> get   /code/nxos.9.3.5.bin  /bootflash/nxos.9.3.5.bin 
-/code/nxos.9.3.5.bin  100% 1261MB   9.3MB/s   02:15    
-sftp> exit 
+sftp> get   /code/nxos.9.3.5.bin  /bootflash/nxos.9.3.5.bin
+/code/nxos.9.3.5.bin  100% 1261MB   9.3MB/s   02:15
+sftp> exit
 Copy complete, now saving to disk (please wait)...
 Copy complete.
 cs2# copy sftp: bootflash: vrf management
@@ -241,12 +241,12 @@ Enter hostname for the sftp server: 172.19.2.1
 Enter username: user1
 Outbound-ReKey for 172.19.2.1:22
 Inbound-ReKey for 172.19.2.1:22
-user1@172.19.2.1's password: 
-sftp> progress 
+user1@172.19.2.1's password:
+sftp> progress
 Progress meter enabled
-sftp> get   /code/n9000-epld.9.3.5.img  /bootflash/n9000-epld.9.3.5.img 
+sftp> get   /code/n9000-epld.9.3.5.img  /bootflash/n9000-epld.9.3.5.img
 /code/n9000-epld.9.3.5.img  100%  161MB   9.5MB/s   00:16
-sftp> exit 
+sftp> exit
 Copy complete, now saving to disk (please wait)...
 Copy complete.
 ....
@@ -265,10 +265,10 @@ licenses, such as open source.  This software is provided "as is," and unless
 otherwise stated, there is no warranty, express or implied, including but not
 limited to warranties of merchantability and fitness for a particular purpose.
 Certain components of this software are licensed under
-the GNU General Public License (GPL) version 2.0 or 
+the GNU General Public License (GPL) version 2.0 or
 GNU General Public License (GPL) version 3.0  or the GNU
-Lesser General Public License (LGPL) Version 2.1 or 
-Lesser General Public License (LGPL) Version 2.0. 
+Lesser General Public License (LGPL) Version 2.1 or
+Lesser General Public License (LGPL) Version 2.0.
 A copy of each such license is available at
 http://www.opensource.org/licenses/gpl-2.0.php and
 http://opensource.org/licenses/gpl-3.0.html and
@@ -281,7 +281,7 @@ Software
   NXOS image file is: bootflash:///nxos.9.3.4.bin
   NXOS compile time:  4/28/2020 21:00:00 [04/29/2020 02:28:31]
 Hardware
-  cisco Nexus9000 C9336C-FX2 Chassis 
+  cisco Nexus9000 C9336C-FX2 Chassis
   Intel(R) Xeon(R) CPU E5-2403 v2 @ 1.80GHz with 8154432 kB of memory.
   Processor Board ID FOC20291J6K
   Device name: cs2
@@ -290,11 +290,11 @@ Kernel uptime is 0 day(s), 0 hour(s), 3 minute(s), 42 second(s)
 Last reset at 157524 usecs after Mon Nov  2 18:32:06 2020
   Reason: Reset Requested by CLI command reload
   System version: 9.3(4)
-  Service: 
+  Service:
 plugin
   Core Plugin, Ethernet Plugin
 Active Package(s):
-       
+
 cs2#
 ....
 
@@ -305,7 +305,7 @@ Installing the image file causes it to be loaded every time the switch is reboot
 
 ....
 cs2# install all nxos bootflash:nxos.9.3.5.bin
-Installer will perform compatibility check first. Please wait. 
+Installer will perform compatibility check first. Please wait.
 Installer is forced disruptive
 Verifying image bootflash:/nxos.9.3.5.bin for boot variable "nxos".
 [####################] 100% -- SUCCESS
@@ -357,10 +357,10 @@ licenses, such as open source.  This software is provided "as is," and unless
 otherwise stated, there is no warranty, express or implied, including but not
 limited to warranties of merchantability and fitness for a particular purpose.
 Certain components of this software are licensed under
-the GNU General Public License (GPL) version 2.0 or 
+the GNU General Public License (GPL) version 2.0 or
 GNU General Public License (GPL) version 3.0  or the GNU
-Lesser General Public License (LGPL) Version 2.1 or 
-Lesser General Public License (LGPL) Version 2.0. 
+Lesser General Public License (LGPL) Version 2.1 or
+Lesser General Public License (LGPL) Version 2.0.
 A copy of each such license is available at
 http://www.opensource.org/licenses/gpl-2.0.php and
 http://opensource.org/licenses/gpl-3.0.html and
@@ -373,7 +373,7 @@ Software
   NXOS image file is: bootflash:///nxos.9.3.5.bin
   NXOS compile time:  11/4/2018 21:00:00 [11/05/2018 06:11:06]
 Hardware
-  cisco Nexus9000 C9336C-FX2 Chassis 
+  cisco Nexus9000 C9336C-FX2 Chassis
   Intel(R) Xeon(R) CPU E5-2403 v2 @ 1.80GHz with 8154432 kB of memory.
   Processor Board ID FOC20291J6K
   Device name: cs2
@@ -382,7 +382,7 @@ Kernel uptime is 0 day(s), 0 hour(s), 3 minute(s), 42 second(s)
 Last reset at 277524 usecs after Mon Nov  2 22:45:12 2020
   Reason: Reset due to upgrade
   System version: 9.3(4)
-  Service:  
+  Service:
 plugin
   Core Plugin, Ethernet Plugin
 Active Package(s):
@@ -503,7 +503,7 @@ e3a       Cluster      Cluster          up   9000  auto/100000 healthy false
 e0d       Cluster      Cluster          up   9000  auto/100000 healthy false
 8 entries were displayed.
 Node: cluster1-03
-                                                                      
+
               Ignore
                                                   Speed(Mbps)  Health   Health
 Port      IPspace      Broadcast Domain Link MTU  Admin/Oper   Status   Status
@@ -537,7 +537,7 @@ Cluster
             cluster1-04_clus1  up/up     169.254.1.6/23     cluster1-04  e3a     true
             cluster1-04_clus2  up/up     169.254.1.7/23     cluster1-04  e3b     true
 8 entries were displayed.
-cluster1::*> 
+cluster1::*>
 ....
 
 . Verify that the cluster displays information for both cluster switches: `system cluster-switch show -is-monitoring-enabled-operational true`.
@@ -650,26 +650,26 @@ cs2# copy Nexus_9336C_RCF_v1.6-Cluster-HA-Breakout.txt running-config echo-comma
 ....
 cs2# show banner motd
 ***************************************************************************
-* NetApp Reference Configuration File (RCF) 
-*  
-* Switch   : Nexus N9K-C9336C-FX2 
-* Filename : Nexus_9336C_RCF_v1.6-Cluster-HA-Breakout.txt 
-* Date     : 10-23-2020 
-* Version  : v1.6 
+* NetApp Reference Configuration File (RCF)
+*
+* Switch   : Nexus N9K-C9336C-FX2
+* Filename : Nexus_9336C_RCF_v1.6-Cluster-HA-Breakout.txt
+* Date     : 10-23-2020
+* Version  : v1.6
 *
 * Port Usage:
 * Ports  1- 3: Breakout mode (4x10G) Intra-Cluster Ports, int e1/1/1-4,
 * e1/2/1-4, e1/3/1-4
-* Ports  4- 6: Breakout mode (4x25G) Intra-Cluster/HA Ports, int e1/4/1-4, 
+* Ports  4- 6: Breakout mode (4x25G) Intra-Cluster/HA Ports, int e1/4/1-4,
 * e1/5/1-4, e1/6/1-4
 * Ports  7-34: 40/100GbE Intra-Cluster/HA Ports, int e1/7-34
-* Ports 35-36: Intra-Cluster ISL Ports, int e1/35-36 
-*  
+* Ports 35-36: Intra-Cluster ISL Ports, int e1/35-36
+*
 * Dynamic breakout commands:
 * 10G: interface breakout module 1 port <range> map 10g-4x
 * 25G: interface breakout module 1 port <range> map 25g-4x
 *
-* Undo breakout commands and return interfaces to 40/100G configuration in 
+* Undo breakout commands and return interfaces to 40/100G configuration in
 * config mode:
 * no interface breakout module 1 port <range> map 10g-4x
 * no interface breakout module 1 port <range> map 25g-4x
@@ -692,7 +692,7 @@ When you check the output to verify you have the correct RCF, make sure that the
 +
 The output varies according to your site configuration. Check the port settings and refer to the release notes for any changes specific to the RCF that you have installed.
 
-. After you verify the RCF versions and switch settings are correct, copy the running-config file to the startup-config file. 
+. After you verify the RCF versions and switch settings are correct, copy the running-config file to the startup-config file.
 +
 For more information about Cisco commands, see the appropriate guide in the [Link to the Cisco Nexus 9000 Series NX-OS Command Reference guides].
 
@@ -1053,7 +1053,7 @@ There are no entries matching your query.
 
 Download the NX-OS image to switch st2.
 
-. Install the system image so that the new version will be loaded the next time switch st2 is rebooted. The switch will be reboot in 10 seconds with the new image as shown in the following output: 
+. Install the system image so that the new version will be loaded the next time switch st2 is rebooted. The switch will be reboot in 10 seconds with the new image as shown in the following output:
 
 ....
 st2# install all nxos bootflash:nxos.9.3. 5.bin
@@ -1159,7 +1159,7 @@ st2#
 +
 For more information about Cisco commands, see the appropriate guide in the [Link to Cisco Nexus 9000 Series NX-OS Command References here]
 +
-The following example shows HTTP being used to copy an RCF to the bootflash on switch st2:  
+The following example shows HTTP being used to copy an RCF to the bootflash on switch st2:
 
 ....
 st2# copy http://172.16.10.1//cfg/Nexus_9336C_RCF_v1.6-Storage.txt bootflash: vrf management
@@ -1225,7 +1225,7 @@ st2# show banner motd
 *- Syntax error while parsing...
 *
 *(4) Save running-configuration again
-****************************************************************************** 
+******************************************************************************
 st2#
 ....
 
@@ -1356,7 +1356,7 @@ sh2# show banner motd
 * Date :  Jan-08-2021
 *Version  : v1.7
 *
-*Port Usage: 
+*Port Usage:
 *Ports  1-8: 40/100GbE Intra-Cluster/HA Ports, int e1/1-8
 *Port     9: 10GbE breakout Intra-Cluster Ports, int e1/9/1-4
 *Port    10: 25GbE breakout Intra-Cluster/HA Ports, int e1/10/1-4
@@ -1375,14 +1375,14 @@ sh2# show banner motd
 * exit
 *
 *IMPORTANT NOTES*
-* In certain conditions, N9K-C9336C-FX2 may not be able to auto-negotiate port 
+* In certain conditions, N9K-C9336C-FX2 may not be able to auto-negotiate port
 * speed correctly, and port speed must be manually set, in config mode, e.g.
 * int e1/1
 * speed 40000
 * int e1/3
 * speed 100000
 *
-****************************************************************************** 
+******************************************************************************
 sh2#
 ....
 

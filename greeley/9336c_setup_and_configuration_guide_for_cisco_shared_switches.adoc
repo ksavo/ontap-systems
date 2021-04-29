@@ -1,6 +1,6 @@
 ---
-sidebar: sidebar
-permalink: 9336c_setup_and_configuration_guide_for_cisco_shared_switches.html
+sidebar: greeley_sidebar
+permalink: greeley/9336c_setup_and_configuration_guide_for_cisco_shared_switches.html
 keywords:
 summary:
 ---
@@ -22,7 +22,7 @@ summary:
 
 If you want to build ONTAP clusters with more than two nodes, you need two supported cluster network switches. You can use additional management switches, which are optional.
 
-The following Cisco cluster network switches are supported.  
+The following Cisco cluster network switches are supported.
 
 ===== Nexus 9336C-FX2
 
@@ -119,7 +119,7 @@ Respond with yes. The default is yes.
 
 * Enter the password for admin.
 +
-The default password is admin; you must create a new, strong password. 
+The default password is admin; you must create a new, strong password.
 +
 A weak password can be rejected.
 
@@ -197,7 +197,7 @@ If you do not save the configuration at this stage, none of the changes will be 
 
 For more information about the initial configuration of your switch, see the following guide:  [Link to Cisco Nexus 9336C-FX2 Installation and Upgrade Guides]
 
-===== Required documentation for shared switches 
+===== Required documentation for shared switches
 
 You need specific switch and controller documentation to set up your ONTAP cluster.
 

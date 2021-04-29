@@ -1,6 +1,6 @@
 ---
-sidebar: sidebar
-permalink: 9336c_migrate_from_a_switched_cluster_with_sat_storage_by_reusing_the_storage_switches.html
+sidebar: greeley_sidebar
+permalink: greeley/9336c_migrate_from_a_switched_cluster_with_sat_storage_by_reusing_the_storage_switches.html
 keywords:
 summary:
 ---
@@ -32,21 +32,21 @@ system switch ethernet show, storage port show -port-type ENET
 
 . Move the HA pair 1, NSM224 path A cables from storage switch A to the Greeley NS224 storage ports for HA pair 1, path A on storage switch A.
 . Move the cable from HA pair 1, node A, path A to the Greeley storage port for HA pair 1, node A on storage switch A.
-. Move the cable from HA pair 1, node B, path A to the Greeley storage port for HA pair 1, node B on storage switch A. 
+. Move the cable from HA pair 1, node B, path A to the Greeley storage port for HA pair 1, node B on storage switch A.
 . Verify the storage attached to HA pair 1, storage switch A is healthy:
 
 ....
 system health alert show -instance
 ....
 
-. Replace the storage RCF on shared switch A with the shared RCF file. [LINK to the install RCF doc] 
+. Replace the storage RCF on shared switch A with the shared RCF file. [LINK to the install RCF doc]
 . Verify the storage attached to HA pair 1, storage switch A is healthy:
 
 ....
-system health alert show -instance  
+system health alert show -instance
 ....
 
-. Move the HA pair 1, NSM224 path B cables from storage switch B to the shared NS224 storage ports for HA pair 1, path B to storage switch B. 
+. Move the HA pair 1, NSM224 path B cables from storage switch B to the shared NS224 storage ports for HA pair 1, path B to storage switch B.
 . Move the cable from HA pair 1, node A, path B to the shared storage port for HA pair 1, node A, path B on storage switch B.
 . Move the cable from HA pair 1, node B, path B to the shared storage port for HA pair 1, node B, path B on storage switch B.
 . Verify the storage attached to HA pair 1, storage switch B is healthy:
@@ -113,7 +113,7 @@ sh1 (config-if-range)# channel-group 101 mode active
 sh1 (config-if-range)# exit
 sh1 (config)# interface port-channel 101
 sh1 (config-if)# switchport mode trunk
-sh1 (config-if)# spanning-tree port type network 
+sh1 (config-if)# spanning-tree port type network
 sh1 (config-if)# exit
 sh1 (config)# exit
 ....

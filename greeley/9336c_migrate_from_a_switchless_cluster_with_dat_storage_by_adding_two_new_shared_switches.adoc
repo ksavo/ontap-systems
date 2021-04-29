@@ -1,6 +1,6 @@
 ---
-sidebar: sidebar
-permalink: 9336c_migrate_from_a_switchless_cluster_with_dat_storage_by_adding_two_new_shared_switches.html
+sidebar: greeley_sidebar
+permalink: greeley/9336c_migrate_from_a_switchless_cluster_with_dat_storage_by_adding_two_new_shared_switches.html
 keywords:
 summary:
 ---
@@ -18,11 +18,11 @@ summary:
 // 2021-04-29 11:40:03.607134
 //
 
-==== Migrate from a switchless cluster with DAT storage 
+==== Migrate from a switchless cluster with DAT storage
 
 You must be aware of certain configuration information, port connections, and cabling requirements when you migrate a two-node switchless cluster, non-disruptively, to a cluster with Cisco Nexus 9336C-FX2 cluster switches. The procedure you use depends on whether you have two dedicated cluster-network ports on each controller or a single cluster port on each controller. The process documented works for all nodes using optical or Twinax ports but is not supported on this switch if nodes are using onboard 10Gb BASE-T RJ45 ports for the cluster-network ports.
 
-Most systems require two dedicated cluster-network ports on each controller. See [Link to the Cisco Ethernet switches page] 
+Most systems require two dedicated cluster-network ports on each controller. See [Link to the Cisco Ethernet switches page]
 
 If you have an existing two-node switchless cluster environment, you can migrate to a two-node switched cluster environment using Cisco Nexus 9336C-FX2 switches to enable you to scale beyond two nodes in the cluster.
 
@@ -32,7 +32,7 @@ If you have an existing two-node switchless cluster environment, you can migrate
 * The two-node switchless configuration must be properly set up and functioning.
 * The nodes must be running ONTAP 9.8 and later.
 * All cluster ports must be in the up state.
-* All cluster logical interfaces (LIFs) must be in the up state and on their home ports. 
+* All cluster logical interfaces (LIFs) must be in the up state and on their home ports.
 * Cisco Nexus 9336C-FX2 switch configuration:
 * Both switches must have management network connectivity.
 * There must be console access to the cluster switches.
@@ -96,13 +96,13 @@ Flags:  D - Down        P - Up in port-channel (members)
 Group Port-       Type     Protocol  Member Ports
       Channel
 --------------------------------------------------------------------------------
-1     Po1(SU)     Eth      LACP      Eth1/35(P)   Eth1/36(P)   
+1     Po1(SU)     Eth      LACP      Eth1/35(P)   Eth1/36(P)
 ....
 
 The following example shows that the ISL ports are up on switch cs2:
 
 ....
-       cs2# show port-channel summary 
+       cs2# show port-channel summary
         Flags:  D - Down        P - Up in port-channel (members)
         I - Individual  H - Hot-standby (LACP only)
         s - Suspended   r - Module-removed
@@ -115,7 +115,7 @@ The following example shows that the ISL ports are up on switch cs2:
 Group Port-       Type     Protocol  Member Ports
       Channel
 --------------------------------------------------------------------------------
-1     Po1(SU)     Eth      LACP      Eth1/35(P)   Eth1/36(P)   
+1     Po1(SU)     Eth      LACP      Eth1/35(P)   Eth1/36(P)
 ....
 
 . Display the list of neighboring devices:  `show cdp neighbors`.
@@ -128,24 +128,24 @@ Capability Codes: R - Router, T - Trans-Bridge, B - Source-Route-Bridge
                   S - Switch, H - Host, I - IGMP, r - Repeater,
                   V - VoIP-Phone, D - Remotely-Managed-Device,
                   s - Supports-STP-Dispute
-Device-ID          Local Intrfce  Hldtme Capability  Platform      Port ID           
-cs2                Eth1/35        175    R S I s     N9K-C9336C    Eth1/35       
-cs2                Eth1/36        175    R S I s     N9K-C9336C    Eth1/36       
+Device-ID          Local Intrfce  Hldtme Capability  Platform      Port ID
+cs2                Eth1/35        175    R S I s     N9K-C9336C    Eth1/35
+cs2                Eth1/36        175    R S I s     N9K-C9336C    Eth1/36
 Total entries displayed: 2
 ....
 
 The following example lists the neighboring devices on switch cs2:
 
 ....
-cs2# show cdp neighbors 
+cs2# show cdp neighbors
 Capability Codes: R - Router, T - Trans-Bridge, B - Source-Route-Bridge
                   S - Switch, H - Host, I - IGMP, r - Repeater,
                   V - VoIP-Phone, D - Remotely-Managed-Device,
                   s - Supports-STP-Dispute
 Device-ID          Local Intrfce  Hldtme Capability  Platform      Port ID
-cs1                Eth1/35        177    R S I s     N9K-C9336C    Eth1/35       
+cs1                Eth1/35        177    R S I s     N9K-C9336C    Eth1/35
 cs1           )    Eth1/36        177    R S I s     N9K-C9336C    Eth1/36
-                           
+
 Total entries displayed: 2
 ....
 
@@ -155,17 +155,17 @@ Each port should display up for Link and healthy for Health Status:
 
 ....
 cluster1::*> network port show -ipspace Cluster
-Node: node1                                                                      
-                                                  Speed(Mbps)  Health  
-Port      IPspace      Broadcast Domain Link MTU  Admin/Oper   Status   
+Node: node1
+                                                  Speed(Mbps)  Health
+Port      IPspace      Broadcast Domain Link MTU  Admin/Oper   Status
 --------- ------------ ---------------- ---- ---- ----------- -  --------
-e3a       Cluster      Cluster          up   9000  auto/100000 healthy  
-e3b       Cluster      Cluster          up   9000  auto/100000 healthy 
-Node: node2                                                                       
-                                                  Speed(Mbps)  Health   
-Port      IPspace      Broadcast Domain Link MTU  Admin/Oper   Status   
+e3a       Cluster      Cluster          up   9000  auto/100000 healthy
+e3b       Cluster      Cluster          up   9000  auto/100000 healthy
+Node: node2
+                                                  Speed(Mbps)  Health
+Port      IPspace      Broadcast Domain Link MTU  Admin/Oper   Status
 --------- ------------ ---------------- ---- ---- ----------- -  --------
-e3a       Cluster      Cluster          up   9000  auto/100000 healthy  
+e3a       Cluster      Cluster          up   9000  auto/100000 healthy
 e3b       Cluster      Cluster          up   9000  auto/100000 healthy
 4 entries were displayed.
 ....
@@ -191,9 +191,9 @@ Cluster
 
 ....
 cluster1::*> network interface show -vserver Cluster -fields auto-revert
-       Logical       
+       Logical
 Vserver   Interface     Auto-revert
---------- ------------- ------------ 
+--------- ------------- ------------
 Cluster
           node1_clus1   true
           node1_clus2   true
@@ -214,7 +214,7 @@ The following example shows that ports 1/1 through 1/34 are enabled on switch cs
 ....
 cs1# config
 Enter configuration commands, one per line. End with CNTL/Z.
-cs1(config)# interface e1/1-34   
+cs1(config)# interface e1/1-34
 cs1(config-if-range)# no shutdown
 ....
 
@@ -257,7 +257,7 @@ The following example shows that ports 1/1 through 1/34 are enabled on switch cs
 ....
 cs2# config
 Enter configuration commands, one per line. End with CNTL/Z.
-cs2(config)# interface e1/1-34  
+cs2(config)# interface e1/1-34
 cs2(config-if-range)# no shutdown
 ....
 
@@ -267,7 +267,7 @@ The following example shows that all the cluster ports are up on node1 and node2
 
 ....
 cluster1::*> network port show -ipspace Cluster
-Node: node1                                                                       
+Node: node1
             Ignore
                                                       Speed(Mbps)  Health   Health
 Port      IPspace      Broadcast Domain Link MTU  Admin/Oper   Status   Status
@@ -309,27 +309,27 @@ Cluster
 The following example shows the appropriate results for both switches:
 
 ....
-cs1# show cdp neighbors 
+cs1# show cdp neighbors
 Capability Codes: R - Router, T - Trans-Bridge, B - Source-Route-Bridge
                   S - Switch, H - Host, I - IGMP, r - Repeater,
                   V - VoIP-Phone, D - Remotely-Managed-Device,
                   s - Supports-STP-Dispute
-Device-ID          Local Intrfce  Hldtme Capability  Platform      Port ID      
+Device-ID          Local Intrfce  Hldtme Capability  Platform      Port ID
 node1              Eth1/1         133    H           AFFA400       e3a
-node2              Eth1/2         133    H           AFFA400       e3a           
-cs2                Eth1/35        175    R S I s     N9K-C9336C    Eth1/35       
-cs2                Eth1/36        175    R S I s     N9K-C9336C    Eth1/36       
+node2              Eth1/2         133    H           AFFA400       e3a
+cs2                Eth1/35        175    R S I s     N9K-C9336C    Eth1/35
+cs2                Eth1/36        175    R S I s     N9K-C9336C    Eth1/36
 Total entries displayed: 4
-cs2# show cdp neighbors 
+cs2# show cdp neighbors
 Capability Codes: R - Router, T - Trans-Bridge, B - Source-Route-Bridge
                   S - Switch, H - Host, I - IGMP, r - Repeater,
                   V - VoIP-Phone, D - Remotely-Managed-Device,
                   s - Supports-STP-Dispute
 Device-ID          Local Intrfce  Hldtme Capability  Platform      Port ID
 node1              Eth1/1         133    H           AFFA400       e3b
-node2              Eth1/2         133    H           AFFA400       e3b                  
-cs1                Eth1/35        175    R S I s     N9K-C9336C    Eth1/35       
-cs1                Eth1/36        175    R S I s     N9K-C9336C    Eth1/36       
+node2              Eth1/2         133    H           AFFA400       e3b
+cs1                Eth1/35        175    R S I s     N9K-C9336C    Eth1/35
+cs1                Eth1/36        175    R S I s     N9K-C9336C    Eth1/36
 Total entries displayed: 4
 ....
 
@@ -357,7 +357,7 @@ Switch        Type       Address         Model
 ------------------------- ------------------ --  ---------------- ----------
 sh1
  storage-network 172.17.227.5 C9336C
- 
+
 Serial Number: FOC221206C2
   Is Monitored: true
                Reason: None
@@ -435,26 +435,26 @@ RPC status:
 ....
 cluster1::*> system switch ethernet log setup-password
 Enter the switch name: <return>
-The switch name entered is not recognized.  
-                                   
-Choose from the following list: 
+The switch name entered is not recognized.
+
+Choose from the following list:
 cs1
-cs2 
-cluster1::*> system switch ethernet log setup-password 
+cs2
+cluster1::*> system switch ethernet log setup-password
 Enter the switch name: cs1
 RSA key fingerprint is e5:8b:c6:dc:e2:18:18:09:36:63:d9:63:dd:03:d9:cc
-Do you want to continue? {y|n}::[n] y 
+Do you want to continue? {y|n}::[n] y
 Enter the password: <enter switch password>
 Enter the password again: <enter switch password>
-cluster1::*> system switch ethernet log setup-password 
-Enter the switch name: cs2 
+cluster1::*> system switch ethernet log setup-password
+Enter the switch name: cs2
 RSA key fingerprint is 57:49:86:a1:b9:80:6a:61:9a:86:8e:3c:e3:b7:1f:b1
 Do you want to continue? {y|n}:: [n] y
 Enter the password: <enter switch password>
 Enter the password again: <enter switch password>
-cluster1::*> system  switch ethernet log enable-collection 
-Do you want to enable cluster log collection for all nodes in the cluster? {y|n}: [n] y 
-Enabling cluster switch log collection.  
+cluster1::*> system  switch ethernet log enable-collection
+Do you want to enable cluster log collection for all nodes in the cluster? {y|n}: [n] y
+Enabling cluster switch log collection.
 cluster1::*>
 ....
 
@@ -463,7 +463,7 @@ cluster1::*>
 The examples in this procedure use the following switch and node nomenclature:
 
 * The names of the two shared switches are sh1 and sh2.
-* The nodes are node1 and node2. 
+* The nodes are node1 and node2.
 
 [NOTE]
 The procedure requires the use of both ONTAP commands and Cisco Nexus 9000 Series Switches commands, ONTAP commands are used unless otherwise indicated.
@@ -478,7 +478,7 @@ Switch        Type       Address         Model
 ------------------------- ------------------ --  ---------------- ----------
 sh1
  storage-network 172.17.227.5 C9336C
- 
+
 Serial Number: FOC221206C2
   Is Monitored: true
                Reason: None
@@ -516,8 +516,8 @@ node2
  e5b ENET  storage    100       enabled   online      30
 ....
 
-. Move the HA pair 1, NSM224 path A ports to sh1port range 11-22. 
-. Install a cable from HA pair 1, node1, path A to sh1 port range 11-22. For example, the path A storage port on an AFF A400 is e0c. 
+. Move the HA pair 1, NSM224 path A ports to sh1port range 11-22.
+. Install a cable from HA pair 1, node1, path A to sh1 port range 11-22. For example, the path A storage port on an AFF A400 is e0c.
 . Install a cable from HA pair 1, node2, path A to sh1 port range 11-22.
 . Verify that the node ports are healthy and operational: `storage port show -port-type ENET`.
 
@@ -546,7 +546,7 @@ There are no entries matching your query.
 ....
 
 . Move the HA pair 1, NSM224 path B ports to sh2 port range 11-22.
-. Install a cable from HA pair 1, node1, path B to sh2 port range 11-22. For example, the path B storage port on an AFF A400 is e5b. 
+. Install a cable from HA pair 1, node1, path B to sh2 port range 11-22. For example, the path B storage port on an AFF A400 is e5b.
 . Install a cable from HA pair 1, node2, path B to sh2 port range 11-22.
 . Verify that the node ports are healthy and operational: `storage port show -port-type ENET`.
 
@@ -575,7 +575,7 @@ Switch        Type       Address         Model
 ------------------------- ------------------ --  ---------------- ----------
 sh1
  storage-network 172.17.227.5 C9336C
- 
+
 Serial Number: FOC221206C2
   Is Monitored: true
         Reason: None
@@ -594,13 +594,13 @@ tware Version: Cisco Nexus Operating System (NX-OS) Software, Version
 storage::*>
 ....
 
-. Reconfigure the unused (controller) secondary storage ports on HA pair 1 from storage to networking. If more than one NS224 was direct attached, there will be ports that should be reconfigured. 
+. Reconfigure the unused (controller) secondary storage ports on HA pair 1 from storage to networking. If more than one NS224 was direct attached, there will be ports that should be reconfigured.
 
 ....
 storage port modify –node [node name] –port [port name] –mode network
 ....
 
-To place storage ports into a broadcast domain: 
+To place storage ports into a broadcast domain:
 
 ** Network port broadcast-domain create (to create a new domain if needed)
 ** Network port broadcast-domain add-ports (to add ports to an existing domain)

@@ -1,7 +1,7 @@
 ---
-sidebar: greely_sidebar
-permalink: greely/index.html
-keywords: 
+sidebar: greeley_sidebar
+permalink: greeley/index.html
+keywords:
 summary:
 ---
 
