@@ -1,6 +1,6 @@
 prefix: greeley
 entries:
-  - title: NDAC contents
+  - title: Cisco Nexus 9336C-FX2 Shared Switches
     url: /index.html
   - title: Setup and configuration guide for Cisco shared switches
     url: /9336c_setup_and_configuration_guide_for_cisco_shared_switches.html
