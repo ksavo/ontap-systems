@@ -3,10 +3,10 @@ entries:
     url: index.html
     entries:
     - title: Upgrade controller hardware running ONTAP 9.8 or later using "system controller replace" command
-      url: /upgrade-arl-auto-app/index.html
+      url: http://docs.netapp.com/us-en/ontap-systems/upgrade-arl-auto-app/index.html
     - title: Upgrade controller hardware running ONTAP 9.5 to 9.7 using "system controller replace" command
-      url: /upgrade-arl-auto/index.html
+      url: http://docs.netapp.com/us-en/ontap-systems/upgrade-arl-auto/index.html
     - title: Manually upgrade controller hardware running ONTAP 9.8 or later using Aggregate Relocation
-      url: /upgrade-arl-manual-app/index.html
+      url: http://docs.netapp.com/us-en/ontap-systems/upgrade-arl-manual-app/index.html
     - title: Manually upgrade controller hardware running ONTAP 9.7 or earlier using Aggregate Relocation
-      url: /upgrade-arl-manual/index.html
+      url: http://docs.netapp.com/us-en/ontap-systems/upgrade-arl-manual/index.html
