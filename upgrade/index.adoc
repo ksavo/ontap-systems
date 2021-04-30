@@ -1,5 +1,5 @@
 ---
-sidebar: sidebar
+sidebar: upgrade_sidebar
 permalink: upgrade/index.html
 keywords:  aggregate, relocation, moving, manual, upgrade, relocate, hardware
 summary: Use aggregate relocation to upgrade controller hardware
