@@ -30,25 +30,25 @@ image:9336c_image1.jpg[Switch-attached]
 
 ----
 storage::*> system switch ethernet show
-Switch        Type       Address         Model
-------------------------- -------------------- ---------------- ----------
+Switch                    Type                  Address          Model
+------------------------- --------------------- ---------------- ----------
 sh1
- storage-network 172.17.227.5 C9336C
+                          storage-network       172.17.227.5     C9336C
 
-Serial Number: FOC221206C2
-  Is Monitored: true
-               Reason: None
-     Software Version: Cisco Nexus Operating System (NX-OS) Software, Version
- 9.3(5)
-       Version Source: CDP
+    Serial Number: FOC221206C2
+     Is Monitored: true
+           Reason: none
+ Software Version: Cisco Nexus Operating System (NX-OS) Software, Version
+                   9.3(5)
+   Version Source: CDP
 sh2
-     storage-network  172.17.227.6 C9336C
- Serial Number: FOC220443LZ
-   Is Monitored: true
-       Reason: None
-     Software Version: Cisco Nexus Operating System (NX-OS) Software, Version
- 9.3(5)
-        Version Source: CDP
+                        storage-network        172.17.227.6      C9336C
+    Serial Number: FOC220443LZ
+     Is Monitored: true
+           Reason: None
+ Software Version: Cisco Nexus Operating System (NX-OS) Software, Version
+                   9.3(5)
+   Version Source: CDP
 2 entries were displayed.
 storage::*>
 ----
@@ -56,19 +56,20 @@ storage::*>
 . [[step2]]Verify that the node ports are healthy and operational: `storage port show -port-type ENET`
 ----
 storage::*> storage port show -port-type ENET
-                 Speed              VLAN
-Node Port  Type  Mode     (Gb/s)    State     Status       ID
+                                   Speed                          VLAN
+Node    Port    Type    Mode       (Gb/s)    State     Status       ID
 ------- ------- ------- ---------- --------- --------- --------- -----
 node1
- e0c ENET  storage    100       enabled   online 30
- e0d ENET  storage    100       enabled   online       30
- e5a ENET  storage    100       enabled   online      30
- e5b ENET  storage    100       enabled   online       30
+       e0c      ENET    storage          100 enabled   online       30
+       e0d      ENET    storage          100 enabled   online       30
+       e5a      ENET    storage          100 enabled   online       30
+       e5b      ENET    storage          100 enabled   online       30
+
 node2
- e0c ENET  storage    100       enabled   online      30
- e0d ENET  storage    100       enabled   online      30
- e5a ENET  storage    100       enabled   online      30
- e5b ENET  storage    100       enabled   online      30
+      e0c       ENET    storage          100 enabled   online      30
+      e0d       ENET    storage          100 enabled   online      30
+      e5a       ENET    storage          100 enabled   online      30
+       e5b      ENET   storage           100 enabled   online      30
 ----
 [start=3]
 . [[step3]]Move the HA pair 1, NSM224 path A cables from storage switch A to the shared NS224 storage ports for HA pair 1, path A on storage switch A.

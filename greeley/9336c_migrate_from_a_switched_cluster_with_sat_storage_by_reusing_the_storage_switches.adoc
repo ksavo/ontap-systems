@@ -30,25 +30,25 @@ image:9336c_image1.jpg[Switch-attached]
 
 ----
 storage::*> system switch ethernet show
-Switch        Type       Address         Model
-------------------------- ------------------ --  ---------------- ----------
+Switch                    Type               Address          Model
+------------------------- ------------------ ---------------- ----------
 sh1
- storage-network 172.17.227.5 C9336C
+                          storage-network    172.17.227.5     C9336C
 
-Serial Number: FOC221206C2
-  Is Monitored: true
-               Reason: None
-     Software Version: Cisco Nexus Operating System (NX-OS) Software, Version
- 9.3(5)
+     Serial Number: FOC221206C2
+      Is Monitored: true
+            Reason: None
+  Software Version: Cisco Nexus Operating System (NX-OS) Software, Version
+                    9.3(5)
        Version Source: CDP
 sh2
-     storage-network  172.17.227.6 C9336C
- Serial Number: FOC220443LZ
-   Is Monitored: true
-       Reason: None
-     Software Version: Cisco Nexus Operating System (NX-OS) Software, Version
- 9.3(5)
-        Version Source: CDP
+                          storage-network    172.17.227.6     C9336C
+     Serial Number: FOC220443LZ
+      Is Monitored: true
+            Reason: None
+  Software Version: Cisco Nexus Operating System (NX-OS) Software, Version
+                    9.3(5)
+    Version Source: CDP
 2 entries were displayed.
 storage::*>
 ----
@@ -60,19 +60,20 @@ storage::*>
 
 ----
 storage::*> storage port show -port-type ENET
-                 Speed              VLAN
-Node Port  Type  Mode     (Gb/s)    State     Status       ID
-------- ------- ------- ---------- -------- -  --------- --------- -----
+                                   Speed                             VLAN
+Node    Port    Type    Mode       (Gb/s)       State     Status       ID
+------- ------- ------- ---------- ------------ --------- --------- -----
 node1
- e0c ENET  storage    100       enabled   online      30
- e0d ENET  storage    100       enabled   online      30
- e5a ENET  storage    100       enabled   online      30
- e5b ENET  storage    100       enabled   online      30
+        e0c     ENET    storage            100  enabled   online       30
+        e0d     ENET    storage            100  enabled   online       30
+        e5a     ENET    storage            100  enabled   online       30
+        e5b     ENET    storage            100  enabled   online       30
+
 node2
- e0c ENET  storage    100       enabled   online      30
- e0d ENET  storage    100       enabled   online      30
- e5a ENET  storage    100       enabled   online      30
- e5b ENET  storage    100       enabled   online      30
+        e0c     ENET    storage            100  enabled   online      30
+        e0d     ENET    storage            100  enabled   online      30
+        e5a     ENET    storage            100  enabled   online      30
+        e5b     ENET    storage            100  enabled   online      30
 ----
 [start=6]
 . [[step6]]Replace the storage RCF on shared switch A with the shared RCF file. See link:9336c_install_nx-os_software_and_reference_configuration_files_@rcfs@.html#install-the-rcf-on-a-cisco-nexus-9336c-fx2-shared-switch[Install the RCF on a Cisco Nexus 9336C-FX2 shared switch] for further details.
@@ -107,25 +108,25 @@ There are no entries matching your query.
 
 ----
 storage::*> system switch ethernet show
-Switch        Type       Address         Model
+Switch                    Type                 Address          Model
 ------------------------- -------------------- ---------------- ----------
 sh1
- storage-network 172.17.227.5 C9336C
+                          storage-network      172.17.227.5     C9336C
 
-Serial Number: FOC221206C2
-  Is Monitored: true
-               Reason: None
-     Software Version: Cisco Nexus Operating System (NX-OS) Software, Version
- 9.3(5)
-       Version Source: CDP
+    Serial Number: FOC221206C2
+     Is Monitored: true
+           Reason: None
+ Software Version: Cisco Nexus Operating System (NX-OS) Software, Version
+                   9.3(5)
+   Version Source: CDP
 sh2
-     storage-network  172.17.227.6 C9336C
- Serial Number: FOC220443LZ
-   Is Monitored: true
-       Reason: None
-     Software Version: Cisco Nexus Operating System (NX-OS) Software, Version
- 9.3(5)
-        Version Source: CDP
+                          storage-network      172.17.227.6     C9336C
+    Serial Number: FOC220443LZ
+     Is Monitored: true
+           Reason: None
+ Software Version: Cisco Nexus Operating System (NX-OS) Software, Version
+                   9.3(5)
+   Version Source: CDP
 2 entries were displayed.
 storage::*>
 ----
