@@ -43,6 +43,9 @@ See https://hwu.netapp.com[Hardware Universe] for more information.
 * The ONTAP and NX-OS versions supported in this procedure are on the Cisco Ethernet Switches page. See https://mysupport.netapp.com/site/info/cisco-ethernet-switch[Cisco Ethernet switches].
 * You can migrate nondisruptively other Cisco cluster switches from an ONTAP cluster to Cisco Nexus 9336C-FX2 network switches.
 
+*Cabling diagram for direct-attached*
+image:9336c_image2.jpg[Direct-attached]
+
 ===== Before you begin
 
 * The existing cluster must be properly set up and functioning.

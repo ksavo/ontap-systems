@@ -26,6 +26,9 @@ Most systems require two dedicated cluster-network ports on each controller. See
 
 If you have an existing two-node switchless cluster environment, you can migrate to a two-node switched cluster environment using Cisco Nexus 9336C-FX2 switches to enable you to scale beyond two nodes in the cluster.
 
+*Cabling diagram for direct-attached*
+image:9336c_image2.jpg[Direct-attached]
+
 ===== Before you begin
 
 * Two-node switchless configuration:
@@ -471,7 +474,7 @@ The procedure requires the use of both ONTAP commands and Cisco Nexus 9000 Serie
 
 ===== Steps
 
-. Verify that the storage configuration of HA pair 1 (and HA pair 2) is correct and error free`: system switch ethernet show`.
+. Verify that the storage configuration of HA pair 1 (and HA pair 2) is correct and error free: `system switch ethernet show`
 
 ----
 storage::*> system switch ethernet show
