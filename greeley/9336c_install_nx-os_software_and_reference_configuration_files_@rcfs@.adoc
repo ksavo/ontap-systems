@@ -1,7 +1,7 @@
 ---
 sidebar: greeley_sidebar
 permalink: greeley/9336c_install_nx-os_software_and_reference_configuration_files_@rcfs@.html
-keywords:
+keywords: rcfs, nx-os, install
 summary:
 ---
 
@@ -103,19 +103,19 @@ e3b       Cluster      Cluster          up   9000  auto/100000 healthy
 4 entries were displayed.
 
 ----
-[start=4b]
-.. [[step4b]]Display information about the LIFs: `network interface show - vserver Cluster`
+[start=2]
+.. Display information about the LIFs: `network interface show - vserver Cluster`
 
 ----
 cluster1::*> network interface show -vserver Cluster
-            Logical            Status     Network            Current       Current Is
-Vserver     Interface          Admin/Oper Address/Mask       Node          Port    Home
------------ ------------------ ---------- ------------------ ------------- ------- ----
+        Logical            Status     Network            Current     Current  Is
+Vserver Interface          Admin/Oper Address/Mask       Node        Port   Home
+------- ------------------ ---------- ------------------ ----------- ------ ----
 Cluster
-            cluster1-01_clus1  up/up      169.254.209.69/16  cluster1-01   e3a     true
-            cluster1-01_clus2  up/up      169.254.49.125/16  cluster1-01   e3b     true
-            cluster1-02_clus1  up/up      169.254.47.194/16  cluster1-02   e3a     true
-            cluster1-02_clus2  up/up      169.254.19.183/16  cluster1-02   e3b     true
+        cluster1-01_clus1  up/up      169.254.209.69/16  cluster1-01  e3a   true
+        cluster1-01_clus2  up/up      169.254.49.125/16  cluster1-01  e3b   true
+        cluster1-02_clus1  up/up      169.254.47.194/16  cluster1-02  e3a   true
+        cluster1-02_clus2  up/up      169.254.19.183/16  cluster1-02  e3b   true
 4 entries were displayed.
 ----
 [start=5]
@@ -152,20 +152,20 @@ RPC status:
 ----
 cluster1::*> network interface show -vserver Cluster -fields auto-revert
           Logical
-Vserver   Interface           Auto-revert
+Vserver   Interface            Auto-revert
 --------- ––––––-------------- ------------
 Cluster
-          cluster1-01_clus1   true
-          cluster1-01_clus2   true
-          cluster1-02_clus1   true
-          cluster1-02_clus2   true
+          cluster1-01_clus1    true
+          cluster1-01_clus2    true
+          cluster1-02_clus1    true
+          cluster1-02_clus2    true
 4 entries were displayed.
 ----
 [start=7]
 . [[step7]]Enable the Ethernet switch health monitor log collection feature for collecting switch-related log files, using the following commands:
 
-** system switch ethernet log setup-password
-** system switch ethernet log enable-collection
+** `system switch ethernet log setup-password`
+** `system switch ethernet log enable-collection`
 
 ----
 cluster1::*> system switch ethernet log setup password
@@ -317,10 +317,11 @@ Module  bootable       Impact     Install-type  Reason
 ------  --------  --------------- ------------  ------
   1       yes      disruptive         reset     default upgrade is not hitless
 Images will be upgraded according to following table:
-Module   Image    Running-Version(pri:alt                  New-Version         Upg-Required
-------- --------- ---------------------------------------- ------------------- ------------
-  1      nxos     9.3(4)                                   9.3(5)                  yes
-  1      bios     v08.37(01/28/2020):v08.23(09/23/2015)    v08.38(05/29/2020)      yes
+Module   Image    Running-Version(pri:alt                New-Version         Upg-
+                                                                             Required
+------- --------- -------------------------------------- ------------------- ------------
+  1      nxos     9.3(4)                                 9.3(5)              yes
+  1      bios     v08.37(01/28/2020):v08.23(09/23/2015)  v08.38(05/29/2020)  yes
 Switch will be reloaded for disruptive upgrade.
 Do you want to continue with the installation (y/n)?  [n] y
 Install is in progress, please wait.
@@ -387,7 +388,7 @@ Active Package(s):
 ----
 cs2# show version module 1 epld
 EPLD Device                     Version
----------------------------------------
+---- -------------------------- -------
 MI   FPGA                        0x7
 IO   FPGA                        0x17
 MI   FPGA2                       0x2
@@ -397,9 +398,9 @@ GEM  FPGA                        0x2
 GEM  FPGA                        0x2
 cs2# install epld bootflash:n9000-epld.9.3.5.img module 1
 Compatibility check:
-Module        Type         Upgradable        Impact   Reason
-------  ------------------ ----------------- --------- -----
-     1         SUP         Yes       disruptive  Module Upgradable
+Module      Type        Upgradable  Impact      Reason
+------  -------------- ------------ ----------- -------
+     1      SUP        Yes          disruptive  Module Upgradable
 Retrieving EPLD versions.... Please wait.
 Images will be upgraded according to following table:
 Module  Type   EPLD              Running-Version   New-Version  Upg-Required
@@ -426,7 +427,7 @@ Module 1 EPLD upgrade is successful.
 ----
 cs2# show version module 1 epld
 EPLD Device                     Version
----------------------------------------
+---- -------------------------- --------
 MI   FPGA                        0x7
 IO   FPGA                        0x19
 MI   FPGA2                       0x2
@@ -519,18 +520,18 @@ cluster1::*>
 
 ----
 cluster1::*> network interface show -role cluster
-            Logical            Status     Network           Current      Current Is
-Vserver     Interface          Admin/Oper Address/Mask      Node         Port    Home
------------ ------------------ ---------- ----------------- ------------ ------- ----
+        Logical            Status     Network         Current      Current   Is
+Vserver Interface          Admin/Oper Address/Mask    Node         Port    Home
+------- ------------------ ---------- --------------- ------------ ------- ----
 Cluster
-            cluster1-01_clus1  up/up     169.254.3.4/23     cluster1-01  e3a     true
-            cluster1-01_clus2  up/up     169.254.3.5/23     cluster1-01  e0d     true
-            cluster1-02_clus1  up/up     169.254.3.8/23     cluster1-02  e3a     true
-            cluster1-02_clus2  up/up     169.254.3.9/23     cluster1-02  e0d     true
-            cluster1-03_clus1  up/up     169.254.1.3/23     cluster1-03  e3a     true
-            cluster1-03_clus2  up/up     169.254.1.1/23     cluster1-03  e3b     true
-            cluster1-04_clus1  up/up     169.254.1.6/23     cluster1-04  e3a     true
-            cluster1-04_clus2  up/up     169.254.1.7/23     cluster1-04  e3b     true
+        cluster1-01_clus1  up/up     169.254.3.4/23   cluster1-01  e3a     true
+        cluster1-01_clus2  up/up     169.254.3.5/23   cluster1-01  e0d     true
+        cluster1-02_clus1  up/up     169.254.3.8/23   cluster1-02  e3a     true
+        cluster1-02_clus2  up/up     169.254.3.9/23   cluster1-02  e0d     true
+        cluster1-03_clus1  up/up     169.254.1.3/23   cluster1-03  e3a     true
+        cluster1-03_clus2  up/up     169.254.1.1/23   cluster1-03  e3b     true
+        cluster1-04_clus1  up/up     169.254.1.6/23   cluster1-04  e3a     true
+        cluster1-04_clus2  up/up     169.254.1.7/23   cluster1-04  e3b     true
 8 entries were displayed.
 cluster1::*>
 ----
@@ -575,18 +576,18 @@ cs2(config-if-range)# shutdown
 
 ----
 cluster1::*> network interface show -role cluster
-            Logical           Status     Network            Current       Current Is
-Vserver     Interface         Admin/Oper Address/Mask       Node          Port    Home
------------ ----------------- ---------- ------------------ ------------- ------- ----
+        Logical           Status     Network          Current      Current    Is
+Vserver Interface         Admin/Oper Address/Mask     Node         Port     Home
+------- ----------------- --------- ---------------- ------------- ------- ----
 Cluster
-            cluster1-01_clus1 up/up      169.254.3.4/23     cluster1-01   e3a     true
-            cluster1-01_clus2 up/up      169.254.3.5/23     cluster1-01   e3a     false
-            cluster1-02_clus1 up/up      169.254.3.8/23     cluster1-02   e3a     true
-            cluster1-02_clus2 up/up      169.254.3.9/23     cluster1-02   e3a     false
-            cluster1-03_clus1 up/up      169.254.1.3/23     cluster1-03   e3a     true
-            cluster1-03_clus2 up/up      169.254.1.1/23     cluster1-03   e3a     false
-            cluster1-04_clus1 up/up      169.254.1.6/23     cluster1-04   e3a     true
-            cluster1-04_clus2 up/up      169.254.1.7/23     cluster1-04   e3a     false
+        cluster1-01_clus1 up/up     169.254.3.4/23   cluster1-01   e3a     true
+        cluster1-01_clus2 up/up     169.254.3.5/23   cluster1-01   e3a     false
+        cluster1-02_clus1 up/up     169.254.3.8/23   cluster1-02   e3a     true
+        cluster1-02_clus2 up/up     169.254.3.9/23   cluster1-02   e3a     false
+        cluster1-03_clus1 up/up     169.254.1.3/23   cluster1-03   e3a     true
+        cluster1-03_clus2 up/up     169.254.1.1/23   cluster1-03   e3a     false
+        cluster1-04_clus1 up/up     169.254.1.6/23   cluster1-04   e3a     true
+        cluster1-04_clus2 up/up     169.254.1.7/23   cluster1-04   e3a     false
 8 entries were displayed.
 cluster1::*>
 ----
@@ -616,8 +617,9 @@ cs2# reload
 This command will reboot the system. (y/n)?  [n] y
 cs2#
 ----
-
+[start=2]
 .. Perform a basic setup of the switch.
+
 [start=11]
 . [[step11]]Copy the RCF to the bootflash of switch cs2 using one of the following transfer protocols: FTP, TFTP, SFTP, or SCP. For more information about Cisco commands, see the appropriate guide in the https://www.cisco.com/c/en/us/support/switches/nexus-9000-series-switches/products-command-reference-list.html[Cisco Nexus 9000 Series NX-OS Command Reference guides].
 +
@@ -721,7 +723,7 @@ Node: cluster1-01
 Port    IPspace   Broadcast Domain Link MTU  Admin/Oper   Status   Status
 ------- --------- ---------------- ---- ---- ------------ -------- ------
 e3a     Cluster   Cluster          up   9000 auto/100000  healthy  false
-e3b     Cluster   Cluster          up   9000  auto/100000 healthy  false
+e3b     Cluster   Cluster          up   9000 auto/100000  healthy  false
 
 Node: cluster1-02
                                                                    Ignore
@@ -748,7 +750,7 @@ e3a    Cluster      Cluster        up   9000  auto/100000 healthy  false
 e0d    Cluster      Cluster        up   9000  auto/100000 healthy  false
 8 entries were displayed.
 ----
-
+[start=2]
 .. Verify the switch health from the cluster (this might not show switch cs2, since LIFs are not homed on e0d).
 
 ----
@@ -808,18 +810,18 @@ cs1(config-if-range)# shutdown
 
 ----
 cluster1::*> network interface show -role cluster
-            Logical            Status      Network          Current        Current       Is
-Vserver     Interface          Admin/Oper  Address/Mask      Node          Port        Home
------------ ------------------ ----------- ----------------- ------------- -------- --------
+        Logical            Status      Network         Current      Current   Is
+Vserver Interface          Admin/Oper  Address/Mask    Node         Port    Home
+------- ------------------ ----------- --------------- ------------ ------- ----
 Cluster
-            cluster1-01_clus1  up/up      169.254.3.4/23     cluster1-01   e0d         false
-            cluster1-01_clus2  up/up      169.254.3.5/23     cluster1-01   e0d          true
-            cluster1-02_clus1  up/up      169.254.3.8/23     cluster1-02   e0d         false
-            cluster1-02_clus2  up/up      169.254.3.9/23     cluster1-02   e0d          true
-            cluster1-03_clus1  up/up      169.254.1.3/23     cluster1-03   e3b         false
-            cluster1-03_clus2  up/up      169.254.1.1/23     cluster1-03   e3b          true
-            cluster1-04_clus1  up/up      169.254.1.6/23     cluster1-04   e3b         false
-            cluster1-04_clus2  up/up      169.254.1.7/23     cluster1-04   e3b          true
+        cluster1-01_clus1  up/up       169.254.3.4/23   cluster1-01   e0d  false
+        cluster1-01_clus2  up/up       169.254.3.5/23   cluster1-01   e0d   true
+        cluster1-02_clus1  up/up       169.254.3.8/23   cluster1-02   e0d  false
+        cluster1-02_clus2  up/up       169.254.3.9/23   cluster1-02   e0d   true
+        cluster1-03_clus1  up/up       169.254.1.3/23   cluster1-03   e3b  false
+        cluster1-03_clus2  up/up       169.254.1.1/23   cluster1-03   e3b   true
+        cluster1-04_clus1  up/up       169.254.1.6/23   cluster1-04   e3b  false
+        cluster1-04_clus2  up/up       169.254.1.7/23   cluster1-04   e3b   true
 8 entries were displayed.
 cluster1::*>
 ----
@@ -889,18 +891,18 @@ cs1#
 
 ----
 cluster1::*> network interface show -role cluster
-            Logical            Status     Network            Current             Current Is
-Vserver     Interface          Admin/Oper Address/Mask       Node                Port    Home
------------ ------------------ ---------- ------------------ ------------------- ------- ----
+        Logical            Status     Network           Current     Current   Is
+Vserver Interface          Admin/Oper Address/Mask      Node        Port    Home
+------- ------------------ ---------- ----------------- ----------- ------- ----
 Cluster
-            cluster1-01_clus1  up/up      169.254.3.4/23     cluster1-01         e0d     true
-            cluster1-01_clus2  up/up      169.254.3.5/23     cluster1-01         e0d     true
-            cluster1-02_clus1  up/up      169.254.3.8/23     cluster1-02         e0d     true
-            cluster1-02_clus2  up/up      169.254.3.9/23     cluster1-02         e0d     true
-            cluster1-03_clus1  up/up      169.254.1.3/23     cluster1-03         e3b     true
-            cluster1-03_clus2  up/up      169.254.1.1/23     cluster1-03         e3b     true
-            cluster1-04_clus1  up/up      169.254.1.6/23     cluster1-04         e3b     true
-            cluster1-04_clus2  up/up      169.254.1.7/23     cluster1-04         e3b     true
+        cluster1-01_clus1  up/up      169.254.3.4/23    cluster1-01  e0d   true
+        cluster1-01_clus2  up/up      169.254.3.5/23    cluster1-01  e0d   true
+        cluster1-02_clus1  up/up      169.254.3.8/23    cluster1-02  e0d   true
+        cluster1-02_clus2  up/up      169.254.3.9/23    cluster1-02  e0d   true
+        cluster1-03_clus1  up/up      169.254.1.3/23    cluster1-03  e3b   true
+        cluster1-03_clus2  up/up      169.254.1.1/23    cluster1-03  e3b   true
+        cluster1-04_clus1  up/up      169.254.1.6/23    cluster1-04  e3b   true
+        cluster1-04_clus2  up/up      169.254.1.7/23    cluster1-04  e3b   true
 8 entries were displayed.
 cluster1::*>
 ----
@@ -1077,10 +1079,11 @@ Module  bootable  Impact  Install-type  Reason
 ------    --------   ----- --------   ------------   ---- --
      1        yes      disruptive         reset  default upgrade is not hitless
 Images will be upgraded according to following table:
-Module    Image                   Running-Version(pri:alt)    New-Version  Upg Required
------- ---   ----------  ----------------------------------------  --------------------  ------------
-       1        nxos                                     9.3(3)               9.3(4)            yes
-       1        bios      v08.37(01/28/2020):v08.23(09/23/2015)   v08.38(05/29/2020)             no
+Module Image        Running-Version(pri:alt)               New-Version  Upg
+                                                                        Required
+------ --------  ---------------------------------------  ------------  --------
+ 1     nxos                                     9.3(3)          9.3(4)       yes
+ 1     bios      v08.37(01/28/2020):v08.23(09/23/2015)   v08.38(05/29/2020)   no
 Switch will be reloaded for disruptive upgrade.
 Do you want to continue with the installation (y/n)? [n] y
 input string too long
@@ -1275,15 +1278,15 @@ storage::*> storage port show -port-type ENET
 Node    Port    Type    Mode       (Gb/s)      State     Status       ID
 ------- ------- ------- ---------- ----------- --------- --------- -----
 node1
-        e3a     ENET   storage           100   enabled   online       30
-        e3b     ENET  storage              0   enabled   offline      30
-        e7a     ENET  storage              0   enabled   offline      30
-        e7b     ENET  storage            100   enabled   online       30
+        e3a     ENET    storage           100   enabled   online       30
+        e3b     ENET    storage             0   enabled   offline      30
+        e7a     ENET    storage             0   enabled   offline      30
+        e7b     ENET    storage           100   enabled   online       30
 node2
-        e3a    ENET   storage            100   enabled   online       30
-        e3b    ENET  storage               0   enabled   offline      30
-        e7a    ENET  storage               0   enabled   offline      30
-        e7b    ENET  storage             100   enabled   online       30
+        e3a     ENET    storage           100   enabled   online       30
+        e3b     ENET    storage             0   enabled   offline      30
+        e7a     ENET    storage             0   enabled   offline      30
+        e7b     ENET    storage           100   enabled   online       30
 ----
 [start=15]
 . [[step15]]Recheck that there is no storage switch or cabling issues with the cluster:  `system health alert show -instance`
@@ -1340,9 +1343,9 @@ sh2# copy Nexus_9336C_RCF_v1.7-Cluster-HA-Storage.txt running-config echo-comman
 +
 When you check the output to verify you have the correct RCF, make sure that the following information is correct:
 
-.. The RCF banner
-.. The node and port settings
-.. Customizations
+** The RCF banner
+** The node and port settings
+** Customizations
 +
 The output varies according to your site configuration. Check the port settings and refer to the release notes for any changes specific to the RCF that you have installed.
 +

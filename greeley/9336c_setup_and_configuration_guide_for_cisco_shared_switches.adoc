@@ -20,7 +20,7 @@ summary:
 
 ==== Switches supported by ONTAP
 
-From ONTAP 9.9.1, you can use Cisco Nexus 9336C-FX2 switches to combine storage and cluster functionality into a shared switch scenario. If you want to build ONTAP clusters with more than two nodes, you need two supported network switches.
+From ONTAP 9.9.1, you can use Cisco Nexus 9336C-FX2 switches to combine storage and cluster functionality into a shared switch scenario. If you want to build ONTAP networks with more than two nodes, you need two supported network switches.
 
 The following Cisco shared network switches are supported.
 
@@ -71,9 +71,7 @@ See https://docs.netapp.com/us-en/ontap/index.html[NetApp ONTAP documentation].
 * You must have the completed cabling worksheets.
 
 [NOTE]
-In addition to cabling graphics, this guide does provide sample worksheets with recommended port assignments and blank worksheets that you can use to set up your cluster.
-
-[NOTE]
+In addition to cabling graphics, this guide does provide sample worksheets with recommended port assignments and blank worksheets that you can use to set up your network.
 For more information, refer to the https://hwu.netapp.com[Hardware Universe].
 
 ===== About this task
@@ -92,7 +90,7 @@ https://docs.netapp.com/platstor/topic/com.netapp.doc.hw-sw-9336c-install-cabine
 . Verify the configuration choices you made in the display that appears at the end of the setup, and make sure that you save the configuration.
 . Check the software version on the switches, and if necessary, download the NetApp-supported version of the software to the switches.
 +
-If you download the NetApp-supported version of the software, then you must also download the NetApp Cluster Network Switch Reference Configuration File and merge it with the configuration you saved in <<step3,Step 3>>. You can download the file and the instructions from the https://mysupport.netapp.com/site/info/cisco-ethernet-switch[Cisco Ethernet Switches] page.
+If you download the NetApp-supported version of the software, then you must also download the NetApp Network Switch Reference Configuration File and merge it with the configuration you saved in <<step3,Step 3>>. You can download the file and the instructions from the https://mysupport.netapp.com/site/info/cisco-ethernet-switch[Cisco Ethernet Switches] page.
 If you have your own switches, refer to the http://www.cisco.com[Cisco] site.
 
 ===== Required configuration information
@@ -202,7 +200,7 @@ For more information about the initial configuration of your switch, see the fol
 
 ===== Required documentation for shared switches
 
-You need specific switch and controller documentation to set up your ONTAP cluster.
+You need specific switch and controller documentation to set up your ONTAP network.
 
 To set up the Cisco Nexus 9336C-FX2 shared switches, see the https://www.cisco.com/c/en/us/support/switches/nexus-9000-series-switches/series.html[Cisco Nexus 9000 Series Switches Support] page.
 

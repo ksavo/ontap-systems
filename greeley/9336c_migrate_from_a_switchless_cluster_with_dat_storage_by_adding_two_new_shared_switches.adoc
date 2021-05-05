@@ -26,8 +26,8 @@ Most systems require two dedicated cluster-network ports on each controller. See
 
 If you have an existing two-node switchless cluster environment, you can migrate to a two-node switched cluster environment using Cisco Nexus 9336C-FX2 switches to enable you to scale beyond two nodes in the cluster.
 
-*Cabling diagram for direct-attached*
-image:9336c_image2.jpg[Direct-attached]
+// *Cabling diagram for direct-attached*
+// image:9336c_image2.jpg[Direct-attached]
 
 ===== Before you begin
 
@@ -159,28 +159,30 @@ Each port should display up for Link and healthy for Health Status:
 
 ----
 cluster1::*> network port show -ipspace Cluster
+
 Node: node1
                                                   Speed(Mbps)  Health
 Port      IPspace      Broadcast Domain Link MTU  Admin/Oper   Status
---------- ------------ ---------------- ---- ---- ----------- -  --------
+--------- ------------ ---------------- ---- ---- ------------ ---------
 e3a       Cluster      Cluster          up   9000  auto/100000 healthy
 e3b       Cluster      Cluster          up   9000  auto/100000 healthy
+
 Node: node2
                                                   Speed(Mbps)  Health
 Port      IPspace      Broadcast Domain Link MTU  Admin/Oper   Status
---------- ------------ ---------------- ---- ---- ----------- -  --------
+--------- ------------ ---------------- ---- ---- ------------ ---------
 e3a       Cluster      Cluster          up   9000  auto/100000 healthy
 e3b       Cluster      Cluster          up   9000  auto/100000 healthy
 4 entries were displayed.
 ----
 [start=7]
-. [[step7]]Verify that all cluster LIFs are up and operational:  `network interface show - vserver Cluster`.
+. [[step7]]Verify that all cluster LIFs are up and operational:  `network interface show - vserver Cluster`
 +
 Each cluster LIF should display true for Is Home and have a Status Admin/Oper of up/up.
 
 ----
 cluster1::*> network interface show -vserver Cluster
-        Logical     Status     Network            Current       Current Is
+            Logical     Status     Network            Current       Current Is
 Vserver     Interface   Admin/Oper Address/Mask       Node          Port    Home
 ----------- ---------- ---------- ------------------ ------------- ------- -----
 Cluster
@@ -191,7 +193,7 @@ Cluster
 4 entries were displayed.
 ----
 [start=8]
-. [[step8]]Verify that auto-revert is enabled on all cluster LIFs:  `network interface show - vserver Cluster -fields auto-revert`.
+. [[step8]]Verify that auto-revert is enabled on all cluster LIFs:  `network interface show - vserver Cluster -fields auto-revert`
 
 ----
 cluster1::*> network interface show -vserver Cluster -fields auto-revert
@@ -222,7 +224,7 @@ cs1(config)# interface e1/1-34
 cs1(config-if-range)# no shutdown
 ----
 [start=12]
-. [[step12]]Verify that all cluster LIFs are up, operational, and display as true for Is Home:  `network interface show - vserver Cluster`.
+. [[step12]]Verify that all cluster LIFs are up, operational, and display as true for Is Home:  `network interface show - vserver Cluster`
 +
 The following example shows that all the LIFs are *up* on node1 and node2 and that `Is Home` results are *true*:
 
@@ -230,7 +232,7 @@ The following example shows that all the LIFs are *up* on node1 and node2 and th
 cluster1::*> network interface show -vserver Cluster
           Logical      Status     Network            Current     Current Is
 Vserver   Interface    Admin/Oper Address/Mask       Node        Port    Home
--------- ------------ ---------- ------------------ ----------- ------- ----
+--------- ------------ ---------- ------------------ ----------- ------- ----
 Cluster
           node1_clus1  up/up      169.254.209.69/16  node1       e3a     true
           node1_clus2  up/up      169.254.49.125/16  node1       e3b     true
@@ -239,7 +241,7 @@ Cluster
 4 entries were displayed.
 ----
 [start=13]
-. [[step13]]Display information about the status of the nodes in the cluster:  `cluster show`.
+. [[step13]]Display information about the status of the nodes in the cluster:  `cluster show`
 +
 The following example displays information about the health and eligibility of the nodes in the cluster:
 
@@ -265,22 +267,24 @@ cs2(config)# interface e1/1-34
 cs2(config-if-range)# no shutdown
 ----
 [start=17]
-.  [[step17]]Verify that all cluster ports are up:  `network port show - ipspace Cluster`.
+.  [[step17]]Verify that all cluster ports are up:  `network port show - ipspace Cluster`
 +
 The following example shows that all the cluster ports are up on node1 and node2:
 
 ----
 cluster1::*> network port show -ipspace Cluster
+
 Node: node1
-            Ignore
-                                                      Speed(Mbps)  Health   Health
+                                                                        Ignore
+                                                  Speed(Mbps)  Health   Health
 Port      IPspace      Broadcast Domain Link MTU  Admin/Oper   Status   Status
 --------- ------------ ---------------- ---- ---- ------------ -------- ------
 e3a       Cluster      Cluster          up   9000  auto/100000 healthy  false
 e3b       Cluster      Cluster          up   9000  auto/100000 healthy  false
+
 Node: node2
-                                                                            Ignore
-                                                      Speed(Mbps)  Health   Health
+                                                                        Ignore
+                                                  Speed(Mbps)  Health   Health
 Port      IPspace      Broadcast Domain Link MTU  Admin/Oper   Status   Status
 --------- ------------ ---------------- ---- ---- ------------ -------- ------
 e3a       Cluster      Cluster          up   9000  auto/100000 healthy  false
@@ -288,7 +292,7 @@ e3b       Cluster      Cluster          up   9000  auto/100000 healthy  false
 4 entries were displayed.
 ----
 [start=18]
-. [[step18]]Verify that all interfaces display true for Is Home:  `network interface show - vserver Cluster`.
+. [[step18]]Verify that all interfaces display true for Is Home:  `network interface show - vserver Cluster`
 
 [NOTE]
 This might take several minutes to complete.
@@ -308,7 +312,7 @@ Cluster
 4 entries were displayed.
 ----
 [start=19]
-. [[step19]]Verify that both nodes each have one connection to each switch:  `show cdp neighbors`.
+. [[step19]]Verify that both nodes each have one connection to each switch:  `show cdp neighbors`
 +
 The following example shows the appropriate results for both switches:
 
@@ -337,50 +341,51 @@ cs1                Eth1/36        175    R S I s     N9K-C9336C    Eth1/36
 Total entries displayed: 4
 ----
 [start=20]
-.  [[step20]]Display information about the discovered network devices in your cluster:  `network device-discovery show -protocol cdp`.
+.  [[step20]]Display information about the discovered network devices in your cluster:  `network device-discovery show -protocol cdp`
 
 ----
 cluster1::*> network device-discovery show -protocol cdp
 Node/       Local  Discovered
 Protocol    Port   Device (LLDP: ChassisID)  Interface         Platform
 ----------- ------ ------------------------- ----------------  ----------------
-node2      /cdp
-               e3a    cs1                     0/2          N9K-C9336C
-              e3b    cs2                     0/2          N9K-C9336C
-node1      /cdp
-              e3a    cs1                     0/1          N9K-C9336C
-           e3b     cs2                     0/1         N9K-C9336C
+node2       /cdp
+            e3a    cs1                       0/2               N9K-C9336C
+            e3b    cs2                       0/2               N9K-C9336C
+
+node1       /cdp
+            e3a    cs1                       0/1               N9K-C9336C
+            e3b    cs2                       0/1               N9K-C9336C
 4 entries were displayed.
 ----
 [start=21]
-. [[step21]]Verify that the storage configuration of HA pair 1 (and HA pair 2) is correct and error free: `system switch ethernet show`.
+. [[step21]]Verify that the storage configuration of HA pair 1 (and HA pair 2) is correct and error free: `system switch ethernet show`
 
 ----
 storage::*> system switch ethernet show
-Switch        Type       Address         Model
-------------------------- ------------------ --  ---------------- ----------
+Switch                    Type                   Address         Model
+------------------------- ---------------------- --------------- ----------
 sh1
- storage-network 172.17.227.5 C9336C
+                          storage-network        172.17.227.5    C9336C
 
-Serial Number: FOC221206C2
-  Is Monitored: true
-               Reason: None
-     Software Version: Cisco Nexus Operating System (NX-OS) Software, Version
- 9.3(5)
-       Version Source: CDP
+       Serial Number: FOC221206C2
+        Is Monitored: true
+              Reason: None
+    Software Version: Cisco Nexus Operating System (NX-OS) Software, Version
+                      9.3(5)
+      Version Source: CDP
 sh2
-     storage-network  172.17.227.6 C9336C
- Serial Number: FOC220443LZ
-   Is Monitored: true
-       Reason: None
-     Software Version: Cisco Nexus Operating System (NX-OS) Software, Version
- 9.3(5)
-        Version Source: CDP
+                          storage-network        172.17.227.6    C9336C
+       Serial Number: FOC220443LZ
+        Is Monitored: true
+              Reason: None
+    Software Version: Cisco Nexus Operating System (NX-OS) Software, Version
+                      9.3(5)
+      Version Source: CDP
 2 entries were displayed.
 storage::*>
 ----
 [start=22]
-. [[step22]]Verify that the settings are disabled:  `network options switchless-cluster show`.
+. [[step22]]Verify that the settings are disabled:  `network options switchless-cluster show`
 
 [NOTE]
 It might take several minutes for the command to complete. Wait for the '3-minute lifetime to expire' announcement.
@@ -392,7 +397,7 @@ cluster1::*> network options switchless-cluster show
 Enable Switchless Cluster: false
 ----
 [start=23]
-.  [[step23]]Verify the status of the node members in the cluster:  `cluster show`.
+.  [[step23]]Verify the status of the node members in the cluster:  `cluster show`
 +
 The following example shows information about the health and eligibility of the nodes in the cluster:
 
@@ -404,7 +409,7 @@ node1                true    true          false
 node2                true    true          false
 ----
 [start=24]
-. [[step24]]Ensure that the cluster network has full connectivity:  `cluster ping-cluster -node node-name`.
+. [[step24]]Ensure that the cluster network has full connectivity:  `cluster ping-cluster -node node-name`
 
 ----
 cluster1::*> cluster ping-cluster -node node2
@@ -433,8 +438,10 @@ RPC status:
 2 paths up, 0 paths down (udp check)
 ----
 [start=25]
-. [[step25]]Change the privilege level back to admin:  `set -privilege admin`.
-. Enable the Ethernet switch health monitor log collection feature for collecting switch-related log files, using the commands:  `system switch ethernet log setup-password` and `system switch ethernet log enable-collection`.
+. [[step25]]Change the privilege level back to admin:  `set -privilege admin`
+. Enable the Ethernet switch health monitor log collection feature for collecting switch-related log files, using the commands:
+** `system switch ethernet log setup-password`
+** `system switch ethernet log enable-collection`
 
 ----
 cluster1::*> system switch ethernet log setup-password
@@ -478,71 +485,73 @@ The procedure requires the use of both ONTAP commands and Cisco Nexus 9000 Serie
 
 ----
 storage::*> system switch ethernet show
-Switch        Type       Address         Model
-------------------------- ------------------ --  ---------------- ----------
+Switch                    Type                   Address         Model
+------------------------- ---------------------  --------------- -------
 sh1
- storage-network 172.17.227.5 C9336C
+                          storage-network        172.17.227.5    C9336C
 
-Serial Number: FOC221206C2
-  Is Monitored: true
-               Reason: None
-     Software Version: Cisco Nexus Operating System (NX-OS) Software, Version
- 9.3(5)
-       Version Source: CDP
+      Serial Number: FOC221206C2
+       Is Monitored: true
+             Reason: None
+   Software Version: Cisco Nexus Operating System (NX-OS) Software, Version
+                     9.3(5)
+     Version Source: CDP
 sh2
-     storage-network  172.17.227.6 C9336C
- Serial Number: FOC220443LZ
-   Is Monitored: true
-       Reason: None
-     Software Version: Cisco Nexus Operating System (NX-OS) Software, Version
- 9.3(5)
-        Version Source: CDP
+                          storage-network        172.17.227.6    C9336C
+       Serial Number: FOC220443LZ
+        Is Monitored: true
+              Reason: None
+    Software Version: Cisco Nexus Operating System (NX-OS) Software, Version
+                      9.3(5)
+      Version Source: CDP
 2 entries were displayed.
 storage::*>
 ----
 [start=2]
-. [[step2]]Verify that the storage node ports are healthy and operational: `storage port show -port-type ENET`.
+. [[step2]]Verify that the storage node ports are healthy and operational: `storage port show -port-type ENET`
 
 ----
 storage::*> storage port show -port-type ENET
-                 Speed              VLAN
-Node Port  Type  Mode     (Gb/s)    State     Status       ID
-------- ------- ------- ---------- -------- -  --------- --------- -----
+                                   Speed                             VLAN
+Node    Port    Type    Mode       (Gb/s)      State      Status       ID
+------- ------- ------- ---------- ----------- ---------- ---------- -----
 node1
- e0c ENET  storage    100       enabled   online 30
- e0d ENET  storage    100       enabled   online       30
- e5a ENET  storage    100       enabled   online      30
- e5b ENET  storage    100       enabled   online       30
+        e0c     ENET   storage          100      enabled  online        30
+        e0d     ENET   storage          100      enabled  online        30
+        e5a     ENET   storage          100      enabled  online        30
+        e5b     ENET   storage          100      enabled  online        30
+
 node2
- e0c ENET  storage    100       enabled   online      30
- e0d ENET  storage    100       enabled   online      30
- e5a ENET  storage    100       enabled   online      30
- e5b ENET  storage    100       enabled   online      30
+        e0c     ENET  storage           100      enabled  online        30
+        e0d     ENET  storage           100      enabled  online        30
+        e5a     ENET  storage           100      enabled  online        30
+        e5b     ENET  storage           100      enabled  online        30
 ----
 [start=3]
 . [[step3]]Move the HA pair 1, NSM224 path A ports to sh1 port range 11-22.
 . Install a cable from HA pair 1, node1, path A to sh1 port range 11-22. For example, the path A storage port on an AFF A400 is e0c.
 . Install a cable from HA pair 1, node2, path A to sh1 port range 11-22.
-. Verify that the node ports are healthy and operational: `storage port show -port-type ENET`.
+. Verify that the node ports are healthy and operational: `storage port show -port-type ENET`
 
 ----
 storage::*> storage port show -port-type ENET
-                 Speed              VLAN
-Node Port  Type  Mode     (Gb/s)    State     Status       ID
-------- ------- ------- ---------- -------- -  --------- --------- -----
+                                   Speed                             VLAN
+Node    Port    Type    Mode       (Gb/s)      State      Status       ID
+------- ------- ------- ---------- ----------- ---------- ---------- -----
 node1
- e0a ENET  storage    100       enabled   online 30
- e0d ENET  storage      0       enabled   offline      30
- e5a ENET  storage      0       enabled   offline 30
- e5b ENET  storage    100       enabled   online       30
+        e0c     ENET   storage          100      enabled  online        30
+        e0d     ENET   storage            0      enabled  offline       30
+        e5a     ENET   storage            0      enabled  offline       30
+        e5b     ENET   storage          100      enabled  online        30
+
 node2
- e0a ENET  storage    100       enabled   online      30
- e0d ENET  storage      0       enabled   offline     30
- e5a ENET  storage      0       enabled   offline     30
- e5b ENET  storage    100       enabled   online      30
+        e0c     ENET  storage           100      enabled  online        30
+        e0d     ENET  storage             0      enabled  offline       30
+        e5a     ENET  storage             0      enabled  offline       30
+        e5b     ENET  storage           100      enabled  online        30
 ----
 [start=7]
-. [[step7]]Check that there are no storage switch or cabling issues with the cluster: `system health alert show -instance`.
+. [[step7]]Check that there are no storage switch or cabling issues with the cluster: `system health alert show -instance`
 
 ----
 storage::*> system health alert show -instance
@@ -552,48 +561,49 @@ There are no entries matching your query.
 . [[step8]]Move the HA pair 1, NSM224 path B ports to sh2 port range 11-22.
 . Install a cable from HA pair 1, node1, path B to sh2 port range 11-22. For example, the path B storage port on an AFF A400 is e5b.
 . Install a cable from HA pair 1, node2, path B to sh2 port range 11-22.
-. Verify that the node ports are healthy and operational: `storage port show -port-type ENET`.
+. Verify that the node ports are healthy and operational: `storage port show -port-type ENET`
 
 ----
 storage::*> storage port show -port-type ENET
-                 Speed              VLAN
-Node Port  Type  Mode     (Gb/s)    State     Status       ID
-------- ------- ------- ---------- -------- -  --------- --------- -----
+                                   Speed                             VLAN
+Node    Port    Type    Mode       (Gb/s)      State      Status       ID
+------- ------- ------- ---------- ----------- ---------- ---------- -----
 node1
- e0c ENET  storage    100       enabled   online 30
- e0d ENET  storage      0       enabled   offline      30
- e5a ENET  storage      0       enabled   offline 30
- e5b ENET  storage    100       enabled   online       30
+        e0c     ENET   storage          100      enabled  online        30
+        e0d     ENET   storage            0      enabled  offline       30
+        e5a     ENET   storage            0      enabled  offline       30
+        e5b     ENET   storage          100      enabled  online        30
+
 node2
- e0c ENET  storage    100       enabled   online      30
- e0d ENET  storage      0       enabled   offline     30
- e5a ENET  storage      0       enabled   offline     30
- e5bENET  storage    100       enabled   online      30
+        e0c     ENET  storage           100      enabled  online        30
+        e0d     ENET  storage             0      enabled  offline       30
+        e5a     ENET  storage             0      enabled  offline       30
+        e5b     ENET  storage           100      enabled  online        30
 ----
 [start=12]
-. [[step12]]Verify that the storage configuration of HA pair 1 is correct and error free: `system switch ethernet show`.
+. [[step12]]Verify that the storage configuration of HA pair 1 is correct and error free: `system switch ethernet show`
 
 ----
 storage::*> system switch ethernet show
-Switch        Type       Address         Model
-------------------------- ------------------ --  ---------------- ----------
+Switch                    Type                   Address          Model
+------------------------- ---------------------- ---------------- ----------
 sh1
- storage-network 172.17.227.5 C9336C
+                          storage-network        172.17.227.5     C9336C
 
-Serial Number: FOC221206C2
-  Is Monitored: true
-        Reason: None
-      Software Version: Cisco Nexus Operating System (NX-OS) Software, Version
- 9.3(5)
-        Version Source: CDP
+      Serial Number: FOC221206C2
+       Is Monitored: true
+             Reason: None
+   Software Version: Cisco Nexus Operating System (NX-OS) Software, Version
+                     9.3(5)
+     Version Source: CDP
 sh2
- storage-network  172.17.227.6 C9336C
- Serial Number: FOC220443LZ
-  Is Monitored: true
-       Reason: None
-tware Version: Cisco Nexus Operating System (NX-OS) Software, Version
- 9.3(5)
-        Version Source: CDP
+                          storage-network        172.17.227.6     C9336C
+      Serial Number: FOC220443LZ
+       Is Monitored: true
+             Reason: None
+   Software Version: Cisco Nexus Operating System (NX-OS) Software, Version
+                     9.3(5)
+     Version Source: CDP
 2 entries were displayed.
 storage::*>
 ----
@@ -609,4 +619,4 @@ To place storage ports into a broadcast domain:
 ** `network port broadcast-domain add-ports` (to add ports to an existing domain)
 
 [start=14]
-. [[step14]]If you suppressed automatic case creation, re-enable it by invoking an AutoSupport message:  `system node autosupport invoke -node * -type all -message MAINT=END`.
+. [[step14]]If you suppressed automatic case creation, re-enable it by invoking an AutoSupport message:  `system node autosupport invoke -node * -type all -message MAINT=END`

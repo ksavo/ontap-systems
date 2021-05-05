@@ -60,16 +60,16 @@ storage::*> storage port show -port-type ENET
 Node    Port    Type    Mode       (Gb/s)    State     Status       ID
 ------- ------- ------- ---------- --------- --------- --------- -----
 node1
-       e0c      ENET    storage          100 enabled   online       30
-       e0d      ENET    storage          100 enabled   online       30
-       e5a      ENET    storage          100 enabled   online       30
-       e5b      ENET    storage          100 enabled   online       30
+        e0c     ENET    storage          100 enabled   online       30
+        e0d     ENET    storage          100 enabled   online       30
+        e5a     ENET    storage          100 enabled   online       30
+        e5b     ENET    storage          100 enabled   online       30
 
 node2
-      e0c       ENET    storage          100 enabled   online      30
-      e0d       ENET    storage          100 enabled   online      30
-      e5a       ENET    storage          100 enabled   online      30
-       e5b      ENET   storage           100 enabled   online      30
+        e0c     ENET    storage          100 enabled   online       30
+        e0d     ENET    storage          100 enabled   online       30
+        e5a     ENET    storage          100 enabled   online       30
+        e5b     ENET    storage          100 enabled   online       30
 ----
 [start=3]
 . [[step3]]Move the HA pair 1, NSM224 path A cables from storage switch A to the shared NS224 storage ports for HA pair 1, path A on storage switch A.
