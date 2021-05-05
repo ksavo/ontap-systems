@@ -67,7 +67,8 @@ where x is the duration of the maintenance window in hours.
 The AutoSupport message notifies technical support of this maintenance task so that automatic case creation is suppressed during the maintenance window.
 
 [start=2]
-. [[step2]]Change the privilege level to advanced, entering y when prompted to continue:  set -privilege advanced.
+. [[step2]]Change the privilege level to advanced, entering y when prompted to continue:
+`set -privilege advanced`
 +
 The advanced prompt (*>) appears.
 
@@ -82,7 +83,8 @@ cs1(config)# interface e/1-34
 cs1(config-if-range)# shutdown
 ----
 [start=4]
-. [[step4]]Verify that the ISL and the physical ports on the ISL between the two 9336C-FX2 switches cs1 and cs2 are up on ports 1/35 and 1/36:  show port-channel summary.
+. [[step4]]Verify that the ISL and the physical ports on the ISL between the two 9336C-FX2 switches cs1 and cs2 are up on ports 1/35 and 1/36:
+`show port-channel summary`
 +
 The following example shows that the ISL ports are up on switch cs1:
 
@@ -122,7 +124,8 @@ Group Port-       Type     Protocol  Member Ports
 1     Po1(SU)     Eth      LACP      Eth1/35(P)   Eth1/36(P)
 ----
 [start=5]
-. [[step5]]Display the list of neighboring devices:  `show cdp neighbors`.
+. [[step5]]Display the list of neighboring devices:
+`show cdp neighbors`.
 +
 This command provides information about the devices that are connected to the system. The following example lists the neighboring devices on switch cs1:
 
@@ -153,7 +156,8 @@ cs1           )    Eth1/36        177    R S I s     N9K-C9336C    Eth1/36
 Total entries displayed: 2
 ----
 [start=6]
-. [[step6]]Verify that all cluster ports are up:  `network port show - ipspace Cluster.`
+. [[step6]]Verify that all cluster ports are up:
+`network port show - ipspace Cluster`
 +
 Each port should display up for Link and healthy for Health Status:
 
@@ -176,9 +180,10 @@ e3b       Cluster      Cluster          up   9000  auto/100000 healthy
 4 entries were displayed.
 ----
 [start=7]
-. [[step7]]Verify that all cluster LIFs are up and operational:  `network interface show - vserver Cluster`
+. [[step7]]Verify that all cluster LIFs are up and operational:
+`network interface show - vserver Cluster`
 +
-Each cluster LIF should display true for Is Home and have a Status Admin/Oper of up/up.
+Each cluster LIF should display true for `Is Home` and have a Status Admin/Oper of up/up.
 
 ----
 cluster1::*> network interface show -vserver Cluster
@@ -193,7 +198,8 @@ Cluster
 4 entries were displayed.
 ----
 [start=8]
-. [[step8]]Verify that auto-revert is enabled on all cluster LIFs:  `network interface show - vserver Cluster -fields auto-revert`
+. [[step8]]Verify that auto-revert is enabled on all cluster LIFs:
+`network interface show - vserver Cluster -fields auto-revert`
 
 ----
 cluster1::*> network interface show -vserver Cluster -fields auto-revert
@@ -224,7 +230,8 @@ cs1(config)# interface e1/1-34
 cs1(config-if-range)# no shutdown
 ----
 [start=12]
-. [[step12]]Verify that all cluster LIFs are up, operational, and display as true for Is Home:  `network interface show - vserver Cluster`
+. [[step12]]Verify that all cluster LIFs are *up*, operational, and display as true for `Is Home`:
+`network interface show - vserver Cluster`
 +
 The following example shows that all the LIFs are *up* on node1 and node2 and that `Is Home` results are *true*:
 
@@ -241,7 +248,8 @@ Cluster
 4 entries were displayed.
 ----
 [start=13]
-. [[step13]]Display information about the status of the nodes in the cluster:  `cluster show`
+. [[step13]]Display information about the status of the nodes in the cluster:
+`cluster show`
 +
 The following example displays information about the health and eligibility of the nodes in the cluster:
 
@@ -267,7 +275,8 @@ cs2(config)# interface e1/1-34
 cs2(config-if-range)# no shutdown
 ----
 [start=17]
-.  [[step17]]Verify that all cluster ports are up:  `network port show - ipspace Cluster`
+.  [[step17]]Verify that all cluster ports are up:
+`network port show - ipspace Cluster`
 +
 The following example shows that all the cluster ports are up on node1 and node2:
 
@@ -292,12 +301,13 @@ e3b       Cluster      Cluster          up   9000  auto/100000 healthy  false
 4 entries were displayed.
 ----
 [start=18]
-. [[step18]]Verify that all interfaces display true for Is Home:  `network interface show - vserver Cluster`
+. [[step18]]Verify that all interfaces display true for `Is Home`:
+`network interface show - vserver Cluster`
 
 [NOTE]
 This might take several minutes to complete.
 
-The following example shows that all LIFs are up on node1 and node2 and that Is Home results are true:
+The following example shows that all LIFs are *up* on node1 and node2 and that `Is Home` results are true:
 
 ----
 cluster1::*> network interface show -vserver Cluster
@@ -312,7 +322,8 @@ Cluster
 4 entries were displayed.
 ----
 [start=19]
-. [[step19]]Verify that both nodes each have one connection to each switch:  `show cdp neighbors`
+. [[step19]]Verify that both nodes each have one connection to each switch:
+`show cdp neighbors`
 +
 The following example shows the appropriate results for both switches:
 
@@ -341,7 +352,8 @@ cs1                Eth1/36        175    R S I s     N9K-C9336C    Eth1/36
 Total entries displayed: 4
 ----
 [start=20]
-.  [[step20]]Display information about the discovered network devices in your cluster:  `network device-discovery show -protocol cdp`
+.  [[step20]]Display information about the discovered network devices in your cluster:
+`network device-discovery show -protocol cdp`
 
 ----
 cluster1::*> network device-discovery show -protocol cdp
@@ -358,7 +370,8 @@ node1       /cdp
 4 entries were displayed.
 ----
 [start=21]
-. [[step21]]Verify that the storage configuration of HA pair 1 (and HA pair 2) is correct and error free: `system switch ethernet show`
+. [[step21]]Verify that the storage configuration of HA pair 1 (and HA pair 2) is correct and error free:
+`system switch ethernet show`
 
 ----
 storage::*> system switch ethernet show
@@ -385,7 +398,8 @@ sh2
 storage::*>
 ----
 [start=22]
-. [[step22]]Verify that the settings are disabled:  `network options switchless-cluster show`
+. [[step22]]Verify that the settings are disabled:
+`network options switchless-cluster show`
 
 [NOTE]
 It might take several minutes for the command to complete. Wait for the '3-minute lifetime to expire' announcement.
@@ -397,7 +411,8 @@ cluster1::*> network options switchless-cluster show
 Enable Switchless Cluster: false
 ----
 [start=23]
-.  [[step23]]Verify the status of the node members in the cluster:  `cluster show`
+.  [[step23]]Verify the status of the node members in the cluster:
+`cluster show`
 +
 The following example shows information about the health and eligibility of the nodes in the cluster:
 
@@ -409,7 +424,8 @@ node1                true    true          false
 node2                true    true          false
 ----
 [start=24]
-. [[step24]]Ensure that the cluster network has full connectivity:  `cluster ping-cluster -node node-name`
+. [[step24]]Ensure that the cluster network has full connectivity:
+`cluster ping-cluster -node node-name`
 
 ----
 cluster1::*> cluster ping-cluster -node node2
@@ -438,7 +454,8 @@ RPC status:
 2 paths up, 0 paths down (udp check)
 ----
 [start=25]
-. [[step25]]Change the privilege level back to admin:  `set -privilege admin`
+. [[step25]]Change the privilege level back to admin:
+`set -privilege admin`
 . Enable the Ethernet switch health monitor log collection feature for collecting switch-related log files, using the commands:
 ** `system switch ethernet log setup-password`
 ** `system switch ethernet log enable-collection`
@@ -481,7 +498,8 @@ The procedure requires the use of both ONTAP commands and Cisco Nexus 9000 Serie
 
 ===== Steps
 
-. Verify that the storage configuration of HA pair 1 (and HA pair 2) is correct and error free: `system switch ethernet show`
+. Verify that the storage configuration of HA pair 1 (and HA pair 2) is correct and error free:
+`system switch ethernet show`
 
 ----
 storage::*> system switch ethernet show
@@ -508,7 +526,8 @@ sh2
 storage::*>
 ----
 [start=2]
-. [[step2]]Verify that the storage node ports are healthy and operational: `storage port show -port-type ENET`
+. [[step2]]Verify that the storage node ports are healthy and operational:
+`storage port show -port-type ENET`
 
 ----
 storage::*> storage port show -port-type ENET
@@ -531,7 +550,8 @@ node2
 . [[step3]]Move the HA pair 1, NSM224 path A ports to sh1 port range 11-22.
 . Install a cable from HA pair 1, node1, path A to sh1 port range 11-22. For example, the path A storage port on an AFF A400 is e0c.
 . Install a cable from HA pair 1, node2, path A to sh1 port range 11-22.
-. Verify that the node ports are healthy and operational: `storage port show -port-type ENET`
+. Verify that the node ports are healthy and operational:
+`storage port show -port-type ENET`
 
 ----
 storage::*> storage port show -port-type ENET
@@ -551,7 +571,8 @@ node2
         e5b     ENET  storage           100      enabled  online        30
 ----
 [start=7]
-. [[step7]]Check that there are no storage switch or cabling issues with the cluster: `system health alert show -instance`
+. [[step7]]Check that there are no storage switch or cabling issues with the cluster:
+`system health alert show -instance`
 
 ----
 storage::*> system health alert show -instance
@@ -561,7 +582,8 @@ There are no entries matching your query.
 . [[step8]]Move the HA pair 1, NSM224 path B ports to sh2 port range 11-22.
 . Install a cable from HA pair 1, node1, path B to sh2 port range 11-22. For example, the path B storage port on an AFF A400 is e5b.
 . Install a cable from HA pair 1, node2, path B to sh2 port range 11-22.
-. Verify that the node ports are healthy and operational: `storage port show -port-type ENET`
+. Verify that the node ports are healthy and operational:
+`storage port show -port-type ENET`
 
 ----
 storage::*> storage port show -port-type ENET
@@ -581,7 +603,8 @@ node2
         e5b     ENET  storage           100      enabled  online        30
 ----
 [start=12]
-. [[step12]]Verify that the storage configuration of HA pair 1 is correct and error free: `system switch ethernet show`
+. [[step12]]Verify that the storage configuration of HA pair 1 is correct and error free:
+`system switch ethernet show`
 
 ----
 storage::*> system switch ethernet show
@@ -619,4 +642,5 @@ To place storage ports into a broadcast domain:
 ** `network port broadcast-domain add-ports` (to add ports to an existing domain)
 
 [start=14]
-. [[step14]]If you suppressed automatic case creation, re-enable it by invoking an AutoSupport message:  `system node autosupport invoke -node * -type all -message MAINT=END`
+. [[step14]]If you suppressed automatic case creation, re-enable it by invoking an AutoSupport message:
+`system node autosupport invoke -node * -type all -message MAINT=END`

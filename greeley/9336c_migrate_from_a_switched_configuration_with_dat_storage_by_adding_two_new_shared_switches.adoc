@@ -69,12 +69,14 @@ The examples in this procedure use the following switch and node nomenclature:
 
 ===== Steps
 
-. If AutoSupport is enabled on this cluster, suppress automatic case creation by invoking an AutoSupport message:  `system node autosupport invoke -node * -type all -message MAINT=x h`
+. If AutoSupport is enabled on this cluster, suppress automatic case creation by invoking an AutoSupport message:
+`system node autosupport invoke -node * -type all -message MAINT=x h`
 +
 Where x is the duration of the maintenance window in hours.
 
 . Check the administrative and operational status of each cluster port.
-. Verify that all the cluster ports are up with a healthy status:  `network port show –role cluster`
+. Verify that all the cluster ports are up with a healthy status:
+`network port show –role cluster`
 
 ----
 cluster1::*> network port show -role cluster
@@ -97,7 +99,8 @@ e3b     Cluster   Cluster          up   9000  auto/100000 healthy  false
 cluster1::*>
 ----
 [start=4]
-. [[step4]]Verify that all the cluster interfaces (LIFs) are on the home port:  `network interface show -role cluster`
+. [[step4]]Verify that all the cluster interfaces (LIFs) are on the home port:
+`network interface show -role cluster`
 
 ----
 cluster1::*> network interface show -role cluster
@@ -113,7 +116,8 @@ Cluster
 cluster1::*>
 ----
 [start=5]
-. [[step5]]Verify that the cluster displays information for both cluster switches:  `system cluster-switch show -is-monitoring-enabled-operational true`
+. [[step5]]Verify that the cluster displays information for both cluster switches:
+`system cluster-switch show -is-monitoring-enabled-operational true`
 
 ----
 cluster1::*> system cluster-switch show -is-monitoring-enabled-operational true
@@ -151,7 +155,9 @@ c2(config)# interface ethernet <int range>
 c2(config)#shutdown
 ----
 [start=8]
-. [[step8]]Verify that the cluster LIFs have migrated to the ports hosted on cluster switch sh1: `network interface show -role cluster`. This might take a few seconds.
+. [[step8]]Verify that the cluster LIFs have migrated to the ports hosted on cluster switch sh1:
+`network interface show -role cluster`
+This might take a few seconds.
 
 ----
 cluster1::*> network interface show -role cluster
@@ -202,7 +208,8 @@ cluster1::*>
 cluster1::*> network interface modify -vserver Cluster -lif * -auto-revert True
 ----
 [start=16]
-. [[step16]]Verify that the cluster is healthy:  `cluster show`
+. [[step16]]Verify that the cluster is healthy:
+`cluster show`
 
 ----
 cluster1::*> cluster show

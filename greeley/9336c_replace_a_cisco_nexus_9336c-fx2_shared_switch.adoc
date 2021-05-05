@@ -127,7 +127,8 @@ Total entries displayed: 4
 
 ===== Steps
 
-. If AutoSupport is enabled on this cluster, suppress automatic case creation by invoking an AutoSupport message:  `system node autosupport invoke -node * -type all -message MAINT=xh`
+. If AutoSupport is enabled on this cluster, suppress automatic case creation by invoking an AutoSupport message:
+`system node autosupport invoke -node * -type all -message MAINT=xh`
 +
 Where x is the duration of the maintenance window in hours.
 
@@ -148,7 +149,8 @@ newsh2(config)# interface e1/1-34
 newsh2(config-if-range)# shutdown
 ----
 [start=4]
-. [[step4]]Verify that all cluster LIFs have auto-revert enabled.  `network interface show - vserver Cluster -fields auto-revert`
+. [[step4]]Verify that all cluster LIFs have auto-revert enabled.
+`network interface show - vserver Cluster -fields auto-revert`
 ----
 cluster1::> network interface show -vserver Cluster -fields auto-revert
              Logical
@@ -161,7 +163,8 @@ Cluster      node2_clus2   true
 4 entries were displayed.
 ----
 [start=5]
-. [[step5]]Verify that all the cluster LIFs can communicate: `cluster ping-cluster`
+. [[step5]]Verify that all the cluster LIFs can communicate:
+`cluster ping-cluster <node name>`
 
 ----
 cluster1::*> cluster ping-cluster node1
@@ -230,7 +233,8 @@ Group Port-       Type     Protocol  Member       Ports
 sh1 (config-if-range)#
 ----
 [start=9]
-. [[step9]]Verify that port e3b is up on all nodes: `network port show ipspace Cluster`
+. [[step9]]Verify that port e3b is up on all nodes:
+`network port show ipspace Cluster`
 +
 The output should be like the following:
 
@@ -275,7 +279,8 @@ Cluster
 4 entries were displayed.
 ----
 [start=11]
-. [[step11]]Display information about the nodes in a cluster: `cluster show`
+. [[step11]]Display information about the nodes in a cluster:
+`cluster show`
 +
 This example shows that the node health for node1 and node2 in this cluster is true:
 
@@ -287,7 +292,8 @@ node1         false   true
 node2         true    true
 ----
 [start=12]
-. [[step12]]Verify that all physical cluster ports are up: `network port show ipspace Cluster`
+. [[step12]]Verify that all physical cluster ports are up:
+`network port show ipspace Cluster`
 
 ----
 cluster1::*> network port show -ipspace Cluster
@@ -309,7 +315,8 @@ e3b       Cluster      Cluster          up    9000  auto/100000  healthy  false
 4 entries were displayed.
 ----
 [start=13]
-. [[step13]]Verify that all the cluster LIFs can communicate: `cluster ping-cluster`
+. [[step13]]Verify that all the cluster LIFs can communicate:
+`cluster ping-cluster`
 
 ----
 cluster1::*> cluster ping-cluster -node node2
@@ -338,7 +345,8 @@ RPC status:
 2 paths up, 0 paths down (udp check)
 ----
 [start=14]
-. [[step14]]Confirm the following cluster network configuration: `network port show`
+. [[step14]]Confirm the following cluster network configuration:
+`network port show`
 ----
 cluster1::*> network port show -ipspace Cluster
 
@@ -444,7 +452,8 @@ If any of these commands return an error, contact NetApp support.
 [start=16]
 . [[step16]]Move the storage ports from the old switch sh2 to the new switch newsh2.
 . Verify the storage attached to HA pair 1, shared switch newsh2 is healthy.
-. Verify the storage attached to HA pair 2, shared switch newsh2 is healthy: `storage port show -port-type ENET`
+. Verify the storage attached to HA pair 2, shared switch newsh2 is healthy:
+`storage port show -port-type ENET`
 
 ----
 storage::*> storage port show -port-type ENET
@@ -464,7 +473,8 @@ node2
         e7b     ENET    storage          100   enabled   online       30
 ----
 [start=19]
-. [[step19]]Verify that the shelves are correctly cabled: `storage shelf port show -fields remote- device,remote-port`
+. [[step19]]Verify that the shelves are correctly cabled:
+`storage shelf port show -fields remote- device,remote-port`
 
 ----
 cluster1::*> storage shelf port show -fields remote-device,remote-port
@@ -483,4 +493,5 @@ shelf id remote-port  remote-device
 [start=20]
 . [[step20]]Remove the old switch sh2.
 . Repeat these steps for the switch sh1 and new switch newsh1.
-. If you suppressed automatic case creation, reenable it by invoking an AutoSupport message:  `system node autosupport invoke -node * -type all -message MAINT=END`
+. If you suppressed automatic case creation, reenable it by invoking an AutoSupport message:
+`system node autosupport invoke -node * -type all -message MAINT=END`
