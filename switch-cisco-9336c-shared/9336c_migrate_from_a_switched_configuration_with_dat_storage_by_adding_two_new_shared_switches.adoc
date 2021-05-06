@@ -1,6 +1,6 @@
 ---
-sidebar: greeley_sidebar
-permalink: greeley/9336c_migrate_from_a_switched_configuration_with_dat_storage_by_adding_two_new_shared_switches.html
+sidebar: switch-cisco-9336c-shared_sidebar
+permalink: switch-cisco-9336c-shared/9336c_migrate_from_a_switched_configuration_with_dat_storage_by_adding_two_new_shared_switches.html
 keywords:
 summary:
 ---
