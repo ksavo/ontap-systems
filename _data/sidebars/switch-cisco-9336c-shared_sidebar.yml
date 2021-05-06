@@ -1,4 +1,4 @@
-prefix: greeley
+prefix: switch-cisco-9336c-shared
 entries:
   - title: Cisco Nexus 9336C-FX2 Shared Switches
     url: /index.html
