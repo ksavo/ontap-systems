@@ -2,8 +2,7 @@
 sidebar: upgrade-arl-auto_sidebar
 permalink: upgrade-arl-auto/relocate_non_root_aggr_nas_data_lifs_node1_node2.html
 keywords: relocate, non-root, nonroot, aggregates, NAS, data, lif s, node1, node2
-summary: Move the non-root aggregates and NAS data
-LIFs from node1 to node2
+summary: Move the non-root aggregates and NAS data LIFs from node1 to node2
 ---
 
 = Relocate non-root aggregates and NAS data LIFs owned by node1 to node2
