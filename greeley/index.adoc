@@ -1,0 +1,15 @@
+---
+sidebar: greeley_sidebar
+permalink: greeley/index.html
+keywords:
+summary:
+---
+
+= Cisco Nexus 9336C-FX2 Shared Switches
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+[.lead]
