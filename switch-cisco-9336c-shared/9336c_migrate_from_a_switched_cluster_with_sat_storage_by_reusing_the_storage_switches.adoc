@@ -1,6 +1,6 @@
 ---
-sidebar: greeley_sidebar
-permalink: greeley/9336c_migrate_from_a_switched_cluster_with_sat_storage_by_reusing_the_storage_switches.html
+sidebar: switch-cisco-9336c-shared_sidebar
+permalink: switch-cisco-9336c-shared/9336c_migrate_from_a_switched_cluster_with_sat_storage_by_reusing_the_storage_switches.html
 keywords:
 summary:
 ---
@@ -54,9 +54,9 @@ sh2
 storage::*>
 ----
 [start=2]
-. [[step2]]Move the HA pair 1, NSM224 path A cables from storage switch A to the Greeley NS224 storage ports for HA pair 1, path A on storage switch A.
-. Move the cable from HA pair 1, node A, path A to the Greeley storage port for HA pair 1, node A on storage switch A.
-. Move the cable from HA pair 1, node B, path A to the Greeley storage port for HA pair 1, node B on storage switch A.
+. [[step2]]Move the HA pair 1, NSM224 path A cables from storage switch A to the NSM224 storage ports for HA pair 1, path A on storage switch A.
+. Move the cable from HA pair 1, node A, path A to the NSM224 storage port for HA pair 1, node A on storage switch A.
+. Move the cable from HA pair 1, node B, path A to the NSM224 storage port for HA pair 1, node B on storage switch A.
 . Verify the storage attached to HA pair 1, storage switch A is healthy:
 `storage port show -port-type ENET`
 
