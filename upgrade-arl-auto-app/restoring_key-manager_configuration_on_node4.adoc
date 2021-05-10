@@ -1,0 +1,35 @@
+---
+sidebar: upgrade-arl-auto-app_sidebar
+permalink: upgrade-arl-auto-app/restoring_key-manager_configuration_on_node4.html
+keywords: restore key-manager, configuration, node4, nve, arl, volume, encryption
+summary: If you are using Netapp Volume Encryption (NVE) to encrypt volumes on the system you are upgrading.
+---
+
+= Restore key-manager configuration on node4
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+//
+// This file was created with NDAC Version 2.0 (August 17, 2020)
+//
+// 2020-12-02 14:33:55.642512
+//
+
+[.lead]
+If you are using NetApp Volume Encryption (NVE) to encrypt volumes on the system you are upgrading, the encryption configuration must be synchronized to the new nodes. Encrypted volumes are taken offline when ARL is complete for node1 aggregates from node2 to node4.
+
+.About this task
+
+Synchronize the encryption configuration to the new nodes by performing the following steps:
+
+.Steps
+
+. Synchronize the encryption configuration for OKM by using the following command at the cluster prompt:
++
+`security key-manager onboard sync`
+
+. Enter the cluster-wide passphrase for the OKM.
+// 11 DEC 2020, thomi, checked
