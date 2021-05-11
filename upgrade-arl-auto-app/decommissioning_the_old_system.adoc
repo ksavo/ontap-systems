@@ -1,0 +1,40 @@
+---
+sidebar: upgrade-arl-auto-app_sidebar
+permalink: upgrade-arl-auto-app/decommissioning_the_old_system.html
+keywords: decommission, old system, upgrade, databases, netapp, support, site, serial, number, cluster
+summary: After upgrading, you can decommission the old system through the NetApp Support Site.
+---
+
+= Decommission the old system
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+//
+// This file was created with NDAC Version 2.0 (August 17, 2020)
+//
+// 2020-12-02 14:33:55.797967
+//
+
+[.lead]
+After upgrading, you can decommission the old system through the NetApp Support Site. Decommissioning the system tells NetApp that the system is no longer in operation and removes it from support databases.
+
+.Steps
+
+. Navigate to the link:https://mysupport.netapp.com[NetApp Support Site] and log in.
+. Select *Products > My Products* from the menu.
+. On the *View Installed Systems* page, choose which *Selection Criteria* you want to use to display information about your system.
++
+You can choose one of the following to locate your system:
+
+* Serial Number (located on the back of the unit)
+* Serial Numbers for My Location
+
+. Click *Go!*
++
+A table displays cluster information, including the serial numbers.
+
+. Locate the cluster in the table and select *Decommission this system* from the Product Tool Set drop-down menu.
+// 11 DEC 2020, thomi, checked
