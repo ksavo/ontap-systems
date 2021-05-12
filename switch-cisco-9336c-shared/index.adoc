@@ -1,0 +1,15 @@
+---
+sidebar: switch-cisco-9336c-shared_sidebar
+permalink: switch-cisco-9336c-shared/index.html
+keywords:
+summary:
+---
+
+= Cisco Nexus 9336C-FX2 Shared Switches
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+[.lead]
