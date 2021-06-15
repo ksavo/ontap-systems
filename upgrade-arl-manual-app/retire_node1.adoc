@@ -1,5 +1,5 @@
 ---
-sidebar: upgrade-arl-manual-app_sidebar
+sidebar: sidebar
 permalink: upgrade-arl-manual-app/retire_node1.html
 keywords: retire, node1, epsilon, shut down, failover
 summary: To retire node1, you need to disable the HA pair with node2, shut node1 down properly, and remove it from the rack or chassis.

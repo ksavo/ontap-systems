@@ -1,5 +1,5 @@
 ---
-sidebar: upgrade-arl-manual-app_sidebar
+sidebar: sidebar
 permalink: upgrade-arl-manual-app/quiesce_snapmirror_relationships.html
 keywords: quiesce, snapmirror, relationship, netboot, destination cluster
 summary: Quiesce all SnapMirror relationships before you netboot the system.

@@ -1,5 +1,5 @@
 ---
-sidebar: upgrade-arl-manual-app_sidebar
+sidebar: sidebar
 permalink: upgrade-arl-manual-app/worksheet_information_before_during_upgrade.html
 keywords: worksheet, stage, information, node ID, LIF, licensing key, IP address
 summary: You must gather certain information to successfully upgrade the original nodes.

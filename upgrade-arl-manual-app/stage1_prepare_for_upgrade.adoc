@@ -1,5 +1,5 @@
 ---
-sidebar: upgrade-arl-manual-app_sidebar
+sidebar: sidebar
 permalink: upgrade-arl-manual-app/stage1_prepare_for_upgrade.html
 keywords: stage 1, prepare, upgrade, steps
 summary: Stage 1, Prepare for the upgrade.

@@ -1,5 +1,5 @@
 ---
-sidebar: upgrade-arl-manual-app_sidebar
+sidebar: sidebar
 permalink: upgrade-arl-manual-app/stage4_record_info_retire_node2.html
 keywords: stage 4, node2, retire, information
 summary: During Stage 4, you record node2 information and then retire node2.

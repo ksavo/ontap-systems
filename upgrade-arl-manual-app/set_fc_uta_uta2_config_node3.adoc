@@ -1,5 +1,5 @@
 ---
-sidebar: upgrade-arl-manual-app_sidebar
+sidebar: sidebar
 permalink: upgrade-arl-manual-app/set_fc_uta_uta2_config_node3.html
 keywords: configure, configuration, fc, uta, uta2, settings
 summary: Settings must be configured before completing the upgrade.

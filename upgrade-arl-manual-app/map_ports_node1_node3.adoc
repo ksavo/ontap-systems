@@ -1,5 +1,5 @@
 ---
-sidebar: upgrade-arl-manual-app_sidebar
+sidebar: sidebar
 permalink: upgrade-arl-manual-app/map_ports_node1_node3.html
 keywords: map, ports, node1, node3, cluster, home port, vlan ports, broadcast domain, connectivity
 summary: Map ports from node1 to node3

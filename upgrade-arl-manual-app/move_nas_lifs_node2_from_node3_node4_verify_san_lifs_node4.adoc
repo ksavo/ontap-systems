@@ -1,5 +1,5 @@
 ---
-sidebar: upgrade-arl-manual-app_sidebar
+sidebar: sidebar
 permalink: upgrade-arl-manual-app/move_nas_lifs_node2_from_node3_node4_verify_san_lifs_node4.html
 keywords: move, aggregates, nas, lif, node2, node3, node4
 summary: Before you relocate node2 aggregates from node3 to node4, move the NAS data LIFs owned by node2 currently on node3 from node3 to node4 and verify the SAN LIFs on node4.
