@@ -1,5 +1,5 @@
 ---
-sidebar: upgrade-arl-auto-app_sidebar
+sidebar: sidebar
 permalink: upgrade-arl-auto-app/verify_health_of_metrocluster_config.html
 keywords: verifying, health, metrocluster, configuration, fabric, mcc
 summary: Before starting upgrade on a Fabric MetroCluster configuration.

@@ -1,5 +1,5 @@
 ---
-sidebar: upgrade-arl-auto_sidebar
+sidebar: sidebar
 permalink: upgrade-arl-auto/retire_node2.html
 keywords: retire, node2
 summary: To retire node2, you need to shut node2 down properly and remove it from the rack or chassis.

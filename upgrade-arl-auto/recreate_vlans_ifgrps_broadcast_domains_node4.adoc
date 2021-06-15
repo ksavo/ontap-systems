@@ -1,5 +1,5 @@
 ---
-sidebar: upgrade-arl-auto_sidebar
+sidebar: sidebar
 permalink: upgrade-arl-auto/recreate_vlans_ifgrps_broadcast_domains_node4.html
 keywords: node4, interface group, VLANs, broadcast domains, re-create
 summary: After you confirm that node4 is in quorum and can communicate with node3, you must re-create node2's VLANs, interface groups, and broadcast domains on node4.

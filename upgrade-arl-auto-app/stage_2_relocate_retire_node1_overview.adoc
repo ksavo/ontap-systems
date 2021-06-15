@@ -1,5 +1,5 @@
 ---
-sidebar: upgrade-arl-auto-app_sidebar
+sidebar: sidebar
 permalink: upgrade-arl-auto-app/stage_2_relocate_retire_node1_overview.html
 keywords: relocating, retiring, node1, lif
 summary: Relocating and retiring node1

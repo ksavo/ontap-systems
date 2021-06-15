@@ -1,5 +1,5 @@
 ---
-sidebar: upgrade-arl-auto_sidebar
+sidebar: sidebar
 permalink: upgrade-arl-auto/join_quorum_node_has_different_ports_stage3.html
 keywords: aggregate relocation, YYYYY
 summary: If the new node has a different set of network ports, you must ensure that the node successfully joins the quorum.

@@ -1,5 +1,5 @@
 ---
-sidebar: upgrade-arl-auto_sidebar
+sidebar: sidebar
 permalink: upgrade-arl-auto/automate_the_controller_upgrade_process.html
 keywords: automate, controller, upgrade, nondisruptive
 summary: During a controller upgrade, the controller is replaced with another controller running a newer or more powerful platform

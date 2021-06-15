@@ -1,5 +1,5 @@
 ---
-sidebar: upgrade-arl-auto-app_sidebar
+sidebar: sidebar
 permalink: upgrade-arl-auto-app/verify_node4_installation.html
 keywords: verify, node4, installation, physical ports, node2, node, LIF, MetroCluster
 summary: Verify the node4 installation

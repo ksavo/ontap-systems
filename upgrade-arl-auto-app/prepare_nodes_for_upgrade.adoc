@@ -1,5 +1,5 @@
 ---
-sidebar: upgrade-arl-auto-app_sidebar
+sidebar: sidebar
 permalink: upgrade-arl-auto-app/prepare_nodes_for_upgrade.html
 keywords: preparing, nodes, upgrade
 summary: Begin the controller replacement process by entering the following command in the ONTAP command line.

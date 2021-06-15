@@ -1,5 +1,5 @@
 ---
-sidebar: upgrade-arl-auto_sidebar
+sidebar: sidebar
 permalink: upgrade-arl-auto/get_ip_address_of_external_kms_for_storage_encryption.html
 keywords: IP address, external, key management, server, storage encryption, kmip, onboard key management
 summary: Configure Storage Encryption and establish a cluster-wide authentication key to replace the previous node-level authentication keys

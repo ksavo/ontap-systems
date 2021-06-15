@@ -1,5 +1,5 @@
 ---
-sidebar: upgrade-arl-auto_sidebar
+sidebar: sidebar
 permalink: upgrade-arl-auto/verify_switchover_healing_switchback.html
 keywords: switchover, healing,  switchback, metrocluster
 summary: Verify the switchover, healing, and switchback operations of the MetroCluster configuration.

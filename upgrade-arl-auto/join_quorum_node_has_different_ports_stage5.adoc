@@ -1,5 +1,5 @@
 ---
-sidebar: upgrade-arl-auto_sidebar
+sidebar: sidebar
 permalink: upgrade-arl-auto/join_quorum_node_has_different_ports_stage5.html
 keywords: quorum, cluster, network ports, node, broadcast domain
 summary: You must ensure that the node successfully joins the quorum.

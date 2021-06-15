@@ -1,5 +1,5 @@
 ---
-sidebar: upgrade-arl-auto_sidebar
+sidebar: sidebar
 permalink: upgrade-arl-auto/map_ports_node1_node3.html
 keywords: map, port, node1, node3, settings, restore, cluster
 summary: Verify that the physical ports on node1 map correctly to the physical ports on node3

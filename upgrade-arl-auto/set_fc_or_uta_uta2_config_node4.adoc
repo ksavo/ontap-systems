@@ -1,5 +1,5 @@
 ---
-sidebar: upgrade-arl-auto_sidebar
+sidebar: sidebar
 permalink: upgrade-arl-auto/set_fc_or_uta_uta2_config_node4.html
 keywords: fc configuration, uta configuration, UTA2 configuration, configure FC ports, UTA/UTA2 card, node4, target, adapter, ports
 summary: If node4 has onboard FC ports, UTA/UTA2 ports, or a UTA/UTA2 card, you must configure the settings before completing the rest of the procedure.

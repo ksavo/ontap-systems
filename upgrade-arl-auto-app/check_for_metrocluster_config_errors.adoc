@@ -1,5 +1,5 @@
 ---
-sidebar: upgrade-arl-auto-app_sidebar
+sidebar: sidebar
 permalink: upgrade-arl-auto-app/check_for_metrocluster_config_errors.html
 keywords: metrocluster, configuration, errors, config, advisor, netapp, support, site
 summary: You can use the Config Advisor tool available from the NetApp Support Site.

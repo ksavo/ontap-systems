@@ -1,5 +1,5 @@
 ---
-sidebar: upgrade-arl-auto_sidebar
+sidebar: sidebar
 permalink: upgrade-arl-auto/set_up_netapp_volume_encryption_new_module.html
 keywords: set up, netapp volume encryption, controller, module, nve, node
 summary: Configure the new controller module for NVE.

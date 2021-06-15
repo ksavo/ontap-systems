@@ -1,5 +1,5 @@
 ---
-sidebar: upgrade-arl-auto_sidebar
+sidebar: sidebar
 permalink: upgrade-arl-auto/move_non_root_aggr_nas_lifs_node1_from_node2_to_node3.html
 keywords: aggregate relocation, lifs, node3, node1, node2, NAS
 summary: After you verify the node3 installation and before you relocate aggregates from node2 to node3, you need to move the NAS data LIFs.

@@ -1,5 +1,5 @@
 ---
-sidebar: upgrade-arl-auto_sidebar
+sidebar: sidebar
 permalink: upgrade-arl-auto/verify_node3_installation.html
 keywords: install, boot, node3, join quorum
 summary: After you install and boot node3, you need to verify that it is installed correctly.

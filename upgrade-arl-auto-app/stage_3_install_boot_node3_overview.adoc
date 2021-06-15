@@ -1,5 +1,5 @@
 ---
-sidebar: upgrade-arl-auto-app_sidebar
+sidebar: sidebar
 permalink: upgrade-arl-auto-app/stage_3_install_boot_node3_overview.html
 keywords: installing, booting, node3, install, cluster
 summary: During Stage 3, you install and boot node3.

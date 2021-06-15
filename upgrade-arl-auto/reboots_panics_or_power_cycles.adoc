@@ -1,5 +1,5 @@
 ---
-sidebar: upgrade-arl-auto_sidebar
+sidebar: sidebar
 permalink: upgrade-arl-auto/reboots_panics_or_power_cycles.html
 keywords: reboots, panics, power, cycles, node, crash
 summary: The system might crash – reboot, panic or go through a power cycle.

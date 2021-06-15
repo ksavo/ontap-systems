@@ -1,5 +1,5 @@
 ---
-sidebar: upgrade-arl-auto-app_sidebar
+sidebar: sidebar
 permalink: upgrade-arl-auto-app/retire_node1.html
 keywords: retiring, node
 summary: To retire node1, you resume the automated operation to disable the HA pair with node2 and shut Lonode1 down properly.

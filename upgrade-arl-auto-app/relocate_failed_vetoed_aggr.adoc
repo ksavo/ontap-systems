@@ -1,5 +1,5 @@
 ---
-sidebar: upgrade-arl-auto-app_sidebar
+sidebar: sidebar
 permalink: upgrade-arl-auto-app/relocate_failed_vetoed_aggr.html
 keywords: relocating, failed, vetoed, aggregates, relocation, operation
 summary: If any aggregates fail to relocate or are vetoed, you must manually relocate the aggregates.

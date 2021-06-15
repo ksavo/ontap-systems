@@ -1,5 +1,5 @@
 ---
-sidebar: upgrade-arl-auto_sidebar
+sidebar: sidebar
 permalink: upgrade-arl-auto/install_boot_node4.html
 keywords: install, boot, node4, install ONTAP
 summary: You must install node4 in the rack, transfer node2's connections to node4, boot node4, and install ONTAP.

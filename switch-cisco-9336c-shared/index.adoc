@@ -1,6 +1,6 @@
 ---
-sidebar: greeley_sidebar
-permalink: greeley/index.html
+sidebar: sidebar
+permalink: switch-cisco-9336c-shared/index.html
 keywords:
 summary:
 ---

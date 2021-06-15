@@ -1,5 +1,5 @@
 ---
-sidebar: upgrade-arl-auto_sidebar
+sidebar: sidebar
 permalink: upgrade-arl-auto/prepare_nodes_for_upgrade.html
 keywords: prepare, nodes, upgrade, controller, replacement, license
 summary: You must prepare the nodes for upgrade.

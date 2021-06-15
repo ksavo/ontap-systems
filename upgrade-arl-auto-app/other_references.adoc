@@ -1,5 +1,5 @@
 ---
-sidebar: upgrade-arl-auto-app_sidebar
+sidebar: sidebar
 permalink: upgrade-arl-auto-app/other_references.html
 keywords: other references, documentation, hardware universe, guides, documentation center, information
 summary: You can link to other reference guides and websites in this topic.

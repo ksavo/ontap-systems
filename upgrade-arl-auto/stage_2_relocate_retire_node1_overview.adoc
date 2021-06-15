@@ -1,5 +1,5 @@
 ---
-sidebar: upgrade-arl-auto_sidebar
+sidebar: sidebar
 permalink: upgrade-arl-auto/stage_2_relocate_retire_node1_overview.html
 keywords: Prepare nodes for upgrade, storage encryption, KMS, key management server,
 summary: During Stage 1, you must prepare the nodes for the upgrade and run a series of prechecks.

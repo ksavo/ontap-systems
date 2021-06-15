@@ -1,5 +1,5 @@
 ---
-sidebar: upgrade-arl-auto_sidebar
+sidebar: sidebar
 permalink: upgrade-arl-auto/issues_in_multiple_stages_of_procedure.html
 keywords: issues, arise, multiple, stages, procedure
 summary: Some issues can occur during different stages of the procedure.

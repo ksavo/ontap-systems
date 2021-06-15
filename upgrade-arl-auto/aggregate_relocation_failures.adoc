@@ -1,5 +1,5 @@
 ---
-sidebar: upgrade-arl-auto_sidebar
+sidebar: sidebar
 permalink: upgrade-arl-auto/aggregate_relocation_failures.html
 keywords: aggregate, relocation, failures, arl
 summary: Aggregate relocation might fail at different points during the upgrade.

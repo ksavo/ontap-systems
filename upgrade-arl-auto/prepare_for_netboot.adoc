@@ -1,5 +1,5 @@
 ---
-sidebar: upgrade-arl-auto_sidebar
+sidebar: sidebar
 permalink: upgrade-arl-auto/prepare_for_netboot.html
 keywords: prepare, netboot, node3, node4, boot, ONTAP image, media device
 summary: After you physically rack nodes, you might need to netboot them.

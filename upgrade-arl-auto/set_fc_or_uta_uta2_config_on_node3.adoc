@@ -1,5 +1,5 @@
 ---
-sidebar: upgrade-arl-auto_sidebar
+sidebar: sidebar
 permalink: upgrade-arl-auto/set_fc_or_uta_uta2_config_on_node3.html
 keywords: FC, UTA, UTA2, configure, node3, CNA adapters, onboard ports, FlexArray Virtualization
 summary: Cconfigure port and card settings before completing the rest of the procedure.

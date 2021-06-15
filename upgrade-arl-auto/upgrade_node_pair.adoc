@@ -1,5 +1,5 @@
 ---
-sidebar: upgrade-arl-auto_sidebar
+sidebar: sidebar
 permalink: upgrade-arl-auto/upgrade_node_pair.html
 keywords: upgrade, node, pair, original
 summary: You need to upgrade the node pair.

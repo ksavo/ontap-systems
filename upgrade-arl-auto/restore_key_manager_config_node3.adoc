@@ -1,5 +1,5 @@
 ---
-sidebar: upgrade-arl-auto_sidebar
+sidebar: sidebar
 permalink: upgrade-arl-auto/restore_key_manager_config_node3.html
 keywords: restore, key manager, configuration, node3, nve, netapp volume encryption, encryption
 summary: For NetApp Volume Encryption (NVE) to encrypt volumes on the system you are upgrading, the encryption configuration must be synchronized to the new nodes.
