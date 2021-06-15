@@ -1,5 +1,5 @@
 ---
-sidebar: upgrade-arl-manual_sidebar
+sidebar: sidebar
 permalink: upgrade-arl-manual/verify_health_mcc_config.html
 keywords:  health, mcc, metrocluster, configuration, configure
 summary: Check the health of the MetroCluster configuration to verify proper operation.

@@ -1,5 +1,5 @@
 ---
-sidebar: upgrade-arl-manual_sidebar
+sidebar: sidebar
 permalink: upgrade-arl-manual/lif_migration_failure.html
 keywords: lif, migration, failure, error, troubleshoot
 summary: LIF migration failure

@@ -1,5 +1,5 @@
 ---
-sidebar: upgrade-arl-manual_sidebar
+sidebar: sidebar
 permalink: upgrade-arl-manual/issues_multiple_stages_of_procedure.html
 keywords: issues, problems, errors, multiple stages, procedure, troubleshoot
 summary: Issues can arise in multiple stages of the procedure.

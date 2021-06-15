@@ -1,5 +1,5 @@
 ---
-sidebar: upgrade-arl-manual_sidebar
+sidebar: sidebar
 permalink: upgrade-arl-manual/send_custom_asup_message_prior_reconfig_switches.html
 keywords: autosupport, reconfigure, send message, maintenance, netapp support
 summary: Send a custom AutoSupport message prior to reconfiguring switches
@@ -27,7 +27,7 @@ This task must be performed on each MetroCluster site.
 +
 `system node autosupport invoke -node * -type all -message MAINT=<maintenance-window-in-hours>`
 +
-The `maintenance-window-in-hours` value specifies the length of the maintenance window, with a maximum of 72 hours. If the maintenance is completed before the time has elapsed, you can invoke an AutoSupport message indicating the end of the maintenance period: 
+The `maintenance-window-in-hours` value specifies the length of the maintenance window, with a maximum of 72 hours. If the maintenance is completed before the time has elapsed, you can invoke an AutoSupport message indicating the end of the maintenance period:
 +
 `system node autosupport invoke -node * -type all -message MAINT=end`
 

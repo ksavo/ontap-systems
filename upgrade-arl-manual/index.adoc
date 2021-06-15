@@ -1,7 +1,7 @@
 ---
-sidebar: upgrade-arl-manual_sidebar
+sidebar: sidebar
 permalink: upgrade-arl-manual/index.html
-keywords:  controller, aggregate, relocation, flexarray, manual, upgrade, metrocluster 
+keywords:  controller, aggregate, relocation, flexarray, manual, upgrade, metrocluster
 summary: You upgrade the original controller hardware with the replacement controller hardware, relocating the ownership of non-root aggregates.
 ---
 

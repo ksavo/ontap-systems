@@ -1,5 +1,5 @@
 ---
-sidebar: upgrade-arl-manual_sidebar
+sidebar: sidebar
 permalink: upgrade-arl-manual/manage_authentication_kmip.html
 keywords: kmip, authentication, keys, fips
 summary: Use KMIP servers to manage authentication keys.

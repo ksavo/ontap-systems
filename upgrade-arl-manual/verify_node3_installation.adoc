@@ -1,5 +1,5 @@
 ---
-sidebar: upgrade-arl-manual_sidebar
+sidebar: sidebar
 permalink: upgrade-arl-manual/verify_node3_installation.html
 keywords: verify, node3, install, installation
 summary: After you install and boot node3, you need to verify that it is installed correctly, that it is part of the cluster, and that it can communicate with node2.

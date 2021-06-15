@@ -1,5 +1,5 @@
 ---
-sidebar: upgrade-arl-manual_sidebar
+sidebar: sidebar
 permalink: upgrade-arl-manual/resume_snapmirror_ops.html
 keywords: resume, snapmirror, transfers, relationships
 summary: You can resume SnapMirror transfers that were quiesced before upgrade and resume the SnapMirror relationships.

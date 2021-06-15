@@ -1,5 +1,5 @@
 ---
-sidebar: upgrade-arl-manual_sidebar
+sidebar: sidebar
 permalink: upgrade-arl-manual/aggregate_relocation_failures.html
 keywords: aggregate, relocation, failure, error, problem
 summary:  Aggregate relocation failures

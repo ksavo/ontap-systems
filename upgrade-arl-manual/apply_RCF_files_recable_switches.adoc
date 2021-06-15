@@ -1,5 +1,5 @@
 ---
-sidebar: upgrade-arl-manual_sidebar
+sidebar: sidebar
 permalink: upgrade-arl-manual/apply_RCF_files_recable_switches.html
 keywords:  rcf files, reference configuration, switches, nodes, recable, fc
 summary:  Apply the appropriate RCF files to reconfigure switches to accommodate the new nodes.

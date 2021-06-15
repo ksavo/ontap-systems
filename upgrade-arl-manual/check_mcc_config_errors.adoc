@@ -1,5 +1,5 @@
 ---
-sidebar: upgrade-arl-manual_sidebar
+sidebar: sidebar
 permalink: upgrade-arl-manual/check_mcc_config_errors.html
 keywords: config advisor, mcc, metrocluster,configuration, configure, error, check
 summary: Use Config Advisor to check for common configuration errors.

@@ -1,8 +1,8 @@
 ---
-sidebar: upgrade-arl-manual_sidebar
+sidebar: sidebar
 permalink: upgrade-arl-manual/troubleshoot.html
 keywords: troubleshoot, troubleshooting, problem, error, failure
-summary: You might encounter a failure while upgrading the node pair. 
+summary: You might encounter a failure while upgrading the node pair.
 ---
 
 = Troubleshoot

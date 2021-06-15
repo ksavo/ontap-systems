@@ -1,5 +1,5 @@
 ---
-sidebar: upgrade-arl-manual_sidebar
+sidebar: sidebar
 permalink: upgrade-arl-manual/decommission_old_system.html
 keywords: decommission, system, metrocluster
 summary: Decommission the old system

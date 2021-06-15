@@ -1,5 +1,5 @@
 ---
-sidebar: upgrade-arl-manual_sidebar
+sidebar: sidebar
 permalink: upgrade-arl-manual/persist_disable_switches.html
 keywords: disable, switches, fabric, persistent, modify, configuration, configure
 summary:  Disable the switches in the fabric persistently so that you can modify its configuration.

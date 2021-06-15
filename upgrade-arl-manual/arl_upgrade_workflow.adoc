@@ -1,5 +1,5 @@
 ---
-sidebar: upgrade-arl-manual_sidebar
+sidebar: sidebar
 permalink: upgrade-arl-manual/arl_upgrade_workflow.html
 keywords: upgrade workflow, procedure steps, stages
 summary: ARL upgrade workflow

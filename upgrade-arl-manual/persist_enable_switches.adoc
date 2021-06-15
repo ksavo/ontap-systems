@@ -1,5 +1,5 @@
 ---
-sidebar: upgrade-arl-manual_sidebar
+sidebar: sidebar
 permalink: upgrade-arl-manual/persist_enable_switches.html
 keywords: enable, switches, fabric, persistent
 summary: Enable the switches in the fabric persistently, Brocade, Cisco
