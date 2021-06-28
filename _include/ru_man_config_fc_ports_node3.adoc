@@ -111,9 +111,9 @@ a|Modify the FC ports on node3 as needed by entering one of the following comman
 
 . [[step10]]Take one of the following actions:
 +
-[cols="35.65"]
+[cols="35,65"]
 |===
-If the system you are upgrading... |Then...
+|If the system you are upgrading... |Then...
 
 |Is a V-Series system or has FlexArray Virtualization software running clustered Data ONTAP 8.3
 |Boot node3 and access maintenance at the boot environment prompt:

@@ -147,7 +147,7 @@ NOTE: You should use the management port and IP address as the netboot connectio
 +
 [cols=2*,options="header",cols="30,70"]
 |===
-If Dynamic Host Configuration Protocol (DHCP) is... |Then...
+|If Dynamic Host Configuration Protocol (DHCP) is... |Then...
 
 |Running |Configure the connection automatically by entering the following command at the boot environment prompt:
 `ifconfig e0M -auto`

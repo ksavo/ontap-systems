@@ -1,4 +1,5 @@
 ---
+layout: astra
 sidebar: sidebar
 permalink: upgrade-arl-auto/index.html
 keywords: aggregate, relocation, controller, hardware, aggregates, flexarray, metrocluster, terminology

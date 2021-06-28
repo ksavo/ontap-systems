@@ -101,4 +101,5 @@ a|. Verify the system is set up correctly.
 . Set up Storage Encryption on the new controller module.
 
 . Resume SnapMirror operations if needed.
+|===
 // p. 13-14 of PDF
