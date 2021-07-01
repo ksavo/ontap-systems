@@ -139,4 +139,4 @@ Installing a new controller module changes the WWPN values associated with each 
 +
 `boot_ontap menu`
 +
-If you do not have FC or UTA/UTA2 configuration, execute link:set_fc_or_uta_uta2_config_on_node3.html#step15[Check and configure UTA/UTA2 ports on node 3, Step 15] so that node3 can recognize node1’s disks.
+If you do not have FC or UTA/UTA2 configuration, execute link:set_fc_or_uta_uta2_config_on_node3.html#auto9597_check_node3_step15[Check and configure UTA/UTA2 ports on node 3, Step 15] so that node3 can recognize node1’s disks.

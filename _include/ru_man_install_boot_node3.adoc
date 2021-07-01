@@ -6,12 +6,12 @@ You need to netboot node3 if it does not have the same version of ONTAP 9 that i
 
 However, you do not need to netboot node3 if it has the same or a later version of ONTAP 9 that is installed on node1.
 
-NOTE: *Important*: If you are upgrading a V-Series system connected to storage arrays or a system with FlexArray Virtualization software that is connected to storage arrays, you need to complete <<step1, Step 1>> through <<step5,Step 5>>, leave this section at <<step6,Step 6>> and follow instructions in link:set_fc_uta_uta2_config_node3.html#configure-fc-ports-on-node3[Configure FC ports on node3] and link:set_fc_uta_uta2_config_node3.html#check-and-configure-UTAUTA2-ports-on-node3[Check and configure UTA/UTA2 ports on node3] as needed, entering commands in maintenance mode. You must then return to this section and resume with <<step7,Step 7>>.
+NOTE: *Important*: If you are upgrading a V-Series system connected to storage arrays or a system with FlexArray Virtualization software that is connected to storage arrays, you need to complete <<man_install3_step1, Step 1>> through <<man_install3_step5,Step 5>>, leave this section at <<man_install3_step6,Step 6>> and follow instructions in link:set_fc_uta_uta2_config_node3.html#configure-fc-ports-on-node3[Configure FC ports on node3] and link:set_fc_uta_uta2_config_node3.html#check-and-configure-UTAUTA2-ports-on-node3[Check and configure UTA/UTA2 ports on node3] as needed, entering commands in maintenance mode. You must then return to this section and resume with <<man_install3_step7,Step 7>>.
 However, if you are upgrading a system with storage disks, you need to complete this entire section and then go to link:set_fc_uta_uta2_config_node3.html#configure-fc-ports-on-node3[Configure FC ports on node3] and link:set_fc_uta_uta2_config_node3.html#check-and-configure-UTAUTA2-ports-on-node3[Check and configure UTA/UTA2 ports on node3], entering commands at the cluster prompt.
 
 .Steps
 
-. [[step1]]Make sure that you have rack space for node3.
+. [[man_install3_step1]]Make sure that you have rack space for node3.
 +
 If node1 and node2 were in separate chassis, you can put node3 in the same rack location as node1. However, if node1 was in the same chassis with node2, then you need to put node3 into its own rack space, preferably close to the location of node1.
 
@@ -39,7 +39,7 @@ Cable the following connections:
 +
 NOTE: You might not need to move the interconnect card or the cluster interconnect cable connection from node1 to node3 because most platform models have a unique interconnect card model. For the MetroCluster configuration, you need to move the FC-VI cable connections from node1 to node3. If the new host does not have an FC-VI card, you might need to move the FC-VI card.
 
-. [[step4]]Turn on the power to node3, and then interrupt the boot process by pressing Ctrl-C at the console terminal to access the boot environment prompt.
+. [[man_install3_step4]]Turn on the power to node3, and then interrupt the boot process by pressing Ctrl-C at the console terminal to access the boot environment prompt.
 +
 If you are upgrading to a system with both nodes in the same chassis, node4 also reboots. However, you can disregard the node4 boot until later.
 +
@@ -51,64 +51,64 @@ When the battery is ready, the boot process will complete and services will be e
 To override this delay, press 'c' followed by 'Enter'
 ----
 
-. [[step5]]If you see the warning message in <<step4,Step 4>>, take the following actions:
+. [[man_install3_step5]]If you see the warning message in <<man_install3_step4,Step 4>>, take the following actions:
 .. Check for any console messages that might indicate a problem other than a low NVRAM battery, and, if necessary, take any required corrective action.
 .. Allow the battery to charge and the boot process to complete.
 +
 NOTE: *Attention*: Do not override the delay; failure to allow the battery to charge could result in a loss of data.
 
-. [[step6]]Take one of the following actions:
+. [[man_install3_step6]]Take one of the following actions:
 +
 [cols="35,65"]
 |===
 |If your system... |Then...
 
 |Has disks and no back-end storage
-|Skip <<step7,Step 7>> through <<step12,Step 12>> and go to <<step13,Step 13>>.
+|Skip <<man_install3_step7,Step 7>> through <<man_install3_step12,Step 12>> and go to <<man_install3_step13,Step 13>>.
 |Is a V-Series system or a system with FlexArray Virtualization software connected to storage arrays
 a|.. Go to link:set_fc_uta_uta2_config_node3.html[Set the FC or UTA/UTA2 configuration on node3] and complete the subsections link:set_fc_uta_uta2_config_node3.html#configure-fc-ports-on-node3[Configure FC ports on node3] and link:set_fc_uta_uta2_config_node3.html#check-and-configure-UTAUTA2-ports-on-node3[Check and configure UTA/UTA2 ports on node3], as appropriate to your system.
 
-.. Return to this section and complete the remaining steps, beginning with <<step7,Step 7>>.
+.. Return to this section and complete the remaining steps, beginning with <<man_install3_step7,Step 7>>.
 
 *Important*: You must reconfigure FC onboard ports, CNA onboard ports, and CNA cards before you boot ONTAP on the V-Series or system with FlexArray Virtualization software.
 |===
 
-. [[step7]]Add the FC initiator ports of the new node to the switch zones.
+. [[man_install3_step7]]Add the FC initiator ports of the new node to the switch zones.
 +
 If your system has a tape SAN, then you need zoning for the initiators. See your storage array and zoning documentation for instructions.
 
-. [[step8]]Add the FC initiator ports to the storage array as new hosts, mapping the array LUNs to the new hosts.
+. [[man_install3_step8]]Add the FC initiator ports to the storage array as new hosts, mapping the array LUNs to the new hosts.
 +
 See your storage array and zoning documentation for instructions.
 
-. [[step9]] Modify the World Wide Port Name (WWPN) values in the host or volume groups associated with array LUNs on the storage array.
+. [[man_install3_step9]] Modify the World Wide Port Name (WWPN) values in the host or volume groups associated with array LUNs on the storage array.
 +
 Installing a new controller module changes the WWPN values associated with each onboard FC port.
 
-. [[step10]]If your configuration uses switch-based zoning, adjust the zoning to reflect the new WWPN values.
+. [[man_install3_step10]]If your configuration uses switch-based zoning, adjust the zoning to reflect the new WWPN values.
 
-. [[step11]]Verify that the array LUNs are now visible to node3:
+. [[man_install3_step11]]Verify that the array LUNs are now visible to node3:
 +
 `sysconfig -v`
 +
 The system displays all the array LUNs visible to each of the FC initiator ports. If the array LUNs are not visible, you will not be able to reassign disks from node1 to node3 later in this section.
 
-. [[step12]]Press Ctrl-C to display the boot menu and select maintenance mode.
+. [[man_install3_step12]]Press Ctrl-C to display the boot menu and select maintenance mode.
 
-. [[step13]]At the Maintenance mode prompt, enter the following command:
+. [[man_install3_step13]]At the Maintenance mode prompt, enter the following command:
 +
 `halt`
 +
 The system stops at the boot environment prompt.
 
-. [[step14]]Take one of the following actions:
+. [[man_install3_step14]]Take one of the following actions:
 +
 [cols="35,65"]
 |===
 |If the system you are upgrading to is in a... |Then...
 
 |Dual-chassis configuration (with controllers in different chassis)
-|Go to <<step15,Step 15>>.
+|Go to <<man_install3_step15,Step 15>>.
 |Single-chassis configuration (with controllers in the same chassis)
 a|.. Switch the console cable from node3 to node4.
 
@@ -118,45 +118,45 @@ The power should already be on if both controllers are in the same chassis.
 +
 *Note*: Leave node4 at the boot environment prompt; you will return to node4 in link:install_boot_node4.html[Install and boot node4].
 
-.. If you see the warning message displayed in <<step4,Step 4>>, follow the instructions in <<step5,Step 5>>
+.. If you see the warning message displayed in <<man_install3_step4,Step 4>>, follow the instructions in <<man_install3_step5,Step 5>>
 
 .. Switch the console cable back from node4 to node3.
 
-.. Go to <<step15,Step 15>>.
+.. Go to <<man_install3_step15,Step 15>>.
 |===
 
-. [[step15]]Configure node3 for ONTAP:
+. [[man_install3_step15]]Configure node3 for ONTAP:
 +
 `set-defaults`
 
-. [[step16]]If NetApp Storage Encryption (NSE) is in use on this configuration, the `setenv bootarg.storageencryption.support` command must be set to `true`, and the `kmip.init.maxwait` variable needs to be set to `off` to avoid a boot loop after the node1 configuration is loaded:
+. [[man_install3_step16]]If NetApp Storage Encryption (NSE) is in use on this configuration, the `setenv bootarg.storageencryption.support` command must be set to `true`, and the `kmip.init.maxwait` variable needs to be set to `off` to avoid a boot loop after the node1 configuration is loaded:
 +
 `setenv bootarg.storageencryption.support true`
 +
 `setenv kmip.init.maxwait off`
 
-. [[step17]] If the version of ONTAP installed on node3 is the same or later than the version of ONTAP 9 installed on node1, list and reassign disks to the new node3:
+. [[man_install3_step17]] If the version of ONTAP installed on node3 is the same or later than the version of ONTAP 9 installed on node1, list and reassign disks to the new node3:
 +
 `boot_ontap`
 +
 WARNING: *Warning*: If this new node has ever been used in any other cluster or HA pair, you must run `wipeconfig` before proceeding. Failure to do so might result in service outages or data loss. Contact technical support if the replacement controller was previously used, especially if the controllers were
 running ONTAP running in 7-Mode.
 
-. [[step18]]Press CTRL-C to display the boot menu.
+. [[man_install3_step18]]Press CTRL-C to display the boot menu.
 
-. [[step19]]Take one of the following actions:
+. [[man_install3_step19]]Take one of the following actions:
 +
 [cols="35,65"]
 |===
 |If the system you are upgrading... |Then...
 
 |Does _not_ have the correct or current ONTAP version on node3
-|Go to <<step20,Step 20>>.
+|Go to <<man_install3_step20,Step 20>>.
 |Has the correct or current version of ONTAP on node3
-|Go to <<step25,Step 25>>.
+|Go to <<man_install3_step25,Step 25>>.
 |===
 
-. [[step20]]Configure the netboot connection by choosing one of the following actions.
+. [[man_install3_step20]]Configure the netboot connection by choosing one of the following actions.
 +
 NOTE: You should use the management port and IP as the netboot connection. Do not use a data LIF IP or else a data outage might occur while the upgrade is being performed.
 +
@@ -186,7 +186,7 @@ NOTE: You should use the management port and IP as the netboot connection. Do no
 *Note*: Other parameters might be necessary for your interface. Enter `help ifconfig` at the firmware prompt for details.
 |===
 
-. [[step21]]Perform netboot on node3:
+. [[man_install3_step21]]Perform netboot on node3:
 +
 [cols="35,65"]
 |===
@@ -203,7 +203,7 @@ The `<path_to_the_web-accessible_directory>` should lead to where you downloaded
 +
 NOTE: Do not interrupt the boot.
 
-. [[step22]]From the boot menu, select option *(7) Install new software* first.
+. [[man_install3_step22]]From the boot menu, select option *(7) Install new software* first.
 +
 This menu option downloads and installs the new ONTAP image to the boot device.
 +
@@ -217,11 +217,11 @@ The note applies to nondisruptive upgrades of ONTAP, and not upgrades of control
 +
 NOTE: Always use netboot to update the new node to the desired image. If you use another method to install the image on the new controller, the wrong image might install. This issue applies to all releases of ONTAP.
 
-. [[step23]]If you are prompted to continue the procedure, enter `y`, and when prompted for the package, enter the following URL:
+. [[man_install3_step23]]If you are prompted to continue the procedure, enter `y`, and when prompted for the package, enter the following URL:
 +
 `\http://<web_server_ip>/<path_to_web-accessible_directory>/<ontap_version_image>.tgz`
 
-. [[step24]]Complete the following substeps:
+. [[man_install3_step24]]Complete the following substeps:
 +
 .. Enter `n` to skip the backup recovery when you see the following prompt:
 +
@@ -237,12 +237,12 @@ The node must be rebooted to start using the newly installed software. Do you wa
 +
 The controller module reboots but stops at the boot menu because the boot device was reformatted and the configuration data needs to be restored.
 
-. [[step25]]Select *(5) Maintenance mode boot* by entering `5`, and then enter `y` when prompted to continue with the boot.
-. [[step26]]Before continuing, go to link:set_fc_uta_uta2_config_node3.html[Set the FC or UTA/UTA2 configuration on node3] to make any necessary changes to the FC or UTA/UTA2 ports on the node.
+. [[man_install3_step25]]Select *(5) Maintenance mode boot* by entering `5`, and then enter `y` when prompted to continue with the boot.
+. [[man_install3_step26]]Before continuing, go to link:set_fc_uta_uta2_config_node3.html[Set the FC or UTA/UTA2 configuration on node3] to make any necessary changes to the FC or UTA/UTA2 ports on the node.
 +
 Make the changes recommended in those sections, reboot the node, and go into maintenance mode.
 
-. [[step27]]Find the system ID of node3:
+. [[man_install3_step27]]Find the system ID of node3:
 +
 `disk show -a`
 +
@@ -265,7 +265,7 @@ The system displays the system ID of the node and information about its disks, a
 NOTE: You might see the message `disk show: No disks match option -a.` after entering the command. This is not an error message so you can continue with the
 procedure.
 
-. [[step28]]Reassign node1's spares, any disks belonging to the root, and any non-root aggregates that were not relocated to node2 earlier in link:relocate_non_root_aggr_node1_node2.html[Relocate non-root aggregates from node1 to node2].
+. [[man_install3_step28]]Reassign node1's spares, any disks belonging to the root, and any non-root aggregates that were not relocated to node2 earlier in link:relocate_non_root_aggr_node1_node2.html[Relocate non-root aggregates from node1 to node2].
 +
 Enter the appropriate form of the `disk reassign` command based on whether your system has shared disks:
 +
@@ -294,7 +294,7 @@ Serious problems could result!!
 Do not proceed with reassignment if the partner is in takeover mode. Abort reassignment (y/n)?
 ----
 
-. [[step29]]Enter `n`.
+. [[man_install3_step29]]Enter `n`.
 +
 The system displays the following message:
 +
@@ -303,7 +303,7 @@ After the node becomes operational, you must perform a takeover and giveback of 
 Do you want to continue (y/n)?
 ----
 
-. [[step30]]Enter `y`
+. [[man_install3_step30]]Enter `y`
 +
 The system displays the following message:
 +
@@ -312,9 +312,9 @@ Disk ownership will be updated on all disks previously belonging to Filer with s
 Do you want to continue (y/n)?
 ----
 
-. [[step31]]Enter `y`.
+. [[man_install3_step31]]Enter `y`.
 
-. [[step32]]If you are upgrading from a system with external disks to a system that supports internal and external disks (AFF A800 systems, for example), set the node1 aggregate as root to ensure node3 boots from the root aggregate of node1.
+. [[man_install3_step32]]If you are upgrading from a system with external disks to a system that supports internal and external disks (AFF A800 systems, for example), set the node1 aggregate as root to ensure node3 boots from the root aggregate of node1.
 +
 WARNING: *Warning*: You must perform the following substeps in the exact order shown; failure to do so might cause an outage or even data loss.
 
@@ -363,7 +363,7 @@ The following shows an example of the command output:
  ----------------------------------------------------------------------
 ----
 
-. [[step33]]Verify that the controller and chassis are configured as `ha`:
+. [[man_install3_step33]]Verify that the controller and chassis are configured as `ha`:
 +
 `ha-config show`
 +
@@ -389,7 +389,7 @@ If you have a MetroCluster configuration, use the following commands to modify t
 +
 `ha-config modify chassis mcc`
 
-. [[step34]]Destroy the mailboxes on node3:
+. [[man_install3_step34]]Destroy the mailboxes on node3:
 +
 `mailbox destroy local`
 +
@@ -399,39 +399,39 @@ The console displays the following message:
 Destroying mailboxes forces a node to create new empty mailboxes, which clears any takeover state, removes all knowledge of out-of-date plexes of mirrored volumes, and will prevent management services from going online in 2-node cluster HA configurations. Are you sure you want to destroy the local mailboxes?
 ----
 
-. [[step35]]Enter `y` at the prompt to confirm that you want to destroy the local mailboxes.
+. [[man_install3_step35]]Enter `y` at the prompt to confirm that you want to destroy the local mailboxes.
 
-. [[step36]]Exit maintenance mode:
+. [[man_install3_step36]]Exit maintenance mode:
 +
 `halt`
 +
 The system stops at the boot environment prompt.
 
-. [[step37]]On node2, check the system date, time, and time zone:
+. [[man_install3_step37]]On node2, check the system date, time, and time zone:
 +
 `date`
 
-. [[step38]]On node3, check the date at the boot environment prompt:
+. [[man_install3_step38]]On node3, check the date at the boot environment prompt:
 +
 `show date`
 
-. [[step39]]If necessary, set the date on node3:
+. [[man_install3_step39]]If necessary, set the date on node3:
 +
 `set date <mm/dd/yyyy>`
 
-. [[step40]]On node3, check the time at the boot environment prompt:
+. [[man_install3_step40]]On node3, check the time at the boot environment prompt:
 +
 `show time`
 
-. [[step41]]If necessary, set the time on node3:
+. [[man_install3_step41]]If necessary, set the time on node3:
 +
 `set time <hh:mm:ss>`
 
-. [[step42]]Verify the partner system ID is set correctly as noted in <<step28,Step 28>> under -p switch:
+. [[man_install3_step42]]Verify the partner system ID is set correctly as noted in <<man_install3_step28,Step 28>> under -p switch:
 +
 `printenv partner-sysid`
 
-. [[step43]]If necessary, set the partner system ID on node3:
+. [[man_install3_step43]]If necessary, set the partner system ID on node3:
 +
 `setenv partner-sysid <node2_sysid>`
 +
@@ -439,11 +439,11 @@ Save the settings:
 +
 `saveenv`
 
-. [[step44]]Access the boot menu at the boot environment prompt:
+. [[man_install3_step44]]Access the boot menu at the boot environment prompt:
 +
 `boot_ontap menu`
 
-. [[step45]]At the boot menu, select option *(6) Update flash from backup config* by entering `6` at the prompt.
+. [[man_install3_step45]]At the boot menu, select option *(6) Update flash from backup config* by entering `6` at the prompt.
 +
 The system displays the following message:
 +
@@ -451,13 +451,13 @@ The system displays the following message:
 This will replace all flash-based configuration with the last backup to disks. Are you sure you want to continue?:
 ----
 
-. [[step46]]Enter `y` at the prompt.
+. [[man_install3_step46]]Enter `y` at the prompt.
 +
 The boot proceeds normally, and the system then asks you to confirm the system ID mismatch.
 +
 NOTE: The system might reboot twice before displaying the mismatch warning.
 
-. [[step47]]Confirm the mismatch as shown in the following example:
+. [[man_install3_step47]]Confirm the mismatch as shown in the following example:
 +
 ----
 WARNING: System id mismatch. This usually occurs when replacing CF or NVRAM cards!
@@ -466,5 +466,5 @@ Override system id (y|n) ? [n] y
 +
 The node might go through one round of reboot before booting normally.
 
-. [[step48]]Log in to node3.
+. [[man_install3_step48]]Log in to node3.
 // 22 FEB 2021: Formatted from CMS

@@ -8,28 +8,28 @@ However, you do not need to netboot node4 if it has the same or later version of
 
 *Important*:
 
-* If you are upgrading a V-Series system or a system with FlexArray Virtualization Software that is connected to storage arrays, you need to complete <<Step1,Step 1>> through <<Step7,Step 7>>, leave this section at <<step8,Step 8>> and follow instructions in link:set_fc_uta_uta2_config_node4.html[Set the FC or UTA/UTA2 configuration on node4] as needed, entering the commands in Maintenance mode. You then need to return to this section and resume the procedure at <<Step9,Step 9>>.
+* If you are upgrading a V-Series system or a system with FlexArray Virtualization Software that is connected to storage arrays, you need to complete <<man_install4_Step1,Step 1>> through <<man_install4_Step7,Step 7>>, leave this section at <<man_install4_step8,Step 8>> and follow instructions in link:set_fc_uta_uta2_config_node4.html[Set the FC or UTA/UTA2 configuration on node4] as needed, entering the commands in Maintenance mode. You then need to return to this section and resume the procedure at <<man_install4_Step9,Step 9>>.
 
 * However, if you are upgrading a system with storage disks, you need to complete this entire section and then proceed to the section link:set_fc_uta_uta2_config_node4.html[Set the FC or UTA/UTA2 configuration on node4], entering commands at the cluster prompt.
 
 .Steps
 
-. [[Step1]]Take one of the following actions:
+. [[man_install4_Step1]]Take one of the following actions:
 +
 [cols=2*,options="header",cols="35,65"]
 |===
 |If node4 will be in ... |Then...
-|A chassis separate from node3 |Go to <<Step2,Step 2>>.
-|The same chassis with node3 |Skip Steps 2 and 3 and go to <<Step4,Step 4>>.
+|A chassis separate from node3 |Go to <<man_install4_Step2,Step 2>>.
+|The same chassis with node3 |Skip Steps 2 and 3 and go to <<man_install4_Step4,Step 4>>.
 |===
 
-. [[Step2]] Make sure that node4 has sufficient rack space.
+. [[man_install4_Step2]] Make sure that node4 has sufficient rack space.
 +
 If node4 is in a separate chassis from node3, you can put node4 in the same location as node2. If node3 and node4 are in the same chassis, then node4 is already in its appropriate rack location.
 
 . Install node4 in the rack, following the instructions in the _Installation and Setup Instructions_ for the node model.
 
-. [[Step4]]Cable node4, moving the connections from node2 to node4.
+. [[man_install4_Step4]]Cable node4, moving the connections from node2 to node4.
 +
 The following references help you make proper cable connections. Go to link:other_references.html[References] to link to them.
 +
@@ -55,11 +55,11 @@ NOTE: You do not need to move the interconnect card/FC_VI card or interconnect/F
 [cols=2*,options="header",cols="35,65"]
 |===
 |If node4 is in... |Then...
-|The same chassis as node3 |Go to <<Step8,Step 8>>.
-|A chassis separate from node3 |Go to <<Step6,Step 6>>.
+|The same chassis as node3 |Go to <<man_install4_Step8,Step 8>>.
+|A chassis separate from node3 |Go to <<man_install4_Step6,Step 6>>.
 |===
 
-. [[Step6]]Turn on the power to node4, and then interrupt the boot by pressing `Ctrl-C` to access the boot environment prompt.
+. [[man_install4_Step6]]Turn on the power to node4, and then interrupt the boot by pressing `Ctrl-C` to access the boot environment prompt.
 +
 NOTE: When you boot node4, you might see the following message:
 
@@ -74,28 +74,28 @@ WARNING: The battery is unfit to retain data during a power
          To override this delay, press 'c' followed by 'Enter'
 ----
 
-. [[Step7]]If you see the warning message in Step 6, take the following actions:
+. [[man_install4_Step7]]If you see the warning message in Step 6, take the following actions:
 .. Check for any console messages that might indicate a problem other than a low NVRAM battery and, if necessary, take any required corrective action.
 .. Allow the battery to charge and the boot process to finish.
 +
 WARNING: *Warning: Do not override the delay. Failure to allow the battery to charge could result in a loss of data.*
 
-. [[step8]]Take one of the following actions:
+. [[man_install4_step8]]Take one of the following actions:
 +
 [cols=2*,options="header",cols="35,65"]
 |===
 |If your system... |Then...
 |Has disks and no back-end storage
-|Skip Step 9 through Step 14 and go to <<Step15,Step 15>>.
+|Skip Step 9 through Step 14 and go to <<man_install4_Step15,Step 15>>.
 |Is a V-Series system or has FlexArray Virtualization Software and is connected to storage arrays
 a|
 .. Go to the section _Set the FC or UTA/UTA2 configuration on node4_ and complete the sections link:config_fc_ports_node4.html[Configure FC ports on node4] and link:check_configure_uta_uta2_ports_node4.html[Check and configure UTA/UTA2 ports on node4], as appropriate to your system.
-.. Return to this section and complete the remaining steps, beginning with <<Step9,Step 9>>.
+.. Return to this section and complete the remaining steps, beginning with <<man_install4_Step9,Step 9>>.
 
 *Important*: You must reconfigure FC onboard ports, UTA/UTA2 onboard ports, and UTA/UTA2 cards before you boot Data ONTAP on the V-Series system.
 |===
 
-. [[Step9]]Add the FC initiator ports of the new node to the switch zones.
+. [[man_install4_Step9]]Add the FC initiator ports of the new node to the switch zones.
 +
 See your storage array and zoning documentation for instructions.
 . Add the FC initiator ports to the storage array as new hosts, mapping the array LUNs to the new hosts.
@@ -111,7 +111,7 @@ Installing a new controller module changes the WWPN values associated with each 
 +
 The system displays all the array LUNs that are visible to each of the FC initiator ports. If the array LUNs are not visible, you cannot reassign disks from node2 to node4 later in this section.
 . Press `Ctrl-C` to display the boot menu and select Maintenance mode.
-. [[Step15]]At the Maintenance mode prompt, enter the following command:
+. [[man_install4_Step15]]At the Maintenance mode prompt, enter the following command:
 +
 `halt`
 +
@@ -135,12 +135,12 @@ The system stops at the boot environment prompt.
 |===
 |If the system you are upgrading... |Then...
 |Does not have the correct or current ONTAP version on node4
-|Go to <<Step20,Step 20>>.
+|Go to <<man_install4_Step20,Step 20>>.
 |Has the correct or current version of ONTAP on node4
-|Go to <<Step25,Step 25>>.
+|Go to <<man_install4_Step25,Step 25>>.
 |===
 
-. [[Step20]]Configure the netboot connection by choosing one of the following actions.
+. [[man_install4_Step20]]Configure the netboot connection by choosing one of the following actions.
 +
 NOTE: You should use the management port and IP address as the netboot connection. Do not use a data LIF IP address or a data outage might occur while the upgrade is being performed.
 
@@ -177,7 +177,7 @@ NOTE: You should use the management port and IP address as the netboot connectio
 |All other systems |`netboot \http://<web_server_ip/path_to_webaccessible_directory/ontap_version>_image.tgz`
 |===
 The `<path_to_the_web-accessible_directory>` should lead to where you downloaded the
-`<ontap_version>_image.tgz` in link:prepare_for_netboot.html#Step1[Step 1] in the section _Prepare for netboot_.
+`<ontap_version>_image.tgz` in link:prepare_for_netboot.html#man_netboot_Step1[Step 1] in the section _Prepare for netboot_.
 +
 NOTE: Do not interrupt the boot.
 
@@ -191,7 +191,7 @@ Disregard the following message:
 +
 The note applies to nondisruptive upgrades of Data ONTAP, and not upgrades of controllers.
 
-. [[step23]] If you are prompted to continue the procedure, enter y, and when prompted for the package, enter the URL:
+. [[man_install4_step23]] If you are prompted to continue the procedure, enter y, and when prompted for the package, enter the URL:
 +
 `\http://<web_server_ip/path_to_web-accessible_directory/ontap_version>_image.tgz`
 
@@ -210,9 +210,9 @@ The node must be rebooted to start using the newly installed software. Do you wa
 +
 The controller module reboots but stops at the boot menu because the boot device was reformatted and the configuration data needs to be restored.
 
-. [[Step25]]Select maintenance mode `5` from the boot menu and enter `y` when you are prompted to continue with the boot.
+. [[man_install4_Step25]]Select maintenance mode `5` from the boot menu and enter `y` when you are prompted to continue with the boot.
 
-. [[Step26]]Before continuing, go to link:set_fc_uta_uta2_config_node4.html[Set the FC or UTA/UTA2 configuration on node4] to make any necessary changes to the FC or UTA/UTA2 ports on the node. Make the changes recommended in those sections, reboot the node, and go into Maintenance mode.
+. [[man_install4_Step26]]Before continuing, go to link:set_fc_uta_uta2_config_node4.html[Set the FC or UTA/UTA2 configuration on node4] to make any necessary changes to the FC or UTA/UTA2 ports on the node. Make the changes recommended in those sections, reboot the node, and go into Maintenance mode.
 
 . Enter the following command and examine the output to find the system ID of node4:
 +
@@ -246,7 +246,7 @@ DISK         OWNER                       POOL   SERIAL NUMBER   HOME
 `<node2_sysid> -d <node4_sysid>`
 |===
 +
-For the `<node2_sysid>` value, use the information captured in link:record_node2_information.html#step10[Step 10] of the _Record node2 information_ section. For `<node4_sysid>`, use the information captured in <<step23,Step 23>>.
+For the `<node2_sysid>` value, use the information captured in link:record_node2_information.html#man_node2_info_step10[Step 10] of the _Record node2 information_ section. For `<node4_sysid>`, use the information captured in <<man_install4_step23,Step 23>>.
 +
 NOTE: The `-p` option is only required in maintenance mode when shared disks are present.
 
@@ -358,7 +358,7 @@ The system stops at the boot environment prompt.
 +
 `set time <hh:mm:ss>`
 
-. Verify the partner system ID is set correctly as noted in <<Step26,Step 26>> under option.
+. Verify the partner system ID is set correctly as noted in <<man_install4_Step26,Step 26>> under option.
 +
 `printenv partner-sysid`
 

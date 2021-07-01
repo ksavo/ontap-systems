@@ -13,7 +13,7 @@ However, you do not need to netboot the controllers if the same version of ONTAP
 
 .Steps
 
-. [[Step1]]Access the NetApp Support Site to download the files used for performing the netboot of the system.
+. [[man_netboot_Step1]]Access the NetApp Support Site to download the files used for performing the netboot of the system.
 
 . Download the appropriate ONTAP software from the software download section of the NetApp Support Site and store the `<ontap_version>_image.tgz` file on a web-accessible directory.
 
