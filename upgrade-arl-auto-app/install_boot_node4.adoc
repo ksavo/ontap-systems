@@ -58,8 +58,8 @@ NOTE:  You should use the management port and IP as the netboot connection. Do n
 
 include::../_include/ru_auto_install_and_boot_node4_step_7_22.adoc[]
 
-[start=23]
-.  [[step23]]Add the FC initiator ports of the new node to the switch zones.
+[auto_install4_start=23]
+.  [[auto_install4_step23]]Add the FC initiator ports of the new node to the switch zones.
 +
 If your system has a tape SAN, then you need zoning for the initiators. If required, modify the onboard ports to initiator by referring to the link:set_fc_or_uta_uta2_config_node4.html#configure-fc-ports-on-node4[Configure FC ports on node4]. See your storage array and zoning documentation for further instructions on zoning.
 

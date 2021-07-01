@@ -16,7 +16,7 @@ summary: Install node3 in the rack, transfer node1's connections to node3, boot 
 include::../_include/ru_auto_install_boot_node3_intro_step_5.adoc[]
 
 [start=6]
-.  [[step6]]Configure the netboot connection by choosing one of the following actions.
+.  [[auto9597_istall3_step6]]Configure the netboot connection by choosing one of the following actions.
 +
 NOTE: You should use the management port and IP as the netboot connection. Do not use a data LIF IP or a data outage might occur while the upgrade is being performed.
 
@@ -43,6 +43,6 @@ NOTE: You should use the management port and IP as the netboot connection. Do no
 include::../_include/ru_auto_install_boot_node3_step_7_28.adoc[]
 
 [start=29]
-. [[step29]]For a MetroCluster configuration, V-Series systems and systems with FlexArray Virtualization software connected to storage arrays,
+. [[auto9597_istall3_step29]]For a MetroCluster configuration, V-Series systems and systems with FlexArray Virtualization software connected to storage arrays,
 go to link:set_fc_or_uta_uta2_config_on_node3.html#step15[Check and configure UTA/UTA2 ports on node 3, Step 15].
 // 2nd half of pg 26 to end of page 30 in PDF
