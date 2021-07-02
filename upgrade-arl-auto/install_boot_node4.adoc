@@ -57,4 +57,4 @@ If required, modify the onboard ports to initiator by referring to the link:set_
 include::../_include/ru_auto_install_and_boot_node4_step_24_28.adoc[]
 
 [start=29]
-. [[step29]] For MetroCluster configuration, V-Series systems and systems with FlexArray Virtualization software connected to storage arrays, go to link:set_fc_or_uta_uta2_config_node4.html#step15[Check and configure UTA/UTA2 ports on node4, Step 15].
+. [[step29]] For MetroCluster configuration, V-Series systems and systems with FlexArray Virtualization software connected to storage arrays, go to link:set_fc_or_uta_uta2_config_node4.html#auto_check_node4_step15[Check and configure UTA/UTA2 ports on node4, Step 15].

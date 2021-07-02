@@ -62,7 +62,7 @@ include::../_include/ru_auto_check_config_uta_uta2_ports_node4_intro_step_11.ado
 +
 If you are upgrading to an A800, go to <<step23,Step 23>>.
 
-. [[step15]]On node4, go to the boot menu, and using 22/7, select the hidden option `boot_after_controller_replacement`. At the prompt, enter node2 to reassign the disks of node2 to node4, as per the following example.
+. [[auto_check_node4_step15]]On node4, go to the boot menu, and using 22/7, select the hidden option `boot_after_controller_replacement`. At the prompt, enter node2 to reassign the disks of node2 to node4, as per the following example.
 +
 ----
 LOADER-A> boot_ontap menu ...

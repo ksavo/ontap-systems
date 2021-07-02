@@ -199,7 +199,7 @@ NOTE: You should use the management port and IP as the netboot connection. Do no
 |`netboot \http://<web_server_ip>/<path_to_webaccessible_directory>/<ontap_version>_image.tgz`
 |===
 +
-The `<path_to_the_web-accessible_directory>` should lead to where you downloaded the `<ontap_version>_image.tgz` in link:prepare_for_netboot.html#Step1[Step 1] in the section _Prepare for netboot_.
+The `<path_to_the_web-accessible_directory>` should lead to where you downloaded the `<ontap_version>_image.tgz` in link:prepare_for_netboot.html#man_netboot_Step1[Step 1] in the section _Prepare for netboot_.
 +
 NOTE: Do not interrupt the boot.
 
