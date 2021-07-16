@@ -134,7 +134,7 @@ node2          node1          true     Connected to node1
 +
 If either node is in partial giveback, use the `storage failover giveback` command to perform the giveback, and then use the `storage failover show-giveback` command to make sure that no aggregates still need to be given back. For detailed information about the commands, refer to link:other_references.html[References] to link to the _ONTAP 9 High-Availability Configuration Guide_.
 
-. [[step9]]Ensure that neither node1 nor node2 owns the aggregates for which it is the current owner (but not the home owner):
+. [[man_prepare_nodes_step9]]Ensure that neither node1 nor node2 owns the aggregates for which it is the current owner (but not the home owner):
 +
 `storage aggregate show -node <node_name> -is-home false -fields owner-name,homename,state`
 +
@@ -165,15 +165,15 @@ aggr4         node1        node2        online
 +
 [cols="35,65"]
 |===
-|If the command in <<step9,Step 9>>...|Then...
+|If the command in <<man_prepare_nodes_step9,Step 9>>...|Then...
 
 |Had blank output
-|Skip Step 11 and go to <<step12,Step 12>>.
+|Skip Step 11 and go to <<man_prepare_nodes_step12,Step 12>>.
 |Had output
-|Go to <<step11,Step 11>>.
+|Go to <<man_prepare_nodes_step11,Step 11>>.
 |===
 
-. [[step11]] If either node1 or node2 owns aggregates for which it is the current owner but not the home owner, complete the following substeps:
+. [[man_prepare_nodes_step11]] If either node1 or node2 owns aggregates for which it is the current owner but not the home owner, complete the following substeps:
 
 .. Return the aggregates currently owned by the partner node to the home owner node:
 +
@@ -199,7 +199,7 @@ aggr4         node1        node1        online
 4 entries were displayed.
 ....
 
-. [[step12]] Ensure that node1 and node2 can access each other's storage and verify that no disks are missing:
+. [[man_prepare_nodes_step12]] Ensure that node1 and node2 can access each other's storage and verify that no disks are missing:
 +
 `storage failover show -fields local-missing-disks,partner-missing-disks`
 +
@@ -235,7 +235,7 @@ node2                 true    true
 +
 `set -privilege advanced`
 
-. [[step15]] Ensure that node1 and node2 are running the same ONTAP release:
+. [[man_prepare_nodes_step15]] Ensure that node1 and node2 are running the same ONTAP release:
 +
 `system node image show -node <node1,node2> -iscurrent true`
 +
@@ -281,7 +281,7 @@ vs0
 2 entries were displayed.
 ....
 
-. If the output in <<step15,Step 15>> shows that either node1 or node2 owns any data LIFs home-owned by other nodes in the cluster, migrate the data LIFs away from node1 or node2:
+. If the output in <<man_prepare_nodes_step15,Step 15>> shows that either node1 or node2 owns any data LIFs home-owned by other nodes in the cluster, migrate the data LIFs away from node1 or node2:
 +
 `network interface revert -vserver * -lif *`
 +
@@ -315,7 +315,7 @@ NOTE: You can use the information to identify parts or accessories that you migh
 +
 NOTE: You can use this information and the information in the following substep to verify that the aggregates and volumes remain online throughout the procedure, except for the brief period when they are offline during relocation.
 
-.. [[step19d]]Enter the following command on both node1 and node2 and record the volumes that are offline on both nodes:
+.. [[man_prepare_nodes_step19]]Enter the following command on both node1 and node2 and record the volumes that are offline on both nodes:
 +
 `volume show -node <node_name> -state offline`
 +
@@ -382,12 +382,12 @@ node1   e1b-70    e1b     70      00:15:17:76:7b:69
 |If interface groups or VLANS are... |Then...
 
 |On node1 or node2
-|Complete <<step23,Step 23>> and <<step24,Step 24>>.
+|Complete <<man_prepare_nodes_step23,Step 23>> and <<man_prepare_nodes_step24,Step 24>>.
 |Not on node1 or node2
-|Go to <<step24,Step 24>>.
+|Go to <<man_prepare_nodes_step24,Step 24>>.
 |===
 
-. [[step23]] If you do not know if node1 and node2 are in a SAN or non-SAN environment, enter the following command and examine its output:
+. [[man_prepare_nodes_step23]] If you do not know if node1 and node2 are in a SAN or non-SAN environment, enter the following command and examine its output:
 +
 `network interface show -vserver <vserver_name> -data-protocol iscsi|fcp`
 +
@@ -411,7 +411,7 @@ Vserver  Interface  Admin/Oper Address/Mask       Node     Port    Home
 vs1      vs1_lif1   up/down    172.17.176.20/24   node1    0d      true
 ....
 
-. [[step24]]Verify that all the nodes in the cluster are in quorum by completing the following substeps:
+. [[man_prepare_nodes_step24]]Verify that all the nodes in the cluster are in quorum by completing the following substeps:
 
 .. Enter the advanced privilege level:
 +
@@ -457,12 +457,12 @@ Nodes in a cluster are in quorum when a simple majority of nodes are healthy and
 |If the cluster... |Then...
 
 |Has SAN configured
-|Go to <<step26,Step 26>>.
+|Go to <<man_prepare_nodes_step26,Step 26>>.
 |Does not have SAN configured
-|Go to <<step29,Step 29>>.
+|Go to <<man_prepare_nodes_step29,Step 29>>.
 |===
 
-. [[step26]]Verify that there are SAN LIFs on node1 and node2 for each SVM that has either SAN iSCSI or FC service enabled by entering the following command and examining its output:
+. [[man_prepare_nodes_step26]]Verify that there are SAN LIFs on node1 and node2 for each SVM that has either SAN iSCSI or FC service enabled by entering the following command and examining its output:
 +
 `network interface show -data-protocol iscsi|fcp -home-node <node_name>`
 +
@@ -539,7 +539,7 @@ node2 0   50  I_1818FAStT_1
 7 entries were displayed.
 ....
 
-. [[step29]]Complete the following substeps:
+. [[man_prepare_nodes_step29]]Complete the following substeps:
 .. Enter the following command on one of the original nodes and record the output:
 +
 `service-processor show -node * -instance`
@@ -553,7 +553,7 @@ The system displays detailed information about the SP on both nodes.
 You might want to reuse the network parameters of the remote management devices, in this case the SPs, from the original system for the SPs on the new nodes.
 For detailed information about the SP, refer to link:other_references.html[References] to link to the _System Administration Reference_ and the _ONTAP 9 Commands: Manual Page Reference_.
 
-. [[step30]]If you want the new nodes to have the same licensed functionality as the original nodes, enter the following command to see the cluster licenses on the original system:
+. [[man_prepare_nodes_step30]]If you want the new nodes to have the same licensed functionality as the original nodes, enter the following command to see the cluster licenses on the original system:
 +
 `system license show -owner *`
 +
@@ -603,7 +603,7 @@ node2            enable    Postmaster    -                 mailhost
 |If the original system... |Then...
 
 |Has AutoSupport enabled...
-a|.. Go to <<step34,Step 34>>.
+a|.. Go to <<man_prepare_nodes_step34,Step 34>>.
 .. Go to the section link:get_address_key_management_server_encryption.html[Get an IP address of an external key management server for Storage Encryption].
 |Does not have AutoSupport enabled...
 a|.. Enable AutoSupport by following the instructions in the _System Administration Reference_. (Refer to link:other_references.html[References] to link to the _System Administration Reference_.)
@@ -613,19 +613,19 @@ a|.. Enable AutoSupport by following the instructions in the _System Administrat
 .. Go to the link:get_address_key_management_server_encryption.html[Get an IP address of an external key management server for Storage Encryption] section.
 |===
 
-. [[step34]]Verify that AutoSupport is configured with the correct mailhost details and recipient e-mail IDs by entering the following command on both of the original nodes and examining the output:
+. [[man_prepare_nodes_step34]]Verify that AutoSupport is configured with the correct mailhost details and recipient e-mail IDs by entering the following command on both of the original nodes and examining the output:
 +
 `system node autosupport show -node node_name -instance`
 +
 For detailed information about AutoSupport, refer to link:other_references.html[References] to link to the _System Administration Reference_ and the _ONTAP 9 Commands: Manual Page Reference_.
 
-. [[step35,Step 35]] Send an AutoSupport message to NetApp for node1 by entering the following command:
+. [[man_prepare_nodes_step35,Step 35]] Send an AutoSupport message to NetApp for node1 by entering the following command:
 +
 `system node autosupport invoke -node node1 -type all -message "Upgrading node1 from platform_old to platform_new"`
 +
 NOTE: Do not send an AutoSupport message to NetApp for node2 at this point; you do so later in the procedure.
 
-. [[step36, Step 36]] Verify that the AutoSupport message was sent by entering the following command and examining its output:
+. [[man_prepare_nodes_step36, Step 36]] Verify that the AutoSupport message was sent by entering the following command and examining its output:
 +
 `system node autosupport show -node <node1> -instance`
 +

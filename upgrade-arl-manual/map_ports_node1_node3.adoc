@@ -133,7 +133,7 @@ network port broadcast-domain remove-ports -ipspace Cluster -broadcast-domain Cl
 +
 `cluster show -node <node3> -fields health`
 
-. [[step5]]Adjust the broadcast domains hosting your cluster LIFs and node-management and/or cluster-management LIFs. Ensure that each broadcast domain contains the correct ports. A port cannot be moved between broadcast domains if it is hosting or is home to a LIF, so you might need to migrate and modify the LIFs as follows:
+. [[man_map_1_step5]]Adjust the broadcast domains hosting your cluster LIFs and node-management and/or cluster-management LIFs. Ensure that each broadcast domain contains the correct ports. A port cannot be moved between broadcast domains if it is hosting or is home to a LIF, so you might need to migrate and modify the LIFs as follows:
 +
 .. Display the home port of a LIF:
 +
@@ -153,9 +153,9 @@ network port broadcast-domain remove-ports -ipspace Cluster -broadcast-domain Cl
 +
 `network interface modify -vserver <Vserver-name> -lif <LIF-name> –home-port <port-name>`
 
-. [[step6]]Adjust the intercluster broadcast domains and migrate the intercluster LIFs, if necessary, using the same commands shown in <<step5,Step 5>>.
+. [[man_map_1_step6]]Adjust the intercluster broadcast domains and migrate the intercluster LIFs, if necessary, using the same commands shown in <<man_map_1_step5,Step 5>>.
 
-. [[step7]]Adjust any other broadcast domains and migrate the data LIFs, if necessary, using the same commands shown in <<step5,Step 5>>.
+. [[step7]]Adjust any other broadcast domains and migrate the data LIFs, if necessary, using the same commands shown in <<man_map_1_step5,Step 5>>.
 
 . [[step8]]If there were any ports on node1 that no longer exist on node3, follow these steps to delete them:
 

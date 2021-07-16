@@ -2,7 +2,7 @@ Having relocated node2's non-root aggregates to node3, you now must relocate the
 
 .Steps
 
-. [[Step1]]Enter the following command on either controller, and examine the output to identify which non-root aggregates to relocate:
+. [[man_relocate_3_4_Step1]]Enter the following command on either controller, and examine the output to identify which non-root aggregates to relocate:
 +
 `storage aggregate show -owner-name <node3> -home-id <node2_system_id>`
 
@@ -15,7 +15,7 @@ Having relocated node2's non-root aggregates to node3, you now must relocate the
 +
 `storage aggregate relocation start -node <node3> -destination <node4> -aggregate-list <aggr_name1, aggr_name2...> -ndo-controller-upgrade true`
 +
-The aggregate list is the list of aggregates owned by node4 that you obtained in <<Step1,Step 1>>.
+The aggregate list is the list of aggregates owned by node4 that you obtained in <<man_relocate_3_4_Step1,Step 1>>.
 .. When prompted, enter `y`.
 +
 Relocation occurs in the background. It could take anywhere from a few seconds to a couple of minutes to relocate an aggregate. The time includes both client outage and non-outage portions. The command does not relocate any offline or restricted aggregates.
@@ -36,7 +36,7 @@ NOTE: Wait until all the node2 aggregates have been relocated to node4 before pr
 [cols=2*,options="header",cols="35,65"]
 |===
 |If relocation of... |Then...
-|All aggregates was successful |Go to <<Step5,Step 5>>.
+|All aggregates was successful |Go to <<man_relocate_3_4_Step5,Step 5>>.
 |Any aggregates failed, or were vetoed
 a|
 .. Check the EMS logs for the corrective action.
@@ -66,11 +66,11 @@ If necessary, you can force the relocation using one of the following methods:
 For more information about storage aggregate relocation commands refer to link:other_references.html[References] to link to the _ONTAP 9 Disks and Aggregates Power Guide_ and the _ONTAP 9 Commands: Manual Page Reference_.
 |===
 
-. [[Step5]]Verify that all node2 non-root aggregates are online and their state on node4:
+. [[man_relocate_3_4_Step5]]Verify that all node2 non-root aggregates are online and their state on node4:
 +
 `storage aggregate show -node <node4> -state offline -root false`
 +
-The node2 aggregates were listed in the output of the command in <<Step1,Step 1>>.
+The node2 aggregates were listed in the output of the command in <<man_relocate_3_4_Step1,Step 1>>.
 
 . If any aggregate has gone offline or become foreign, bring it online by using the following command for each aggregate:
 +

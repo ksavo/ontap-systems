@@ -70,7 +70,7 @@ When all cluster LIFs are migrated and cluster communication is established, the
 +
 `cluster show -node <node1> -fields health`
 
-. [[step3]]Modify the broadcast domain memberships of physical ports hosting data LIFs.
+. [[man_map_1_step3]]Modify the broadcast domain memberships of physical ports hosting data LIFs.
 
 .. List the reachability status of all ports:
 +
@@ -117,7 +117,7 @@ Create VLAN ports:
 NOTE: Depending on the complexity of the networking configuration of the system being upgraded, you might be required to repeat Substeps (a) to (g) until all ports are placed correctly where needed.
 
 
-. [[step4]]If there are no VLANs configured on the system, go to <<step5,Step 5>>. If there are VLANs configured, restore displaced VLANs that were previously configured on ports that no longer exist or were configured on ports that were moved to another broadcast domain.
+. [[step4]]If there are no VLANs configured on the system, go to <<man_map_1_step5,Step 5>>. If there are VLANs configured, restore displaced VLANs that were previously configured on ports that no longer exist or were configured on ports that were moved to another broadcast domain.
 
 .. Display the displaced VLANs:
 +
@@ -135,7 +135,7 @@ NOTE: Depending on the complexity of the networking configuration of the system 
 +
 `network port reachability show`
 
-. [[step5]]Starting with ONTAP 9.8, ONTAP will automatically modify the home ports of LIFs if the ports are moved between broadcast domains during the network port reachability repair procedure. If a LIF’s home port was moved to another node, or is unassigned, that LIF will be presented as a displaced LIF. Restore the home ports of displaced LIFs whose home ports either no longer exist or were relocated to another node.
+. [[man_map_1_step5]]Starting with ONTAP 9.8, ONTAP will automatically modify the home ports of LIFs if the ports are moved between broadcast domains during the network port reachability repair procedure. If a LIF’s home port was moved to another node, or is unassigned, that LIF will be presented as a displaced LIF. Restore the home ports of displaced LIFs whose home ports either no longer exist or were relocated to another node.
 
 .. Display the LIFs whose home ports might have moved to another node or no longer exist:
 +
@@ -150,9 +150,9 @@ NOTE: Depending on the complexity of the networking configuration of the system 
 `displaced-interface show`
 
 +
-When all ports are correctly configured and added to the correct broadcast domains, the `network port reachability show` command should report the reachability status as "ok" for all connected ports, and the status as "no-reachability" for ports with no physical connectivity. If any ports are reporting a status other than these two, repair the reachability as outlined in <<step3,Step 3>>.
+When all ports are correctly configured and added to the correct broadcast domains, the `network port reachability show` command should report the reachability status as "ok" for all connected ports, and the status as "no-reachability" for ports with no physical connectivity. If any ports are reporting a status other than these two, repair the reachability as outlined in <<man_map_1_step3,Step 3>>.
 
-. [[step6]]Verify that all LIFs are administratively up on ports belonging to the correct broadcast domains.
+. [[man_map_1_step6]]Verify that all LIFs are administratively up on ports belonging to the correct broadcast domains.
 
 .. Check for any LIFs that are administratively down:
 +

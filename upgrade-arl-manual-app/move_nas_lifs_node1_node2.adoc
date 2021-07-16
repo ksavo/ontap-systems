@@ -62,14 +62,14 @@ Remote LIFs handle traffic to SAN LUNs during the upgrade procedure. Moving SAN 
 |If the cluster is configured for... |Then...
 
 |NAS
-|Complete <<step5,Step 5>> through <<step8,Step 8>>.
+|Complete <<man_lif_1_2_step5,Step 5>> through <<man_lif_1_2_step8,Step 8>>.
 |SAN
 |Disable all the SAN LIFs on the node to take them down for the upgrade:
 
 `network interface modify -vserver <Vserver-name> -lif <LIF_name> -home-node <node_to_upgrade> -home-port <netport\|ifgrp> -status-admin down`
 |===
 
-.	[[step5]]Migrate NAS data LIFs from node1 to node2 by entering the following command, once for each data LIF:
+.	[[man_lif_1_2_step5]]Migrate NAS data LIFs from node1 to node2 by entering the following command, once for each data LIF:
 +
 `network interface migrate -vserver <Vserver-name> -lif <LIF_name> -destination-node <node2> -destination-port <data_port>`
 
@@ -81,13 +81,13 @@ Remote LIFs handle traffic to SAN LUNs during the upgrade procedure. Moving SAN 
 +
 `network interface modify -vserver <Vserver-name> -lif <LIF_name> -home-node <node2> -home-port <port_name>`
 
-.	[[step8]]Verify whether the LIF is using the port as its home or current port. If the port is not home or current port then go to <<step9,Step 9>>:
+.	[[man_lif_1_2_step8]]Verify whether the LIF is using the port as its home or current port. If the port is not home or current port then go to <<man_lif_1_2_step9,Step 9>>:
 +
 `network interface show -home-node <node2> -home-port <port_name>`
 +
 `network interface show -curr-node <node_name> -curr-port <port_name>`
 
-.	[[step9]]If the LIFs are using the port as a home port or current port, then modify the LIF to use a different port:
+.	[[man_lif_1_2_step9]]If the LIFs are using the port as a home port or current port, then modify the LIF to use a different port:
 +
 `network interface migrate -vserver <Vserver-name> -lif <LIF_name> -destination–node <node_name> -destination-port <port_name>`
 +

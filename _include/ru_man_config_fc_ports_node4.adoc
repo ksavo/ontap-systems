@@ -20,11 +20,11 @@ You can skip this section if your system does not have FC configurations. If you
 |===
 |If the system that you are upgrading... |Then…
 |Has storage disks
-|Go to <<Step5,Step 5>>.
+|Go to <<man_config_4_Step5,Step 5>>.
 |Is a V-Series system or has FlexArray Virtualization Software and is connected to storage arrays
-|Go to <<Step2,Step 2>>.
+|Go to <<man_config_4_Step2,Step 2>>.
 |===
-. [[Step2]]Access Maintenance mode:
+. [[man_config_4_Step2]]Access Maintenance mode:
 +
 `boot_ontap maint`
 . Take one of the following actions:
@@ -43,7 +43,7 @@ The system displays information about all FC and converged network adapters on t
 
 . Compare the FC settings on the new nodes with the settings that you captured earlier from the original node.
 
-. [[Step5]]Take one of the following actions:
+. [[man_config_4_Step5]]Take one of the following actions:
 +
 [cols=2*,options="header",cols="35,65"]
 |===
@@ -92,12 +92,12 @@ a|Modify the FC ports on node4 as needed:
 |===
 |If the default FC settings on the new nodes are... |Then…
 |The same as the ones you that captured on the original nodes
-|Go to <<Step11,Step 11>>.
+|Go to <<man_config_4_Step11,Step 11>>.
 |Different from the ones that you captured on the original nodes
-|Go to <<Step8,Step8>>.
+|Go to <<man_config_4_Step8,Step8>>.
 |===
 
-. [[Step8]]Exit Maintenance mode:
+. [[man_config_4_Step8]]Exit Maintenance mode:
 +
 `halt`
 
@@ -120,7 +120,7 @@ a|Modify the FC ports on node4 as needed:
 `boot_ontap`
 |===
 
-. [[Step11]]Take one of the following actions:
+. [[man_config_4_Step11]]Take one of the following actions:
 +
 [cols=2*,options="header",cols="35,65"]
 |===

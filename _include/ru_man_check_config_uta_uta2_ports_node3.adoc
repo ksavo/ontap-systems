@@ -100,12 +100,12 @@ Contact your NetApp representative to obtain the correct SFP+ module.
 |If the UTA/UTA2 ports... |Then...
 
 |Do not have the personality that you want
-|Go to <<step5a,Step 5>>.
+|Go to <<man_check_3_step5,Step 5>>.
 |Have the personality that you want
-|Skip Step 5 through Step 12 and go to <<step13a,Step 13>>.
+|Skip Step 5 through Step 12 and go to <<man_check_3_step13,Step 13>>.
 |===
 
-. [[step5a]]Take one of the following actions:
+. [[man_check_3_step5]]Take one of the following actions:
 +
 [cols="35,65"]
 |===
@@ -116,30 +116,30 @@ Contact your NetApp representative to obtain the correct SFP+ module.
 
 `boot_ontap maint`
 |Is a V-Series system or has FlexArray Virtualization Software and is connected to storage arrays
-|Go to <<step6a,Step 6>>.
+|Go to <<man_check_3_step6,Step 6>>.
 
 You should already be in maintenance mode.
 |===
 
-. [[step6a]]Take one of the following actions:
+. [[man_check_3_step6]]Take one of the following actions:
 +
 [cols="35,65"]
 |===
 |If you are configuring... |Then...
 
 |Ports on a UTA/UTA2 card
-|Go to <<step7a,Step 7>>.
+|Go to <<man_check_3_step7,Step 7>>.
 |Onboard UTA/UTA2 ports
-|Skip Step 7 and go to <<step8a,Step 8>>.
+|Skip Step 7 and go to <<man_check_3_step8,Step 8>>.
 |===
 
-. [[step7a]]If the adapter is in initiator mode, and if the UTA/UTA2 port is online, take the UTA/UTA2 port offline:
+. [[man_check_3_step7]]If the adapter is in initiator mode, and if the UTA/UTA2 port is online, take the UTA/UTA2 port offline:
 +
 `storage disable adapter <adapter_name>`
 +
 Adapters in target mode are automatically offline in maintenance mode.
 
-. [[step8a]]If the current configuration does not match the desired use, change the configuration as needed:
+. [[man_check_3_step8]]If the current configuration does not match the desired use, change the configuration as needed:
 +
 `ucadmin modify -m fc|cna -t initiator|target <adapter_name>`
 +
@@ -227,7 +227,7 @@ Adapter  Mode     Type       Mode     Type       Status
 |`fcp config <adapter_name> up`
 |===
 
-. [[step13a]]Cable the port.
+. [[man_check_3_step13]]Cable the port.
 
 . [[step14]]Take one of the following actions:
 +

@@ -17,7 +17,7 @@ node2                 true    true
 2 entries were displayed.
 ----
 
-. [[step2]]Disable storage failover, as applicable:
+. [[man_retire_1_step2]]Disable storage failover, as applicable:
 +
 [cols="35,65"]
 |===
@@ -73,12 +73,12 @@ Look in the *Status Admin/Oper* column to see if any LIFs are down. If any LIFs 
 |If the cluster is... |Then...
 
 |A two-node cluster
-|Go to <<step6,Step 6>>.
+|Go to <<man_retire_1_step6,Step 6>>.
 |A cluster with more than two nodes
-|Go to <<step8,Step 8>>.
+|Go to <<man_retire_1_step8,Step 8>>.
 |===
 
-. [[step6]]Access the advanced privilege level on either node:
+. [[man_retire_1_step6]]Access the advanced privilege level on either node:
 +
 `set -privilege advanced`
 
@@ -92,9 +92,9 @@ The system displays the following message:
 High Availability Configured: false
 ----
 +
-If cluster HA has not been disabled, repeat <<step2,Step 2>>.
+If cluster HA has not been disabled, repeat <<man_retire_1_step2,Step 2>>.
 
-. [[step8]]Check whether node1 currently holds epsilon:
+. [[man_retire_1_step8]]Check whether node1 currently holds epsilon:
 +
 `cluster show`
 +

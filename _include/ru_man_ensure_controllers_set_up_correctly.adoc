@@ -29,10 +29,10 @@ node4          node3          true     Connected to node3
 |Two-node cluster |Enable cluster high availability by entering the following command on either node:
 `cluster ha modify -configured true`
 |Cluster with more than two nodes
-|Go to <<Step4,Step 4>>.
+|Go to <<man_ensure_setup_Step4,Step 4>>.
 |===
 
-. [[Step4]]Verify that node3 and node4 belong to the same cluster by entering the following command and examining the output:
+. [[man_ensure_setup_Step4]]Verify that node3 and node4 belong to the same cluster by entering the following command and examining the output:
 +
 `cluster show`
 

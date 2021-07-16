@@ -1,12 +1,12 @@
-. [[step6]]Migrate each NAS data LIF to node3 by entering the following command, once for each LIF:
+. [[man_lif_verify_3_step6]]Migrate each NAS data LIF to node3 by entering the following command, once for each LIF:
 +
 `network interface migrate -vserver <vserver_name> -lif <LIF_name> -destination-node <node3> -destination-port <netport|ifgrp>`
 
-. [[step7]]Make sure that the data migration is persistent:
+. [[man_lif_verify_3_step7]]Make sure that the data migration is persistent:
 +
 `network interface modify -vserver <vserver_name> -lif <LIF_name>-home-port <netport|ifgrp> -home-node <node3>`
 
-. [[step8]]Ensure that the SAN LIFs are on the correct ports on node3:
+. [[man_lif_verify_3_step8]]Ensure that the SAN LIFs are on the correct ports on node3:
 
 .. Enter the following command and examine its output:
 +

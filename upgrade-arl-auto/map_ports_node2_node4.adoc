@@ -129,7 +129,7 @@ This command removes port "e0d" on node4:
 +
 `cluster show -node node4 -fields health`
 
-. [[Step5]]Adjust the broadcast domains hosting your cluster LIFs and node-management/clustermanagement LIFs. Ensure that each broadcast domain contains the correct ports. A port cannot be moved between broadcast domains if it is hosting or is home to a LIF so you may need to migrate and modify the LIFs as shown in the following steps:
+. [[auto_map_4_Step5]]Adjust the broadcast domains hosting your cluster LIFs and node-management/clustermanagement LIFs. Ensure that each broadcast domain contains the correct ports. A port cannot be moved between broadcast domains if it is hosting or is home to a LIF so you may need to migrate and modify the LIFs as shown in the following steps:
 +
 .. Display the home port of a LIF:
 +
@@ -145,9 +145,9 @@ This command removes port "e0d" on node4:
 +
 `network interface modify -vserver <vserver> -lif <lif_name> –home-port <port_name>`
 
-. Adjust the intercluster broadcast domains and migrate the intercluster LIFs, if necessary, using the same commands shown in <<Step5,Step 5>>.
+. Adjust the intercluster broadcast domains and migrate the intercluster LIFs, if necessary, using the same commands shown in <<auto_map_4_Step5,Step 5>>.
 
-. Adjust any other broadcast domains and migrate the data LIFs, if necessary, using the same commands shown in <<Step5,Step 5>>.
+. Adjust any other broadcast domains and migrate the data LIFs, if necessary, using the same commands shown in <<auto_map_4_Step5,Step 5>>.
 
 . If there were any ports on node2 that no longer exist on node4, follow these steps to delete them:
 +

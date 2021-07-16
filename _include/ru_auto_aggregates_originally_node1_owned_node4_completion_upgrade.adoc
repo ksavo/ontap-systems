@@ -23,7 +23,7 @@ To identify aggregates that were not correctly relocated, refer to the list of a
 
 . Compare the output of Step 1 with the output you captured for node1 in the section link:prepare_nodes_for_upgrade.html[Prepare the nodes for upgrade] and note any aggregates that were not correctly relocated.
 
-. [[Step3]]Relocate the aggregates left behind on node4:
+. [[auto_aggr_relocate_fail_Step3]]Relocate the aggregates left behind on node4:
 +
 `storage aggregate relocation start -node <node4> -aggr <aggr_node_1> -destination <node3>`
 +
@@ -35,4 +35,4 @@ Do not use the `-ndo-controller-upgrade` parameter during this relocation.
 +
 `<aggr1,aggr2,aggr3...>` is the list of aggregates that had node1 as the original home owner.
 +
-Aggregates that do not have node3 as home owner can be relocated to node3 using the same relocation command in <<Step3,Step 3>>.
+Aggregates that do not have node3 as home owner can be relocated to node3 using the same relocation command in <<auto_aggr_relocate_fail_Step3,Step 3>>.

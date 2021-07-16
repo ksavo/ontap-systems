@@ -30,7 +30,7 @@ NOTE: Wait until all non-root aggregates owned by node1 have been relocated to n
 [cols=2*,options="header",cols="35,65"]
 |===
 |If relocation... |Then..
-|Of all aggregates is successful |Go to <<step4,Step 4>>.
+|Of all aggregates is successful |Go to <<man_relocate_1_2_step4,Step 4>>.
 |Of any aggregates fails or is
 vetoed
 a|.. Check the EMS logs for the corrective action.
@@ -49,7 +49,7 @@ If necessary, you can force the relocation using one of the following methods:
 Refer to link:other_references.html[References] to link to the _Disks and Aggregates Power Guide_ and the _ONTAP 9 Commands: Manual Page Reference_ for more information about storage aggregate relocation commands.
 |===
 
-. [[step4]] Verify that all the non-root aggregates are online and their state on node2:
+. [[man_relocate_1_2_step4]] Verify that all the non-root aggregates are online and their state on node2:
 +
 `storage aggregate show -node <node2> -state online -root false`
 +

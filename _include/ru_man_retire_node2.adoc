@@ -8,12 +8,12 @@ To retire node2, you need to shut node2 down properly and remove it from the rac
 |===
 |If the cluster is... |Then...
 |A two-node cluster
-|Go to <<Step2,Step 2>>.
+|Go to <<man_retire_2_Step2,Step 2>>.
 |A cluster with more than two nodes
-|Go to <<Step9,Step 9>>.
+|Go to <<man_retire_2_Step9,Step 9>>.
 |===
 
-. [[Step2]]Access the advanced privilege level by entering the following command on either node:
+. [[man_retire_2_Step2]]Access the advanced privilege level by entering the following command on either node:
 +
 `set -privilege advanced`
 
@@ -75,7 +75,7 @@ Enable Switchless Cluster: false/true
 +
 The value of this command must match the physical state of the system.
 
-. [[Step9]]Return to the admin level:
+. [[man_retire_2_Step9]]Return to the admin level:
 +
 `set -privilege admin`
 

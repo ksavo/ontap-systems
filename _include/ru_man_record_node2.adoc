@@ -97,10 +97,10 @@ You will use the information in the section link:map_ports_node2_node4.html[Map 
 |Recorded NVRAM System ID number in link:prepare_nodes_for_upgrade.html[Prepare the nodes for upgrade]
 |Go to link:retire_node2.html[Retire node2].
 |Did not record the NVRAM System ID number in link:prepare_nodes_for_upgrade.html[Prepare the nodes for upgrade]
-|Complete <<step9,Step 9>> and <<step10,Step 10>> and then go to the next section, link:retire_node2.html[Retire node2].
+|Complete <<man_record_2_step9,Step 9>> and <<man_record_2_step10,Step 10>> and then go to the next section, link:retire_node2.html[Retire node2].
 |===
 
-. [[step9]]Display the attributes of node 2:
+. [[man_record_2_step9]]Display the attributes of node 2:
 +
 `system node show -instance -node node2`
 +

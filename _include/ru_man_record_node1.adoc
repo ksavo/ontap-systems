@@ -40,7 +40,7 @@ The system displays output similar to the following example:
                           gamma.netapp.com                     10.10.60.20
 ----
 
-.	[[step3]]Find the cluster network and node-management ports on node1 by entering the following command on either controller:
+.	[[man_record_node1_step3]]Find the cluster network and node-management ports on node1 by entering the following command on either controller:
 +
 `network interface show -curr-node <node1> -role cluster,intercluster,node-mgmt,cluster-mgmt`
 +
@@ -65,7 +65,7 @@ The system displays the cluster, intercluster, node-management, and cluster-mana
 +
 NOTE: Your system might not have intercluster LIFs.
 
-.	Capture the information in the output of the command in <<step3,Step 3>> to use in the section link:map_ports_node1_node3.html[Map ports from node1 to node3].
+.	Capture the information in the output of the command in <<man_record_node1_step3,Step 3>> to use in the section link:map_ports_node1_node3.html[Map ports from node1 to node3].
 +
 The output information is required to map the new controller ports to the old controller ports.
 
@@ -143,10 +143,10 @@ You will use the information in the section link:map_ports_node1_node3.html[Map 
 |Recorded the NVRAM System ID number in the section link:prepare_nodes_for_upgrade.html[Prepare the nodes for the upgrade].
 |Go on to the next section, link:retire_node1.html[Retire node1].
 |Did not record the NVRAM System ID number in the section link:prepare_nodes_for_upgrade.html[Prepare the nodes for the upgrade]
-|Complete <<step11,Step 11>> and <<step12,Step 12>> and then continue to link:retire_node1.html[Retire node1].
+|Complete <<man_record_node1_step11,Step 11>> and <<man_record_node1_step12,Step 12>> and then continue to link:retire_node1.html[Retire node1].
 |===
 
-.	[[step11]]Enter the following command on either controller:
+.	[[man_record_node1_step11]]Enter the following command on either controller:
 +
 `system node show -instance -node <node1>`
 +
@@ -168,4 +168,4 @@ The system displays information about node1 as shown in the following example:
                        Eligibility: true
 ----
 
-.	[[step12]]Record the NVRAM System ID number to use in the section link:install_boot_node3.html[Install and boot node3].
+.	[[man_record_node1_step12]]Record the NVRAM System ID number to use in the section link:install_boot_node3.html[Install and boot node3].
