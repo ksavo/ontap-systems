@@ -67,9 +67,9 @@ include::../_include/ru_auto_check_config_uta_uta2_ports_node4_intro_step_11.ado
 +
 `boot_ontap menu`.
 +
-If you are upgrading to an A800, go to <<step23,Step 23>>
+If you are upgrading to an A800, go to <<auto_check_4_step23,Step 23>>
 
-. [[auto_check_node4_step15]]On node4, go to the boot menu and using 22/7 and select the hidden option `boot_after_controller_replacement`. At the prompt, enter node2 to reassign the disks of node2 to node4, as per the following example.
+. [[auto_check_4_step15]]On node4, go to the boot menu and using 22/7 and select the hidden option `boot_after_controller_replacement`. At the prompt, enter node2 to reassign the disks of node2 to node4, as per the following example.
 +
 ----
 LOADER-A> boot_ontap menu
@@ -190,7 +190,7 @@ Login:
 +
 NOTE: In the above console output example, ONTAP will prompt you for the partner node name if the system uses Advanced Disk Partitioning (ADP) disks.
 
-. If the system goes into a reboot loop with the message `no disks found`, it indicates that the system has reset the FC or UTA/UTA2 ports back to the target mode and therefore is unable to see any disks. To resolve this, continue with <<step17,Step 17>> to <<step22,Step 22>> or go to section link:verify_node4_installation.html[Verify the node4 installation].
+. If the system goes into a reboot loop with the message `no disks found`, it indicates that the system has reset the FC or UTA/UTA2 ports back to the target mode and therefore is unable to see any disks. To resolve this, continue with <<auto_check_4_step17,Step 17>> to <<auto_check_4_step22,Step 22>> or go to section link:verify_node4_installation.html[Verify the node4 installation].
 
 include::../_include/ru_auto_check_config_uta_uta2_ports_node4_step_17_22.adoc[]
 

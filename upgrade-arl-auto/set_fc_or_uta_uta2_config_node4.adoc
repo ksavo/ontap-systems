@@ -52,7 +52,7 @@ include::../_include/ru_auto_check_config_uta_uta2_ports_node4_intro_step_11.ado
 |Return to the section _Install and boot node4_, and resume at link:install_boot_node4.html#step23[Step 23].
 |===
 
-. [[step13]]Exit Maintenance mode:
+. [[auto_check_4_step13]]Exit Maintenance mode:
 +
 `halt`
 
@@ -60,9 +60,9 @@ include::../_include/ru_auto_check_config_uta_uta2_ports_node4_intro_step_11.ado
 +
 `boot_ontap menu`
 +
-If you are upgrading to an A800, go to <<step23,Step 23>>.
+If you are upgrading to an A800, go to <<auto_check_4_step23,Step 23>>.
 
-. [[auto_check_node4_step15]]On node4, go to the boot menu, and using 22/7, select the hidden option `boot_after_controller_replacement`. At the prompt, enter node2 to reassign the disks of node2 to node4, as per the following example.
+. [[auto_check_4_step15]]On node4, go to the boot menu, and using 22/7, select the hidden option `boot_after_controller_replacement`. At the prompt, enter node2 to reassign the disks of node2 to node4, as per the following example.
 +
 ----
 LOADER-A> boot_ontap menu ...
@@ -139,7 +139,7 @@ Override system ID? {y|n} y
 Login: ...
 ----
 
-. If the system goes into a reboot loop with the message `no disks found`, this is because it has reset the ports back to the target mode and therefore is unable to see any disks. Continue with <<step17,Step 17>> through <<step22,Step 22>> to resolve this.
+. If the system goes into a reboot loop with the message `no disks found`, this is because it has reset the ports back to the target mode and therefore is unable to see any disks. Continue with <<auto_check_4_step17,Step 17>> through <<auto_check_4_step22,Step 22>> to resolve this.
 
 include::../_include/ru_auto_check_config_uta_uta2_ports_node4_step_17_22.adoc[]
 

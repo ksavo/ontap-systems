@@ -67,24 +67,24 @@ Contact your NetApp representative to obtain the correct SFP+ module.
 |If the CNA ports... |Then…
 
 |Do not have the personality that you want
-|Go to <<step5,Step 5>>.
+|Go to <<auto_check_4_step5,Step 5>>.
 
 |Have the personality that you want
 
-|Skip Step 5 through Step 12 and go to <<step13,Step 13>>.
+|Skip Step 5 through Step 12 and go to <<auto_check_4_step13,Step 13>>.
 
 |===
 
-. [[step5]]Take one of the following actions:
+. [[auto_check_4_step5]]Take one of the following actions:
 +
 [cols=2*,options="header"cols="30,70"]
 |===
 |If you are configuring... |Then…
 
 |Ports on a UTA/UTA2 card
-|Go to <<step7,Step 7>>
+|Go to <<auto_check_4_step7,Step 7>>
 |Onboard UTA/UTA2 ports
-|Skip Step 7 and go to <<step8a,Step 8>>.
+|Skip Step 7 and go to <<auto_check_4_step8,Step 8>>.
 |===
 
 . If the adapter is in initiator mode, and if the UTA/UTA2 port is online, take the UTA/UTA2 port offline:
@@ -93,7 +93,7 @@ Contact your NetApp representative to obtain the correct SFP+ module.
 +
 Adapters in target mode are automatically offline in Maintenance mode.
 
-. [[step7]]If the current configuration does not match the desired use, change the configuration as needed:
+. [[auto_check_4_step7]]If the current configuration does not match the desired use, change the configuration as needed:
 +
 `ucadmin modify -m fc|cna -t initiator|target <adapter_name>`
 
@@ -102,7 +102,7 @@ Adapters in target mode are automatically offline in Maintenance mode.
 +
 NOTE: You must use FC initiator for tape drives, FlexArray Virtualization systems, and MetroCluster configurations. You must use the FC target for SAN clients.
 
-. [[step8a]]Verify the settings by using the following command and examining its output:
+. [[auto_check_4_step8]]Verify the settings by using the following command and examining its output:
 +
 `ucadmin show`
 

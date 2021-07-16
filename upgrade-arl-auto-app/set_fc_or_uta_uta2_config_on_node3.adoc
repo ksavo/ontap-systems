@@ -30,7 +30,7 @@ include::../_include/ru_auto_set_fc_or_uta_uta2_confgig_node3_choices.adoc[]
 include::../_include/ru_auto_config_fc_ports_node3.adoc[]
 
 [start=8]
-. [[step8]]Take one of the following actions:
+. [[auto_check3_step8]]Take one of the following actions:
 +
 |===
 |If the system that you are upgrading... |Then…
@@ -46,7 +46,7 @@ a|* If node3 has a UTA/UTA2 card or UTA/UTA2 onboard ports, go to the section <<
 include::../_include/ru_auto_check_config_uta_uta2_ports_node3_intro_step_11.adoc[]
 
 [start=12]
-. [[step12]]Take one of the following actions:
+. [[auto_check3_step12]]Take one of the following actions:
 +
 |===
 |If the system... |Then…

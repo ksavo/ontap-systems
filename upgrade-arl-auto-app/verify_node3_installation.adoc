@@ -147,7 +147,7 @@ node1_node3
 +
 In the above example, node1_node3 is just booted after controller replacement. Some ports do not have reachability to their expected broadcast domains and must be repaired.
 
-. [[step4]]Repair the reachability for each of the ports on node3 with a reachability status other than `ok`. Run the following command, first on any physical ports, then on any VLAN ports, one at a time:
+. [[auto_verify_3_step4]]Repair the reachability for each of the ports on node3 with a reachability status other than `ok`. Run the following command, first on any physical ports, then on any VLAN ports, one at a time:
 +
 `network port reachability repair -node <node_name>  -port <port_name>`
 +
@@ -255,7 +255,7 @@ Wait about one minute for newly restored VLANs to be placed into their appropria
 +
 `network port reachability show`
 +
-When all ports are correctly configured and added to the correct broadcast domains, the `network port reachability show` command should report the reachability status as `ok` for all connected ports, and the status as `no-reachability` for ports with no physical connectivity. If any port reports a status other than these two, perform the reachability repair and add or remove ports from their broadcast domains as instructed in <<step4,Step 4>>.
+When all ports are correctly configured and added to the correct broadcast domains, the `network port reachability show` command should report the reachability status as `ok` for all connected ports, and the status as `no-reachability` for ports with no physical connectivity. If any port reports a status other than these two, perform the reachability repair and add or remove ports from their broadcast domains as instructed in <<auto_verify_3_step4,Step 4>>.
 
 . Verify that all ports have been placed into broadcast domains:
 +

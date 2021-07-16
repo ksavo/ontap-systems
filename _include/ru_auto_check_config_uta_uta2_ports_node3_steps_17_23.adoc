@@ -1,4 +1,4 @@
-. [[step17]]Press `Ctrl-C` during autoboot to stop the node at the `LOADER>` prompt.
+. [[auto_check3_step17]]Press `Ctrl-C` during autoboot to stop the node at the `LOADER>` prompt.
 
 . [[step18]]At the loader prompt, enter maintenance mode:
 +
@@ -20,13 +20,13 @@ Change the ports back to initiator mode:
 +
 `halt`
 
-. [[step22]]At the loader prompt boot up:
+. [[auto_check3_step22]]At the loader prompt boot up:
 +
 `boot_ontap`
 +
 Now, on booting, the node can detect all the disks that were previously assigned to it and can boot up as expected.
 
-. [[step23]]If you are upgrading from a system with external disks to a system that supports internal and external disks (AFF A800 systems, for example), set the node1 aggregate as the root aggregate to ensure node3 boots from the root aggregate of node1. To set the root aggregate, go to the boot menu and select option `5` to enter maintenance mode.
+. [[auto_check3_step23]]If you are upgrading from a system with external disks to a system that supports internal and external disks (AFF A800 systems, for example), set the node1 aggregate as the root aggregate to ensure node3 boots from the root aggregate of node1. To set the root aggregate, go to the boot menu and select option `5` to enter maintenance mode.
 +
 CAUTION: *You must perform the following substeps in the exact order shown; failure to do so might cause an outage or even data loss.*
 +
