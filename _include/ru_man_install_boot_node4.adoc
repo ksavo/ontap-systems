@@ -89,7 +89,7 @@ WARNING: *Warning: Do not override the delay. Failure to allow the battery to ch
 |Skip Step 9 through Step 14 and go to <<man_install4_Step15,Step 15>>.
 |Is a V-Series system or has FlexArray Virtualization Software and is connected to storage arrays
 a|
-.. Go to the section _Set the FC or UTA/UTA2 configuration on node4_ and complete the sections link:config_fc_ports_node4.html[Configure FC ports on node4] and link:check_configure_uta_uta2_ports_node4.html[Check and configure UTA/UTA2 ports on node4], as appropriate to your system.
+.. Go to the section _Set the FC or UTA/UTA2 configuration on node4_ and complete the sections link:set_fc_uta_uta2_config_node4.html#configure-fc-ports-on-node4[ Configure FC ports on node4] and link:set_fc_uta_uta2_config_node4.html#check_and_configure_UTAUTA2_ports_on_node4[Check and configure UTA/UTA2 ports on node4], as appropriate to your system.
 .. Return to this section and complete the remaining steps, beginning with <<man_install4_Step9,Step 9>>.
 
 *Important*: You must reconfigure FC onboard ports, UTA/UTA2 onboard ports, and UTA/UTA2 cards before you boot Data ONTAP on the V-Series system.

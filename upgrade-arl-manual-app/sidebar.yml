@@ -65,7 +65,7 @@ entries:
       - title: "Retire node2"
         url: /upgrade-arl-manual-app/retire_node2.html
   - title: "Stage 5: Install and boot node4"
-    url: /upgrade-arl-manual-app/tage5_install_boot_node4.html
+    url: /upgrade-arl-manual-app/stage5_install_boot_node4.html
     entries:
       - title: "Install and boot node4"
         url: /upgrade-arl-manual-app/install_boot_node4.html
