@@ -62,7 +62,7 @@ NOTE: You need to ensure that you move SAN LIFs to a port that has the same link
 +
 `network interface show -home-node <node3> -role data`
 
-. [[step11]] If any LIFs are down, set the administrative status of the LIFs to "up" by entering the following command, once for each LIF:
+. [[man_lif_verify_3_step11]] If any LIFs are down, set the administrative status of the LIFs to "up" by entering the following command, once for each LIF:
 +
 `network interface modify -vserver <vserver_name> -lif <LIF_name> -status-admin up`
 

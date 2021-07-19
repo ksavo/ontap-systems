@@ -64,7 +64,7 @@ NOTE: *Attention*: Do not override the delay; failure to allow the battery to ch
 |If your system... |Then...
 
 |Has disks and no back-end storage
-|Skip <<man_install3_step7,Step 7>> through <<man_install3_step12,Step 12>> and go to <<man_install3_step13,Step 13>>.
+|Skip Step 7 through Step 12 and go to <<man_install3_step13,Step 13>>.
 |Is a V-Series system or a system with FlexArray Virtualization software connected to storage arrays
 a|.. Go to link:set_fc_uta_uta2_config_node3.html[Set the FC or UTA/UTA2 configuration on node3] and complete the subsections link:set_fc_uta_uta2_config_node3.html#configure-fc-ports-on-node3[Configure FC ports on node3] and link:set_fc_uta_uta2_config_node3.html#check-and-configure-UTAUTA2-ports-on-node3[Check and configure UTA/UTA2 ports on node3], as appropriate to your system.
 
