@@ -50,38 +50,38 @@ The system displays the NAS data LIFs on node1, as shown in the following exampl
 |If node1... |Then...
 
 |Has interface groups of VLANs configured
-|Go to <<step3,Step 3>>.
+|Go to <<man_move_lif_1_2_step3,Step 3>>.
 |Does not have interface groups or VLANs configured
-|Skip Step 3 and go to <<step4,Step 4>>.
+|Skip Step 3 and go to <<man_move_lif_1_2_,Step 4>>.
 |===
 +
 Use the `network port vlan show` command to display information about the network ports attached to VLANs, and use the `network port ifgrp show` command to display information about the port interface groups.
 
-.	[[step3]]Take the following steps to migrate any NAS data LIFs hosted on interface groups and VLANs on node1:
+.	[[man_move_lif_1_2_step3]]Take the following steps to migrate any NAS data LIFs hosted on interface groups and VLANs on node1:
 
-.. [[substepa]]Migrate the LIFs hosted on any interface groups and the VLANs on node1 to a port on node2 that is capable of hosting LIFs on the same network as that of the interface groups by entering the following command, once for each LIF:
+.. [[man_move_lif_1_2_substepa]]Migrate the LIFs hosted on any interface groups and the VLANs on node1 to a port on node2 that is capable of hosting LIFs on the same network as that of the interface groups by entering the following command, once for each LIF:
 +
 `network interface migrate -vserver <Vserver_name> -lif <LIF_name> -destination-node <node2> –destination-port <netport|ifgrp>`
 
-..	Modify the home port and the home node of the LIFs and VLANs in <<substepa,Substep a>> to the port and node currently hosting the LIFs by entering the following command, once for each LIF:
+..	Modify the home port and the home node of the LIFs and VLANs in <<man_move_lif_1_2_substepa,Substep a>> to the port and node currently hosting the LIFs by entering the following command, once for each LIF:
 +
 `network interface modify -vserver <Vserver_name> -lif <LIF_name> -home-node <node2> - home-port <netport|ifgrp>`
 
-.	[[step4]]Take one of the following actions:
+.	[[man_move_lif_1_2_step4]]Take one of the following actions:
 +
 [cols="20,80"]
 |===
 |If the cluster is configured for... |Then...
 
 |NAS
-|Complete <<step5,Step 5>> through <<step8,Step 8>>.
+|Complete <<man_move_lif_1_2_step5,Step 5>> through <<man_move_lif_1_2_step8,Step 8>>.
 |SAN
 |Disable all the SAN LIFs on the node to take them down for the upgrade:
 
 `network interface modify -vserver <Vserver-name> -lif <LIF_name> -home-node <node_to_upgrade> -home-port <netport\|ifgrp> -status-admin down`
 |===
 
-.	[[step5]]Migrate NAS data LIFs from node1 to node2 by entering the following command, once for each data LIF:
+.	[[man_move_lif_1_2_step5]]Migrate NAS data LIFs from node1 to node2 by entering the following command, once for each data LIF:
 +
 `network interface migrate -vserver <Vserver-name> -lif <LIF_name> -destination-node <node2> -destination-port <data_port>`
 
@@ -93,13 +93,13 @@ Use the `network port vlan show` command to display information about the networ
 +
 `network interface modify -vserver <Vserver-name> -lif <LIF_name> -home-node <node2> -home-port <port_name>`
 
-.	[[step8]]Verify whether the LIF is using the port as its home or current port. If the port is not home or current port then go to <<step9,Step 9>>:
+.	[[man_move_lif_1_2_step8]]Verify whether the LIF is using the port as its home or current port. If the port is not home or current port then go to <<man_move_lif_1_2_step9,Step 9>>:
 +
 `network interface show -home-node <node2> -home-port <port_name>`
 +
 `network interface show -curr-node <node_name> -curr-port <port_name>`
 
-.	[[step9]]If the LIFs are using the port as a home port or current port, then modify the LIF to use a different port:
+.	[[man_move_lif_1_2_step9]]If the LIFs are using the port as a home port or current port, then modify the LIF to use a different port:
 +
 `network interface migrate -vserver <Vserver-name> -lif <LIF_name> -destination–node <node_name> -destination-port <port_name>`
 +
