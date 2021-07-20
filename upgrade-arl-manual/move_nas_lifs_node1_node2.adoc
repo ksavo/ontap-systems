@@ -52,7 +52,7 @@ The system displays the NAS data LIFs on node1, as shown in the following exampl
 |Has interface groups of VLANs configured
 |Go to <<man_move_lif_1_2_step3,Step 3>>.
 |Does not have interface groups or VLANs configured
-|Skip Step 3 and go to <<man_move_lif_1_2_,Step 4>>.
+|Skip Step 3 and go to <<man_move_lif_1_2_step4,Step 4>>.
 |===
 +
 Use the `network port vlan show` command to display information about the network ports attached to VLANs, and use the `network port ifgrp show` command to display information about the port interface groups.

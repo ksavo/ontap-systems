@@ -46,7 +46,7 @@ Documents specific to this upgrade are listed in the table below.
 |Describes how to efficiently manage your logical storage resources, using volumes, FlexClone volumes, files and LUNs, FlexCache volumes, deduplication, compression, qtrees, and quotas.
 |link:https://docs.netapp.com/ontap-9/topic/com.netapp.doc.dot-cm-nmg/home.html[ONTAP 9 Network Management Guide for 9.7 and Earlier^]
 |Describes how to configure and manage physical and virtual network ports (VLANs and interface groups), LIFs, routing, and host-resolution services in clusters; optimize network traffic by load balancing; and monitor the cluster by using SNMP.
-|link:https://docs.netapp.com/us-en/ontap/networking-app/index.html[ONTAP 9.8 Network Management Guide^]
+|link:https://docs.netapp.com/us-en/ontap/networking/index.html[ONTAP 9 Network Management Guide^]
 |Describes how to configure and manage physical and virtual network ports (VLANs and interface groups), LIFs, routing, and host-resolution services in clusters; optimize network traffic by load balancing; and monitor the cluster by using SNMP.
 |link:https://docs.netapp.com/ontap-9/topic/com.netapp.doc.dot-cm-sanag/home.html[ONTAP 9 SAN Administration Guide^]
 |Describes how to configure and manage iSCSI and FC protocols for SAN environments.

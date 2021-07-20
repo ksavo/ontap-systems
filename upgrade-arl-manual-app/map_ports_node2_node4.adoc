@@ -153,7 +153,6 @@ When all ports are correctly configured and added to the correct broadcast domai
 .. Modify any LIFs that need to be modified to have a different home port:
 +
 `network interface modify -vserver <vserver_name> -lif <lif_name> -home-port <home_port>`
-
 +
 NOTE: For iSCSI LIFs, modification of the home port requires the LIF to be administratively down.
 
