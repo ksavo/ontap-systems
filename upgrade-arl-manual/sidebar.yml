@@ -10,8 +10,8 @@ entries:
     url: /upgrade-arl-manual/guidelines_upgrade_with_arl.html
   - title: "Required tools and documentation"
     url: /upgrade-arl-manual/required_tools_documentation.html
-  - title: "Worksheet: Information to collect before and during the controller upgrade"
-    url: upgrade-arl-manual//worksheet_information_before_during_upgrade.html
+  - title: " Worksheet:  Information to collect before and during the controller upgrade"
+    url: /upgrade-arl-manual/worksheet_information_before_during_upgrade.html
   - title: "Reconfigure the FC switch layout for ONTAP 9.1 or later"
     url: /upgrade-arl-manual/reconfig_fc_switch_layout.html
     entries:
