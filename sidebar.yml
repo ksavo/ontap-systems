@@ -1,3 +1,5 @@
 entries:
   - title: Using "system controller replace" Commands to Upgrade Controller Hardware Running ONTAP 9.8
     url: /upgrade-arl-auto-app/index.html
+  - title: AFF A900 system
+    url: /a900/index.html
