@@ -1,5 +1,5 @@
 ---
-permalink: fas9000/led_module_replace.html
+permalink: a900/led_module_replace.html
 sidebar: sidebar
 keywords: LED USB module,replacing,hot-swapping,LED USB module,non-disruptive replacement,LED USB module
 summary: 'You can replace an LED USB module without interrupting service.'

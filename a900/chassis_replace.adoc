@@ -1,5 +1,5 @@
 ---
-permalink: fas9000/chassis_replace.html
+permalink: a900/chassis_replace.html
 sidebar: sidebar
 keywords:
 summary: 'All other components in the system must be functioning properly; if not, you must contact technical support.'

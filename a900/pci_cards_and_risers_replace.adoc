@@ -1,5 +1,5 @@
 ---
-permalink: fas9000/pci_cards_and_risers_replace.html
+permalink: a900/pci_cards_and_risers_replace.html
 sidebar: sidebar
 keywords:
 summary: 'To replace an I/O module, you must perform a specific sequence of tasks.'

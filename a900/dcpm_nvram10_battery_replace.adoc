@@ -1,5 +1,5 @@
 ---
-permalink: fas9000/dcpm_nvram10_battery_replace.html
+permalink: a900/dcpm_nvram10_battery_replace.html
 sidebar: sidebar
 keywords: FAS9000 AFF A700
 summary: 'To hot-swap a de-stage controller power module \(DCPM\), which contains the NVRAM10 battery, you must locate the failed DCPM module, remove it from the chassis, and install the replacement DCPM module.'

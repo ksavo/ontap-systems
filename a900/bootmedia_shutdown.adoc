@@ -1,5 +1,5 @@
 ---
-permalink: fas9000/bootmedia_shutdown.html
+permalink: a900/bootmedia_shutdown.html
 sidebar: sidebar
 keywords:
 summary: 'After completing the NVE or NSE tasks, you need to complete the shutdown of the impaired node.'

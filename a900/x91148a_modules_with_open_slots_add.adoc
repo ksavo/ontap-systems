@@ -1,5 +1,5 @@
 ---
-permalink: fas9000/x91148a_modules_with_open_slots_add.html
+permalink: a900/x91148a_modules_with_open_slots_add.html
 sidebar: sidebar
 keywords:
 summary: 'You can add an X91148A module into an empty module slot in your system as either a 100GbE NIC or a storage module for the NS224 storage shelves.'

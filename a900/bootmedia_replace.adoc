@@ -1,5 +1,5 @@
 ---
-permalink: fas9000/bootmedia_replace.html
+permalink: a900/bootmedia_replace.html
 sidebar: sidebar
 keywords: FAS9000
 summary: 'You must locate the boot media in the controller and follow the directions to replace it.'

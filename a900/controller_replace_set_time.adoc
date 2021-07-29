@@ -1,5 +1,5 @@
 ---
-permalink: fas9000/controller_replace_set_time.html
+permalink: a900/controller_replace_set_time.html
 sidebar: sidebar
 keywords:
 summary: 'You should check the time and date on the replacement controller module against the healthy controller module in an HA pair, or against a reliable time server in a stand-alone configuration. If the time and date do not match, you must reset them on the replacement controller module to prevent possible outages on clients due to time differences.'

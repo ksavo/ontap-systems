@@ -1,5 +1,5 @@
 ---
-permalink: fas9000/x91148a_modules_with_no_open_slots_add.html
+permalink: a900/x91148a_modules_with_no_open_slots_add.html
 sidebar: sidebar
 keywords:
 summary: 'You must remove one more or more existing NIC or storage modules in your system in order to install one or more X91148A storage modules into your fully-populated system.'

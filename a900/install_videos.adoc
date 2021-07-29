@@ -1,5 +1,5 @@
 ---
-permalink: fas9000/install_videos.html
+permalink: a900/install_videos.html
 sidebar: sidebar
 keywords: FAS9000 AFF A700
 summary: 'There are two videos; one showing how to rack and cable your system and one showing an example of using the System Manager Guided Setup to perform initial system configuration.'
