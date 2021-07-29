@@ -1,0 +1,12 @@
+---
+permalink: fas9000/controller_replace_impaired_controller_shutdown_parent.html
+sidebar: sidebar
+keywords:
+summary: 'You can shut down or take over the impaired controller using different procedures, depending on the storage system hardware configuration.'
+---
+= Shut down the impaired controller - AFF A700 and FAS9000
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You can shut down or take over the impaired controller using different procedures, depending on the storage system hardware configuration.

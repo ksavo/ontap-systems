@@ -1,0 +1,111 @@
+---
+permalink: fas9000/pci_cards_and_risers_replace.html
+sidebar: sidebar
+keywords:
+summary: 'To replace an I/O module, you must perform a specific sequence of tasks.'
+---
+= Replace an I/O module - AFF A700 and FAS9000
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+To replace an I/O module, you must perform a specific sequence of tasks.
+
+* You can use this procedure with all versions of ONTAP supported by your system
+* All other components in the system must be functioning properly; if not, you must contact technical support.
+
+== Step 1: Shut down the impaired controller
+
+[.lead]
+You can shut down or take over the impaired controller using different procedures, depending on the storage system hardware configuration.
+
+=== Shut down the impaired node
+
+[.lead]
+include::../_include/shutdown_most_frus.adoc[]
+=== Shut down the impaired node
+
+[.lead]
+include::../_include/shutdown_most_frus.adoc[]
+
+=== Option 2: Controller in a two-node MetroCluster configuration
+
+[.lead]
+include::../_include/shutdown_2n_mcc.adoc[]
+
+== Step 2: Replace I/O modules
+
+[.lead]
+To replace an I/O module, locate it within the chassis and follow the specific sequence of steps.
+
+. If you are not already grounded, properly ground yourself.
+. Unplug any cabling associated with the target I/O module.
++
+Make sure that you label the cables so that you know where they came from.
+
+. Remove the target I/O module from the chassis:
+ .. Depress the lettered and numbered cam button.
++
+The cam button moves away from the chassis.
+
+ .. Rotate the cam latch down until it is in a horizontal position.
++
+The I/O module disengages from the chassis and moves about 1/2 inch out of the I/O slot.
+
+ .. Remove the I/O module from the chassis by pulling on the pull tabs on the sides of the module face.
+
++
+Make sure that you keep track of which slot the I/O module was in.
++
+image::../media/drw_9000_remove_pcie_module.gif[]
++
+|===
+a|
+image:../media/legend_icon_01.gif[]
+a|
+Lettered and numbered I/O cam latch
+a|
+image:../media/legend_icon_02.gif[]
+a|
+I/O cam latch completely unlocked
+|===
+. Set the I/O module aside.
+. Install the replacement I/O module into the chassis by gently sliding the I/O module into the slot until the lettered and numbered I/O cam latch begins to engage with the I/O cam pin, and then push the I/O cam latch all the way up to lock the module in place.
+. Recable the I/O module, as needed.
+
+== Step 3: Reboot the controller after PCIe module replacement
+
+[.lead]
+After you replace a PCIe module, you must reboot the controller module.
+
+. If the node is at the LOADER prompt, boot the node, responding `y` if you see a prompt warning of a system ID mismatch and asking to override the system ID: `bye`
+. If your system is configured to support 10 GbE cluster interconnect and data connections on 40 GbE NICs or onboard ports, convert these ports to 10 GbE connections by using the nicadmin convert command from Maintenance mode.
++
+NOTE: Be sure to exit Maintenance mode after completing the conversion.
+
+. Return the node to normal operation:
++
+|===
+| If your system is in...| Issue this command from the partner's console...
+a|
+An HA pair
+a|
+`storage failover giveback -ofnode impaired_node_name`
+a|
+A two-node MetroCluster configuration
+a|
+Proceed to the next step.     The MetroCluster switchback procedure is done in the next task in the replacement process.
++
+|===
+
+. If automatic giveback was disabled, reenable it: `storage failover modify -node local -auto-giveback true`
+
+== Step 4: Switch back aggregates in a two-node MetroCluster configuration
+
+[.lead]
+include::../_include/2n_mcc_switchback.adoc[]
+
+== Step 5: Return the failed part to NetApp
+
+[.lead]
+include::../_include/complete_rma.adoc[]

@@ -1,0 +1,39 @@
+---
+permalink: fas9000/bootmedia_replace.html
+sidebar: sidebar
+keywords: FAS9000
+summary: 'You must locate the boot media in the controller and follow the directions to replace it.'
+---
+= Replace the boot media - AFF A700 and FAS9000
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You must locate the boot media in the controller and follow the directions to replace it.
+
+. Lift the black air duct at the back of the controller module and then locate the boot media using the following illustration or the FRU map on the controller module:
++
+image::../media/drw_9000_remove_boot_dev.gif[]
++
+|===
+a|
+image:../media/legend_icon_01.gif[]
+a|
+Press release tab
+a|
+image:../media/legend_icon_02.gif[]
+a|
+Boot media
+|===
+
+. Press the blue button on the boot media housing to release the boot media from its housing, and then gently pull it straight out of the boot media socket.
++
+NOTE: Do not twist or pull the boot media straight up, because this could damage the socket or the boot media.
+
+. Align the edges of the replacement boot media with the boot media socket, and then gently push it into the socket.
+. Check the boot media to make sure that it is seated squarely and completely in the socket.
++
+If necessary, remove the boot media and reseat it into the socket.
+
+. Push the boot media down to engage the locking button on the boot media housing.
+. Reinstall the controller module lid by aligning the pins on the lid with the slots on the motherboard carrier, and then slide the lid into place.

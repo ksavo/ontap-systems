@@ -1,0 +1,21 @@
+You should check the time and date on the replacement controller module against the healthy controller module in an HA pair, or against a reliable time server in a stand-alone configuration. If the time and date do not match, you must reset them on the replacement controller module to prevent possible outages on clients due to time differences.
+
+It is important that you apply the commands in the steps on the correct systems:
+
+* The replacement node is the new node that replaced the impaired node as part of this procedure.
+* The healthy node is the HA partner of the replacement node
+
+. If the replacement node is not at the LOADER prompt, halt the system to the LOADER prompt.
+. On the healthy node, check the system time:``show date``
++
+The date and time are given in GMT.
+
+. At the LOADER prompt, check the date and time on the replacement node:``show date``
++
+The date and time are given in GMT.
+
+. If necessary, set the date in GMT on the replacement node:``set date mm/dd/yyyy``
+. If necessary, set the time in GMT on the replacement node:``set time hh:mm:ss``
+. At the LOADER prompt, confirm the date and time on the replacement node:``show date``
++
+The date and time are given in GMT.

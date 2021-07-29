@@ -1,0 +1,47 @@
+After you have completed the FRU replacement in a two-node MetroCluster configuration, you can perform the MetroCluster switchback operation. This returns the configuration to its normal operating state, with the sync-source storage virtual machines (SVMs) on the formerly impaired site now active and serving data from the local disk pools.
+
+This task only applies to two-node MetroCluster configurations.
+
+. Verify that all nodes are in the `enabled` state: `metrocluster node show`
++
+----
+cluster_B::>  metrocluster node show
+
+DR                           Configuration  DR
+Group Cluster Node           State          Mirroring Mode
+----- ------- -------------- -------------- --------- --------------------
+1     cluster_A
+              controller_A_1 configured     enabled   heal roots completed
+      cluster_B
+              controller_B_1 configured     enabled   waiting for switchback recovery
+2 entries were displayed.
+----
+
+. Verify that resynchronization is complete on all SVMs: `metrocluster vserver show`
+. Verify that any automatic LIF migrations being performed by the healing operations were completed successfully: metrocluster check lif show
+. Perform the switchback by using the metrocluster switchback command from any node in the surviving cluster.
+. Verify that the switchback operation has completed: `metrocluster show`
++
+The switchback operation is still running when a cluster is in the `waiting-for-switchback` state:
++
+----
+cluster_B::> metrocluster show
+Cluster              Configuration State    Mode
+--------------------	------------------- 	---------
+ Local: cluster_B configured       	switchover
+Remote: cluster_A configured       	waiting-for-switchback
+----
++
+The switchback operation is complete when the clusters are in the `normal` state.:
++
+----
+cluster_B::> metrocluster show
+Cluster              Configuration State    Mode
+--------------------	------------------- 	---------
+ Local: cluster_B configured      		normal
+Remote: cluster_A configured      		normal
+----
++
+If a switchback is taking a long time to finish, you can check on the status of in-progress baselines by using the metrocluster config-replication resync-status show command.
+
+. Reestablish any SnapMirror or SnapVault configurations.

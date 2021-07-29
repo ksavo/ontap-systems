@@ -1,0 +1,44 @@
+---
+permalink: fas9000/bootmedia_controller_open.html
+sidebar: sidebar
+keywords:
+summary: 'To access components inside the controller, you must first remove the controller module from the system and then remove the cover on the controller module.'
+---
+= Open the controller module - AFF A700 and FAS9000
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+To access components inside the controller, you must first remove the controller module from the system and then remove the cover on the controller module.
+
+. If you are not already grounded, properly ground yourself.
+. Unplug the cables from the impaired controller module, and keep track of where the cables were connected.
+. Slide the orange button on the cam handle downward until it unlocks.
++
+image::../media/drw_9000_remove_pcm.gif[]
++
+|===
+a|
+image:../media/legend_icon_01.gif[]
+a|
+Cam handle release button
+a|
+image:../media/legend_icon_02.gif[]
+a|
+Cam handle
+|===
+
+. Rotate the cam handle so that it completely disengages the controller module from the chassis, and then slide the controller module out of the chassis.
++
+Make sure that you support the bottom of the controller module as you slide it out of the chassis.
+
+. Place the controller module lid-side up on a stable, flat surface, press the blue button on the cover, slide the cover to the back of the controller module, and then swing the cover up and lift it off of the controller module.
++
+image::../media/drw_9000_pcm_open.gif[]
++
+|===
+a|
+image:../media/legend_icon_01.gif[]
+a|
+Controller module cover locking button
+|===

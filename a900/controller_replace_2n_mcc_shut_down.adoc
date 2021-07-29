@@ -1,0 +1,11 @@
+---
+permalink: fas9000/controller_replace_2n_mcc_shut_down.html
+sidebar: sidebar
+keywords:
+summary: 'To shut down the impaired node, you must determine the status of the node and, if necessary, switch over the node so that the healthy node continues to serve data from the impaired node storage.'
+---
+= Shut down a node in a two-node MetroCluster configuration - AFF A700 and FAS9000
+:icons: font
+:imagesdir: ../media/
+
+include::../_include/shutdown_2n_mcc.adoc[]
