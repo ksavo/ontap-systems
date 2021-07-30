@@ -1,5 +1,5 @@
 ---
-permalink: fas9000/controller_replace.html
+permalink: a900/controller_replace.html
 sidebar: sidebar
 keywords: FAS9000 AFF A700
 summary: 'You must review the prerequisites for the replacement procedure and select the correct one for your version of the ONTAP operating system.'

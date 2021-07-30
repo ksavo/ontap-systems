@@ -1,5 +1,5 @@
 ---
-permalink: fas9000/telco_installation_instructions.html
+permalink: a900/telco_installation_instructions.html
 sidebar: sidebar
 keywords:
 summary: 'There are two, two-post support rail kits that can be used with the FAS9000 and AFF A700 systems. One kit allows you to flush-mount your system in the two-post rack, and the other kit allows you to mid-mount your system in the two-post rack.'

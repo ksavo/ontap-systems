@@ -1,5 +1,5 @@
 ---
-permalink: fas9000/caching_module_and_core_dump_module_replace.html
+permalink: a900/caching_module_and_core_dump_module_replace.html
 sidebar: sidebar
 keywords:
 summary: 'You must replace the caching module in the controller module when your system registers a single AutoSupport (ASUP) message that the module has gone offline; failure to do so results in performance degradation.'
@@ -12,7 +12,7 @@ summary: 'You must replace the caching module in the controller module when your
 You must replace the caching module in the controller module when your system registers a single AutoSupport (ASUP) message that the module has gone offline; failure to do so results in performance degradation. If AutoSupport is not enabled, you can locate the failed caching module by the fault LED on the front of the module. You can also add or replace the 1TB, X9170A core dump module, which is required if you are installing NS224 drive shelves in an AFF A700 system.
 
 * You must replace the failed component with a replacement FRU component you received from your provider.
-* For instructions about hot swapping the caching module, see link:../fas9000/caching_module_hot_swap.html[Hot-swapping a caching module].
+* For instructions about hot swapping the caching module, see link:../a900/caching_module_hot_swap.html[Hot-swapping a caching module].
 * When removing, replacing, or adding caching or core dump modules, the target node must be halted to the LOADER.
 * AFF A700 supports the 1TB core dump module, X9170A, which is required if you are adding NS224 drive shelves.
 * The core dump modules can be installed in slots 6-1 and 6-2. The recommended best practice is to install the module in slot 6-1.

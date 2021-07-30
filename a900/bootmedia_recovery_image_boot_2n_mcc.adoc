@@ -1,5 +1,5 @@
 ---
-permalink: fas9000/bootmedia_recovery_image_boot_2n_mcc.html
+permalink: a900/bootmedia_recovery_image_boot_2n_mcc.html
 sidebar: sidebar
 keywords:
 summary: 'You must boot the ONTAP image from the USB drive and verify the environmental variables.'

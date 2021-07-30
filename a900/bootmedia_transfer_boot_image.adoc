@@ -1,5 +1,5 @@
 ---
-permalink: fas9000/bootmedia_transfer_boot_image.html
+permalink: a900/bootmedia_transfer_boot_image.html
 sidebar: sidebar
 keywords: FAS9000
 summary: 'You can install the system image to the replacement boot media using a USB flash drive with the image installed on it. However, you must restore the var file system during this procedure.'

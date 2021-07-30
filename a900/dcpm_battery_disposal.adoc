@@ -1,5 +1,5 @@
 ---
-permalink: fas9000/dcpm_battery_disposal.html
+permalink: a900/dcpm_battery_disposal.html
 sidebar: sidebar
 keywords:
 summary: 'You must dispose of batteries according to the local regulations regarding battery recycling or disposal. If you cannot properly dispose of batteries, you must return the batteries to NetApp, as described in the RMA instructions that are shipped with the kit.'

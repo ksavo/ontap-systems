@@ -1,5 +1,5 @@
 ---
-permalink: fas9000/install_detailed_guide.html
+permalink: a900/install_detailed_guide.html
 sidebar: sidebar
 keywords: FAS9000 AFF A700
 summary: 'This guide gives detailed step-by-step instructions for installing a typical NetApp system.'

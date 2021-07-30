@@ -1,5 +1,5 @@
 ---
-permalink: fas9000/bootmedia_encryption_checks_96_and_later.html
+permalink: a900/bootmedia_encryption_checks_96_and_later.html
 sidebar: sidebar
 keywords:
 summary: 'Before shutting down the impaired node, you need to check whether the system has either NetApp Volume Encryption \(NVE\) or NetApp Storage Encryption \(NSE\) enabled. If so, you need to verify the configuration.'
