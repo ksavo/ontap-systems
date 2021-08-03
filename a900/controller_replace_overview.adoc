@@ -1,10 +1,10 @@
 ---
 permalink: a900/controller_replace_overview.html
 sidebar: sidebar
-keywords:
+keywords: AFF A900
 summary: 'To replace the controller module hardware, you must remove the impaired node, move FRU components to the replacement controller module, install the replacement controller module in the chassis, and then boot the system to Maintenance mode.'
 ---
-= Replace the controller module hardware - AFF A700 and FAS9000
+= Replace the controller module hardware - AFF A900
 :icons: font
 :imagesdir: ../media/
 
@@ -125,7 +125,7 @@ IMPORTANT: Visually inspect the DIMM to verify that it is evenly aligned and ful
 == Step 4: Install the controller
 
 [.lead]
-After you install the components into the controller module, you must install the controller module back into the system chassis and boot the operating system.
+After you install the components into the replacement controller module, you must install the replacement controller module into the system chassis and boot the operating system.
 
 For HA pairs with two controller modules in the same chassis, the sequence in which you install the controller module is especially important because it attempts to reboot as soon as you completely seat it in the chassis.
 
