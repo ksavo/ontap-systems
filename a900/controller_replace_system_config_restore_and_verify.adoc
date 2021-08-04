@@ -4,20 +4,24 @@ sidebar: sidebar
 keywords:
 summary: 'After completing the hardware replacement and booting to Maintenance mode, you verify the low-level system configuration of the replacement controller and reconfigure system settings as necessary.'
 ---
-= Restore and verify the system configuration - AFF A700 and FAS9000
+= Restore and verify the system configuration - AFF A900
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-After completing the hardware replacement and booting to Maintenance mode, you verify the low-level system configuration of the replacement controller and reconfigure system settings as necessary.
+After completing the hardware replacement, you verify the low-level system configuration of the replacement controller and reconfigure system settings as necessary.
 
 image::../media/pcm_replace_livermore_3_restoring_and_verifying_the_system_configuration.gif[]
 
-== Step 1: Verify and set the HA state of the controller module
+== Step 1: Set and verify the system time after replacing the controller module
+
+include::../_include/set_time_after_controller_rep.adoc[]
+
+== Step 2: Verify and set the HA state of the controller module
 
 You must verify the `HA` state of the controller module and, if necessary, update the state to match your system configuration.
 
-. In Maintenance mode from the new controller module, verify that all components display the same `HA` state: `ha-config show`
+. In Maintenance mode from the replacement controller module, verify that all components display the same `HA` state: `ha-config show`
 +
 |===
 | If your system is in...| The HA state for all components should be...
@@ -46,7 +50,7 @@ non-ha
 . If the displayed system state of the controller module does not match your system configuration, set the `HA` state for the controller module: `ha-config modify controller ha-state`
 . If the displayed system state of the chassis does not match your system configuration, set the `HA` state for the chassis: `ha-config modify chassis ha-state`
 
-== Step 2: Run system-level diagnostics
+== Step 3: Run system-level diagnostics
 
 [.lead]
 You should run comprehensive or focused diagnostic tests for specific components and subsystems whenever you replace the controller.

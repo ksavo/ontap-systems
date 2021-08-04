@@ -32,8 +32,6 @@ entries:
         url: /a900/controller_replace_shutdown.html
       - title: Replace the controller module hardware
         url: /a900/controller_replace_overview.html
-      - title: Set and verify system time after Replace the controller
-        url: /a900/controller_replace_set_time.html
       - title: Restore and verify the system configuration
         url: /a900/controller_replace_system_config_restore_and_verify.html
       - title: Complete system restoration
