@@ -2,6 +2,7 @@
 sidebar: sidebar
 permalink: index.html
 keywords:  aggregate, relocation, moving, manual, upgrade, relocate
+lead: This library provides instructions to upgrade controller hardware for storage systems using the aggregate relocation method.
 summary: Use aggregate relocation to upgrade controller hardware
 ---
 
@@ -11,6 +12,3 @@ summary: Use aggregate relocation to upgrade controller hardware
 :icons: font
 :linkattrs:
 :imagesdir: ./media/
-
-[.lead]
-This library provides instructions to upgrade controller hardware for storage systems using the aggregate relocation method.
