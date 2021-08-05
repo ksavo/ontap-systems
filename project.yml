@@ -1,5 +1,6 @@
 sidebar:
-
-
-homepage:
-  tiles:
+  entries:
+    - title: ONTAP 9.8 System Documentation
+      url: /index.html
+    - section: upgrade-arl-auto-app
+    - section: switch-cisco-9336c-shared

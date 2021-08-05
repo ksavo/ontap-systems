@@ -1,5 +1,5 @@
 ---
-sidebar: switch-cisco-9336c-shared_sidebar
+sidebar: sidebar
 permalink: switch-cisco-9336c-shared/9336c_migrate_from_a_switchless_configuration_with_sat_storage_by_reusing_the_storage_switches.html
 keywords:
 summary:

@@ -1,6 +1,6 @@
 ---
-sidebar: upgrade-arl-auto-app_sidebar
-permalink: upgrade-arl-auto-app/verifying_the_node4_installation.html
+sidebar: sidebar
+permalink: upgrade-arl-auto-app/verify_node4_installation.html
 keywords: verify, node4, installation, physical ports, node2, node, LIF, MetroCluster
 summary: Verify the node4 installation
 ---
@@ -57,13 +57,13 @@ The output of the `health` field should be `true`.
 
 . If you are working on a MetroCluster system,  verify that the replaced controller is configured correctly for the MetroCluster configuration; the MetroCluster configuration should be in a healthy state. Refer to link:verifying_the_health_of_the_metrocluster_configuration.html[Verify the health of the MetroCluster configuration].
 +
-Reconfigure the intercluster LIFs on MetroCluster node node4, and check cluster peering to restore communication between the MetroCluster nodes before proceeding to Step 6.
+Reconfigure the intercluster LIFs on MetroCluster node node4, and check cluster peering to restore communication between the MetroCluster nodes before proceeding to <<auto_verify_4_Step6,Step 6>>.
 +
 Check the MetroCluster node status by using the following command:
 +
 `metrocluster node show`
 
-. Resume the controller replacement operation by using the following command.
+. [[auto_verify_4_Step6]]Resume the controller replacement operation:
 +
 `system controller replace resume`
 
@@ -103,7 +103,8 @@ After you confirm that node4 is in quorum and can communicate with node3, verify
 
 .About this task
 
-For more information on creating and re-creating VLANs, interface groups, and broadcast domains, see the link:https://docs.netapp.com/us-en/ontap/networking-app/index.html[ONTAP 9.8 Network Management].
+For more information on creating and re-creating VLANs, interface groups, and broadcast domains, refer to link:other_references.html[References] to link to the _ONTAP 9 Network Management Guide_.
+
 
 .Steps
 
@@ -152,7 +153,7 @@ node2_node4
 +
 In the above example, node2_node4 is just booted after controller replacement. It has several ports that have no reachability and are pending a reachability scan.
 
-. [[Step4]]Repair the reachability for each of the ports on node4 with a reachability status other than `ok`. Run the following command, first on any physical ports, then on any VLAN ports, one at a time:
+. [[auto_restore_4_Step4]]Repair the reachability for each of the ports on node4 with a reachability status other than `ok`. Run the following command, first on any physical ports, then on any VLAN ports, one at a time:
 +
 `network port reachability repair -node <node_name>  -port <port_name>`
 +
@@ -262,7 +263,7 @@ Wait about one minute for newly restored VLANs to be placed into their appropria
 +
 `network port reachability show`
 +
-When all ports are correctly configured and added to the correct broadcast domains, the `network port reachability show` command should report the reachability status as `ok` for all connected ports, and the status as `no-reachability` for ports with no physical connectivity. If any ports report a status other than these two, perform the reachability repair and add or remove ports from their broadcast domains as instructed in <<Step4,Step 4>>.
+When all ports are correctly configured and added to the correct broadcast domains, the `network port reachability show` command should report the reachability status as `ok` for all connected ports, and the status as `no-reachability` for ports with no physical connectivity. If any ports report a status other than these two, perform the reachability repair and add or remove ports from their broadcast domains as instructed in <<auto_restore_4_Step4,Step 4>>.
 
 . Verify that all ports have been placed into broadcast domains by using the following command:
 +

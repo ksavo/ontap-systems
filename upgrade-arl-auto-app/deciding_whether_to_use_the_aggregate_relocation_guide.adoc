@@ -1,6 +1,6 @@
 ---
-sidebar: upgrade-arl-auto-app_sidebar
-permalink: upgrade-arl-auto-app/deciding_whether_to_use_the_aggregate_relocation_guide.html
+sidebar: sidebar
+permalink: upgrade-arl-auto-app/decide_to_use_the_aggregate_relocation_guide.html
 keywords: deciding, aggregate, relocation, guide, storage, controllers, administrators, ontap, ha, high, availability
 summary: This guide describes how to upgrade the storage controllers in an HA pair with new controllers.
 ---
