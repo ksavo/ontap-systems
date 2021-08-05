@@ -32,7 +32,8 @@ You must netboot the new controllers if they do not have the same version of ONT
 
 .Steps
 
-. Access the NetApp Support Site to download the files used for performing the netboot of the system.
+. [[man_netboot_Step1]]Access the NetApp Support Site to download the files used for performing the netboot of the system.
+
 . Download the appropriate ONTAP software from the software download section of the NetApp Support Site and store the `<ontap_version>_image.tgz` file on a web-accessible directory.
 . Change to the web-accessible directory and verify that the files you need are available.
 

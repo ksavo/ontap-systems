@@ -1,6 +1,6 @@
 ---
-sidebar: upgrade-arl-auto-app_sidebar
-permalink: upgrade-arl-auto-app/restoring_key-manager_configuration_on_node3.html
+sidebar: sidebar
+permalink: upgrade-arl-auto-app/restore_key-manager_configuration_node3.html
 keywords: restoring, key-manager, configuration, node3, nve, arl, encryption, netapp, volume
 summary: If you are using Netapp Volume Encryption (NVE) to encrypt volumes on the system you are upgrading.
 ---
