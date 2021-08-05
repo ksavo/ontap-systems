@@ -1,6 +1,6 @@
 ---
-sidebar: upgrade-arl-auto-app_sidebar
-permalink: upgrade-arl-auto-app/verifying_switchover,_healing,_and_switchback.html
+sidebar: sidebar
+permalink: upgrade-arl-auto-app/verify_switchover_healing_switchback.html
 keywords: verifying, switchover, healing, switchback, metrocluster, management, disaster, recovery, mcc
 summary: You should verify the switchover, healing, and switchback operations of the MetroCluster configuration.
 ---
