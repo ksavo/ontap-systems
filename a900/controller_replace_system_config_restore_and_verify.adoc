@@ -2,14 +2,14 @@
 permalink: a900/controller_replace_system_config_restore_and_verify.html
 sidebar: sidebar
 keywords:
-summary: 'After completing the hardware replacement and booting to Maintenance mode, you verify the low-level system configuration of the replacement controller and reconfigure system settings as necessary.'
+summary: 'After completing the hardware replacement and booting to Maintenance mode, you verify the low-level system configuration of the replacement controller, reconfigure system settings as necessary, and then run system-level diagnostics.'
 ---
 = Restore and verify the system configuration - AFF A900
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-After completing the hardware replacement, you verify the low-level system configuration of the replacement controller and reconfigure system settings as necessary.
+After completing the hardware replacement, you verify the low-level system configuration of the replacement controller, reconfigure system settings as necessary, and then run system-level diagnostics.
 
 image::../media/pcm_replace_livermore_3_restoring_and_verifying_the_system_configuration.gif[]
 
