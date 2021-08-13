@@ -14,16 +14,26 @@ entries:
       url: /a900/install_detailed_guide.html
   - title: Maintain
     entries:
+  # START caching module replacement
     - title: Caching or core dump module
       url: /a900/caching_module_and_core_dump_module_replace.html
+      # END caching module replacement
+    # START Caching module hot swap
     - title: Caching module hot swap
       url: /a900/caching_module_hot_swap.html
+      # END Caching module hot fan_swap_out
+      # START DCPM battery replacement
     - title: DCPM (with NVRAM10 batter)
       url: /a900/dcpm_nvram10_battery_replace.html
+      # END DCPM battery replacement
+      # START Power supply replacement
     - title: Power supply
       url: /a900/power_supply_swap_out.html
+      # END Power supply replace
+      # START Fan
     - title: Fan
       url: /a900/fan_swap_out.html
+      # END fan
       # START controller module replacement
     - title: Controller module
       url: /a900/controller_replace.html
@@ -37,11 +47,15 @@ entries:
       - title: Complete system restoration
         url: /a900/controller_replace_complete_system_restoration.html
       # END controller module replacement
+      # START DIMM replace
     - title: DIMM
       url: /a900/dimm_replace.html
+      # END DIMM replace
+      # START NVRAM module and/or NVRAM DIMMs replace
     - title: NVRAM module and/or NVRAM DIMMs
       url: /a900/nvram_module_or_nvram_dimm_replacement.html
-      # START boot media
+      # END NVRAM module and/or NVRAM DIMMs replace
+      # START boot media  *****
     - title: Boot media
       url: /a900/bootmedia_replace_overview.html
       entries:
