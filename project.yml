@@ -1,5 +1,17 @@
 sidebar:
+    entries:
+      - title: Home
+        url: "/index.html"
+      - section: a900
 
 
 homepage:
   tiles:
+    - title: Get started
+      links:
+        - title: ONTAP Release notes
+          url: /install-ip/index.html
+    - title: AFF systems (entry-level and midrange)
+      links:
+        - title: AFF A900
+          url: /fas9000/index.html
