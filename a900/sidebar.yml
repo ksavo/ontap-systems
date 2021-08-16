@@ -18,7 +18,7 @@ entries:
   # START caching module replacement
     - title: Caching or core dump module
       url: /a900/caching_module_and_core_dump_module_replace.html
-      # END caching module replacement 
+      # END caching module replacement
     # START Caching module hot swap
     - title: Caching module hot swap
       url: /a900/caching_module_hot_swap.html
