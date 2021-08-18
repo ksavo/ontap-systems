@@ -1,7 +1,7 @@
 ---
 permalink: a900/controller_replace_overview.html
 sidebar: sidebar
-keywords: AFF A900
+keywords: AFF A900, open controller, download service image to USB drive, transfer boot image, USB drive, service image
 summary: 'To replace the controller module hardware, you must remove the impaired node, move FRU components to the replacement controller module, install the replacement controller module in the chassis, and then boot the system to Maintenance mode.'
 ---
 = Replace the controller module hardware - AFF A900
@@ -149,4 +149,8 @@ The controller module begins to boot as soon as it is fully seated in the chassi
 
  .. Rotate the locking latches upward, tilting them so that they clear the locking pins, and then lower them into the locked position.
  .. Interrupt the boot process by pressing `Ctrl-C` when you see Press Ctrl-C for Boot Menu.
+
+IMPORTANT: During the node reboot on systems with the Trusted Platform Module (TPM) installed and the onboard key manager configured, you must contact Customer Support if you see the following messages displayed: `...[....:crypto.ssal.failed:ALERT] : SSAL Unseal operation failed:  SSAL Unseal operation failed.
+ ...[....:crypto.okmrecovery.failed: ERROR: Import of the onboard key hierarchy failed: failed to import key.hierarchy. Additional information: error: ssal unseal failed.`
+
  .. Select the option to boot to Maintenance mode from the displayed menu.
