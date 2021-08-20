@@ -11,8 +11,6 @@ summary: 'To complete the replacement procedure and restore your system to full 
 [.lead]
 To complete the replacement procedure and restore your system to full operation, you must recable the storage, restore the NetApp Storage Encryption configuration (if necessary), and install licenses for the new controller. You must complete a series of tasks before restoring your system to full operation.
 
-image::../media/pcm_replace_livermore_4_completing_system_restoration.gif[]
-
 == Step 1: Recable the system
 
 include::../_include/recable_system_after_controller_rep.adoc[]
