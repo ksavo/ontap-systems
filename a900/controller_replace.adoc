@@ -147,33 +147,32 @@ The controller module begins to boot as soon as it is fully seated in the chassi
 
  .. Interrupt the boot process by pressing `Ctrl-C` when you see Press Ctrl-C for Boot Menu.
 
-.. Select the option to bot to LOADER.
-# +
-#
-# .. From the healthy node, check to see if Onboard Key Manager (OKM) is configured: `security key-manager onboard show-backup`
-# +
-# If you see: `Error: show failed: Onboard key management is not configured for the admin Vserver. Use the "security key-manager
-#       onboard enable" command to configure onboard key management.`
-# Onboard Key Manager is not configured and you can
-# select the option to boot to LOADER from the displayed boot menu.
-#
-# .. If OKM is enabled, select Option 10 from the Boot Menu.
-# +
-# You will see the following ouptut:
-# +
-# ` -------------BEGIN BACKUP----------# # TmV0QXBwIEtleSBCbG9iAAEBAAAEAAAAcAEAAAAAAACCPESPAAAAACEAAAAAAAAA
-# QAAAAAAAAAAU6/F6AAAAAFPMGJ/LzijV+ma+2Gji744SyuJIz7WJVZQoTygpH6X6
-# '
-# .
-# .
-# ----------------END BACKUP---------`
-#
-# ... Confirm that TPM is in use: `LOADER> printenv  bootarg.use.tpm`
-#
-# ... Reboot the replacement node and check the output.
-# +
-# IMPORTANT: You must contact Customer Support if you see the following messages during the node reboot:
-# +
-# `[....:crypto.ssal.failed:ALERT] : SSAL Unseal operation failed:  SSAL Unseal operation failed.``
- # +
- # ``[....:crypto.okmrecovery.failed: ERROR: Import of the onboard key hierarchy failed: failed to import key.hierarchy. Additional information: error: ssal unseal failed.``
+.. Select the option to boot to LOADER.
+////
+.. From the healthy node, check to see if Onboard Key Manager (OKM) is configured: `security key-manager onboard show-backup`
++
+If you see: `Error: show failed: Onboard key management is not configured for the admin Vserver. Use the "security key-manager
+      onboard enable" command to configure onboard key management.`
+Onboard Key Manager is not configured and you can
+select the option to boot to LOADER from the displayed boot menu.
+
+.. If OKM is enabled, select Option 10 from the Boot Menu.
++
+You will see the following ouptut:
++
+` -------------BEGIN BACKUP---------- TmV0QXBwIEtleSBCbG9iAAEBAAAEAAAAcAEAAAAAAACCPESPAAAAACEAAAAAAAAA
+QAAAAAAAAAAU6/F6AAAAAFPMGJ/LzijV+ma+2Gji744SyuJIz7WJVZQoTygpH6X6
+'
+.
+.
+----------------END BACKUP---------`
+
+... Confirm that TPM is in use: `LOADER> printenv  bootarg.use.tpm`
+
+... Reboot the replacement node and check the output.
++
+IMPORTANT: You must contact Customer Support if you see the following messages during the node reboot:
++
+`[....:crypto.ssal.failed:ALERT] : SSAL Unseal operation failed:  SSAL Unseal operation failed.``
++
+``[....:crypto.okmrecovery.failed: ERROR: Import of the onboard key hierarchy failed: failed to import key.hierarchy. Additional information: error: ssal unseal failed.``
