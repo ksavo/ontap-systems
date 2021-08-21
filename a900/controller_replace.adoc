@@ -20,7 +20,7 @@ To access components inside the controller, you must first remove the controller
 . Unplug the cables from the impaired controller module, and keep track of where the cables were connected.
 . Slide the orange button on the cam handle downward until it unlocks.
 +
-image::../media/drw_a900_remove_pcm.png[]
+image::../media/drw_a900_remove_PCM.png[]
 +
 |===
 a|
@@ -129,7 +129,7 @@ NOTE: The system might update system firmware when it boots. Do not abort this p
 . If you have not already done so, replace the cover on the controller module.
 . Align the end of the controller module with the opening in the chassis, and then gently push the controller module halfway into the system.
 +
-image::../media/drw_a900_remove_pcm.png[]
+image::../media/drw_a900_remove_PCM.png[]
 +
 |===
 a|
