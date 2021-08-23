@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: FAS9000
 summary: 'You can install the system image to the replacement boot media using a USB flash drive with the image installed on it. However, you must restore the var file system during this procedure.'
 ---
-= Transfer the boot image to the boot media - AFF A700 and FAS9000
+= Transfer the boot image to the boot media - AFF A900
 :icons: font
 :imagesdir: ../media/
 

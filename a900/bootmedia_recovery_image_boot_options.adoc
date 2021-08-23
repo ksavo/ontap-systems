@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords:
 summary: 'The procedure for booting the impaired node from the recovery image depends on whether the system is in a two-node MetroCluster configuration.'
 ---
-= Boot the recovery image - AFF A700 and FAS9000
+= Boot the recovery image - AFF A900
 :icons: font
 :imagesdir: ../media/
 

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords:
 summary: 'To access components inside the controller, you must first remove the controller module from the system and then remove the cover on the controller module.'
 ---
-= Open the controller module - AFF A700 and FAS9000
+= Open the controller module - AFF A900
 :icons: font
 :imagesdir: ../media/
 

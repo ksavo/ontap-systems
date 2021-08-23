@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords:
 summary: 'You must boot the ONTAP image from the USB drive, restore the file system, and verify the environmental variables.'
 ---
-= Boot the recovery image in most systems - AFF A700 and FAS9000
+= Boot the recovery image in most systems - AFF A900
 :icons: font
 :imagesdir: ../media/
 

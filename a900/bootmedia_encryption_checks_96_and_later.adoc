@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords:
 summary: 'Before shutting down the impaired node, you need to check whether the system has either NetApp Volume Encryption \(NVE\) or NetApp Storage Encryption \(NSE\) enabled. If so, you need to verify the configuration.'
 ---
-= Check NVE or NSE on systems running ONTAP 9.6 and later - AFF A700 and FAS9000
+= Check NVE or NSE on systems running ONTAP 9.6 and later - AFF A900
 // THIS TOPIC IS NO LONGER USED AND CONTENT MREGED INTO BOOTMEDIA_ENCRYPTION__preshutdown_checks.adoc.
 //
 //

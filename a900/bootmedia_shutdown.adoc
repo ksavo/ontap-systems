@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords:
 summary: 'After completing the NVE or NSE tasks, you need to complete the shutdown of the impaired node.'
 ---
-= Shut down the node - AFF A700 and FAS9000
+= Shut down the node - AFF A900
 :icons: font
 :imagesdir: ../media/
 
