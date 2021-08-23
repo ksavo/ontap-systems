@@ -19,12 +19,11 @@ To access components inside the controller, you must first remove the controller
 . Unplug the cables from the impaired controller module, and keep track of where the cables were connected.
 . Slide the orange button on the cam handle downward until it unlocks.
 +
-image::../media/drw_9000_remove_pcm.gif[]
+image::../media/drw_a900_remove_PCM.png[]
 +
 |===
 a|
-image:../media/legend_icon_01.gif[]
-a|
+image:../media/legend_icon_01.gif[] a|
 Cam handle release button
 a|
 image:../media/legend_icon_02.gif[]
@@ -38,12 +37,11 @@ Make sure that you support the bottom of the controller module as you slide it o
 
 . Place the controller module lid-side up on a stable, flat surface, press the blue button on the cover, slide the cover to the back of the controller module, and then swing the cover up and lift it off of the controller module.
 +
-image::../media/drw_9000_pcm_open.gif[]
+image::../media/drw_a900_PCM_open.png[]
 +
 |===
 a|
-image:../media/legend_icon_01.gif[]
-a|
+image:../media/legend_icon_01.gif[] a|
 Controller module cover locking button
 |===
 
@@ -57,12 +55,11 @@ You must locate the boot media in the controller and follow the directions to re
 .Steps
 . Lift the black air duct at the back of the controller module and then locate the boot media using the following illustration or the FRU map on the controller module:
 +
-image::../media/drw_9000_remove_boot_dev.gif[]
+image::../media/drw_a900_remove_boot_dev.png[]
 +
 |===
 a|
-image:../media/legend_icon_01.gif[]
-a|
+image:../media/legend_icon_01.gif[] a|
 Press release tab
 a|
 image:../media/legend_icon_02.gif[]
