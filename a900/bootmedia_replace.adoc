@@ -1,7 +1,7 @@
 ---
 permalink: a900/bootmedia_replace.html
 sidebar: sidebar
-keywords: aff a700, fas9000, replace, boot, media, controller, directions. replace boot media, transfer image
+keywords: AFF A900, replace, boot, media, controller, directions. replace boot media, transfer image
 summary: 'You must remove and open the controller module, locate and replace the boot media in the controller, and then transfer the image to the replacement boot media.'
 ---
 [.lead]

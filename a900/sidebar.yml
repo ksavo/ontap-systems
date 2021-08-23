@@ -61,11 +61,9 @@ entries:
       entries:
       - title: Pre-shutdown checks for onboard encryption keys
         url: /a900/bootmedia_encryption_preshutdown_checks.html
-      #  entries:
-      #  - title: Check NVE or NSE on systems running ONTAP 9.5 and earlier
-      #    url: /a900/bootmedia_encryption_checks_95_and_earlier.html
-      #  - title: Check NVE or NSE on systems running ONTAP 9.6 and later
-      #    url: /a900/bootmedia_encryption_checks_96_and_later.html
+        entries:
+        - title: Check NVE or NSE on systems running ONTAP 9.6 and later
+          url: /a900/bootmedia_encryption_checks_96_and_later.html
       - title: Shut down the impaired controller
         url: /a900/bootmedia_impaired_controller_shutdown.html
         entries:
@@ -73,12 +71,8 @@ entries:
           url: /a900/bootmedia_shutdown.html
         - title: Shut down a node in a two-node MetroCluster configuration
           url: /a900/bootmedia_shutdown_2n_mcc.html
-      - title: Open the controller module
-        url: /a900/bootmedia_controller_open.html
-      - title: Replace the boot media
-        url: /a900/bootmedia_replace.html
-      - title: Transfer the boot image to the boot media
-        url: /a900/bootmedia_transfer_boot_image.html
+        - title: Transfer the boot image and replace the failed boot media
+          url: /a900/bootmedia_replace.html
       - title: Boot the recovery image
         url: /a900/bootmedia_recovery_image_boot_options.html
         entries:
