@@ -1,7 +1,7 @@
 ---
 permalink: a900/bootmedia_shutdown.html
 sidebar: sidebar
-keywords:
+keywords: AFF A900
 summary: 'After completing the NVE or NSE tasks, you need to complete the shutdown of the impaired node.'
 ---
 = Shut down the node - AFF A900
@@ -9,3 +9,12 @@ summary: 'After completing the NVE or NSE tasks, you need to complete the shutdo
 :imagesdir: ../media/
 
 include::../_include/shutdown_bootmedia.adoc[]
+
+
+== Option 1: Most configurations
+
+include::../_include/shutdown_most_frus.adoc[]
+
+== Option 2: Controller is in a two-node MetroCluster
+
+include::../_include/shutdown_2n_mcc.adoc[]
