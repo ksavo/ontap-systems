@@ -10,3 +10,11 @@ summary: 'You can shut down or take over the impaired controller using different
 
 [.lead]
 You can shut down or take over the impaired controller using different procedures, depending on the storage system hardware configuration.
+
+== Option 1: Most configurations
+
+include::../_include/shutdown_most_frus.html[]
+
+== Option 2: Controller is in a two-node MetroCluster
+
+include::../_include/shutdown_2n_mcc.adoc[]
