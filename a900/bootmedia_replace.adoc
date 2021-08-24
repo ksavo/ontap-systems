@@ -4,12 +4,12 @@ sidebar: sidebar
 keywords: AFF A900, replace, boot, media, controller, directions. replace boot media, transfer image
 summary: 'You must remove and open the controller module, locate and replace the boot media in the controller, and then transfer the image to the replacement boot media.'
 ---
+= Remove the controller, replace the boot media, and transfer the boot image - AFF A900
+
 [.lead]
 You must remove and open the controller module, locate and replace the boot media in the controller, and then transfer the image to the replacement boot media.
 
-Test
-
-= Step 1: Open the controller module - AFF A900
+= Step 1: Open the controller module
 :icons: font
 :imagesdir: ../media/
 
