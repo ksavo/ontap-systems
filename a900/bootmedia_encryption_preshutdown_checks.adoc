@@ -7,3 +7,5 @@ summary: 'Prior to shutting down the impaired node and checking the status of th
 = Pre-shutdown checks for onboard encryption keys
 
 include::../_include/encryption_steps_before_shutdown.adoc[]
+
+include::../_include/bootmedia_encryption_checks_96_and_later[]

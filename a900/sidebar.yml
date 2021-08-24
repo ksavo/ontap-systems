@@ -62,8 +62,6 @@ entries:
       - title: Pre-shutdown checks for onboard encryption keys
         url: /a900/bootmedia_encryption_preshutdown_checks.html
         entries:
-        - title: Check NVE or NSE on systems running ONTAP 9.6 and later
-          url: /a900/bootmedia_encryption_checks_96_and_later.html
       - title: Shut down the impaired controller
         url: /a900/bootmedia_impaired_controller_shutdown.html
         entries:
