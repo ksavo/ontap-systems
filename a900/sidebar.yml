@@ -68,11 +68,6 @@ entries:
         url: /a900/bootmedia_replace.html
       - title: Boot the recovery image
         url: /a900/bootmedia_recovery_image_boot_options.html
-        entries:
-        - title: Boot the recovery image in most systems
-          url: /a900/bootmedia_recovery_image_boot_non_2n_mcc.html
-        - title: Boot the recovery image in a two-node MetroCluster configuration
-          url: /a900/bootmedia_recovery_image_boot_2n_mcc.html
       - title: Switch back aggregates in a two-node MetroCluster configuration
         url: /a900/bootmedia_2n_mcc_switchback.html
       - title: Post boot media replacement steps for OKM, NSE, and NVE
