@@ -8,6 +8,4 @@ summary: 'Prior to shutting down the impaired node and checking the status of th
 
 include::../_include/encryption_steps_before_shutdown.adoc[]
 
-is this correct
-
-include::../_include/encryption_check_96_and_later.adoc[]
+include::../_include/encryption_check_96_later.adoc[]
