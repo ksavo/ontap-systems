@@ -10,4 +10,4 @@ include::../_include/encryption_steps_before_shutdown.adoc[]
 
 is this correct
 
-include::../_include/bootmedia_encryption_checks_96_and_later[]
+include::../_include/bootmedia_encryption_check_96_and_later[]
