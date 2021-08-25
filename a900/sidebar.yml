@@ -55,13 +55,12 @@ entries:
     - title: NVRAM module and/or NVRAM DIMMs
       url: /a900/nvram_module_or_nvram_dimm_replacement.html
       # END NVRAM module and/or NVRAM DIMMs replace
-      # START boot media  *****
+      # START boot media
     - title: Boot media
       url: /a900/bootmedia_replace_overview.html
       entries:
       - title: Pre-shutdown checks for onboard encryption keys
         url: /a900/bootmedia_encryption_preshutdown_checks.html
-        entries:
       - title: Shut down the impaired controller
         url: /a900/bootmedia_impaired_controller_shutdown.html
       - title: Transfer the boot image and replace the failed boot media
