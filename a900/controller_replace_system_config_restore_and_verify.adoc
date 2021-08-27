@@ -11,8 +11,6 @@ summary: 'After completing the hardware replacement and booting to Maintenance m
 [.lead]
 After completing the hardware replacement, you verify the low-level system configuration of the replacement controller, reconfigure system settings as necessary, and then run system-level diagnostics.
 
-image::../media/pcm_replace_livermore_3_restoring_and_verifying_the_system_configuration.gif[]
-
 == Step 1: Set and verify the system time after replacing the controller module
 
 include::../_include/set_time_after_controller_rep.adoc[]
