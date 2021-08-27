@@ -36,15 +36,16 @@ entries:
       # END fan
       # START controller module replacement
     - title: Controller module
-      url: /a900/controller_replace_overview.html
       entries:
+      - title: Overview
+        url: /a900/controller_replace_overview.html
       - title: Shut down the impaired controller
         url: /a900/controller_replace_shutdown.html
       - title: Replace the controller module hardware
         url: /a900/controller_replace.html
       - title: Restore and verify the system configuration
         url: /a900/controller_replace_system_config_restore_and_verify.html
-      - title: Recable the system and reassign disks 
+      - title: Recable the system and reassign disks
         url: /a900/controller_replace_recable_reassign_disks/html
       - title: Complete system restoration
         url: /a900/controller_replace_complete_system_restoration.html
