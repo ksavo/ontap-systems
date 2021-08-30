@@ -9,14 +9,7 @@ summary: 'The procedure for booting the impaired node from the recovery image de
 :imagesdir: ../media/
 
 [.lead]
-The procedure for booting the impaired node from the recovery image depends on whether the system is in a two-node MetroCluster configuration.
-
-== Option 1: Boot the recovery image in most systems
-
-[.lead]
 You must boot the ONTAP image from the USB drive, restore the file system, and verify the environmental variables.
-
-This procedure applies to systems that are not in a two-node MetroCluster configuration.
 
 . From the LOADER prompt, boot the recovery image from the USB flash drive: `boot_recovery`
 +
@@ -106,7 +99,3 @@ If any interfaces are listed as "false", revert those interfaces back to their h
 
 . Move the console cable to the repaired node and run the version -v command to check the ONTAP versions.
 . Restore automatic giveback if you disabled it by using the storage failover modify -node local -auto-giveback true command.
-
-== Option 2: Boot the recovery image in a two-node MetroCluster configuration
-
-include::../_include/2n_mcc_boot_recovery_image.adoc[]
