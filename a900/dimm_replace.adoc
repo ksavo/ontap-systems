@@ -220,9 +220,6 @@ Determine the cause of the problem:
 +
 After you issue the command, wait until the system stops at the LOADER prompt.
 
- .. Turn off or leave on the power supplies, depending on how many controller modules are in the chassis:
-  *** If you have two controller modules in the chassis, leave the power supplies turned on to provide power to the other controller module.
-  *** If you have one controller module in the chassis, turn off the power supplies and unplug them from the power sources.
  .. Verify that you have observed all the considerations identified for running system-level diagnostics, that cables are securely connected, and that hardware components are properly installed in the storage system.
  .. Boot the controller module you are servicing, interrupting the boot by pressing `Ctrl-C` when prompted to get to the Boot menu:
   *** If you have two controller modules in the chassis, fully seat the controller module you are servicing in the chassis.
