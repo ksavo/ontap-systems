@@ -31,7 +31,7 @@ To access components inside the controller, you must first remove the controller
 . Unplug the cables from the impaired controller module, and keep track of where the cables were connected.
 . Slide the orange button on the cam handle downward until it unlocks.
 +
-image::../media/drw_a900_remove_pcm.png[]
+image::../media/drw_a900_remove_PCM.png[]
 +
 |===
 a|
@@ -49,7 +49,7 @@ Make sure that you support the bottom of the controller module as you slide it o
 
 . Place the controller module lid-side up on a stable, flat surface, press the blue button on the cover, slide the cover to the back of the controller module, and then swing the cover up and lift it off of the controller module.
 +
-image::../media/drw_a900_pcm_open.png[]
+image::../media/drw_a900_PCM_open.png[]
 +
 |===
 a|
@@ -109,7 +109,7 @@ For HA pairs with two controller modules in the same chassis, the sequence in wh
 
 . If you have not already done so, replace the cover on the controller module.
 +
-image::../media/drw_a900_pcm_open.png[]
+image::../media/drw_a900_PCM_open.png[]
 +
 |===
 a|
@@ -119,7 +119,7 @@ Controller module cover locking button
 
 . Align the end of the controller module with the opening in the chassis, and then gently push the controller module halfway into the system.
 +
-image::../media/drw_a900_remove_pcm.png[]
+image::../media/drw_a900_remove_PCM.png[]
 +
 |===
 a|
