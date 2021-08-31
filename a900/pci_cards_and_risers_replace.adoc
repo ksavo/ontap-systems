@@ -18,7 +18,7 @@ To replace an I/O module, you must perform a specific sequence of tasks.
 
 [.lead]
 include::../_include/shutdown_most_frus.adoc[]
-=== Shut down the impaired node
+
 
 == Step 2: Replace I/O modules
 
@@ -44,12 +44,11 @@ The I/O module disengages from the chassis and moves about 1/2 inch out of the I
 +
 Make sure that you keep track of which slot the I/O module was in.
 +
-image::../media/drw_a900_remove_PCIe_module.png[]
+image:../media/drw_a900_remove_PCIe_module.png[]
 +
 |===
 a|
-image:../media/legend_icon_01.gif[]
-a|
+image:../media/legend_icon_01.gif[] a|
 Lettered and numbered I/O cam latch
 a|
 image:../media/legend_icon_02.gif[]
@@ -70,27 +69,10 @@ After you replace a PCIe module, you must reboot the controller module.
 +
 NOTE: Be sure to exit Maintenance mode after completing the conversion.
 
-. Return the node to normal operation:
+. Return the node to normal operation: `storage failover giveback -ofnode impaired_node_name`
+a|
 +
-|===
-| If your system is in...| Issue this command from the partner's console...
-a|
-An HA pair
-a|
-`storage failover giveback -ofnode impaired_node_name`
-a|
-A two-node MetroCluster configuration
-a|
-Proceed to the next step.     The MetroCluster switchback procedure is done in the next task in the replacement process.
-+
-|===
-
 . If automatic giveback was disabled, reenable it: `storage failover modify -node local -auto-giveback true`
-
-== Step 4: Switch back aggregates in a two-node MetroCluster configuration
-
-[.lead]
-include::../_include/2n_mcc_switchback.adoc[]
 
 == Step 5: Return the failed part to NetApp
 
