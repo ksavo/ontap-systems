@@ -70,9 +70,7 @@ entries:
       - title: Transfer the boot image and replace the failed boot media
         url: /a900/bootmedia_replace.html
       - title: Boot the recovery image
-        url: /a900/bootmedia_recovery_image_boot_options.html
-      - title: Switch back aggregates in a two-node MetroCluster configuration
-        url: /a900/bootmedia_2n_mcc_switchback.html
+        url: /a900/bootmedia_recovery_image.html
       - title: Post boot media replacement steps for OKM, NSE, and NVE
         url: /a900/bootmedia_encryption_restore.html
       - title: Return the failed part to NetApp
