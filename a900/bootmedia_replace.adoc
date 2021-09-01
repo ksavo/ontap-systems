@@ -88,7 +88,7 @@ If necessary, remove the boot media and reseat it into the socket.
 [.lead]
 You can install the system image to the replacement boot media using a USB flash drive with the image installed on it. However, you must restore the var file system during this procedure.
 
-= Before you begin
+*Before you begin*
 
 * You must have a USB flash drive, formatted to FAT32, with at least 4GB capacity.
 * A copy of the same image version of ONTAP as what the impaired controller was running. You can download the appropriate image from the Downloads section on the NetApp Support Site
@@ -97,7 +97,8 @@ You can install the system image to the replacement boot media using a USB flash
 * If your system is an HA pair, you must have a network connection.
 * If your system is a stand-alone system you do not need a network connection, but you must perform an additional reboot when restoring the var file system.
 
-.Steps
+*Steps*
+
 . Align the end of the controller module with the opening in the chassis, and then gently push the controller module halfway into the system.
 . Recable the controller module, as needed.
 . Insert the USB flash drive into the USB slot on the controller module.

@@ -5,6 +5,8 @@ It is important that you apply the commands in the steps on the correct systems:
 * The replacement node is the new node that replaced the impaired node as part of this procedure.
 * The healthy node is the HA partner of the replacement node
 
+*Steps*
+
 . If the replacement node is not at the LOADER prompt, halt the system to the LOADER prompt.
 . On the healthy node, check the system time:``show date``
 +
