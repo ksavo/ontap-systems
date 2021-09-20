@@ -85,10 +85,6 @@ entries:
     - title: LED USB module
       url: /a900/led_module_replace.html
       # START X91148A module
-    - title: X91148A module
-      entries:
-      - title: In an AFF A700 system with open slots
-        url: /a900/x91148a_modules_with_open_slots_add.html
-      - title: In an AFF A700 system with no open slots
-        url: /a900/x91148a_modules_with_no_open_slots_add.html
+    - title: Add I/O module
+      url: /a900/add_io_module.html
       # END X91148A module
