@@ -4,31 +4,37 @@ sidebar: sidebar
 keywords: LED USB module,replacing,hot-swapping,LED USB module,non-disruptive replacement,LED USB module
 summary: 'You can replace an LED USB module without interrupting service.'
 ---
-= Replace an LED USB module - AFF A700 and FAS9000
+= Replace an LED USB module - AFF A900
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-You can replace an LED USB module without interrupting service.
-
-The FAS9000 or AFF A700 LED USB module provides connectivity to console ports and system status. Replacement of this module does not require tools.
+The LED USB module provides connectivity to console ports and system status. Replacement of this module does not require tools and does not interrupt service.
 
 . Remove the old LED USB module:
 +
-image::../media/led_3.png[]
+image::../media/drw_a900_remove_replace_LED_mod.png[]
++
+
+|===
+a|
+image:../media/legend_icon_01.gif[] a|
+Locking button
+a|
+image:../media/legend_icon_02.gif[]
+a|
+USB LED module
+a|
+|===
 
  .. With the bezel removed, locate the LED USB module at the front of the chassis, on the bottom left side.
  .. Slide the latch to partially eject the module.
  .. Pull the module out of the bay to disconnect it from the midplane. Do not leave the slot empty.
 
 . Install the new LED USB module:
-+
-image::../media/led_4.png[]
-
  .. Align the module to the bay with the notch in the corner of the module positioned near the slider latch on the chassis. The bay will prevent you from installing the module upside down.
  .. Push the module into the bay until it is fully seated flush with the chassis.
 +
 There is an audible click when the module is secure and connected to the midplane.
 
-== Return the failed part to NetApp
-include::../_include/complete_rma.adoc[]
+include::../_include/complete_rma_step.adoc[]
