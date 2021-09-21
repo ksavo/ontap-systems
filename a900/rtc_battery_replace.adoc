@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords:
 summary: ''
 ---
-= Replacing the real-time clock battery
+= Replacing the real-time clock battery - AFF A900
 :icons: font
 :imagesdir: ../media/
 
@@ -17,17 +17,9 @@ You replace the real-time clock (RTC) battery in the controller module so that y
 == Step 1: Shut down the impaired controller
 
 [.lead]
-You can shut down or take over the impaired controller using different procedures, depending on the storage system hardware configuration.
-
-=== Shutting down the impaired node
-
 include::../_include/shutdown_most_frus.adoc[]
 
-=== Shutting down a node in a two-node MetroCluster configuration
-
-include::../_include/shutdown_2n_mcc.adoc[]
-
-== Step 2: Open the controller module
+== Step 2: Open the controller
 
 [.lead]
 To access components inside the controller, you must first remove the controller module from the system and then remove the cover on the controller module.
@@ -36,12 +28,11 @@ To access components inside the controller, you must first remove the controller
 . Unplug the cables from the impaired controller module, and keep track of where the cables were connected.
 . Slide the orange button on the cam handle downward until it unlocks.
 +
-image::../media/drw_9000_remove_pcm.gif[]
+image::../media/drw_9000_remove_pcm.svg[]
 +
 |===
 a|
-image:../media/legend_icon_01.gif[]
-a|
+image:../media/legend_icon_01.gif[] a|
 Cam handle release button
 a|
 image:../media/legend_icon_02.gif[]
@@ -55,12 +46,11 @@ Make sure that you support the bottom of the controller module as you slide it o
 
 . Place the controller module lid-side up on a stable, flat surface, press the blue button on the cover, slide the cover to the back of the controller module, and then swing the cover up and lift it off of the controller module.
 +
-image::../media/drw_9000_pcm_open.gif[]
+image::../media/drw_9000_pcm_open.svg[]
 +
 |===
 a|
-image:../media/legend_icon_01.gif[]
-a|
+image:../media/legend_icon_01.gif[] a|
 Controller module cover locking button
 |===
 
@@ -72,12 +62,11 @@ To replace the RTC battery, you must locate the failed battery in the controller
 . If you are not already grounded, properly ground yourself.
 . Locate the RTC battery.
 +
-image::../media/drw_9000_remove_rtc_battery.gif[]
+image::../media/drw_9000_remove_rtc_battery.svg[]
 +
 |===
 a|
-image:../media/legend_icon_01.gif[]
-a|
+image:../media/legend_icon_01.gif[] a|
 RTC battery
 a|
 image:../media/legend_icon_02.gif[]
@@ -128,10 +117,6 @@ IMPORTANT: Do not use excessive force when sliding the controller module into th
 . At the LOADER prompt, enter `bye` to reinitialize the PCIe cards and other components and let the node reboot.
 . Return the node to normal operation by giving back its storage: `storage failover giveback -ofnode impaired_node_name`
 . If automatic giveback was disabled, reenable it: `storage failover modify -node local -auto-giveback true`
-
-== Step 5: Switch back aggregates in a two-node MetroCluster configuration
-
-include::../_include/2n_mcc_switchback.adoc[]
 
 == Step 6: Return the failed part to NetApp
 
