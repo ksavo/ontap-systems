@@ -1,10 +1,10 @@
 ---
 permalink: a900/dcpm_nvram10_battery_replace.html
 sidebar: sidebar
-keywords: FAS9000 AFF A700
+keywords: AFF A900
 summary: 'To hot-swap a de-stage controller power module \(DCPM\), which contains the NVRAM10 battery, you must locate the failed DCPM module, remove it from the chassis, and install the replacement DCPM module.'
 ---
-= Replace the de-stage controller power module containing the NVRAM10 Battery - AFF A700 and FAS9000
+= Replace the de-stage controller power module containing the NVRAM10 Battery - AFF A900
 :icons: font
 :imagesdir: ../media/
 
@@ -13,7 +13,7 @@ To hot-swap a de-stage controller power module (DCPM), which contains the NVRAM1
 
 You must have a replacement DCPM module in-hand before removing the failed module from the chassis and it must be replaced within five minutes of removal. Once the DCPM module is removed from the chassis, there is no shutdown protection for the controller module that owns the DCPM module, other than failover to the other controller module.
 
-== Replacing the DCPM module
+== Step 1: Replacing the DCPM module
 
 To replace the DCPM module in your system, you must remove the failed DCPM module from the system and then replace it with a new DCPM module.
 
@@ -27,12 +27,11 @@ IMPORTANT: The DCPM module must be replaced in the chassis within five minutes o
 
 . Press the orange locking button on the module handle, and then slide the DCPM module out of the chassis.
 +
-image::../media/drw_9000_remove_nv_battery.gif[]
+image::../media/drw_9000_remove_nv_battery.svg[]
 +
 |===
 a|
-image:../media/legend_icon_01.gif[]
-a|
+image:../media/legend_icon_01.gif[] a|
 DCPM module orange locking button
 |===
 
@@ -42,12 +41,12 @@ NOTE: The module and slot are keyed. Do not force the module into the opening. I
 +
 The DCPM module LED lights when the module is fully seated into the chassis.
 
-== Dispose of batteries
+== Step 2: Dispose of batteries
 
 You must dispose of batteries according to the local regulations regarding battery recycling or disposal. If you cannot properly dispose of batteries, you must return the batteries to NetApp, as described in the RMA instructions that are shipped with the kit.
 
-https://library.netapp.com/ecm/ecm_download_file/ECMP12475945
+https://library.netapp.com/ecm/ecm_download_file/ECMP12475945[Safety Information and Regulatory Notices]
 
-== Return the failed part to NetApp
+== Step 3: Return the failed part to NetApp
 
 include::../_include/complete_rma.adoc[]
