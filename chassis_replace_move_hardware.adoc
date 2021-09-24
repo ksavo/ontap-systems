@@ -1,0 +1,141 @@
+---
+permalink: a900/chassis_replace_move_hardware.html
+sidebar: sidebar
+keywords:
+summary: 'All other components in the system must be functioning properly; if not, you must contact technical support.'
+---
+
+= Move and replace hardware - AFF A900
+:icons: font
+:imagesdir: ../media/
+
+== Step 1: Remove the power supplies
+
+[.lead]
+Removing the power supplies when replacing a chassis involves turning off, disconnecting, and then removing the power supply from the old chassis.
+
+. If you are not already grounded, properly ground yourself.
+. Turn off the power supply and disconnect the power cables:
+ .. Turn off the power switch on the power supply.
+ .. Open the power cable retainer, and then unplug the power cable from the power supply.
+ .. Unplug the power cable from the power source.
+. Press and hold the orange button on the power supply handle, and then pull the power supply out of the chassis.
++
+CAUTION:
++
+When removing a power supply, always use two hands to support its weight.
++
+image::../media/drw_a900_remove_install_PSU_module.png[]
++
+|===
+a|
+image:../media/legend_icon_01.gif[] a|
+Locking button
+|===
+
+. Repeat the preceding steps for any remaining power supplies.
+
+== Step 2: Remove the fans
+
+[.lead]
+To remove the fan modules when replacing the chassis, you must perform a specific sequence of tasks.
+
+. If you are not already grounded, properly ground yourself.
+. Remove the bezel (if necessary) with two hands, by grasping the openings on each side of the bezel, and then pulling it toward you until the bezel releases from the ball studs on the chassis frame.
+. Press the orange button on the fan module and pull the fan module straight out of the chassis, making sure that you support it with your free hand.
++
+NOTE: The fan modules are short. Always support the bottom of the fan module with your free hand so that it does not suddenly drop free from the chassis and injure you.
++
+image::../media/drw_a900_remove_install_fan.png[]
++
+|===
+a|
+image:../media/legend_icon_01.gif[] a|
+Orange release button
+|===
+
+. Set the fan module aside.
+. Repeat the preceding steps for any remaining fan modules.
+
+== Step 3: Remove the controller module
+
+[.lead]
+To replace the chassis, you must remove the controller module or modules from the old chassis.
+
+. If you are not already grounded, properly ground yourself.
+. Unplug the cables from the impaired controller module, and keep track of where the cables were connected.
+. Slide the orange button on the cam handle downward until it unlocks.
++
+image::../media/drw_a900_remove_PCM.png[]
++
+|===
+a|
+image:../media/legend_icon_01.gif[] a|
+Cam handle release button
+a|
+image:../media/legend_icon_02.gif[]
+a|
+Cam handle
+|===
+
+. Rotate the cam handle so that it completely disengages the controller module from the chassis, and then slide the controller module out of the chassis.
++
+Make sure that you support the bottom of the controller module as you slide it out of the chassis.
+
+. Set the controller module aside in a safe place, and repeat these steps if you have another controller module in the chassis.
+
+== Step 4: Remove the I/O modules
+
+[.lead]
+To remove I/O modules from the old chassis, including the NVRAM modules, follow the specific sequence of steps. You do not have to remove the FlashCache module from the NVRAM module when moving it to a new chassis.
+
+. If you are not already grounded, properly ground yourself.
+. Unplug any cabling associated with the target I/O module.
++
+Make sure that you label the cables so that you know where they came from.
+
+. Remove the target I/O module from the chassis:
+ .. Depress the lettered and numbered cam button.
++
+The cam button moves away from the chassis.
+
+ .. Rotate the cam latch down until it is in a horizontal position.
++
+The I/O module disengages from the chassis and moves about 1/2 inch out of the I/O slot.
+
+ .. Remove the I/O module from the chassis by pulling on the pull tabs on the sides of the module face.
+
++
+Make sure that you keep track of which slot the I/O module was in.
++
+image::../media/drw_a900_remove_PCIe_module.png[]
++
+|===
+a|
+image:../media/legend_icon_01.gif[] a|
+Lettered and numbered I/O cam latch
+a|
+image:../media/legend_icon_02.gif[]
+a|
+I/O cam latch completely unlocked
+|===
+. Set the I/O module aside.
+. Repeat the preceding step for the remaining I/O modules in the old chassis.
+
+== Step 5: Remove the De-stage Controller Power Module
+
+[.lead]
+You must remove the de-stage controller power modules from the old chassis in preparation for installing the replacement chassis.
+
+. If you are not already grounded, properly ground yourself.
+. Press the orange locking button on the module handle, and then slide the DCPM module out of the chassis.
++
+image::../media/drw_a900_remove_NV_battery.png[]
++
+|===
+a|
+image:../media/legend_icon_01.gif[] a|
+DCPM module orange locking button
+|===
+
+. Set the DCPM module aside in a safe place and repeat this step for the remaining DCPM module.
