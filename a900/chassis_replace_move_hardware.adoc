@@ -21,9 +21,7 @@ Removing the power supplies when replacing a chassis involves turning off, disco
  .. Unplug the power cable from the power source.
 . Press and hold the orange button on the power supply handle, and then pull the power supply out of the chassis.
 +
-CAUTION:
-+
-When removing a power supply, always use two hands to support its weight.
+NOTE: When removing a power supply, always use two hands to support its weight.
 +
 image::../media/drw_a900_remove_install_PSU_module.png[]
 +
@@ -104,11 +102,10 @@ The cam button moves away from the chassis.
 The I/O module disengages from the chassis and moves about 1/2 inch out of the I/O slot.
 
  .. Remove the I/O module from the chassis by pulling on the pull tabs on the sides of the module face.
-
 +
 Make sure that you keep track of which slot the I/O module was in.
 +
-image::../media/drw_a900_remove_PCIe_module.png[]
+image:../media/drw_a900_remove_PCIe_module.png[]
 +
 |===
 a|
@@ -119,6 +116,7 @@ image:../media/legend_icon_02.gif[]
 a|
 I/O cam latch completely unlocked
 |===
++
 . Set the I/O module aside.
 . Repeat the preceding step for the remaining I/O modules in the old chassis.
 
