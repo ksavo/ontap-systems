@@ -72,7 +72,15 @@ entries:
     - title: I/O module
       url: /a900/pci_cards_and_risers_replace.html
     - title: Chassis
-      url: /a900/chassis_replace.html
+      entries:
+      - title: Overview
+        url: /a900/chassis_replace_overview.html
+      - title: Shut down the impaired controller
+        url: /a900/chassis_replace_shutdown.html
+      - title: Replace the hrdware
+        url: /a900/chassis_replace_move_hardware.html
+      - title: Restoring and verifying configuration
+        url: /a900/chassis_replace_complete_system_restore_rma.html
     - title: LED USB module
       url: /a900/led_module_replace.html
       # START X91148A module

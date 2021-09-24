@@ -1,29 +1,34 @@
 ---
-permalink: a900/chassis_replace_overview.html
+permalink: a900/chassis_replace_complete_system_restore_rma.html
 sidebar: sidebar
-keywords:
-summary: 'All other components in the system must be functioning properly; if not, you must contact technical support.'
+keywords: aff a900, verify and set HA state, run diagnostics, complete the replacement process
+summary: "You must verify the HA state of the chassis, run diagnostics, and return the failed part to NetApp, as described in the RMA instructions shipped with the kit."
 ---
-= Replace the chassis - AFF A900
+= Restoring and verifying the configuration - AFF a900
 :icons: font
 :imagesdir: ../media/
 
+== Step 1: Verifying and setting the HA state of the chassis
+
 [.lead]
-*Before you begin*
+You must verify the HA state of the chassis, and, if necessary, update the state to match your system configuration.
 
-To replace the chassis, you must remove the power supplies, fans, controller modules, I/O modules, DCPM modules, and USB LED module from the impaired chassis, remove the impaired chassis from the equipment rack or system cabinet, install the replacement chassis in its place, and then install the components into the replacement chassis.
+. In Maintenance mode, from either controller module, display the HA state of the local controller module and chassis: `ha-config show`
++
+The HA state should be the same for all components.
 
-All other components in the system must be functioning properly; if not, you must contact technical support.
+. If the displayed system state for the chassis does not match your system configuration:
+ .. Set the HA state for the chassis: `ha-config modify chassis HA-state`
++
+The value for HA-state can be one of the following:
 
-*About this task*
+  *** ha
+  *** non-ha
 
-* You can use this procedure with all versions of ONTAP supported by your system.
-* This procedure is disruptive. For a two-node cluster, you will have a complete service outage and a partial outage in a multi-node cluster.
+ .. Confirm that the setting has changed: `ha-config show`
+. If you have not already done so, recable the rest of your system.
 
-**********
-
-
-== Step 15: Running system-level diagnostics
+== Step 2: Running system-level diagnostics
 
 [.lead]
 After installing a new chassis, you should run interconnect diagnostics.
@@ -38,7 +43,7 @@ All commands in the diagnostic procedures are issued from the node where the com
 +
 After you issue the command, you should wait until the system stops at the LOADER prompt.
 +
-IMPORTANT: During the boot process, you can safely respond `y` to prompts:
+NOTE: During the boot process, you can safely respond `y` to prompts:
 . Repeat the previous step on the second node if you are in an HA configuration.
 +
 NOTE: Both controllers must be in Maintenance mode to run the interconnect test.
@@ -60,7 +65,8 @@ You only need to run the interconnect test from one controller.
 System-level diagnostics returns you to the prompt if there are no test failures, or lists the full status of failures resulting from testing the component.
 
 . Proceed based on the result of the preceding step.
-+
+
+[options="header"]
 |===
 | If the system-level diagnostics tests...| Then...
 a|
@@ -80,12 +86,14 @@ SLDIAG: No log messages are present.
 +
 The system displays the LOADER prompt.
 +
-IMPORTANT: You must exit Maintenance mode on both controllers before proceeding any further.
+NOTE: You must exit Maintenance mode on both controllers before proceeding any further.
 
  .. Enter the following command on both controllers at the LOADER prompt: `bye`
  .. Return the node to normal operation:
 +
 |===
+
+[options="header"]
 |===
 | If your system is running ONTAP...| Then...
 a|
@@ -97,14 +105,9 @@ With more than two nodes in the cluster
 a|
 Issue this command:``node::> storage failover modify -node node0 -enabled true``
 a|
-In a two-node MetroCluster configuration
-a|
-Proceed to the next step.         The MetroCluster switchback procedure is done in the next task in the replacement process.
-a|
 In a stand-alone configuration
 a|
 You have no further steps in this particular task.
-
  You have completed system-level diagnostics.
 
 a|
@@ -120,13 +123,7 @@ Determine the cause of the problem.
 
 +
 |===
-
-== Step 16: Switch back aggregates in a two-node MetroCluster configuration
-
-[.lead]
-include::../_include/2n_mcc_switchback.adoc[]
-
-== Step 17: Return the failed part to NetApp
+== Step 3: Return the failed part to NetApp
 
 [.lead]
 include::../_include/complete_rma.adoc[]
