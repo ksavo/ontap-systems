@@ -1,0 +1,63 @@
+section: a200
+title: AFF A200 systems
+entries:
+ - title: Install and setup
+   entries:
+   - title: Cluster configuration worksheet
+     url: /a200/install-worksheet-linkout.html
+   - title: Installation and setup PDF poster
+     url: /a200/install-setup-linkout.html
+   - title: Setup video
+     url: /a200/install-video-linkout.html
+ - title: Maintain
+   entries:
+    # START boot media replacement
+    - title: Boot media
+      entries:
+        - title: Overview
+          url: /a200/bootmedia-replace-overview.html
+        - title: Check onboard encryption keys as needed
+          url: /a200/bootmedia-encryption-preshutdown-checks.html
+        - title: Shut down the impaired controller
+          url: /a200/bootmedia-shutdown.html
+        - title: Remove the controller module, replace the boot media and transfer the boot image to the boot media
+          url: /a200/bootmedia-replace.html
+        - title: Boot the recovery image
+          url: /a200/bootmedia-recovery-image-boot-non-2n-mcc.html
+        - title: Restore OKM, NSE, and NVE as needed
+          url: /a200/bootmedia-encryption-restore.html
+        - title: Return the failed part to NetApp
+          url: /a200/bootmedia-complete-rma.html
+      # END boot media replacement
+    - title: Chassis
+      entries:
+      - title: Overview
+        url: /a200/chassis-replace-overview.html
+      - title: Shut down the impaired controller
+        url: /a200/chassis-replace-shutdown.html
+      - title: Replace the hardware
+        url: /a200/chassis-replace-move-hardware.html
+      - title: Restoring and verifying configuration
+        url: /a200/chassis-replace-complete-system-restore-rma.html
+    - title: Controller module
+      entries:
+      - title: Overview
+        url: /a200/controller-replace-overview.html
+      - title: Shut down the impaired controller
+        url: /a200/controller-replace-shutdown.html
+      - title: Replace the hardware
+        url: /a200/controller-replace-move-hardware.html
+      - title: Restoring and verifying configuration
+        url: /a200/controller-replace-system-config-restore-and-verify.html
+      - title: Recable the system and reassign disks
+        url: /a200/controller-replace-recable-reassign-disks.html
+      - title: Complete system restoration
+        url: /a200/controller-replace-restore-system-rma.html
+    - title: DIMM
+      url: /a200/dimm-replace.html
+    - title: NVMEM battery
+      url: /a200/nvmem-nvram-battery-replace.html
+    - title: Power supply
+      url: /a200/power-supply-swap-out.html
+    - title: Real-time clock battery
+      url: /a200/rtc-battery-replace.html

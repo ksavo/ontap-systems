@@ -1,0 +1,27 @@
+In a stand-alone system, you must manually reassign disks to the new controller's system ID before you return the system to normal operating condition.
+
+.About this task
+NOTE: This procedure applies only to systems that are in a stand-alone configuration.
+
+.Steps
+. If you have not already done so, reboot the replacement node, interrupt the boot process by pressing Ctrl-C, and then select the option to boot to Maintenance mode from the displayed menu.
+. You must enter Y when prompted to override the system ID due to a system ID mismatch.
+. View the system IDs: disk show -a
+. You should make a note of the old system ID, which is displayed as part of the disk owner column.
++
+The following example shows the old system ID of 118073209:
++
+----
+*> disk show -a
+Local System ID: 118065481
+
+  DISK      OWNER                  POOL   SERIAL NUMBER  HOME
+--------    -------------          -----  -------------  -------------
+disk_name    system-1  (118073209)  Pool0  J8XJE9LC       system-1  (118073209)
+disk_name    system-1  (118073209)  Pool0  J8Y478RC       system-1  (118073209)
+.
+.
+.
+
+----
+. Boot the node: `boot_ontap`

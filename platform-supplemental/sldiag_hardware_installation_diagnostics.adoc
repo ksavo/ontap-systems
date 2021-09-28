@@ -1,0 +1,144 @@
+---
+permalink: platform-supplemental/sldiag-hardware-installation-diagnostics.html
+sidebar: sidebar
+keywords: run, diagnostic, add, replacing, replace, hardware, component, storage, systen, verify, installation, successful, run hardware installation diagnostic
+summary: You run diagnostics after adding or replacing hardware components in your storage system to verify that the component has no problems and that the installation is successful.
+---
+= Run hardware installation diagnostics
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You run diagnostics after adding or replacing hardware components in your storage system to verify that the component has no problems and that the installation is successful.
+
+. At the storage system prompt, switch to the LOADER prompt: `halt`
+. Enter the following command at the LOADER prompt: `boot_diags`
++
+NOTE: You must run this command from the LOADER prompt for system-level diagnostics to function properly. The boot_diags command starts special drivers designed specifically for system-level diagnostics.
+
+. Run the default tests on the particular device you added or replaced by entering the following command: `sldiag device run [-dev devtype|mb|slotslotnum] [-name device]`
+ ** -dev devtype specifies the type of device to be tested.
+  *** ata is an Advanced Technology Attachment device.
+  *** bootmedia is the system booting device.
+  *** cna is a Converged Network Adapter not connected to a network or storage device.
+  *** env is motherboard environmentals.
+  *** fcache is the Flash Cache adapter, also known as the Performance Acceleration Module 2.
+  *** fcal is a Fibre Channel-Arbitrated Loop device not connected to a storage device or Fibre Channel network.
+  *** fcvi is the Fiber Channel Virtual Interface not connected to a Fibre Channel network.
+  *** interconnect or nvram-ib is the high-availability interface.
+  *** mem is system memory.
+  *** nic is a Network Interface Card not connected to a network.
+  *** nvram is nonvolatile RAM.
+  *** nvmem is a hybrid of NVRAM and system memory.
+  *** sas is a Serial Attached SCSI device not connected to a disk shelf.
+  *** serviceproc is the Service Processor.
+  *** storage is an ATA, FC-AL, or SAS interface that has an attached disk shelf.
+  *** toe is a TCP Offload Engine, a type of NIC.
+ ** mb specifies that all the motherboard devices are to be tested.
+ ** slot slotnum specifies that a device in a specific slot number is to be tested.
+ ** -name device specifies a given device class and type.
+. View the status of the test by entering the following command: `sldiag device status`
++
+Your storage system provides the following output while the tests are still running:
++
+----
+There are still test(s) being processed.
+----
++
+After all the tests are complete, the following response appears by default:
++
+----
+*> <SLDIAG:_ALL_TESTS_COMPLETED>
+----
+
+. Verify that no hardware problems resulted from the addition or replacement of hardware components on your storage system by entering the following command: `sldiag device status [-dev devtype|mb|slotslotnum] [-name device] -long -state failed`
++
+The following example pulls up the full status of failures resulting from testing a newly installed FC-AL adapter:
++
+----
+
+*> **sldiag device status -dev fcal -long -state failed**
+
+TEST START ------------------------------------------
+DEVTYPE: fcal
+NAME: Fcal Loopback Test
+START DATE: Sat Jan  3 23:10:56 GMT 2009
+
+STATUS: Completed
+Starting test on Fcal Adapter: 0b
+Started gathering adapter info.
+Adapter get adapter info OK
+Adapter fc_data_link_rate: 1Gib
+Adapter name: QLogic 2532
+Adapter firmware rev: 4.5.2
+Adapter hardware rev: 2
+
+Started adapter get WWN string test.
+Adapter get WWN string OK wwn_str: 5:00a:098300:035309
+
+Started adapter interrupt test
+Adapter interrupt test OK
+
+Started adapter reset test.
+Adapter reset OK
+
+Started Adapter Get Connection State Test.
+Connection State: 5
+Loop on FC Adapter 0b is OPEN
+
+Started adapter Retry LIP test
+Adapter Retry LIP OK
+
+ERROR: failed to init adaptor port for IOCTL call
+
+ioctl_status.class_type = 0x1
+
+ioctl_status.subclass = 0x3
+
+ioctl_status.info = 0x0
+ Started INTERNAL LOOPBACK:
+INTERNAL LOOPBACK   OK
+Error Count: 2  Run Time: 70 secs
+>>>>> ERROR, please ensure the port has a shelf or plug.
+END DATE: Sat Jan  3 23:12:07 GMT 2009
+
+LOOP: 1/1
+TEST END --------------------------------------------
+----
++
+[options="header" cols="1,2"]
+|===
+| If the system-level diagnostics tests...| Then...
+a|
+Were completed without any failures
+a|
+There are no hardware problems and your storage system returns to the prompt.
+
+ .. Clear the status logs by entering the following command: `sldiag device clearstatus [-dev devtype|mb|slotslotnum]`
+ .. Verify that the log is cleared by entering the following command: `sldiag device status [-dev devtype|mb|slotslotnum]`
++
+The following default response is displayed:
++
+----
+SLDIAG: No log messages are present.
+----
+
+ .. Exit Maintenance mode by entering the following command: `halt`
+ .. Enter the following command at the Loader prompt to boot the storage system: `boot_ontap`
+You have completed system-level diagnostics.
+
+a|
+Resulted in some test failures
+a|
+Determine the cause of the problem.
+
+ .. Exit Maintenance mode by entering the following command: `halt`
+ .. Perform a clean shutdown and disconnect the power supplies.
+ .. Verify that you have observed all the considerations identified for running system-level diagnostics, that cables are securely connected, and that hardware components are properly installed in the storage system.
+ .. Reconnect the power supplies and power on the storage system.
+ .. Repeat Steps 1 through 6 of _Running hardware installation diagnostics_.
+
++
+|===
+
+If the failures persist after repeating the steps, you need to replace the hardware.

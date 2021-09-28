@@ -1,0 +1,14 @@
+---
+permalink: platform-supplemental/42u-1280mm-unpack.html
+sidebar: sidebar
+keywords: remove, pack, material, surround, system, cabinet, recycle, unpack, unpack the system cabinet
+summary: You must remove the packing material that surrounds your system cabinet before you move it into place. You should also recycle the packing material after the cabinet is unpacked.
+---
+= Unpack the system cabinet
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You must remove the packing material that surrounds your system cabinet before you move it into place. You should also recycle the packing material after the cabinet is unpacked.
+
+image::../media/drw_sys_cab_unpacking_instructions_ozeki.gif[]

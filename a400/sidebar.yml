@@ -1,0 +1,73 @@
+section: a400
+title: AFF A400 systems
+entries:
+  - title: Install and setup
+    entries:
+    - title: Choose install and setup experience
+      url: /a400/install-setup.html
+    - title: Quick guide
+      url: /a400/install-quick-guide.html
+    - title: Videos
+      url: /a400/install-videos.html
+    - title: Detailed guide
+      url: /a400/install-detailed-guide.html
+  - title: Maintain
+    entries:
+    - title: Boot media
+      entries:
+      - title: Overview
+        url: /a400/bootmedia-replace-overview.html
+      - title: Check onboard encryption keys as needed
+        url: /a400/bootmedia-encryption-preshutdown-checks.html
+      - title: Shut down the impaired controller
+        url: /a400/bootmedia-impaired-controller-shutdown.html
+      - title: Remove the controller module, replace the boot media and transfer the boot image to the boot media
+        url: /a400/bootmedia-replace.html
+      - title: Boot the recovery image
+        url: /a400/bootmedia-recovery-image-boot-options.html
+      - title: Switch back aggregates in a two-node MetroCluster configuration
+        url: /a400/bootmedia-2n-mcc-switchback.html
+      - title: Restore OKM, NSE, and NVE as needed
+        url: /a400/bootmedia-encryption-restore.html
+      - title: Return the failed part to NetApp
+        url: /a400/bootmedia-complete-rma.html
+    - title: Chassis
+      entries:
+      - title: Overview
+        url: /a400/chassis-replace-overview.html
+      - title: Shut down the impaired controller
+        url: /a400/chassis-replace-shutdown.html
+      - title: Replace the hardware
+        url: /a400/chassis-replace-move-hardware.html
+      - title: Complete the restoration and replacement process
+        url: /a400/chassis-replace-complete-system-restore-rma.html
+    - title: Controller module
+      entries:
+      - title: Overview
+        url: /a400/controller-replace-overview.html
+      - title: Shut down the impaired controller
+        url: /a400/controller-impaired-controller-shutdown.html
+      - title: Replace the controller module hardware
+        url: /a400/controller-replace.html
+      - title: Restore and verify the system configuration
+        url: /a400/controller-replace-system-config-restore-and-verify.html
+      - title: Recable the system and reassign drives
+        url: /a400/controller-repalce-recable-reassign-disks.html
+      - title: Complete system restoration
+        url: /a400/controller-replace-complete-system-restoration.html
+      - title: Return the faied part to NetApp
+        url: /a400/controller-replace-complete-rma.html
+    - title: DIMM
+      url: /a400/dimm-replace.html
+    - title: Fan
+      url: /a400/fan-swap-out.html
+    - title: NVDIMM battery
+      url: /a400/nvdimm-battery-replace.html
+    - title: NVDIMM
+      url: /a400/nvdimm-replace.html
+    - title: PCIe or mezzanine card
+      url: /a400/pci-cards-and-risers-replace.html
+    - title: Power supply
+      url: /a400/power-supply-replace.html
+    - title: Real-time clock battery
+      url: /a400/rtc-battery-replace.html

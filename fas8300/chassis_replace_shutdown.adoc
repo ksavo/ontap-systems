@@ -1,0 +1,20 @@
+---
+permalink: fas8300/chassis-replace-shutdown.html
+sidebar: sidebar
+keywords: fas8300, fas8700, shut, chassis, controller, replace, remove, swap, verify, install, power, supply, metrocluster, aggregates, replacement, process, equipment, rack, ha, state, system
+summary: "To replace the chassis, you must shutdown the controllers."
+---
+= Shut down the controllers - FAS8300 and FAS8700
+:icons: font
+:imagesdir: ../media/
+
+== Option 1: Most configurations
+
+[.lead]
+include::../_include/shutdown_chassis.adoc[]
+
+
+== Option 2: Controller is in a two-node MetroCluster configuration
+
+[.lead]
+include::../_include/shutdown_2n_mcc.adoc[]

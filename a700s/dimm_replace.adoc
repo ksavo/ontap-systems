@@ -1,0 +1,218 @@
+---
+permalink: a700s/dimm-replace.html
+sidebar: sidebar
+keywords: aff a700s, aff, a700s, replace, fimm, controller, module, system, register, increase, increasing, number, correctable, error, correction, code, ecc, failure, system, panic, dimm, shut, down, impair, diagnostic, complete, replacement, process, replace a dimmm, shut down the impaired controller, remove the controller module, replace a dimm, reinstall the controller module and booting the system, run diagnostics, complete the replacement process
+summary: You must replace a DIMM in the controller module when your system registers an increasing number of correctable error correction codes (ECC); failure to do so causes a system panic.
+---
+= Replace a DIMM - AFF A700s
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You must replace a DIMM in the controller module when your system registers an increasing number of correctable error correction codes (ECC); failure to do so causes a system panic.
+
+All other components in the system must be functioning properly; if not, you must contact technical support.
+
+You must replace the failed component with a replacement FRU component you received from your provider.
+
+*Steps*
+
+== Shut down the impaired node
+
+[.lead]
+To shut down the impaired node, you must determine the status of the node and, if necessary, take over the node so that the healthy node continues to serve data from the impaired node storage.
+
+.Steps
+
+* If you have a cluster with more than two nodes, it must be in quorum. If the cluster is not in quorum or a healthy node shows false for eligibility and health, you must correct the issue before shutting down the impaired node.
++
+http://docs.netapp.com/ontap-9/topic/com.netapp.doc.dot-cm-sag/home.html[ONTAP 9 System Administration Reference]
+
+.Steps
+
+. If the impaired node is part of an HA pair, disable automatic giveback from the console of the healthy node: `storage failover modify -node local -auto-giveback false`
+. Take the impaired node to the LOADER prompt:
++
+[options="header" cols="1,2"]
+|===
+| If the impaired node is displaying...| Then...
+a|
+The LOADER prompt
+a|
+Go to the next step.
+a|
+Waiting for giveback...
+a|
+    Press Ctrl-C, and then respond `y`.
+a|
+System prompt or password prompt (enter system password)
+a|
+Take over or halt the impaired node: `storage failover takeover -ofnode impaired_node_name`    When the impaired node shows Waiting for giveback..., press Ctrl-C, and then respond `y`.
++
+|===
+
+== Remove the controller module
+
+[.lead]
+You must remove the controller module from the chassis when you replace the controller module or replace a component inside the controller module.
+
+. If you are not already grounded, properly ground yourself.
+. Loosen the hook and loop strap binding the cables to the cable management device, and then unplug the system cables and SFPs (if needed) from the controller module, keeping track of where the cables were connected.
++
+Leave the cables in the cable management device so that when you reinstall the cable management device, the cables are organized.
+
+. Unplug the controller module power supply from the source, and then unplug the cable from the power supply.
+. Remove the cable management device from the controller module and set it aside.
+. Press down on both of the locking latches, and then rotate both latches downward at the same time.
++
+The controller module moves slightly out of the chassis.
++
+image::../media/drw_a700s_pcm_remove.svg[]
++
+|===
+a|
+image:../media/legend_icon_01.gif[] a|
+Locking latch
+a|
+image:../media/legend_icon_02.gif[]
+a|
+Locking pin
+|===
+
+. Slide the controller module out of the chassis.
++
+Make sure that you support the bottom of the controller module as you slide it out of the chassis.
+
+. Place the controller module on a stable, flat surface, and then open the air duct:
+ .. Press in the locking tabs on the sides of the air duct toward the middle of the controller module.
+ .. Slide the air duct toward the fan modules, and then rotate it upward to its completely open position.
++
+image::../media/drw_a700s_open_air_duct.svg[]
++
+[cols="1,4"]
+|===
+a|
+image:../media/legend_icon_01.gif[]
+a|
+Air duct locking tabs
+a|
+image:../media/legend_icon_02.gif[]
+a|
+Risers
+a|
+image:../media/legend_icon_03.gif[]
+a|
+Air duct
+|===
+
+== Replace a DIMM
+
+[.lead]
+To replace a DIMM, you must locate it in the controller module using the DIMM map on the inside of the controller module or locating it using the LED next to the DIMM, and then replace it following the specific sequence of steps.
+
+. If you are not already grounded, properly ground yourself.
+. Remove the applicable riser.
++
+image::../media/drw_a700s_dimm_replace.svg[]
++
+[cols="1,4"]
+|===
+a|
+image:../media/legend_icon_01.gif[]
+a|
+Air duct cover
+a|
+image:../media/legend_icon_02.gif[]
+a|
+Riser 1 and DIMM bank 1-4
+a|
+image:../media/legend_icon_03.gif[]
+a|
+Riser 2 and DIMM bank 5-8 and 9-12
+a|
+image:../media/legend_icon_04.gif[]
+a|
+Riser 3 and DIMM 13-16
+|===
+
+ ** If you are removing or moving a DIMM in bank 1-4, unplug the NVRAM battery, unlock the locking latch on Riser 1, and then remove the riser.
+ ** If you are removing or moving a DIMM in bank 5-8 or 9-12, unlock the locking latch on Riser 2, and then remove the riser.
+ ** If you are removing or moving a DIMM in bank 13-16, unlock the locking latch on Riser 3, and then remove the riser.
+
+. Note the orientation of the DIMM in the socket so that you can insert the replacement DIMM in the proper orientation.
+. Eject the DIMM from its slot by slowly pushing apart the two DIMM ejector tabs on either side of the DIMM, and then slide the DIMM out of the slot.
++
+NOTE: Carefully hold the DIMM by the edges to avoid pressure on the components on the DIMM circuit board.
+
+. Remove the replacement DIMM from the antistatic shipping bag, hold the DIMM by the corners, and align it to the slot.
++
+The notch among the pins on the DIMM should line up with the tab in the socket.
+
+. Make sure that the DIMM ejector tabs on the connector are in the open position, and then insert the DIMM squarely into the slot.
++
+The DIMM fits tightly in the slot, but should go in easily. If not, realign the DIMM with the slot and reinsert it.
++
+NOTE: Visually inspect the DIMM to verify that it is evenly aligned and fully inserted into the slot.
+
+. Push carefully, but firmly, on the top edge of the DIMM until the ejector tabs snap into place over the notches at the ends of the DIMM.
+. Reinstall any risers that you removed from the controller module.
++
+If you removed the NVRAM riser, Riser 1, make sure that you plug the NVRAM battery into the controller module.
+
+. Close the air duct.
+
+== Reinstall the controller module and booting the system
+
+[.lead]
+After you replace a FRU in the controller module, you must reinstall the controller module and reboot it.
+
+For HA pairs with two controller modules in the same chassis, the sequence in which you install the controller module is especially important because it attempts to reboot as soon as you completely seat it in the chassis.
+
+. If you are not already grounded, properly ground yourself.
+. Align the end of the controller module with the opening in the chassis, and then gently push the controller module halfway into the system.
++
+NOTE: Do not completely insert the controller module in the chassis until instructed to do so.
+
+. Recable the system, as needed.
++
+If you removed the media converters (QSFPs or SFPs), remember to reinstall them if you are using fiber optic cables.
+
+. Plug the power cord into the power supply, reinstall the power cable locking collar, and then connect the power supply to the power source.
+. Complete the reinstallation of the controller module:
+ .. If you have not already done so, reinstall the cable management device.
+ .. Firmly push the controller module into the chassis until it meets the midplane and is fully seated.
++
+The locking latches rise when the controller module is fully seated.
++
+NOTE: Do not use excessive force when sliding the controller module into the chassis to avoid damaging the connectors.
++
+The controller module begins to boot as soon as it is fully seated in the chassis. Be prepared to interrupt the boot process.
+
+ .. Rotate the locking latches upward, tilting them so that they clear the locking pins, and then lower them into the locked position.
+ .. Interrupt the boot process by pressing `Ctrl-C` when you see Press Ctrl-C for Boot Menu.
+ .. Select the option to boot to Maintenance mode from the displayed menu.
+
+== Run diagnostics
+
+[.lead]
+After you have replaced a component in your system, you should run diagnostic tests on that component.
+
+Your system must be at the LOADER prompt to start diagnostics.
+
+All commands in the diagnostic procedures are issued from the node where the component is being replaced.
+
+. If the node to be serviced is not at the LOADER prompt, reboot the node: `system node halt -node node_name`
++
+After you issue the command, you should wait until the system stops at the LOADER prompt.
+
+. At the LOADER prompt, access the special drivers specifically designed for system-level diagnostics to function properly: `boot_diags`
+. Select *Scan System* from the displayed menu to enable running the diagnostics tests.
+. Select *Test Memory* from the displayed menu.
+. Proceed based on the result of the preceding step:
+ ** If the test failed, correct the failure, and then rerun the test.
+ ** If the test reported no failures, select Reboot from the menu to reboot the system.
+
+== Return the failed part to NetApp
+
+[.lead]
+include::../_include/complete_rma.adoc[]

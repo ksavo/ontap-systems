@@ -1,0 +1,73 @@
+section: fas8300
+title: FAS8300 and FAS8700 systems
+entries:
+  - title: Install and setup
+    entries:
+    - title: Choose install and setup experience
+      url: /fas8300/install-setup-installation.html
+    - title: Quick steps
+      url: /fas8300/install-quick-guide.html
+    - title: Video steps
+      url: /fas8300/install-videos.html
+    - title: Detailed steps
+      url: /fas8300/install-detailed-guide.html
+  - title: Maintain
+    entries:
+    - title: Boot media
+      entries:
+      - title: Overview
+        url: /fas8300/bootmedia-replace-overview.html
+      - title: Check onboard encryption keys as needed
+        url: /fas8300/bootmedia-encryption-preshutdown-checks.html
+      - title: Shut down the impaired controller
+        url: /fas8300/bootmedia-impaired-controller-shutdown.html
+      - title: Remove the controller module, replace the boot media and transfer the boot image to the boot media
+        url: /fas8300/bootmedia-replace.html
+      - title: Boot the recovery image
+        url: /fas8300/bootmedia-recovery-image-boot-options.html
+      - title: Switch back aggregates in a two-node MetroCluster configuration
+        url: /fas8300/bootmedia-2n-mcc-switchback.html
+      - title: Restore OKM, NSE, and NVE as needed
+        url: /fas8300/bootmedia-encryption-restore.html
+      - title: Return the failed part to NetApp
+        url: /fas8300/bootmedia-complete-rma.html
+    - title: Caching module
+      url: /fas8300/caching-module-replace.html
+    - title: Chassis
+      entries:
+      - title: Overview
+        url: /fas8300/chassis-replace-overview.html
+      - title: Shut down the impaired controller
+        url: /fas8300/chassis-replace-shutdown.html
+      - title: Replace the hardware
+        url: /fas8300/chassis-replace-move-hardware.html
+      - title: Complete the restoration and replacement process
+        url: /fas8300/chassis-replace-complete-system-restore-rma.html
+    - title: Controller
+      entries:
+      - title: Overview
+        url: /fas8300/controller-replace-overview.html
+      - title: Shut down the impaired controller
+        url: /fas8300/controller-replace-shutdown.html
+      - title: Move the controller module hardware
+        url: /fas8300/controller-replace-move-hardware.html
+      - title: Restore and verify the system configuration
+        url: /fas8300/controller-replace-system-config-restore-and-verify.html
+      - title: Recable the system and reassign disks
+        url: /fas8300/controller-replace-recable-reassign-disks.html
+      - title: Complete the replacement process
+        url: /fas8300/controller-replace-restore-system-rma.html
+    - title: DIMM
+      url: /fas8300/dimm-replace.html
+    - title: Fan module
+      url: /fas8300/fan-swap-out.html
+    - title: NVDIMM
+      url: /fas8300/nvdimm-replace.html
+    - title: NVDIMM battery
+      url: /fas8300/nvdimm-battery-replace.html
+    - title: PCIe or mezzanine card
+      url: /fas8300/pci-cards-and-risers-replace.html
+    - title: Power supply
+      url: /fas8300/power-supply-replace.html
+    - title: Real-time clock battery
+      url: /fas8300/rtc-battery-replace.html

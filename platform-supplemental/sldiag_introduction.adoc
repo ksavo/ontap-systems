@@ -1,0 +1,30 @@
+---
+permalink: platform-supplemental/sldiag-introduction.html
+sidebar: sidebar
+keywords: system-level, diagnostic, command-line, interface, test, search, hardware, problem, storage, system, component, operating, identify, faulty, component, introduction, introduction to system-level diagnostic
+summary: System-level diagnostics provides a command-line interface for tests that search for and determine hardware problems on supported storage systems. You use system-level diagnostics to confirm that a specific component is operating properly or to help identify faulty components.
+---
+= Introduction to system‑level diagnostics
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+System-level diagnostics provides a command-line interface for tests that search for and determine hardware problems on supported storage systems. You use system-level diagnostics to confirm that a specific component is operating properly or to help identify faulty components.
+
+System-level diagnostics is available for supported storage systems only. Entering system-level diagnostics at the command-line interface of unsupported storage systems generates an error message.
+
+You run system-level diagnostics after one of the following common troubleshooting situations:
+
+* Initial system installation
+* Addition or replacement of hardware components
+* System panic caused by an unidentified hardware failure
+* Access to a specific device becomes intermittent or the device becomes unavailable
+* System response time becomes sluggish
+
+To run system-level diagnostics, you must already be running Data ONTAP because you need to reach the *Maintenance mode boot* option in Data ONTAP. There are several approaches to get to this option, but this is the recommended approach taken in the procedures documented in this guide. Some hardware components in your system may require a specific approach, and this would be documented in the applicable field replaceable unit (FRU) flyer. This guide does not provide detailed definitions of specific commands, subcommands, tests, or conditions.
+
+Once the command is entered, the tests run in the background and the passed or failed outcome of the tests is logged in the internal memory-based log, which has a fixed size. Some tests are utilities and will simply state completed rather than passed or failed. After you run the appropriate tests, the procedures documented in this guide help you generate status report. Once the test results show a successful completion of system-level diagnostics, it is a recommended best practice to clear the log.
+
+In the event of test failures, the status reports will help technical support make appropriate recommendations. The failure could be resolved by reinstalling the FRU, by ensuring cables are connected, or by enabling specific tests recommended by technical support and then re-running those tests. If the failure cannot be resolved, then there is a hardware failure and the affected hardware must be replaced.
+
+There are no error messages that require further definitions or explanations.

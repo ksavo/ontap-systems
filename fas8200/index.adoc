@@ -1,0 +1,9 @@
+---
+permalink: fas8200/index.html
+sidebar: sidebar
+keywords: 
+summary: ''
+---
+= FAS8200 systems
+:icons: font
+:imagesdir: ../media/

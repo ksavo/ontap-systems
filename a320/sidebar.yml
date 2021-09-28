@@ -1,0 +1,87 @@
+section: a320
+title: AFF A320 systems
+entries:
+  - title: Install and setup
+    entries:
+    - title: Choose install and setup experience
+      url: /a320/install-setup.html
+    - title: Quick guide
+      url: /a320/install-quick-guide.html
+    - title: Videos
+      url: /a320/install-videos.html
+    - title: Detailed guide
+      url: /a320/install-detailed-guide.html
+  - title: Maintain
+    entries:
+      # START boot media replacement
+    - title: Boot media
+      entries:
+        - title: Overview
+          url: /a320/bootmedia-replace-overview.html
+        - title: Check onboard encryption keys as needed
+          url: /a320/bootmedia-encryption-preshutdown-checks.html
+        - title: Shut down the impaired controller
+          url: /a320/bootmedia-shutdown.html
+        - title: Remove the controller module, replace the boot media and transfer the boot image to the boot media
+          url: /a320/bootmedia-replace.html
+        - title: Boot the recovery image
+          url: /a320/bootmedia-recovery-image-boot-non-2n-mcc.html
+        - title: Restore OKM, NSE, and NVE as needed
+          url: /a320/bootmedia-encryption-restore.html
+        - title: Return the failed part to NetApp
+          url: /a320/bootmedia-complete-rma.html
+      # END boot media replacement
+      # START chassis replacement
+    - title: Chassis
+      entries:
+      - title: Overview
+        url: /a320/chassis-replace-overview.html
+      - title: Shut down the impaired controller
+        url: /a320/chassis-replace-shutdown.html
+      - title: Replace the hardware
+        url: /a320/chassis-replace-move-hardware.html
+      - title: Complete the restoration and replacement process
+        url: /a320/chassis-replace-complete-system-restore-rma.html
+      # END chassis replacement
+      # START controller module replacement
+    - title: Controller module
+      entries:
+        - title: Overview
+          url: /a320/controller-replace-overview.html
+        - title: Shut down the impaired controller
+          url: /a320/controller-replace-impaired-controller-shutdown.html
+        - title: Replace the controller module hardware
+          url: /a320/controller-replace.html
+        - title: Restore and verify the system configuration
+          url: /a320/controller-replace-system-config-restore-and-verify.html
+        - title: Recable the system and reassign
+          url: /a320/controller-repalce-recable-reassign-disks.html
+        - title: Complete system restoration
+          url: /a320/controller-replace-complete-system-restoration.html
+        - title: Complete the replacement process
+          url: /a320/controller-replace-complete-rma.html
+      # END controller module replacement
+      # START dimm replacement
+    - title: DIMM
+      url: /a320/dimm-replace.html
+      # END dimm replacement
+    #START Fan module replace
+    - title: Fan module
+      url: /a320/fan-swap-out.html
+    # END Fan module replace
+    - title: NVDIMM
+      url: /a320/nvdimm-replace.html
+    # START NVDIMM replace
+    - title: NVDIMM battery
+      url: /a320/nvdimm-battery-replace.html
+      # START PCIe card replacement
+    - title: PCIe card
+      url: /a320/pci-cards-and-risers-replace.html
+      # END PCIe card replacement
+    #START PSU replace
+    - title: Power supply
+      url: /a320/power-supply-replace.html
+      # START rtc battery replacement
+    - title: Real-time clock battery
+      url: /a320/rtc-battery-replace.html
+      # END rtc battery replacement

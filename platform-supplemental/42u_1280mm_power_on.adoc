@@ -1,0 +1,29 @@
+---
+permalink: platform-supplemental/42u-1280mm-power-on.html
+sidebar: sidebar
+keywords: connect, system, component, pdu, cable, ac, power, source, cabinet, power on the system cabinet
+summary: You must connect the system components to the PDUs, route the PDU cables to the AC power sources, connect them to the power sources, and power on the system.
+---
+= Power on the system cabinet
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You must connect the system components to the PDUs, route the PDU cables to the AC power sources, connect them to the power sources, and power on the system.
+
+You must have separate power circuits available for each PDU in your system cabinet.
+
+. Connect your equipment to the PDUs, making sure that you connect each component's power supplies to a PDU on opposite sides of the system cabinet.
+. Feed the PDU power cables through an opening in the system cabinet.
++
+Use one of the following openings:
+
+ ** The top of the system cabinet
+ ** Between the rear door bottom and frame of the system cabinet
+ ** Through the floor opening and under the system cabinet
+
+. Turn off the power switches or circuit breakers on the PDUs.
+. Plug each PDU power cable into individual AC power sources that are on separate AC circuits.
+. Turn on the power switches or circuit breakers to the PDUs.
+. Turn on the power to your components, and then boot the system.
+. Close and lock the system cabinet doors.

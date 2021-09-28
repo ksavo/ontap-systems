@@ -1,0 +1,69 @@
+section: a300
+title: AFF A300 systems
+entries:
+ - title: Install and setup
+   entries:
+   - title: Cluster configuration worksheet
+     url: /media/cluster_configuration_worksheet.pdf
+   - title: Installation and setup PDF poster
+     url: /media/Installation_and_Setup_Instructions_AFF_A300.pdf
+   - title: Setup video
+     url: /a300/install-video-linkout.html
+ - title: Maintain
+   entries:
+   # START boot media replacement
+   - title: Boot media
+     entries:
+     - title: Overview
+       url: /a300/bootmedia-replace-overview.html
+     - title: Check onboard encryption keys as needed
+       url: /a300/bootmedia-encryption-preshutdown-checks.html
+     - title: Shut down the impaired controller
+       url: /a300/bootmedia-impaired-controller-shutdown.html
+     - title: Remove the controller module, replace the boot media and transfer the boot image to the boot media
+       url: /a300/bootmedia-replace.html
+     - title: Booting the recovery image
+       url: /a300/bootmedia-recovery-image-boot-options.html
+     - title: Switching back aggregates in a two-node MetroCluster configuration
+       url: /a300/bootmedia-2n-mcc-switchback.html
+     - title: Restore OKM, NSE, and NVE as needed
+       url: /a300/bootmedia-encryption-restore.html
+     - title: Return the failed part to NetApp
+       url: /a300/bootmedia-complete-rma.html
+    # END boot media replacement
+   - title: Chassis
+     entries:
+      - title: Overview
+        url: /a300/chassis-replace-overview.html
+      - title: Shut down the impaired controller
+        url: /a300/chassis-replace-shutdown.html
+      - title: Replace the hardware
+        url: /a300/chassis-replace-move-hardware.html
+      - title: Restoring and verifying configuration
+        url: /a300/chassis-replace-complete-system-restore-rma.html
+   - title: Controller module
+     entries:
+     - title: Overview
+       url: /a300/controller-replace-overview.html
+     - title: Shut down the impaired controller
+       url: /a300/controller-replace-shutdown.html
+     - title: Move the controller module hardware
+       url: /a300/controller-replace-move-hardware.html
+     - title: Restore and verify the system configuration
+       url: /a300/controller-replace-system-config-restore-and-verify.html
+     - title: Recable the system and reassign disks
+       url: /a300/controller-replace-recable-reassign-disks.html
+     - title: Complete the replacement process
+       url: /a300/controller-replace-restore-system-rma.html
+   - title: DIMM
+     url: /a300/dimm-replace.html
+   - title: Fan
+     url: /a300/fan-swap-out.html
+   - title: NVMEM battery
+     url: /a300/nvmem-nvram-battery-replace.html
+   - title: PCIe card
+     url: /a300/pci-cards-and-risers-replace.html
+   - title: Power supply
+     url: /a300/power-supply-swap-out.html
+   - title: Real-time clock battery
+     url: /a300/rtc-battery-replace.html

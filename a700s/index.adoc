@@ -1,0 +1,9 @@
+---
+permalink: a700s/index.html
+sidebar: sidebar
+keywords: aff a700s, aff, a700s, 
+summary:
+---
+= Model
+:icons: font
+:imagesdir: ../media/

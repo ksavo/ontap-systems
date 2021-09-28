@@ -1,0 +1,379 @@
+---
+permalink: sas3/install-hot-add-shelf.html
+sidebar: sidebar
+keywords: hot-add, disk, shelves, shelf, iom12, exist, stack, module, sas, hba, onboard, sas, port, controller
+summary: You can hot-add one or more disk shelves with IOM12 modules to an existing stack of disk shelves with IOM12 modules or hot-add a stack of one or more disk shelves with IOM12 modules directly to a SAS HBA or an onboard SAS port on the controller.
+---
+= Hot-add a shelf - shelves with IOM12 modules
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You can hot-add one or more disk shelves with IOM12 modules to an existing stack of disk shelves with IOM12 modules or hot-add a stack of one or more disk shelves with IOM12 modules directly to a SAS HBA or an onboard SAS port on the controller.
+
+*About this task*
+
+You cannot use this procedure to mix a stack: hot-add a shelf with IOM12 modules to a stack of shelves that has IOM6 modules. If you need to mix a stack, use link:iom12-hot-add-mix.html[Hot-add IOM12 shelves to a stack of IOM6 shelves].
+
+== Requirements for hot-adding disk shelves with IOM12 modules
+
+[.lead]
+Your system must meet certain requirements before hot-adding disk shelves with IOM12 modules.
+
+=== State of your system
+
+* Your system and version of ONTAP must support the disk shelves you are hot-adding, including the IOMs, disk drives, and SAS cables.
++
+https://hwu.netapp.com[NetApp Hardware Universe]
+
+* Your system must have less than the maximum number of disk drives supported, by at least the number of disk shelves you plan to hot-add.
++
+You cannot have exceeded the maximum number of disk drives supported for your system after hot-adding disk shelves.
++
+https://hwu.netapp.com[NetApp Hardware Universe]
+
+* If you are hot-adding a stack of one or more disk shelves (directly to the platform controllers), your system must have enough available PCI SAS HBA or onboard SAS ports or a combination of both.
++
+[NOTE]
+====
+If you need to install an additional PCI SAS HBA, the best practice is to use 12Gb SAS HBAs to keep controller-to-stack connectivity at 12Gbs for maximum performance.
+
+Using 6Gb SAS HBAs or a combination of 6Gb SAS HBAs and 12Gb SAS HBAs is supported; however, IOM12 module connections to 6Gb SAS HBAs are negotiated down to 6Gbs, resulting in lower performance.
+====
+* Your system cannot have any SAS cabling error messages.
++
+Download and run Config Advisor to verify that your SAS connections are cabled correctly.
++
+You must correct any cabling errors using the corrective actions provided by the error messages.
++
+https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor[NetApp Downloads: Config Advisor]
+
+=== Using mini-SAS HD SAS optical cables
+
+* If you are using mini-SAS HD SAS optical cables or a mix of mini-SAS HD SAS optical cables and SAS copper cables in the stack of disk shelves, you must have met the rules in link:install-cabling-rules.html#mini-sas-hd-sas-optical-cable-rules[Mini-SAS HD SAS optical cable rules].
+* If you are hot-adding a disk shelf with mini-SAS HD SAS optical cables to a stack of disk shelves that is connected with SAS copper cables, you can temporarily have both cable types in the stack.
++
+After hot-adding the disk shelf, you must replace the SAS copper cables for the rest of the shelf-to-shelf connections in the stack and the controller-to-stack connections so that the stack meets the rules in link:install-cabling-rules.html#mini-sas-hd-sas-optical-cable-rules[Mini-SAS HD SAS optical cable rules]. This means that you must have ordered the appropriate number of mini-SAS HD SAS optical cables.
+
+== Considerations for hot-adding disk shelves with IOM12 modules
+
+[.lead]
+You should familiarize yourself with aspects and best practices about this procedure before hot-adding disk shelves.
+
+=== General considerations
+
+* If you are hot-adding a disk shelf with IOM12 modules to an existing stack (of disk shelves with IOM12 modules), you can hot-add the disk shelf to either end--the logical first or last disk shelf--of the stack.
++
+For single-path HA and single-path configurations, as applicable to AFF A200, AFF A220, FAS2600 series, and FAS2700 systems, you hot-add disk shelves to the end of the stack that does not have controller connections.
+
+* Disk shelves with IOM12 modules must be in their own unique stack; they cannot be added to a stack that has shelves with IOM6 modules or IOM3 modules.
++
+This procedure does not address mixing a stack: hot-adding a shelf with IOM12 modules to a stack of shelves with IOM6 modules.
+
+* A system can have multipathed and quad-pathed stacks of disk shelves with IOM12 modules.
++
+If you have an HA pair, ONTAP shows the system configuration as "`multipath HA`". If you have a single-controller configuration, ONTAP shows the system configuration as "`multipath`".
+
+* This procedure assumes your configuration is using in-band ACP.
++
+For configurations that have in-band ACP enabled, in-band ACP is automatically enabled on hot-added disk shelves. For configurations in which in-band ACP is not enabled, hot-added disk shelves operate without any ACP functionality.
+
+* Nondisruptive stack consolidation is not supported.
++
+You cannot use this procedure to hot-add disk shelves that were hot-removed from another stack in the same system when the system is powered on and serving data (I/O is in progress).
+
+=== Best practice considerations
+
+* The best practice is to have the current version of the Disk Qualification Package (DQP) installed before hot-adding a disk shelf.
++
+Having the current version of the DQP installed allows your system to recognize and utilize newly qualified disk drives; therefore, avoiding system event messages about having non-current disk drive information. You also avoid the possible prevention of disk partitioning because disk drives are not recognized. The DQP also notifies you of non-current disk drive firmware.
++
+https://mysupport.netapp.com/NOW/download/tools/diskqual/[NetApp Downloads: Disk Qualification Package]
+
+* The best practice is to run Config Advisor before and after hot-adding a disk shelf.
++
+Running Config Advisor before hot-adding a disk shelf provides a snapshot of the SAS connectivity, verifies disk shelf (IOM) firmware versions, and allows you to verify shelf IDs already in use on your system. Running Config Advisor after hot-adding a disk shelf allows you to verify SAS connections are cabled correctly and that shelf IDs are unique within the HA pair or single-controller configuration.
++
+If any SAS cabling or duplicate shelf ID errors are generated, follow the corrective actions provided.
++
+You need network access to download Config Advisor.
++
+https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor[NetApp Downloads: Config Advisor]
+
+* The best practice is to have the current versions of disk shelf (IOM) firmware and disk drive firmware on your system before adding new disk shelves, shelf FRU components, or SAS cables.
++
+Current versions of firmware can be found on the NetApp Support Site.
++
+https://mysupport.netapp.com/site/downloads/firmware/disk-shelf-firmware[NetApp Downloads: Disk Shelf Firmware]
++
+https://mysupport.netapp.com/site/downloads/firmware/disk-drive-firmware[NetApp Downloads: Disk Drive Firmware]
+
+=== SAS cable handling considerations
+
+* Visually inspect the SAS port to verify the proper orientation of the connector before plugging it in.
++
+The SAS cable connectors are keyed. When oriented correctly into a SAS port, the connector clicks into place and if the disk shelf power is on at the time, the disk shelf SAS port LNK LED illuminates green. For disk shelves, you insert a SAS cable connector with the pull tab oriented down (on the underside of the connector).
++
+For controllers, the orientation of SAS ports can vary depending on the platform model; therefore, the correct orientation of the SAS cable connector varies.
+
+* To prevent degraded performance, do not twist, fold, pinch, or step on the cables.
++
+Cables have a minimum bend radius. Cable manufacturer specifications define the minimum bend radius; however, a general guideline for minimum bend radius is 10 times the cable diameter.
+
+* Using Velcro wraps instead of tie-wraps to bundle and secure system cables allows for easier cable adjustments.
+
+== Installing disk shelves with IOM12 modules for a hot-add
+
+[.lead]
+For each disk shelf you are hot-adding, you install the disk shelf into a rack, connect the power cords, power on the disk shelf, and set the disk shelf ID before cabling the SAS connections.
+
+. Install the rack mount kit (for two-post or four-post rack installations) that came with your disk shelf using the installation flyer that came with the kit.
++
+NOTE: If you are installing multiple disk shelves, you should install them from the bottom to the top of the rack for the best stability.
++
+NOTE: Do not flange-mount the disk shelf into a telco-type rack; the disk shelf's weight can cause it to collapse in the rack under its own weight.
+
+. Install and secure the disk shelf onto the support brackets and rack using the installation flyer that came with the kit.
++
+To make a disk shelf lighter and easier to maneuver, remove the power supplies and I/O modules (IOMs).
++
+For DS460C disk shelves, you can also use the four detachable handles that shipped with your disk shelf. Handles (two on each side of the chassis) are installed by pushing up until they click into place. As you slide the disk shelf onto the rails, detach handles using the thumb latch.
++
+It is recommended that you use a mechanical hoist or lift if you are moving a fully loaded DS460C disk shelf.
++
+NOTE: A fully loaded DS460C disk shelf can weigh approximately 247 lbs (112 kg).
++
+image::../media/drw_ds460c_handles.gif[]
+
+. If you are installing a DS460C disk shelf, install the components into the racked disk shelf; otherwise, go to the next step.
++
+If you purchased a partially populated disk shelf which does not have a drive in every drive slot, you must ensure that:
+
+ ** The first four slots (0, 3, 6, and 9) are occupied in each drawer.
++
+This ensures proper airflow in the disk shelf.
+
+ ** In a shelf with 30 drives, the remaining ten drives are distributed evenly throughout the shelf in slots 1 and 10 of each drawer.
+The following illustration shows how the drives are numbered from 0 to 11 in each drive drawer within the shelf. Slots 0, 3, 6, 9, and, in a shelf containing 30 drives, slots 1 and 10 in each drawer must contain drives.
+
++
+image::../media/dwg_trafford_drawer_with_hdds_callouts.gif[]
+
+ .. Reinstall any power supplies and IOMs you removed prior to installing your disk shelf into the rack.
+ .. Open the top drawer of the shelf.
+ .. Raise the cam handle on the drive to vertical.
+ .. Align the two raised buttons on each side of the drive carrier with the matching gap in the drive channel on the drive drawer.
++
+image::../media/28_dwg_e2860_de460c_drive_cru.gif[]
++
+|===
+a|
+image:../media/legend_icon_01.gif[]|
+Raised button on the right side of the drive carrier
+|===
+
+ .. Lower the drive straight down, and then rotate the cam handle down until the drive snaps into place under the orange release latch.
+ .. Repeat the previous substeps for each drive in the drawer.
++
+You must be sure that slots 0, 3, 6, and 9 in each drawer contain drives.
+
+ .. Carefully push the drive drawer back into the enclosure.
++
+|===
+a|
+image:../media/2860_dwg_e2860_de460c_gentle_close.gif[]
+a|
+CAUTION: Possible loss of data access. Never slam the drawer shut. Push the drawer in slowly to avoid jarring the drawer and causing damage to the storage array.
+|===
+
+ .. Close the drive drawer by pushing both levers towards the center.
+ .. Repeat these steps for each drawer in the disk shelf.
+
+. If you are adding multiple disk shelves, repeat the previous steps for each disk shelf you are installing.
+. Connect the power supplies for each disk shelf:
+ .. Connect the power cords first to the disk shelves, securing them in place with the power cord retainer, and then connect the power cords to different power sources for resiliency.
+ .. Turn on the power supplies for each disk shelf and wait for the disk drives to spin up.
+. Set the shelf ID for each disk shelf you are hot-adding to an ID that is unique within the HA pair or single-controller configuration.
++
+If you have a system with an internal disk shelf, shelf IDs must be unique across the internal disk shelf and externally attached disk shelves.
++
+You can use the following substeps to change shelf IDs, or for more detailed instructions, use link:install-change-shelf-id.html[Change a shelf ID].
+
+ .. If needed, verify shelf IDs already in use by running Config Advisor.
++
+You can also run the `storage shelf show -fields shelf-id` command to see a list of shelf IDs already in use (and duplicates if present) in your system.
+
+ .. Access the shelf ID button behind the left end cap.
+ .. Change the shelf ID to a valid ID (00 through 99).
+ .. Power-cycle the disk shelf to make the shelf ID take effect.
++
+Wait at least 10 seconds before turning the power back on to complete the power cycle.
++
+The shelf ID blinks and the operator display panel amber LED blinks until you power cycle the disk shelf.
+
+ .. Repeat substeps a through d for each disk shelf you are hot-adding.
+
+== Cabling disk shelves with IOM12 modules for a hot-add
+
+[.lead]
+You cable the SAS connections--shelf-to-shelf and controller-to-stack--as applicable for hot-added disk shelves so they have connectivity to the system.
+
+*Before you begin*
+
+You must have met the requirements in <<Requirements for hot-adding disk shelves with IOM12 modules>> and installed, powered on, and set shelf IDs for each disk shelf as instructed in <<Installing disk shelves with IOM12 modules for a hot-add>>.
+
+*About this task*
+
+* For an explanation and examples of shelf-to-shelf "`standard`" cabling and shelf-to-shelf "`double-wide`" cabling, see link:install-cabling-rules.html#shelf-to-shelf-connection-rules[Shelf-to-shelf SAS connection rules].
+* For instructions about how to read a worksheet to cable controller-to-stack connections, see link:install-cabling-worksheets-how-to-read-multipath.html[How to read a worksheet to cable controller-to-stack connections for multipathed connectivity] or link:install-cabling-worksheets-how-to-read-quadpath.html[How to read a worksheet to cable controller-to-stack connections for quad-pathed connectivity].
+* After you have cabled the hot-added disk shelves, ONTAP recognizes them: disk ownership is assigned if disk ownership automatic assignment is enabled; disk shelf (IOM) firmware and disk drive firmware should automatically update if needed; and if in-band ACP is enabled on your configuration, it is automatically enabled on the hot-added disk shelves.
++
+NOTE: Firmware updates can take up to 30 minutes.
+
+*Steps*
+
+. If you want to manually assign disk ownership for the disk shelves you are hot-adding, you need to disable disk ownership automatic assignment if it is enabled; otherwise, go to the next step.
++
+You need to manually assign disk ownership if disks in the stack are owned by both controllers in an HA pair.
++
+You disable disk ownership automatic assignment before cabling the hot-added disk shelves and then later, in step 7, you reenable it after cabling the hot-added disk shelves.
+
+ .. Verify if disk ownership automatic assignment is enabled:``storage disk option show``
++
+If you have an HA pair, you can enter the command at the console of either controller.
++
+If disk ownership automatic assignment is enabled, the output shows "`on`" (for each controller) in the "`Auto Assign`" column.
+
+ .. If disk ownership automatic assignment is enabled, you need to disable it:``storage disk option modify -node node_name -autoassign off``
++
+You need to disable disk ownership automatic assignment on both controllers in an HA pair.
+
+. If you are hot-adding a stack of disk shelves directly to a controller, complete the following substeps; otherwise, go to step 3.
+ .. If the stack you are hot-adding has more than one disk shelf, cable the shelf-to-shelf connections; otherwise, go to substep b.
++
+|===
+| If...| Then...
+a|
+You are cabling a stack with multipath HA, multipath, single-path HA, or single-path connectivity to the controllers
+a|
+Cable the shelf-to-shelf connections as "`standard`" connectivity (using IOM ports 3 and 1):
+
+  ... Beginning with the logical first shelf in the stack, connect IOM A port 3 to the next shelf's IOM A port 1 until each IOM A in the stack is connected.
+  ... Repeat substep i for IOM B.
+
+a|
+You are cabling a stack with quad-path HA or quad-path connectivity to the controllers
+a|
+Cable the shelf-to-shelf connections as "`double-wide`" connectivity:        You cable the standard connectivity using IOM ports 3 and 1 and then the double-wide connectivity using IOM ports 4 and 2.
+
+  ... Beginning with the logical first shelf in the stack, connect IOM A port 3 to the next shelf's IOM A port 1 until each IOM A in the stack is connected.
+  ... Beginning with the logical first shelf in the stack, connect IOM A port 4 to the next shelf's IOM A port 2 until each IOM A in the stack is connected.
+  ... Repeat substeps i and ii for IOM B.
+
++
+|===
+
+.. Check the controller-to-stack cabling worksheets and cabling examples to see whether a completed worksheet exists for your configuration.
++
+link:install-cabling-worksheets-examples-fas2600.html[Controller-to-stack cabling worksheets and cabling examples for common AFF A200, AFF A220, FAS2600 series and FAS2700 configurations]
++
+link:install-cabling-worksheets-examples-multipath.html[Controller-to-stack cabling worksheets and cabling examples for common multipath HA configurations]
++
+link:install-worksheets-examples-quadpath.html[Controller-to-stack cabling worksheet and cabling example for a quad-path HA configuration with two quad-port SAS HBAs]
+
+ .. If there is a completed worksheet for your configuration, cable the controller-to-stack connections using the completed worksheet; otherwise, go to the next substep.
+ .. If there is no completed worksheet for your configuration, fill out the appropriate worksheet template, and then cable the controller-to-stack connections using the completed worksheet.
++
+link:install-cabling-worksheet-template-multipath.html[Controller-to-stack cabling worksheet template for multipathed connectivity]
++
+link:install-cabling-worksheet-template-quadpath.html[Controller-to-stack cabling worksheet template for quad-pathed connectivity]
+
+ .. Verify that all cables are securely fastened.
+. If you are hot-adding one or more disk shelves to an end--the logical first or last disk shelf--of an existing stack, complete the applicable substeps for your configuration; otherwise, go to the next step.
++
+|===
+| If you are...| Then...
+a|
+Hot-adding a disk shelf to an end of a stack that has multipath HA, multipath, quad-path HA, or quad-path connectivity to the controllers
+a|
+
+ .. Disconnect any cables from IOM A of the disk shelf at the end of the stack that are connected to any controllers; otherwise, go to substep e.
++
+Leave the other end of these cables connected to the controllers, or replace cables with longer cables if needed.
+
+ .. Cable the shelf-to-shelf connection(s) between IOM A of the disk shelf at the end of the stack and IOM A of the disk shelf you are hot-adding.
+ .. Reconnect any cables that you removed in substep a to the same port(s) on IOM A of the disk shelf you are hot-adding; otherwise, go to the next substep.
+ .. Verify that all cables are securely fastened.
+ .. Repeat substeps a through d for IOM B; otherwise, go to Step 4.
+
+a|
+Hot-adding a disk shelf to an end of the stack in a single-path HA or single-path configuration, as applicable to AFF A200, AFF A220, FAS2600 series and FAS2700 systems.
+
+These instructions are for hot-adding to the end of the stack that does not have controller-to-stack connections.
+a|
+
+ .. Cable the shelf-to-shelf connection between IOM A of the disk shelf in the stack and IOM A of the disk shelf you are hot-adding.
+ .. Verify that the cable is securely fastened.
+ .. Repeat applicable substeps for IOM B.
+
++
+|===
+
+. If you hot-added a disk shelf with mini-SAS HD SAS optical cables to a stack of disk shelves connected with SAS copper cables, replace the SAS copper cables; otherwise, go to the next step.
++
+The stack must meet the requirements stated in the <<Requirements for hot-adding disk shelves with IOM12 modules>> section of this procedure.
+
+. Download and run Config Advisor to verify that your SAS connections are cabled correctly.
++
+https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor[NetApp Downloads: Config Advisor]
++
+If any SAS cabling errors are generated, follow the corrective actions provided.
+
+. Verify SAS connectivity for each hot-added disk shelf: `storage shelf show -shelf shelf_name -connectivity`
++
+You must run this command for each disk shelf you hot-added.
++
+For example, the following output shows hot-added disk shelf 2.5 is connected to initiator ports 1a and 0d (port pair 1a/0d) on each controller (in a FAS8080 multipath HA configuration with one quad-port SAS HBA):
++
+----
+cluster1::> storage shelf show -shelf 2.5 -connectivity
+
+           Shelf Name: 2.5
+             Stack ID: 2
+             Shelf ID: 5
+            Shelf UID: 40:0a:09:70:02:2a:2b
+        Serial Number: 101033373
+          Module Type: IOM12
+                Model: DS224C
+         Shelf Vendor: NETAPP
+           Disk Count: 24
+      Connection Type: SAS
+          Shelf State: Online
+               Status: Normal
+
+Paths:
+
+Controller     Initiator   Initiator Side Switch Port   Target Side Switch Port   Target Port   TPGN
+------------   ---------   --------------------------   -----------------------   -----------   ------
+stor-8080-1    1a           -                           -                          -             -
+stor-8080-1    0d           -                           -                          -             -
+stor-8080-2    1a           -                           -                          -             -
+stor-8080-2    0d           -                           -                          -             -
+
+Errors:
+------
+-
+----
+
+. If you disabled disk ownership automatic assignment in Step 1, manually assign disk ownership, and then reenable disk ownership automatic assignment if needed:
+ .. Display all unowned disks:``storage disk show -container-type unassigned``
+ .. Assign each disk:``storage disk assign -disk disk_name -owner owner_name``
++
+You can use the wildcard character to assign more than one disk at once.
+
+ .. Reenable disk ownership automatic assignment if needed:``storage disk option modify -node node_name -autoassign on``
++
+You need to reenable disk ownership automatic assignment on both controllers in an HA pair.
+. If your configuration is running in-band ACP, verify that in-band ACP was automatically enabled on hot-added disk shelves: `storage shelf acp show`
++
+In the output, "`in-band`" is listed as "`active`" for each node.

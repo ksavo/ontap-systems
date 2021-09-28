@@ -1,0 +1,34 @@
+---
+permalink: a400/controller-replace-recable-reassign-disks.html
+sidebar: sidebar
+keywords: aff a400, how to recable the system, how to reassign disks
+summary: You must recable the storage and confirm disk reassignment.
+---
+= Recable the system and reassign disks - AFF A400
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You must complete a series of tasks before restoring your system to full operation.
+
+== Step 1: Install licenses for the replacement node in ONTAP
+
+[.lead]
+include::../_include/install_licenses.adoc[]
+
+== Step 2: Restore Storage and Volume Encryption functionality
+
+[.lead]
+include::../_include/restore_storage_encryption.adoc[]
+
+== Step 3: Verify LIFs and registering the serial number
+
+[.lead]
+include::../_include/check_lifs_register_serial_number.adoc[]
+
+== Step 4: Return the failed part to NetApp
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+include::../_include/complete_rma.adoc[]

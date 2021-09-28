@@ -1,0 +1,9 @@
+---
+permalink: a400/index.html
+sidebar: sidebar
+keywords: aff a400, aff, a400, model, model a400
+summary: 
+---
+= AFF A400 systems
+:icons: font
+:imagesdir: ../media/

@@ -1,0 +1,69 @@
+section: fas500f
+title: FAS500f systems
+entries:
+  - title: Install and setup
+    entries:
+    - title: Choose your procedure
+      url: /fas500f/install-setup.html
+    - title: Quick steps
+      url: /fas500f/install-quick-guide.html
+    - title: Video steps
+      url: /fas500f/install-videos.html
+    - title: Detailed steps
+      url: /fas500f/install-detailed-guide.html
+  - title: Maintain
+    entries:
+# Boot media start
+    - title: Boot media
+      entries:
+      - title: Overview
+        url: /fas500f/bootmedia-replace-overview.html
+      - title: Check onboard encryption keys as needed
+        url: /fas500f/bootmedia-encryption-preshutdown-checks.html
+      - title: Shut down the node
+        url: /fas500f/bootmedia-shutdown.html
+      - title: Remove the controller module, replace the boot media and transfer the boot image to the boot media
+        url: /fas500f/bootmedia-replace.html
+      - title: Boot the recovery image
+        url: /fas500f/bootmedia-recovery-image-boot-non-2n-mcc.html
+      - title: Restore OKM, NSE, and NVE as needed
+        url: /fas500f/bootmedia-encryption-restore.html
+      - title: Return the failed part to NetApp
+        url: /fas500f/bootmedia-complete-rma.html
+# Boot media end
+    - title: Chassis
+      entries:
+      - title: Overview
+        url: /fas500f/chassis-replace-overview.html
+      - title: Shut down the impaired controller
+        url: /fas500f/chassis-replace-shutdown.html
+      - title: Replace the hardware
+        url: /fas500f/chassis-replace-move-hardware.html
+      - title: Complete the restoration and replacement process
+        url: /fas500f/chassis-replace-complete-system-restore-rma.html
+    - title: Controller
+      entries:
+      - title: Overview
+        url: /fas500f/controller-replace-overview.html
+      - title: Shut down the impaired controller
+        url: /fas500f/controller-replace-shutdown.html
+      - title: Replace the controller module hardware
+        url: /fas500f/controller-replace-move-hardware.html
+      - title: Restore and verify the system configuration
+        url: /fas500f/controller-replace-system-config-restore-and-verify.html
+      - title: Recable the system and reassign disks
+        url: /fas500f/controller-replace-recable-reassign-disks.html
+      - title: Complete system restoration
+        url: /fas500f/controller-replace-restore-system-rma.html
+    - title: DIMM
+      url: /fas500f/dimm-replace.html
+    - title: Fan
+      url: /fas500f/fan-replace.html
+    - title: Mezzanine card
+      url: /fas500f/mezzanine-replace.html
+    - title: NVMEM battery
+      url: /fas500f/nvmem-battery-replace.html
+    - title: Power supply
+      url: /fas500f/power-supply-replace.html
+    - title: Real-time clock battery
+      url: /fas500f/rtc-battery-replace.html

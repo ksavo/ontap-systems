@@ -1,0 +1,205 @@
+---
+permalink: c190/bootmedia-replace.html
+sidebar: sidebar
+keywords: aff c190, replace, boot, media, controller, module, fru map
+summary: 'You must locate the boot media in the controller module, and then follow the directions to replace it.'
+---
+= Remove the controller module, replace the boot media and transfer the boot image to the boot media - AFF C190
+:icons: font
+:imagesdir: ../media/
+
+To replace the boot media, you must remove the impaired controller module, install the replacement boot media, and transfer the boot image to a USB flash drive.
+
+== Remove the controller
+:icons: font
+:imagesdir: ../media/
+
+
+[.lead]
+To access components inside the controller module, you must first remove the controller module from the system, and then remove the cover on the controller module.
+
+.Steps
+
+. If you are not already grounded, properly ground yourself.
+. Loosen the hook and loop strap binding the cables to the cable management device, and then unplug the system cables and SFPs (if needed) from the controller module, keeping track of where the cables were connected.
++
+Leave the cables in the cable management device so that when you reinstall the cable management device, the cables are organized.
+
+. Remove and set aside the cable management devices from the left and right sides of the controller module.
++
+image::../media/drw_25xx_cable_management_arm.png[]
+
+. Squeeze the latch on the cam handle until it releases, open the cam handle fully to release the controller module from the midplane, and then, using two hands, pull the controller module out of the chassis.
++
+image::../media/drw_2240_x_opening_cam_latch.png[]
+
+. Turn the controller module over and place it on a flat, stable surface.
+. Open the cover by sliding in the blue tabs to release the cover, and then swing the cover up and open.
++
+image::../media/drw_2600_opening_pcm_cover.png[]
+
+== Step 2: Replace the boot media
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You must locate the boot media in the controller module, and then follow the directions to replace it.
+
+. Locate the boot media using the following illustration or the FRU map on the controller module:
++
+image::../media/drw_2600_boot_media_move_aminated_gif.svg[]
+
+. Press the blue button on the boot media housing to release the boot media from its housing, and then gently pull it straight out of the boot media socket.
++
+NOTE: Do not twist or pull the boot media straight up, because this could damage the socket or the boot media.
+
+. Align the edges of the replacement boot media with the boot media socket, and then gently push it into the socket.
+. Check the boot media to make sure that it is seated squarely and completely in the socket.
++
+If necessary, remove the boot media and reseat it into the socket.
+
+. Push the boot media down to engage the locking button on the boot media housing.
+. Close the controller module cover.
+
+== Step 3: Transfer the boot image to the boot media
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You can install the system image to the replacement boot media using a USB flash drive with the image installed on it. However, you must restore the `var` file system during this procedure.
+
+* You must have a USB flash drive, formatted to FAT32, with at least 4GB capacity.
+* A copy of the same image version of ONTAP as what the impaired controller was running. You can download the appropriate image from the *Downloads* section on the NetApp Support Site
+ ** If NVE is enabled, download the image with NetApp Volume Encryption, as indicated in the download button.
+ ** If NVE is not enabled, download the image without NetApp Volume Encryption, as indicated in the download button.
+* If your system is an HA pair, you must have a network connection.
+* If your system is a stand-alone system you do not need a network connection, but you must perform an additional reboot when restoring the var file system.
+
+.Steps
+
+. Align the end of the controller module with the opening in the chassis, and then gently push the controller module halfway into the system.
+. Reinstall the cable management device and recable the system, as needed.
++
+When recabling, remember to reinstall the media converters (SFPs) if they were removed.
+
+. Insert the USB flash drive into the USB slot on the controller module.
++
+Make sure that you install the USB flash drive in the slot labeled for USB devices, and not in the USB console port.
+
+. Push the controller module all the way into the system, making sure that the cam handle clears the USB flash drive, firmly push the cam handle to finish seating the controller module, push the cam handle to the closed position, and then tighten the thumbscrew.
++
+The node begins to boot as soon as it is completely installed into the chassis.
+
+. Interrupt the boot process to stop at the LOADER prompt by pressing Ctrl-C when you see `Starting AUTOBOOT press Ctrl-C to abort....`
++
+If you miss this message, press Ctrl-C, select the option to boot to Maintenance mode, and then `halt` the node to boot to LOADER.
+
+. Although the environment variables and bootargs are retained, you should check that all required boot environment variables and bootargs are properly set for your system type and configuration using the `printenv _bootarg name_` command and correct any errors using the `setenv _variable-name <value\>_` command.
+ .. Check the boot environment variables:
+  *** `_bootarg.init.boot_clustered_`
+  *** `_partner-sysid_`
+  *** `_bootarg.init.flash_optimized_` for AFF C190/AFF A220 (All Flash FAS)
+  *** `_bootarg.init.san_optimized_` for AFF A220 and All SAN Array
+  *** `_bootarg.init.switchless_cluster.enable_`
+ .. If External Key Manager is enabled, check the bootarg values, listed in the `kenv` ASUP output:
+  *** `_bootarg.storageencryption.support _value__`
+  *** `_bootarg.keymanager.support _value__`
+  *** `_kmip.init.interface _value__`
+  *** `_kmip.init.ipaddr _value__`
+  *** `_kmip.init.netmask _value__`
+  *** `_kmip.init.gateway _value__`
+ .. If Onboard Key Manager is enabled, check the bootarg values, listed in the `kenv` ASUP output:
+  *** `_bootarg.storageencryption.support _value__`
+  *** `_bootarg.keymanager.support _value__`
+  *** `_bootarg.onboard_keymanager _value__`
+ .. Save the environment variables you changed with the `*savenv*` command
+ .. Confirm your changes using the `*printenv _variable-name_*` command.
+. Boot the recovery image:
++
+`*boot_recovery __ontap_image_name__.tgz*`
++
+NOTE: If the `image.tgz` file is named something other than image.tgz, such as `boot_recovery 9_4.tgz`, you need to include the different file name in the `boot_recovery` command.
++
+The system boots to the boot menu and prompts you for the boot image name.
+
+. Enter the boot image name that is on the USB flash drive:
++
+`*__image_name__.tgz*`
++
+After `image_name.tgz` is installed, the system prompts you to restore the backup configuration (the `var` file system) from the healthy node.
+
+. Restore the `var` file system:
++
+[options="header" cols="1,2"]
+|===
+| If your system has...| Then...
+a|
+A network connection
+a|
+
+ .. Press `*y*` when prompted to restore the backup configuration.
+ .. Set the healthy node to advanced privilege level:
++
+`*set -privilege advanced*`
+ .. Run the restore backup command:
++
+`*system node restore-backup -node local -target-address _impaired_node_IP_address_*`
+ .. Return the node to admin level:
++
+`*set -privilege admin*`
+ .. Press `*y*` when prompted to use the restored configuration.
+ .. Press `*y*` when prompted to reboot the node.
+
+a|
+No network connection
+a|
+
+ .. Press `*n*` when prompted to restore the backup configuration.
+ .. Reboot the system when prompted by the system.
+ .. Select the *Update flash from backup config* (sync flash) option from the displayed menu.
++
+If you are prompted to continue with the update, press `*y*`.
+
+|===
+
+. Verify that the environmental variables are set as expected.
+ .. Take the node to the LOADER prompt.
++
+From the ONTAP prompt, you can issue the command `system node halt -skip-lif-migration-before-shutdown true -ignore-quorum-warnings true -inhibit-takeover true`.
+
+ .. Check the environment variable settings with the `printenv` command.
+ .. If an environment variable is not set as expected, modify it with the `setenv _environment_variable_name changed_value_` command.
+ .. Save your changes using the `saveenv` command.
+ .. Reboot the node.
+. The next step depends on your system configuration:
++
+[options="header" cols="1,2"]
+|===
+| If your system is in...| Then...
+a|
+A stand-alone configuration
+a|
+You can begin using your system after the node reboots.
+a|
+An HA pair
+a|
+After the impaired node is displaying the `Waiting for Giveback...` message, perform a giveback from the healthy node:
+
+ .. Perform a giveback from the healthy node:
++
+`*storage failover giveback -ofnode _partner_node_name_*`
++
+This initiates the process of returning ownership of the impaired node's aggregates and volumes from the healthy node back to the impaired node.
++
+[NOTE]
+====
+If the giveback is vetoed, you can consider overriding the vetoes.
+
+http://docs.netapp.com/ontap-9/topic/com.netapp.doc.dot-cm-hacg/home.html[ONTAP 9 High-Availability Configuration Guide]
+====
+
+ .. Monitor the progress of the giveback operation by using the `storage failover show-giveback` command.
+ .. After the giveback operation is complete, confirm that the HA pair is healthy and that takeover is possible by using the `storage failover show` command.
+ .. Restore automatic giveback if you disabled it by using the `storage failover modify` command.
+
+|===

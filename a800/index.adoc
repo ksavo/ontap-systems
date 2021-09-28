@@ -1,0 +1,9 @@
+---
+permalink: a800/index.html
+sidebar: sidebar
+keywords:
+summary: ''
+---
+= AFF A800 systems
+:icons: font
+:imagesdir: ../media/

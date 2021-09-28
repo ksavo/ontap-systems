@@ -1,0 +1,9 @@
+---
+permalink: upgrade/index.html
+sidebar: sidebar
+keywords: 
+summary: ''
+---
+= Controller Hardware Upgrade Express Guide
+:icons: font
+:imagesdir: ../media/

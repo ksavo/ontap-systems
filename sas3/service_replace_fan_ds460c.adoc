@@ -1,0 +1,69 @@
+---
+permalink: sas3/service-replace-fan-ds460c.html
+sidebar: sidebar
+keywords: ds460c, drive, shelf, fan, module, cooling, disk, replace, replace a fan module in a ds460c disk shelf
+summary: Each DS460C drive shelf includes two fan modules. If a fan module fails, you must replace it as soon as possible to ensure that the shelf has adequate cooling. When you remove the failed fan module, you do not have to turn off power to your disk shelf.
+---
+= Replace a fan module in a DS460C disk shelf - shelves with IOM12 modules
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+Each DS460C drive shelf includes two fan modules. If a fan module fails, you must replace it as soon as possible to ensure that the shelf has adequate cooling. When you remove the failed fan module, you do not have to turn off power to your disk shelf.
+
+*About this task*
+
+You must ensure that you remove and replace the fan module within 30 minutes to prevent the system from overheating.
+
+*Steps*
+
+. Put on antistatic protection.
+. Unpack the new fan module, and place it on a level surface near the shelf.
++
+Save all packing material for use when returning the failed fan.
+
+. From the back of the disk shelf, look at the Attention LEDs to locate the fan module you need to remove.
++
+You must replace the fan module that has its Attention LED on.
++
+image::../media/28_dwg_e2860_de460c_single_fan_canister_with_led_callout.gif[]
++
+|===
+| Item| LED name| State| Description
+a|
+image:../media/legend_icon_01.gif[]|
+Attention
+a|
+Solid amber
+a|
+The fan has a fault
+|===
+
+. Press the orange tab to release the fan module handle.
++
+image::../media/28_dwg_e2860_de460c_single_fan_canister_with_orange_tab_callout.gif[]
++
+|===
+a|
+image:../media/legend_icon_01.gif[]|
+Tab that you press to release the fan module handle
+|===
+
+. Use the fan module handle to pull the fan module out of the shelf.
++
+image::../media/28_dwg_e2860_de460c_fan_canister_handle_with_callout.gif[]
++
+|===
+a|
+image:../media/legend_icon_01.gif[]|
+Handle to pull the fan module out
+|===
+
+. Slide the replacement fan module all the way into the shelf, moving the fan module handle to the side until it latches with the orange tab.
+. Check the amber Attention LED on the new fan module.
++
+NOTE: After you replace the fan module, the Attention LED stays on (solid amber) while the firmware checks that the fan module was installed correctly. The LED goes off after this process is complete.
+
+. Return the failed part to NetApp, as described in the RMA instructions shipped with the kit.
++
+Contact technical support at https://mysupport.netapp.com/site/global/dashboard[NetApp Support], 888-463-8277 (North America), 00-800-44-638277 (Europe), or +800-800-80-800 (Asia/Pacific) if you need the RMA number.

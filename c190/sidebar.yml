@@ -1,0 +1,67 @@
+section: c190
+title: AFF C190 systems
+entries:
+ - title: Install and setup
+   entries:
+    - title: Choose install and setup experience
+      url: /c190/install-setup.html
+    - title: Quick steps
+      url: /c190/install-quick-guide.html
+    - title: Video steps
+      url: /c190/install-videos.html
+    - title: Detailed steps
+      url: /c190/install-detailed-guide.html
+ - title: Maintain
+   entries:
+      # START boot media replacement
+    - title: Boot media
+      entries:
+        - title: Overview
+          url: /c190/bootmedia-replace-overview.html
+        - title: Check onboard encryption keys as needed
+          url: /c190/bootmedia-encryption-preshutdown-checks.html
+        - title: Shut down the impaired controller
+          url: /c190/bootmedia-shutdown.html
+        - title: Remove the controller module, replace the boot media and transfer the boot image to the boot media
+          url: /c190/bootmedia-replace.html
+        - title: Boot the recovery image
+          url: /c190/bootmedia-recovery-image-boot-non-2n-mcc.html
+        - title: Restore OKM, NSE, and NVE as needed
+          url: /c190/bootmedia-encryption-restore.html
+        - title: Return the failed part to NetApp
+          url: /c190/bootmedia-complete-rma.html
+      # END boot media replacement
+    - title: Chassis
+      entries:
+      - title: Overview
+        url: /c190/chassis-replace-overview.html
+      - title: Shut down the impaired controller
+        url: /c190/chassis-replace-shutdown.html
+      - title: Replace the hardware
+        url: /c190/chassis-replace-move-hardware.html
+      - title: Restoring and verifying configuration
+        url: /c190/chassis-replace-restore-and-verify.html
+      - title: Complete the replacement
+        url: /c190/chassis-replace-complete-rma.html
+    - title: Controller
+      entries:
+      - title: Overview
+        url: /c190/controller-replace-overview.html
+      - title: Shut down the impaired controller
+        url: /c190/controller-replace-shutdown.html
+      - title: Move the controller module hardware
+        url: /c190/controller-replace-move-hardware.html
+      - title: Restore and verify the system configuration
+        url: /c190/controller-replace-system-config-restore-and-verify.html
+      - title: Recable the system and reassign disks
+        url: /c190/controller-replace-recable-reassign-disks.html
+      - title: Complete system restoration
+        url: /c190/controller-replace-restore-system-rma.html
+    - title: DIMM
+      url: /c190/dimm-replace.html
+    - title: NVMEM battery
+      url: /c190/nvmem-nvram-battery-replace.html
+    - title: Power supply
+      url: /c190/power-supply-swap-out.html
+    - title: Real-time clock battery
+      url: /c190/rtc-battery-replace.html

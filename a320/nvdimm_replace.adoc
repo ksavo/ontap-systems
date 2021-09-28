@@ -1,0 +1,153 @@
+---
+permalink: a320/nvdimm-replace.html
+sidebar: sidebar
+keywords: aff, a320, aff a320, replace, nvdimm, controller, module, system, register, flash, lifetime, identified, idenify, nvdimm, healthy, general, failure, system, panic, replace an nvdimm, shut down the impaired controller, remove the controller module, replace the nvdimm, install the controller module, run diagnostics, restore the controller module to operation after running diagnostics, complete the replacement process
+summary: You must replace the NVDIMM in the controller module when your system registers that the flash lifetime is almost at an end or that the identified NVDIMM is not healthy in general; failure to do so causes a system panic.
+---
+= Replace an NVDIMM - AFF A320
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You must replace the NVDIMM in the controller module when your system registers that the flash lifetime is almost at an end or that the identified NVDIMM is not healthy in general; failure to do so causes a system panic.
+
+All other components in the system must be functioning properly; if not, you must contact technical support.
+
+You must replace the failed component with a replacement FRU component you received from your provider.
+
+== Shut down the impaired controller
+
+[.lead]
+You can shut down or take over the impaired controller using different procedures, depending on the storage system hardware configuration.
+
+=== Shut down the node
+
+[.lead]
+include::../_include/shutdown_most_frus.adoc[]
+
+== Remove the controller module
+
+[.lead]
+To access components inside the controller module, you must remove the controller module from the chassis.
+
+. If you are not already grounded, properly ground yourself.
+. Unplug the controller module power supply from the power source.
+. Loosen the hook and loop strap binding the cables to the cable management device, and then unplug the system cables and SFPs (if needed) from the controller module, keeping track of where the cables were connected.
++
+image::../media/drw_a320_controller_cable_unplug_animated_gif.svg[]
++
+Leave the cables in the cable management device so that when you reinstall the cable management device, the cables are organized.
+
+. Remove and set aside the cable management devices from the left and right sides of the controller module.
+. Remove the controller module from the chassis:
++
+image::../media/drw_a320_controller_remove_animated_gif.svg[]
++
+ .. Insert your forefinger into the latching mechanism on either side of the controller module.
+ .. Press down on the orange tab on top of the latching mechanism until it clears the latching pin on the chassis.
++
+The latching mechanism hook should be nearly vertical and should be clear of the chassis pin.
+
+ .. Gently pull the controller module a few inches toward you so that you can grasp the controller module sides.
+ .. Using both hands, gently pull the controller module out of the chassis and set it on a flat, stable surface.
+
+== Replace the NVDIMM
+
+[.lead]
+To replace the NVDIMM, you must locate it in the controller module using the NVDIMM map label on top of the air duct or locating it using the LED next to the NVDIMM, and then replace it following the specific sequence of steps.
+
+NOTE: The NVDIMM LED blinks while destaging contents when you halt the system. After the destage is complete, the LED turns off.
+
+image::../media/drw_a320_nvdimm_replace_animated_gif.svg[]
+
+. Open the air duct and then locate the NVDIMM in slot 11 on your controller module.
++
+NOTE: The NVDIMM looks significantly different than system DIMMs.
+
+. Note the orientation of the NVDIMM in the socket so that you can insert the NVDIMM in the replacement controller module in the proper orientation.
+. Eject the NVDIMM from its slot by slowly pushing apart the two NVDIMM ejector tabs on either side of the NVDIMM, and then slide the NVDIMM out of the socket and set it aside.
++
+NOTE: Carefully hold the NVDIMM by the edges to avoid pressure on the components on the NVDIMM circuit board.
+
+. Remove the replacement NVDIMM from the antistatic shipping bag, hold the NVDIMM by the corners, and then align it to the slot.
++
+The notch among the pins on the NVDIMM should line up with the tab in the socket.
+
+. Locate the slot where you are installing the NVDIMM.
+. Insert the NVDIMM squarely into the slot.
++
+The NVDIMM fits tightly in the slot, but should go in easily. If not, realign the NVDIMM with the slot and reinsert it.
++
+NOTE: Visually inspect the NVDIMM to verify that it is evenly aligned and fully inserted into the slot.
+
+. Push carefully, but firmly, on the top edge of the NVDIMM until the ejector tabs snap into place over the notches at the ends of the NVDIMM.
+. Close the air duct.
+
+== Install the controller module
+
+[.lead]
+After you have replaced the component in the controller module, you must re-install the controller module into the chassis, and then boot it to Maintenance mode.
+
+. If you have not already done so, close the air duct at the rear of the controller module and reinstall the cover over the PCIe cards.
+. Align the end of the controller module with the opening in the chassis, and then gently push the controller module halfway into the system.
++
+image::../media/drw_a320_controller_install_animated_gif.svg[]
++
+NOTE: Do not completely insert the controller module in the chassis until instructed to do so.
+
+. Cable the management and console ports only, so that you can access the system to perform the tasks in the following sections.
++
+NOTE: You will connect the rest of the cables to the controller module later in this procedure.
+
+. Complete the reinstallation of the controller module:
+ .. Make sure the latch arms are locked in the extended position.
+ .. Using the latch arms, push the controller module into the chassis bay until it stops.
+ .. Press down and hold the orange tabs on top of the latching mechanism.
+ .. Gently push the controller module into the chassis bay until it is flush with the edges of the chassis.
++
+NOTE: The latching mechanism arms slide into the chassis.
++
+The controller module begins to boot as soon as it is fully seated in the chassis.
+
+ .. Release the latches to lock the controller module into place.
+ .. Recable the power supply.
+ .. If you have not already done so, reinstall the cable management device.
+ .. Interrupt the normal boot process by pressing `Ctrl-C`.
+
+== Run diagnostics
+
+[.lead]
+After you have replaced the NVDIMM in your system, you should run diagnostic tests on that component.
+
+Your system must be at the LOADER prompt to start diagnostics.
+
+All commands in the diagnostic procedures are issued from the node where the component is being replaced.
+
+. If the node to be serviced is not at the LOADER prompt, reboot the node: `system node halt -node node_name`
++
+After you issue the command, you should wait until the system stops at the LOADER prompt.
+
+. At the LOADER prompt, access the special drivers specifically designed for system-level diagnostics to function properly: `boot_diags`
+. Select *Scan System* from the displayed menu to enable running the diagnostics tests.
+. Select *Test Memory* from the displayed menu.
+. Select *NVDIMM Test* from the displayed menu.
+. Proceed based on the result of the preceding step:
+ ** If the test failed, correct the failure, and then rerun the test.
+ ** If the test reported no failures, select Reboot from the menu to reboot the system.
+
+== Restore the controller module to operation after running diagnostics
+
+[.lead]
+After completing diagnostics, you must recable the system, give back the controller module, and then reenable automatic giveback.
+
+. Recable the system, as needed.
++
+If you removed the media converters (QSFPs or SFPs), remember to reinstall them if you are using fiber optic cables.
+
+. Return the node to normal operation by giving back its storage: `storage failover giveback -ofnode impaired_node_name`
+. If automatic giveback was disabled, reenable it: `storage failover modify -node local -auto-giveback true`
+
+== Return the failed part to NetApp
+
+[.lead]
+include::../_include/complete_rma.adoc[]

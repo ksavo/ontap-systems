@@ -1,0 +1,60 @@
+---
+permalink: a300/fan-swap-out.html
+sidebar: sidebar
+keywords: aff a300, swap out a fan
+summary: "To swap out a fan module without interrupting service, you must perform a specific sequence of tasks."
+---
+= Swap out a fan - AFF A300
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+To swap out a fan module without interrupting service, you must perform a specific sequence of tasks.
+
+NOTE: You must replace the fan module within two minutes of removing it from the chassis. System airflow is disrupted and the controller module or modules shut down after two minutes to avoid overheating.
+
+. If you are not already grounded, properly ground yourself.
+. Remove the bezel (if necessary) with two hands, by grasping the openings on each side of the bezel, and then pulling it toward you until the bezel releases from the ball studs on the chassis frame.
+. Identify the fan module that you must replace by checking the console error messages and looking at the Attention LED on each fan module.
+. Press down the release latch on the fan module cam handle, and then pull the cam handle downward.
++
+The fan module moves a little bit away from the chassis.
++
+image::../media/drw_fas32xx_fan.gif[]
++
+[cols="1,3"]
+|===
+a|
+image:../media/legend_icon_01.gif[]|
+Cam handle
+a|
+image:../media/legend_icon_02.gif[]
+a|
+Fan module
+a|
+image:../media/legend_icon_02.gif[]
+a|
+Cam handle release latch
+a|
+image:../media/legend_icon_04.gif[]
+a|
+Fan module Attention LED
+|===
+
+. Pull the fan module straight out from the chassis, making sure that you support it with your free hand so that it does not swing out of the chassis.
++
+CAUTION: The fan modules are short. Always support the bottom of the fan module with your free hand so that it does not suddenly drop free from the chassis and injure you.
+
+. Set the fan module aside.
+. Insert the replacement fan module into the chassis by aligning it with the opening, and then sliding it into the chassis.
+. Push firmly on the fan module cam handle so that it is seated all the way into the chassis.
++
+The cam handle raises slightly when the fan module is completely seated.
+
+. Swing the cam handle up to its closed position, making sure that the cam handle release latch clicks into the locked position.
++
+The fan LED should be green after the fan is seated and has spun up to operational speed.
+
+. Align the bezel with the ball studs, and then gently push the bezel onto the ball studs.
+
+include::../_include/complete_rma_step.adoc[]

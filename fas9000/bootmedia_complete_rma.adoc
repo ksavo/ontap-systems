@@ -1,0 +1,11 @@
+---
+permalink: fas9000/bootmedia-complete-rma.html
+sidebar: sidebar
+keywords: aff a700, fas9000, complete, replacement, process
+summary: "After you replace the part, you can return the failed part to NetApp, as described in the RMA instructions shipped with the kit."
+---
+= Return the failed part to NetApp - AFF A700 and FAS9000
+:icons: font
+:imagesdir: ../media/
+
+include::../_include/complete_rma.adoc[]

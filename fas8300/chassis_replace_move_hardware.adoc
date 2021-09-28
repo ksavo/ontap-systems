@@ -1,0 +1,109 @@
+---
+permalink: fas8300/chassis-replace-move-hardware.html
+sidebar: sidebar
+keywords: fas8300, fas8700, shut, chassis, controller, replace, remove, swap, verify, install, power, supply, metrocluster, aggregates, replacement, process, equipment, rack, ha, state, system
+summary: "Move the fans, hard drives, and controller module or modules from the impaired chassis to the new chassis, and swap out the impaired chassis from the equipment rack or system cabinet with the new chassis of the same model as the impaired chassis."
+---
+= Move and replace hardware - FAS8300 and FAS8700
+:icons: font
+:imagesdir: ../media/
+
+== Step 1: Remove the controller modules
+
+[.lead]
+To replace the chassis, you must remove the controller modules from the old chassis.
+
+.Steps
+. If you are not already grounded, properly ground yourself.
+. Release the power cable retainers, and then unplug the cables from the power supplies.
+. Loosen the hook and loop strap binding the cables to the cable management device, and then unplug the system cables and SFPs (if needed) from the controller module, keeping track of where the cables were connected.
++
+Leave the cables in the cable management device so that when you reinstall the cable management device, the cables are organized.
+
+. Remove and set aside the cable management devices from the left and right sides of the controller module.
+. Press down on both of the locking latches, and then rotate both latches downward at the same time.
++
+The controller module moves slightly out of the chassis.
+
+. Slide the controller module out of the chassis.
++
+Make sure that you support the bottom of the controller module as you slide it out of the chassis.
+
+. Set the controller module aside in a safe place, and repeat these steps for the other controller module in the chassis.
+
+== Step 2: Move the fans
+
+[.lead]
+To move the fan modules to the replacement chassis when replacing the chassis, you must perform a specific sequence of tasks.
+
+.Steps
+. If you are not already grounded, properly ground yourself.
+. Remove the bezel (if necessary) with two hands, by grasping the openings on each side of the bezel, and then pulling it toward you until the bezel releases from the ball studs on the chassis frame.
+. Press down the release latch on the fan module cam handle, and then rotate the cam handle downward.
++
+The fan module moves a little bit away from the chassis.
+
+. Pull the fan module straight out from the chassis, making sure that you support it with your free hand so that it does not swing out of the chassis.
++
+CAUTION: The fan modules are short. Always support the bottom of the fan module with your free hand so that it does not suddenly drop free from the chassis and injure you.
+
+. Set the fan module aside.
+. Repeat the preceding steps for any remaining fan modules.
+. Insert the fan module into the replacement chassis by aligning it with the opening, and then sliding it into the chassis.
+. Push firmly on the fan module cam handle so that it is seated all the way into the chassis.
++
+The cam handle raises slightly when the fan module is completely seated.
+
+. Swing the cam handle up to its closed position, making sure that the cam handle release latch clicks into the locked position.
++
+The fan LED should be green after the fan is seated and has spun up to operational speed.
+
+. Repeat these steps for the remaining fan modules.
+
+== Step 3: Replace a chassis from within the equipment rack or system cabinet
+
+[.lead]
+You must remove the existing chassis from the equipment rack or system cabinet before you can install the replacement chassis.
+
+.Steps
+. Remove the screws from the chassis mount points.
+. With two people, slide the old chassis off the rack rails in a system cabinet or equipment rack, and then set it aside.
+. If you are not already grounded, properly ground yourself.
+. Using two people, install the replacement chassis into the equipment rack or system cabinet by guiding the chassis onto the rack rails in a system cabinet or equipment rack.
+. Slide the chassis all the way into the equipment rack or system cabinet.
+. Secure the front of the chassis to the equipment rack or system cabinet, using the screws you removed from the old chassis.
+. If you have not already done so, install the bezel.
+
+== Step 4: Install the controller modules
+
+[.lead]
+After you install the controller modules into the new chassis, you need to boot it to a state where you can run the diagnostic test.
+
+For HA pairs with two controller modules in the same chassis, the sequence in which you install the controller module is especially important because it attempts to reboot as soon as you completely seat it in the chassis.
+
+.Steps
+. Align the end of the controller module with the opening in the chassis, and then gently push the controller module halfway into the system.
++
+NOTE: Do not completely insert the controller module in the chassis until instructed to do so.
+
+. Recable the console to the controller module, and then reconnect the management port.
+. Complete the installation of the controller module:
+ .. Plug the power cord into the power supply, reinstall the power cable locking collar, and then connect the power supply to the power source.
+ .. Using the locking latches, firmly push the controller module into the chassis until the locking latches begin to rise.
++
+NOTE: Do not use excessive force when sliding the controller module into the chassis to avoid damaging the connectors.
+
+ .. Fully seat the controller module in the chassis by rotating the locking latches upward, tilting them so that they clear the locking pins, gently push the controller all the way in, and then lower the locking latches into the locked position.
++
+The controller module begins to boot as soon as it is fully seated in the chassis. Be prepared to interrupt the boot process.
+
+ .. If you have not already done so, reinstall the cable management device.
+ .. Interrupt the normal boot process and boot to LOADER by pressing `Ctrl-C`.
++
+NOTE: If your system stops at the boot menu, select the option to boot to LOADER.
+
+ .. At the LOADER prompt, enter `bye` to reinitialize the PCIe cards and other components.
+ .. Interrupt the boot process and boot to the LOADER prompt by pressing `Ctrl-C`.
++
+If your system stops at the boot menu, select the option to boot to LOADER.
+. Repeat the preceding steps to install the second controller into the new chassis.

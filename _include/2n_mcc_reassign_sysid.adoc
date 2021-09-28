@@ -1,0 +1,104 @@
+In a two-node MetroCluster configuration running ONTAP, you must manually reassign disks to the new controller's system ID before you return the system to normal operating condition.
+
+.About this task
+This procedure applies only to systems in a two-node MetroCluster configuration running ONTAP.
+
+You must be sure to issue the commands in this procedure on the correct node:
+
+* The impaired node is the node on which you are performing maintenance.
+* The replacement node is the new node that replaced the impaired node as part of this procedure.
+* The healthy node is the DR partner of the impaired node.
+
+.Steps
+. If you have not already done so, reboot the replacement node, interrupt the boot process by entering `Ctrl-C`, and then select the option to boot to Maintenance mode from the displayed menu.
++
+You must enter `Y` when prompted to override the system ID due to a system ID mismatch.
+
+. View the old system IDs from the healthy node: `metrocluster node show -fields node-systemid,dr-partner-systemid`
++
+In this example, the Node_B_1 is the old node, with the old system ID of 118073209:
++
+----
+dr-group-id cluster         node                 node-systemid dr-partner-systemid
+ ----------- --------------------- -------------------- ------------- -------------------
+ 1           Cluster_A             Node_A_1             536872914     118073209
+ 1           Cluster_B             Node_B_1             118073209     536872914
+ 2 entries were displayed.
+----
+
+. View the new system ID at the Maintenance mode prompt on the impaired node: `disk show`
++
+In this example, the new system ID is 118065481:
++
+----
+Local System ID: 118065481
+    ...
+    ...
+----
+
+. Reassign disk ownership (for FAS systems) or LUN ownership (for FlexArray systems), by using the system ID information obtained from the disk show command: `disk reassign -s old system ID`
++
+In the case of the preceding example, the command is:``disk reassign -s 118073209``
++
+You can respond `Y` when prompted to continue.
+
+. Verify that the disks (or FlexArray LUNs) were assigned correctly: `disk show -a`
++
+Verify that the disks belonging to the replacement node show the new system ID for the replacement node. In the following example, the disks owned by system-1 now show the new system ID, 118065481:
++
+----
+*> disk show -a
+Local System ID: 118065481
+
+  DISK     OWNER                 POOL   SERIAL NUMBER  HOME
+-------    -------------         -----  -------------  -------------
+disk_name   system-1  (118065481) Pool0  J8Y0TDZC       system-1  (118065481)
+disk_name   system-1  (118065481) Pool0  J8Y09DXC       system-1  (118065481)
+.
+.
+.
+----
+
+. From the healthy node, verify that any coredumps are saved:
+ .. Change to the advanced privilege level:``set -privilege advanced``
++
+You can respond `Y` when prompted to continue into advanced mode. The advanced mode prompt appears (*>).
+
+ .. Verify that the coredumps are saved:``system node run -node local-node-name partner savecore``
++
+If the command output indicates that savecore is in progress, wait for savecore to complete before issuing the giveback. You can monitor the progress of the savecore using the system node run -node local-node-name partner savecore -s command.</info>.
+
+ .. Return to the admin privilege level:``set -privilege admin``
+. If the replacement node is in Maintenance mode (showing the *> prompt), exit Maintenance mode and go to the LOADER prompt: `halt`
+. Boot the replacement node: `boot_ontap`
+. After the replacement node has fully booted, perform a switchback:``metrocluster switchback``
+. Verify the MetroCluster configuration: `metrocluster node show - fields configuration-state`
++
+----
+node1_siteA::> metrocluster node show -fields configuration-state
+
+dr-group-id            cluster node           configuration-state
+-----------            ---------------------- -------------- -------------------
+1 node1_siteA          node1mcc-001           configured
+1 node1_siteA          node1mcc-002           configured
+1 node1_siteB          node1mcc-003           configured
+1 node1_siteB          node1mcc-004           configured
+
+4 entries were displayed.
+----
+
+. Verify the operation of the MetroCluster configuration in Data ONTAP:
+ .. Check for any health alerts on both clusters:``system health alert show``
+ .. Confirm that the MetroCluster is configured and in normal mode:``metrocluster show``
+ .. Perform a MetroCluster check:``metrocluster check run``
+ .. Display the results of the MetroCluster check:``metrocluster check show``
+ .. Run Config Advisor. Go to the Config Advisor page on the NetApp Support Site at http://support.netapp.com/NOW/download/tools/config_advisor/[support.netapp.com/NOW/download/tools/config_advisor/].
++
+After running Config Advisor, review the tool's output and follow the recommendations in the output to address any issues discovered.
+. Simulate a switchover operation:
+ .. From any node's prompt, change to the advanced privilege level: `set -privilege advanced`
++
+You need to respond with `y` when prompted to continue into advanced mode and see the advanced mode prompt (*>).
+
+ .. Perform the switchback operation with the -simulate parameter: `metrocluster switchover -simulate`
+ .. Return to the admin privilege level: `set -privilege admin`

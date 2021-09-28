@@ -1,0 +1,10 @@
+---
+permalink: fas2600/index.html
+sidebar: sidebar
+keywords: 
+summary: ''
+---
+= FAS2600 systems
+:icons: font
+:imagesdir: ../media/
+

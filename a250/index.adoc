@@ -1,0 +1,9 @@
+---
+permalink: a250/index.html
+sidebar: sidebar
+keywords:
+summary: ''
+---
+= AFF A250 systems
+:icons: font
+:imagesdir: ../media/

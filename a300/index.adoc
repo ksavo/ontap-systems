@@ -1,0 +1,9 @@
+---
+permalink: a300/index.html
+sidebar: sidebar
+keywords: 
+summary: ''
+---
+= AFF A300 systems
+:icons: font
+:imagesdir: ../media/

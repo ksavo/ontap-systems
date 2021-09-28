@@ -1,0 +1,9 @@
+---
+permalink: fas2700/index.html
+sidebar: sidebar
+keywords: 
+summary: ''
+---
+= AFF A220 and FAS2700 systems
+:icons: font
+:imagesdir: ../media/

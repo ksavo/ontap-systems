@@ -1,0 +1,63 @@
+section: fas2600
+title: FAS2600 systems
+entries:
+  - title: Install and setup
+    entries:
+    - title: Cluster configuration worksheet
+      url: /fas2600/install-worksheet-linkout.html
+    - title: Installation and setup PDF poster
+      url: /fas2600/install-setup-linkout.html
+    - title: Setup video
+      url: /fas2600/install-video-linkout.html
+  - title: Maintain
+    entries:
+    - title: Boot media
+      entries:
+      - title: Overview
+        url: /fas2600/bootmedia-replace-overview.html
+      - title: Check onboard encryption keys as needed
+        url: /fas2600/bootmedia-encryption-preshutdown-checks.html
+      - title: Shut down the impaired controller
+        url: /fas2600/bootmedia-shutdown.html
+      - title: Remove the controller module, replace the boot media and transfer the boot image to the boot media
+        url: /fas2600/bootmedia-replace.html
+      - title: Boot the recovery image
+        url: /fas2600/bootmedia-recovery-image-boot-non-2n-mcc.html
+      - title: Restore OKM, NSE, and NVE as needed
+        url: /fas2600/bootmedia-encryption-restore.html
+      - title: Return the failed part to NetApp
+        url: /fas2600/bootmedia-complete-rma.html
+    - title: Caching module
+      url: /fas2600/caching-module-replace.html
+    - title: Chassis
+      entries:
+      - title: Overview
+        url: /fas2600/chassis-replace-overview.html
+      - title: Shut down the impaired controller
+        url: /fas2600/chassis-replace-shutdown.html
+      - title: Replace the hardware
+        url: /fas2600/chassis-replace-move-hardware.html
+      - title: Restoring and verifying configuration
+        url: /fas2600/chassis-replace-complete-system-restore-rma.html
+    - title: Controller module
+      entries:
+      - title: Overview
+        url: /fas2600/controller-replace-overview.html
+      - title: Shut down the impaired controller
+        url: /fas2600/controller-replace-shutdown.html
+      - title: Replace the controller hardware
+        url: /fas2600/controller-replace-move-hardware.html
+      - title: Restore and verify the system configuration
+        url: /fas2600/controller-replace-system-config-restore-and-verify.html
+      - title: Recable the system and reassign disks
+        url: /fas2600/controller-replace-recable-reassign-disks.html
+      - title: Complete system restoration
+        url: /fas2600/controller-replace-restore-system-rma.html
+    - title: DIMM
+      url: /fas2600/dimm-replace.html
+    - title: NVMEM battery
+      url: /fas2600/nvmem-nvram-battery-replace.html
+    - title: Power supply
+      url: /fas2600/power-supply-swap-out.html
+    - title: Real-time clock battery
+      url: /fas2600/rtc-battery-replace.html

@@ -1,0 +1,43 @@
+---
+permalink: platform-supplemental/42u-1280mm-replace-pdus.html
+sidebar: sidebar
+keywords: replace, fail, PDU, system, cabinet, replace, exist, replace pdu
+summary: You can replace a failed PDU in your system cabinet or replace an existing PDU with a different type of PDU.
+---
+= Replace PDUs
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You can replace a failed PDU in your system cabinet or replace an existing PDU with a different type of PDU.
+
+The replacement PDU must be supported by your system cabinet and must provide sufficient power to the installed equipment.
+
+https://hwu.netapp.com/[hwu.netapp.com]
+
+. Turn off the circuit breakers on the target PDU, and then unplug the old PDU from the AC power source.
+. Ground yourself to the system cabinet, and then unplug the power cords from each of the system components and from the PDU.
+. Remove the screws from the PDU frame, bottom screw first.
++
+NOTE: Ensure that you support the PDU with one hand while you remove the last screw from the top of the PDU. This prevents the PDU from dropping or falling toward you after the screw is removed.
+
+. Remove the old PDU from the system cabinet.
++
+Make sure that you keep track of the mounting screws so that you can reuse them when installing the replacement PDU.
+
+. Remove the brackets from the old PDU, and then install them on the back of the replacement PDU.
+. While supporting the replacement PDU, align the slot on the mounting bracket of the PDU with the top holes of the frame on the inside of the system cabinet, and then secure the PDU to the system cabinet frame using the mounting screws from the old PDU.
+. Secure the bottom of the PDU to the system cabinet frame, and then tighten all of the mounting screws.
+. Verify that all of the power switches or circuit breakers are in the Off position.
++
+If the circuit breakers are not in the Off position, push a small screwdriver or straightened paper clip into the slot to the right of the Off label to trip the circuit breaker and turn off the circuit.
+
+. Plug the system power cords into the PDU, plugging each component into the PDU outlet directly across from the component.
++
+TIP: A best practice is to distribute the total load across the PDU branches, making each branch load as equal as possible.
+
+. Lock each component power cable plug in place with the cable retainer clip above it by sliding the curved edge of the cable retainer clip over the plug shoulder.
+. Plug the PDU power cord into the AC power source.
+. Turn on the PDU power switches or PDU circuit breakers.
++
+For PDU circuit breakers, the button is on when it is flush with the PDU frame.

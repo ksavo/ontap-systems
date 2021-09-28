@@ -1,0 +1,19 @@
+---
+permalink: a300/chassis-replace-shutdown.html
+sidebar: sidebar
+keywords: aff a300, shutdown the controllers
+summary: "To replace the chassis, you must shutdown the controllers."
+---
+= Shut down the controllers - - AFF A300
+:icons: font
+:imagesdir: ../media/
+
+== Option 1: Shut down the node
+
+[.lead]
+include::../_include/shutdown_chassis.adoc[]
+
+== Option 2: Controllers are in a two-node MetroCluster configuration
+
+[.lead]
+include::../_include/shutdown_2n_mcc.adoc[]

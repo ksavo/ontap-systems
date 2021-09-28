@@ -1,0 +1,62 @@
+---
+permalink: a800/controller-replace-system-config-restore-and-verify.html
+sidebar: sidebar
+keywords: aff a800, restore and verify the system configuration, verify and set the ha state of the controller module, run system-level diagnostics
+summary: "After completing the hardware replacement and booting to Maintenance mode, you verify the low-level system configuration of the replacement controller and reconfigure system settings as necessary."
+---
+= Restore and verify the system configuration - AFF A800
+:icons: font
+:imagesdir: ../media/
+
+== Step 1: Set and verify system time after replacing the controller
+
+[.lead]
+include::../_include/set_time_after_controller_rep.adoc[]
+
+== Step 2: Verify and set the HA state of the chassis
+
+[.lead]
+You must verify the `HA` state of the controller module and, if necessary, update the state to match your system configuration.
+
+. In Maintenance mode from the new controller module, verify that all components display the same `HA` state: `ha-config show`
++
+The HA state should be the same for all components.
+
+. If the displayed system state of the controller module does not match your system configuration, set the `HA` state for the controller module: `ha-config modify controller ha-state`
+
++
+The value for HA-state can be one of the following:
+
+  *** ha
+  *** mcc
+  *** mccip
+  *** non-ha
+
+  . If the displayed system state of the controller module does not match your system configuration, set the `HA` state for the controller module: `ha-config modify controller ha-state`
+  . Confirm that the setting has changed: `ha-config show`
+
+== Step 3: Run diagnostics
+
+[.lead]
+After you have replaced a component in your system, you should run diagnostic tests on that component.
+
+Your system must be at the LOADER prompt to start diagnostics.
+
+All commands in the diagnostic procedures are issued from the node where the component is being replaced.
+
+. If the node to be serviced is not at the LOADER prompt, reboot the node: `system node halt -node node_name`
++
+After you issue the command, you should wait until the system stops at the LOADER prompt.
+
+. At the LOADER prompt, access the special drivers specifically designed for system-level diagnostics to function properly: `boot_diags`
+. Select *Scan System* from the displayed menu to enable running the diagnostics tests.
+. Select *Test Memory* from the displayed menu.
+. Proceed based on the result of the preceding step:
+ ** If the test failed, correct the failure, and then rerun the test.
+ ** If the test reported no failures, select Reboot from the menu to reboot the system.
++
+NOTE: During the boot process, you might see the following prompts:
+
+  *** A prompt warning of a system ID mismatch and asking to override the system ID.
+  *** A prompt warning that when entering Maintenance mode in an HA configuration you must ensure that the healthy node remains down.
+You can safely respond `y` to these prompts.

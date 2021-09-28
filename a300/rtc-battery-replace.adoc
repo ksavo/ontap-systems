@@ -1,0 +1,128 @@
+---
+permalink: a300/rtc-battery-replace.html
+sidebar: sidebar
+keywords: aff a300, replace the rtc battery
+summary: "You replace the real-time clock (RTC) battery in the controller module so that your system's services and applications that depend on accurate time synchronization continue to function."
+---
+= Replace the real-time clock battery - AFF A300
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You replace the real-time clock (RTC) battery in the controller module so that your system's services and applications that depend on accurate time synchronization continue to function.
+
+* You can use this procedure with all versions of ONTAP supported by your system
+* All other components in the system must be functioning properly; if not, you must contact technical support.
+
+== Step 1: Shut down the impaired controller
+
+[.lead]
+You can shut down or take over the impaired controller using different procedures, depending on the storage system hardware configuration.
+
+=== Option 1: Most configurations
+
+[.lead]
+include::../_include/shutdown_most_frus.adoc[]
+
+
+=== Option 2: Controller is in a two-node MetroCluster
+
+[.lead]
+include::../_include/shutdown_2n_mcc.adoc[]
+
+== Step 2: Open the controller module
+
+[.lead]
+To access components inside the controller, you must first remove the controller module from the system and then remove the cover on the controller module.
+
+. If you are not already grounded, properly ground yourself.
+. Loosen the hook and loop strap binding the cables to the cable management device, and then unplug the system cables and SFPs (if needed) from the controller module, keeping track of where the cables were connected.
++
+Leave the cables in the cable management device so that when you reinstall the cable management device, the cables are organized.
+
+. Remove and set aside the cable management devices from the left and right sides of the controller module.
++
+image::../media/drw_32xx_cbl_mgmt_arm.gif[]
+
+. Loosen the thumbscrew on the cam handle on the controller module.
++
+image::../media/drw_8020_cam_handle_thumbscrew.gif[]
++
+|===
+a|
+image:../media/legend_icon_01.gif[]|
+Thumbscrew
+a|
+image:../media/legend_icon_02.gif[]
+a|
+Cam handle
+|===
+
+. Pull the cam handle downward and begin to slide the controller module out of the chassis.
++
+Make sure that you support the bottom of the controller module as you slide it out of the chassis.
+
+== Step 3: Replace the RTC Battery
+
+[.lead]
+To replace the RTC battery, locate them inside the controller and follow the specific sequence of steps.
+
+. If you are not already grounded, properly ground yourself.
+. Locate the RTC battery.
++
+image::../media/drw_rxl_rtc_battery.gif[]
+
+. Gently push the battery away from the holder, rotate it away from the holder, and then lift it out of the holder.
++
+NOTE: Note the polarity of the battery as you remove it from the holder. The battery is marked with a plus sign and must be positioned in the holder correctly. A plus sign near the holder tells you how the battery should be positioned.
+
+. Remove the replacement battery from the antistatic shipping bag.
+. Locate the empty battery holder in the controller module.
+. Note the polarity of the RTC battery, and then insert it into the holder by tilting the battery at an angle and pushing down.
+. Visually inspect the battery to make sure that it is completely installed into the holder and that the polarity is correct.
+
+== Step 4: Reinstall the controller module and setting time/date after RTC battery replacement
+
+[.lead]
+After you replace a component within the controller module, you must reinstall the controller module in the system chassis, reset the time and date on the controller, and then boot it.
+
+. If you have not already done so, close the air duct or controller module cover.
+. Align the end of the controller module with the opening in the chassis, and then gently push the controller module halfway into the system.
++
+Do not completely insert the controller module in the chassis until instructed to do so.
+
+. Recable the system, as needed.
++
+If you removed the media converters (QSFPs or SFPs), remember to reinstall them if you are using fiber optic cables.
+
+. If the power supplies were unplugged, plug them back in and reinstall the power cable retainers.
+. Complete the reinstallation of the controller module:
+ .. With the cam handle in the open position, firmly push the controller module in until it meets the midplane and is fully seated, and then close the cam handle to the locked position.
++
+Tighten the thumbscrew on the cam handle on back of the controller module.
++
+NOTE: Do not use excessive force when sliding the controller module into the chassis to avoid damaging the connectors.
+
+ .. If you have not already done so, reinstall the cable management device.
+ .. Bind the cables to the cable management device with the hook and loop strap.
+ .. Reconnect the power cables to the power supplies and to the power sources, and then turn on the power to start the boot process.
+ .. Halt the controller at the LOADER prompt.
+. Reset the time and date on the controller:
+ .. Check the date and time on the healthy node with the `show date` command.
+ .. At the LOADER prompt on the target node, check the time and date.
+ .. If necessary, modify the date with the `set date mm/dd/yyyy` command.
+ .. If necessary, set the time, in GMT, using the `set time hh:mm:ss` command.
+ .. Confirm the date and time on the target node.
+. At the LOADER prompt, enter `bye` to reinitialize the PCIe cards and other components and let the node reboot.
+. Return the node to normal operation by giving back its storage: `storage failover giveback -ofnode impaired_node_name`
+. If automatic giveback was disabled, reenable it: `storage failover modify -node local -auto-giveback true`
+
+== Step 5: Switch back aggregates in a two-node MetroCluster configuration
+
+[.lead]
+include::../_include/2n_mcc_switchback.adoc[]
+
+== Step 6: Return the failed part to NetApp
+
+[.lead]
+include::../_include/complete_rma.adoc[]

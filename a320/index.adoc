@@ -1,0 +1,11 @@
+---
+permalink: a320/index.html
+sidebar: sidebar
+keywords: aff, a320, aff a320
+summary:
+---
+
+= AFF A320 systems
+
+:icons: font
+:imagesdir: ../media/

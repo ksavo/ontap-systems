@@ -1,0 +1,80 @@
+---
+permalink: fas8200/power-supply-swap-out.html
+sidebar: sidebar
+keywords: fas8200, swap out a power supply
+summary: "Swapping out a power supply involves turning off, disconnecting, and removing the old power supply and installing, connecting, and turning on the replacement power supply."
+---
+= Swap out a power supply - FAS8200
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+Swapping out a power supply involves turning off, disconnecting, and removing the old power supply and installing, connecting, and turning on the replacement power supply.
+
+All other components in the system must be functioning properly; if not, you must contact technical support.
+
+* The power supplies are redundant and hot-swappable.
+* This procedure is written for replacing one power supply at a time.
++
+NOTE: It is a best practice to replace the power supply within two minutes of removing it from the chassis. The system continues to function, but ONTAP sends messages to the console about the degraded power supply until the power supply is replaced.
+
+* The number of power supplies in the system depends on the model.
+* Power supplies are auto-ranging.
+
+. Identify the power supply you want to replace, based on console error messages or through the LEDs on the power supplies.
+. If you are not already grounded, properly ground yourself.
+. Turn off the power supply and disconnect the power cables:
+ .. Turn off the power switch on the power supply.
+ .. Open the power cable retainer, and then unplug the power cable from the power supply.
+ .. Unplug the power cable from the power source.
+. Press down the release latch on the power supply cam handle, and then lower the cam handle to the fully open position to release the power supply from the mid plane.
++
+image::../media/drw_rxl_psu.gif[]
++
+|===
+a|
+image:../media/legend_icon_01.gif[]|
+Power supply
+a|
+image:../media/legend_icon_02.gif[]
+a|
+Cam handle release latch
+a|
+image:../media/legend_icon_03.gif[]
+a|
+Power and Fault LEDs
+a|
+image:../media/legend_icon_04.gif[]
+a|
+Cam handle
+a|
+image:../media/legend_icon_05.gif[]
+a|
+Power cable locking mechanism
+|===
+
+. Use the cam handle to slide the power supply out of the system.
++
+CAUTION:
++
+When removing a power supply, always use two hands to support its weight.
+
+. Make sure that the on/off switch of the new power supply is in the Off position.
+. Using both hands, support and align the edges of the power supply with the opening in the system chassis, and then gently push the power supply into the chassis using the cam handle.
++
+The power supplies are keyed and can only be installed one way.
++
+NOTE: Do not use excessive force when sliding the power supply into the system. You can damage the connector.
+
+. Push firmly on the power supply cam handle to seat it all the way into the chassis, and then push the cam handle to the closed position, making sure that the cam handle release latch clicks into its locked position.
+. Reconnect the power supply cabling:
+ .. Reconnect the power cable to the power supply and the power source.
+ .. Secure the power cable to the power supply using the power cable retainer.
+
++
+Once power is restored to the power supply, the status LED should be green.
+. Turn on the power to the new power supply, and then verify the operation of the power supply activity LEDs.
++
+The power supply LEDs are lit when the power supply comes online.
+
+include::../_include/complete_rma_step.adoc[]

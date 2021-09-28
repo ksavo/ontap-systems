@@ -1,0 +1,9 @@
+---
+permalink: a200/index.html
+sidebar: sidebar
+keywords:
+summary: ''
+---
+= AFF A200 systems
+:icons: font
+:imagesdir: ../media/

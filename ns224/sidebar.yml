@@ -1,0 +1,27 @@
+section: ns224
+title: NS224 shelves
+entries:
+  - title: Hot-add a shelf
+    url: /ns224/hot-add-shelf.html
+  - title: Change a shelf ID
+    url: /ns224/change-shelf-id.html
+  - title: Cable shelves as switch-attached storage
+    url: /ns224/cable-as-switch-attached.html
+  - title: Maintain
+    entries:
+    - title: Boot media
+      url: /ns224/service-replace-boot-media.html
+    - title: DIMM
+      url: /ns224/service-replace-dimm.html
+    - title: Drive
+      url: /ns224/service-replace-drive.html
+    - title: Fan
+      url: /ns224/service-replace-fan.html
+    - title: Hot-remove a shelf
+      url: /ns224/hot-remove-shelf.html
+    - title: NSM module
+      url: /ns224/service-replace-nsm100.html
+    - title: Power supply
+      url: /ns224/service-replace-power-supply.html
+    - title: Real-time clock battery
+      url: /ns224/service-replace-rtc-battery.html

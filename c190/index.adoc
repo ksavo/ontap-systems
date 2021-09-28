@@ -1,0 +1,9 @@
+---
+permalink: c190/index.html
+sidebar: sidebar
+keywords:
+summary: 
+---
+= AFF C190 systems
+:icons: font
+:imagesdir: ../media/

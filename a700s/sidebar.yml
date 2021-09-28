@@ -1,0 +1,81 @@
+section: a700s
+title: AFF A700s systems
+entries:
+ - title: Install and setup
+   entries:
+   - title: Cluster configuration worksheet
+     url: /a700s/install-worksheet-linkout.html
+   - title: Installation and setup PDF poster
+     url: /a700s/install-setup-linkout.html
+   - title: Setup video
+     url: /a700s/install-video-linkout.html
+ - title: Maintain
+   entries:
+    - title: Boot media
+      entries:
+      - title: Overview
+        url: /a700s/bootmedia-replace-overview.html
+      - title: Check onboard encryption keys as needed
+        url: /a700s/bootmedia-encryption-preshutdown-checks.html
+      - title: Shutting down the node
+        url: /a700s/bootmedia-shutdown.html
+      - title: Remove the controller module and replace the boot media
+        url: /a700s/bootmedia-replace.html
+      - title: Transfer the boot image to the boot media
+        url: /a700s/bootmedia-transfer-boot-image.html
+      - title: Booting the recovery image
+        url: /a700s/bootmedia-recovery-image-boot-non-2n-mcc.html
+      - title: Restore OKM, NSE, and NVE as needed
+        url: /a700s/bootmedia-encryption-restore.html
+      - title: Return the failed part to NetApp
+        url: /a700s/bootmedia-complete-rma.html
+    - title: Chassis
+      entries:
+      - title: Overview
+        url: /a700s/chassis-replace-overview.html
+      - title: Shut down the impaired controller
+        url: /a700s/chassis-replace-shutdown.html
+      - title: Move and replace hardware
+        url: /a700s/chassis-replace-move-hardware.html
+      - title: Complete the restoration and replacement process
+        url: /a700s/chassis-replace-complete-system-restore-rma.html
+    - title: Controller
+      entries:
+      - title: Overview
+        url: /a700s/controller-replace-overview.html
+      - title: Shutting down the impaired controller
+        url: /a700s/controller-replace-shutdown.html
+      - title: Move the controller hardware
+        url: /a700s/controller-replace-move-hardware.html
+      - title: Restore and verify the system configuration
+        url: /a700s/controller-replace-system-config-restore-and-verify.html
+      - title: Recable the system and reassign disks
+        url: /a700s/controller-replace-recable-reassign-disks.html
+      - title: Complete the replacement process
+        url: /a700s/controller-replace-restore-system-rma.html
+    - title: DIMM
+      url: /a700s/dimm-replace.html
+    - title: Fan
+      entries:
+      - title: Shut down the impaired node
+        url: /a700s/fan-impaired-controller-shutdown.html
+      - title: Remove the controller module
+        url: /a700s/fan-controller-remove.html
+      - title: Replace a fan
+        url: /a700s/fan-replace.html
+      - title: Reinstall the controller module
+        url: /a700s/fan-controller-reinstall-pcie-rtc.html
+      - title: Return the failed part to NetApp
+        url: /a700s/fan-complete-rma.html
+    - title: NVRAM battery
+      url: /a700s/nvmem-nvram-battery-replace.html
+    - title: NVRAM module and/or NVRAM DIMMs
+      url: /a700s/nvram-or-nvram-dimm-replacement.html
+    - title: PCIe card
+      url: /a700s/pci-cards-and-risers-replace.html
+    - title: Power supply
+      url: /a700s/power-supply-swap-out.html
+    - title: Real-time clock battery
+      url: /a700s/rtc-battery-replace.html
+    - title: AFF A700s ystem-Level Diagnostics Guide
+      url: /a700s/system-level-diags-linkout.html

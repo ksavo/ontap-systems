@@ -1,0 +1,20 @@
+---
+permalink: platform-supplemental/superrail-install.html
+sidebar: sidebar
+keywords: superrail, install, standard, square-hole, four-post, rack, round-to-square, hole, adaptor, bracket, superrail kit installation instruction
+summary: The SuperRail can be either installed on a standard square-hole four-post rack or a standard round-hole four-post rack by using the round-to-square hole adaptor brackets.
+---
+= SuperRail kit installation instructions
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+The SuperRail can be either installed on a standard square-hole four-post rack or a standard round-hole four-post rack by using the round-to-square hole adaptor brackets.
+
+== Installing SuperRail to square-hole four-post rack
+
+image::../media/drw_superrail_square_hole_four_post_kit_re_release.gif[]
+
+== Installing SuperRail to round-hole four-post rack
+
+image::../media/drw_superrail_round_hole_four_post_kit_re_release.gif[]
