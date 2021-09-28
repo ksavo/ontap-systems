@@ -22,6 +22,7 @@ sidebar:
     - section: sas3
     - section: switch-bes-53248
     - section: switch-cisco-9336
+    - section: switch-cisco-9336c-shared
     - section: switch-cisco-92300
     - section: other
     - title: Legal notices
@@ -96,7 +97,7 @@ homepage:
     - title: More resources
       links:
         - title: ONTAP documentation
-          url: https://docs.netapp.com/us-en/ontap/index.html       
+          url: https://docs.netapp.com/us-en/ontap/index.html
         - title: NetApp Hardware Universe
           url: https://hwu.netapp.com/
         - title: NetApp Active IQ Config Advisor
