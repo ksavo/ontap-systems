@@ -9,7 +9,7 @@ summary: NetApp's AFF and FAS storage systems provide leading-edge, enterprise-c
 summary: Use aggregate relocation to upgrade controller hardware
 ---
 
-=  ONTAP 9.8 System Documentation
+=  AFF and FAS System Documentation
 :hardbreaks:
 :nofooter:
 :icons: font
