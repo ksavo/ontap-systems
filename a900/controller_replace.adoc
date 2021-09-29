@@ -24,10 +24,10 @@ image::../media/drw_a900_remove_PCM.png[]
 +
 |===
 a|
-image:../media/legend_icon_01.gif[] a|
+image:../media/legend_icon_01.svg[] a|
 Cam handle release button
 a|
-image:../media/legend_icon_02.gif[]
+image:../media/legend_icon_02.svg[]
 a|
 Cam handle
 |===
@@ -42,7 +42,7 @@ image::../media/drw_a900_pcm_open.png[]
 +
 |===
 a|
-image:../media/legend_icon_01.gif[] a|
+image:../media/legend_icon_01.svg[] a|
 Controller module cover locking button
 |===
 
@@ -57,10 +57,10 @@ image::../media/drw_a900_remove_boot_dev.png[]
 +
 |===
 a|
-image:../media/legend_icon_01.gif[] a|
+image:../media/legend_icon_01.svg[] a|
 Press release tab
 a|
-image:../media/legend_icon_02.gif[]
+image:../media/legend_icon_02.svg[]
 a|
 Boot media
 |===
@@ -88,14 +88,14 @@ To move the DIMMs, locate and move them from the old controller into the replace
 +
 IMPORTANT: Carefully hold the DIMM by the edges to avoid pressure on the components on the DIMM circuit board.
 +
-image::../media/drw_9000_replace_pcm_dimms.gif[]
+image::../media/drw_9000_replace_pcm_dimms.svg[]
 +
 |===
 a|
-image:../media/legend_icon_01.gif[] a|
+image:../media/legend_icon_01.svg[] a|
 DIMM ejector tabs
 a|
-image:../media/legend_icon_02.gif[]
+image:../media/legend_icon_02.svg[]
 a|
 DIMM
 |===
@@ -133,10 +133,10 @@ image::../media/drw_a900_remove_PCM.png[]
 +
 |===
 a|
-image:../media/legend_icon_01.gif[] a|
+image:../media/legend_icon_01.svg[] a|
 Cam handle release button
 a|
-image:../media/legend_icon_02.gif[]
+image:../media/legend_icon_02.svg[]
 a|
 Cam handle
 |===
