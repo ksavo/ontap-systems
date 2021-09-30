@@ -18,7 +18,12 @@ include::../_include/install_licenses.adoc[]
 [.lead]
 include::../_include/restore_storage_encryption.adoc[]
 
-== Step 3:Return the failed part to NetApp
+== Step 3: Verify LIFs and registering the serial number
+
+[.lead]
+include::../_include/check_lifs_register_serial_number.adoc[]
+
+== Step 4: Return the failed part to NetApp
 
 [.lead]
 include::../_include/complete_rma.adoc[]
