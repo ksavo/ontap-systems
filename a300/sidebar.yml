@@ -4,9 +4,9 @@ entries:
  - title: Install and setup
    entries:
    - title: Cluster configuration worksheet
-     url: /media/cluster_configuration_worksheet.pdf
+     url: /a300/install-worksheet-linkout.html
    - title: Installation and setup PDF poster
-     url: /media/Installation_and_Setup_Instructions_AFF_A300.pdf
+     url: /a300/install-setup-linkout.html
    - title: Setup video
      url: /a300/install-video-linkout.html
  - title: Maintain
