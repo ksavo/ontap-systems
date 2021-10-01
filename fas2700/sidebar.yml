@@ -8,10 +8,10 @@ entries:
     - title: Quick guide
       url: /fas2700/install-quick-guide.html
       entries:
-      - title: Videos
-        url: /fas2700/install-videos.html
-      - title: Detailed guide
-        url: /fas2700/install-detailed-guide.html
+    - title: Videos
+      url: /fas2700/install-videos.html
+    - title: Detailed guide
+      url: /fas2700/install-detailed-guide.html
   - title: Maintain
     entries:
       - title: Boot media
