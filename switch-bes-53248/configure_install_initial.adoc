@@ -17,6 +17,8 @@ EFOS is a wide-ranging software set of advanced networking features and protocol
 
 This procedure provides a summary of the process to install your switches and get them running:
 
+.Steps
+
 . Connect the serial port to the host or serial port of your choice.
 . Connect the management port (the RJ-45 wrench port on the left side of the switch) to the same network where your TFTP server is located.
 . At the console, set the host side serial settings:
@@ -28,9 +30,9 @@ This procedure provides a summary of the process to install your switches and ge
 . Log in to the switch as admin and press enter when prompted for a password. The default switch name is routing. At the prompt, `enable`. This gives you access to Privileged EXEC mode for switch configuration.
 +
 ----
-User: admin
+User: **admin**
 Password:
-(Routing)> enable
+(Routing)> **enable**
 Password:
 (Routing) #
 ----
@@ -38,26 +40,28 @@ Password:
 . Change the switch name to cs2:
 +
 ----
-(Routing) # hostname cs2
+(Routing) # **hostname cs2**
 (cs2) #
 ----
 
-. To set a static IP address, use the serviceport protocol, network protocol, and serviceport ip commands as shown in the example.
+. To set a static IP address, use the `serviceport protocol`, `network protocol`, and `serviceport ip` commands as shown in the example.
 +
 The serviceport is set to use DHCP by default. The IP address, subnet mask, and default gateway address are assigned automatically.
 +
 ----
-(cs2) # serviceport protocol none
-(cs2) # network protocol none
-(cs2) # serviceport ip ipaddr netmask gateway
+(cs2) # **serviceport protocol none**
+(cs2) # **network protocol none**
+(cs2) # **serviceport ip ipaddr netmask gateway**
 ----
 
-. Verify the results using the command: `show serviceport`
+. Verify the results using the command:
++
+`show serviceport`
 +
 The following example shows IP information provided by DHCP server.
 +
 ----
-(cs2) # show serviceport
+(cs2) # **show serviceport**
 Interface Status............................... Up
 IP Address..................................... 172.19.2.2
 Subnet Mask.................................... 255.255.255.0
@@ -71,7 +75,9 @@ IPv6 AutoConfig Mode........................... Disabled
 Burned In MAC Address.......................... D8:C4:97:71:12:3C
 ----
 
-. Configure the domain and name server: `configure`
+. Configure the domain and name server:
++
+`configure`
 +
 ----
 (cs2) # configure
@@ -82,7 +88,9 @@ Burned In MAC Address.......................... D8:C4:97:71:12:3C
 ----
 
 . Configure the NTP server.
- .. Configure the time zone and time synchronization (SNTP): `sntp`
+ .. Configure the time zone and time synchronization (SNTP):
++
+`sntp`
 +
 ----
 (cs2) #
@@ -93,7 +101,9 @@ Burned In MAC Address.......................... D8:C4:97:71:12:3C
 (cs2) (Config)#
 ----
 
- .. Configure the time manually: `clock`
+ .. Configure the time manually:
++
+`clock`
 +
 ----
 (cs2) #config
@@ -115,7 +125,7 @@ No time source
 This operation may take a few minutes.
 Management interfaces will not be available during this time.
 
-Are you sure you want to save? (y/n) y
+Are you sure you want to save? (y/n) **y**
 
 Config file 'startup-config' created successfully .
 

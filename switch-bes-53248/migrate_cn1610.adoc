@@ -11,17 +11,21 @@ summary: 'To replace the existing CN1610 cluster switches in a cluster with Broa
 [.lead]
 To replace the existing CN1610 cluster switches in a cluster with Broadcom-supported BES-53248 cluster switches, you must perform a specific sequence of tasks.
 
-The examples in this procedure use two nodes, each deploying two 10 GbE cluster interconnect ports: e0a and e0b.
+.What you'll need
+
+The examples in this procedure use two nodes, each deploying two 10 GbE cluster interconnect ports: `e0a` and `e0b`.
 
 The examples in this procedure use the following switch and node nomenclature:
 
 * The command outputs might vary depending on different releases of ONTAP software.
-* The CN1610 switches to be replaced are CL1 and CL2.
-* The BES-53248 switches to replace the CN1610 switches are cs1 and cs2.
-* The nodes are node1 and node2.
+* The CN1610 switches to be replaced are `CL1` and `CL2`.
+* The BES-53248 switches to replace the CN1610 switches are `cs1` and `cs2`.
+* The nodes are `node1` and `node2`.
 * The switch CL2 is replaced by cs2 first, followed with CL1 by cs1.
 * The BES-53248 switches are pre-loaded with the supported versions of Reference Configuration File (RCF) and Ethernet Fabric OS (EFOS) with ISL cables connected on ports 55 and 56.
-* The cluster LIF names are node1_clus1 and node1_clus2 for node1, and node2_clus1 and node2_clus2 for node2.
+* The cluster LIF names are `node1_clus1` and `node1_clus2` for node1, and `node2_clus1` and `node2_clus2` for node2.
+
+.About this task
 
 This procedure covers the following scenario:
 
@@ -35,11 +39,13 @@ This procedure covers the following scenario:
 
 .Steps
 
-. If AutoSupport is enabled on this cluster, suppress automatic case creation by invoking an AutoSupport message: `system node autosupport invoke -node * -type all -message MAINT=xh`
+. If AutoSupport is enabled on this cluster, suppress automatic case creation by invoking an AutoSupport message:
++
+`system node autosupport invoke -node * -type all -message MAINT=xh`
 +
 where x is the duration of the maintenance window in hours.
 +
-*NOTE* The AutoSupport message notifies technical support of this maintenance task so that automatic case creation is suppressed during the maintenance window.
+NOTE: The AutoSupport message notifies technical support of this maintenance task so that automatic case creation is suppressed during the maintenance window.
 +
 The following command suppresses automatic case creation for two hours:
 +
@@ -47,11 +53,15 @@ The following command suppresses automatic case creation for two hours:
 cluster1::*> system node autosupport invoke -node \* -type all -message MAINT=2h
 ----
 
-. Change the privilege level to advanced, entering *y* when prompted to continue: `set -privilege advanced`
+. Change the privilege level to advanced, entering *y* when prompted to continue:
++
+`set -privilege advanced`
 +
 The advanced prompt (*>) appears.
 
-. Verify that auto-revert is enabled on all cluster LIFs: `network interface show -vserver Cluster -fields auto-revert`
+. Verify that auto-revert is enabled on all cluster LIFs:
++
+`network interface show -vserver Cluster -fields auto-revert`
 +
 ----
 cluster1::*> network interface show -vserver Cluster -fields auto-revert
@@ -68,7 +78,9 @@ Cluster
 4 entries were displayed.
 ----
 
-. Display information about the devices in your configuration: `network device-discovery show -protocol cdp`
+. Display information about the devices in your configuration:
++
+`network device-discovery show -protocol cdp`
 +
 The following example displays how many cluster interconnect interfaces have been configured in each node for each cluster interconnect switch:
 +
@@ -88,7 +100,9 @@ node1      /cdp
 ----
 
 . Determine the administrative or operational status for each cluster interface.
- .. Display the cluster network port attributes: `network port show -ipspace Cluster`
+ .. Display the cluster network port attributes:
++
+`network port show -ipspace Cluster`
 +
 ----
 cluster1::*> network port show -ipspace Cluster
@@ -112,7 +126,9 @@ e0b       Cluster      Cluster          up   9000  auto/10000 healthy  false
 4 entries were displayed.
 ----
 
- .. Display information about the logical interfaces: `network interface show -vserver Cluster`
+ .. Display information about the logical interfaces:
++
+`network interface show -vserver Cluster`
 +
 ----
 cluster1::*> network interface show -vserver Cluster
@@ -129,7 +145,9 @@ Cluster
 ----
 
 . Verify that the appropriate port licenses, RCF, and EFOS image are installed on the new BES-53248 switches as necessary for your requirements, and make any essential site customizations, such as users and passwords, network addresses, and so on.
-. Ping the remote cluster interfaces: `cluster ping-cluster -node node-name`
+. Ping the remote cluster interfaces:
++
+`cluster ping-cluster -node node-name`
 +
 The following example shows how to ping the remote cluster interfaces:
 +
@@ -163,7 +181,9 @@ RPC status:
 2 paths up, 0 paths down (udp check)
 ----
 
-. Shut down the ISL ports 13 through 16 on the active CN1610 switch CL1: `shutdown`
+. Shut down the ISL ports 13 through 16 on the active CN1610 switch CL1:
++
+`shutdown`
 +
 The following example shows how to shut down ISL ports 13 through 16 on the CN1610 switch CL1:
 +
@@ -236,9 +256,11 @@ The following example illustrates the process of bringing up ISL ports 13 throug
 (CL1)#
 ----
 
-. Verify that the ISLs are *up* on the CN1610 switch CL1: `show port-channel`
+. Verify that the ISLs are *up* on the CN1610 switch CL1:
 +
-The `Link State` should be Up, `Type` should be Static, and `Port Active` should be True for ports 0/13 to 0/16:
+`show port-channel`
++
+The `Link State` should be `Up`, `Type` should be `Static`, and `Port Active` should be `True` for ports 0/13 to 0/16:
 +
 ----
 (CL2)# show port-channel 3/1
@@ -264,7 +286,9 @@ Ports    Timeout        Speed       Active
          partner/long
 ----
 
-. Verify that the ISL ports are up on the BES-53248 switch: `show port-channel`
+. Verify that the ISL ports are up on the BES-53248 switch:
++
+`show port-channel`
 +
 ----
 (cs2) # show port-channel 1/2
@@ -292,7 +316,9 @@ Ports   Timeout       Speed     Active
         partner/long
 ----
 
-. Verify that all of the cluster interconnect ports are reverted to their home ports: `network interface show -vserver Cluster`
+. Verify that all of the cluster interconnect ports are reverted to their home ports:
++
+`network interface show -vserver Cluster`
 +
 ----
 cluster1::*> network interface show -vserver Cluster
@@ -307,7 +333,9 @@ Cluster
 4 entries were displayed.
 ----
 
-. Verify that all of the cluster ports are connected: `network port show -ipspace Cluster`
+. Verify that all of the cluster ports are connected:
++
+`network port show -ipspace Cluster`
 +
 The following example shows the result of the previous command, verifying that all of the cluster interconnects are up:
 +
@@ -333,7 +361,9 @@ e0b       Cluster      Cluster          up   9000  auto/10000 healthy  false
 4 entries were displayed.
 ----
 
-. Ping the remote cluster interfaces: `cluster ping-cluster -node node-name`
+. Ping the remote cluster interfaces:
++
+`cluster ping-cluster -node _node-name_`
 +
 The following example shows how to ping the remote cluster interfaces:
 +
@@ -387,9 +417,11 @@ Are you sure you want to save? (y/n) y
 Config file 'startup-config' created successfully .
 ----
 
-. Verify the status of the cluster node port: `network port show -ipspace Cluster`
+. Verify the status of the cluster node port:
 +
-The following example verifies that all of the cluster interconnect ports on node1 and node2 are up:
+`network port show -ipspace Cluster`
++
+The following example verifies that all of the cluster interconnect ports on node1 and node2 are `up`:
 +
 ----
 cluster1::*> network port show -ipspace Cluster
@@ -413,9 +445,11 @@ e0b       Cluster      Cluster          up   9000  auto/10000 healthy  false
 4 entries were displayed.
 ----
 
-. Verify that the interface is now home: `network interface show -vserver Cluster`
+. Verify that the interface is now home:
 +
-The following example shows the status of cluster interconnect interfaces are up and `Is home` for node1 and node2:
+`network interface show -vserver Cluster`
++
+The following example shows the status of cluster interconnect interfaces are `up` and `Is home` for node1 and node2:
 +
 ----
 cluster1::*> network interface show -vserver Cluster
@@ -431,7 +465,9 @@ Cluster
 4 entries were displayed.
 ----
 
-. Ping the remote cluster interfaces and then perform a remote procedure call server check: `cluster ping-cluster -node node-name`
+. Ping the remote cluster interfaces and then perform a remote procedure call server check:
++
+`cluster ping-cluster -node _node-name_`
 +
 The following example shows how to ping the remote cluster interfaces:
 +
@@ -462,7 +498,9 @@ RPC status:
 2 paths up, 0 paths down (udp check)
 ----
 
-. Display the information about the devices in your configuration: `network device-discovery show -protocol cdp`
+. Display the information about the devices in your configuration:
++
+`network device-discovery show -protocol cdp`
 +
 The following examples show node1 and node2 have been migrated from CN1610 CL2 and CL1 to BES-53248 cs2 and cs1:
 +
@@ -481,7 +519,9 @@ node2      /cdp
 4 entries were displayed.
 ----
 
-. Remove the replaced CN1610 switches if they are not automatically removed: `system cluster-switch delete -device device-name`
+. Remove the replaced CN1610 switches if they are not automatically removed:
++
+`system cluster-switch delete -device _device-name_`
 +
 The following example shows how to remove the CN1610 switches:
 +
@@ -490,11 +530,15 @@ cluster::*> system cluster-switch delete –device CL2
 cluster::*> system cluster-switch delete –device CL1
 ----
 
-. If you suppressed automatic case creation, re-enable it by invoking an AutoSupport message: `system node autosupport invoke -node * -type all -message MAINT=END`
+. If you suppressed automatic case creation, re-enable it by invoking an AutoSupport message:
++
+`system node autosupport invoke -node * -type all -message MAINT=END`
 +
 ----
 cluster::*> system node autosupport invoke -node \* -type all -message MAINT=END
 ----
+
+.After you finish
 
 See _Configuring the cluster switch log collection feature_ in the http://docs.netapp.com/platstor/topic/com.netapp.doc.hw-sw-ix8-setup/home.html[Switch Setup and Configuration Guide for Broadcom-supported BES-53248 switches] for the steps required to enable cluster health switch log collection used for collecting switch-related log files.
 

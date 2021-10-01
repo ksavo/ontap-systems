@@ -11,6 +11,7 @@ summary: 'You can install the RCF after setting up the BES-53248 cluster switch 
 [.lead]
 You can install the RCF after setting up the BES-53248 cluster switch for the first time and after the new license or licenses have been applied. If you are upgrading an RCF from an older version, the files are effectively merged together and you complete the steps as detailed here.
 
+.Steps
 . Connect the cluster switch to the management network.
 . Use the ping command to verify connectivity to the server hosting EFOS, licenses, and the RCF.
 +
@@ -56,9 +57,11 @@ File transfer operation completed successfully.
 +
 NOTE: Depending on your environment, you might need to use a double slash in the copy command, for example: `+copy http://172.19.2.1//tmp/BES-53248_RCF_v1.6-Cluster-HA.txt nvram:script BES-53248_RCF_v1.6-Cluster-HA.scr+`.
 +
-NOTE: The .scr extension must be set as part of the file name before invoking the script. This extension is the extension for the EFOS operating system. The switch validates the script automatically when it is downloaded to the switch, and the output goes to the console. Also, you can change the name of the .scr to fit your console screen for easier readability, for example: `+copy http://172.19.2.1/tmp/BES-53248_RCF_v1.6-Cluster-HA.txt nvram:script RCF_v1.6-Cluster-HA.scr+`.
+NOTE: The `.scr` extension must be set as part of the file name before invoking the script. This extension is the extension for the EFOS operating system. The switch validates the script automatically when it is downloaded to the switch, and the output goes to the console. Also, you can change the name of the `.scr` to fit your console screen for easier readability, for example: `+copy http://172.19.2.1/tmp/BES-53248_RCF_v1.6-Cluster-HA.txt nvram:script RCF_v1.6-Cluster-HA.scr+`.
 
-. Verify that the script was downloaded and saved to the file name you gave it: `script list`
+. Verify that the script was downloaded and saved to the file name you gave it:
++
+`script list`
 +
 ----
 (cs2) # **script list**
@@ -70,7 +73,9 @@ BES-53248_RCF_v1.6-Cluster-HA.scr        2241         2020 09 30 05:41:00
 1 configuration script(s) found.
 ----
 
-. Apply the script to the switch. `script apply`
+. Apply the script to the switch.
++
+`script apply`
 +
 ----
 (cs2) # **script apply BES-53248_RCF_v1.6-Cluster-HA.scr**
@@ -85,7 +90,9 @@ Configuration Saved!
 Configuration script 'BES-53248_RCF_v1.6-Cluster-HA.scr' applied.
 ----
 
-. Verify the ports for an additional license after the RCF is applied: `show port all | exclude Detach`
+. Verify the ports for an additional license after the RCF is applied:
++
+`show port all | exclude Detach`
 +
 ----
 (cs2) # **show port all \| exclude Detach**
@@ -119,13 +126,17 @@ Intf      Type   Mode      Mode         Status     Status Trap    Mode   Timeout
 0/56             Enable    100G Full               Down   Enable  Enable long
 ----
 
-. Verify on the switch that your changes have been made: `show running-config`
+. Verify on the switch that your changes have been made:
++
+`show running-config`
 +
 ----
 (cs2) # **show running-config**
 ----
 
-. Save the running configuration so that it becomes the startup configuration when you reboot the switch: `write memory`
+. Save the running configuration so that it becomes the startup configuration when you reboot the switch:
++
+`write memory`
 +
 ----
 (cs2) # **write memory**
@@ -139,7 +150,9 @@ Config file 'startup-config' created successfully.
 Configuration Saved!
 ----
 
-. Reboot the switch and verify that the running configuration is correct: `reload`
+. Reboot the switch and verify that the running configuration is correct:
++
+`reload`
 +
 ----
 (cs2) # **reload**
