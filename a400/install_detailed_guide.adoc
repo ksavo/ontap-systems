@@ -39,7 +39,7 @@ The following table identifies the types of cables you might receive. If you rec
 +
 https://hwu.netapp.com[NetApp Hardware Universe]
 +
-[options="header" cols="1,2"]
+[options="header" cols="1,2,1,2"]
 |===
 | Type of cable...| Part number and length| Connector type| For...
 a|
