@@ -1,3 +1,5 @@
+settings:
+  search: ontap-systems, ontap-systems-upgrade
 sidebar:
   entries:
     - title: Home
