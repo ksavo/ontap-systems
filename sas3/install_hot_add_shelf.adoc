@@ -11,7 +11,7 @@ summary: You can hot-add one or more disk shelves with IOM12 modules to an exist
 [.lead]
 You can hot-add one or more disk shelves with IOM12 modules to an existing stack of disk shelves with IOM12 modules or hot-add a stack of one or more disk shelves with IOM12 modules directly to a SAS HBA or an onboard SAS port on the controller.
 
-*About this task*
+.About this task
 
 You cannot use this procedure to mix a stack: hot-add a shelf with IOM12 modules to a stack of shelves that has IOM6 modules. If you need to mix a stack, use link:iom12-hot-add-mix.html[Hot-add IOM12 shelves to a stack of IOM6 shelves].
 
@@ -218,11 +218,11 @@ The shelf ID blinks and the operator display panel amber LED blinks until you po
 [.lead]
 You cable the SAS connections--shelf-to-shelf and controller-to-stack--as applicable for hot-added disk shelves so they have connectivity to the system.
 
-*Before you begin*
+.Before you begin
 
 You must have met the requirements in <<Requirements for hot-adding disk shelves with IOM12 modules>> and installed, powered on, and set shelf IDs for each disk shelf as instructed in <<Installing disk shelves with IOM12 modules for a hot-add>>.
 
-*About this task*
+.About this task
 
 * For an explanation and examples of shelf-to-shelf "`standard`" cabling and shelf-to-shelf "`double-wide`" cabling, see link:install-cabling-rules.html#shelf-to-shelf-connection-rules[Shelf-to-shelf SAS connection rules].
 * For instructions about how to read a worksheet to cable controller-to-stack connections, see link:install-cabling-worksheets-how-to-read-multipath.html[How to read a worksheet to cable controller-to-stack connections for multipathed connectivity] or link:install-cabling-worksheets-how-to-read-quadpath.html[How to read a worksheet to cable controller-to-stack connections for quad-pathed connectivity].
@@ -230,7 +230,7 @@ You must have met the requirements in <<Requirements for hot-adding disk shelves
 +
 NOTE: Firmware updates can take up to 30 minutes.
 
-*Steps*
+.Steps
 
 . If you want to manually assign disk ownership for the disk shelves you are hot-adding, you need to disable disk ownership automatic assignment if it is enabled; otherwise, go to the next step.
 +

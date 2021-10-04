@@ -8,7 +8,7 @@ summary: "You can add an I/O module to your system by either replacing a NIC or 
 
 You can add an I/O module to your system by either replacing a NIC or storage adapter with a new one in a fully-populated system, or by adding a new NIC or storage adapter into an empty chassis slot in your system.
 
-*Before you begin*
+.Before you begin
 
 * Check the https://hwu.netapp.com/[NetApp Hardware Universe] to make sure that the new I/O module is compatible with your system and version of ONTAP you're running.
 

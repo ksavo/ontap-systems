@@ -156,15 +156,15 @@ NOTE: Do not power on the disk shelves at this time.
 [.lead]
 You cable disk shelf SAS connections--shelf-to-shelf (as applicable) and controller-to-shelf--to establish storage connectivity for the system.
 
-*Before you begin*
+.Before you begin
 
 You must have met the requirements in <<Requirements for installing and cabling disk shelves with IOM12 modules for a new system installation>> and installed the disk shelves in the rack.
 
-*About this task*
+.About this task
 
 After you cable the disk shelves, you power them on, set the shelf IDs, and complete system setup and configuration.
 
-*Steps*
+.Steps
 
 . Cable the shelf-to-shelf connections within each stack if the stack has more than one disk shelf; otherwise, go to the next step:
 +

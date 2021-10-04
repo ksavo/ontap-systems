@@ -20,7 +20,7 @@ You can install the system image to the replacement boot media using the image o
 
 The image on the secondary boot media must contain an `image.tgz` file and must not be reporting failures. If image.tgz file is missing or the boot media reports failures, you cannot use this procedure. You must transfer the boot image to the replacement boot media using the USB flash drive replacement procedure.
 
-*Steps*
+.Steps
 
 . If you are not already grounded, properly ground yourself.
 . If you have not already done so, close the air duct:
@@ -84,7 +84,7 @@ This procedure should only be used if the secondary boot media restore failed or
 * If your system is an HA pair, you must have a network connection.
 * If your system is a stand-alone system you do not need a network connection, but you must perform an additional reboot when restoring the var file system.
 
-*Steps*
+.Steps
 
 . If you are not already grounded, properly ground yourself.
 . If you have not already done so, close the air duct:

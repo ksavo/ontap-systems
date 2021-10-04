@@ -22,7 +22,7 @@ The NVRAM module consists of the NVRAM10 and DIMMs and up to two NVMe SSD Flash 
 * You must replace the failed component with a replacement FRU component you received from your provider.
 * You cannot change any disks or disk shelves as part of this procedure.
 
-*Steps*
+.Steps
 
 == Step 1: Shut down the impaired controller
 

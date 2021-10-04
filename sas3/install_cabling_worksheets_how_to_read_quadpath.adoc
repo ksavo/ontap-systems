@@ -11,7 +11,7 @@ summary: You can use this example to guide you through how to read and apply a c
 [.lead]
 You can use this example to guide you through how to read and apply a completed worksheet to cable stacks of disk shelves with IOM12 modules for quad-pathed connectivity.
 
-*About this task*
+.About this task
 
 * This procedure references the following worksheet and cabling example to demonstrate how to read a worksheet to cable controller-to-stack connections.
 +
@@ -24,7 +24,7 @@ image::../media/drw_worksheet_qpha_slots_1_and_2_two_4porthbas_two_stacks_nau.gi
 
 image::../media/drw_qpha_slots_1_and_2_two_4porthbas_two_stacks_nau.gif[]
 
-*Steps*
+.Steps
 
 . Cable port pair 1a/2b on each controller to stack 1:
 +
