@@ -8,7 +8,7 @@ indexpage:
     - title: Install and setup
       links:
         - title: All configurations
-          url: /a200/install-setup-linkout.html
+          url: /a200/install-setup-installation.html
     - title: Maintain
       links:
         - title: Boot media
@@ -62,4 +62,4 @@ indexpage:
         - title: NetApp Support Knowledge Base
           url: https://kb.netapp.com/
         - title: NetApp Community
-          url: https://community.netapp.com/           
+          url: https://community.netapp.com/

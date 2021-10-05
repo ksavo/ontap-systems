@@ -1,5 +1,5 @@
 indexpage:
-  lead: AFF A250
+  lead: FAS8200
   tiles:
     - title: Get started 
       links:
@@ -8,7 +8,7 @@ indexpage:
     - title: Install and setup
       links:
         - title: Most configurations
-          url: /a250/install-setup.html
+          url: /fas8200/install-setup-linkout.html
         - title: Fabric-attached MetroCluster configurations
           url: https://docs.netapp.com/us-en/ontap-metrocluster/install-fc/index.html
         - title: Stretch MetroCluster configurations
@@ -18,37 +18,33 @@ indexpage:
     - title: Maintain
       links:
         - title: Boot media
-          url: /a250/bootmedia-replace-overview.html
+          url: /fas8200/bootmedia-replace-overview.html
+        - title: Caching module
+          url: /fas8200/caching-module-replace.html
         - title: Chassis
-          url: /a250/chassis-replace-overview.html
+          url: /fas8200/chassis-replace-overview.html
         - title: Controller module
-          url: /a250/controller-replace-overview.html
+          url: /fas8200/controller-replace-overview.html
         - title: DIMM
-          url: /a250/dimm-replace.html
+          url: /fas8200/dimm-replace.html
         - title: Fan
-          url: /a250/fan-replace.html
-        - title: Mezzanine card
-          url: /a250/mezzanine-replace.html
-        - title: NV battery
-          url: /a250/nvmem-nvram-battery-replace.html
+          url: /fas8200/fan-replace.html
+        - title: NVMEM battery
+          url: /fas8200/nvmem-nvram-battery-replace.html
+        - title: PCIe card
+          url: /fas8200/pci-cards-and-risers-replace.html
         - title: Power supply
-          url: /a250/power-supply-swapout.html
+          url: /fas8200/power-supply-swapout.html
         - title: RTC battery
-          url: /a250/rtc-battery-replace.html
+          url: /fas8200/rtc-battery-replace.html
     - title: Learn
       links:
         - title: System data sheet
-          url: https://www.netapp.com/pdf.html?item=/media/7828-ds-3582.pdf
+          url: https://www.netapp.com/media/8938-ds-3807.pdf
         - title: Storage data sheet
           url: https://www.netapp.com/data-storage/disk-shelves-storage-media/
-        - title: Replacing an internal disk drive video
-          url: https://www.youtube.com/watch?v=Ziqg9HL8oYQ
-        - title: NetApp All-Flash FAS Solution for Nonpersistent Desktops with VMware Horizon View | TR-4539
-          url: https://www.netapp.com/pdf.html?item=/media/10695-tr-4539.pdf
     - title: Add or remove shelves
       links:
-        - title: NS224
-          url: /ns224/index.html
         - title: SAS with IOM12
           url: /sas3/index.html
     - title: Install and maintain switches

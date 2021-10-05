@@ -1,5 +1,5 @@
 indexpage:
-  lead: AFF A250
+  lead: AFF A320
   tiles:
     - title: Get started 
       links:
@@ -8,7 +8,7 @@ indexpage:
     - title: Install and setup
       links:
         - title: Most configurations
-          url: /a250/install-setup.html
+          url: /a320/install-setup.html
         - title: Fabric-attached MetroCluster configurations
           url: https://docs.netapp.com/us-en/ontap-metrocluster/install-fc/index.html
         - title: Stretch MetroCluster configurations
@@ -18,23 +18,25 @@ indexpage:
     - title: Maintain
       links:
         - title: Boot media
-          url: /a250/bootmedia-replace-overview.html
+          url: /a320/bootmedia-replace-overview.html
         - title: Chassis
-          url: /a250/chassis-replace-overview.html
+          url: /a320/chassis-replace-overview.html
         - title: Controller module
-          url: /a250/controller-replace-overview.html
+          url: /a320/controller-replace-overview.html
         - title: DIMM
-          url: /a250/dimm-replace.html
+          url: /a320/dimm-replace.html
         - title: Fan
-          url: /a250/fan-replace.html
-        - title: Mezzanine card
-          url: /a250/mezzanine-replace.html
-        - title: NV battery
-          url: /a250/nvmem-nvram-battery-replace.html
+          url: /a320/fan-replace.html
+        - title: NVDIMM
+          url: /a320/nvdimm-replace.html
+        - title: NVDIMM battery
+          url: /a320/nvmem-nvram-battery-replace.html
+        - title: PCIe card
+          url: /a320/pci-cards-and-risers-replace.html
         - title: Power supply
-          url: /a250/power-supply-swapout.html
+          url: /a320/power-supply-swapout.html
         - title: RTC battery
-          url: /a250/rtc-battery-replace.html
+          url: /a320/rtc-battery-replace.html
     - title: Learn
       links:
         - title: System data sheet

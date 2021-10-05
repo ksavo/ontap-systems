@@ -1,5 +1,5 @@
 indexpage:
-  lead: AFF A250
+  lead: FAS9000
   tiles:
     - title: Get started 
       links:
@@ -8,7 +8,7 @@ indexpage:
     - title: Install and setup
       links:
         - title: Most configurations
-          url: /a250/install-setup.html
+          url: /fas9000/install-setup.html
         - title: Fabric-attached MetroCluster configurations
           url: https://docs.netapp.com/us-en/ontap-metrocluster/install-fc/index.html
         - title: Stretch MetroCluster configurations
@@ -18,23 +18,33 @@ indexpage:
     - title: Maintain
       links:
         - title: Boot media
-          url: /a250/bootmedia-replace-overview.html
+          url: /fas9000/bootmedia-replace-overview.html
+        - title: Caching or core dump module
+          url: /fas9000/caching-module-and-core-dump-module-replace.html
+        - title: Caching module (hot-swap)
+          url: /fas9000/caching-module-hot-swap.html
         - title: Chassis
-          url: /a250/chassis-replace-overview.html
+          url: /fas9000/chassis-replace-overview.html
         - title: Controller module
-          url: /a250/controller-replace-overview.html
+          url: /fas9000/controller-replace-overview.html
+        - title: DCPM (with NVRAM10 battery)
+          url: /fas9000/dcpm-nvram10-battery-replace.html
         - title: DIMM
-          url: /a250/dimm-replace.html
+          url: /fas9000/dimm-replace.html
         - title: Fan
-          url: /a250/fan-replace.html
-        - title: Mezzanine card
-          url: /a250/mezzanine-replace.html
-        - title: NV battery
-          url: /a250/nvmem-nvram-battery-replace.html
+          url: /fas9000/fan-replace.html
+        - title: I/O module
+          url: /fas9000/pci-cards-and-risers-replace.html
+        - title: LED USB module
+          url: /fas9000/led-module-replace.html
+        - title: NVRAM module and/or NVRAM DIMMs
+          url: /fas9000/nvram-module-or-nvram-dimm-replacement.html
         - title: Power supply
-          url: /a250/power-supply-swapout.html
+          url: /fas9000/power-supply-swapout.html
         - title: RTC battery
-          url: /a250/rtc-battery-replace.html
+          url: /fas9000/rtc-battery-replace.html
+        - title: X91148A module
+          url: /fas9000/x91148a-module-install-overview.html
     - title: Learn
       links:
         - title: System data sheet

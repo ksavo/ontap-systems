@@ -1,10 +1,11 @@
 ---
-permalink: fas2600/index.html
+layout: landing-page
 sidebar: sidebar
-keywords: 
-summary: ''
+permalink: fas2600/index.html
+summary: The storage system documentation lets you install, setup, and maintain your system.
 ---
-= FAS2600 systems
-:icons: font
-:imagesdir: ../media/
 
+= FAS2600 System Documentation
+:hardbreaks:
+:linkattrs:
+:imagesdir: ./media/

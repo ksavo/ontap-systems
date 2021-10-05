@@ -4,7 +4,7 @@ entries:
   - title: Install and setup
     entries:
     - title: Choose your installation and setup experience
-      url: /fas2700/install-setup-installation.html
+      url: /fas2700/install-setup.html
     - title: Quick guide
       url: /fas2700/install-quick-guide.html
       entries:

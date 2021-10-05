@@ -1,5 +1,5 @@
 indexpage:
-  lead: AFF A250
+  lead: AFF A700s
   tiles:
     - title: Get started 
       links:
@@ -8,7 +8,7 @@ indexpage:
     - title: Install and setup
       links:
         - title: Most configurations
-          url: /a250/install-setup.html
+          url: /a700s/install-setup-linkout.html
         - title: Fabric-attached MetroCluster configurations
           url: https://docs.netapp.com/us-en/ontap-metrocluster/install-fc/index.html
         - title: Stretch MetroCluster configurations
@@ -18,23 +18,25 @@ indexpage:
     - title: Maintain
       links:
         - title: Boot media
-          url: /a250/bootmedia-replace-overview.html
+          url: /a700s/bootmedia-replace-overview.html
         - title: Chassis
-          url: /a250/chassis-replace-overview.html
+          url: /a700s/chassis-replace-overview.html
         - title: Controller module
-          url: /a250/controller-replace-overview.html
+          url: /a700s/controller-replace-overview.html
         - title: DIMM
-          url: /a250/dimm-replace.html
+          url: /a700s/dimm-replace.html
         - title: Fan
-          url: /a250/fan-replace.html
-        - title: Mezzanine card
-          url: /a250/mezzanine-replace.html
-        - title: NV battery
-          url: /a250/nvmem-nvram-battery-replace.html
+          url: /a700s/fan-replace.html
+        - title: NVRAM battery
+          url: /a700s/nvmem-nvram-battery-replace.html
+        - title: NVRAM module and/or NVRAM DIMMs
+          url: /a700s/nvram-or-nvram-dimm-replacement.html
+        - title: PCIe or mezzanine card
+          url: /a700s/pci-cards-and-risers-replace.html
         - title: Power supply
-          url: /a250/power-supply-swapout.html
+          url: /a700s/power-supply-swapout.html
         - title: RTC battery
-          url: /a250/rtc-battery-replace.html
+          url: /a700s/rtc-battery-replace.html
     - title: Learn
       links:
         - title: System data sheet

@@ -1,5 +1,5 @@
 indexpage:
-  lead: AFF A250
+  lead: AFF A300
   tiles:
     - title: Get started 
       links:
@@ -8,7 +8,7 @@ indexpage:
     - title: Install and setup
       links:
         - title: Most configurations
-          url: /a250/install-setup.html
+          url: /a300/install-setup-linkout.html
         - title: Fabric-attached MetroCluster configurations
           url: https://docs.netapp.com/us-en/ontap-metrocluster/install-fc/index.html
         - title: Stretch MetroCluster configurations
@@ -18,31 +18,27 @@ indexpage:
     - title: Maintain
       links:
         - title: Boot media
-          url: /a250/bootmedia-replace-overview.html
+          url: /a300/bootmedia-replace-overview.html
         - title: Chassis
-          url: /a250/chassis-replace-overview.html
+          url: /a300/chassis-replace-overview.html
         - title: Controller module
-          url: /a250/controller-replace-overview.html
-        - title: DIMM
-          url: /a250/dimm-replace.html
+          url: /a300/controller-replace-overview.html
         - title: Fan
-          url: /a250/fan-replace.html
-        - title: Mezzanine card
-          url: /a250/mezzanine-replace.html
+          url: /a300/fan-replace.html
         - title: NV battery
-          url: /a250/nvmem-nvram-battery-replace.html
+          url: /a300/nvmem-nvram-battery-replace.html
+        - title: PCIe card
+          url: /a300/pci-cards-and-risers-replace.html
         - title: Power supply
-          url: /a250/power-supply-swapout.html
+          url: /a300/power-supply-swapout.html
+        - title: System DIMM
+          url: /a300/dimm-replace.html
         - title: RTC battery
-          url: /a250/rtc-battery-replace.html
+          url: /a300/rtc-battery-replace.html
     - title: Learn
       links:
-        - title: System data sheet
-          url: https://www.netapp.com/pdf.html?item=/media/7828-ds-3582.pdf
         - title: Storage data sheet
           url: https://www.netapp.com/data-storage/disk-shelves-storage-media/
-        - title: Replacing an internal disk drive video
-          url: https://www.youtube.com/watch?v=Ziqg9HL8oYQ
         - title: NetApp All-Flash FAS Solution for Nonpersistent Desktops with VMware Horizon View | TR-4539
           url: https://www.netapp.com/pdf.html?item=/media/10695-tr-4539.pdf
     - title: Add or remove shelves
