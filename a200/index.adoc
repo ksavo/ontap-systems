@@ -1,9 +1,11 @@
 ---
-permalink: a200/index.html
+layout: landing-page
 sidebar: sidebar
-keywords:
-summary: ''
+permalink: get-started/index.html
+summary: The AFF A200 system documentation lets you install, setup, and maintain your system.
 ---
-= AFF A200 systems
-:icons: font
-:imagesdir: ../media/
+
+= AFF A200 System Documentation
+:hardbreaks:
+:linkattrs:
+:imagesdir: ./media/

@@ -1,5 +1,5 @@
 indexpage:
-  lead: AFF A200
+  lead: AFF A250
   tiles:
     - title: Get started 
       links:
@@ -7,26 +7,38 @@ indexpage:
           url: /subfolder/page.html
     - title: Install and setup
       links:
-        - title: All configurations
-          url: /a200/install-setup-linkout.html
+        - title: Most configurations
+          url: /a250/install-setup-linkout.html
+        - title: Fabric-attached MetroCluster configurations
+          url: https://docs.netapp.com/us-en/ontap-metrocluster/install-fc/index.html
+        - title: Stretch MetroCluster configurations
+          url: https://docs.netapp.com/us-en/ontap-metrocluster/install-stretch/index.html
+        - title: MetroCluster IP configurations
+          url: https://docs.netapp.com/us-en/ontap-metrocluster/install-ip/index.html
     - title: Maintain
       links:
         - title: Boot media
-          url: /a200/bootmedia-replace-overview.html
+          url: /a250/bootmedia-replace-overview.html
         - title: Chassis
-          url: /a200/chassis-replace-overview.html
+          url: /a250/chassis-replace-overview.html
         - title: Controller module
-          url: /a200/controller-replace-overview.html
+          url: /a250/controller-replace-overview.html
+        - title: DIMM
+          url: /a250/dimm-replace.html
+        - title: Fan
+          url: /a250/fan-replace.html
+        - title: Mezzanine card
+          url: /a250/mezzanine-replace.html
         - title: NV battery
-          url: /a200/nvmem-nvram-battery-replace.html
-        - title: System DIMM
-          url: /a200/dimm-replace.html
+          url: /a250/nvmem-nvram-battery-replace.html
         - title: Power supply
-          url: /a200/power-supply-swapout.html
+          url: /a250/power-supply-swapout.html
         - title: RTC battery
-          url: /a200/rtc-battery-replace.html
+          url: /a250/rtc-battery-replace.html
     - title: Learn
       links:
+        - title: System data sheet
+          url: https://www.netapp.com/pdf.html?item=/media/7828-ds-3582.pdf
         - title: Storage data sheet
           url: https://www.netapp.com/data-storage/disk-shelves-storage-media/
         - title: Replacing an internal disk drive video
@@ -35,6 +47,8 @@ indexpage:
           url: https://www.netapp.com/pdf.html?item=/media/10695-tr-4539.pdf
     - title: Add or remove shelves
       links:
+        - title: NS224
+          url: /ns224/index.html
         - title: SAS with IOM12
           url: /sas3/index.html
     - title: Install and maintain switches
@@ -62,4 +76,4 @@ indexpage:
         - title: NetApp Support Knowledge Base
           url: https://kb.netapp.com/
         - title: NetApp Community
-          url: https://community.netapp.com/           
+          url: https://community.netapp.com/
