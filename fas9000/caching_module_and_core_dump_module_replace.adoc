@@ -21,16 +21,18 @@ You must replace the caching module in the controller module when your system re
 * The X9170A core dump module is not hot-swappable.
 
 *Steps*
+== Step 1: Shutting down the impaired controller
 
-== Step 1: Most configurations
+
+=== Option 1: Most configurations
 
 include::../_include/shutdown_most_frus.adoc[]
 
-== Step 2: Controller is in a two-node MetroCluster configuration
+=== Option 2: Controller is in a two-node MetroCluster configuration
 
 include::../_include/shutdown_2n_mcc.adoc[]
 
-== Step 3: Replace or add a caching module
+== Step 2: Replace or add a caching module
 
 [.lead]
 The NVMe SSD Flash Cache modules (FlashCache or caching modules) are separate modules. They are located in the front of the NVRAM module. To replace or add a caching module, locate it on the rear of the system on slot 6, and then follow the specific sequence of steps to replace it.
@@ -76,7 +78,7 @@ Be sure to support the caching module as you remove it from the NVRAM10 module.
  .. Gently push the caching module into the bay until the cam handle engages.
  .. Rotate the cam handle until it locks into place.
 
-== Step 4: Add or replace an X9170A core dump module
+== Step 3: Add or replace an X9170A core dump module
 
 [.lead]
 The 1TB cache core dump, X9170A, is only used in the AFF A700 systems. The core dump module cannot be hot-swapped. The core dump module typically is located in the front of the NVRAM module in slot 6-1 in the rear of the system. To replace or add the core dump module, locate slot 6-1, and then follow the specific sequence of steps to add or replace it.
@@ -120,7 +122,7 @@ Be sure to support the core dump module as you remove it from the NVRAM10 module
  .. Gently push the core dump module into the bay until the cam handle engages.
  .. Rotate the cam handle until it locks into place.
 
-== Step 5: Reboot the controller after FRU replacement
+== Step 4: Reboot the controller after FRU replacement
 
 [.lead]
 After you replace the FRU, you must reboot the controller module.
@@ -128,10 +130,10 @@ After you replace the FRU, you must reboot the controller module.
 .Steps
 . To boot ONTAP from the LOADER prompt, enter `bye`.
 
-== Step 6: Switch back aggregates in a two-node MetroCluster configuration
+== Step 5: Switch back aggregates in a two-node MetroCluster configuration
 
 include::../_include/2n_mcc_switchback.adoc[]
 
-== Step 7: Return the failed part to NetApp
+== Step 6: Return the failed part to NetApp
 
 include::../_include/complete_rma.adoc[]

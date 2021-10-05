@@ -1,4 +1,4 @@
-s---
+---
 permalink: fas2700/bootmedia-encryption-restore.html
 sidebar: sidebar
 keywords: fas 2700, aff a220, post, boot, media, okm, nse, nve, onboard key manager, netapp storage encryption, netapp volume encryption

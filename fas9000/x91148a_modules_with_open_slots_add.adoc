@@ -25,7 +25,7 @@ https://hwu.netapp.com[NetApp Hardware Universe]
 
 * All other components in the system must be functioning properly; if not, you must contact technical support.
 
-== Step 1: Add an X91148A module as a NIC module in a system with open slots
+== Option 1: Add an X91148A module as a NIC module in a system with open slots
 
 [.lead]
 To add an X91148A module as a NIC module in a system with open slots, you must follow the specific sequence of steps.
@@ -52,7 +52,7 @@ The console connection shows that the node drops to the LOADER prompt when the t
 . If you are using slots 3 and/or 7 for networking, use the storage port modify -node <node name> -port <port name> -mode network command to convert the slot for networking use.
 . Repeat these steps for controller B.
 
-== Step 2: Add an X91148A module as a storage module in a system with open slots
+== Option 2: Add an X91148A module as a storage module in a system with open slots
 
 [.lead]
 To add an X91148A module as a storage module in a system with open slots, you must follow the specific sequence of steps.

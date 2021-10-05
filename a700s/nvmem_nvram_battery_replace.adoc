@@ -128,26 +128,6 @@ NOTE: Be sure to exit Maintenance mode after completing the conversion.
 . Return the node to normal operation by giving back its storage: `storage failover giveback -ofnode impaired_node_name`
 . If automatic giveback was disabled, reenable it: `storage failover modify -node local -auto-giveback true`
 
-== Run diagnostics
-
-[.lead]
-After you have replaced a component in your system, you should run diagnostic tests on that component.
-
-Your system must be at the LOADER prompt to start diagnostics.
-
-All commands in the diagnostic procedures are issued from the node where the component is being replaced.
-
-. If the node to be serviced is not at the LOADER prompt, reboot the node: `system node halt -node node_name`
-+
-After you issue the command, you should wait until the system stops at the LOADER prompt.
-
-. At the LOADER prompt, access the special drivers specifically designed for system-level diagnostics to function properly: `boot_diags`
-. Select *Scan System* from the displayed menu to enable running the diagnostics tests.
-. Select *Test system* from the displayed menu to run diagnostics tests.
-. Proceed based on the result of the preceding step:
- ** If the scan show problems, correct the issue, and then rerun the scan.
- ** If the scan reported no failures, select Reboot from the menu to reboot the system.
-
 == Return the failed part to NetApp
 
 [.lead]
