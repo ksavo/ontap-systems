@@ -15,12 +15,12 @@ Installing the Nexus 92300YC switch on systems running ONTAP 9.6 and later, star
 
 The examples in this procedure use the following switch and node nomenclature:
 
-* The Nexus 92300YC switch names are cs1 and cs2.
+* The Nexus 92300YC switch names are `cs1` and `cs2`.
 * The example used in this procedure starts the upgrade on the second switch, _*cs2*._
-* The cluster LIF names are node1_clus1 and node1_clus2 for node1, and node2_clus1 and node2_clus2 for node2.
-* The IPspace name is Cluster.
+* The cluster LIF names are `node1_clus1` and `node1_clus2` for node1, and `node2_clus1` and `node2_clus2` for node2.
+* The IPspace name is `Cluster`.
 * The `cluster1::*>` prompt indicates the name of the cluster.
-* The cluster ports on each node are named e0a and e0b.
+* The cluster ports on each node are named `e0a` and `e0b`.
 +
 See the _Hardware Universe_ for the actual cluster ports supported on your platform.
 +

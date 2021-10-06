@@ -11,31 +11,35 @@ summary: Replacing a defective Broadcom-supported BES-53248 cluster switch in a 
 [.lead]
 Replacing a defective Broadcom-supported BES-53248 cluster switch in a cluster network is a nondisruptive procedure (NDU).
 
+.What you'll need
+
 The following conditions must exist before performing the switch replacement in the current environment and on the replacement switch.
 
 * Existing cluster and network infrastructure:
  ** The existing cluster must be verified as completely functional, with at least one fully connected cluster switch.
  ** All cluster ports must be up.
  ** All cluster logical interfaces (LIFs) must be administratively and operationally up and on their home ports.
- ** The ONTAP cluster ping-cluster -node node1 command must indicate that basic connectivity and larger than PMTU communication are successful on all paths.
+ ** The ONTAP `cluster ping-cluster -node node1` command must indicate that `basic connectivity` and `larger than PMTU communication` are successful on all paths.
 * BES-53248 replacement cluster switch:
  ** Management network connectivity on the replacement switch must be functional.
  ** Console access to the replacement switch must be in place.
  ** The node connections are ports 0/1 through 0/16 with default licensing.
  ** All Inter-Switch Link (ISL) ports must be disabled on ports 0/55 and 0/56.
- ** The desired reference configuration file (RCF) and EFOS operating system switch image must be loaded onto the switch.
+ ** The desired reference configuration file (`RCF`) and `EFOS` operating system switch image must be loaded onto the switch.
  ** Initial customization of the switch must be complete, as detailed in xref:configure-new-switch.adoc[Configuring a new Broadcom-supported BES-53248 switch].
 +
 Any previous site customizations, such as STP, SNMP, and SSH, should be copied to the new switch.
 
+.About this task
+
 The examples in this procedure use the following switch and node nomenclature:
 
-* The names of the existing BES-53248 switches are cs1 and cs2.
-* The name of the new BES-53248 switch is newcs2.
-* The node names are node1 and node2.
-* The cluster ports on each node are named e0a and e0b.
-* The cluster LIF names are node1_clus1 and node1_clus2 for node1, and node2_clus1 and node2_clus2 for node2.
-* The prompt for changes to all cluster nodes is cluster1::>
+* The names of the existing BES-53248 switches are `cs1` and `cs2`.
+* The name of the new BES-53248 switch is `newcs2`.
+* The node names are `node1` and `node2`.
+* The cluster ports on each node are named `e0a` and `e0b`.
+* The cluster LIF names are `node1_clus1` and `node1_clus2` for node1, and `node2_clus1` and `node2_clus2` for node2.
+* The prompt for changes to all cluster nodes is `cluster1::>`
 
 NOTE: The following procedure is based on the following cluster network topology:
 
@@ -116,6 +120,8 @@ cs1                      0/55      179       R          BES-53248        0/55
 cs1                      0/56      179       R          BES-53248        0/56
 ----
 
+.Steps
+
 . Install the appropriate RCF and image on the switch, newcs2, and make any necessary site preparations.
 +
 If necessary, verify, download, and install the appropriate versions of the RCF and EFOS software for the new switch. If you have verified that the new switch is correctly set up and does not need updates to the RCF and EFOS software, continue to step 2.
@@ -142,7 +148,9 @@ Password:
 (newcs2)(config)#exit
 ----
 
-. Verify that all cluster LIFs have auto-revert enabled:``network interface show -vserver Cluster -fields auto-revert``
+. Verify that all cluster LIFs have `auto-revert` enabled:
++
+`network interface show -vserver Cluster -fields auto-revert`
 +
 ----
 
@@ -214,7 +222,9 @@ Password:
 (newcs2)(config)#exit
 ----
 
-. Verify that port e0b is up: `network port show -ipspace Cluster`
+. Verify that port e0b is `up`:
++
+`network port show -ipspace Cluster`
 +
 The output should be similar to the following:
 +
@@ -242,9 +252,9 @@ e0b       Cluster      Cluster          up   9000  auto/auto   -        false
 
 . On the same node as you used in the previous step, wait for the cluster LIF node1_clus2 on node1 to auto-revert.
 +
-In this example, LIF node1_clus2 on node1 is successfully reverted if `Is Home` is true and the port is e0b.
+In this example, LIF node1_clus2 on node1 is successfully reverted if `Is Home` is `true` and the port is e0b.
 +
-The following command displays information about the LIFs on both nodes. Bringing up the first node is successful if `Is Home` is true for both cluster interfaces and they show the correct port assignments, in this example `e0a` and `e0b` on node1.
+The following command displays information about the LIFs on both nodes. Bringing up the first node is successful if `Is Home` is `true` for both cluster interfaces and they show the correct port assignments, in this example `e0a` and `e0b` on node1.
 +
 ----
 cluster::> **network interface show -vserver Cluster**
@@ -263,7 +273,7 @@ Cluster
 
 . Display information about the nodes in a cluster: `cluster show`
 +
-This example shows that the node health for node1 and node2 in this cluster is true:
+This example shows that the node health for `node1` and `node2` in this cluster is `true`:
 +
 ----
 cluster1::> **cluster show**
@@ -273,7 +283,9 @@ node1                   true    true           true
 node2                   true    true           true
 ----
 
-. Confirm the following cluster network configuration: `network port show`
+. Confirm the following cluster network configuration:
++
+`network port show`
 +
 ----
 cluster1::> **network port show -ipspace Cluster**
@@ -343,7 +355,9 @@ cs1(FDO220329KU)   Eth1/66        178    R S I s     N9K-C92300YC  Eth1/66
 Total entries displayed: 4
 ----
 
-. Verify that the cluster network is healthy:``show isdp neighbors``
+. Verify that the cluster network is healthy:
++
+`show isdp neighbors`
 +
 ----
 (cs1) # show isdp neighbors
@@ -368,7 +382,7 @@ cs1          0/55    179         R             BES-53248   0/55
 cs1          0/56    179         R             BES-53248   0/56
 ----
 
-See link:configure_log_collection.md#GUID-C8B9214A-2080-4813-B31C-6F2B85CBEA4D[Configuring the cluster switch log collection feature] for the steps required to enable cluster health switch log collection used for collecting switch-related log files.
+See link:configure-log-collection.html[Configuring the cluster switch log collection feature] for the steps required to enable cluster health switch log collection used for collecting switch-related log files.
 
 *Related information*
 

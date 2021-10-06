@@ -11,6 +11,7 @@ summary: 'You can use this procedure to prepare the controller for a BES-53248 c
 [.lead]
 You can use this procedure to prepare the controller for a BES-53248 cluster switch upgrade.
 
+.Steps
 . Connect the cluster switch to the management network.
 . Use the ping command to verify connectivity to the server hosting EFOS, licenses, and the RCF.
 +
@@ -25,7 +26,9 @@ Pinging 172.19.2.1 with 0 bytes of data:
 Reply From 172.19.2.1: icmp_seq = 0. time= 5910 usec.
 ----
 
-. Verify that the cluster ports are healthy and have a link using the command:``network port show -ipspace Cluster``
+. Verify that the cluster ports are healthy and have a link using the command:
++
+`network port show -ipspace Cluster`
 +
 The following example shows the type of output with all ports having a `Link` value of up and a `Health Status` of healthy:
 +
@@ -51,9 +54,11 @@ e0b    Cluster      Cluster          up   9000  auto/10000 healthy  false
 	4 entries were displayed.
 ----
 
-. Verify that the cluster LIFs are administratively and operationally up and reside on their home ports, using the command: `network interface show -vserver Cluster`
+. Verify that the cluster LIFs are administratively and operationally up and reside on their home ports, using the command:
 +
-In this example, the -vserver parameter displays information about the LIFs that are associated with cluster ports. `Status Admin/Oper` must be up and `Is Home` must be true:
+`network interface show -vserver Cluster`
++
+In this example, the `-vserver` parameter displays information about the LIFs that are associated with cluster ports. `Status Admin/Oper` must be up and `Is Home` must be true:
 +
 ----
 cluster1::>**network interface show -vserver Cluster**

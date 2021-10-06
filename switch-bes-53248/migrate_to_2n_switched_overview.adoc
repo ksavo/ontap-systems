@@ -11,6 +11,8 @@ summary: 'If you have an existing two-node switchless cluster environment, you c
 [.lead]
 If you have an existing two-node switchless cluster environment, you can migrate to a two-node switched cluster environment using Broadcom-supported BES-53248 cluster switches to enable you to scale beyond two nodes in the cluster.
 
+.What you'll need
+
 Two-node switchless configuration:
 
 * The two-node switchless configuration must be properly set up and functioning.
@@ -25,7 +27,7 @@ Broadcom-supported BES-53248 cluster switch configuration:
 * There must be console access to the cluster switches.
 * BES-53248 node-to-node switch and switch-to-switch connections must use Twinax or fiber cables.
 +
-The __NetApp__Hardware Universe** contains information about ONTAP compatibility, supported EFOS firmware, and cabling to BES-53248 switches.
+The __NetApp__Hardware Universe contains information about ONTAP compatibility, supported EFOS firmware, and cabling to BES-53248 switches.
 +
 https://hwu.netapp.com/Switch/Index[Hardware Universe - Switches]
 
@@ -34,21 +36,27 @@ https://hwu.netapp.com/Switch/Index[Hardware Universe - Switches]
  ** BES-53248 switches are running the latest version of software
  ** BES-53248 switches have optional port licenses installed, if purchased
  ** Reference Configuration Files (RCFs) have been applied to the switches
++
 Any site customization, such as SMTP, SNMP, and SSH must be configured on the new switches.
+
+.About this task
 
 The examples in this procedure use the following cluster switch and node nomenclature:
 
-* The names of the BES-53248 switches are cs1 and cs2.
-* The names of the cluster SVMs are node1 and node2.
-* The names of the LIFs are node1_clus1 and node1_clus2 on node 1, and node2_clus1 and node2_clus2 on node 2 respectively.
+* The names of the BES-53248 switches are `cs1` and `cs2`.
+* The names of the cluster SVMs are `node1` and `node2`.
+* The names of the LIFs are `node1_clus1` and `node1_clus2` on node 1, and `node2_clus1` and `node2_clus2` on node 2 respectively.
 * The `cluster1::*>` prompt indicates the name of the cluster.
-* The cluster ports used in this procedure are e0a and e0b.
+* The cluster ports used in this procedure are `e0a` and `e0b`.
 +
 The _Hardware Universe_ contains the latest information about the actual cluster ports for your platforms.
 +
 https://hwu.netapp.com[Hardware Universe]
 
-. If AutoSupport is enabled on this cluster, suppress automatic case creation by invoking an AutoSupport message: `system node autosupport invoke -node * -type all -message MAINT=xh`
+.Steps
+. If AutoSupport is enabled on this cluster, suppress automatic case creation by invoking an AutoSupport message:
++
+`system node autosupport invoke -node * -type all -message MAINT=xh`
 +
 where x is the duration of the maintenance window in hours.
 +
@@ -60,7 +68,9 @@ The following command suppresses automatic case creation for two hours:
 cluster1::*> **system node autosupport invoke -node \* -type all -message MAINT=2h**
 ----
 
-. Change the privilege level to advanced, entering *y* when prompted to continue: `set -privilege advanced`
+. Change the privilege level to advanced, entering *y* when prompted to continue:
++
+`set -privilege advanced`
 +
 The advanced prompt (`*>`) appears.
 
@@ -78,7 +88,9 @@ The following example shows that node-facing ports 1 through 16 are disabled on 
 (cs1)(Config)# **exit**
 ----
 
-. Verify that the ISL and the physical ports on the ISL between the two BES-53248 switches cs1 and cs2 are up: `show port-channel`
+. Verify that the ISL and the physical ports on the ISL between the two BES-53248 switches cs1 and cs2 are `up`:
++
+`show port-channel`
 +
 The following example shows that the ISL ports are up on switch cs1:
 +
@@ -126,7 +138,9 @@ Ports  Timeout       Speed      Active
 (cs2) #
 ----
 
-. Display the list of neighboring devices: `show isdp neighbors`
+. Display the list of neighboring devices:
++
+`show isdp neighbors`
 +
 This command provides information about the devices that are connected to the system.
 +
@@ -157,9 +171,11 @@ cs2            0/55     176       R            BES-53248   0/55
 cs2            0/56     176       R            BES-53248   0/56
 ----
 
-. Verify that all cluster ports are up: `network port show -ipspace Cluster`
+. Verify that all cluster ports are `up`:
 +
-Each port should display up for `Link` and healthy for `Health Status`.
+`network port show -ipspace Cluster`
++
+Each port should display up for `Link` and `healthy` for `Health Status`.
 +
 ----
 cluster1::*> **network port show -ipspace Cluster**
@@ -183,9 +199,9 @@ e0b       Cluster      Cluster          up   9000  auto/10000 healthy
 4 entries were displayed.
 ----
 
-. Verify that all cluster LIFs are up and operational: `network interface show -vserver Cluster`
+. Verify that all cluster LIFs are `up` and operational: `network interface show -vserver Cluster`
 +
-Each cluster LIF should display true for `Is Home` and have a `Status Admin/Oper` of up/up
+Each cluster LIF should display `true` for `Is Home` and have a `Status Admin/Oper` of `up/up`
 +
 ----
 
@@ -202,7 +218,7 @@ Cluster
 4 entries were displayed.
 ----
 
-. Verify that auto-revert is enabled on all cluster LIFs: `network interface show -vserver Cluster -fields auto-revert`
+. Verify that `auto-revert` is enabled on all cluster LIFs: `network interface show -vserver Cluster -fields auto-revert`
 +
 ----
 cluster1::*> **network interface show -vserver Cluster -fields auto-revert**
@@ -221,7 +237,7 @@ Cluster
 
 . Disconnect the cable from cluster port e0a on node1, and then connect e0a to port 1 on cluster switch cs1, using the appropriate cabling supported by the BES-53248 switches.
 +
-The *NetApp Hardware Universe* contains more information about cabling.
+The _NetApp Hardware Universe_ contains more information about cabling.
 +
 https://hwu.netapp.com/Switch/Index[Hardware Universe - Switches]
 
@@ -238,9 +254,11 @@ The following example shows that ports 1 through 16 are enabled on switch cs1:
 (cs1)(Config)# **exit**
 ----
 
-. Verify that all cluster LIFs are up, operational, and display as true for `Is Home`: `network interface show -vserver Cluster`
+. Verify that all cluster LIFs are up, operational, and display as `true` for `Is Home`:
 +
-The following example shows that all of the LIFs are up on node1 and node2 and that `Is Home` results are true:
+`network interface show -vserver Cluster`
++
+The following example shows that all of the LIFs are up on node1 and node2 and that `Is Home` results are `true`:
 +
 ----
 cluster1::*> **network interface show -vserver Cluster**
@@ -257,7 +275,9 @@ Cluster
 4 entries were displayed.
 ----
 
-. Display information about the status of the nodes in the cluster: `cluster show`
+. Display information about the status of the nodes in the cluster:
++
+`cluster show`
 +
 The following example displays information about the health and eligibility of the nodes in the cluster:
 +
@@ -286,7 +306,9 @@ The following example shows that ports 1 through 16 are enabled on switch cs2:
 (cs2)(Config)# **exit**
 ----
 
-. Verify that all cluster ports are up: `network port show -ipspace Cluster`
+. Verify that all cluster ports are `up`:
++
+`network port show -ipspace Cluster`
 +
 The following example shows that all of the cluster ports are up on node1 and node2:
 +
@@ -312,11 +334,13 @@ e0b       Cluster      Cluster          up   9000  auto/10000 healthy  false
 4 entries were displayed.
 ----
 
-. Verify that all interfaces display true for `Is Home`: `network interface show -vserver Cluster`
+. Verify that all interfaces display `true` for `Is Home`:
++
+`network interface show -vserver Cluster`
 +
 NOTE: This might take several minutes to complete.
 +
-The following example shows that all LIFs are up on node1 and node2 and that `Is Home` results are true:
+The following example shows that all LIFs are up on node1 and node2 and that `Is Home` results are `true`:
 +
 
 ----
@@ -334,7 +358,9 @@ Cluster
 4 entries were displayed.
 ----
 
-. Verify that both nodes each have one connection to each switch: `show isdp neighbors`
+. Verify that both nodes each have one connection to each switch:
++
+`show isdp neighbors`
 +
 The following example shows the appropriate results for both switches:
 +
@@ -363,7 +389,9 @@ cs1            0/55         175       R            BES-53248   0/55
 cs1            0/56         175       R            BES-53248   0/56
 ----
 
-. Display information about the discovered network devices in your cluster: `network device-discovery show -protocol cdp`
+. Display information about the discovered network devices in your cluster:
++
+`network device-discovery show -protocol cdp`
 +
 ----
 cluster1::*> **network device-discovery show -protocol cdp**
@@ -380,11 +408,13 @@ node1      /cdp
 4 entries were displayed.
 ----
 
-. Verify that the settings are disabled: `network options switchless-cluster show`
+. Verify that the settings are disabled:
++
+`network options switchless-cluster show`
 +
 NOTE: It might take several minutes for the command to complete. Wait for the '3 minute lifetime to expire' announcement.
 +
-The false output in the following example shows that the configuration settings are disabled:
+The `false` output in the following example shows that the configuration settings are disabled:
 +
 
 ----
@@ -392,7 +422,9 @@ cluster1::*> **network options switchless-cluster show**
 Enable Switchless Cluster: false
 ----
 
-. Verify the status of the node members in the cluster: `cluster show`
+. Verify the status of the node members in the cluster:
++
+`cluster show`
 +
 The following example shows information about the health and eligibility of the nodes in the cluster:
 +
@@ -405,7 +437,9 @@ node1                true    true          false
 node2                true    true          false
 ----
 
-. Ensure that the cluster network has full connectivity using the command: `cluster ping-cluster -node node-name`
+. Ensure that the cluster network has full connectivity using the command:
++
+`cluster ping-cluster -node _node-name_`
 +
 ----
 cluster1::*> **cluster ping-cluster -node local**
@@ -435,12 +469,18 @@ RPC status:
 2 paths up, 0 paths down (udp check)
 ----
 
-. Change the privilege level back to admin: `set -privilege admin`
-. If you suppressed automatic case creation, reenable it by invoking an AutoSupport message: `system node autosupport invoke -node * -type all -message MAINT=END`
+. Change the privilege level back to admin:
++
+`set -privilege admin`
+. If you suppressed automatic case creation, reenable it by invoking an AutoSupport message:
++
+`system node autosupport invoke -node * -type all -message MAINT=END`
 +
 ----
 cluster1::*> **system node autosupport invoke -node \* -type all -message MAINT=END**
 ----
+
+.After you finish
 
 See _Configuring the cluster switch log collection feature_ in the http://docs.netapp.com/platstor/topic/com.netapp.doc.hw-sw-ix8-setup/home.html[Switch Setup and Configuration Guide for Broadcom-supported BES-53248 switches] for the steps required to enable cluster health switch log collection used for collecting switch-related log files.
 

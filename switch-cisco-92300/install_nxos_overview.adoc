@@ -11,6 +11,8 @@ summary: 'The Cisco NX-OS software and reference configuration files \(RCFs\) mu
 [.lead]
 The Cisco NX-OS software and reference configuration files (RCFs) must be installed on Cisco Nexus 92300YC cluster switches.
 
+.What you'll need
+
 The following conditions must exist before you install the NX-OS software and Reference Configurations Files (RCFs) on the cluster switch:
 
 * The cluster must be fully functioning (there should be no errors in the logs or similar issues).
@@ -27,7 +29,9 @@ https://www.cisco.com/c/en/us/support/switches/nexus-3000-series-switches/produc
 
 * You must have the current RCF.
 
-The examples in this procedure use two nodes. These nodes use two 10GbE cluster interconnect ports e0a and e0b.
+.About this tasks
+
+The examples in this procedure use two nodes. These nodes use two 10GbE cluster interconnect ports `e0a` and `e0b`.
 
 See the *Hardware Universe* to verify the correct cluster ports on your platforms.
 
@@ -37,22 +41,25 @@ NOTE: The command outputs might vary depending on different releases of ONTAP.
 
 The examples in this procedure use the following switch and node nomenclature:
 
-* The names of the two Cisco switches are cs1 and cs2.
-* The node names are node1 and node2.
-* The cluster LIF names are node1_clus1 and node1_clus2 for node1 and node2_clus1 and node2_clus2 for node2.
+* The names of the two Cisco switches are `cs1` and `cs2`.
+* The node names are `node1` and `node2`.
+* The cluster LIF names are `node1_clus1` and `node1_clus2` for node1 and `node2_clus1` and `node2_clus2` for node2.
 * The `cluster1::*>` prompt indicates the name of the cluster.
 
 NOTE: The procedure requires the use of both ONTAP commands and Cisco Nexus 9000 Series Switches commands; ONTAP commands are used unless otherwise indicated.
 
+.Steps
 . Change the privilege level to advanced, entering *y* when prompted to continue:
 +
 `set -privilege advanced`
 +
 The advanced prompt (`*>`) appears.
 
-. If AutoSupport is enabled on this cluster, suppress automatic case creation by invoking an AutoSupport message: `system node autosupport invoke -node * -type all -message MAINT=x h`
+. If AutoSupport is enabled on this cluster, suppress automatic case creation by invoking an AutoSupport message:
 +
-where x is the duration of the maintenance window in hours.
+`system node autosupport invoke -node * -type all -message MAINT=x h`
++
+where _x_ is the duration of the maintenance window in hours.
 +
 NOTE: The AutoSupport message notifies technical support of this maintenance task so that automatic case creation is suppressed during the maintenance window.
 +
@@ -60,7 +67,7 @@ The following command suppresses automatic case creation for two hours:
 +
 
 ----
-cluster1:*> **system node autosupport invoke -node \* -type all -message MAINT=2h**
+cluster1:*> **system node autosupport invoke -node * -type all -message MAINT=2h**
 ----
 
 . Display how many cluster interconnect interfaces are configured in each node for each cluster interconnect switch: `network device-discovery show -protocol cdp`
@@ -120,7 +127,9 @@ Cluster
 
 4 entries were displayed.
 ----
-. Ping the remote cluster LIFs: `cluster ping-cluster -node node-name`
+. Ping the remote cluster LIFs:
++
+`cluster ping-cluster -node node-name`
 +
 ----
 cluster1::*> **cluster ping-cluster -node node2**
@@ -149,7 +158,9 @@ RPC status:
 2 paths up, 0 paths down (udp check)
 ----
 
-. Verify that the auto-revert command is enabled on all cluster LIFs: `network interface show -vserver Cluster -fields auto-revert`
+. Verify that the auto-revert command is enabled on all cluster LIFs:
++
+`network interface show -vserver Cluster -fields auto-revert`
 +
 ----
 cluster1::*> **network interface show -vserver Cluster -fields auto-revert**
@@ -166,7 +177,9 @@ Cluster
 4 entries were displayed.
 ----
 
-. For ONTAP 9.4 and later, enable the cluster switch health monitor log collection feature for collecting switch-related log files: `system cluster-switch log setup-password``system cluster-switch log enable-collection`
+. For ONTAP 9.4 and later, enable the cluster switch health monitor log collection feature for collecting switch-related log files:
++
+`system cluster-switch log setup-password system cluster-switch log enable-collection`
 +
 ----
 cluster1::*> **system cluster-switch log setup-password**
