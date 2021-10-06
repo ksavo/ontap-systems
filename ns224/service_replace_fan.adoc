@@ -49,7 +49,7 @@ If you need the RMA number or additional help with the replacement procedure, co
 +
 https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=29635ff8-ae86-4a48-ab2a-aa86002f3b66[Replacing a fan in an NS224 drive shelf]
 
-*Steps*
+.Steps
 
 . Properly ground yourself.
 . Disconnect the cabling from the NSM module that contains the FRU that you are replacing:

@@ -44,7 +44,7 @@ A shelf has three location LEDs: one on the operator display panel and one on ea
 NOTE: If your HA pair is running a version of ONTAP 9.6, you need to reboot the controllers one at a time.
 If your HA pair is running ONTAP 9.7 or later, you do not need to reboot the controllers, unless one or both controllers are in maintenance mode. This procedure assumes that neither controller is in maintenance mode.
 
-*Steps*
+.Steps
 
 . Properly ground yourself.
 . Verify that the drives in the shelf you are removing have no aggregates (are spares) and that ownership is removed:

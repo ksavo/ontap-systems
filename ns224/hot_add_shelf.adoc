@@ -114,7 +114,7 @@ NOTE: If your HA pair is running a version of ONTAP 9.6, you need to reboot the 
 +
 NOTE: If your HA pair is running ONTAP 9.7 or later, you do not need to reboot the controllers, unless one or both controllers are in maintenance mode. This procedure assumes that neither controller is in maintenance mode.
 
-*Steps*
+.Steps
 
 . Verify if the non-dedicated ports in the HA pair are configured for storage use. `storage port show`
 +
@@ -215,7 +215,7 @@ You recable the first shelf across both sets of ports on each controller so that
 
 * You move one cable at a time to maintain connectivity to the shelf at all times during this procedure.
 
-*Steps*
+.Steps
 
 . Recable the existing shelf's connections across both sets of ports on each controller, as applicable to your platform model.
 +
@@ -291,7 +291,7 @@ You must have met the system requirements.
 
 You need to manually assign drive ownership if drives in the shelf will be owned by both controller modules in the HA pair.
 
-*Steps*
+.Steps
 
 . Verify whether automatic drive assignment is enabled: `storage disk option show`
 +
@@ -318,7 +318,7 @@ Installing a new NS224 drive shelf involves installing the shelf into a rack or 
 +
 <<Prepare for a hot-add>>
 
-*Steps*
+.Steps
 
 . Install the rail mount kit that came with your shelf by using the installation flyer that came in the kit box.
 +
@@ -404,7 +404,7 @@ When additional storage is needed, you can hot-add an NS224 drive shelf to an FA
 
 When viewed from the rear of the platform chassis, the RoCE capable card port on the left is port "a" (e1a) and the port on the right is port "b" (e1b).
 
-*Steps*
+.Steps
 
 . Cable the shelf connections:
  .. Cable shelf NSM A port e0a to controller A slot 1 port a (e1a).
@@ -446,7 +446,7 @@ How you cable an NS224 drive shelf in an AFF A700 or ASA A700HA pair, depends on
 +
 <<Install a drive shelf for a hot-add>>
 
-*Steps*
+.Steps
 
 . If you are hot-adding one shelf using one set of RoCE capable ports (one RoCE capable I/O module) on each controller module, and this is the only NS224 shelf in your HA pair, complete the following substeps.
 +
@@ -527,7 +527,7 @@ How you cable an NS224 drive shelf in an AFF A800 or ASA A800HA pair depends on 
 +
 <<Install a drive shelf for a hot-add>>
 
-*Steps*
+.Steps
 
 . If you are hot-adding one shelf using one set of RoCE capable ports (one RoCE capable PCIe card) on each controller module, and this is the only NS224 shelf in your HA pair, complete the following substeps.
 +
@@ -610,7 +610,7 @@ How you cable an NS224 drive shelf in an AFF A400 or ASA A400HA pair, depends on
 +
 <<Install a drive shelf for a hot-add>>
 
-*Steps*
+.Steps
 
 . If you are hot-adding one shelf using one set of RoCE capable ports (onboard RoCE capable ports) on each controller module, and this is the only NS224 shelf in your HA pair, complete the following substeps.
 +
@@ -691,7 +691,7 @@ You cable a second NS224 drive shelf to an existing HA pair when additional stor
 
 This procedure assumes that your AFF A320HA pair has an existing NS224 shelf and that you are hot-adding a second shelf.
 
-*Steps*
+.Steps
 
 . Cable the shelf to the controller modules.
  .. Cable NSM A port e0a to controller A port e0e.
@@ -725,7 +725,7 @@ You must have already cabled your shelf as instructed for your HA pair.
 
 <<Cable a drive shelf for a hot-add>>
 
-*Steps*
+.Steps
 
 . Display all unowned drives: `storage disk show -container-type unassigned`
 +

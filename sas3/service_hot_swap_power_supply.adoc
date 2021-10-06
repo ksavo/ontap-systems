@@ -34,7 +34,7 @@ A disk shelf has three location LEDs: one on the operator display panel and one 
 
 * If needed, you can refer to the Monitoring disk shelf LEDs section for information about the meaning and location of disk shelf LEDs on the operator display panel and FRU components.
 
-*Steps*
+.Steps
 
 . Properly ground yourself.
 . Unpack the new power supply and set it on a level surface near the shelf.

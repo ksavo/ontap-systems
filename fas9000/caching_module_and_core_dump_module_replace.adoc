@@ -20,7 +20,7 @@ You must replace the caching module in the controller module when your system re
 * The core dump modules can be installed in slots 6-1 and 6-2. The recommended best practice is to install the module in slot 6-1.
 * The X9170A core dump module is not hot-swappable.
 
-*Steps*
+.Steps
 == Step 1: Shutting down the impaired controller
 
 

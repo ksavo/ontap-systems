@@ -76,7 +76,7 @@ A disk shelf has three location LEDs: one on the operator display panel and one 
 
 * If needed, you can refer to the Monitoring disk shelf LEDs section for information about the meaning and location of disk shelf LEDs on the operator display panel and FRU components.
 
-*Steps*
+.Steps
 
 . If you want to manually assign disk ownership for the replacement disk drive, you need to disable automatic drive assignment if it is enabled; otherwise, go to the next step.
 +

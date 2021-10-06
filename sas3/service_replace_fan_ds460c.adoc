@@ -15,7 +15,7 @@ Each DS460C drive shelf includes two fan modules. If a fan module fails, you mus
 
 You must ensure that you remove and replace the fan module within 30 minutes to prevent the system from overheating.
 
-*Steps*
+.Steps
 
 . Put on antistatic protection.
 . Unpack the new fan module, and place it on a level surface near the shelf.

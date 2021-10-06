@@ -49,7 +49,7 @@ If you need the RMA number or additional help with the replacement procedure, co
 +
 https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=df7a12f4-8554-4448-a3df-aa86002f2de8[Replacing an RTC battery in an NS224 drive shelf]
 
-*Steps*
+.Steps
 
 . Properly ground yourself.
 . Disconnect the cabling from the NSM module that contains the FRU that you are replacing:

@@ -34,7 +34,7 @@ image::../media/drw_worksheet_mpha_skipped_template.gif[]
 
 image::../media/drw_mpha_slots_1_and_2_two_4porthbas_two_stacks_skipped.gif[]
 
-*Steps*
+.Steps
 
 . Cable port pair 1a/2b on each controller to stack 1:
  .. Cable controller 1 port 1a to stack 1, first shelf IOM A port 1.

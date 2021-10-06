@@ -32,7 +32,7 @@ If you have a platform with internal storage, shelf IDs must be unique across th
 +
 The amount of time you wait before turning the power back on depends on the state of ONTAP, as described later in this procedure.
 
-*Steps*
+.Steps
 
 . Turn on the power to the disk shelf if it is not already on.
 . Remove the left end cap to locate the button near the shelf LEDs.

@@ -24,7 +24,7 @@ image::../media/drw_worksheet_qpha_slots_1_and_2_two_4porthbas_two_stacks_nau.gi
 
 image::../media/drw_qpha_slots_1_and_2_two_4porthbas_two_stacks_nau.gif[]
 
-*Steps*
+.Steps
 
 . Cable port pair 1a/2b on each controller to stack 1:
 +

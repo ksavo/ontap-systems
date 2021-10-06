@@ -31,7 +31,7 @@ The amount of time you wait before plugging the power cords back in depends on t
 +
 NOTE: NS224 shelves do not have power switches on the power supplies.
 
-*Steps*
+.Steps
 
 . Power on the shelf, if it's not already on.
 +

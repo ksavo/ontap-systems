@@ -67,7 +67,7 @@ If you need the RMA number or additional help with the replacement procedure, co
 +
 https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=733011a7-e03a-41b0-8723-aa840133bf25[Hot-swapping a drive in an NS224 drive shelf]
 
-*Steps*
+.Steps
 
 . If you want to manually assign drive ownership for the replacement drive, you need to disable automatic drive assignment if it is enabled.
 +

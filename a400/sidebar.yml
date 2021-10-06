@@ -5,11 +5,11 @@ entries:
     entries:
     - title: Choose install and setup experience
       url: /a400/install-setup.html
-    - title: Quick guide
+    - title: Quick steps
       url: /a400/install-quick-guide.html
-    - title: Videos
+    - title: Videos steps
       url: /a400/install-videos.html
-    - title: Detailed guide
+    - title: Detailed steps
       url: /a400/install-detailed-guide.html
   - title: Maintain
     entries:
@@ -46,7 +46,7 @@ entries:
       - title: Overview
         url: /a400/controller-replace-overview.html
       - title: Shut down the impaired controller
-        url: /a400/controller-impaired-controller-shutdown.html
+        url: /a400/controller-replace-shutdown.html
       - title: Replace the controller module hardware
         url: /a400/controller-replace.html
       - title: Restore and verify the system configuration

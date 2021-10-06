@@ -56,7 +56,7 @@ Each drive drawer has left and right cable chains. The metal ends on the cable c
 
 NOTE: For a helpful overview of this procedure, watch the following video, which shows how to remove and replace the cable chains in a comparable 60-drive system that is powered down: https://forums.netapp.com/videos/3967.
 
-*Steps*
+.Steps
 
 . Put on antistatic protection.
 . From the rear of the drive shelf, remove the right fan module, as follows:
@@ -149,7 +149,7 @@ After removing the right and left cable chains, you can remove the drive drawer 
 * You have replaced the right and left fan modules.
 * You have obtained a permanent marker to note the exact location of each drive as you remove the drive from the drawer.
 
-*Steps*
+.Steps
 
 . Remove the bezel from the front of the drive shelf.
 . Unlatch the drive drawer by pulling out on both levers.
@@ -200,7 +200,7 @@ Installing a drive drawer into a drive shelf entails sliding the drawer into the
  ** Replacement drive drawer
  ** Flashlight
 
-*Steps*
+.Steps
 
 . From the front of the drive shelf, shine a flashlight into the empty drawer slot, and locate the lock-out tumbler for that slot.
 +
@@ -314,7 +314,7 @@ a|
 Midplane
 |===
 
-*Steps*
+.Steps
 
 . Follow these steps to attach the left cable chain:
  .. Locate the horizontal and vertical connectors on the left cable chain and the corresponding horizontal and vertical brackets inside the enclosure.

@@ -164,7 +164,7 @@ You must have met the requirements in <<Requirements for installing and cabling 
 
 After you cable the disk shelves, you power them on, set the shelf IDs, and complete system setup and configuration.
 
-*Steps*
+.Steps
 
 . Cable the shelf-to-shelf connections within each stack if the stack has more than one disk shelf; otherwise, go to the next step:
 +

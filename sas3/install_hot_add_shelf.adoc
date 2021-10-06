@@ -230,7 +230,7 @@ You must have met the requirements in <<Requirements for hot-adding disk shelves
 +
 NOTE: Firmware updates can take up to 30 minutes.
 
-*Steps*
+.Steps
 
 . If you want to manually assign disk ownership for the disk shelves you are hot-adding, you need to disable disk ownership automatic assignment if it is enabled; otherwise, go to the next step.
 +

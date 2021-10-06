@@ -54,7 +54,7 @@ http://mysupport.netapp.com/documentation/productlibrary/index.html?productID=62
 +
 NOTE: If you do not maintain single-path connectivity from the controllers to the stack when recabling the stack to bypass the disk shelf you are removing, you could fail the system with a multidisk panic.
 
-*Steps*
+.Steps
 
 . Verify that your system configuration is Multi-Path HA, Multi-Path, Quad-path HA, or Quad-path: `sysconfig`
 +

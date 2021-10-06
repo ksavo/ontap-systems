@@ -204,7 +204,7 @@ NOTE: As you insert the connector, you should feel it click into place; if you d
 .Steps
 . Use the animation or graphic to complete the cabling between the controllers and to the switches:
 +
-https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=6381b3f1-4ce5-4805-bd0a-ac5b0032f51d[Switched clsuter cabling]
+https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=6381b3f1-4ce5-4805-bd0a-ac5b0032f51d[Switched cluster cabling]
 
 . Cable your storage: link:install_detailed_guide.md#[Cabling controllers to drive shelves]
 

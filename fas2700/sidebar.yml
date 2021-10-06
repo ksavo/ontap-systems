@@ -1,17 +1,16 @@
 section: 2700
-title: AFF A200 and FAS2700 systems
+title: AFF A220 and FAS2700 systems
 entries:
   - title: Install and setup
     entries:
     - title: Choose your installation and setup experience
       url: /fas2700/install-setup-installation.html
-    - title: Quick guide
+    - title: Quick steps
       url: /fas2700/install-quick-guide.html
-      entries:
-      - title: Videos
-        url: /fas2700/install-videos.html
-      - title: Detailed guide
-        url: /fas2700/install-detailed-guide.html
+    - title: Videos steps
+      url: /fas2700/install-videos.html
+    - title: Detailed steps
+      url: /fas2700/install-detailed-guide.html
   - title: Maintain
     entries:
       - title: Boot media

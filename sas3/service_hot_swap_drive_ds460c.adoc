@@ -83,7 +83,7 @@ image::../media/28_dwg_e2860_de460c_front_no_callouts.gif[]
 +
 image::../media/dwg_trafford_drawer_with_hdds_callouts.gif[]
 
-*Steps*
+.Steps
 
 . If you want to manually assign disk ownership for the replacement disk drive, you need to disable automatic drive assignment if it is enabled; otherwise, go to the next step.
 +
