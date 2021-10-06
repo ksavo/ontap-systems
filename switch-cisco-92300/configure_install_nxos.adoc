@@ -11,8 +11,9 @@ summary: 'You can use this procedure to install the NX-OS software on the Nexus 
 [.lead]
 You can use this procedure to install the NX-OS software on the Nexus 92300YC switch.
 
+.Steps
 . Connect the cluster switch to the management network.
-. Use the ping command to verify connectivity to the server hosting the NX-OS software and the RCF.
+. Use the `ping` command to verify connectivity to the server hosting the NX-OS software and the RCF.
 +
 This example verifies that the switch can reach the server at IP address 172.19.2.1:
 +
@@ -182,7 +183,9 @@ Warning: please do not remove or power off the module at this time.
 Finishing the upgrade, switch will reboot in 10 seconds.
 ----
 
-. Verify the new version of NX-OS software after the switch has rebooted: `show version`
+. Verify the new version of NX-OS software after the switch has rebooted:
++
+`show version`
 +
 ----
 cs2# **show version**

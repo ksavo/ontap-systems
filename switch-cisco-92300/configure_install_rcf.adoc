@@ -11,6 +11,7 @@ summary: 'You can install the RCF after setting up the Nexus 92300YC switch for 
 [.lead]
 You can install the RCF after setting up the Nexus 92300YC switch for the first time.
 
+.Steps
 . Connect the cluster switch to the management network.
 . Use the ping command to verify connectivity to the server hosting the RCF.
 +
@@ -71,7 +72,9 @@ Copy complete, now saving to disk (please wait)...
 Copy complete.
 ----
 
-. Verify on the switch that the RCF has been merged successfully: `show running-config`
+. Verify on the switch that the RCF has been merged successfully:
++
+`show running-config`
 +
 ----
 cs2# **show running-config**
@@ -128,7 +131,9 @@ cs2# **system cluster-switch log enable-collection**
 ** Output example required here too
 ----
 
-. Reboot the switch and verify that the running configuration is correct: `reload`
+. Reboot the switch and verify that the running configuration is correct:
++
+`reload`
 +
 ----
 cs2# **reload**
