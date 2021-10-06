@@ -11,7 +11,7 @@ summary: You create at least an aggregate on each of the new nodes to store the 
 [.lead]
 You create at least an aggregate on each of the new nodes to store the volumes you want to move from the original nodes. You must identify an aggregate for each volume and move each volume individually.
 
-*Before you begin*
+.Before you begin
 Data protection mirror relationships must have been initialized before you can move a volume.
 
 http://mysupport.netapp.com/documentation/productlibrary/index.html?productID=30092[Find a Data Protection Guide for your version of Data ONTAP 8]

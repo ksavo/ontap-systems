@@ -11,7 +11,7 @@ summary: You can hot-swap a failed disk drive in a DS460C disk shelf.
 [.lead]
 You can hot-swap a failed disk drive in a DS460C disk shelf.
 
-*Before you begin*
+.Before you begin
 
 * The replacement disk drive must be supported by the DS460C disk shelf.
 +
@@ -30,7 +30,7 @@ Instructions in the ONTAP documentation describe additional steps you must perfo
 +
 https://docs.netapp.com/ontap-9/topic/com.netapp.doc.pow-nve/home.html[ONTAP 9 NetApp Encryption Power Guide]
 
-*About this task*
+.About this task
 
 * You should take steps to avoid electrostatic discharge (ESD):
  ** Keep the disk drive in the ESD bag until you are ready to install it.

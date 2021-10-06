@@ -1,9 +1,11 @@
 ---
-permalink: a250/index.html
+layout: landing-page
 sidebar: sidebar
-keywords:
-summary: ''
+permalink: a250/index.html
+summary: The AFF A250 system documentation lets you install, setup, and maintain your system.
 ---
-= AFF A250 systems
-:icons: font
-:imagesdir: ../media/
+
+= AFF A250 System Documentation
+:hardbreaks:
+:linkattrs:
+:imagesdir: ./media/

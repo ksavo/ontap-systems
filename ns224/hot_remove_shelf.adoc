@@ -11,7 +11,7 @@ summary: You can hot-remove an NS224 drive shelf that has had the aggregates rem
 [.lead]
 You can hot-remove an NS224 drive shelf that has had the aggregates removed from the drives, in an HA pair that is up and serving data (I/O is in progress).
 
-*Before you begin*
+.Before you begin
 
 * Your HA pair cannot be in a takeover state.
 * You must have removed all aggregates from the drives (the drives must be spares) in the shelf you are removing.
@@ -22,7 +22,7 @@ You can use the `storage aggregate offline -aggregate aggregate_name` command an
 
 * If your system shipped in a system cabinet, you need a Phillips screwdriver to remove the screws securing the shelf to the cabinet rear uprights.
 
-*About this task*
+.About this task
 
 * If you are hot-removing more than one shelf, you remove one shelf at a time.
 * *Best practice:* The best practice is to remove drive ownership after you remove the aggregates from the drives in the shelf you are removing.

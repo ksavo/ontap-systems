@@ -167,7 +167,7 @@ NOTE: The migration instructions provide the system requirements for IBACP.
 [.lead]
 If you are manually assigning drive ownership for the IOM12 shelves you are hot-adding, then you need to disable automatic drive assignment if it is enabled.
 
-*Before you begin*
+.Before you begin
 
 You must have met the system requirements.
 
@@ -175,7 +175,7 @@ You must have met the system requirements.
 
 <<Requirements for a hot-add in bridge-attached MetroCluster configurations>>
 
-*About this task*
+.About this task
 
 If you have an HA pair, you need to manually assign drive ownership if drives in the shelf will be owned by both controller modules.
 
@@ -297,7 +297,7 @@ You must turn off both power switches, wait 10 seconds, and then turn them back 
 [.lead]
 How you cable an IOM12 shelf to a stack of IOM6 shelves depends on whether the IOM12 shelf is the initial IOM12 shelf, meaning no other IOM12 shelf exists in the stack, or whether it is an additional IOM12 shelf to an existing mixed stack, meaning one or more IOM12 shelves already exists in the stack. It also depends on whether the stack has multipath HA, multipath, single-path HA, or single-path connectivity.
 
-*Before you begin*
+.Before you begin
 
 * You must have met the system requirements.
 +
@@ -311,7 +311,7 @@ How you cable an IOM12 shelf to a stack of IOM6 shelves depends on whether the I
 +
 <<Install shelves for a hot-add>>
 
-*About this task*
+.About this task
 
 * You always hot-add IOM12 shelves to the logical last shelf in a stack to maintain a single speed transition within the stack.
 +
@@ -511,7 +511,7 @@ NOTE: All MetroCluster configurations require manual drive assignment.
 [.lead]
 If you disabled automatic drive assignment as part of the preparation for hot-adding the IOM12 shelves to the stack of IOM6 shelves, you need to manually assign drive ownership and then reenable automatic drive assignment if needed.
 
-*Before you begin*
+.Before you begin
 
 You must have already cabled your shelf as instructed for your system.
 

@@ -1,5 +1,6 @@
 section: fas8200
 title: FAS8200 systems
+url: /fas8200/index.html
 entries:
  - title: Install and setup
    entries:
@@ -59,11 +60,11 @@ entries:
       url: /fas8200/dimm-replace.html
     - title: Fan
       url: /fas8200/fan-swap-out.html
+    - title: NVMEM battery
+      url: /fas8200/nvmem-nvram-battery-replace.html
     - title: PCIe card
       url: /fas8200/pci-cards-and-risers-replace.html
     - title: Power supply
       url: /fas8200/power-supply-swap-out.html
     - title: Real-time clock battery
       url: /fas8200/rtc-battery-replace.html
-    - title: Replace the NVMEM battery
-      url: /fas8200/nvmem-nvram-battery-replace.html

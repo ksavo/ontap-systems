@@ -1,10 +1,11 @@
 section: fas8300
 title: FAS8300 and FAS8700 systems
+url: /fas8300/index.html
 entries:
   - title: Install and setup
     entries:
     - title: Choose install and setup experience
-      url: /fas8300/install-setup-installation.html
+      url: /fas8300/install-setup.html
     - title: Quick steps
       url: /fas8300/install-quick-guide.html
     - title: Video steps

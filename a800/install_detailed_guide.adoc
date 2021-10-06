@@ -44,7 +44,7 @@ The following table identifies the types of cables you might receive. If you rec
 +
 https://hwu.netapp.com[NetApp Hardware Universe]
 +
-[options="header" cols="1,2"]
+[options="header" cols="1,2,1,2"]
 |===
 | Type of cable...| Part number and length| Connector type| For...
 a|
@@ -419,7 +419,7 @@ See your laptop's online help for more information.
 
 . Use the following animation to connect your laptop to the Management switch.
 +
-https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=d61f983e-f911-4b76-8b3a-ab1b0066909b[Connecting your laptop to the Management switch] 
+https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=d61f983e-f911-4b76-8b3a-ab1b0066909b[Connecting your laptop to the Management switch]
 
 . Select an ONTAP icon listed to discover:
 +

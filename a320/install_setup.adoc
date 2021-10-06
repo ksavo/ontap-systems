@@ -1,5 +1,5 @@
 ---
-permalink: a320/install-setup-installation.html
+permalink: a320/install-setup.html
 sidebar: sidebar
 keywords: aff a320, install, setup, initial configuration
 summary: 'Install and set up your system.'

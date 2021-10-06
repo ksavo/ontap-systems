@@ -1,9 +1,11 @@
 ---
-permalink: sas3/index.html
+layout: landing-page
 sidebar: sidebar
-keywords: sas3, shelves, shelf, sas3 shelves
-summary: SAS3 shelves
+permalink: sas3/index.html
+summary: The storage shelf documentation lets you install, setup, and maintain your system.
 ---
+
 = SAS3 shelves
-:icons: font
-:imagesdir: ../media/
+:hardbreaks:
+:linkattrs:
+:imagesdir: ./media/

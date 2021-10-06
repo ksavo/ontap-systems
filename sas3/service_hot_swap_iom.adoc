@@ -11,11 +11,11 @@ summary: Your system configuration determines whether you can perform a nondisru
 [.lead]
 Your system configuration determines whether you can perform a nondisruptive IOM12 module hot-swap or a disruptive IOM12 module replacement when an IOM12 module fails.
 
-*Before you begin*
+.Before you begin
 
 All other components in the system--including the other IOM12 module--must be functioning properly.
 
-*About this task*
+.About this task
 
 * For multipathed (multipath HA or multipath) and quad-pathed (quad-path HA or quad-path) configurations, you can hot-swap an IOM12 module (nondisruptively replace an IOM12 module in a system that is powered on and serving data--I/O is in progress).
 * For FAS2600 series and FAS2700 single-path HA configurations, you must perform a takeover and giveback operation to replace an IOM12 module in a system that is powered on and serving data--I/O is in progress.

@@ -11,7 +11,7 @@ summary: When the boot media fails on an NS224 drive shelf in an HA pair that is
 [.lead]
 When the boot media fails on an NS224 drive shelf in an HA pair that is running ONTAP 9.7 or later, or the shelf is running NVMe shelf module (NSM) firmware version 1.1x or later, you can replace the boot media. Replacing the boot media can be done nondisruptively, while the drive shelf is powered on, and I/O is in progress.
 
-*Before you begin*
+.Before you begin
 
 * Your HA pair must already be running ONTAP 9.7 or later, which has the minimum supported version of NSM firmware, or your HA pair must already been running a version of ONTAP 9.6 with NSM firmware version 1.1x or later.
 +
@@ -33,7 +33,7 @@ https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor[NetApp 
 
 * All other components in the system must be functioning properly.
 
-*About this task*
+.About this task
 
 * After the boot media is replaced, the boot image from the shelf's partner NSM module is automatically copied to the replacement boot media.
 +

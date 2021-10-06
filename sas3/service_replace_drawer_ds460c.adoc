@@ -37,7 +37,7 @@ NOTE: Possible hardware damage. To prevent electrostatic discharge damage to the
 [.lead]
 Left and right cable chains for each drive drawer in the DS460C drive shelf allow the drawers to slide in and out. Before you can remove a drive drawer, you must remove both cable chains.
 
-*Before you begin*
+.Before you begin
 
 * You have stopped host I/O activity and powered off the shelf.
 * You have obtained the following items:
@@ -47,7 +47,7 @@ NOTE: Possible hardware damage. To prevent electrostatic discharge damage to the
 
  ** Flashlight
 
-*About this task*
+.About this task
 
 Each drive drawer has left and right cable chains. The metal ends on the cable chains slide into corresponding vertical and horizontal brackets inside the enclosure, as follows:
 
@@ -143,7 +143,7 @@ The figure shows the orange ring on the horizontal bracket being pushed down so 
 [.lead]
 After removing the right and left cable chains, you can remove the drive drawer from the drive shelf. Removing a drive drawer entails sliding the drawer part of the way out, recording the locations of the drives, removing the drives, and removing the drive drawer.
 
-*Before you begin*
+.Before you begin
 
 * You have removed the right and left cable chains for the drive drawer.
 * You have replaced the right and left fan modules.
@@ -193,7 +193,7 @@ Drive drawer release lever
 [.lead]
 Installing a drive drawer into a drive shelf entails sliding the drawer into the empty slot, installing the drives, and replacing the front bezel.
 
-*Before you begin*
+.Before you begin
 
 * You know where to install each drive.
 * You have obtained the following items:
@@ -268,7 +268,7 @@ NOTE: Risk of equipment malfunction: Make sure to completely close the drive dra
 [.lead]
 The final step in installing a drive drawer is attaching the left and right cable chains to the drive shelf. When attaching a cable chain, reverse the order you used when disconnecting the cable chain. You must insert the chain's horizontal connector into the horizontal bracket in the enclosure before inserting the chain's vertical connector into the vertical bracket in the enclosure.
 
-*Before you begin*
+.Before you begin
 
 * You have replaced the drive drawer and all of the drives.
 * You have two replacement cable chains, marked as LEFT and RIGHT (on the horizontal connector next to the drive drawer).

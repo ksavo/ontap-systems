@@ -11,7 +11,7 @@ summary: You can hot-remove a disk shelf with IOM12 modules (nondisruptively rem
 [.lead]
 You can hot-remove a disk shelf with IOM12 modules--nondisruptively remove a disk shelf from a system that is powered on and serving data (I/O is in progress)--when you need to move or replace the disk shelf. You can hot-remove one or more disk shelves from anywhere within a stack of disk shelves or remove a stack of disk shelves.
 
-*Before you begin*
+.Before you begin
 
 * Your system must be a multipath HA, multipath, quad-path HA, or quad-path configuration.
 +
@@ -34,7 +34,7 @@ You can use the `storage aggregate offline -aggregate aggregate_name` command an
 
 * If you are removing one or more disk shelves from within a stack, you must have factored the distance to bypass the disk shelves you are removing; therefore, if the current cables are not long enough, you need to have longer cables available.
 
-*About this task*
+.About this task
 
 * *Best practice:* The best practice is to remove disk drive ownership after you remove the aggregates from the disk drives in the disk shelves you are removing.
 +
