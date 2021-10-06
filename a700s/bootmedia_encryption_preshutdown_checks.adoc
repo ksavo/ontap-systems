@@ -10,3 +10,17 @@ summary: Prior to shutting down the impaired node and checking the status of the
 
 [.lead]
 include::../_include/encryption_steps_before_shutdown.adoc[]
+
+== Option 1: Check NVE or NSE on systems running ONTAP 9.5 and earlier
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+include::../_include/encryption_check_95_earlier.adoc[]
+
+== Option 2: Check NVE or NSE on systems running ONTAP 9.6 and later
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+include::../_include/encryption_check_96_later.adoc[]

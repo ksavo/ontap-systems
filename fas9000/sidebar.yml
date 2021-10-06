@@ -87,7 +87,7 @@ entries:
         url: /fas9000/x91148a-module-install-overview.html
 #      - title: Add I/O modules in an existing system
       - title: In an AFF A700 system with open slots
-        url: /fas9000/x91148a-modules-with-open-slots-add.html
+        url: /fas9000/x91148a-module-with-open-slots-add.html
       - title: In an AFF A700 system with no open slots
         url: /fas9000/x91148a-modules-with-no-open-slots-add.html
       # END X91148A module

@@ -161,15 +161,10 @@ NOTE: If your system stops at the boot menu, select the option to boot to LOADER
 . Return the node to normal operation by giving back its storage: `storage failover giveback -ofnode impaired_node_name`
 . If automatic giveback was disabled, reenable it: `storage failover modify -node local -auto-giveback true`
 
-== Step 6: Switch back aggregates in a two-node MetroCluster configuration
+== Step 6: Restore the controller module to operation 
 
 [.lead]
-include::../_include/2n_mcc_switchback.adoc[]
-
-== Step 1: Restore the controller module to operation after running diagnostics
-
-[.lead]
-After completing diagnostics, you must recable the system, give back the controller module, and then reenable automatic giveback.
+To restore the controller, you must recable the system, give back the controller module, and then reenable automatic giveback.
 
 . Recable the system, as needed.
 +
@@ -178,7 +173,12 @@ If you removed the media converters (QSFPs or SFPs), remember to reinstall them 
 . Return the node to normal operation by giving back its storage: `storage failover giveback -ofnode impaired_node_name`
 . If automatic giveback was disabled, reenable it: `storage failover modify -node local -auto-giveback true`
 
-== Step 7: Return the failed part to NetApp
+== Step 7: Switch back aggregates in a two-node MetroCluster configuration
+
+[.lead]
+include::../_include/2n_mcc_switchback.adoc[]
+
+== Step 8: Return the failed part to NetApp
 
 [.lead]
 include::../_include/complete_rma.adoc[]
