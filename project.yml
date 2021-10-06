@@ -1,3 +1,7 @@
+settings:
+  name: "ONTAP Systems"
+  pdf_enabled: true
+
 sidebar:
   entries:
     - title: ONTAP 9.8 System Documentation
