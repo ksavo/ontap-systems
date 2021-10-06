@@ -11,7 +11,7 @@ summary: You can replace an impaired NVMe shelf module \(NSM\) nondisruptively i
 [.lead]
 You can replace an impaired NVMe shelf module (NSM) nondisruptively in an NS224 drive shelf that is powered on, and while I/O is in progress.
 
-*Before you begin*
+.Before you begin
 
 * The shelf's partner NSM module must be up and running, and be cabled correctly so that your shelf maintains connectivity when you remove the failed NSM module.
 +
@@ -19,7 +19,7 @@ https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor[NetApp 
 
 * All other components in the system must be functioning properly.
 
-*About this task*
+.About this task
 
 * Replacing the NSM module involves moving the DIMMs, fans and power supply from the impaired NSM module to the replacement NSM module.
 +
@@ -57,7 +57,7 @@ If you need the RMA number or additional help with the replacement procedure, co
 +
 https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=f57693b3-b164-4014-a827-aa86002f4b34[Replacing an NSM module in an NS224 drive shelf]
 
-*Steps*
+.Steps
 
 . Properly ground yourself.
 . Physically identify the impaired NSM module.

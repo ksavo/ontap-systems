@@ -1,0 +1,65 @@
+indexpage:
+  lead: AFF A200
+  tiles:
+    - title: Get started 
+      links:
+        - title: ONTAP Release notes
+          url: /subfolder/page.html
+    - title: Install and setup
+      links:
+        - title: All configurations
+          url: /a200/install-setup-installation.html
+    - title: Maintain
+      links:
+        - title: Boot media
+          url: /a200/bootmedia-replace-overview.html
+        - title: Chassis
+          url: /a200/chassis-replace-overview.html
+        - title: Controller module
+          url: /a200/controller-replace-overview.html
+        - title: NV battery
+          url: /a200/nvmem-nvram-battery-replace.html
+        - title: System DIMM
+          url: /a200/dimm-replace.html
+        - title: Power supply
+          url: /a200/power-supply-swapout.html
+        - title: RTC battery
+          url: /a200/rtc-battery-replace.html
+    - title: Learn
+      links:
+        - title: Storage data sheet
+          url: https://www.netapp.com/data-storage/disk-shelves-storage-media/
+        - title: Replacing an internal disk drive video
+          url: https://www.youtube.com/watch?v=Ziqg9HL8oYQ
+        - title: NetApp All-Flash FAS Solution for Nonpersistent Desktops with VMware Horizon View | TR-4539
+          url: https://www.netapp.com/pdf.html?item=/media/10695-tr-4539.pdf
+    - title: Add or remove shelves
+      links:
+        - title: SAS with IOM12
+          url: /sas3/index.html
+    - title: Install and maintain switches
+      links:
+        - title: Broadcom-supported switches
+          url: https://docs.netapp.com/us-en/ontap-systems-switches/
+        - title: Cisco switches
+          url: https://docs.netapp.com/us-en/ontap-systems-switches/
+    - title: Upgrade
+      links:
+        - title: System hardware upgrade
+          url: https://docs.netapp.com/us-en/ontap-systems-upgrade/
+        - title: ONTAP software upgrade
+          url: https://docs.netapp.com/us-en/ontap/upgrade/index.html
+    - title: More resources
+      links:
+        - title: ONTAP documentation
+          url: https://docs.netapp.com/us-en/ontap/
+        - title: NetApp Hardware Universe
+          url: https://hwu.netapp.com/home/index
+        - title: NetApp Active IQ Config Advisor
+          url: https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor
+        - title: NetApp Interoperability Matrix Tool
+          url: https://mysupport.netapp.com/matrix/#welcome
+        - title: NetApp Support Knowledge Base
+          url: https://kb.netapp.com/
+        - title: NetApp Community
+          url: https://community.netapp.com/

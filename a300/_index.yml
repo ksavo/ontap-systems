@@ -1,0 +1,75 @@
+indexpage:
+  lead: AFF A300
+  tiles:
+    - title: Get started 
+      links:
+        - title: ONTAP Release notes
+          url: /subfolder/page.html
+    - title: Install and setup
+      links:
+        - title: Most configurations
+          url: /a300/install-setup-linkout.html
+        - title: Fabric-attached MetroCluster configurations
+          url: https://docs.netapp.com/us-en/ontap-metrocluster/install-fc/index.html
+        - title: Stretch MetroCluster configurations
+          url: https://docs.netapp.com/us-en/ontap-metrocluster/install-stretch/index.html
+        - title: MetroCluster IP configurations
+          url: https://docs.netapp.com/us-en/ontap-metrocluster/install-ip/index.html
+    - title: Maintain
+      links:
+        - title: Boot media
+          url: /a300/bootmedia-replace-overview.html
+        - title: Chassis
+          url: /a300/chassis-replace-overview.html
+        - title: Controller module
+          url: /a300/controller-replace-overview.html
+        - title: Fan
+          url: /a300/fan-replace.html
+        - title: NV battery
+          url: /a300/nvmem-nvram-battery-replace.html
+        - title: PCIe card
+          url: /a300/pci-cards-and-risers-replace.html
+        - title: Power supply
+          url: /a300/power-supply-swapout.html
+        - title: System DIMM
+          url: /a300/dimm-replace.html
+        - title: RTC battery
+          url: /a300/rtc-battery-replace.html
+    - title: Learn
+      links:
+        - title: Storage data sheet
+          url: https://www.netapp.com/data-storage/disk-shelves-storage-media/
+        - title: NetApp All-Flash FAS Solution for Nonpersistent Desktops with VMware Horizon View | TR-4539
+          url: https://www.netapp.com/pdf.html?item=/media/10695-tr-4539.pdf
+    - title: Add or remove shelves
+      links:
+        - title: NS224
+          url: /ns224/index.html
+        - title: SAS with IOM12
+          url: /sas3/index.html
+    - title: Install and maintain switches
+      links:
+        - title: Broadcom-supported switches
+          url: https://docs.netapp.com/us-en/ontap-systems-switches/
+        - title: Cisco switches
+          url: https://docs.netapp.com/us-en/ontap-systems-switches/
+    - title: Upgrade
+      links:
+        - title: System hardware upgrade
+          url: https://docs.netapp.com/us-en/ontap-systems-upgrade/
+        - title: ONTAP software upgrade
+          url: https://docs.netapp.com/us-en/ontap/upgrade/index.html
+    - title: More resources
+      links:
+        - title: ONTAP documentation
+          url: https://docs.netapp.com/us-en/ontap/
+        - title: NetApp Hardware Universe
+          url: https://hwu.netapp.com/home/index
+        - title: NetApp Active IQ Config Advisor
+          url: https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor
+        - title: NetApp Interoperability Matrix Tool
+          url: https://mysupport.netapp.com/matrix/#welcome
+        - title: NetApp Support Knowledge Base
+          url: https://kb.netapp.com/
+        - title: NetApp Community
+          url: https://community.netapp.com/

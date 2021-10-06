@@ -11,7 +11,7 @@ summary: You can change a shelf ID in a system when ONTAP is not yet running or 
 [.lead]
 You can change a shelf ID in a system when ONTAP is not yet running or when hot-adding a shelf prior to it being cabled to the system. You can also change a shelf ID when ONTAP is up and running (controller modules are available to serve data) and all drives in the shelf are unowned, spares, or part of offlined aggregate(s).
 
-*Before you begin*
+.Before you begin
 
 * If ONTAP is up and running (controller modules are available to serve data), you must have verified that all drives in the shelf are unowned, spares, or part of offlined aggregate(s).
 +
@@ -21,7 +21,7 @@ You can verify the state of the drives by using the `storage disk show -shelf sh
 +
 You use the paper clip or ballpoint pen to access the shelf ID button through the small hole, to the right of the LEDs, in the Operator Display Panel (ODP).
 
-*About this task*
+.About this task
 
 * A valid shelf ID is 00 through 99.
 * Shelf IDs must be unique within an HA pair.
@@ -31,7 +31,7 @@ The amount of time you wait before plugging the power cords back in depends on t
 +
 NOTE: NS224 shelves do not have power switches on the power supplies.
 
-*Steps*
+.Steps
 
 . Power on the shelf, if it's not already on.
 +

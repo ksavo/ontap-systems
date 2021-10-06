@@ -1,9 +1,11 @@
 ---
-permalink: a700s/index.html
+layout: landing-page
 sidebar: sidebar
-keywords: aff a700s, aff, a700s, 
-summary:
+permalink: a700s/index.html
+summary: The AFF A700s system documentation lets you install, setup, and maintain your system.
 ---
-= Model
-:icons: font
-:imagesdir: ../media/
+
+= AFF A400 System Documentation
+:hardbreaks:
+:linkattrs:
+:imagesdir: ./media/

@@ -11,7 +11,7 @@ summary: 'You can replace a faulty DIMM nondisruptively in an NS224 drive shelf 
 [.lead]
 You can replace a faulty DIMM nondisruptively in an NS224 drive shelf that is powered on, and while I/O is in progress.
 
-*Before you begin*
+.Before you begin
 
 * The shelf's partner NSM module must be up and running, and be cabled correctly so that your shelf maintains connectivity when you remove the NSM module with the failed FRU (target NSM module).
 +
@@ -19,7 +19,7 @@ https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor[NetApp 
 
 * All other components in the system, including the other three DIMMs, must be functioning properly.
 
-*About this task*
+.About this task
 
 * Allow at least 70 seconds between removal and installation of the NVMe shelf module (NSM).
 +
@@ -49,7 +49,7 @@ If you need the RMA number or additional help with the replacement procedure, co
 +
 https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=eef28b10-ed93-4aa7-bfce-aa86002f20a2[Replacing a DIMM in an NS224 drive shelf]
 
-*Steps*
+.Steps
 
 . Properly ground yourself.
 . Disconnect the cabling from the NSM module that contains the FRU that you are replacing:

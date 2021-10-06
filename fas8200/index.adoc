@@ -1,9 +1,11 @@
 ---
-permalink: fas8200/index.html
+layout: landing-page
 sidebar: sidebar
-keywords: 
-summary: ''
+permalink: fas8200/index.html
+summary: The storage system documentation lets you install, setup, and maintain your system.
 ---
-= FAS8200 systems
-:icons: font
-:imagesdir: ../media/
+
+= FAS8200 System Documentation
+:hardbreaks:
+:linkattrs:
+:imagesdir: ./media/

@@ -33,9 +33,10 @@ NOTE: If you have difficulty removing the controller module, place your index fi
 +
 image::../media/drw_a250_pcm_remove_install.png[]
 +
+[cols="1,4"]
 |===
 a|
-image:../media/legend_icon_01.gif[]|
+*1*|
 Lever
 a|
 image:../media/legend_icon_02.gif[]
@@ -48,6 +49,7 @@ Latching mechanism
 +
 image::../media/drw_a250_open_controller_module_cover.png[]
 +
+[cols="1,4"]
 |===
 a|
 image:../media/legend_icon_01.gif[]|
@@ -72,6 +74,7 @@ https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=ccfa6665-2c2b-4571
 +
 image::../media/drw_a250_replace_fan.png[]
 +
+[cols="1,4"]
 |===
 a|
 image:../media/legend_icon_01.gif[]|
@@ -89,6 +92,7 @@ After you replace a component within the controller module, you must reinstall t
 +
 image::../media/drw_a250_close_controller_module_cover.png[]
 +
+[cols="1,4"]
 |===
 a|
 image:../media/legend_icon_01.gif[]|

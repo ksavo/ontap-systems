@@ -1,10 +1,11 @@
 ---
-permalink: fas500f/index.html
+layout: landing-page
 sidebar: sidebar
-keywords: 
-summary: ''
+permalink: fas500f/index.html
+summary: The storage system documentation lets you install, setup, and maintain your system.
 ---
-= FAS500f systems
-:icons: font
-:imagesdir: ../media/
 
+= FAS500f System Documentation
+:hardbreaks:
+:linkattrs:
+:imagesdir: ./media/

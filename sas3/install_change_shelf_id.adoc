@@ -11,7 +11,7 @@ summary: You can change a shelf ID in a system when ONTAP is not yet running or 
 [.lead]
 You can change a shelf ID in a system when ONTAP is not yet running or when hot-adding a shelf prior to it being cabled to the system. You can also change a shelf ID when ONTAP is up and running (controller modules are available to serve data) and all drives in the shelf are unowned, spares, or part of offlined aggregate(s).
 
-*Before you begin*
+.Before you begin
 
 * If ONTAP is up and running (controller modules are available to serve data), you must have verified that all drives in the shelf are unowned, spares, or part of offlined aggregate(s).
 +
@@ -21,7 +21,7 @@ You can verify the state of the drives by using the `storage disk show -shelf sh
 +
 https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor[NetApp Downloads: Config Advisor]
 
-*About this task*
+.About this task
 
 * A valid shelf ID is 00 through 99.
 * Shelf IDs must be unique within an HA pair or single-controller configuration.
@@ -32,7 +32,7 @@ If you have a platform with internal storage, shelf IDs must be unique across th
 +
 The amount of time you wait before turning the power back on depends on the state of ONTAP, as described later in this procedure.
 
-*Steps*
+.Steps
 
 . Turn on the power to the disk shelf if it is not already on.
 . Remove the left end cap to locate the button near the shelf LEDs.
