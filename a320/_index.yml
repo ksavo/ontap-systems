@@ -8,7 +8,7 @@ indexpage:
     - title: Install and setup
       links:
         - title: Most configurations
-          url: /a320/install-setup.html
+          url: /install-setup.html
         - title: Fabric-attached MetroCluster configurations
           url: https://docs.netapp.com/us-en/ontap-metrocluster/install-fc/index.html
         - title: Stretch MetroCluster configurations
@@ -18,25 +18,25 @@ indexpage:
     - title: Maintain
       links:
         - title: Boot media
-          url: /a320/bootmedia-replace-overview.html
+          url: /bootmedia-replace-overview.html
         - title: Chassis
-          url: /a320/chassis-replace-overview.html
+          url: /chassis-replace-overview.html
         - title: Controller module
-          url: /a320/controller-replace-overview.html
+          url: /controller-replace-overview.html
         - title: DIMM
-          url: /a320/dimm-replace.html
+          url: /dimm-replace.html
         - title: Fan
-          url: /a320/fan-replace.html
+          url: /fan-replace.html
         - title: NVDIMM
-          url: /a320/nvdimm-replace.html
+          url: /nvdimm-replace.html
         - title: NVDIMM battery
-          url: /a320/nvmem-nvram-battery-replace.html
+          url: /nvmem-nvram-battery-replace.html
         - title: PCIe card
-          url: /a320/pci-cards-and-risers-replace.html
+          url: /pci-cards-and-risers-replace.html
         - title: Power supply
-          url: /a320/power-supply-swapout.html
+          url: /power-supply-swapout.html
         - title: RTC battery
-          url: /a320/rtc-battery-replace.html
+          url: /rtc-battery-replace.html
     - title: Learn
       links:
         - title: System data sheet
@@ -50,9 +50,9 @@ indexpage:
     - title: Add or remove shelves
       links:
         - title: NS224
-          url: /ns224/index.html
+          url: https://docs.netapp.com/us-en/ontap-systems/ns224/index.html
         - title: SAS with IOM12
-          url: /sas3/index.html
+          url: https://docs.netapp.com/us-en/ontap-systems/sas3/index.html
     - title: Install and maintain switches
       links:
         - title: Broadcom-supported switches

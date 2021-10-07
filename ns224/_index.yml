@@ -8,7 +8,7 @@ indexpage:
     - title: Install and setup
       links:
         - title: Hot-add a shelf
-          url: /ns224/hot-add-shelf.html
+          url: /hot-add-shelf.html
         - title: Change a shelf ID
           url: https://docs.netapp.com/us-en/ontap-metrocluster/install-fc/index.html
         - title: Cable shelves as switch-attached storage
@@ -16,21 +16,21 @@ indexpage:
     - title: Maintain
       links:
         - title: Boot media
-          url: /ns224/bootmedia-replace-overview.html
+          url: /bootmedia-replace-overview.html
         - title: DIMM
-          url: /ns224/service-replace-dimm.html
+          url: /service-replace-dimm.html
         - title: Drive
-          url: /ns224/service-replace-fan.html
+          url: /service-replace-fan.html
         - title: Fan
-          url: /ns224/service-replace-fan.html
+          url: /service-replace-fan.html
         - title: Hot-remove a shelf
-          url: /ns224/hot-remove-shelf.html
+          url: /hot-remove-shelf.html
         - title: NSM module
-          url: /ns224/service-replace-nsm100.html
+          url: /service-replace-nsm100.html
         - title: Power supply
-          url: /ns224/service-replace-power-supply.html
+          url: /service-replace-power-supply.html
         - title: RTC battery
-          url: /ns224/service-replace-rtc-battery.html
+          url: /service-replace-rtc-battery.html
     - title: Learn
       links:
         - title: Storage data sheet

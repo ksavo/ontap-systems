@@ -8,7 +8,7 @@ indexpage:
     - title: Install and setup
       links:
         - title: Most configurations
-          url: /fas8300/install-setup.html
+          url: /install-setup.html
         - title: Fabric-attached MetroCluster configurations
           url: https://docs.netapp.com/us-en/ontap-metrocluster/install-fc/index.html
         - title: Stretch MetroCluster configurations
@@ -18,27 +18,27 @@ indexpage:
     - title: Maintain
       links:
         - title: Boot media
-          url: /fas8300/bootmedia-replace-overview.html
+          url: /bootmedia-replace-overview.html
         - title: Caching module
-          url: /fas8300/caching-module-replace.html
+          url: /caching-module-replace.html
         - title: Chassis
-          url: /fas8300/chassis-replace-overview.html
+          url: /chassis-replace-overview.html
         - title: Controller module
-          url: /fas8300/controller-replace-overview.html
+          url: /controller-replace-overview.html
         - title: DIMM
-          url: /fas8300/dimm-replace.html
+          url: /dimm-replace.html
         - title: Fan
-          url: /fas8300/fan-replace.html
+          url: /fan-replace.html
         - title: NVDIMM
-          url: /fas8300/dimm-replace.html
+          url: /dimm-replace.html
         - title: NVDIMM battery
-          url: /fas8300/nvmem-nvram-battery-replace.html
+          url: /nvmem-nvram-battery-replace.html
         - title: PCIe or mezzanine card
-          url: /fas8300/pci-cards-and-risers-replace.html
+          url: /pci-cards-and-risers-replace.html
         - title: Power supply
-          url: /fas8300/power-supply-swapout.html
+          url: /power-supply-swapout.html
         - title: RTC battery
-          url: /fas8300/rtc-battery-replace.html
+          url: /rtc-battery-replace.html
     - title: Learn
       links:
         - title: System data sheet
@@ -50,9 +50,9 @@ indexpage:
     - title: Add or remove shelves
       links:
         - title: NS224
-          url: /ns224/index.html
+          url: https://docs.netapp.com/us-en/ontap-systems/ns224/index.html
         - title: SAS with IOM12
-          url: /sas3/index.html
+          url: https://docs.netapp.com/us-en/ontap-systems/sas3/index.html
     - title: Install and maintain switches
       links:
         - title: Broadcom-supported switches

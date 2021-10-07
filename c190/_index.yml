@@ -8,7 +8,7 @@ indexpage:
     - title: Install and setup
       links:
         - title: Most configurations
-          url: /c190/install-setup.html
+          url: /install-setup.html
         - title: Fabric-attached MetroCluster configurations
           url: https://docs.netapp.com/us-en/ontap-metrocluster/install-fc/index.html
         - title: Stretch MetroCluster configurations
@@ -18,19 +18,19 @@ indexpage:
     - title: Maintain
       links:
         - title: Boot media
-          url: /c190/bootmedia-replace-overview.html
+          url: /bootmedia-replace-overview.html
         - title: Chassis
-          url: /c190/chassis-replace-overview.html
+          url: /chassis-replace-overview.html
         - title: Controller module
-          url: /c190/controller-replace-overview.html
+          url: /controller-replace-overview.html
         - title: DIMM
-          url: /c190/dimm-replace.html
+          url: /dimm-replace.html
         - title: NVMEM battery
-          url: /c190/nvmem-nvram-battery-replace.html
+          url: /nvmem-nvram-battery-replace.html
         - title: Power supply
-          url: /c190/power-supply-swapout.html
+          url: /power-supply-swapout.html
         - title: RTC battery
-          url: /c190/rtc-battery-replace.html
+          url: /rtc-battery-replace.html
     - title: Learn
       links:
         - title: Storage data sheet
