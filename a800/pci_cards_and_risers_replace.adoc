@@ -59,7 +59,6 @@ Make sure that you support the bottom of the controller module as you slide it o
 . Place the controller module on a stable, flat surface, and then open the air duct:
  .. Press in the locking tabs on the sides of the air duct toward the middle of the controller module.
  .. Slide the air duct toward the fan modules, and then rotate it upward to its completely open position.
-
 +
 image::../media/drw_a800_open_air_duct.gif[]
 +
@@ -180,7 +179,6 @@ After you replace a component within the controller module, you must reinstall t
  .. Swing the air duct all the way down to the controller module.
  .. Slide the air duct toward the risers until the locking tabs click into place.
  .. Inspect the air duct to make sure that it is properly seated and locked into place.
-
 +
 image::../media/drw_a800_close_air_duct.gif[]
 +

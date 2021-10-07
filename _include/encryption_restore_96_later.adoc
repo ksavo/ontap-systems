@@ -7,9 +7,10 @@ Once environment variables are checked, you must complete steps specific to syst
 == Restore NVE or NSE when Onboard Key Manager is enabled
 
 . Connect the console cable to the target node.
-. Use the boot_ontap command at the LOADER prompt to boot the node.
+. Use the `boot_ontap` command at the LOADER prompt to boot the node.
 . Check the console output:
 +
+[%header,cols="1,2"]
 |===
 | If the console displays...| Then...
 a|
@@ -100,7 +101,7 @@ If any interfaces are listed as `false`, revert those interfaces back to their h
 == Restore NSE/NVE on systems running ONTAP 9.6 and later
 
 . Connect the console cable to the target node.
-. Use the boot_ontap command at the LOADER prompt to boot the node.
+. Use the `boot_ontap` command at the LOADER prompt to boot the node.
 . Check the console output:
 +
 |===

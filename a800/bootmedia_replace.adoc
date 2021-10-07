@@ -120,7 +120,7 @@ Do not over-tighten the screw or you might damage the boot media.
 [.lead]
 The replacement boot media that you installed is without a boot image so you need to transfer a boot image using a USB flash drive.
 
-.Before you bgin
+.Before you begin
 
  * You must have a USB flash drive, formatted to FAT32, with at least 4GB capacity.
  * A copy of the same image version of ONTAP as what the impaired controller was running. You can download the appropriate image from the Downloads section on the NetApp Support Site
@@ -134,7 +134,7 @@ The replacement boot media that you installed is without a boot image so you nee
   .. Download the service image to your work space on your laptop.
   .. Unzip the service image.
  +
-NOTE: If you are extracting the contents using Windows, do not use winzip to extract the netboot image. Use another extraction tool, such as 7-Zip or WinRAR.
+NOTE: If you are extracting the contents using Windows, do not use WinZip to extract the netboot image. Use another extraction tool, such as 7-Zip or WinRAR.
  +
  There are two folders in the unzipped service image file:
  +

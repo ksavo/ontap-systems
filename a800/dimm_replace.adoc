@@ -130,7 +130,6 @@ After you replace a FRU in the controller module, you must reinstall the control
  .. Swing the air duct all the way down to the controller module.
  .. Slide the air duct toward the risers until the locking tabs click into place.
  .. Inspect the air duct to make sure that it is properly seated and locked into place.
-
 +
 image::../media/drw_a700s_close_air_duct.gif[]
 +
