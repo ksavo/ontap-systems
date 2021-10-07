@@ -14,8 +14,8 @@ entries:
       url: /fas2700/install-detailed-guide.html
   - title: Maintain
     entries:
-      - title: Boot media
-        entries:
+    - title: Boot media
+      entries:
         - title: Overview
           url: /fas2700/bootmedia-replace-overview.html
         - title: Check onboard encryption keys as needed
@@ -30,10 +30,10 @@ entries:
           url: /fas2700/bootmedia-encryption-restore.html
         - title: Return the failed part to NetApp
           url: /fas2700/bootmedia-complete-rma.html
-      - title: Caching module
-        url: /fas2700/caching-module-replace.html
-      - title: Chassis
-        entries:
+    - title: Caching module
+      url: /fas2700/caching-module-replace.html
+    - title: Chassis
+      entries:
         - title: Overview
           url: /fas2700/chassis-replace-overview.html
         - title: Shut down the impaired controller
@@ -42,16 +42,16 @@ entries:
           url: /fas2700/chassis-replace-move-hardware.html
         - title: Restore and verify configuration
           url: /fas2700/chassis-replace-complete-system-restore-rma.html
-      - title: Controller
-        url: /fas2700/controller-replace.html
-        entries:
+    - title: Controller
+      entries:
+        - title: Overview
+          url: /fas2700/controller-replace-overview.html
         - title: Shut down the impaired controller
           url: /fas2700/controller-replace-impaired-controller-shutdown-parent.html
-          entries:
-          - title: Shut down the node
-            url: /fas2700/controller-replace-impaired-controller-shutdown.html
-          - title: Shut down a node in a two-node MetroCluster configuration
-            url: /fas2700/controller-replace-2n-mcc-shut-down.html
+        - title: Shut down the node
+          url: /fas2700/controller-replace-impaired-controller-shutdown.html
+        - title: Shut down a node in a two-node MetroCluster configuration
+          url: /fas2700/controller-replace-2n-mcc-shut-down.html
         - title: Replace the controller hardware
           url: /fas2700/controller-replace-overview.html
         - title: Restore and verify the system configuration
@@ -60,11 +60,11 @@ entries:
           url: /fas2700/controller-replace-complete-system-restoration.html
         - title: Complete the replacement process
           url: /fas2700/controller-replace-complete-rma.html
-      - title: DIMM
-        url: /fas2700/dimm-replace.html
-      - title: NVMEM battery
-        url: /fas2700/nvmem-nvram-battery-replace.html
-      - title: Power supply
-        url: /fas2700/power-supply-swap-out.html
-      - title: Real-time clock battery
-        url: /fas2700/rtc-battery-replace.html
+    - title: DIMM
+      url: /fas2700/dimm-replace.html
+    - title: NVMEM battery
+      url: /fas2700/nvmem-nvram-battery-replace.html
+    - title: Power supply
+      url: /fas2700/power-supply-swap-out.html
+    - title: Real-time clock battery
+      url: /fas2700/rtc-battery-replace.html
