@@ -54,7 +54,7 @@ a|
 Latching mechanism
 |===
 
-= legend_icon svg
+== legend_icon svg
 
 |===
 a|
@@ -67,7 +67,7 @@ a|
 Latching mechanism
 |===
 
-= legend_icon png (note)
+== legend_icon png (note)
 
 |===
 a|
