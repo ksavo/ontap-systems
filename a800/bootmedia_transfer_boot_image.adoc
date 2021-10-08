@@ -25,7 +25,7 @@ The replacement boot media that you installed is without a boot image so you nee
 NOTE: If you are extracting the contents using Windows, do not use WinZip to extract the netboot image. Use another extraction tool, such as 7-Zip or WinRAR.
 +
 There are two folders in the unzipped service image file:
-
++
   *** `boot`
   *** `efi`
 
