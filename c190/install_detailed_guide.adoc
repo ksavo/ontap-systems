@@ -87,7 +87,7 @@ image::../media/oie_cable_fiber_lc_connector.gif[]
 a|
 SFP + FC host network
 a|
-Cat 6, RJ-45 (order dependant)
+Cat 6, RJ-45 (order dependent)
 a|
 X6585-R6 (112-00291), 3m
 
@@ -146,7 +146,7 @@ You can cable the controllers to your network by using the two-node switchless c
 [.lead]
 UTA2 ports and management ports on the controller modules are connected to switches. The cluster interconnect ports are cabled on both controller modules.
 
-You must have contacted your network administrator for information about connecting the system to the switches.
+Contact your network administrator for information about connecting the system to the switches.
 
 Be sure to check the illustration arrow for the proper cable connector pull-tab orientation.
 
@@ -156,7 +156,7 @@ NOTE: As you insert the connector, you should feel it click into place; if you d
 
 NOTE: If connecting to an optical switch, insert the SFP into the controller port before cabling to the port.
 
-. You can use the animation or the step-by step instructions to complete the cabling between the controllers and to the switches:
+. Use the animation or the step-by step instructions to complete the cabling between the controllers and to the switches:
 +
 image::../media/drw_c190_tnsc_unified_network_cabling_animated_gif.svg[]
 +
@@ -196,7 +196,7 @@ DO NOT plug in the power cords at this point.
 [.lead]
 UTA2 ports and management ports on the controller modules are connected to switches. The cluster interconnect ports are cabled to the cluster interconnect switches.
 
-You must have contacted your network administrator for information about connecting the system to the switches.
+Contact your network administrator for information about connecting the system to the switches.
 
 Be sure to check the illustration arrow for the proper cable connector pull-tab orientation.
 
@@ -206,7 +206,7 @@ NOTE: As you insert the connector, you should feel it click into place; if you d
 
 NOTE: If connecting to an optical switch, insert the SFP into the controller port before cabling to the port.
 
-. You can use the animation or the step-by step instructions to complete the cabling between the controllers and the switches:
+. Use the animation or the step-by step instructions to complete the cabling between the controllers and the switches:
 +
 image::../media/drw_c190_switched_unified_network_cabling_animated_gif.svg[]
 +
@@ -244,7 +244,7 @@ DO NOT plug in the power cords at this point.
 [.lead]
 RJ45 ports and management ports on the controller modules are connected to switches. The cluster interconnect ports are cabled on both controller modules.
 
-You must have contacted your network administrator for information about connecting the system to the switches.
+Contact your network administrator for information about connecting the system to the switches.
 
 Be sure to check the illustration arrow for the proper cable connector pull-tab orientation.
 
@@ -252,7 +252,7 @@ image::../media/oie_cable_pull_tab_down.gif[]
 
 NOTE: As you insert the connector, you should feel it click into place; if you do not feel it click, remove it, turn it around and try again.
 
-. You can use the animation or the step-by step instructions to complete the cabling between the controllers and to the switches:
+. Use the animation or the step-by step instructions to complete the cabling between the controllers and to the switches:
 +
 image::../media/drw_c190_tnsc_ethernet_network_cabling_animated_gif.svg[]
 +
@@ -292,7 +292,7 @@ DO NOT plug in the power cords at this point.
 [.lead]
 RJ45 ports and management ports on the controller modules are connected to switches. The cluster interconnect ports are cabled to the cluster interconnect switches.
 
-You must have contacted your network administrator for information about connecting the system to the switches.
+Contact your network administrator for information about connecting the system to the switches.
 
 Be sure to check the illustration arrow for the proper cable connector pull-tab orientation.
 
@@ -300,7 +300,7 @@ image::../media/oie_cable_pull_tab_down.gif[]
 
 NOTE: As you insert the connector, you should feel it click into place; if you do not feel it click, remove it, turn it around and try again.
 
-. You can use the animation or the step-by step instructions to complete the cabling between the controllers and the switches:
+. Use the animation or the step-by step instructions to complete the cabling between the controllers and the switches:
 +
 image::../media/drw_c190_switched_ethernet_network_cabling_animated.gif[]
 +
@@ -336,7 +336,7 @@ DO NOT plug in the power cords at this point.
 == Step 4: Complete system setup and configuration
 
 [.lead]
-You can complete the system setup and configuration using cluster discovery with only a connection to the switch and laptop, or by connecting directly to a controller in the system and then connecting to the management switch.
+Complete the system setup and configuration using cluster discovery with only a connection to the switch and laptop, or by connecting directly to a controller in the system and then connecting to the management switch.
 
 === Option 1: Complete system setup and configuration if network discovery is enabled
 
@@ -431,7 +431,7 @@ NOTE: Check your laptop or console's online help if you do not know how to confi
 . Using System Manager on your laptop or console, configure your cluster:
  .. Point your browser to the node management IP address.
 +
-NOTE: The format for the address is https://x.x.x.x.
+NOTE: The format for the address is +https://x.x.x.x+.
 
  .. Configure the system using the data you collected in the link:https://library.netapp.com/ecm/ecm_download_file/ECMLP2862613[NetApp ONTAP Configuration Guide].
 . Verify the health of your system by running Config Advisor.

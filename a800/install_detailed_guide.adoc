@@ -82,7 +82,7 @@ X66240A-2 (112-00598), 2m;
 
 X66240A-5 (112-00600), 5m
 a|
-RJ-45 (order dependant)
+RJ-45 (order dependent)
 a|
 Not applicable
 a|
@@ -154,14 +154,14 @@ There is required cabling for your platform's cluster using the two-node switchl
 === Required cabling: Cable controllers to a cluster
 
 [.lead]
-You can cable the controllers to a cluster by using the two-node switchless cluster method or by using the cluster interconnect network.
+Cable the controllers to a cluster by using the two-node switchless cluster method or by using the cluster interconnect network.
 
 ==== Option 1: Cable a two-node switchless cluster
 
 [.lead]
 Management network ports on the controllers are connected to switches. The HA interconnect and cluster interconnect ports are cabled on both controllers.
 
-You must have contacted your network administrator for information about connecting the system to the switches.
+Contact your network administrator for information about connecting the system to the switches.
 
 Be sure to check the illustration arrow for the proper cable connector pull-tab orientation.
 
@@ -169,7 +169,7 @@ image::../media/oie_cable_pull_tab_up.gif[]
 
 NOTE: As you insert the connector, you should feel it click into place; if you do not feel it click, remove it, turn it around and try again.
 
-. You can used the animation or the step-by step instructions to complete the cabling between the controllers and to the switches:
+. Use the animation or the step-by step instructions to complete the cabling between the controllers and to the switches:
 +
 https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=edc42447-f721-4cbe-b080-ab0c0123a139[Cabling a two-node switchless cluster]
 +
@@ -215,7 +215,7 @@ DO NOT plug in the power cords at this point.
 [.lead]
 Cluster interconnect and management network ports on the controllers are connected to switches while the HA interconnect ports are cabled on both controllers.
 
-You must have contacted your network administrator for information about connecting the system to the switches.
+Contact your network administrator for information about connecting the system to the switches.
 
 Be sure to check the illustration arrow for the proper cable connector pull-tab orientation.
 
@@ -223,7 +223,7 @@ image::../media/oie_cable_pull_tab_up.gif[]
 
 NOTE: As you insert the connector, you should feel it click into place; if you do not feel it click, remove it, turn it around and try again.
 
-. You can used the animation or the step-by step instructions to complete the cabling between the controllers and to the switches:
+. Use the animation or the step-by step instructions to complete the cabling between the controllers and to the switches:
 +
 https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=49e48140-4c5a-4395-a7d7-ab0c0123a10e[Cabling a switched cluster]
 +
@@ -264,17 +264,17 @@ DO NOT plug in the power cords at this point.
 . To complete setting up your system, see link:install-detailed-guide.html#step-4-complete-system-setup-and-configuration[Step 4: Completing system setup and configuration]
 
 
-=== Optional cabling: Cable configuration-dependant options
+=== Optional cabling: Cable configuration-dependent options
 
 [.lead]
-You have configuration-dependant optional cabling to the Fibre Channel or iSCSI host networks or direct-attached storage. This cabling is not exclusive; you can have cabling to a host network and storage.
+You have configuration-dependent optional cabling to the Fibre Channel or iSCSI host networks or direct-attached storage. This cabling is not exclusive; you can have cabling to a host network and storage.
 
 ==== Option 1: Cable to a Fibre Channel host network
 
 [.lead]
 Fibre Channel ports on the controllers are connected to Fibre Channel host network switches.
 
-You must have contacted your network administrator for information about connecting the system to the switches.
+Contact your network administrator for information about connecting the system to the switches.
 
 Be sure to check the illustration arrow for the proper cable connector pull-tab orientation.
 
@@ -309,7 +309,7 @@ To complete setting up your system, see link:install-detailed-guide.html#step-4-
 [.lead]
 10GbE ports on the controllers are connected to 10GbE host network switches.
 
-You must have contacted your network administrator for information about connecting the system to the switches.
+Contact your network administrator for information about connecting the system to the switches.
 
 Be sure to check the illustration arrow for the proper cable connector pull-tab orientation.
 
@@ -350,7 +350,7 @@ image::../media/oie_cable_pull_tab_up.gif[]
 
 NOTE: As you insert the connector, you should feel it click into place; if you do not feel it click, remove it, turn it around and try again.
 
-. You can use the animation or the step-by-step instructions to cable your controller modules to a single shelf.
+. Use the animation or the step-by-step instructions to cable your controller modules to a single shelf.
 +
 https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=09dade4f-00bd-4d41-97d7-ab0c0123a0b4[Cabling the controllers to a single drive shelf]
 +
@@ -380,7 +380,7 @@ image::../media/oie_cable_pull_tab_up.gif[]
 
 NOTE: As you insert the connector, you should feel it click into place; if you do not feel it click, remove it, turn it around and try again.
 
-. You can use the following animation or the written steps to cable your controllers to two drive shelves.
+. Use the following animation or the written steps to cable your controllers to two drive shelves.
 +
 https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=fe50ac38-9375-4e6b-85af-ab0c0123a0e0[Cabling the controllers to two drive shelves]
 +
@@ -402,7 +402,7 @@ Cable controller B to the shelves:    image:../media/drw_affa800_2shelf_cabling_
 == Step 4: Complete system setup and configuration
 
 [.lead]
-You can complete the system setup and configuration using cluster discovery with only a connection to the switch and laptop, or by connecting directly to a controller in the system and then connecting to the management switch.
+Complete the system setup and configuration using cluster discovery with only a connection to the switch and laptop, or by connecting directly to a controller in the system and then connecting to the management switch.
 
 === Option 1: Complete system setup and configuration if network discovery is enabled
 
@@ -419,7 +419,7 @@ See your laptop's online help for more information.
 
 . Use the following animation to connect your laptop to the Management switch.
 +
-https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=d61f983e-f911-4b76-8b3a-ab1b0066909b[Connecting your laptop to the Management switch] 
+https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=d61f983e-f911-4b76-8b3a-ab1b0066909b[Connecting your laptop to the Management switch]
 
 . Select an ONTAP icon listed to discover:
 +
@@ -489,7 +489,7 @@ NOTE: Check your laptop or console's online help if you do not know how to confi
 . Using System Manager on your laptop or console, configure your cluster:
  .. Point your browser to the node management IP address.
 +
-NOTE: The format for the address is https://x.x.x.x.
+NOTE: The format for the address is +https://x.x.x.x+.
 
  .. Configure the system using the data you collected in the _NetApp ONTAP Configuration guide_.
 +

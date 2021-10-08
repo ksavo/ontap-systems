@@ -109,7 +109,7 @@ image:../media/oie_cable_fiber_lc_connector.svg[]
 a|
 FC configurations (order-dependent)
 a|
-RJ-45 (order dependant)
+RJ-45 (order dependent)
 a|
 X6585-R6 (112-00291), 3m
 

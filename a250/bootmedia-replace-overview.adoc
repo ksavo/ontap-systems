@@ -13,9 +13,9 @@ The boot media stores a primary and secondary set of system (boot image) files t
 
 *Before you begin*
 
-You must have a USB flash drive, formatted to MBR/FAT32, with the appropriate amount of storage to hold the image_xxx.tgz
+You must have a USB flash drive, formatted to MBR/FAT32, with the appropriate amount of storage to hold the `image_xxx.tgz`
 
-You also must copy the image_xxx.tgz file to the USB flash drive for later use in this procedure.
+You also must copy the `image_xxx.tgz` file to the USB flash drive for later use in this procedure.
 
 *About this task*
 
