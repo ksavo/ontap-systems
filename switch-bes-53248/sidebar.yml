@@ -13,7 +13,7 @@ entries:
       url: /switch-bes-53248/configure-new-switch.html
     - title: Initial installation
       url: /switch-bes-53248/configure-install-initial.html
-    - title: Enable SSH on BES-53248 cluster switches
+    - title: Enabled SSH on BES-53248 cluster switches
       url: /switch-bes-53248/configure-ssh.html
     - title: Install the EFOS software
       url: /switch-bes-53248/configure-efos-software.html
