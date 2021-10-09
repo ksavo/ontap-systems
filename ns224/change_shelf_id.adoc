@@ -15,7 +15,7 @@ You can change a shelf ID in a system when ONTAP is not yet running or when hot-
 
 * If ONTAP is up and running (controller modules are available to serve data), you must have verified that all drives in the shelf are unowned, spares, or part of offlined aggregate(s).
 +
-You can verify the state of the drives by using the `storage disk show -shelf shelf_number` command. Output in the Container Type column should display spare or broken if it is a failed drive. Additionally, the Container Name and Owner columns should have a dash.
+You can verify the state of the drives by using the `storage disk show -shelf _shelf_number_` command. Output in the `Container Type` column should display `spare` or `broken` if it is a failed drive. Additionally, the `Container Name` and `Owner` columns should have a dash.
 
 * You need a paper clip with one side straightened or a narrow tipped ballpoint pen.
 +
