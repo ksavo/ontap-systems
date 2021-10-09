@@ -2,6 +2,7 @@ After you have completed the FRU replacement in a two-node MetroCluster configur
 
 This task only applies to two-node MetroCluster configurations.
 
+.Steps
 . Verify that all nodes are in the `enabled` state: `metrocluster node show`
 +
 ----
@@ -18,8 +19,8 @@ Group Cluster Node           State          Mirroring Mode
 ----
 
 . Verify that resynchronization is complete on all SVMs: `metrocluster vserver show`
-. Verify that any automatic LIF migrations being performed by the healing operations were completed successfully: metrocluster check lif show
-. Perform the switchback by using the metrocluster switchback command from any node in the surviving cluster.
+. Verify that any automatic LIF migrations being performed by the healing operations were completed successfully: `metrocluster check lif show`
+. Perform the switchback by using the `metrocluster switchback` command from any node in the surviving cluster.
 . Verify that the switchback operation has completed: `metrocluster show`
 +
 The switchback operation is still running when a cluster is in the `waiting-for-switchback` state:
@@ -42,6 +43,6 @@ Cluster              Configuration State    Mode
 Remote: cluster_A configured      		normal
 ----
 +
-If a switchback is taking a long time to finish, you can check on the status of in-progress baselines by using the metrocluster config-replication resync-status show command.
+If a switchback is taking a long time to finish, you can check on the status of in-progress baselines by using the `metrocluster config-replication resync-status show` command.
 
 . Reestablish any SnapMirror or SnapVault configurations.

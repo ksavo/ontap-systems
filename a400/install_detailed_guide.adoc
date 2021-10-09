@@ -179,10 +179,10 @@ NOTE: As you insert the connector, you should feel it click into place; if you d
 . Use the animation or graphic to complete the cabling between the controllers and to the switches:
 +
 https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=48552ddf-0925-4f88-8e93-ab1b00666489[Two-node switchless cluster cabling]
-
++
 image::../media/drw_A400_TNSC_network_cabling.png[]
 
-Go to Cable controllers to drive shelves for drive shelf cabling instructions.
+. Go to <<Step 4: Cable controllers to drive shelves>> for drive shelf cabling instructions.
 
 === Option 2: Cable a switched cluster
 
@@ -204,10 +204,10 @@ NOTE: As you insert the connector, you should feel it click into place; if you d
 . Use the animation or graphic to complete the cabling between the controllers and to the switches:
 +
 https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=8fefba75-f395-4cf2-ba3c-ab1b00665870[Switched cluster cabling]
-
++
 image::../media/drw_a400_switched_network_cabling.png[]
 
-Go to Cable controllers to drive shelves for drive shelf cabling instructions.
+. Go to <<Step 4: Cable controllers to drive shelves>> for drive shelf cabling instructions.
 
 == Step 4: Cable controllers to drive shelves
 
@@ -230,10 +230,10 @@ NOTE: As you insert the connector, you should feel it click into place; if you d
 . Use the following animation or graphic to cable your controllers to a single drive shelf.
 +
 https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=48d68897-c91d-47dc-b4b0-ab1b0066808a[Cabling the controllers to one NS224 drive shelf]
-
++
 image::../media/drw_a400_one_ns224_shelves.png[]
 
-To complete setting up your system, go to Complete system setup and configuration.
+. Go to <<Step 5: Complete system setup and configuration>> to complete system setup and configuration.
 
 === Option 2: Cable the controllers to two drive shelves
 
@@ -251,10 +251,10 @@ NOTE: As you insert the connector, you should feel it click into place; if you d
 . Use the following animation or graphic to cable your controllers to two drive shelves.
 +
 https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=5501c7bf-8b74-49e8-8067-ab1b00668804[Cabling controllers to two NS224 drive shelves]
-
++
 image::../media/drw_a400_two_ns224_shelves.png[]
 
-To complete setting up your system, go to Complete system setup and configuration.
+. Go to <<Step 5: Complete system setup and configuration>> to complete system setup and configuration.
 
 === Option 3: Cable the controllers to SAS drive shelves
 
@@ -272,10 +272,10 @@ NOTE: As you insert the connector, you should feel it click into place; if you d
 . Use the following graphic to cable your controllers to two drive shelves.
 +
 https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=cbb0280e-708d-4365-92b6-ab1b006677ef[Cabling the controllers to SAS drive shelves]
-
++
 image::../media/drw_a400_three_ds224c_shelves.png[]
 
-To complete setting up your system, go to Complete system setup and configuration.
+. Go to <<Step 5: Complete system setup and configuration>> to complete system setup and configuration.
 
 == Step 5: Complete system setup and configuration
 
