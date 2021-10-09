@@ -55,7 +55,7 @@ Power cable locking mechanism
 
 . Use the cam handle to slide the power supply out of the system.
 +
-CAUTION:
+*CAUTION:*
 +
 When removing a power supply, always use two hands to support its weight.
 

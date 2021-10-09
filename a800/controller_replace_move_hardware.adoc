@@ -74,7 +74,7 @@ You must move the power supplies from the impaired controller module to the repl
 
 . Rotate the cam handle such that it can be used to pull power supply out of the controller module while pressing the locking tab.
 +
-CAUTION:
+*CAUTION:*
 +
 The power supply is short. Always use two hands to support it when removing it from the controller module so that it does not suddenly swing free from the controller module and injure you.
 +

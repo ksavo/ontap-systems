@@ -40,4 +40,4 @@ failover takeover" command. Are you sure you want to halt node
 +
 NOTE: You must perform a clean system shutdown before replacing the chassis to avoid losing unwritten data in the nonvolatile memory (NVMEM). If the NVMEM LED is flashing, there is content in the NVMEM that has not been saved to disk. You need to reboot the node and start from the beginning of this procedure. If repeated attempts to cleanly shut down the node fail, be aware that you might lose any data that was not saved to disk.
 
-. Where applicable, halt the second node to avoid a possible quorum error message in an HA pair configuration:: `system node halt -node second_node_name -ignore-quorum-warnings true`
+. Where applicable, halt the second node to avoid a possible quorum error message in an HA pair configuration: `system node halt -node second_node_name -ignore-quorum-warnings true`

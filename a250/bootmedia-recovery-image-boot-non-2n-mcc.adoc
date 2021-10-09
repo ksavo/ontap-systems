@@ -16,7 +16,7 @@ You must boot the ONTAP image from the USB drive, restore the file system, and v
 The image is downloaded from the USB flash drive.
 
 . When prompted, either enter the name of the image or accept the default image displayed inside the brackets on your screen.
-. Restore the var file system:
+. Restore the `var` file system:
 +
 [options="header" cols="1,2"]
 |===
@@ -68,13 +68,13 @@ If you are prompted to continue with the update, press `y`.
 
 . Ensure that the environmental variables are set as expected:
  .. Take the node to the LOADER prompt.
- .. Check the environment variable settings with the printenv command.
- .. If an environment variable is not set as expected, modify it with the setenvenvironment_variable_name changed_value command.
- .. Save your changes using the saveenv command.
+ .. Check the environment variable settings with the `printenv` command.
+ .. If an environment variable is not set as expected, modify it with the `setenvenvironment_variable_name changed_value` command.
+ .. Save your changes using the `saveenv` command.
 . The next depends on your system configuration:
  ** If your system has onboard keymanager, NSE or NVE configured, go to xref:bootmedia-encryption-restore.adoc[Post boot media replacement steps for OKM, NSE, and NVE]
  ** If your system does not have onboard keymanager, NSE or NVE configured, complete the steps in this section.
-. From the LOADER prompt, enter the boot_ontap command.
+. From the LOADER prompt, enter the `boot_ontap` command.
 +
 [options="header" cols="1,2"]
 |===
@@ -94,10 +94,10 @@ a|
 |===
 
 . Connect the console cable to the partner node.
-. Give back the node using the storage failover giveback -fromnode local command.
-. At the cluster prompt, check the logical interfaces with the net int -is-home false command.
+. Give back the node using the `storage failover giveback -fromnode local` command.
+. At the cluster prompt, check the logical interfaces with the `net int -is-home false` command.
 +
-If any interfaces are listed as "false", revert those interfaces back to their home port using the net int revert command.
+If any interfaces are listed as "false", revert those interfaces back to their home port using the `net int revert` command.
 
-. Move the console cable to the repaired node and run the version -v command to check the ONTAP versions.
-. Restore automatic giveback if you disabled it by using the storage failover modify -node local -auto-giveback true command.
+. Move the console cable to the repaired node and run the `version -v` command to check the ONTAP versions.
+. Restore automatic giveback if you disabled it by using the `storage failover modify -node local -auto-giveback true` command.

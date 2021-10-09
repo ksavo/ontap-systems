@@ -9,4 +9,4 @@ summary: 'Once environment variables are checked, you must complete steps specif
 :imagesdir: ../media/
 
 [.lead]
-include::../_include/encryption_restore_bootmedia.adoc[]
+include::../_include/encryption_restore_96_later.adoc[]
