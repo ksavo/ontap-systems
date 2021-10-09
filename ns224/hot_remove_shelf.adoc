@@ -64,6 +64,8 @@ NOTE: If you have failed drives, they display broken in the `Container Type` col
 
 +
 The following output shows drives on the shelf being removed (shelf 2) are in a correct state for removing the shelf. The aggregates are removed on all of the drives; therefore, a dash appears in the `Container Name` column for each drive. Ownership is also removed on all of the drives; therefore, a dash appears in the `Owner` column for each drive.
+
++
 ----
 cluster1::> storage disk show -shelf 2
 
@@ -77,6 +79,7 @@ Disk         Size Shelf Bay Type     Type        Name       Owner
 2.2.7           -     2   7 SSD-NVM  spare                -         -
 ...
 ----
+
 . Physically locate the shelf you are removing.
 . Disconnect the cabling from the shelf you are removing:
  .. Disconnect the power cord from the power supply by opening the power cord retainer, and then unplug the power cord from the power supply.

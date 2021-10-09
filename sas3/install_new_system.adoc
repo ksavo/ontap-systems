@@ -20,9 +20,11 @@ You must meet certain requirements before installing and cabling the disk shelve
 * If you are using mini-SAS HD SAS optical cables, you must have met the rules in link:install-cabling-rules.html#mini-sas-hd-sas-optical-cable-rules[Mini-SAS HD SAS optical cable rules].
 * You must have the installation and setup instructions for your platform model.
 +
-The installation and setup instructions addresses system setup and configuration for your new system. You use the instructions in conjunction with this procedure to install and cable the disk shelves.
+The installation and setup instructions address system setup and configuration for your new system. You use the instructions in conjunction with this procedure to install and cable the disk shelves.
 +
 Installation and setup instructions can be found by navigating to your platform model documentation.
++
+link:../index.html[AFF and FAS System Documentation]
 +
 https://docs.netapp.com/platstor/index.jsp[AFF and FAS Documentation Center]
 
