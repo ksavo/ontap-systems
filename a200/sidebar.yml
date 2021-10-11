@@ -4,7 +4,7 @@ url: /a200/index.html
 entries:
  - title: TEST TO BE REMOVED
    url: /a200/test.html
- - title: Install and setup
+ - title: Install and setup - AFF A200
    entries:
    - title: Cluster configuration worksheet
      url: /a200/install-worksheet-linkout.html
@@ -12,10 +12,10 @@ entries:
      url: /a200/install-setup-linkout.html
    - title: Setup video
      url: /a200/install-video-linkout.html
- - title: Maintain
+ - title: Maintain - AFF A200
    entries:
     # START boot media replacement
-    - title: Boot media
+    - title: Boot media - AFF A200
       entries:
         - title: Overview
           url: /a200/bootmedia-replace-overview.html
@@ -32,7 +32,7 @@ entries:
         - title: Return the failed part to NetApp
           url: /a200/bootmedia-complete-rma.html
       # END boot media replacement
-    - title: Chassis
+    - title: Chassis - AFF A200
       entries:
       - title: Overview
         url: /a200/chassis-replace-overview.html
@@ -42,7 +42,7 @@ entries:
         url: /a200/chassis-replace-move-hardware.html
       - title: Restoring and verifying configuration
         url: /a200/chassis-replace-complete-system-restore-rma.html
-    - title: Controller module
+    - title: Controller module - AFF A200
       entries:
       - title: Overview
         url: /a200/controller-replace-overview.html
@@ -56,11 +56,11 @@ entries:
         url: /a200/controller-replace-recable-reassign-disks.html
       - title: Complete system restoration
         url: /a200/controller-replace-restore-system-rma.html
-    - title: DIMM
+    - title: DIMM - AFF A200
       url: /a200/dimm-replace.html
-    - title: NVMEM battery
+    - title: NVMEM battery - AFF A200
       url: /a200/nvmem-nvram-battery-replace.html
-    - title: Power supply
+    - title: Power supply - AFF A200
       url: /a200/power-supply-swap-out.html
-    - title: Real-time clock battery
+    - title: Real-time clock battery - AFF A200
       url: /a200/rtc-battery-replace.html

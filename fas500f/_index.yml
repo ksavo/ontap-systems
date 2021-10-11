@@ -8,7 +8,7 @@ indexpage:
     - title: Install and setup
       links:
         - title: Most configurations
-          url: /fas500f/install-setup.html
+          url: /install-setup.html
         - title: Fabric-attached MetroCluster configurations
           url: https://docs.netapp.com/us-en/ontap-metrocluster/install-fc/index.html
         - title: Stretch MetroCluster configurations
@@ -18,23 +18,23 @@ indexpage:
     - title: Maintain
       links:
         - title: Boot media
-          url: /fas500f/bootmedia-replace-overview.html
+          url: /bootmedia-replace-overview.html
         - title: Chassis
-          url: /fas500f/chassis-replace-overview.html
+          url: /chassis-replace-overview.html
         - title: Controller module
-          url: /fas500f/controller-replace-overview.html
+          url: /controller-replace-overview.html
         - title: DIMM
-          url: /fas500f/dimm-replace.html
+          url: /dimm-replace.html
         - title: Fan
-          url: /fas500f/fan-replace.html
+          url: /fan-replace.html
         - title: Mezzanine
-          url: /fas500f/mezzanine-replace.html
+          url: /mezzanine-replace.html
         - title: NVMEM battery
-          url: /fas500f/nvmem-battery-replace.html
+          url: /nvmem-battery-replace.html
         - title: Power supply
-          url: /fas500f/power-supply-swapout.html
+          url: /power-supply-swapout.html
         - title: RTC battery
-          url: /fas500f/rtc-battery-replace.html
+          url: /rtc-battery-replace.html
     - title: Learn
       links:
         - title: System data sheet
@@ -46,7 +46,7 @@ indexpage:
     - title: Add or remove shelves
       links:
         - title: NS224
-          url: /ns224/index.html
+          url: https://docs.netapp.com/us-en/ontap-systems/ns224/index.html
     - title: Install and maintain switches
       links:
         - title: Broadcom-supported switches
