@@ -13,9 +13,10 @@ summary: You must replace a DIMM in the controller module when your system regis
 [.lead]
 You must replace a DIMM in the controller module when your system registers an increasing number of correctable error correction codes (ECC); failure to do so causes a system panic.
 
-All other components in the system must be functioning properly; if not, you must contact technical support.
+.What you'll need
+* All other components in the system must be functioning properly; if not, you must contact technical support.
 
-You must replace the failed component with a replacement FRU component you received from your provider.
+* You must replace the failed component with a replacement FRU component you received from your provider.
 
 == Step 1: Shut down the impaired controller
 
@@ -52,8 +53,10 @@ image::../media/drw_2600_opening_pcm_cover.svg[]
 [.lead]
 To replace the DIMMs, locate them inside the controller and follow the specific sequence of steps.
 
+.About this task
 If you are replacing a DIMM, you need to remove it after you have unplugged the NVMEM battery from the controller module.
 
+.Steps
 . If you are not already grounded, properly ground yourself.
 . Check the NVMEM LED on the controller module.
 +
@@ -69,7 +72,7 @@ image::../media/drw_2600_nvmem_battery_unplug.svg[]
 
  .. Confirm that the NVMEM LED is no longer lit.
  .. Reconnect the battery connector.
-. Return to link:dimm_replace.md#d9e132[dimm_replace.md#d9e132] of this procedure to recheck the NVMEM LED.
+. Return to step 2 of this procedure to recheck the NVMEM LED.
 . Locate the DIMMs on your controller module.
 +
 NOTE: Each system memory DIMM has an LED located on the board next to each DIMM slot. The LED for the faulty blinks every two seconds.
@@ -165,10 +168,13 @@ NOTE: If you miss the prompt and the controller module boots to ONTAP, enter `ha
 [.lead]
 After installing a new DIMM, you should run diagnostics.
 
+.What you'll need
 Your system must be at the LOADER prompt to start System Level Diagnostics.
 
+.About this task
 All commands in the diagnostic procedures are issued from the node where the component is being replaced.
 
+.Steps
 . If the node to be serviced is not at the LOADER prompt, perform the following steps:
  .. Select the Maintenance mode option from the displayed menu.
  .. After the node boots to Maintenance mode, halt the node: `halt`
@@ -213,7 +219,7 @@ The node displays the LOADER prompt.
 +
 *If your node is in an HA pair*, perform a give back: `storage failover giveback -ofnode replacement_node_name`
 +
-*Note:* If you disabled automatic giveback, re-enable it with the `storage failover modify` command.
+NOTE: If you disabled automatic giveback, re-enable it with the `storage failover modify` command.
 +
 *If your node is in a stand-alone configuration*, proceed to the next step. No action is required.
 +

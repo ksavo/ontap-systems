@@ -9,9 +9,9 @@ summary: You must recable the storage and confirm disk reassignment.
 :imagesdir: ../media/
 
 [.lead]
-Continue the replacement procedure by recabling the storage and confirming disk reassignment.
+Continue the replacement procedure by re-cabling the storage and confirming disk reassignment.
 
-== Step 1: Recable the system
+== Step 1: Re-cable the system
 
 [.lead]
 include::../_include/recable_system_after_controller_rep.adoc[]
@@ -26,8 +26,10 @@ If the storage system is in an HA pair, the system ID of the new controller modu
 [.lead]
 You must confirm the system ID change when you boot the replacement node and then verify that the change was implemented.
 
+.About this task
 This procedure applies only to systems running ONTAP in an HA pair.
 
+.Steps
 . If the replacement node is in Maintenance mode (showing the `*>` prompt, exit Maintenance mode and go to the LOADER prompt: `halt`
 . From the LOADER prompt on the replacement node, boot the node, entering `y` if you are prompted to override the system ID due to a system ID mismatch:``boot_ontap``
 . Wait until the Waiting for giveback... message is displayed on the replacement node console and then, from the healthy node, verify that the new partner system ID has been automatically assigned: storage failover show
