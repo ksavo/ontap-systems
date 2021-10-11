@@ -45,19 +45,19 @@ Failover groups
 a|
 `network interface failover-groups show -vserver <vserver_name>`
 
-*Note:* Record the names and ports of failover groups that are not clusterwide.
+NOTE: Record the names and ports of failover groups that are not clusterwide.
 a|
 VLAN configuration
 a|
 `network port vlan show -node <node_name>`
 
-*Note:* Record each network port and VLAN ID pairing.
+NOTE: Record each network port and VLAN ID pairing.
 a|
 Interface group configuration
 a|
 `network port ifgrp show -node <node_name> -instance`
 
-*Note:* Record the names of the interface groups and the ports assigned to them.
+NOTE: Record the names of the interface groups and the ports assigned to them.
 a|
 Broadcast domains
 a|
@@ -88,7 +88,7 @@ a|
 Extract the contents of the `<ontap_version>_image.tgz` file to the target directory:
 `tar -zxvf <ontap_version>_image.tgz`
 
-*Note:* If you are extracting the contents on Windows, use 7-Zip or WinRAR to extract the netboot image.
+NOTE: If you are extracting the contents on Windows, use 7-Zip or WinRAR to extract the netboot image.
 
 Your directory listing should contain a netboot folder with a kernel file:
 `netboot/kernel`
@@ -104,4 +104,4 @@ NOTE: You do not need to extract the contents of the `<ontap_version>_image.tgz`
 
 |===
 
-You will use information in the directory to link:setting_up_the_new_nodes.md#[Set up the new nodes].
+You will use information in the directory to link:upgrade-set-up-new-nodes.html[Set up the new nodes].

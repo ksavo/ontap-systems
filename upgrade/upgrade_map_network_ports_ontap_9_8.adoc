@@ -90,7 +90,7 @@ Create VLAN ports:
 +
 `vlan create -node <node_name> -vlan-name <vlan_port>`
 +
-NOTE: Depending on the complexity of the networking configuration of the system being upgraded, you might be required to repeat Step 5, substeps (a) to (g) ountil all ports are placed correctly where needed.
+NOTE: Depending on the complexity of the networking configuration of the system being upgraded, you might be required to repeat Step 5, substeps (a) to (g) until all ports are placed correctly where needed.
 
 . If there are no VLANs configured on the system, go to Step <<map_9.8_7,Step 7>>. If there are VLANs configured, restore displaced VLANs that were previously configured on ports that no longer exist or were configured on ports that were moved to another broadcast domain.
 .. Display the displaced VLANs:
