@@ -21,7 +21,7 @@ Moving out a power supply when replacing a chassis involves turning off, disconn
 . Squeeze the latch on the power supply cam handle, and then open the cam handle to fully release the power supply from the mid plane.
 . Use the cam handle to slide the power supply out of the system.
 +
-CAUTION:
+*CAUTION:*
 +
 When removing a power supply, always use two hands to support its weight.
 

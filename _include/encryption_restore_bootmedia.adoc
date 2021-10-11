@@ -27,16 +27,16 @@ a|
 
  .. Enter `Ctrl-C` at the prompt
  .. At the message: Do you wish to halt this node rather than wait [y/n]? , enter: `y`
- .. At the LOADER prompt, enter the boot_ontap menu command.
+ .. At the LOADER prompt, enter the `boot_ontap menu` command.
 
 +
 |===
 
-. At the Boot Menu, enter the hidden command, recover_onboard_keymanager and reply `y` at the prompt
+. At the Boot Menu, enter the hidden command, `recover_onboard_keymanager` and reply `y` at the prompt
 . Enter the passphrase for the onboard key manager you obtained from the customer at the beginning of this procedure.
-. When prompted to enter the backup data, paste the backup data you captured at the beginning of this procedure, when asked. Paste the output of security key-manager backup show OR security key-manager onboard show-backup command
+. When prompted to enter the backup data, paste the backup data you captured at the beginning of this procedure, when asked. Paste the output of `security key-manager backup show` OR `security key-manager onboard show-backup` command
 +
-NOTE: The data is output from either security key-manager backup show or security key-manager onboard show-backup command.
+NOTE: The data is output from either `security key-manager backup show` or `security key-manager onboard show-backup` command.
 +
 Example of backup data:
 +
@@ -64,11 +64,11 @@ AAAAAAAA
 
 . At the Boot Menu select the option for Normal Boot.
 +
-The system boots to Waiting for giveback... prompt.
+The system boots to `Waiting for giveback...` prompt.
 
 . Move the console cable to the partner node and login as admin.
-. Confirm the target node is ready for giveback with the storage failover show command.
-. Giveback only the CFO aggregates with the storage failover giveback -fromnode local -only-cfo-aggregates true command.
+. Confirm the target node is ready for giveback with the `storage failover show` command.
+. Giveback only the CFO aggregates with the storage failover giveback `-fromnode local -only-cfo-aggregates true` command.
  ** If the command fails because of a failed disk, physically dis-engage the failed disk, but leave the disk in the slot until a replacement is received.
  ** If the command fails because of an open CIFS sessions, check with customer how to close out CIFS sessions.
 +
@@ -76,37 +76,37 @@ NOTE: Terminating CIFS can cause loss of data.
 
  ** If the command fails because the partner "not ready", wait 5 minutes for the NVMEMs to synchronize.
  ** If the command fails because of an NDMP, SnapMirror, or SnapVault process, disable the process. See the appropriate Documentation Center for more information.
-. Once the giveback completes, check the failover and giveback status with the storage failover show and storage failover show-giveback commands.
+. Once the giveback completes, check the failover and giveback status with the `storage failover show` and `storage failover show-giveback` commands.
 +
 Only the CFO aggregates (root aggregate and CFO style data aggregates) will be shown.
 
 . Move the console cable to the target node.
 . If you are running ONTAP 9.5 and earlier, run the key-manager setup wizard:
- .. Start the wizard using the security key-manager setup -nodenodename command, and then enter the passphrase for onboard key management when prompted.
- .. Enter the key-manager key show -detail command to see a detailed view of all keys stored in the onboard key manager and verify that the `Restored` column = `yes` for all authentication keys.
+ .. Start the wizard using the `security key-manager setup -nodenodename` command, and then enter the passphrase for onboard key management when prompted.
+ .. Enter the `key-manager key show -detail` command to see a detailed view of all keys stored in the onboard key manager and verify that the `Restored` column = `yes` for all authentication keys.
 +
 NOTE: If the `Restored` column = anything other than `yes`, contact Customer Support.
 
  .. Wait 10 minutes for the key to synchronize across the cluster.
 . If you are running ONTAP 9.6 or later, run the security key-manager onboard sync:
- .. Run the security key-manager onboard sync command and then enter the passphrase when prompted.
+ .. Run the `security key-manager onboard sync` command and then enter the passphrase when prompted.
  .. Enter the security key-manager key query command to see a detailed view of all keys stored in the onboard key manager and verify that the `Restored` column = `yes/true` for all authentication keys.
 +
 NOTE: If the `Restored` column = anything other than `yes/true`, contact Customer Support.
 
  .. Wait 10 minutes for the key to synchronize across the cluster.
 . Move the console cable to the partner node.
-. Give back the target node using the storage failover giveback -fromnode local command.
-. Check the giveback status, 3 minutes after it reports complete, using the storage failover show command.
+. Give back the target node using the `storage failover giveback -fromnode local` command.
+. Check the giveback status, 3 minutes after it reports complete, using the `storage failover show` command.
 +
 If giveback is not complete after 20 minutes, contact Customer Support.
 
-. At the clustershell prompt, enter the net int show -is-home false command to list the logical interfaces that are not on their home node and port.
+. At the clustershell prompt, enter the `net int show -is-home false` command to list the logical interfaces that are not on their home node and port.
 +
-If any interfaces are listed as `false`, revert those interfaces back to their home port using the net int revert command.
+If any interfaces are listed as `false`, revert those interfaces back to their home port using the `net int revert` command.
 
-. Move the console cable to the target node and run the version -v command to check the ONTAP versions.
-. Restore automatic giveback if you disabled it by using the storage failover modify -node local -auto-giveback true command.
+. Move the console cable to the target node and run the `version -v` command to check the ONTAP versions.
+. Restore automatic giveback if you disabled it by using the `storage failover modify -node local -auto-giveback true` command.
 
 == Option 2: Restore NSE/NVE on systems running ONTAP 9.5 and earlier
 
@@ -126,9 +126,10 @@ Waiting for giveback...
 a|
  .. Log into the partner node.
  .. Confirm the target node is ready for giveback with the storage failover show command.
+
 |===
 
-. Move the console cable to the partner node and give back the target node storage using the storage failover giveback -fromnode local -only-cfo-aggregates true local command.
+. Move the console cable to the partner node and give back the target node storage using the `storage failover giveback -fromnode local -only-cfo-aggregates true local` command.
  ** If the command fails because of a failed disk, physically dis-engage the failed disk, but leave the disk in the slot until a replacement is received.
  ** If the command fails because of an open CIFS sessions, check with customer how to close out CIFS sessions.
 +
@@ -136,14 +137,14 @@ NOTE: Terminating CIFS can cause loss of data.
 
  ** If the command fails because the partner "not ready", wait 5 minutes for the NVMEMs to synchronize.
  ** If the command fails because of an NDMP, SnapMirror, or SnapVault process, disable the process. See the appropriate Documentation Center for more information.
-. Wait 3 minutes and check the failover status with the storage failover show command.
-. At the clustershell prompt, enter the net int show -is-home false command to list the logical interfaces that are not on their home node and port.
+. Wait 3 minutes and check the failover status with the `storage failover show` command.
+. At the clustershell prompt, enter the `net int show -is-home false` command to list the logical interfaces that are not on their home node and port.
 +
-If any interfaces are listed as `false`, revert those interfaces back to their home port using the net int revert command.
+If any interfaces are listed as `false`, revert those interfaces back to their home port using the `net int revert` command.
 
-. Move the console cable to the target node and run the version -v command to check the ONTAP versions.
-. Restore automatic giveback if you disabled it by using the storage failover modify -node local -auto-giveback true command.
-. Use the storage encryption disk show at the clustershell prompt, to review the output.
+. Move the console cable to the target node and run the version `-v command` to check the ONTAP versions.
+. Restore automatic giveback if you disabled it by using the `storage failover modify -node local -auto-giveback true` command.
+. Use the `storage encryption disk show` at the clustershell prompt, to review the output.
 +
 NOTE: This command does not work if NVE (NetApp Volume Encryption) is configured
 
@@ -153,13 +154,13 @@ NOTE: This command does not work if NVE (NetApp Volume Encryption) is configured
 +
 Check the output of the security key-manager query again to ensure that the `Restored` column = `yes` and all key managers report in an available state
 . IF the Onboard Key Management is enabled:
- .. Use the security key-manager key show -detail to see a detailed view of all keys stored in the onboard key manager.
- .. Use the security key-manager key show -detail command and verify that the `Restored` column = `yes` for all authentication keys.
+ .. Use the `security key-manager key show -detail` to see a detailed view of all keys stored in the onboard key manager.
+ .. Use the `security key-manager key show -detail` command and verify that the `Restored` column = `yes` for all authentication keys.
 +
-If the `Restored` column = anything other than `yes`, use the security key-manager setup -node <Repaired_(Target)_node> to restore the Onboard Key Management settings. Rerun the security key-manager key show -detail to verify `Restored` column = `yes` for all authentication keys.
+If the `Restored` column = anything other than `yes`, use the `security key-manager setup -node <Repaired_(Target)_node>` to restore the Onboard Key Management settings. Rerun the security key-manager key show -detail to verify `Restored` column = `yes` for all authentication keys.
 . Connect the console cable to the partner node.
-. Give back the node using the storage failover giveback -fromnode local command.
-. Restore automatic giveback if you disabled it by using the storage failover modify -node local -auto-giveback true command.
+. Give back the node using the `storage failover giveback -fromnode local` command.
+. Restore automatic giveback if you disabled it by using the `storage failover modify -node local -auto-giveback true` command.
 
 == Option 3: Restore NSE/NVE on systems running ONTAP 9.6 and later
 
@@ -179,12 +180,11 @@ Waiting for giveback...
 a|
 
  .. Log into the partner node.
- .. Confirm the target node is ready for giveback with the storage failover show command.
+ .. Confirm the target node is ready for giveback with the `storage failover show` command.
 
-+
 |===
 
-. Move the console cable to the partner node and give back the target node storage using the storage failover giveback -fromnode local -only-cfo-aggregates true local command.
+. Move the console cable to the partner node and give back the target node storage using the `storage failover giveback -fromnode local -only-cfo-aggregates true local` command.
  ** If the command fails because of a failed disk, physically dis-engage the failed disk, but leave the disk in the slot until a replacement is received.
  ** If the command fails because of an open CIFS sessions, check with customer how to close out CIFS sessions.
 +
@@ -192,23 +192,23 @@ NOTE: Terminating CIFS can cause loss of data.
 
  ** If the command fails because the partner "not ready", wait 5 minutes for the NVMEMs to synchronize.
  ** If the command fails because of an NDMP, SnapMirror, or SnapVault process, disable the process. See the appropriate Documentation Center for more information.
-. Wait 3 minutes and check the failover status with the storage failover show command.
-. At the clustershell prompt, enter the net int show -is-home false command to list the logical interfaces that are not on their home node and port.
+. Wait 3 minutes and check the failover status with the `storage failover show` command.
+. At the clustershell prompt, enter the `net int show -is-home false` command to list the logical interfaces that are not on their home node and port.
 +
-If any interfaces are listed as `false`, revert those interfaces back to their home port using the net int revert command.
+If any interfaces are listed as `false`, revert those interfaces back to their home port using the `net int revert` command.
 
-. Move the console cable to the target node and run the version -v command to check the ONTAP versions.
-. Restore automatic giveback if you disabled it by using the storage failover modify -node local -auto-giveback true command.
-. Use the storage encryption disk show at the clustershell prompt, to review the output.
-. Use the security key-manager key query command to display the key IDs of the authentication keys that are stored on the key management servers.
+. Move the console cable to the target node and run the `version -v` command to check the ONTAP versions.
+. Restore automatic giveback if you disabled it by using the `storage failover modify -node local -auto-giveback true` command.
+. Use the `storage encryption disk show` at the clustershell prompt, to review the output.
+. Use the `security key-manager key query` command to display the key IDs of the authentication keys that are stored on the key management servers.
  ** If the `Restored` column = `yes/true`, you are done and can proceed to complete the replacement process.
  ** If the `Key Manager type` = `external` and the `Restored` column = anything other than `yes/true`, use the security key-manager external restore command to restore the key IDs of the authentication keys.
 +
 NOTE: If the command fails, contact Customer Support.
 
- ** If the `Key Manager type` = `onboard` and the `Restored` column = anything other than `yes/true`, use the security key-manager onboard sync command to re-sync the Key Manager type.
+ ** If the `Key Manager type` = `onboard` and the `Restored` column = anything other than `yes/true`, use the `security key-manager onboard sync` command to re-sync the Key Manager type.
 +
 Use the security key-manager key query to verify that the `Restored` column = `yes/true` for all authentication keys.
 . Connect the console cable to the partner node.
-. Give back the node using the storage failover giveback -fromnode local command.
-. Restore automatic giveback if you disabled it by using the storage failover modify -node local -auto-giveback true command.
+. Give back the node using the `storage failover giveback -fromnode local` command.
+. Restore automatic giveback if you disabled it by using the `storage failover modify -node local -auto-giveback true` command.

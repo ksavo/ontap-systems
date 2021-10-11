@@ -88,7 +88,7 @@ image:../media/oie_cable_fiber_lc_connector.svg[]
 a|
 FC host network
 a|
-Cat 6, RJ-45 (order dependant)
+Cat 6, RJ-45 (order dependent)
 a|
 Part numbers X6585-R6 (112-00291), 3m
 
