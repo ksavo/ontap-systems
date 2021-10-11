@@ -10,8 +10,13 @@ summary: After you replace the part, you can return the failed part to NetApp, a
 
 Remove and set aside the cable management devices from the left and right sides of the controller module.
 
+== TEST ICON CAPTURE
+
+image:../media/test-capture-icon-1.png[]
+
+
 == PNG
-image::../media/drw_25xx_cable_management_arm.svg[]
+image::../media/drw_25xx_cable_management_arm.png[]
 
 == GIF
 image::../media/drw_25xx_cable_management_arm.gif[]
@@ -22,7 +27,7 @@ image::../media/drw_25xx_cable_management_arm.svg[]
 Squeeze the latch on the cam handle until it releases, open the cam handle fully to release the controller module from the midplane, and then, using two hands, pull the controller module out of the chassis.
 
 == PNG
-image::../media/drw_2240_x_opening_cam_latch.svg[]
+image::../media/drw_2240_x_opening_cam_latch.png[]
 
 == GIF
 image::../media/drw_2240_x_opening_cam_latch.gif[]
@@ -34,7 +39,7 @@ Turn the controller module over and place it on a flat, stable surface.
 Open the cover by sliding in the blue tabs to release the cover, and then swing the cover up and open.
 
 == PNG
-image::../media/drw_2600_opening_pcm_cover.svg[]
+image::../media/drw_2600_opening_pcm_cover.png[]
 
 == GIF
 image::../media/drw_2600_opening_pcm_cover.gif[]
@@ -46,7 +51,8 @@ image::../media/drw_2600_opening_pcm_cover.svg[]
 
 |===
 a|
-image:../media/legend_icon_01.gif[] a|
+image:../media/legend_icon_01.gif[]
+a|
 Lever
 a|
 image:../media/legend_icon_02.gif[]

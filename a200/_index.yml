@@ -8,7 +8,7 @@ indexpage:
     - title: Install and setup
       links:
         - title: All configurations
-          url: /install-setup-installation.html
+          url: /install-setup-linkout.html
     - title: Maintain
       links:
         - title: Boot media
