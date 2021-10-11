@@ -9,7 +9,7 @@ summary: The following SAS cabling rules, examples and worksheets are available 
 :imagesdir: ../media/
 
 [.lead]
-The SAS cabling rules, worksheets, and examples content is available to help you cable your SAS drive shelves with IOM12 modules to your storage system.
+To help you cable your SAS drive shelves with IOM12 modules to your storage system, you can use any of the available SAS cabling rules, worksheets, and examples content as needed.
 
 *SAS cabling rules*
 
@@ -27,7 +27,7 @@ The SAS cabling rules, worksheets, and examples content is available to help you
 
 *Cabling worksheet templates*
 
-** Worksheet templates for multipathed connectivity
-** Worksheet template for quad-pathed connectivity
+** Multipathed connectivity
+** Quad-pathed connectivity
 ** How to read a worksheet for multipathed connectivity
 ** How to read a worksheet for quad-pathed connectivity
