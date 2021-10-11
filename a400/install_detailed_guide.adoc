@@ -31,7 +31,6 @@ You need to provide the following at your site:
 * Additional networking cables to connect your system to your network switch and laptop or console with a Web browser
 
 .Steps
-
 . Unpack the contents of all boxes.
 . Record the system serial number from the controllers.
 +
@@ -176,7 +175,6 @@ image::../media/oie_cable_pull_tab_down.gif[]
 NOTE: As you insert the connector, you should feel it click into place; if you do not feel it click, remove it, turn it around and try again.
 
 .Steps
-
 . Use the animation or graphic to complete the cabling between the controllers and to the switches:
 +
 https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=48552ddf-0925-4f88-8e93-ab1b00666489[Two-node switchless cluster cabling]
@@ -201,7 +199,6 @@ image::../media/oie_cable_pull_tab_down.gif[]
 NOTE: As you insert the connector, you should feel it click into place; if you do not feel it click, remove it, turn it around and try again.
 
 .Steps
-
 . Use the animation or graphic to complete the cabling between the controllers and to the switches:
 +
 https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=8fefba75-f395-4cf2-ba3c-ab1b00665870[Switched cluster cabling]
@@ -227,7 +224,6 @@ image::../media/oie_cable_pull_tab_up.gif[]
 NOTE: As you insert the connector, you should feel it click into place; if you do not feel it click, remove it, turn it around and try again.
 
 .Steps
-
 . Use the following animation or graphic to cable your controllers to a single drive shelf.
 +
 https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=48d68897-c91d-47dc-b4b0-ab1b0066808a[Cabling the controllers to one NS224 drive shelf]
@@ -248,7 +244,6 @@ image::../media/oie_cable_pull_tab_up.gif[]
 NOTE: As you insert the connector, you should feel it click into place; if you do not feel it click, remove it, turn it around and try again.
 
 .Steps
-
 . Use the following animation or graphic to cable your controllers to two drive shelves.
 +
 https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=5501c7bf-8b74-49e8-8067-ab1b00668804[Cabling controllers to two NS224 drive shelves]
@@ -269,7 +264,6 @@ image::../media/oie_cable_pull_tab_down.gif[]
 NOTE: As you insert the connector, you should feel it click into place; if you do not feel it click, remove it, turn it around and try again.
 
 .Steps
-
 . Use the following graphic to cable your controllers to two drive shelves.
 +
 https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=cbb0280e-708d-4365-92b6-ab1b006677ef[Cabling the controllers to SAS drive shelves]
