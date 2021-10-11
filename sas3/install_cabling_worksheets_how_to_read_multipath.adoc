@@ -11,13 +11,13 @@ summary: You can use this example to guide you through how to read and apply a c
 [.lead]
 You can use this example to guide you through how to read and apply a completed worksheet to cable controller-to-stack connections for disk shelves with IOM12 modules for multipathed connectivity.
 
-*Before you begin*
+.Before you begin
 
 Your HA pair or single-controller configuration cannot be an AFF A200, AFF A220, FAS2600 series or FAS2700 system. These systems use a unique worksheet:
 
 link:install-cabling-worksheets-examples-fas2600.html[Controller-to-stack cabling worksheets and cabling examples for common AFF A200, AFF A220, FAS2600 series and FAS2700 configurations]
 
-*About this task*
+.About this task
 
 * This procedure references the following worksheet and cabling example to demonstrate how to read a worksheet to cable controller-to-stack connections.
 +
@@ -34,7 +34,7 @@ image::../media/drw_worksheet_mpha_skipped_template.gif[]
 
 image::../media/drw_mpha_slots_1_and_2_two_4porthbas_two_stacks_skipped.gif[]
 
-*Steps*
+.Steps
 
 . Cable port pair 1a/2b on each controller to stack 1:
  .. Cable controller 1 port 1a to stack 1, first shelf IOM A port 1.

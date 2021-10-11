@@ -1,9 +1,11 @@
 ---
-permalink: a400/index.html
+layout: landing-page
 sidebar: sidebar
-keywords: aff a400, aff, a400, model, model a400
-summary: 
+permalink: a400/index.html
+summary: The AFF A400 system documentation lets you install, setup, and maintain your system.
 ---
-= AFF A400 systems
-:icons: font
-:imagesdir: ../media/
+
+= AFF A400 System Documentation
+:hardbreaks:
+:linkattrs:
+:imagesdir: ./media/

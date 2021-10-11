@@ -11,7 +11,7 @@ summary: You can replace a failed drive nondisruptively in an NS224 drive shelf 
 [.lead]
 You can replace a failed drive nondisruptively in an NS224 drive shelf that is powered on, and while I/O is in progress.
 
-*Before you begin*
+.Before you begin
 
 * The drive that you are installing must be supported by the NS224 shelf.
 +
@@ -30,7 +30,7 @@ You can verify that the drive is failed by running the `storage disk show -broke
 +
 NOTE: Depending on the drive type and capacity, it can take up to several hours for the drive to appear in the list of failed drives.
 
-*About this task*
+.About this task
 
 * *Best practice:* The best practice is to have the current version of the Disk Qualification Package (DQP) installed before hot-swapping a drive.
 +
@@ -67,7 +67,7 @@ If you need the RMA number or additional help with the replacement procedure, co
 +
 https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=733011a7-e03a-41b0-8723-aa840133bf25[Hot-swapping a drive in an NS224 drive shelf]
 
-*Steps*
+.Steps
 
 . If you want to manually assign drive ownership for the replacement drive, you need to disable automatic drive assignment if it is enabled.
 +

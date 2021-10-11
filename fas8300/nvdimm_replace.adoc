@@ -20,7 +20,7 @@ You must replace the failed component with a replacement FRU component you recei
 [.lead]
 You can shut down or take over the impaired controller using different procedures, depending on the storage system hardware configuration.
 
-=== Shut down the node
+=== Option 1: Most configurations 
 
 [.lead]
 include::../_include/shutdown_most_frus.adoc[]

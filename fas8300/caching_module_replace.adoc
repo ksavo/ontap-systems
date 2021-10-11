@@ -60,7 +60,7 @@ Take over or halt the impaired node: `storage failover takeover -ofnode impaired
 
 |===
 
-=== Shut down a node in a two-node MetroCluster configuration
+=== Option 2: Shut down a node in a two-node MetroCluster configuration
 
 [.lead]
 include::../_include/shutdown_2n_mcc.adoc[]

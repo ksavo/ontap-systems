@@ -101,7 +101,7 @@ The controller module begins to boot as soon as it is fully seated in the chassi
  .. If you have not already done so, reinstall the cable management device.
  .. Interrupt the normal boot process by pressing `Ctrl-C`.
 
-== Restore the controller module to operation after running diagnostics
+== Restore the controller module to operation
 
 [.lead]
 After completing diagnostics, you must recable the system, give back the controller module, and then reenable automatic giveback.

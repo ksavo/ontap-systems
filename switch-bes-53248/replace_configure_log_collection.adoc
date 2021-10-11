@@ -11,7 +11,11 @@ summary: 'The cluster switch health monitor log collection feature is used to co
 [.lead]
 The cluster switch health monitor log collection feature is used to collect switch-related log files in ONTAP. You must make sure that you have set up your environment using the BES-53248 cluster switch CLI as detailed here.
 
-. Generate the SSH keys:``crypto key generate``
+.Steps
+
+. Generate the SSH keys:
++
+`crypto key generate`
 +
 ----
 (switch) #**show ip ssh**
@@ -61,7 +65,9 @@ Configuration Saved!
 (switch) #
 ----
 
-. Enable SSH: `ip ssh server enable`
+. Enable SSH:
++
+`ip ssh server enable`
 +
 ----
 (switch) #**ip ssh server enable**
@@ -83,7 +89,9 @@ SCP server Administrative Mode: ............... Disabled
 (switch) #
 ----
 
-. For ONTAP 9.8 and later, enable the cluster switch health monitor log collection feature for collecting switch-related log files, using the commands: `system switch ethernet log setup-password``system switch ethernet log enable-collection`
+. For ONTAP 9.8 and later, enable the cluster switch health monitor log collection feature for collecting switch-related log files, using the commands:
++
+`system switch ethernet log setup-password system switch ethernet log enable-collection`
 +
 ----
 cluster1::*> **system switch ethernet log setup-password**
@@ -121,7 +129,9 @@ Enabling cluster switch log collection.
 cluster1::*>
 ----
 
-. For ONTAP 9.5P15, 9.6P11, 9.7P8 and later patch releases, enable the cluster switch health monitor log collection feature for collecting switch-related log files, using the commands: `system cluster-switch log setup-password``system cluster-switch log enable-collection`
+. For ONTAP 9.5P15, 9.6P11, 9.7P8 and later patch releases, enable the cluster switch health monitor log collection feature for collecting switch-related log files, using the commands:
++
+`system cluster-switch log setup-password system cluster-switch log enable-collection`
 +
 ----
 cluster1::*> **system cluster-switch log setup-password**

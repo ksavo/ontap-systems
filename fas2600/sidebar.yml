@@ -1,13 +1,14 @@
 section: fas2600
 title: FAS2600 systems
+url: /fas2600/index.html
 entries:
   - title: Install and setup
     entries:
     - title: Cluster configuration worksheet
       url: /fas2600/install-worksheet-linkout.html
-    - title: Installation and setup PDF poster
+    - title: Quick steps
       url: /fas2600/install-setup-linkout.html
-    - title: Setup video
+    - title: Video steps
       url: /fas2600/install-video-linkout.html
   - title: Maintain
     entries:

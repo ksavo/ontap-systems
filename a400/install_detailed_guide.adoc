@@ -11,7 +11,7 @@ summary: This guide gives detailed step-by-step instructions for installing a ty
 [.lead]
 This guide gives detailed step-by-step instructions for installing a typical NetApp system. Use this guide if you want more detailed installation instructions.
 
-== Prepare for installation
+== Step 1: Prepare for installation
 
 [.lead]
 To install your system, you need to create an account, register the system, and get license keys. You also need to inventory the appropriate number and type of cables for your system and collect specific network information.
@@ -39,7 +39,7 @@ The following table identifies the types of cables you might receive. If you rec
 +
 https://hwu.netapp.com[NetApp Hardware Universe]
 +
-[options="header" cols="1,2"]
+[options="header" cols="1,2,1,2"]
 |===
 | Type of cable...| Part number and length| Connector type| For...
 a|
@@ -132,7 +132,7 @@ Powering up the system
 +
 https://library.netapp.com/ecm/ecm_download_file/ECMLP2862613[ONTAP Configuration Guide]
 
-== Install the hardware
+== Step 2: Install the hardware
 
 [.lead]
 You need to install your system in a 4-post rack or NetApp system cabinet, as applicable.
@@ -150,7 +150,7 @@ image::../media/drw_a320_cable_management_arms.png[]
 
 . Place the bezel on the front of the system.
 
-== Cable controllers to your network
+== Step 3: Cable controllers to your network
 
 [.lead]
 You can cable the controllers to your network by using the two-node switchless cluster method or by using the cluster interconnect network.
@@ -201,7 +201,7 @@ image::../media/drw_a400_switched_network_cabling.png[]
 
 . Cable your storage: link:install_detailed_guide.md#[Cabling controllers to drive shelves]
 
-== Cable controllers to drive shelves
+== Step 4: Cable controllers to drive shelves
 
 [.lead]
 You can cable either NSS224 or SAS shelves to you system.
@@ -263,7 +263,7 @@ image::../media/drw_a400_three_ds224c_shelves.png[]
 
 . To complete setting up your system, see link:install_detailed_guide.md#[Completing system setup and configuration].
 
-== Complete system setup and configuration
+== Step 5: Complete system setup and configuration
 
 [.lead]
 You can complete the system setup and configuration using cluster discovery with only a connection to the switch and laptop, or by connecting directly to a controller in the system and then connecting to the management switch.
@@ -341,7 +341,7 @@ https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=c600f366-4d30-481a
 
 . Plug the power cords into the controller power supplies, and then connect them to power sources on different circuits.
 +
-FAS8300 and FAS8700 shown.
+NOTE: FAS8300 and FAS8700 shown.
 +
 https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=50cdf200-ede1-45a9-b4b5-ab1b006698d7[Power on the controllers] https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=50cdf200-ede1-45a9-b4b5-ab1b006698d7[Power on the controllers]
 +

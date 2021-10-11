@@ -1,0 +1,51 @@
+indexpage:
+  lead: NS224
+  tiles:
+    - title: Get started 
+      links:
+        - title: ONTAP Release notes
+          url: /subfolder/page.html
+    - title: Install and setup
+      links:
+        - title: Hot-add a shelf
+          url: /hot-add-shelf.html
+        - title: Change a shelf ID
+          url: https://docs.netapp.com/us-en/ontap-metrocluster/install-fc/index.html
+        - title: Cable shelves as switch-attached storage
+          url: https://docs.netapp.com/us-en/ontap-metrocluster/install-stretch/index.html
+    - title: Maintain
+      links:
+        - title: Boot media
+          url: /bootmedia-replace-overview.html
+        - title: DIMM
+          url: /service-replace-dimm.html
+        - title: Drive
+          url: /service-replace-fan.html
+        - title: Fan
+          url: /service-replace-fan.html
+        - title: Hot-remove a shelf
+          url: /hot-remove-shelf.html
+        - title: NSM module
+          url: /service-replace-nsm100.html
+        - title: Power supply
+          url: /service-replace-power-supply.html
+        - title: RTC battery
+          url: /service-replace-rtc-battery.html
+    - title: Learn
+      links:
+        - title: Storage data sheet
+          url: https://www.netapp.com/data-storage/disk-shelves-storage-media/
+    - title: More resources
+      links:
+        - title: ONTAP documentation
+          url: https://docs.netapp.com/us-en/ontap/
+        - title: NetApp Hardware Universe
+          url: https://hwu.netapp.com/home/index
+        - title: NetApp Active IQ Config Advisor
+          url: https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor
+        - title: NetApp Interoperability Matrix Tool
+          url: https://mysupport.netapp.com/matrix/#welcome
+        - title: NetApp Support Knowledge Base
+          url: https://kb.netapp.com/
+        - title: NetApp Community
+          url: https://community.netapp.com/

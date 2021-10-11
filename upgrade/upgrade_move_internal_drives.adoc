@@ -11,7 +11,7 @@ summary: If your original node is one of the supported models, during the proces
 [.lead]
 If your original node is one of the supported models, during the process of upgrading by moving storage you can move the node's internal SATA drives or SSDs to a drive shelf that is attached to the new node in the same cluster. You cannot transfer SAS drives to a drive shelf attached to the new nodes.
 
-*Before you begin*
+.Before you begin
 * You must have reviewed link:upgrade_considerations.md#[Considerations for upgrading controller hardware] about moving internal drives.
 +
 You should contact technical support if you need guidance specific to your configuration.

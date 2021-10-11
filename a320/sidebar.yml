@@ -1,15 +1,16 @@
 section: a320
 title: AFF A320 systems
+url: /a320/index.html
 entries:
   - title: Install and setup
     entries:
     - title: Choose install and setup experience
       url: /a320/install-setup.html
-    - title: Quick guide
+    - title: Quick steps
       url: /a320/install-quick-guide.html
-    - title: Videos
+    - title: Videos steps
       url: /a320/install-videos.html
-    - title: Detailed guide
+    - title: Detailed steps
       url: /a320/install-detailed-guide.html
   - title: Maintain
     entries:

@@ -11,7 +11,10 @@ summary: 'SSH is a requirement when using the Cluster Switch Health Monitor \(CS
 [.lead]
 SSH is a requirement when using the Cluster Switch Health Monitor (CSHM) and log collection features. To enable SSH on BES-53248 cluster switches, you generate the SSH keys first and then enable SSH.
 
-. Generate the SSH keys:``crypto key generate``
+.Steps
+. Generate the SSH keys:
++
+`crypto key generate`
 +
 ----
 (switch) #**show ip ssh**
@@ -48,7 +51,9 @@ Do you want to overwrite the existing ECDSA keys? (y/n):**y**
 (switch) (Config)#**exit**
 ----
 
-. Enable SSH: `ip ssh server enable`
+. Enable SSH:
++
+`ip ssh server enable`
 +
 ----
 (switch) #**ip ssh server enable**

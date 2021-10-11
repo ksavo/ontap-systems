@@ -1,9 +1,11 @@
 ---
-permalink: c190/index.html
+layout: landing-page
 sidebar: sidebar
-keywords:
-summary: 
+permalink: c190/index.html
+summary: The AFF C190 system documentation lets you install, setup, and maintain your system.
 ---
-= AFF C190 systems
-:icons: font
-:imagesdir: ../media/
+
+= AFF C190 System Documentation
+:hardbreaks:
+:linkattrs:
+:imagesdir: ./media/

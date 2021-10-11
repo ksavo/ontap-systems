@@ -1,11 +1,11 @@
 ---
-permalink: a320/index.html
+layout: landing-page
 sidebar: sidebar
-keywords: aff, a320, aff a320
-summary:
+permalink: a320/index.html
+summary: The AFF A320 system documentation lets you install, setup, and maintain your system.
 ---
 
-= AFF A320 systems
-
-:icons: font
-:imagesdir: ../media/
+= AFF A320 System Documentation
+:hardbreaks:
+:linkattrs:
+:imagesdir: ./media/

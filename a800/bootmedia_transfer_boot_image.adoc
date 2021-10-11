@@ -22,14 +22,14 @@ The replacement boot media that you installed is without a boot image so you nee
  .. Download the service image to your work space on your laptop.
  .. Unzip the service image.
 +
-NOTE: If you are extracting the contents using Windows, do not use winzip to extract the netboot image. Use another extraction tool, such as 7-Zip or WinRAR.
+NOTE: If you are extracting the contents using Windows, do not use WinZip to extract the netboot image. Use another extraction tool, such as 7-Zip or WinRAR.
 +
 There are two folders in the unzipped service image file:
++
+  *** `boot`
+  *** `efi`
 
-  *** boot
-  *** efi
-
- .. Copy the efi folder to the top directory on the USB flash drive.
+ .. Copy the `efi` folder to the top directory on the USB flash drive.
 +
 The USB flash drive should have the efi folder and the same Service Image (BIOS) version of what the impaired controller is running.
 
@@ -67,7 +67,7 @@ The node begins to boot as soon as it is completely installed into the chassis.
 
 . Interrupt the boot process by pressing Ctrl-C to stop at the LOADER prompt.
 +
-If you miss this message, press Ctrl-C, select the option to boot to Maintenance mode, and then halt the node to boot to LOADER.
+If you miss this message, press Ctrl-C, select the option to boot to Maintenance mode, and then `halt` the node to boot to LOADER.
 
 . Although the environment variables and bootargs are retained, you should check that all required boot environment variables and bootargs are properly set for your system type and configuration using the `printenv bootarg name` command and correct any errors using the `setenv variable-name <value\>` command.
  .. Check the boot environment variables:

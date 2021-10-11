@@ -59,7 +59,7 @@ If you are prompted to continue with the update, press `y`.
 . The next depends on your system configuration:
  ** If your system has onboard keymanager, NSE or NVE configured, go to xref:bootmedia-encryption-restore.adoc[Post boot media replacement steps for OKM, NSE, and NVE]
  ** If your system does not have onboard keymanager, NSE or NVE configured, complete the steps in this section.
-. From the LOADER prompt, enter the boot_ontap command.
+. From the LOADER prompt, enter the `boot_ontap` command.
 +
 [options="header" cols="1,2"]
 |===

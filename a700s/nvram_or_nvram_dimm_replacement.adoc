@@ -11,7 +11,7 @@ summary: To replace a failed NVRAM card, you must remove the NVRAM riser, Riser 
 [.lead]
 To replace a failed NVRAM card, you must remove the NVRAM riser, Riser 1, from the controller module, remove the failed card from the riser, install the new NVRAM card in the riser, and then reinstall the riser in the controller module. Because the system ID is derived from the NVRAM card, if replacing the module, disks belonging to the system are reassigned to the new system ID.
 
-*Before you begin*
+.Before you begin
 
 * All disk shelves must be working properly.
 * If your system is in an HA pair, the partner node must be able to take over the node associated with the NVRAM module that is being replaced.
@@ -22,7 +22,7 @@ To replace a failed NVRAM card, you must remove the NVRAM riser, Riser 1, from t
 * You must replace the failed component with a replacement FRU component you received from your provider.
 * You cannot change any disks or disk shelves as part of this procedure.
 
-*Steps*
+.Steps
 
 == Shut down the impaired node
 

@@ -18,7 +18,7 @@ All other components in the system must be functioning properly; if not, you mus
 [.lead]
 You can shut down or take over the impaired controller using different procedures, depending on the storage system hardware configuration.
 
-=== Shut down the node
+=== Option 1: Most configurations
 
 [.lead]
 include::../_include/shutdown_most_frus.adoc[]

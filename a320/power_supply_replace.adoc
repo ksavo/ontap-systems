@@ -18,7 +18,7 @@ NOTE: It is a best practice to replace the power supply within two minutes of re
 
 * Power supplies are auto-ranging.
 
-*Steps*
+.Steps
 
 image::../media/drw_a320_psu_replace_animated_gif.svg[]
 
