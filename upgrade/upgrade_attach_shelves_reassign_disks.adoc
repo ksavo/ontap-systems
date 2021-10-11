@@ -11,7 +11,8 @@ summary: You must reassign the disks that belonged to node1 and node2 to node3 a
 [.lead]
 You must reassign the disks that belonged to node1 and node2 to node3 and node4 respectively.
 
-.Before you begin
+.About this task
+
 You perform the steps in this section on node3 and node4, completing each step on node3 and then node4 before going on to the next step.
 
 .Steps
@@ -33,11 +34,11 @@ Record the system ID of node3 for use in Step 4 below.
 
 . Reassign node1's spare disks, disks belonging to the root aggregate, and any data aggregates:
 +
-`disk reassign -s <node1_sysid> -d <node3_sysid> -p <node2_sysID>`
+`disk reassign -s _node1_sysid_ -d _node3_sysid_ -p <node2_sysID>`
 +
 --
-** The parameter `<node1_sysid>` is the value you recorded in  link:upgrade-shutdown-remove-original-nodes.html#shutdown_node_step5[Shutting down the original nodes, Step 5].
-** Specify the parameter `<-p partner_sysID>` only when shared disks are present.
+** The parameter `_node1_sysid_` is the value you recorded in  link:upgrade-shutdown-remove-original-nodes.html#shutdown_node_step5[Shutting down the original nodes, Step 5].
+** Specify the parameter `_-p partner_sysID_` only when shared disks are present.
 
 [NOTE]
 ====
@@ -82,4 +83,6 @@ You should see output similar to the following:
                                 64-bit
 ----
 
-. Exit Maintenance mode: `halt`
+. Exit Maintenance mode:
++
+`halt`

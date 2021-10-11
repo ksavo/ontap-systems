@@ -10,9 +10,10 @@ software image, and configure the nodes.'
 :imagesdir: ../media/
 
 [.lead]
-During the process of upgrading by moving storage, you power on node3 and node4, boot the software image, and configure the nodes. Physical port layout between original and new nodes can be different. Mapping of ports between original and replacement nodes should be done to identify proper layout of ports and connections.
+During the process of upgrading by moving storage, you power on node3 and node4, boot the sof tware image, and configure the nodes. Physical port layout between original and new nodes can be different. Mapping of ports between original and replacement nodes should be done to identify proper layout of ports and connections.
 
 .Before you begin
+
 If the version of ONTAP running on the new nodes is different to the version on the original nodes, you must have downloaded the correct `<ontap_version>_image.tgz` file from the NetApp Support Site to a web-accessible directory (see link:upgrade-prepare-when-moving-storage.html[Prepare for the upgrade when moving storage, Step5]). You need the `<ontap_version>_image.tgz` file to perform a netboot of your system.
 
 .Steps
@@ -70,10 +71,14 @@ Disregard the following message: `"This procedure is not supported for NonDisru
 Enter username/password if applicable, or press Enter to continue.
 . Enter `n` to skip the backup recovery when you see a prompt similar to the following:
 +
+----
 `Do you want to restore the backup configuration now? {y|n}`
+----
 . Reboot by entering `y` when you see a prompt similar to the following:
 +
+----
 `The node must be rebooted to start using the newly installed software. Do you want to reboot now? {y|n}`
+----
 . Interrupt the reboot process by pressing Ctrl-C to display the boot menu when the system prompts you to do so.
 . From the boot menu, select *(5) Maintenance mode boot* to access Maintenance mode.
 . If necessary, make changes to the FC or CNA ports on the node, and then reboot the node to Maintenance mode.

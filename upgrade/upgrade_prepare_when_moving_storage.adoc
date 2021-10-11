@@ -97,9 +97,8 @@ a|
 *All other systems*
 a|
 Your directory listing should contain the following file:
-----
-<ontap_version>_image.tgz
-----
+
+`<ontap_version>_image.tgz`
 
 NOTE: You do not need to extract the contents of the `<ontap_version>_image.tgz` file.
 

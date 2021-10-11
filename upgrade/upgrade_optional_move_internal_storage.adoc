@@ -22,7 +22,7 @@ storage you can move the node's internal SATA drives or SSDs to a drive shelf th
 the new node in the same cluster. You cannot transfer SAS drives to a drive shelf attached to the
 new nodes.
 
-* link:upgrade-convert-node-to-shelf.html[Converti an original node to a drive shelf]
+* link:upgrade-convert-node-to-shelf.html[Convert an original node to a drive shelf]
 +
 If your original node is one of the supported models, during the process of upgrading by moving
 storage you can convert the node to a drive shelf and then attach it to the new nodes in the same

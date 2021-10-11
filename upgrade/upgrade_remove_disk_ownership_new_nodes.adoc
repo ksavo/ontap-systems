@@ -78,7 +78,9 @@ The system removes disk ownership and returns to the boot menu.
 +
 No disks should be listed.
 
-. Run the command: `disk show -a`
+. Run the command: `
++
+`disk show -a`
 +
 All listed disks should be unassigned.
 
