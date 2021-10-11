@@ -3,20 +3,20 @@ title: Platform upgrade
 entries:
   - title: Overview
     url: /upgrade/upgrade-decide-to-use-this-guide.html
-  - title: Considerations for upgrading controller hardware
+  - title: Considerations
     url: /upgrade/upgrade-considerations.html
-  - title: Choose methods for upgrading controller hardware
+  - title: Choose upgrade method
     url: /upgrade/upgrade-methods.html
-  - title: Upgrade controller hardware by moving storage
+  - title: Upgrade by moving storage
     url: /upgrade/upgrade-by-moving-storage-parent.html
     entries:
-    - title: Prepare for the upgrade when moving storage
+    - title: Prepare
       url: /upgrade/upgrade-prepare-when-moving-storage.html
     - title: Shut down the original nodes
       url: /upgrade/upgrade-shutdown-remove-original-nodes.html
-    - title: Remove ownership of disks attached to the new nodes
+    - title: Remove disk ownership
       url: /upgrade/upgrade-remove-disk-ownership-new-nodes.html
-    - title: Reset the default configuration on the new nodes
+    - title: Reset default configuration
       url: /upgrade/upgrade-reset-default-configuration-node3-and-node4.html
     - title: Install the new nodes
       url: /upgrade/upgrade-install-new-nodes.html
@@ -25,9 +25,9 @@ entries:
     - title: Optional - Moving internal storage or converting the system to a drive shelf
       url: /upgrade/upgrade-optional-move-internal-storage.html
       entries:
-      - title: Move internal drives from an original node
+      - title: Move internal drives from original node
         url: /upgrade/upgrade-move-internal-drives.html
-      - title: Convert an original node to a drive shelf
+      - title: Convert original node t drive shelf
         url: /upgrade/upgrade-convert-node-to-shelf.html
     - title: Attach storage shelves and reassign disk ownership
       url: /upgrade/upgrade-attach-shelves-reassign-disks.html
@@ -38,36 +38,36 @@ entries:
         - title: Overview
           url: /upgrade/upgrade-complete.html
           entries:
-          - title: Complete the upgrade in ONTAP 9.8
+          - title: Option 1: ONTAP 9.8
             entries:
             - title: Overview
               url: /upgrade/upgrade-complete-ontap-9-8.html
-            - title: Map network ports using ONTAP 9.8
+            - title: Map network ports
               url: /upgrade/upgrade-map-network-ports-ontap-9-8.html
-            - title: Perform the final upgrade steps in ONTAP 9.8
+            - title: Perform final steps
               url: /upgrade/upgrade-final-upgrade-steps-in-ontap-9-8.html
-          - title: Complete the upgrade in ONTAP 9.7 or earlier
+          - title: Option 2: ONTAP 9.7 or earlier
             entries:
             - title: Overview
               url: /upgrade/upgrade-complete-ontap-9-7-or-earlier.html
-            - title: Map network ports using ONTAP 9.7 or earlier
+            - title: Map network ports
               url: /upgrade/upgrade-map-network-ports-ontap-9-7-or-earlier.html
-            - title: Perform the final upgrade steps in ONTAP 9.7 or earlier
+            - title: Perform final steps
               url: /upgrade/upgrade-final-steps-ontap-9-7-or-earlier-move-storage.html
   - title: Upgrade controller hardware by moving volumes
     url: /upgrade/upgrade-by-moving-volumes-parent.html
     entries:
-    - title: Prepare for the upgrade when moving volumes
+    - title: Prepare
       url: /upgrade/upgrade-prepare-when-moving-volumes.html
     - title: Install the new nodes and join them to the cluster
       url: /upgrade/upgrade-install-and-join-new-nodes-move-vols.html
     - title: Create an aggregate and move volumes to the new nodes
       url: /upgrade/upgrade-create-aggregate-move-volumes.html
-    - title: Move non-SAN data LIFs and cluster management LIFs to the new nodes
+    - title: Move non-SAN data LIFs and cluster management LIFs
       url: /upgrade/upgrade-move-lifs-to-new-nodes.html
     - title: Delete SAN LIFs from the original nodes
       url: /upgrade/upgrade-delete-san-lifs.html
-    - title: Unjoin the original nodes from the cluster
+    - title: Unjoin the original nodes
       url: /upgrade/upgrade-unjoin-original-nodes-move-volumes.html
     - title: Complete the upgrade
       url: /upgrade/upgrade-complete-move-volumes.html
