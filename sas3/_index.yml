@@ -1,5 +1,5 @@
 indexpage:
-  lead: SAS3
+  lead: SAS shelves with IOM12 modules
   tiles:
     - title: Get started 
       links:
@@ -7,30 +7,34 @@ indexpage:
           url: /subfolder/page.html
     - title: Install and setup
       links:
+        - title: Install a shelf in a storage system
+          url: /install-new-system.html
         - title: Hot-add a shelf
-          url: /sas3/hot-add-shelf.html
+          url: /install-hot-add-shelf.html
         - title: Change a shelf ID
-          url: https://docs.netapp.com/us-en/ontap-metrocluster/install-fc/index.html
-        - title: Cable shelves as switch-attached storage
-          url: https://docs.netapp.com/us-en/ontap-metrocluster/install-stretch/index.html
+          url: /install-change-shelf-id.html
+        - title: Hot-add a shelf to a stack of IOM6 shelves (mixed stack)
+          url: /iom12-hot-add-mix.html
+        - title: SAS cabling rules, worksheets, and examples
+          url: /overview-cabling-rules-examples.html
     - title: Maintain
       links:
-        - title: Boot media
-          url: /sas3/bootmedia-replace-overview.html
-        - title: DIMM
-          url: /sas3/service-replace-dimm.html
-        - title: Drive
-          url: /sas3/service-replace-fan.html
-        - title: Fan
-          url: /sas3/service-replace-fan.html
+        - title: Disk drive in a DS224C or DS212C shelf
+          url: /service-hot-swap-drive-ds224c-ds212c.html
+        - title: Disk drive in a DS460C shelf
+          url: /service-hot-swap-drive-ds460c.html
+        - title: Drive drawer in a DS460C shelf
+          url: /service-replace-drawer-ds460c.html
+        - title: Fan in a DS460C shelf
+          url: /service-replace-fan-ds460c.html
         - title: Hot-remove a shelf
-          url: /sas3/hot-remove-shelf.html
-        - title: NSM module
-          url: /sas3/service-replace-nsm100.html
+          url: /hot-remove-shelf.html
+        - title: IOM12 module
+          url: /service-hot-swap-iom.html
         - title: Power supply
-          url: /sas3/service-replace-power-supply.html
-        - title: RTC battery
-          url: /sas3/service-replace-rtc-battery.html
+          url: /service-hot-swap-power-supply.html
+        - title: Shelf LED status conditions
+          url: /service-monitor-leds.html
     - title: Learn
       links:
         - title: Storage data sheet

@@ -10,17 +10,17 @@ indexpage:
         - title: Hot-add a shelf
           url: /hot-add-shelf.html
         - title: Change a shelf ID
-          url: https://docs.netapp.com/us-en/ontap-metrocluster/install-fc/index.html
+          url: /change-shelf-id.html
         - title: Cable shelves as switch-attached storage
-          url: https://docs.netapp.com/us-en/ontap-metrocluster/install-stretch/index.html
+          url: /cable-as-switch-attached.html
     - title: Maintain
       links:
         - title: Boot media
-          url: /bootmedia-replace-overview.html
+          url: /service-replace-boot-media.html
         - title: DIMM
           url: /service-replace-dimm.html
         - title: Drive
-          url: /service-replace-fan.html
+          url: /service-replace-drive.html
         - title: Fan
           url: /service-replace-fan.html
         - title: Hot-remove a shelf
