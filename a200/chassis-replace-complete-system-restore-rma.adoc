@@ -67,9 +67,9 @@ You only need to run the interconnect test from one controller.
 . Verify that no hardware problems resulted from the replacement of the chassis: `sldiag device status -dev interconnect -long -state failed`
 +
 System-level diagnostics returns you to the prompt if there are no test failures, or lists the full status of failures resulting from testing the component.
-
++
 . Proceed based on the result of the preceding step.
-
++
 [options="header" cols="1,2"]
 |===
 | If the system-level diagnostics tests...| Then...
@@ -96,7 +96,7 @@ NOTE: You must exit Maintenance mode on both controllers before proceeding any f
  .. Return the node to normal operation:
 +
 |===
-
++
 [options="header" cols="1,2"]
 |===
 | If your system is running ONTAP...| Then...
@@ -124,9 +124,8 @@ Determine the cause of the problem.
  .. Verify that you have observed all of the considerations identified for running system-level diagnostics, that cables are securely connected, and that hardware components are properly installed in the storage system.
  .. Reconnect the power supplies, and then power on the storage system.
  .. Rerun the system-level diagnostics test.
-
-+
 |===
+
 == Step 3: Return the failed part to NetApp
 
 [.lead]
