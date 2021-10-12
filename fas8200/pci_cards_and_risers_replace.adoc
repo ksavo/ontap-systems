@@ -109,14 +109,12 @@ If you removed the media converters (QSFPs or SFPs), remember to reinstall them 
 +
 The controller module begins to boot as soon as it is fully seated in the chassis.
 +
-[options="header" cols="1,2"]
+[options="header" cols="1,3"]
 |===
-[cols="1,3"]
 | If your system is in...| Then perform these steps...
 a|
 An HA pair
 a|
-
  .. With the cam handle in the open position, firmly push the controller module in until it meets the midplane and is fully seated, and then close the cam handle to the locked position. Tighten the thumbscrew on the cam handle on back of the controller module.
 +
 NOTE: Do not use excessive force when sliding the controller module into the chassis to avoid damaging the connectors.
@@ -137,7 +135,6 @@ NOTE: Do not use excessive force when sliding the controller module into the cha
  .. If you have not already done so, reconnect the cables to the controller module.
  .. Bind the cables to the cable management device with the hook and loop strap.
  .. Reconnect the power cables to the power supplies and to the power sources, and then turn on the power to start the boot process.
-
 +
 |===
 
@@ -158,7 +155,6 @@ a|
 A two-node MetroCluster configuration
 a|
 Proceed to the next step.     The MetroCluster switchback procedure is done in the next task in the replacement process.
-+
 |===
 
 . If automatic giveback was disabled, reenable it: `storage failover modify -node local -auto-giveback true`
