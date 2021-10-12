@@ -38,7 +38,7 @@ entries:
         - title: Overview
           url: /upgrade/upgrade-complete.html
           entries:
-          - title: Option 1: ONTAP 9.8
+          - title: Option 1 - ONTAP 9.8
             entries:
             - title: Overview
               url: /upgrade/upgrade-complete-ontap-9-8.html
@@ -46,7 +46,7 @@ entries:
               url: /upgrade/upgrade-map-network-ports-ontap-9-8.html
             - title: Perform final steps
               url: /upgrade/upgrade-final-upgrade-steps-in-ontap-9-8.html
-          - title: Option 2: ONTAP 9.7 or earlier
+          - title: Option 2 - ONTAP 9.7 or earlier
             entries:
             - title: Overview
               url: /upgrade/upgrade-complete-ontap-9-7-or-earlier.html
