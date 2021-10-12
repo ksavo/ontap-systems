@@ -4,9 +4,9 @@ Once environment variables are checked, you must complete steps specific to syst
 +
 If NSE or NVE are enabled along with Onboard Key Manager you must restore settings you captured at the beginning of this procedure.
 
-** If NSE or NVE are enabled and Onboard Key Manager is enabled, go to <<Option 1: Restore NVE or NSE when Onboard Key Manager is enabled>>.
-** If NSE or NVE are enabled for ONATP 9.5, go to <<Option 2: Restore NSE/NVE on systems running ONTAP 9.5 and earlier>>.
-** If NSE or NVE are enabled for ONTAP 9.6, go to <<Option 3: Restore NSE/NVE on systems running ONTAP 9.6 and later>>
+** If NSE or NVE are enabled and Onboard Key Manager is enabled, go to link:../a200/bootmedia-encryption-restore.html#option-1-restore-nve-or-nse-when-onboard-key-manager-is-enabled[Option 1: Restore NVE or NSE when Onboard Key Manager is enabled].
+** If NSE or NVE are enabled for ONATP 9.5, go to link:../a200/bootmedia-encryption-restore.html#option-2-restore-nsenve-on-systems-running-ontap-9-5-and-earlier[Option 2: Restore NSE/NVE on systems running ONTAP 9.5 and earlier].
+** If NSE or NVE are enabled for ONTAP 9.6, go to link:../a200/bootmedia-encryption-restore.html#option-3-restore-nsenve-on-systems-running-ontap-9-6-and-later[Option 3: Restore NSE/NVE on systems running ONTAP 9.6 and later].
 
 == Option 1: Restore NVE or NSE when Onboard Key Manager is enabled
 
@@ -151,11 +151,11 @@ If any interfaces are listed as `false`, revert those interfaces back to their h
 NOTE: This command does not work if NVE (NetApp Volume Encryption) is configured
 
 . Use the security key-manager query to display the key IDs of the authentication keys that are stored on the key management servers.
- ** If the `Restored` column = `yes` and all key managers report in an available state, go to xref:complete_rma.adoc[Completing the replacement process].
+ ** If the `Restored` column = `yes` and all key managers report in an available state, go to link:../a200/bootmedia-complete-rma.html[Complete the replacement process].
  ** If the `Restored` column = anything other than `yes`, and/or one or more key managers is not available, use the security key-manager restore -address * command to retrieve and restore all authentication keys (AKs) and key IDs associated with all nodes from all available key management servers.
 +
 Check the output of the security key-manager query again to ensure that the `Restored` column = `yes` and all key managers report in an available state
-. IF the Onboard Key Management is enabled:
+. If the Onboard Key Management is enabled:
  .. Use the `security key-manager key show -detail` to see a detailed view of all keys stored in the onboard key manager.
  .. Use the `security key-manager key show -detail` command and verify that the `Restored` column = `yes` for all authentication keys.
 +

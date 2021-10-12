@@ -8,9 +8,9 @@ entries:
    entries:
    - title: Cluster configuration worksheet
      url: /a200/install-worksheet-linkout.html
-   - title: Installation and setup PDF poster
+   - title: Quick steps
      url: /a200/install-setup-linkout.html
-   - title: Setup video
+   - title: Video steps
      url: /a200/install-video-linkout.html
  - title: Maintain - AFF A200
    entries:
@@ -19,40 +19,40 @@ entries:
       entries:
         - title: Overview
           url: /a200/bootmedia-replace-overview.html
-        - title: Check onboard encryption keys as needed
+        - title: Check onboard encryption keys
           url: /a200/bootmedia-encryption-preshutdown-checks.html
-        - title: Shut down the impaired controller
+        - title: Shut down impaired controller
           url: /a200/bootmedia-shutdown.html
-        - title: Remove the controller module, replace the boot media and transfer the boot image to the boot media
+        - title: Remove controller module, replace boot media and transfer boot image
           url: /a200/bootmedia-replace.html
-        - title: Boot the recovery image
+        - title: Boot recovery image
           url: /a200/bootmedia-recovery-image-boot-non-2n-mcc.html
-        - title: Restore OKM, NSE, and NVE as needed
+        - title: Restore OKM, NSE, and NVE
           url: /a200/bootmedia-encryption-restore.html
-        - title: Return the failed part to NetApp
+        - title: Return failed part to NetApp
           url: /a200/bootmedia-complete-rma.html
       # END boot media replacement
     - title: Chassis - AFF A200
       entries:
       - title: Overview
         url: /a200/chassis-replace-overview.html
-      - title: Shut down the impaired controller
+      - title: Shut down impaired controller
         url: /a200/chassis-replace-shutdown.html
-      - title: Replace the hardware
+      - title: Replace hardware
         url: /a200/chassis-replace-move-hardware.html
-      - title: Restoring and verifying configuration
+      - title: Restore and verify configuration
         url: /a200/chassis-replace-complete-system-restore-rma.html
     - title: Controller module - AFF A200
       entries:
       - title: Overview
         url: /a200/controller-replace-overview.html
-      - title: Shut down the impaired controller
+      - title: Shut down impaired controller
         url: /a200/controller-replace-shutdown.html
-      - title: Replace the hardware
+      - title: Replace hardware
         url: /a200/controller-replace-move-hardware.html
-      - title: Restoring and verifying configuration
+      - title: Restore and verify configuration
         url: /a200/controller-replace-system-config-restore-and-verify.html
-      - title: Recable the system and reassign disks
+      - title: Recable system and reassign disks
         url: /a200/controller-replace-recable-reassign-disks.html
       - title: Complete system restoration
         url: /a200/controller-replace-restore-system-rma.html
