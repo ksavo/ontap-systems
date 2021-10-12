@@ -59,9 +59,9 @@ entries:
     entries:
     - title: Prepare
       url: /upgrade/upgrade-prepare-when-moving-volumes.html
-    - title: Install the new nodes and join them to the cluster
+    - title: Install join new nodes
       url: /upgrade/upgrade-install-and-join-new-nodes-move-vols.html
-    - title: Create an aggregate and move volumes to the new nodes
+    - title: Create an aggregate and move volumes
       url: /upgrade/upgrade-create-aggregate-move-volumes.html
     - title: Move non-SAN data LIFs and cluster management LIFs
       url: /upgrade/upgrade-move-lifs-to-new-nodes.html
