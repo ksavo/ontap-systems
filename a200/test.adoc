@@ -10,9 +10,9 @@ summary: After you replace the part, you can return the failed part to NetApp, a
 
 Remove and set aside the cable management devices from the left and right sides of the controller module.
 
-== drw-25xx_cable_management_arm_COLE.svg
+== drw-25xx_cable_management_arm_COLE.svg (commented out after build failure)
 
-image:../media/drw-25xx_cable_management_arm_COLE.svg[]
+// image:../media/drw-25xx_cable_management_arm_COLE.svg[]
 
 == TEST ICON CAPTURE
 
