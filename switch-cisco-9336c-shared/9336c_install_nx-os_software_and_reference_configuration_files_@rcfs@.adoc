@@ -137,10 +137,10 @@ Local = 169.254.47.194 169.254.19.183
 Remote = 169.254.209.69 169.254.49.125
 Cluster Vserver Id = 4294967293
 Ping status:
-....
+
 Basic connectivity succeeds on 4 path(s)
 Basic connectivity fails on 0 path(s)
-................
+
 Detected 9000 byte MTU on 4 path(s):
     Local 169.254.19.183 to Remote 169.254.209.69
     Local 169.254.19.183 to Remote 169.254.49.125
@@ -408,7 +408,7 @@ Compatibility check:
 Module      Type        Upgradable  Impact      Reason
 ------  -------------- ------------ ----------- -------
      1      SUP        Yes          disruptive  Module Upgradable
-Retrieving EPLD versions.... Please wait.
+Retrieving EPLD versions... Please wait.
 Images will be upgraded according to following table:
 Module  Type   EPLD              Running-Version   New-Version  Upg-Required
 ------- ------ ----------------- ----------------- ------------ ------------
@@ -642,7 +642,7 @@ This example shows TFTP being used to copy an RCF to the bootflash on switch cs2
 cs2# copy tftp: bootflash: vrf management
 Enter source filename: Nexus_9336C_RCF_v1.6-Cluster-HA-Breakout.txt
 Enter hostname for the tftp server: 172.22.201.50
-Trying to connect to tftp server......Connection to Server Established.
+Trying to connect to tftp server...Connection to Server Established.
 TFTP get operation was successful
 Copy complete, now saving to disk (please wait)...
 ----
@@ -960,10 +960,10 @@ Local = 169.254.1.3 169.254.1.1
 Remote = 169.254.1.6 169.254.1.7 169.254.3.4 169.254.3.5 169.254.3.8 169.254.3.9
 Cluster Vserver Id = 4294967293
 Ping status:
-............
+
 Basic connectivity succeeds on 12 path(s)
 Basic connectivity fails on 0 path(s)
-................................................
+
 Detected 9000 byte MTU on 12 path(s):
     Local 169.254.1.3 to Remote 169.254.1.6
     Local 169.254.1.3 to Remote 169.254.1.7

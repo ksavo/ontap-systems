@@ -142,7 +142,7 @@ I/O latch completely unlocked
 |===
 . Set the NVRAM module on a stable surface and remove the cover from the NVRAM module by pushing down on the blue locking button on the cover, and then, while holding down the blue button, slide the lid off the NVRAM module.
 +
-image::../media/drw_9000_remove_nvram_module_contents.sv[]
+image::../media/drw_9000_remove_nvram_module_contents.svg[]
 +
 |===
 a|
