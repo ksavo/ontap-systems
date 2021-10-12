@@ -207,7 +207,7 @@ During the boot process, you can safely respond `y` to the prompts until the Mai
 +
 System-level diagnostics returns you to the prompt if there are no test failures, or lists the full status of failures resulting from testing the component.
 
-include::../include/sldiags-proceed-step.adoc[]
+include::../_include/sldiags-proceed-step.adoc[]
 
 == Step 6: Switch back aggregates in a two-node MetroCluster configuration
 
