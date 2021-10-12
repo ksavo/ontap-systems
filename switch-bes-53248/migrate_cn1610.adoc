@@ -38,7 +38,6 @@ This procedure covers the following scenario:
  ** Disconnect the cables between ISL ports CL1 and cs2, and then use supported cables to reconnect the ports from cs1 to cs2.
 
 .Steps
-
 . If AutoSupport is enabled on this cluster, suppress automatic case creation by invoking an AutoSupport message:
 +
 `system node autosupport invoke -node * -type all -message MAINT=xh`
