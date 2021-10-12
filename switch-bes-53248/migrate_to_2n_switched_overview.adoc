@@ -96,13 +96,13 @@ The following example shows that the ISL ports are up on switch cs1:
 +
 ----
 (cs1)# **show port-channel 1/1**
-Local Interface................................ 1/1
-Channel Name................................... Cluster-ISL
-Link State..................................... Up
-Admin Mode..................................... Enabled
-Type........................................... Dynamic
-Port channel Min-links......................... 1
-Load Balance Option............................ 7
+Local Interface                                 1/1
+Channel Name                                    Cluster-ISL
+Link State                                      Up
+Admin Mode                                      Enabled
+Type                                            Dynamic
+Port channel Min-links                          1
+Load Balance Option                             7
 (Enhanced hashing mode)
 
 Mbr    Device/       Port       Port
@@ -119,13 +119,13 @@ The following example shows that the ISL ports are up on switch cs2 :
 +
 ----
 (cs2)# **show port-channel 1/1**
-Local Interface................................ 1/1
-Channel Name................................... Cluster-ISL
-Link State..................................... Up
-Admin Mode..................................... Enabled
-Type........................................... Dynamic
-Port channel Min-links......................... 1
-Load Balance Option............................ 7
+Local Interface.                                1/1
+Channel Name                                    Cluster-ISL
+Link State                                      Up
+Admin Mode                                      Enabled
+Type                                            Dynamic
+Port channel Min-links                          1
+Load Balance Option                             7
 (Enhanced hashing mode)
 
 Mbr    Device/       Port       Port
@@ -454,10 +454,10 @@ Local = 192.168.168.28 192.168.168.29
 Remote = 192.168.168.26 192.168.168.27
 Cluster Vserver Id = 4294967293
 Ping status:
-....
+...
 Basic connectivity succeeds on 4 path(s)
 Basic connectivity fails on 0 path(s)
-................
+...
 Detected 1500 byte MTU on 4 path(s):
     Local 192.168.168.28 to Remote 192.168.168.26
     Local 192.168.168.28 to Remote 192.168.168.27

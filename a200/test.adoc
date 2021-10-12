@@ -16,7 +16,7 @@ Remove and set aside the cable management devices from the left and right sides 
 
 == TEST ICON CAPTURE
 
-image:../media/test-capture-icon-1.png[]
+image:../media/legend_icon_01.png[]
 
 
 == PNG

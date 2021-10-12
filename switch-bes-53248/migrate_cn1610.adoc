@@ -213,13 +213,13 @@ The following example builds a temporary ISL on cs2 (ports 13-16) to be connecte
 (cs2) (Config)# exit
 
 (cs2) # show port-channel 1/2
-Local Interface................................ 1/2
-Channel Name................................... temp-isl-cn1610
-Link State..................................... Down
-Admin Mode..................................... Enabled
-Type........................................... Static
-Port-channel Min-links......................... 1
-Load Balance Option............................ 7
+Local Interface                                 1/2
+Channel Name                                    temp-isl-cn1610
+Link State                                      Down
+Admin Mode                                      Enabled
+Type                                            Static
+Port-channel Min-links                          1
+Load Balance Option                             7
 (Enhanced hashing mode)
 
 Mbr     Device/        Port      Port
@@ -264,12 +264,12 @@ The `Link State` should be `Up`, `Type` should be `Static`, and `Port Active` sh
 +
 ----
 (CL2)# show port-channel 3/1
-Local Interface................................ 3/1
-Channel Name................................... ISL-LAG
-Link State..................................... Up
-Admin Mode..................................... Enabled
-Type........................................... Static
-Load Balance Option............................ 7
+Local Interface                                 3/1
+Channel Name                                    ISL-LAG
+Link State                                      Up
+Admin Mode                                      Enabled
+Type                                            Static
+Load Balance Option                             7
 
 
 (Enhanced hashing mode)
@@ -293,13 +293,13 @@ Ports    Timeout        Speed       Active
 ----
 (cs2) # show port-channel 1/2
 
-Local Interface................................ 1/2
-Channel Name................................... temp-isl-cn1610
-Link State..................................... Up
-Admin Mode..................................... Enabled
-Type........................................... Static
-Port-channel Min-links......................... 1
-Load Balance Option............................ 7
+Local Interface                                 1/2
+Channel Name                                    temp-isl-cn1610
+Link State                                      Up
+Admin Mode                                      Enabled
+Type                                            Static
+Port-channel Min-links                          1
+Load Balance Option                             7
 
 (Src/Dest MAC, VLAN, EType, incoming port)
 
@@ -379,10 +379,10 @@ Local = 169.254.47.194 169.254.19.183
 Remote = 169.254.209.69 169.254.49.125
 Cluster Vserver Id = 4294967293
 Ping status:
-....
+...
 Basic connectivity succeeds on 4 path(s)
 Basic connectivity fails on 0 path(s)
-................
+...
 Detected 9000 byte MTU on 4 path(s):
     Local 169.254.47.194 to Remote 169.254.209.69
     Local 169.254.47.194 to Remote 169.254.49.125
@@ -486,7 +486,7 @@ Ping status:
 
 Basic connectivity succeeds on 4 path(s)
 Basic connectivity fails on 0 path(s)
-................
+...
 Detected 9000 byte MTU on 4 path(s):
     Local 169.254.47.194 to Remote 169.254.209.69
     Local 169.254.47.194 to Remote 169.254.49.125
