@@ -104,7 +104,7 @@ image::../media/drw_hw_nvram_icon.png[]
 . If the NVMEM LED is flashing, there is data in the NVMEM and you must disconnect the battery to clear the memory:
  .. Locate the battery, press the clip on the face of the battery plug to release the lock clip from the plug socket, and then unplug the battery cable from the socket.
 +
-image::../media/drw_2600_nvmem_battery_unplug.svg[]
+image::../media/drw_2600_nvmem_battery_unplug.gif[]
 
  .. Confirm that the NVMEM LED is no longer lit.
  .. Reconnect the battery connector.

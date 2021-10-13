@@ -179,7 +179,7 @@ https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=80c4701e-8e4a-408e
 
 . Cable your storage: link:install_detailed_guide.md#[Cabling controllers to drive shelves]
 
-image::../media/drw_a400_tnsc_network_cabling.png[]
+image::../media/drw_A400_TNSC_network_cabling.png[]
 
 === Option 2: Cable a switched cluster
 
