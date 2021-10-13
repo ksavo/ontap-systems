@@ -4,7 +4,7 @@ indexpage:
     - title: Get started 
       links:
         - title: ONTAP Release notes
-          url: /subfolder/page.html
+          url: https://library.netapp.com/ecm/ecm_download_file/ECMLP2492508
     - title: Install and setup
       links:
         - title: Hot-add a shelf

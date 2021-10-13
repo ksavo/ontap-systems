@@ -4,10 +4,10 @@ indexpage:
     - title: Get started 
       links:
         - title: ONTAP Release notes
-          url: /subfolder/page.html
+          url: https://library.netapp.com/ecm/ecm_download_file/ECMLP2492508
     - title: Install and setup
       links:
-        - title: Install a shelf in a storage system
+        - title: Install a shelf in a new storage system
           url: /install-new-system.html
         - title: Hot-add a shelf
           url: /install-hot-add-shelf.html
