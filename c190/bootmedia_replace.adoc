@@ -47,7 +47,7 @@ You must locate the boot media in the controller module, and then follow the dir
 
 . Locate the boot media using the following illustration or the FRU map on the controller module:
 +
-image::../media/drw_2600_boot_media_move_aminated_gif.svg[]
+// image::../media/drw_2600_boot_media_move_aminated_gif.svg[]
 
 . Press the blue button on the boot media housing to release the boot media from its housing, and then gently pull it straight out of the boot media socket.
 +
