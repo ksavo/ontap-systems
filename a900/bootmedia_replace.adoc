@@ -9,7 +9,7 @@ summary: 'You must remove and open the controller module, locate and replace the
 [.lead]
 You must remove and open the controller module, locate and replace the boot media in the controller, and then transfer the image to the replacement boot media.
 
-= Step 1: Open the controller module
+== Step 1: Open the controller module
 :icons: font
 :imagesdir: ../media/
 
@@ -47,7 +47,7 @@ image:../media/legend_icon_01.gif[] a|
 Controller module cover locking button
 |===
 
-= Step 2: Replace the boot media
+== Step 2: Replace the boot media
 :icons: font
 :imagesdir: ../media/
 
@@ -81,7 +81,7 @@ If necessary, remove the boot media and reseat it into the socket.
 . Push the boot media down to engage the locking button on the boot media housing.
 . Reinstall the controller module lid by aligning the pins on the lid with the slots on the motherboard carrier, and then slide the lid into place.
 
-= Step 3: Transfer the boot image to the boot media
+== Step 3: Transfer the boot image to the boot media
 :icons: font
 :imagesdir: ../media/
 
