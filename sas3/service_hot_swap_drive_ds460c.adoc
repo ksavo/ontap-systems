@@ -158,6 +158,7 @@ a|
 image:../media/2860_dwg_e2860_de460c_gentle_close.gif[]
 a|
 CAUTION: Possible loss of data access. Never slam the drawer shut. Push the drawer in slowly to avoid jarring the drawer and causing damage to the storage array.
+
 |===
 
  .. Close the drive drawer by pushing both levers towards the center.
@@ -181,9 +182,7 @@ The Attention LED is on
 a|
 The new drive might be defective. Replace it with another new drive.
 
-[NOTE]
-====
-When you first insert a drive, its Attention LED might be on. However, the LED should go off within a minute.
+NOTE: When you first insert a drive, its Attention LED might be on. However, the LED should go off within a minute.
 
 |===
 
