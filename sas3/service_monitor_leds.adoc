@@ -204,18 +204,14 @@ The following table describes the two LEDs on the disk drives used in DS224C and
 [cols="4*",options="header"]
 |===
 | Callout| LED name| State| Description
-a|
+.2+|
 image:../media/legend_icon_01.gif[]
-a|
+.2+|
 Activity
 a|
 Solid green
 a|
 The disk drive has power.
-a|
-image:../media/legend_icon_01.gif[]
-a|
-Activity
 a|
 Blinking green
 a|
@@ -255,50 +251,34 @@ image::../media/2860_dwg_drive_drawer_leds.gif[]
 [cols="4*",options="header"]
 |===
 | Location| LED| Status indicator| Description
-a|
+.3+|
 1
-a|
-Attention: Drawer attention for each drawer.
+.3+|
+Attention: Drawer attention for each drawer
 a|
 Solid amber
 a|
 A component within the drive drawer requires operator attention.
 a|
-1
-a|
-Attention: Drawer attention for each drawer.
-a|
 Off
 a|
 No drive or other component in the drawer requires attention and no drive in the drawer has an active locate operation.
 a|
-1
-a|
-Attention: Drawer attention for each drawer.
-a|
 Blinking amber
 a|
 A locate drive operation is active for any drive within the drawer.
-a|
+.3+|
 2-13
-a|
-Activity: Drive activity for drives 0 through 11 in the drive drawer.
+.3+|
+Activity: Drive activity for drives 0 through 11 in the drive drawer
 a|
 Green
 a|
 The power is turned on and the drive is operating normally.
 a|
-2-13
-a|
-Activity: Drive activity for drives 0 through 11 in the drive drawer.
-a|
 Blinking green
 a|
 The drive has power, and I/O operations are in progress.
-a|
-2-13
-a|
-Activity: Drive activity for drives 0 through 11 in the drive drawer.
 a|
 Off
 a|
