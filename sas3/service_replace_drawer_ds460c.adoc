@@ -273,6 +273,7 @@ The final step in installing a drive drawer is attaching the left and right cabl
 
 image::../media/28_dwg_e2860_de460c_cable_chain_left.gif[]
 
+[cols="4*",options="header"]
 |===
 | Callout| Cable chain| Connector| Connects to
 a|
@@ -293,6 +294,7 @@ Drive drawer
 |===
 image:../media/28_dwg_e2860_de460c_cable_chain_right.gif[]
 
+[cols="4*",options="header"]
 |===
 | Callout| Cable chain| Connector| Connects to
 a|

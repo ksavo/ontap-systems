@@ -215,7 +215,9 @@ link:install-worksheets-examples-quadpath.html[Controller-to-stack cabling works
 a|
 There is a completed worksheet for your configuration
 a|
-Go to the next step.        You use the existing completed worksheet.
+Go to the next step.
+
+You use the existing completed worksheet.
 a|
 There is no completed worksheet for your configuration
 a|
