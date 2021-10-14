@@ -11,6 +11,8 @@ summary: By completing the worksheet template, you can define the controller SAS
 [.lead]
 By completing the worksheet template, you can define the controller SAS port pairs you can use to cable controllers to stacks of disk shelves with IOM12 modules to achieve quad-pathed connectivity in an HA pair or single-controller configuration. You can also use the completed worksheet to walk yourself through cabling the quad-pathed connections for your configuration.
 
+.About his task
+
 * This procedure and worksheet template is applicable to cabling quad-pathed connectivity for a quad-path HA or quad-path configuration with one or more stacks.
 +
 Examples of completed worksheets are provided for quad-path HA and quad-path configurations.
@@ -31,6 +33,8 @@ Each port pair designated for multipathed cabling is encircled by an oval that i
 * If needed, after you complete the worksheet, you can refer to link:install-cabling-worksheets-how-to-read-quadpath.html[How to read a worksheet to cable controller-to-stack connections for quad-pathed connectivity].
 
 image::../media/drw_worksheet_quad_pathed_template_nau.gif[]
+
+.Steps
 
 . In the boxes above the gray boxes, list all SAS A ports on your system, and then all SAS C ports on your system in sequence of slots (0,1, 2, 3, and so on).
 +

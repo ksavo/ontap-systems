@@ -18,6 +18,7 @@ The LEDs on the disk shelf front operator display panel indicate whether your di
 
 The following table describes the three LEDs on the operator display panel used in DS460C, DS224C, and DS212C disk shelves:
 
+[cols="4*",options="header"]
 |===
 | LED icon| LED name| State| Description
 a|
@@ -74,6 +75,7 @@ The following table describes IOM12 module LEDs associated with the function of 
 
 The IOM12 module is used in DS460C, DS224C, and DS212C disk shelves.
 
+[cols="4*",options="header"]
 |===
 | LED icon| LED name| State| Description
 a|
@@ -120,6 +122,7 @@ The LEDs on the power supply indicate whether the power supply is functioning no
 
 The following table describes the two LEDs on power supplies used in DS460C, DS224C, and DS212C disk shelves:
 
+[cols="4*",options="header"]
 |===
 | LED icon| LED name| State| Description
 a|
@@ -172,6 +175,7 @@ The LEDs on the DS460C fans indicate whether the fan is functioning normally or 
 
 The following table describes the LEDs on fans used in DS460C disk shelves:
 
+[cols="4*",options="header"]
 |===
 | Item| LED name| State| Description
 a|
@@ -197,6 +201,7 @@ The LEDs on a disk drive indicates whether it is functioning normally or there a
 
 The following table describes the two LEDs on the disk drives used in DS224C and DS212C disk shelves:
 
+[cols="4*",options="header"]
 |===
 | Callout| LED name| State| Description
 a|
@@ -247,6 +252,7 @@ The following illustration and table describes the drive activity LEDs on the dr
 
 image::../media/2860_dwg_drive_drawer_leds.gif[]
 
+[cols="4*",options="header"]
 |===
 | Location| LED| Status indicator| Description
 a|
