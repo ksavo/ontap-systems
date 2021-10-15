@@ -3,7 +3,7 @@ You should check the time and date on the replacement controller module against 
 .About this task
 It is important that you apply the commands in the steps on the correct systems:
 
-* The replacement node is the new node that replaced the impaired node as part of this procedure.
+* The _replacement_ node is the new node that replaced the impaired node as part of this procedure.
 * The _healhy node_ is the HA partner of the replacement node
 
 .Steps

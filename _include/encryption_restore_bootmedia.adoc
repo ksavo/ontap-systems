@@ -90,7 +90,7 @@ NOTE: If the `Restored` column = anything other than `yes`, contact Customer Sup
  .. Wait 10 minutes for the key to synchronize across the cluster.
 . If you are running ONTAP 9.6 or later, run the security key-manager onboard sync:
  .. Run the `security key-manager onboard sync` command and then enter the passphrase when prompted.
- .. Enter the security key-manager key query command to see a detailed view of all keys stored in the onboard key manager and verify that the `Restored` column = `yes/true` for all authentication keys.
+ .. Enter the `security key-manager key query` command to see a detailed view of all keys stored in the onboard key manager and verify that the `Restored` column = `yes/true` for all authentication keys.
 +
 NOTE: If the `Restored` column = anything other than `yes/true`, contact Customer Support.
 
@@ -150,14 +150,14 @@ NOTE: This command does not work if NVE (NetApp Volume Encryption) is configured
 
 . Use the security key-manager query to display the key IDs of the authentication keys that are stored on the key management servers.
  ** If the `Restored` column = `yes` and all key managers report in an available state, go to xref:complete_rma.adoc[Completing the replacement process].
- ** If the `Restored` column = anything other than `yes`, and/or one or more key managers is not available, use the security key-manager restore -address * command to retrieve and restore all authentication keys (AKs) and key IDs associated with all nodes from all available key management servers.
+ ** If the `Restored` column = anything other than `yes`, and/or one or more key managers is not available, use the `security key-manager restore -address * command` to retrieve and restore all authentication keys (AKs) and key IDs associated with all nodes from all available key management servers.
 +
 Check the output of the security key-manager query again to ensure that the `Restored` column = `yes` and all key managers report in an available state
 . IF the Onboard Key Management is enabled:
  .. Use the `security key-manager key show -detail` to see a detailed view of all keys stored in the onboard key manager.
  .. Use the `security key-manager key show -detail` command and verify that the `Restored` column = `yes` for all authentication keys.
 +
-If the `Restored` column = anything other than `yes`, use the `security key-manager setup -node <Repaired_(Target)_node>` to restore the Onboard Key Management settings. Rerun the security key-manager key show -detail to verify `Restored` column = `yes` for all authentication keys.
+If the `Restored` column = anything other than `yes`, use the `security key-manager setup -node <Repaired_(Target)_node>` command to restore the Onboard Key Management settings. Rerun the `security key-manager key show -detail` command to verify `Restored` column = `yes` for all authentication keys.
 . Connect the console cable to the partner node.
 . Give back the node using the `storage failover giveback -fromnode local` command.
 . Restore automatic giveback if you disabled it by using the `storage failover modify -node local -auto-giveback true` command.
@@ -202,7 +202,7 @@ If any interfaces are listed as `false`, revert those interfaces back to their h
 . Use the `storage encryption disk show` at the clustershell prompt, to review the output.
 . Use the `security key-manager key query` command to display the key IDs of the authentication keys that are stored on the key management servers.
  ** If the `Restored` column = `yes/true`, you are done and can proceed to complete the replacement process.
- ** If the `Key Manager type` = `external` and the `Restored` column = anything other than `yes/true`, use the security key-manager external restore command to restore the key IDs of the authentication keys.
+ ** If the `Key Manager type` = `external` and the `Restored` column = anything other than `yes/true`, use the `security key-manager external restore` command to restore the key IDs of the authentication keys.
 +
 NOTE: If the command fails, contact Customer Support.
 
