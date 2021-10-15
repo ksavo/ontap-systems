@@ -1,17 +1,20 @@
-sidebar:
-    entries:
-      - title: Home
-        url: "/index.html"
-      - section: a900
+settings:
+  name: "ONTAP Systems"
+  pdf_enabled: true
 
+sidebar:
+  entries:
+    - title: ONTAP 9.8 System Documentation
+      url: /index.html
+    - section: switch-cisco-9336c-shared
 
 homepage:
   tiles:
     - title: Get started
       links:
-        - title: ONTAP Release notes
-          url: /install-ip/index.html
+      - title: ONTAP Release notes
+        url: /install-ip/index.html
     - title: AFF systems (entry-level and midrange)
       links:
-        - title: AFF A900
-          url: /a900/index.html
+      - title: AFF A900
+        url: /a900/index.html
