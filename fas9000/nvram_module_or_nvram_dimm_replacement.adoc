@@ -16,8 +16,8 @@ The NVRAM module consists of the NVRAM10 and DIMMs and up to two NVMe SSD Flash 
 * All disk shelves must be working properly.
 * If your system is in an HA pair, the partner node must be able to take over the node associated with the NVRAM module that is being replaced.
 * This procedure uses the following terminology:
- ** The impaired node is the node on which you are performing maintenance.
- ** The healthy node is the HA partner of the impaired node.
+ ** The _impaired node_ is the node on which you are performing maintenance.
+ ** The _healhy node_ is the HA partner of the impaired node.
 * This procedure includes steps for automatically or manually reassigning disks to the controller module associated with the new NVRAM module. You must reassign the disks when directed to in the procedure. Completing the disk reassignment before giveback can cause issues.
 * You must replace the failed component with a replacement FRU component you received from your provider.
 * You cannot change any disks or disk shelves as part of this procedure.
