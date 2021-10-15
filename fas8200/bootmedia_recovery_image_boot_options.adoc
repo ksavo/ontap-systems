@@ -76,7 +76,7 @@ Waiting for giveback...
 a|
 
  .. Log into the partner node.
- .. Confirm the target node is ready for giveback with the storage failover show command.
+ .. Confirm the target node is ready for giveback with the `storage failover show` command.
 
 |===
 
