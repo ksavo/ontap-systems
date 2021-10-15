@@ -178,23 +178,7 @@ The controller module begins to boot as soon as it is fully seated in the chassi
  .. Interrupt the boot process by pressing `Ctrl-C` when you see Press Ctrl-C for Boot Menu.
  .. Select the option to boot to Maintenance mode from the displayed menu.
 
-== Reassign disks
-
-[.lead]
-Depending on your configuration, you must either verify the reassignment of disks to the new controller module or manually reassign the disks. If the storage system is in an HA pair, the system ID of the new controller module is automatically assigned to the disks when the giveback occurs at the end of the procedure. In a stand-alone system, you must manually reassign the ID to the disks.
-
-You must use the correct procedure for your configuration:
-
-[options="header" cols="1,2"]
-|===
-| Controller module redundancy| Then use this procedure...
-a|
-HA pair
-a|
-link:nvram_or_nvram_dimm_replacement.md#[Verifying the system ID change on an HA system]
-|===
-
-=== Verify the system ID change on an HA system
+== Verify the system ID change on an HA system
 
 [.lead]
 You must confirm the system ID change when you boot the replacement node and then verify that the change was implemented.

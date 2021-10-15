@@ -23,19 +23,6 @@ If the storage system is in an HA pair, the system ID of the new controller modu
 
 You must use the correct procedure for your configuration:
 
-[options="header" cols="1,2"]
-|===
-| Controller redundancy| Then use this procedure...
-a|
-HA pair
-a|
-link:controller_replace_complete_system_restoration.md#[Verifying the system ID change on an HA system]
-a|
-Two-node MetroCluster configuration
-a|
-link:controller_replace_complete_system_restoration.md#[Manually reassigning the system ID on systems in a two-node MetroCluster configuration]
-|===
-
 === Option 1: Verify the system ID change on an HA system
 
 [.lead]

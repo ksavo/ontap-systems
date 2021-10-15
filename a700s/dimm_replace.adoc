@@ -15,8 +15,6 @@ All other components in the system must be functioning properly; if not, you mus
 
 You must replace the failed component with a replacement FRU component you received from your provider.
 
-.Steps
-
 == Shut down the impaired node
 
 [.lead]
@@ -39,14 +37,15 @@ The LOADER prompt
 a|
 Go to the next step.
 a|
-Waiting for giveback...
+`Waiting for giveback...`
 a|
-    Press Ctrl-C, and then respond `y`.
+Press Ctrl-C, and then respond `y`.
 a|
 System prompt or password prompt (enter system password)
 a|
-Take over or halt the impaired node: `storage failover takeover -ofnode impaired_node_name`    When the impaired node shows Waiting for giveback..., press Ctrl-C, and then respond `y`.
-+
+Take over or halt the impaired node: `storage failover takeover -ofnode impaired_node_name`
+
+When the impaired node shows `Waiting for giveback...`, press Ctrl-C, and then respond `y`.
 |===
 
 == Remove the controller module

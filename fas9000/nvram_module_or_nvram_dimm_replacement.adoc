@@ -185,11 +185,11 @@ You must use the correct procedure for your configuration:
 a|
 HA pair
 a|
-link:nvram_module_or_nvram_dimm_replacement.md#[Verifying the system ID change on an HA system]
+link:nvram_module_or_nvram_dimm_replacement.html#[Verifying the system ID change on an HA system]
 a|
 Two-node MetroCluster configuration
 a|
-link:nvram_module_or_nvram_dimm_replacement.md#[Manually reassigning the system ID on systems in a two-node MetroCluster configuration]
+link:nvram_module_or_nvram_dimm_replacement.html#[Manually reassigning the system ID on systems in a two-node MetroCluster configuration]
 |===
 
 === Verify the system ID change on an HA system
@@ -210,7 +210,7 @@ The node will reboot, if autoboot is set.
 In the command output, you should see a message that the system ID has changed on the impaired node, showing the correct old and new IDs. In the following example, node2 has undergone replacement and has a new system ID of 151759706.
 +
 ----
-node1> `storage failover show`
+node1> storage failover show
                                     Takeover
 Node              Partner           Possible     State Description
 ------------      ------------      --------     -------------------------------------
@@ -249,7 +249,7 @@ The output from the `storage failover show` command. should not include the Syst
 The disks belonging to the replacement node should show the new system ID. In the following example, the disks owned by node1 now show the new system ID, 1873775277:
 +
 ----
-node1> `storage disk show -ownership`
+node1> storage disk show -ownership
 
 Disk  Aggregate Home  Owner  DR Home  Home ID    Owner ID  DR Home ID Reserver  Pool
 ----- ------    ----- ------ -------- -------    -------    -------  ---------  ---
