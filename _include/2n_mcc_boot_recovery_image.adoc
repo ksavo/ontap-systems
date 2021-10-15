@@ -18,5 +18,5 @@ You should be prepared to interrupt the boot process when prompted.
  .. Take the node to the LOADER prompt.
  .. Check the environment variable settings with the `printenv` command.
  .. If an environment variable is not set as expected, modify it with the `setenv __environment-variable-name__ __changed-value__`` command.
- .. Save your changes using the saveenv command.
+ .. Save your changes using the `savenev` command.
  .. Reboot the node.
