@@ -95,7 +95,7 @@ If giveback is not complete after 20 minutes, contact Customer Support.
 +
 If any interfaces are listed as `false`, revert those interfaces back to their home port using the net int revert command.
 
-. Move the console cable to the target node and run the version -v command to check the ONTAP versions.
+. Move the console cable to the target node and run the `version -v` command to check the ONTAP versions.
 . Restore automatic giveback if you disabled it by using the storage failover modify -node local -auto-giveback true command.
 
 == Restore NSE/NVE on systems running ONTAP 9.6 and later
@@ -133,7 +133,7 @@ NOTE: Terminating CIFS can cause loss of data.
 +
 If any interfaces are listed as `false`, revert those interfaces back to their home port using the net int revert command.
 
-. Move the console cable to the target node and run the version -v command to check the ONTAP versions.
+. Move the console cable to the target node and run the `version -v` command to check the ONTAP versions.
 . Restore automatic giveback if you disabled it by using the storage failover modify -node local -auto-giveback true command.
 . Use the storage encryption disk show at the clustershell prompt, to review the output.
 . Use the security key-manager key query command to display the key IDs of the authentication keys that are stored on the key management servers.
