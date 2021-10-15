@@ -25,7 +25,7 @@ You need these items for this procedure:
 
 * Antistatic protection
 +
-NOTE: Possible hardware damage. To prevent electrostatic discharge damage to the drive shelf, use proper antistatic protection when handling drive shelf components.
+NOTE: *Possible hardware damage:* To prevent electrostatic discharge damage to the drive shelf, use proper antistatic protection when handling drive shelf components.
 
 * Replacement drive drawer
 * Replacement left and right cable chains
@@ -43,7 +43,7 @@ Left and right cable chains for each drive drawer in the DS460C drive shelf allo
 * You have obtained the following items:
  ** Antistatic protection
 +
-NOTE: Possible hardware damage. To prevent electrostatic discharge damage to the shelf, use proper antistatic protection when handling shelf components.
+NOTE: *Possible hardware damage:* To prevent electrostatic discharge damage to the shelf, use proper antistatic protection when handling shelf components.
 
  ** Flashlight
 
