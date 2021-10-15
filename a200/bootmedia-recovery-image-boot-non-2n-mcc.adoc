@@ -73,7 +73,7 @@ a|
 |===
 
 . Connect the console cable to the partner node.
-. Give back the node using the storage failover giveback -fromnode local command.
+. Give back the node using the `storage failover giveback -fromnode local` command.
 . At the cluster prompt, check the logical interfaces with the `net int -is-home false` command.
 +
 If any interfaces are listed as "false", revert those interfaces back to their home port using the `net int revert` command.

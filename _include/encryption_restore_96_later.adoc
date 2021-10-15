@@ -86,7 +86,7 @@ NOTE: If the `Restored` column = anything other than `yes/true`, contact Custome
 
  .. Wait 10 minutes for the key to synchronize across the cluster.
 . Move the console cable to the partner node.
-. Give back the target node using the storage failover giveback -fromnode local command.
+. Give back the target node using the `storage failover giveback -fromnode local` command.
 . Check the giveback status, 3 minutes after it reports complete, using the storage failover show command.
 +
 If giveback is not complete after 20 minutes, contact Customer Support.
@@ -146,5 +146,5 @@ NOTE: If the command fails, contact Customer Support.
 +
 Use the security key-manager key query to verify that the `Restored` column = `yes/true` for all authentication keys.
 . Connect the console cable to the partner node.
-. Give back the node using the storage failover giveback -fromnode local command.
+. Give back the node using the `storage failover giveback -fromnode local` command.
 . Restore automatic giveback if you disabled it by using the storage failover modify -node local -auto-giveback true command.
