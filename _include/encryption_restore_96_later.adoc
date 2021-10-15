@@ -96,7 +96,7 @@ If giveback is not complete after 20 minutes, contact Customer Support.
 If any interfaces are listed as `false`, revert those interfaces back to their home port using the net int revert command.
 
 . Move the console cable to the target node and run the `version -v` command to check the ONTAP versions.
-. Restore automatic giveback if you disabled it by using the storage failover modify -node local -auto-giveback true command.
+. Restore automatic giveback if you disabled it by using the `storage failover modify -node local -auto-giveback true` command.
 
 == Restore NSE/NVE on systems running ONTAP 9.6 and later
 
@@ -134,7 +134,7 @@ NOTE: Terminating CIFS can cause loss of data.
 If any interfaces are listed as `false`, revert those interfaces back to their home port using the net int revert command.
 
 . Move the console cable to the target node and run the `version -v` command to check the ONTAP versions.
-. Restore automatic giveback if you disabled it by using the storage failover modify -node local -auto-giveback true command.
+. Restore automatic giveback if you disabled it by using the `storage failover modify -node local -auto-giveback true` command.
 . Use the storage encryption disk show at the clustershell prompt, to review the output.
 . Use the security key-manager key query command to display the key IDs of the authentication keys that are stored on the key management servers.
  ** If the `Restored` column = `yes/true`, you are done and can proceed to complete the replacement process.
@@ -147,4 +147,4 @@ NOTE: If the command fails, contact Customer Support.
 Use the security key-manager key query to verify that the `Restored` column = `yes/true` for all authentication keys.
 . Connect the console cable to the partner node.
 . Give back the node using the `storage failover giveback -fromnode local` command.
-. Restore automatic giveback if you disabled it by using the storage failover modify -node local -auto-giveback true command.
+. Restore automatic giveback if you disabled it by using the `storage failover modify -node local -auto-giveback true` command.
