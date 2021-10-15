@@ -105,8 +105,8 @@ The image is downloaded from the USB flash drive.
 +
 From the ONTAP prompt, you can issue the command system node halt -skip-lif-migration-before-shutdown true -ignore-quorum-warnings true -inhibit-takeover true.
 
- .. Check the environment variable settings with the printenv command.
- .. If an environment variable is not set as expected, modify it with the setenvenvironment_variable_name changed_value command.
+ .. Check the environment variable settings with the `printenv` command.
+ .. If an environment variable is not set as expected, modify it with the `setenv __environment-variable-name__ __changed-value__` command.
  .. Save your changes using the saveenv command.
  .. Reboot the node.
 . With the rebooted impaired node displaying the Waiting for Giveback... message, perform a giveback from the healthy node:

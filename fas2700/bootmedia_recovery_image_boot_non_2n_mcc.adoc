@@ -48,8 +48,8 @@ If you are prompted to continue with the update, press `y`.
 
 . Ensure that the environmental variables are set as expected:
  .. Take the node to the LOADER prompt.
- .. Check the environment variable settings with the printenv command.
- .. If an environment variable is not set as expected, modify it with the setenvenvironment_variable_name changed_value command.
+ .. Check the environment variable settings with the `printenv` command.
+ .. If an environment variable is not set as expected, modify it with the `setenv __environment-variable-name__ __changed-value__` command.
  .. Save your changes using the saveenv command.
 . The next depends on your system configuration:
  ** If your system has onboard keymanager, NSE or NVE configured, go to xref:bootmedia-encryption-restore.adoc[Post boot media replacement steps for OKM, NSE, and NVE]
