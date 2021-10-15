@@ -2,9 +2,8 @@ section: a200
 title: AFF A200 systems
 url: /a200/index.html
 entries:
- - title: TEST TO BE REMOVED
-   url: /a200/test.html
- - title: Install and setup - AFF A200
+ - title: Install and setup
+   #pdf-filename: AFF A200 Install and Setup
    entries:
    - title: Cluster configuration worksheet
      url: /a200/install-worksheet-linkout.html
@@ -12,10 +11,12 @@ entries:
      url: /a200/install-setup-linkout.html
    - title: Video steps
      url: /a200/install-video-linkout.html
- - title: Maintain - AFF A200
+ - title: Maintain
+   #pdf-filename: AFF A200 Maintain
    entries:
     # START boot media replacement
-    - title: Boot media - AFF A200
+    - title: Boot media
+      #pdf-filename: AFF A200 Boot Media
       entries:
         - title: Overview
           url: /a200/bootmedia-replace-overview.html
@@ -32,7 +33,8 @@ entries:
         - title: Return failed part to NetApp
           url: /a200/bootmedia-complete-rma.html
       # END boot media replacement
-    - title: Chassis - AFF A200
+    - title: Chassis
+      #pdf-filename: AFF A200 Chassis
       entries:
       - title: Overview
         url: /a200/chassis-replace-overview.html
@@ -42,7 +44,8 @@ entries:
         url: /a200/chassis-replace-move-hardware.html
       - title: Restore and verify configuration
         url: /a200/chassis-replace-complete-system-restore-rma.html
-    - title: Controller module - AFF A200
+    - title: Controller module
+      #pdf-filename: AFF A200 Controller Module
       entries:
       - title: Overview
         url: /a200/controller-replace-overview.html
@@ -56,11 +59,15 @@ entries:
         url: /a200/controller-replace-recable-reassign-disks.html
       - title: Complete system restoration
         url: /a200/controller-replace-restore-system-rma.html
-    - title: DIMM - AFF A200
+    - title: DIMM
+      ##pdf-filename: AFF A200 DIMM
       url: /a200/dimm-replace.html
-    - title: NVMEM battery - AFF A200
+    - title: NVMEM battery
+      ##pdf-filename: AFF A200 NVMEM Battery
       url: /a200/nvmem-nvram-battery-replace.html
-    - title: Power supply - AFF A200
+    - title: Power supply
+      ##pdf-filename: AFF A200 Power Supply
       url: /a200/power-supply-swap-out.html
-    - title: Real-time clock battery - AFF A200
+    - title: Real-time clock battery
+      ##pdf-filename: AFF A200 Real-Time Clock Battery
       url: /a200/rtc-battery-replace.html
