@@ -1,5 +1,6 @@
 settings:
-  search: ontap-systems, ontap-systems-upgrade
+  search: ontap-systems
+  #search: ontap-systems, ontap-systems-upgrade
   name: "ONTAP Systems"
   pdf_enabled: true
 
