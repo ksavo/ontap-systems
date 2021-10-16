@@ -1,5 +1,5 @@
 indexpage:
-  lead: SAS3
+#  lead: SAS3
   tiles:
     - title: Get started 
       links:

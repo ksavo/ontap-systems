@@ -1,5 +1,5 @@
 indexpage:
-  lead: FAS500f
+#  lead: FAS500f
   tiles:
     - title: Get started 
       links:

@@ -1,5 +1,5 @@
 indexpage:
-  lead: AFF A320
+#  lead: AFF A320
   tiles:
     - title: Get started 
       links:

@@ -1,5 +1,5 @@
 indexpage:
-  lead: AFF A400
+#  lead: AFF A400
   tiles:
     - title: Get started 
       links:
