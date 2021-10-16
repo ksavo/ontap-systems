@@ -4,6 +4,8 @@ indexpage:
       links:
         - title: ONTAP Release notes
           url: /subfolder/page.html
+        - title: Storage data sheet
+          url: https://www.netapp.com/data-storage/disk-shelves-storage-media/          
     - title: Install and setup
       links:
         - title: All configurations
@@ -26,8 +28,6 @@ indexpage:
           url: /rtc-battery-replace.html
     - title: Learn
       links:
-        - title: Storage data sheet
-          url: https://www.netapp.com/data-storage/disk-shelves-storage-media/
         - title: Replacing an internal disk drive video
           url: https://www.youtube.com/watch?v=Ziqg9HL8oYQ
         - title: NetApp All-Flash FAS Solution for Nonpersistent Desktops with VMware Horizon View | TR-4539
