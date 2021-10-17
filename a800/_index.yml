@@ -4,15 +4,11 @@ indexpage:
     - title: Get started 
       links:
         - title: ONTAP Release notes
-          url: /subfolder/page.html
+          url: https://library.netapp.com/ecm/ecm_download_file/ECMLP2492508
     - title: Install and setup
       links:
         - title: Most configurations
           url: /install-setup.html
-        - title: Fabric-attached MetroCluster configurations
-          url: https://docs.netapp.com/us-en/ontap-metrocluster/install-fc/index.html
-        - title: Stretch MetroCluster configurations
-          url: https://docs.netapp.com/us-en/ontap-metrocluster/install-stretch/index.html
         - title: MetroCluster IP configurations
           url: https://docs.netapp.com/us-en/ontap-metrocluster/install-ip/index.html
     - title: Maintain

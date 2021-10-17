@@ -4,11 +4,11 @@ indexpage:
     - title: Get started 
       links:
         - title: ONTAP Release notes
-          url: /subfolder/page.html
+          url: https://library.netapp.com/ecm/ecm_download_file/ECMLP2492508
     - title: Install and setup
       links:
         - title: All configurations
-          url: /install-setup-installation.html
+          url: /install-setup-linkout.html
     - title: Maintain
       links:
         - title: Boot media
