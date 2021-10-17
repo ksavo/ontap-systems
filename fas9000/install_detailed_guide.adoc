@@ -16,6 +16,8 @@ This guide gives detailed step-by-step instructions for installing a typical Net
 [.lead]
 To install your system, you need to create an account on the NetApp Support Site, register your system, and get license keys. You also need to inventory the appropriate number and type of cables for your system and collect specific network information.
 
+.Before you begin
+
 You need to have access to the Hardware Universe for information about site requirements as well as additional information on your configured system. You might also want to have access to the Release Notes for your version of ONTAP for more information about this system.
 
 https://hwu.netapp.com[NetApp Hardware Universe]
@@ -97,7 +99,7 @@ X6553-R6 (112-00188), 2m
 
 X6536-R6 (112-00090), 5m
 a|
-image:../media/oie_cable_fiber_lc_connector.gif[]
+image:../media/oie_cable_fiber_lc_connector.png[]
 a|
 FC host network
 a|
@@ -177,7 +179,7 @@ You must have contacted your network administrator for information about connect
 
 Be sure to check the direction of the cable pull-tabs when inserting the cables in the ports. Cable pull-tabs are up for all networking module ports.
 
-image::../media/oie_cable_pull_tab_up.svg[]
+image::../media/oie_cable_pull_tab_up.png[]
 
 NOTE: As you insert the connector, you should feel it click into place; if you do not feel it click, remove it, turn it around and try again.
 
@@ -186,7 +188,7 @@ NOTE: As you insert the connector, you should feel it click into place; if you d
 +
 https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=7a55b98a-e8b8-41d5-821f-ac5b0032ead0[Cabling a two-node switchless cluster]
 
-. To cable your storage, see link:install_detailed_guide.md#[Cabling controllers to drive shelves]
+. Go to <<Step 4: Cable controllers to drive shelves>> for drive shelf cabling instructions.
 
 === Option 2: Switched cluster
 
@@ -197,7 +199,7 @@ You must have contacted your network administrator for information about connect
 
 Be sure to check the direction of the cable pull-tabs when inserting the cables in the ports. Cable pull-tabs are up for all networking module ports.
 
-image::../media/oie_cable_pull_tab_up.svg[]
+image::../media/oie_cable_pull_tab_up.png[]
 
 NOTE: As you insert the connector, you should feel it click into place; if you do not feel it click, remove it, turn it around and try again.
 
@@ -206,7 +208,7 @@ NOTE: As you insert the connector, you should feel it click into place; if you d
 +
 https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=6381b3f1-4ce5-4805-bd0a-ac5b0032f51d[Switched cluster cabling]
 
-. Cable your storage: link:install_detailed_guide.md#[Cabling controllers to drive shelves]
+. Go to <<Step 4: Cable controllers to drive shelves>> for drive shelf cabling instructions.
 
 == Step 4: Cable controllers to drive shelves
 [.lead]
@@ -219,9 +221,9 @@ You must cable the shelf-to-shelf connections, and then cable both controllers t
 
 The cables are inserted into the drive shelf with the pull-tabs facing down, while the other end of the cable is inserted into the controller storage modules with the pull-tabs up.
 
-image::../media/oie_cable_pull_tab_down.svg[]
+image::../media/oie_cable_pull_tab_down.png[]
 
-image::../media/oie_cable_pull_tab_up.svg[]
+image::../media/oie_cable_pull_tab_up.png[]
 
 .Steps
 . Use the following animation to cable your drive shelves to your controllers.
@@ -238,9 +240,9 @@ https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=61d23302-9526-4a2b
 +
 If you have more than one drive shelf stack, see the _Installation and Cabling Guide_ for your drive shelf type.
 +
-link:../com.netapp.doc.hw-ds-sas3-icg/home.html[Installing and cabling]
+link:../com.netapp.doc.hw-ds-sas3-icg/home.html[Installing and cabling]***
 
-. To complete setting up your system, see link:install_detailed_guide.md#[Completing system setup and configuration]
+. Go to <<Step 5: Complete system setup and configuration>> to complete system setup and configuration.
 
 === Option 2: Cable the controllers to a single NS224 drive shelf in AFF A700 and ASA AFF A700 systems running ONTAP 9.8 and later only
 
@@ -251,9 +253,9 @@ You must cable each controller to the NSM modules on the NS224 drive shelf on an
 * The systems must have at least one X91148A module installed in slots 3 and/or 7 for each controller. The animation shows this module installed in both slots 3 and 7.
 * Be sure to check the illustration arrow for the proper cable connector pull-tab orientation. The cable pull-tab for the storage modules are up, while the pull tabs on the shelves are down.
 +
-image::../media/oie_cable_pull_tab_up.svg[]
+image::../media/oie_cable_pull_tab_up.png[]
 +
-image::../media/oie_cable_pull_tab_down.svg[]
+image::../media/oie_cable_pull_tab_down.png[]
 +
 NOTE: As you insert the connector, you should feel it click into place; if you do not feel it click, remove it, turn it around and try again.
 
@@ -264,7 +266,7 @@ https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=6520eb01-87b3-4520
 +
 image::../media/drw_ns224_a700_1shelf.png[]
 
-. To complete setting up your system, see link:install_detailed_guide.md#[Completing system setup and configuration].
+. Go to <<Step 5: Complete system setup and configuration>> to complete system setup and configuration.
 
 === Option 3: Cable the controllers to two NS224 drive shelves in AFF A700 and ASA AFF A700 systems running ONTAP 9.8 and later only
 
@@ -275,9 +277,9 @@ You must cable each controller to the NSM modules on the NS224 drive shelves on 
 * The systems must have two X91148A modules, per controller, installed in slots 3 and 7.
 * Be sure to check the illustration arrow for the proper cable connector pull-tab orientation. The cable pull-tab for the storage modules are up, while the pull tabs on the shelves are down.
 +
-image::../media/oie_cable_pull_tab_up.svg[]
+image::../media/oie_cable_pull_tab_up.png[]
 +
-image::../media/oie_cable_pull_tab_down.svg[]
+image::../media/oie_cable_pull_tab_down.png[]
 +
 NOTE: As you insert the connector, you should feel it click into place; if you do not feel it click, remove it, turn it around and try again.
 
@@ -288,7 +290,7 @@ https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=34098e39-73ad-45de
 +
 image::../media/drw_ns224_a700_2shelves.png[]
 
-. To complete setting up your system, see link:install_detailed_guide.md#[Completing system setup and configuration].
+. Go to <<Step 5: Complete system setup and configuration>> to complete system setup and configuration.
 
 == Step 5: Complete system setup and configuration
 
@@ -407,7 +409,7 @@ NOTE: Check your laptop or console's online help if you do not know how to confi
 . Using System Manager on your laptop or console, configure your cluster:
  .. Point your browser to the node management IP address.
 +
-NOTE: The format for the address is https://x.x.x.x.
+NOTE: The format for the address is +https://x.x.x.x.+
 
  .. Configure the system using the data you collected in the _NetApp ONTAP Configuration guide_.
 +
