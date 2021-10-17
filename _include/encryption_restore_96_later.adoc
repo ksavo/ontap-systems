@@ -6,6 +6,7 @@ Once environment variables are checked, you must complete steps specific to syst
 
 == Restore NVE or NSE when Onboard Key Manager is enabled
 
+.Steps
 . Connect the console cable to the target node.
 . Use the `boot_ontap` command at the LOADER prompt to boot the node.
 . Check the console output:
@@ -63,7 +64,7 @@ AAAAAAAA
 +
 The system boots to Waiting for giveback... prompt.
 
-. Move the console cable to the partner node and login as admin.
+. Move the console cable to the partner node and login as "admin".
 . Confirm the target node is ready for giveback with the `storage failover show` command.
 . Giveback only the CFO aggregates with the `storage failover giveback -fromnode local -only-cfo-aggregates true` command.
  ** If the command fails because of a failed disk, physically dis-engage the failed disk, but leave the disk in the slot until a replacement is received.
@@ -100,8 +101,9 @@ If any interfaces are listed as `false`, revert those interfaces back to their h
 
 == Restore NSE/NVE on systems running ONTAP 9.6 and later
 
+.Steps
 . Connect the console cable to the target node.
-. Use the boot_ontap command at the LOADER prompt to boot the node.
+. Use the `boot_ontap` command at the LOADER prompt to boot the node.
 . Check the console output:
 +
 |===
@@ -138,13 +140,13 @@ If any interfaces are listed as `false`, revert those interfaces back to their h
 . Use the `storage encryption disk show` at the clustershell prompt, to review the output.
 . Use the `security key-manager key query` command to display the key IDs of the authentication keys that are stored on the key management servers.
  ** If the `Restored` column = `yes/true`, you are done and can proceed to complete the replacement process.
- ** If the `Key Manager type` = `external` and the `Restored` column = anything other than `yes/true`, use the security key-manager external restore command to restore the key IDs of the authentication keys.
+ ** If the `Key Manager type` = `external` and the `Restored` column = anything other than `yes/true`, use the `security key-manager external restore` command to restore the key IDs of the authentication keys.
 +
 NOTE: If the command fails, contact Customer Support.
 
- ** If the `Key Manager type` = `onboard` and the `Restored` column = anything other than `yes/true`, use the security key-manager onboard sync command to re-sync the Key Manager type.
+ ** If the `Key Manager type` = `onboard` and the `Restored` column = anything other than `yes/true`, use the `security key-manager onboard sync` command to re-sync the Key Manager type.
 +
-Use the security key-manager key query to verify that the `Restored` column = `yes/true` for all authentication keys.
+Use the `security key-manager key query` command to verify that the `Restored` column = `yes/true` for all authentication keys.
 . Connect the console cable to the partner node.
 . Give back the node using the `storage failover giveback -fromnode local` command.
 . Restore automatic giveback if you disabled it by using the `storage failover modify -node local -auto-giveback true` command.

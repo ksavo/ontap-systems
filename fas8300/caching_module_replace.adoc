@@ -31,11 +31,11 @@ You might want to erase the contents of your caching module before replacing it.
 
 .Steps
 . Although data on the caching module is encrypted, you might want to erase any data from the impaired caching module and verify that the caching module has no data:
- .. Erase the data on the caching module: `system controller flash-cache secure-erase run -node node_name -device-id device_id`
- .. Verify that the data has been erased from the caching module: `system controller flash-cache secure-erase show -node node_name`
+ .. Erase the data on the caching module: `system controller flash-cache secure-erase run -node _node_name_ -device-id _device_id_`
+ .. Verify that the data has been erased from the caching module: `system controller flash-cache secure-erase show -node _node_name_`
 +
 The output should display the caching module status as erased.
-. If AutoSupport is enabled, suppress automatic case creation by invoking an AutoSupport message: `system node autosupport invoke -node * -type all -message MAINT=number_of_hours_downh`
+. If AutoSupport is enabled, suppress automatic case creation by invoking an AutoSupport message: `system node autosupport invoke -node * -type all -message MAINT=_number_of_hours_down_h`
 +
 The following AutoSupport message suppresses automatic case creation for two hours: `cluster1:*> system node autosupport invoke -node * -type all -message MAINT=2h`
 
@@ -44,7 +44,7 @@ The following AutoSupport message suppresses automatic case creation for two hou
 +
 [options="header" cols="1,2"]
 |===
-| If the impaired node is displaying...| Then...
+| *If the impaired node is displaying...| Then...*
 a|
 The LOADER prompt
 a|
@@ -56,7 +56,7 @@ Press Ctrl-C, and then respond `y`.
 a|
 System prompt or password prompt (enter system password)
 a|
-Take over or halt the impaired node: `storage failover takeover -ofnode impaired_node_name`    When the impaired node shows Waiting for giveback..., press Ctrl-C, and then respond `y`.
+Take over or halt the impaired node: `storage failover takeover -ofnode _impaired_node_name_`    When the impaired node shows Waiting for giveback..., press Ctrl-C, and then respond `y`.
 
 |===
 
@@ -72,7 +72,9 @@ To access components inside the controller module, you must remove the controlle
 
 You can use the following animations or the written steps to remove the controller module from the chassis.
 
-https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=75b6fa91-96b9-4323-b156-aae10007c9a5[Removing the controller module] https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=75b6fa91-96b9-4323-b156-aae10007c9a5[Removing the controller module]
+https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=75b6fa91-96b9-4323-b156-aae10007c9a5[Removing the controller module]
+
+image::../media/drw_A400_Remove_controller.png[]
 
 .Steps
 . If you are not already grounded, properly ground yourself.
@@ -109,7 +111,9 @@ NOTE: You must log into the NetApp Support Site to display the _Statement of Vol
 
 You can use the following animation or the written steps to replace a caching module.
 
-https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=d5f75ac5-b4f3-4b49-984b-aad9012f0c8e[Replacing the caching module] https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=d5f75ac5-b4f3-4b49-984b-aad9012f0c8e[Replacing the caching module]
+https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=d5f75ac5-b4f3-4b49-984b-aad9012f0c8e[Replacing the caching module]
+
+image::../media/drw_8300_Replace-flashcache.png[]
 
 .Steps
 . If you are not already grounded, properly ground yourself.
@@ -141,7 +145,9 @@ After you have replaced the component in the controller module, you must re-inst
 
 You can use the following animation or the written steps to install the controller module in the chassis.
 
-https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=9249fdb8-1522-437d-9280-aae10007c97b[Installing the cotroller module] https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=9249fdb8-1522-437d-9280-aae10007c97b[Installing the controller module]
+https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=9249fdb8-1522-437d-9280-aae10007c97b[Installing the controller module]
+
+image::../media/drw_A400_Install_controller.png[]
 
 .Steps
 . If you have not already done so, close the air duct.
@@ -183,14 +189,14 @@ Your system must be at the LOADER prompt to start diagnostics.
 All commands in the diagnostic procedures are issued from the node where the component is being replaced.
 
 .Steps
-. If the node to be serviced is not at the LOADER prompt, reboot the node: `system node halt -node node_name`
+. If the node to be serviced is not at the LOADER prompt, reboot the node: `system node halt -node _node_name_`
 +
 After you issue the command, you should wait until the system stops at the LOADER prompt.
 
 . At the LOADER prompt, access the special drivers specifically designed for system-level diagnostics to function properly: `boot_diags`
 . Select *Scan System* from the displayed menu to enable running the diagnostics tests.
 . Select *Stress-Test system* from the displayed menu.
-. Select **M.2 NVME Drive Stress**from the displayed menu.
+. Select **M.2 NVME Drive Stress** from the displayed menu.
 . Proceed based on the result of the preceding step:
  ** If the test failed, correct the failure, and then rerun the test.
  ** If the test reported no failures, select Reboot from the menu to reboot the system.
@@ -205,7 +211,7 @@ After completing diagnostics, you must recable the system, give back the control
 +
 If you removed the media converters (QSFPs or SFPs), remember to reinstall them if you are using fiber optic cables.
 
-. Return the node to normal operation by giving back its storage: `storage failover giveback -ofnode impaired_node_name`
+. Return the node to normal operation by giving back its storage: `storage failover giveback -ofnode _impaired_node_name_`
 . If automatic giveback was disabled, reenable it: `storage failover modify -node local -auto-giveback true`
 
 == Step 7: Switch back aggregates in a two-node MetroCluster configuration

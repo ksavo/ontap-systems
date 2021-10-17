@@ -27,7 +27,7 @@ a|
 
  .. Press `y` when prompted to restore the backup configuration.
  .. Set the healthy node to advanced privilege level: `set -privilege advanced`
- .. Run the restore backup command: `system node restore-backup -node local -target-address impaired_node_IP_address`
+ .. Run the restore backup command: `system node restore-backup -node local -target-address _impaired_node_IP_address_`
  .. Return the node to admin level: `set -privilege admin`
  .. Press `y` when prompted to use the restored configuration.
  .. Press `y` when prompted to reboot the node.
@@ -47,7 +47,7 @@ If you are prompted to continue with the update, press `y`.
 
 . Ensure that the environmental variables are set as expected:
  .. Take the node to the LOADER prompt.
- .. Check the environment variable settings with the printenv command.
+ .. Check the environment variable settings with the `printenv` command.
  .. If an environment variable is not set as expected, modify it with the setenvenvironment_variable_name changed_value command.
  .. Save your changes using the `saveenv` command.
 . The next depends on your system configuration:
