@@ -174,7 +174,7 @@ NOTE: As you insert the connector, you should feel it click into place; if you d
 +
 https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=48552ddf-0925-4f88-8e93-ab1b00666489[Two-node switchless cluster cabling]
 
-image::../media/drw_a400_tnsc_network_cabling.png[]
+image::../media/drw_a400_tnsc_network_cabling.gif[]
 
 . Cable your storage: link:install_detailed_guide.md#[Cabling controllers to drive shelves]
 
@@ -372,7 +372,7 @@ NOTE: Check your laptop or console's online help if you do not know how to confi
 . Using System Manager on your laptop or console, configure your cluster:
  .. Point your browser to the node management IP address.
 +
-NOTE: The format for the address is https://x.x.x.x.
+NOTE: The format for the address is +https://x.x.x.x+.
 
  .. Configure the system using the data you collected in the _NetApp ONTAP Configuration guide_.
 +

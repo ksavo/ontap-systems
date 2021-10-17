@@ -11,6 +11,7 @@ summary: You replace the real-time clock (RTC) battery in the controller module 
 [.lead]
 You replace the real-time clock (RTC) battery in the controller module so that your system's services and applications that depend on accurate time synchronization continue to function.
 
+.About this task
 * You can use this procedure with all versions of ONTAP supported by your system
 * All other components in the system must be functioning properly; if not, you must contact technical support.
 

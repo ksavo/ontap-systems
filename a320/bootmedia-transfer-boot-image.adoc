@@ -69,23 +69,23 @@ The controller module begins to boot as soon as it is fully seated in the chassi
 If you miss this message, press Ctrl-C, select the option to boot to Maintenance mode, and then halt the node to boot to LOADER.
 
 . Although the environment variables and bootargs are retained, you should check that all required boot environment variables and bootargs are properly set for your system type and configuration using the `printenv bootarg name` command and correct any errors using the `setenv variable-name <value\>` command.
- .. Check the boot environment variables:
-  *** bootarg.init.boot_clustered
-  *** partner-sysid
-  *** bootarg.init.flash_optimized for AFF C190/AFF A220 (All Flash FAS)
-  *** bootarg.init.san_optimized for AFF A220 and All SAN Array
-  *** bootarg.init.switchless_cluster.enable
- .. If External Key Manager is enabled, check the bootarg values, listed in the `kenv` ASUP output:
-  *** bootarg.storageencryption.support _value_
-  *** bootarg.keymanager.support _value_
-  *** kmip.init.interface _value_
-  *** kmip.init.ipaddr _value_
-  *** kmip.init.netmask _value_
-  *** kmip.init.gateway _value_
- .. If Onboard Key Manager is enabled, check the bootarg values, listed in the `kenv` ASUP output:
-  *** bootarg.storageencryption.support _value_
-  *** bootarg.keymanager.support _value_
-  *** bootarg.onboard_keymanager _value_
+.. Check the boot environment variables:
+ *** `bootarg.init.boot_clustered`
+ *** `partner-sysid`
+ *** `bootarg.init.flash_optimized` for AFF C190/AFF A220 (All Flash FAS)
+ *** `bootarg.init.san_optimized` for AFF A220 and All SAN Array
+ *** `bootarg.init.switchless_cluster.enable`
+.. If External Key Manager is enabled, check the bootarg values, listed in the `kenv` ASUP output:
+ *** `bootarg.storageencryption.support <value>`
+ *** `bootarg.keymanager.support <value>`
+ *** `kmip.init.interface <value>`
+ *** `kmip.init.ipaddr <value>`
+ *** `kmip.init.netmask <value>`
+ *** `kmip.init.gateway <value>`
+.. If Onboard Key Manager is enabled, check the bootarg values, listed in the `kenv` ASUP output:
+ *** `bootarg.storageencryption.support <value>`
+ *** `bootarg.keymanager.support <value>`
+ *** `bootarg.onboard_keymanager <value>`
  .. Save the environment variables you changed with the `savenv` command
  .. Confirm your changes using the `printenv variable-name` command.
 . From the LOADER prompt, boot the recovery image from the USB flash drive: `boot_recovery`
@@ -105,9 +105,9 @@ The image is downloaded from the USB flash drive.
 +
 From the ONTAP prompt, you can issue the command system node halt -skip-lif-migration-before-shutdown true -ignore-quorum-warnings true -inhibit-takeover true.
 
- .. Check the environment variable settings with the printenv command.
- .. If an environment variable is not set as expected, modify it with the setenvenvironment_variable_name changed_value command.
- .. Save your changes using the saveenv command.
+ .. Check the environment variable settings with the `printenv` command.
+ .. If an environment variable is not set as expected, modify it with the `setenv __environment-variable-name__ __changed-value__` command.
+ .. Save your changes using the `savenev` command.
  .. Reboot the node.
 . With the rebooted impaired node displaying the Waiting for Giveback... message, perform a giveback from the healthy node:
 +
@@ -128,7 +128,7 @@ NOTE: If the giveback is vetoed, you can consider overriding the vetoes.
 http://docs.netapp.com/ontap-9/topic/com.netapp.doc.dot-cm-hacg/home.html[ONTAP 9 High-Availability Configuration Guide]
 
  .. Monitor the progress of the giveback operation by using the storage failover show-giveback command.
- .. After the giveback operation is complete, confirm that the HA pair is healthy and that takeover is possible by using the storage failover show command.
+ .. After the giveback operation is complete, confirm that the HA pair is healthy and that takeover is possible by using the `storage failover show` command.
  .. Restore automatic giveback if you disabled it using the storage failover modify command.
 
 +

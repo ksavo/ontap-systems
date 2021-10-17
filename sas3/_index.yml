@@ -1,10 +1,12 @@
 indexpage:
-  lead: SAS
+#  lead: SAS3
   tiles:
     - title: Get started 
       links:
         - title: ONTAP Release notes
           url: https://library.netapp.com/ecm/ecm_download_file/ECMLP2492508
+        - title: Storage data sheet
+          url: https://www.netapp.com/data-storage/disk-shelves-storage-media/
     - title: Install and setup
       links:
         - title: Install a shelf in a new storage system
@@ -35,10 +37,9 @@ indexpage:
           url: /service-hot-swap-power-supply.html
         - title: Shelf LED status conditions
           url: /service-monitor-leds.html
-    - title: Learn
-      links:
-        - title: Storage data sheet
-          url: https://www.netapp.com/data-storage/disk-shelves-storage-media/
+          url: /sas3/service-replace-power-supply.html
+        - title: RTC battery
+          url: /sas3/service-replace-rtc-battery.html
     - title: More resources
       links:
         - title: ONTAP documentation

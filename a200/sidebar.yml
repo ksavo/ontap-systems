@@ -2,8 +2,6 @@ section: a200
 title: AFF A200 systems
 url: /a200/index.html
 entries:
- - title: TEST TO BE REMOVED
-   url: /a200/test.html
  - title: Install and setup - AFF A200
    entries:
    - title: Cluster configuration worksheet

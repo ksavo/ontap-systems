@@ -9,7 +9,6 @@ summary: 'Before shutting down the impaired node, you need to check whether the 
 :imagesdir: ../media/
 
 [.lead]
-include::../_include/encryption_steps_before_shutdown[]
-
+include::../_include/encryption_steps_before_shutdown.adoc[]
 [.lead]
 include::../_include/encryption_check_96_later.adoc[]

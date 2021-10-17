@@ -1,10 +1,14 @@
 indexpage:
-  lead: FAS8200
+#  lead: FAS8200
   tiles:
     - title: Get started 
       links:
         - title: ONTAP Release notes
-          url: /subfolder/page.html
+          url: https://library.netapp.com/ecm/ecm_download_file/ECMLP2492508
+        - title: System data sheet
+          url: https://www.netapp.com/media/8938-ds-3807.pdf
+        - title: Storage data sheet
+          url: https://www.netapp.com/data-storage/disk-shelves-storage-media/
     - title: Install and setup
       links:
         - title: Most configurations
@@ -13,8 +17,6 @@ indexpage:
           url: https://docs.netapp.com/us-en/ontap-metrocluster/install-fc/index.html
         - title: Stretch MetroCluster configurations
           url: https://docs.netapp.com/us-en/ontap-metrocluster/install-stretch/index.html
-        - title: MetroCluster IP configurations
-          url: https://docs.netapp.com/us-en/ontap-metrocluster/install-ip/index.html
     - title: Maintain
       links:
         - title: Boot media
@@ -37,12 +39,6 @@ indexpage:
           url: /power-supply-swapout.html
         - title: RTC battery
           url: /rtc-battery-replace.html
-    - title: Learn
-      links:
-        - title: System data sheet
-          url: https://www.netapp.com/media/8938-ds-3807.pdf
-        - title: Storage data sheet
-          url: https://www.netapp.com/data-storage/disk-shelves-storage-media/
     - title: Add or remove shelves
       links:
         - title: SAS with IOM12

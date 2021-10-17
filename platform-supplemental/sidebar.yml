@@ -80,3 +80,11 @@ entries:
         url: /platform-supplemental/drive-hotswap-drive.html
       - title: Hot-swap a HDD
         url: /platform-supplemental/drive-hotswap-sas.html
+  - title: All SAN Array systems
+    entries:
+    - title: Set up and maintain
+      url: /platform-supplemental/all-san-array.html
+  - title: Hardware upgrade
+    entries:
+    - title: Upgrade procedures
+      url: /platform-supplemental/upgrade-linkout.html

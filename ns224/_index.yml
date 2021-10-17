@@ -1,10 +1,12 @@
 indexpage:
-  lead: NS224
+#  lead: NS224
   tiles:
     - title: Get started 
       links:
         - title: ONTAP Release notes
           url: https://library.netapp.com/ecm/ecm_download_file/ECMLP2492508
+        - title: Storage data sheet
+          url: https://www.netapp.com/data-storage/disk-shelves-storage-media/
     - title: Install and setup
       links:
         - title: Hot-add a shelf
@@ -31,10 +33,6 @@ indexpage:
           url: /service-replace-power-supply.html
         - title: RTC battery
           url: /service-replace-rtc-battery.html
-    - title: Learn
-      links:
-        - title: Storage data sheet
-          url: https://www.netapp.com/data-storage/disk-shelves-storage-media/
     - title: More resources
       links:
         - title: ONTAP documentation
