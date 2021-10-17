@@ -1,10 +1,14 @@
 indexpage:
-  lead: FAS2700
+#  lead: AFF A220 and FAS2700
   tiles:
     - title: Get started 
       links:
         - title: ONTAP Release notes
           url: https://library.netapp.com/ecm/ecm_download_file/ECMLP2492508
+        - title: System data sheet
+          url: https://www.netapp.com/media/8936-ds-3808.pdf
+        - title: Storage data sheet
+          url: https://www.netapp.com/data-storage/disk-shelves-storage-media/
     - title: Install and setup
       links:
         - title: Most configurations
@@ -33,10 +37,6 @@ indexpage:
           url: /rtc-battery-replace.html
     - title: Learn
       links:
-        - title: System data sheet
-          url: https://www.netapp.com/media/8936-ds-3808.pdf
-        - title: Storage data sheet
-          url: https://www.netapp.com/data-storage/disk-shelves-storage-media/
         - title: Replacing an internal disk drive video
           url: https://www.youtube.com/watch?v=Ziqg9HL8oYQ
         - title: NetApp All-Flash FAS Solution for Nonpersistent Desktops with VMware Horizon View | TR-4539

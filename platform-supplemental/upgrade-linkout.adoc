@@ -1,0 +1,10 @@
+permalink: platform-supplemental/upgrade-linkout.html
+sidebar: sidebar
+keywords: hardware upgrade, arl
+summary: Hardware upgrade.
+---
+= Upgrade procedures
+:icons: font
+:imagesdir: ../media/
+
+https://docs.netapp.com/us-en/ontap-systems-upgrade[AFF and FAS Upgrade Documentation]

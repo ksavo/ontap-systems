@@ -30,9 +30,9 @@ You should perform the drive reassignment as directed in the procedure.
 https://hwu.netapp.com[NetApp Hardware Universe]
 
 * It is important that you apply the commands in these steps on the correct systems:
- ** The impaired node is the node that is being replaced.
- ** The replacement node is the new node that is replacing the impaired node.
- ** The healthy node is the surviving node.
+ ** The _impaired node_ is the node that is being replaced.
+ ** The _replacement_ node is the new node that is replacing the impaired node.
+ ** The _healhy node_ is the surviving node.
 * You must always capture the node's console output to a text file.
 +
 This provides you a record of the procedure so that you can troubleshoot any issues that you might encounter during the replacement process.

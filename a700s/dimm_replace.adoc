@@ -15,17 +15,13 @@ All other components in the system must be functioning properly; if not, you mus
 
 You must replace the failed component with a replacement FRU component you received from your provider.
 
-.Steps
-
 == Shut down the impaired node
 
 [.lead]
 To shut down the impaired node, you must determine the status of the node and, if necessary, take over the node so that the healthy node continues to serve data from the impaired node storage.
 
-.Steps
+If you have a cluster with more than two nodes, it must be in quorum. If the cluster is not in quorum or a healthy node shows false for eligibility and health, you must correct the issue before shutting down the impaired node.
 
-* If you have a cluster with more than two nodes, it must be in quorum. If the cluster is not in quorum or a healthy node shows false for eligibility and health, you must correct the issue before shutting down the impaired node.
-+
 http://docs.netapp.com/ontap-9/topic/com.netapp.doc.dot-cm-sag/home.html[ONTAP 9 System Administration Reference]
 
 .Steps
@@ -41,14 +37,15 @@ The LOADER prompt
 a|
 Go to the next step.
 a|
-Waiting for giveback...
+`Waiting for giveback...`
 a|
-    Press Ctrl-C, and then respond `y`.
+Press Ctrl-C, and then respond `y`.
 a|
 System prompt or password prompt (enter system password)
 a|
-Take over or halt the impaired node: `storage failover takeover -ofnode impaired_node_name`    When the impaired node shows Waiting for giveback..., press Ctrl-C, and then respond `y`.
-+
+Take over or halt the impaired node: `storage failover takeover -ofnode impaired_node_name`
+
+When the impaired node shows `Waiting for giveback...`, press Ctrl-C, and then respond `y`.
 |===
 
 == Remove the controller module
@@ -201,6 +198,7 @@ Your system must be at the LOADER prompt to start diagnostics.
 
 All commands in the diagnostic procedures are issued from the node where the component is being replaced.
 
+.Steps
 . If the node to be serviced is not at the LOADER prompt, reboot the node: `system node halt -node node_name`
 +
 After you issue the command, you should wait until the system stops at the LOADER prompt.

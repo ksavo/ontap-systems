@@ -1,10 +1,12 @@
 indexpage:
-  lead: AFF C190
+#  lead: AFF C190
   tiles:
     - title: Get started 
       links:
         - title: ONTAP Release notes
           url: https://library.netapp.com/ecm/ecm_download_file/ECMLP2492508
+        - title: System data sheet
+          url: https://www.netapp.com/pdf.html?item=/media/7828-ds-3582.pdf
     - title: Install and setup
       links:
         - title: Most configurations
@@ -27,8 +29,6 @@ indexpage:
           url: /rtc-battery-replace.html
     - title: Learn
       links:
-        - title: Storage data sheet
-          url: https://www.netapp.com/data-storage/disk-shelves-storage-media/
         - title: Adding Capacity to an AFF C190 video
           url: https://www.youtube.com/watch?v=CkEoO3spgo4
         - title: Replacing an internal disk drive video
