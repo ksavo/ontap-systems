@@ -240,7 +240,7 @@ https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=61d23302-9526-4a2b
 +
 If you have more than one drive shelf stack, see the _Installation and Cabling Guide_ for your drive shelf type.
 +
-link:../com.netapp.doc.hw-ds-sas3-icg/home.html[Installing and cabling]***
+link:..https://docs.netapp.com/us-en/ontap-systems/sas3/install-new-system.html[Install and cable shelves for a new system installation - shelves with IOM12 modules]
 
 . Go to <<Step 5: Complete system setup and configuration>> to complete system setup and configuration.
 
