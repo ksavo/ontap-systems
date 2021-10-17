@@ -1,20 +1,18 @@
 indexpage:
-  lead: FAS2600
+#  lead: FAS2600
   tiles:
     - title: Get started 
       links:
         - title: ONTAP Release notes
           url: /subfolder/page.html
+        - title: System data sheet
+          url: https://www.netapp.com/media/8936-ds-3808.pdf
+        - title: Storage data sheet
+          url: https://www.netapp.com/data-storage/disk-shelves-storage-media/
     - title: Install and setup
       links:
         - title: Most configurations
           url: /install-setup-linkout.html
-        - title: Fabric-attached MetroCluster configurations
-          url: https://docs.netapp.com/us-en/ontap-metrocluster/install-fc/index.html
-        - title: Stretch MetroCluster configurations
-          url: https://docs.netapp.com/us-en/ontap-metrocluster/install-stretch/index.html
-        - title: MetroCluster IP configurations
-          url: https://docs.netapp.com/us-en/ontap-metrocluster/install-ip/index.html
     - title: Maintain
       links:
         - title: Boot media
@@ -35,10 +33,6 @@ indexpage:
           url: /rtc-battery-replace.html
     - title: Learn
       links:
-        - title: System data sheet
-          url: https://www.netapp.com/media/8936-ds-3808.pdf
-        - title: Storage data sheet
-          url: https://www.netapp.com/data-storage/disk-shelves-storage-media/
         - title: Replacing an internal disk drive video
           url: https://www.youtube.com/watch?v=Ziqg9HL8oYQ
     - title: Add or remove shelves

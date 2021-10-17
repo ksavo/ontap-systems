@@ -158,6 +158,7 @@ a|
 image:../media/2860_dwg_e2860_de460c_gentle_close.gif[]
 a|
 CAUTION: Possible loss of data access. Never slam the drawer shut. Push the drawer in slowly to avoid jarring the drawer and causing damage to the storage array.
+
 |===
 
  .. Close the drive drawer by pushing both levers towards the center.
@@ -166,6 +167,7 @@ The green Activity LED for the replaced drive on the front of the drive drawer c
 . If you are replacing another disk drive, repeat Steps 4 through 7.
 . Check the Activity LED and the Attention LED on the drive you replaced.
 +
+[%header,cols="1,2"]
 |===
 | LED status| Description
 a|
@@ -182,9 +184,7 @@ a|
 The new drive might be defective. Replace it with another new drive.
 
 [NOTE]
-====
 When you first insert a drive, its Attention LED might be on. However, the LED should go off within a minute.
-
 |===
 
 . If you disabled disk ownership automatic assignment in Step 1, manually assign disk ownership, and then reenable disk ownership automatic assignment if needed:

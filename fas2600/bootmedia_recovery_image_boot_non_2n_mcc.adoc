@@ -68,16 +68,16 @@ Waiting for giveback...
 a|
 
  .. Log into the partner node.
- .. Confirm the target node is ready for giveback with the storage failover show command.
+ .. Confirm the target node is ready for giveback with the `storage failover show` command.
 
 +
 |===
 
 . Connect the console cable to the partner node.
-. Give back the node using the storage failover giveback -fromnode local command.
-. At the cluster prompt, check the logical interfaces with the net int -is-home false command.
+. Give back the node using the `storage failover giveback -fromnode local` command.
+. At the cluster prompt, check the logical interfaces with the `net int -is-home false` command.
 +
-If any interfaces are listed as "false", revert those interfaces back to their home port using the net int revert command.
+If any interfaces are listed as "false", revert those interfaces back to their home port using the `net int revert` command.
 
-. Move the console cable to the repaired node and run the version -v command to check the ONTAP versions.
-. Restore automatic giveback if you disabled it by using the storage failover modify -node local -auto-giveback true command.
+. Move the console cable to the repaired node and run the `version -v` command to check the ONTAP versions.
+. Restore automatic giveback if you disabled it by using the `storage failover modify -node local -auto-giveback true` command.

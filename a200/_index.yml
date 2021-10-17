@@ -1,14 +1,15 @@
 indexpage:
-  lead: AFF A200
   tiles:
     - title: Get started 
       links:
         - title: ONTAP Release notes
           url: /subfolder/page.html
+        - title: Storage data sheet
+          url: https://www.netapp.com/data-storage/disk-shelves-storage-media/          
     - title: Install and setup
       links:
         - title: All configurations
-          url: /install-setup-installation.html
+          url: /install-setup-linkout.html
     - title: Maintain
       links:
         - title: Boot media
@@ -27,8 +28,6 @@ indexpage:
           url: /rtc-battery-replace.html
     - title: Learn
       links:
-        - title: Storage data sheet
-          url: https://www.netapp.com/data-storage/disk-shelves-storage-media/
         - title: Replacing an internal disk drive video
           url: https://www.youtube.com/watch?v=Ziqg9HL8oYQ
         - title: NetApp All-Flash FAS Solution for Nonpersistent Desktops with VMware Horizon View | TR-4539
