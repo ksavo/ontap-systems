@@ -16,7 +16,7 @@ To help you cable your SAS drive shelves with IOM12 modules to your storage syst
 ** link:install-cabling-rules.html#configuration-rules[Configurations]
 ** link:install-cabling-rules.html#controller-slot-numbering-rules[Controller slot numbering]
 ** link:install-cabling-rules.html#shelf-to-shelf-connection-rules[Shelf-to-shelf connections]
-** link:install-cabling-rules.html[Controller-to-stack connections]
+** link:install-cabling-rules.html#controller-to-stack-connection-rules[Controller-to-stack connections]
 ** link:install-cabling-rules.html#mini-sas-hd-sas-optical-cable-rules[Mini-SAS HD SAS optical cables]
 
 *Cabling worksheets and examples*
