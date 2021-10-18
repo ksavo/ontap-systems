@@ -108,7 +108,7 @@ After you have replaced the component in the controller module, you must re-inst
 
 You can use the following animation, drawing, or the written steps to install the controller module in the chassis.
 
-https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=9249fdb8-1522-437d-9280-aae10007c97b[Installing the cotroller module]
+https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=9249fdb8-1522-437d-9280-aae10007c97b[Installing the controller module]
 
 image::../media/drw_A400_Install_controller.png[]
 
@@ -152,7 +152,7 @@ Your system must be at the LOADER prompt to start diagnostics.
 All commands in the diagnostic procedures are issued from the node where the component is being replaced.
 
 .Steps
-. If the node to be serviced is not at the LOADER prompt, reboot the node: `system node halt -node node_name`
+. If the node to be serviced is not at the LOADER prompt, reboot the node: `system node halt -node _node_name_`
 +
 After you issue the command, you should wait until the system stops at the LOADER prompt.
 
@@ -162,7 +162,7 @@ After you issue the command, you should wait until the system stops at the LOADE
 . Select an option from the displayed sub-menu and run the test.
 . Proceed based on the result of the preceding step:
  ** If the test failed, correct the failure, and then rerun the test.
- ** If the test reported no failures, select Reboot from the menu to reboot the system.
+ ** If the test reported no failures, select `Reboot` from the menu to reboot the system.
 
 == Step 6: Restore the controller module to operation after running diagnostics
 
@@ -174,7 +174,7 @@ After completing diagnostics, you must recable the system, give back the control
 +
 If you removed the media converters (QSFPs or SFPs), remember to reinstall them if you are using fiber optic cables.
 
-. Return the node to normal operation by giving back its storage: `storage failover giveback -ofnode impaired_node_name`
+. Return the node to normal operation by giving back its storage: `storage failover giveback -ofnode _impaired_node_name_`
 . If automatic giveback was disabled, reenable it: `storage failover modify -node local -auto-giveback true`
 
 == Step 7: Switch back aggregates in a two-node MetroCluster configuration

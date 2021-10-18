@@ -26,7 +26,7 @@ include::../_include/shutdown_most_frus.adoc[]
 
 === Option 2: Controller is in a two-node MetroCluster
 
-[.lead
+[.lead]
 include::../_include/shutdown_2n_mcc.adoc[]
 
 == Step 2: Remove the controller module
@@ -162,7 +162,7 @@ The controller module begins to boot as soon as it is fully seated in the chassi
 NOTE: If your system stops at the boot menu, select the option to boot to LOADER.
 
  .. At the LOADER prompt, enter `bye` to reinitialize the PCIe cards and other components and let the node reboot.
-. Return the node to normal operation by giving back its storage: `storage failover giveback -ofnode impaired_node_name`
+. Return the node to normal operation by giving back its storage: `storage failover giveback -ofnode _impaired_node_name_`
 . If automatic giveback was disabled, reenable it: `storage failover modify -node local -auto-giveback true`
 
 == Step 6: Switch back aggregates in a two-node MetroCluster configuration
@@ -180,7 +180,7 @@ After completing diagnostics, you must recable the system, give back the control
 +
 If you removed the media converters (QSFPs or SFPs), remember to reinstall them if you are using fiber optic cables.
 
-. Return the node to normal operation by giving back its storage: `storage failover giveback -ofnode impaired_node_name`
+. Return the node to normal operation by giving back its storage: `storage failover giveback -ofnode _impaired_node_name_`
 . If automatic giveback was disabled, reenable it: `storage failover modify -node local -auto-giveback true`
 
 == Step 8: Return the failed part to NetApp

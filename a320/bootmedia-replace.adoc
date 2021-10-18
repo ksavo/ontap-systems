@@ -21,14 +21,14 @@ To access components inside the controller module, you must remove the controlle
 . Unplug the controller module power supply from the power source.
 . Loosen the hook and loop strap binding the cables to the cable management device, and then unplug the system cables and SFPs (if needed) from the controller module, keeping track of where the cables were connected.
 +
-image::../media/drw_a320_controller_cable_unplug_animated_gif.svg[]
+image::../media/drw_a320_controller_cable_unplug_animated_gif.gif[]
 +
 Leave the cables in the cable management device so that when you reinstall the cable management device, the cables are organized.
 
 . Remove and set aside the cable management devices from the left and right sides of the controller module.
 . Remove the controller module from the chassis:
 +
-image::../media/drw_a320_controller_remove_animated_gif.svg[]
+image::../media/drw_a320_controller_remove_animated_gif.gif[]
 +
 .. Insert your forefinger into the latching mechanism on either side of the controller module.
 .. Press down on the orange tab on top of the latching mechanism until it clears the latching pin on the chassis.
@@ -49,7 +49,7 @@ You must locate the boot media in the controller module, and then follow the dir
 
 . Locate and remove the boot media from the controller module:
 +
-image::../media/drw_a320_boot_media_replace_animated_gif.svg[]
+image::../media/drw_a320_boot_media_replace_animated_gif.gif[]
 +
  .. Press the blue button at the end of the boot media until the lip on the boot media clears the blue button.
  .. Rotate the boot media up and gently pull the boot media out of the socket.
@@ -106,7 +106,7 @@ Make sure that you install the USB flash drive in the slot labeled for USB devic
 
 . Complete the reinstallation of the controller module:
 +
-image::../media/drw_a320_controller_install_animated_gif.svg[]
+image::../media/drw_a320_controller_install_animated_gif.gif[]
 
  .. Make sure the latch arms are locked in the extended position.
  .. Using the latch arms, push the controller module into the chassis bay until it stops.

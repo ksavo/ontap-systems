@@ -25,20 +25,20 @@ include::../_include/shutdown_most_frus.adoc[]
 [.lead]
 To access components inside the controller module, you must remove the controller module from the chassis.
 
-image::../media/drw_a320_controller_remove_animated_gif.svg[]
+image::../media/drw_a320_controller_remove_animated_gif.gif[]
 
 . If you are not already grounded, properly ground yourself.
 . Unplug the controller module power supply from the power source.
 . Loosen the hook and loop strap binding the cables to the cable management device, and then unplug the system cables and SFPs (if needed) from the controller module, keeping track of where the cables were connected.
 +
-image::../media/drw_a320_controller_cable_unplug_animated_gif.svg[]
+image::../media/drw_a320_controller_cable_unplug_animated_gif.gif[]
 +
 Leave the cables in the cable management device so that when you reinstall the cable management device, the cables are organized.
 
 . Remove and set aside the cable management devices from the left and right sides of the controller module.
 . Remove the controller module from the chassis:
 
-image::../media/drw_a320_controller_remove_animated_gif.svg[]
+image::../media/drw_a320_controller_remove_animated_gif.gif[]
 
  .. Insert your forefinger into the latching mechanism on either side of the controller module.
  .. Press down on the orange tab on top of the latching mechanism until it clears the latching pin on the chassis.
@@ -53,7 +53,7 @@ The latching mechanism hook should be nearly vertical and should be clear of the
 [.lead]
 Replacing a system DIMM involves identifying the target DIMM through the associated error message, locating the target DIMM using the FRU map on the air duct or the lit LED on the motherboard, and then replacing the DIMM.
 
-image::../media/drw_a320_system_dimm_replace_aminated_gif.svg[]
+image::../media/drw_a320_system_dimm_replace_aminated_gif.gif[]
 
 . Rotate the air duct to the open position.
 . Locate the DIMMs on your controller module.
@@ -101,7 +101,7 @@ After you have replaced the component in the controller module, you must re-inst
 . If you have not already done so, close the air duct at the rear of the controller module and reinstall the cover over the PCIe cards.
 . Align the end of the controller module with the opening in the chassis, and then gently push the controller module halfway into the system.
 +
-image::../media/drw_a320_controller_install_animated_gif.svg[]
+image::../media/drw_a320_controller_install_animated_gif.gif[]
 +
 NOTE: Do not completely insert the controller module in the chassis until instructed to do so.
 

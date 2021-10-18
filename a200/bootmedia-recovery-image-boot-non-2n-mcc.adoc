@@ -27,7 +27,7 @@ a|
 
  .. Press `y` when prompted to restore the backup configuration.
  .. Set the healthy node to advanced privilege level: `set -privilege advanced`
- .. Run the restore backup command: `system node restore-backup -node local -target-address impaired_node_IP_address`
+ .. Run the restore backup command: `system node restore-backup -node local -target-address _impaired_node_IP_address_`
  .. Return the node to admin level: `set -privilege admin`
  .. Press `y` when prompted to use the restored configuration.
  .. Press `y` when prompted to reboot the node.
