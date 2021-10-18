@@ -9,7 +9,7 @@ If any volumes are listed in the output, NVE is configured and you need to verif
  ** If no disks are shown, NSE is not configured.
  ** If NVE and NSE are not configured, it's safe to shut down the impaired node.
 
-== Verify NVE configuration
+=== Verify NVE configuration
 
 . Display the key IDs of the authentication keys that are stored on the key management servers: `security key-manager query`
  ** If the `Key Manager` type displays `external` and the `Restored` column displays `yes`, it's safe to shut down the impaired node.
@@ -44,7 +44,7 @@ NOTE: Enter the customer's onboard key management passphrase at the prompt. If t
  .. Return to admin mode: `set -priv admin`
  .. You can safely shutdown the node.
 
-== Verify NSE configuration
+=== Verify NSE configuration
 
 . Display the key IDs of the authentication keys that are stored on the key management servers: `security key-manager query`
  ** If the `Key Manager` type displays `external` and the `Restored` column displays `yes`, it's safe to shut down the impaired node.

@@ -10,7 +10,7 @@ If any volumes are listed in the output, NVE is configured and you need to verif
  ** If the command output list the drive details with Mode & Key ID information, NSE is configured and you need to verify the NSE configuration.
  ** If NVE and NSE are not configured, it's safe to shut down the impaired node.
 
-== Verifying NVE configuration
+=== Verifying NVE configuration
 .Steps
 . Display the key IDs of the authentication keys that are stored on the key management servers: `security key-manager query`
  ** If the `Restored` column displays `yes` and all key managers display `available`, it's safe to shut down the impaired node.
@@ -44,7 +44,7 @@ NOTE: Enter the customer's onboard key management passphrase at the prompt. If t
   * Return to admin mode: `set -priv admin`
   * You can safely shutdown the node.
 
-== Verifying NSE configuration
+=== Verifying NSE configuration
 .Steps
 . Display the key IDs of the authentication keys that are stored on the key management servers: `security key-manager query`
  ** If the `Restored` column displays `yes` and all key managers display `available`, it's safe to shut down the impaired node.

@@ -188,7 +188,9 @@ The node displays the LOADER prompt.
 a|
 An HA pair
 a|
-Perform a give back: `storage failover giveback -ofnode replacement_node_name`        *Note:* If you disabled automatic giveback, re-enable it with the storage failover modify command.
+Perform a give back: `storage failover giveback -ofnode replacement_node_name`
+
+NOTE: If you disabled automatic giveback, re-enable it with the storage failover modify command.
 a|
 A two-node MetroCluster configuration
 a|

@@ -104,7 +104,7 @@ NVMEM battery
  .. Locate the battery plug and squeeze the clip on the face of the battery plug to release the plug from the socket, and then unplug the battery cable from the socket.
  .. Wait a few seconds, and then plug the battery back into the socket.
 
-. Return to link:dimm_replace.md#d16e132[dimm_replace.md#d16e132] of this procedure to recheck the NVMEM LED.
+. Return to step 2 of this procedure to recheck the NVMEM LED.
 . Locate the DIMMs on your controller module.
 +
 NOTE: Each system memory DIMM has an LED located on the board next to each DIMM slot. The LED for the faulty blinks every two seconds.
@@ -223,7 +223,9 @@ The node displays the LOADER prompt.
 a|
 An HA pair
 a|
-Perform a give back: `storage failover giveback -ofnode replacement_node_name`        *Note:* If you disabled automatic giveback, re-enable it with the storage failover modify command.
+Perform a give back: `storage failover giveback -ofnode replacement_node_name`
+
+NOTE: If you disabled automatic giveback, re-enable it with the storage failover modify command.
 a|
 A two-node MetroCluster configuration
 a|
@@ -232,8 +234,7 @@ a|
 A stand-alone configuration
 a|
 Proceed to the next step.         No action is required.
-+
- You have completed system-level diagnostics.
+You have completed system-level diagnostics.
 
 a|
 Resulted in some test failures

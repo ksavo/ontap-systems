@@ -39,7 +39,7 @@ A stand-alone configuration
 a|
 
  .. Exit Maintenance mode: `halt`
- .. Go to link:chassis_replace.md#["Completing the replacement process].
+ .. Go to <<Step 4: Return the failed part to NetApp>>.
 
 a|
 An HA pair with a second controller module
