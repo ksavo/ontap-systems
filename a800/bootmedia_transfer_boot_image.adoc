@@ -69,7 +69,7 @@ The node begins to boot as soon as it is completely installed into the chassis.
 +
 If you miss this message, press Ctrl-C, select the option to boot to Maintenance mode, and then `halt` the node to boot to LOADER.
 
-. Although the environment variables and bootargs are retained, you should check that all required boot environment variables and bootargs are properly set for your system type and configuration using the `printenv bootarg name` command and correct any errors using the `setenv variable-name <value\>` command.
+. Although the environment variables and bootargs are retained, you should check that all required boot environment variables and bootargs are properly set for your system type and configuration using the `printenv bootarg name` command and correct any errors using the `setenv _variable-name_ <value\>` command.
 .. Check the boot environment variables:
  *** `bootarg.init.boot_clustered`
  *** `partner-sysid`
@@ -88,4 +88,4 @@ If you miss this message, press Ctrl-C, select the option to boot to Maintenance
  *** `bootarg.keymanager.support <value>`
  *** `bootarg.onboard_keymanager <value>`
  .. Save the environment variables you changed with the `savenv` command
- .. Confirm your changes using the `printenv variable-name` command.
+ .. Confirm your changes using the `printenv _variable-name_` command.

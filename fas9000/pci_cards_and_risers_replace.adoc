@@ -85,7 +85,7 @@ NOTE: Be sure to exit Maintenance mode after completing the conversion.
 a|
 An HA pair
 a|
-`storage failover giveback -ofnode impaired_node_name`
+`storage failover giveback -ofnode _impaired_node_name_`
 a|
 A two-node MetroCluster configuration
 a|

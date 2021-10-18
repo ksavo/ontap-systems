@@ -134,7 +134,7 @@ image::../media/drw_affa250_weight_caution.png[]
 == Step 3: Cable controllers
 
 [.lead]
-There is required cabling for your platform's cluster using the two-node switchless cluster method or the cluster interconnect network method. There is optional cabling to the Fibre Channel or iSCSI host networks or direct-attached storage. This cabling is not exclusive; you can have cabling to a host network and storage.
+There is required cabling for your platform's cluster using the two-node switchless cluster method or the cluster interconnect network method. There is optional cabling to the Fibre Channel or iSCSI host networks or direct-attached storage. This cabling is not exclusive; you can have cable to a host network and storage.
 
 === Required cabling: Cable controllers to a cluster
 
@@ -259,7 +259,7 @@ a|
 a|
 To perform other optional cabling, choose from:
 
-* link:install-detailed-guide.html#option-2-connecting-to-a-25gbe-host[Option 2: Cabling to a 25GbE data or host network]
+* link:install-detailed-guide.html#option-2-connecting-to-a-25gbe-host[Option 2: Cable to a 25GbE data or host network]
 * link:install-detailed-guide.html#option-3-connecting-to-a-single-direct-attached-ns224-drive-shelf[Option 3: Cabling the controllers to a single drive shelf]
 
 a|
@@ -293,7 +293,7 @@ a|
 a|
 To perform other optional cabling, choose from:
 
-* link:install-detailed-guide.html#option-1-connecting-to-a-fibre-channel-host[Option 1: Cabling to a Fibre Channel host network]
+* link:install-detailed-guide.html#option-1-connecting-to-a-fibre-channel-host[Option 1: Cable to a Fibre Channel host network]
 * link:install-detailed-guide.html#option-3-connecting-to-a-single-direct-attached-ns224-drive-shelf[Option 3: Cabling the controllers to a single drive shelf]
 
 a|

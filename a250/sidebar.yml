@@ -2,7 +2,7 @@ section: a250
 title: AFF A250 systems
 url: /a250/index.html
 entries:
-  - title: Install and setup - AFF A250
+  - title: Install and setup
     entries:
     - title: Choose install and setup experience
       url: /a250/install-setup.html
@@ -12,7 +12,7 @@ entries:
       url: /a250/install-videos.html
     - title: Detailed steps
       url: /a250/install-detailed-guide.html
-  - title: Maintain - AFF A250
+  - title: Maintain
     entries:
     # START boot media replacement
     - title: Boot media - AFF A250

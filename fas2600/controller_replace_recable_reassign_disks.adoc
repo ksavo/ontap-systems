@@ -50,14 +50,14 @@ node2             node1             -            Waiting for giveback (HA mailbo
 +
 You can respond `Y` when prompted to continue into advanced mode. The advanced mode prompt appears (*>).
 
- .. Save any coredumps: `system node run -node local-node-name partner savecore`
+ .. Save any coredumps: `system node run -node _local-node-name_ partner savecore`
  .. Wait for savecore command to complete before issuing the giveback.
 +
-You can enter the following command to monitor the progress of the savecore command: `system node run -node local-node-name partner savecore -s`
+You can enter the following command to monitor the progress of the savecore command: `system node run -node _local-node-name_ partner savecore -s`
 
  .. Return to the admin privilege level: `set -privilege admin`
 . Give back the node:
- .. From the healthy node, give back the replaced node's storage: `storage failover giveback -ofnode replacement_node_name`
+ .. From the healthy node, give back the replaced node's storage: `storage failover giveback -ofnode _replacement_node_name_`
 +
 the _replacement_ node takes back its storage and completes booting.
 +

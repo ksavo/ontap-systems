@@ -149,7 +149,7 @@ image::../media/drw_affa800_install_cable_mgmt.gif[]
 == Step 3: Cable controllers
 
 [.lead]
-There is required cabling for your platform's cluster using the two-node switchless cluster method or the cluster interconnect network method. There is optional cabling to the Fibre Channel or iSCSI host networks or direct-attached storage. This cabling is not exclusive; you can have cabling to a host network and storage.
+There is required cabling for your platform's cluster using the two-node switchless cluster method or the cluster interconnect network method. There is optional cabling to the Fibre Channel or iSCSI host networks or direct-attached storage. This cabling is not exclusive; you can have cable to a host network and storage.
 
 === Required cabling: Cable controllers to a cluster
 

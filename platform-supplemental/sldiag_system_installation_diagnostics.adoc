@@ -27,21 +27,21 @@ The version is displayed in the format System Level DiagnosticsX.nn.nn. The X is
 Your storage system displays some or all of the following devices:
 
  ** ata is an Advanced Technology Attachment device.
- ** bootmedia is the system booting device.
- ** cna is a Converged Network Adapter not connected to a network or storage device.
- ** env is motherboard environmentals.
- ** fcache is the Flash Cache adapter, also known as the Performance Acceleration Module 2.
- ** fcal is a Fibre Channel-Arbitrated Loop device not connected to a storage device or Fibre Channel network.
- ** fcvi is the Fiber Channel Virtual Interface not connected to a Fibre Channel network.
- ** interconnect or nvram-ib is the high-availability interface.
+ ** `bootmedia` is the system booting device.
+ ** `cna` is a Converged Network Adapter not connected to a network or storage device.
+ ** `env` is motherboard environmentals.
+ ** `fcache` is the Flash Cache adapter, also known as the Performance Acceleration Module 2.
+ ** `fcal` is a Fibre Channel-Arbitrated Loop device not connected to a storage device or Fibre Channel network.
+ ** `fcvi` is the Fiber Channel Virtual Interface not connected to a Fibre Channel network.
+ ** `interconnect` or nvram-ib is the high-availability interface.
  ** mem is system memory.
- ** nic is a Network Interface Card not connected to a network.
- ** nvram is nonvolatile RAM.
- ** nvmem is a hybrid of NVRAM and system memory.
- ** sas is a Serial Attached SCSI device not connected to a disk shelf.
- ** serviceproc is the Service Processor.
- ** storage is an ATA, FC-AL, or SAS interface that has an attached disk shelf.
- ** toe is a TCP Offload Engine, a type of NIC.
+ ** `nic` is a Network Interface Card not connected to a network.
+ ** `nvram` is nonvolatile RAM.
+ ** `nvmem` is a hybrid of NVRAM and system memory.
+ ** `sas` is a Serial Attached SCSI device not connected to a disk shelf.
+ ** `serviceproc` is the Service Processor.
+ ** `storage` is an ATA, FC-AL, or SAS interface that has an attached disk shelf.
+ ** `toe` is a TCP Offload Engine, a type of NIC.
 
 . Run all the default selected diagnostic tests on your storage system by entering the following command: `sldiag device run`
 . View the status of the test by entering the following command: `sldiag device status`

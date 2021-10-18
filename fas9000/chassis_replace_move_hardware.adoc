@@ -235,7 +235,7 @@ The controller module begins to boot as soon as it is fully seated in the chassi
 
 . Repeat the preceding steps to install the second controller into the new chassis.
 . Boot each node to Maintenance mode:
- .. As each node starts the booting, press `Ctrl-C` to interrupt the boot process when you see the message Press Ctrl-C for Boot Menu.
+ .. As each node starts the booting, press `Ctrl-C` to interrupt the boot process when you see the message `Press Ctrl-C for Boot Menu`.
 +
 NOTE: If you miss the prompt and the controller modules boot to ONTAP, enter `halt`, and then at the LOADER prompt enter `boot_ontap`, press `Ctrl-C` when prompted, and then repeat this step.
 
