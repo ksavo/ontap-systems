@@ -5,7 +5,7 @@ After completing the NVE or NSE tasks, you need to complete the shutdown of the 
 +
 [options="header" cols="1,2"]
 |===
-| If the impaired node displays...| Then...
+| *If the impaired node displays...| Then...*
 a|
 `+Waiting for giveback...+`
 a|
@@ -15,7 +15,7 @@ System prompt or password prompt (enter system password)
 a|
 Take over or halt the impaired node:
 
- ** For an HA pair, take over the impaired node from the healthy node: `storage failover takeover -ofnode impaired_node_name`
+ ** For an HA pair, take over the impaired node from the healthy node: `storage failover takeover -ofnode `impaired_node_name``
 +
 When the impaired node shows Waiting for giveback..., press Ctrl-C, and then respond `y`.
 +
