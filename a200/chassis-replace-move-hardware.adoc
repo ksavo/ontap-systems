@@ -13,6 +13,7 @@ summary: "Move the power supplies, hard drives, and controller module or modules
 [.lead]
 Move the power supply from the old chassis to the replacement chassis.
 
+.Steps
 . If you are not already grounded, properly ground yourself.
 . Turn off the power supply and disconnect the power cables:
  .. Turn off the power switch on the power supply.
@@ -40,6 +41,7 @@ NOTE: Only connect the power cable to the power supply. Do not connect the power
 [.lead]
 Remove the controller module or modules from the old chassis.
 
+.Steps
 . Loosen the hook and loop strap binding the cables to the cable management device, and then unplug the system cables and SFPs (if needed) from the controller module, keeping track of where the cables were connected.
 +
 Leave the cables in the cable management device so that when you reinstall the cable management device, the cables are organized.
@@ -59,6 +61,7 @@ image::../media/drw_2240_x_opening_cam_latch.svg[]
 [.lead]
 Move the drives from each bay opening in the old chassis to the same bay opening in the new chassis.
 
+.Steps
 . Gently remove the bezel from the front of the system.
 . Remove the drives:
  .. Press the release button at the top of the carrier face below the LEDs.
@@ -85,6 +88,7 @@ Be sure to close the cam handle slowly so that it aligns correctly with the fron
 [.lead]
 You must remove the existing chassis from the equipment rack or system cabinet before you can install the replacement chassis.
 
+.Steps
 . Remove the screws from the chassis mount points.
 . With the help of two or three people, slide the old chassis off the rack rails in a system cabinet or _L_ brackets in an equipment rack, and then set it aside.
 . If you are not already grounded, properly ground yourself.
@@ -98,8 +102,10 @@ You must remove the existing chassis from the equipment rack or system cabinet b
 [.lead]
 After you install the controller module and any other components into the new chassis, boot it to a state where you can run the interconnect diagnostic test.
 
+.About this task
 For HA pairs with two controller modules in the same chassis, the sequence in which you install the controller module is especially important because it attempts to reboot as soon as you completely seat it in the chassis.
 
+.Steps
 . Align the end of the controller module with the opening in the chassis, and then gently push the controller module halfway into the system.
 +
 NOTE: Do not completely insert the controller module in the chassis until instructed to do so.

@@ -11,12 +11,13 @@ summary: You must boot the ONTAP image from the USB drive, restore the file syst
 [.lead]
 You must boot the ONTAP image from the USB drive, restore the file system, and verify the environmental variables.
 
+.Steps
 . From the LOADER prompt, boot the recovery image from the USB flash drive: `boot_recovery`
 +
 The image is downloaded from the USB flash drive.
 
 . When prompted, either enter the name of the image or accept the default image displayed inside the brackets on your screen.
-. Restore the var file system:
+. Restore the `var` file system:
 +
 [options="header" cols="1,2"]
 |===
