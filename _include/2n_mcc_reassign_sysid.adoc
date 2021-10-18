@@ -5,12 +5,12 @@ This procedure applies only to systems in a two-node MetroCluster configuration 
 
 You must be sure to issue the commands in this procedure on the correct node:
 
-* The _impaired node_ is the node on which you are performing maintenance.
+* The _impaired_ node is the node on which you are performing maintenance.
 * The _replacement_ node is the new node that replaced the impaired node as part of this procedure.
-* The _healhy node_ is the DR partner of the impaired node.
+* The _healthy_ node is the DR partner of the impaired node.
 
 .Steps
-. If you have not already done so, reboot the replacement node, interrupt the boot process by entering `Ctrl-C`, and then select the option to boot to Maintenance mode from the displayed menu.
+. If you have not already done so, reboot the _replacement_ node, interrupt the boot process by entering `Ctrl-C`, and then select the option to boot to Maintenance mode from the displayed menu.
 +
 You must enter `Y` when prompted to override the system ID due to a system ID mismatch.
 
@@ -44,7 +44,7 @@ You can respond `Y` when prompted to continue.
 
 . Verify that the disks (or FlexArray LUNs) were assigned correctly: `disk show -a`
 +
-Verify that the disks belonging to the replacement node show the new system ID for the replacement node. In the following example, the disks owned by system-1 now show the new system ID, 118065481:
+Verify that the disks belonging to the _replacement_ node show the new system ID for the _replacement_ node. In the following example, the disks owned by system-1 now show the new system ID, 118065481:
 +
 ----
 *> disk show -a
@@ -69,9 +69,9 @@ You can respond `Y` when prompted to continue into advanced mode. The advanced m
 If the command output indicates that savecore is in progress, wait for savecore to complete before issuing the giveback. You can monitor the progress of the savecore using the `system node run -node local-node-name partner savecore -s command`.</info>.
 
  .. Return to the admin privilege level: ``set -privilege admin``
-. If the replacement node is in Maintenance mode (showing the *> prompt), exit Maintenance mode and go to the LOADER prompt: `halt`
-. Boot the replacement node: `boot_ontap`
-. After the replacement node has fully booted, perform a switchback: ``metrocluster switchback``
+. If the _replacement_ node is in Maintenance mode (showing the *> prompt), exit Maintenance mode and go to the LOADER prompt: `halt`
+. Boot the _replacement_ node: `boot_ontap`
+. After the _replacement_ node has fully booted, perform a switchback: ``metrocluster switchback``
 . Verify the MetroCluster configuration: `metrocluster node show - fields configuration-state`
 +
 ----

@@ -19,16 +19,16 @@ include::../_include/recable_system_after_controller_rep.adoc[]
 == Step 2: Reassign disks
 
 [.lead]
-If the storage system is in an HA pair, the system ID of the new controller module is automatically assigned to the disks when the giveback occurs at the end of the procedure. You must confirm the system ID change when you boot the replacement node and then verify that the change was implemented.
+If the storage system is in an HA pair, the system ID of the new controller module is automatically assigned to the disks when the giveback occurs at the end of the procedure. You must confirm the system ID change when you boot the _replacement_ node and then verify that the change was implemented.
 
 This procedure applies only to systems running ONTAP in an HA pair.
 
-. If the replacement node is in Maintenance mode (showing the `*>` prompt, exit Maintenance mode and go to the LOADER prompt: `halt`
-. From the LOADER prompt on the replacement node, boot the node, entering `y` if you are prompted to override the system ID due to a system ID mismatch:``bye``
+. If the _replacement_ node is in Maintenance mode (showing the `*>` prompt, exit Maintenance mode and go to the LOADER prompt: `halt`
+. From the LOADER prompt on the _replacement_ node, boot the node, entering `y` if you are prompted to override the system ID due to a system ID mismatch:``bye``
 +
 The node will reboot, if autoboot is set.
 
-. Wait until the Waiting for giveback... message is displayed on the replacement node console and then, from the healthy node, verify that the new partner system ID has been automatically assigned: storage failover show
+. Wait until the `Waiting for giveback...` message is displayed on the _replacement_ node console and then, from the healthy node, verify that the new partner system ID has been automatically assigned: storage failover show
 +
 In the command output, you should see a message that the system ID has changed on the impaired node, showing the correct old and new IDs. In the following example, node2 has undergone replacement and has a new system ID of 151759706.
 +
@@ -56,7 +56,7 @@ You can enter the following command to monitor the progress of the savecore comm
 . Give back the node:
  .. From the healthy node, give back the replaced node's storage: `storage failover giveback -ofnode replacement_node_name`
 +
-The replacement node takes back its storage and completes booting.
+the _replacement_ node takes back its storage and completes booting.
 +
 If you are prompted to override the system ID due to a system ID mismatch, you should enter `y`.
 +
@@ -69,7 +69,7 @@ http://mysupport.netapp.com/documentation/productlibrary/index.html?productID=62
 The output from the `storage failover show` command. should not include the System ID changed on partner message.
 . Verify that the disks were assigned correctly: storage disk show -ownership
 +
-The disks belonging to the replacement node should show the new system ID. In the following example, the disks owned by node1 now show the new system ID, 1873775277:
+The disks belonging to the _replacement_ node should show the new system ID. In the following example, the disks owned by node1 now show the new system ID, 1873775277:
 +
 ----
 node1> storage disk show -ownership

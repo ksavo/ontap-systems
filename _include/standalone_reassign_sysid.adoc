@@ -4,7 +4,7 @@ In a stand-alone system, you must manually reassign disks to the new controller'
 NOTE: This procedure applies only to systems that are in a stand-alone configuration.
 
 .Steps
-. If you have not already done so, reboot the replacement node, interrupt the boot process by pressing Ctrl-C, and then select the option to boot to Maintenance mode from the displayed menu.
+. If you have not already done so, reboot the _replacement_ node, interrupt the boot process by pressing Ctrl-C, and then select the option to boot to Maintenance mode from the displayed menu.
 . You must enter Y when prompted to override the system ID due to a system ID mismatch.
 . View the system IDs: disk show -a
 . You should make a note of the old system ID, which is displayed as part of the disk owner column.

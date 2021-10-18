@@ -165,7 +165,7 @@ NOTE: Make sure that the card is completely and squarely seated into the riser s
 == Step 4: Move the boot media
 
 [.lead]
-There are two boot media devices in the AFF A700s, a primary and a secondary or backup boot media. You must move them from the impaired node to the replacement node and install them into their respective slots in the replacement node.
+There are two boot media devices in the AFF A700s, a primary and a secondary or backup boot media. You must move them from the impaired node to the _replacement_ node and install them into their respective slots in the _replacement_ node.
 
 The boot media are located under Riser 2, the middle PCIe riser module. This PCIe module must be removed to gain access to the boot media.
 

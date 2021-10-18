@@ -109,7 +109,7 @@ From the ONTAP prompt, you can issue the command system node halt -skip-lif-migr
  .. If an environment variable is not set as expected, modify it with the `setenv __environment-variable-name__ __changed-value__` command.
  .. Save your changes using the `savenev` command.
  .. Reboot the node.
-. With the rebooted impaired node displaying the Waiting for Giveback... message, perform a giveback from the healthy node:
+. With the rebooted impaired node displaying the `Waiting for giveback...` message, perform a giveback from the healthy node:
 +
 [options="header" cols="1,2"]
 |===
@@ -117,7 +117,7 @@ From the ONTAP prompt, you can issue the command system node halt -skip-lif-migr
 a|
 An HA pair
 a|
-After the impaired node is displaying the Waiting for Giveback... message, perform a giveback from the healthy node:
+After the impaired node is displaying the `Waiting for giveback...` message, perform a giveback from the healthy node:
 
  .. From the healthy node: `storage failover giveback -ofnode partner_node_name`
 +
