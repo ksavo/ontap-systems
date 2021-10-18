@@ -127,6 +127,8 @@ Cables have a minimum bend radius. Cable manufacturer specifications define the 
 [.lead]
 For each disk shelf you are hot-adding, you install the disk shelf into a rack, connect the power cords, power on the disk shelf, and set the disk shelf ID before cabling the SAS connections.
 
+.Steps
+
 . Install the rack mount kit (for two-post or four-post rack installations) that came with your disk shelf using the installation flyer that came with the kit.
 +
 NOTE: If you are installing multiple disk shelves, you should install them from the bottom to the top of the rack for the best stability.
@@ -183,7 +185,7 @@ You must be sure that slots 0, 3, 6, and 9 in each drawer contain drives.
 a|
 image:../media/2860_dwg_e2860_de460c_gentle_close.gif[]
 a|
-CAUTION: Possible loss of data access. Never slam the drawer shut. Push the drawer in slowly to avoid jarring the drawer and causing damage to the storage array.
+CAUTION: *Possible loss of data access:* Never slam the drawer shut. Push the drawer in slowly to avoid jarring the drawer and causing damage to the storage array.
 |===
 
  .. Close the drive drawer by pushing both levers towards the center.
@@ -244,13 +246,14 @@ If you have an HA pair, you can enter the command at the console of either contr
 +
 If disk ownership automatic assignment is enabled, the output shows "`on`" (for each controller) in the "`Auto Assign`" column.
 
- .. If disk ownership automatic assignment is enabled, you need to disable it:``storage disk option modify -node node_name -autoassign off``
+ .. If disk ownership automatic assignment is enabled, you need to disable it:``storage disk option modify -node _node_nam_e -autoassign off``
 +
 You need to disable disk ownership automatic assignment on both controllers in an HA pair.
 
 . If you are hot-adding a stack of disk shelves directly to a controller, complete the following substeps; otherwise, go to step 3.
  .. If the stack you are hot-adding has more than one disk shelf, cable the shelf-to-shelf connections; otherwise, go to substep b.
 +
+[cols="2*",options="header"]
 |===
 | If...| Then...
 a|
@@ -291,6 +294,7 @@ link:install-cabling-worksheet-template-quadpath.html[Controller-to-stack cablin
  .. Verify that all cables are securely fastened.
 . If you are hot-adding one or more disk shelves to an end--the logical first or last disk shelf--of an existing stack, complete the applicable substeps for your configuration; otherwise, go to the next step.
 +
+[cols="2*",options="header"]
 |===
 | If you are...| Then...
 a|
@@ -329,7 +333,7 @@ https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor[NetApp 
 +
 If any SAS cabling errors are generated, follow the corrective actions provided.
 
-. Verify SAS connectivity for each hot-added disk shelf: `storage shelf show -shelf shelf_name -connectivity`
+. Verify SAS connectivity for each hot-added disk shelf: `storage shelf show -shelf _shelf_name_ -connectivity`
 +
 You must run this command for each disk shelf you hot-added.
 +
@@ -367,11 +371,11 @@ Errors:
 
 . If you disabled disk ownership automatic assignment in Step 1, manually assign disk ownership, and then reenable disk ownership automatic assignment if needed:
  .. Display all unowned disks:``storage disk show -container-type unassigned``
- .. Assign each disk:``storage disk assign -disk disk_name -owner owner_name``
+ .. Assign each disk:``storage disk assign -disk _disk_name_ -owner _owner_name_``
 +
 You can use the wildcard character to assign more than one disk at once.
 
- .. Reenable disk ownership automatic assignment if needed:``storage disk option modify -node node_name -autoassign on``
+ .. Reenable disk ownership automatic assignment if needed:``storage disk option modify -node _node_name_ -autoassign on``
 +
 You need to reenable disk ownership automatic assignment on both controllers in an HA pair.
 . If your configuration is running in-band ACP, verify that in-band ACP was automatically enabled on hot-added disk shelves: `storage shelf acp show`

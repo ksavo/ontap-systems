@@ -30,7 +30,7 @@ https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor[NetApp 
 +
 NOTE: If you attempt this procedure with aggregates on the disk shelf you are removing, you could fail the system with a multidisk panic.
 +
-You can use the `storage aggregate offline -aggregate aggregate_name` command and then the `storage aggregate delete -aggregate aggregate_name` command.
+You can use the `storage aggregate offline -aggregate _aggregate_name_` command and then the `storage aggregate delete -aggregate _aggregate_name_` command.
 
 * If you are removing one or more disk shelves from within a stack, you must have factored the distance to bypass the disk shelves you are removing; therefore, if the current cables are not long enough, you need to have longer cables available.
 
@@ -40,9 +40,12 @@ You can use the `storage aggregate offline -aggregate aggregate_name` command an
 +
 Removing ownership information from a spare disk drive allows the disk drive to be properly integrated into another node (as needed).
 
-NOTE: The procedure for removing ownership from disk drives requires you to disable disk ownership automatic assignment. You reenable disk ownership automatic assignment at the end of this procedure.
+[NOTE]
+====
+The procedure for removing ownership from disk drives requires you to disable disk ownership automatic assignment. You reenable disk ownership automatic assignment at the end of this procedure.
 
 http://docs.netapp.com/ontap-9/topic/com.netapp.doc.dot-cm-psmg/home.html[ONTAP 9 Disks and Aggregates Power Guide]
+====
 
 * For a clustered ONTAP system that is greater than two-nodes, best practice is to have reassigned epsilon to an HA pair other than the one that is undergoing planned maintenance.
 +
@@ -56,29 +59,29 @@ NOTE: If you do not maintain single-path connectivity from the controllers to th
 
 .Steps
 
-. Verify that your system configuration is Multi-Path HA, Multi-Path, Quad-path HA, or Quad-path: `sysconfig`
+. Verify that your system configuration is `Multi-Path HA`, `Multi-Path`, `Quad-path HA`, or `Quad-path`: `sysconfig`
 +
 You run this command from the nodeshell of either controller. It might take up to a minute for the system to complete discovery.
 +
-The configuration is listed in the System Storage Configuration field.
+The configuration is listed in the `System Storage Configuration` field.
 +
-NOTE: For a FAS2600 series single-controller system that has the external storage cabled with multipath connectivity, the output is displayed as mixed-path because the internal storage uses single-path connectivity.
+NOTE: For a FAS2600 series single-controller system that has the external storage cabled with multipath connectivity, the output is displayed as `mixed-path` because the internal storage uses single-path connectivity.
 
 . Verify that the disk drives in the disk shelves you are removing have no aggregates (are spares) and ownership is removed:
- .. Enter the following command from the clustershell of either controller: `storage disk show -shelf shelf_number`
+ .. Enter the following command from the clustershell of either controller: `storage disk show -shelf _shelf_number_`
  .. Check the output to verify that there are no aggregates on the disk drives in the disk shelves you are removing.
 +
-Disk drives with no aggregates have a dash in the Container Name column.
+Disk drives with no aggregates have a dash in the `Container Name` column.
 
  .. Check the output to verify that ownership is removed from the disk drives on the disk shelves you are removing.
 +
-Disk drives with no ownership have a dash in the Owner column.
+Disk drives with no ownership have a dash in the `Owner` column.
 +
-NOTE: If you have failed disk drives in the shelf you are removing, they have broken in the Container Type column. (Failed disk drive do not have ownership.)
+NOTE: If you have failed disk drives in the shelf you are removing, they have broken in the `Container Type` column. (Failed disk drive do not have ownership.)
 
 +
-The following output shows disk drives on the disk shelf being removed (disk shelf 3) are in a correct state for removing the disk shelf. The aggregates are removed on all of the disk drives; therefore, a dash appears in the Container Name column for each disk drive. Ownership is also removed on all of the disk drives; therefore, a dash appears in the Owner column for each disk drive.
-+
+The following output shows disk drives on the disk shelf being removed (disk shelf 3) are in a correct state for removing the disk shelf. The aggregates are removed on all of the disk drives; therefore, a dash appears in the `Container Name` column for each disk drive. Ownership is also removed on all of the disk drives; therefore, a dash appears in the `Owner` column for each disk drive.
+
 ----
 cluster::> storage disk show -shelf 3
 
@@ -94,7 +97,7 @@ Disk         Size Shelf Bay Type   Type        Name       Owner
 ----
 . Physically locate the disk shelves you are removing.
 +
-If needed, you can turn on the disk shelf's location (blue) LEDs to aid in physically locating the affected disk shelf: `storage shelf location-led modify -shelf-name shelf_name -led-status on`
+If needed, you can turn on the disk shelf's location (blue) LEDs to aid in physically locating the affected disk shelf: `storage shelf location-led modify -shelf-name _shelf_name_ -led-status on`
 +
 NOTE: A disk shelf has three location LEDs: one on the operator display panel and one on each IOM12 module. Location LEDs remain illuminated for 30 minutes. You can turn them off by entering the same command, but using the off option.
 
@@ -110,6 +113,7 @@ If you are removing more than one disk shelf in the stack, complete the applicab
 +
 NOTE: Wait at least 10 seconds before connecting the port. The SAS cable connectors are keyed; when oriented correctly into a SAS port, the connector clicks into place and the disk shelf SAS port LNK LED illuminates green. For disk shelves, you insert a SAS cable connector with the pull tab oriented down (on the underside of the connector).
 +
+[cols="2*",options="header"]
 |===
 | If you are removing...| Then...
 a|
@@ -169,19 +173,20 @@ PRIMARY  PORT SECONDARY      PORT TYPE SHELF BAY
 
 . The next step depends on the `storage disk show -port` command output:
 +
+[cols="2*",options="header"]
 |===
 | If the output shows...| Then...
 a|
 All disk drives in the stack are connected through path A and path B except for the ones in the disk shelves you disconnected, which are only connected through path B
 a|
 Go to the next step.
-+
+
 You successfully bypassed the disk shelves you are removing and reestablished path A on the remaining disk drives in the stack.
 a|
 Anything other than the above
 a|
 Repeat Step 5 and Step 6.
-+
+
 You must correct the cabling.
 |===
 

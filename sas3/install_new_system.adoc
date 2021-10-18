@@ -9,24 +9,24 @@ summary: If your new system--HA pair or single-controller configuration--did not
 :imagesdir: ../media/
 
 [.lead]
-If your new system--HA pair or single-controller configuration--did not come installed in a cabinet, you must install and cable the disk shelves in a rack.
+If your new system--HA pair or single-controller configuration--did not come installed in a cabinet, you can install and cable the disk shelves in a rack.
 
 == Requirements for installing and cabling disk shelves with IOM12 modules for a new system installation
 
 [.lead]
 You must meet certain requirements before installing and cabling the disk shelves.
 
-* Disk shelves and controllers must not be powered on at this time.
-* If you are using mini-SAS HD SAS optical cables, you must have met the rules in link:install-cabling-rules.html#mini-sas-hd-sas-optical-cable-rules[Mini-SAS HD SAS optical cable rules].
 * You must have the installation and setup instructions for your platform model.
 +
-The installation and setup instructions address system setup and configuration for your new system. You use the instructions in conjunction with this procedure to install and cable the disk shelves.
+The installation and setup instructions address the complete procedure for your system installation, setup, and configuration. You only use this procedure (_Install and cable shelves for a new system installation_) in conjunction with the platform installation and setup instructions if you need detailed information about installing or cabling the disk shelves to your storage system.
 +
 Installation and setup instructions can be found by navigating to your platform model documentation.
 +
 link:../index.html[AFF and FAS System Documentation]
-+
-https://docs.netapp.com/platstor/index.jsp[AFF and FAS Documentation Center]
+
+* Disk shelves and controllers must not be powered on at this time.
+* If you are using mini-SAS HD SAS optical cables, you must have met the rules in link:install-cabling-rules.html#mini-sas-hd-sas-optical-cable-rules[Mini-SAS HD SAS optical cable rules].
+
 
 == Considerations for installing and cabling disk shelves with IOM12 modules for a new system installation
 
@@ -143,7 +143,7 @@ You must be sure that slots 0, 3, 6, and 9 in each drawer contain drives.
 a|
 image:../media/2860_dwg_e2860_de460c_gentle_close.gif[]
 a|
-CAUTION: Possible loss of data access. Never slam the drawer shut. Push the drawer in slowly to avoid jarring the drawer and causing damage to the storage array.
+CAUTION: *Possible loss of data access:* Never slam the drawer shut. Push the drawer in slowly to avoid jarring the drawer and causing damage to the storage array.
 |===
 
  .. Close the drive drawer by pushing both levers towards the center.
@@ -172,6 +172,7 @@ After you cable the disk shelves, you power them on, set the shelf IDs, and comp
 +
 For a detailed explanation and examples of shelf-to-shelf "`standard`" cabling and shelf-to-shelf "`double-wide`" cabling, see link:install-cabling-rules.html#shelf-to-shelf-connection-rules[shelf-to-shelf connection rules].
 +
+[cols="2*",options='header']
 |===
 | If...| Then...
 a|
@@ -197,6 +198,7 @@ Cable the shelf-to-shelf connections as "`double-wide`" connectivity:    You cab
 |===
 
 . Identify the controller SAS port pairs that you can use to cable the controller-to-stack connections.
+
 .. Check the controller-to-stack cabling worksheets and cabling examples to see whether a completed worksheet exists for your configuration.
 +
 link:install-cabling-worksheets-examples-fas2600.html[Controller-to-stack cabling worksheets and cabling examples for common AFF A200, AFF A220, FAS2600 series and FAS2700 configurations]
@@ -207,12 +209,15 @@ link:install-worksheets-examples-quadpath.html[Controller-to-stack cabling works
 
  .. The next step depends on whether a completed worksheet exists for your configuration:
 +
+[cols="2*",options='header']
 |===
 | If...| Then...
 a|
 There is a completed worksheet for your configuration
 a|
-Go to the next step.        You use the existing completed worksheet.
+Go to the next step.
+
+You use the existing completed worksheet.
 a|
 There is no completed worksheet for your configuration
 a|
@@ -237,6 +242,7 @@ link:install-cabling-worksheets-how-to-read-quadpath.html[How to read a workshee
 +
 You must set shelf IDs so they are unique within the HA pair or single-controller configuration, including the internal disk shelf in applicable systems.
 +
+[cols="2*",options='header']
 |===
 | If...| Then...
 a|
@@ -261,7 +267,7 @@ Shelf IDs are assigned in sequential order from 00-99. For systems with an inter
 a|
 
  .. Power on the controllers.
- .. As the controllers start booting, press Ctrl-C to abort the AUTOBOOT process when you see the message Starting AUTOBOOT press Ctrl-C to abort.
+ .. As the controllers start booting, press `Ctrl-C` to abort the AUTOBOOT process when you see the message `Starting AUTOBOOT press Ctrl-C to abort`.
 +
 NOTE: If you miss the prompt and the controllers boot to ONTAP, halt both controllers, and then boot both controllers to the boot menu by entering `boot_ontap menu` at their LOADER prompt.
 
@@ -285,7 +291,7 @@ NOTE: Before you boot the system, best practice is to take this opportunity to v
 
 . If as part of system set up and configuration, you did not enable disk ownership automatic assignment, manually assign disk ownership; otherwise, go to the next step:
  .. Display all unowned disks:``storage disk show -container-type unassigned``
- .. Assign each disk:``storage disk assign -disk disk_name -owner owner_name``
+ .. Assign each disk:``storage disk assign -disk _disk_name_ -owner _owner_name_``
 +
 You can use the wildcard character to assign more than one disk at once.
 . Download and run Config Advisor as instructed by the installation and setup instructions for your platform model to verify SAS connections are cabled correctly and there are no duplicate shelf IDs within the system.

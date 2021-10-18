@@ -11,9 +11,13 @@ summary: By completing the worksheet template, you can define the controller SAS
 [.lead]
 By completing the worksheet template, you can define the controller SAS port pairs you can use to cable controllers to stacks of disk shelves with IOM12 modules to achieve multipathed connectivity in an HA pair or single-controller configuration. You can also use the completed worksheet to walk yourself through cabling the multipathed connections for your configuration.
 
+.Before you begin
+
 Your HA pair or single-controller configuration cannot be an AFF A200, AFF A220, FAS2600 series or FAS2700 system. If you have one of these configurations, use the following:
 
 link:install-cabling-worksheets-examples-fas2600.html[Controller-to-stack cabling worksheets and cabling examples for common AFF A200, AFF A220, FAS2600 series and FAS2700 configurations]
+
+.About this task
 
 * This procedure and worksheet template is applicable to cabling multipathed connectivity for a multipath HA or multipath configuration with one or more stacks.
 +
@@ -26,6 +30,8 @@ A configuration with two quad-port SAS HBAs and two stacks of disk shelves with 
 * If needed, after you complete the worksheet, you can refer to link:install-cabling-worksheets-how-to-read-multipath.html[How to read a worksheet to cable controller-to-stack connections for multipathed connectivity]
 
 image::../media/drw_worksheet_mpha_template.gif[]
+
+.Steps
 
 . In the boxes above the gray boxes, list all SAS A ports on your system, and then all SAS C ports on your system in sequence of slots (0,1, 2, 3, and so on).
 +
