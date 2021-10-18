@@ -22,7 +22,7 @@ NOTE: For bridge-attached MetroCluster configurations, see <<Requirements for a 
 +
 You can verify support by using one of the following methods:
 
- ** Enter the ``run local sysconfig``command, at the admin prompt of either controller.
+ ** Enter the ``run local sysconfig`` command, at the admin prompt of either controller.
 +
 If the SAS2/SAS3 Mixed Stack Support field does not appear in the output or has a value of none, then your system does not support mixed stacks.
 +
@@ -75,7 +75,7 @@ Use all bridge ports before mixing IOM12 and IOM6 modules in a stack.
 +
 You can verify support by using one of the following methods:
 
- ** Enter the ``run local sysconfig``command at the admin prompt of either controller.
+ ** Enter the ``run local sysconfig`` command at the admin prompt of either controller.
 +
 If the SAS2/SAS3 Mixed Stack Support field does not appear in the output or has a value of none, then your system does not support mixed stacks.
 +
@@ -87,7 +87,7 @@ https://hwu.netapp.com[NetApp Hardware Universe]
 
 * The configuration must meet all requirements in the MetroCluster Installation and Configuration Guides.
 +
-https://docs.netapp.com/us-en/ontap-metrocluster/install-stretch/index.html[Installing and Configuring a Stretch MetroCluster Configruation]
+https://docs.netapp.com/us-en/ontap-metrocluster/install-stretch/index.html[Installing and Configuring a Stretch MetroCluster Configuration]
 +
 https://docs.netapp.com/us-en/ontap-metrocluster/install-fc/index.html[Installing and Configuring a fabric-attached MetroCluster Configuration]
 
@@ -121,7 +121,7 @@ After you download the IOM12 shelf firmware to your shelves, verify the firmware
 +
 You cannot use this procedure to hot-add disk shelves that were hot-removed from another stack in the same system when the system is powered on and serving data (I/O is in progress).
 
-* You can use this procedure to hot-add disk shelves that were hot-removed within the same MetoCluster system if the affected shelf has mirrored aggregates.
+* You can use this procedure to hot-add disk shelves that were hot-removed within the same MetroCluster system if the affected shelf has mirrored aggregates.
 * After you have cabled a hot-added shelf, ONTAP recognizes the shelf:
  ** Drive ownership is assigned if automatic drive assignment is enabled.
  ** Shelf (IOM) firmware and drive firmware should be updated automatically, if needed.
@@ -187,7 +187,7 @@ If you have an HA pair, you can enter the command on either controller module.
 +
 If automatic drive assignment is enabled, the output shows `on` in the "`Auto Assign`" column (for each controller module).
 
-. If automatic drive assignment is enabled, disable it: `storage disk option modify -node node_name -autoassign off`
+. If automatic drive assignment is enabled, disable it: `storage disk option modify -node _node_name_ -autoassign off`
 +
 If you have an HA pair or two-node MetroCluster configuration, you must disable automatic drive assignment on both controller modules.
 
@@ -259,7 +259,7 @@ You must be sure that slots 0, 3, 6, and 9 in each drawer contain drives.
 a|
 image:../media/2860_dwg_e2860_de460c_gentle_close.gif[]
 a|
-CAUTION: Possible loss of data access. Never slam the drawer shut. Push the drawer in slowly to avoid jarring the drawer and causing damage to the storage array.
+CAUTION: *Possible loss of data access:* Never slam the drawer shut. Push the drawer in slowly to avoid jarring the drawer and causing damage to the storage array.
 |===
 
  .. Close the drive drawer by pushing both levers towards the center.
@@ -362,6 +362,7 @@ Depending on your platform model and stack connectivity (multipath HA, multipath
 +
 Otherwise, go to step 3.
 +
+[cols="2*",options="header"]
 |===
 | If your IOM6 stack connectivity is...| Then...
 a|
@@ -441,6 +442,7 @@ Otherwise, go to step 4.
 
 . If the IOM12 shelf you are hot-adding is an additional IOM12 shelf to an existing mixed stack, meaning one or more IOM12 shelves already exists in the stack, complete the applicable substeps.
 +
+[cols="2*",options="header"]
 |===
 | If your mixed stack connectivity is...| Then...
 a|
@@ -523,12 +525,12 @@ You must have already cabled your shelf as instructed for your system.
 +
 If you have an HA pair, you can enter the command on either controller module.
 
-. Assign each drive: `storage disk assign -disk disk_name -owner owner_name`
+. Assign each drive: `storage disk assign -disk _disk_name_ -owner _owner_name_`
 +
 If you have an HA pair, you can enter the command on either controller module.
 +
 You can use the wild card character to assign more than one drive at once.
 
-. Reenable automatic drive assignment if needed: `storage disk option modify -node node_name -autoassign on`
+. Reenable automatic drive assignment if needed: `storage disk option modify -node _node_name_ -autoassign on`
 +
 If you have an HA pair, you must reenable automatic drive assignment on both controller modules.

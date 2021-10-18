@@ -18,6 +18,7 @@ The LEDs on the disk shelf front operator display panel indicate whether your di
 
 The following table describes the three LEDs on the operator display panel used in DS460C, DS224C, and DS212C disk shelves:
 
+[cols="4*",options="header"]
 |===
 | LED icon| LED name| State| Description
 a|
@@ -28,9 +29,9 @@ a|
 Solid green
 a|
 One or more power supplies are supplying power to the disk shelf.
-a|
+.2+|
 image:../media/drw_sas_fault_icon.gif[]
-a|
+.2+|
 Attention
 a|
 Solid amber
@@ -38,10 +39,6 @@ a|
 An error occurred with the function of one of more FRUs: the disk shelf, disk drives, IOM12 modules, or power supplies.
 
 Check event messages to determine corrective action to take.
-a|
-image:../media/drw_sas_fault_icon.gif[]
-a|
-Attention
 a|
 Blinking amber
 a|
@@ -74,6 +71,7 @@ The following table describes IOM12 module LEDs associated with the function of 
 
 The IOM12 module is used in DS460C, DS224C, and DS212C disk shelves.
 
+[cols="4*",options="header"]
 |===
 | LED icon| LED name| State| Description
 a|
@@ -120,20 +118,17 @@ The LEDs on the power supply indicate whether the power supply is functioning no
 
 The following table describes the two LEDs on power supplies used in DS460C, DS224C, and DS212C disk shelves:
 
+[cols="4*",options="header"]
 |===
 | LED icon| LED name| State| Description
-a|
+.2+|
 image:../media/drw_sas_power_icon.gif[]
-a|
+.2+|
 Power
 a|
 Solid green
 a|
 The power supply is functioning correctly.
-a|
-image:../media/drw_sas_power_icon.gif[]
-a|
-Power
 a|
 Off
 a|
@@ -172,6 +167,7 @@ The LEDs on the DS460C fans indicate whether the fan is functioning normally or 
 
 The following table describes the LEDs on fans used in DS460C disk shelves:
 
+[cols="4*",options="header"]
 |===
 | Item| LED name| State| Description
 a|
@@ -197,20 +193,17 @@ The LEDs on a disk drive indicates whether it is functioning normally or there a
 
 The following table describes the two LEDs on the disk drives used in DS224C and DS212C disk shelves:
 
+[cols="4*",options="header"]
 |===
 | Callout| LED name| State| Description
-a|
+.2+|
 image:../media/legend_icon_01.gif[]
-a|
+.2+|
 Activity
 a|
 Solid green
 a|
 The disk drive has power.
-a|
-image:../media/legend_icon_01.gif[]
-a|
-Activity
 a|
 Blinking green
 a|
@@ -247,52 +240,37 @@ The following illustration and table describes the drive activity LEDs on the dr
 
 image::../media/2860_dwg_drive_drawer_leds.gif[]
 
+[cols="4*",options="header"]
 |===
 | Location| LED| Status indicator| Description
-a|
+.3+|
 1
-a|
-Attention: Drawer attention for each drawer.
+.3+|
+Attention: Drawer attention for each drawer
 a|
 Solid amber
 a|
 A component within the drive drawer requires operator attention.
 a|
-1
-a|
-Attention: Drawer attention for each drawer.
-a|
 Off
 a|
 No drive or other component in the drawer requires attention and no drive in the drawer has an active locate operation.
 a|
-1
-a|
-Attention: Drawer attention for each drawer.
-a|
 Blinking amber
 a|
 A locate drive operation is active for any drive within the drawer.
-a|
+.3+|
 2-13
-a|
-Activity: Drive activity for drives 0 through 11 in the drive drawer.
+.3+|
+Activity: Drive activity for drives 0 through 11 in the drive drawer
 a|
 Green
 a|
 The power is turned on and the drive is operating normally.
 a|
-2-13
-a|
-Activity: Drive activity for drives 0 through 11 in the drive drawer.
-a|
 Blinking green
 a|
 The drive has power, and I/O operations are in progress.
-a|
-2-13
-a|
-Activity: Drive activity for drives 0 through 11 in the drive drawer.
 a|
 Off
 a|
