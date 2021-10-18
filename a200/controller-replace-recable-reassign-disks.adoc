@@ -70,7 +70,7 @@ http://mysupport.netapp.com/documentation/productlibrary/index.html?productID=62
 
  .. After the giveback has been completed, confirm that the HA pair is healthy and that takeover is possible: storage failover show
 +
-The output from the storage failover show command should not include the System ID changed on partner message.
+The output from the `storage failover show` command. should not include the System ID changed on partner message.
 . Verify that the disks were assigned correctly: storage disk show -ownership
 +
 The disks belonging to the replacement node should show the new system ID. In the following example, the disks owned by node1 now show the new system ID, 1873775277:

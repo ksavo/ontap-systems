@@ -15,7 +15,7 @@ There are two videos; one showing how to rack and cable your system and one show
 
 The following video shows how to install and cable your new system.
 
-https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=b46575d4-0475-48bd-8772-ac5d012a4e06[Installation and setup of an AFF A700 or FAS9000] https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=b46575d4-0475-48bd-8772-ac5d012a4e06[Installation and setup of an AFF A700 or FAS9000]
+https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=b46575d4-0475-48bd-8772-ac5d012a4e06[Installation and setup of an AFF A700 or FAS9000]
 
 == Video two of two: Performing end-to-end software configuration
 

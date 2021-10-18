@@ -1,5 +1,8 @@
 settings:
-  search: ontap-systems, ontap-systems-upgrade
+  name: "ONTAP Systems"
+  search: ontap-systems
+  pdf_enabled: true
+
 sidebar:
   entries:
     - title: Home
@@ -18,14 +21,9 @@ sidebar:
     - section: fas500f
     - section: fas8200
     - section: fas8300
-    - section: upgrade
     - section: platform-supplemental
     - section: ns224
     - section: sas3
-    - section: switch-bes-53248
-    - section: switch-cisco-9336
-    - section: switch-cisco-9336c-shared
-    - section: switch-cisco-92300
     - section: other
     - title: Legal notices
       url: "/legal-notices.html"

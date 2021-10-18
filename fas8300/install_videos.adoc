@@ -15,7 +15,7 @@ There are two videos; one showing how to rack and cable your system and one show
 
 The following video shows how to install and cable your new system.
 
-https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=05d5d8a7-4753-4546-9ddb-ab2001624e04[FAS8300 and FAS8700 Installation and setup instructions] https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=05d5d8a7-4753-4546-9ddb-ab2001624e04[FAS8300 and FAS8700 Installation and setup instructions]
+https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=05d5d8a7-4753-4546-9ddb-ab2001624e04[FAS8300 and FAS8700 Installation and setup instructions] 
 
 == Video two of two: Performing end-to-end software configuration
 

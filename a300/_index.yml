@@ -1,10 +1,14 @@
 indexpage:
-  lead: AFF A300
+#  lead: AFF A300
   tiles:
     - title: Get started 
       links:
         - title: ONTAP Release notes
-          url: /subfolder/page.html
+          url: https://library.netapp.com/ecm/ecm_download_file/ECMLP2492508
+        - title: System data sheet
+          url: https://www.netapp.com/pdf.html?item=/media/7828-ds-3582.pdf
+        - title: Storage data sheet
+          url: https://www.netapp.com/data-storage/disk-shelves-storage-media/
     - title: Install and setup
       links:
         - title: Most configurations
@@ -13,8 +17,6 @@ indexpage:
           url: https://docs.netapp.com/us-en/ontap-metrocluster/install-fc/index.html
         - title: Stretch MetroCluster configurations
           url: https://docs.netapp.com/us-en/ontap-metrocluster/install-stretch/index.html
-        - title: MetroCluster IP configurations
-          url: https://docs.netapp.com/us-en/ontap-metrocluster/install-ip/index.html
     - title: Maintain
       links:
         - title: Boot media
@@ -37,14 +39,10 @@ indexpage:
           url: /rtc-battery-replace.html
     - title: Learn
       links:
-        - title: Storage data sheet
-          url: https://www.netapp.com/data-storage/disk-shelves-storage-media/
         - title: NetApp All-Flash FAS Solution for Nonpersistent Desktops with VMware Horizon View | TR-4539
           url: https://www.netapp.com/pdf.html?item=/media/10695-tr-4539.pdf
     - title: Add or remove shelves
       links:
-        - title: NS224
-          url: https://docs.netapp.com/us-en/ontap-systems/ns224/index.html
         - title: SAS with IOM12
           url: https://docs.netapp.com/us-en/ontap-systems/sas3/index.html
     - title: Install and maintain switches

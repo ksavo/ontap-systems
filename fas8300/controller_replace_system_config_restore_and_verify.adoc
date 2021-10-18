@@ -28,12 +28,12 @@ The HA state should be the same for all components.
 . If the displayed system state of the controller module does not match your system configuration, set the `HA` state for the controller module: `ha-config modify controller ha-state`
 
 +
-The value for HA-state can be one of the following:
+The value for `HA-state` can be one of the following:
 
-  *** ha
-  *** mcc
-  *** mcc-2n
-  *** non-ha
+  *** `ha`
+  *** `mcc`
+  *** `mcc-2n`
+  *** `non-ha`
 
   . If the displayed system state of the controller module does not match your system configuration, set the `HA` state for the controller module: `ha-config modify controller ha-state`
   . Confirm that the setting has changed: `ha-config show`
@@ -47,7 +47,7 @@ Your system must be at the LOADER prompt to start diagnostics.
 
 All commands in the diagnostic procedures are issued from the node where the component is being replaced.
 
-. If the node to be serviced is not at the LOADER prompt, reboot the node: `system node halt -node node_name`
+. If the node to be serviced is not at the LOADER prompt, reboot the node: `system node halt -node _node_name_`
 +
 After you issue the command, you should wait until the system stops at the LOADER prompt.
 
@@ -57,7 +57,7 @@ After you issue the command, you should wait until the system stops at the LOADE
 . Select the test or series of tests from the various sub-menus.
 . Proceed based on the result of the preceding step:
  ** If the test failed, correct the failure, and then rerun the test.
- ** If the test reported no failures, select Reboot from the menu to reboot the system.
+ ** If the test reported no failures, select `Reboot` from the menu to reboot the system.
 +
 NOTE: During the boot process, you might see the following prompts:
 

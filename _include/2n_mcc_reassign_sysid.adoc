@@ -5,9 +5,9 @@ This procedure applies only to systems in a two-node MetroCluster configuration 
 
 You must be sure to issue the commands in this procedure on the correct node:
 
-* The impaired node is the node on which you are performing maintenance.
-* The replacement node is the new node that replaced the impaired node as part of this procedure.
-* The healthy node is the DR partner of the impaired node.
+* The _impaired node_ is the node on which you are performing maintenance.
+* The _replacement_ node is the new node that replaced the impaired node as part of this procedure.
+* The _healhy node_ is the DR partner of the impaired node.
 
 .Steps
 . If you have not already done so, reboot the replacement node, interrupt the boot process by entering `Ctrl-C`, and then select the option to boot to Maintenance mode from the displayed menu.
@@ -38,7 +38,7 @@ Local System ID: 118065481
 
 . Reassign disk ownership (for FAS systems) or LUN ownership (for FlexArray systems), by using the system ID information obtained from the disk show command: `disk reassign -s old system ID`
 +
-In the case of the preceding example, the command is:``disk reassign -s 118073209``
+In the case of the preceding example, the command is: ``disk reassign -s 118073209``
 +
 You can respond `Y` when prompted to continue.
 
@@ -60,18 +60,18 @@ disk_name   system-1  (118065481) Pool0  J8Y09DXC       system-1  (118065481)
 ----
 
 . From the healthy node, verify that any coredumps are saved:
- .. Change to the advanced privilege level:``set -privilege advanced``
+ .. Change to the advanced privilege level: ``set -privilege advanced``
 +
 You can respond `Y` when prompted to continue into advanced mode. The advanced mode prompt appears (*>).
 
- .. Verify that the coredumps are saved:``system node run -node local-node-name partner savecore``
+ .. Verify that the coredumps are saved: ``system node run -node local-node-name partner savecore``
 +
-If the command output indicates that savecore is in progress, wait for savecore to complete before issuing the giveback. You can monitor the progress of the savecore using the system node run -node local-node-name partner savecore -s command.</info>.
+If the command output indicates that savecore is in progress, wait for savecore to complete before issuing the giveback. You can monitor the progress of the savecore using the `system node run -node local-node-name partner savecore -s command`.</info>.
 
- .. Return to the admin privilege level:``set -privilege admin``
+ .. Return to the admin privilege level: ``set -privilege admin``
 . If the replacement node is in Maintenance mode (showing the *> prompt), exit Maintenance mode and go to the LOADER prompt: `halt`
 . Boot the replacement node: `boot_ontap`
-. After the replacement node has fully booted, perform a switchback:``metrocluster switchback``
+. After the replacement node has fully booted, perform a switchback: ``metrocluster switchback``
 . Verify the MetroCluster configuration: `metrocluster node show - fields configuration-state`
 +
 ----
@@ -88,10 +88,10 @@ dr-group-id            cluster node           configuration-state
 ----
 
 . Verify the operation of the MetroCluster configuration in Data ONTAP:
- .. Check for any health alerts on both clusters:``system health alert show``
- .. Confirm that the MetroCluster is configured and in normal mode:``metrocluster show``
- .. Perform a MetroCluster check:``metrocluster check run``
- .. Display the results of the MetroCluster check:``metrocluster check show``
+ .. Check for any health alerts on both clusters: ``system health alert show``
+ .. Confirm that the MetroCluster is configured and in normal mode: ``metrocluster show``
+ .. Perform a MetroCluster check: ``metrocluster check run``
+ .. Display the results of the MetroCluster check: ``metrocluster check show``
  .. Run Config Advisor. Go to the Config Advisor page on the NetApp Support Site at http://support.netapp.com/NOW/download/tools/config_advisor/[support.netapp.com/NOW/download/tools/config_advisor/].
 +
 After running Config Advisor, review the tool's output and follow the recommendations in the output to address any issues discovered.

@@ -5,7 +5,7 @@ permalink: sas3/index.html
 summary: The storage shelf documentation lets you install, setup, and maintain your system.
 ---
 
-= SAS3 shelves
+= SAS shelves with IOM12 modules
 :hardbreaks:
 :linkattrs:
 :imagesdir: ./media/

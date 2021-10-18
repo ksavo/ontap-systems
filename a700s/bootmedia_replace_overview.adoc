@@ -16,5 +16,5 @@ If your secondary boot media has failed or is missing the image.tgz file, you mu
 * The replacement process restores the var file system from the secondary boot media or USB flash drive to the primary boot media.
 * You must replace the failed component with a replacement FRU component you received from your provider.
 * It is important that you apply the commands in these steps on the correct node:
- ** The impaired node is the node on which you are performing maintenance.
- ** The healthy node is the HA partner of the impaired node.
+ ** The _impaired node_ is the node on which you are performing maintenance.
+ ** The _healhy node_ is the HA partner of the impaired node.

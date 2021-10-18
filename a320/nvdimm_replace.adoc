@@ -34,14 +34,14 @@ To access components inside the controller module, you must remove the controlle
 . Unplug the controller module power supply from the power source.
 . Loosen the hook and loop strap binding the cables to the cable management device, and then unplug the system cables and SFPs (if needed) from the controller module, keeping track of where the cables were connected.
 +
-image::../media/drw_a320_controller_cable_unplug_animated_gif.svg[]
+image::../media/drw_a320_controller_cable_unplug_animated_gif.gif[]
 +
 Leave the cables in the cable management device so that when you reinstall the cable management device, the cables are organized.
 
 . Remove and set aside the cable management devices from the left and right sides of the controller module.
 . Remove the controller module from the chassis:
 +
-image::../media/drw_a320_controller_remove_animated_gif.svg[]
+image::../media/drw_a320_controller_remove_animated_gif.gif[]
 +
  .. Insert your forefinger into the latching mechanism on either side of the controller module.
  .. Press down on the orange tab on top of the latching mechanism until it clears the latching pin on the chassis.
@@ -58,7 +58,7 @@ To replace the NVDIMM, you must locate it in the controller module using the NVD
 
 NOTE: The NVDIMM LED blinks while destaging contents when you halt the system. After the destage is complete, the LED turns off.
 
-image::../media/drw_a320_nvdimm_replace_animated_gif.svg[]
+image::../media/drw_a320_nvdimm_replace_animated_gif.gif[]
 
 . Open the air duct and then locate the NVDIMM in slot 11 on your controller module.
 +
@@ -91,7 +91,7 @@ After you have replaced the component in the controller module, you must re-inst
 . If you have not already done so, close the air duct at the rear of the controller module and reinstall the cover over the PCIe cards.
 . Align the end of the controller module with the opening in the chassis, and then gently push the controller module halfway into the system.
 +
-image::../media/drw_a320_controller_install_animated_gif.svg[]
+image::../media/drw_a320_controller_install_animated_gif.gif[]
 +
 NOTE: Do not completely insert the controller module in the chassis until instructed to do so.
 

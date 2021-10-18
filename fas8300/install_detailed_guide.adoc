@@ -176,10 +176,10 @@ NOTE: As you insert the connector, you should feel it click into place; if you d
 . Use the animation or graphic to complete the cabling between the controllers and to the switches:
 +
 https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=80c4701e-8e4a-408e-96e6-ab1b00666d3f[Two-node switchless cluster cabling]
++
+image::../media/drw_A400_TNSC_network_cabling.png[]
 
-. Cable your storage: link:install_detailed_guide.md#[Cabling controllers to drive shelves]
-
-image::../media/drw_a400_tnsc_network_cabling.png[]
+. Go to <<Step 4: Cable controllers to drive shelves>> for drive shelf cabling instructions.
 
 === Option 2: Cable a switched cluster
 
@@ -200,10 +200,10 @@ NOTE: As you insert the connector, you should feel it click into place; if you d
 . Use the animation or graphic to complete the cabling between the controllers and to the switches:
 +
 https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=5893b7d4-6f67-4a64-ad89-ab1b006658d1[Switched cluster cabling]
-
++
 image::../media/drw_a400_switched_network_cabling.png[]
 
-. Cable your storage: link:install_detailed_guide.md#[Cabling controllers to drive shelves]
+. Go to <<Step 4: Cable controllers to drive shelves>> for drive shelf cabling instructions.
 
 == Step 4: Cable controllers to drive shelves
 
@@ -223,10 +223,10 @@ NOTE: As you insert the connector, you should feel it click into place; if you d
 . Use the following animation or graphic to cable your controllers to two drive shelves.
 +
 https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=46c0da0b-6842-449f-b28c-ab1b0066584b[Cabling the controllers to SAS drive shelves]
-
++
 image::../media/drw_a400_three_ds224c_shelves.png[]
 
-. To complete setting up your system, see link:install_detailed_guide.md#[Completing system setup and configuration].
+. Go to <<Step 5: Complete system setup and configuration>> to complete system setup and configuration.
 
 == Step 5: Complete system setup and configuration
 
@@ -333,7 +333,7 @@ NOTE: Check your laptop or console's online help if you do not know how to confi
 . Using System Manager on your laptop or console, configure your cluster:
  .. Point your browser to the node management IP address.
 +
-NOTE: The format for the address is https://x.x.x.x.
+NOTE: The format for the address is +https://x.x.x.x.+
 
  .. Configure the system using the data you collected in the _NetApp ONTAP Configuration guide_.
 +

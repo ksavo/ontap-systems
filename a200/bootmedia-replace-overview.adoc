@@ -21,5 +21,5 @@ You must have a USB flash drive, formatted to FAT32, with the appropriate amount
  ** For disruptive replacement, you do not need a network connection to restore the var file system, but the process requires two reboots.
 * You must replace the failed component with a replacement FRU component you received from your provider.
 * It is important that you apply the commands in these steps on the correct node:
- ** The impaired node is the node on which you are performing maintenance.
- ** The healthy node is the HA partner of the impaired node.
+ ** The _impaired node_ is the node on which you are performing maintenance.
+ ** The _healhy node_ is the HA partner of the impaired node.

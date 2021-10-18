@@ -16,8 +16,8 @@ To replace a failed NVRAM card, you must remove the NVRAM riser, Riser 1, from t
 * All disk shelves must be working properly.
 * If your system is in an HA pair, the partner node must be able to take over the node associated with the NVRAM module that is being replaced.
 * This procedure uses the following terminology:
- ** The impaired node is the node on which you are performing maintenance.
- ** The healthy node is the HA partner of the impaired node.
+ ** The _impaired node_ is the node on which you are performing maintenance.
+ ** The _healhy node_ is the HA partner of the impaired node.
 * This procedure includes steps for automatically or manually reassigning disks to the controller module associated with the new NVRAM module. You must reassign the disks when directed to in the procedure. Completing the disk reassignment before giveback can cause issues.
 * You must replace the failed component with a replacement FRU component you received from your provider.
 * You cannot change any disks or disk shelves as part of this procedure.
@@ -178,23 +178,7 @@ The controller module begins to boot as soon as it is fully seated in the chassi
  .. Interrupt the boot process by pressing `Ctrl-C` when you see Press Ctrl-C for Boot Menu.
  .. Select the option to boot to Maintenance mode from the displayed menu.
 
-== Reassign disks
-
-[.lead]
-Depending on your configuration, you must either verify the reassignment of disks to the new controller module or manually reassign the disks. If the storage system is in an HA pair, the system ID of the new controller module is automatically assigned to the disks when the giveback occurs at the end of the procedure. In a stand-alone system, you must manually reassign the ID to the disks.
-
-You must use the correct procedure for your configuration:
-
-[options="header" cols="1,2"]
-|===
-| Controller module redundancy| Then use this procedure...
-a|
-HA pair
-a|
-link:nvram_or_nvram_dimm_replacement.md#[Verifying the system ID change on an HA system]
-|===
-
-=== Verify the system ID change on an HA system
+== Verify the system ID change on an HA system
 
 [.lead]
 You must confirm the system ID change when you boot the replacement node and then verify that the change was implemented.
@@ -241,7 +225,7 @@ http://mysupport.netapp.com/documentation/productlibrary/index.html?productID=62
 
  .. After the giveback has been completed, confirm that the HA pair is healthy and that takeover is possible: storage failover show
 +
-The output from the storage failover show command should not include the System ID changed on partner message.
+The output from the `storage failover show` command. should not include the System ID changed on partner message.
 . Verify that the disks were assigned correctly: storage disk show -ownership
 +
 The disks belonging to the replacement node should show the new system ID. In the following example, the disks owned by node1 now show the new system ID, 1873775277:

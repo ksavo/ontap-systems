@@ -19,17 +19,7 @@ You must remove the controller module from the chassis when you replace a compon
 Make sure that you label the cables so that you know where they came from.
 
 Use the following video or the tabulated steps to replace a controller module:
-//testing fix from NetAppDocs/jekyll/issues/264
-//
-//<iframe frameborder="1" height="400" scrolling="auto" src="https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=ab0ebe6b-e891-489c-aab4-ac5b015c8f01" width="711"> </iframe>
-//
-//testing fix from NetAppDocs/jekyll/issues/264
-//
-//<div class="aspect-ratio"><iframe frameborder="1" height="400" scrolling="auto" src="https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=ab0ebe6b-e891-489c-aab4-ac5b015c8f01" width="711"> </iframe></div>
-//
-//video::ab0ebe6b-e891-489c-aab4-ac5b015c8f01[panopto]
 
-//original link
 https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=ab0ebe6b-e891-489c-aab4-ac5b015c8f01[Replacing a controller module]
 
 . If you are not already grounded, properly ground yourself.

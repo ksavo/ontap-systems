@@ -203,7 +203,7 @@ You can use the following animation or the written steps to install the replacem
 
 https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=0310fe80-b129-4685-8fef-ab19010e720a[Installing the controller module]
 
-image::../media/drw_A400_install_controller.png[]
+image::../media/drw_A400_Install_controller.png[]
 
 . If you have not already done so, close the air duct.
 . Align the end of the controller module with the opening in the chassis, and then gently push the controller module halfway into the system.

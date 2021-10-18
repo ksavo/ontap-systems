@@ -5,6 +5,8 @@ keywords: aff a700, fas9000, add, x91148a, storage, module, NIC, no open, slots,
 summary: "You can add an I/O module to your system by either replacing a NIC or storage adapter with a new one in a fully-populated system, or by adding a new NIC or storage adapter into an empty chassis slot in your system."
 ---
 = Add an I/O module - AFF A900
+:icons: font
+:imagesdir: ../media/
 
 You can add an I/O module to your system by either replacing a NIC or storage adapter with a new one in a fully-populated system, or by adding a new NIC or storage adapter into an empty chassis slot in your system.
 

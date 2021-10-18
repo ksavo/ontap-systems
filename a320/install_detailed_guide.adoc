@@ -71,7 +71,7 @@ X66211A-3 (112-00543),3m;
 
 X66211A-5 (112-00576), 5m
 a|
-image:../media/oie_cable_sfp_gbe_copper.svg[]
+image:../media/oie_cable_sfp_gbe_copper.gif[]
 a|
 Storage, cluster interconnect/HA, and Ethernet data (order-dependent)
 a|
@@ -105,7 +105,7 @@ X66260-5 (112-00344), 5m
 
 X66260-30 (112-00354), 30m
 a|
-image:../media/oie_cable_fiber_lc_connector.svg[]
+image:../media/oie_cable_fiber_lc_connector.gif[]
 a|
 FC configurations (order-dependent)
 a|
@@ -123,7 +123,7 @@ Micro-USB console cable
 a|
 Not applicable
 a|
-image:../media/oie_cable_micro_usb.svg[]
+image:../media/oie_cable_micro_usb.gif[]
 a|
 Console connection used during software setup if laptop or console does not support network discovery.
 a|
@@ -172,7 +172,7 @@ You must have contacted your network administrator for information about connect
 
 Be sure to check the illustration arrow for the proper cable connector pull-tab orientation.
 
-image::../media/oie_cable_pull_tab_up.svg[]
+image::../media/oie_cable_pull_tab_up.gif[]
 
 NOTE: As you insert the connector, you should feel it click into place; if you do not feel it click, remove it, turn it around and try again.
 
@@ -229,7 +229,7 @@ You must have contacted your network administrator for information about connect
 
 Be sure to check the illustration arrow for the proper cable connector pull-tab orientation.
 
-image::../media/oie_cable_pull_tab_up.svg[]
+image::../media/oie_cable_pull_tab_up.gif[]
 
 NOTE: As you insert the connector, you should feel it click into place; if you do not feel it click, remove it, turn it around and try again.
 
@@ -289,7 +289,7 @@ You must cable each controller to the NSM modules on the NS224 drive shelf.
 
 Be sure to check the illustration arrow for the proper cable connector pull-tab orientation.
 
-image::../media/oie_cable_pull_tab_up.svg[]
+image::../media/oie_cable_pull_tab_up.gif[]
 
 NOTE: As you insert the connector, you should feel it click into place; if you do not feel it click, remove it, turn it around and try again.
 
@@ -319,7 +319,7 @@ You must cable each controller to the NSM modules on both NS224 drive shelves.
 
 Be sure to check the illustration arrow for the proper cable connector pull-tab orientation.
 
-image::../media/oie_cable_pull_tab_up.svg[]
+image::../media/oie_cable_pull_tab_up.gif[]
 
 NOTE: As you insert the connector, you should feel it click into place; if you do not feel it click, remove it, turn it around and try again.
 
@@ -429,7 +429,7 @@ NOTE: Check your laptop or console's online help if you do not know how to confi
 . Using System Manager on your laptop or console, configure your cluster:
  .. Point your browser to the node management IP address.
 +
-NOTE: The format for the address is https://x.x.x.x.
+NOTE: The format for the address is +https://x.x.x.x+.
 
  .. Configure the system using the data you collected in the _NetApp ONTAP Configuration guide_.
 +
