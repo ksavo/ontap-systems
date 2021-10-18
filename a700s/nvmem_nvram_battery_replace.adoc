@@ -38,10 +38,10 @@ image::../media/drw_a700s_pcm_remove.svg[]
 +
 |===
 a|
-image:../media/legend_icon_01.gif[] a|
+image:../media/legend_icon_01.png[] a|
 Locking latch
 a|
-image:../media/legend_icon_02.gif[]
+image:../media/legend_icon_02.png[]
 a|
 Locking pin
 |===
@@ -64,10 +64,10 @@ image::../media/drw_a700s_nvme_battery_replace.svg[]
 +
 |===
 a|
-image:../media/legend_icon_01.gif[] a|
+image:../media/legend_icon_01.png[] a|
 NVRAM battery plug
 a|
-image:../media/legend_icon_02.gif[]
+image:../media/legend_icon_02.png[]
 a|
 Blue NVRAM battery locking tab
 |===
@@ -93,10 +93,10 @@ image::../media/drw_a700s_close_air_duct.svg[]
 +
 |===
 a|
-image:../media/legend_icon_01.gif[] a|
+image:../media/legend_icon_01.png[] a|
 Locking tabs
 a|
-image:../media/legend_icon_02.gif[]
+image:../media/legend_icon_02.png[]
 a|
 Slide plunger
 |===

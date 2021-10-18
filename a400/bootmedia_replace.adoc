@@ -37,10 +37,10 @@ image::../media/drw_A400_Remove_controller.png[]
 +
 |===
 a|
-image:../media/legend_icon_01.gif[] a|
+image:../media/legend_icon_01.png[] a|
 Locking latches
 a|
-image:../media/legend_icon_02.gif[]
+image:../media/legend_icon_02.png[]
 a|
 Slide controller out of chassis
 |===
@@ -73,14 +73,14 @@ image::../media/drw_A400_open-air-duct.png[]
 +
 |===
 a|
-image:../media/legend_icon_01.gif[] a|
+image:../media/legend_icon_01.png[] a|
 Locking tabs
 a|
-image:../media/legend_icon_02.gif[]
+image:../media/legend_icon_02.png[]
 a|
 Slide air duct toward back of controller
 a|
-image::../media/legend_icon_03.gif[]
+image::../media/legend_icon_03.png[]
 a|
 Rotate air duct up
 |===
@@ -93,10 +93,10 @@ image::../media/drw_A400_Replace-boot_media.png[]
 +
 |===
 a|
-image:../media/legend_icon_01.gif[] a|
+image:../media/legend_icon_01.png[] a|
 Press blue button
 a|
-image:../media/legend_icon_02.gif[]
+image:../media/legend_icon_02.png[]
 a|
 Rotate boot media up and remove from socket
 |===

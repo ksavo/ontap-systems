@@ -39,16 +39,16 @@ Leave the cables in the cable management device so that when you reinstall the c
 
 . Remove and set aside the cable management devices from the left and right sides of the controller module.
 +
-image::../media/drw_25xx_cable_management_arm.gif[]
+image::../media/drw_25xx_cable_management_arm.png[]
 
 . Squeeze the latch on the cam handle until it releases, open the cam handle fully to release the controller module from the midplane, and then, using two hands, pull the controller module out of the chassis.
 +
-image::../media/drw_2240_x_opening_cam_latch.gif[]
+image::../media/drw_2240_x_opening_cam_latch.png[]
 
 . Turn the controller module over and place it on a flat, stable surface.
 . Open the cover by sliding in the blue tabs to release the cover, and then swing the cover up and open.
 +
-image::../media/drw_2600_opening_pcm_cover.gif[]
+image::../media/drw_2600_opening_pcm_cover.png[]
 
 == Step 3: Replace the DIMMs
 
@@ -67,7 +67,7 @@ image::../media/drw_hw_nvram_icon.gif[]
 . If the NVMEM LED is flashing, there is data in the NVMEM and you must disconnect the battery to clear the memory:
  .. Locate the battery, press the clip on the face of the battery plug to release the lock clip from the plug socket, and then unplug the battery cable from the socket.
 +
-image::../media/drw_2600_nvmem_battery_unplug.gif[]
+image::../media/drw_2600_nvmem_battery_unplug.png[]
 
  .. Confirm that the NVMEM LED is no longer lit.
  .. Reconnect the battery connector.
@@ -85,7 +85,7 @@ The number and placement of system DIMMs depends on the model of your system.
 +
 The following illustration shows the location of system DIMMs:
 +
-image::../media/drw_2600_dimm_repl_animated_gif.gif[]
+image::../media/drw_2600_dimm_repl_animated_gif.png[]
 
 . Remove the replacement DIMM from the antistatic shipping bag, hold the DIMM by the corners, and align it to the slot.
 +

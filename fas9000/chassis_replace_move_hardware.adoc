@@ -26,7 +26,7 @@ image::../media/drw_9000_remove_install_psu_module.gif[]
 [cols="1,3"]
 |===
 a|
-image:../media/legend_icon_01.gif[]|
+image:../media/legend_icon_01.png[]|
 Locking button
 |===
 
@@ -47,7 +47,7 @@ image::../media/drw_9000_remove_install_fan.gif[]
 [cols="1,3"]
 |===
 a|
-image:../media/legend_icon_01.gif[]|
+image:../media/legend_icon_01.png[]|
 Orange release button
 |===
 
@@ -67,10 +67,10 @@ image::../media/drw_9000_remove_pcm.gif[]
 [cols="1,3"]
 |===
 a|
-image:../media/legend_icon_01.gif[]|
+image:../media/legend_icon_01.png[]|
 Cam handle release button
 a|
-image:../media/legend_icon_02.gif[]
+image:../media/legend_icon_02.png[]
 a|
 Cam handle
 |===
@@ -108,10 +108,10 @@ image::../media/drw_9000_remove_pcie_module.gif[]
 [cols="1,3"]
 |===
 a|
-image:../media/legend_icon_01.gif[]|
+image:../media/legend_icon_01.png[]|
 Lettered and numbered I/O cam latch
 a|
-image:../media/legend_icon_02.gif[]
+image:../media/legend_icon_02.png[]
 a|
 I/O cam latch completely unlocked
 |===
@@ -130,7 +130,7 @@ image::../media/drw_9000_remove_nv_battery.gif[]
 [cols="1,3"]
 |===
 a|
-image:../media/legend_icon_01.gif[]|
+image:../media/legend_icon_01.png[]|
 DCPM module orange locking button
 |===
 

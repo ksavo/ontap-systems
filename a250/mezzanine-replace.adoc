@@ -38,10 +38,10 @@ image::../media/drw_a250_pcm_remove_install.png[]
 +
 |===
 a|
-image:../media/legend_icon_01.gif[]|
+image:../media/legend_icon_01.png[]|
 Lever
 a|
-image:../media/legend_icon_02.gif[]
+image:../media/legend_icon_02.png[]
 a|
 Latching mechanism
 |===
@@ -53,10 +53,10 @@ image::../media/drw_a250_open_controller_module_cover.png[]
 +
 |===
 a|
-image:../media/legend_icon_01.gif[]|
+image:../media/legend_icon_01.png[]|
 Thumbscrew
 a|
-image:../media/legend_icon_02.gif[]
+image:../media/legend_icon_02.png[]
 a|
 Controller module cover.
 |===
@@ -77,14 +77,14 @@ image::../media/drw_a250_replace_mezz_card.png[]
 +
 |===
 a|
-image:../media/legend_icon_01.gif[]|
+image:../media/legend_icon_01.png[]|
 Remove screws on the face of the controller module.
 a|
-image:../media/legend_icon_02.gif[]
+image:../media/legend_icon_02.png[]
 a|
 Loosen the screw in the controller module.
 a|
-image:../media/legend_icon_03.gif[]
+image:../media/legend_icon_03.png[]
 a|
 Remove the mezzanine card.
 |===
@@ -125,10 +125,10 @@ image::../media/drw_a250_close_controller_module_cover.png[]
 +
 |===
 a|
-image:../media/legend_icon_01.gif[]|
+image:../media/legend_icon_01.png[]|
 Controller module cover
 a|
-image:../media/legend_icon_02.gif[]
+image:../media/legend_icon_02.png[]
 a|
 Thumbscrew
 |===

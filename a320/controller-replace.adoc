@@ -117,10 +117,10 @@ image::../media/drw_a320_dimm_map.png[]
 +
 |===
 a|
-image:../media/legend_icon_01.gif[] a|
+image:../media/legend_icon_01.png[] a|
 Air duct
 a|
-image:../media/legend_icon_02.gif[]
+image:../media/legend_icon_02.png[]
 a|
 
  ** System DIMMs slots: 2,4, 7, 9, 13, 15, 18, and 20

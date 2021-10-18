@@ -38,14 +38,14 @@ Leave the cables in the cable management device so that when you reinstall the c
 +
 The controller module moves slightly out of the chassis.
 +
-image::../media/drw_a800_pcm_remove.gif[]
+image::../media/drw_a800_pcm_remove.png[]
 +
 |===
 a|
-image:../media/legend_icon_01.gif[]|
+image:../media/legend_icon_01.png[]|
 Locking latch
 a|
-image:../media/legend_icon_02.gif[]
+image:../media/legend_icon_02.png[]
 a|
 Locking pin
 |===
@@ -63,18 +63,18 @@ To replace the NVDIMM battery, you must remove the failed battery from the contr
 
 . Open the air duct cover and locate the NVDIMM battery in the riser.
 +
-image::../media/drw_a800_nvdimm_battery_replace.gif[]
+image::../media/drw_a800_nvdimm_battery_replace.png[]
 +
 |===
 a|
-image:../media/legend_icon_01.gif[]|
+image:../media/legend_icon_01.png[]|
 Air duct riser
 a|
-image:../media/legend_icon_02.gif[]
+image:../media/legend_icon_02.png[]
 a|
 NVDIMM battery plug
 a|
-image:../media/legend_icon_03.gif[]
+image:../media/legend_icon_03.png[]
 a|
 NVDIMM battery pack
 |===

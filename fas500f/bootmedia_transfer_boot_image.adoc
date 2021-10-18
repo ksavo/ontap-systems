@@ -46,11 +46,11 @@ image::../media/drw_a250_close_controller_module_cover.png[]
 +
 |===
 a|
-image:../media/legend_icon_01.gif[]
+image:../media/legend_icon_01.png[]
 a|
 Controller module cover
 a|
-image:../media/legend_icon_02.gif[]
+image:../media/legend_icon_02.png[]
 a|
 Thumbscrew
 |===

@@ -32,10 +32,10 @@ image::../media/drw_a250_pcm_remove_install.png[]
 +
 |===
 a|
-image:../media/legend_icon_01.gif[] a|
+image:../media/legend_icon_01.png[] a|
 Lever
 a|
-image:../media/legend_icon_02.gif[]
+image:../media/legend_icon_02.png[]
 a|
 Latching mechanism
 |===
@@ -47,10 +47,10 @@ image::../media/drw_a250_open_controller_module_cover.png[]
 +
 |===
 a|
-image:../media/legend_icon_01.gif[] a|
+image:../media/legend_icon_01.png[] a|
 Thumbscrew
 a|
-image:../media/legend_icon_02.gif[]
+image:../media/legend_icon_02.png[]
 a|
 Controller module cover.
 |===
@@ -79,10 +79,10 @@ image::../media/drw_a250_replace_boot_media.png[]
 +
 |===
 a|
-image:../media/legend_icon_01.gif[] a|
+image:../media/legend_icon_01.png[] a|
 Remove the screw securing the boot media to the motherboard in the controller module.
 a|
-image:../media/legend_icon_02.gif[]
+image:../media/legend_icon_02.png[]
 a|
 Lift the boot media out of the controller module.
 |===
@@ -136,10 +136,10 @@ image::../media/drw_a250_close_controller_module_cover.png[]
 +
 |===
 a|
-image:../media/legend_icon_01.gif[] a|
+image:../media/legend_icon_01.png[] a|
 Controller module cover
 a|
-image:../media/legend_icon_02.gif[]
+image:../media/legend_icon_02.png[]
 a|
 Thumbscrew
 |===

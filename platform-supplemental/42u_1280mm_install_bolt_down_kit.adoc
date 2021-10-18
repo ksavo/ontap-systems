@@ -19,11 +19,11 @@ image::../media/drw_sys_cab_universal_boltdown_kit_ozeki.gif[]
 +
 |===
 a|
-image:../media/legend_icon_01.gif[]
+image:../media/legend_icon_01.png[]
 a|
 Front and rear bolt-down brackets
 a|
-image:../media/legend_icon_02.gif[]
+image:../media/legend_icon_02.png[]
 a|
 Location of floor anchor point on the bracket
 |===

@@ -55,9 +55,9 @@ NOTE: If you are adding another caching module to your system, remove the blank 
 image::../media/drw_9000_remove_flashcache.svg[]
 +
 |===
-|image:../media/legend_icon_01.gif[]|Orange release button.
+|image:../media/legend_icon_01.png[]|Orange release button.
 a|
-image:../media/legend_icon_02.gif[]
+image:../media/legend_icon_02.png[]
 |a
 Caching module cam handle.
 |===
@@ -97,9 +97,9 @@ image::../media/drw_9000_remove_flashcache.svg[]
 +
 [cols="1,3"]
 |===
-| image:../media/legend_icon_01.gif[]| Orange release button.
+| image:../media/legend_icon_01.png[]| Orange release button.
 a|
-image:../media/legend_icon_02.gif[]
+image:../media/legend_icon_02.png[]
 a|
 Core dump module cam handle.
 |===

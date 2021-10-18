@@ -64,7 +64,7 @@ X66240-2 (112-00598), 2m
 
 X66240-5 (112-00639), 5m
 a|
-image:../media/oie_cable_sfp_gbe_copper.gif[]
+image:../media/oie_cable_sfp_gbe_copper.png[]
 a|
 GbE network connection (order-dependent)
 a|
@@ -76,7 +76,7 @@ X66250-5 (112-00344), 5m
 
 X66250-15 (112-00346), 15m
 a|
-image:../media/oie_cable_sfp_gbe_copper.gif[]
+image:../media/oie_cable_sfp_gbe_copper.png[]
 a|
 FC network connection
 a|
@@ -98,7 +98,7 @@ Optical cables
 a|
 X66250-2-N-C (112-00342)
 a|
-image:../media/oie_cable_fiber_lc_connector.gif[]
+image:../media/oie_cable_fiber_lc_connector.png[]
 a|
 16 Gb FC or 25GbE cables for mezzanine cards (order-dependent)
 a|
@@ -116,7 +116,7 @@ Micro-USB console cable
 a|
 Not applicable
 a|
-image:../media/oie_cable_micro_usb.gif[]
+image:../media/oie_cable_micro_usb.png[]
 a|
 Console connection used during software setup if laptop or console does not support network discovery.
 a|
@@ -166,9 +166,9 @@ You must have contacted your network administrator for information about connect
 
 Be sure to check the direction of the cable pull-tabs when inserting the cables in the ports. Cable pull-tabs are up for all onboard ports and down for expansion (NIC) cards.
 
-image::../media/oie_cable_pull_tab_up.svg[]
+image::../media/oie_cable_pull_tab_up.png[]
 
-image::../media/oie_cable_pull_tab_down.svg[]
+image::../media/oie_cable_pull_tab_down.png[]
 
 NOTE: As you insert the connector, you should feel it click into place; if you do not feel it click, remove it, turn it around and try again.
 
@@ -190,9 +190,9 @@ You must have contacted your network administrator for information about connect
 
 Be sure to check the direction of the cable pull-tabs when inserting the cables in the ports. Cable pull-tabs are up for all onboard ports and down for expansion (NIC) cards.
 
-image::../media/oie_cable_pull_tab_up.svg[]
+image::../media/oie_cable_pull_tab_up.png[]
 
-image::../media/oie_cable_pull_tab_down.svg[]
+image::../media/oie_cable_pull_tab_down.png[]
 
 NOTE: As you insert the connector, you should feel it click into place; if you do not feel it click, remove it, turn it around and try again.
 
@@ -215,7 +215,7 @@ You must cable each controller to the IOM modules on both SAS drive shelves.
 
 Be sure to check the illustration arrow for the proper cable connector pull-tab orientation. The cable pull-tab for the DS224-C are down.
 
-image::../media/oie_cable_pull_tab_down.svg[]
+image::../media/oie_cable_pull_tab_down.png[]
 
 NOTE: As you insert the connector, you should feel it click into place; if you do not feel it click, remove it, turn it around and try again.
 

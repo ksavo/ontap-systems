@@ -51,10 +51,10 @@ image::../media/drw_9000_remove_flashcache.svg[]
 +
 |===
 a|
-image:../media/legend_icon_01.gif[] a|
+image:../media/legend_icon_01.png[] a|
 Orange release button (gray on empty FlashCache modules)
 a|
-image:../media/legend_icon_02.gif[]
+image:../media/legend_icon_02.png[]
 a|
 FlashCache cam handle
 |===
@@ -82,23 +82,23 @@ image::../media/drw_9000_move_remove_nvram_module.svg[]
 +
 |===
 a|
-image:../media/legend_icon_01.gif[] a|
+image:../media/legend_icon_01.png[] a|
 Lettered and numbered I/O cam latch
 a|
-image:../media/legend_icon_02.gif[]
+image:../media/legend_icon_02.png[]
 a|
 I/O latch completely unlocked
 |===
 . Set the NVRAM module on a stable surface and remove the cover from the NVRAM module by pushing down on the blue locking button on the cover, and then, while holding down the blue button, slide the lid off the NVRAM module.
 +
-image::../media/drw_9000_remove_nvram_module_contents.svg[]
+image::../media/drw_9000_remove_nvram_module_contents.png[]
 +
 |===
 a|
-image:../media/legend_icon_01.gif[] a|
+image:../media/legend_icon_01.png[] a|
 Cover locking button
 a|
-image:../media/legend_icon_02.gif[]
+image:../media/legend_icon_02.png[]
 a|
 DIMM and DIMM ejector tabs
 |===
@@ -131,23 +131,23 @@ image::../media/drw_9000_move_remove_nvram_module.svg[]
 +
 |===
 a|
-image:../media/legend_icon_01.gif[] a|
+image:../media/legend_icon_01.png[] a|
 Lettered and numbered I/O cam latch
 a|
-image:../media/legend_icon_02.gif[]
+image:../media/legend_icon_02.png[]
 a|
 I/O latch completely unlocked
 |===
 . Set the NVRAM module on a stable surface and remove the cover from the NVRAM module by pushing down on the blue locking button on the cover, and then, while holding down the blue button, slide the lid off the NVRAM module.
 +
-image::../media/drw_9000_remove_nvram_module_contents.svg[]
+image::../media/drw_9000_remove_nvram_module_contents.png[]
 +
 |===
 a|
-image:../media/legend_icon_01.gif[] a|
+image:../media/legend_icon_01.png[] a|
 Cover locking button
 a|
-image:../media/legend_icon_02.gif[]
+image:../media/legend_icon_02.png[]
 a|
 DIMM and DIMM ejector tabs
 |===

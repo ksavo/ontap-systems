@@ -66,10 +66,10 @@ image::../media/drw_9000_remove_flashcache.svg[]
 +
 |===
 a|
-image:../media/legend_icon_01.gif[] a|
+image:../media/legend_icon_01.png[] a|
 Orange release button.
 a|
-image:../media/legend_icon_02.gif[]
+image:../media/legend_icon_02.png[]
 a|
 Caching module cam handle.
 |===

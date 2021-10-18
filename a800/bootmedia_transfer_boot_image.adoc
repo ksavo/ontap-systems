@@ -43,11 +43,11 @@ image::../media/drw_a800_close_air_duct.gif[]
 +
 |===
 a|
-image:../media/legend_icon_01.gif[]
+image:../media/legend_icon_01.png[]
 a|
 Air duct
 a|
-image:../media/legend_icon_02.gif[]
+image:../media/legend_icon_02.png[]
 a|
 Risers
 |===

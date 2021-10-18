@@ -57,9 +57,9 @@ image::../media/drw_9000_remove_pcie_module.svg[]
 +
 [cols="1,3"]
 |===
-a|image:../media/legend_icon_01.gif[]
+a|image:../media/legend_icon_01.png[]
 a|Lettered and numbered I/O cam latch
-a|image:../media/legend_icon_02.gif[]
+a|image:../media/legend_icon_02.png[]
 a|I/O cam latch completely unlocked
 |===
 . Set the I/O module aside.

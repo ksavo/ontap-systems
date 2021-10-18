@@ -29,10 +29,10 @@ image::../media/drw_a250_pcm_remove_install.png[]
 [cols="1,3"]
 |===
 a|
-image:../media/legend_icon_01.gif[]|
+image:../media/legend_icon_01.png[]|
 Lever
 a|
-image:../media/legend_icon_02.gif[]
+image:../media/legend_icon_02.png[]
 a|
 Latching mechanism
 |===
