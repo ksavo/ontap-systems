@@ -24,7 +24,7 @@ entries:
           url: /a200/bootmedia-encryption-preshutdown-checks.html
         - title: Shut down impaired controller
           url: /a200/bootmedia-shutdown.html
-        - title: Remove controller module, replace boot media and transfer boot image
+        - title: Replace boot media
           url: /a200/bootmedia-replace.html
         - title: Boot recovery image
           url: /a200/bootmedia-recovery-image-boot-non-2n-mcc.html

@@ -4,9 +4,9 @@ Once environment variables are checked, you must complete steps specific to syst
 +
 If NSE or NVE are enabled along with Onboard Key Manager you must restore settings you captured at the beginning of this procedure.
 
-** If NSE or NVE are enabled and Onboard Key Manager is enabled, go to link:../a200/bootmedia-encryption-restore.html#option-1-restore-nve-or-nse-when-onboard-key-manager-is-enabled[Option 1: Restore NVE or NSE when Onboard Key Manager is enabled].
-** If NSE or NVE are enabled for ONATP 9.5, go to link:../a200/bootmedia-encryption-restore.html#option-2-restore-nsenve-on-systems-running-ontap-9-5-and-earlier[Option 2: Restore NSE/NVE on systems running ONTAP 9.5 and earlier].
-** If NSE or NVE are enabled for ONTAP 9.6, go to link:../a200/bootmedia-encryption-restore.html#option-3-restore-nsenve-on-systems-running-ontap-9-6-and-later[Option 3: Restore NSE/NVE on systems running ONTAP 9.6 and later].
+** If NSE or NVE are enabled and Onboard Key Manager is enabled, go to <<Option 1: Restore NVE or NSE when Onboard Key Manager is enabled>>.
+** If NSE or NVE are enabled for ONATP 9.5, go to <<Option 2: Restore NSE/NVE on systems running ONTAP 9.5 and earlier>>.
+** If NSE or NVE are enabled for ONTAP 9.6, go to <<Option 3: Restore NSE/NVE on systems running ONTAP 9.6 and later>>.
 
 == Option 1: Restore NVE or NSE when Onboard Key Manager is enabled
 
