@@ -5,7 +5,7 @@ permalink: a700s/index.html
 summary: The AFF A700s system documentation lets you install, setup, and maintain your system.
 ---
 
-= AFF A400 System Documentation
+= AFF A700s System Documentation
 :hardbreaks:
 :linkattrs:
 :imagesdir: ./media/

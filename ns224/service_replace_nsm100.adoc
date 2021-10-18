@@ -43,11 +43,11 @@ https://mysupport.netapp.com/site/downloads/firmware/disk-drive-firmware[NetApp 
 +
 NSM module firmware checks occur every 10 minutes. An NSM module firmware update can take up to 30 minutes.
 
-* If needed, you can turn on the shelf's location (blue) LEDs to aid in physically locating the affected shelf: `storage shelf location-led modify -shelf-name shelf_name -led-status on`
+* If needed, you can turn on the shelf's location (blue) LEDs to aid in physically locating the affected shelf: `storage shelf location-led modify -shelf-name _shelf_name_ -led-status on`
 +
-If you do not know the shelf_name of the affected shelf, run the `storage shelf show` command.
+If you do not know the `shelf_name` of the affected shelf, run the `storage shelf show` command.
 +
-A shelf has three location LEDs: one on the operator display panel and one on each NSM module. Location LEDs remain illuminated for 30 minutes. You can turn them off by entering the same command, but using the off option.
+A shelf has three location LEDs: one on the operator display panel and one on each NSM module. Location LEDs remain illuminated for 30 minutes. You can turn them off by entering the same command, but using the `off` option.
 
 * When you unpack the replacement NSM module, save all packing materials for use when you return the failed NSM module.
 +

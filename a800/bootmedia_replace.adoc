@@ -120,7 +120,7 @@ Do not over-tighten the screw or you might damage the boot media.
 [.lead]
 The replacement boot media that you installed is without a boot image so you need to transfer a boot image using a USB flash drive.
 
-.Before you bgin
+.Before you begin
 
  * You must have a USB flash drive, formatted to FAT32, with at least 4GB capacity.
  * A copy of the same image version of ONTAP as what the impaired controller was running. You can download the appropriate image from the Downloads section on the NetApp Support Site
@@ -134,7 +134,7 @@ The replacement boot media that you installed is without a boot image so you nee
   .. Download the service image to your work space on your laptop.
   .. Unzip the service image.
  +
-NOTE: If you are extracting the contents using Windows, do not use winzip to extract the netboot image. Use another extraction tool, such as 7-Zip or WinRAR.
+NOTE: If you are extracting the contents using Windows, do not use WinZip to extract the netboot image. Use another extraction tool, such as 7-Zip or WinRAR.
  +
  There are two folders in the unzipped service image file:
  +
@@ -184,22 +184,22 @@ Risers
  If you miss this message, press Ctrl-C, select the option to boot to Maintenance mode, and then halt the node to boot to LOADER.
 
  . Although the environment variables and bootargs are retained, you should check that all required boot environment variables and bootargs are properly set for your system type and configuration using the `printenv bootarg name` command and correct any errors using the `setenv variable-name <value\>` command.
-  .. Check the boot environment variables:
-   *** bootarg.init.boot_clustered
-   *** partner-sysid
-   *** bootarg.init.flash_optimized for AFF C190/AFF A220 (All Flash FAS)
-   *** bootarg.init.san_optimized for AFF A220 and All SAN Array
-   *** bootarg.init.switchless_cluster.enable
-  .. If External Key Manager is enabled, check the bootarg values, listed in the `kenv` ASUP output:
-   *** bootarg.storageencryption.support _value_
-   *** bootarg.keymanager.support _value_
-   *** kmip.init.interface _value_
-   *** kmip.init.ipaddr _value_
-   *** kmip.init.netmask _value_
-   *** kmip.init.gateway _value_
-  .. If Onboard Key Manager is enabled, check the bootarg values, listed in the `kenv` ASUP output:
-   *** bootarg.storageencryption.support _value_
-   *** bootarg.keymanager.support _value_
-   *** bootarg.onboard_keymanager _value_
+ .. Check the boot environment variables:
+  *** `bootarg.init.boot_clustered`
+  *** `partner-sysid`
+  *** `bootarg.init.flash_optimized` for AFF C190/AFF A220 (All Flash FAS)
+  *** `bootarg.init.san_optimized` for AFF A220 and All SAN Array
+  *** `bootarg.init.switchless_cluster.enable`
+ .. If External Key Manager is enabled, check the bootarg values, listed in the `kenv` ASUP output:
+  *** `bootarg.storageencryption.support <value>`
+  *** `bootarg.keymanager.support <value>`
+  *** `kmip.init.interface <value>`
+  *** `kmip.init.ipaddr <value>`
+  *** `kmip.init.netmask <value>`
+  *** `kmip.init.gateway <value>`
+ .. If Onboard Key Manager is enabled, check the bootarg values, listed in the `kenv` ASUP output:
+  *** `bootarg.storageencryption.support <value>`
+  *** `bootarg.keymanager.support <value>`
+  *** `bootarg.onboard_keymanager <value>`
   .. Save the environment variables you changed with the `savenv` command
   .. Confirm your changes using the `printenv variable-name` command.

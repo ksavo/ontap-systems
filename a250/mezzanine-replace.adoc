@@ -11,6 +11,7 @@ summary: "To replace a failed mezzanine card, you must remove the cables and any
 [.lead]
 To replace a failed mezzanine card, you must remove the cables and any SFP or QSFP modules, replace the card, reinstall the SFP or QSFP modules and recable the cards. To install a new mezzanine card, you must have the appropriate cables and SFP or QSFP modules.
 
+.About this task
 * You can use this procedure with all versions of ONTAP supported by your system
 * All other components in the system must be functioning properly; if not, you must contact technical support.
 
@@ -65,7 +66,7 @@ Controller module cover.
 [.lead]
 To replace a mezzanine card, you must remove the impaired card and install the replacement card; to install a mezzanine card, you must remove the face plate and install the new card.
 
-You can use the following video or the tabulated steps to replace a mezzanine card:
+Use the following video or the tabulated steps to replace a mezzanine card:
 
 https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=d8e7d4d9-8d28-4be1-809b-ac5b01643676[Replacing a mezzanine card]
 

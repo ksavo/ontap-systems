@@ -1,34 +1,31 @@
 indexpage:
-  lead: AFF A200
   tiles:
     - title: Get started 
       links:
         - title: ONTAP Release notes
-          url: /subfolder/page.html
+          url: https://library.netapp.com/ecm/ecm_download_file/ECMLP2492508
     - title: Install and setup
       links:
         - title: All configurations
-          url: /a200/install-setup-installation.html
+          url: /install-setup-linkout.html
     - title: Maintain
       links:
         - title: Boot media
-          url: /a200/bootmedia-replace-overview.html
+          url: /bootmedia-replace-overview.html
         - title: Chassis
-          url: /a200/chassis-replace-overview.html
+          url: /chassis-replace-overview.html
         - title: Controller module
-          url: /a200/controller-replace-overview.html
+          url: /controller-replace-overview.html
         - title: NV battery
-          url: /a200/nvmem-nvram-battery-replace.html
+          url: /nvmem-nvram-battery-replace.html
         - title: System DIMM
-          url: /a200/dimm-replace.html
+          url: /dimm-replace.html
         - title: Power supply
-          url: /a200/power-supply-swapout.html
+          url: /power-supply-swapout.html
         - title: RTC battery
-          url: /a200/rtc-battery-replace.html
+          url: /rtc-battery-replace.html
     - title: Learn
       links:
-        - title: Storage data sheet
-          url: https://www.netapp.com/data-storage/disk-shelves-storage-media/
         - title: Replacing an internal disk drive video
           url: https://www.youtube.com/watch?v=Ziqg9HL8oYQ
         - title: NetApp All-Flash FAS Solution for Nonpersistent Desktops with VMware Horizon View | TR-4539
@@ -36,7 +33,7 @@ indexpage:
     - title: Add or remove shelves
       links:
         - title: SAS with IOM12
-          url: /sas3/index.html
+          url: https://docs.netapp.com/us-en/ontap-systems/sas3/index.html
     - title: Install and maintain switches
       links:
         - title: Broadcom-supported switches

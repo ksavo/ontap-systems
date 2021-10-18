@@ -91,23 +91,23 @@ If you miss this message, press Ctrl-C, select the option to boot to Maintenance
 The system begins to boot and stops at the LOADER prompt.
 
 . Although the environment variables and bootargs are retained, you should check that all required boot environment variables and bootargs are properly set for your system type and configuration using the `printenv bootarg name` command and correct any errors using the `setenv variable-name <value\>` command.
- .. Check the boot environment variables:
-  *** bootarg.init.boot_clustered
-  *** partner-sysid
-  *** bootarg.init.flash_optimized for AFF C190/AFF A220 (All Flash FAS)
-  *** bootarg.init.san_optimized for AFF A220 and All SAN Array
-  *** bootarg.init.switchless_cluster.enable
- .. If External Key Manager is enabled, check the bootarg values, listed in the `kenv` ASUP output:
-  *** bootarg.storageencryption.support _value_
-  *** bootarg.keymanager.support _value_
-  *** kmip.init.interface _value_
-  *** kmip.init.ipaddr _value_
-  *** kmip.init.netmask _value_
-  *** kmip.init.gateway _value_
- .. If Onboard Key Manager is enabled, check the bootarg values, listed in the `kenv` ASUP output:
-  *** bootarg.storageencryption.support _value_
-  *** bootarg.keymanager.support _value_
-  *** bootarg.onboard_keymanager _value_
+.. Check the boot environment variables:
+ *** `bootarg.init.boot_clustered`
+ *** `partner-sysid`
+ *** `bootarg.init.flash_optimized` for AFF C190/AFF A220 (All Flash FAS)
+ *** `bootarg.init.san_optimized` for AFF A220 and All SAN Array
+ *** `bootarg.init.switchless_cluster.enable`
+.. If External Key Manager is enabled, check the bootarg values, listed in the `kenv` ASUP output:
+ *** `bootarg.storageencryption.support <value>`
+ *** `bootarg.keymanager.support <value>`
+ *** `kmip.init.interface <value>`
+ *** `kmip.init.ipaddr <value>`
+ *** `kmip.init.netmask <value>`
+ *** `kmip.init.gateway <value>`
+.. If Onboard Key Manager is enabled, check the bootarg values, listed in the `kenv` ASUP output:
+ *** `bootarg.storageencryption.support <value>`
+ *** `bootarg.keymanager.support <value>`
+ *** `bootarg.onboard_keymanager <value>`
  .. Save the environment variables you changed with the `savenv` command
  .. Confirm your changes using the `printenv variable-name` command.
 . Set your network connection type at the LOADER prompt:

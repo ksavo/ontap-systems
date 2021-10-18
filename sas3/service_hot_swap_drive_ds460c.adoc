@@ -167,6 +167,7 @@ The green Activity LED for the replaced drive on the front of the drive drawer c
 . If you are replacing another disk drive, repeat Steps 4 through 7.
 . Check the Activity LED and the Attention LED on the drive you replaced.
 +
+[%header,cols="1,2"]
 |===
 | LED status| Description
 a|

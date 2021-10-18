@@ -32,7 +32,7 @@ image::../media/drw_2600_psu_repl_animated_gif.gif[]
 
 . Use the cam handle to slide the power supply out of the system.
 +
-CAUTION:
+*CAUTION:*
 +
 When removing a power supply, always use two hands to support its weight.
 

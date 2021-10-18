@@ -1,56 +1,54 @@
 indexpage:
-  lead: FAS9000
+#  lead: FAS9000
   tiles:
     - title: Get started 
       links:
         - title: ONTAP Release notes
           url: https://library.netapp.com/ecm/ecm_download_file/ECMLP2492508
-    - title: Install and setup
-      links:
-        - title: Most configurations
-          url: /fas9000/install-setup.html
-        - title: Fabric-attached MetroCluster configurations
-          url: https://docs.netapp.com/us-en/ontap-metrocluster/install-fc/index.html
-        - title: Stretch MetroCluster configurations
-          url: https://docs.netapp.com/us-en/ontap-metrocluster/install-stretch/index.html
-        - title: MetroCluster IP configurations
-          url: https://docs.netapp.com/us-en/ontap-metrocluster/install-ip/index.html
-    - title: Maintain
-      links:
-        - title: Boot media
-          url: /fas9000/bootmedia-replace-overview.html
-        - title: Caching or core dump module
-          url: /fas9000/caching-module-and-core-dump-module-replace.html
-        - title: Caching module (hot-swap)
-          url: /fas9000/caching-module-hot-swap.html
-        - title: Chassis
-          url: /fas9000/chassis-replace-overview.html
-        - title: Controller module
-          url: /fas9000/controller-replace-overview.html
-        - title: DCPM (with NVRAM10 battery)
-          url: /fas9000/dcpm-nvram10-battery-replace.html
-        - title: DIMM
-          url: /fas9000/dimm-replace.html
-        - title: Fan
-          url: /fas9000/fan-replace.html
-        - title: I/O module
-          url: /fas9000/pci-cards-and-risers-replace.html
-        - title: LED USB module
-          url: /fas9000/led-module-replace.html
-        - title: NVRAM module and/or NVRAM DIMMs
-          url: /fas9000/nvram-module-or-nvram-dimm-replacement.html
-        - title: Power supply
-          url: /fas9000/power-supply-swapout.html
-        - title: RTC battery
-          url: /fas9000/rtc-battery-replace.html
-        - title: X91148A module
-          url: /fas9000/x91148a-module-install-overview.html
-    - title: Learn
-      links:
         - title: System data sheet
           url: https://www.netapp.com/pdf.html?item=/media/7828-ds-3582.pdf
         - title: Storage data sheet
           url: https://www.netapp.com/data-storage/disk-shelves-storage-media/
+    - title: Install and setup
+      links:
+        - title: Most configurations
+          url: /install-setup.html
+        - title: Fabric-attached MetroCluster configurations
+          url: https://docs.netapp.com/us-en/ontap-metrocluster/install-fc/index.html
+        - title: Stretch MetroCluster configurations
+          url: https://docs.netapp.com/us-en/ontap-metrocluster/install-stretch/index.html
+    - title: Maintain
+      links:
+        - title: Boot media
+          url: /bootmedia-replace-overview.html
+        - title: Caching or core dump module
+          url: /caching-module-and-core-dump-module-replace.html
+        - title: Caching module (hot-swap)
+          url: /caching-module-hot-swap.html
+        - title: Chassis
+          url: /chassis-replace-overview.html
+        - title: Controller module
+          url: /controller-replace-overview.html
+        - title: DCPM (with NVRAM10 battery)
+          url: /dcpm-nvram10-battery-replace.html
+        - title: DIMM
+          url: /dimm-replace.html
+        - title: Fan
+          url: /fan-replace.html
+        - title: I/O module
+          url: /pci-cards-and-risers-replace.html
+        - title: LED USB module
+          url: /led-module-replace.html
+        - title: NVRAM module and/or NVRAM DIMMs
+          url: /nvram-module-or-nvram-dimm-replacement.html
+        - title: Power supply
+          url: /power-supply-swapout.html
+        - title: RTC battery
+          url: /rtc-battery-replace.html
+        - title: X91148A module
+          url: /x91148a-module-install-overview.html
+    - title: Learn
+      links:
         - title: Replacing an internal disk drive video
           url: https://www.youtube.com/watch?v=Ziqg9HL8oYQ
         - title: NetApp All-Flash FAS Solution for Nonpersistent Desktops with VMware Horizon View | TR-4539
@@ -58,9 +56,9 @@ indexpage:
     - title: Add or remove shelves
       links:
         - title: NS224
-          url: /ns224/index.html
+          url: https://docs.netapp.com/us-en/ontap-systems/ns224/index.html
         - title: SAS with IOM12
-          url: /sas3/index.html
+          url: https://docs.netapp.com/us-en/ontap-systems/sas3/index.html
     - title: Install and maintain switches
       links:
         - title: Broadcom-supported switches

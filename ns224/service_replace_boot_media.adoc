@@ -54,11 +54,11 @@ https://mysupport.netapp.com/site/downloads/firmware/disk-shelf-firmware[NetApp 
 https://mysupport.netapp.com/site/downloads/firmware/disk-drive-firmware[NetApp Downloads: Disk Drive Firmware]
 ====
 
-* If needed, you can turn on the shelf's location (blue) LEDs to aid in physically locating the affected shelf: `storage shelf location-led modify -shelf-name shelf_name -led-status on`
+* If needed, you can turn on the shelf's location (blue) LEDs to aid in physically locating the affected shelf: `storage shelf location-led modify -shelf-name _shelf_name_ -led-status on`
 +
-If you do not know the shelf_name of the affected shelf, run the `storage shelf show` command.
+If you do not know the `_shelf_name_` of the affected shelf, run the `storage shelf show` command.
 +
-A shelf has three location LEDs: one on the operator display panel and one on each NSM module. Location LEDs remain illuminated for 30 minutes. You can turn them off by entering the same command, but using the off option.
+A shelf has three location LEDs: one on the operator display panel and one on each NSM module. Location LEDs remain illuminated for 30 minutes. You can turn them off by entering the same command, but using the `off` option.
 
 * After replacing the boot media, you can return the failed part to NetApp as described in the RMA instructions shipped with the kit.
 +

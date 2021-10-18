@@ -23,7 +23,7 @@ If this is the procedure you should use, note that the controller replacement pr
 * It is important that you apply the commands in these steps on the correct systems:
  ** The _impaired node_ is the node that is being replaced.
  ** The _replacement node_ is the new node that is replacing the impaired node.
- ** The _healthy node_ is the surviving node.
+ ** The _healhy node_ is the surviving node.
 * You must always capture the node's console output to a text file.
 +
 This provides you a record of the procedure so that you can troubleshoot any issues that you might encounter during the replacement process.

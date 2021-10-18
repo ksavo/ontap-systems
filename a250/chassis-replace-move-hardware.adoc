@@ -13,7 +13,7 @@ summary: "Move the power supplies, hard drives, and controller module or modules
 [.lead]
 To replace the chassis, you must remove the controller modules from the old chassis.
 
-You can use the following video or the tabulated steps to replace the chassis; it assumes the removal and replacement of the bezel:
+Use the following video or the tabulated steps to replace the chassis; it assumes the removal and replacement of the bezel:
 
 https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=1f859217-fede-491a-896e-ac5b015c1a36[Replacing the chassis]
 

@@ -1,40 +1,34 @@
 indexpage:
-  lead: AFF C190
+#  lead: AFF C190
   tiles:
     - title: Get started 
       links:
         - title: ONTAP Release notes
-          url: /subfolder/page.html
+          url: https://library.netapp.com/ecm/ecm_download_file/ECMLP2492508
+        - title: System data sheet
+          url: https://www.netapp.com/pdf.html?item=/media/7828-ds-3582.pdf
     - title: Install and setup
       links:
         - title: Most configurations
-          url: /c190/install-setup.html
-        - title: Fabric-attached MetroCluster configurations
-          url: https://docs.netapp.com/us-en/ontap-metrocluster/install-fc/index.html
-        - title: Stretch MetroCluster configurations
-          url: https://docs.netapp.com/us-en/ontap-metrocluster/install-stretch/index.html
-        - title: MetroCluster IP configurations
-          url: https://docs.netapp.com/us-en/ontap-metrocluster/install-ip/index.html
+          url: /install-setup.html
     - title: Maintain
       links:
         - title: Boot media
-          url: /c190/bootmedia-replace-overview.html
+          url: /bootmedia-replace-overview.html
         - title: Chassis
-          url: /c190/chassis-replace-overview.html
+          url: /chassis-replace-overview.html
         - title: Controller module
-          url: /c190/controller-replace-overview.html
+          url: /controller-replace-overview.html
         - title: DIMM
-          url: /c190/dimm-replace.html
+          url: /dimm-replace.html
         - title: NVMEM battery
-          url: /c190/nvmem-nvram-battery-replace.html
+          url: /nvmem-nvram-battery-replace.html
         - title: Power supply
-          url: /c190/power-supply-swapout.html
+          url: /power-supply-swapout.html
         - title: RTC battery
-          url: /c190/rtc-battery-replace.html
+          url: /rtc-battery-replace.html
     - title: Learn
       links:
-        - title: Storage data sheet
-          url: https://www.netapp.com/data-storage/disk-shelves-storage-media/
         - title: Adding Capacity to an AFF C190 video
           url: https://www.youtube.com/watch?v=CkEoO3spgo4
         - title: Replacing an internal disk drive video
@@ -49,8 +43,6 @@ indexpage:
           url: https://docs.netapp.com/us-en/ontap-systems-switches/
     - title: Upgrade
       links:
-        - title: System hardware upgrade
-          url: https://docs.netapp.com/us-en/ontap-systems-upgrade/
         - title: ONTAP software upgrade
           url: https://docs.netapp.com/us-en/ontap/upgrade/index.html
     - title: More resources

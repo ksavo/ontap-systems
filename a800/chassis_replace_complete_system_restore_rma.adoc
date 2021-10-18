@@ -22,10 +22,10 @@ The HA state should be the same for all components.
 +
 The value for HA-state can be one of the following:
 
-  *** ha
-  *** mcc
-  *** mccip
-  *** non-ha
+  *** `ha`
+  *** `mcc`
+  *** `mccip`
+  *** `non-ha`
 
  .. Confirm that the setting has changed: `ha-config show`
 . If you have not already done so, recable the rest of your system.
@@ -40,6 +40,7 @@ Your system must be at the LOADER prompt to start diagnostics.
 
 All commands in the diagnostic procedures are issued from the node where the component is being replaced.
 
+.Steps
 . If the node to be serviced is not at the LOADER prompt, reboot the node: `system node halt -node node_name`
 +
 After you issue the command, you should wait until the system stops at the LOADER prompt.

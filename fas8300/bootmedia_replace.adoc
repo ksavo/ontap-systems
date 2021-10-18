@@ -181,7 +181,7 @@ If you miss this message, press Ctrl-C, select the option to boot to Maintenance
  .. If External Key Manager is enabled, check the bootarg values, listed in the `kenv` ASUP output:
  *** `bootarg.storageencryption.support _<value>_`
  *** `bootarg.keymanager.support _<<value>>_`
- *** `kmip.init.interface _<<value>>_`
+ *** `kmip.init.interface _<value>_`
  *** `kmip.init.ipaddr _<value>_`
  *** `kmip.init.netmask _<value>_`
  *** `kmip.init.gateway _<value>_`

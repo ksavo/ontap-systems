@@ -1,48 +1,44 @@
 indexpage:
-  lead: AFF A800
+#  lead: AFF A800
   tiles:
     - title: Get started 
       links:
         - title: ONTAP Release notes
-          url: /subfolder/page.html
+          url: https://library.netapp.com/ecm/ecm_download_file/ECMLP2492508
+        - title: System data sheet
+          url: https://www.netapp.com/pdf.html?item=/media/7828-ds-3582.pdf
+        - title: Storage data sheet
+          url: https://www.netapp.com/data-storage/disk-shelves-storage-media/
     - title: Install and setup
       links:
         - title: Most configurations
-          url: /a800/install-setup.html
-        - title: Fabric-attached MetroCluster configurations
-          url: https://docs.netapp.com/us-en/ontap-metrocluster/install-fc/index.html
-        - title: Stretch MetroCluster configurations
-          url: https://docs.netapp.com/us-en/ontap-metrocluster/install-stretch/index.html
+          url: /install-setup.html
         - title: MetroCluster IP configurations
           url: https://docs.netapp.com/us-en/ontap-metrocluster/install-ip/index.html
     - title: Maintain
       links:
         - title: Boot media
-          url: /a800/bootmedia-replace-overview.html
+          url: /bootmedia-replace-overview.html
         - title: Chassis
-          url: /a800/chassis-replace-overview.html
+          url: /chassis-replace-overview.html
         - title: Controller module
-          url: /a800/controller-replace-overview.html
+          url: /controller-replace-overview.html
         - title: DIMM
-          url: /a800/dimm-replace.html
+          url: /dimm-replace.html
         - title: Fan
-          url: /a800/fan-replace.html
+          url: /fan-replace.html
         - title: NVDIMM
-          url: /a800/nvdimm-replace.html
+          url: /nvdimm-replace.html
         - title: NVDIMM battery
-          url: /a800/nvdimm-battery-replace.html
+          url: /nvdimm-battery-replace.html
         - title: PCIe card
-          url: /a800/pci-cards-and-risers-replace.html
+          url: /pci-cards-and-risers-replace.html
         - title: Power supply
-          url: /a800/power-supply-swapout.html
+          url: /power-supply-swapout.html
         - title: RTC battery
-          url: /a800/rtc-battery-replace.html
+          url: /rtc-battery-replace.html
     - title: Learn
       links:
-        - title: System data sheet
-          url: https://www.netapp.com/pdf.html?item=/media/7828-ds-3582.pdf
-        - title: Storage data sheet
-          url: https://www.netapp.com/data-storage/disk-shelves-storage-media/
         - title: Replacing an internal disk drive video
           url: https://www.youtube.com/watch?v=Ziqg9HL8oYQ
         - title: NetApp All-Flash FAS Solution for Nonpersistent Desktops with VMware Horizon View | TR-4539
@@ -50,9 +46,9 @@ indexpage:
     - title: Add or remove shelves
       links:
         - title: NS224
-          url: /ns224/index.html
+          url: https://docs.netapp.com/us-en/ontap-systems/ns224/index.html
         - title: SAS with IOM12
-          url: /sas3/index.html
+          url: https://docs.netapp.com/us-en/ontap-systems/sas3/index.html
     - title: Install and maintain switches
       links:
         - title: Broadcom-supported switches

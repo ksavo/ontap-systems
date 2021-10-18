@@ -11,6 +11,7 @@ Once environment variables are checked, you must complete steps specific to syst
 . Use the `boot_ontap` command at the LOADER prompt to boot the node.
 . Check the console output:
 +
+[%header,cols="1,2"]
 |===
 | *If the console displays...*| *Then...*
 a|
@@ -23,7 +24,7 @@ a|
 
  .. Enter `Ctrl-C` at the prompt
  .. At the message: Do you wish to halt this node rather than wait [y/n]? , enter: `y`
- .. At the LOADER prompt, enter the 'boot_ontap' menu command.
+ .. At the LOADER prompt, enter the `boot_ontap menu` command.
 
 +
 |===

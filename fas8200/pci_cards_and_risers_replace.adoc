@@ -135,7 +135,6 @@ NOTE: Do not use excessive force when sliding the controller module into the cha
  .. If you have not already done so, reconnect the cables to the controller module.
  .. Bind the cables to the cable management device with the hook and loop strap.
  .. Reconnect the power cables to the power supplies and to the power sources, and then turn on the power to start the boot process.
-+
 |===
 
 . If your system is configured to support 10 GbE cluster interconnect and data connections on 40 GbE NICs or onboard ports, convert these ports to 10 GbE connections by using the nicadmin convert command from Maintenance mode.

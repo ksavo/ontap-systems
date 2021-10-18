@@ -53,11 +53,11 @@ https://mysupport.netapp.com/site/downloads/firmware/disk-drive-firmware[NetApp 
 +
 NOTE: Drive firmware checks occur every two minutes.
 
-* If needed, you can turn on the shelf's location (blue) LEDs to aid in physically locating the affected shelf: `storage shelf location-led modify -shelf-name shelf_name -led-status on`
+* If needed, you can turn on the shelf's location (blue) LEDs to aid in physically locating the affected shelf: `storage shelf location-led modify -shelf-name _shelf_name_ -led-status on`
 +
-If you do not know the shelf_name of the affected shelf, run the `storage shelf show` command.
+If you do not know the `_shelf_name_` of the affected shelf, run the `storage shelf show` command.
 +
-A shelf has three location LEDs: one on the operator display panel and one on each NSM module. Location LEDs remain illuminated for 30 minutes. You can turn them off by entering the same command, but using the off option.
+A shelf has three location LEDs: one on the operator display panel and one on each NSM module. Location LEDs remain illuminated for 30 minutes. You can turn them off by entering the same command, but using the `off` option.
 
 * When you unpack the replacement drive, save all packing materials for use when you return the failed drive.
 +
@@ -79,7 +79,7 @@ NOTE: You manually assign drive ownership and then reenable automatic drive assi
 +
 You can enter the command on either controller module.
 +
-If automatic drive assignment is enabled, the output shows `on` in the "`Auto Assign`" column (for each controller module).
+If automatic drive assignment is enabled, the output shows `on` in the `Auto Assign` column (for each controller module).
 
  .. If automatic drive assignment is enabled, disable it: `storage disk option modify -node node_name -autoassign off`
 +
@@ -109,7 +109,7 @@ Be sure to close the cam handle slowly so that it aligns correctly with the face
 +
 When the drive's activity LED is solid, it means that the drive has power. When the drive's activity LED is blinking, it means that the drive has power and I/O is in progress. If the drive firmware is automatically updating, the LED blinks.
 
-. If you are replacing another drive, repeat step 3 through step 7.
+. If you are replacing another drive, repeat steps 3 through step 7.
 . If you disabled automatic drive assignment in step 1, manually assign drive ownership, and then reenable automatic drive assignment if needed:
  .. Display all unowned drives: `storage disk show -container-type unassigned`
 +

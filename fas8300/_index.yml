@@ -1,58 +1,54 @@
 indexpage:
-  lead: FAS8300
+#  lead: FAS8300
   tiles:
     - title: Get started 
       links:
         - title: ONTAP Release notes
           url: https://library.netapp.com/ecm/ecm_download_file/ECMLP2492508
-    - title: Install and setup
-      links:
-        - title: Most configurations
-          url: /fas8300/install-setup.html
-        - title: Fabric-attached MetroCluster configurations
-          url: https://docs.netapp.com/us-en/ontap-metrocluster/install-fc/index.html
-        - title: Stretch MetroCluster configurations
-          url: https://docs.netapp.com/us-en/ontap-metrocluster/install-stretch/index.html
-        - title: MetroCluster IP configurations
-          url: https://docs.netapp.com/us-en/ontap-metrocluster/install-ip/index.html
-    - title: Maintain
-      links:
-        - title: Boot media
-          url: /fas8300/bootmedia-replace-overview.html
-        - title: Caching module
-          url: /fas8300/caching-module-replace.html
-        - title: Chassis
-          url: /fas8300/chassis-replace-overview.html
-        - title: Controller module
-          url: /fas8300/controller-replace-overview.html
-        - title: DIMM
-          url: /fas8300/dimm-replace.html
-        - title: Fan
-          url: /fas8300/fan-replace.html
-        - title: NVDIMM
-          url: /fas8300/dimm-replace.html
-        - title: NVDIMM battery
-          url: /fas8300/nvmem-nvram-battery-replace.html
-        - title: PCIe or mezzanine card
-          url: /fas8300/pci-cards-and-risers-replace.html
-        - title: Power supply
-          url: /fas8300/power-supply-swapout.html
-        - title: RTC battery
-          url: /fas8300/rtc-battery-replace.html
-    - title: Learn
-      links:
         - title: System data sheet
           url: https://www.netapp.com/pdf.html?item=/media/7828-ds-3582.pdf
         - title: Storage data sheet
           url: https://www.netapp.com/data-storage/disk-shelves-storage-media/
+    - title: Install and setup
+      links:
+        - title: Most configurations
+          url: /install-setup.html
+        - title: Fabric-attached MetroCluster configurations
+          url: https://docs.netapp.com/us-en/ontap-metrocluster/install-fc/index.html
+        - title: Stretch MetroCluster configurations
+          url: https://docs.netapp.com/us-en/ontap-metrocluster/install-stretch/index.html
+    - title: Maintain
+      links:
+        - title: Boot media
+          url: /bootmedia-replace-overview.html
+        - title: Caching module
+          url: /caching-module-replace.html
+        - title: Chassis
+          url: /chassis-replace-overview.html
+        - title: Controller module
+          url: /controller-replace-overview.html
+        - title: DIMM
+          url: /dimm-replace.html
+        - title: Fan
+          url: /fan-replace.html
+        - title: NVDIMM
+          url: /dimm-replace.html
+        - title: NVDIMM battery
+          url: /nvmem-nvram-battery-replace.html
+        - title: PCIe or mezzanine card
+          url: /pci-cards-and-risers-replace.html
+        - title: Power supply
+          url: /power-supply-swapout.html
+        - title: RTC battery
+          url: /rtc-battery-replace.html
+    - title: Learn
+      links:
         - title: Replacing an internal disk drive video
           url: https://www.youtube.com/watch?v=Ziqg9HL8oYQ
     - title: Add or remove shelves
       links:
-        - title: NS224
-          url: /ns224/index.html
         - title: SAS with IOM12
-          url: /sas3/index.html
+          url: https://docs.netapp.com/us-en/ontap-systems/sas3/index.html
     - title: Install and maintain switches
       links:
         - title: Broadcom-supported switches

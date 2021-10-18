@@ -26,12 +26,12 @@ This procedure applies only to systems running ONTAP in an HA pair.
 
 . If the replacement node is in Maintenance mode (showing the `*>` prompt, exit Maintenance mode and go to the LOADER prompt: `halt`
 . From the LOADER prompt on the replacement node, boot the node, entering `y` if you are prompted to override the system ID due to a system ID mismatch:``boot_ontap``
-. Wait until the Waiting for giveback... message is displayed on the replacement node console and then, from the healthy node, verify that the new partner system ID has been automatically assigned: `storage failover show`
+. Wait until the Waiting for giveback... message is displayed on the replacement node console and then, from the healthy node, verify that the new partner system ID has been automatically assigned: storage failover show
 +
 In the command output, you should see a message that the system ID has changed on the impaired node, showing the correct old and new IDs. In the following example, node2 has undergone replacement and has a new system ID of 151759706.
 +
 ----
-node1> `storage failover show`
+node1> storage failover show
                                     Takeover
 Node              Partner           Possible     State Description
 ------------      ------------      --------     -------------------------------------
@@ -64,13 +64,13 @@ http://mysupport.netapp.com/documentation/productlibrary/index.html?productID=62
 
  .. After the giveback has been completed, confirm that the HA pair is healthy and that takeover is possible: storage failover show
 +
-The output from the storage failover show command should not include the System ID changed on partner message.
+The output from the `storage failover show` command should not include the System ID changed on partner message.
 . Verify that the disks were assigned correctly: `storage disk show -ownership`
 +
 The disks belonging to the replacement node should show the new system ID. In the following example, the disks owned by node1 now show the new system ID, 1873775277:
 +
 ----
-node1> `storage disk show -ownership`
+node1> storage disk show -ownership
 
 Disk  Aggregate Home  Owner  DR Home  Home ID    Owner ID  DR Home ID Reserver  Pool
 ----- ------    ----- ------ -------- -------    -------    -------  ---------  ---

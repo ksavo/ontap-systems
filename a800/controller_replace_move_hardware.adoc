@@ -48,7 +48,6 @@ Make sure that you support the bottom of the controller module as you slide it o
 . Place the controller module on a stable, flat surface, and then open the air duct:
  .. Press in the locking tabs on the sides of the air duct toward the middle of the controller module.
  .. Slide the air duct toward the fan modules, and then rotate it upward to its completely open position.
-
 +
 image::../media/drw_a800_open_air_duct.gif[]
 +
@@ -74,7 +73,7 @@ You must move the power supplies from the impaired controller module to the repl
 
 . Rotate the cam handle such that it can be used to pull power supply out of the controller module while pressing the locking tab.
 +
-CAUTION:
+*CAUTION:*
 +
 The power supply is short. Always use two hands to support it when removing it from the controller module so that it does not suddenly swing free from the controller module and injure you.
 +
@@ -302,7 +301,6 @@ After all of the components have been moved from the impaired controller module 
  .. Swing the air duct all the way down to the controller module.
  .. Slide the air duct toward the risers until the locking tabs click into place.
  .. Inspect the air duct to make sure that it is properly seated and locked into place.
-
 +
 image::../media/drw_a700s_close_air_duct.gif[]
 +

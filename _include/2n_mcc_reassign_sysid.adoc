@@ -5,9 +5,9 @@ This procedure applies only to systems in a two-node MetroCluster configuration 
 
 You must be sure to issue the commands in this procedure on the correct node:
 
-* The impaired node is the node on which you are performing maintenance.
-* The replacement node is the new node that replaced the impaired node as part of this procedure.
-* The healthy node is the DR partner of the impaired node.
+* The _impaired node_ is the node on which you are performing maintenance.
+* The _replacement_ node is the new node that replaced the impaired node as part of this procedure.
+* The _healhy node_ is the DR partner of the impaired node.
 
 .Steps
 . If you have not already done so, reboot the replacement node, interrupt the boot process by entering `Ctrl-C`, and then select the option to boot to Maintenance mode from the displayed menu.

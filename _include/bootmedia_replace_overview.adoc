@@ -2,12 +2,12 @@ The boot media stores a primary and secondary set of system (boot image) files t
 
 You must have a USB flash drive, formatted to FAT32, with the appropriate amount of storage to hold the `image_xxx.tgz`.
 
-You also must copy the image_xxx.tgz file to the USB flash drive for later use in this procedure.
+You also must copy the `image_xxx.tgz` file to the USB flash drive for later use in this procedure.
 
 * The nondisruptive and disruptive methods for replacing a boot media both require you to restore the var file system:
  ** For nondisruptive replacement, the HA pair must be connected to a network to restore the var file system.
  ** For disruptive replacement, you do not need a network connection to restore the var file system, but the process requires two reboots.
 * You must replace the failed component with a replacement FRU component you received from your provider.
 * It is important that you apply the commands in these steps on the correct node:
- ** The _impaired_ node is the node on which you are performing maintenance.
+ ** The _impaired node_ is the node on which you are performing maintenance.
  ** The _healthy node_ is the HA partner of the impaired node.

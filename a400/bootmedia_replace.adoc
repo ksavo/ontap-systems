@@ -187,9 +187,9 @@ If you miss this message, press Ctrl-C, select the option to boot to Maintenance
   *** `kmip.init.netmask _<value>_`
   *** `kmip.init.gateway _<value>_`
  .. If Onboard Key Manager is enabled, check the bootarg values, listed in the `kenv` ASUP output:
-  *** `bootarg.storageencryption.support _<value>_`
-  *** `bootarg.keymanager.support _<value>`_
-  *** `bootarg.onboard_keymanager _<value>_`
+  *** `bootarg.storageencryption.support _value_`
+  *** `bootarg.keymanager.support _value`_
+  *** `bootarg.onboard_keymanager _value_`
  .. Save the environment variables you changed with the `savenv` command
  .. Confirm your changes using the `printenv variable-name` command.
 . If the controller is in a stretch or fabric-attached MetroCluster, you must restore the FC adapter configuration:

@@ -39,7 +39,7 @@ If you have an AFF A200 system, a plastic flap within the now empty slot is rele
 
 . Use the cam handle to slide the power supply out of the system.
 +
-CAUTION:
+*CAUTION:*
 +
 When removing a power supply, always use two hands to support its weight.
 

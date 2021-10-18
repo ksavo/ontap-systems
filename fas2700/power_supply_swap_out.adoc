@@ -34,7 +34,7 @@ image::../media/drw_2600_psu_repl_animated_gif.gif[]
 
 . Use the cam handle to slide the power supply out of the system.
 +
-CAUTION: When removing a power supply, always use two hands to support its weight.
+*CAUTION:* When removing a power supply, always use two hands to support its weight.
 
 . Make sure that the on/off switch of the new power supply is in the Off position.
 . Using both hands, support and align the edges of the power supply with the opening in the system chassis, and then gently push the power supply into the chassis using the cam handle.

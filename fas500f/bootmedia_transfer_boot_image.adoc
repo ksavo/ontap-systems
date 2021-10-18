@@ -71,22 +71,22 @@ The controller module begins to boot as soon as it is fully seated in the chassi
 +
 The controller module should be fully inserted and flush with the edges of the chassis.
 . Although the environment variables and bootargs are retained, you should check that all required boot environment variables and bootargs are properly set for your system type and configuration using the `printenv bootarg name` command and correct any errors using the `setenv variable-name <value\>` command.
- .. Check the boot environment variables:
-  *** `_bootarg.init.boot_clustered_`
-  *** `_partner-sysid_`
-  *** `_bootarg.init.flash_optimized_` for AFF C190/AFF A220 (All Flash FAS)
-  *** `_bootarg.init.san_optimized_` for AFF A220 and All SAN Array
-  *** `_bootarg.init.switchless_cluster.enable_`
- .. If External Key Manager is enabled, check the bootarg values, listed in the `kenv` ASUP output:
-  *** `_bootarg.storageencryption.support _value__`
-  *** `_bootarg.keymanager.support _value__`
-  *** `_kmip.init.interface _value__`
-  *** `_kmip.init.ipaddr _value__`
-  *** `_kmip.init.netmask _value__`
-  *** `_kmip.init.gateway _value__`
- .. If Onboard Key Manager is enabled, check the bootarg values, listed in the `kenv` ASUP output:
-  *** `_bootarg.storageencryption.support _value__`
-  *** `_bootarg.keymanager.support _value__`
-  *** `_bootarg.onboard_keymanager _value__`
+.. Check the boot environment variables:
+ *** `bootarg.init.boot_clustered`
+ *** `partner-sysid`
+ *** `bootarg.init.flash_optimized` for AFF C190/AFF A220 (All Flash FAS)
+ *** `bootarg.init.san_optimized` for AFF A220 and All SAN Array
+ *** `bootarg.init.switchless_cluster.enable`
+.. If External Key Manager is enabled, check the bootarg values, listed in the `kenv` ASUP output:
+ *** `bootarg.storageencryption.support <value>`
+ *** `bootarg.keymanager.support <value>`
+ *** `kmip.init.interface <value>`
+ *** `kmip.init.ipaddr <value>`
+ *** `kmip.init.netmask <value>`
+ *** `kmip.init.gateway <value>`
+.. If Onboard Key Manager is enabled, check the bootarg values, listed in the `kenv` ASUP output:
+ *** `bootarg.storageencryption.support <value>`
+ *** `bootarg.keymanager.support <value>`
+ *** `bootarg.onboard_keymanager <value>`
  .. Save the environment variables you changed with the `*savenv*` command
  .. Confirm your changes using the `*printenv _variable-name_*` command.

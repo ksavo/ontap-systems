@@ -3,21 +3,21 @@ You should check the time and date on the replacement controller module against 
 .About this task
 It is important that you apply the commands in the steps on the correct systems:
 
-* The replacement node is the new node that replaced the impaired node as part of this procedure.
-* The healthy node is the HA partner of the replacement node
+* The _replacement_ node is the new node that replaced the impaired node as part of this procedure.
+* The _healhy node_ is the HA partner of the replacement node
 
 .Steps
 . If the replacement node is not at the LOADER prompt, halt the system to the LOADER prompt.
-. On the healthy node, check the system time: ``show date``
+. On the healthy node, check the system time: `show date`
 +
 The date and time are given in GMT.
 
-. At the LOADER prompt, check the date and time on the replacement node: ``show date``
+. At the LOADER prompt, check the date and time on the replacement node: `show date`
 +
 The date and time are given in GMT.
 
-. If necessary, set the date in GMT on the replacement node: ``set date mm/dd/yyyy``
-. If necessary, set the time in GMT on the replacement node: ``set time hh:mm:ss``
-. At the LOADER prompt, confirm the date and time on the replacement node: ``show date``
+. If necessary, set the date in GMT on the replacement node: `set date mm/dd/yyyy`
+. If necessary, set the time in GMT on the replacement node: `set time hh:mm:ss`
+. At the LOADER prompt, confirm the date and time on the replacement node: `show date`
 +
 The date and time are given in GMT.
