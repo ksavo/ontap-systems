@@ -58,7 +58,7 @@ image::../media/drw_9000_remove_flashcache.svg[]
 |image:../media/legend_icon_01.png[]|Orange release button.
 a|
 image:../media/legend_icon_02.png[]
-|a
+|
 Caching module cam handle.
 |===
 

@@ -235,7 +235,7 @@ NOTE: As you insert the connector, you should feel it click into place; if you d
 
 . You can used the graphic or the step-by step instructions to complete the cabling between the controllers and to the switches:
 +
-image::../media/drw_a320_tnsc_network_cabling_composite_animated_gif.png[]
+image::../media/drw_a320_switched_network_cabling_composite_animated_gif.png[]
 +
 [options="header" cols="1,3"]
 |===

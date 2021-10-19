@@ -32,8 +32,7 @@ image::../media/drw_9000_remove_nv_battery.svg[]
 +
 |===
 a|
-image:../media/legend_icon_01.png[]
-a|
+image:../media/legend_icon_01.png[] a|
 DCPM module orange locking button
 |===
 

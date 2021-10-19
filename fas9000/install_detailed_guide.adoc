@@ -159,6 +159,8 @@ NOTE: You need to be aware of the safety concerns associated with the weight of 
 +
 image::../media/drw_9000_lifting_icon.png[]
 
+NOTE: The label on the left indicates an empty chassis, while the label on the right indicates a fully-populated system.
+
 . Attach cable management devices (as shown).
 +
 image::../media/drw_9000_cable_management_arms.png[]
@@ -188,6 +190,8 @@ NOTE: As you insert the connector, you should feel it click into place; if you d
 +
 https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=7a55b98a-e8b8-41d5-821f-ac5b0032ead0[Cabling a two-node switchless cluster]
 
+image::../media/drw_9000_TNSC_composite_cabling.png[]
+
 . Go to <<Step 4: Cable controllers to drive shelves>> for drive shelf cabling instructions.
 
 === Option 2: Switched cluster
@@ -207,6 +211,8 @@ NOTE: As you insert the connector, you should feel it click into place; if you d
 . Use the animation or graphic to complete the cabling between the controllers and to the switches:
 +
 https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=6381b3f1-4ce5-4805-bd0a-ac5b0032f51d[Switched cluster cabling]
+
+image:../media/drw_9000_switched_cluster_cabling.png[]
 
 . Go to <<Step 4: Cable controllers to drive shelves>> for drive shelf cabling instructions.
 
@@ -234,13 +240,19 @@ NOTE: The examples use DS224C shelves. Cabling is similar with other supported S
 +
 https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=a312e09e-df56-47b3-9b5e-ab2300477f67[Cabling SAS storage - ONTAP 9.7 and earlier]
 
+image:../media/SAS_storage_ONTAP 9.7_and_earlier.png[]
+
  ** Cabling SAS shelves in FAS9000, AFF A700, and ASA AFF A700, ONTAP 9.8 and later:
 +
 https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=61d23302-9526-4a2b-9335-ac5b0032eafd[Cabling SAS storage - ONTAP 9.8 and later]
-+
+
+image:../media/SAS_storage_ONTAP_9.8_and_later.png[]
+
 If you have more than one drive shelf stack, see the _Installation and Cabling Guide_ for your drive shelf type.
 +
 link:..https://docs.netapp.com/us-en/ontap-systems/sas3/install-new-system.html[Install and cable shelves for a new system installation - shelves with IOM12 modules]
+
+image:../media/Cable_shelves_new_system_IOM12_shelves[]
 
 . Go to <<Step 5: Complete system setup and configuration>> to complete system setup and configuration.
 
@@ -263,7 +275,9 @@ NOTE: As you insert the connector, you should feel it click into place; if you d
 . Use the following animation to cable your controllers with two X91148A storage modules to a single NS224 drive shelf, or use the diagram to cable your controllers with one X91148A storage module to a single NS224 drive shelf.
 +
 https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=6520eb01-87b3-4520-9109-ac5b0032ea4e[Cabling a single NS224 shelf - ONTAP 9.8 and later]
-+
+
+image:../media/single_NS224_shelf.png
+
 image::../media/drw_ns224_a700_1shelf.png[]
 
 . Go to <<Step 5: Complete system setup and configuration>> to complete system setup and configuration.
@@ -287,7 +301,9 @@ NOTE: As you insert the connector, you should feel it click into place; if you d
 . Use the following animation or diagram to cable your controllers to two NS224 drive shelves.
 +
 https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=34098e39-73ad-45de-9af7-ac5b0032ea9a[Cabling two NS224 shelves - ONTAP 9.8 and later]
-+
+
+image:../media/two_NS224_shelves[]
+
 image::../media/drw_ns224_a700_2shelves.png[]
 
 . Go to <<Step 5: Complete system setup and configuration>> to complete system setup and configuration.

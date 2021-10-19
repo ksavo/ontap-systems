@@ -53,7 +53,7 @@ entries:
         - title: Shut down a node in a two-node MetroCluster configuration
           url: /fas2700/controller-replace-2n-mcc-shut-down.html
         - title: Replace the controller hardware
-          url: /fas2700/controller-replace.html
+          url: /fas2700/controller-replace-move-hardware.html
         - title: Restore and verify the system configuration
           url: /fas2700/controller-replace-system-config-restore-and-verify.html
         - title: Complete system restoration

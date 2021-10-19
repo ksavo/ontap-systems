@@ -41,7 +41,7 @@ Make sure that you support the bottom of the controller module as you slide it o
 . Place the controller module lid-side up on a stable, flat surface, press the blue button on the cover, slide the cover to the back of the controller module, and then swing the cover up and lift it off of the controller module.
 +
 image::../media/drw_9000_pcm_open.gif[]
-+
+
 |===
 a|
 image:../media/legend_icon_01.png[] a|
@@ -50,9 +50,9 @@ Controller module cover locking button
 
 == Step 2: Replace the boot media
 Locate the boot media using the following illustration or the FRU map on the controller module:
-+
+
 image:../media/drw_9000_remove_boot_dev.svg[]
-+
+
 |===
 a|
 image:../media/legend_icon_01.png[] a|
