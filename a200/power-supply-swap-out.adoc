@@ -11,7 +11,7 @@ summary: Swapping out a power supply involves turning off, disconnecting, and re
 [.lead]
 Swapping out a power supply involves turning off, disconnecting, and removing the old power supply and installing, connecting, and turning on the replacement power supply.
 
-.Before you begin
+.What you'll need
 
 All other components in the system must be functioning properly; if not, you must contact technical support.
 
@@ -39,9 +39,7 @@ If you have an AFF A200 system, a plastic flap within the now empty slot is rele
 
 . Use the cam handle to slide the power supply out of the system.
 +
-*CAUTION:*
-+
-When removing a power supply, always use two hands to support its weight.
+CAUTION: When removing a power supply, always use two hands to support its weight.
 
 . Make sure that the on/off switch of the new power supply is in the Off position.
 . Using both hands, support and align the edges of the power supply with the opening in the system chassis, and then gently push the power supply into the chassis using the cam handle.

@@ -5,10 +5,6 @@ indexpage:
       links:
         - title: ONTAP Release notes
           url: https://library.netapp.com/ecm/ecm_download_file/ECMLP2492508
-        - title: System data sheet
-          url: https://www.netapp.com/media/8936-ds-3808.pdf
-        - title: Storage data sheet
-          url: https://www.netapp.com/data-storage/disk-shelves-storage-media/
     - title: Install and setup
       links:
         - title: Most configurations

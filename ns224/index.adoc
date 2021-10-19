@@ -5,7 +5,7 @@ permalink: ns224/index.html
 summary: The storage shelf documentation lets you install, setup, and maintain your system.
 ---
 
-= NS224 drive shelves
+= NS224 shelves
 :hardbreaks:
 :linkattrs:
 :imagesdir: ./media/

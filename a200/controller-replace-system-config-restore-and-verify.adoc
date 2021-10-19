@@ -21,6 +21,7 @@ include::../_include/set_time_after_controller_rep.adoc[]
 [.lead]
 You must verify the `HA` state of the controller module and, if necessary, update the state to match your system configuration.
 
+.Steps
 . In Maintenance mode from the new controller module, verify that all components display the same `HA` state: `ha-config show`
 
 +
@@ -37,8 +38,10 @@ The value for HA-state can be one of the following:
 [.lead]
 You should run comprehensive or focused diagnostic tests for specific components and subsystems whenever you replace the controller.
 
+.About this task
 All commands in the diagnostic procedures are issued from the node where the component is being replaced.
 
+.Steps
 . If the node to be serviced is not at the LOADER prompt, reboot the node: `halt`
 +
 After you issue the command, you should wait until the system stops at the LOADER prompt.

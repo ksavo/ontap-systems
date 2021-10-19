@@ -16,6 +16,7 @@ To replace the controller module hardware, you must remove the impaired node, mo
 [.lead]
 To replace the controller module, you must first remove the old controller module from the chassis.
 
+.Steps
 . If you are not already grounded, properly ground yourself.
 . Loosen the hook and loop strap binding the cables to the cable management device, and then unplug the system cables and SFPs (if needed) from the controller module, keeping track of where the cables were connected.
 +
@@ -40,6 +41,7 @@ image::../media/drw_2600_opening_pcm_cover.gif[]
 [.lead]
 You must locate the boot media and follow the directions to remove it from the old controller module and insert it in the new controller module.
 
+.Steps
 . Locate the boot media using the following illustration or the FRU map on the controller module:
 . Press the blue button on the boot media housing to release the boot media from its housing, and then gently pull it straight out of the boot media socket.
 +
@@ -57,11 +59,12 @@ If necessary, remove the boot media and reseat it into the socket.
 [.lead]
 To move the NVMEM battery from the old controller module to the new controller module, you must perform a specific sequence of steps.
 
+.Steps
 . Check the NVMEM LED:
  ** If your system is in an HA configuration, go to the next step.
  ** If your system is in a stand-alone configuration, cleanly shut down the controller module, and then check the NVRAM LED identified by the NV icon.
 +
-image::../media/drw_hw_nvram_icon.gif[]
+image::../media/drw_hw_nvram_icon.svg[]
 +
 NOTE: The NVRAM LED blinks while destaging contents to the flash memory when you halt the system. After the destage is complete, the LED turns off.
 
@@ -85,8 +88,10 @@ image::../media/drw_2600_nvmem_battery_move_animated_gif.svg[]
 [.lead]
 To move the DIMMs, you must follow the directions to locate and move them from the old controller module into the replacement controller module.
 
+.About this task
 You must have the new controller module ready so that you can move the DIMMs directly from the impaired controller module to the corresponding slots in the replacement controller module.
 
+.Steps
 . Locate the DIMMs on your controller module.
 . Note the orientation of the DIMM in the socket so that you can insert the DIMM in the replacement controller module in the proper orientation.
 . Eject the DIMM from its slot by slowly pushing apart the two DIMM ejector tabs on either side of the DIMM, and then slide the DIMM out of the slot.
@@ -118,10 +123,12 @@ Make sure that the plug locks down onto the controller module.
 [.lead]
 After you install the components from the old controller module into the new controller module, you must install the new controller module into the system chassis and boot the operating system.
 
+.About this task
 For HA pairs with two controller modules in the same chassis, the sequence in which you install the controller module is especially important because it attempts to reboot as soon as you completely seat it in the chassis.
 
 NOTE: The system might update system firmware when it boots. Do not abort this process. The procedure requires you to interrupt the boot process, which you can typically do at any time after prompted to do so. However, if the system updates the system firmware when it boots, you must wait until after the update is complete before interrupting the boot process.
 
+.Steps
 . If you are not already grounded, properly ground yourself.
 . If you have not already done so, replace the cover on the controller module.
 . Align the end of the controller module with the opening in the chassis, and then gently push the controller module halfway into the system.
@@ -140,7 +147,7 @@ NOTE: You will connect the rest of the cables to the controller module later in 
 a|
 An HA pair
 a|
-    The controller module begins to boot as soon as it is fully seated in the chassis. Be prepared to interrupt the boot process.
+The controller module begins to boot as soon as it is fully seated in the chassis. Be prepared to interrupt the boot process.
 
  .. With the cam handle in the open position, firmly push the controller module in until it meets the midplane and is fully seated, and then close the cam handle to the locked position.
 +
@@ -174,7 +181,7 @@ NOTE: If you miss the prompt and the controller module boots to ONTAP, enter `ha
 
 +
 |===
-*Important:* During the boot process, you might see the following prompts:
+IMPORTANT: During the boot process, you might see the following prompts:
 
  ** A prompt warning of a system ID mismatch and asking to override the system ID.
  ** A prompt warning that when entering Maintenance mode in an HA configuration you must ensure that the healthy node remains down.

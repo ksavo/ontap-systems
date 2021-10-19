@@ -70,7 +70,7 @@ https://mysupport.netapp.com/site/downloads/firmware/disk-drive-firmware[NetApp 
 +
 NOTE: Disk drive firmware checks occur every two minutes.
 
-* If needed, you can turn on the disk shelf's location (blue) LEDs to aid in physically locating the affected disk shelf: `storage shelf location-led modify -shelf-name shelf_name -led-status on`
+* If needed, you can turn on the disk shelf's location (blue) LEDs to aid in physically locating the affected disk shelf: `storage shelf location-led modify -shelf-name _shelf_name_ -led-status on`
 +
 A disk shelf has three location LEDs: one on the operator display panel and one on each IOM12 module. Location LEDs remain illuminated for 30 minutes. You can turn them off by entering the same command, but using the off option.
 
@@ -97,7 +97,7 @@ If you have an HA pair, you can enter the command at the console of either contr
 +
 If automatic drive assignment is enabled, the output shows "`on`" (for each controller) in the "`Auto Assign`" column.
 
- .. If automatic drive assignment is enabled, you need to disable it:``storage disk option modify -node node_name -autoassign off``
+ .. If automatic drive assignment is enabled, you need to disable it:``storage disk option modify -node _node_name_ -autoassign off``
 +
 You need to disable automatic drive assignment on both controllers in an HA pair.
 
@@ -125,6 +125,7 @@ The drive drawer's Attention LED is on the front-left side in front of each driv
 +
 image::../media/trafford_drive_rel_button.gif[]
 +
+[cols="1,3"]
 |===
 a|
 image:../media/legend_icon_01.gif[]|
@@ -144,6 +145,7 @@ image::../media/92_dwg_de6600_install_or_remove_drive.gif[]
 +
 image::../media/28_dwg_e2860_de460c_drive_cru.gif[]
 +
+[cols="1,3"]
 |===
 a|
 image:../media/legend_icon_01.gif[]|
@@ -153,13 +155,9 @@ Raised button on the right side of the drive carrier
  .. Lower the drive straight down, and then rotate the cam handle down until the drive snaps into place under the orange release latch.
  .. Carefully push the drive drawer back into the enclosure.
 +
-|===
-a|
 image:../media/2860_dwg_e2860_de460c_gentle_close.gif[]
-a|
-CAUTION: Possible loss of data access. Never slam the drawer shut. Push the drawer in slowly to avoid jarring the drawer and causing damage to the storage array.
-
-|===
++
+CAUTION: *Possible loss of data access:* Never slam the drawer shut. Push the drawer in slowly to avoid jarring the drawer and causing damage to the storage array.
 
  .. Close the drive drawer by pushing both levers towards the center.
 +
@@ -183,17 +181,17 @@ The Attention LED is on
 a|
 The new drive might be defective. Replace it with another new drive.
 
-[NOTE]
-When you first insert a drive, its Attention LED might be on. However, the LED should go off within a minute.
+NOTE: When you first insert a drive, its Attention LED might be on. However, the LED should go off within a minute.
+
 |===
 
 . If you disabled disk ownership automatic assignment in Step 1, manually assign disk ownership, and then reenable disk ownership automatic assignment if needed:
  .. Display all unowned disks:``storage disk show -container-type unassigned``
- .. Assign each disk:``storage disk assign -disk disk_name -owner owner_name``
+ .. Assign each disk:``storage disk assign -disk _disk_name_ -owner _owner_name_``
 +
 You can use the wildcard character to assign more than one disk at once.
 
- .. Reenable disk ownership automatic assignment if needed:``storage disk option modify -node node_name -autoassign on``
+ .. Reenable disk ownership automatic assignment if needed:``storage disk option modify -node _node_name_ -autoassign on``
 +
 You need to reenable disk ownership automatic assignment on both controllers in an HA pair.
 . Return the failed part to NetApp, as described in the RMA instructions shipped with the kit.

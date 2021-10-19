@@ -151,7 +151,7 @@ You must move the caching modules from the impaired controller modules to the re
 
 You can use the following animation or the written steps to move caching modules to the new controller module.
 
-https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=d6a43902-0e78-40c3-a2bd-aad9012f5b94[Movig the caching modules]
+https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=d6a43902-0e78-40c3-a2bd-aad9012f5b94[Moving the caching modules]
 
 . If you are not already grounded, properly ground yourself.
 . Move the caching modules from the impaired controller module to the replacement controller module:

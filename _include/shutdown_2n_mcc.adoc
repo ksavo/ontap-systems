@@ -28,14 +28,14 @@ a|
 Review the veto messages and, if possible, resolve the issue and try again. If you are unable to resolve the issue, contact technical support.
 |===
 
-. Resynchronize the data aggregates by running the metrocluster heal -phase aggregates command from the surviving cluster.
+. Resynchronize the data aggregates by running the `metrocluster heal -phase aggregates` command from the surviving cluster.
 +
 ----
 controller_A_1::> metrocluster heal -phase aggregates
 [Job 130] Job succeeded: Heal Aggregates is successful.
 ----
 +
-If the healing is vetoed, you have the option of reissuing the metrocluster heal command with the -override-vetoes parameter. If you use this optional parameter, the system overrides any soft vetoes that prevent the healing operation.
+If the healing is vetoed, you have the option of reissuing the `metrocluster heal` command with the -override-vetoes parameter. If you use this optional parameter, the system overrides any soft vetoes that prevent the healing operation.
 
 . Verify that the operation has been completed by using the metrocluster operation show command.
 +
@@ -48,7 +48,7 @@ Start Time: 7/25/2016 18:45:55
      Errors: -
 ----
 
-. Check the state of the aggregates by using the storage aggregate show command.
+. Check the state of the aggregates by using the `storage aggregate show` command.
 +
 ----
 controller_A_1::> storage aggregate show
@@ -58,16 +58,16 @@ Aggregate     Size Available Used% State   #Vols  Nodes            RAID Status
 aggr_b2    227.1GB   227.1GB    0% online       0 mcc1-a2          raid_dp, mirrored, normal...
 ----
 
-. Heal the root aggregates by using the metrocluster heal -phase root-aggregates command.
+. Heal the root aggregates by using the `metrocluster heal -phase root-aggregates` command.
 +
 ----
 mcc1A::> metrocluster heal -phase root-aggregates
 [Job 137] Job succeeded: Heal Root Aggregates is successful
 ----
 +
-If the healing is vetoed, you have the option of reissuing the metrocluster heal command with the -override-vetoes parameter. If you use this optional parameter, the system overrides any soft vetoes that prevent the healing operation.
+If the healing is vetoed, you have the option of reissuing the `metrocluster heal` command with the -override-vetoes parameter. If you use this optional parameter, the system overrides any soft vetoes that prevent the healing operation.
 
-. Verify that the heal operation is complete by using the metrocluster operation show command on the destination cluster:
+. Verify that the heal operation is complete by using the `metrocluster operation show` command on the destination cluster:
 +
 ----
 

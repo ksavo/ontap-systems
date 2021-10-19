@@ -6,7 +6,7 @@ http://docs.netapp.com/ontap-9/topic/com.netapp.doc.dot-cm-sag/home.html[ONTAP 9
 
 .Steps
 
-. If AutoSupport is enabled, suppress automatic case creation by invoking an AutoSupport message: `system node autosupport invoke -node * -type all -message MAINT=number_of_hours_downh`
+. If AutoSupport is enabled, suppress automatic case creation by invoking an AutoSupport message: `system node autosupport invoke -node * -type all -message MAINT=_number_of_hours_down_h`
 +
 The following AutoSupport message suppresses automatic case creation for two hours: `cluster1:*> system node autosupport invoke -node * -type all -message MAINT=2h`
 
@@ -27,5 +27,5 @@ Press Ctrl-C, and then respond `y`.
 a|
 System prompt or password prompt (enter system password)
 a|
-Take over or halt the impaired node: `storage failover takeover -ofnode impaired_node_name`    When the impaired node shows Waiting for giveback..., press Ctrl-C, and then respond `y`.
+Take over or halt the impaired node: `storage failover takeover -ofnode _impaired_node_name_`    When the impaired node shows Waiting for giveback..., press Ctrl-C, and then respond `y`.
 |===
