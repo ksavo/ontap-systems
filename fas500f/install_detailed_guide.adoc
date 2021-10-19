@@ -247,6 +247,8 @@ image::../media/oie_cable_pull_tab_up.gif[]
 
 NOTE: As you insert the connector, you should feel it click into place; if you do not feel it click, remove it, turn it around and try again.
 
++
+[options="header" cols="1,2"]
 |===
 | Step| Perform on each controller module
 a|

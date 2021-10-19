@@ -68,7 +68,7 @@ To replace the NV battery, you must remove the failed battery from the controlle
 
 You can use the following video or the tabulated steps to replace the NVMEM battery:
 
-https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=89f6d5c3-1a5b-4500-8ba8-ac5b01653050[Replacing the NVMEM battery]https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=89f6d5c3-1a5b-4500-8ba8-ac5b01653050[Replacing the NVMEM battery]
+https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=89f6d5c3-1a5b-4500-8ba8-ac5b01653050[Replacing the NVMEM battery]
 
 . Locate and replace the impaired NVMEM battery on your controller module.
 +
@@ -108,7 +108,6 @@ After you have replaced the component in the controller module, you must re-inst
 
 You can use the following animation or the written steps to install the replacement controller module in the chassis.
 
-.Steps
 . Close the controller module cover and tighten the thumbscrew.
 +
 image::../media/drw_a250_close_controller_module_cover.png[]

@@ -67,7 +67,7 @@ To replace a mezzanine card, you must remove the impaired card and install the r
 
 You can use the following video or the tabulated steps to replace a mezzanine card:
 
-https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=d8e7d4d9-8d28-4be1-809b-ac5b01643676[Replacing a mezzanine card]https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=d8e7d4d9-8d28-4be1-809b-ac5b01643676[Replacing a mezzanine card]
+https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=d8e7d4d9-8d28-4be1-809b-ac5b01643676[Replacing a mezzanine card]
 
 . To replace a mezzanine card:
 . Locate and replace the impaired mezzanine card on your controller module.
