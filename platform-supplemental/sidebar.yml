@@ -4,19 +4,19 @@ entries:
 # I will be very surprised if I got these structured correctly. MB
   - title: System-level diagnostics
     entries:
-      - title: Introduction to system‑level diagnostics
+      - title: Introduction
         url: /platform-supplemental/sldiag-introduction.html
-      - title: Requirements for running system-level diagnostics
+      - title: Requirements
         url: /platform-supplemental/sldiag-requirements.html
       - title: How to use online command-line help
         url: /platform-supplemental/sldiag-use-cli-help.html
-      - title: Run system installation diagnostics
+      - title: Run system install diagnostics
         url: /platform-supplemental/sldiag-system-installation-diagnostics.html
       - title: Run system panic diagnostics
         url: /platform-supplemental/sldiag-system-panic-diagnostics.html
       - title: Run slow system response diagnostics
         url: /platform-supplemental/sldiag-slow-system-diagnostics.html
-      - title: Run hardware installation diagnostics
+      - title: Run hardware install diagnostics
         url: /platform-supplemental/sldiag-hardware-installation-diagnostics.html
       - title: Run device failure diagnostics
         url: /platform-supplemental/sldiag-device-failure-diagnostics.html
@@ -26,59 +26,59 @@ entries:
     url: /platform-supplemental/telco-installation-instructions.html
   - title: 42U 1280 mm System Cabinet
     entries:
-    - title: Prepare to install the system cabinet
+    - title: Prepare to install system cabinet
       entries:
       - title: System cabinet features
         url: /platform-supplemental/42u-1280mm-features.html
       - title: Required tools and equipment
         url: /platform-supplemental/42u-1280mm-required-tools.html
-      - title: Space requirements and system cabinet dimensions
+      - title: Space requirements and cabinet dimensions
         url: /platform-supplemental/42u-1280mm-space-and-dimensions.html
-      - title: Supported PDU types and specifications
+      - title: Supported PDU types and specs
         url: /platform-supplemental/42u-1280mm-supported-pdu-types-and-specifications.html
-    - title: Unpack the system cabinet
+    - title: Unpack system cabinet
       url: /platform-supplemental/42u-1280mm-unpack.html
-    - title: Install the system cabinet
+    - title: Install system cabinet
       entries:
       - title: Overview
         url: /platform-supplemental/42u-1280mm-install.html
-      - title: Install the cabinet interconnect kit
+      - title: Install cabinet interconnect kit
         url: /platform-supplemental/42u-1280mm-install-cabinet-interconnect-kit.html
-      - title: Install the bolt-down kit
+      - title: Install bolt-down kit
         url: /platform-supplemental/42u-1280mm-install-bolt-down-kit.html
-      - title: Install additional support rails
+      - title: Install support rails
         url: /platform-supplemental/42u-1280mm-install-additional-rails.html
-      - title: Install equipment in the system cabinet
+      - title: Install equipment
         url: /platform-supplemental/42u-1280mm-install-equipment.html
-      - title: Power on the system cabinet
+      - title: Power on system cabinet
         url: /platform-supplemental/42u-1280mm-power-on.html
     - title: Replace PDUs
       url: /platform-supplemental/42u-1280mm-replace-pdus.html
-    - title: Reverse the system cabinet front door
+    - title: Reverse system cabinet front door
       entries:
       - title: What you need
         url: /platform-supplemental/42u-1280mm-reverse-front-door.html
-      - title: Remove the illuminated badge
+      - title: Remove illuminated badge
         url: /platform-supplemental/42u-1280mm-remove-illuminated-badge.html
-      - title: Remove the system cabinet door
+      - title: Remove system cabinet door
         url: /platform-supplemental/42u-1280mm-remove-door.html
-      - title: Move the badge power supply and cabling
+      - title: Move badge power supply and cabling
         url: /platform-supplemental/42u-1280mm-move-badge-ps-and-cabling.html
-      - title: Reverse the door hinge and lock catch
+      - title: Reverse door hinge and lock catch
         url: /platform-supplemental/42u-1280mm-reverse-hinge-and-lock.html
-      - title: Reinstall the door and illuminated badge
+      - title: Reinstall door and illuminated badge
         url: /platform-supplemental/42u-1280mm-reinstall-door-and-badge.html
-  - title: Swap out an internal disk drive
+  - title: Swap out internal disk drive
     entries:
     - title: Video overview
       url: /platform-supplemental/drive-video.html
-    - title: Hot-swap an embedded drive
+    - title: Hot-swap embedded drive
       entries:
       - title: Which procedure to use
         url: /platform-supplemental/drive-hotswap.html
-      - title: Hot-swap an SSD
+      - title: Hot-swap SSD
         url: /platform-supplemental/drive-hotswap-drive.html
-      - title: Hot-swap a HDD
+      - title: Hot-swap HDD
         url: /platform-supplemental/drive-hotswap-sas.html
   - title: All SAN Array systems
     entries:

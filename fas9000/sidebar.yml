@@ -19,52 +19,52 @@ entries:
       entries:
       - title: Overview
         url: /fas9000/bootmedia-replace-overview.html
-      - title: Check onboard encryption keys as needed
+      - title: Check onboard encryption keys
         url: /fas9000/bootmedia-encryption-preshutdown-checks.html
-      - title: Shut down the impaired controller
+      - title: Shut down impaired controller
         url: /fas9000/bootmedia-impaired-controller-shutdown.html
-      - title: Remove the controller module, replace the boot media and transfer the boot image to the boot media
+      - title: Replace boot image
         url: /fas9000/bootmedia-replace.html
-      - title: Boot the recovery image
+      - title: Boot recovery image
         url: /fas9000/bootmedia-recovery-image-boot-options.html
-      - title: Switch back aggregates in a two-node MetroCluster configuration
+      - title: Switch back aggregates in two-node MetroCluster configuration
         url: /fas9000/bootmedia-2n-mcc-switchback.html
-      - title: Restore OKM, NSE, and NVE as needed
+      - title: Restore OKM, NSE, and NVE
         url: /fas9000/bootmedia-encryption-restore.html
-      - title: Return the failed part to NetApp
+      - title: Return failed part to NetApp
         url: /fas9000/bootmedia-complete-rma.html
         # END boot media
     - title: Caching or core dump module
       url: /fas9000/caching-module-and-core-dump-module-replace.html
-    - title: Caching module (hot swap)
+    - title: Replace caching module
       url: /fas9000/caching-module-hot-swap.html
     - title: Chassis
       entries:
       - title: Overview
         url: /fas9000/chassis-replace-overview.html
-      - title: Shut down the impaired controller
+      - title: Shut down impaired controller
         url: /fas9000/chassis-replace-shutdown.html
-      - title: Replace the hardware
+      - title: Replace hardware
         url: /fas9000/chassis-replace-move-hardware.html
-      - title: Complete the restoration and replacement process
+      - title: Complete replacement
         url: /fas9000/chassis-replace-complete-system-restore-rma.html
     # START controller module replacement
     - title: Controller module
       entries:
       - title: Overview
         url: /fas9000/controller-replace-overview.html
-      - title: Shut down the impaired controller
+      - title: Shut down impaired controller
         url: /fas9000/controller-replace-shutdown.html
-      - title: Replace the controller module hardware
+      - title: Replace controller module
         url: /fas9000/controller-replace.html
-      - title: Restore and verify the system configuration
+      - title: Restore system configuration
         url: /fas9000/controller-replace-system-config-restore-and-verify.html
-      - title: Recable the system and reassign disks
+      - title: Recable system
         url: /fas9000/controller-replace-recable-reassign-disks.html
       - title: Complete system restoration
         url: /fas9000/controller-replace-complete-system-restoration.html
       # END controller module replacement
-    - title: DCPM (with NVRAM10 battery)
+    - title: DCPM
       url: /fas9000/dcpm-nvram10-battery-replace.html
     - title: DIMM
       url: /fas9000/dimm-replace.html
@@ -74,7 +74,7 @@ entries:
       url: /fas9000/pci-cards-and-risers-replace.html
     - title: LED USB module
       url: /fas9000/led-module-replace.html
-    - title: NVRAM module and/or NVRAM DIMMs
+    - title: NVRAM
       url: /fas9000/nvram-module-or-nvram-dimm-replacement.html
     - title: Power supply
       url: /fas9000/power-supply-swap-out.html
@@ -83,11 +83,10 @@ entries:
       # START X91148A module
     - title: X91148A module
       entries:
-      - title: Overview
-        url: /fas9000/x91148a-module-install-overview.html
-#      - title: Add I/O modules in an existing system
-      - title: In an AFF A700 system with open slots
-        url: /fas9000/x91148a-module-with-open-slots-add.html
-      - title: In an AFF A700 system with no open slots
-        url: /fas9000/x91148a-modules-with-no-open-slots-add.html
+        - title: Overview
+          url: /fas9000/x91148a-module-install-overview.html
+        - title: AFF A700 system with open slots
+          url: /fas9000/x91148a-module-with-open-slots-add.html
+        - title: AFF A700 system no open slots
+          url: /fas9000/x91148a-modules-with-no-open-slots-add.html
       # END X91148A module
