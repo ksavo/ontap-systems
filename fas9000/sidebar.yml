@@ -35,9 +35,11 @@ entries:
         url: /fas9000/bootmedia-complete-rma.html
         # END boot media
     - title: Caching or core dump module
-      url: /fas9000/caching-module-and-core-dump-module-replace.html
-    - title: Replace caching module
-      url: /fas9000/caching-module-hot-swap.html
+      entries:
+        - title: Replace module
+          url: /fas9000/caching-module-and-core-dump-module-replace.html
+        - title: Hot-swap module
+          url: /fas9000/caching-module-hot-swap.html
     - title: Chassis
       entries:
       - title: Overview

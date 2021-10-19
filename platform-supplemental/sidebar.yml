@@ -8,7 +8,7 @@ entries:
         url: /platform-supplemental/sldiag-introduction.html
       - title: Requirements
         url: /platform-supplemental/sldiag-requirements.html
-      - title: How to use online command-line help
+      - title: How to use command-line help
         url: /platform-supplemental/sldiag-use-cli-help.html
       - title: Run system install diagnostics
         url: /platform-supplemental/sldiag-system-installation-diagnostics.html
@@ -22,15 +22,15 @@ entries:
         url: /platform-supplemental/sldiag-device-failure-diagnostics.html
   - title: SuperRail kit
     url: /platform-supplemental/superrail-install.html
-  - title: AFF A700 and FAS9000 two-post rail kit
+  - title: AFF A700/FAS9000 two-post rail kit
     url: /platform-supplemental/telco-installation-instructions.html
   - title: 42U 1280 mm System Cabinet
     entries:
-    - title: Prepare to install system cabinet
+    - title: Prepare to install cabinet
       entries:
-      - title: System cabinet features
+      - title: Cabinet features
         url: /platform-supplemental/42u-1280mm-features.html
-      - title: Required tools and equipment
+      - title: Required tools/equipment
         url: /platform-supplemental/42u-1280mm-required-tools.html
       - title: Space requirements and cabinet dimensions
         url: /platform-supplemental/42u-1280mm-space-and-dimensions.html
@@ -38,7 +38,7 @@ entries:
         url: /platform-supplemental/42u-1280mm-supported-pdu-types-and-specifications.html
     - title: Unpack system cabinet
       url: /platform-supplemental/42u-1280mm-unpack.html
-    - title: Install system cabinet
+    - title: Install cabinet
       entries:
       - title: Overview
         url: /platform-supplemental/42u-1280mm-install.html
@@ -50,17 +50,17 @@ entries:
         url: /platform-supplemental/42u-1280mm-install-additional-rails.html
       - title: Install equipment
         url: /platform-supplemental/42u-1280mm-install-equipment.html
-      - title: Power on system cabinet
+      - title: Power on cabinet
         url: /platform-supplemental/42u-1280mm-power-on.html
     - title: Replace PDUs
       url: /platform-supplemental/42u-1280mm-replace-pdus.html
-    - title: Reverse system cabinet front door
+    - title: Reverse cabinet front door
       entries:
       - title: What you need
         url: /platform-supplemental/42u-1280mm-reverse-front-door.html
       - title: Remove illuminated badge
         url: /platform-supplemental/42u-1280mm-remove-illuminated-badge.html
-      - title: Remove system cabinet door
+      - title: Remove cabinet door
         url: /platform-supplemental/42u-1280mm-remove-door.html
       - title: Move badge power supply and cabling
         url: /platform-supplemental/42u-1280mm-move-badge-ps-and-cabling.html

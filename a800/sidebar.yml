@@ -40,7 +40,7 @@ entries:
           url: /a800/chassis-replace-shutdown.html
         - title: Replace hardware
           url: /a800/chassis-replace-move-hardware.html
-        - title: Complete replacement process
+        - title: Complete replacement
           url: /a800/chassis-replace-complete-system-restore-rma.html
    - title: Controller
      entries:

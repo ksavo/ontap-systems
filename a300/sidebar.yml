@@ -28,7 +28,7 @@ entries:
        url: /a300/bootmedia-replace.html
      - title: Boot recovery image
        url: /a300/bootmedia-recovery-image-boot-options.html
-     - title: Switch back aggregates in a two-node MetroCluster configuration
+     - title: Switch back aggregates in two-node MetroCluster configuration
        url: /a300/bootmedia-2n-mcc-switchback.html
      - title: Restore OKM, NSE, and NVE
        url: /a300/bootmedia-encryption-restore.html
@@ -59,7 +59,7 @@ entries:
        url: /a300/controller-replace-system-config-restore-and-verify.html
      - title: Recable system
        url: /a300/controller-replace-recable-reassign-disks.html
-     - title: Complete replacement process
+     - title: Complete replacement
        url: /a300/controller-replace-restore-system-rma.html
    - title: DIMM
      ##pdf-filename: AFF A300 DIMM

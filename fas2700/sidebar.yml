@@ -40,7 +40,7 @@ entries:
           url: /fas2700/chassis-replace-shutdown.html
         - title: Replace hardware
           url: /fas2700/chassis-replace-move-hardware.html
-        - title: Restore and verify configuration
+        - title: Restore configuration
           url: /fas2700/chassis-replace-complete-system-restore-rma.html
     - title: Controller
       entries:
