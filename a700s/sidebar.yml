@@ -70,7 +70,7 @@ entries:
         url: /a700s/fan-complete-rma.html
     - title: NVRAM battery
       url: /a700s/nvmem-nvram-battery-replace.html
-    - title: NVRAM module and/or NVRAM DIMMs
+    - title: NVRAM
       url: /a700s/nvram-or-nvram-dimm-replacement.html
     - title: PCIe card
       url: /a700s/pci-cards-and-risers-replace.html

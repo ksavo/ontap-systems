@@ -34,7 +34,7 @@ entries:
       - title: Return failed part to NetApp
         url: /fas9000/bootmedia-complete-rma.html
         # END boot media
-    - title: Caching or core dump module
+    - title: Caching/core dump module
       entries:
         - title: Replace module
           url: /fas9000/caching-module-and-core-dump-module-replace.html
