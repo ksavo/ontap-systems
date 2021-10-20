@@ -27,7 +27,7 @@ entries:
         url: /fas9000/bootmedia-replace.html
       - title: Boot recovery image
         url: /fas9000/bootmedia-recovery-image-boot-options.html
-      - title: Switch back aggregates in two-node MetroCluster configuration
+      - title: Switch back MetroCluster config
         url: /fas9000/bootmedia-2n-mcc-switchback.html
       - title: Restore OKM, NSE, and NVE
         url: /fas9000/bootmedia-encryption-restore.html
