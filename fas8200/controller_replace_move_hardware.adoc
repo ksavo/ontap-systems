@@ -172,7 +172,7 @@ You must move the caching modules from the impaired controller modules to the re
 +
 The storage system comes with two slots available for the caching module and only one slot is occupied, by default.
 +
-+
+
 image::../media/drw_rxl_fcache.gif[]
 +
 
