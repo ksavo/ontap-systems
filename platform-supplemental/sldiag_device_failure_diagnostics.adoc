@@ -34,9 +34,9 @@ NOTE: You must run this command from the LOADER prompt for system-level diagnost
   *** `serviceproc` is the Service Processor.
   *** `storage` is an ATA, FC-AL, or SAS interface that has an attached disk shelf.
   *** `toe` is a TCP Offload Engine, a type of NIC.
- ** mb specifies that all the motherboard devices are to be tested.
- ** slot slotnum specifies that a device in a specific slot number is to be tested.
- ** -name device specifies a given device class and type.
+ ** `mb` specifies that all the motherboard devices are to be tested.
+ ** `slot` slotnum specifies that a device in a specific slot number is to be tested.
+ ** `-name device` specifies a given device class and type.
 . View the status of the test by entering the following command: `sldiag device status`
 +
 Your storage system provides the following output while the tests are still running:

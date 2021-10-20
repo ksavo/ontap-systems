@@ -46,7 +46,7 @@ https://hwu.netapp.com[NetApp Hardware Universe]
 +
 [options="header" cols="1,2,1,2"]
 |===
-| Type of cable...| Part number and length| Connector type| For...
+| Connector type| Part number and length| Type of cable...| For...
 .3+a|
 100 GbE cable
 a|
@@ -55,17 +55,17 @@ X66211A-05 (112-00595), 0.5m
 image:../media/oie_cable100_gbe_qsfp28.png[]
 a|
 HA interconnect
-.3+a|
+a|
 X66211A-05 (112-00595), 0.5m;
 
 X66211-1 (112-00573), 1m
-.5+a|
+a|
 Cluster interconnect network
-.3+a|
+a|
 X66211-2 (112-00574), 2m;
 
 X66211-5 (112-00576), 5m
-.5+a|
+.2+a|
 Storage, Data
 a|
 10 GbE cable
@@ -73,9 +73,9 @@ a|
 X6566B-3-R6 (112-00300), 3m;
 
 X6566B-5-R6 (112-00301), 5m
-.5+a|
+a|
 Data
-.2+a|
+a|
 25 GbE cable
 a|
 X66240A-2 (112-00598), 2m;
