@@ -17,7 +17,7 @@ https://library.netapp.com/ecm/ecm_download_file/ECMLP2876580[Information for ca
 
 * The document for installing your storage switches:
 +
-https://docs.netapp.com/us-en/ontap-systems-switches/index.html[ADD TILE TITLE Cluster, Storage and Management Switches]
+https://docs.netapp.com/us-en/ontap-systems-switches/index.html[AFF and FAS Switch Documentation]
 
 * Information about supported hardware, such as storage switches and cables, for your platform model:
 +

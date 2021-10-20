@@ -9,6 +9,7 @@ entries:
   - title: Cable shelves as switch-attached storage
     url: /ns224/cable-as-switch-attached.html
   - title: Maintain
+  #pdf-filename:NS224 shelf maintain
     entries:
     - title: Boot media
       url: /ns224/service-replace-boot-media.html
