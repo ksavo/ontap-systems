@@ -59,13 +59,13 @@ HA interconnect
 X66211A-05 (112-00595), 0.5m;
 
 X66211-1 (112-00573), 1m
-.3+a|
+.5+a|
 Cluster interconnect network
-a|
+.3+a|
 X66211-2 (112-00574), 2m;
 
 X66211-5 (112-00576), 5m
-.3+a|
+.5+a|
 Storage, Data
 a|
 10 GbE cable
@@ -73,9 +73,9 @@ a|
 X6566B-3-R6 (112-00300), 3m;
 
 X6566B-5-R6 (112-00301), 5m
-.2+a|
+.5+a|
 Data
-a|
+.2+a|
 25 GbE cable
 a|
 X66240A-2 (112-00598), 2m;
