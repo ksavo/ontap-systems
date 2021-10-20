@@ -71,7 +71,7 @@ image::../media/drw_2600_nvmem_battery_unplug.gif[]
 
  .. Confirm that the NVMEM LED is no longer lit.
  .. Reconnect the battery connector.
-. Return to link:dimm_replace.md#d12e132[dimm_replace.md#d12e132] of this procedure to recheck the NVMEM LED.
+. Recheck the NVMEM LED.
 . Locate the DIMMs on your controller module.
 +
 NOTE: Each system memory DIMM has an LED located on the board next to each DIMM slot. The LED for the faulty blinks every two seconds.

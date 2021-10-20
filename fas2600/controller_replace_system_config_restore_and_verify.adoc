@@ -29,8 +29,8 @@ The HA state should be the same for all components.
 +
 The value for HA-state can be one of the following:
 
-  *** ha
-  *** non-ha
+  *** `ha`
+  *** `non-ha`
 
   . If the displayed system state of the controller module does not match your system configuration, set the `HA` state for the controller module: `ha-config modify controller ha-state`
   . Confirm that the setting has changed: `ha-config show`
@@ -55,11 +55,11 @@ During the boot process, you can safely respond `y` to the prompts until the Mai
 The controller module devices and ports displayed can be any one or more of the following:
 
  ** `bootmedia` is the system booting device..
- ** cna is a Converged Network Adapter or interface not connected to a network or storage device.
- ** fcal is a Fibre Channel-Arbitrated Loop device not connected to a Fibre Channel network.
+ ** `cna` is a Converged Network Adapter or interface not connected to a network or storage device.
+ ** `fcal` is a Fibre Channel-Arbitrated Loop device not connected to a Fibre Channel network.
  ** `env` is motherboard environmentals.
- ** mem is system memory.
- ** nic is a network interface card.
+ ** `mem` is system memory.
+ ** `nic` is a network interface card.
  ** `nvram` is nonvolatile RAM.
  ** `nvmem` is a hybrid of NVRAM and system memory.
  ** `sas` is a Serial Attached SCSI device not connected to a disk shelf.

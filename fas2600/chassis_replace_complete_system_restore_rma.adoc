@@ -117,11 +117,11 @@ NOTE: You must exit Maintenance mode on both controllers before proceeding any f
 a|
 With two nodes in the cluster
 a|
-Issue these commands: `node::> cluster ha modify -configured true``node::> storage failover modify -node node0 -enabled true`
+Issue these commands: `node::> cluster ha modify -configured true node::> storage failover modify -node node0 -enabled true`
 a|
 With more than two nodes in the cluster
 a|
-Issue this command:``node::> storage failover modify -node node0 -enabled true``
+Issue this command: `node::> storage failover modify -node node0 -enabled true`
 a|
 In a stand-alone configuration
 a|
