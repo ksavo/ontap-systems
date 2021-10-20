@@ -17,7 +17,4 @@ The following AutoSupport message suppresses automatic case creation for two hou
 . Check the version of ONTAP the system is running on the impaired node if up, or on the partner node if the impaired node is down, using the `version -v` command:
 
  ** If <lno-DARE> is displayed in the command output, the system does not support NVE, proceed to shut down the controller.
- ** If <lno-DARE> is not displayed in the command output, and the system is running ONTAP 9.5, go to <<Checking NVE or NSE on systems running ONTAP 9.5 and later>>.
- ** If <lno-DARE> is not displayed in the command output,, and the system is running ONTAP 9.6 or later, go to <<Checking NVE or NSE on systems running ONTAP 9.6 and later>>.
-
-. If the impaired node is part of an HA configuration, disable automatic giveback from the healthy node: `storage failover modify -node local -auto-giveback false` or `storage failover modify -node local -auto-giveback-after-panic false`
+ 
