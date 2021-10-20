@@ -67,10 +67,6 @@ indexpage:
           url: https://docs.netapp.com/us-en/ontap-metrocluster/upgrade/index.html
     - title: More resources
       links:
-        - title: AFF and FAS switch documentation
-          url: https://docs.netapp.com/us-en/ontap-systems-systems/index.html
-        - title: AFF and FAS upgrade documentation
-          url: https://docs.netapp.com/us-en/ontap-systems-upgrade/index.html
         - title: ONTAP documentation
           url: https://docs.netapp.com/us-en/ontap/index.html
         - title: NetApp Hardware Universe
