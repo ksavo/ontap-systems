@@ -25,7 +25,7 @@ entries:
         url: /a250/bootmedia-shutdown.html
       - title: Replace boot media
         url: /a250/bootmedia-replace.html
-      - title: Boot recovery image
+      - title: Boot recovery image 
         url: /a250/bootmedia-recovery-image-boot-non-2n-mcc.html
       - title: Restore OKM, NSE, and NVE
         url: /a250/bootmedia-encryption-restore.html

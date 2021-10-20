@@ -24,7 +24,7 @@ entries:
         url: /fas8200/bootmedia-replace.html
       - title: Boot recovery image
         url: /fas8200/bootmedia-recovery-image-boot-options.html
-      - title: Switch back MetroCluster config
+      - title: Switch back MetroCluster config 
         url: /fas8200/bootmedia-2n-mcc-switchback.html
       - title: Restore OKM, NSE, and NVE
         url: /fas8200/bootmedia-encryption-restore.html
