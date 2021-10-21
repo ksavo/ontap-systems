@@ -8,7 +8,8 @@ The licenses keys must be in the 28-character format.
 You have a 90-day grace period in which to install the license keys. After the grace period, all old licenses are invalidated. After a valid license key is installed, you have 24 hours to install all of the keys before the grace period ends.
 
 .Steps
-. If you need new license keys, obtain replacement license keys on the NetApp Support Site in the My Support section under Software licenses.
+
+If you need new license keys, obtain replacement license keys on the NetApp Support Site in the My Support section under Software licenses.
 +
 https://mysupport.netapp.com/site/global/dashboard[NetApp Support]
 +

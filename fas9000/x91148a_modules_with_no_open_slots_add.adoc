@@ -14,7 +14,7 @@ You must remove one more or more existing NIC or storage modules in your system 
 * Your system must be running ONTAP 9.8 and later.
 * To non-disruptively add the X91148A module, you must takeover the target controller, add the module, and then giveback the target controller.
 * If you are adding the X91148A module as a storage adapter, you must install the module in slots 3 and/or 7.
-* If you are adding the X91148A module as a 100GbE NIC, you can use any open slot. However, by default, slots 3 and 7 are set as storage slots. If you wish to use those slots as network slots and will not add NS224 shelves, you must modify the slots for networking use with the storage port modify -node <node name> -port <port name> -mode network command for each port. See the Hardware Universe for other slots that can be used by the X91148A module for networking.
+* If you are adding the X91148A module as a 100GbE NIC, you can use any open slot. However, by default, slots 3 and 7 are set as storage slots. If you wish to use those slots as network slots and will not add NS224 shelves, you must modify the slots for networking use with the `storage port modify -node _node name_ -port _port name_ -mode network` command for each port. See the Hardware Universe for other slots that can be used by the X91148A module for networking.
 +
 https://hwu.netapp.com[NetApp Hardware Universe]
 
@@ -29,7 +29,7 @@ You must remove one or more existing NIC or storage modules in your system in or
 . If you are adding an X91148A module into a slot that contains a NIC module with the same number of ports as the X91148A module, the LIFs will automatically migrate when its controller module is shut down. If the NIC module being replaced has more ports than the X91148A module, you must permanently reassign the affected LIFs to a different home port. See https://docs.netapp.com/ontap-9/topic/com.netapp.doc.onc-sm-help-960/GUID-208BB0B8-3F84-466D-9F4F-6E1542A2BE7D.html[Migrating a LIF] for information about using System Manager to permanently move the LIFs
 . Shut down controller A:
  .. Disable automatic giveback: `storage failover modify -node local -auto-giveback false`
- .. Take over the target node: `storage failover takeover -ofnode target_node_name`
+ .. Take over the target node: `storage failover takeover -ofnode _target_node_name_`
 +
 The console connection shows that the node drops to the LOADER prompt when the takeover is complete.
 . If you are not already grounded, properly ground yourself.
@@ -64,10 +64,10 @@ I/O cam latch completely unlocked
  .. Push the I/O cam latch all the way up to lock the module in place.
 . Repeat the remove and install steps to replace additional modules for controller A.
 . Cable the module or modules to the data switches.
-. Reboot controller A. `boot_ontap`
-. Giveback the node from the partner node. `storage failover giveback -ofnode target_node_name`
+. Reboot controller A: `boot_ontap`
+. Giveback the node from the partner node: `storage failover giveback -ofnode target_node_name`
 . Enable automatic giveback if it was disabled: `storage failover modify -node local -auto-giveback true`
-. If you added the X91148A module as a NIC module in slots 3 or 7, for networking, use the storage port modify -node <node name> -port <port name> -mode network command for each port.
+. If you added the X91148A module as a NIC module in slots 3 or 7, for networking, use the `storage port modify -node _node name_ -port _port name_ -mode network` command for each port.
 . Repeat these steps for controller B.
 
 == Option 2: Adding an X91148A module as a storage module in a system with no open slots
@@ -115,8 +115,8 @@ I/O cam latch completely unlocked
  .. Slide the X91148A module into the slot until the lettered and numbered I/O cam latch begins to engage with the I/O cam pin.
  .. Push the I/O cam latch all the way up to lock the module in place.
  .. If you are installing a second X91148A module for storage, repeat the remove and install steps for the module in slot 7.
-. Reboot controller A. `boot_ontap`
-. Giveback the node from the partner node. `storage failover giveback -ofnode target_node_name`
+. Reboot controller A: `boot_ontap`
+. Giveback the node from the partner node: `storage failover giveback -ofnode _target_node_name_`
 . Enable automatic giveback if it was disabled: `storage failover modify -node local -auto-giveback true`
 . Repeat these steps for controller B.
 . Install and cable your NS224 shelves, as described in https://docs.netapp.com/platstor/topic/com.netapp.doc.hw-ds-nvme-hotadd/GUID-B215753F-F3E6-4FA0-A1E1-B9390B19AD94.html[Hot-adding an NS224 drive shelf].

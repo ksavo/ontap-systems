@@ -10,6 +10,8 @@ summary: "Move the fans, hard drives, and controller module or modules from the 
 
 == Step 1: Remove the power supplies
 
+.Steps
+
 Removing the power supplies when replacing a chassis involves turning off, disconnecting, and then removing the power supply from the old chassis.
 
 . If you are not already grounded, properly ground yourself.
@@ -37,6 +39,8 @@ Locking button
 [.lead]
 To remove the fan modules when replacing the chassis, you must perform a specific sequence of tasks.
 
+.Steps
+
 . Remove the bezel (if necessary) with two hands, by grasping the openings on each side of the bezel, and then pulling it toward you until the bezel releases from the ball studs on the chassis frame.
 . Press the orange button on the fan module and pull the fan module straight out of the chassis, making sure that you support it with your free hand.
 +
@@ -58,6 +62,8 @@ Orange release button
 
 [.lead]
 To replace the chassis, you must remove the controller module or modules from the old chassis.
+
+.Steps
 
 . Unplug the cables from the impaired controller module, and keep track of where the cables were connected.
 . Slide the orange button on the cam handle downward until it unlocks.
@@ -82,6 +88,8 @@ Make sure that you support the bottom of the controller module as you slide it o
 . Set the controller module aside in a safe place, and repeat these steps if you have another controller module in the chassis.
 
 == Step 4: Remove the I/O modules
+
+.Steps
 
 [.lead]
 To remove I/O modules from the old chassis, including the NVRAM modules, follow the specific sequence of steps. You do not have to remove the FlashCache module from the NVRAM module when moving it to a new chassis.
@@ -120,6 +128,8 @@ I/O cam latch completely unlocked
 
 == Step 5: Remove the De-stage Controller Power Module
 
+.Steps
+
 [.lead]
 You must remove the de-stage controller power modules from the old chassis in preparation for installing the replacement chassis.
 
@@ -137,6 +147,8 @@ DCPM module orange locking button
 . Set the DCPM module aside in a safe place and repeat this step for the remaining DCPM module.
 
 == Step 6: Replace a chassis from within the equipment rack or system cabinet
+
+.Steps
 
 [.lead]
 You must remove the existing chassis from the equipment rack or system cabinet before you can install the replacement chassis.
@@ -156,6 +168,8 @@ NOTE: If the system is in a system cabinet, you might need to remove the rear ti
 
 == Step 7: Move the USB LED module to the new chassis
 
+.Steps
+
 [.lead]
 Once the new chassis is installed into the rack or cabinet, you must move the USB LED module from the old chassis to the new chassis.
 
@@ -164,6 +178,8 @@ Once the new chassis is installed into the rack or cabinet, you must move the US
 . Align the edges of the module with the USB LED bay at the bottom-front of the replacement chassis, and gently push the module all the way into the chassis until it clicks into place.
 
 == Step 8: Install the de-stage controller power module when replacing the chassis
+
+.Steps
 
 [.lead]
 Once the replacement chassis is installed into the rack or system cabinet, you must reinstall the de-stage controller power modules into it.
@@ -175,6 +191,8 @@ NOTE: The module and slot are keyed. Do not force the module into the opening. I
 . Repeat this step for the remaining DCPM module.
 
 == Step 9: Install fans into the chassis
+
+.Steps
 
 [.lead]
 To install the fan modules when replacing the chassis, you must perform a specific sequence of tasks.
@@ -188,6 +206,8 @@ When inserted into a live system, the amber Attention LED flashes four times whe
 
 == Step 10: Install I/O modules
 
+.Steps
+
 [.lead]
 To install I/O modules, including the NVRAM/FlashCache modules from the old chassis, follow the specific sequence of steps.
 
@@ -200,6 +220,8 @@ You must have the chassis installed so that you can install the I/O modules into
 NOTE: If the old chassis has blank I/O panels, move them to the replacement chassis at this time.
 
 == Step 11: Install the power supplies
+
+.Steps
 
 [.lead]
 Installing the power supplies when replacing a chassis involves installing the power supplies into the replacement chassis, and connecting to the power source.
@@ -218,6 +240,8 @@ NOTE: Only connect the power cable to the power supply. Do not connect the power
 
 == Step 12: Install the controller
 
+.Steps
+
 [.lead]
 After you install the controller module and any other components into the new chassis, boot it to a state where you can run the interconnect diagnostic test.
 
@@ -235,7 +259,7 @@ The controller module begins to boot as soon as it is fully seated in the chassi
 
 . Repeat the preceding steps to install the second controller into the new chassis.
 . Boot each node to Maintenance mode:
- .. As each node starts the booting, press `Ctrl-C` to interrupt the boot process when you see the message Press Ctrl-C for Boot Menu.
+ .. As each node starts the booting, press `Ctrl-C` to interrupt the boot process when you see the message Press `Ctrl-C for Boot Menu`.
 +
 NOTE: If you miss the prompt and the controller modules boot to ONTAP, enter `halt`, and then at the LOADER prompt enter `boot_ontap`, press `Ctrl-C` when prompted, and then repeat this step.
 

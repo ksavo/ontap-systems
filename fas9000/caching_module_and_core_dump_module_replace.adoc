@@ -125,7 +125,7 @@ Be sure to support the core dump module as you remove it from the NVRAM10 module
 [.lead]
 After you replace the FRU, you must reboot the controller module.
 
-.Steps
+.Step
 . To boot ONTAP from the LOADER prompt, enter `bye`.
 
 == Step 5: Switch back aggregates in a two-node MetroCluster configuration

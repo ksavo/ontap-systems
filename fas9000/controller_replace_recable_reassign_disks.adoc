@@ -52,7 +52,7 @@ You can enter the following command to monitor the progress of the savecore comm
 
  .. Return to the admin privilege level: `set -privilege admin`
 . Give back the node:
- .. From the healthy node, give back the replaced node's storage: `storage failover giveback -ofnode replacement_node_name`
+ .. From the healthy node, give back the replaced node's storage: `storage failover giveback -ofnode _replacement_node_name_`
 +
 The replacement node takes back its storage and completes booting.
 +
@@ -62,7 +62,7 @@ NOTE: If the giveback is vetoed, you can consider overriding the vetoes.
 +
 http://mysupport.netapp.com/documentation/productlibrary/index.html?productID=62286[Find the High-Availability Configuration Guide for your version of ONTAP 9]
 
- .. After the giveback has been completed, confirm that the HA pair is healthy and that takeover is possible: storage failover show
+ .. After the giveback has been completed, confirm that the HA pair is healthy and that takeover is possible: `storage failover show`
 +
 The output from the `storage failover show` command. should not include the System ID changed on partner message.
 . Verify that the disks were assigned correctly: `storage disk show -ownership`
