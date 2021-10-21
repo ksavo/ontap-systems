@@ -3,7 +3,7 @@ title: AFF A250 systems
 url: /a250/index.html
 entries:
   - title: Install and setup
-    pdf-filename: AFF A250 Install and Setup
+    #pdf-filename: AFF A250 Install and Setup
     entries:
     - title: Choose install and setup experience
       url: /a250/install-setup.html
@@ -14,11 +14,11 @@ entries:
     - title: Detailed steps
       url: /a250/install-detailed-guide.html
   - title: Maintain
-    pdf-filename: AFF A250 Maintain
+    #pdf-filename: AFF A250 Maintain
     entries:
     # START boot media replacement
     - title: Boot media
-      pdf-filename: AFF A250 Boot Media
+      #pdf-filename: AFF A250 Boot Media
       entries:
       - title: Overview
         url: /a250/bootmedia-replace-overview.html
@@ -36,7 +36,7 @@ entries:
         url: /a250/bootmedia-complete-rma.html
       # END boot media replacement
     - title: Chassis
-      pdf-filename: AFF A250 Chassis
+      #pdf-filename: AFF A250 Chassis
       entries:
       - title: Overview
         url: /a250/chassis-replace-overview.html
@@ -47,7 +47,7 @@ entries:
       - title: Complete replacement
         url: /a250/chassis-replace-complete-system-restore-rma.html
     - title: Controller
-      pdf-filename: AFF A250 Controller Module
+      #pdf-filename: AFF A250 Controller Module
       entries:
       - title: Overview
         url: /a250/controller-replace-overview.html

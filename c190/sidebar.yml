@@ -3,7 +3,7 @@ title: AFF C190 systems
 url: /c190/index.html
 entries:
  - title: Install and setup
-  pdf-filename: AFF C190 Install and Setup
+  #pdf-filename: AFF C190 Install and Setup
    entries:
     - title: Choose install and setup experience
       url: /c190/install-setup.html
@@ -14,11 +14,11 @@ entries:
     - title: Detailed steps
       url: /c190/install-detailed-guide.html
  - title: Maintain
-  pdf-filename: AFF C190 Maintain
+  #pdf-filename: AFF C190 Maintain
    entries:
       # START boot media replacement
     - title: Boot media
-      pdf-filename: AFF C190 Boot Media
+      #pdf-filename: AFF C190 Boot Media
       entries:
         - title: Overview
           url: /c190/bootmedia-replace-overview.html
@@ -36,7 +36,7 @@ entries:
           url: /c190/bootmedia-complete-rma.html
       # END boot media replacement
     - title: Chassis
-      pdf-filename: AFF C190 Chassis
+      #pdf-filename: AFF C190 Chassis
       entries:
       - title: Overview
         url: /c190/chassis-replace-overview.html
@@ -49,7 +49,7 @@ entries:
       - title: Complete replacement
         url: /c190/chassis-replace-complete-rma.html
     - title: Controller
-      pdf-filename: AFF C190 Controller Module
+      #pdf-filename: AFF C190 Controller Module
       entries:
       - title: Overview
         url: /c190/controller-replace-overview.html
