@@ -1,7 +1,7 @@
 ---
 permalink: fas9000/chassis-replace-move-hardware.html
 sidebar: sidebar
-keywords: aff a700, fas9000, shut, chassis, controller, replace, remove, swap, verify, install, power, supply, metrocluster, aggregates, replacement, process, equipment, rack, ha, state, system, fans, module, usb, led, chassis, aggregates
+keywords: aff a700, fas9000, move hardware
 summary: "Move the fans, hard drives, and controller module or modules from the impaired chassis to the new chassis, and swap out the impaired chassis from the equipment rack or system cabinet with the new chassis of the same model as the impaired chassis."
 ---
 = Move and replace hardware - AFF A700 and FAS9000
