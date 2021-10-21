@@ -2,11 +2,11 @@ section: ns224
 title: NS224 shelves
 url: /ns224/index.html
 entries:
-  - title: Hot-add a shelf
+  - title: Hot-add shelf
     url: /ns224/hot-add-shelf.html
-  - title: Change a shelf ID
+  - title: Change shelf ID
     url: /ns224/change-shelf-id.html
-  - title: Cable shelves as switch-attached storage
+  - title: Cable shelves
     url: /ns224/cable-as-switch-attached.html
   - title: Maintain
     entries:
@@ -18,7 +18,7 @@ entries:
       url: /ns224/service-replace-drive.html
     - title: Fan
       url: /ns224/service-replace-fan.html
-    - title: Hot-remove a shelf
+    - title: Hot-remove shelf
       url: /ns224/hot-remove-shelf.html
     - title: NSM module
       url: /ns224/service-replace-nsm100.html

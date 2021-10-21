@@ -104,7 +104,7 @@ NVMEM battery
  .. Locate the battery plug and squeeze the clip on the face of the battery plug to release the plug from the socket, and then unplug the battery cable from the socket.
  .. Wait a few seconds, and then plug the battery back into the socket.
 
-. Check the NVMEM LED on the controller module.
+. Return to step 2 of this procedure to recheck the NVMEM LED.
 . Locate the DIMMs on your controller module.
 +
 NOTE: Each system memory DIMM has an LED located on the board next to each DIMM slot. The LED for the faulty blinks every two seconds.
@@ -235,8 +235,7 @@ a|
 A stand-alone configuration
 a|
 Proceed to the next step.         No action is required.
-+
- You have completed system-level diagnostics.
+You have completed system-level diagnostics.
 
 a|
 Resulted in some test failures

@@ -37,10 +37,7 @@ NOTE: The data is output from either `security key-manager backup show` or `secu
 +
 Example of backup data:
 +
-++++
-
-
-Enter backup data:
+====
 --------------------------BEGIN BACKUP--------------------------
 TmV0QXBwIEtleSBCbG9iAAEAAAAEAAAAcAEAAAAAAADuD+byAAAAACEAAAAAAAAA
 QAAAAAAAAABvOlH0AAAAAMh7qDLRyH1DBz12piVdy9ATSFMT0C0TlYFss4PDjTaV
@@ -58,8 +55,9 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 H4nPQM0nrDRYRa9SCv8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAAAAA
+
 ---------------------------END BACKUP---------------------------
-++++
+====
 
 . At the Boot Menu select the option for Normal Boot.
 +
