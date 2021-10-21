@@ -99,7 +99,7 @@ Micro-USB console cable
 a|
 Not applicable
 a|
-image:../media/oie_cable_micro_usb.gif[]
+image:../media/oie_cable_micro_usb.png[]
 a|
 Console connection during software setup
 a|
@@ -150,7 +150,7 @@ Contact your network administrator for information about connecting the system t
 
 Be sure to check the illustration arrow for the proper cable connector pull-tab orientation.
 
-image::../media/oie_cable_pull_tab_down.gif[]
+image::../media/oie_cable_pull_tab_down.png[]
 
 NOTE: As you insert the connector, you should feel it click into place; if you do not feel it click, remove it, turn it around and try again.
 
@@ -162,11 +162,11 @@ https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=beec3966-0a01-473c
 |===
 | Step| Perform on each controller
 a|
-image:../media/oie_legend_icon_1_lg.gif[]
+image:../media/oie_legend_icon_1_lg.png[]
 a|
 Cable the cluster interconnect ports to each other with the 25GbE cluster interconnect cable
 
-image:../media/oie_cable_sfp_gbe_copper.gif[]:
+image:../media/oie_cable_sfp_gbe_copper.png[]:
 
 ** e0c to e0c
 ** e0d to e0d
@@ -179,7 +179,7 @@ Cable the wrench ports to the management network switches with the RJ45 cables.
 
 image::../media/drw_affa250_mgmt_cabling.png[]
 a|
-image:../media/oie_legend_icon_attn_symbol.gif[]
+image:../media/oie_legend_icon_attn_symbol.png[]
 a|
 DO NOT plug in the power cords at this point.
 |===
@@ -195,7 +195,7 @@ Contact your network administrator for information about connecting the system t
 
 Be sure to check the illustration arrow for the proper cable connector pull-tab orientation.
 
-image::../media/oie_cable_pull_tab_down.gif[]
+image::../media/oie_cable_pull_tab_down.png[]
 
 NOTE: As you insert the connector, you should feel it click into place; if you do not feel it click, remove it, turn it around and try again.
 
@@ -207,7 +207,7 @@ https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=bf6759dc-4cbf-488e
 |===
 | Step| Perform on each controller
 a|
-image:../media/oie_legend_icon_1_lg.gif[]
+image:../media/oie_legend_icon_1_lg.png[]
 a|
 Cable the cluster interconnect ports to the 25 GbE cluster interconnect switches.
 
@@ -222,7 +222,7 @@ Cable the wrench ports to the management network switches with the RJ45 cables.
 
 image::../media/drw_affa250_mgmt_cabling.png[]
 a|
-image::../media/oie_legend_icon_attn_symbol.gif[]
+image::../media/oie_legend_icon_attn_symbol.png[]
 a|
 DO NOT plug in the power cords at this point.
 |===
@@ -243,7 +243,7 @@ Contact your network administrator for information about connecting the system t
 
 Be sure to check the illustration arrow for the proper cable connector pull-tab orientation.
 
-image::../media/oie_cable_pull_tab_up.gif[]
+image::../media/oie_cable_pull_tab_up.png[]
 
 NOTE: As you insert the connector, you should feel it click into place; if you do not feel it click, remove it, turn it around and try again.
 
@@ -282,7 +282,7 @@ Contact your network administrator for information about connecting the system t
 
 Be sure to check the illustration arrow for the proper cable connector pull-tab orientation.
 
-image::../media/oie_cable_pull_tab_up.gif[]
+image::../media/oie_cable_pull_tab_up.png[]
 
 NOTE: As you insert the connector, you should feel it click into place; if you do not feel it click, remove it, turn it around and try again.
 
@@ -317,7 +317,7 @@ You must cable each controller to the NSM modules on the NS224 drive shelf.
 
 Be sure to check the illustration arrow for the proper cable connector pull-tab orientation.
 
-image::../media/oie_cable_pull_tab_up.gif[]
+image::../media/oie_cable_pull_tab_up.png[]
 
 NOTE: As you insert the connector, you should feel it click into place; if you do not feel it click, remove it, turn it around and try again.
 

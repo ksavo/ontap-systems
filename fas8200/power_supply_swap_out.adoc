@@ -33,22 +33,22 @@ image::../media/drw_rxl_psu.gif[]
 +
 |===
 a|
-image:../media/legend_icon_01.gif[]|
+image:../media/legend_icon_01.png[]|
 Power supply
 a|
-image:../media/legend_icon_02.gif[]
+image:../media/legend_icon_02.png[]
 a|
 Cam handle release latch
 a|
-image:../media/legend_icon_03.gif[]
+image:../media/legend_icon_03.png[]
 a|
 Power and Fault LEDs
 a|
-image:../media/legend_icon_04.gif[]
+image:../media/legend_icon_04.png[]
 a|
 Cam handle
 a|
-image:../media/legend_icon_05.gif[]
+image:../media/legend_icon_05.png[]
 a|
 Power cable locking mechanism
 |===

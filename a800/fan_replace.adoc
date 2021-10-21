@@ -35,14 +35,14 @@ Leave the cables in the cable management device so that when you reinstall the c
 +
 The controller module moves slightly out of the chassis.
 +
-image::../media/drw_a800_pcm_remove.gif[]
+image::../media/drw_a800_pcm_remove.png[]
 +
 |===
 a|
-image:../media/legend_icon_01.gif[]|
+image:../media/legend_icon_01.png[]|
 Locking latch
 a|
-image:../media/legend_icon_02.gif[]
+image:../media/legend_icon_02.png[]
 a|
 Locking pin
 |===
@@ -61,14 +61,14 @@ To replace a fan, remove the failed fan module and replace it with a new fan mod
 . Identify the fan module that you must replace by checking the console error messages or by locating the lit LED for the fan module on the motherboard.
 . Remove the fan module by pinching the locking tabs on the side of the fan module, and then lifting the fan module straight out of the controller module.
 +
-image::../media/drw_a800_replace_fan.gif[]
+image::../media/drw_a800_replace_fan.png[]
 +
 |===
 a|
-image:../media/legend_icon_01.gif[]|
+image:../media/legend_icon_01.png[]|
 Fan locking tabs
 a|
-image:../media/legend_icon_02.gif[]
+image:../media/legend_icon_02.png[]
 a|
 Fan module
 |===

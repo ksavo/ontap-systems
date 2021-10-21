@@ -28,23 +28,23 @@ image::../media/drw_sys_cab_door_reversal_ozeki.gif[]
 +
 |===
 a|
-image:../media/legend_icon_01.gif[]
+image:../media/legend_icon_01.png[]
 a|
 Door grounding screw with grounding wire spade
 a|
-image:../media/legend_icon_02.gif[]
+image:../media/legend_icon_02.png[]
 a|
 Grounding wire
 a|
-image:../media/legend_icon_03.gif[]
+image:../media/legend_icon_03.png[]
 a|
 Frame grounding wire lug
 a|
-image:../media/legend_icon_04.gif[]
+image:../media/legend_icon_04.png[]
 a|
 Top front door hinge with hinge pin held by retaining clip
 a|
-image:../media/legend_icon_05.gif[]
+image:../media/legend_icon_05.png[]
 a|
 Lock catch
 |===

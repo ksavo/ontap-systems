@@ -84,9 +84,9 @@ Make note of the IOM12 module ports each cable is connected to.
 
 . Press the orange latch on the IOM12 module cam handle until it releases, and then open the cam handle fully to release the IOM12 module from the mid plane.
 +
-image::../media/drw_iom_latch.gif[]
+image::../media/drw_iom_latch.png[]
 +
-image::../media/drw_iom_open.gif[]
+image::../media/drw_iom_open.png[]
 
 . Use the cam handle to slide the IOM12 module out of the disk shelf.
 +
