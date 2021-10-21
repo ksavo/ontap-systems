@@ -55,7 +55,7 @@ For example, slot 0 with two ports is referred to as 0a and 0b. Slot 1 with four
 +
 In this document, slots and the slot ports are depicted as follows:
 +
-image::../media/slot0_rules.gif[]
+image::../media/slot0_rules.png[]
 
 == Shelf-to-shelf connection rules
 
@@ -148,7 +148,7 @@ For example: 1b, 2b, 3b, 1d, 2d, 3d
 
  .. Rewrite the D and B port list so that the first port in the list is moved to the end of the list.
 +
-For example: image:../media/drw_gen_sas_cable_step2.gif[]
+For example: image:../media/drw_gen_sas_cable_step2.png[]
 +
 Offsetting the order of the slots by one balances port pairs across multiple slots (physical PCI slots and on board slots) when more than one slot of SAS ports is available; therefore, preventing a stack from being cabled to a single SAS HBA.
 

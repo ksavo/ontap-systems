@@ -21,7 +21,7 @@ To access components inside the controller module, you must remove the controlle
 . Unplug the controller module power supply from the power source.
 . Loosen the hook and loop strap binding the cables to the cable management device, and then unplug the system cables and SFPs (if needed) from the controller module, keeping track of where the cables were connected.
 +
-image::../media/drw_a320_controller_cable_unplug_animated_gif.gif[]
+image::../media/drw_a320_cable_management_arms.png[]
 +
 Leave the cables in the cable management device so that when you reinstall the cable management device, the cables are organized.
 
@@ -105,8 +105,6 @@ When recabling, remember to reinstall the media converters (SFPs or QSFPs) if th
 Make sure that you install the USB flash drive in the slot labeled for USB devices, and not in the USB console port.
 
 . Complete the reinstallation of the controller module:
-+
-image::../media/drw_a320_controller_install_animated_gif.gif[]
 
  .. Make sure the latch arms are locked in the extended position.
  .. Using the latch arms, push the controller module into the chassis bay until it stops.

@@ -11,6 +11,11 @@ summary: 'Prior to shutting down the impaired node and checking the status of th
 [.lead]
 include::../_include/encryption_steps_before_shutdown.adoc[]
 
+** If <lno-DARE> is not displayed in the command output, and the system is running ONTAP 9.5, go to <<Option 1: Checking NVE or NSE on systems running ONTAP 9.5 and earlier>>.
+ ** If <lno-DARE> is not displayed in the command output, and the system is running ONTAP 9.6 or later, go to <<Option 2: Checking NVE or NSE on systems running ONTAP 9.6 and later>>.
+
+. If the impaired node is part of an HA configuration, disable automatic giveback from the healthy node: `storage failover modify -node local -auto-giveback false` or `storage failover modify -node local -auto-giveback-after-panic false`
+
 == Option 1: Checking NVE or NSE on systems running ONTAP 9.5 and earlier
 
 [.lead]

@@ -32,10 +32,10 @@ image::../media/drw_8020_cam_handle_thumbscrew.gif[]
 +
 |===
 a|
-image:../media/legend_icon_01.gif[]|
+image:../media/legend_icon_01.png[]|
 Thumbscrew
 a|
-image:../media/legend_icon_02.gif[]
+image:../media/legend_icon_02.png[]
 a|
 Cam handle
 |===
@@ -87,10 +87,10 @@ image::../media/drw_rxl_nvmem_battery.gif[]
 +
 |===
 a|
-image:../media/legend_icon_01.gif[]|
+image:../media/legend_icon_01.png[]|
 Battery lock tab
 a|
-image:../media/legend_icon_02.gif[]
+image:../media/legend_icon_02.png[]
 a|
 NVMEM battery pack
 |===
@@ -140,11 +140,11 @@ image::../media/drw_rxl_pcie.gif[]
 +
 |===
 a|
-image:../media/legend_icon_01.gif[]
+image:../media/legend_icon_01.png[]
 a|
 Side panel
 a|
-image:../media/legend_icon_02.gif[]
+image:../media/legend_icon_02.png[]
 a|
 PCIe card
 |===

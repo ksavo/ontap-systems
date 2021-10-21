@@ -29,23 +29,23 @@ You must verify the `HA` state of the controller module and, if necessary, updat
 a|
 An HA pair
 a|
-ha
+`ha`
 a|
 A MetroCluster FC configuration with four or more nodes
 a|
-mcc
+`mcc`
 a|
 A two-node MetroCluster FC configuration
 a|
-mcc-2n
+`mcc-2n`
 a|
 A MetroCluster IP configuration
 a|
-mccip
+`mccip`
 a|
 A stand-alone configuration
 a|
-non-ha
+`non-ha`
 |===
 
 . If the displayed system state of the controller module does not match your system configuration, set the `HA` state for the controller module: `ha-config modify controller ha-state`
@@ -71,12 +71,12 @@ During the boot process, you can safely respond `y` to the prompts until the Mai
 +
 The controller module devices and ports displayed can be any one or more of the following:
 
- ** `bootmedia` is the system booting device..
- ** cna is a Converged Network Adapter or interface not connected to a network or storage device.
- ** fcal is a Fibre Channel-Arbitrated Loop device not connected to a Fibre Channel network.
+ ** `bootmedia` is the system booting device.
+ ** `cna` is a Converged Network Adapter or interface not connected to a network or storage device.
+ ** `fcal` is a Fibre Channel-Arbitrated Loop device not connected to a Fibre Channel network.
  ** `env` is motherboard environmentals.
- ** mem is system memory.
- ** nic is a network interface card.
+ ** `mem` is system memory.
+ ** `nic` is a network interface card.
  ** `nvram` is nonvolatile RAM.
  ** `nvmem` is a hybrid of NVRAM and system memory.
  ** `sas` is a Serial Attached SCSI device not connected to a disk shelf.
@@ -91,13 +91,13 @@ Individual components
 a|
 
  .. Clear the status logs: `sldiag device clearstatus`
- .. Display the available tests for the selected devices: `sldiag device show -dev _dev_name_`
+ .. Display the available tests for the selected devices: `sldiag device show -dev __dev_name_`
 +
-_dev_name_ can be any one of the ports and devices identified in the preceding step.
+`dev_name` can be any one of the ports and devices identified in the preceding step.
 
  .. Examine the output and, if applicable, select only the tests that you want to run: `sldiag device modify -dev _dev_name_ -selection only`
-+
--selection only disables all other tests that you do not want to run for the device.
+`+
+`-selection only` disables all other tests that you do not want to run for the device.
 
  .. Run the selected tests: `sldiag device run -dev _dev_name_`
 +
@@ -119,7 +119,7 @@ a|
  .. List the individual tests for the device: `sldiag device show -dev _dev_name_`
  .. Examine the output and, if applicable, select only the tests that you want to run: `sldiag device modify -dev _dev_name_ -selection only`
 +
--selection only disables all other tests that you do not want to run for the device.
+`-selection only` disables all other tests that you do not want to run for the device.
 
  .. Verify that the tests were modified: `sldiag device show`
  .. Repeat these substeps for each device that you want to run concurrently.
@@ -153,7 +153,9 @@ a|
 +
 The following default response is displayed:
 +
+----
 SLDIAG: No log messages are present.
+----
 
  .. Exit Maintenance mode: `halt`
 +
@@ -162,17 +164,12 @@ The node displays the LOADER prompt.
  .. Boot the node from the LOADER prompt: `bye`
  .. Return the node to normal operation:
 
-|===
-+
-[options="header" cols="1,2"]
-|===
-| If your node is in...| Then...
 a|
 An HA pair
 a|
 Perform a give back: `storage failover giveback -ofnode _replacement_node_name_`
 
-NOTE: If you disabled automatic giveback, re-enable it with the storage failover modify command.
+NOTE: If you disabled automatic giveback, re-enable it with the `storage failover modify` command.
 
 a|
 A two-node MetroCluster configuration

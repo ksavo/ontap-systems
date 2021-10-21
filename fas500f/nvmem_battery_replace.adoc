@@ -38,10 +38,10 @@ image::../media/drw_a250_pcm_remove_install.png[]
 +
 |===
 a|
-image:../media/legend_icon_01.gif[]|
+image:../media/legend_icon_01.png[]|
 Lever
 a|
-image:../media/legend_icon_02.gif[]
+image:../media/legend_icon_02.png[]
 a|
 Latching mechanism
 |===
@@ -53,10 +53,10 @@ image::../media/drw_a250_open_controller_module_cover.png[]
 +
 |===
 a|
-image:../media/legend_icon_01.gif[]|
+image:../media/legend_icon_01.png[]|
 Thumbscrew
 a|
-image:../media/legend_icon_02.gif[]
+image:../media/legend_icon_02.png[]
 a|
 Controller module cover.
 |===
@@ -78,18 +78,18 @@ image::../media/drw_a250_replace_nvmem_batt.png[]
 +
 |===
 a|
-image:../media/legend_icon_01.gif[]|
+image:../media/legend_icon_01.png[]|
 Squeeze the clip on the face of the battery plug.
 a|
-image:../media/legend_icon_02.gif[]
+image:../media/legend_icon_02.png[]
 a|
 Unplug the battery cable from the socket.
 a|
-image:../media/legend_icon_03.gif[]
+image:../media/legend_icon_03.png[]
 a|
 Grasp the battery and press the blue locking tab marked PUSH.
 a|
-image:../media/legend_icon_04.gif[]
+image:../media/legend_icon_04.png[]
 a|
 Lift the battery out of the holder and controller module.
 |===
@@ -114,10 +114,10 @@ image::../media/drw_a250_close_controller_module_cover.png[]
 +
 |===
 a|
-image:../media/legend_icon_01.gif[]|
+image:../media/legend_icon_01.png[]|
 Controller module cover
 a|
-image:../media/legend_icon_02.gif[]
+image:../media/legend_icon_02.png[]
 a|
 Thumbscrew
 |===

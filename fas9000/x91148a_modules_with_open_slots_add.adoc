@@ -19,7 +19,7 @@ You can add an X91148A module into an empty module slot in your system as either
 https://hwu.netapp.com[NetApp Hardware Universe]
 
 * If you are adding the X91148A module as a storage module, you must install the module slots 3 and/or 7.
-* If you are adding the X91148A module as a 100GbE NIC, you can use any open slot. However, by default, slots 3 and 7 are set as storage slots. If you wish to use those slots as network slots and will not add NS224 shelves, you must modify the slots for networking use with the storage port modify -node <node name> -port <port name> -mode network command. See the Hardware Universe for other slots that can be used by the X91148A module for networking.
+* If you are adding the X91148A module as a 100GbE NIC, you can use any open slot. However, by default, slots 3 and 7 are set as storage slots. If you wish to use those slots as network slots and will not add NS224 shelves, you must modify the slots for networking use with the `storage port modify -node _node name_ -port _port name_ -mode network` command. See the Hardware Universe for other slots that can be used by the X91148A module for networking.
 +
 https://hwu.netapp.com[NetApp Hardware Universe]
 
@@ -33,7 +33,7 @@ To add an X91148A module as a NIC module in a system with open slots, you must f
 .Steps
 . Shutdown controller A:
  .. Disable automatic giveback: `storage failover modify -node local -auto-giveback false`
- .. Take over the target node: `storage failover takeover -ofnode target_node_name`
+ .. Take over the target node: `storage failover takeover -ofnode _target_node_name_`
 +
 The console connection shows that the node drops to the LOADER prompt when the takeover is complete.
 . If you are not already grounded, properly ground yourself.
@@ -46,10 +46,9 @@ The console connection shows that the node drops to the LOADER prompt when the t
  .. Slide the X91148A module into the slot until the lettered and numbered I/O cam latch begins to engage with the I/O cam pin.
  .. Push the I/O cam latch all the way up to lock the module in place.
 . Cable the module to the data switches.
-. Reboot controller A. `boot_ontap`
-. Giveback the node from the partner node. `storage failover giveback -ofnode target_node_name`
+. Reboot controller A: `boot_ontap`
+. Giveback the node from the partner node: `storage failover giveback -ofnode _target_node_name_`
 . Enable automatic giveback if it was disabled: `storage failover modify -node local -auto-giveback true`
-. If you are using slots 3 and/or 7 for networking, use the storage port modify -node <node name> -port <port name> -mode network command to convert the slot for networking use.
 . Repeat these steps for controller B.
 
 == Option 2: Add an X91148A module as a storage module in a system with open slots
@@ -75,8 +74,8 @@ The console connection shows that the node drops to the LOADER prompt when the t
  .. Slide the X91148A module into the slot until the lettered and numbered I/O cam latch begins to engage with the I/O cam pin.
  .. Push the I/O cam latch all the way up to lock the module in place.
  .. If you are installing a second X91148A module for storage, repeat this step for the module in slot 7.
-. Reboot controller A. `boot_ontap`
-. Giveback the node from the partner node. `storage failover giveback -ofnode target_node_name`
+. Reboot controller A: `boot_ontap`
+. Giveback the node from the partner node: `storage failover giveback -ofnode target_node_name`
 . Enable automatic giveback if it was disabled: `storage failover modify -node local -auto-giveback true`
 . Repeat these steps for controller B.
-. Install and cable your NS224 shelves, as described in https://docs.netapp.com/platstor/topic/com.netapp.doc.hw-ds-nvme-hotadd/GUID-B215753F-F3E6-4FA0-A1E1-B9390B19AD94.html[Hot-adding an NS224 drive shelf].
+. Install and cable your NS224 shelves, as described in https://docs.netapp.com/us-en/ontap-systems/ns224/hot-add-shelf.html[Hot-add - NS224 shelves].

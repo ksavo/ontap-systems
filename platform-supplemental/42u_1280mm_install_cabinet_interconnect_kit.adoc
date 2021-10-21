@@ -29,11 +29,11 @@ image::../media/drw_sys_cab_remove_brimstone_back_banel.gif[]
 +
 |===
 a|
-image:../media/legend_icon_01.gif[]
+image:../media/legend_icon_01.png[]
 a|
 Illuminated bezel circuit board and cable
 a|
-image:../media/legend_icon_02.gif[]
+image:../media/legend_icon_02.png[]
 a|
 Back panel and thumbscrews
 |===
@@ -44,15 +44,15 @@ image::../media/drw_sys_cab_front_door_daiginjo.gif[]
 +
 |===
 a|
-image:../media/legend_icon_01.gif[]
+image:../media/legend_icon_01.png[]
 a|
 Door grounding cable
 a|
-image:../media/legend_icon_02.gif[]
+image:../media/legend_icon_02.png[]
 a|
 Door top hinge
 a|
-image:../media/legend_icon_03.gif[]
+image:../media/legend_icon_03.png[]
 a|
 Hinge pin
 |===
@@ -70,15 +70,15 @@ image:../media/drw_syscab_interconnect_bracket_side_panels_on.gif[]
 +
 |===
 a|
-image:../media/legend_icon_01.gif[]
+image:../media/legend_icon_01.png[]
 a|
 Plastic push-in rivets on the system cabinet top
 a|
-image:../media/legend_icon_02.gif[]
+image:../media/legend_icon_02.png[]
 a|
 Top interconnect bracket
 a|
-image:../media/legend_icon_03.gif[]
+image:../media/legend_icon_03.png[]
 a|
 Bottom interconnect bracket
 |===

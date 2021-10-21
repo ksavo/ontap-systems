@@ -39,7 +39,7 @@ a|
 *1*|
 Lever
 a|
-image:../media/legend_icon_02.gif[]
+image:../media/legend_icon_02.png[]
 a|
 Latching mechanism
 |===
@@ -52,10 +52,10 @@ image::../media/drw_a250_open_controller_module_cover.png[]
 [cols="1,4"]
 |===
 a|
-image:../media/legend_icon_01.gif[]|
+image:../media/legend_icon_01.png[]|
 Thumbscrew
 a|
-image:../media/legend_icon_02.gif[]
+image:../media/legend_icon_02.png[]
 a|
 Controller module cover.
 |===
@@ -77,7 +77,7 @@ image::../media/drw_a250_replace_fan.png[]
 [cols="1,4"]
 |===
 a|
-image:../media/legend_icon_01.gif[]|
+image:../media/legend_icon_01.png[]|
 Fan module
 |===
 
@@ -95,10 +95,10 @@ image::../media/drw_a250_close_controller_module_cover.png[]
 [cols="1,4"]
 |===
 a|
-image:../media/legend_icon_01.gif[]|
+image:../media/legend_icon_01.png[]|
 Controller module cover
 a|
-image:../media/legend_icon_02.gif[]
+image:../media/legend_icon_02.png[]
 a|
 Thumbscrew
 |===

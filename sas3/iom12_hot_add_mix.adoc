@@ -244,7 +244,7 @@ image::../media/28_dwg_e2860_de460c_drive_cru.gif[]
 +
 |===
 a|
-image:../media/legend_icon_01.gif[]|
+image:../media/legend_icon_01.png[]|
 Raised button on the right side of the drive carrier
 |===
 

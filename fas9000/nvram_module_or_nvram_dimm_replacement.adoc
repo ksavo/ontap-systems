@@ -51,10 +51,10 @@ image::../media/drw_9000_remove_flashcache.svg[]
 +
 |===
 a|
-image:../media/legend_icon_01.gif[] a|
+image:../media/legend_icon_01.png[] a|
 Orange release button (gray on empty FlashCache modules)
 a|
-image:../media/legend_icon_02.gif[]
+image:../media/legend_icon_02.png[]
 a|
 FlashCache cam handle
 |===
@@ -82,23 +82,23 @@ image::../media/drw_9000_move_remove_nvram_module.svg[]
 +
 |===
 a|
-image:../media/legend_icon_01.gif[] a|
+image:../media/legend_icon_01.png[] a|
 Lettered and numbered I/O cam latch
 a|
-image:../media/legend_icon_02.gif[]
+image:../media/legend_icon_02.png[]
 a|
 I/O latch completely unlocked
 |===
 . Set the NVRAM module on a stable surface and remove the cover from the NVRAM module by pushing down on the blue locking button on the cover, and then, while holding down the blue button, slide the lid off the NVRAM module.
 +
-image::../media/drw_9000_remove_nvram_module_contents.svg[]
+image::../media/drw_9000_remove_nvram_module_contents.png[]
 +
 |===
 a|
-image:../media/legend_icon_01.gif[] a|
+image:../media/legend_icon_01.png[] a|
 Cover locking button
 a|
-image:../media/legend_icon_02.gif[]
+image:../media/legend_icon_02.png[]
 a|
 DIMM and DIMM ejector tabs
 |===
@@ -131,23 +131,23 @@ image::../media/drw_9000_move_remove_nvram_module.svg[]
 +
 |===
 a|
-image:../media/legend_icon_01.gif[] a|
+image:../media/legend_icon_01.png[] a|
 Lettered and numbered I/O cam latch
 a|
-image:../media/legend_icon_02.gif[]
+image:../media/legend_icon_02.png[]
 a|
 I/O latch completely unlocked
 |===
 . Set the NVRAM module on a stable surface and remove the cover from the NVRAM module by pushing down on the blue locking button on the cover, and then, while holding down the blue button, slide the lid off the NVRAM module.
 +
-image::../media/drw_9000_remove_nvram_module_contents.svg[]
+image::../media/drw_9000_remove_nvram_module_contents.png[]
 +
 |===
 a|
-image:../media/legend_icon_01.gif[] a|
+image:../media/legend_icon_01.png[] a|
 Cover locking button
 a|
-image:../media/legend_icon_02.gif[]
+image:../media/legend_icon_02.png[]
 a|
 DIMM and DIMM ejector tabs
 |===
@@ -167,7 +167,7 @@ Each DIMM has an LED next to it that flashes when the DIMM has failed.
 [.lead]
 After you replace the FRU, you must reboot the controller module.
 
-.Steps
+.Step
 . To boot ONTAP from the LOADER prompt, enter `bye`.
 
 == Step 5: Reassign disks
@@ -183,11 +183,11 @@ You must use the correct procedure for your configuration:
 a|
 HA pair
 a|
-link:nvram_module_or_nvram_dimm_replacement.html#[Verifying the system ID change on an HA system]
+<<Verifying the system ID change on an HA system>>
 a|
 Two-node MetroCluster configuration
 a|
-link:nvram_module_or_nvram_dimm_replacement.html#[Manually reassigning the system ID on systems in a two-node MetroCluster configuration]
+<<Manually reassigning the system ID on systems in a two-node MetroCluster configuration>>
 |===
 
 === Verify the system ID change on an HA system
@@ -198,8 +198,10 @@ You must confirm the system ID change when you boot the _replacement_ node and t
 This procedure applies only to systems running ONTAP in an HA pair.
 
 .Steps
-. If the _replacement_ node is in Maintenance mode (showing the `*>` prompt, exit Maintenance mode and go to the LOADER prompt: `halt`
-. From the LOADER prompt on the _replacement_ node, boot the node, entering `y` if you are prompted to override the system ID due to a system ID mismatch:``boot_ontap```bye`
+. If the replacement node is in Maintenance mode (showing the `*>` prompt, exit Maintenance mode and go to the LOADER prompt: `halt`
+. From the LOADER prompt on the replacement node, boot the node, entering `y` if you are prompted to override the system ID due to a system ID mismatch:
++
+``boot_ontap bye``
 +
 The node will reboot, if autoboot is set.
 
@@ -239,9 +241,9 @@ NOTE: If the giveback is vetoed, you can consider overriding the vetoes.
 +
 http://mysupport.netapp.com/documentation/productlibrary/index.html?productID=62286[Find the High-Availability Configuration Guide for your version of ONTAP 9]
 
- .. After the giveback has been completed, confirm that the HA pair is healthy and that takeover is possible: storage failover show
+ .. After the giveback has been completed, confirm that the HA pair is healthy and that takeover is possible: `storage failover show`
 +
-The output from the `storage failover show` command. should not include the System ID changed on partner message.
+The output from the `storage failover show` command. should not include the `System ID changed on partner` message.
 . Verify that the disks were assigned correctly: `storage disk show -ownership`
 +
 The disks belonging to the _replacement_ node should show the new system ID. In the following example, the disks owned by node1 now show the new system ID, 1873775277:
@@ -260,7 +262,7 @@ Disk  Aggregate Home  Owner  DR Home  Home ID    Owner ID  DR Home ID Reserver  
 
 . If the system is in a MetroCluster configuration, monitor the status of the node: `metrocluster node show`
 +
-The MetroCluster configuration takes a few minutes after the replacement to return to a normal state, at which time each node will show a configured state, with DR Mirroring enabled and a mode of normal. The metrocluster node show -fields node-systemid command output displays the old system ID until the MetroCluster configuration returns to a normal state.
+The MetroCluster configuration takes a few minutes after the replacement to return to a normal state, at which time each node will show a configured state, with DR Mirroring enabled and a mode of normal. The `metrocluster node show -fields node-systemid` command output displays the old system ID until the MetroCluster configuration returns to a normal state.
 
 . If the node is in a MetroCluster configuration, depending on the MetroCluster state, verify that the DR home ID field shows the original owner of the disk if the original owner is a node on the disaster site.
 +

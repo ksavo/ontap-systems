@@ -36,10 +36,10 @@ image::../media/drw_a250_replace_psu.png[]
 +
 |===
 a|
-image:../media/legend_icon_01.gif[]|
+image:../media/legend_icon_01.png[]|
 Blue power supply locking tab
 a|
-image:../media/legend_icon_02.gif[]
+image:../media/legend_icon_02.png[]
 a|
 Power supply
 |===
