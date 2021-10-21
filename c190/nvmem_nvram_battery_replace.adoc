@@ -98,7 +98,7 @@ The controller begins to boot as soon as it is seated in the chassis.
 
  .. If you have not already done so, reinstall the cable management device.
  .. Bind the cables to the cable management device with the hook and loop strap.
- .. When you see the message `Press Ctrl-C for Boot Menu`, press `*Ctrl-C*` to interrupt the boot process.
+ .. When you see the message ``Press Ctrl-C for Boot Menu``, press `*Ctrl-C*` to interrupt the boot process.
 +
 NOTE: If you miss the prompt and the controller module boots to ONTAP, enter `*halt*`, and then at the LOADER prompt enter `*boot_ontap*`, press `*Ctrl-C*` when prompted, and then boot to Maintenance mode.
 
@@ -162,7 +162,7 @@ The node displays the LOADER prompt.
 a|
 An HA pair
 a|
-Perform a give back: `storage failover giveback -ofnode replacement_node_name`
+Perform a give back: `storage failover giveback -ofnode _replacement_node_name_`
 
 NOTE: If you disabled automatic giveback, re-enable it with the storage failover modify command.
 

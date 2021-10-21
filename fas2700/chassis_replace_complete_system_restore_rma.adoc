@@ -19,14 +19,14 @@ You must verify the HA state of the chassis, and, if necessary, update the state
 The HA state should be the same for all components.
 
 . If the displayed system state for the chassis does not match your system configuration:
- .. Set the HA state for the chassis: `ha-config modify chassis HA-state`
+ .. Set the HA state for the chassis: `ha-config modify chassis _HA-state_`
 +
 The value for HA-state can be one of the following:
 
-  *** ha
-  *** mcc
-  *** mcc-2n
-  *** non-ha
+  *** `ha`
+  *** `mcc`
+  *** `mcc-2n`
+  *** `non-ha`
 
  .. Confirm that the setting has changed: `ha-config show`
 . If you have not already done so, recable the rest of your system.
@@ -40,7 +40,7 @@ A stand-alone configuration
 a|
 
  .. Exit Maintenance mode: `halt`
- .. Go to link:chassis_replace.md#["Completing the replacement process].
+ .. Go to link:chassis_replace.html["Completing the replacement process].
 a|
 An HA pair with a second controller module
 a|

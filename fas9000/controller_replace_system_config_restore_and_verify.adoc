@@ -49,7 +49,7 @@ a|
 |===
 
 . If the displayed system state of the controller module does not match your system configuration, set the `HA` state for the controller module: `ha-config modify controller ha-state`
-. If the displayed system state of the chassis does not match your system configuration, set the `HA` state for the chassis: `ha-config modify chassis ha-state`
+. If the displayed system state of the chassis does not match your system configuration, set the `HA` state for the chassis: `ha-config modify chassis _HA-state_`
 
 == Step 3: Run system-level diagnostics
 

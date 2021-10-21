@@ -209,7 +209,7 @@ The controller module begins to boot as soon as it is fully seated in the chassi
 
  .. Rotate the locking latches upward, tilting them so that they clear the locking pins, and then lower them into the locked position.
  .. If you have not already done so, reinstall the cable management device.
-. Return the node to normal operation by giving back its storage: `storage failover giveback -ofnode impaired_node_name`
+. Return the node to normal operation by giving back its storage: `storage failover giveback -ofnode _impaired_node_name_`
 . If automatic giveback was disabled, reenable it: `storage failover modify -node local -auto-giveback true`
 
 == Step 5: Return the failed part to NetApp

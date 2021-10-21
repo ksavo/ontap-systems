@@ -1,10 +1,12 @@
+---
 permalink: platform-supplemental/upgrade-linkout.html
 sidebar: sidebar
 keywords: hardware upgrade, arl
-summary: Hardware upgrade.
+summary: Upgrade of AFF and FAS controller modules is at the AFF and FAS Upgrade doc site.
 ---
+
 = Upgrade procedures
 :icons: font
 :imagesdir: ../media/
 
-https://docs.netapp.com/us-en/ontap-systems-upgrade[AFF and FAS Upgrade Documentation]
+AFF or FAS controller module upgrade procedures have moved https://docs.netapp.com/us-en/ontap-systems-upgrade/index.html[here].

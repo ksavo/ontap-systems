@@ -168,7 +168,7 @@ After completing diagnostics, you must recable the system, give back the control
 +
 If you removed the media converters (QSFPs or SFPs), remember to reinstall them if you are using fiber optic cables.
 
-. Return the node to normal operation by giving back its storage: `storage failover giveback -ofnode impaired_node_name`
+. Return the node to normal operation by giving back its storage: `storage failover giveback -ofnode _impaired_node_name_`
 . If automatic giveback was disabled, reenable it: `storage failover modify -node local -auto-giveback true`
 
 == Step 7: Switch back aggregates in a two-node MetroCluster configuration

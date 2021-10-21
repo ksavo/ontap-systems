@@ -19,8 +19,6 @@ You must remove the controller module from the chassis when you replace a compon
 
 Make sure that you label the cables so that you know where they came from.
 
-.Steps
-
 . If you are not already grounded, properly ground yourself.
 . Unplug the controller module power supplies from the source.
 . Release the power cable retainers, and then unplug the cables from the power supplies.
@@ -114,14 +112,14 @@ The replacement boot media that you installed is without a boot image so you nee
  .. Download the service image to your work space on your laptop.
  .. Unzip the service image.
 +
-NOTE: If you are extracting the contents using Windows, do not use winzip to extract the netboot image. Use another extraction tool, such as 7-Zip or WinRAR.
+NOTE: If you are extracting the contents using Windows, do not use WinZip to extract the netboot image. Use another extraction tool, such as 7-Zip or WinRAR.
 +
 There are two folders in the unzipped service image file:
 
-  *** boot
-  *** efi
+  *** `boot`
+  *** `efi`
 
- .. Copy the efi folder to the top directory on the USB flash drive.
+ .. Copy the `efi` folder to the top directory on the USB flash drive.
 +
 The USB flash drive should have the efi folder and the same Service Image (BIOS) version of what the impaired controller is running.
 
@@ -159,12 +157,10 @@ The controller module begins to boot as soon as it is fully seated in the chassi
 
 +
 The controller module should be fully inserted and flush with the edges of the chassis.
-. Although the environment variables and bootargs are retained, you should check that all required boot environment variables and bootargs are properly set for your system type and configuration using the `printenv bootarg name` command and correct any errors using the `setenv variable-name <value\>` command.
+. Although the environment variables and bootargs are retained, you should check that all required boot environment variables and bootargs are properly set for your system type and configuration using the `printenv bootarg name` command and correct any errors using the `setenv variable-name <value>` command.
 .. Check the boot environment variables:
  *** `bootarg.init.boot_clustered`
  *** `partner-sysid`
- *** `bootarg.init.flash_optimized` for AFF C190/AFF A220 (All Flash FAS)
- *** `bootarg.init.san_optimized` for AFF A220 and All SAN Array
  *** `bootarg.init.switchless_cluster.enable`
 .. If External Key Manager is enabled, check the bootarg values, listed in the `kenv` ASUP output:
  *** `bootarg.storageencryption.support <value>`

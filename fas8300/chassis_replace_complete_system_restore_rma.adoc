@@ -19,7 +19,7 @@ You must verify the HA state of the chassis, and, if necessary, update the state
 The HA state should be the same for all components.
 
 . If the displayed system state for the chassis does not match your system configuration:
- .. Set the HA state for the chassis: `ha-config modify chassis HA-state`
+ .. Set the HA state for the chassis: `ha-config modify chassis _HA-state_`
 +
 The value for HA-state can be one of the following:
 

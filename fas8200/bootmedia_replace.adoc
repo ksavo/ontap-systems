@@ -105,12 +105,10 @@ If you miss this message, press Ctrl-C, select the option to boot to Maintenance
 +
 The system begins to boot and stops at the LOADER prompt.
 
-. Although the environment variables and bootargs are retained, you should check that all required boot environment variables and bootargs are properly set for your system type and configuration using the `printenv bootarg name` command and correct any errors using the `setenv variable-name <value\>` command.
+. Although the environment variables and bootargs are retained, you should check that all required boot environment variables and bootargs are properly set for your system type and configuration using the `printenv bootarg name` command and correct any errors using the `setenv variable-name <value>` command.
 .. Check the boot environment variables:
  *** `bootarg.init.boot_clustered`
  *** `partner-sysid`
- *** `bootarg.init.flash_optimized` for AFF C190/AFF A220 (All Flash FAS)
- *** `bootarg.init.san_optimized` for AFF A220 and All SAN Array
  *** `bootarg.init.switchless_cluster.enable`
 .. If External Key Manager is enabled, check the bootarg values, listed in the `kenv` ASUP output:
  *** `bootarg.storageencryption.support <value>`
@@ -124,7 +122,7 @@ The system begins to boot and stops at the LOADER prompt.
  *** `bootarg.keymanager.support <value>`
  *** `bootarg.onboard_keymanager <value>`
  .. Save the environment variables you changed with the `savenv` command
- .. Confirm your changes using the `printenv variable-name` command.
+ .. Confirm your changes using the `printenv _variable-name_` command.
 . Set your network connection type at the LOADER prompt:
  ** If you are configuring DHCP: `ifconfig e0a -auto`
 +
@@ -140,10 +138,10 @@ NOTE: The target port you configure is the target port you use to communicate wi
 If you use this optional parameter, you do not need a fully qualified domain name in the netboot server URL. You need only the server's host name.
 
 +
-NOTE: Other parameters might be necessary for your interface. You can enter help ifconfig at the firmware prompt for details.
+NOTE: Other parameters might be necessary for your interface. You can enter `help ifconfig` at the firmware prompt for details.
 . If the controller is in a stretch or fabric-attached MetroCluster, you must restore the FC adapter configuration:
  .. Boot to Maintenance mode: `boot_ontap maint`
- .. Set the MetroCluster ports as initiators: `ucadmin modify -m fc -t iniitator adapter_name`
+ .. Set the MetroCluster ports as initiators: `ucadmin modify -m fc -t _initiator adapter_name_`
  .. Halt to return to Maintenance mode: `halt`
 
 +

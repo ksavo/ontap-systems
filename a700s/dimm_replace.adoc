@@ -43,7 +43,7 @@ Press Ctrl-C, and then respond `y`.
 a|
 System prompt or password prompt (enter system password)
 a|
-Take over or halt the impaired node: `storage failover takeover -ofnode impaired_node_name`
+Take over or halt the impaired node: `storage failover takeover -ofnode _impaired_node_name_`
 
 When the impaired node shows `Waiting for giveback...`, press Ctrl-C, and then respond `y`.
 |===
@@ -186,7 +186,7 @@ NOTE: Do not use excessive force when sliding the controller module into the cha
 The controller module begins to boot as soon as it is fully seated in the chassis. Be prepared to interrupt the boot process.
 
  .. Rotate the locking latches upward, tilting them so that they clear the locking pins, and then lower them into the locked position.
- .. Interrupt the boot process by pressing `Ctrl-C` when you see Press Ctrl-C for Boot Menu.
+ .. Interrupt the boot process by pressing `Ctrl-C` when you see `Press Ctrl-C for Boot Menu`.
  .. Select the option to boot to Maintenance mode from the displayed menu.
 
 == Run diagnostics

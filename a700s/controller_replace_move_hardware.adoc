@@ -165,7 +165,7 @@ NOTE: Make sure that the card is completely and squarely seated into the riser s
 == Step 4: Move the boot media
 
 [.lead]
-There are two boot media devices in the AFF A700s, a primary and a secondary or backup boot media. You must move them from the impaired node to the replacement node and install them into their respective slots in the replacement node.
+There are two boot media devices in the AFF A700s, a primary and a secondary or backup boot media. You must move them from the impaired node to the _replacement_ node and install them into their respective slots in the _replacement_ node.
 
 The boot media are located under Riser 2, the middle PCIe riser module. This PCIe module must be removed to gain access to the boot media.
 
@@ -406,7 +406,7 @@ NOTE: Do not use excessive force when sliding the controller module into the cha
 The controller module begins to boot as soon as it is fully seated in the chassis. Be prepared to interrupt the boot process.
 
  .. Rotate the locking latches upward, tilting them so that they clear the locking pins, and then lower them into the locked position.
- .. Interrupt the boot process by pressing `Ctrl-C` when you see Press Ctrl-C for Boot Menu.
+ .. Interrupt the boot process by pressing `Ctrl-C` when you see `Press Ctrl-C for Boot Menu`.
  .. Select the option to boot to Maintenance mode from the displayed menu.
 . If your system is configured to support 10 GbE cluster interconnect and data connections on 40 GbE NICs or onboard ports, convert these ports to 10 GbE connections by using the nicadmin convert command from Maintenance mode.
 +

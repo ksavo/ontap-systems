@@ -3,14 +3,15 @@ title: SAS shelves with IOM12 modules
 url: /sas3/index.html
 entries:
   - title: Install and cable
+    #pdf-filename: Shelves with IOM12 Modules Install and Cable
     entries:
-    - title: Install and cable shelves for a new system installation
+    - title: Install and cable shelves for new system
       url: /sas3/install-new-system.html
-    - title: Hot-add a shelf
+    - title: Hot-add shelf
       url: /sas3/install-hot-add-shelf.html
     - title: Hot-add IOM12 shelves to a stack of IOM6 shelves
       url: /sas3/iom12-hot-add-mix.html
-    - title: Change a shelf ID
+    - title: Change shelf ID
       url: /sas3/install-change-shelf-id.html
     - title: SAS cabling rules, worksheets, and examples
       entries:
@@ -28,21 +29,22 @@ entries:
         url: /sas3/install-cabling-worksheet-template-multipath.html
       - title: Cabling worksheet template for quad-pathed connectivity
         url: /sas3/install-cabling-worksheet-template-quadpath.html
-      - title: How to read a worksheet to cable for multipathed connectivity
+      - title: How to read worksheet to cable for multipathed connectivity
         url: /sas3/install-cabling-worksheets-how-to-read-multipath.html
-      - title: How to read a worksheet to cable for quad-pathed connectivity
+      - title: How to read worksheet to cable for quad-pathed connectivity
         url: /sas3/install-cabling-worksheets-how-to-read-quadpath.html
   - title: Maintain
+    #pfd-filename: Shelves with IOM12 Modules Maintain
     entries:
-    - title: Disk drive in a DS224C or DS212C shelf
+    - title: Disk drive in DS224C or DS212C shelf
       url: /sas3/service-hot-swap-drive-ds224c-ds212c.html
-    - title: Disk drive in a DS460C shelf
+    - title: Disk drive in DS460C shelf
       url: /sas3/service-hot-swap-drive-ds460c.html
-    - title: Drive drawer in a DS460C shelf
+    - title: Drive drawer in DS460C shelf
       url: /sas3/service-replace-drawer-ds460c.html
-    - title: Fan module in a DS460C shelf
+    - title: Fan module in DS460C shelf
       url: /sas3/service-replace-fan-ds460c.html
-    - title: Hot-remove a shelf
+    - title: Hot-remove shelf
       url: /sas3/hot-remove-shelf.html
     - title: IOM12 module
       url: /sas3/service-hot-swap-iom.html
