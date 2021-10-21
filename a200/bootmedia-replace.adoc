@@ -133,4 +133,4 @@ NOTE: The target port you configure is the target port you use to communicate wi
 If you use this optional parameter, you do not need a fully qualified domain name in the netboot server URL. You need only the server's host name.
 
 +
-NOTE: Other parameters might be necessary for your interface. You can enter help ifconfig at the firmware prompt for details.
+NOTE: Other parameters might be necessary for your interface. You can enter `help ifconfig` at the firmware prompt for details.

@@ -46,20 +46,14 @@ entries:
       entries:
         - title: Overview
           url: /fas2700/controller-replace-overview.html
-        - title: Shut down impaired controller
-          url: /fas2700/controller-replace-impaired-controller-shutdown-parent.html
-        - title: Shut down node
-          url: /fas2700/controller-replace-impaired-controller-shutdown.html
-        - title: Shut down node in two-node MetroCluster configuration
-          url: /fas2700/controller-replace-2n-mcc-shut-down.html
-        - title: Replace controller module
+        - title: Shut down the node
+          url: /fas2700/controller-replace-shutdown.html
+        - title: Replace the controller hardware
           url: /fas2700/controller-replace.html
         - title: Restore system configuration
           url: /fas2700/controller-replace-system-config-restore-and-verify.html
         - title: Complete system restoration
-          url: /fas2700/controller-replace-complete-system-restoration.html
-        - title: Complete replacement
-          url: /fas2700/controller-replace-complete-rma.html
+          url: /fas2700/controller-replace-restore-system-rma.html
     - title: DIMM
       url: /fas2700/dimm-replace.html
     - title: NVMEM battery
