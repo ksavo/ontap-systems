@@ -134,4 +134,4 @@ NOTE: Other parameters might be necessary for your interface. You can enter `hel
  *** `bootarg.keymanager.support <value>`
  *** `bootarg.onboard_keymanager <value>`
  .. Save the environment variables you changed with the `savenv` command
- .. Confirm your changes using the `printenv variable-name` command.
+ .. Confirm your changes using the `printenv _variable-name_` command.

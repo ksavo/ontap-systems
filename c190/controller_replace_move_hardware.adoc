@@ -147,7 +147,7 @@ The controller begins to boot as soon as it is seated in the chassis.
 +
 You must look for an Automatic firmware update console message. If the update message appears, do not press `Ctrl-C` to interrupt the boot process until after you see a message confirming that the update is complete.
 +
-Only press `Ctrl-C` when you see the message Press Ctrl-C for Boot Menu.
+Only press `Ctrl-C` when you see the message `Press Ctrl-C for Boot Menu`.
 +
 NOTE: If the firmware update is aborted, the boot process exits to the LOADER prompt. You must run the update_flash command and then exit LOADER and boot to Maintenance mode by pressing `Ctrl-C` when you see Starting AUTOBOOT press Ctrl-C to abort.
 +

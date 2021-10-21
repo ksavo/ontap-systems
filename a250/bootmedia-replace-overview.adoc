@@ -24,5 +24,5 @@ You also must copy the `image_xxx.tgz` file to the USB flash drive for later use
 ** For disruptive replacement, you do not need a network connection to restore the `var` file system, but the process requires two reboots.
 * You must replace the failed component with a replacement FRU component you received from your provider.
 * It is important that you apply the commands in these steps on the correct node:
- ** The _impaired node_ is the node on which you are performing maintenance.
- ** The _healhy node_ is the HA partner of the impaired node.
+ ** The _impaired_ node is the node on which you are performing maintenance.
+ ** The _healthy_ node is the HA partner of the impaired node.

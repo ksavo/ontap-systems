@@ -2,7 +2,8 @@ section: a250
 title: AFF A250 systems
 url: /a250/index.html
 entries:
-  - title: Install and setup - AFF A250
+  - title: Install and setup
+    #pdf-filename: AFF A250 Install and Setup
     entries:
     - title: Choose install and setup experience
       url: /a250/install-setup.html
@@ -12,10 +13,12 @@ entries:
       url: /a250/install-videos.html
     - title: Detailed steps
       url: /a250/install-detailed-guide.html
-  - title: Maintain - AFF A250
+  - title: Maintain
+    #pdf-filename: AFF A250 Maintain
     entries:
     # START boot media replacement
-    - title: Boot media - AFF A250
+    - title: Boot media
+      #pdf-filename: AFF A250 Boot Media
       entries:
       - title: Overview
         url: /a250/bootmedia-replace-overview.html
@@ -32,7 +35,8 @@ entries:
       - title: Return the failed part to NetApp
         url: /a250/bootmedia-complete-rma.html
       # END boot media replacement
-    - title: Chassis - AFF A250
+    - title: Chassis
+      #pdf-filename: AFF A250 Chassis
       entries:
       - title: Overview
         url: /a250/chassis-replace-overview.html
@@ -42,7 +46,8 @@ entries:
         url: /a250/chassis-replace-move-hardware.html
       - title: Complete the restoration and replacement process
         url: /a250/chassis-replace-complete-system-restore-rma.html
-    - title: Controller - AFF A250
+    - title: Controller
+      #pdf-filename: AFF A250 Controller Module
       entries:
       - title: Overview
         url: /a250/controller-replace-overview.html
@@ -56,15 +61,15 @@ entries:
         url: /a250/controller-replace-recable-reassign-disks.html
       - title: Complete system restoration
         url: /a250/controller-replace-restore-system-rma.html
-    - title: DIMM - AFF A250
+    - title: DIMM
       url: /a250/dimm-replace.html
-    - title: Fan - AFF A250
+    - title: Fan
       url: /a250/fan-replace.html
-    - title: Mezzanine card - AFF A250
+    - title: Mezzanine card
       url: /a250/mezzanine-replace.html
-    - title: NVMEM battery - AFF A250
+    - title: NVMEM battery
       url: /a250/nvmem-nvram-battery-replace.html
-    - title: Power supply - AFF A250
+    - title: Power supply
       url: /a250/power-supply-replace.html
-    - title: Real-time clock battery - AFF A250
+    - title: Real-time clock battery
       url: /a250/rtc-battery-replace.html

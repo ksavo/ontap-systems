@@ -3,6 +3,7 @@ title: AFF A800 systems
 url: /a800/index.html
 entries:
  - title: Install and setup
+   #pdf-filename: AFF A800 Install and Setup
    entries:
     - title: Choose install and setup experience
       url: /a800/install-setup.html
@@ -13,9 +14,11 @@ entries:
     - title: Detailed steps
       url: /a800/install-detailed-guide.html
  - title: Maintain
+   #pdf-filename: AFF A800 Maintain
    entries:
       # START boot media
    - title: Boot media
+     #pdf-filename: AFF A800 Boot Media
      entries:
         - title: Overview
           url: /a800/bootmedia-replace-overview.html
@@ -33,6 +36,7 @@ entries:
           url: /a800/bootmedia-complete-rma.html
           # END boot media
    - title: Chassis
+     #pdf-filename: AFF A800 Chassis
      entries:
         - title: Overview
           url: /a800/chassis-replace-overview.html
@@ -43,6 +47,7 @@ entries:
         - title: Complete the restoration and replacement process
           url: /a800/chassis-replace-complete-system-restore-rma.html
    - title: Controller
+     #pdf-filename: AFF A800 Controller Module
      entries:
         - title: Overview
           url: /a800/controller-replace-overview.html

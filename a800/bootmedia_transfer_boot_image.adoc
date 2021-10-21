@@ -88,4 +88,4 @@ If you miss this message, press Ctrl-C, select the option to boot to Maintenance
  *** `bootarg.keymanager.support <value>`
  *** `bootarg.onboard_keymanager <value>`
  .. Save the environment variables you changed with the `savenv` command
- .. Confirm your changes using the `printenv variable-name` command.
+ .. Confirm your changes using the `printenv _variable-name_` command.

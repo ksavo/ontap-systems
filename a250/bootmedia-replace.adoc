@@ -177,4 +177,4 @@ The controller module should be fully inserted and flush with the edges of the c
   *** `bootarg.keymanager.support _value_`
   *** `bootarg.onboard_keymanager _value_`
  .. Save the environment variables you changed with the `savenv` command
- .. Confirm your changes using the `printenv variable-name` command.
+ .. Confirm your changes using the `printenv _variable-name_` command.

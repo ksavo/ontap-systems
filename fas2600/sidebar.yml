@@ -3,6 +3,7 @@ title: FAS2600 systems
 url: /fas2600/index.html
 entries:
   - title: Install and setup
+    #pdf-filename: FAS2600 Install and Setup
     entries:
     - title: Cluster configuration worksheet
       url: /fas2600/install-worksheet-linkout.html
@@ -11,8 +12,10 @@ entries:
     - title: Video steps
       url: /fas2600/install-video-linkout.html
   - title: Maintain
+    #pdf-filename: FAS2600 Maintain
     entries:
     - title: Boot media
+      #pdf-filename: FAS2600 Boot Media
       entries:
       - title: Overview
         url: /fas2600/bootmedia-replace-overview.html
@@ -31,6 +34,7 @@ entries:
     - title: Caching module
       url: /fas2600/caching-module-replace.html
     - title: Chassis
+      #pdf-filename: FAS2600 Chassis
       entries:
       - title: Overview
         url: /fas2600/chassis-replace-overview.html
@@ -41,6 +45,7 @@ entries:
       - title: Restoring and verifying configuration
         url: /fas2600/chassis-replace-complete-system-restore-rma.html
     - title: Controller module
+      #pdf-filename: FAS2600 Controller Module
       entries:
       - title: Overview
         url: /fas2600/controller-replace-overview.html

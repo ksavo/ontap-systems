@@ -146,7 +146,7 @@ If you miss this message, press Ctrl-C, select the option to boot to Maintenance
  *** `bootarg.keymanager.support <value>`
  *** `bootarg.onboard_keymanager <value>`
  .. Save the environment variables you changed with the `savenv` command
- .. Confirm your changes using the `printenv variable-name` command.
+ .. Confirm your changes using the `printenv _variable-name_` command.
 . From the LOADER prompt, boot the recovery image from the USB flash drive: `boot_recovery`
 +
 The image is downloaded from the USB flash drive.
@@ -156,7 +156,7 @@ The image is downloaded from the USB flash drive.
  .. Record the IP address of the impaired node that is displayed on the screen.
  .. Press `y` when prompted to restore the backup configuration.
  .. Press `y` when prompted to overwrite /etc/ssh/ssh_host_dsa_key.
-. From the partner node in advanced privilege level, start the configuration synchronization using the IP address recorded in the previous step: `system node restore-backup -node local -target-address impaired_node_IP_address`
+. From the partner node in advanced privilege level, start the configuration synchronization using the IP address recorded in the previous step: `system node restore-backup -node local -target-address _impaired_node_IP_address_`
 . If the restore is successful, press `y` on the impaired node when prompted to use the restored copy?.
 . Press `y` when you see confirm backup procedure was successful, and then press `y` when prompted to reboot the node.
 . Verify that the environmental variables are set as expected.
@@ -168,7 +168,7 @@ From the ONTAP prompt, you can issue the command system node halt -skip-lif-migr
  .. If an environment variable is not set as expected, modify it with the `setenv __environment-variable-name__ __changed-value__` command.
  .. Save your changes using the `savenev` command.
  .. Reboot the node.
-. With the rebooted impaired node displaying the Waiting for Giveback... message, perform a giveback from the healthy node:
+. With the rebooted impaired node displaying the `Waiting for giveback...` message, perform a giveback from the healthy node:
 +
 [options="header" cols="1,2"]
 |===
@@ -176,7 +176,7 @@ From the ONTAP prompt, you can issue the command system node halt -skip-lif-migr
 a|
 An HA pair
 a|
-After the impaired node is displaying the Waiting for Giveback... message, perform a giveback from the healthy node:
+After the impaired node is displaying the `Waiting for giveback...` message, perform a giveback from the healthy node:
 
  .. From the healthy node: `storage failover giveback -ofnode partner_node_name`
 +
