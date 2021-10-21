@@ -207,10 +207,10 @@ DO NOT plug in the power cords at this point.
 
 . To perform optional cabling, see:
 
- ** <<Option 1: Connecting to a Fibre Channel host>>
- ** <<Option 2: Connecting to a 10GbE host>>
- ** <<Option 3: Connecting to a single direct-attached NS224 drive shelf>>
- ** <<Option 4: Connecting to two direct-attached NS224 drive shelves>>
+ ** <<Option 1: Connect to a Fibre Channel host>>
+ ** <<Option 2: Connect to a 10GbE host>>
+ ** <<Option 3: Connect to a single direct-attached NS224 drive shelf>>
+ ** <<Option 4: Connect to two direct-attached NS224 drive shelves>>
 
 . To complete setting up your system, see <<Step 4: Completing system setup and configuration>>.
 
@@ -262,13 +262,12 @@ DO NOT plug in the power cords at this point.
 
 . To perform optional cabling, see:
 
-** <<Option 1: Connecting to a Fibre Channel host>>
-** <<Option 2: Connecting to a 10GbE host>>
-** <<Option 3: Connecting to a single direct-attached NS224 drive shelf>>
-** <<Option 4: Connecting to two direct-attached NS224 drive shelves>>
+ ** <<Option 1: Connect to a Fibre Channel host>>
+ ** <<Option 2: Connect to a 10GbE host>>
+ ** <<Option 3: Connect to a single direct-attached NS224 drive shelf>>
+ ** <<Option 4: Connect to two direct-attached NS224 drive shelves>>
 
-. To complete setting up your system, see <<Step 4: Completing system setup and configuration>>
-
+. To complete setting up your system, see <<Step 4: Completing system setup and configuration>>.
 
 === Optional cabling: Cable configuration-dependent options
 
@@ -301,13 +300,14 @@ a|
 a|
 To perform other optional cabling, choose from:
 
-* <<Option 3: Connecting to a single direct-attached NS224 drive shelf>>
-* <<Option 4: Connecting to two direct-attached NS224 drive shelves>>
+* <<Option 3: Connect to a single direct-attached NS224 drive shelf>>
+* <<Option 4: Connect to two direct-attached NS224 drive shelves>>
 
 a|
 3
 a|
-To complete setting up your system, see <<Step 4: Completing system setup and configuration>>
+To complete setting up your system, see <<Step 4: Completing system setup and configuration>>.
+
 |===
 
 ==== Option 2: Cable to a 10GbE host network
@@ -336,13 +336,14 @@ a|
 a|
 To perform other optional cabling, choose from:
 
-* <<Option 3: Connecting to a single direct-attached NS224 drive shelf>>
-* <<Option 4: Connecting to two direct-attached NS224 drive shelves>>
+* <<Option 3: Connect to a single direct-attached NS224 drive shelf>>
+* <<Option 4: Connect to two direct-attached NS224 drive shelves>>
 
 a|
 3
 a|
-To complete setting up your system, see <<Step 4: Completing system setup and configuration>>
+To complete setting up your system, see <<Step 4: Completing system setup and configuration>>.
+
 |===
 
 ==== Option 3: Cable the controllers to a single drive shelf

@@ -261,12 +261,13 @@ a|
 To perform other optional cabling, choose from:
 
 * <<Option 2: Cable to a 25GbE data or host network>>
-* <<Option 3: Cabling the controllers to a single drive shelf>>
+* <<Option 3: Cable the controllers to a single drive shelf>>
 
 a|
 3
 a|
 To complete setting up your system, see <<Step 4: Completing system setup and configuration>>.
+
 |===
 
 ==== Option 2: Cable to a 25GbE data or host network
@@ -296,12 +297,13 @@ a|
 To perform other optional cabling, choose from:
 
 * <<Option 1: Cable to a Fibre Channel host network>>
-* <<Option 3: Cabling the controllers to a single drive shelf>>
+* <<Option 3: Cable the controllers to a single drive shelf>>
 
 a|
 3
 a|
-To complete setting up your system, <<Step 4: Completing system setup and configuration>>.
+To complete setting up your system, see <<Step 4: Completing system setup and configuration>>.
+
 |===
 
 ==== Option 3: Cable the controllers to a single drive shelf
