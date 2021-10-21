@@ -125,11 +125,9 @@ Resulted in the same test failures
 a|
 Technical support might recommend modifying the default settings on some of the tests to help identify the problem.
 
- .. Modify the selection state of a specific device or type of device on your storage system by entering the following command:
-+
- `sldiag device modify [-dev _devtype_|mb|slot_slotnum_] [-name _device_] [-selection _enable|disable|default|only_]`
-+
-`-selection _enable|disable|default|only` allows you to enable, disable, accept the default selection of a specified device type or named device, or only enable the specified device or named device by disabling all others first.
+ .. Modify the selection state of a specific device or type of device on your storage system by entering the following command: `sldiag device modify [-dev _devtype_\|mb\|slot_slotnum_] [-name device] [-selection _enable\|disable\|default\|only_]`
+ +
+-`selection _enable\|disable\|default\|only_` allows you to enable, disable, accept the default selection of a specified device type or named device, or only enable the specified device or named device by disabling all others first.
 
  .. Verify that the tests were modified by entering the following command: `sldiag option show`
  .. Repeat Steps 3 through 5 of _Running device failure diagnostics_.
