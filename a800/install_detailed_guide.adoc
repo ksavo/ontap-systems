@@ -206,11 +206,13 @@ DO NOT plug in the power cords at this point.
 |===
 
 . To perform optional cabling, see:
+
  ** <<Option 1: Connecting to a Fibre Channel host>>
  ** <<Option 2: Connecting to a 10GbE host>>
  ** <<Option 3: Connecting to a single direct-attached NS224 drive shelf>>
  ** <<Option 4: Connecting to two direct-attached NS224 drive shelves>>
-. To complete setting up your system, see <<Step 4: Completing system setup and configuration>>
+
+. To complete setting up your system, see <<Step 4: Completing system setup and configuration>>.
 
 ==== Option 2: Cable a switched cluster
 
@@ -259,10 +261,12 @@ DO NOT plug in the power cords at this point.
 |===
 
 . To perform optional cabling, see:
+
 ** <<Option 1: Connecting to a Fibre Channel host>>
 ** <<Option 2: Connecting to a 10GbE host>>
 ** <<Option 3: Connecting to a single direct-attached NS224 drive shelf>>
 ** <<Option 4: Connecting to two direct-attached NS224 drive shelves>>
+
 . To complete setting up your system, see <<Step 4: Completing system setup and configuration>>
 
 
