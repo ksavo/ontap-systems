@@ -189,7 +189,7 @@ a|
 DO NOT plug in the power cords at this point.
 |===
 
-. To complete setting up your system, see link:install-detailed-guide.html#step-4-complete-system-setup-and-configuration[Complete system setup and configuration]
+. To complete setting up your system, see <<Complete system setup and configuration>>
 
 === Option 2: Cable switched cluster, unified configuration
 
@@ -237,7 +237,7 @@ a|
 DO NOT plug in the power cords at this point.
 |===
 
-. To complete setting up your system, see link:install-detailed-guide.html#step-4-complete-system-setup-and-configuration[Complete system setup and configuration]
+. To complete setting up your system, see <<Complete system setup and configuration>>
 
 === Option 3: Cable a two node switchless cluster, Ethernet configuration
 
@@ -285,7 +285,7 @@ a|
 DO NOT plug in the power cords at this point.
 |===
 
-. To complete setting up your system, see link:install-detailed-guide.html#step-4complete-system-setup-and-configuration[Complete system setup and configuration]
+. To complete setting up your system, see <<Complete system setup and configuration>>
 
 === Option 4: Cable a switched cluster, Ethernet configuration
 
@@ -331,7 +331,7 @@ a|
 DO NOT plug in the power cords at this point.
 |===
 
-. To complete setting up your system, see link:install-detailed-guide.html#step-4-complete-system-setup-and-configuration[Step 4: Complete system setup and configuration]
+. To complete setting up your system, see <<Step 4: Complete system setup and configuration>>
 
 == Step 4: Complete system setup and configuration
 

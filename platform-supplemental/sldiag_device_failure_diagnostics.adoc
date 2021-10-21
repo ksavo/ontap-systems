@@ -139,8 +139,8 @@ Were completed without any failures
 a|
 There are no hardware problems and your storage system returns to the prompt.
 
- .. Clear the status logs by entering the following command: `sldiag device clearstatus [-dev _devtype_|mb|slot_slotnum_]`
- .. Verify that the log is cleared by entering the following command: `sldiag device status [-dev _devtype_|mb|slot_slotnum_]`
+ .. Clear the status logs by entering the following command: `sldiag device clearstatus [-dev _devtype_\|mb\|slot_slotnum_]`
+ .. Verify that the log is cleared by entering the following command: `sldiag device status [-dev _devtype_\|mb\|slot_slotnum_]`
 +
 The following default response is displayed:
 +

@@ -206,11 +206,11 @@ DO NOT plug in the power cords at this point.
 |===
 
 . To perform optional cabling, see:
- ** link:install-detailed-guide.html#option-1-connecting-to-a-fibre-channel-host[Option 1: Connecting to a Fibre Channel host]
- ** link:install-detailed-guide.html#option-2-connecting-to-a-10gbe-host[Option 2: Connecting to a 10GbE host]
- ** link:install-detailed-guide.html#option-3-connecting-to-a-single-direct-attached-ns224-drive-shelf[Option 3: Connecting to a single direct-attached NS224 drive shelf]
- ** link:install-detailed-guide.html#option-4-connecting-to-two-direct-attached-ns224-drive-shelves[Option 4: Connecting to two direct-attached NS224 drive shelves]
-. To complete setting up your system, see link:install-detailed-guide.html#step-4-complete-system-setup-and-configuration[Step 4: Completing system setup and configuration]
+ ** <<Option 1: Connecting to a Fibre Channel host>>
+ ** <<Option 2: Connecting to a 10GbE host>>
+ ** <<Option 3: Connecting to a single direct-attached NS224 drive shelf>>
+ ** <<Option 4: Connecting to two direct-attached NS224 drive shelves>>
+. To complete setting up your system, see <<Step 4: Completing system setup and configuration>>
 
 ==== Option 2: Cable a switched cluster
 
@@ -259,11 +259,11 @@ DO NOT plug in the power cords at this point.
 |===
 
 . To perform optional cabling, see:
-** link:install-detailed-guide.html#option-1-connecting-to-a-fibre-channel-host[Option 1: Connecting to a Fibre Channel host]
-** link:install-detailed-guide.html#option-2-connecting-to-a-10gbe-host[Option 2: Connecting to a 10GbE host]
-** link:install-detailed-guide.html#option-3-connecting-to-a-single-direct-attached-ns224-drive-shelf[Option 3: Connecting to a single direct-attached NS224 drive shelf]
-** link:install-detailed-guide.html#option-4-connecting-to-two-direct-attached-ns224-drive-shelves[Option 4: Connecting to two direct-attached NS224 drive shelves]
-. To complete setting up your system, see link:install-detailed-guide.html#step-4-complete-system-setup-and-configuration[Step 4: Completing system setup and configuration]
+** <<Option 1: Connecting to a Fibre Channel host>>
+** <<Option 2: Connecting to a 10GbE host>>
+** <<Option 3: Connecting to a single direct-attached NS224 drive shelf>>
+** <<Option 4: Connecting to two direct-attached NS224 drive shelves>>
+. To complete setting up your system, see <<Step 4: Completing system setup and configuration>>
 
 
 === Optional cabling: Cable configuration-dependent options
@@ -297,13 +297,13 @@ a|
 a|
 To perform other optional cabling, choose from:
 
-* link:install-detailed-guide.html#option-3-connecting-to-a-single-direct-attached-ns224-drive-shelf[Option 3: Connecting to a single direct-attached NS224 drive shelf]
-* link:install-detailed-guide.html#option-4-connecting-to-two-direct-attached-ns224-drive-shelves[Option 4: Connecting to two direct-attached NS224 drive shelves]
+* <<Option 3: Connecting to a single direct-attached NS224 drive shelf>>
+* <<Option 4: Connecting to two direct-attached NS224 drive shelves>>
 
 a|
 3
 a|
-To complete setting up your system, see link:install-detailed-guide.html#step-4-complete-system-setup-and-configuration[Step 4: Completing system setup and configuration]
+To complete setting up your system, see <<Step 4: Completing system setup and configuration>>
 |===
 
 ==== Option 2: Cable to a 10GbE host network
@@ -332,13 +332,13 @@ a|
 a|
 To perform other optional cabling, choose from:
 
-* link:install-detailed-guide.html#option-3-connecting-to-a-single-direct-attached-ns224-drive-shelf[Option 3: Connecting to a single direct-attached NS224 drive shelf]
-* link:install-detailed-guide.html#option-4-connecting-to-two-direct-attached-ns224-drive-shelves[Option 4: Connecting to two direct-attached NS224 drive shelves]
+* <<Option 3: Connecting to a single direct-attached NS224 drive shelf>>
+* <<Option 4: Connecting to two direct-attached NS224 drive shelves>>
 
 a|
 3
 a|
-To complete setting up your system, see link:install-detailed-guide.html#step-4-complete-system-setup-and-configuration[Step 4: Completing system setup and configuration]
+To complete setting up your system, see <<Step 4: Completing system setup and configuration>>
 |===
 
 ==== Option 3: Cable the controllers to a single drive shelf
@@ -369,7 +369,7 @@ a|
 Cable controller B to the shelf:    image:../media/drw_affa800_1shelf_cabling_b.png[]
 |===
 
-. To complete setting up your system, see link:install_detailed_guide.md#[Completing system setup and configuration].
+. To complete setting up your system, see <<Completing system setup and configuration>>.
 
 ==== Option 4: Cable the controllers to two drive shelves
 
@@ -399,7 +399,7 @@ a|
 Cable controller B to the shelves:    image:../media/drw_affa800_2shelf_cabling_b.png[]
 |===
 
-. To complete setting up your system, see link:install_detailed_guide.md#[Completing system setup and configuration].
+. To complete setting up your system, see <<Completing system setup and configuration>>.
 
 == Step 4: Complete system setup and configuration
 
