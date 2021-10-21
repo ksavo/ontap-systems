@@ -17,26 +17,26 @@ Running diagnostics can help you determine why access to a specific device becom
 NOTE: You must run this command from the LOADER prompt for system-level diagnostics to function properly. The boot_diags command starts special drivers designed specifically for system-level diagnostics.
 
 . Run diagnostics on the device causing problems by entering the following command: `sldiag device run [-dev devtype|mb|slotslotnum] [-name device]`
- ** -dev devtype specifies the type of device to be tested.
-  *** ata is an Advanced Technology Attachment device.
-  *** bootmedia is the system booting device.
-  *** cna is a Converged Network Adapter not connected to a network or storage device.
-  *** env is motherboard environmentals.
-  *** fcache is the Flash Cache adapter, also known as the Performance Acceleration Module 2.
-  *** fcal is a Fibre Channel-Arbitrated Loop device not connected to a storage device or Fibre Channel network.
-  *** fcvi is the Fiber Channel Virtual Interface not connected to a Fibre Channel network.
-  *** interconnect or nvram-ib is the high-availability interface.
-  *** mem is system memory.
-  *** nic is a Network Interface Card not connected to a network.
-  *** nvram is nonvolatile RAM.
-  *** nvmem is a hybrid of NVRAM and system memory.
-  *** sas is a Serial Attached SCSI device not connected to a disk shelf.
-  *** serviceproc is the Service Processor.
-  *** storage is an ATA, FC-AL, or SAS interface that has an attached disk shelf.
-  *** toe is a TCP Offload Engine, a type of NIC.
- ** mb specifies that all the motherboard devices are to be tested.
- ** slot slotnum specifies that a device in a specific slot number is to be tested.
- ** -name device specifies a given device class and type.
+ ** -dev _devtype_ specifies the type of device to be tested.
+  *** `ata` is an Advanced Technology Attachment device.
+  *** `bootmedia` is the system booting device..
+  *** `cna` is a Converged Network Adapter not connected to a network or storage device.
+  *** `env` is motherboard environmentals.
+  *** `fcache` is the Flash Cache adapter, also known as the Performance Acceleration Module 2.
+  *** `fcal` is a Fibre Channel-Arbitrated Loop device not connected to a storage device or Fibre Channel network.
+  *** `fcvi` is the Fiber Channel Virtual Interface not connected to a Fibre Channel network.
+  *** `interconnect` or `nvram-ib` is the high-availability interface.
+  *** `mem` is system memory.
+  *** `nic` is a Network Interface Card not connected to a network.
+  *** `nvram` is nonvolatile RAM.
+  *** `nvmem` is a hybrid of NVRAM and system memory.
+  *** `sas` is a Serial Attached SCSI device not connected to a disk shelf.
+  *** `serviceproc` is the Service Processor.
+  *** `storage` is an ATA, FC-AL, or SAS interface that has an attached disk shelf.
+  *** `toe` is a TCP Offload Engine, a type of NIC.
+ ** `mb` specifies that all the motherboard devices are to be tested.
+ ** `slot`_slotnum_ specifies that a device in a specific slot number is to be tested.
+ ** `-name _device_` specifies a given device class and type.
 . View the status of the test by entering the following command: `sldiag device status`
 +
 Your storage system provides the following output while the tests are still running:
@@ -51,7 +51,7 @@ After all the tests are complete, the following response appears by default:
 *> <SLDIAG:_ALL_TESTS_COMPLETED>
 ----
 
-. Identify any hardware problems by entering the following command: `sldiag device status [-dev devtype|mb|slotslotnum] [-name device] -long -state failed`
+. Identify any hardware problems by entering the following command: `sldiag device status [-dev devtype|mb|slotslotnum] [-name _device_] -long -state failed`
 +
 The following example shows how the full status of failures resulting from testing the FC-AL adapter are displayed:
 +
@@ -125,13 +125,13 @@ Resulted in the same test failures
 a|
 Technical support might recommend modifying the default settings on some of the tests to help identify the problem.
 
- .. Modify the selection state of a specific device or type of device on your storage system by entering the following command: `sldiag device modify [-dev devtype|mb|slotslotnum] [-name device] [-selection enable\|disable\|default\|only]`
-+
--selectionenable|disable|default|only allows you to enable, disable, accept the default selection of a specified device type or named device, or only enable the specified device or named device by disabling all others first.
+ .. Modify the selection state of a specific device or type of device on your storage system by entering the following command: `sldiag device modify [-dev _devtype_\|mb\|slot_slotnum_] [-name device] [-selection _enable\|disable\|default\|only_]`
+ +
+-`selection _enable\|disable\|default\|only_` allows you to enable, disable, accept the default selection of a specified device type or named device, or only enable the specified device or named device by disabling all others first.
 
  .. Verify that the tests were modified by entering the following command: `sldiag option show`
  .. Repeat Steps 3 through 5 of _Running device failure diagnostics_.
- .. After you identify and resolve the problem, reset the tests to their default states by repeating substeps 1 and 2.
+ .. After you identify and resolve the problem, reset the tests to their `default` states by repeating substeps 1 and 2.
  .. Repeat Steps 1 through 5 of _Running device failure diagnostics_.
 
 a|
@@ -139,8 +139,8 @@ Were completed without any failures
 a|
 There are no hardware problems and your storage system returns to the prompt.
 
- .. Clear the status logs by entering the following command: `sldiag device clearstatus [-dev devtype|mb|slotslotnum]`
- .. Verify that the log is cleared by entering the following command: `sldiag device status [-dev devtype|mb|slotslotnum]`
+ .. Clear the status logs by entering the following command: `sldiag device clearstatus [-dev _devtype_\|mb\|slot_slotnum_]`
+ .. Verify that the log is cleared by entering the following command: `sldiag device status [-dev _devtype_\|mb\|slot_slotnum_]`
 +
 The following default response is displayed:
 +

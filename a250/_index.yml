@@ -32,7 +32,7 @@ indexpage:
         - title: NV battery
           url: /nvmem-nvram-battery-replace.html
         - title: Power supply
-          url: /power-supply-swapout.html
+          url: /power-supply-replace.html
         - title: RTC battery
           url: /rtc-battery-replace.html
     - title: Learn

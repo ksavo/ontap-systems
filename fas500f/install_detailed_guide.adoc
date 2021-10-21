@@ -134,7 +134,7 @@ image::../media/drw_affa250_weight_caution.png[]
 == Step 3: Cable controllers
 
 [.lead]
-There is required cabling for your platform's cluster using the two-node switchless cluster method or the cluster interconnect network method. There is optional cabling to the Fibre Channel or iSCSI host networks or direct-attached storage. This cabling is not exclusive; you can have cabling to a host network and storage.
+There is required cabling for your platform's cluster using the two-node switchless cluster method or the cluster interconnect network method. There is optional cabling to the Fibre Channel or iSCSI host networks or direct-attached storage. This cabling is not exclusive; you can have cable to a host network and storage.
 
 === Required cabling: Cable controllers to a cluster
 
@@ -184,7 +184,7 @@ a|
 DO NOT plug in the power cords at this point.
 |===
 
-. To complete setting up your system, see link:install-detailed-guide.html#step-4-complete-system-setup-and-configuration[Step 4: Completing system setup and configuration]
+. To complete setting up your system, see <<Step 4: Completing system setup and configuration>>.
 
 ==== Option 2: Cable a switched cluster
 
@@ -227,7 +227,7 @@ a|
 DO NOT plug in the power cords at this point.
 |===
 
-. To complete setting up your system, see link:install-detailed-guide.html#step-4-complete-system-setup-and-configuration[Step 4: Completing system setup and configuration]
+. To complete setting up your system, see <<Step 4: Completing system setup and configuration>>.
 
 === Optional cabling: Cable configuration-dependent options
 
@@ -247,25 +247,30 @@ image::../media/oie_cable_pull_tab_up.gif[]
 
 NOTE: As you insert the connector, you should feel it click into place; if you do not feel it click, remove it, turn it around and try again.
 
++
+[options="header" cols="1,2"]
 |===
 | Step| Perform on each controller module
 a|
 1
 a|
-Cable ports 2a through 2d to the FC host switches.image:../media/drw_affa250_fc_host_cabling.png[]
+Cable ports 2a through 2d to the FC host switches.
+
+image::../media/drw_affa250_fc_host_cabling.png[]
 
 a|
 2
 a|
 To perform other optional cabling, choose from:
 
-* link:install-detailed-guide.html#option-2-connecting-to-a-25gbe-host[Option 2: Cabling to a 25GbE data or host network]
-* link:install-detailed-guide.html#option-3-connecting-to-a-single-direct-attached-ns224-drive-shelf[Option 3: Cabling the controllers to a single drive shelf]
+* <<Option 2: Cable to a 25GbE data or host network>>
+* <<Option 3: Cable the controllers to a single drive shelf>>
 
 a|
 3
 a|
-To complete setting up your system, see link:install-detailed-guide.html#step-4-complete-system-setup-and-configuration[Step 4: Completing system setup and configuration]
+To complete setting up your system, see <<Step 4: Completing system setup and configuration>>.
+
 |===
 
 ==== Option 2: Cable to a 25GbE data or host network
@@ -286,20 +291,23 @@ NOTE: As you insert the connector, you should feel it click into place; if you d
 a|
 1
 a|
-Cable ports e4a through e4d to the 10GbE host network switches.image:../media/drw_affa250_25gbe_host_cabling.png[]
+Cable ports e4a through e4d to the 10GbE host network switches.
+
+image::../media/drw_affa250_25gbe_host_cabling.png[]
 
 a|
 2
 a|
 To perform other optional cabling, choose from:
 
-* link:install-detailed-guide.html#option-1-connecting-to-a-fibre-channel-host[Option 1: Cabling to a Fibre Channel host network]
-* link:install-detailed-guide.html#option-3-connecting-to-a-single-direct-attached-ns224-drive-shelf[Option 3: Cabling the controllers to a single drive shelf]
+* <<Option 1: Cable to a Fibre Channel host network>>
+* <<Option 3: Cable the controllers to a single drive shelf>>
 
 a|
 3
 a|
-To complete setting up your system, see link:install-detailed-guide.html#step-4-complete-system-setup-and-configuration[Step 4: Completing system setup and configuration]
+To complete setting up your system, see <<Step 4: Completing system setup and configuration>>.
+
 |===
 
 ==== Option 3: Cable the controllers to a single drive shelf
@@ -331,7 +339,7 @@ Cable controller B to the shelf:    image:../media/drw_affa250_1shelf_cabling_b.
 
 |===
 
-. To complete setting up your system, see link:install-detailed-guide.html#step-4-complete-system-setup-and-configuration[Step 4: Completing system setup and configuration].
+. To complete setting up your system, see <<Step 4: Completing system setup and configuration>>.
 
 == Step 4: Complete system setup and configuration
 

@@ -19,17 +19,17 @@ entries:
       entries:
         - title: Overview
           url: /a320/bootmedia-replace-overview.html
-        - title: Check onboard encryption keys as needed
+        - title: Check onboard encryption keys
           url: /a320/bootmedia-encryption-preshutdown-checks.html
-        - title: Shut down the impaired controller
+        - title: Shut down impaired controller
           url: /a320/bootmedia-shutdown.html
-        - title: Remove the controller module, replace the boot media and transfer the boot image to the boot media
+        - title: Replace boot media
           url: /a320/bootmedia-replace.html
-        - title: Boot the recovery image
+        - title: Boot recovery image
           url: /a320/bootmedia-recovery-image-boot-non-2n-mcc.html
-        - title: Restore OKM, NSE, and NVE as needed
+        - title: Restore OKM, NSE, and NVE
           url: /a320/bootmedia-encryption-restore.html
-        - title: Return the failed part to NetApp
+        - title: Return failed part to NetApp
           url: /a320/bootmedia-complete-rma.html
       # END boot media replacement
       # START chassis replacement
@@ -37,11 +37,11 @@ entries:
       entries:
       - title: Overview
         url: /a320/chassis-replace-overview.html
-      - title: Shut down the impaired controller
+      - title: Shut down impaired controller
         url: /a320/chassis-replace-shutdown.html
-      - title: Replace the hardware
+      - title: Replace hardware
         url: /a320/chassis-replace-move-hardware.html
-      - title: Complete the restoration and replacement process
+      - title: Complete replacement
         url: /a320/chassis-replace-complete-system-restore-rma.html
       # END chassis replacement
       # START controller module replacement
@@ -49,17 +49,17 @@ entries:
       entries:
         - title: Overview
           url: /a320/controller-replace-overview.html
-        - title: Shut down the impaired controller
+        - title: Shut down impaired controller
           url: /a320/controller-replace-impaired-controller-shutdown.html
-        - title: Replace the controller module hardware
+        - title: Replace controller module
           url: /a320/controller-replace.html
-        - title: Restore and verify the system configuration
+        - title: Restore system configuration
           url: /a320/controller-replace-system-config-restore-and-verify.html
-        - title: Recable the system and reassign
+        - title: Recable system
           url: /a320/controller-repalce-recable-reassign-disks.html
         - title: Complete system restoration
           url: /a320/controller-replace-complete-system-restoration.html
-        - title: Complete the replacement process
+        - title: Complete replacement
           url: /a320/controller-replace-complete-rma.html
       # END controller module replacement
       # START dimm replacement
@@ -67,7 +67,7 @@ entries:
       url: /a320/dimm-replace.html
       # END dimm replacement
     #START Fan module replace
-    - title: Fan module
+    - title: Fan
       url: /a320/fan-swap-out.html
     # END Fan module replace
     - title: NVDIMM

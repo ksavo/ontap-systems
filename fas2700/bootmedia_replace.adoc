@@ -113,9 +113,9 @@ NOTE: The target port you configure is the target port you use to communicate wi
 If you use this optional parameter, you do not need a fully qualified domain name in the netboot server URL. You need only the server's host name.
 
 +
-NOTE: Other parameters might be necessary for your interface. You can enter help ifconfig at the firmware prompt for details.
+NOTE: Other parameters might be necessary for your interface. You can enter `help ifconfig` at the firmware prompt for details.
 
-. Although the environment variables and bootargs are retained, you should check that all required boot environment variables and bootargs are properly set for your system type and configuration using the `printenv bootarg name` command and correct any errors using the `setenv variable-name <value\>` command.
+. Although the environment variables and bootargs are retained, you should check that all required boot environment variables and bootargs are properly set for your system type and configuration using the `printenv bootarg name` command and correct any errors using the `setenv variable-name <value>` command.
 .. Check the boot environment variables:
  *** `bootarg.init.boot_clustered`
  *** `partner-sysid`
@@ -134,4 +134,4 @@ NOTE: Other parameters might be necessary for your interface. You can enter help
  *** `bootarg.keymanager.support <value>`
  *** `bootarg.onboard_keymanager <value>`
  .. Save the environment variables you changed with the `savenv` command
- .. Confirm your changes using the `printenv variable-name` command.
+ .. Confirm your changes using the `printenv _variable-name_` command.

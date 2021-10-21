@@ -144,7 +144,7 @@ The controller module should be fully inserted and flush with the edges of the c
  .. If necessary, set the time, in GMT, using the `set time hh:mm:ss` command.
  .. Confirm the date and time on the target node.
 . At the LOADER prompt, enter `bye` to reinitialize the PCIe cards and other components and let the node reboot.
-. Return the node to normal operation by giving back its storage: `storage failover giveback -ofnode impaired_node_name`
+. Return the node to normal operation by giving back its storage: `storage failover giveback -ofnode _impaired_node_name_`
 . If automatic giveback was disabled, reenable it: `storage failover modify -node local -auto-giveback true`
 
 == Step 5: Return the failed part to NetApp

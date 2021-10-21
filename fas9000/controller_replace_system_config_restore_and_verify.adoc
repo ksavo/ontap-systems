@@ -49,7 +49,7 @@ non-ha
 |===
 
 . If the displayed system state of the controller module does not match your system configuration, set the `HA` state for the controller module: `ha-config modify controller ha-state`
-. If the displayed system state of the chassis does not match your system configuration, set the `HA` state for the chassis: `ha-config modify chassis ha-state`
+. If the displayed system state of the chassis does not match your system configuration, set the `HA` state for the chassis: `ha-config modify chassis _HA-state_`
 
 == Step 3: Run system-level diagnostics
 
@@ -71,15 +71,15 @@ During the boot process, you can safely respond `y` to the prompts until the Mai
 +
 The controller module devices and ports displayed can be any one or more of the following:
 
- ** bootmedia is the system booting device.
+ ** `bootmedia` is the system booting device..
  ** cna is a Converged Network Adapter or interface not connected to a network or storage device.
  ** fcal is a Fibre Channel-Arbitrated Loop device not connected to a Fibre Channel network.
- ** env is motherboard environmentals.
+ ** `env` is motherboard environmentals.
  ** mem is system memory.
  ** nic is a network interface card.
- ** nvram is nonvolatile RAM.
- ** nvmem is a hybrid of NVRAM and system memory.
- ** sas is a Serial Attached SCSI device not connected to a disk shelf.
+ ** `nvram` is nonvolatile RAM.
+ ** `nvmem` is a hybrid of NVRAM and system memory.
+ ** `sas` is a Serial Attached SCSI device not connected to a disk shelf.
 
 . Run diagnostics as desired.
 +
@@ -91,15 +91,15 @@ Individual components
 a|
 
  .. Clear the status logs: `sldiag device clearstatus`
- .. Display the available tests for the selected devices: `sldiag device show -dev dev_name`
+ .. Display the available tests for the selected devices: `sldiag device show -dev _dev_name_`
 +
-dev_name can be any one of the ports and devices identified in the preceding step.
+_dev_name_ can be any one of the ports and devices identified in the preceding step.
 
- .. Examine the output and, if applicable, select only the tests that you want to run: `sldiag device modify -dev dev_name -selection only`
+ .. Examine the output and, if applicable, select only the tests that you want to run: `sldiag device modify -dev _dev_name_ -selection only`
 +
 -selection only disables all other tests that you do not want to run for the device.
 
- .. Run the selected tests: `sldiag device run -dev dev_name`
+ .. Run the selected tests: `sldiag device run -dev _dev_name_`
 +
 After the test is complete, the following message is displayed:
 +
@@ -107,7 +107,7 @@ After the test is complete, the following message is displayed:
 *> <SLDIAG:_ALL_TESTS_COMPLETED>
 ----
 
- .. Verify that no tests failed: `sldiag device status -dev dev_name -long -state failed`
+ .. Verify that no tests failed: `sldiag device status -dev _dev_name_ -long -state failed`
 +
 System-level diagnostics returns you to the prompt if there are no test failures, or lists the full status of failures resulting from testing the component.
 
@@ -116,8 +116,8 @@ Multiple components at the same time
 a|
 
  .. Review the enabled and disabled devices in the output from the preceding procedure and determine which ones you want to run concurrently.
- .. List the individual tests for the device: `sldiag device show -dev dev_name`
- .. Examine the output and, if applicable, select only the tests that you want to run: `sldiag device modify -dev dev_name -selection only`
+ .. List the individual tests for the device: `sldiag device show -dev _dev_name_`
+ .. Examine the output and, if applicable, select only the tests that you want to run: `sldiag device modify -dev _dev_name_ -selection only`
 +
 -selection only disables all other tests that you do not want to run for the device.
 
@@ -170,7 +170,7 @@ The node displays the LOADER prompt.
 a|
 An HA pair
 a|
-Perform a give back: `storage failover giveback -ofnode replacement_node_name`
+Perform a give back: `storage failover giveback -ofnode _replacement_node_name_`
 
 NOTE: If you disabled automatic giveback, re-enable it with the storage failover modify command.
 

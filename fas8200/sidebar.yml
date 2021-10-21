@@ -3,6 +3,7 @@ title: FAS8200 systems
 url: /fas8200/index.html
 entries:
  - title: Install and setup
+   #pdf-filename: FAS8200 Install and Setup
    entries:
    - title: Cluster configuration worksheet
      url: /fas8200/install-worksheet-linkout.html
@@ -11,8 +12,10 @@ entries:
    - title: Video steps
      url: /fas8200/install-video-linkout.html
  - title: Maintain
+   #pdf-filename: FAS8200 Maintain
    entries:
     - title: Boot media
+      #pdf-filename: FAS8200 Boot Media
       entries:
       - title: Overview
         url: /fas8200/bootmedia-replace-overview.html
@@ -20,19 +23,20 @@ entries:
         url: /fas8200/bootmedia-encryption-preshutdown-checks.html
       - title: Shut down impaired controller
         url: /fas8200/bootmedia-impaired-controller-shutdown.html
-      - title: Remove controller module, replace boot media and transfer boot image
+      - title: Replace boot media
         url: /fas8200/bootmedia-replace.html
       - title: Boot recovery image
         url: /fas8200/bootmedia-recovery-image-boot-options.html
-      - title: Switch back aggregates in a two-node MetroCluster configuration
+      - title: Switch back MetroCluster config 
         url: /fas8200/bootmedia-2n-mcc-switchback.html
-      - title: Restore OKM, NSE, and NVE as needed
+      - title: Restore OKM, NSE, and NVE
         url: /fas8200/bootmedia-encryption-restore.html
       - title: Return failed part to NetApp
         url: /fas8200/bootmedia-complete-rma.html
     - title: Caching module
       url: /fas8200/caching-module-replace.html
     - title: Chassis
+      #pdf-filename: FAS8200 Chassis
       entries:
       - title: Overview
         url: /fas8200/chassis-replace-overview.html
@@ -40,19 +44,20 @@ entries:
         url: /fas8200/chassis-replace-shutdown.html
       - title: Replace hardware
         url: /fas8200/chassis-replace-move-hardware.html
-      - title: Restore and verify configuration
+      - title: Restore configuration
         url: /fas8200/chassis-replace-complete-system-restore-rma.html
     - title: Controller
+      #pdf-filename: FAS8200 Controller Module
       entries:
       - title: Overview
         url: /fas8200/controller-replace-overview.html
       - title: Shut down impaired controller
         url: /fas8200/controller-replace-shutdown.html
-      - title: Move controller module hardware
+      - title: Replace controller module
         url: /fas8200/controller-replace-move-hardware.html
-      - title: Restore and verify system configuration
+      - title: Restore system configuration
         url: /fas8200/controller-replace-system-config-restore-and-verify.html
-      - title: Recable system and reassign disks
+      - title: Recable system
         url: /fas8200/controller-replace-recable-reassign-disks.html
       - title: Complete system restoration
         url: /fas8200/controller-replace-restore-system-rma.html

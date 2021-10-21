@@ -4,7 +4,7 @@ url: /fas2700/index.html
 entries:
   - title: Install and setup
     entries:
-    - title: Choose your installation and setup experience
+    - title: Choose install and setup experience
       url: /fas2700/install-setup.html
     - title: Quick steps
       url: /fas2700/install-quick-guide.html
@@ -18,17 +18,17 @@ entries:
       entries:
         - title: Overview
           url: /fas2700/bootmedia-replace-overview.html
-        - title: Check onboard encryption keys as needed
+        - title: Check onboard encryption keys
           url: /fas2700/bootmedia-encryption-preshutdown-checks.html
-        - title: Shut down the impaired controller
+        - title: Shut down impaired controller
           url: /fas2700/bootmedia-impaired-controller-shutdown.html
-        - title: Remove the controller module, replace the boot media and transfer the boot image to the boot media
+        - title: Replace boot image
           url: /fas2700/bootmedia-replace.html
-        - title: Boot the recovery image
+        - title: Boot recovery image
           url: /fas2700/bootmedia-recovery-image-boot-non-2n-mcc.html
-        - title: Restore OKM, NSE, and NVE as needed
+        - title: Restore OKM, NSE, and NVE
           url: /fas2700/bootmedia-encryption-restore.html
-        - title: Return the failed part to NetApp
+        - title: Return failed part to NetApp
           url: /fas2700/bootmedia-complete-rma.html
     - title: Caching module
       url: /fas2700/caching-module-replace.html
@@ -36,30 +36,24 @@ entries:
       entries:
         - title: Overview
           url: /fas2700/chassis-replace-overview.html
-        - title: Shut down the impaired controller
+        - title: Shut down impaired controller
           url: /fas2700/chassis-replace-shutdown.html
-        - title: Replace the hardware
+        - title: Replace hardware
           url: /fas2700/chassis-replace-move-hardware.html
-        - title: Restore and verify configuration
+        - title: Restore configuration
           url: /fas2700/chassis-replace-complete-system-restore-rma.html
     - title: Controller
       entries:
         - title: Overview
           url: /fas2700/controller-replace-overview.html
-        - title: Shut down the impaired controller
-          url: /fas2700/controller-replace-impaired-controller-shutdown-parent.html
         - title: Shut down the node
-          url: /fas2700/controller-replace-impaired-controller-shutdown.html
-        - title: Shut down a node in a two-node MetroCluster configuration
-          url: /fas2700/controller-replace-2n-mcc-shut-down.html
+          url: /fas2700/controller-replace-shutdown.html
         - title: Replace the controller hardware
           url: /fas2700/controller-replace.html
-        - title: Restore and verify the system configuration
+        - title: Restore system configuration
           url: /fas2700/controller-replace-system-config-restore-and-verify.html
         - title: Complete system restoration
-          url: /fas2700/controller-replace-complete-system-restoration.html
-        - title: Complete the replacement process
-          url: /fas2700/controller-replace-complete-rma.html
+          url: /fas2700/controller-replace-restore-system-rma.html
     - title: DIMM
       url: /fas2700/dimm-replace.html
     - title: NVMEM battery

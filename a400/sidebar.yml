@@ -18,45 +18,45 @@ entries:
       entries:
       - title: Overview
         url: /a400/bootmedia-replace-overview.html
-      - title: Check onboard encryption keys as needed
+      - title: Check onboard encryption keys
         url: /a400/bootmedia-encryption-preshutdown-checks.html
-      - title: Shut down the impaired controller
+      - title: Shut down impaired controller
         url: /a400/bootmedia-impaired-controller-shutdown.html
-      - title: Remove the controller module, replace the boot media and transfer the boot image to the boot media
+      - title: Replace boot media
         url: /a400/bootmedia-replace.html
-      - title: Boot the recovery image
+      - title: Boot recovery image
         url: /a400/bootmedia-recovery-image-boot-options.html
-      - title: Switch back aggregates in a two-node MetroCluster configuration
+      - title: Switch back MetroCluster config 
         url: /a400/bootmedia-2n-mcc-switchback.html
-      - title: Restore OKM, NSE, and NVE as needed
+      - title: Restore OKM, NSE, and NVE
         url: /a400/bootmedia-encryption-restore.html
-      - title: Return the failed part to NetApp
+      - title: Return failed part to NetApp
         url: /a400/bootmedia-complete-rma.html
     - title: Chassis
       entries:
       - title: Overview
         url: /a400/chassis-replace-overview.html
-      - title: Shut down the impaired controller
+      - title: Shut down impaired controller
         url: /a400/chassis-replace-shutdown.html
-      - title: Replace the hardware
+      - title: Replace hardware
         url: /a400/chassis-replace-move-hardware.html
-      - title: Complete the restoration and replacement process
+      - title: Complete replacement
         url: /a400/chassis-replace-complete-system-restore-rma.html
     - title: Controller module
       entries:
       - title: Overview
         url: /a400/controller-replace-overview.html
-      - title: Shut down the impaired controller
+      - title: Shut down impaired controller
         url: /a400/controller-replace-shutdown.html
-      - title: Replace the controller module hardware
+      - title: Replace controller module
         url: /a400/controller-replace.html
-      - title: Restore and verify the system configuration
+      - title: Restore system configuration
         url: /a400/controller-replace-system-config-restore-and-verify.html
-      - title: Recable the system and reassign drives
+      - title: Recable the system
         url: /a400/controller-repalce-recable-reassign-disks.html
       - title: Complete system restoration
         url: /a400/controller-replace-complete-system-restoration.html
-      - title: Return the faied part to NetApp
+      - title: Return faied part to NetApp
         url: /a400/controller-replace-complete-rma.html
     - title: DIMM
       url: /a400/dimm-replace.html
