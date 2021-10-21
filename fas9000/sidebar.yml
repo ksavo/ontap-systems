@@ -27,7 +27,7 @@ entries:
         url: /fas9000/bootmedia-replace.html
       - title: Boot recovery image
         url: /fas9000/bootmedia-recovery-image-boot-options.html
-      - title: Switch back MetroCluster config 
+      - title: Switch back MetroCluster config
         url: /fas9000/bootmedia-2n-mcc-switchback.html
       - title: Restore OKM, NSE, and NVE
         url: /fas9000/bootmedia-encryption-restore.html
@@ -88,7 +88,7 @@ entries:
         - title: Overview
           url: /fas9000/x91148a-module-install-overview.html
         - title: AFF A700 system with open slots
-          url: /fas9000/x91148a-module-with-open-slots-add.html
+          url: /fas9000/x91148a-modules-with-open-slots-add.html
         - title: AFF A700 system no open slots
           url: /fas9000/x91148a-modules-with-no-open-slots-add.html
       # END X91148A module
