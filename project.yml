@@ -1,6 +1,6 @@
 settings:
   name: "ONTAP Systems"
-  search: ontap-systems
+  #search: ontap-systems
   pdf_enabled: true
 
 sidebar:

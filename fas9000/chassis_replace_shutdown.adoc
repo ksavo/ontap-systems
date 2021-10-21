@@ -1,7 +1,7 @@
 ---
 permalink: fas9000/chassis-replace-shutdown.html
 sidebar: sidebar
-keywords: aff a700, fas9000, shut, chassis, controller, replace, remove, swap, verify, install, power, supply, metrocluster, aggregates, replacement, process, equipment, rack, ha, state, system, fans, module, usb, led, chassis, aggregates
+keywords: aff a700, fas9000, chassis replacement, shutdown
 summary: "To replace the chassis, you must shutdown the controllers."
 ---
 = Shut down the controllers - AFF A700 and FAS9000
