@@ -26,7 +26,7 @@ This procedure applies to systems that are not in a two-node MetroCluster config
 The image is downloaded from the USB flash drive.
 
 . When prompted, either enter the name of the image or accept the default image displayed inside the brackets on your screen.
-. Restore the var file system:
+. Restore the `var` file system:
 +
 [options="header" cols="1,2"]
 |===
@@ -37,7 +37,7 @@ a|
 
  .. Press `y` when prompted to restore the backup configuration.
  .. Set the healthy node to advanced privilege level: `set -privilege advanced`
- .. Run the restore backup command: `system node restore-backup -node local -target-address impaired_node_IP_address`
+ .. Run the restore backup command: `system node restore-backup -node local -target-address _impaired_node_IP_address_`
  .. Return the node to admin level: `set -privilege admin`
  .. Press `y` when prompted to use the restored configuration.
  .. Press `y` when prompted to reboot the node.
@@ -82,13 +82,13 @@ If you are prompted to continue with the update, press `y`.
  .. If an environment variable is not set as expected, modify it with the `setenv __environment-variable-name__ __changed-value__` command.
  .. Save your changes using the `savenev` command.
 . The next depends on your system configuration:
- ** If your system has onboard keymanager, NSE or NVE configured, go to xref:bootmedia-encryption-restore.adoc[Post boot media replacement steps for OKM, NSE, and NVE]
+ ** If your system has onboard keymanager, NSE or NVE configured, go to xref:bootmedia-encryption-restore.adoc[Restore OKM, NSE, and NVE as needed]
  ** If your system does not have onboard keymanager, NSE or NVE configured, complete the steps in this section.
 . From the LOADER prompt, enter the `boot_ontap` command.
 +
 [options="header" cols="1,2"]
 |===
-| If you see...| Then...
+| *If you see...| Then...*
 a|
 The login prompt
 a|

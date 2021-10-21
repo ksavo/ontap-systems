@@ -57,9 +57,9 @@ image::../media/drw_9000_remove_pcie_module.svg[]
 +
 [cols="1,3"]
 |===
-a|image:../media/legend_icon_01.gif[]
+a|image:../media/legend_icon_01.png[]
 a|Lettered and numbered I/O cam latch
-a|image:../media/legend_icon_02.gif[]
+a|image:../media/legend_icon_02.png[]
 a|I/O cam latch completely unlocked
 |===
 . Set the I/O module aside.
@@ -73,7 +73,7 @@ After you replace a PCIe module, you must reboot the controller module.
 
 .Steps
 . If the node is at the LOADER prompt, boot the node, responding `y` if you see a prompt warning of a system ID mismatch and asking to override the system ID: `bye`
-. If your system is configured to support 10 GbE cluster interconnect and data connections on 40 GbE NICs or onboard ports, convert these ports to 10 GbE connections by using the nicadmin convert command from Maintenance mode.
+. If your system is configured to support 10 GbE cluster interconnect and data connections on 40 GbE NICs or onboard ports, convert these ports to 10 GbE connections by using the `nicadmin convert` command from Maintenance mode.
 +
 NOTE: Be sure to exit Maintenance mode after completing the conversion.
 
@@ -85,7 +85,7 @@ NOTE: Be sure to exit Maintenance mode after completing the conversion.
 a|
 An HA pair
 a|
-`storage failover giveback -ofnode impaired_node_name`
+`storage failover giveback -ofnode _impaired_node_name_`
 a|
 A two-node MetroCluster configuration
 a|

@@ -24,22 +24,22 @@ image::../media/drw_rxl_psu.gif[]
 +
 |===
 a|
-image:../media/legend_icon_01.gif[]|
+image:../media/legend_icon_01.png[]|
 Power supply
 a|
-image:../media/legend_icon_02.gif[]
+image:../media/legend_icon_02.png[]
 a|
 Cam handle release latch
 a|
-image:../media/legend_icon_03.gif[]
+image:../media/legend_icon_03.png[]
 a|
 Power and Fault LEDs
 a|
-image:../media/legend_icon_04.gif[]
+image:../media/legend_icon_04.png[]
 a|
 Cam handle
 a|
-image:../media/legend_icon_05.gif[]
+image:../media/legend_icon_05.png[]
 a|
 Power cable locking mechanism
 |===
@@ -74,18 +74,18 @@ image::../media/drw_fas32xx_fan.gif[]
 +
 |===
 a|
-image:../media/legend_icon_01.gif[]|
+image:../media/legend_icon_01.png[]|
 Cam handle
 a|
-image:../media/legend_icon_02.gif[]
+image:../media/legend_icon_02.png[]
 a|
 Fan module
 a|
-image:../media/legend_icon_03.gif[]
+image:../media/legend_icon_03.png[]
 a|
 Cam handle release latch
 a|
-image:../media/legend_icon_04.gif[]
+image:../media/legend_icon_04.png[]
 a|
 Fan module Attention LED
 |===
@@ -127,10 +127,10 @@ image::../media/drw_8020_cam_handle_thumbscrew.gif[]
 +
 |===
 a|
-image:../media/legend_icon_01.gif[]|
+image:../media/legend_icon_01.png[]|
 Thumbscrew
 a|
-image:../media/legend_icon_02.gif[]
+image:../media/legend_icon_02.png[]
 a|
 Cam handle
 |===
@@ -203,7 +203,7 @@ NOTE: Do not use excessive force when sliding the controller module into the cha
 
 . Connect the power supplies to different power sources, and then turn them on.
 . Boot each node to Maintenance mode:
- .. As each node starts the booting, press `Ctrl-C` to interrupt the boot process when you see the message Press Ctrl-C for Boot Menu.
+ .. As each node starts the booting, press `Ctrl-C` to interrupt the boot process when you see the message `Press Ctrl-C for Boot Menu`.
 +
 NOTE: If you miss the prompt and the controller modules boot to ONTAP, enter `halt`, and then at the LOADER prompt enter `boot_ontap`, press `Ctrl-C` when prompted, and then repeat this step.
 

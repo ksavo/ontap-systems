@@ -8,7 +8,7 @@ summary: "To restore your system to full operation, you must restore the NetApp 
 :icons: font
 :imagesdir: ../media/
 
-== Step 1: Install licenses for the replacement node in ONTAP
+== Step 1: Install licenses for the _replacement_ node in ONTAP
 
 [.lead]
 include::../_include/install_licenses.adoc[]

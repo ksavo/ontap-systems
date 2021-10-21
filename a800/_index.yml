@@ -34,7 +34,7 @@ indexpage:
         - title: PCIe card
           url: /pci-cards-and-risers-replace.html
         - title: Power supply
-          url: /power-supply-swapout.html
+          url: /power-supply-replace.html
         - title: RTC battery
           url: /rtc-battery-replace.html
     - title: Learn

@@ -34,7 +34,7 @@ To access components inside the controller module, you must remove the controlle
 . Unplug the controller module power supply from the power source.
 . Loosen the hook and loop strap binding the cables to the cable management device, and then unplug the system cables and SFPs (if needed) from the controller module, keeping track of where the cables were connected.
 +
-image::../media/drw_a320_controller_cable_unplug_animated_gif.gif[]
+image::../media/drw_a320_cable_management_arms.png[]
 +
 Leave the cables in the cable management device so that when you reinstall the cable management device, the cables are organized.
 
@@ -108,7 +108,7 @@ The controller module begins to boot as soon as it is fully seated in the chassi
  .. If necessary, set the time, in GMT, using the `set time hh:mm:ss` command.
  .. Confirm the date and time on the target node.
 . At the LOADER prompt, enter `bye` to reinitialize the PCIe cards and other components and let the node reboot.
-. Return the node to normal operation by giving back its storage: `storage failover giveback -ofnode impaired_node_name`
+. Return the node to normal operation by giving back its storage: `storage failover giveback -ofnode _impaired_node_name_`
 . If automatic giveback was disabled, reenable it: `storage failover modify -node local -auto-giveback true`
 
 == Return the failed part to NetApp

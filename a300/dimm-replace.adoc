@@ -52,10 +52,10 @@ image::../media/drw_8020_cam_handle_thumbscrew.gif[]
 +
 |===
 a|
-image:../media/legend_icon_01.gif[]|
+image:../media/legend_icon_01.png[]|
 Thumbscrew
 a|
-image:../media/legend_icon_02.gif[]
+image:../media/legend_icon_02.png[]
 a|
 Cam handle
 |===
@@ -93,10 +93,10 @@ image::../media/drw_rxl_nvmem_battery.gif[]
 +
 |===
 a|
-image:../media/legend_icon_01.gif[]|
+image:../media/legend_icon_01.png[]|
 NVMEM battery lock tab
 a|
-image:../media/legend_icon_02.gif[]
+image:../media/legend_icon_02.png[]
 a|
 NVMEM battery
 |===
@@ -162,7 +162,7 @@ NOTE: Do not use excessive force when sliding the controller module into the cha
  .. Tighten the thumbscrew on the cam handle on back of the controller module.
  .. If you have not already done so, reinstall the cable management device.
  .. Bind the cables to the cable management device with the hook and loop strap.
- .. As each node starts the booting, press `Ctrl-C` to interrupt the boot process when you see the message Press Ctrl-C for Boot Menu.
+ .. As each node starts the booting, press `Ctrl-C` to interrupt the boot process when you see the message `Press Ctrl-C for Boot Menu`.
  .. Select the option to boot to Maintenance mode from the displayed menu.
 
 == Step 5: Run system-level diagnostics
@@ -223,9 +223,10 @@ The node displays the LOADER prompt.
 a|
 An HA pair
 a|
-Perform a give back: `storage failover giveback -ofnode replacement_node_name`
+Perform a give back: `storage failover giveback -ofnode _replacement_node_name_`
 
 NOTE: If you disabled automatic giveback, re-enable it with the storage failover modify command.
+
 a|
 A two-node MetroCluster configuration
 a|

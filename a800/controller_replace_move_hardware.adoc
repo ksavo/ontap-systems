@@ -28,15 +28,15 @@ Leave the cables in the cable management device so that when you reinstall the c
 +
 The controller module moves slightly out of the chassis.
 +
-image::../media/drw_a800_pcm_remove.gif[]
+image::../media/drw_a800_pcm_remove.png[]
 +
 [cols="1,4"]
 |===
 a|
-image:../media/legend_icon_01.gif[]|
+image:../media/legend_icon_01.png[]|
 Locking latch
 a|
-image:../media/legend_icon_02.gif[]
+image:../media/legend_icon_02.png[]
 a|
 Locking pin
 |===
@@ -49,19 +49,19 @@ Make sure that you support the bottom of the controller module as you slide it o
  .. Press in the locking tabs on the sides of the air duct toward the middle of the controller module.
  .. Slide the air duct toward the fan modules, and then rotate it upward to its completely open position.
 +
-image::../media/drw_a800_open_air_duct.gif[]
+image::../media/drw_a800_open_air_duct.png[]
 +
 [cols="1,4"]
 |===
 a|
-image:../media/legend_icon_01.gif[]
+image:../media/legend_icon_01.png[]
 a|
 Air duct locking tabs
 a|
-image:../media/legend_icon_02.gif[]|
+image:../media/legend_icon_02.png[]|
 Slide air duct towards fan modules
 a|
-image:../media/legend_icon_03.gif[]
+image:../media/legend_icon_03.png[]
 a|
 Rotate air duct towards fan modules
 |===
@@ -77,15 +77,15 @@ You must move the power supplies from the impaired controller module to the repl
 +
 The power supply is short. Always use two hands to support it when removing it from the controller module so that it does not suddenly swing free from the controller module and injure you.
 +
-image::../media/drw_a800_replace_psu.gif[]
+image::../media/drw_a800_replace_psu.png[]
 +
 [cols="1,4"]
 |===
 a|
-image:../media/legend_icon_01.gif[]|
+image:../media/legend_icon_01.png[]|
 Blue power supply locking tab
 a|
-image:../media/legend_icon_02.gif[]
+image:../media/legend_icon_02.png[]
 a|
 Power supply
 |===
@@ -104,14 +104,14 @@ You must move the fans from the impaired controller module to the replacement mo
 
 . Remove the fan module by pinching the locking tabs on the side of the fan module, and then lifting the fan module straight out of the controller module.
 +
-image::../media/drw_a800_replace_fan.gif[]
+image::../media/drw_a800_replace_fan.png[]
 +
 |===
 a|
-image:../media/legend_icon_01.gif[]|
+image:../media/legend_icon_01.png[]|
 Fan locking tabs
 a|
-image:../media/legend_icon_02.gif[]
+image:../media/legend_icon_02.png[]
 a|
 Fan module
 |===
@@ -126,19 +126,19 @@ When replacing the controller module, you must move the NVRAM battery from the i
 
 . Open the air duct cover and locate the NVDIMM battery in the riser.
 +
-image::../media/drw_a800_nvdimm_battery_replace.gif[]
+image::../media/drw_a800_nvdimm_battery_replace.png[]
 +
 [cols="1,4"]
 |===
 a|
-image:../media/legend_icon_01.gif[]|
+image:../media/legend_icon_01.png[]|
 Air duct riser
 a|
-image:../media/legend_icon_02.gif[]
+image:../media/legend_icon_02.png[]
 a|
 NVDIMM battery plug
 a|
-image:../media/legend_icon_03.gif[]
+image:../media/legend_icon_03.png[]
 a|
 NVDIMM battery pack
 |===
@@ -168,10 +168,10 @@ image::../media/drw_a800_riser_2_3_remove.gif[]
 [cols="1,4"]
 |===
 a|
-image:../media/legend_icon_01.gif[]|
+image:../media/legend_icon_01.png[]|
 Air duct
 a|
-image:../media/legend_icon_02.gif[]
+image:../media/legend_icon_02.png[]
 a|
 Riser 1 (left riser), Riser 2 (middle riser), and 3 (right riser) locking latches
 |===
@@ -210,10 +210,10 @@ image::../media/drw_a800_no_risers_nvdimm_move.png[]
 [cols="1,4"]
 |===
 a|
-image:../media/legend_icon_01.gif[]|
+image:../media/legend_icon_01.png[]|
 Air duct
 a|
-image:../media/legend_icon_02.gif[]
+image:../media/legend_icon_02.png[]
 a|
 NVDIMMs
 |===
@@ -236,7 +236,7 @@ NOTE: Visually inspect the NVDIMM to verify that it is evenly aligned and fully 
 == Step 8: Move the boot media
 
 [.lead]
-There is one boot media device in the AFF A800. You must move it from the impaired node and install it in the replacement node.
+There is one boot media device in the AFF A800. You must move it from the impaired node and install it in the _replacement_ node.
 
 The boot media is located under Riser 3.
 
@@ -247,22 +247,22 @@ image::../media/drw_a800_pcm_replace_only_boot_media.gif[]
 [cols="1,4"]
 |===
 a|
-image:../media/legend_icon_01.gif[]|
+image:../media/legend_icon_01.png[]|
 Air duct
 a|
-image:../media/legend_icon_02.gif[]
+image:../media/legend_icon_02.png[]
 a|
 Riser 3
 a|
-image:../media/legend_icon_03.gif[]
+image:../media/legend_icon_03.png[]
 a|
 Phillips #1 screwdriver
 a|
-image:../media/legend_icon_04.gif[]
+image:../media/legend_icon_04.png[]
 a|
 Boot media screw
 a|
-image:../media/legend_icon_05.gif[]
+image:../media/legend_icon_05.png[]
 a|
 Boot media
 |===
@@ -307,10 +307,10 @@ image::../media/drw_a700s_close_air_duct.gif[]
 [cols="1,4"]
 |===
 a|
-image:../media/legend_icon_01.gif[]|
+image:../media/legend_icon_01.png[]|
 Locking tabs
 a|
-image:../media/legend_icon_02.gif[]
+image:../media/legend_icon_02.png[]
 a|
 Slide plunger
 |===

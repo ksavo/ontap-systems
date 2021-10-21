@@ -26,17 +26,17 @@ Leave the cables in the cable management device so that when you reinstall the c
 
 . Remove and set aside the cable management devices from the left and right sides of the controller module.
 +
-image::../media/drw_25xx_cable_management_arm.gif[]
+image::../media/drw_25xx_cable_management_arm.png[]
 
 . If you left the SFP modules in the system after removing the cables, move them to the new controller module.
 . Squeeze the latch on the cam handle until it releases, open the cam handle fully to release the controller module from the midplane, and then, using two hands, pull the controller module out of the chassis.
 +
-image::../media/drw_2240_x_opening_cam_latch.gif[]
+image::../media/drw_2240_x_opening_cam_latch.png[]
 
 . Turn the controller module over and place it on a flat, stable surface.
 . Open the cover by sliding in the blue tabs to release the cover, and then swing the cover up and open.
 +
-image::../media/drw_2600_opening_pcm_cover.gif[]
+image::../media/drw_2600_opening_pcm_cover.png[]
 
 == Step 2: Move the boot media
 
@@ -46,7 +46,7 @@ You must locate the boot media and follow the directions to remove it from the o
 .Steps
 . Locate the boot media using the following illustration or the FRU map on the controller module:
 +
-image::../media/drw_2600_boot_media_repl_animated_gif.gif[]
+image::../media/drw_2600_boot_media_repl_animated_gif.png[]
 
 . Press the blue button on the boot media housing to release the boot media from its housing, and then gently pull it straight out of the boot media socket.
 +
@@ -79,7 +79,7 @@ NOTE: The NVRAM LED blinks while destaging contents to the flash memory when you
 This typically occurs during an uncontrolled shutdown after ONTAP has successfully booted.
 . Locate the NVMEM battery in the controller module.
 +
-image::../media/drw_2600_nvmem_battery_move_animated_gif.gif[]
+image::../media/drw_2600_nvmem_battery_move_animated_gif.png[]
 
 . Locate the battery plug and squeeze the clip on the face of the battery plug to release the plug from the socket, and then unplug the battery cable from the socket.
 . Grasp the battery and press the blue locking tab marked PUSH, and then lift the battery out of the holder and controller module.
@@ -106,7 +106,7 @@ The number and placement of system DIMMs depends on the model of your system.
 +
 The following illustration shows the location of system DIMMs:
 +
-image::../media/drw_2600_dimms.gif[]
+image::../media/drw_2600_dimms.png[]
 
 . Repeat these steps to remove additional DIMMs as needed.
 . Verify that the NVMEM battery is not plugged into the new controller module.
@@ -135,7 +135,7 @@ You must have the new controller module ready so that you can move the caching m
  .. Remove the heatsink.
 
 +
-image::../media/drw_2600_fcache.gif[]
+image::../media/drw_2600_fcache.png[]
 . Gently pull the caching module straight out of the housing.
 . Move the caching module to the new controller module, and then align the edges of the caching module with the socket housing and gently push it into the socket.
 . Verify that the caching module is seated squarely and completely in the socket.
@@ -183,7 +183,7 @@ The controller begins to boot as soon as it is seated in the chassis.
 
  .. If you have not already done so, reinstall the cable management device.
  .. Bind the cables to the cable management device with the hook and loop strap.
- .. When you see the message Press Ctrl-C for Boot Menu, press `Ctrl-C` to interrupt the boot process.
+ .. When you see the message `Press Ctrl-C for Boot Menu`, press `Ctrl-C` to interrupt the boot process.
 +
 NOTE: If you miss the prompt and the controller module boots to ONTAP, enter `halt`, and then at the LOADER prompt enter `boot_ontap`, press `Ctrl-C` when prompted, and then boot to Maintenance mode.
 
@@ -199,7 +199,7 @@ NOTE: Do not use excessive force when sliding the controller module into the cha
 
  .. If you have not already done so, reinstall the cable management device.
  .. Bind the cables to the cable management device with the hook and loop strap.
- .. Reconnect the power cables to the power supplies and to the power sources, turn on the power to start the boot process, and then press `Ctrl-C` after you see the Press Ctrl-C for Boot Menu message.
+ .. Reconnect the power cables to the power supplies and to the power sources, turn on the power to start the boot process, and then press `Ctrl-C` after you see the `Press Ctrl-C for Boot Menu` message.
 +
 NOTE: If you miss the prompt and the controller module boots to ONTAP, enter `halt`, and then at the LOADER prompt enter `boot_ontap`, press `Ctrl-C` when prompted, and then boot to Maintenance mode.
 

@@ -46,11 +46,11 @@ Leave the cables in the cable management device so that when you reinstall the c
 
 . Remove and set aside the cable management devices from the left and right sides of the controller module.
 +
-image::../media/drw_25xx_cable_management_arm.gif[]
+image::../media/drw_25xx_cable_management_arm.png[]
 
 . Squeeze the latch on the cam handle until it releases, open the cam handle fully to release the controller module from the midplane, and then, using two hands, pull the controller module out of the chassis.
 +
-image::../media/drw_2240_x_opening_cam_latch.gif[]
+image::../media/drw_2240_x_opening_cam_latch.png[]
 
 . Set the controller module aside in a safe place, and repeat these steps if you have another controller module in the chassis.
 
@@ -139,7 +139,7 @@ NOTE: Do not use excessive force when sliding the controller module into the cha
 
 . Connect the power supplies to different power sources, and then turn them on.
 . Boot each node to Maintenance mode:
- .. As each node starts the booting, press `Ctrl-C` to interrupt the boot process when you see the message Press Ctrl-C for Boot Menu.
+ .. As each node starts the booting, press `Ctrl-C` to interrupt the boot process when you see the message `Press Ctrl-C for Boot Menu`.
 +
 NOTE: If you miss the prompt and the controller modules boot to ONTAP, enter `halt`, and then at the LOADER prompt enter `boot_ontap`, press `Ctrl-C` when prompted, and then repeat this step.
 

@@ -15,8 +15,6 @@ All other components in the system must be functioning properly; if not, you mus
 
 You must replace the failed component with a replacement FRU component you received from your provider.
 
-.Steps
-
 == Step 1: Shut down the impaired controller
 
 [.lead]
@@ -46,10 +44,10 @@ image::../media/drw_9000_remove_pcm.svg[]
 +
 |===
 a|
-image:../media/legend_icon_01.gif[] a|
+image:../media/legend_icon_01.png[] a|
 Cam handle release button
 a|
-image:../media/legend_icon_02.gif[]
+image:../media/legend_icon_02.png[]
 a|
 Cam handle
 |===
@@ -64,7 +62,7 @@ image::../media/drw_9000_pcm_open.svg[]
 +
 |===
 a|
-image:../media/legend_icon_01.gif[] a|
+image:../media/legend_icon_01.png[] a|
 Controller module cover locking button
 |===
 
@@ -90,11 +88,11 @@ image::../media/drw_9000_replace_pcm_dimms.svg[]
 [cols="1,3"]
 |===
 a|
-image:../media/legend_icon_01.gif[]
+image:../media/legend_icon_01.png[]
 a|
 DIMM ejector tabs
 a|
-image:../media/legend_icon_02.gif[]
+image:../media/legend_icon_02.png[]
 a|
 DIMM
 |===
@@ -141,7 +139,7 @@ NOTE: Do not use excessive force when sliding the controller module into the cha
 The controller module begins to boot as soon as it is fully seated in the chassis. Be prepared to interrupt the boot process.
 
  .. Rotate the locking latches upward, tilting them so that they clear the locking pins, and then lower them into the locked position.
- .. Interrupt the boot process by pressing `Ctrl-C` when you see Press Ctrl-C for Boot Menu.
+ .. Interrupt the boot process by pressing `Ctrl-C` when you see `Press Ctrl-C for Boot Menu`.
  .. Select the option to boot to Maintenance mode from the displayed menu.
 
 == Step 5: Run system-level diagnostics
@@ -186,24 +184,21 @@ a|
 +
 The following default response is displayed:
 +
+----
 SLDIAG: No log messages are present.
+-----
 
  .. Exit Maintenance mode: `halt`
 +
 The node displays the LOADER prompt.
 
  .. Boot the node from the LOADER prompt: `bye`
- .. Return the node to normal operation:
+ .. Return the node to normal operation.
 
-|===
-+
-[options="header" cols="1,2"]
-|===
-| If your node is in...| Then...
 a|
 An HA pair
 a|
-Perform a give back: `storage failover giveback -ofnode replacement_node_name`
+Perform a give back: `storage failover giveback -ofnode _replacement_node_name_`
 
 NOTE: If you disabled automatic giveback, re-enable it with the storage failover modify command.
 

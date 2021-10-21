@@ -66,7 +66,7 @@ image::../media/28_dwg_e2860_de460c_fan_canister_handle_with_callout.gif[]
 +
 |===
 a|
-image:../media/legend_icon_01.gif[]|
+image:../media/legend_icon_01.png[]|
 Fan module handle
 |===
 
@@ -79,14 +79,14 @@ image::../media/2860_dwg_full_back_view_chain_connectors.gif[]
 +
 |===
 a|
-image:../media/legend_icon_01.gif[]|
+image:../media/legend_icon_01.png[]|
 Cable chain
 a|
-image:../media/legend_icon_02.gif[]
+image:../media/legend_icon_02.png[]
 a|
 Vertical connector (connected to the midplane)
 a|
-image:../media/legend_icon_03.gif[]
+image:../media/legend_icon_03.png[]
 a|
 Horizontal connector (connected to the drive drawer)
 |===
@@ -100,7 +100,7 @@ image::../media/2860_dwg_vertical_ring_for_chain.gif[]
 +
 |===
 a|
-image:../media/legend_icon_01.gif[]|
+image:../media/legend_icon_01.png[]|
 Orange ring on the vertical bracket
 |===
 
@@ -115,10 +115,10 @@ image::../media/2860_dwg_horiz_ring_for_chain.gif[]
 +
 |===
 a|
-image:../media/legend_icon_01.gif[]|
+image:../media/legend_icon_01.png[]|
 Orange ring on horizontal bracket
 a|
-image:../media/legend_icon_02.gif[]
+image:../media/legend_icon_02.png[]
 a|
 Cable chain
 |===
@@ -178,7 +178,7 @@ image::../media/92_pht_de6600_drive_drawer_release_lever.gif[]
 +
 |===
 a|
-image:../media/legend_icon_01.gif[]|
+image:../media/legend_icon_01.png[]|
 Drive drawer release lever
 |===
 
@@ -208,10 +208,10 @@ image::../media/92_pht_de6600_lock_out_tumbler_detail.gif[]
 +
 |===
 a|
-image:../media/legend_icon_01.gif[]|
+image:../media/legend_icon_01.png[]|
 Lock-out tumbler
 a|
-image:../media/legend_icon_02.gif[]
+image:../media/legend_icon_02.png[]
 a|
 Drawer guide
 |===
@@ -246,7 +246,7 @@ image::../media/28_dwg_e2860_de460c_drive_cru.gif[]
 +
 |===
 a|
-image:../media/legend_icon_01.gif[]|
+image:../media/legend_icon_01.png[]|
 Raised button on the right side of the drive.
 |===
 
@@ -277,14 +277,14 @@ image::../media/28_dwg_e2860_de460c_cable_chain_left.gif[]
 |===
 | Callout| Cable chain| Connector| Connects to
 a|
-image:../media/legend_icon_01.gif[]|
+image:../media/legend_icon_01.png[]|
 Left
 a|
 Vertical
 a|
 Midplane
 a|
-image:../media/legend_icon_02.gif[]
+image:../media/legend_icon_02.png[]
 a|
 Left
 a|
@@ -298,14 +298,14 @@ image:../media/28_dwg_e2860_de460c_cable_chain_right.gif[]
 |===
 | Callout| Cable chain| Connector| Connects to
 a|
-image:../media/legend_icon_01.gif[]|
+image:../media/legend_icon_01.png[]|
 Right
 a|
 Horizontal
 a|
 Drive drawer
 a|
-image:../media/legend_icon_02.gif[]
+image:../media/legend_icon_02.png[]
 a|
 Right
 a|
@@ -327,7 +327,7 @@ image::../media/2860_dwg_guide_rail.gif[]
 +
 |===
 a|
-image:../media/legend_icon_01.gif[]|
+image:../media/legend_icon_01.png[]|
 Guide rail
 |===
 +

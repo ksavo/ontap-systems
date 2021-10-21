@@ -37,9 +37,9 @@ image::../media/drw_a250_pcm_remove_install.png[]
 +
 |===
 a|
-image:../media/legend_icon_01.gif[]|Lever
+image:../media/legend_icon_01.png[]|Lever
 a|
-image:../media/legend_icon_02.gif[]
+image:../media/legend_icon_02.png[]
 a|
 Latching mechanism
 |===
@@ -51,10 +51,10 @@ image::../media/drw_a250_open_controller_module_cover.png[]
 +
 |===
 a|
-image:../media/legend_icon_01.gif[]|
+image:../media/legend_icon_01.png[]|
 Thumbscrew
 a|
-image::../media/legend_icon_02.gif[]
+image::../media/legend_icon_02.png[]
 a|
 Controller module cover.
 |===
@@ -78,14 +78,14 @@ image::../media/drw_a250_remove_rtc_batt.png[]
 +
 |===
 a|
-image:../media/legend_icon_01.gif[]|
+image:../media/legend_icon_01.png[]|
 Gently pull tab away from the battery housing.    *Attention:* Pulling it away aggressively might displace the tab.
 a|
-image:../media/legend_icon_02.gif[]
+image:../media/legend_icon_02.png[]
 a|
 Lift the battery up.    *Note:* Make a note of the polarity of the battery.
 a|
-image:../media/legend_icon_03.gif[]
+image:../media/legend_icon_03.png[]
 a|
 The battery should eject out.
 |===
@@ -98,10 +98,10 @@ image::../media/drw_a250_install_rtc_batt.png[]
 +
 |===
 a|
-image:../media/legend_icon_01.gif[]|
+image:../media/legend_icon_01.png[]|
 With positive polarity face up, slide the battery under the tab of the battery housing.
 a|
-image:../media/legend_icon_02.gif[]
+image:../media/legend_icon_02.png[]
 a|
 Push the battery gently into place and make sure the tab secures it to the housing.    *Attention:* Pushing it in aggressively might cause the battery to eject out again.
 +
@@ -144,7 +144,7 @@ The controller module should be fully inserted and flush with the edges of the c
  .. If necessary, set the time, in GMT, using the `set time hh:mm:ss` command.
  .. Confirm the date and time on the target node.
 . At the LOADER prompt, enter `bye` to reinitialize the PCIe cards and other components and let the node reboot.
-. Return the node to normal operation by giving back its storage: `storage failover giveback -ofnode impaired_node_name`
+. Return the node to normal operation by giving back its storage: `storage failover giveback -ofnode _impaired_node_name_`
 . If automatic giveback was disabled, reenable it: `storage failover modify -node local -auto-giveback true`
 
 == Step 5: Return the failed part to NetApp

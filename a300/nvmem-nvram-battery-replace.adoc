@@ -50,10 +50,10 @@ image::../media/drw_8020_cam_handle_thumbscrew.gif[]
 +
 |===
 a|
-image:../media/legend_icon_01.gif[]|
+image:../media/legend_icon_01.png[]|
 Thumbscrew
 a|
-image:../media/legend_icon_02.gif[]
+image:../media/legend_icon_02.png[]
 a|
 Cam handle
 |===
@@ -86,10 +86,10 @@ image::../media/drw_rxl_nvmem_battery.gif[]
 +
 |===
 a|
-image:../media/legend_icon_01.gif[]|
+image:../media/legend_icon_01.png[]|
 Battery lock tab
 a|
-image:../media/legend_icon_02.gif[]
+image:../media/legend_icon_02.png[]
 a|
 NVMEM battery pack
 |===
@@ -126,7 +126,7 @@ NOTE: Do not use excessive force when sliding the controller module into the cha
  .. Tighten the thumbscrew on the cam handle on back of the controller module.
  .. If you have not already done so, reinstall the cable management device.
  .. Bind the cables to the cable management device with the hook and loop strap.
- .. As each node starts the booting, press `Ctrl-C` to interrupt the boot process when you see the message Press Ctrl-C for Boot Menu.
+ .. As each node starts the booting, press `Ctrl-C` to interrupt the boot process when you see the message `Press Ctrl-C for Boot Menu`.
  .. Select the option to boot to Maintenance mode from the displayed menu.
 
 

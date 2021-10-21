@@ -54,7 +54,7 @@ NOTE: The NVRAM LED blinks while destaging contents to the flash memory when you
 This typically occurs during an uncontrolled shutdown after ONTAP has successfully booted.
 . Locate the NVMEM battery in the controller module.
 +
-image::../media/drw_2600_nvmem_battery_move_animated_gif.gif[]
+image::../media/drw_2600_nvmem_battery_move_animated_gif.png[]
 
 . Locate the battery plug and squeeze the clip on the face of the battery plug to release the plug from the socket, and then unplug the battery cable from the socket.
 . Grasp the battery and press the blue locking tab marked PUSH, and then lift the battery out of the holder and controller module.
@@ -70,7 +70,7 @@ You must locate the boot media and follow the directions to remove it from the o
 
 . Locate the boot media using the following illustration or the FRU map on the controller module:
 +
-image::../media/drw_2600_boot_media_repl_animated_gif.gif[]
+image::../media/drw_2600_boot_media_repl_animated_gif.png[]
 
 . Press the blue button on the boot media housing to release the boot media from its housing, and then gently pull it straight out of the boot media socket.
 +
@@ -100,7 +100,7 @@ The number and placement of system DIMMs depends on the model of your system.
 +
 The following illustration shows the location of system DIMMs:
 +
-image::../media/drw_2600_dimms.gif[]
+image::../media/drw_2600_dimms.png[]
 
 . Repeat these steps to remove additional DIMMs as needed.
 . Verify that the NVMEM battery is not plugged into the new controller module.
@@ -128,7 +128,7 @@ You must have the new controller module ready so that you can move the caching m
  .. Remove the heatsink.
 
 +
-image::../media/drw_2600_fcache.gif[]
+image::../media/drw_2600_fcache.png[]
 . Gently pull the caching module straight out of the housing.
 . Move the caching module to the new controller module, and then align the edges of the caching module with the socket housing and gently push it into the socket.
 . Verify that the caching module is seated squarely and completely in the socket.
@@ -179,7 +179,7 @@ The controller begins to boot as soon as it is seated in the chassis.
 +
 You must look for an Automatic firmware update console message. If the update message appears, do not press `Ctrl-C` to interrupt the boot process until after you see a message confirming that the update is complete.
 +
-Only press `Ctrl-C` when you see the message Press Ctrl-C for Boot Menu.
+Only press `Ctrl-C` when you see the message `Press Ctrl-C for Boot Menu`.
 +
 NOTE: If the firmware update is aborted, the boot process exits to the LOADER prompt. You must run the update_flash command and then exit LOADER and boot to Maintenance mode by pressing `Ctrl-C` when you see Starting AUTOBOOT press Ctrl-C to abort.
 +
@@ -202,7 +202,7 @@ NOTE: Do not use excessive force when sliding the controller module into the cha
 +
 You must look for an Automatic firmware update console message. If the update message appears, do not press `Ctrl-C` to interrupt the boot process until after you see a message confirming that the update is complete.
 +
-Only press `Ctrl-C` after you see the Press Ctrl-C for Boot Menu message.
+Only press `Ctrl-C` after you see the `Press Ctrl-C for Boot Menu` message.
 +
 NOTE: If the firmware update is aborted, the boot process exits to the LOADER prompt. You must run the update_flash command and then exit LOADER and boot to Maintenance mode by pressing `Ctrl-C` when you see Starting AUTOBOOT press Ctrl-C to abort.
 +

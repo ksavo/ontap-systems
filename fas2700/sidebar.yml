@@ -49,8 +49,8 @@ entries:
         - title: Shut down the node
           url: /fas2700/controller-replace-shutdown.html
         - title: Replace the controller hardware
-          url: /fas2700/controller-replace.html
-        - title: Restore system configuration
+          url: /fas2700/controller-replace-move-hardware.html
+        - title: Restore and verify the system configuration
           url: /fas2700/controller-replace-system-config-restore-and-verify.html
         - title: Complete system restoration
           url: /fas2700/controller-replace-restore-system-rma.html

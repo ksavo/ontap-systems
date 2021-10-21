@@ -21,10 +21,10 @@ image::../media/drw_a700s_close_air_duct.svg[]
 +
 |===
 a|
-image:../media/legend_icon_01.gif[] a|
+image:../media/legend_icon_01.png[] a|
 Locking tabs
 a|
-image:../media/legend_icon_02.gif[]
+image:../media/legend_icon_02.png[]
 a|
 Slide plunger
 |===
@@ -53,5 +53,5 @@ The controller module begins to boot as soon as it is fully seated in the chassi
 +
 NOTE: Be sure to exit Maintenance mode after completing the conversion.
 
-. Return the node to normal operation by giving back its storage: `storage failover giveback -ofnode impaired_node_name`
+. Return the node to normal operation by giving back its storage: `storage failover giveback -ofnode _impaired_node_name_`
 . If automatic giveback was disabled, reenable it: `storage failover modify -node local -auto-giveback true`

@@ -3,6 +3,7 @@ title: FAS500f systems
 url: /fas500f/index.html
 entries:
   - title: Install and setup
+    #pdf-filename: FAS500f Install and Setup
     entries:
     - title: Choose install and setup experience
       url: /fas500f/install-setup.html
@@ -13,9 +14,11 @@ entries:
     - title: Detailed steps
       url: /fas500f/install-detailed-guide.html
   - title: Maintain
+    #pdf-filename: FAS500f Maintain
     entries:
 # Boot media start
     - title: Boot media
+      #pdf-filename: FAS500f Boot Media
       entries:
       - title: Overview
         url: /fas500f/bootmedia-replace-overview.html
@@ -33,6 +36,7 @@ entries:
         url: /fas500f/bootmedia-complete-rma.html
 # Boot media end
     - title: Chassis
+      #pdf-filename: FAS500f Chassis
       entries:
       - title: Overview
         url: /fas500f/chassis-replace-overview.html
@@ -43,6 +47,7 @@ entries:
       - title: Complete replacement
         url: /fas500f/chassis-replace-complete-system-restore-rma.html
     - title: Controller
+      #pdf-filename: FAS500f Controller Module
       entries:
       - title: Overview
         url: /fas500f/controller-replace-overview.html

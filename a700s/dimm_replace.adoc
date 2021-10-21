@@ -43,7 +43,7 @@ Press Ctrl-C, and then respond `y`.
 a|
 System prompt or password prompt (enter system password)
 a|
-Take over or halt the impaired node: `storage failover takeover -ofnode impaired_node_name`
+Take over or halt the impaired node: `storage failover takeover -ofnode _impaired_node_name_`
 
 When the impaired node shows `Waiting for giveback...`, press Ctrl-C, and then respond `y`.
 |===
@@ -68,10 +68,10 @@ image::../media/drw_a700s_pcm_remove.svg[]
 +
 |===
 a|
-image:../media/legend_icon_01.gif[] a|
+image:../media/legend_icon_01.png[] a|
 Locking latch
 a|
-image:../media/legend_icon_02.gif[]
+image:../media/legend_icon_02.png[]
 a|
 Locking pin
 |===
@@ -89,15 +89,15 @@ image::../media/drw_a700s_open_air_duct.svg[]
 [cols="1,4"]
 |===
 a|
-image:../media/legend_icon_01.gif[]
+image:../media/legend_icon_01.png[]
 a|
 Air duct locking tabs
 a|
-image:../media/legend_icon_02.gif[]
+image:../media/legend_icon_02.png[]
 a|
 Risers
 a|
-image:../media/legend_icon_03.gif[]
+image:../media/legend_icon_03.png[]
 a|
 Air duct
 |===
@@ -115,19 +115,19 @@ image::../media/drw_a700s_dimm_replace.svg[]
 [cols="1,4"]
 |===
 a|
-image:../media/legend_icon_01.gif[]
+image:../media/legend_icon_01.png[]
 a|
 Air duct cover
 a|
-image:../media/legend_icon_02.gif[]
+image:../media/legend_icon_02.png[]
 a|
 Riser 1 and DIMM bank 1-4
 a|
-image:../media/legend_icon_03.gif[]
+image:../media/legend_icon_03.png[]
 a|
 Riser 2 and DIMM bank 5-8 and 9-12
 a|
-image:../media/legend_icon_04.gif[]
+image:../media/legend_icon_04.png[]
 a|
 Riser 3 and DIMM 13-16
 |===
@@ -186,7 +186,7 @@ NOTE: Do not use excessive force when sliding the controller module into the cha
 The controller module begins to boot as soon as it is fully seated in the chassis. Be prepared to interrupt the boot process.
 
  .. Rotate the locking latches upward, tilting them so that they clear the locking pins, and then lower them into the locked position.
- .. Interrupt the boot process by pressing `Ctrl-C` when you see Press Ctrl-C for Boot Menu.
+ .. Interrupt the boot process by pressing `Ctrl-C` when you see `Press Ctrl-C for Boot Menu`.
  .. Select the option to boot to Maintenance mode from the displayed menu.
 
 == Run diagnostics

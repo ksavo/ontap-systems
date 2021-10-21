@@ -46,12 +46,12 @@ https://hwu.netapp.com[NetApp Hardware Universe]
 +
 [options="header" cols="1,2,1,2"]
 |===
-| Type of cable...| Part number and length| Connector type| For...
-a|
+| Connector type| Part number and length| Type of cable...| For...
+.3+a|
 100 GbE cable
 a|
 X66211A-05 (112-00595), 0.5m
-a|
+.5+a|
 image:../media/oie_cable100_gbe_qsfp28.png[]
 a|
 HA interconnect
@@ -82,6 +82,8 @@ X66240A-2 (112-00598), 2m;
 
 X66240A-5 (112-00600), 5m
 a|
+Data
+a|
 RJ-45 (order dependent)
 a|
 Not applicable
@@ -108,7 +110,7 @@ Micro-USB console cable
 a|
 Not applicable
 a|
-image:../media/oie_cable_micro_usb.gif[]
+image:../media/oie_cable_micro_usb.png[]
 a|
 Console connection during software setup
 a|
@@ -149,7 +151,7 @@ image::../media/drw_affa800_install_cable_mgmt.gif[]
 == Step 3: Cable controllers
 
 [.lead]
-There is required cabling for your platform's cluster using the two-node switchless cluster method or the cluster interconnect network method. There is optional cabling to the Fibre Channel or iSCSI host networks or direct-attached storage. This cabling is not exclusive; you can have cabling to a host network and storage.
+There is required cabling for your platform's cluster using the two-node switchless cluster method or the cluster interconnect network method. There is optional cabling to the Fibre Channel or iSCSI host networks or direct-attached storage. This cabling is not exclusive; you can have cable to a host network and storage.
 
 === Required cabling: Cable controllers to a cluster
 
@@ -165,7 +167,7 @@ Contact your network administrator for information about connecting the system t
 
 Be sure to check the illustration arrow for the proper cable connector pull-tab orientation.
 
-image::../media/oie_cable_pull_tab_up.gif[]
+image::../media/oie_cable_pull_tab_up.png[]
 
 NOTE: As you insert the connector, you should feel it click into place; if you do not feel it click, remove it, turn it around and try again.
 
@@ -177,7 +179,7 @@ https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=edc42447-f721-4cbe
 |===
 | Step| Perform on each controller module
 a|
-image:../media/oie_legend_icon_1_dp.gif[]
+image:../media/oie_legend_icon_1_dp.png[]
 a|
 Cable the HA interconnect ports:
 
@@ -186,7 +188,7 @@ Cable the HA interconnect ports:
 image:../media/drw_affa800_ha_pair_cabling.png[]
 
 a|
-image:../media/oie_legend_icon_2_lg.gif[]
+image:../media/oie_legend_icon_2_lg.png[]
 a|
 Cable the cluster interconnect ports:
 
@@ -194,21 +196,23 @@ Cable the cluster interconnect ports:
 ** e1a to e1a
 image:../media/drw_affa800_tnsc_clust_cabling.png[]
 a|
-image:../media/oie_legend_icon_3_lp.gif[]
+image:../media/oie_legend_icon_3_lp.png[]
 a|
 Cable the management ports to the management network switches    image:../media/drw_affa800_mgmt_cabling.png[]
 a|
-image:../media/oie_legend_icon_attn_symbol.gif[]
+image:../media/oie_legend_icon_attn_symbol.png[]
 a|
 DO NOT plug in the power cords at this point.
 |===
 
 . To perform optional cabling, see:
- ** link:install-detailed-guide.html#option-1-connecting-to-a-fibre-channel-host[Option 1: Connecting to a Fibre Channel host]
- ** link:install-detailed-guide.html#option-2-connecting-to-a-10gbe-host[Option 2: Connecting to a 10GbE host]
- ** link:install-detailed-guide.html#option-3-connecting-to-a-single-direct-attached-ns224-drive-shelf[Option 3: Connecting to a single direct-attached NS224 drive shelf]
- ** link:install-detailed-guide.html#option-4-connecting-to-two-direct-attached-ns224-drive-shelves[Option 4: Connecting to two direct-attached NS224 drive shelves]
-. To complete setting up your system, see link:install-detailed-guide.html#step-4-complete-system-setup-and-configuration[Step 4: Completing system setup and configuration]
+
+ ** <<Option 1: Connect to a Fibre Channel host>>
+ ** <<Option 2: Connect to a 10GbE host>>
+ ** <<Option 3: Connect to a single direct-attached NS224 drive shelf>>
+ ** <<Option 4: Connect to two direct-attached NS224 drive shelves>>
+
+. To complete setting up your system, see <<Step 4: Completing system setup and configuration>>.
 
 ==== Option 2: Cable a switched cluster
 
@@ -219,7 +223,7 @@ Contact your network administrator for information about connecting the system t
 
 Be sure to check the illustration arrow for the proper cable connector pull-tab orientation.
 
-image::../media/oie_cable_pull_tab_up.gif[]
+image::../media/oie_cable_pull_tab_up.png[]
 
 NOTE: As you insert the connector, you should feel it click into place; if you do not feel it click, remove it, turn it around and try again.
 
@@ -231,7 +235,7 @@ https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=49e48140-4c5a-4395
 |===
 | Step| Perform on each controller module
 a|
-image:../media/oie_legend_icon_1_dp.gif[]
+image:../media/oie_legend_icon_1_dp.png[]
 a|
 Cable the HA interconnect ports:
 
@@ -239,30 +243,31 @@ Cable the HA interconnect ports:
 ** e1b to e1b
 image:../media/drw_affa800_ha_pair_cabling.png[]
 a|
-image:../media/oie_legend_icon_2_lg.gif[]
+image:../media/oie_legend_icon_2_lg.png[]
 a|
 Cable the cluster interconnect ports to the 100 GbE cluster interconnect switches.
 ** e0a
 ** e1a
 image:../media/drw_affa800_switched_clust_cabling.png[]
 a|
-image:../media/oie_legend_icon_3_lp.gif[]
+image:../media/oie_legend_icon_3_lp.png[]
 a|
 Cable the management ports to the management network switches    image:../media/drw_affa800_mgmt_cabling.png[]
 
 a|
-image:../media/oie_legend_icon_attn_symbol.gif[]
+image:../media/oie_legend_icon_attn_symbol.png[]
 a|
 DO NOT plug in the power cords at this point.
 |===
 
 . To perform optional cabling, see:
-** link:install-detailed-guide.html#option-1-connecting-to-a-fibre-channel-host[Option 1: Connecting to a Fibre Channel host]
-** link:install-detailed-guide.html#option-2-connecting-to-a-10gbe-host[Option 2: Connecting to a 10GbE host]
-** link:install-detailed-guide.html#option-3-connecting-to-a-single-direct-attached-ns224-drive-shelf[Option 3: Connecting to a single direct-attached NS224 drive shelf]
-** link:install-detailed-guide.html#option-4-connecting-to-two-direct-attached-ns224-drive-shelves[Option 4: Connecting to two direct-attached NS224 drive shelves]
-. To complete setting up your system, see link:install-detailed-guide.html#step-4-complete-system-setup-and-configuration[Step 4: Completing system setup and configuration]
 
+ ** <<Option 1: Connect to a Fibre Channel host>>
+ ** <<Option 2: Connect to a 10GbE host>>
+ ** <<Option 3: Connect to a single direct-attached NS224 drive shelf>>
+ ** <<Option 4: Connect to two direct-attached NS224 drive shelves>>
+
+. To complete setting up your system, see <<Step 4: Completing system setup and configuration>>.
 
 === Optional cabling: Cable configuration-dependent options
 
@@ -278,7 +283,7 @@ Contact your network administrator for information about connecting the system t
 
 Be sure to check the illustration arrow for the proper cable connector pull-tab orientation.
 
-image::../media/oie_cable_pull_tab_up.gif[]
+image::../media/oie_cable_pull_tab_up.png[]
 
 NOTE: As you insert the connector, you should feel it click into place; if you do not feel it click, remove it, turn it around and try again.
 
@@ -295,13 +300,14 @@ a|
 a|
 To perform other optional cabling, choose from:
 
-* link:install-detailed-guide.html#option-3-connecting-to-a-single-direct-attached-ns224-drive-shelf[Option 3: Connecting to a single direct-attached NS224 drive shelf]
-* link:install-detailed-guide.html#option-4-connecting-to-two-direct-attached-ns224-drive-shelves[Option 4: Connecting to two direct-attached NS224 drive shelves]
+* <<Option 3: Connect to a single direct-attached NS224 drive shelf>>
+* <<Option 4: Connect to two direct-attached NS224 drive shelves>>
 
 a|
 3
 a|
-To complete setting up your system, see link:install-detailed-guide.html#step-4-complete-system-setup-and-configuration[Step 4: Completing system setup and configuration]
+To complete setting up your system, see <<Step 4: Completing system setup and configuration>>.
+
 |===
 
 ==== Option 2: Cable to a 10GbE host network
@@ -313,7 +319,7 @@ Contact your network administrator for information about connecting the system t
 
 Be sure to check the illustration arrow for the proper cable connector pull-tab orientation.
 
-image::../media/oie_cable_pull_tab_up.gif[]
+image::../media/oie_cable_pull_tab_up.png[]
 
 NOTE: As you insert the connector, you should feel it click into place; if you do not feel it click, remove it, turn it around and try again.
 
@@ -330,13 +336,14 @@ a|
 a|
 To perform other optional cabling, choose from:
 
-* link:install-detailed-guide.html#option-3-connecting-to-a-single-direct-attached-ns224-drive-shelf[Option 3: Connecting to a single direct-attached NS224 drive shelf]
-* link:install-detailed-guide.html#option-4-connecting-to-two-direct-attached-ns224-drive-shelves[Option 4: Connecting to two direct-attached NS224 drive shelves]
+* <<Option 3: Connect to a single direct-attached NS224 drive shelf>>
+* <<Option 4: Connect to two direct-attached NS224 drive shelves>>
 
 a|
 3
 a|
-To complete setting up your system, see link:install-detailed-guide.html#step-4-complete-system-setup-and-configuration[Step 4: Completing system setup and configuration]
+To complete setting up your system, see <<Step 4: Completing system setup and configuration>>.
+
 |===
 
 ==== Option 3: Cable the controllers to a single drive shelf
@@ -346,7 +353,7 @@ You must cable each controller to the NSM modules on the NS224 drive shelf.
 
 Be sure to check the illustration arrow for the proper cable connector pull-tab orientation.
 
-image::../media/oie_cable_pull_tab_up.gif[]
+image::../media/oie_cable_pull_tab_up.png[]
 
 NOTE: As you insert the connector, you should feel it click into place; if you do not feel it click, remove it, turn it around and try again.
 
@@ -367,7 +374,7 @@ a|
 Cable controller B to the shelf:    image:../media/drw_affa800_1shelf_cabling_b.png[]
 |===
 
-. To complete setting up your system, see link:install_detailed_guide.md#[Completing system setup and configuration].
+. To complete setting up your system, see <<Completing system setup and configuration>>.
 
 ==== Option 4: Cable the controllers to two drive shelves
 
@@ -376,7 +383,7 @@ You must cable each controller to the NSM modules on both NS224 drive shelves.
 
 Be sure to check the illustration arrow for the proper cable connector pull-tab orientation.
 
-image::../media/oie_cable_pull_tab_up.gif[]
+image::../media/oie_cable_pull_tab_up.png[]
 
 NOTE: As you insert the connector, you should feel it click into place; if you do not feel it click, remove it, turn it around and try again.
 
@@ -397,7 +404,7 @@ a|
 Cable controller B to the shelves:    image:../media/drw_affa800_2shelf_cabling_b.png[]
 |===
 
-. To complete setting up your system, see link:install_detailed_guide.md#[Completing system setup and configuration].
+. To complete setting up your system, see <<Completing system setup and configuration>>.
 
 == Step 4: Complete system setup and configuration
 

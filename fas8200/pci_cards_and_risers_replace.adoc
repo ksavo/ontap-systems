@@ -50,10 +50,10 @@ image::../media/drw_8020_cam_handle_thumbscrew.gif[]
 [cols="1,3"]
 |===
 a|
-image:../media/legend_icon_01.gif[]|
+image:../media/legend_icon_01.png[]|
 Thumbscrew
 a|
-image:../media/legend_icon_02.gif[]
+image:../media/legend_icon_02.png[]
 a|
 Cam handle
 |===
@@ -75,10 +75,10 @@ image::../media/drw_rxl_pcie.gif[]
 [cols="1,3"]
 |===
 a|
-image:../media/legend_icon_01.gif[]|
+image:../media/legend_icon_01.png[]|
 Side panel
 a|
-image:../media/legend_icon_02.gif[]
+image:../media/legend_icon_02.png[]
 a|
 PCIe card
 |===
@@ -149,7 +149,7 @@ NOTE: Be sure to exit Maintenance mode after completing the conversion.
 a|
 An HA pair
 a|
-`storage failover giveback -ofnode impaired_node_name`
+`storage failover giveback -ofnode _impaired_node_name_`
 a|
 A two-node MetroCluster configuration
 a|

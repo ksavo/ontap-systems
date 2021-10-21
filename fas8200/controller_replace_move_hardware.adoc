@@ -32,10 +32,10 @@ image::../media/drw_8020_cam_handle_thumbscrew.gif[]
 +
 |===
 a|
-image:../media/legend_icon_01.gif[]|
+image:../media/legend_icon_01.png[]|
 Thumbscrew
 a|
-image:../media/legend_icon_02.gif[]
+image:../media/legend_icon_02.png[]
 a|
 Cam handle
 |===
@@ -87,10 +87,10 @@ image::../media/drw_rxl_nvmem_battery.gif[]
 +
 |===
 a|
-image:../media/legend_icon_01.gif[]|
+image:../media/legend_icon_01.png[]|
 Battery lock tab
 a|
-image:../media/legend_icon_02.gif[]
+image:../media/legend_icon_02.png[]
 a|
 NVMEM battery pack
 |===
@@ -140,11 +140,11 @@ image::../media/drw_rxl_pcie.gif[]
 +
 |===
 a|
-image:../media/legend_icon_01.gif[]
+image:../media/legend_icon_01.png[]
 a|
 Side panel
 a|
-image:../media/legend_icon_02.gif[]
+image:../media/legend_icon_02.png[]
 a|
 PCIe card
 |===
@@ -171,7 +171,6 @@ You must move the caching modules from the impaired controller modules to the re
  .. Remove the heatsink.
 +
 The storage system comes with two slots available for the caching module and only one slot is occupied, by default.
-+
 +
 image::../media/drw_rxl_fcache.gif[]
 +
@@ -218,7 +217,7 @@ The controller begins to boot as soon as it is seated in the chassis.
 
  .. If you have not already done so, reinstall the cable management device.
  .. Bind the cables to the cable management device with the hook and loop strap.
- .. When you see the message Press Ctrl-C for Boot Menu, press `Ctrl-C` to interrupt the boot process.
+ .. When you see the message `Press Ctrl-C for Boot Menu`, press `Ctrl-C` to interrupt the boot process.
 +
 NOTE: If you miss the prompt and the controller module boots to ONTAP, enter `halt`, and then at the LOADER prompt enter `boot_ontap`, press `Ctrl-C` when prompted, and then boot to Maintenance mode.
 
@@ -234,7 +233,7 @@ NOTE: Do not use excessive force when sliding the controller module into the cha
 
  .. If you have not already done so, reinstall the cable management device.
  .. Bind the cables to the cable management device with the hook and loop strap.
- .. Reconnect the power cables to the power supplies and to the power sources, turn on the power to start the boot process, and then press `Ctrl-C` after you see the Press Ctrl-C for Boot Menu message.
+ .. Reconnect the power cables to the power supplies and to the power sources, turn on the power to start the boot process, and then press `Ctrl-C` after you see the `Press Ctrl-C for Boot Menu` message.
 +
 NOTE: If you miss the prompt and the controller module boots to ONTAP, enter `halt`, and then at the LOADER prompt enter `boot_ontap`, press `Ctrl-C` when prompted, and then boot to Maintenance mode.
 

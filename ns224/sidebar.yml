@@ -2,13 +2,17 @@ section: ns224
 title: NS224 shelves
 url: /ns224/index.html
 entries:
-  - title: Hot-add shelf
-    url: /ns224/hot-add-shelf.html
-  - title: Change shelf ID
-    url: /ns224/change-shelf-id.html
-  - title: Cable shelves
-    url: /ns224/cable-as-switch-attached.html
+  - title: Install and cable
+    ##pdf-filename: NS224 Shelves Install and Cable
+    entries:
+    - title: Hot-add a shelf
+      url: /ns224/hot-add-shelf.html
+    - title: Change a shelf ID
+      url: /ns224/change-shelf-id.html
+    - title: Cable shelves as switch-attached storage
+      url: /ns224/cable-as-switch-attached.html
   - title: Maintain
+    ##pdf-filename:NS224 shelf maintain
     entries:
     - title: Boot media
       url: /ns224/service-replace-boot-media.html

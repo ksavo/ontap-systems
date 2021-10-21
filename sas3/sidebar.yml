@@ -3,6 +3,7 @@ title: SAS shelves with IOM12 modules
 url: /sas3/index.html
 entries:
   - title: Install and cable
+    ##pdf-filename: Shelves with IOM12 Modules Install and Cable
     entries:
     - title: Install and cable shelves for new system
       url: /sas3/install-new-system.html
@@ -33,6 +34,7 @@ entries:
       - title: How to read worksheet to cable for quad-pathed connectivity
         url: /sas3/install-cabling-worksheets-how-to-read-quadpath.html
   - title: Maintain
+    #pfd-filename: Shelves with IOM12 Modules Maintain
     entries:
     - title: Disk drive in DS224C or DS212C shelf
       url: /sas3/service-hot-swap-drive-ds224c-ds212c.html
