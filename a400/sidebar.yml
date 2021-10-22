@@ -26,7 +26,7 @@ entries:
         url: /a400/bootmedia-replace.html
       - title: Boot recovery image
         url: /a400/bootmedia-recovery-image-boot-options.html
-      - title: Switch back MetroCluster config 
+      - title: Switch back MetroCluster config
         url: /a400/bootmedia-2n-mcc-switchback.html
       - title: Restore OKM, NSE, and NVE
         url: /a400/bootmedia-encryption-restore.html
@@ -48,16 +48,14 @@ entries:
         url: /a400/controller-replace-overview.html
       - title: Shut down impaired controller
         url: /a400/controller-replace-shutdown.html
-      - title: Replace the controller module hardware
-        url: /a400/controller-replace_move_hardware.html
-      - title: Restore and verify the system configuration
+      - title: Replace controller module
+        url: /a400/controller-replace-move-hardware.html
+      - title: Restore system configuration
         url: /a400/controller-replace-system-config-restore-and-verify.html
       - title: Recable the system
-        url: /a400/controller-repalce-recable-reassign-disks.html
+        url: /a400/controller-replace-recable-reassign-disks.html
       - title: Complete system restoration
-        url: /a400/controller-replace-complete-system-restoration.html
-      - title: Return faied part to NetApp
-        url: /a400/controller-replace-complete-rma.html
+        url: /a400/controller-replace-restore-system-rma.html
     - title: DIMM
       url: /a400/dimm-replace.html
     - title: Fan
