@@ -180,7 +180,7 @@ After you replace a component within the controller module, you must reinstall t
  .. Slide the air duct toward the risers until the locking tabs click into place.
  .. Inspect the air duct to make sure that it is properly seated and locked into place.
 +
-image::../media/drw_a800_close_air_duct.gif[]
+image::../media/drw_a800_close_air_duct.png[]
 +
 [cols="1,4"]
 |===
