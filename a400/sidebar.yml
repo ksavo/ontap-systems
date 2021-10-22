@@ -53,16 +53,14 @@ entries:
         url: /a400/controller-replace-overview.html
       - title: Shut down impaired controller
         url: /a400/controller-replace-shutdown.html
-      - title: Replace the controller module hardware
+      - title: Replace controller module
         url: /a400/controller-replace_move_hardware.html
       - title: Restore and verify the system configuration
         url: /a400/controller-replace-system-config-restore-and-verify.html
       - title: Recable the system
         url: /a400/controller-repalce-recable-reassign-disks.html
-      - title: Complete system restoration
-        url: /a400/controller-replace-complete-system-restoration.html
-      - title: Return faied part to NetApp
-        url: /a400/controller-replace-complete-rma.html
+      - title: Complete replacement
+        url: /a400/controller-replace-restore-system-rma.html
     - title: DIMM
       pdf-filename: AFF A400 DIMM
       url: /a400/dimm-replace.html
