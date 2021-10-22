@@ -15,7 +15,7 @@ You can connect system cabinets together by using the optional cabinet interconn
 +
 The cabinets should be arranged similarly to the following illustration, with the cabinet with the controller modules in the middle, and the cabinets with additional disk shelves on either side. The sides of the cabinets should be close, but do not need to touch each other yet.
 +
-image::../media/drw_fcc_cabinet_ordering.gif[The illustration is described in the surrounding text.]
+image::../media/drw_fcc_cabinet_ordering.png[The illustration is described in the surrounding text.]
 
 . If you are installing the interconnect kit with the side panels on as recommended, reinstall the side panels that were removed during unpacking:
  .. Lift the side panel, tilting it about 15 degrees away from the system cabinet bottom, and then hang it over the lip at the top of the system cabinet frame.
@@ -25,7 +25,7 @@ image::../media/drw_fcc_cabinet_ordering.gif[The illustration is described in th
  .. Unlock and open the front door that is being removed.
  .. Use the following illustration for reference to unplug the power to the illuminated bezel:
 +
-image::../media/drw_sys_cab_remove_brimstone_back_banel.gif[]
+image::../media/drw_sys_cab_remove_brimstone_back_banel.png[]
 +
 |===
 a|

@@ -93,7 +93,7 @@ The riser raises up slightly from the controller module.
 
  .. Lift the riser up, shift it toward the fans so that the sheet metal lip on the riser clears the edge of the controller module, lift the riser out of the controller module, and then place it on a stable, flat surface.
 +
-image::../media/drw_a800_pcie_1_replace.gif[]
+image::../media/drw_a800_pcie_1_replace.png[]
 +
 [cols="1,4"]
 |===
