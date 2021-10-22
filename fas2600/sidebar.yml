@@ -45,7 +45,7 @@ entries:
       - title: Restore system configuration
         url: /fas2600/chassis-replace-complete-system-restore-rma.html
     - title: Controller module
-      #pdf-filename: FAS2600 Controller Module
+      pdf-filename: FAS2600 Controller Module
       entries:
       - title: Overview
         url: /fas2600/controller-replace-overview.html

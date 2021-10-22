@@ -3,7 +3,7 @@ title: AFF C190 systems
 url: /c190/index.html
 entries:
  - title: Install and setup
-  pdf-filename: AFF C190 Install and Setup
+   pdf-filename: AFF C190 Install and Setup
    entries:
     - title: Choose install and setup experience
       url: /c190/install-setup.html
@@ -14,7 +14,7 @@ entries:
     - title: Detailed steps
       url: /c190/install-detailed-guide.html
  - title: Maintain
-  pdf-filename: AFF C190 Maintain
+   pdf-filename: AFF C190 Maintain
    entries:
       # START boot media replacement
     - title: Boot media
