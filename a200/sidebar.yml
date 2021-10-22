@@ -3,7 +3,7 @@ title: AFF A200 systems
 url: /a200/index.html
 entries:
  - title: Install and setup
-   #pdf-filename: AFF A200 Install and Setup
+   pdf-filename: AFF A200 Install and Setup
    entries:
    - title: Cluster configuration worksheet
      url: /a200/install-worksheet-linkout.html
@@ -12,11 +12,11 @@ entries:
    - title: Video steps
      url: /a200/install-video-linkout.html
  - title: Maintain
-   #pdf-filename: AFF A200 Maintain
+   pdf-filename: AFF A200 Maintain
    entries:
     # START boot media replacement
     - title: Boot media
-      #pdf-filename: AFF A200 Boot Media
+      pdf-filename: AFF A200 Boot Media
       entries:
         - title: Overview
           url: /a200/bootmedia-replace-overview.html
@@ -34,7 +34,7 @@ entries:
           url: /a200/bootmedia-complete-rma.html
       # END boot media replacement
     - title: Chassis
-      #pdf-filename: AFF A200 Chassis
+      pdf-filename: AFF A200 Chassis
       entries:
       - title: Overview
         url: /a200/chassis-replace-overview.html
@@ -45,7 +45,7 @@ entries:
       - title: Restore configuration
         url: /a200/chassis-replace-complete-system-restore-rma.html
     - title: Controller module
-      #pdf-filename: AFF A200 Controller Module
+      pdf-filename: AFF A200 Controller Module
       entries:
       - title: Overview
         url: /a200/controller-replace-overview.html
