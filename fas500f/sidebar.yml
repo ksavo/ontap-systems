@@ -2,74 +2,74 @@ section: fas500f
 title: FAS500f systems
 url: /fas500f/index.html
 entries:
-  - title: Install and setup
-    pdf-filename: FAS500f Install and Setup
-    entries:
-    - title: Choose install and setup experience
-      url: /fas500f/install-setup.html
-    - title: Quick steps
-      url: /fas500f/install-quick-guide.html
-    - title: Video steps
-      url: /fas500f/install-videos.html
-    - title: Detailed steps
-      url: /fas500f/install-detailed-guide.html
-  - title: Maintain
-    pdf-filename: FAS500f Maintain
-    entries:
+- title: Install and setup
+  pdf-filename: FAS500f Install and Setup
+  entries:
+  - title: Choose install and setup experience
+    url: /fas500f/install-setup.html
+  - title: Quick steps
+    url: /fas500f/install-quick-guide.html
+  - title: Video steps
+    url: /fas500f/install-videos.html
+  - title: Detailed steps
+    url: /fas500f/install-detailed-guide.html
+- title: Maintain
+  pdf-filename: FAS500f Maintain
+  entries:
 # Boot media start
-    - title: Boot media
-      pdf-filename: FAS500f Boot Media
-      entries:
-      - title: Overview
-        url: /fas500f/bootmedia-replace-overview.html
-      - title: Check onboard encryption keys
-        url: /fas500f/bootmedia-encryption-preshutdown-checks.html
-      - title: Shut down node
-        url: /fas500f/bootmedia-shutdown.html
-      - title: Replace boot image
-        url: /fas500f/bootmedia-replace.html
-      - title: Boot recovery image
-        url: /fas500f/bootmedia-recovery-image-boot-non-2n-mcc.html
-      - title: Restore OKM, NSE, and NVE
-        url: /fas500f/bootmedia-encryption-restore.html
-      - title: Return failed part to NetApp
-        url: /fas500f/bootmedia-complete-rma.html
+  - title: Boot media
+    pdf-filename: FAS500f Boot Media
+    entries:
+    - title: Overview
+      url: /fas500f/bootmedia-replace-overview.html
+    - title: Check onboard encryption keys
+      url: /fas500f/bootmedia-encryption-preshutdown-checks.html
+    - title: Shut down node
+      url: /fas500f/bootmedia-shutdown.html
+    - title: Replace boot image
+      url: /fas500f/bootmedia-replace.html
+    - title: Boot recovery image
+      url: /fas500f/bootmedia-recovery-image-boot-non-2n-mcc.html
+    - title: Restore OKM, NSE, and NVE
+      url: /fas500f/bootmedia-encryption-restore.html
+    - title: Return failed part to NetApp
+      url: /fas500f/bootmedia-complete-rma.html
 # Boot media end
-    - title: Chassis
-      pdf-filename: FAS500f Chassis
-      entries:
-      - title: Overview
-        url: /fas500f/chassis-replace-overview.html
-      - title: Shut down impaired controller
-        url: /fas500f/chassis-replace-shutdown.html
-      - title: Replace hardware
-        url: /fas500f/chassis-replace-move-hardware.html
-      - title: Complete replacement
-        url: /fas500f/chassis-replace-complete-system-restore-rma.html
-    - title: Controller
-      pdf-filename: FAS500f Controller Module
-      entries:
-      - title: Overview
-        url: /fas500f/controller-replace-overview.html
-      - title: Shut down impaired controller
-        url: /fas500f/controller-replace-shutdown.html
-      - title: Replace controller module
-        url: /fas500f/controller-replace-move-hardware.html
-      - title: Restore system configuration
-        url: /fas500f/controller-replace-system-config-restore-and-verify.html
-      - title: Recable system
-        url: /fas500f/controller-replace-recable-reassign-disks.html
-      - title: Complete system restoration
-        url: /fas500f/controller-replace-restore-system-rma.html
-    - title: DIMM
-      url: /fas500f/dimm-replace.html
-    - title: Fan
-      url: /fas500f/fan-replace.html
-    - title: Mezzanine card
-      url: /fas500f/mezzanine-replace.html
-    - title: NVMEM battery
-      url: /fas500f/nvmem-battery-replace.html
-    - title: Power supply
-      url: /fas500f/power-supply-replace.html
-    - title: Real-time clock battery
-      url: /fas500f/rtc-battery-replace.html
+  - title: Chassis
+    pdf-filename: FAS500f Chassis
+    entries:
+    - title: Overview
+      url: /fas500f/chassis-replace-overview.html
+    - title: Shut down impaired controller
+      url: /fas500f/chassis-replace-shutdown.html
+    - title: Replace hardware
+      url: /fas500f/chassis-replace-move-hardware.html
+    - title: Complete replacement
+      url: /fas500f/chassis-replace-complete-system-restore-rma.html
+  - title: Controller
+    pdf-filename: FAS500f Controller Module
+    entries:
+    - title: Overview
+      url: /fas500f/controller-replace-overview.html
+    - title: Shut down impaired controller
+      url: /fas500f/controller-replace-shutdown.html
+    - title: Replace controller module
+      url: /fas500f/controller-replace-move-hardware.html
+    - title: Restore system configuration
+      url: /fas500f/controller-replace-system-config-restore-and-verify.html
+    - title: Recable system
+      url: /fas500f/controller-replace-recable-reassign-disks.html
+    - title: Complete system restoration
+      url: /fas500f/controller-replace-restore-system-rma.html
+  - title: DIMM
+    url: /fas500f/dimm-replace.html
+  - title: Fan
+    url: /fas500f/fan-replace.html
+  - title: Mezzanine card
+    url: /fas500f/mezzanine-replace.html
+  - title: NVMEM battery
+    url: /fas500f/nvmem-battery-replace.html
+  - title: Power supply
+    url: /fas500f/power-supply-replace.html
+  - title: Real-time clock battery
+    url: /fas500f/rtc-battery-replace.html
