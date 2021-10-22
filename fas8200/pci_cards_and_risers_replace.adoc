@@ -45,7 +45,7 @@ image::../media/drw_32xx_cbl_mgmt_arm.gif[]
 
 . Loosen the thumbscrew on the cam handle on the controller module.
 +
-image::../media/drw_8020_cam_handle_thumbscrew.gif[]
+image::../media/drw_8020_cam_handle_thumbscrew.png[]
 +
 [cols="1,3"]
 |===

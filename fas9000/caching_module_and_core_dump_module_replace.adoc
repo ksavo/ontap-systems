@@ -52,7 +52,7 @@ Your storage system must meet certain criteria depending on your situation:
 +
 NOTE: If you are adding another caching module to your system, remove the blank module and go to the next step.
 +
-image::../media/drw_9000_remove_flashcache.svg[]
+image::../media/drw_9000_remove_flashcache.png[]
 +
 |===
 |image:../media/legend_icon_01.png[]|Orange release button.
@@ -93,7 +93,7 @@ The 1TB cache core dump, X9170A, is only used in the AFF A700 systems. The core 
 . If you are not already grounded, properly ground yourself.
 . If you are replacing a failed core dump module, locate and remove it:
 +
-image::../media/drw_9000_remove_flashcache.svg[]
+image::../media/drw_9000_remove_flashcache.png[]
 +
 [cols="1,3"]
 |===

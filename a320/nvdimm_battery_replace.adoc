@@ -34,7 +34,7 @@ Leave the cables in the cable management device so that when you reinstall the c
 . Remove and set aside the cable management devices from the left and right sides of the controller module.
 . Remove the controller module from the chassis:
 +
-image::../media/drw_a320_controller_remove_animated_gif.gif[]
+image::../media/drw_a320_controller_remove_animated_gif.png[]
 +
  .. Insert your forefinger into the latching mechanism on either side of the controller module.
  .. Press down on the orange tab on top of the latching mechanism until it clears the latching pin on the chassis.
@@ -66,7 +66,7 @@ After you have replaced the component in the controller module, you must re-inst
 . If you have not already done so, close the air duct at the rear of the controller module and reinstall the cover over the PCIe cards.
 . Align the end of the controller module with the opening in the chassis, and then gently push the controller module halfway into the system.
 +
-image::../media/drw_a320_controller_install_animated_gif.gif[]
+image::../media/drw_a320_controller_install_animated_gif.png[]
 +
 NOTE: Do not completely insert the controller module in the chassis until instructed to do so.
 

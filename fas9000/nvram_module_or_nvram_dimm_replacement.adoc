@@ -47,7 +47,7 @@ To replace the NVRAM module, locate it in slot 6 in the chassis and follow the s
 . If you are not already grounded, properly ground yourself.
 . Move the FlashCache module from the old NVRAM module to the new NVRAM module:
 +
-image::../media/drw_9000_remove_flashcache.svg[]
+image::../media/drw_9000_remove_flashcache.png[]
 +
 |===
 a|
@@ -78,7 +78,7 @@ The NVRAM module disengages from the chassis and moves out a few inches.
 
  .. Remove the NVRAM module from the chassis by pulling on the pull tabs on the sides of the module face.
 +
-image::../media/drw_9000_move_remove_nvram_module.svg[]
+image::../media/drw_9000_move_remove_nvram_module.png[]
 +
 |===
 a|
@@ -127,7 +127,7 @@ The NVRAM module disengages from the chassis and moves out a few inches.
 
  .. Remove the NVRAM module from the chassis by pulling on the pull tabs on the sides of the module face.
 +
-image::../media/drw_9000_move_remove_nvram_module.svg[]
+image::../media/drw_9000_move_remove_nvram_module.png[]
 +
 |===
 a|
