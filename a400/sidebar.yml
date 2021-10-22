@@ -3,7 +3,7 @@ title: AFF A400 systems
 url: /a400/index.html
 entries:
   - title: Install and setup
-    #pdf-filename: AFF A400 Install and Setup
+    pdf-filename: AFF A400 Install and Setup
     entries:
     - title: Choose install and setup experience
       url: /a400/install-setup.html
@@ -14,10 +14,10 @@ entries:
     - title: Detailed steps
       url: /a400/install-detailed-guide.html
   - title: Maintain
-    #pdf-filename: AFF A400 Maintain
+    pdf-filename: AFF A400 Maintain
     entries:
     - title: Boot media
-      #pdf-filename: AFF A400 Boot Media
+      pdf-filename: AFF A400 Boot Media
       entries:
       - title: Overview
         url: /a400/bootmedia-replace-overview.html
@@ -36,7 +36,7 @@ entries:
       - title: Return failed part to NetApp
         url: /a400/bootmedia-complete-rma.html
     - title: Chassis
-      #pdf-filename: AFF A400 Chassis
+      pdf-filename: AFF A400 Chassis
       entries:
       - title: Overview
         url: /a400/chassis-replace-overview.html
@@ -47,7 +47,7 @@ entries:
       - title: Complete replacement
         url: /a400/chassis-replace-complete-system-restore-rma.html
     - title: Controller module
-      #pdf-filename: AFF A400 Controller Module
+      pdf-filename: AFF A400 Controller Module
       entries:
       - title: Overview
         url: /a400/controller-replace-overview.html
@@ -64,23 +64,23 @@ entries:
       - title: Return faied part to NetApp
         url: /a400/controller-replace-complete-rma.html
     - title: DIMM
-      #pdf-filename: AFF A400 DIMM
+      pdf-filename: AFF A400 DIMM
       url: /a400/dimm-replace.html
     - title: Fan
-      #pdf-filename: AFF A400 Fan Module
+      pdf-filename: AFF A400 Fan Module
       url: /a400/fan-swap-out.html
     - title: NVDIMM battery
-      #pdf-filename: AFF A400 NVDIMM Battery Battery
+      pdf-filename: AFF A400 NVDIMM Battery Battery
       url: /a400/nvdimm-battery-replace.html
     - title: NVDIMM
-      #pdf-filename: AFF A320 NVDIMM
+      pdf-filename: AFF A320 NVDIMM
       url: /a400/nvdimm-replace.html
     - title: PCIe or mezzanine card
-      #pdf-filename: AFF A400 PCIe or Mezzanine Card
+      pdf-filename: AFF A400 PCIe or Mezzanine Card
       url: /a400/pci-cards-and-risers-replace.html
     - title: Power supply
-      #pdf-filename: AFF A400 Power Supply
+      pdf-filename: AFF A400 Power Supply
       url: /a400/power-supply-replace.html
     - title: Real-time clock battery
-      #pdf-filename: AFF A400 Real-Time Clock Battery
+      pdf-filename: AFF A400 Real-Time Clock Battery
       url: /a400/rtc-battery-replace.html
