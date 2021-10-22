@@ -161,6 +161,7 @@ NOTE: As you insert the connector, you should feel it click into place; if you d
 https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=beec3966-0a01-473c-a5de-ac68017fbf29[Cabling a two node switchless cluster]
 +
 [options="header" cols="1,2"]
+
 |===
 | Step| Perform on each controller
 a|
@@ -184,7 +185,7 @@ a|
 DO NOT plug in the power cords at this point.
 |===
 
-. To complete setting up your system, see <<Step 4: Completing system setup and configuration>>.
+. To complete setting up your system, see link:install-detailed-guide.html#step-4-complete-system-setup-and-configuration[Step4: Completing system setup and configuration].
 
 ==== Option 2: Cable a switched cluster
 
@@ -227,7 +228,7 @@ a|
 DO NOT plug in the power cords at this point.
 |===
 
-. To complete setting up your system, see <<Step 4: Completing system setup and configuration>>.
+. To complete setting up your system, see link:install-detailed-guide.html#step-4-complete-system-setup-and-configuration[Step4: Completing system setup and configuration].
 
 === Optional cabling: Cable configuration-dependent options
 
@@ -266,7 +267,7 @@ To perform other optional cabling, choose from:
 a|
 3
 a|
-To complete setting up your system, <<Step 4: Completing system setup and configuration>>.
+To complete setting up your system, see link:install-detailed-guide.html#step-4-complete-system-setup-and-configuration[Step4: Completing system setup and configuration].
 
 |===
 
@@ -302,7 +303,7 @@ To perform other optional cabling, choose from:
 a|
 3
 a|
-To complete setting up your system, see <<Step 4: Completing system setup and configuration>>.
+To complete setting up your system, see link:install-detailed-guide.html#step-4-complete-system-setup-and-configuration[Step4: Completing system setup and configuration].
 
 |===
 
@@ -334,7 +335,7 @@ a|
 Cable controller B to the shelf:    image:../media/drw_affa250_1shelf_cabling_b.png[]
 |===
 
-. To complete setting up your system, see <<Step 4: Completing system setup and configuration>>.
+. To complete setting up your system, see link:install-detailed-guide.html#step-4-complete-system-setup-and-configuration[Step4: Completing system setup and configuration].
 
 == Step 4: Complete system setup and configuration
 
