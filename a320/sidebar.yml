@@ -3,6 +3,7 @@ title: AFF A320 systems
 url: /a320/index.html
 entries:
   - title: Install and setup
+    #pdf-filename: AFF A320 Install and Setup
     entries:
     - title: Choose install and setup experience
       url: /a320/install-setup.html
@@ -13,9 +14,11 @@ entries:
     - title: Detailed steps
       url: /a320/install-detailed-guide.html
   - title: Maintain
+    #pdf-filename: AFF A320 Maintain
     entries:
       # START boot media replacement
     - title: Boot media
+      #pdf-filename: AFF A320 Boot Media
       entries:
         - title: Overview
           url: /a320/bootmedia-replace-overview.html
@@ -34,6 +37,7 @@ entries:
       # END boot media replacement
       # START chassis replacement
     - title: Chassis
+      #pdf-filename: AFF A320 Chassis
       entries:
       - title: Overview
         url: /a320/chassis-replace-overview.html
@@ -46,6 +50,7 @@ entries:
       # END chassis replacement
       # START controller module replacement
     - title: Controller module
+      #pdf-filename: AFF A320 Controller Module
       entries:
         - title: Overview
           url: /a320/controller-replace-overview.html
@@ -64,25 +69,32 @@ entries:
       # END controller module replacement
       # START dimm replacement
     - title: DIMM
+      #pdf-filename: AFF A320 DIMM
       url: /a320/dimm-replace.html
       # END dimm replacement
     #START Fan module replace
     - title: Fan
+      #pdf-filename: AFF A320 Fan Module
       url: /a320/fan-swap-out.html
     # END Fan module replace
     - title: NVDIMM
+      #pdf-filename: AFF A32 NVDIMM
       url: /a320/nvdimm-replace.html
     # START NVDIMM replace
     - title: NVDIMM battery
+      #pdf-filename: AFF A320 NVDIMM Battery Battery
       url: /a320/nvdimm-battery-replace.html
       # START PCIe card replacement
     - title: PCIe card
+      #pdf-filename: AFF A320 PCIe card
       url: /a320/pci-cards-and-risers-replace.html
       # END PCIe card replacement
     #START PSU replace
     - title: Power supply
+      #pdf-filename: AFF A320 Power Supply
       url: /a320/power-supply-replace.html
       # START rtc battery replacement
     - title: Real-time clock battery
+      #pdf-filename: AFF A320 Real-Time Clock Battery
       url: /a320/rtc-battery-replace.html
       # END rtc battery replacement

@@ -3,6 +3,7 @@ title: AFF A700s systems
 url: /a700s/index.html
 entries:
  - title: Install and setup
+  #pdf-filename: AFF A700s Install and Setup
    entries:
    - title: Cluster configuration worksheet
      url: /a700s/install-worksheet-linkout.html
@@ -11,8 +12,10 @@ entries:
    - title: Video steps
      url: /a700s/install-video-linkout.html
  - title: Maintain
+  #pdf-filename: AFF A700s Maintain
    entries:
     - title: Boot media
+      #pdf-filename: AFF A700s Boot Media
       entries:
       - title: Overview
         url: /a700s/bootmedia-replace-overview.html
@@ -31,6 +34,7 @@ entries:
       - title: Return failed part to NetApp
         url: /a700s/bootmedia-complete-rma.html
     - title: Chassis
+      #pdf-filename: AFF A700s Chassis
       entries:
       - title: Overview
         url: /a700s/chassis-replace-overview.html
@@ -41,6 +45,7 @@ entries:
       - title: Complete replacement
         url: /a700s/chassis-replace-complete-system-restore-rma.html
     - title: Controller
+      #pdf-filename: AFF A700s Controller
       entries:
       - title: Overview
         url: /a700s/controller-replace-overview.html
@@ -55,6 +60,7 @@ entries:
       - title: Complete replacement process
         url: /a700s/controller-replace-restore-system-rma.html
     - title: DIMM
+      #pdf-filename: AFF A700s DIMM
       url: /a700s/dimm-replace.html
     - title: Fan
       entries:
@@ -62,21 +68,27 @@ entries:
         url: /a700s/fan-impaired-controller-shutdown.html
       - title: Remove controller module
         url: /a700s/fan-controller-remove.html
-      - title: Replace fan
+      - title: Fan
+        #pdf-filename: AFF A700s Fan
         url: /a700s/fan-replace.html
       - title: Reinstall controller module
         url: /a700s/fan-controller-reinstall-pcie-rtc.html
       - title: Return failed part to NetApp
         url: /a700s/fan-complete-rma.html
     - title: NVRAM battery
+      #pdf-filename: AFF A700s NVRAM Battery
       url: /a700s/nvmem-nvram-battery-replace.html
     - title: NVRAM
+      #pdf-filename: AFF A700s NVRAM
       url: /a700s/nvram-or-nvram-dimm-replacement.html
     - title: PCIe card
+      #pdf-filename: AFF A700s PCIe Card
       url: /a700s/pci-cards-and-risers-replace.html
     - title: Power supply
+      #pdf-filename: AFF A700s Power Supply
       url: /a700s/power-supply-swap-out.html
     - title: Real-time clock battery
+      #pdf-filename: AFF A700s Real-Time Clock Battery
       url: /a700s/rtc-battery-replace.html
-    - title: System-level diagnostics 
+    - title: System-level diagnostics
       url: /a700s/system-level-diags-linkout.html
