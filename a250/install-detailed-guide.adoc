@@ -266,7 +266,7 @@ To perform other optional cabling, choose from:
 a|
 3
 a|
-To complete setting up your system, see <<Step 4: Completing system setup and configuration>>.
+To complete setting up your system, <<Step 4: Completing system setup and configuration>>.
 
 |===
 
