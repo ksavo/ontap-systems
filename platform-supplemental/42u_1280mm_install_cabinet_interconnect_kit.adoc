@@ -40,7 +40,7 @@ Back panel and thumbscrews
 
  .. Use the following illustration for reference to remove the front door:
 +
-image::../media/drw_sys_cab_front_door_daiginjo.gif[]
+image::../media/drw_sys_cab_front_door_daiginjo.png[]
 +
 |===
 a|
