@@ -58,7 +58,7 @@ entries:
       - title: Restore and verify the system configuration
         url: /a400/controller-replace-system-config-restore-and-verify.html
       - title: Recable the system
-        url: /a400/controller-repalce-recable-reassign-disks.html
+        url: /a400/controller-replace-recable-reassign-disks.html
       - title: Complete replacement
         url: /a400/controller-replace-restore-system-rma.html
     - title: DIMM
