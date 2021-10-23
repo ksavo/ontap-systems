@@ -54,7 +54,7 @@ entries:
       - title: Shut down impaired controller
         url: /a400/controller-replace-shutdown.html
       - title: Replace controller module
-        url: /a400/controller-replace_move_hardware.html
+        url: /a400/controller-replace-move-hardware.html
       - title: Restore and verify the system configuration
         url: /a400/controller-replace-system-config-restore-and-verify.html
       - title: Recable the system

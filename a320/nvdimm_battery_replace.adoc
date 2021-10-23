@@ -49,7 +49,7 @@ The latching mechanism hook should be nearly vertical and should be clear of the
 [.lead]
 To replace the NVDIMM battery, you must remove the failed battery from the controller module and install the replacement battery into the controller module.
 
-image::../media/drw_a320_nvbat_replace_animated_gif.gif[]
+image::../media/drw_a320_nvbat_move_animated_gif.png[]
 
 . Open the air duct and locate the NVDIMM battery.
 . Locate the battery plug and squeeze the clip on the face of the battery plug to release the plug from the socket, and then unplug the battery cable from the socket.

@@ -51,8 +51,6 @@ The latching mechanism hook should be nearly vertical and should be clear of the
 [.lead]
 Replacing a system DIMM involves identifying the target DIMM through the associated error message, locating the target DIMM using the FRU map on the air duct or the lit LED on the motherboard, and then replacing the DIMM.
 
-image::../media/drw_a320_system_dimm_replace_aminated_gif.gif[]
-
 . Rotate the air duct to the open position.
 . Locate the DIMMs on your controller module.
 +
