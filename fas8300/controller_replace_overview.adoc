@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: fas8300, fas8700, prerequisite, replace the controller module
 summary: "You must review the prerequisites for the replacement procedure and select the correct one for your version of the ONTAP operating system."
 ---
-= Overview - FAS8300 and FAS8700
+= Replace the controller module - FAS8300 and FAS8700
 :icons: font
 :imagesdir: ../media/
 
