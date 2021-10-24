@@ -29,7 +29,7 @@ Leave the cables in the cable management device so that when you reinstall the c
 +
 The controller module moves slightly out of the chassis.
 +
-image::../media/drw_a700s_pcm_remove.gif[]
+image::../media/drw_a700s_pcm_remove.png[]
 
 |===
 a|
@@ -50,7 +50,7 @@ Make sure that you support the bottom of the controller module as you slide it o
  .. Slide the air duct toward the fan modules, and then rotate it upward to its completely open position.
 
 
-image::../media/drw_a700s_open_air_duct.gif[]
+image::../media/drw_a700s_open_air_duct.png[]
 
 |===
 a|
@@ -80,7 +80,7 @@ You need a Phillips head screw driver to remove the screw that holds the boot me
  .. Open the air duct, if needed.
  .. If needed, remove Riser 2, the middle PCIe module, by unlocking the locking latch and then removing the riser from the controller module.
 +
-image::../media/drw_a700s_boot_media_replace.gif[]
+image::../media/drw_a700s_boot_media_replace.png[]
 +
 |===
 a|
