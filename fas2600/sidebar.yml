@@ -32,6 +32,7 @@ entries:
       - title: Return failed part to NetApp
         url: /fas2600/bootmedia-complete-rma.html
     - title: Caching module
+    #pdf-filename: FAS2600 Caching Module
       url: /fas2600/caching-module-replace.html
     - title: Chassis
       #pdf-filename: FAS2600 Chassis
@@ -60,10 +61,14 @@ entries:
       - title: Complete system restoration
         url: /fas2600/controller-replace-restore-system-rma.html
     - title: DIMM
+      #pdf-filename: FAS2600 DIMM
       url: /fas2600/dimm-replace.html
     - title: NVMEM battery
+      #pdf-filename: FAS2600 MVMEM Battery
       url: /fas2600/nvmem-nvram-battery-replace.html
     - title: Power supply
+      #pdf-filename: FAS2600 Power Supply
       url: /fas2600/power-supply-swap-out.html
     - title: Real-time clock battery
+      #pdf-filename: FAS2600 Real-Time Clock Battery
       url: /fas2600/rtc-battery-replace.html

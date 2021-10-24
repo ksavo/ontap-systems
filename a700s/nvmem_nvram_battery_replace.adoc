@@ -34,7 +34,7 @@ Leave the cables in the cable management device so that when you reinstall the c
 +
 The controller module moves slightly out of the chassis.
 +
-image::../media/drw_a700s_pcm_remove.svg[]
+image::../media/drw_a700s_pcm_remove.png[]
 +
 |===
 a|
@@ -60,7 +60,7 @@ To replace the NVRAM battery, you must remove the failed NVRAM battery from the 
 . If you are not already grounded, properly ground yourself.
 . Locate the NVRAM battery on the left side of the riser module, Riser 1.
 +
-image::../media/drw_a700s_nvme_battery_replace.svg[]
+image::../media/drw_a700s_nvme_battery_replace.png[]
 +
 |===
 a|
@@ -89,7 +89,7 @@ After you replace a component within the controller module, you must reinstall t
  .. Slide the air duct toward the risers until the locking tabs click into place.
  .. Inspect the air duct to make sure that it is properly seated and locked into place.
 +
-image::../media/drw_a700s_close_air_duct.svg[]
+image::../media/drw_a700s_close_air_duct.png[]
 +
 |===
 a|
