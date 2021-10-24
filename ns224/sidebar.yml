@@ -3,7 +3,7 @@ title: NS224 shelves
 url: /ns224/index.html
 entries:
   - title: Install and cable
-    ##pdf-filename: NS224 Shelves Install and Cable
+    pdf-filename: NS224 Shelves Install and Cable
     entries:
     - title: Hot-add a shelf
       url: /ns224/hot-add-shelf.html
@@ -12,7 +12,7 @@ entries:
     - title: Cable shelves as switch-attached storage
       url: /ns224/cable-as-switch-attached.html
   - title: Maintain
-    ##pdf-filename:NS224 shelf maintain
+    pdf-filename: NS224 shelf maintain
     entries:
     - title: Boot media
       url: /ns224/service-replace-boot-media.html

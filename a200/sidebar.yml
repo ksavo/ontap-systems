@@ -60,14 +60,14 @@ entries:
       - title: Complete system restoration
         url: /a200/controller-replace-restore-system-rma.html
     - title: DIMM
-      #pdf-filename: AFF A200 DIMM
+      pdf-filename: AFF A200 DIMM
       url: /a200/dimm-replace.html
     - title: NVMEM battery
-      #pdf-filename: AFF A200 NVMEM Battery
+      pdf-filename: AFF A200 NVMEM Battery
       url: /a200/nvmem-nvram-battery-replace.html
     - title: Power supply
-      #pdf-filename: AFF A200 Power Supply
+      pdf-filename: AFF A200 Power Supply
       url: /a200/power-supply-swap-out.html
     - title: Real-time clock battery
-      #pdf-filename: AFF A200 Real-Time Clock Battery
+      pdf-filename: AFF A200 Real-Time Clock Battery
       url: /a200/rtc-battery-replace.html

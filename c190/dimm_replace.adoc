@@ -54,7 +54,7 @@ If you are replacing a DIMM, you need to remove it after you have unplugged the 
 +
 You must perform a clean system shutdown before replacing system components to avoid losing unwritten data in the nonvolatile memory (NVMEM). The LED is located on the back of the controller module. Look for the following icon:
 +
-image::../media/drw_hw_nvram_icon.gif[]
+image::../media/drw_hw_nvram_icon.png[]
 
 . If the NVMEM LED is not flashing, there is no content in the NVMEM; you can skip the following steps and proceed to the next task in this procedure.
 . If the NVMEM LED is flashing, there is data in the NVMEM and you must disconnect the battery to clear the memory:

@@ -179,7 +179,7 @@ NOTE: As you insert the connector, you should feel it click into place; if you d
 +
 https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=48552ddf-0925-4f88-8e93-ab1b00666489[Two-node switchless cluster cabling]
 +
-image::../media/drw_A400_TNSC_network_cabling.png[]
+image::../media/drw_A400_TNSC-network-cabling.png[]
 
 . Go to <<Step 4: Cable controllers to drive shelves>> for drive shelf cabling instructions.
 

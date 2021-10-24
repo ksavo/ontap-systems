@@ -91,7 +91,7 @@ X66250-15 (112-00346) 15m;
 
 X66250-30 (112-00347) 30m
 a|
-image:../media/oie_cable_fc_optical.gif[]
+image:../media/oie_cable_fc_optical.png[]
 a|
 
 a|
