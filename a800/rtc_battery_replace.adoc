@@ -87,7 +87,7 @@ The riser raises up slightly from the controller module.
 
  .. Lift the riser up, shift it toward the fans so that the sheet metal lip on the riser clears the edge of the controller module, lift the riser out of the controller module, and then place it on a stable, flat surface.
 +
-image::../media/drw_a800_riser_2_3_remove.gif[]
+image::../media/drw_a800_riser_2_3_remove.png[]
 +
 [cols="1,4"]
 |===
@@ -107,7 +107,7 @@ To replace the RTC battery, locate it inside the controller and follow the speci
 
 . Locate the RTC battery under Riser 2.
 +
-image::../media/drw_a800_rtc_battery_replace.gif[]
+image::../media/drw_a800_rtc_battery_replace.png[]
 +
 [cols="1,4"]
 |===

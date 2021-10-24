@@ -163,7 +163,7 @@ The riser raises up slightly from the controller module.
 
  .. Lift the riser up, shift it toward the fans so that the sheet metal lip on the riser clears the edge of the controller module, lift the riser out of the controller module, and then place it on a stable, flat surface.
 +
-image::../media/drw_a800_riser_2_3_remove.gif[]
+image::../media/drw_a800_riser_2_3_remove.png[]
 +
 [cols="1,4"]
 |===
@@ -242,7 +242,7 @@ The boot media is located under Riser 3.
 
 . Locate the boot media:
 +
-image::../media/drw_a800_pcm_replace_only_boot_media.gif[]
+image::../media/drw_a800_pcm_replace_only_boot_media.png[]
 +
 [cols="1,4"]
 |===
@@ -302,7 +302,7 @@ After all of the components have been moved from the impaired controller module 
  .. Slide the air duct toward the risers until the locking tabs click into place.
  .. Inspect the air duct to make sure that it is properly seated and locked into place.
 +
-image::../media/drw_a700s_close_air_duct.gif[]
+image::../media/drw_a700s_close_air_duct.png[]
 +
 [cols="1,4"]
 |===

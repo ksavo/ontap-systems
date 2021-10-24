@@ -27,7 +27,7 @@ Leave the cables in the cable management device so that when you reinstall the c
 +
 The controller module moves slightly out of the chassis.
 +
-image::../media/drw_a700s_pcm_remove.gif[]
+image::../media/drw_a700s_pcm_remove.png[]
 +
 [cols="1,4"]
 |===
@@ -48,7 +48,7 @@ Make sure that you support the bottom of the controller module as you slide it o
  .. Press in the locking tabs on the sides of the air duct toward the middle of the controller module.
  .. Slide the air duct toward the fan modules, and then rotate it upward to its completely open position.
 +
-image::../media/drw_a700s_open_air_duct.gif[]
+image::../media/drw_a700s_open_air_duct.png[]
 +
 [cols="1,4"]
 |===
@@ -77,7 +77,7 @@ The NVRAM riser raises up slightly from the controller module.
 
  .. Lift the NVRAM riser up, shift it toward the fans so that the sheet metal lip on the riser clears the edge of the controller module, lift the riser straight up out of the controller module, and then place it on a stable, flat surface so that you can access the NVRAM card.
 +
-image::../media/drw_a700s_nvme_replace.gif[]
+image::../media/drw_a700s_nvme_replace.png[]
 +
 [cols="1,4"]
 |===
@@ -129,7 +129,7 @@ The PCIe riser raises up slightly from the controller module.
 
  .. Lift the PCIe riser up, shift it toward the fans so that the sheet metal lip on the riser clears the edge of the controller module, lift the riser out of the controller module, and then place it on a stable, flat surface.
 +
-image::../media/drw_a700s_pcie_replace.gif[]
+image::../media/drw_a700s_pcie_replace.png[]
 +
 [cols="1,4"]
 |===
@@ -174,7 +174,7 @@ The boot media are located under Riser 2, the middle PCIe riser module. This PCI
  .. If needed, remove Riser 2, the middle PCIe module, by unlocking the locking latch and then removing the riser from the controller module.
 
 +
-image::../media/drw_a700s_boot_media_replace.gif[]
+image::../media/drw_a700s_boot_media_replace.png[]
 +
 [cols="1,4"]
 |===
@@ -214,7 +214,7 @@ You must move the fans from the impaired controller module to the replacement mo
 
 . Remove the fan module by pinching the locking tabs on the side of the fan module, and then lifting the fan module straight out of the controller module.
 +
-image::../media/drw_a700s_replace_fan.gif[]
+image::../media/drw_a700s_replace_fan.png[]
 +
 [cols="1,4"]
 |===
@@ -237,7 +237,7 @@ To move the DIMMs, locate and move them from the impaired controller into the re
 
 . Locate the DIMMs on your controller module.
 +
-image::../media/drw_a700s_dimm_replace.gif[]
+image::../media/drw_a700s_dimm_replace.png[]
 +
 [cols="1,4"]
 |===
@@ -294,7 +294,7 @@ When replacing the controller module, you must move the NVRAM battery from the i
 
 . Locate the NVRAM battery on the left side of the riser module, Riser 1.
 +
-image::../media/drw_a700s_nvme_battery_replace.gif[]
+image::../media/drw_a700s_nvme_battery_replace.png[]
 +
 [cols="1,4"]
 |===
@@ -375,7 +375,7 @@ After all the components have been moved from the impaired controller module to 
  .. Inspect the air duct to make sure that it is properly seated and locked into place.
 
 +
-image::../media/drw_a700s_close_air_duct.gif[]
+image::../media/drw_a700s_close_air_duct.png[]
 +
 |===
 a|

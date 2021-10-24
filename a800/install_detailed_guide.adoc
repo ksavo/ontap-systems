@@ -102,7 +102,7 @@ X66250-15 (112-00346) 15m;
 
 X66250-30 (112-00347) 30m
 a|
-image:../media/oie_cable_fc_optical.gif[]
+image:../media/oie_cable_fc_optical.png[]
 a|
 
 a|
@@ -144,7 +144,7 @@ image::../media/drw_affa800_weight_caution.png[]
 
 . Attach cable management devices (as shown).
 +
-image::../media/drw_affa800_install_cable_mgmt.gif[]
+image::../media/drw_affa800_install_cable_mgmt.png[]
 
 . Place the bezel on the front of the system.
 
@@ -212,7 +212,7 @@ DO NOT plug in the power cords at this point.
  ** <<Option 3: Connect to a single direct-attached NS224 drive shelf>>
  ** <<Option 4: Connect to two direct-attached NS224 drive shelves>>
 
-. To complete setting up your system, see <<Step 4: Completing system setup and configuration>>.
+. To complete setting up your system, see link:install-detailed-guide.html#step-4-complete-system-setup-and-configuration[Step4: Completing system setup and configuration].
 
 ==== Option 2: Cable a switched cluster
 
@@ -267,7 +267,7 @@ DO NOT plug in the power cords at this point.
  ** <<Option 3: Connect to a single direct-attached NS224 drive shelf>>
  ** <<Option 4: Connect to two direct-attached NS224 drive shelves>>
 
-. To complete setting up your system, see <<Step 4: Completing system setup and configuration>>.
+. To complete setting up your system, see link:install-detailed-guide.html#step-4-complete-system-setup-and-configuration[Step4: Completing system setup and configuration].
 
 === Optional cabling: Cable configuration-dependent options
 
@@ -306,7 +306,7 @@ To perform other optional cabling, choose from:
 a|
 3
 a|
-To complete setting up your system, see <<Step 4: Completing system setup and configuration>>.
+To complete setting up your system, see link:install-detailed-guide.html#step-4-complete-system-setup-and-configuration[Step4: Completing system setup and configuration].
 
 |===
 
@@ -342,7 +342,7 @@ To perform other optional cabling, choose from:
 a|
 3
 a|
-To complete setting up your system, see <<Step 4: Completing system setup and configuration>>.
+To complete setting up your system, see link:install-detailed-guide.html#step-4-complete-system-setup-and-configuration[Step4: Completing system setup and configuration].
 
 |===
 
@@ -374,7 +374,7 @@ a|
 Cable controller B to the shelf:    image:../media/drw_affa800_1shelf_cabling_b.png[]
 |===
 
-. To complete setting up your system, see <<Completing system setup and configuration>>.
+. To complete setting up your system, see link:install-detailed-guide.html#step-4-complete-system-setup-and-configuration[Step4: Completing system setup and configuration].
 
 ==== Option 4: Cable the controllers to two drive shelves
 
@@ -404,7 +404,7 @@ a|
 Cable controller B to the shelves:    image:../media/drw_affa800_2shelf_cabling_b.png[]
 |===
 
-. To complete setting up your system, see <<Completing system setup and configuration>>.
+. To complete setting up your system, see link:install-detailed-guide.html#step-4-complete-system-setup-and-configuration[Step4: Completing system setup and configuration].
 
 == Step 4: Complete system setup and configuration
 
@@ -460,11 +460,11 @@ NOTE: See your laptop or console's online help for how to configure the console 
 
  .. Connect the console cable to the laptop or console, and connect the console port on the controller using the console cable that came with your system.
 +
-image::../media/drw_console_connect_affa800.gif[]
+image::../media/drw_console_connect_affa800.png[]
 
  .. Connect the laptop or console to the switch on the management subnet.
 +
-image::../media/drw_client_mgmt_subnet_affa800.gif[]
+image::../media/drw_client_mgmt_subnet_affa800.png[]
 
  .. Assign a TCP/IP address to the laptop or console, using one that is on the management subnet.
 . Plug the power cords into the controller power supplies, and then connect them to power sources on different circuits.

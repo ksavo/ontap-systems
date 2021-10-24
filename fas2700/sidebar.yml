@@ -3,6 +3,7 @@ title: AFF A220 and FAS2700 systems
 url: /fas2700/index.html
 entries:
   - title: Install and setup
+    pdf-filename: AFF A220 and FAS2700 Install and Setup
     entries:
     - title: Choose install and setup experience
       url: /fas2700/install-setup.html
@@ -13,8 +14,10 @@ entries:
     - title: Detailed steps
       url: /fas2700/install-detailed-guide.html
   - title: Maintain
+    pdf-filename: AFF A220 and FAS2700 Maintain
     entries:
     - title: Boot media
+      pdf-filename: AFF A220 and FAS2700 Boot Media
       entries:
         - title: Overview
           url: /fas2700/bootmedia-replace-overview.html
@@ -31,8 +34,10 @@ entries:
         - title: Return failed part to NetApp
           url: /fas2700/bootmedia-complete-rma.html
     - title: Caching module
+      pdf-filename: AFF A220 and FAS2700 Caching Module
       url: /fas2700/caching-module-replace.html
     - title: Chassis
+      pdf-filename: AFF A220 and FAS2700 Chassis
       entries:
         - title: Overview
           url: /fas2700/chassis-replace-overview.html
@@ -43,22 +48,27 @@ entries:
         - title: Restore configuration
           url: /fas2700/chassis-replace-complete-system-restore-rma.html
     - title: Controller
+      pdf-filename: AFF A220 and FAS2700 Controller
       entries:
         - title: Overview
           url: /fas2700/controller-replace-overview.html
-        - title: Shut down the node
+        - title: Shut down node
           url: /fas2700/controller-replace-shutdown.html
-        - title: Replace the controller hardware
+        - title: Replace controller hardware
           url: /fas2700/controller-replace-move-hardware.html
-        - title: Restore and verify the system configuration
+        - title: Restore system configuration
           url: /fas2700/controller-replace-system-config-restore-and-verify.html
         - title: Complete system restoration
           url: /fas2700/controller-replace-restore-system-rma.html
     - title: DIMM
+      pdf-filename: AFF A220 and FAS2700 DIMM
       url: /fas2700/dimm-replace.html
     - title: NVMEM battery
+      pdf-filename: AFF A220 and FAS2700 NVMEM Battery
       url: /fas2700/nvmem-nvram-battery-replace.html
     - title: Power supply
+      pdf-filename: AFF A220 and FAS2700 Power Supply
       url: /fas2700/power-supply-swap-out.html
     - title: Real-time clock battery
+      pdf-filename: AFF A220 and FAS2700 Real-Time Clock Battery
       url: /fas2700/rtc-battery-replace.html

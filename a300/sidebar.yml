@@ -3,7 +3,7 @@ title: AFF A300 systems
 url: /a300/index.html
 entries:
  - title: Install and setup
-   #pdf-filename: AFF A300 Install and Setup
+   pdf-filename: AFF A300 Install and Setup
    entries:
    - title: Cluster configuration worksheet
      url: /a300/install-worksheet-linkout.html
@@ -12,11 +12,11 @@ entries:
    - title: Video steps
      url: /a300/install-video-linkout.html
  - title: Maintain
-   #pdf-filename: AFF A300 Maintain
+   pdf-filename: AFF A300 Maintain
    entries:
    # START boot media replacement
    - title: Boot media
-     #pdf-filename: AFF A300 Boot Media
+     pdf-filename: AFF A300 Boot Media
      entries:
      - title: Overview
        url: /a300/bootmedia-replace-overview.html
@@ -28,7 +28,7 @@ entries:
        url: /a300/bootmedia-replace.html
      - title: Boot recovery image
        url: /a300/bootmedia-recovery-image-boot-options.html
-     - title: Switch back aggregates in two-node MetroCluster configuration
+     - title: Switch back MetroCluster configuration
        url: /a300/bootmedia-2n-mcc-switchback.html
      - title: Restore OKM, NSE, and NVE
        url: /a300/bootmedia-encryption-restore.html
@@ -36,7 +36,7 @@ entries:
        url: /a300/bootmedia-complete-rma.html
     # END boot media replacement
    - title: Chassis
-     #pdf-filename: AFF A300 Chassis
+     pdf-filename: AFF A300 Chassis
      entries:
       - title: Overview
         url: /a300/chassis-replace-overview.html
@@ -47,7 +47,7 @@ entries:
       - title: Restore configuration
         url: /a300/chassis-replace-complete-system-restore-rma.html
    - title: Controller module
-     #pdf-filename: AFF A300 Controller Module
+     pdf-filename: AFF A300 Controller Module
      entries:
      - title: Overview
        url: /a300/controller-replace-overview.html
@@ -62,20 +62,14 @@ entries:
      - title: Complete replacement
        url: /a300/controller-replace-restore-system-rma.html
    - title: DIMM
-     ##pdf-filename: AFF A300 DIMM
      url: /a300/dimm-replace.html
    - title: Fan
-     ##pdf-filename: AFF A300 Fan
      url: /a300/fan-swap-out.html
    - title: NVMEM battery
-     ##pdf-filename: AFF A300 NVMEM Battery
      url: /a300/nvmem-nvram-battery-replace.html
    - title: PCIe card
-     ##pdf-filename: AFF A300 PCIe Card
      url: /a300/pci-cards-and-risers-replace.html
    - title: Power supply
-     ##pdf-filename: AFF A300 Power Supply
      url: /a300/power-supply-swap-out.html
    - title: Real-time clock battery
-     ##pdf-filename: AFF A300 Real-Time Clock Battery
      url: /a300/rtc-battery-replace.html

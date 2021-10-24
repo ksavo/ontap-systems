@@ -34,7 +34,7 @@ entries:
       - title: How to read worksheet to cable for quad-pathed connectivity
         url: /sas3/install-cabling-worksheets-how-to-read-quadpath.html
   - title: Maintain
-    pfd-filename: Shelves with IOM12 Modules Maintain
+    pdf-filename: Shelves with IOM12 Modules Maintain
     entries:
     - title: Disk drive in DS224C or DS212C shelf
       url: /sas3/service-hot-swap-drive-ds224c-ds212c.html
