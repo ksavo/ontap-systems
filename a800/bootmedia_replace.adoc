@@ -76,7 +76,7 @@ You need a Phillips head screw driver to remove the screw that holds the boot me
 
 . Locate the boot media:
 +
-image::../media/drw_a800_boot_media_replace.gif[]
+image::../media/drw_a800_boot_media_replace.png[]
 +
 [cols="1,4"]
 |===
@@ -150,7 +150,7 @@ NOTE: If you are extracting the contents using Windows, do not use WinZip to ext
   .. Slide the air duct toward the risers until the locking tabs click into place.
   .. Inspect the air duct to make sure that it is properly seated and locked into place.
 +
-image::../media/drw_a800_close_air_duct.svg[]
+image::../media/drw_a800_close_air_duct.png[]
 +
 [cols="1,4"]
 |===

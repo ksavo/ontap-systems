@@ -30,7 +30,7 @@ NOTE: It is a best practice to replace the power supply within two minutes of re
 +
 CAUTION: The power supply is short. Always use two hands to support it when removing it from the controller module so that it does not suddenly swing free from the controller module and injure you.
 +
-image::../media/drw_a700s_replace_psu.svg[]
+image::../media/drw_a700s_replace_psu.png[]
 +
 |===
 a|
