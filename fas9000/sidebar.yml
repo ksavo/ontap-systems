@@ -37,12 +37,10 @@ entries:
       - title: Return failed part to NetApp
         url: /fas9000/bootmedia-complete-rma.html
         # END boot media
-      - title: Replace module
-        pdf-filename: AFF A700 and FAS9000 Caching or Core Dump Module
-        url: /fas9000/caching-module-and-core-dump-module-replace.html
-      - title: Hot-swap module
-        pdf-filename: AFF A700 and FAS9000 Caching Module (hot swap)
-        url: /fas9000/caching-module-hot-swap.html
+    - title: Caching module
+      url: /fas9000/caching-module-and-core-dump-module-replace.html
+    - title: Caching module (hot-swap)
+      url: /fas9000/caching-module-hot-swap.html
     - title: Chassis
       pdf-filename: AFF A700 and FAS9000 Chassis
       entries:
@@ -75,25 +73,18 @@ entries:
       pdf-filename: AFF A700 and FAS9000 DCPM Module
       url: /fas9000/dcpm-nvram10-battery-replace.html
     - title: DIMM
-      pdf-filename: AFF A700 and FAS9000 DIMM
       url: /fas9000/dimm-replace.html
     - title: Fan
-      pdf-filename: AFF A700 and FAS9000 Fan
       url: /fas9000/fan-swap-out.html
   - title: I/O module
-      I/O Module
     url: /fas9000/pci-cards-and-risers-replace.html
   - title: LED USB module
-    pdf-filename: AFF A700 and FAS9000 LED USB Module
     url: /fas9000/led-module-replace.html
   - title: NVRAM
-    pdf-filename: AFF A700 and FAS9000 NVRAM Module
     url: /fas9000/nvram-module-or-nvram-dimm-replacement.html
   - title: Power supply
-    pdf-filename: AFF A700 and FAS9000 Power Supply
     url: /fas9000/power-supply-swap-out.html
   - title: RTC battery
-    pdf-filename: AFF A700 and FAS9000 Real-Time Clock Battery
     url: /fas9000/rtc-battery-replace.html
       # START X91148A module
   - title: X91148A module

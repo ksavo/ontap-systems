@@ -20,7 +20,7 @@ You can use the following animations or the written steps to remove the controll
 
 The following animation shows removing the cables and cable management arms from the impaired controller module:
 
-image::../media/drw_a320_controller_cable_unplug_animated_gif.png[]
+image::../media/drw_a320_controller_cable_unplug_animated_gif.svg[]
 
 The following animation shows removing the impaired controller module from the chassis:
 
