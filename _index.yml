@@ -53,9 +53,9 @@ indexpage:
       links:
         - title: Broadcom-supported BES-53248 switches
           url: https://docs.netapp.com/us-en/ontap-systems-switches/switch-bes-53248/overview_bes53248.html
-        - title: Nexus 9336C-FX2 cluster switches
+        - title: Cisco Nexus 9336C-FX2 cluster switches
           url: https://docs.netapp.com/us-en/ontap-systems-switches/switch-cisco-9336/9336-overview.html
-        - title: Nexus 9336C-FX2 shared switches
+        - title: Cisco Nexus 9336C-FX2 shared switches
           url: https://docs.netapp.com/us-en/ontap-systems-switches/switch-cisco-9336-shared/index.html
         - title: Cisco Nexus 92300YC cluster switches
           url: https://docs.netapp.com/us-en/ontap-systems-switches/switch-cisco-92300/92300-overview.html
