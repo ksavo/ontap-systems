@@ -70,7 +70,6 @@ entries:
         url: /fas9000/controller-replace-complete-system-restoration.html
       # END controller module replacement
     - title: DCPM
-      pdf-filename: AFF A700 and FAS9000 DCPM Module
       url: /fas9000/dcpm-nvram10-battery-replace.html
     - title: DIMM
       url: /fas9000/dimm-replace.html
