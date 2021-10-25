@@ -1,0 +1,24 @@
+---
+permalink: fas2700/install-videos.html
+sidebar: sidebar
+keywords: fas2700, aff a220, video, rack, cable, system, manager, guided, setup, configuration
+summary: "There are two videos; one showing how to rack and cable your system and one showing an example of using the System Manager Guided Setup to perform initial system configuration."
+---
+= Videos - AFF A220 and FAS2700
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+There are two videos; one showing how to rack and cable your system and one showing an example of using the System Manager Guided Setup to perform initial system configuration.
+
+== Video one of two: Hardware installation and cabling
+
+The following video shows how to install and cable your new system.
+
+https://www.youtube.com/embed/5g-34qxG9HA?rel=0[NetApp video: AFF A220 and FAS2700 Systems: Installation and Setup Instructions]
+
+== Video two of two: Performing end-to-end software configuration
+
+The following video shows end-to-end software configuration for systems running ONTAP 9.2 and later.
+
+https://www.youtube.com/embed/WAE0afWhj1c?rel=0[NetApp video: Software configuration for vSphere NAS datastores for FAS/AFF systems running ONTAP 9.2]

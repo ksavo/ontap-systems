@@ -1,0 +1,33 @@
+---
+permalink: sas3/overview-cabling-rules-examples.html
+sidebar: sidebar
+keywords: disk, shelves, shelf, iom12, module, single-controller, configuration, support, platform, sas, cabling, cable, rule, controller, shelf-to-shelf, connection, rule, controller-to-stack, mini-sas, hd, optical, cable, rule, sas cabling rules
+summary: The following SAS cabling rules, examples and worksheets are available to help you cable your SAS drive shelves with IOM12 modules to your storage system.
+---
+= SAS cabling rules, worksheets, and examples overview - shelves with IOM12 modules
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+To help you cable your SAS drive shelves with IOM12 modules to your storage system, you can use any of the available SAS cabling rules, worksheets, and examples content as needed.
+
+*SAS cabling rules*
+
+** link:install-cabling-rules.html#configuration-rules[Configurations]
+** link:install-cabling-rules.html#controller-slot-numbering-rules[Controller slot numbering]
+** link:install-cabling-rules.html#shelf-to-shelf-connection-rules[Shelf-to-shelf connections]
+** link:install-cabling-rules.html#controller-to-stack-connection-rules[Controller-to-stack connections]
+** link:install-cabling-rules.html#mini-sas-hd-sas-optical-cable-rules[Mini-SAS HD SAS optical cables]
+
+*Cabling worksheets and examples*
+
+** link:install-cabling-worksheets-examples-multipath.html[Common multipath HA configurations]
+** link:install-cabling-worksheets-examples-fas2600.html[Common AFF A200, AFF A220, FAS2600, and FAS2700 configurations]
+** link:install-worksheets-examples-quadpath.html[Quad-path HA configurations]
+
+*Cabling worksheet templates*
+
+** link:install-cabling-worksheet-template-multipath.html[Multipathed connectivity]
+** link:install-cabling-worksheet-template-quadpath.html[Quad-pathed connectivity]
+** link:install-cabling-worksheets-how-to-read-multipath.html[How to read a worksheet for multipathed connectivity]
+** link:install-cabling-worksheets-how-to-read-quadpath.html[How to read a worksheet for quad-pathed connectivity]

@@ -1,0 +1,69 @@
+---
+permalink: ns224/service-replace-power-supply.html
+sidebar: sidebar
+keywords: ns224, shelves, shelf, ns224 shelves, replace, fail, power, supply, nondisruptive, drive, i/o, progress, hot-swap, hot-swap a power supply
+summary: You can replace a failed power supply nondisruptively in an NS224 drive shelf that is powered on, and while I/O is in progress.
+---
+= Hot-swap a power supply - NS224 shelves
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You can replace a failed power supply nondisruptively in an NS224 drive shelf that is powered on, and while I/O is in progress.
+
+.About this task
+
+* If you are replacing more than one power supply, you must do so one at a time so that the shelf maintains power.
+* *Best practice:* The best practice is to replace the power supply within two minutes of removal from the NSM module.
++
+If you exceed the two minutes, the shelf continues to function, but ONTAP sends messages to the console about the degraded power supply until the power supply is replaced.
+
+* *Best practice:* The best practice is to have current versions of NVMe shelf module (NSM) firmware and drive firmware on your system before replacing FRU components.
++
+[NOTE]
+====
+Do not revert firmware to a version that does not support your shelf and its components.
+
+https://mysupport.netapp.com/site/downloads/firmware/disk-shelf-firmware[NetApp Downloads: Disk Shelf Firmware]
+
+https://mysupport.netapp.com/site/downloads/firmware/disk-drive-firmware[NetApp Downloads: Disk Drive Firmware]
+====
+* If needed, you can turn on the shelf's location (blue) LEDs to aid in physically locating the affected shelf: `storage shelf location-led modify -shelf-name _shelf_name_ -led-status on`
++
+If you do not know the `shelf_name` of the affected shelf, run the `storage shelf show` command.
++
+A shelf has three location LEDs: one on the operator display panel and one on each NSM module. Location LEDs remain illuminated for 30 minutes. You can turn them off by entering the same command, but using the off option.
+
+* When you unpack the replacement power supply, save all packing materials for use when you return the failed power supply.
++
+If you need the RMA number or additional help with the replacement procedure, contact technical support at https://mysupport.netapp.com/site/global/dashboard[NetApp Support], 888-463-8277 (North America), 00-800-44-638277 (Europe), or +800-800-80-800 (Asia/Pacific).
+
+* You can use the following video or the written steps to replace a power supply.
++
+https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=5794da63-99aa-425a-825f-aa86002f154d[Hot-swapping a power supply in an NS224 drive shelf]
+
+.Steps
+
+. Properly ground yourself.
+. Physically identify the failed power supply.
++
+The system logs a warning message to the system console indicating which power supply failed. Additionally, the attention (amber) LED on the shelf operator display panel illuminates and the bicolored LED on the failed power supply illuminates red.
+
+. Disconnect the power cord from the power supply by opening the power cord retainer, and then unplug the power cord from the power supply.
++
+Power supplies do not have a power switch.
+
+. Remove the failed power supply:
+ .. Rotate the cam handle to its open (horizontal) position, and then grasp it.
+ .. With your thumb, press the blue tab to release the locking mechanism.
+ .. Pull the power supply out of the NSM module while using your other hand to support its weight.
+. Insert the replacement power supply:
+ .. Using both hands, support and align the edges of the power supply with the opening in the NSM module.
+ .. Gently push the power supply into the NSM module until the locking mechanism clicks into place.
++
+NOTE: Do not use excessive force or you might damage the internal connector.
+
+ .. Rotate the cam handle to the closed position.
+. Connect the power cord to the power supply and secure the power cord with the power cord retainer.
++
+When functioning correctly, a power supply's bicolored LED illuminates green.

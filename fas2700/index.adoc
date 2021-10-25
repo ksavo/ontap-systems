@@ -1,0 +1,11 @@
+---
+layout: landing-page
+sidebar: sidebar
+permalink: fas2700/index.html
+summary: The storage system documentation lets you install, setup, and maintain your system.
+---
+
+= AFF A220 and FAS2700 System Documentation
+:hardbreaks:
+:linkattrs:
+:imagesdir: ./media/

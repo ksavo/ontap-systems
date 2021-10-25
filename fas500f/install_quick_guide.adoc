@@ -1,0 +1,18 @@
+---
+permalink: fas500f/install-quick-guide.html
+sidebar: sidebar
+keywords: fas500f, quick guide
+summary: 'This guide gives graphic instructions for a typical installation of your system from racking and cabling, through initial system bring-up. '
+---
+= Quick guide - FAS500f
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+This guide gives graphic instructions for a typical installation of your system from racking and cabling, through initial system bring-up. Use this guide if you are familiar with installing NetApp systems.
+
+Access the _Installation and Setup Instructions_ PDF poster:
+
+* English: https://library.netapp.com/ecm/ecm_download_file/ECMLP2872833[FAS500f Installation and Setup Instructions]
+* Japanese: https://library.netapp.com/ecm/ecm_download_file/ECMLP2874807[FAS500f Systems Installation and Setup Instructions]
+* Chinese: https://library.netapp.com/ecm/ecm_download_file/ECMLP2874808[FAS500f Systems Installation and Setup Instructions]

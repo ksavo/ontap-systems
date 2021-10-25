@@ -1,0 +1,108 @@
+section: fas9000
+title: AFF A700 and FAS9000 systems
+url: /fas9000/index.html
+entries:
+  - title: Install and setup
+    pdf-filename: AFF A700 and FAS9000 Install and Setup
+    entries:
+    - title: Choose install and setup experience
+      url: /fas9000/install-setup.html
+    - title: Quick steps
+      url: /fas9000/install-quick-guide.html
+    - title: Video steps
+      url: /fas9000/install-videos.html
+    - title: Detailed steps
+      url: /fas9000/install-detailed-guide.html
+  - title: Maintain
+    pdf-filename: AFF A700 and FAS9000 Maintain
+    entries:
+      # START boot media
+    - title: Boot media
+      pdf-filename: AFF A700 and FAS9000 Boot Media
+      entries:
+      - title: Overview
+        url: /fas9000/bootmedia-replace-overview.html
+      - title: Check onboard encryption keys
+        url: /fas9000/bootmedia-encryption-preshutdown-checks.html
+      - title: Shut down impaired controller
+        url: /fas9000/bootmedia-impaired-controller-shutdown.html
+      - title: Replace boot image
+        url: /fas9000/bootmedia-replace.html
+      - title: Boot recovery image
+        url: /fas9000/bootmedia-recovery-image-boot-options.html
+      - title: Switch back MetroCluster config
+        url: /fas9000/bootmedia-2n-mcc-switchback.html
+      - title: Restore OKM, NSE, and NVE
+        url: /fas9000/bootmedia-encryption-restore.html
+      - title: Return failed part to NetApp
+        url: /fas9000/bootmedia-complete-rma.html
+        # END boot media
+      - title: Replace module
+        pdf-filename: AFF A700 and FAS9000 Caching or Core Dump Module
+        url: /fas9000/caching-module-and-core-dump-module-replace.html
+      - title: Hot-swap module
+        pdf-filename: AFF A700 and FAS9000 Caching Module (hot swap)
+        url: /fas9000/caching-module-hot-swap.html
+    - title: Chassis
+      pdf-filename: AFF A700 and FAS9000 Chassis
+      entries:
+      - title: Overview
+        url: /fas9000/chassis-replace-overview.html
+      - title: Shut down impaired controller
+        url: /fas9000/chassis-replace-shutdown.html
+      - title: Replace hardware
+        url: /fas9000/chassis-replace-move-hardware.html
+      - title: Complete replacement
+        url: /fas9000/chassis-replace-complete-system-restore-rma.html
+    # START controller module replacement
+    - title: Controller module
+      pdf-filename: AFF A700 and FAS9000 Controller
+      entries:
+      - title: Overview
+        url: /fas9000/controller-replace-overview.html
+      - title: Shut down impaired controller
+        url: /fas9000/controller-replace-shutdown.html
+      - title: Replace controller module
+        url: /fas9000/controller-replace.html
+      - title: Restore system configuration
+        url: /fas9000/controller-replace-system-config-restore-and-verify.html
+      - title: Recable system
+        url: /fas9000/controller-replace-recable-reassign-disks.html
+      - title: Complete system restoration
+        url: /fas9000/controller-replace-complete-system-restoration.html
+      # END controller module replacement
+    - title: DCPM
+      pdf-filename: AFF A700 and FAS9000 DCPM Module
+      url: /fas9000/dcpm-nvram10-battery-replace.html
+    - title: DIMM
+      pdf-filename: AFF A700 and FAS9000 DIMM
+      url: /fas9000/dimm-replace.html
+    - title: Fan
+      pdf-filename: AFF A700 and FAS9000 Fan
+      url: /fas9000/fan-swap-out.html
+  - title: I/O module
+      I/O Module
+    url: /fas9000/pci-cards-and-risers-replace.html
+  - title: LED USB module
+    pdf-filename: AFF A700 and FAS9000 LED USB Module
+    url: /fas9000/led-module-replace.html
+  - title: NVRAM
+    pdf-filename: AFF A700 and FAS9000 NVRAM Module
+    url: /fas9000/nvram-module-or-nvram-dimm-replacement.html
+  - title: Power supply
+    pdf-filename: AFF A700 and FAS9000 Power Supply
+    url: /fas9000/power-supply-swap-out.html
+  - title: RTC battery
+    pdf-filename: AFF A700 and FAS9000 Real-Time Clock Battery
+    url: /fas9000/rtc-battery-replace.html
+      # START X91148A module
+  - title: X91148A module
+    pdf-filename: AFF A700 and FAS9000 X91148A Module
+    entries:
+    - title: Overview
+      url: /fas9000/x91148a-module-install-overview.html
+    - title: AFF A700 system with open slots
+      url: /fas9000/x91148a-modules-with-open-slots-add.html
+    - title: AFF A700 system no open slots
+      url: /fas9000/x91148a-modules-with-no-open-slots-add.html
+      # END X91148A module

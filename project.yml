@@ -1,9 +1,27 @@
 settings:
   name: "ONTAP Systems"
   pdf_enabled: true
-
 sidebar:
   entries:
-    - title: ONTAP 9.8 System Documentation
-      url: /index.html
-    - section: switch-cisco-9336c-shared
+    - title: Home
+      url: "/index.html"
+    - section: a200
+    - section: fas2700
+    - section: a250
+    - section: a300
+    - section: a320
+    - section: a400
+    - section: fas9000
+    - section: a700s
+    - section: a800
+    - section: c190
+    - section: fas2600
+    - section: fas500f
+    - section: fas8200
+    - section: fas8300
+    - section: platform-supplemental
+    - section: ns224
+    - section: sas3
+    - section: other
+    - title: Legal notices
+      url: "/legal-notices.html"

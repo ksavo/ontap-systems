@@ -1,0 +1,26 @@
+---
+permalink: platform-supplemental/42u-1280mm-remove-illuminated-badge.html
+sidebar: sidebar
+keywords: removing, remove, illuminate, badge, system, cabinet, front, door, unplug, power, cord, component, remove the illuminate badge
+summary: Removing the illuminated badge requires that you open the system cabinet front door, unplug the power cord from the back of the badge, and then remove the badge components from the system cabinet door.
+---
+= Remove the illuminated badge
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+Removing the illuminated badge requires that you open the system cabinet front door, unplug the power cord from the back of the badge, and then remove the badge components from the system cabinet door.
+
+Use the following illustration along with the following steps:image:../media/drw_sys_cab_gde_brimstone_remove.gif[]
+
+. Unlock and open the system cabinet front door.
+. Loosen the captive screws on the badge back panel on the inside of the door, and then gently pull the back panel away from the door mesh.
+. Unplug the power cord from the back panel by pressing the locking clip on the plug, unplugging the cord from the socket, and removing the cable from the back panel.
++
+Set the back panel aside.
+
+. Carefully remove the screws from the back of the badge.
++
+NOTE: The stems on the thumbscrews are very short. Place your free hand under the screw to catch the thumbscrew if you drop it.
+
+. Remove the badge from the front of the door and set it aside.
