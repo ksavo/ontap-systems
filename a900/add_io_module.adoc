@@ -34,13 +34,16 @@ The console connection shows that the node drops to the LOADER prompt when the t
 . If you are not already grounded, properly ground yourself.
 . Remove the target slot blanking cover:
  .. Depress the lettered and numbered cam button.
- .. Rotate the cam latch down until it is in a horizontal position.
+ .. Rotate the cam latch down until it is the open position.
  .. Remove the blanking cover.
 . Install the I/O module:
  .. Align the I/O module with the edges of the slot.
  .. Slide the I/O module into the slot until the lettered and numbered I/O cam latch begins to engage with the I/O cam pin.
  .. Push the I/O cam latch all the way up to lock the module in place.
 . If the replacement I/O module is a NIC, cable the module to the data switches.
+
+NOTE: Make sure that any unused I/O slots have blanks installed to prevent possible thermal issues.
+
 . Reboot controller A. `boot_ontap`
 . Giveback the node from the partner node. `storage failover giveback -ofnode target_node_name`
 . Enable automatic giveback if it was disabled: `storage failover modify -node local -auto-giveback true`

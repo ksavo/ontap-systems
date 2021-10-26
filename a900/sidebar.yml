@@ -66,7 +66,7 @@ entries:
       url: /a900/dimm_replace.html
       # END DIMM replace
       # START DCPM battery replacement
-    - title: DCPM (with NVRAM11 battery)
+    - title: Destage control power module
       url: /a900/dcpm_NVRAM11_battery_replace.html
       # END DCPM battery replacement
       # START Fan
