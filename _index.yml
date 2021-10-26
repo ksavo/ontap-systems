@@ -3,7 +3,7 @@ indexpage:
   tiles:
     - title: Get started
       links:
-        - title: ONTAP Release notes
+        - title: ONTAP Release Notes
           url: https://library.netapp.com/ecm/ecm_download_file/ECMLP2492508
     - title: AFF systems
       links:
