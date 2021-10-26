@@ -1,0 +1,180 @@
+---
+permalink: a400/dimm-replace.html
+sidebar: sidebar
+keywords: aff a400, aff, a400, replace, dimm, controller, module, system, register, correctable, error, correction, code, ecc, system, panic, shut, down, impair, remove, controller, module, system, diagnostic, module, aggregate, two-node, metrocluster, configuration, replace a dimm, shut down the impaired controller, remove the controller module, replace system dimms, install the controller module, run diagnostics, restore the controller module to operation after running diagnostics, switch back aggregates in a two-node metrocluster configuration
+summary: You must replace a DIMM in the controller module when your system registers an increasing number of correctable error correction codes (ECC); failure to do so causes a system panic.
+---
+= Replace a DIMM - AFF A400
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You must replace a DIMM in the controller module when your system registers an increasing number of correctable error correction codes (ECC); failure to do so causes a system panic.
+
+All other components in the system must be functioning properly; if not, you must contact technical support.
+
+You must replace the failed component with a replacement FRU component you received from your provider.
+
+== Step 1: Shut down the impaired controller
+
+[.lead]
+You can shut down or take over the impaired controller using different procedures, depending on the storage system hardware configuration.
+
+=== Option 1: Most configurations
+
+[.lead]
+include::../_include/shutdown_most_frus.adoc[]
+
+=== Option 2: Controller is in a two-node MetroCluster configuration
+
+[.lead]
+include::../_include/shutdown_2n_mcc.adoc[]
+
+== Step 2: Remove the controller module
+
+[.lead]
+To access components inside the controller module, you must remove the controller module from the chassis.
+
+You can use the following animations, drawings, or the written steps to remove the controller module from the chassis.
+
+https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=ca74d345-e213-4390-a599-aae10019ec82[Removing the controller module]
+
+image::../media/drw_A400_Remove_controller.png[]
+
+
+. If you are not already grounded, properly ground yourself.
+. Release the power cable retainers, and then unplug the cables from the power supplies.
+. Loosen the hook and loop strap binding the cables to the cable management device, and then unplug the system cables and SFPs (if needed) from the controller module, keeping track of where the cables were connected.
++
+Leave the cables in the cable management device so that when you reinstall the cable management device, the cables are organized.
+
+. Remove the cable management device from the controller module and set it aside.
+. Press down on both of the locking latches, and then rotate both latches downward at the same time.
++
+The controller module moves slightly out of the chassis.
+
+. Slide the controller module out of the chassis.
++
+Make sure that you support the bottom of the controller module as you slide it out of the chassis.
+
+. Place the controller module on a stable, flat surface.
+
+== Step 3: Replace system DIMMs
+
+[.lead]
+Replacing a system DIMM involves identifying the target DIMM through the associated error message, locating the target DIMM using the FRU map on the air duct or the lit LED on the motherboard, and then replacing the DIMM.
+
+You can use the following animation, drawings, or the written steps to replace a system DIMM.
+
+NOTE: The animation shows empty slots for sockets without DIMMs. These empty sockets are populated with blanks.
+
+https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=175c6597-449e-4dc8-8c02-aad9012f08b5[Replacing a system DIMM]
+
+image::../media/drw_A400_Replace-NVDIMM-DIMM.png[]
+
+The DIMMs are located in sockets 2, 4, 13, and 15. The NVDIMM is located in slot 11.
+
+. Open the air duct:
+ .. Press the locking tabs on the sides of the air duct in toward the middle of the controller module.
+ .. Slide the air duct toward the back of the controller module, and then rotate it upward to its completely open position.
+. Locate the DIMMs on your controller module.
+. Note the orientation of the DIMM in the socket so that you can insert the replacement DIMM in the proper orientation.
+. Eject the DIMM from its socket by slowly pushing apart the two DIMM ejector tabs on either side of the DIMM, and then slide the DIMM out of the socket.
++
+NOTE: Carefully hold the DIMM by the edges to avoid pressure on the components on the DIMM circuit board.
+
+. Remove the replacement DIMM from the antistatic shipping bag, hold the DIMM by the corners, and align it to the slot.
++
+The notch among the pins on the DIMM should line up with the tab in the socket.
+
+. Make sure that the DIMM ejector tabs on the connector are in the open position, and then insert the DIMM squarely into the slot.
++
+The DIMM fits tightly in the slot, but should go in easily. If not, realign the DIMM with the slot and reinsert it.
++
+NOTE: Visually inspect the DIMM to verify that it is evenly aligned and fully inserted into the slot.
+
+. Push carefully, but firmly, on the top edge of the DIMM until the ejector tabs snap into place over the notches at the ends of the DIMM.
+. Close the air duct.
+
+== Step 4: Install the controller module
+
+[.lead]
+After you have replaced the component in the controller module, you must re-install the controller module into the chassis, and then boot it to Maintenance mode.
+
+You can use the following animation, drawings, or the written steps to install the controller module in the chassis.
+
+https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=0310fe80-b129-4685-8fef-ab19010e720a[Installing the controller module]
+
+image::../media/drw_A400_Install_controller.png[]
+
+. If you have not already done so, close the air duct.
+. Align the end of the controller module with the opening in the chassis, and then gently push the controller module halfway into the system.
++
+NOTE: Do not completely insert the controller module in the chassis until instructed to do so.
+
+. Cable the management and console ports only, so that you can access the system to perform the tasks in the following sections.
++
+NOTE: You will connect the rest of the cables to the controller module later in this procedure.
+
+. Complete the installation of the controller module:
+ .. Plug the power cord into the power supply, reinstall the power cable locking collar, and then connect the power supply to the power source.
+ .. Using the locking latches, firmly push the controller module into the chassis until the locking latches begin to rise.
++
+NOTE: Do not use excessive force when sliding the controller module into the chassis to avoid damaging the connectors.
+
+ .. Fully seat the controller module in the chassis by rotating the locking latches upward, tilting them so that they clear the locking pins, gently push the controller all the way in, and then lower the locking latches into the locked position.
++
+The controller module begins to boot as soon as it is fully seated in the chassis. Be prepared to interrupt the boot process.
+
+ .. If you have not already done so, reinstall the cable management device.
+ .. Interrupt the normal boot process and boot to LOADER by pressing `Ctrl-C`.
++
+NOTE: If your system stops at the boot menu, select the option to boot to LOADER.
+
+ .. At the LOADER prompt, enter `bye` to reinitialize the PCIe cards and other components.
+ .. Interrupt the boot process and boot to the LOADER prompt by pressing `Ctrl-C`.
++
+If your system stops at the boot menu, select the option to boot to LOADER.
+
+== Step 5: Run diagnostics
+
+[.lead]
+After you have replaced a system DIMM in your system, you should run diagnostic tests on that component.
+
+Your system must be at the LOADER prompt to start diagnostics.
+
+All commands in the diagnostic procedures are issued from the node where the component is being replaced.
+
+. If the node to be serviced is not at the LOADER prompt, reboot the node: `system node halt -node node_name`
++
+After you issue the command, you should wait until the system stops at the LOADER prompt.
+
+. At the LOADER prompt, access the special drivers specifically designed for system-level diagnostics to function properly: `boot_diags`
+. Select *Scan System* from the displayed menu to enable running the diagnostics tests.
+. Select *Test Memory* from the displayed menu.
+. Select an option from the displayed sub-menu and run the test.
+. Proceed based on the result of the preceding step:
+ ** If the test failed, correct the failure, and then rerun the test.
+ ** If the test reported no failures, select Reboot from the menu to reboot the system.
+
+== Step 6: Restore the controller module to operation after running diagnostics
+
+[.lead]
+After completing diagnostics, you must recable the system, give back the controller module, and then reenable automatic giveback.
+
+. Recable the system, as needed.
++
+If you removed the media converters (QSFPs or SFPs), remember to reinstall them if you are using fiber optic cables.
+
+. Return the node to normal operation by giving back its storage: `storage failover giveback -ofnode _impaired_node_name_`
+. If automatic giveback was disabled, reenable it: `storage failover modify -node local -auto-giveback true`
+
+== Step 7: Switch back aggregates in a two-node MetroCluster configuration
+
+[.lead]
+include::../_include/2n_mcc_switchback.adoc[]
+
+== Step 8: Return the failed part to NetApp
+
+[.lead]
+include::../_include/complete_rma.adoc[]

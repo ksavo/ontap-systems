@@ -1,0 +1,148 @@
+---
+permalink: platform-supplemental/sldiag-slow-system-diagnostics.html
+sidebar: sidebar
+keywords: run, diagnostic, help, identify, slow, system, response, time, run slow system response diagnostic
+summary: Running diagnostics can help you identify the causes of slow system response times.
+---
+= Run slow system response diagnostics
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+Running diagnostics can help you identify the causes of slow system response times.
+
+. At the storage system prompt, switch to the LOADER prompt: `halt`
+. Enter the following command at the LOADER prompt: `boot_diags`
++
+NOTE: You must run this command from the LOADER prompt for system-level diagnostics to function properly. The boot_diags command starts special drivers designed specifically for system-level diagnostics.
+
+. Run diagnostics on all the devices by entering the following command: `sldiag device run`
+. View the status of the test by entering the following command: `sldiag device status`
++
+Your storage system provides the following output while the tests are still running:
++
+----
+There are still test(s) being processed.
+----
++
+After all the tests are complete, the following response appears by default:
++
+----
+*> <SLDIAG:_ALL_TESTS_COMPLETED>
+----
+
+. Identify the cause of the system sluggishness by entering the following command: `sldiag device status -long -state failed`
++
+The following example shows how the full status of the failures is displayed in a test run without the appropriate hardware:
++
+----
+
+*> **sldiag device status -long -state failed**
+
+TEST START ------------------------------------------
+DEVTYPE: nvram_ib
+NAME: external  loopback test
+START DATE: Sat Jan  3 23:10:55 GMT 2009
+
+STATUS: Completed
+ib3a: could not set loopback mode, test failed
+END DATE: Sat Jan  3 23:11:04 GMT 2009
+
+LOOP: 1/1
+TEST END --------------------------------------------
+
+TEST START ------------------------------------------
+DEVTYPE: fcal
+NAME: Fcal Loopback Test
+START DATE: Sat Jan  3 23:10:56 GMT 2009
+
+STATUS: Completed
+Starting test on Fcal Adapter: 0b
+Started gathering adapter info.
+Adapter get adapter info OK
+Adapter fc_data_link_rate: 1Gib
+Adapter name: QLogic 2532
+Adapter firmware rev: 4.5.2
+Adapter hardware rev: 2
+
+Started adapter get WWN string test.
+Adapter get WWN string OK wwn_str: 5:00a:098300:035309
+
+Started adapter interrupt test
+Adapter interrupt test OK
+
+Started adapter reset test.
+Adapter reset OK
+
+Started Adapter Get Connection State Test.
+Connection State: 5
+Loop on FC Adapter 0b is OPEN
+
+Started adapter Retry LIP test
+Adapter Retry LIP OK
+
+ERROR: failed to init adaptor port for IOCTL call
+
+ioctl_status.class_type = 0x1
+
+ioctl_status.subclass = 0x3
+
+ioctl_status.info = 0x0
+ Started INTERNAL LOOPBACK:
+INTERNAL LOOPBACK   OK
+Error Count: 2  Run Time: 70 secs
+>>>>> ERROR, please ensure the port has a shelf or plug.
+END DATE: Sat Jan  3 23:12:07 GMT 2009
+
+LOOP: 1/1
+TEST END --------------------------------------------
+----
++
+[options="header" cols="1,2"]
+|===
+| If the system-level diagnostics tests...| Then...
+a|
+Were completed without any failures
+a|
+There are no hardware problems and your storage system returns to the prompt.
+
+ .. Clear the status logs by entering the following command: `sldiag device clearstatus`
+ .. Verify that the log is cleared by entering the following command: `sldiag device status`
++
+The following default response is displayed:
++
+----
+SLDIAG: No log messages are present.
+----
+
+ .. Exit Maintenance mode by entering the following command: `halt`
+ .. Enter the following command at the Loader prompt to boot the storage system: `boot_ontap`
+You have completed system-level diagnostics.
+
+a|
+Resulted in some test failures
+a|
+Determine the cause of the problem.
+
+ .. Exit Maintenance mode by entering the following command: `halt`
+ .. Perform a clean shutdown and disconnect the power supplies.
+ .. Verify that you observed all the requirements for running system-level diagnostics, that cables are securely connected, and that hardware components are properly installed in the storage system.
+ .. Reconnect the power supplies and power on the storage system.
+ .. Repeat Steps 1 through 5 of _Running slow system response diagnostics_.
+
+a|
+Resulted in the same test failures
+a|
+Technical support might recommend modifying the default settings on some of the tests to help identify the problem.
+
+ .. Modify the selection state of a specific device or type of device on your storage system by entering the following command: `sldiag device modify [-dev _devtype_\|mb\|slot_slotnum_] [-name device] [-selection _enable\|disable\|default\|only_]`
++
+-`selection _enable\|disable\|default\|only_` allows you to enable, disable, accept the default selection of a specified device type or named device, or only enable the specified device or named device by disabling all others first.
+
+ .. Verify that the tests were modified by entering the following command: `sldiag option show`
+ .. Repeat Steps 3 through 5 of _Running slow system response diagnostics_.
+ .. After you identify and resolve the problem, reset the tests to their default states by repeating substeps 1 and 2.
+ .. Repeat Steps 1 through 5 of _Running slow system response diagnostics_.
+|===
+
+If the failures persist after repeating the steps, you need to replace the hardware.

@@ -1,0 +1,199 @@
+---
+permalink: sas3/service-hot-swap-drive-ds460c.html
+sidebar: sidebar
+keywords: hot-swap, fail, disk, drive, ds460c, nondisruptive, replace, system, power, serving, data, i/o, hot-swap a disk drive in a ds460c disk shelf
+summary: You can hot-swap a failed disk drive in a DS460C disk shelf.
+---
+= Hot-swap a disk drive in a DS460C disk shelf - shelves with IOM12 modules
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You can hot-swap a failed disk drive in a DS460C disk shelf.
+
+.Before you begin
+
+* The replacement disk drive must be supported by the DS460C disk shelf.
++
+https://hwu.netapp.com[NetApp Hardware Universe]
+
+* All other components in the system must be functioning properly; if not, contact technical support.
+* The disk drive you are removing must be failed.
++
+You can verify the disk drive is failed by running the `storage disk show -broken` command. The failed disk drive appears in the list of failed disk drives. If it does not, you should wait, and run the command again.
++
+NOTE: Depending on the disk drive type and capacity, it can take up to several hours for the disk drive to appear in the list of failed disk drives.
+
+* If you are replacing a self-encrypting disk (SED), you must follow the instructions for Replacing an SED in the ONTAP documentation for your version of ONTAP.
++
+Instructions in the ONTAP documentation describe additional steps you must perform before and after replacing an SED.
++
+https://docs.netapp.com/ontap-9/topic/com.netapp.doc.pow-nve/home.html[ONTAP 9 NetApp Encryption Power Guide]
+
+.About this task
+
+* You should take steps to avoid electrostatic discharge (ESD):
+ ** Keep the disk drive in the ESD bag until you are ready to install it.
+ ** Open the ESD bag by hand or cut the top off with a pair of scissors.
++
+NOTE: Do not insert a metal tool or knife into the ESD bag.
+
+ ** Always wear an ESD wrist strap grounded to an unpainted surface on your storage enclosure chassis.
++
+If a wrist strap is unavailable, touch an unpainted surface on your storage enclosure chassis before handling the disk drive.
+* You should take steps to handle disk drives carefully:
+ ** Always use two hands when removing, installing, or carrying a disk drive to support its weight.
++
+NOTE: Do not place hands on the disk drive boards exposed on the underside of the disk drive carrier.
+
+ ** You should place disk drives on cushioned surfaces, and never stack disk drives on top of each other.
+ ** You should be careful not to bump disk drives against other surfaces.
+* Disk drives should be kept away from magnetic devices.
++
+NOTE: Magnetic fields can destroy all data on the disk drive and cause irreparable damage to the disk drive circuitry.
+
+* The best practice is to have the current version of the Disk Qualification Package (DQP) installed before hot-swapping a disk drive.
++
+Having the current version of the DQP installed allows your system to recognize and utilize newly qualified disk drives; therefore, avoiding system event messages about having non-current disk drive information. You also avoid the possible prevention of disk partitioning because disk drives are not recognized. The DQP also notifies you of non-current disk drive firmware.
++
+https://mysupport.netapp.com/NOW/download/tools/diskqual/[NetApp Downloads: Disk Qualification Package]
+
+* The best practice is to have the current versions of disk shelf (IOM) firmware and disk drive firmware on your system before adding new disk shelves, shelf FRU components, or SAS cables.
++
+Current versions of firmware can be found on the NetApp Support Site.
++
+https://mysupport.netapp.com/site/downloads/firmware/disk-shelf-firmware[NetApp Downloads: Disk Shelf Firmware]
++
+https://mysupport.netapp.com/site/downloads/firmware/disk-drive-firmware[NetApp Downloads: Disk Drive Firmware]
+
+* Disk drive firmware is automatically updated (nondisruptively) on new disk drives with non current firmware versions.
++
+NOTE: Disk drive firmware checks occur every two minutes.
+
+* If needed, you can turn on the disk shelf's location (blue) LEDs to aid in physically locating the affected disk shelf: `storage shelf location-led modify -shelf-name _shelf_name_ -led-status on`
++
+A disk shelf has three location LEDs: one on the operator display panel and one on each IOM12 module. Location LEDs remain illuminated for 30 minutes. You can turn them off by entering the same command, but using the off option.
+
+* If needed, you can refer to the Monitoring disk shelf LEDs section for information about the meaning and location of disk shelf LEDs on the operator display panel and FRU components.
+* The DS460C drive shelf consist of five drive drawers (drive drawer 1 at the top through drive drawer 5 at the bottom) that each contain 12 drive slots.
++
+image::../media/28_dwg_e2860_de460c_front_no_callouts.gif[]
+
+* The following illustration shows how the drives are numbered from 0 to 11 in each drive drawer within the shelf.
++
+image::../media/dwg_trafford_drawer_with_hdds_callouts.gif[]
+
+.Steps
+
+. If you want to manually assign disk ownership for the replacement disk drive, you need to disable automatic drive assignment if it is enabled; otherwise, go to the next step.
++
+NOTE: You need to manually assign disk ownership if disk drives in the stack are owned by both controllers in an HA pair.
++
+NOTE: You manually assign disk ownership and then reenable automatic drive assignment later in this procedure.
+
+ .. Verify if automatic drive assignment is enabled:``storage disk option show``
++
+If you have an HA pair, you can enter the command at the console of either controller.
++
+If automatic drive assignment is enabled, the output shows "`on`" (for each controller) in the "`Auto Assign`" column.
+
+ .. If automatic drive assignment is enabled, you need to disable it:``storage disk option modify -node _node_name_ -autoassign off``
++
+You need to disable automatic drive assignment on both controllers in an HA pair.
+
+. Properly ground yourself.
+. Unpack the new disk drive, and set it on a level surface near the disk shelf.
++
+Save all packaging materials for use when returning the failed disk drive.
++
+NOTE: NetApp requires that all returned disk drives be in a ESD-rated bag.
+
+. Identify the failed disk drive from the system console warning message and the illuminated amber attention LED on the drive drawer.
++
+The 2.5-inch and 3.5-inch SAS drive carriers do not contain LEDs. Instead, you must look at the Attention LEDs on the drive drawers to determine which drive has failed.
++
+The drive drawer's Attention LED (amber) blinks so you can open the correct drive drawer to identify which drive to replace.
++
+The drive drawer's Attention LED is on the front-left side in front of each drive, with a warning symbol on the drive handle just behind the LED.
+
+. Open the drawer containing the failed drive:
+ .. Unlatch the drive drawer by pulling on both levers.
+ .. Using the extended levers, carefully pull the drive drawer out until it stops.
+ .. Look at the top of the drive drawer to find the Attention LED that resides on the drawer in front of each drive.
+. Remove the failed drive from the open drawer:
+ .. Gently pull back the orange release latch that is in front of the drive you want to remove.
++
+image::../media/trafford_drive_rel_button.gif[]
++
+[cols="1,3"]
+|===
+a|
+image:../media/legend_icon_01.png[]|
+Orange release latch
+|===
+
+ .. Open the cam handle, and lift out the drive slightly.
+ .. Wait 30 seconds.
+ .. Use the cam handle to lift the drive from the shelf.
++
+image::../media/92_dwg_de6600_install_or_remove_drive.gif[]
+
+ .. Place the drive on an antistatic, cushioned surface away from magnetic fields.
+. Insert the replacement drive in the drawer:
+ .. Raise the cam handle on the new drive to vertical.
+ .. Align the two raised buttons on each side of the drive carrier with the matching gap in the drive channel on the drive drawer.
++
+image::../media/28_dwg_e2860_de460c_drive_cru.gif[]
++
+[cols="1,3"]
+|===
+a|
+image:../media/legend_icon_01.png[]|
+Raised button on the right side of the drive carrier
+|===
+
+ .. Lower the drive straight down, and then rotate the cam handle down until the drive snaps into place under the orange release latch.
+ .. Carefully push the drive drawer back into the enclosure.
++
+image:../media/2860_dwg_e2860_de460c_gentle_close.gif[]
++
+CAUTION: *Possible loss of data access:* Never slam the drawer shut. Push the drawer in slowly to avoid jarring the drawer and causing damage to the storage array.
+
+ .. Close the drive drawer by pushing both levers towards the center.
++
+The green Activity LED for the replaced drive on the front of the drive drawer comes on when the drive is inserted correctly.
+. If you are replacing another disk drive, repeat Steps 4 through 7.
+. Check the Activity LED and the Attention LED on the drive you replaced.
++
+[%header,cols="1,2"]
+|===
+| LED status| Description
+a|
+The Activity LED is on or blinking, and the Attention LED is off
+a|
+The new drive is working correctly.
+a|
+The Activity LED is off
+a|
+The drive might not be installed correctly. Remove the drive, wait 30 seconds, and then reinstall it.
+a|
+The Attention LED is on
+a|
+The new drive might be defective. Replace it with another new drive.
+
+NOTE: When you first insert a drive, its Attention LED might be on. However, the LED should go off within a minute.
+
+|===
+
+. If you disabled disk ownership automatic assignment in Step 1, manually assign disk ownership, and then reenable disk ownership automatic assignment if needed:
+ .. Display all unowned disks:``storage disk show -container-type unassigned``
+ .. Assign each disk:``storage disk assign -disk _disk_name_ -owner _owner_name_``
++
+You can use the wildcard character to assign more than one disk at once.
+
+ .. Reenable disk ownership automatic assignment if needed:``storage disk option modify -node _node_name_ -autoassign on``
++
+You need to reenable disk ownership automatic assignment on both controllers in an HA pair.
+. Return the failed part to NetApp, as described in the RMA instructions shipped with the kit.
++
+Contact technical support at https://mysupport.netapp.com/site/global/dashboard[NetApp Support], 888-463-8277 (North America), 00-800-44-638277 (Europe), or +800-800-80-800 (Asia/Pacific) if you need the RMA number or additional help with the replacement procedure.

@@ -1,0 +1,19 @@
+---
+permalink: fas8200/chassis-replace-shutdown.html
+sidebar: sidebar
+keywords: fas8200, shutdown the controllers
+summary: "To replace the chassis, you must shutdown the controllers."
+---
+= Shut down the controllers - - FAS8200
+:icons: font
+:imagesdir: ../media/
+
+== Option 1: Most configurations
+
+[.lead]
+include::../_include/shutdown_chassis.adoc[]
+
+== Option 2: Controller is in a two-node MetroCluster configuration
+
+[.lead]
+include::../_include/shutdown_2n_mcc.adoc[]

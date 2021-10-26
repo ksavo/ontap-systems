@@ -1,0 +1,14 @@
+---
+permalink: platform-supplemental/drive-video.html
+sidebar: sidebar
+keywords: video, overview, embedded, drive, replacement, procedure, video overview
+summary: This video shows an overview of the embedded drive replacement procedure.
+---
+= Video overview
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+This video shows an overview of the embedded drive replacement procedure.
+
+https://www.youtube.com/embed/Ziqg9HL8oYQ?rel=0[NetApp video: Hot-swapping an internal disk drive]

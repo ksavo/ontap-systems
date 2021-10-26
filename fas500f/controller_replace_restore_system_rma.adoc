@@ -1,0 +1,29 @@
+---
+permalink: fas500f/controller-replace-restore-system-rma.html
+sidebar: sidebar
+keywords: fas500f, how to restore NetApp Storage Encryption, how to complete the replacement process
+summary: "To restore your system to full operation, you must restore the NetApp Storage Encryption configuration (if necessary), and install licenses for the new controller, and return the failed part to NetApp, as described in the RMA instructions shipped with the kit. Contact technical support at https://mysupport.netapp.com/site/global/dashboard[NetApp Support], 888-463-8277 (North America), 00-800-44-638277 (Europe), or +800-800-80-800 (Asia/Pacific) if you need the RMA number or additional help with the replacement procedure."
+---
+= Complete system restoration - FAS500f
+:icons: font
+:imagesdir: ../media/
+
+== Step 1: Install licenses for the _replacement_ node in ONTAP
+
+[.lead]
+include::../_include/install_licenses.adoc[]
+
+== Step 2: Restore Storage and Volume Encryption functionality
+
+[.lead]
+include::../_include/restore_storage_encryption.adoc[]
+
+== Step 3: Verify LIFs and registering the serial number
+
+[.lead]
+include::../_include/check_lifs_register_serial_number.adoc[]
+
+== Step 4: Return the failed part to NetApp
+
+[.lead]
+include::../_include/complete_rma.adoc[]

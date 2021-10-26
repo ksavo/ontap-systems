@@ -1,0 +1,48 @@
+---
+permalink: platform-supplemental/sldiag-use-cli-help.html
+sidebar: sidebar
+keywords: command-line, syntax, command, line, name, follow, question, mark, how to use online command-line help
+summary: You can get command-line syntax help from the command line by entering the name of the command followed by help or the question mark \(?\).
+---
+= How to use online command-line help
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You can get command-line syntax help from the command line by entering the name of the command followed by help or the question mark (?).
+
+The fonts or symbols used in syntax help are as follows:
+
+* *keyword*
++
+Specifies the name of a command or an option that must be entered as shown.
+
+* *< > (less than, greater than symbols)*
++
+Specify that you must replace the variable identified inside the symbols with a value.
+
+* *| (pipe)*
++
+Indicates that you must choose one of the elements on either side of the pipe.
+
+* *[ ] (brackets)*
++
+Indicate that the element inside the brackets is optional.
+
+* *{ } (braces)*
++
+Indicate that the element inside the braces is required.
+
+You can also type the question mark at the command line for a list of all the commands that are available at the current level of administration (administrative or advanced).
+
+The following example shows the result of entering the environment help command at the storage system command line. The command output displays the syntax help for the environment commands.
+
+----
+toaster> environment help
+Usage: environment status |
+[status] [shelf [<adapter>]] |
+[status] [shelf_log] |
+[status] [shelf_stats] |
+[status] [shelf_power_status] |
+[status] [chassis [all | list-sensors | Fan | Power | Temp | Power Supply | RTC Battery | NVRAM4-temperature-7 | NVRAM4-battery-7]]
+----

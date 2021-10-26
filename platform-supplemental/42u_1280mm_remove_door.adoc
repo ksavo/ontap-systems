@@ -1,0 +1,36 @@
+---
+permalink: platform-supplemental/42u-1280mm-remove-door.html
+sidebar: sidebar
+keywords: remove, system, cabinet, door, side, panel, illuminate, badge, component, reverse, door, remove the system cabinet door
+summary: You must remove the system cabinet door and side panels to move the illuminated badge and components, and to reverse the door.
+---
+= Remove the system cabinet door
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You must remove the system cabinet door and side panels to move the illuminated badge and components, and to reverse the door.
+
+. Open the system cabinet door if it is not already open.
+. Perform the appropriate action depending on whether your cabinets are connected with the interconnect kit.
++
+[options="header" cols="1,2"]
+|===
+| If your system cabinet is...| Then...
+a|
+Not connected to another system cabinet
+a|
+Go to the next step.
+a|
+Connected to another system cabinet with an interconnect kit
+a|
+Remove all four interconnect kit brackets and set the brackets and screws in a safe place.
+|===
+
+. Unlock both side panels, disconnect the grounding wires from the side panels, and then remove them and set them aside.
+. Disconnect the grounding wire from the grounding spade located at the top of the door.
+. Unscrew the grounding lug and wire assembly from the system cabinet frame and set it aside.
+. Unscrew the grounding lug assembly from the system cabinet door and set it aside.
+. Lift the top hinge pin until it clears the bottom of the hinge.
+. Gently tip the top of the door away from the system cabinet frame, and then release the hinge pin.
+. Lift the door off the bottom hinge, and set the door aside.
