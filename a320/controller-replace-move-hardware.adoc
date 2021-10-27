@@ -20,7 +20,7 @@ You can use the following images or the written steps to remove the controller m
 
 The following image shows removing the cables and cable management arms from the impaired controller module:
 
-image::../media/drw_a320_cable_management_arms.png[]
+image::../media/drw_a320_controller_cable_unplug_animated_gif.png[]
 
 The following image shows removing the impaired controller module from the chassis:
 

@@ -29,8 +29,10 @@ Leave the cables in the cable management device so that when you reinstall the c
 . Remove the cable management device from the controller module and set it aside.
 . Press down on both of the locking latches, and then rotate both latches downward at the same time.
 
++
 image::../media/drw_A400_Remove_controller.png[]
 +
+
 The controller module moves slightly out of the chassis.
 
 . Slide the controller module out of the chassis.
