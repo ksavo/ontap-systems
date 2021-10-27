@@ -42,6 +42,8 @@ Make sure that you support the bottom of the controller module as you slide it o
 +
 https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=49053752-e813-4c15-a917-ab190147fa6e[Removing the empty risers from the replacement controller module]
 
+image::../media/drw_8300_empty_riser_remove.png[]
+
  .. Press the locking tabs on the sides of the air duct in toward the middle of the controller module.
  .. Slide the air duct toward the back of the controller module, and then rotate it upward to its completely open position.
  .. Rotate the riser locking latch on the left side of riser 1 up and toward air duct, lift the riser up, and then set it aside.
