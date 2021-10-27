@@ -1,5 +1,5 @@
 indexpage:
-  lead: NetApp's AFF and FAS storage systems provide leading-edge, enterprise-class, scale-out all flash or hybrid storage with the industry's most advanced data management. Use the docs on this site to install, expand, upgrade and maintain your AFF or FAS systems.
+  lead: NetApp's AFF and FAS storage systems provide leading-edge, enterprise-class, scale-out all flash or hybrid storage with the industry's most advanced data management. Use the docs on this site to install, expand, upgrade and maintain your AFF, FAS, or All SAN Array systems.
   tiles:
     - title: Get started
       links:
