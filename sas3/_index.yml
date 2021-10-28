@@ -1,0 +1,56 @@
+indexpage:
+#  lead: SAS3
+  tiles:
+    - title: Get started 
+      links:
+        - title: ONTAP Release notes
+          url: https://library.netapp.com/ecm/ecm_download_file/ECMLP2492508
+        - title: Storage data sheet
+          url: https://www.netapp.com/data-storage/disk-shelves-storage-media/
+    - title: Install and setup
+      links:
+        - title: Install a shelf in a new storage system
+          url: /install-new-system.html
+        - title: Hot-add a shelf
+          url: /install-hot-add-shelf.html
+        - title: Change a shelf ID
+          url: /install-change-shelf-id.html
+        - title: Hot-add a shelf to a stack of IOM6 shelves (mixed stack)
+          url: /iom12-hot-add-mix.html
+        - title: SAS cabling rules, worksheets, and examples
+          url: /overview-cabling-rules-examples.html
+    - title: Maintain
+      links:
+        - title: Disk drive in a DS224C or DS212C shelf
+          url: /service-hot-swap-drive-ds224c-ds212c.html
+        - title: Disk drive in a DS460C shelf
+          url: /service-hot-swap-drive-ds460c.html
+        - title: Drive drawer in a DS460C shelf
+          url: /service-replace-drawer-ds460c.html
+        - title: Fan in a DS460C shelf
+          url: /service-replace-fan-ds460c.html
+        - title: Hot-remove a shelf
+          url: /hot-remove-shelf.html
+        - title: IOM12 module
+          url: /service-hot-swap-iom.html
+        - title: Power supply
+          url: /service-hot-swap-power-supply.html
+        - title: Shelf LED status conditions
+          url: /service-monitor-leds.html
+          url: /sas3/service-replace-power-supply.html
+        - title: RTC battery
+          url: /sas3/service-replace-rtc-battery.html
+    - title: More resources
+      links:
+        - title: ONTAP documentation
+          url: https://docs.netapp.com/us-en/ontap/
+        - title: NetApp Hardware Universe
+          url: https://hwu.netapp.com/home/index
+        - title: NetApp Active IQ Config Advisor
+          url: https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor
+        - title: NetApp Interoperability Matrix Tool
+          url: https://mysupport.netapp.com/matrix/#welcome
+        - title: NetApp Support Knowledge Base
+          url: https://kb.netapp.com/
+        - title: NetApp Community
+          url: https://community.netapp.com/

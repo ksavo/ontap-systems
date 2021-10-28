@@ -1,0 +1,169 @@
+---
+permalink: fas8200/pci-cards-and-risers-replace.html
+sidebar: sidebar
+keywords: fas8200, replace a pcie card
+summary: "To replace a PCIe card, you must perform a specific sequence of tasks."
+---
+= Replace a PCIe card - FAS8200
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+To replace a PCIe card, you must perform a specific sequence of tasks.
+
+* You can use this procedure with all versions of ONTAP supported by your system
+* All other components in the system must be functioning properly; if not, you must contact technical support.
+
+== Step 1: Shut down the impaired controller
+
+[.lead]
+You can shut down or take over the impaired controller using different procedures, depending on the storage system hardware configuration.
+
+=== Option 1: Most configurations
+
+[.lead]
+include::../_include/shutdown_most_frus.adoc[]
+
+=== Option 2: Controller is in a two-node MetroCluster
+
+[.lead]
+include::../_include/shutdown_2n_mcc.adoc[]
+
+== Step 2: Open the controller module
+
+[.lead]
+To access components inside the controller, you must first remove the controller module from the system and then remove the cover on the controller module.
+
+. If you are not already grounded, properly ground yourself.
+. Loosen the hook and loop strap binding the cables to the cable management device, and then unplug the system cables and SFPs (if needed) from the controller module, keeping track of where the cables were connected.
++
+Leave the cables in the cable management device so that when you reinstall the cable management device, the cables are organized.
+
+. Remove and set aside the cable management devices from the left and right sides of the controller module.
++
+image::../media/drw_32xx_cbl_mgmt_arm.png[]
+
+. Loosen the thumbscrew on the cam handle on the controller module.
++
+image::../media/drw_8020_cam_handle_thumbscrew.png[]
++
+[cols="1,3"]
+|===
+a|
+image:../media/legend_icon_01.png[]|
+Thumbscrew
+a|
+image:../media/legend_icon_02.png[]
+a|
+Cam handle
+|===
+
+. Pull the cam handle downward and begin to slide the controller module out of the chassis.
++
+Make sure that you support the bottom of the controller module as you slide it out of the chassis.
+
+== Step 3: Replace a PCIe card
+
+[.lead]
+To replace a PCIe card, locate it within the controller and follow the specific sequence of steps.
+
+. Loosen the thumbscrew on the controller module side panel.
+. Swing the side panel off the controller module.
++
+image::../media/drw_rxl_pcie.png[]
++
+[cols="1,3"]
+|===
+a|
+image:../media/legend_icon_01.png[]|
+Side panel
+a|
+image:../media/legend_icon_02.png[]
+a|
+PCIe card
+|===
+
+. Remove the PCIe card from the controller module and set it aside.
+. Install the replacement PCIe card.
++
+Be sure that you properly align the card in the slot and exert even pressure on the card when seating it in the socket. The PCIe card must be fully and evenly seated in the slot.
++
+NOTE: If you are installing a card in the bottom slot and cannot see the card socket well, remove the top card so that you can see the card socket, install the card, and then reinstall the card you removed from the top slot.
+
+. Close the side panel and tighten the thumbscrew.
+
+== Step 4: Reinstall the controller
+
+[.lead]
+After you replace a component within the controller module, you must reinstall the controller module in the system chassis and boot it.
+
+. Align the end of the controller module with the opening in the chassis, and then gently push the controller module halfway into the system.
++
+NOTE: Do not completely insert the controller module in the chassis until instructed to do so.
+
+. Recable the system, as needed.
++
+If you removed the media converters (QSFPs or SFPs), remember to reinstall them if you are using fiber optic cables.
+
+. Complete the reinstallation of the controller module:
++
+The controller module begins to boot as soon as it is fully seated in the chassis.
++
+[options="header" cols="1,3"]
+|===
+| If your system is in...| Then perform these steps...
+a|
+An HA pair
+a|
+ .. With the cam handle in the open position, firmly push the controller module in until it meets the midplane and is fully seated, and then close the cam handle to the locked position. Tighten the thumbscrew on the cam handle on back of the controller module.
++
+NOTE: Do not use excessive force when sliding the controller module into the chassis to avoid damaging the connectors.
+
+ .. If you have not already done so, reinstall the cable management device.
+ .. If you have not already done so, reconnect the cables to the controller module.
+ .. Bind the cables to the cable management device with the hook and loop strap.
+
+a|
+A two-node MetroCluster configuration
+a|
+
+ .. With the cam handle in the open position, firmly push the controller module in until it meets the midplane and is fully seated, and then close the cam handle to the locked position. Tighten the thumbscrew on the cam handle on back of the controller module.
++
+NOTE: Do not use excessive force when sliding the controller module into the chassis to avoid damaging the connectors.
+
+ .. If you have not already done so, reinstall the cable management device.
+ .. If you have not already done so, reconnect the cables to the controller module.
+ .. Bind the cables to the cable management device with the hook and loop strap.
+ .. Reconnect the power cables to the power supplies and to the power sources, and then turn on the power to start the boot process.
+|===
+
+. If your system is configured to support 10 GbE cluster interconnect and data connections on 40 GbE NICs or onboard ports, convert these ports to 10 GbE connections by using the nicadmin convert command from Maintenance mode.
++
+NOTE: Be sure to exit Maintenance mode after completing the conversion.
+
+. Return the node to normal operation:
++
+[options="header", cols="1,3"]
+|===
+| If your system is in...| Issue this command from the partner's console...
+a|
+An HA pair
+a|
+`storage failover giveback -ofnode _impaired_node_name_`
+a|
+A two-node MetroCluster configuration
+a|
+Proceed to the next step.     The MetroCluster switchback procedure is done in the next task in the replacement process.
+|===
+
+. If automatic giveback was disabled, reenable it: `storage failover modify -node local -auto-giveback true`
+
+== Step 5 (two-node MetroCluster only): Switch back aggregate
+
+[.lead]
+include::../_include/2n_mcc_switchback.adoc[]
+
+== Step 6: Return the failed part to NetApp
+
+[.lead]
+include::../_include/complete_rma.adoc[]

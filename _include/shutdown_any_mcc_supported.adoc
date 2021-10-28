@@ -1,3 +1,5 @@
+NOTE: Do not use this procedure if your system is in a two-node MetroCluster configuration.
+
 To shut down the impaired node, you must determine the status of the node and, if necessary, take over the node so that the healthy node continues to serve data from the impaired node storage.
 
 * If you have a cluster with more than two nodes, it must be in quorum. If the cluster is not in quorum or a healthy node shows false for eligibility and health, you must correct the issue before shutting down the impaired node.
@@ -6,8 +8,7 @@ http://docs.netapp.com/ontap-9/topic/com.netapp.doc.dot-cm-sag/home.html[ONTAP 9
 
 * If you have a MetroCluster configuration, you must have confirmed that the MetroCluster Configuration State is configured and that the nodes are in an enabled and normal state (`metrocluster node show`).
 
-*STEPS*
-
+.Steps
 . If AutoSupport is enabled, suppress automatic case creation by invoking an AutoSupport message: `system node autosupport invoke -node * -type all -message MAINT=number_of_hours_downh`
 +
 The following AutoSupport message suppresses automatic case creation for two hours: `cluster1:*> system node autosupport invoke -node * -type all -message MAINT=2h`
@@ -15,6 +16,7 @@ The following AutoSupport message suppresses automatic case creation for two hou
 . Disable automatic giveback from the console of the healthy node: `storage failover modify –node local -auto-giveback false`
 . Take the impaired node to the LOADER prompt:
 +
+[%header,cols="1,2"]
 |===
 | If the impaired node is displaying...| Then...
 a|
@@ -24,13 +26,13 @@ Go to the next step.
 a|
 Waiting for giveback...
 a|
-    Press Ctrl-C, and then respond `y` when prompted.
+Press Ctrl-C, and then respond `y` when prompted.
 a|
 System prompt or password prompt (enter system password)
 a|
 Take over or halt the impaired node:
 
- ** For an HA pair, take over the impaired node from the healthy node: `storage failover takeover -ofnode impaired_node_name`
+ ** For an HA pair, take over the impaired node from the healthy node: `storage failover takeover -ofnode _impaired_node_name_`
 +
 When the impaired node shows Waiting for giveback..., press Ctrl-C, and then respond `y`.
 

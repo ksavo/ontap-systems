@@ -1,0 +1,79 @@
+---
+permalink: sas3/install-change-shelf-id.html
+sidebar: sidebar
+keywords: change, shelf, id, system, ontap, run, hot-add, ontap, controller, module, available, serve, data, unown, spare, offline, aggregate
+summary: You can change a shelf ID in a system when ONTAP is not yet running or when hot-adding a shelf prior to it being cabled to the system. You can also change a shelf ID when ONTAP is up and running \(controller modules are available to serve data\) and all drives in the shelf are unowned, spares, or part of offlined aggregate\(s\).
+---
+= Change a shelf ID - shelves with IOM12 modules
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You can change a shelf ID in a system when ONTAP is not yet running or when hot-adding a shelf prior to it being cabled to the system. You can also change a shelf ID when ONTAP is up and running (controller modules are available to serve data) and all drives in the shelf are unowned, spares, or part of offlined aggregate(s).
+
+.Before you begin
+
+* If ONTAP is up and running (controller modules are available to serve data), you must have verified that all drives in the shelf are unowned, spares, or part of offlined aggregate(s).
++
+You can verify the state of the drives by using the `storage disk show -shelf _shelf_number_` command. Output in the Container Type column should display spare or broken if it is a failed drive. Additionally, the Container Name and Owner columns should have a dash.
+
+* You can verify shelf IDs already in use in your system by running Active IQ Config Advisor or using the `storage shelf show -fields shelf-id` command.
++
+https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor[NetApp Downloads: Config Advisor]
+
+.About this task
+
+* A valid shelf ID is 00 through 99.
+* Shelf IDs must be unique within an HA pair or single-controller configuration.
++
+If you have a platform with internal storage, shelf IDs must be unique across the internal disk shelf and any externally attached disk shelves.
+
+* You must power cycle a shelf in order for the shelf ID to take effect.
++
+The amount of time you wait before turning the power back on depends on the state of ONTAP, as described later in this procedure.
+
+.Steps
+
+. Turn on the power to the disk shelf if it is not already on.
+. Remove the left end cap to locate the button near the shelf LEDs.
+. Change the first number of the shelf ID by pressing and holding the orange button until the first number on the digital display blinks, which can take up to three seconds.
++
+[NOTE]
+====
+If the ID takes longer than three seconds to blink, press the button again, making sure to press it in all the way.
+
+This activates the disk shelf ID programming mode.
+====
+. Press the button to advance the number until you reach the desired number from 0 to 9.
++
+The first number continues to blink.
+
+. Change the second number of the shelf ID by pressing and holding the button until the second number on the digital display blinks, which can take up to three seconds.
++
+The first number on the digital display stops blinking.
+
+. Press the button to advance the number until you reach the desired number from 1 to 9.
++
+The second number continues to blink.
+
+. Lock in the desired number and exit the programming mode by pressing and holding the button until the second number stops blinking, which can take up to three seconds.
++
+Both numbers on the digital display start blinking and the amber LED on the operator display panel illuminates after about five seconds, alerting you that the pending disk shelf ID has not yet taken effect.
+
+. Power cycle the disk shelf to make the shelf ID take effect.
++
+You must turn off both power switches, wait the appropriate amount of time, and then turn them back on to complete the power cycle.
+
+ ** If ONTAP is not yet running or you are hot-adding a shelf (that has not yet been cabled to the system), wait at least 10 seconds.
+ ** If ONTAP is running (controllers are available to serve data), and all disk drives in the shelf are unowned, spares, or part of offlined aggregate(s), wait at least 70 seconds.
++
+This time allows ONTAP to properly delete the old shelf address and update the copy of the new shelf address.
+
+. Replace the left end cap.
+. Repeat steps 1 through 9 for each additional disk shelf.
+. Verify that your system does not have duplicate shelf IDs.
++
+When two or more disk shelves have the same ID, the system assigns the duplicate disk shelf a soft ID number equal to or greater than 100. You must change the soft ID (duplicate) number.
+
+ .. Run Active IQ Config Advisor to check for duplicate shelf ID alerts or run the `storage shelf show -fields shelf-id` command to see a list of shelf IDs already in use including any duplicate IDs.
+ .. If your system has any duplicate shelf IDs, change the duplicate shelf IDs by repeating this procedure.

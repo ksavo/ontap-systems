@@ -1,16 +1,19 @@
 You must shut down the node or nodes in the chassis prior to moving them to the new chassis.
 
-* If you have a cluster with more than two nodes, it must be in quorum. If the cluster is not in quorum or a healthy node shows false for eligibility and health, you must correct the issue before shutting down the impaired node.
+.About this task
+* If you have a cluster with more than two nodes, it must be in quorum. If the cluster is not in quorum or a healthy node shows `false` for eligibility and health, you must correct the issue before shutting down the impaired node.
 +
-http://docs.netapp.com/ontap-9/topic/com.netapp.doc.dot-cm-sag/home.html[ONTAP 9 System Administration Reference]
+http://docs.netapp.com/ontap-9/topic/com.netapp.doc.dot-cm-sag/home.html[_ONTAP 9 System Administration Reference_]
 
-. If AutoSupport is enabled, suppress automatic case creation by invoking an AutoSupport message: `system node autosupport invoke -node * -type all -message MAINT=number_of_hours_downh`
+* If AutoSupport is enabled, suppress automatic case creation by invoking an AutoSupport message: `system node autosupport invoke -node * -type all -message MAINT=number_of_hours_downh`
 +
 The following AutoSupport message suppresses automatic case creation for two hours: `cluster1:*> system node autosupport invoke -node * -type all -message MAINT=2h`
 
+.Steps
+
 . If your system has two controller modules, disable the HA pair.
 +
-[options="header"]
+[options="header" cols="1,2"]
 |===
 | If your system is running clustered ONTAP with...| Then...
 a|
@@ -35,6 +38,6 @@ failover takeover" command. Are you sure you want to halt node
 "node_name"? {y|n}:
 ----
 +
-IMPORTANT: You must perform a clean system shutdown before replacing the chassis to avoid losing unwritten data in the nonvolatile memory (NVMEM). If the NVMEM LED is flashing, there is content in the NVMEM that has not been saved to disk. You need to reboot the node and start from the beginning of this procedure. If repeated attempts to cleanly shut down the node fail, be aware that you might lose any data that was not saved to disk.
+NOTE: You must perform a clean system shutdown before replacing the chassis to avoid losing unwritten data in the nonvolatile memory (NVMEM). If the NVMEM LED is flashing, there is content in the NVMEM that has not been saved to disk. You need to reboot the node and start from the beginning of this procedure. If repeated attempts to cleanly shut down the node fail, be aware that you might lose any data that was not saved to disk.
 
-. Where applicable, halt the second node to avoid a possible quorum error message in an HA pair configuration:: `system node halt -node second_node_name -ignore-quorum-warnings true`
+. Where applicable, halt the second node to avoid a possible quorum error message in an HA pair configuration: `system node halt -node second_node_name -ignore-quorum-warnings true`

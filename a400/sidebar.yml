@@ -1,0 +1,84 @@
+section: a400
+title: AFF A400 systems
+url: /a400/index.html
+entries:
+  - title: Install and setup
+    pdf-filename: AFF A400 Install and Setup
+    entries:
+    - title: Choose install and setup experience
+      url: /a400/install-setup.html
+    - title: Quick steps
+      url: /a400/install-quick-guide.html
+    - title: Videos steps
+      url: /a400/install-videos.html
+    - title: Detailed steps
+      url: /a400/install-detailed-guide.html
+  - title: Maintain
+    pdf-filename: AFF A400 Maintain
+    entries:
+    - title: Boot media
+      pdf-filename: AFF A400 Boot Media
+      entries:
+      - title: Overview
+        url: /a400/bootmedia-replace-overview.html
+      - title: Check onboard encryption keys
+        url: /a400/bootmedia-encryption-preshutdown-checks.html
+      - title: Shut down impaired controller
+        url: /a400/bootmedia-impaired-controller-shutdown.html
+      - title: Replace boot media
+        url: /a400/bootmedia-replace.html
+      - title: Boot recovery image
+        url: /a400/bootmedia-recovery-image-boot-options.html
+      - title: Switch back MetroCluster config
+        url: /a400/bootmedia-2n-mcc-switchback.html
+      - title: Restore OKM, NSE, and NVE
+        url: /a400/bootmedia-encryption-restore.html
+      - title: Return failed part to NetApp
+        url: /a400/bootmedia-complete-rma.html
+    - title: Chassis
+      pdf-filename: AFF A400 Chassis
+      entries:
+      - title: Overview
+        url: /a400/chassis-replace-overview.html
+      - title: Shut down impaired controller
+        url: /a400/chassis-replace-shutdown.html
+      - title: Replace hardware
+        url: /a400/chassis-replace-move-hardware.html
+      - title: Complete replacement
+        url: /a400/chassis-replace-complete-system-restore-rma.html
+    - title: Controller module
+      pdf-filename: AFF A400 Controller Module
+      entries:
+      - title: Overview
+        url: /a400/controller-replace-overview.html
+      - title: Shut down impaired controller
+        url: /a400/controller-replace-shutdown.html
+      - title: Replace controller module
+        url: /a400/controller-replace-move-hardware.html
+      - title: Restore system configuration
+        url: /a400/controller-replace-system-config-restore-and-verify.html
+      - title: Recable the system
+        url: /a400/controller-replace-recable-reassign-disks.html
+      - title: Complete system restoration
+        url: /a400/controller-replace-restore-system-rma.html
+    - title: DIMM
+      pdf-filename: AFF A400 DIMM
+      url: /a400/dimm-replace.html
+    - title: Fan
+      pdf-filename: AFF A400 Fan Module
+      url: /a400/fan-swap-out.html
+    - title: NVDIMM battery
+      pdf-filename: AFF A400 NVDIMM Battery Battery
+      url: /a400/nvdimm-battery-replace.html
+    - title: NVDIMM
+      pdf-filename: AFF A320 NVDIMM
+      url: /a400/nvdimm-replace.html
+    - title: PCIe or mezzanine card
+      pdf-filename: AFF A400 PCIe or Mezzanine Card
+      url: /a400/pci-cards-and-risers-replace.html
+    - title: Power supply
+      pdf-filename: AFF A400 Power Supply
+      url: /a400/power-supply-replace.html
+    - title: Real-time clock battery
+      pdf-filename: AFF A400 Real-Time Clock Battery
+      url: /a400/rtc-battery-replace.html

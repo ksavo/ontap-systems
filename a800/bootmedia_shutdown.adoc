@@ -1,0 +1,12 @@
+---
+permalink: a800/bootmedia-shutdown.html
+sidebar: sidebar
+keywords: aff a800, aff, a800, completing, complete, nve, nse, task, shutdown, impair, node, shut, down, shut down the node
+summary: After completing the NVE or NSE tasks, you need to complete the shutdown of the impaired node.
+---
+= Shut down the node - AFF A800
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+include::../_include/shutdown_bootmedia.adoc[]

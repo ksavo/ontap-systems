@@ -1,0 +1,63 @@
+---
+permalink: sas3/install-cabling-worksheets-how-to-read-quadpath.html
+sidebar: sidebar
+keywords: example, guide, read, apply, complete, worksheet, stack, disk, shelves, shelf, iom12, quad-pathed, connectivity, how to read a worksheet to cable controller-to-stack connections for quad-pathed connectivity
+summary: You can use this example to guide you through how to read and apply a completed worksheet to cable stacks of disk shelves with IOM12 modules for quad-pathed connectivity.
+---
+= How to read a worksheet to cable controller-to-stack connections for quad-pathed connectivity - shelves with IOM12 modules
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You can use this example to guide you through how to read and apply a completed worksheet to cable stacks of disk shelves with IOM12 modules for quad-pathed connectivity.
+
+.About this task
+
+* This procedure references the following worksheet and cabling example to demonstrate how to read a worksheet to cable controller-to-stack connections.
++
+The configuration used in this example is a quad-path HA configuration with two quad-port SAS HBAs on each controller and two stacks of disk shelves with IOM12 modules.
+
+* If you have a single-controller configuration, skip substeps b and d for cabling to a second controller.
+* If needed, you can refer to link:install-cabling-rules.html[SAS cabling rules] for information about the controller slot numbering convention, shelf-to-shelf connectivity, and controller-to-shelf connectivity (including the use of port pairs).
+
+image::../media/drw_worksheet_qpha_slots_1_and_2_two_4porthbas_two_stacks_nau.gif[]
+
+image::../media/drw_qpha_slots_1_and_2_two_4porthbas_two_stacks_nau.gif[]
+
+.Steps
+
+. Cable port pair 1a/2b on each controller to stack 1:
++
+This is the multipathed cabling for stack 1.
+
+ .. Cable controller 1 port 1a to stack 1, first shelf IOM A port 1.
+ .. Cable controller 2 port 1a to stack 1, first shelf IOM B port 1.
+ .. Cable controller 1 port 2b to stack 1, last shelf IOM B port 3.
+ .. Cable controller 2 port 2b to stack 1, last shelf IOM A port 3.
+
+. Cable port pair 2a/1d on each controller to stack 1:
++
+This is the quad-pathed cabling for stack 1. Once completed, stack 1 has quad-pathed connectivity to each controller.
+
+ .. Cable controller 1 port 2a to stack 1, first shelf IOM A port 2.
+ .. Cable controller 2 port 2a to stack 1, first shelf IOM B port 2.
+ .. Cable controller 1 port 1d to stack 1, last shelf IOM B port 4.
+ .. Cable controller 2 port 1d to stack 1, last shelf IOM A port 4.
+
+. Cable port pair 1c/2d on each controller to stack 2:
++
+This is the multipathed cabling for stack 2.
+
+ .. Cable controller 1 port 1c to stack 2, first shelf IOM A port 1.
+ .. Cable controller 2 port 1c to stack 2, first shelf IOM B port 1.
+ .. Cable controller 1 port 2d to stack 2, last shelf IOM B port 3.
+ .. Cable controller 2 port 2d to stack 2, last shelf IOM A port 3.
+
+. Cable port pair 2c/1b on each controller to stack 2:
++
+This is the quad-pathed cabling for stack 2. Once completed, stack 2 has quad-pathed connectivity to each controller.
+
+ .. Cable controller 1 port 2c to stack 2, first shelf IOM A port 2.
+ .. Cable controller 2 port 2c to stack 2, first shelf IOM B port 2.
+ .. Cable controller 1 port 1b to stack 2, last shelf IOM B port 4.
+ .. Cable controller 2 port 1b to stack 2, last shelf IOM A port 4.

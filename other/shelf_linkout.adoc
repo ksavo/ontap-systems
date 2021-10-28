@@ -1,0 +1,17 @@
+---
+permalink: other/shelf-linkout.html
+sidebar: sidebar
+keywords: ds4243, ds2246, ds4486
+summary: You can use these links for other storage shelf models.
+---
+= Other storage shelf models
+:icons: font
+:imagesdir: ../media/
+
+link:http://mysupport.netapp.com/documentation/docweb/index.html?productID=30410[DS2246 disk shelf documentation]
+
+link:http://mysupport.netapp.com/documentation/docweb/index.html?productID=61387[DS4486 disk shelf documentation]
+
+link:http://mysupport.netapp.com/documentation/docweb/index.html?productID=61469[DS4246 disk shelf documentation]
+
+link:http://mysupport.netapp.com/documentation/docweb/index.html?productID=30411&language=en-US&archive=true[DS4243 disk shelf documentation]

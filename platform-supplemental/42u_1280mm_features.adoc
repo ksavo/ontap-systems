@@ -1,0 +1,93 @@
+---
+permalink: platform-supplemental/42u-1280mm-features.html
+sidebar: sidebar
+keywords: system, cabinet, side, panel, front, rear, door, bolt-down, kit, optional, interconnect, pdu, equipment, integrate, cable, management, system, feature, system cabinet feature
+summary: The system cabinet consists of side panels, front and rear doors, an optional bolt-down kit, an optional interconnect kit, PDUs for your equipment, and an integrated cable management system.
+---
+= System cabinet features
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+The system cabinet consists of side panels, front and rear doors, an optional bolt-down kit, an optional interconnect kit, PDUs for your equipment, and an integrated cable management system.
+
+[options="header" cols="1,2"]
+|===
+| Feature| Description
+a|
+Side panels
+a|
+System cabinets have lockable, removable, and interchangeable side panels.
+a|
+Perforated front and rear doors
+a|
+System cabinets have removable front and rear doors with a quick release mechanism. The front door is reversible, and the rear doors are split. Both doors are perforated for cooling.
+a|
+Common key
+a|
+This key unlocks the front doors, rear doors, and side panels.
+a|
+Spares kit
+a|
+This kit is inside the system cabinet, attached to the cabinet door. It contains the following components:
+
+* Four 10-32 x 0.75 inch Phillips pilot screws
+* Four 10-32 cage nuts
+* One cage nut insertion tool
+* Two master key copies
+
+a|
+Cable access
+a|
+Cable pass-throughs are built into the top and bottom of the cabinet, as well as between the bottom of the rear door and the frame.
+a|
+Cable management
+a|
+Cable management hook and loop strapping is attached to the frame of the system cabinet at equal intervals.
+a|
+Support rails
+a|
+The number of support rails you receive depends on your configuration. The empty system cabinet is shipped with no support rails installed.
+
+* For configured system cabinets, one fixed rail kit is shipped with the system cabinet to support the 80xx, FAS8200, and DS4486 rear hold-down brackets.
+* Quick-ship system cabinets do not include the additional fixed rail kit.
+
+a|
+Blanking panels
+a|
+The number and size of blanking panels you receive depends on your configuration. The empty system cabinet is shipped with no blanking panels installed.
+a|
+Bolt-down kit
+a|
+This optional kit enables you to secure the system cabinet to the data center floor. The kit it is not intended for seismic stability.
+
+* Four bolt-down brackets
+* Four spacer brackets
+* Six M8x20 mm hex head bolts and washers
+
+a|
+Interconnect kit
+a|
+This optional kit enables you to connect multiple system cabinets to each other.
+
+* Interconnect brackets
+ ** One set of four interconnect brackets for connecting the system cabinets with side panels on
+ ** One set of four interconnect brackets for connecting the system cabinets with the side panels off
+* Four M12x20 Torx-30 screws used in system cabinet with side panels on.
+* Eight M6x10 countersunk Torx-30 screws used in system cabinet with side panels off.
+
+a|
+Support rail kit
+a|
+If you ordered additional support rails with your system cabinet, each kit contains one left and one right support rail.
+
+NOTE: The support rails and kit are designed to fit only the NetApp 42U 1280 mm system cabinet. Do not use the rails or a rail kit from other system cabinets because they are not designed for use in the 42U 1280 mm system cabinet.
+
+* A left and right support rail
+* Two screws per rail for securing the rail to the system cabinet frame
+
+a|
+Crescent wrench
+a|
+The crescent wrench is used to remove the hold-down brackets on the packing pallet, adjust the system cabinet leveling feet, and install the bolt-down kit brackets, if ordered.
+|===

@@ -1,0 +1,77 @@
+indexpage:
+#  lead: FAS8300
+  tiles:
+    - title: Get started 
+      links:
+        - title: ONTAP Release notes
+          url: https://library.netapp.com/ecm/ecm_download_file/ECMLP2492508
+        - title: System data sheet
+          url: https://www.netapp.com/pdf.html?item=/media/7828-ds-3582.pdf
+        - title: Storage data sheet
+          url: https://www.netapp.com/data-storage/disk-shelves-storage-media/
+    - title: Install and setup
+      links:
+        - title: Most configurations
+          url: /install-setup.html
+        - title: Fabric-attached MetroCluster configurations
+          url: https://docs.netapp.com/us-en/ontap-metrocluster/install-fc/index.html
+        - title: Stretch MetroCluster configurations
+          url: https://docs.netapp.com/us-en/ontap-metrocluster/install-stretch/index.html
+    - title: Maintain
+      links:
+        - title: Boot media
+          url: /bootmedia-replace-overview.html
+        - title: Caching module
+          url: /caching-module-replace.html
+        - title: Chassis
+          url: /chassis-replace-overview.html
+        - title: Controller module
+          url: /controller-replace-overview.html
+        - title: DIMM
+          url: /dimm-replace.html
+        - title: Fan
+          url: /fan-replace.html
+        - title: NVDIMM
+          url: /dimm-replace.html
+        - title: NVDIMM battery
+          url: /nvmem-nvram-battery-replace.html
+        - title: PCIe or mezzanine card
+          url: /pci-cards-and-risers-replace.html
+        - title: Power supply
+          url: /power-supply-swapout.html
+        - title: RTC battery
+          url: /rtc-battery-replace.html
+    - title: Learn
+      links:
+        - title: Replacing an internal disk drive video
+          url: https://www.youtube.com/watch?v=Ziqg9HL8oYQ
+    - title: Add or remove shelves
+      links:
+        - title: SAS with IOM12
+          url: https://docs.netapp.com/us-en/ontap-systems/sas3/index.html
+    - title: Install and maintain switches
+      links:
+        - title: Broadcom-supported switches
+          url: https://docs.netapp.com/us-en/ontap-systems-switches/
+        - title: Cisco switches
+          url: https://docs.netapp.com/us-en/ontap-systems-switches/
+    - title: Upgrade
+      links:
+        - title: System hardware upgrade
+          url: https://docs.netapp.com/us-en/ontap-systems-upgrade/
+        - title: ONTAP software upgrade
+          url: https://docs.netapp.com/us-en/ontap/upgrade/index.html
+    - title: More resources
+      links:
+        - title: ONTAP documentation
+          url: https://docs.netapp.com/us-en/ontap/
+        - title: NetApp Hardware Universe
+          url: https://hwu.netapp.com/home/index
+        - title: NetApp Active IQ Config Advisor
+          url: https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor
+        - title: NetApp Interoperability Matrix Tool
+          url: https://mysupport.netapp.com/matrix/#welcome
+        - title: NetApp Support Knowledge Base
+          url: https://kb.netapp.com/
+        - title: NetApp Community
+          url: https://community.netapp.com/

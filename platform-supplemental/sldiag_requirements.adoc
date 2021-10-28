@@ -1,0 +1,58 @@
+---
+permalink: platform-supplemental/sldiag-requirements.html
+sidebar: sidebar
+keywords: system-level, diagnostic, test, run, time, system, requirement, system, memory, general, nic, sas, fc-al, cna, interconnect, requirement for running system-level diagnostic
+summary: Depending on the system-level diagnostic tests you are running, you need to be aware of time and system hardware requirements.
+---
+= Requirements for running system-level diagnostics
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+Depending on the system-level diagnostic tests you are running, you need to be aware of time and system hardware requirements.
+
+Each documented task has slight differences; use the recommended procedure for the task.
+
+The following requirements must be met when running system-level diagnostics; otherwise, parts of the tests fail and error messages appear in the status report:
+
+== General requirements
+
+* Each system being tested must be on a separate network.
++
+The network interface test assigns unique static IP addresses, beginning with 172.25.150.23, to all available network interfaces on a storage system. This results in network interface ports on different storage controllers being assigned the same IP address. If all the systems being tested are on the same network, then duplicate ip address warning messages appear on the connected consoles. These warning messages do not affect the test results.
+
+== System memory requirements
+
+* You need to set aside time when running memory tests; the larger the memory capacity of your storage system, the longer it takes.
+
+== NIC requirements
+
+* All adjacent network interface ports on the system must be connected for best performance using a standard Ethernet cable.
++
+Examples of adjacent ports are e0a and e0b or e2c and e2d.
++
+NOTE: e0M and e0P ports cannot be connected together due to an internal switch connection. In systems with e0M and e0P ports, the most efficient pairings are e0M with e0a and e0P with e0b.
+
+* If there are a number of network interface ports on the system, you may need to run the NIC system-level diagnostic test several times, limiting each run to no more than two pairs each time.
+
+== SAS requirements
+
+* When running the SAS system-level diagnostic tests, adjacent SAS ports must be connected for best performance; storage shelves must be disconnected from the ports.
++
+NOTE: Connections between adjacent SAS ports is no longer a requirement for systems running Data ONTAP 8.2; however, only the internal loopback test will be run for systems with unconnected SAS ports.
+
+== FC-AL requirements
+
+* When running the FC-AL system-level diagnostic tests, you must have loopback hoods on FC-AL interfaces on the motherboard or expansion adapters for best performance; all other cables for storage or Fibre Channel networks must be disconnected from the ports.
++
+NOTE: While the use of loopback hoods on FC-AL interfaces are no longer requirements for systems running Data ONTAP 8.2, the scope of the test coverage on the interface is also reduced.
+
+== CNA requirements
+
+* The use of loopback hoods is not a requirement for running CNA system-level diagnostics tests.
+
+== Interconnect requirements
+
+* Both platform controller modules in a dual controller system must be in Maintenance mode for the interconnect system-level diagnostic test to run.
++
+NOTE: You will receive a warning message if you attempt to run the interconnect system-level diagnostic test with other system-level diagnostic tests.

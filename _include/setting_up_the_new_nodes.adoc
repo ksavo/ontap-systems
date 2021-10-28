@@ -1,7 +1,9 @@
 During the process of upgrading by moving storage, you power on node3 and node4, boot the software image, and configure the nodes. Physical port layout between original and new nodes can be different. Mapping of ports between original and replacement nodes should be done to identify proper layout of ports and connections.
 
+.About this task
 If the version of ONTAP running on the new nodes is different to the version on the original nodes, you must have downloaded the correct <ontap_version>_image.tgz file from the NetApp Support Site to a web-accessible directory (see Step 4). You need the <ontap_version>_image.tgz file to perform a netboot of your system.
 
+.Steps
 . Turn on the power to node3, and then immediately press Ctrl-C at the console terminal to access the LOADER prompt.
 +
 If node3 and node4 are in the same chassis, go to Step 2. If not, go to Step 3.
@@ -16,7 +18,7 @@ Leave node4 at the LOADER prompt; you return to this procedure and repeat these 
 . At the LOADER prompt, enter the following command: `set-defaults`
 . At the LOADER prompt, configure the netboot connection for a management LIF:
 +
-[options="header"]
+[options="header" cols="1,2"]
 |===
 | If IP addressing is...| Then...
 a|
@@ -35,7 +37,7 @@ a|
 
 . At the LOADER prompt, perform netboot on the node3:
 +
-[options="header"]
+[options="header" cols="1,2"]
 |===
 | For...| Then...
 a|
