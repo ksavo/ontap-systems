@@ -1,5 +1,5 @@
 settings:
-  search: ontap-systems, ontap-systems-switches, ontap-systems-upgrade
+  search: ontap-systems
   name: "ONTAP Systems"
   pdf_enabled: true
 sidebar:
