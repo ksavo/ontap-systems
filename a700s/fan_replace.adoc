@@ -1,0 +1,30 @@
+---
+permalink: a700s/fan-replace.html
+sidebar: sidebar
+keywords: aff a700s, aff, a700s, replace, fan, remove, fail, module, module, replace a fan
+summary: To replace a fan, remove the failed fan module and replace it with a new fan module.
+---
+= Replacing a fan - AFF A700s
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+To replace a fan, remove the failed fan module and replace it with a new fan module.
+
+. If you are not already grounded, properly ground yourself.
+. Identify the fan module that you must replace by checking the console error messages or by locating the lit LED for the fan module on the motherboard.
+. Remove the fan module by pinching the locking tabs on the side of the fan module, and then lifting the fan module straight out of the controller module.
++
+image::../media/drw_a700s_replace_fan.png[]
++
+|===
+a|
+image:../media/legend_icon_01.png[] a|
+Fan locking tabs
+a|
+image:../media/legend_icon_02.png[]
+a|
+Fan module
+|===
+
+. Align the edges of the replacement fan module with the opening in the controller module, and then slide the replacement fan module into the controller module until the locking latches click into place.

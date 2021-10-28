@@ -1,0 +1,37 @@
+---
+permalink: a320/fan-swap-out.html
+sidebar: sidebar
+keywords: aff, a320, aff a320, swap, fan, module, interrupt, service, perform, sequence, task, hot-swap
+summary: To swap out a fan module without interrupting service, you must perform a specific sequence of tasks.
+---
+= Hot-swap a fan module - AFF A320
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+To swap out a fan module without interrupting service, you must perform a specific sequence of tasks.
+
+image::../media/drw_A320_Replace_fan.png[]
+
+. If you are not already grounded, properly ground yourself.
+. Remove the bezel (if necessary) with two hands, by grasping the openings on each side of the bezel, and then pulling it toward you until the bezel releases from the ball studs on the chassis frame.
+. Identify the fan module that you must replace by checking the console error messages and looking at the Attention LED on each fan module.
+. Press down the release latch on the fan module cam handle, and then rotate the cam handle downward.
++
+The fan module moves a little bit away from the chassis.
+
+. Pull the fan module straight out from the chassis, making sure that you support it with your free hand so that it does not swing out of the chassis.
++
+NOTE: The fan modules are short. Always support the bottom of the fan module with your free hand so that it does not suddenly drop free from the chassis and injure you.
+
+. Set the fan module aside.
+. Insert the replacement fan module into the chassis by aligning it with the opening, and then sliding it into the chassis.
+. Push firmly on the fan module cam handle so that it is seated all the way into the chassis.
++
+The cam handle raises slightly when the fan module is completely seated.
+
+. Swing the cam handle up to its closed position, making sure that the cam handle release latch clicks into the locked position.
++
+The Attention LED should not be lit after the fan is seated and has spun up to operational speed.
+
+. Align the bezel with the ball studs, and then gently push the bezel onto the ball studs.

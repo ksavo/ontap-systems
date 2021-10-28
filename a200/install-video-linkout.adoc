@@ -1,0 +1,13 @@
+---
+permalink: a200/install-video-linkout.html
+sidebar: sidebar
+keywords: aff a200, install, video
+summary: The following video shows end-to-end software configuration for systems running ONTAP 9.2.
+---
+= Installation and setup video - AFF A200
+:icons: font
+:imagesdir: ../media/
+
+The following video shows end-to-end software configuration for systems running ONTAP 9.2.
+
+link:https://youtu.be/WAE0afWhj1c[AFF A200 Setup Video]

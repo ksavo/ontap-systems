@@ -1,0 +1,22 @@
+---
+permalink: fas8300/controller-replace-shutdown.html
+sidebar: sidebar
+keywords: fas8300, fas8700, shut down the impair controller
+summary: "You can shut down or take over the impaired controller using different procedures, depending on the storage system hardware configuration."
+---
+= Shut down the impaired controller - FAS8300 and FAS8700
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You can shut down or take over the impaired controller using different procedures, depending on the storage system hardware configuration.
+
+== Option 1: Shut down the node
+
+[.lead]
+include::../_include/shutdown_controller.adoc[]
+
+== Option 2: Shut down a node in a two-node MetroCluster configuration
+
+[.lead]
+include::../_include/shutdown_2n_mcc.adoc[]

@@ -1,0 +1,13 @@
+---
+permalink: fas8200/install-setup-linkout.html
+sidebar: sidebar
+keywords: fas8200, install
+summary: You can use the PDF poster to install and set up your new system. The PDF poster provides step-by-step instructions with live links to additional content.
+---
+= Installation and setup PDF poster - FAS8200
+:icons: font
+:imagesdir: ../media/
+
+You can use the PDF poster to install and set up your new system. The PDF poster provides step-by-step instructions with live links to additional content.
+
+link:https://library.netapp.com/ecm/ecm_download_file/ECMLP2573725[AFF FAS8200 Installation and Setup Instructions]

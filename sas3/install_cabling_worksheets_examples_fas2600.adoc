@@ -1,0 +1,45 @@
+---
+permalink: sas3/install-cabling-worksheets-examples-fas2600.html
+sidebar: sidebar
+keywords: complete, controller-to-stack, cabling, worksheet, cable, common, aff, a200, a220, fas2600, series, fas2700, configuration
+summary: You can use the completed controller-to-stack cabling worksheets and cabling examples to cable common AFF A200, AFF A220, FAS2600 series and FAS2700 configurations.
+---
+= Controller-to-stack cabling worksheets and cabling examples for common AFF A200, AFF A220, FAS2600 series and FAS2700 configurations - shelves with IOM12 modules
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You can use the completed controller-to-stack cabling worksheets and cabling examples to cable common AFF A200, AFF A220, FAS2600 series and FAS2700 configurations.
+
+* If needed, you can refer to link:install-cabling-rules.html[SAS cabling rules] for information about supported configurations, shelf-to-shelf connectivity, and controller-to-shelf connectivity (including AFF A200, AFF A220, FAS2600 series and FAS2700 port 0b same domain connectivity).
+* Cabling examples show controller-to-stack cables as solid or dashed to distinguish controller 0b port connections from controller 0a port connections.
++
+image::../media/drw_fas2600_controller_to_stack_cable_type_key.png[]
+
+* Cabling examples show controller-to-stack connections and shelf-to-shelf connections in two different colors to distinguish connectivity through IOM A (domain A) and IOM B (domain B).
++
+image::../media/drw_fas2600_cable_color_key.png[]
+
+== AFF A200, AFF A220, FAS2600 series and FAS2700 multipath HA configuration with one multi-shelf stack
+
+The following worksheet and cabling example uses port pair 0a/0b:
+
+image::../media/drw_fas2600_mpha_worksheet.png[]
+
+image::../media/drw_fas2600_mpha.png[]
+
+== FAS2600 series multipath configuration with one multi-shelf stack
+
+The following worksheets and cabling examples use port pair 0a/0b.
+
+In this example, the controller is installed in slot A of the chassis. When a controller is located in slot A of the chassis, its internal storage port (0b) is in domain A (IOM A); therefore, port 0b must connect to domain A (IOM A) in the stack.
+
+image::../media/drw_fas2600_mp_slot_a_worksheet.png[]
+
+image::../media/drw_fas2600_mp_slot_a.png[]
+
+In this example, the controller is installed in slot B of the chassis. When a controller is located in slot B of the chassis, its internal storage port (0b) is in domain B (IOM B); therefore, port 0b must connect to domain B (IOM B) in the stack.
+
+image::../media/drw_fas2600_mp_slot_b_worksheet.png[]
+
+image::../media/drw_fas2600_mp_slot_b.png[]

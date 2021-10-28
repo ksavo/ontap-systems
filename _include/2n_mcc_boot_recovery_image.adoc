@@ -2,6 +2,7 @@ You must boot the ONTAP image from the USB drive and verify the environmental va
 
 This procedure applies to systems in a two-node MetroCluster configuration.
 
+.Steps
 . From the LOADER prompt, boot the recovery image from the USB flash drive: `boot_recovery`
 +
 The image is downloaded from the USB flash drive.
@@ -12,10 +13,10 @@ The image is downloaded from the USB flash drive.
  .. Press `y` when prompted to reboot to start using the newly installed software.
 +
 You should be prepared to interrupt the boot process when prompted.
-. As the system boots, press `Ctrl-C` after you see the Press Ctrl-C for Boot Menu message., and when the Boot Menu is displayed select option 6.
+. As the system boots, press `Ctrl-C` after you see the `Press Ctrl-C for Boot Menu` message., and when the Boot Menu is displayed select option 6.
 . Verify that the environmental variables are set as expected.
  .. Take the node to the LOADER prompt.
- .. Check the environment variable settings with the printenv command.
- .. If an environment variable is not set as expected, modify it with the setenvenvironment_variable_name changed_value command.
- .. Save your changes using the saveenv command.
+ .. Check the environment variable settings with the `printenv` command.
+ .. If an environment variable is not set as expected, modify it with the `setenv __environment-variable-name__ __changed-value__` command.
+ .. Save your changes using the `savenev` command.
  .. Reboot the node.

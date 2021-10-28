@@ -1,12 +1,12 @@
 ---
+layout: landing-page
 sidebar: sidebar
 permalink: index.html
-keywords:  aggregate, relocation, moving, manual, upgrade, relocate
-lead: This library provides instructions to upgrade controller hardware for storage systems using the aggregate relocation method.
-summary: Use aggregate relocation to upgrade controller hardware
+keywords:  aff fas
+summary: NetApp's AFF and FAS storage systems provide leading-edge, enterprise-class, scale-out all flash or hybrid storage with the industry's most advanced data management. Use the docs on this site to install, expand, upgrade and maintain your AFF or FAS system along with its storage shelves, and cluster switches.
 ---
 
-=  ONTAP 9.8 System Documentation
+=  AFF and FAS System Documentation
 :hardbreaks:
 :nofooter:
 :icons: font

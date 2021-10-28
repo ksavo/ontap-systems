@@ -1,7 +1,9 @@
 You must restore configuration information from the root volume to the boot devices.
 
+.About this task
 You need to perform these steps on node3 and node4, completing each step on one node and then the other before going on to the next step.
 
+.Steps
 . Access the boot menu from the LOADER prompt: `boot_ontap menu`
 . From the boot menu, select (6) Update flash from backup config and enter``y`` when prompted to continue.
 +

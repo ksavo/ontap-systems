@@ -1,0 +1,20 @@
+#test of landing page
+homepage:
+  tiles:
+    - title: Get started
+      links:
+        - title: Review ONTAP release notes
+          url: /install-ip/index.html
+    - title: Install and setup
+      links:
+        - title: Quick guide
+          url: /fas9000/install-quick-guide.html
+          entries:
+          - title: Videos
+            url: /fas9000/install-videos.html
+          - title: Detailed guide
+            url: /fas9000/install-detailed-guide.html
+    - title: Maintain
+      links:
+        - title: Boot media
+          url: /fas9000/bootmedia-replace.html
