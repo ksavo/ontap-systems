@@ -106,7 +106,7 @@ Lift the battery out of the holder and controller module.
 [.lead]
 After you have replaced the component in the controller module, you must re-install the controller module into the chassis, and then boot it to Maintenance mode.
 
-You can use the following animation or the written steps to install the replacement controller module in the chassis.
+You can use the following illustration or the written steps to install the replacement controller module in the chassis.
 
 . Close the controller module cover and tighten the thumbscrew.
 +

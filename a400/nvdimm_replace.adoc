@@ -35,7 +35,7 @@ include::../_include/shutdown_2n_mcc.adoc[]
 [.lead]
 To access components inside the controller module, you must remove the controller module from the chassis.
 
-You can use the following animations, drawing, or the written steps to remove the controller module from the chassis.
+You can use the following animations, illustration, or the written steps to remove the controller module from the chassis.
 
 https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=ca74d345-e213-4390-a599-aae10019ec82[Removing the controller module]
 
@@ -68,7 +68,7 @@ To replace the NVDIMM, you must locate it in the controller module using the FRU
 +
 NOTE: You must log into the NetApp Support Site to display the _Statement of Volatility_ for your system.
 
-You can use the following animation, drawing, or the written steps to replace the NVDIMM.
+You can use the following animation, illustration, or the written steps to replace the NVDIMM.
 
 NOTE: The animation shows empty slots for sockets without DIMMs. These empty sockets are populated with blanks.
 
@@ -103,7 +103,7 @@ NOTE: Visually inspect the NVDIMM to verify that it is evenly aligned and fully 
 [.lead]
 After you have replaced the component in the controller module, you must re-install the controller module into the chassis, and then boot it to Maintenance mode.
 
-You can use the following animation, drawing, or the written steps to install the controller module in the chassis.
+You can use the following animation, illustration, or the written steps to install the controller module in the chassis.
 
 https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=0310fe80-b129-4685-8fef-ab19010e720a[Installing the controller module]
 

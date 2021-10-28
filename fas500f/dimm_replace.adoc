@@ -100,7 +100,7 @@ The DIMMs fit tightly in the socket. If not, reinsert the DIMM to realign it wit
 [.lead]
 After you have replaced the component in the controller module, you must re-install the controller module into the chassis, and then boot it to Maintenance mode.
 
-You can use the following animation or the written steps to install the replacement controller module in the chassis.
+You can use the following illustration or the written steps to install the replacement controller module in the chassis.
 
 . If you have not already done so, install the air duct.
 +

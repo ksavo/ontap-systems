@@ -16,7 +16,7 @@ To replace the controller module hardware, you must remove the impaired node, mo
 [.lead]
 To access components inside the controller module, you must remove the controller module from the chassis.
 
-You can use the following animations or the written steps to remove the controller module from the chassis.
+You can use the following , illustration, or the written steps to remove the controller module from the chassis.
 
 https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=ca74d345-e213-4390-a599-aae10019ec82[Removing the controller module]
 
@@ -38,7 +38,7 @@ image:../media/drw_A400_Remove_controller.png[]
 Make sure that you support the bottom of the controller module as you slide it out of the chassis.
 
 . Place the controller module on a stable, flat surface.
-. On the replacement controller module, open the air duct and remove the empty risers from the controller module using the animation or the written steps:
+. On the replacement controller module, open the air duct and remove the empty risers from the controller module using the animation, illustration, or the written steps:
 +
 https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=49053752-e813-4c15-a917-ab190147fa6e[Removing the empty risers from the replacement controller module]
 
@@ -54,7 +54,7 @@ image::../media/drw_a400_empty_riser_remove.png[]
 [.lead]
 You must move the power supply from the impaired controller module to the replacement controller module when you replace a controller module.
 
-You can use the following animation or the written steps to move the power supplies to the replacement controller module.
+You can use the following animation, illustration, or the written steps to move the power supplies to the replacement controller module.
 
 https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=92060115-1967-475b-b517-aad9012f130c[Moving the power supplies]
 
@@ -79,7 +79,7 @@ NOTE: To avoid damaging the internal connector, do not use excessive force when 
 [.lead]
 To move the NVDIMM battery from the impaired controller module to the replacement controller module, you must perform a specific sequence of steps.
 
-You can use the following animation or the written steps to move the NVDIMM battery from the impaired controller module to the replacement controller module.
+You can use the following animation, illustration, or the written steps to move the NVDIMM battery from the impaired controller module to the replacement controller module.
 
 https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=94d115b2-b02a-4234-805c-aad9012f204c[Moving the NVDIMM battery]
 
@@ -101,7 +101,7 @@ NOTE: Do not plug the battery cable back into the motherboard until instructed t
 [.lead]
 You must locate the boot media, and then follow the directions to remove it from the impaired controller module and insert it into the replacement controller module.
 
-You can use the following animation or the written steps to move the boot media from the impaired controller module to the replacement controller module.
+You can use the following animation, illustration, or the written steps to move the boot media from the impaired controller module to the replacement controller module.
 
 https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=2a14099c-85de-4a84-867c-aad9012efac8[Moving the boot media]
 
@@ -125,7 +125,7 @@ If necessary, remove the boot media and reseat it into the socket.
 [.lead]
 As part of the controller replacement process, you must move the PCIe risers and mezzanine card from the impaired controller module to the replacement controller module.
 
-You can use the following animation or the written steps to move the PCIe risers and mezzanine card from the impaired controller module to the replacement controller module.
+You can use the following animations, illustrations, or the written steps to move the PCIe risers and mezzanine card from the impaired controller module to the replacement controller module.
 
 Moving PCIe riser 1 and 2 (left and middle risers):
 
@@ -165,7 +165,7 @@ You need to locate the DIMMs, and then move them from the impaired controller mo
 
 You must have the new controller module ready so that you can move the DIMMs directly from the impaired controller module to the corresponding slots in the replacement controller module.
 
-You can use the following animation or the written steps to move the DIMMs from the impaired controller module to the replacement controller module.
+You can use the following animation, illustration, or the written steps to move the DIMMs from the impaired controller module to the replacement controller module.
 
 https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=717b52fa-f236-4f3d-b07d-aad9012f51a3[Moving the DIMMs]
 
@@ -199,11 +199,11 @@ Make sure that the plug locks down onto the controller module.
 [.lead]
 After all of the components have been moved from the impaired controller module to the replacement controller module, you must install the replacement controller module into the chassis, and then boot it to Maintenance mode.
 
-You can use the following animation or the written steps to install the replacement controller module in the chassis.
+You can use the following animation, illustration, or the written steps to install the replacement controller module in the chassis.
 
 https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=0310fe80-b129-4685-8fef-ab19010e720a[Installing the controller module]
 
-image::../media/drw_A400_Install_controller.png[]
+image::../media/drw_A400_Install_controller_source.png[]
 
 . If you have not already done so, close the air duct.
 . Align the end of the controller module with the opening in the chassis, and then gently push the controller module halfway into the system.

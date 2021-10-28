@@ -45,7 +45,7 @@ The following AutoSupport message suppresses automatic case creation for two hou
 +
 [options="header" cols="1,2"]
 |===
-| *If the impaired node is displaying...| Then...*
+| If the impaired node is displaying...| Then...
 a|
 The LOADER prompt
 a|
@@ -71,7 +71,7 @@ include::../_include/shutdown_2n_mcc.adoc[]
 [.lead]
 To access components inside the controller module, you must remove the controller module from the chassis.
 
-You can use the following animations or the written steps to remove the controller module from the chassis.
+You can use the following animation, illustration, or the written steps to remove the controller module from the chassis.
 
 https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=75b6fa91-96b9-4323-b156-aae10007c9a5[Removing the controller module]
 
@@ -110,7 +110,7 @@ NOTE: You must log into the NetApp Support Site to display the _Statement of Vol
 
 * All other components in the storage system must be functioning properly; if not, you must contact technical support.
 
-You can use the following animation or the written steps to replace a caching module.
+You can use the following animation, illustration, or the written steps to replace a caching module.
 
 https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=d5f75ac5-b4f3-4b49-984b-aad9012f0c8e[Replacing the caching module]
 
@@ -144,7 +144,7 @@ The caching module end rises clear of the release tab.
 [.lead]
 After you have replaced the component in the controller module, you must re-install the controller module into the chassis, and then boot it to Maintenance mode.
 
-You can use the following animation or the written steps to install the controller module in the chassis.
+You can use the following animation, illustration, or the written steps to install the controller module in the chassis.
 
 https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=9249fdb8-1522-437d-9280-aae10007c97b[Installing the controller module]
 
