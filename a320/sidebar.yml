@@ -55,7 +55,7 @@ entries:
         - title: Overview
           url: /a320/controller-replace-overview.html
         - title: Shut down impaired controller
-          url: /a320/controller-replace-impaired-controller-shutdown.html
+          url: /a320/controller-replace-shutdown.html
         - title: Replace controller module
           url: /a320/controller-replace.html
         - title: Restore system configuration
