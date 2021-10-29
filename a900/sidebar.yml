@@ -1,6 +1,5 @@
-section: fas9000
+section: a900
 title: AFF A900 systems
-url: /a900/index.html
 entries:
   - title: Install and setup
     entries:
@@ -14,86 +13,81 @@ entries:
       url: /a900/install_detailed_guide.html
   - title: Maintain
     entries:
-    - title: Caching or core dump module
-      url: /a900/caching_module_and_core_dump_module_replace.html
-    - title: Caching module hot swap
-      url: /a900/caching_module_hot_swap.html
-    - title: DCPM (with NVRAM10 batter)
-      url: /a900/dcpm_nvram10_battery_replace.html
-    - title: Power supply
-      url: /a900/power_supply_swap_out.html
-    - title: Fan
-      url: /a900/fan_swap_out.html
-      # START controller module replacement
-    - title: Controller module
-      url: /a900/controller_replace.html
-      entries:
-      - title: Shut down the impaired controller
-        url: /a900/controller_replace_shutdown.html
-      - title: Replace the controller module hardware
-        url: /a900/controller_replace_overview.html
-      - title: Set and verify system time after Replace the controller
-        url: /a900/controller_replace_set_time.html
-      - title: Restore and verify the system configuration
-        url: /a900/controller_replace_system_config_restore_and_verify.html
-      - title: Complete system restoration
-        url: /a900/controller_replace_complete_system_restoration.html
-      # END controller module replacement
-    - title: DIMM
-      url: /a900/dimm_replace.html
-    - title: NVRAM module and/or NVRAM DIMMs
-      url: /a900/nvram_module_or_nvram_dimm_replacement.html
+# START Add I/O module
+    - title: Add I/O module
+      url: /a900/add_io_module.html
+# END Add I/O module
       # START boot media
     - title: Boot media
-      url: /a900/bootmedia_replace_overview.html
       entries:
+      - title: Overview
+        url: /a900/bootmedia_replace_overview.html
       - title: Pre-shutdown checks for onboard encryption keys
         url: /a900/bootmedia_encryption_preshutdown_checks.html
-      #  entries:
-      #  - title: Check NVE or NSE on systems running ONTAP 9.5 and earlier
-      #    url: /a900/bootmedia_encryption_checks_95_and_earlier.html
-      #  - title: Check NVE or NSE on systems running ONTAP 9.6 and later
-      #    url: /a900/bootmedia_encryption_checks_96_and_later.html
       - title: Shut down the impaired controller
         url: /a900/bootmedia_impaired_controller_shutdown.html
-        entries:
-        - title: Shut down the node
-          url: /a900/bootmedia_shutdown.html
-        - title: Shut down a node in a two-node MetroCluster configuration
-          url: /a900/bootmedia_shutdown_2n_mcc.html
-      - title: Open the controller module
-        url: /a900/bootmedia_controller_open.html
-      - title: Replace the boot media
+      - title: Transfer the boot image and replace the failed boot media
         url: /a900/bootmedia_replace.html
-      - title: Transfer the boot image to the boot media
-        url: /a900/bootmedia_transfer_boot_image.html
       - title: Boot the recovery image
-        url: /a900/bootmedia_recovery_image_boot_options.html
-        entries:
-        - title: Boot the recovery image in most systems
-          url: /a900/bootmedia_recovery_image_boot_non_2n_mcc.html
-        - title: Boot the recovery image in a two-node MetroCluster configuration
-          url: /a900/bootmedia_recovery_image_boot_2n_mcc.html
-      - title: Switch back aggregates in a two-node MetroCluster configuration
-        url: /a900/bootmedia_2n_mcc_switchback.html
+        url: /a900/bootmedia_recovery_image.html
       - title: Post boot media replacement steps for OKM, NSE, and NVE
         url: /a900/bootmedia_encryption_restore.html
       - title: Return the failed part to NetApp
         url: /a900/bootmedia_complete_rma.html
         # END boot media
-    - title: RTC battery
-      url: /a900/rtc_battery_replace.html
+    - title: Chassis
+      entries:
+      - title: Overview
+        url: /a900/chassis_replace_overview.html
+      - title: Shut down the impaired controller
+        url: /a900/chassis_replace_shutdown.html
+      - title: Replace the hardware
+        url: /a900/chassis_replace_move_hardware.html
+      - title: Restoring and verifying configuration
+        url: /a900/chassis_replace_complete_system_restore_rma.html
+      # START controller module replacement
+    - title: Controller module
+      entries:
+      - title: Overview
+        url: /a900/controller_replace_overview.html
+      - title: Shut down the impaired controller
+        url: /a900/controller_replace_shutdown.html
+      - title: Replace the controller module hardware
+        url: /a900/controller_replace.html
+      - title: Restore and verify the system configuration
+        url: /a900/controller_replace_system_config_restore_and_verify.html
+      - title: Recable the system and reassign disks
+        url: /a900/controller_replace_recable_reassign_disks.html
+      - title: Complete system restoration
+        url: /a900/controller_replace_complete_system_restoration.html
+      # END controller module replacement
+      # START DIMM replace
+    - title: DIMM
+      url: /a900/dimm_replace.html
+      # END DIMM replace
+      # START DCPM battery replacement
+    - title: Destage control power module
+      url: /a900/dcpm_NVRAM11_battery_replace.html
+      # END DCPM battery replacement
+      # START Fan
+    - title: Fan
+      url: /a900/fan_swap_out.html
+      # END fan
+      # START I/O module replace
     - title: I/O module
       url: /a900/pci_cards_and_risers_replace.html
-    - title: Chassis
-      url: /a900/chassis_replace.html
+      # END I/O module replace
+  # START LED USB
     - title: LED USB module
       url: /a900/led_module_replace.html
-      # START X91148A module
-    - title: X91148A module
-      entries:
-      - title: In an AFF A700 system with open slots
-        url: /a900/x91148a_modules_with_open_slots_add.html
-      - title: In an AFF A700 system with no open slots
-        url: /a900/x91148a_modules_with_no_open_slots_add.html
-      # END X91148A module
+  # END LED USB
+      # START NVRAM module and/or NVRAM DIMMs replace
+    - title: NVRAM module and/or NVRAM DIMMs
+      url: /a900/nvram_module_or_nvram_dimm_replacement.html
+      # END NVRAM module and/or NVRAM DIMMs replace
+      # START Power supply replacement
+    - title: Power supply
+      url: /a900/power_supply_swap_out.html
+      # END Power supply replace
+    - title: RTC battery
+      url: /a900/rtc_battery_replace.html

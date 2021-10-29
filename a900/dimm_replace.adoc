@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords:
 summary: 'You must replace a DIMM in the controller module when your system registers an increasing number of correctable error correction codes (ECC); failure to do so causes a system panic.'
 ---
-= Replace a DIMM - AFF A700 and FAS9000
+= Replace a DIMM - AFF A900
 :icons: font
 :imagesdir: ../media/
 
@@ -15,19 +15,12 @@ All other components in the system must be functioning properly; if not, you mus
 
 You must replace the failed component with a replacement FRU component you received from your provider.
 
-== Step 1: Shut down the impaired controller
+*Steps*
 
-[.lead]
-You can shut down or take over the impaired controller using different procedures, depending on the storage system hardware configuration.
-
-=== Shut down the impaired node
+== Step 1: Shut down the impaired node
 
 [.lead]
 include::../_include/shutdown_most_frus.adoc[]
-=== Option 2: Controller in a two-node MetroCluster configuration
-
-[.lead]
-include::../_include/shutdown_2n_mcc.adoc[]
 
 == Step 2: Open the controller module
 
@@ -38,12 +31,11 @@ To access components inside the controller, you must first remove the controller
 . Unplug the cables from the impaired controller module, and keep track of where the cables were connected.
 . Slide the orange button on the cam handle downward until it unlocks.
 +
-image::../media/drw_9000_remove_pcm.gif[]
+image::../media/drw_a900_remove_PCM.png[]
 +
 |===
 a|
-image:../media/legend_icon_01.gif[]
-a|
+image:../media/legend_icon_01.gif[] a|
 Cam handle release button
 a|
 image:../media/legend_icon_02.gif[]
@@ -57,12 +49,11 @@ Make sure that you support the bottom of the controller module as you slide it o
 
 . Place the controller module lid-side up on a stable, flat surface, press the blue button on the cover, slide the cover to the back of the controller module, and then swing the cover up and lift it off of the controller module.
 +
-image::../media/drw_9000_pcm_open.gif[]
+image::../media/drw_a900_PCM_open.png[]
 +
 |===
 a|
-image:../media/legend_icon_01.gif[]
-a|
+image:../media/legend_icon_01.gif[] a|
 Controller module cover locking button
 |===
 
@@ -83,11 +74,10 @@ image::../media/drw_9000_dimm_map.gif[]
 IMPORTANT: Carefully hold the DIMM by the edges to avoid pressure on the components on the DIMM circuit board.
 +
 image::../media/drw_9000_replace_pcm_dimms.gif[]
-+
+
 |===
 a|
-image:../media/legend_icon_01.gif[]
-a|
+image:../media/legend_icon_01.gif[] a|
 DIMM ejector tabs
 a|
 image:../media/legend_icon_02.gif[]
@@ -116,8 +106,33 @@ After you install the components into the controller module, you must install th
 For HA pairs with two controller modules in the same chassis, the sequence in which you install the controller module is especially important because it attempts to reboot as soon as you completely seat it in the chassis.
 
 . If you are not already grounded, properly ground yourself.
+
 . If you have not already done so, replace the cover on the controller module.
++
+image::../media/drw_a900_PCM_open.png[]
++
+|===
+a|
+image:../media/legend_icon_01.gif[] a|
+Controller module cover locking button
+|===
+
 . Align the end of the controller module with the opening in the chassis, and then gently push the controller module halfway into the system.
++
+image::../media/drw_a900_remove_PCM.png[]
++
+|===
+a|
+image:../media/legend_icon_01.gif[] a|
+Cam handle release button
+a|
+image:../media/legend_icon_02.gif[]
+a|
+Cam handle
+|===
+
+
+
 +
 NOTE: Do not completely insert the controller module in the chassis until instructed to do so.
 
@@ -195,16 +210,6 @@ a|
 An HA pair
 a|
 Perform a give back: `storage failover giveback -ofnode replacement_node_name`        *Note:* If you disabled automatic giveback, re-enable it with the storage failover modify command.
-a|
-A two-node MetroCluster configuration
-a|
-Proceed to the next step.         The MetroCluster switchback procedure is done in the next task in the replacement process.
-a|
-A stand-alone configuration
-a|
-Proceed to the next step.         No action is required.
-+
- You have completed system-level diagnostics.
 
 a|
 Resulted in some test failures
@@ -215,9 +220,6 @@ Determine the cause of the problem:
 +
 After you issue the command, wait until the system stops at the LOADER prompt.
 
- .. Turn off or leave on the power supplies, depending on how many controller modules are in the chassis:
-  *** If you have two controller modules in the chassis, leave the power supplies turned on to provide power to the other controller module.
-  *** If you have one controller module in the chassis, turn off the power supplies and unplug them from the power sources.
  .. Verify that you have observed all the considerations identified for running system-level diagnostics, that cables are securely connected, and that hardware components are properly installed in the storage system.
  .. Boot the controller module you are servicing, interrupting the boot by pressing `Ctrl-C` when prompted to get to the Boot menu:
   *** If you have two controller modules in the chassis, fully seat the controller module you are servicing in the chassis.
@@ -235,12 +237,7 @@ After you issue the command, wait until the system stops at the LOADER prompt.
 +
 |===
 
-== Step 6: Switch back aggregates in a two-node MetroCluster configuration
-
-[.lead]
-include::../_include/2n_mcc_switchback.adoc[]
-
-== Step 7: Return the failed part to NetApp
+== Step 6: Return the failed part to NetApp
 
 [.lead]
 include::../_include/complete_rma.adoc[]

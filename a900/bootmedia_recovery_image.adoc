@@ -1,17 +1,15 @@
 ---
-permalink: a900/bootmedia_recovery_image_boot_non_2n_mcc.html
+permalink: a900/bootmedia_recovery_image.html
 sidebar: sidebar
 keywords:
-summary: 'You must boot the ONTAP image from the USB drive, restore the file system, and verify the environmental variables.'
+summary: 'The procedure for booting the impaired node from the recovery image depends on whether the system is in a two-node MetroCluster configuration.'
 ---
-= Boot the recovery image in most systems - AFF A700 and FAS9000
+= Boot the recovery image - AFF A900
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
 You must boot the ONTAP image from the USB drive, restore the file system, and verify the environmental variables.
-
-This procedure applies to systems that are not in a two-node MetroCluster configuration.
 
 . From the LOADER prompt, boot the recovery image from the USB flash drive: `boot_recovery`
 +
@@ -27,6 +25,9 @@ A network connection
 a|
 
  .. Press `y` when prompted to restore the backup configuration.
+ .. Press `y` when prompted to overwrite `/etc/ssh/ssh_host_ecdsa_key`.
+ .. Press `y` when prompted to confirm if the restore backup was successful.
+ .. Press `Y` when prompted to  the restored configuration copy.
  .. Set the healthy node to advanced privilege level: `set -privilege advanced`
  .. Run the restore backup command: `system node restore-backup -node local -target-address impaired_node_IP_address`
  .. Return the node to admin level: `set -privilege admin`

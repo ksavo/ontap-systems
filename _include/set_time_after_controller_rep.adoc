@@ -8,7 +8,7 @@ It is important that you apply the commands in the steps on the correct systems:
 
 .Steps
 . If the _replacement_ node is not at the LOADER prompt, halt the system to the LOADER prompt.
-. On the healthy node, check the system time: `show date`
+. On the _healthy_ node, check the system time: `show date`
 +
 The date and time are given in GMT.
 

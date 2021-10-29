@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords:
 summary: 'To replace an I/O module, you must perform a specific sequence of tasks.'
 ---
-= Replace an I/O module - AFF A700 and FAS9000
+= Replace an I/O module - AFF A900
 :icons: font
 :imagesdir: ../media/
 
@@ -14,24 +14,11 @@ To replace an I/O module, you must perform a specific sequence of tasks.
 * You can use this procedure with all versions of ONTAP supported by your system
 * All other components in the system must be functioning properly; if not, you must contact technical support.
 
-== Step 1: Shut down the impaired controller
-
-[.lead]
-You can shut down or take over the impaired controller using different procedures, depending on the storage system hardware configuration.
-
-=== Shut down the impaired node
-
-[.lead]
-include::../_include/shutdown_most_frus.adoc[]
-=== Shut down the impaired node
+== Step 1: Shut down the impaired node
 
 [.lead]
 include::../_include/shutdown_most_frus.adoc[]
 
-=== Option 2: Controller in a two-node MetroCluster configuration
-
-[.lead]
-include::../_include/shutdown_2n_mcc.adoc[]
 
 == Step 2: Replace I/O modules
 
@@ -53,16 +40,14 @@ The cam button moves away from the chassis.
 The I/O module disengages from the chassis and moves about 1/2 inch out of the I/O slot.
 
  .. Remove the I/O module from the chassis by pulling on the pull tabs on the sides of the module face.
-
 +
 Make sure that you keep track of which slot the I/O module was in.
 +
-image::../media/drw_9000_remove_pcie_module.gif[]
+image:../media/drw_a900_remove_PCIe_module.png[]
 +
 |===
 a|
-image:../media/legend_icon_01.gif[]
-a|
+image:../media/legend_icon_01.gif[] a|
 Lettered and numbered I/O cam latch
 a|
 image:../media/legend_icon_02.gif[]
@@ -83,27 +68,9 @@ After you replace a PCIe module, you must reboot the controller module.
 +
 NOTE: Be sure to exit Maintenance mode after completing the conversion.
 
-. Return the node to normal operation:
-+
-|===
-| If your system is in...| Issue this command from the partner's console...
-a|
-An HA pair
-a|
-`storage failover giveback -ofnode impaired_node_name`
-a|
-A two-node MetroCluster configuration
-a|
-Proceed to the next step.     The MetroCluster switchback procedure is done in the next task in the replacement process.
-+
-|===
+. Return the node to normal operation: `storage failover giveback -ofnode impaired_node_name`
 
 . If automatic giveback was disabled, reenable it: `storage failover modify -node local -auto-giveback true`
-
-== Step 4: Switch back aggregates in a two-node MetroCluster configuration
-
-[.lead]
-include::../_include/2n_mcc_switchback.adoc[]
 
 == Step 5: Return the failed part to NetApp
 

@@ -1,30 +1,15 @@
 ---
-permalink: a900/chassis_replace.html
+permalink: a900/chassis_replace_move_hardware.html
 sidebar: sidebar
 keywords:
 summary: 'All other components in the system must be functioning properly; if not, you must contact technical support.'
 ---
-= Replace the chassis - AFF A700 and FAS9000
+
+= Move and replace hardware - AFF A900
 :icons: font
 :imagesdir: ../media/
 
-[.lead]
-All other components in the system must be functioning properly; if not, you must contact technical support.
-
-* You can use this procedure with all versions of ONTAP supported by your system.
-* This procedure is disruptive. For a two-node cluster, you will have a complete service outage and a partial outage in a multi-node cluster.
-
-== Shut down the node
-
-=== Option 1 (most configurations): Controller is not in a two-node MetroCluster
-
-include::../_include/shutdown_chassis.adoc[]
-
-=== Option 2: Controller is a two-node MetroCluster configuration
-
-CATALYST: procedure needed for two-node MCC.
-
-== Step 2: Remove the power supplies
+== Step 1: Remove the power supplies
 
 [.lead]
 Removing the power supplies when replacing a chassis involves turning off, disconnecting, and then removing the power supply from the old chassis.
@@ -36,22 +21,19 @@ Removing the power supplies when replacing a chassis involves turning off, disco
  .. Unplug the power cable from the power source.
 . Press and hold the orange button on the power supply handle, and then pull the power supply out of the chassis.
 +
-CAUTION:
+NOTE: When removing a power supply, always use two hands to support its weight.
 +
-When removing a power supply, always use two hands to support its weight.
-+
-image::../media/drw_9000_remove_install_psu_module.gif[]
+image::../media/drw_a900_remove_install_PSU_module.png[]
 +
 |===
 a|
-image:../media/legend_icon_01.gif[]
-a|
+image:../media/legend_icon_01.gif[] a|
 Locking button
 |===
 
 . Repeat the preceding steps for any remaining power supplies.
 
-== Step 3: Remove the fans
+== Step 2: Remove the fans
 
 [.lead]
 To remove the fan modules when replacing the chassis, you must perform a specific sequence of tasks.
@@ -60,23 +42,20 @@ To remove the fan modules when replacing the chassis, you must perform a specifi
 . Remove the bezel (if necessary) with two hands, by grasping the openings on each side of the bezel, and then pulling it toward you until the bezel releases from the ball studs on the chassis frame.
 . Press the orange button on the fan module and pull the fan module straight out of the chassis, making sure that you support it with your free hand.
 +
-CAUTION:
+NOTE: The fan modules are short. Always support the bottom of the fan module with your free hand so that it does not suddenly drop free from the chassis and injure you.
 +
-The fan modules are short. Always support the bottom of the fan module with your free hand so that it does not suddenly drop free from the chassis and injure you.
-+
-image::../media/drw_9000_remove_install_fan.gif[]
+image::../media/drw_a900_remove_install_fan.png[]
 +
 |===
 a|
-image:../media/legend_icon_01.gif[]
-a|
+image:../media/legend_icon_01.gif[] a|
 Orange release button
 |===
 
 . Set the fan module aside.
 . Repeat the preceding steps for any remaining fan modules.
 
-== Step 4: Remove the controller module
+== Step 3: Remove the controller module
 
 [.lead]
 To replace the chassis, you must remove the controller module or modules from the old chassis.
@@ -85,12 +64,11 @@ To replace the chassis, you must remove the controller module or modules from th
 . Unplug the cables from the impaired controller module, and keep track of where the cables were connected.
 . Slide the orange button on the cam handle downward until it unlocks.
 +
-image::../media/drw_9000_remove_pcm.gif[]
+image::../media/drw_a900_remove_PCM.png[]
 +
 |===
 a|
-image:../media/legend_icon_01.gif[]
-a|
+image:../media/legend_icon_01.gif[] a|
 Cam handle release button
 a|
 image:../media/legend_icon_02.gif[]
@@ -104,7 +82,7 @@ Make sure that you support the bottom of the controller module as you slide it o
 
 . Set the controller module aside in a safe place, and repeat these steps if you have another controller module in the chassis.
 
-== Step 5: Remove the I/O modules
+== Step 4: Remove the I/O modules
 
 [.lead]
 To remove I/O modules from the old chassis, including the NVRAM modules, follow the specific sequence of steps. You do not have to remove the FlashCache module from the NVRAM module when moving it to a new chassis.
@@ -124,26 +102,25 @@ The cam button moves away from the chassis.
 The I/O module disengages from the chassis and moves about 1/2 inch out of the I/O slot.
 
  .. Remove the I/O module from the chassis by pulling on the pull tabs on the sides of the module face.
-
 +
 Make sure that you keep track of which slot the I/O module was in.
 +
-image::../media/drw_9000_remove_pcie_module.gif[]
+image:../media/drw_a900_remove_PCIe_module.png[]
 +
 |===
 a|
-image:../media/legend_icon_01.gif[]
-a|
+image:../media/legend_icon_01.gif[] a|
 Lettered and numbered I/O cam latch
 a|
 image:../media/legend_icon_02.gif[]
 a|
 I/O cam latch completely unlocked
 |===
++
 . Set the I/O module aside.
 . Repeat the preceding step for the remaining I/O modules in the old chassis.
 
-== Step 6: Remove the De-stage Controller Power Module
+== Step 5: Remove the De-stage Controller Power Module
 
 [.lead]
 You must remove the de-stage controller power modules from the old chassis in preparation for installing the replacement chassis.
@@ -151,18 +128,18 @@ You must remove the de-stage controller power modules from the old chassis in pr
 . If you are not already grounded, properly ground yourself.
 . Press the orange locking button on the module handle, and then slide the DCPM module out of the chassis.
 +
-image::../media/drw_9000_remove_nv_battery.gif[]
+image::../media/drw_a900_remove_NV_battery.png[]
 +
 |===
 a|
-image:../media/legend_icon_01.gif[]
-a|
+image:../media/legend_icon_01.gif[] a|
 DCPM module orange locking button
 |===
 
 . Set the DCPM module aside in a safe place and repeat this step for the remaining DCPM module.
 
-== Step 7: Replace a chassis from within the equipment rack or system cabinet
+
+== Step 6: Replace a chassis from within the equipment rack or system cabinet
 
 [.lead]
 You must remove the existing chassis from the equipment rack or system cabinet before you can install the replacement chassis.
@@ -180,7 +157,7 @@ NOTE: If the system is in a system cabinet, you might need to remove the rear ti
 . If you are using the cable management brackets, remove them from the old chassis, and then install them on the replacement chassis.
 . If you have not already done so, install the bezel.
 
-== Step 8: Move the USB LED module to the new chassis
+== Step 7: Move the USB LED module to the new chassis
 
 [.lead]
 Once the new chassis is installed into the rack or cabinet, you must move the USB LED module from the old chassis to the new chassis.
@@ -189,7 +166,7 @@ Once the new chassis is installed into the rack or cabinet, you must move the US
 . Press the black locking button on the right side of the module to release the module from the chassis, and then slide it out of the old chassis.
 . Align the edges of the module with the USB LED bay at the bottom-front of the replacement chassis, and gently push the module all the way into the chassis until it clicks into place.
 
-== Step 9: Install the de-stage controller power module when replacing the chassis
+== Step 8: Install the de-stage controller power module when replacing the chassis
 
 [.lead]
 Once the replacement chassis is installed into the rack or system cabinet, you must reinstall the de-stage controller power modules into it.
@@ -201,7 +178,7 @@ NOTE: The module and slot are keyed. Do not force the module into the opening. I
 
 . Repeat this step for the remaining DCPM module.
 
-== Step 10: Install fans into the chassis
+== Step 9: Install fans into the chassis
 
 [.lead]
 To install the fan modules when replacing the chassis, you must perform a specific sequence of tasks.
@@ -214,7 +191,7 @@ When inserted into a live system, the amber Attention LED flashes four times whe
 . Repeat these steps for the remaining fan modules.
 . Align the bezel with the ball studs, and then gently push the bezel onto the ball studs.
 
-== Step 11: Install I/O modules
+== Step 10: Install I/O modules
 
 [.lead]
 To install I/O modules, including the NVRAM/FlashCache modules from the old chassis, follow the specific sequence of steps.
@@ -228,7 +205,7 @@ You must have the chassis installed so that you can install the I/O modules into
 +
 NOTE: If the old chassis has blank I/O panels, move them to the replacement chassis at this time.
 
-== Step 12: Install the power supplies
+== Step 11: Install the power supplies
 
 [.lead]
 Installing the power supplies when replacing a chassis involves installing the power supplies into the replacement chassis, and connecting to the power source.
@@ -246,7 +223,7 @@ IMPORTANT: Only connect the power cable to the power supply. Do not connect the 
 
 . Repeat the preceding steps for any remaining power supplies.
 
-== Step 13: Install the controller
+== Step 12: Install the controller
 
 [.lead]
 After you install the controller module and any other components into the new chassis, boot it to a state where you can run the interconnect diagnostic test.
@@ -271,136 +248,3 @@ The controller module begins to boot as soon as it is fully seated in the chassi
 NOTE: If you miss the prompt and the controller modules boot to ONTAP, enter `halt`, and then at the LOADER prompt enter `boot_ontap`, press `Ctrl-C` when prompted, and then repeat this step.
 
  .. From the boot menu, select the option for Maintenance mode.
-
-== Step 14: Verify and set the HA state of the chassis
-
-[.lead]
-You must verify the HA state of the chassis, and, if necessary, update the state to match your system configuration.
-
-. In Maintenance mode, from either controller module, display the HA state of the local controller module and chassis: `ha-config show`
-+
-The HA state should be the same for all components.
-
-. If the displayed system state for the chassis does not match your system configuration:
- .. Set the HA state for the chassis: `ha-config modify chassis HA-state`
-+
-The value for HA-state can be one of the following:
-
-  *** ha
-  *** mcc
-  *** mcc-2n
-  *** non-ha
-
- .. Confirm that the setting has changed: `ha-config show`
-. If you have not already done so, recable the rest of your system.
-. Exit Maintenance mode: `halt`
-+
-The LOADER prompt appears.
-
-== Step 15: Running system-level diagnostics
-
-[.lead]
-After installing a new chassis, you should run interconnect diagnostics.
-
-Your system must be at the LOADER prompt to start System Level Diagnostics.
-
-All commands in the diagnostic procedures are issued from the node where the component is being replaced.
-
-. If the node to be serviced is not at the LOADER prompt, perform the following steps:
- .. Select the Maintenance mode option from the displayed menu.
- .. After the node boots to Maintenance mode, halt the node: `halt`
-+
-After you issue the command, you should wait until the system stops at the LOADER prompt.
-+
-IMPORTANT: During the boot process, you can safely respond `y` to prompts:
-. Repeat the previous step on the second node if you are in an HA configuration.
-+
-NOTE: Both controllers must be in Maintenance mode to run the interconnect test.
-
-. At the LOADER prompt, access the special drivers specifically designed for system-level diagnostics to function properly: `boot_diags`
-+
-During the boot process, you can safely respond `y` to the prompts until the Maintenance mode prompt (*>) appears.
-
-. Enable the interconnect diagnostics tests from the Maintenance mode prompt: `sldiag device modify -dev interconnect -sel enable`
-+
-The interconnect tests are disabled by default and must be enabled to run separately.
-
-. Run the interconnect diagnostics test from the Maintenance mode prompt: `sldiag device run -dev interconnect`
-+
-You only need to run the interconnect test from one controller.
-
-. Verify that no hardware problems resulted from the replacement of the chassis: `sldiag device status -dev interconnect -long -state failed`
-+
-System-level diagnostics returns you to the prompt if there are no test failures, or lists the full status of failures resulting from testing the component.
-
-. Proceed based on the result of the preceding step.
-+
-|===
-| If the system-level diagnostics tests...| Then...
-a|
-Were completed without any failures
-a|
-
- .. Clear the status logs: `sldiag device clearstatus`
- .. Verify that the log was cleared: `sldiag device status`
-+
-The following default response is displayed:
-+
-----
-SLDIAG: No log messages are present.
-----
-
- .. Exit Maintenance mode on both controllers: `halt`
-+
-The system displays the LOADER prompt.
-+
-IMPORTANT: You must exit Maintenance mode on both controllers before proceeding any further.
-
- .. Enter the following command on both controllers at the LOADER prompt: `bye`
- .. Return the node to normal operation:
-+
-|===
-|===
-| If your system is running ONTAP...| Then...
-a|
-With two nodes in the cluster
-a|
-Issue these commands: `node::> cluster ha modify -configured true``node::> storage failover modify -node node0 -enabled true`
-a|
-With more than two nodes in the cluster
-a|
-Issue this command:``node::> storage failover modify -node node0 -enabled true``
-a|
-In a two-node MetroCluster configuration
-a|
-Proceed to the next step.         The MetroCluster switchback procedure is done in the next task in the replacement process.
-a|
-In a stand-alone configuration
-a|
-You have no further steps in this particular task.
-
- You have completed system-level diagnostics.
-
-a|
-Resulted in some test failures
-a|
-Determine the cause of the problem.
-
- .. Exit Maintenance mode: `halt`
- .. Perform a clean shutdown, and then disconnect the power supplies.
- .. Verify that you have observed all of the considerations identified for running system-level diagnostics, that cables are securely connected, and that hardware components are properly installed in the storage system.
- .. Reconnect the power supplies, and then power on the storage system.
- .. Rerun the system-level diagnostics test.
-
-+
-|===
-
-== Step 16: Switch back aggregates in a two-node MetroCluster configuration
-
-[.lead]
-include::../_include/2n_mcc_switchback.adoc[]
-
-== Step 17: Return the failed part to NetApp
-
-[.lead]
-include::../_include/complete_rma.adoc[]

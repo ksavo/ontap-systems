@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords:
 summary: 'Swapping out a power supply involves turning off, disconnecting, and removing the old power supply and installing, connecting, and turning on the replacement power supply.'
 ---
-= Swap out a power supply - AFF A700 and FAS9000
+= Swap out a power supply - AFF A900
 :icons: font
 :imagesdir: ../media/
 
@@ -13,6 +13,8 @@ Swapping out a power supply involves turning off, disconnecting, and removing th
 
 All other components in the system must be functioning properly; if not, you must contact technical support.
 
+*About this task*
+
 * The power supplies are redundant and hot-swappable.
 * This procedure is written for replacing one power supply at a time.
 +
@@ -20,6 +22,8 @@ NOTE: It is a best practice to replace the power supply within two minutes of re
 
 * The number of power supplies in the system depends on the model.
 * Power supplies are auto-ranging.
+
+*Steps*
 
 . Identify the power supply you want to replace, based on console error messages or through the LEDs on the power supplies.
 . If you are not already grounded, properly ground yourself.
@@ -33,12 +37,11 @@ CAUTION:
 +
 When removing a power supply, always use two hands to support its weight.
 +
-image::../media/drw_9000_remove_install_psu_module.gif[]
+image::../media/drw_9000_remove_install_psu_module.svg[]
 +
 |===
 a|
-image:../media/legend_icon_01.gif[]
-a|
+image:../media/legend_icon_01.gif[] a|
 Locking button
 |===
 
@@ -52,11 +55,10 @@ IMPORTANT: Do not use excessive force when sliding the power supply into the sys
 . Reconnect the power supply cabling:
  .. Reconnect the power cable to the power supply and the power source.
  .. Secure the power cable to the power supply using the power cable retainer.
-
 +
 Once power is restored to the power supply, the status LED should be green.
 . Turn on the power to the new power supply, and then verify the operation of the power supply activity LEDs.
 +
 The green power LED lights when the PSU is fully inserted into the chassis and the amber attention LED flashes initially, but turns off after a few moments.
 
-. include::../_include/complete_rma_step.adoc[]
+include::../_include/complete_rma_step.adoc[]
