@@ -1,8 +1,8 @@
 ---
-permalink: a900/index.html
+layout: landing-page
 sidebar: sidebar
-keywords: aff, a900, aff a900
-summary: ''
+permalink: a900/index.html
+summary: The AFF A900 system documentation lets you install, setup, and maintain your system.
 ---
 = AFF A900 systems
 :icons: font
