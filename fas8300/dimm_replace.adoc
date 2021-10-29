@@ -35,7 +35,7 @@ include::../_include/shutdown_2n_mcc.adoc[]
 [.lead]
 To access components inside the controller module, you must remove the controller module from the chassis.
 
-You can use the following animations, drawing, or the written steps to remove the controller module from the chassis.
+You can use the following animation, illustration, or the written steps to remove the controller module from the chassis.
 
 https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=75b6fa91-96b9-4323-b156-aae10007c9a5[Removing the controller module]
 
@@ -64,9 +64,9 @@ Make sure that you support the bottom of the controller module as you slide it o
 [.lead]
 Replacing a system DIMM involves identifying the target DIMM through the associated error message, locating the target DIMM using the FRU map on the air duct or the lit LED on the motherboard, and then replacing the DIMM.
 
-You can use the following animation, drawing, or the written steps to replace a system DIMM.
+You can use the following animation, illustration, or the written steps to replace a system DIMM.
 
-NOTE: The animation shows empty slots for sockets without DIMMs. These empty sockets are populated with blanks.
+NOTE: The animation and illustration shows empty slots for sockets without DIMMs. These empty sockets are populated with blanks.
 
 https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=175c6597-449e-4dc8-8c02-aad9012f08b5[Replacing a system DIMM]
 
@@ -110,7 +110,7 @@ You can use the following animation, drawing, or the written steps to install th
 
 https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=9249fdb8-1522-437d-9280-aae10007c97b[Installing the controller module]
 
-image::../media/drw_A400_Install_controller.png[]
+image::../media/drw_A400_Install_controller_source.png[]
 
 .Steps
 . If you have not already done so, close the air duct.

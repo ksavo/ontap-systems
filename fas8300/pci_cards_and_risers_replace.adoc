@@ -34,7 +34,7 @@ include::../_include/shutdown_2n_mcc.adoc[]
 [.lead]
 To access components inside the controller module, you must remove the controller module from the chassis.
 
-You can use the following animation, drawing, or the written steps to remove the controller module from the chassis.
+You can use the following animation, illustration, or the written steps to remove the controller module from the chassis.
 
 https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=75b6fa91-96b9-4323-b156-aae10007c9a5[Removing the controller module]
 
@@ -63,7 +63,7 @@ Make sure that you support the bottom of the controller module as you slide it o
 [.lead]
 To replace a PCIe card, you must locate the failed PCIe card, remove the riser that contains the card from the controller module, replace the card, and then reinstall the PCIe riser in the controller module.
 
-You can use the following animation, drawing, or the written steps to replace a PCIe card.
+You can use the following animation, illustration, or the written steps to replace a PCIe card.
 
 https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=84339f87-321c-400e-985e-aae10182cd24[Replacing a PCIe card]
 
@@ -99,7 +99,7 @@ NOTE: If you are installing a card in the bottom slot and cannot see the card so
 [.lead]
 The mezzanine card is located under riser number 3 (slots 4 and 5). You must remove that riser to access the mezzanine card, replace the mezzanine card, and then reinstall riser number 3. See the FRU map on the controller module for more information.
 
-You can use the following animation, drawing, or the written steps to replace the mezzanine card.
+You can use the following animation, illustration, or the written steps to replace the mezzanine card.
 
 https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=4e00f5b1-8ca5-4cd6-9881-aadb01578e52[Replacing the mezzanine card]
 
@@ -129,7 +129,7 @@ The riser raises up slightly from the controller module.
 [.lead]
 After you have replaced the component in the controller module, you must re-install the controller module into the chassis, and then boot it to Maintenance mode.
 
-You can use the following animation, drawing, or the written steps to install the controller module in the chassis.
+You can use the following animation, illustration, or the written steps to install the controller module in the chassis.
 
 https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=9249fdb8-1522-437d-9280-aae10007c97b[Installing the controller module]
 
