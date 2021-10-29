@@ -319,7 +319,7 @@ You can complete the system setup and configuration using cluster discovery with
 If you have network discovery enabled on your laptop, you can complete system setup and configuration using automatic cluster discovery.
 
 .Steps
-. Use the following steps to set one or more drive shelf IDs:
+. Use the following animation to set one or more drive shelf IDs:
 +
 If your system has NS224 drive shelves, the shelves are pre-set to shelf ID 00 and 01. If you want to change the shelf IDs, you must create a tool to insert into the hole where button is located.
 +
@@ -388,7 +388,7 @@ NOTE: See your laptop or console's online help for how to configure the console 
 image::../media/drw_9000_cable_console_switch_controller.png[]
 
  .. Assign a TCP/IP address to the laptop or console, using one that is on the management subnet.
-. Use the following animation or instructions to set one or more drive shelf IDs:
+. Use the following animation to set one or more drive shelf IDs:
 +
 If your system has NS224 drive shelves, the shelves are pre-set to shelf ID 00 and 01. If you want to change the shelf IDs, you must create a tool to insert into the hole where button is located.
 +
