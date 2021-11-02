@@ -9,7 +9,7 @@ summary: 'You can shut down or take over the impaired controller using different
 :imagesdir: ../media/
 
 == Option 1: Most configurations
-[.lead]
+
 include::../_include/shutdown_bootmedia.adoc[]
 
 == Option 2: Controller is in a MetroCluster
