@@ -22,6 +22,9 @@ You must replace the caching module in the controller module when your system re
 
 == Step 1: Shutting down the impaired controller
 
+[.lead]
+You can shut down or take over the impaired controller using different procedures, depending on the storage system hardware configuration.
+
 === Option 1: Most configurations
 
 include::../_include/shutdown_most_frus.adoc[]

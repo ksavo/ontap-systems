@@ -17,6 +17,9 @@ To replace a failed mezzanine card, you must remove the cables and any SFP or QS
 
 == Step 1: Shut down the impaired controller
 
+[.lead]
+You can shut down or take over the impaired controller using different procedures, depending on the storage system hardware configuration.
+
 === Option 1: Most configurations
 
 [.lead]
