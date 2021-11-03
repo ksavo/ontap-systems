@@ -16,7 +16,15 @@ To replace a fan, remove the failed fan module and replace it with a new fan mod
 [.lead]
 You shut down or take over the impaired controller.
 
+=== Option 1: Most configurations
+
+[.lead]
 include::../_include/shutdown_most_frus.adoc[]
+
+=== Option 2: Controller is in a MetroCluster
+
+[.lead]
+include::../_include/shutdown_any_mcc_supported.adoc[]
 
 == Step 2: Remove the controller module
 

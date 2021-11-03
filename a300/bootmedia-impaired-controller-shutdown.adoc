@@ -18,7 +18,7 @@ After completing the NVE or NSE tasks, you need to complete the shutdown of the 
 
 include::../_include/shutdown_any_mcc_supported.adoc[]
 
-== Option 3: Controller is in a two-node Metrocluster
+== Option 3: Controller is in a two-node MetroCluster
 [.lead]
 After completing the NVE or NSE tasks, you need to complete the shutdown of the impaired node.
 

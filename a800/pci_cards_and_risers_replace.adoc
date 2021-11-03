@@ -19,8 +19,15 @@ To replace a PCIe card, you must disconnect the cables from the cards, remove th
 [.lead]
 You shut down or take over the impaired controller.
 
+=== Option 1: Most configurations
+
 [.lead]
-include::../_include/recable_system_after_controller_rep.adoc[]
+include::../_include/shutdown_most_frus.adoc[]
+
+=== Option 2: Controller is in a MetroCluster
+
+[.lead]
+include::../_include/shutdown_any_mcc_supported.adoc[]
 
 == Step 2: Remove the controller module
 

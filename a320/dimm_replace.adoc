@@ -15,12 +15,19 @@ All other components in the system must be functioning properly; if not, you mus
 
 You must replace the failed component with a replacement FRU component you received from your provider.
 
-== Shut down the node
+== Step 1: Shut down the node
+
+=== Option 1: Most configurations
 
 [.lead]
 include::../_include/shutdown_most_frus.adoc[]
 
-== Remove the controller module
+=== Option 2: Controller is in a MetroCluster
+
+[.lead]
+include::../_include/shutdown_any_mcc_supported.adoc[]
+
+== Step 2: Remove the controller module
 
 [.lead]
 To access components inside the controller module, you must remove the controller module from the chassis.
@@ -46,7 +53,7 @@ The latching mechanism hook should be nearly vertical and should be clear of the
  .. Gently pull the controller module a few inches toward you so that you can grasp the controller module sides.
  .. Using both hands, gently pull the controller module out of the chassis and set it on a flat, stable surface.
 
-== Replace system DIMMs
+== Step 3: Replace system DIMMs
 
 [.lead]
 Replacing a system DIMM involves identifying the target DIMM through the associated error message, locating the target DIMM using the FRU map on the air duct or the lit LED on the motherboard, and then replacing the DIMM.
@@ -89,7 +96,7 @@ NOTE: Visually inspect the DIMM to verify that it is evenly aligned and fully in
 . Push carefully, but firmly, on the top edge of the DIMM until the ejector tabs snap into place over the notches at the ends of the DIMM.
 . Close the air duct.
 
-== Install the controller module
+== Step 4: Install the controller module
 
 [.lead]
 After you have replaced the component in the controller module, you must re-install the controller module into the chassis, and then boot it to Maintenance mode.
@@ -120,7 +127,7 @@ The controller module begins to boot as soon as it is fully seated in the chassi
  .. If you have not already done so, reinstall the cable management device.
  .. Interrupt the normal boot process by pressing `Ctrl-C`.
 
-== Run diagnostics
+== Step 5: Run diagnostics
 
 [.lead]
 After you have replaced a system DIMM in your system, you should run diagnostic tests on that component.
@@ -141,7 +148,7 @@ After you issue the command, you should wait until the system stops at the LOADE
  ** If the test failed, correct the failure, and then rerun the test.
  ** If the test reported no failures, select Reboot from the menu to reboot the system.
 
-== Restore the controller module to operation after running diagnostics
+== Step 6: Restore the controller module to operation after running diagnostics
 
 [.lead]
 After completing diagnostics, you must recable the system, give back the controller module, and then reenable automatic giveback.
@@ -153,7 +160,7 @@ If you removed the media converters (QSFPs or SFPs), remember to reinstall them 
 . Return the node to normal operation by giving back its storage: `storage failover giveback -ofnode _impaired_node_name_`
 . If automatic giveback was disabled, reenable it: `storage failover modify -node local -auto-giveback true`
 
-== Return the failed part to NetApp
+== Step 7: Return the failed part to NetApp
 
 [.lead]
 include::../_include/complete_rma.adoc[]

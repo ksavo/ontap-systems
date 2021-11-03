@@ -21,8 +21,10 @@ Each SCSI-blade process should be in quorum with the other nodes in the cluster.
 
 == Option 1: Most systems
 
+[.lead]
 include::../_include/shutdown_most_frus.adoc[]
 
-== Option 2: Systems in a MetroCluster configuration
+== Option 2: System is in a MetroCluster
 
+[.lead]
 include::../_include/shutdown_any_mcc_supported.adoc[]

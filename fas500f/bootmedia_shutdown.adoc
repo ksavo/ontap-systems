@@ -12,14 +12,9 @@ summary: 'After completing the NVE or NSE tasks, you need to complete the shutdo
 
 include::../_include/shutdown_bootmedia.adoc[]
 
-== Option 2: Controller is in a MetroCluster configuration
+== Option 2: Controller is in a MetroCluster
+
 [.lead]
 After completing the NVE or NSE tasks, you need to complete the shutdown of the impaired node.
 
 include::../_include/shutdown_any_mcc_supported.adoc[]
-
-== Option 3: Controller is in a two-node Metrocluster
-[.lead]
-After completing the NVE or NSE tasks, you need to complete the shutdown of the impaired node.
-
-include::../_include/shutdown_2n_mcc.adoc[]
