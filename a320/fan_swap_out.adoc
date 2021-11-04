@@ -11,7 +11,7 @@ summary: To swap out a fan module without interrupting service, you must perform
 [.lead]
 To swap out a fan module without interrupting service, you must perform a specific sequence of tasks.
 
-image::../media/drw_A320_Replace_fan.png[]
+image::../media/drw_a320_fan_replace_animated_gif.png[]
 
 . If you are not already grounded, properly ground yourself.
 . Remove the bezel (if necessary) with two hands, by grasping the openings on each side of the bezel, and then pulling it toward you until the bezel releases from the ball studs on the chassis frame.

@@ -33,7 +33,7 @@ include::../_include/shutdown_2n_mcc.adoc[]
 [.lead]
 To access components inside the controller module, you must remove the controller module from the chassis.
 
-You can use the following animations, drawing, or the written steps to remove the controller module from the chassis.
+You can use the following animations, illustration, or the written steps to remove the controller module from the chassis.
 
 https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=ca74d345-e213-4390-a599-aae10019ec82[Removing the controller module]
 
@@ -63,7 +63,7 @@ To replace the NVDIMM battery, you must remove the failed battery from the contr
 
 The NVDIMM LED blinks while destaging contents when you halt the system. After the destage is complete, the LED turns off.
 
-You can use the following animation, drawing, or the written steps to replace the NVDIMM battery.
+You can use the following animation, illustration, or the written steps to replace the NVDIMM battery.
 
 https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=1f1425a8-5a91-4810-82da-aad9012efa4f[Replacing the NVDIMM battery]
 
@@ -84,11 +84,11 @@ image::../media/drw_A400_nvdimm-batt.png[]
 [.lead]
 After you have replaced the component in the controller module, you must re-install the controller module into the chassis, and then boot it to Maintenance mode.
 
-You can use the following animation, drawing, or the written steps to install the controller module in the chassis.
+You can use the following animation, illustration, or the written steps to install the controller module in the chassis.
 
 https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=0310fe80-b129-4685-8fef-ab19010e720a[Installing the controller module]
 
-image::../media/drw_A400_Install_controller.png[]
+image::../media/drw_A400_Install_controller_source.png[]
 
 . If you have not already done so, close the air duct.
 . Align the end of the controller module with the opening in the chassis, and then gently push the controller module halfway into the system.

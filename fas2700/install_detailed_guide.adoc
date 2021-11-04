@@ -407,7 +407,7 @@ Cable the shelf-to-shelf ports.
 image:../media/oie_cable_mini_sas_hd_to_mini_sas_hd.png[]     mini-SAS HD to mini-SAS HD cables
 
 a|
-image:../media/oie_legend_icon_2_mb.gif[]
+image:../media/oie_legend_icon_2_mb.png[]
 a|
 Connect each node to IOM A in the stack.
 
@@ -443,7 +443,10 @@ You can complete the system setup and configuration using cluster discovery with
 If you have network discovery enabled on your laptop, you can complete system setup and configuration using automatic cluster discovery.
 
 .Steps
-. Use the following animation to set one or more drive shelf IDs:
+. Use the following animation to set one or more drive shelf IDs
++
+https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=c600f366-4d30-481a-89d9-ab1b0066589b[Setting drive shelf IDs]
+
 . Plug the power cords into the controller power supplies, and then connect them to power sources on different circuits.
 . Turn on the power switches to both nodes.
 +
@@ -500,6 +503,9 @@ image::../media/drw_client_to_mgmt_subnet_fas2700_affa220.png[]
 
  .. Assign a TCP/IP address to the laptop or console, using one that is on the management subnet.
 . Use the following animation to set one or more drive shelf IDs:
++
+https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=c600f366-4d30-481a-89d9-ab1b0066589b[Setting drive shelf IDs]
+
 . Plug the power cords into the controller power supplies, and then connect them to power sources on different circuits.
 . Turn on the power switches to both nodes.
 +

@@ -186,7 +186,7 @@ image::../media/oie_cable_pull_tab_up.png[]
 NOTE: As you insert the connector, you should feel it click into place; if you do not feel it click, remove it, turn it around and try again.
 
 .Steps
-. Use the animation or graphic to complete the cabling between the controllers and to the switches:
+. Use the animation or illustration to complete the cabling between the controllers and to the switches:
 +
 https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=7a55b98a-e8b8-41d5-821f-ac5b0032ead0[Cabling a two-node switchless cluster]
 
@@ -208,7 +208,7 @@ image::../media/oie_cable_pull_tab_up.png[]
 NOTE: As you insert the connector, you should feel it click into place; if you do not feel it click, remove it, turn it around and try again.
 
 .Steps
-. Use the animation or graphic to complete the cabling between the controllers and to the switches:
+. Use the animation or illustration to complete the cabling between the controllers and to the switches:
 +
 https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=6381b3f1-4ce5-4805-bd0a-ac5b0032f51d[Switched cluster cabling]
 
@@ -232,7 +232,7 @@ image::../media/oie_cable_pull_tab_down.png[]
 image::../media/oie_cable_pull_tab_up.png[]
 
 .Steps
-. Use the following animation to cable your drive shelves to your controllers.
+. Use the following animations or illustrations to cable your drive shelves to your controllers.
 +
 NOTE: The examples use DS224C shelves. Cabling is similar with other supported SAS drive shelves.
 +
@@ -262,7 +262,7 @@ image:../media/Cable_shelves_new_system_IOM12_shelves.png[]
 You must cable each controller to the NSM modules on the NS224 drive shelf on an AFF A700 or ASA AFF A700 running system ONTAP 9.8 or later.
 
 * This task applies to AFF A700 and ASA AFF A700 running ONTAP 9.8 or later only.
-* The systems must have at least one X91148A module installed in slots 3 and/or 7 for each controller. The animation shows this module installed in both slots 3 and 7.
+* The systems must have at least one X91148A module installed in slots 3 and/or 7 for each controller. The animation or illustrations show this module installed in both slots 3 and 7.
 * Be sure to check the illustration arrow for the proper cable connector pull-tab orientation. The cable pull-tab for the storage modules are up, while the pull tabs on the shelves are down.
 +
 image::../media/oie_cable_pull_tab_up.png[]
@@ -272,7 +272,7 @@ image::../media/oie_cable_pull_tab_down.png[]
 NOTE: As you insert the connector, you should feel it click into place; if you do not feel it click, remove it, turn it around and try again.
 
 .Steps
-. Use the following animation to cable your controllers with two X91148A storage modules to a single NS224 drive shelf, or use the diagram to cable your controllers with one X91148A storage module to a single NS224 drive shelf.
+. Use the following animation or illustrations to cable your controllers with two X91148A storage modules to a single NS224 drive shelf, or use the diagram to cable your controllers with one X91148A storage module to a single NS224 drive shelf.
 +
 https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=6520eb01-87b3-4520-9109-ac5b0032ea4e[Cabling a single NS224 shelf - ONTAP 9.8 and later]
 +
@@ -298,7 +298,7 @@ image::../media/oie_cable_pull_tab_down.png[]
 NOTE: As you insert the connector, you should feel it click into place; if you do not feel it click, remove it, turn it around and try again.
 
 .Steps
-. Use the following animation or diagram to cable your controllers to two NS224 drive shelves.
+. Use the following animation or illustrations to cable your controllers to two NS224 drive shelves.
 +
 https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=34098e39-73ad-45de-9af7-ac5b0032ea9a[Cabling two NS224 shelves - ONTAP 9.8 and later]
 +
