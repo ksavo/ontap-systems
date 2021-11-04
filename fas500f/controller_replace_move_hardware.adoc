@@ -238,7 +238,7 @@ Lift the battery out of the holder and controller module.
 [.lead]
 After all of the components have been moved from the impaired controller module to the replacement controller module, you must install the replacement controller module into the chassis, and then boot it to Maintenance mode.
 
-You can use the following animation or the written steps to install the replacement controller module in the chassis.
+You can use the following illustration or the written steps to install the replacement controller module in the chassis.
 
 . If you have not already done so, install the air duct.
 +
