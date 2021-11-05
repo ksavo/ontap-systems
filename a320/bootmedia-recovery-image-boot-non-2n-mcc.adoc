@@ -1,5 +1,5 @@
 ---
-permalink: a320/bootmedia-recovery-image-boot-options.html
+permalink: a320/bootmedia-recovery-image-boot-non-2n-mcc.html
 sidebar: sidebar
 keywords: aff a320, aff, a320, procedure, boot, impair, node, recovery, image, system, two-node, metrocluster, configuration, boot the recovery image
 summary: You must boot the ONTAP image from the USB drive, restore the file system, and verify the environmental variables.

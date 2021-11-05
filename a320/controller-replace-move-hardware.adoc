@@ -1,10 +1,10 @@
 ---
-permalink: a320/controller-replace.html
+permalink: a320/controller-replace-move-hardware.html
 sidebar: sidebar
-keywords: aff, a320, aff a320, replace, controller, module, hardware, remove, impair, node, fru, component, replacement, chassis, boot, maintenance, mode, power, supplies, supply, move, nvdimm, battery, media, dimm, pcie, riser, install, replace the controller module hardware, remove the controller module, move the power supplies, move the nvdimm battery, move the boot media, move the dimms, move the pcie risers, install the controller module
-summary: To replace the controller module hardware, you must remove the impaired node, move FRU components to the replacement controller module, install the replacement controller module in the chassis, and then boot the system to Maintenance mode.
+keywords: aff a320, move the controller module hardware
+summary: "To replace the controller module hardware, you must remove the impaired node, move FRU components to the replacement controller module, install the replacement controller module in the chassis, and then boot the system to Maintenance mode."
 ---
-= Replace the controller module hardware - AFF A320
+= Move the controller module hardware - AFF A320
 :icons: font
 :imagesdir: ../media/
 
@@ -16,13 +16,13 @@ To replace the controller module hardware, you must remove the impaired node, mo
 [.lead]
 To access components inside the controller module, you must remove the controller module from the chassis.
 
-You can use the following animations or the written steps to remove the controller module from the chassis.
+You can use the following images or the written steps to remove the controller module from the chassis.
 
-The following animation shows removing the cables and cable management arms from the impaired controller module:
+The following image shows removing the cables and cable management arms from the impaired controller module:
 
-image::../media/drw_a320_controller_cable_unplug_animated_gif.svg[]
+image::../media/drw_a320_controller_cable_unplug_animated_gif.png[]
 
-The following animation shows removing the impaired controller module from the chassis:
+The following image shows removing the impaired controller module from the chassis:
 
 image::../media/drw_a320_controller_remove_animated_gif.png[]
 
@@ -65,7 +65,7 @@ NOTE: To avoid damaging the internal connector, do not use excessive force when 
 [.lead]
 To move the NVDIMM battery from the impaired controller module to the replacement controller module, you must perform a specific sequence of steps.
 
-You can use the following animation or the written steps to move the NVDIMM battery from the impaired controller module to the replacement controller module.
+You can use the following illustration or the written steps to move the NVDIMM battery from the impaired controller module to the replacement controller module.
 
 image::../media/drw_a320_nvbat_move_animated_gif.png[]
 
@@ -82,7 +82,7 @@ NOTE: Do not plug the battery cable back into the motherboard until instructed t
 [.lead]
 You must locate the boot media, and then follow the directions to remove it from the impaired controller module and insert it into the replacement controller module.
 
-You can use the following animation or the written steps to move the boot media from the impaired controller module to the replacement controller module.
+You can use the following illustration or the written steps to move the boot media from the impaired controller module to the replacement controller module.
 
 image::../media/drw_a320_boot_media_move_animated_gif.png[]
 
@@ -107,7 +107,7 @@ You need to locate the DIMMs, and then move them from the impaired controller mo
 
 You must have the new controller module ready so that you can move the DIMMs directly from the impaired controller module to the corresponding slots in the replacement controller module.
 
-You can use the following animation or the written steps to move the DIMMs from the impaired controller module to the replacement controller module.
+You can use the following illustrations or the written steps to move the DIMMs from the impaired controller module to the replacement controller module.
 
 image::../media/drw_a320_dimm_move_animated_gif.png[]
 
@@ -117,7 +117,7 @@ image::../media/drw_a320_dimm_map.png[]
 +
 |===
 a|
-image:../media/legend_icon_01.png[] a|
+image:../media/legend_icon_01.png[]|
 Air duct
 a|
 image:../media/legend_icon_02.png[]
@@ -158,7 +158,7 @@ Make sure that the plug locks down onto the controller module.
 [.lead]
 You must move the PCIe risers, with the PCIe cards installed in them, from the impaired controller module to the replacement controller module.
 
-You can use the following animation or the written steps to move the PCIe risers from the impaired controller module to the replacement controller module.
+You can use the following illustration or the written steps to move the PCIe risers from the impaired controller module to the replacement controller module.
 
 image::../media/drw_a320_pci_riser_move_animated_gif.png[]
 
@@ -182,7 +182,7 @@ The riser should seat smoothly with little resistence. Reseat the riser in the b
 [.lead]
 After all of the components have been moved from the impaired controller module to the replacement controller module, you must install the replacement controller module into the chassis, and then boot it to Maintenance mode.
 
-You can use the following animation or the written steps to install the replacement controller module in the chassis.
+You can use the following illustration or the written steps to install the replacement controller module in the chassis.
 
 image::../media/drw_a320_controller_install_animated_gif.png[]
 

@@ -57,7 +57,7 @@ entries:
         - title: Shut down impaired controller
           url: /a320/controller-replace-shutdown.html
         - title: Replace controller module
-          url: /a320/controller-replace.html
+          url: /a320/controller-replace-move-hardware.html
         - title: Restore system configuration
           url: /a320/controller-replace-system-config-restore-and-verify.html
         - title: Recable system

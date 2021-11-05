@@ -70,30 +70,29 @@ entries:
         url: /fas9000/controller-replace-complete-system-restoration.html
       # END controller module replacement
     - title: DCPM
-      pdf-filename: AFF A700 and FAS9000 DCPM Module
       url: /fas9000/dcpm-nvram10-battery-replace.html
     - title: DIMM
       url: /fas9000/dimm-replace.html
     - title: Fan
       url: /fas9000/fan-swap-out.html
-  - title: I/O module
-    url: /fas9000/pci-cards-and-risers-replace.html
-  - title: LED USB module
-    url: /fas9000/led-module-replace.html
-  - title: NVRAM
-    url: /fas9000/nvram-module-or-nvram-dimm-replacement.html
-  - title: Power supply
-    url: /fas9000/power-supply-swap-out.html
-  - title: RTC battery
-    url: /fas9000/rtc-battery-replace.html
+    - title: I/O module
+      url: /fas9000/pci-cards-and-risers-replace.html
+    - title: LED USB module
+      url: /fas9000/led-module-replace.html
+    - title: NVRAM
+      url: /fas9000/nvram-module-or-nvram-dimm-replacement.html
+    - title: Power supply
+      url: /fas9000/power-supply-swap-out.html
+    - title: RTC battery
+      url: /fas9000/rtc-battery-replace.html
       # START X91148A module
-  - title: X91148A module
-    pdf-filename: AFF A700 and FAS9000 X91148A Module
-    entries:
-    - title: Overview
-      url: /fas9000/x91148a-module-install-overview.html
-    - title: AFF A700 system with open slots
-      url: /fas9000/x91148a-modules-with-open-slots-add.html
-    - title: AFF A700 system no open slots
-      url: /fas9000/x91148a-modules-with-no-open-slots-add.html
+    - title: X91148A module
+      pdf-filename: AFF A700 and FAS9000 X91148A Module
+      entries:
+      - title: Overview
+        url: /fas9000/x91148a-module-install-overview.html
+      - title: AFF A700 system with open slots
+        url: /fas9000/x91148a-modules-with-open-slots-add.html
+      - title: AFF A700 system no open slots
+        url: /fas9000/x91148a-modules-with-no-open-slots-add.html
       # END X91148A module
