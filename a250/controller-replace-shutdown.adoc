@@ -19,4 +19,12 @@ Each SCSI-blade process should be in quorum with the other nodes in the cluster.
 
 * If you have a MetroCluster configuration, you must have confirmed that the MetroCluster Configuration State is configured and that the nodes are in an enabled and normal state (metrocluster node show).
 
+== Option 1: Most systems
+
+[.lead]
 include::../_include/shutdown_most_frus.adoc[]
+
+== Option 2: System is in a MetroCluster
+
+[.lead]
+include::../_include/shutdown_any_mcc_supported.adoc[]
