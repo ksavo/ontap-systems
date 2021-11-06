@@ -23,33 +23,20 @@ You must verify the `HA` state of the controller module and, if necessary, updat
 
 . In Maintenance mode from the new controller module, verify that all components display the same `HA` state: `ha-config show`
 +
-[options="header" cols="1,2"]
-|===
-| If your system is in...| The HA state for all components should be...
-a|
-An HA pair
-a|
-ha
-a|
-A MetroCluster FC configuration with four or more nodes
-a|
-mcc
-a|
-A two-node MetroCluster FC configuration
-a|
-mcc-2n
-a|
-A MetroCluster IP configuration
-a|
-mccip
-a|
-A stand-alone configuration
-a|
-non-ha
-|===
+The HA state should be the same for all components.
 
-. If the displayed system state of the controller module does not match your system configuration, set the `HA` state for the controller module: `ha-config modify controller ha-state`
-. If the displayed system state of the chassis does not match your system configuration, set the `HA` state for the chassis: `ha-config modify chassis _HA-state_`
+. If the displayed system state for the chassis does not match your system configuration:
+ .. Set the HA state for the chassis: `ha-config modify chassis _HA-state_`
++
+The value for HA-state can be one of the following:
+
+*** `ha`
+*** `mcc`
+*** `mcc-2n`
+*** `mccip`
+*** `non-ha`
+
+ .. Confirm that the setting has changed: `ha-config show`
 
 == Step 3: Run system-level diagnostics
 
