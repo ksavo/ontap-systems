@@ -23,10 +23,11 @@ The HA state should be the same for all components.
 +
 The value for HA-state can be one of the following:
 
-  *** `ha`
-  *** `mcc`
-  *** `mcc-2n`
-  *** `non-ha`
+*** `ha`
+*** `mcc`
+*** `mcc-2n`
+*** `mccip`
+*** `non-ha`
 
  .. Confirm that the setting has changed: `ha-config show`
 . If you have not already done so, recable the rest of your system.
