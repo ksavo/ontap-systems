@@ -8,5 +8,13 @@ summary: 'After completing the NVE or NSE tasks, you need to complete the shutdo
 :icons: font
 :imagesdir: ../media/
 
-[.lead]
+== Option 1: Most configurations
+
 include::../_include/shutdown_bootmedia.adoc[]
+
+== Option 2: Controller is in a MetroCluster
+
+[.lead]
+After completing the NVE or NSE tasks, you need to complete the shutdown of the impaired node.
+
+include::../_include/shutdown_any_mcc_supported.adoc[]
