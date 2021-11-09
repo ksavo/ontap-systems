@@ -1,8 +1,8 @@
 ---
-permalink: fas9000/install-setup.html
+permalink: fas8200/install-setup.html
 sidebar: sidebar
-keywords: fas9000, aff a700, install, setup, initial, configuration
-summary: "Install and set up your system."
+keywords: fas8200, install, setup, initial configuration
+summary: 'Install and set up your system.'
 ---
 = Start here: Choose your installation and setup experience
 :icons: font
@@ -11,17 +11,13 @@ summary: "Install and set up your system."
 [.lead]
 For most configurations, you can choose from different content formats.
 
-* link:../fas9000/install-quick-guide.html[Quick steps]
+* link:https://library.netapp.com/ecm/ecm_download_file/ECMLP2573725[Quick steps]
 +
 A printable PDF of step-by-step instructions with live links to additional content.
 
-* link:../fas9000/install-videos.html[Video steps]
+* link:https://youtu.be/WAE0afWhj1c[Video steps]
 +
 Video step-by-step instructions.
-
-* link:../fas9000/install-detailed-guide.html[Detailed steps]
-+
-Online step-by-step instructions with live links to additional content.
 
 For MetroCluster configurations, see either:
 

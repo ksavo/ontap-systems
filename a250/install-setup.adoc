@@ -23,4 +23,4 @@ Video step-by-step instructions.
 +
 Online step-by-step instructions with live links to additional content.
 
-If your system is in a  MetroCluster IP configuration, see the https://docs.netapp.com/us-en/ontap-metrocluster/install-ip/index.html[Install MetroCluster IP Configuration] instructions.
+If your system is in a MetroCluster IP configuration, see the https://docs.netapp.com/us-en/ontap-metrocluster/install-ip/index.html[Install MetroCluster IP Configuration] instructions.
