@@ -1,0 +1,20 @@
+---
+permalink: fas2600/install-setup.html
+sidebar: sidebar
+keywords: fas2600, install, setup, initial configuration
+summary: 'Install and set up your system.'
+---
+= Start here: Choose your installation and setup experience
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+For most configurations, you can choose from different content formats.
+
+* link:https://library.netapp.com/ecm/ecm_download_file/ECMLP2316768[Quick steps]
++
+A printable PDF of step-by-step instructions with live links to additional content.
+
+* link:https://youtu.be/WAE0afWhj1c[Video steps]
++
+Video step-by-step instructions.
