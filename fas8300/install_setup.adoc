@@ -11,14 +11,14 @@ summary: 'Install and set up your system.'
 [.lead]
 You can choose from different content formats to guide you through installing and setting up your new storage system.
 
-* link:../8300/install-quick-guide.html[Quick steps]
+* link:../fas8300/install-quick-guide.html[Quick steps]
 +
 A printable PDF of step-by-step instructions with live links to additional content.
 
-* link:../8300/install-videos.html[Video steps]
+* link:../fas8300/install-videos.html[Video steps]
 +
 Video step-by-step instructions.
 
-* link:../8300/install-detailed-guide.html[Detailed steps]
+* link:../fas8300/install-detailed-guide.html[Detailed steps]
 +
 Online step-by-step instructions with live links to additional content.
