@@ -9,7 +9,7 @@ summary: 'Install and set up your system.'
 :imagesdir: ../media/
 
 [.lead]
-For most configurations, you can choose from different content formats.
+You can choose from different content formats to guide you through installing and setting up your new storage system.
 
 * link:https://library.netapp.com/ecm/ecm_download_file/ECMLP2841324[Quick steps]
 +
