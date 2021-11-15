@@ -9,7 +9,7 @@ summary: 'Install and set up your system.'
 :imagesdir: ../media/
 
 [.lead]
-You can choose from different content formats to guide you through installing and setting up your new storage system.
+For most configurations, you can choose from different content formats.
 
 * link:../a320/install-quick-guide.html[Quick steps]
 +
@@ -22,3 +22,5 @@ Video step-by-step instructions.
 * link:../a320/install-detailed-guide.html[Detailed steps]
 +
 Online step-by-step instructions with live links to additional content.
+
+If your system is in a MetroCluster IP configuration, see the https://docs.netapp.com/us-en/ontap-metrocluster/install-ip/index.html[Install MetroCluster IP Configuration] instructions.

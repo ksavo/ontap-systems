@@ -7,6 +7,8 @@ entries:
     entries:
     - title: Cluster configuration worksheet
       url: /fas2600/install-worksheet-linkout.html
+    - title: Choose install and setup experience
+      url: /fas2600/install-setup.html
     - title: Quick steps
       url: /fas2600/install-setup-linkout.html
     - title: Video steps
