@@ -7,6 +7,8 @@ entries:
    entries:
    - title: Cluster configuration worksheet
      url: /a700s/install-worksheet-linkout.html
+   - title: Choose install and setup experience
+     url: /a700s/install-setup.html
    - title: Quick steps
      url: /a700s/install-setup-linkout.html
    - title: Video steps
