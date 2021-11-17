@@ -32,8 +32,6 @@ Removing ownership information from a spare drive allows the drive to be properl
 The procedure for removing ownership from drives can be found in the disks and aggregates content:
 +
 https://docs.netapp.com/us-en/ontap/disks-aggregates/index.html[Disks and aggregates overview]
-+
-http://docs.netapp.com/ontap-9/topic/com.netapp.doc.dot-cm-psmg/home.html[ONTAP 9 Disks and Aggregates Power Guide].
 
 NOTE: The procedure requires you to disable automatic drive assignment. You reenable automatic drive assignment at the end of this procedure (after you have hot-removed the shelf).
 
