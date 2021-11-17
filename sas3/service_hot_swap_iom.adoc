@@ -21,6 +21,8 @@ All other components in the system--including the other shelf IOM--must be funct
 +
 NOTE: This procedure is for like-for-like shelf IOM hot-swaps or replacements. This means you can only replace an IOM12 module with another IOM12 module or replace an IOM12B module with another IOM12B module. (Your shelf can have two IOM12 modules or have two IOM12B modules.)
 
+NOTE: IOM12B modules are distinguished by a blue stripe and "IOM12B" label on the back.
+
 * For multipathed (multipath HA or multipath) and quad-pathed (quad-path HA or quad-path) configurations, you can hot-swap a shelf IOM (nondisruptively replace a shelf IOM in a system that is powered on and serving data--I/O is in progress).
 * For FAS2600 series and FAS2700 single-path HA configurations, you must perform a takeover and giveback operation to replace a shelf IOM in a system that is powered on and serving data--I/O is in progress.
 * For FAS2600 series single-path configurations, you must halt your system to replace a shelf IOM.
@@ -94,9 +96,9 @@ image::../media/drw_iom_open.png[]
 
 . Use the cam handle to slide the shelf IOM out of the disk shelf.
 +
-When handling an shelf IOM, always use two hands to support its weight.
+When handling a shelf IOM, always use two hands to support its weight.
 
-. Wait at least 70 seconds after removing the shelf IOM before you install the new IOM12 module.
+. Wait at least 70 seconds after removing a shelf IOM before you install the new shelf IOM.
 +
 Waiting at least 70 seconds enables the driver to register the shelf ID correctly.
 
