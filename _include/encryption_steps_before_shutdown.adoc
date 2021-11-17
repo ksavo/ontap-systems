@@ -1,6 +1,7 @@
 Prior to shutting down the impaired node and checking the status of the onboard encryption keys, you must check the status of the impaired node, disable automatic giveback, and check what version of ONTAP the system is running.
 
-If you have a cluster with more than two nodes, it must be in quorum. If the cluster is not in quorum or a healthy node shows false for eligibility and health, you must correct the issue before shutting down the impaired node; see the <<Administration overview with the CLI>>.
+If you have a cluster with more than two nodes, it must be in quorum. If the cluster is not in quorum or a healthy node shows false for eligibility and health, you must correct the issue before shutting down the impaired node; see the 
+https://docs.netapp.com/us-en/ontap/encryption-at-rest/index.html[Administration overview with the CLI].
 
 .Steps
 
