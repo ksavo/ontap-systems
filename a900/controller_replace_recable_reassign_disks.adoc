@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords:
 summary:
 ---
-= Recable the system and reassign disks - AFF A900
+= Recable the system - AFF A900
 :icons: font
 :imagesdir: ../media/
 
