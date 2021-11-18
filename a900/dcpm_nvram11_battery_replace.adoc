@@ -39,7 +39,7 @@ DCPM module terra-cotta locking button
 +
 NOTE: The module and slot are keyed. Do not force the module into the opening. If the module does not go in easily, realign the module and slide it into the chassis.
 +
-The DCPM module LED lights when the module is fully seated into the chassis.
+The Amber LED flashes four times upon insertion and the green LED also flashes if the battery is providing a voltage. If it does not flash, it will likely need to be replaced. 
 
 == Step 2: Dispose of batteries
 
