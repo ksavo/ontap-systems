@@ -28,7 +28,7 @@ NOTE: Depending on the disk drive type and capacity, it can take up to several h
 +
 Instructions in the ONTAP documentation describe additional steps you must perform before and after replacing an SED.
 +
-https://docs.netapp.com/ontap-9/topic/com.netapp.doc.pow-nve/home.html[ONTAP 9 NetApp Encryption Power Guide]
+https://docs.netapp.com/us-en/ontap/encryption-at-rest/index.html[NetApp encryption overview with the CLI]
 
 .About this task
 
