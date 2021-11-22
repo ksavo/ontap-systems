@@ -31,7 +31,8 @@ a|
 The confirmation message looks like the following:
 +
 ----
-Warning: This operation will cause node `*_node-name_*` to be marked as unhealthy. Unhealthy nodes do not participate in quorum voting. If the node goes out of service and one more node goes out of service there will be a data serving failure for the entire cluster. This will cause a client disruption. Use `cluster show` to verify cluster state. If possible bring other nodes online to improve the resiliency of this cluster.
+Warning: This operation will cause node "node-name" to be marked as unhealthy. Unhealthy nodes do not participate in quorum voting. If the node goes out of service and one more node goes out of service there will be a data serving failure for the entire cluster. This will cause a client disruption. Use "cluster show" to verify cluster state. If possible bring other nodes online to improve the resiliency of this cluster.
+
 Do you want to continue? {y|n}:
 ----
 +
