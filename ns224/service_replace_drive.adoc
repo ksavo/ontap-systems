@@ -21,7 +21,7 @@ https://hwu.netapp.com[NetApp Hardware Universe]
 +
 Instructions in the ONTAP documentation describe additional steps you must perform before and after replacing an SED.
 +
-https://docs.netapp.com/ontap-9/topic/com.netapp.doc.pow-nve/home.html[ONTAP 9 NetApp Encryption Power Guide]
+https://docs.netapp.com/us-en/ontap/encryption-at-rest/index.html[NetApp encryption overview with the CLI]
 
 * All other components in the system must be functioning properly; if not, contact technical support.
 * Verify that the drive you are removing is failed.
