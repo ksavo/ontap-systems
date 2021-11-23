@@ -1,15 +1,15 @@
 ---
 permalink: sas3/service-hot-swap-iom.html
 sidebar: sidebar
-keywords: system, configuration, whether, perform, nondisruptive, iom12, module, hot-swap, disruptive, replacement, hot-swap or replace an iom12 module
-summary: Your system configuration determines whether you can perform a nondisruptive IOM12 module hot-swap or a disruptive IOM12 module replacement when an IOM12 module fails.
+keywords: system, configuration, whether, perform, nondisruptive, iom12, iom12b, module, hot-swap, disruptive, replacement, hot-swap or replace an iom12 module, hot-swap or replace an iom12b module
+summary: Your system configuration determines whether you can perform a nondisruptive IOM12/IOM12B module hot-swap or a disruptive IOM12/IOM12B module replacement when an IOM12/IOM12B module fails.
 ---
-= Hot-swap or replace a shelf IOM - shelves with IOM12 or IOM12B modules
+= Hot-swap or replace a shelf IOM - shelves with IOM12/IOM12B modules
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-Your system configuration determines whether you can perform a nondisruptive shelf IOM hot-swap or a disruptive shelf IOM replacement when a shelf IOM fails.
+Your system configuration determines whether you can perform a nondisruptive shelf IOM12/IOM12B hot-swap or a disruptive shelf IOM12/IOM12B replacement when a shelf IOM12/IOM12B fails.
 
 .Before you begin
 
