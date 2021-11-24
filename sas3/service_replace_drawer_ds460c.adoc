@@ -11,7 +11,9 @@ summary: You must stop all host I/O activity and power off the shelf before repl
 [.lead]
 You must stop all host I/O activity and power off the shelf before replacing the drive drawer.
 
-Each of these 60-drive shelves has five drive drawers.
+Each shelf has five drive drawers. A shelf can have five DCM1 drive drawers or five DCM2 drive drawers. (DCM2 drive drawers have a blue stripe and the label "DCM2" on the back.)
+
+The following illustration shows a shelf with five DCM1 drive drawers.
 
 image::../media/28_dwg_e2860_de460c_front_no_callouts.gif[]
 
@@ -37,8 +39,6 @@ NOTE: *Possible hardware damage:* To prevent electrostatic discharge damage to t
 This procedure applies to shelves having DCM1 drive drawers and shelves having DCM2 drive drawers.
 
 NOTE: This procedure is for like-for-like drive drawer replacements. This means you can only replace a DCM1 drive drawer with another DCM1 drive drawer or replace a DCM2 drive drawer with another DCM2 drive drawer. (Your shelf can have five DCM1 drive drawers or have five DCM2 drive drawers.)
-
-NOTE: DCM2 drive drawers are distinguished by a blue stripe and "DCM2" label on the back.
 
 == Removing the cable chains
 

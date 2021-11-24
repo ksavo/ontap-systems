@@ -2,14 +2,14 @@
 permalink: sas3/service-hot-swap-iom.html
 sidebar: sidebar
 keywords: system, configuration, whether, perform, nondisruptive, iom12, iom12b, module, hot-swap, disruptive, replacement, hot-swap or replace an iom12 module, hot-swap or replace an iom12b module
-summary: Your system configuration determines whether you can perform a nondisruptive IOM12/IOM12B module hot-swap or a disruptive IOM12/IOM12B module replacement when an IOM12/IOM12B module fails.
+summary: Your system configuration determines whether you can perform a nondisruptive IOM module hot-swap or a disruptive IOM module replacement when an IOM module fails.
 ---
 = Hot-swap or replace a shelf IOM - shelves with IOM12/IOM12B modules
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-Your system configuration determines whether you can perform a nondisruptive shelf IOM12/IOM12B hot-swap or a disruptive shelf IOM12/IOM12B replacement when a shelf IOM12/IOM12B fails.
+Your system configuration determines whether you can perform a nondisruptive shelf IOM hot-swap or a disruptive shelf IOM replacement when a shelf IOM fails.
 
 .Before you begin
 
@@ -20,7 +20,7 @@ All other components in the system--including the other shelf IOM--must be funct
 * This procedure applies to shelves having IOM12 modules and shelves having IOM12B modules.
 +
 NOTE: This procedure is for like-for-like shelf IOM hot-swaps or replacements. This means you can only replace an IOM12 module with another IOM12 module or replace an IOM12B module with another IOM12B module. (Your shelf can have two IOM12 modules or have two IOM12B modules.)
-
++
 NOTE: IOM12B modules are distinguished by a blue stripe and "IOM12B" label on the back.
 
 * For multipathed (multipath HA or multipath) and quad-pathed (quad-path HA or quad-path) configurations, you can hot-swap a shelf IOM (nondisruptively replace a shelf IOM in a system that is powered on and serving data--I/O is in progress).
