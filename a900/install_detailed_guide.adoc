@@ -54,8 +54,22 @@ image:../media/oie_cable_sfp_gbe_copper.png[]
 a|
 Network cable
 a|
-40 GbE network cable
+32 Gb FC (SFP+ Op)
+a|
+X66250-2 (112-00342), 2m
 
+X66250-5 (112-00344), 5m
+
+X66250-15 (112-00346), 15m
+
+a|
+
+image:../media/oie_cable_sfp_gbe_copper.png[]
+
+a|
+FC optical network cable
+a|
+40 GbE network cable
 a|
 X66100-1 (112-00542), 1m
 
@@ -63,44 +77,51 @@ X66100-3 (112-00543), 3m
 
 X66100-5 (112-00544), 5m
 a|
-image:../media/oie_cable_100gbe_qsfp28.png[]
+
+image:../media/oie_cable100_gbe_qsfp28.png[]
+
 a|
-    40 GbE network
-+
-network cable
 Ethernet data, cluster
 network
 a|
-    100 GbE network cable
-+
-100 GbE storage cable
-a|
-    X66211A-05 (112-00595), 0.5m
-+
-X66211A-1 (112-00573), 1m
-+
-X66211A-2 (112-00574), 2m
-+
-X66211A-5 (112-00574), 5m
-a|
-image:../media/oie_cable_100gbe_qsfp28.png[]
-a|
-    Network cable
-+
-Storage cable
-+
-NOTE: This cable applies to AFF A700 only.
+100 GbE network cable
+NVEME storage,
+Ethernet data,
+cluster network
 
 a|
-Optical network cables (order dependent)
+X66211B-1 (112-00573), 1m
+
+X66211B-2 (112-00574), 2m
+
+X66211B-5 (112-00576), 5m
 a|
-    X6553-R6 (112-00188), 2m
-+
-X6536-R6 (112-00090), 5m
+
+image:../media/oie_cable_100gbe_qsfp28.png[]
+
 a|
+Network,
+
+NVEME storage,
+
+Ethernet data,
+
+cluster network
+
+a|
+Optical cables
+a|
+X66031A (112-00436), 1m
+
+X66032A (112-00437), 2m
+
+X66033A (112-00438), 3m
+a|
+
 image:../media/oie_cable_fiber_lc_connector.gif[]
+
 a|
-FC host network
+FC optical network
 a|
 Cat 6, RJ-45 (order dependant)
 a|
@@ -108,27 +129,20 @@ a|
 +
 X6562-R6 (112-00196), 5m
 a|
+
 image:../media/oie_cable_rj45.png[]
+
 a|
 Management network and Ethernet data
 a|
-Storage
-a|
-    X66031A (112-00436), 1m
-+
-X66032A (112-00437), 2m
-+
-X66033A (112-00438), 3m
-a|
-image:../media/oie_cable_mini_sas_hd_to_mini_sas_hd.png[]
-a|
-Storage
 a|
 Micro-USB console cable
 a|
 Not applicable
 a|
-image:../media/oie_cable_micro_usb.gif[]
+
+image:../media/oie_cable_micro_usb.png[]
+
 a|
 Console connection during software setup on non-Windows or Mac laptop/console
 a|
@@ -136,8 +150,11 @@ Power cables
 a|
 Not applicable
 a|
+
 image:../media/oie_cable_power.png[]
+
 a|
+
 Powering up the system
 |===
 
@@ -145,7 +162,7 @@ Powering up the system
 +
 https://library.netapp.com/ecm/ecm_download_file/ECMLP2862613[ONTAP Configuration Guide]
 
-== Step 1: Install the hardware
+== Step 2: Install the hardware
 
 [.lead]
 You need to install your system in a 4-post rack or NetApp system cabinet, as applicable.
@@ -163,7 +180,7 @@ image::../media/drw_9000_cable_management_arms.png[]
 
 . Place the bezel on the front of the system.
 
-== Step 2: Cable controllers to your network
+== Step 3: Cable controllers to your network
 
 [.lead]
 You can cable the controllers to your network by using the two-node switchless cluster method or by using the cluster interconnect network.
@@ -206,7 +223,7 @@ https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=6381b3f1-4ce5-4805
 
 . Cable your storage: link:install_detailed_guide.md#[Cabling controllers to drive shelves]
 
-== Step 3: Cable controllers to drive shelves
+== Step 4: Cable controllers to drive shelves
 
 === Option 1: Cable the controllers to DS212C or DS224C drive shelves
 
@@ -261,7 +278,7 @@ image::../media/drw_ns224_a700_1shelf.png[]
 
 . To complete setting up your system, see link:install_detailed_guide.md#[Completing system setup and configuration].
 
-=== Option 3: CCable the controllers to two NS224 drive shelves in AFF A700 and ASA AFF A700 systems running ONTAP 9.8 and later only
+=== Option 3: Cable the controllers to two NS224 drive shelves in AFF A700 and ASA AFF A700 systems running ONTAP 9.8 and later only
 
 [.lead]
 You must cable each controller to the NSM modules on the NS224 drive shelves on an AFF A700 or ASA AFF A700 running system ONTAP 9.8 or later.
@@ -284,7 +301,7 @@ image::../media/drw_ns224_a700_2shelves.png[]
 
 . To complete setting up your system, see link:install_detailed_guide.md#[Completing system setup and configuration].
 
-== Step 4: Complete system setup and configuration
+== Step 5: Complete system setup and configuration
 
 [.lead]
 You can complete the system setup and configuration using cluster discovery with only a connection to the switch and laptop, or by connecting directly to a controller in the system and then connecting to the management switch.
