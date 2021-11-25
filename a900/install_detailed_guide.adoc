@@ -1,10 +1,10 @@
 ---
 permalink: a900/install_detailed_guide.html
 sidebar: sidebar
-keywords: FAS9000 AFF A700
+keywords: AFF A900
 summary: 'This guide gives detailed step-by-step instructions for installing a typical NetApp system.'
 ---
-= Detailed guide - AFF A700 and FAS9000
+= Detailed guide - AFF 900
 :icons: font
 :imagesdir: ../media/
 
@@ -42,31 +42,34 @@ https://hwu.netapp.com[NetApp Hardware Universe]
 |===
 | Type of cable...| Part number and length| Connector type| For...
 a|
-10 GbE network cable
+25 GbE data Cable
 a|
-    X6566B-2-R6, (112-00299), 2m
-+
-X6566B-3-R6, 112-00300, 3m
-+
-X6566B-5-R6 , 112-00301, 5m
-a|
-image:../media/oie_cable_sfp_gbe_copper.gif[]
+X66240A-05 (112-00639), 0.5m
+
+X66240A-2 (112-00598), 2m
+
+X66240A-5 (112-00600), 5m
+|
+image:../media/oie_cable_sfp_gbe_copper.png[]
 a|
 Network cable
 a|
-    40 GbE network cable
-+
-40 GbE cluster interconnect
+40 GbE network cable
+
 a|
-    X66100-1,112-00542, 1m
-+
-X66100-3,112-00543, 3m
+X66100-1 (112-00542), 1m
+
+X66100-3 (112-00543), 3m
+
+X66100-5 (112-00544), 5m
 a|
 image:../media/oie_cable_100gbe_qsfp28.png[]
 a|
     40 GbE network
 +
-Cluster interconnect
+network cable
+Ethernet data, cluster
+network
 a|
     100 GbE network cable
 +
