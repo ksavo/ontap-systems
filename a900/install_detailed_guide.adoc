@@ -84,10 +84,7 @@ a|
 Ethernet data, cluster
 network
 a|
-100 GbE network cable
-NVEME storage,
-Ethernet data,
-cluster network
+100 GbE cable
 
 a|
 X66211B-1 (112-00573), 1m
@@ -97,7 +94,7 @@ X66211B-2 (112-00574), 2m
 X66211B-5 (112-00576), 5m
 a|
 
-image:../media/oie_cable_100gbe_qsfp28.png[]
+image:../media/oie_cable100_gbe_qsfp28.png[]
 
 a|
 Network,
@@ -125,8 +122,8 @@ FC optical network
 a|
 Cat 6, RJ-45 (order dependant)
 a|
-    Part numbers X6585-R6 (112-00291), 3m
-+
+Part numbers X6585-R6 (112-00291), 3m
+
 X6562-R6 (112-00196), 5m
 a|
 
@@ -134,7 +131,6 @@ image:../media/oie_cable_rj45.png[]
 
 a|
 Management network and Ethernet data
-a|
 a|
 Micro-USB console cable
 a|
@@ -158,7 +154,7 @@ a|
 Powering up the system
 |===
 
-. Review the _NetApp ONTAP Confiuration Guide_ and collect the required information listed in that guide.
+. Review the _NetApp ONTAP Configuration Guide_ and collect the required information listed in that guide.
 +
 https://library.netapp.com/ecm/ecm_download_file/ECMLP2862613[ONTAP Configuration Guide]
 
@@ -200,7 +196,9 @@ NOTE: As you insert the connector, you should feel it click into place; if you d
 
 . Use the animation to complete the cabling between the controllers and to the switches:
 +
-https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=7a55b98a-e8b8-41d5-821f-ac5b0032ead0[Cabling a two-node switchless cluster] https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=7a55b98a-e8b8-41d5-821f-ac5b0032ead0[Cabling a two-node switchless cluster]
+https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=7a55b98a-e8b8-41d5-821f-ac5b0032ead0[Cabling a two-node switchless cluster*******need animation request]
+
+image::../media/drw_a900_tnsc_network_cabling.png[]
 
 . To cable your storage, see link:install_detailed_guide.md#[Cabling controllers to drive shelves]
 
@@ -219,7 +217,9 @@ NOTE: As you insert the connector, you should feel it click into place; if you d
 
 . Use the animation to complete the cabling between the controllers and to the switches:
 +
-https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=6381b3f1-4ce5-4805-bd0a-ac5b0032f51d[Switched clsuter cabling] https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=6381b3f1-4ce5-4805-bd0a-ac5b0032f51d[Switche cluster cabling]
+https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=6381b3f1-4ce5-4805-bd0a-ac5b0032f51d[Switched cluster cabling]
+
+image::../drw_a900_switched_network_cabling.png[]
 
 . Cable your storage: link:install_detailed_guide.md#[Cabling controllers to drive shelves]
 
