@@ -259,43 +259,49 @@ If you have more than one drive shelf stack, see link:../com.netapp.doc.hw-ds-sa
 [.lead]
 You must cable each controller to the NSM modules on the NS224 drive shelf on an AFF A900 system.
 
-* The systems must have at least one X91148A**** module installed in slots 2 and/or 10 for each controller. The animation shows this module installed in both slots 2 and 10.
+* The systems must have at least one X91148A*** module installed in slots 2 and/or 10 for each controller. The animation shows this module installed in both slots 2 and 10.
 * Be sure to check the illustration arrow for the proper cable connector pull-tab orientation. The cable pull-tab for the storage modules are up, while the pull tabs on the shelves are down.
 +
+
 image::../media/oie_cable_pull_tab_up.gif[]
 +
+
 image::../media/oie_cable_pull_tab_down.gif[]
 +
 NOTE: As you insert the connector, you should feel it click into place; if you do not feel it click, remove it, turn it around and try again.
 
-. Use the following animation or drawings to cable your controllers with two X91148A storage modules to a single NS224 drive shelf, or use the diagram to cable your controllers with one X91148A storage module to a single NS224 drive shelf.
+. Use the following animation or drawings to cable your controllers with two X91148A*** storage modules to a single NS224 drive shelf, or use the diagram to cable your controllers with one X91148A*** storage module to a single NS224 drive shelf.
 +
-https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=6520eb01-87b3-4520-9109-ac5b0032ea4e[Cabling a single NS224 shelf - ONTAP 9.8 and later] https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=6520eb01-87b3-4520-9109-ac5b0032ea4e[Cabling a single NSS shelf - ONTAP 9.8 and later]
+https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=6520eb01-87b3-4520-9109-ac5b0032ea4e[Cabling a single NS224 shelf ]
 +
-image::../media/drw_ns224_a700_1shelf.png[]
+
+image::../media/drw_a900_NS224_one shelf_cabling[]
 
 . To complete setting up your system, see link:install_detailed_guide.md#[Completing system setup and configuration].
 
 === Option 3: Cable the controllers to two NS224 drive shelves in AFF A900 and ASA AFF A900 systems running ONTAP 9.8 and later only
 
 [.lead]
-You must cable each controller to the NSM modules on the NS224 drive shelves on an AFF A900 or ASA AFF A900 running system ONTAP 9.8 or later.
-
-* This task applies to AFF A900 and ASA AFF A900 running ONTAP 9.8 or later only.
-* The systems must have two X91148A modules, per controller, installed in slots 3 and 7.
+You must cable each controller to the NSM modules on the NS224 drive shelves.
+* The systems must have two X91148A*** modules, per controller, installed in slots 2 and 10.
 * Be sure to check the illustration arrow for the proper cable connector pull-tab orientation. The cable pull-tab for the storage modules are up, while the pull tabs on the shelves are down.
 +
+
 image::../media/oie_cable_pull_tab_up.gif[]
-+
+
 image::../media/oie_cable_pull_tab_down.gif[]
-+
+
+
 NOTE: As you insert the connector, you should feel it click into place; if you do not feel it click, remove it, turn it around and try again.
 
 . Use the following animation or diagram to cable your controllers to two NS224 drive shelves.
 +
-https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=34098e39-73ad-45de-9af7-ac5b0032ea9a[Cabling two NS224 shelves - ONTAP 9.8 and later] https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=34098e39-73ad-45de-9af7-ac5b0032ea9a[Cabling two NS224 shelves - ONTAP 9.8 and later]
+https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=34098e39-73ad-45de-9af7-ac5b0032ea9a[Cabling two NS224 shelves]
 +
-image::../media/drw_ns224_a700_2shelves.png[]
+
+image::../media/drw_a900_NS224_line_art_two shelf_cabling[]
++
+image::../media/drw_a900_NS224_two shelf_cabling.png[]
 
 . To complete setting up your system, see link:install_detailed_guide.md#[Completing system setup and configuration].
 
@@ -313,12 +319,12 @@ If you have network discovery enabled on your laptop, you can complete system se
 +
 If your system has NS224 drive shelves, the shelves are pre-set to shelf ID 00 and 01. If you want to change the shelf IDs, you must create a tool to insert into the hole where button is located.
 +
-https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=95a29da1-faa3-4ceb-8a0b-ac7600675aa6[Setting SAS or NVMe drive shelf IDs] https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=95a29da1-faa3-4ceb-8a0b-ac7600675aa6[Setting SAS or NVMe drive shelf IDs]
+https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=95a29da1-faa3-4ceb-8a0b-ac7600675aa6[Setting SAS or NVMe drive shelf IDs]
 
 . Plug the power cords into the controller power supplies, and then connect them to power sources on different circuits.
 . Turn on the power switches to both nodes.
 +
-https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=bb04eb23-aa0c-4821-a87d-ab2300477f8b[Turn on the power to the controllers] https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=bb04eb23-aa0c-4821-a87d-ab2300477f8b[Turn on the power to the controllers]
+https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=bb04eb23-aa0c-4821-a87d-ab2300477f8b[Turn on the power to the controllers]
 +
 NOTE: Initial booting may take up to eight minutes.
 
@@ -328,7 +334,7 @@ See your laptop's online help for more information.
 
 . Use the following animation to connect your laptop to the Management switch.
 +
-https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=d61f983e-f911-4b76-8b3a-ab1b0066909b[Connecting your laptop to the Management switch] https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=d61f983e-f911-4b76-8b3a-ab1b0066909b[Connecting your laptop to the Management switch]
+https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=d61f983e-f911-4b76-8b3a-ab1b0066909b[Connecting your laptop to the Management switch]
 
 . Select an ONTAP icon listed to discover:
 +
@@ -341,7 +347,9 @@ image::../media/drw_autodiscovery_controler_select.png[]
 
 +
 NOTE: XXXXX is the system serial number for the target node.
+
 +
+
 System Manager opens.
 
 . Use System Manager guided setup to configure your system using the data you collected in the _NetApp ONTAP Configuration Guide_.
@@ -363,7 +371,7 @@ https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor[NetApp 
 . Verify the health of your system by running Config Advisor.
 . After you have completed the initial configuration, go to the https://www.netapp.com/data-management/oncommand-system-documentation/[ONTAP & ONTAP System Manager Documentation Resources] page for information about configuring additional features in ONTAP.
 
-=== Option 2: If you are not using a Windows or Mac laptop
+=== Option 2: If network discovery is not enabled
 
 [.lead]
 If you are not using a Windows or Mac-based laptop or console or if auto discovery is not enabled, you must complete the configuration and setup using this task.
@@ -382,12 +390,12 @@ image::../media/drw_9000_cable_console_switch_controller.png[]
 +
 If your system has NS224 drive shelves, the shelves are pre-set to shelf ID 00 and 01. If you want to change the shelf IDs, you must create a tool to insert into the hole where button is located.
 +
-https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=95a29da1-faa3-4ceb-8a0b-ac7600675aa6[Setting SAS or NVMe drive shelf IDs] https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=95a29da1-faa3-4ceb-8a0b-ac7600675aa6[Setting SAS or NVMe drive shelf IDs]
+https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=95a29da1-faa3-4ceb-8a0b-ac7600675aa6[Setting SAS or NVMe drive shelf IDs]
 
 . Plug the power cords into the controller power supplies, and then connect them to power sources on different circuits.
 . Turn on the power switches to both nodes.
 +
-https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=bb04eb23-aa0c-4821-a87d-ab2300477f8b[Turn on the power to the controllers] https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=bb04eb23-aa0c-4821-a87d-ab2300477f8b[Turn on the power to the controllers]
+https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=bb04eb23-aa0c-4821-a87d-ab2300477f8b[Turn on the power to the controllers]
 +
 NOTE: Initial booting may take up to eight minutes.
 
@@ -415,7 +423,8 @@ NOTE: Check your laptop or console's online help if you do not know how to confi
 . Using System Manager on your laptop or console, configure your cluster:
  .. Point your browser to the node management IP address.
 +
-NOTE: The format for the address is https://x.x.x.x.
+NOTE: The format for the address is
++https://x.x.x.x+.
 
  .. Configure the system using the data you collected in the _NetApp ONTAP Configuration guide_.
 +
