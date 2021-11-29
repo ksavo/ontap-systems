@@ -196,10 +196,12 @@ NOTE: As you insert the connector, you should feel it click into place; if you d
 
 . Use the animation or illustration to complete the cabling between the controllers and to the switches:
 +
-https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=7a55b98a-e8b8-41d5-821f-ac5b0032ead0[Cabling a two-node switchless cluster*******need animation request]
+https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=7a55b98a-e8b8-41d5-821f-ac5b0032ead0[Cabling a two-node switchless cluster need animation request]
++
 
 image::../media/drw_a900_tnsc_network_cabling.png[]
 
++
 . To cable your storage, see link:install_detailed_guide.md#[Cabling controllers to drive shelves]
 
 === Option 2: Switched cluster
@@ -217,10 +219,12 @@ NOTE: As you insert the connector, you should feel it click into place; if you d
 
 . Use the animation or illustration to complete the cabling between the controllers and to the switches:
 +
-https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=6381b3f1-4ce5-4805-bd0a-ac5b0032f51d[Switched cluster *******cabling]
+https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=6381b3f1-4ce5-4805-bd0a-ac5b0032f51d[Switched cluster cabling]
++
 
 image::../drw_a900_switched_network_cabling.png[]
 
++
 . Cable your storage: link:install_detailed_guide.md#[Cabling controllers to drive shelves]
 
 == Step 4: Cable controllers to drive shelves
@@ -240,21 +244,22 @@ image::../media/oie_cable_pull_tab_up.gif[]
 +
 PANAPTO LINK HERE
 
-image::../media/drw_a900_SAS shelf_cabling.png[]
 +
 
+image::../media/drw_a900_SAS shelf_cabling.png[]
+
++
 If you have more than one drive shelf stack, see link:../com.netapp.doc.hw-ds-sas3-icg/home.html[Installing and cabling] for your drive shelf type.
 +
 
 . To complete setting up your system, see link:install_detailed_guide.md#[Completing system setup and configuration]
 
-=== Option 2: Cable the controllers to a single NS224 drive shelf in AFF A900 and ASA AFF A900 systems running ONTAP 9.8 and later only
+=== Option 2: Cable the controllers to a single NS224 drive shelf in AFF A900
 
 [.lead]
-You must cable each controller to the NSM modules on the NS224 drive shelf on an AFF A900 or ASA AFF A900 running system ONTAP 9.8 or later.
+You must cable each controller to the NSM modules on the NS224 drive shelf on an AFF A900 system.
 
-* This task applies to AFF A900 and ASA AFF A900 running ONTAP 9.8 or later only.
-* The systems must have at least one X91148A module installed in slots 3 and/or 7 for each controller. The animation shows this module installed in both slots 3 and 7.
+* The systems must have at least one X91148A**** module installed in slots 2 and/or 10 for each controller. The animation shows this module installed in both slots 2 and 10.
 * Be sure to check the illustration arrow for the proper cable connector pull-tab orientation. The cable pull-tab for the storage modules are up, while the pull tabs on the shelves are down.
 +
 image::../media/oie_cable_pull_tab_up.gif[]
@@ -263,7 +268,7 @@ image::../media/oie_cable_pull_tab_down.gif[]
 +
 NOTE: As you insert the connector, you should feel it click into place; if you do not feel it click, remove it, turn it around and try again.
 
-. Use the following animation to cable your controllers with two X91148A storage modules to a single NS224 drive shelf, or use the diagram to cable your controllers with one X91148A storage module to a single NS224 drive shelf.
+. Use the following animation or drawings to cable your controllers with two X91148A storage modules to a single NS224 drive shelf, or use the diagram to cable your controllers with one X91148A storage module to a single NS224 drive shelf.
 +
 https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=6520eb01-87b3-4520-9109-ac5b0032ea4e[Cabling a single NS224 shelf - ONTAP 9.8 and later] https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=6520eb01-87b3-4520-9109-ac5b0032ea4e[Cabling a single NSS shelf - ONTAP 9.8 and later]
 +
