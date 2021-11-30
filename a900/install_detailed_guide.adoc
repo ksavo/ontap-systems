@@ -275,6 +275,11 @@ NOTE: As you insert the connector, you should feel it click into place; if you d
 https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=6520eb01-87b3-4520-9109-ac5b0032ea4e[Cabling a single NS224 shelf ]
 +
 
+image::../media/LARGE_drw_a900_NS224_line_art_two shelf_cabling.png[]
+
++
+image::../media/SMALL_drw_a900_NS224_line_art_two shelf_cabling.png[]
+
 image::../media/drw_a900_NS224_one shelf_cabling[]
 
 . To complete setting up your system, see link:install_detailed_guide.md#[Completing system setup and configuration].
