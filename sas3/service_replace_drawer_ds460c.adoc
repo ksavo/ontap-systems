@@ -57,7 +57,7 @@ NOTE: *Possible hardware damage:* To prevent electrostatic discharge damage to t
 
 .About this task
 
-Each drive drawer has left and right cable chains. The metal ends on the cable chains slide into corresponding vertical and horizontal brackets inside the enclosure, as follows:
+Each drive drawer has left and right cable chains. The ends of the cable chains slide into corresponding vertical and horizontal brackets inside the enclosure, as follows:
 
 * The left and right vertical brackets connect the cable chain to the enclosure's midplane.
 * The left and right horizontal brackets connect the cable chain to the individual drawer.
