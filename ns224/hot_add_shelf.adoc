@@ -415,9 +415,9 @@ Otherwise, go to the next step.
  .. Cable shelf NSM A port e0b to controller B slot 10 port b (e10b).
  .. Cable shelf NSM B port e0a to controller B slot 2 port a (e2a).
  .. Cable shelf NSM B port e0b to controller A slot 10 port b (e10b).
-
++
 The following illustration shows the second shelf cabling (and the first shelf).
-
++
 image::../media/drw_ns224_a900_2shelves.gif[]
 
 . If the NS224 shelf you are hot-adding will be the third NS224 shelf in the HA pair, complete the following substeps.
@@ -428,9 +428,9 @@ Otherwise, go to the next step.
 .. Cable shelf NSM A port e0b to controller B slot 11 port b (e11b).
 .. Cable shelf NSM B port e0a to controller B slot 1 port a (e1a).
 .. Cable shelf NSM B port e0b to controller A slot 1 port b (e1b).
-
++
 The following illustration shows the third shelf cabling.
-
++
 image::../media/drw_ns224_a900_3shelves.gif[]
 
 . If the NS224 shelf you are hot-adding will be the fourth NS224 shelf in the HA pair, complete the following substeps.
@@ -441,9 +441,9 @@ Otherwise, go to the next step.
 .. Cable shelf NSM A port e0b to controller B slot 1 port b (e1b).
 .. Cable shelf NSM B port e0a to controller B slot 11 port a (e11a).
 .. Cable shelf NSM B port e0b to controller A slot 1 port b (e1b).
-
++
 The following illustration shows the fourth shelf cabling.
-
++
 image::../media/drw_ns224_a900_4shelves.gif[]
 
 . Verify that the hot-added shelf is cabled correctly.
