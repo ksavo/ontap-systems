@@ -1,15 +1,15 @@
 ---
 permalink: sas3/hot-remove-shelf.html
 sidebar: sidebar
-keywords: hot-remove, disk, shelf, iom12, module, nondisruptive, module-nondisruptively, system, power, serving, data, i/o, progress, hot-remove, stack, shelves, hot-remove a disk shelf with iom12 modules
-summary: You can hot-remove a disk shelf with IOM12 modules (nondisruptively remove a disk shelf from a system that is powered on and serving data, meaning when I/O is in progress) when you need to move or replace the disk shelf. You can hot-remove one or more disk shelves from anywhere within a stack of disk shelves or remove a stack of disk shelves.
+keywords: hot-remove, disk, shelf, iom12, iom12b, module, nondisruptive, module-nondisruptively, system, power, serving, data, i/o, progress, hot-remove, stack, shelves, hot-remove a disk shelf with iom12 modules, hot-remove a disk shelf with iom12b modules
+summary: You can hot-remove a disk shelf with IOM12/IOM12B modules (nondisruptively remove a disk shelf from a system that is powered on and serving data, meaning when I/O is in progress) when you need to move or replace the disk shelf. You can hot-remove one or more disk shelves from anywhere within a stack of disk shelves or remove a stack of disk shelves.
 ---
-= Hot-remove a shelf - shelves with IOM12 modules
+= Hot-remove a shelf - shelves with IOM12/IOM12B modules
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-You can hot-remove a disk shelf with IOM12 modules--nondisruptively remove a disk shelf from a system that is powered on and serving data (I/O is in progress)--when you need to move or replace the disk shelf. You can hot-remove one or more disk shelves from anywhere within a stack of disk shelves or remove a stack of disk shelves.
+You can hot-remove a disk shelf with IOM12/IOM12B modules--nondisruptively remove a disk shelf from a system that is powered on and serving data (I/O is in progress)--when you need to move or replace the disk shelf. You can hot-remove one or more disk shelves from anywhere within a stack of disk shelves or remove a stack of disk shelves.
 
 .Before you begin
 
@@ -99,7 +99,7 @@ Disk         Size Shelf Bay Type   Type        Name       Owner
 +
 If needed, you can turn on the disk shelf's location (blue) LEDs to aid in physically locating the affected disk shelf: `storage shelf location-led modify -shelf-name _shelf_name_ -led-status on`
 +
-NOTE: A disk shelf has three location LEDs: one on the operator display panel and one on each IOM12 module. Location LEDs remain illuminated for 30 minutes. You can turn them off by entering the same command, but using the off option.
+NOTE: A disk shelf has three location LEDs: one on the operator display panel and one on each IOM12/IOM12B module. Location LEDs remain illuminated for 30 minutes. You can turn them off by entering the same command, but using the off option.
 
 . If you are removing an entire stack of disk shelves, complete the following substeps; otherwise, go to the next step:
  .. Remove all SAS cables on path A (IOM A) and path B (IOM B).
@@ -137,7 +137,7 @@ a|
 |===
 You can refer to the following cabling examples when removing a disk shelf from an end of a stack or the middle of a stack. Note the following about the cabling examples:
 
- ** The IOM12 modules are arranged side-by-side as in a DS224C or DS212C disk shelf; if you have a DS460C, the IOM12 modules are arranged one above the other.
+ ** The IOM12/IOM12B modules are arranged side-by-side as in a DS224C or DS212C disk shelf; if you have a DS460C, the IOM12 modules are arranged one above the other.
  ** The stack in each example is cabled with standard shelf-to-shelf cabling, which is used in stacks cabled with multipath HA or multipath connectivity.
 +
 You can infer the recabling if your stack is cabled with quad-path HA or quad-path connectivity, which uses double-wide shelf-to-shelf cabling.
