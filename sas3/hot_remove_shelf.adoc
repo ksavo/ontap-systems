@@ -44,7 +44,7 @@ Removing ownership information from a spare disk drive allows the disk drive to 
 ====
 The procedure for removing ownership from disk drives requires you to disable disk ownership automatic assignment. You reenable disk ownership automatic assignment at the end of this procedure.
 
-http://docs.netapp.com/ontap-9/topic/com.netapp.doc.dot-cm-psmg/home.html[ONTAP 9 Disks and Aggregates Power Guide]
+https://docs.netapp.com/us-en/ontap/disks-aggregates/index.html[Disks and aggregates overview]
 ====
 
 * For a clustered ONTAP system that is greater than two-nodes, best practice is to have reassigned epsilon to an HA pair other than the one that is undergoing planned maintenance.

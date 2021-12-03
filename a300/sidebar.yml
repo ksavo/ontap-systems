@@ -7,6 +7,8 @@ entries:
    entries:
    - title: Cluster configuration worksheet
      url: /a300/install-worksheet-linkout.html
+   - title: Choose install and setup experience
+     url: /a300/install-setup.html
    - title: Quick steps
      url: /a300/install-setup-linkout.html
    - title: Video steps

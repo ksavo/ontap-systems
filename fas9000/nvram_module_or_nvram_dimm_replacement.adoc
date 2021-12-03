@@ -27,20 +27,32 @@ The NVRAM module consists of the NVRAM10 and DIMMs and up to two NVMe SSD Flash 
 [.lead]
 You can shut down or take over the impaired controller using different procedures, depending on the storage system hardware configuration.
 
-=== Option 1: Most configurations
 
+[role="tabbed-block"]
+====
+
+.Option 1: Most configs
+--
+.Most configurations
 [.lead]
 include::../_include/shutdown_most_frus.adoc[]
+--
 
-=== Option 2: Controller is in a MetroCluster
-
+.Option 2: MetroCluster config
+--
+.Controller is in a MetroCluster
 [.lead]
 include::../_include/shutdown_any_mcc_supported.adoc[]
+--
 
-=== Option 3: Controller is in a two-node MetroCluster
-
+.Option 3: Two-node MetroCluster
+--
+.Controller is in a two-node MetroCluster
 [.lead]
 include::../_include/shutdown_2n_mcc.adoc[]
+--
+
+====
 
 == Step 2: Replace the NVRAM module
 
@@ -177,24 +189,18 @@ After you replace the FRU, you must reboot the controller module.
 == Step 5: Reassign disks
 
 [.lead]
-Depending on your configuration, you must either verify the reassignment of disks to the new controller module or manually reassign the disks. If the storage system is in an HA pair, the system ID of the new controller module is automatically assigned to the disks when the giveback occurs at the end of the procedure. In a stand-alone system, you must manually reassign the ID to the disks.
+Depending on whether you have an HA pair or two-node MetroCluster configuration, you must either verify the reassignment of disks to the new controller module or manually reassign the disks.
 
-You must use the correct procedure for your configuration:
+Select one of the following options for instructions on how to reassign disks to the new controller.
 
-[options="header" cols="1,2"]
-|===
-| Controller module redundancy| Then use this procedure...
-a|
-HA pair
-a|
-<<Verifying the system ID change on an HA system>>
-a|
-Two-node MetroCluster configuration
-a|
-<<Manually reassigning the system ID on systems in a two-node MetroCluster configuration>>
-|===
+// start tabbed area
 
-=== Verify the system ID change on an HA system
+[role="tabbed-block"]
+====
+
+.Option 1: Verify ID (HA pair)
+--
+.Verify the system ID change on an HA system
 
 [.lead]
 You must confirm the system ID change when you boot the _replacement_ node and then verify that the change was implemented.
@@ -295,10 +301,16 @@ dr-group-id            cluster node           configuration-state
 . Verify that the expected volumes are present for each node: `vol show -node node-name`
 . If you disabled automatic takeover on reboot, enable it from the healthy node: `storage failover modify -node replacement-node-name -onreboot true`
 
-=== Manually reassign the system ID on systems in a two-node MetroCluster configuration
+--
+
+.Option 2: Reassign ID (MetroCluster config)
+--
+.Reassign the system ID in a two-node MetroCluster configuration
 
 [.lead]
 include::../_include/2n_mcc_reassign_sysid.adoc[]
+--
+====
 
 == Step 6: Restore Storage and Volume Encryption functionality
 
