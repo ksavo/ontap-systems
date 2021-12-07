@@ -222,7 +222,7 @@ NOTE: As you insert the connector, you should feel it click into place; if you d
 https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=6381b3f1-4ce5-4805-bd0a-ac5b0032f51d[Switched cluster cabling]
 +
 
-image::../drw_a900_switched_network_cabling.png[]
+image::../media/drw_a900_switched_network_cabling.png[]
 
 +
 . Cable your storage: link:install_detailed_guide.md#[Cabling controllers to drive shelves]
@@ -275,13 +275,7 @@ NOTE: As you insert the connector, you should feel it click into place; if you d
 https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=6520eb01-87b3-4520-9109-ac5b0032ea4e[Cabling a single NS224 shelf ]
 +
 
-image:../media/LARGE_drw_a900_NS224_line_art_two shelf_cabling.png[]
-
-+
-
-image:../media/SMALL_drw_a900_NS224_line_art_two shelf_cabling.png[]
-
-image::../media/drw_a900_NS224_one shelf_cabling[]
+image::../media/drw_a900_NS224_one shelf_cabling.png[]
 
 . To complete setting up your system, see link:install_detailed_guide.md#[Completing system setup and configuration].
 
@@ -305,7 +299,8 @@ NOTE: As you insert the connector, you should feel it click into place; if you d
 https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=34098e39-73ad-45de-9af7-ac5b0032ea9a[Cabling two NS224 shelves]
 +
 
-image::../media/drw_a900_NS224_line_art_two shelf_cabling[]
+image:../media/drw_a900_NS224_line_art_two shelf_cabling.png[]
+
 +
 image::../media/drw_a900_NS224_two shelf_cabling.png[]
 
@@ -321,11 +316,43 @@ You can complete the system setup and configuration using cluster discovery with
 [.lead]
 If you have network discovery enabled on your laptop, you can complete system setup and configuration using automatic cluster discovery.
 
-. Use the following animation to set one or more drive shelf IDs:
+. Use the following animation or drawing  to set one or more drive shelf IDs:
 +
 If your system has NS224 drive shelves, the shelves are pre-set to shelf ID 00 and 01. If you want to change the shelf IDs, you must create a tool to insert into the hole where button is located.
 +
 https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=95a29da1-faa3-4ceb-8a0b-ac7600675aa6[Setting SAS or NVMe drive shelf IDs]
+
++
+
+image::../media/drw_power-on_set_shelf_ID_set.png[]
++
+[cols="25h,~"]
+|===
+a|
+image:../media/legend_icon_01.png[] a|
+Remove the end cap.
+a|
+image:../media/legend_icon_02.png[]
+a|
+Press and hold shelf ID button until first digit blinks, then push to advance to 0-9.
+
+Note: The first digit continues to blink
+a|
+image:../media/legend_icon_03.png[]
+a|
+Press and hold shelf ID button until second digit blinks, then push to advance to 0-9.
+Note: The first digit stops blinking, and the second digit continues to blink.
+a|
+image:../media/legend_icon_04.png[]
+a|
+Replace the end cap.
+a|
+image:../media/legend_icon_05.png[]
+a|
+Wait 10 seconds for the Amber LED (!) to appear, then power-cycle the drive
+shelf to set shelf ID.
+
+|===
 
 . Plug the power cords into the controller power supplies, and then connect them to power sources on different circuits.
 . Turn on the power switches to both nodes.
