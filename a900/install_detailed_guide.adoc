@@ -431,7 +431,10 @@ image::../media/drw_9000_cable_console_switch_controller.png[]
 +
 If your system has NS224 drive shelves, the shelves are pre-set to shelf ID 00 and 01. If you want to change the shelf IDs, you must create a tool to insert into the hole where button is located.
 +
+
 https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=95a29da1-faa3-4ceb-8a0b-ac7600675aa6[Setting SAS or NVMe drive shelf IDs]
+
++
 
 image::../media/drw_power-on_set_shelf_ID_set.png[]
 
