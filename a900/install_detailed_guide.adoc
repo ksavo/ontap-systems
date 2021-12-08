@@ -259,7 +259,7 @@ If you have more than one drive shelf stack, see link:../com.netapp.doc.hw-ds-sa
 [.lead]
 You must cable each controller to the NSM modules on the NS224 drive shelf on an AFF A900 system.
 
-* The systems must have at least one X91148A*** module installed in slots 2 and/or 10 for each controller. The animation shows this module installed in both slots 2 and 10.
+* The systems must have at least one X91153A  module installed in slots 2 and/or 10 for each controller. The animation shows this module installed in both slots 2 and 10.
 * Be sure to check the illustration arrow for the proper cable connector pull-tab orientation. The cable pull-tab for the storage modules are up, while the pull tabs on the shelves are down.
 +
 
@@ -270,7 +270,7 @@ image::../media/oie_cable_pull_tab_down.gif[]
 +
 NOTE: As you insert the connector, you should feel it click into place; if you do not feel it click, remove it, turn it around and try again.
 
-. Use the following animation or drawings to cable your controllers with two X91148A*** storage modules to a single NS224 drive shelf, or use the diagram to cable your controllers with one X91148A*** storage module to a single NS224 drive shelf.
+. Use the following animation or drawings to cable your controllers with two X91153A  storage modules to a single NS224 drive shelf, or use the diagram to cable your controllers with one X91153A  storage module to a single NS224 drive shelf.
 +
 https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=6520eb01-87b3-4520-9109-ac5b0032ea4e[Cabling a single NS224 shelf ]
 +
@@ -283,7 +283,7 @@ image::../media/drw_a900_NS224_one shelf_cabling.png[]
 
 [.lead]
 You must cable each controller to the NSM modules on the NS224 drive shelves.
-* The systems must have two X91148A*** modules, per controller, installed in slots 2 and 10.
+* The systems must have two X91153A  modules, per controller, installed in slots 2 and 10.
 * Be sure to check the illustration arrow for the proper cable connector pull-tab orientation. The cable pull-tab for the storage modules are up, while the pull tabs on the shelves are down.
 +
 
@@ -359,6 +359,10 @@ shelf to set shelf ID.
 +
 https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=bb04eb23-aa0c-4821-a87d-ab2300477f8b[Turn on the power to the controllers]
 +
+
+image::../media/drw_a900_power-on.png[]
+
++
 NOTE: Initial booting may take up to eight minutes.
 
 . Make sure that your laptop has network discovery enabled.
@@ -368,6 +372,10 @@ See your laptop's online help for more information.
 . Use the following animation to connect your laptop to the Management switch.
 +
 https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=d61f983e-f911-4b76-8b3a-ab1b0066909b[Connecting your laptop to the Management switch]
+
++
+image::../media/dwr_laptop_to_switch_only.png[]
+
 
 . Select an ONTAP icon listed to discover:
 +
@@ -425,11 +433,45 @@ If your system has NS224 drive shelves, the shelves are pre-set to shelf ID 00 a
 +
 https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=95a29da1-faa3-4ceb-8a0b-ac7600675aa6[Setting SAS or NVMe drive shelf IDs]
 
+image::../media/drw_power-on_set_shelf_ID_set.png[]
+
+[cols="25h,~"]
+|===
+a|
+image:../media/legend_icon_01.png[] a|
+Remove the end cap.
+a|
+image:../media/legend_icon_02.png[]
+a|
+Press and hold shelf ID button until first digit blinks, then push to advance to 0-9.
+
+Note: The first digit continues to blink
+a|
+image:../media/legend_icon_03.png[]
+a|
+Press and hold shelf ID button until second digit blinks, then push to advance to 0-9.
+Note: The first digit stops blinking, and the second digit continues to blink.
+a|
+image:../media/legend_icon_04.png[]
+a|
+Replace the end cap.
+a|
+image:../media/legend_icon_05.png[]
+a|
+Wait 10 seconds for the Amber LED (!) to appear, then power-cycle the drive
+shelf to set shelf ID.
+
+|===
+
+
 . Plug the power cords into the controller power supplies, and then connect them to power sources on different circuits.
 . Turn on the power switches to both nodes.
 +
+
 https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=bb04eb23-aa0c-4821-a87d-ab2300477f8b[Turn on the power to the controllers]
-+
+
+image::../media/drw_a900_power-on.png[]
+
 NOTE: Initial booting may take up to eight minutes.
 
 . Assign an initial node management IP address to one of the nodes.
