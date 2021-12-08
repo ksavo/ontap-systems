@@ -9,7 +9,7 @@ summary: You can hot-add an NS224 drive shelf after your HA pair meets certain r
 :imagesdir: ../media/
 
 [.lead]
-TEST You can hot-add an NS224 drive shelf after your HA pair meets certain requirements, and after the preparation tasks applicable to your HA pair are completed.
+You can hot-add an NS224 drive shelf after your HA pair meets certain requirements, and after the preparation tasks applicable to your HA pair are completed.
 
 == Requirements for a hot-add
 
