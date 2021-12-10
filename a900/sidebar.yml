@@ -56,7 +56,7 @@ entries:
         url: /a900/controller_replace.html
       - title: Restore and verify the system configuration
         url: /a900/controller_replace_system_config_restore_and_verify.html
-      - title: Recable the system and reassign disks
+      - title: Recable the system
         url: /a900/controller_replace_recable_reassign_disks.html
       - title: Complete system restoration
         url: /a900/controller_replace_complete_system_restoration.html

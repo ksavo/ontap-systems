@@ -1,10 +1,10 @@
 ---
 permalink: a900/install_detailed_guide.html
 sidebar: sidebar
-keywords: FAS9000 AFF A700
+keywords: AFF A900
 summary: 'This guide gives detailed step-by-step instructions for installing a typical NetApp system.'
 ---
-= Detailed guide - AFF A700 and FAS9000
+= Detailed guide - AFF 900
 :icons: font
 :imagesdir: ../media/
 
@@ -20,7 +20,7 @@ You need to have access to the Hardware Universe for information about site requ
 
 https://hwu.netapp.com[NetApp Hardware Universe]
 
-http://mysupport.netapp.com/documentation/productlibrary/index.html?productID=62286[Find the Release Notes for your version of ONTAP 9]
+http://mysupport.netapp.com/documentation/productlibrary/index.html?productID=62286[Find the Release Notes for your version of ONTAP 9^]
 
 You need to provide the following at your site:
 
@@ -42,90 +42,103 @@ https://hwu.netapp.com[NetApp Hardware Universe]
 |===
 | Type of cable...| Part number and length| Connector type| For...
 a|
-10 GbE network cable
+25 GbE data Cable
 a|
-    X6566B-2-R6, (112-00299), 2m
-+
-X6566B-3-R6, 112-00300, 3m
-+
-X6566B-5-R6 , 112-00301, 5m
-a|
-image:../media/oie_cable_sfp_gbe_copper.gif[]
+X66240A-05 (112-00639), 0.5m
+
+X66240A-2 (112-00598), 2m
+
+X66240A-5 (112-00600), 5m
+|
+image:../media/oie_cable_sfp_gbe_copper.png[]
 a|
 Network cable
 a|
-    40 GbE network cable
-+
-40 GbE cluster interconnect
+32 Gb FC (SFP+ Op)
 a|
-    X66100-1,112-00542, 1m
-+
-X66100-3,112-00543, 3m
-a|
-image:../media/oie_cable_100gbe_qsfp28.png[]
-a|
-    40 GbE network
-+
-Cluster interconnect
-a|
-    100 GbE network cable
-+
-100 GbE storage cable
-a|
-    X66211A-05 (112-00595), 0.5m
-+
-X66211A-1 (112-00573), 1m
-+
-X66211A-2 (112-00574), 2m
-+
-X66211A-5 (112-00574), 5m
-a|
-image:../media/oie_cable_100gbe_qsfp28.png[]
-a|
-    Network cable
-+
-Storage cable
-+
-NOTE: This cable applies to AFF A700 only.
+X66250-2 (112-00342), 2m
+
+X66250-5 (112-00344), 5m
+
+X66250-15 (112-00346), 15m
 
 a|
-Optical network cables (order dependent)
+
+image:../media/oie_cable_sfp_gbe_copper.png[]
+
 a|
-    X6553-R6 (112-00188), 2m
-+
-X6536-R6 (112-00090), 5m
+FC optical network cable
 a|
-image:../media/oie_cable_fiber_lc_connector.gif[]
+40 GbE network cable
 a|
-FC host network
+X66100-1 (112-00542), 1m
+
+X66100-3 (112-00543), 3m
+
+X66100-5 (112-00544), 5m
 a|
-Cat 6, RJ-45 (order dependant)
+
+image:../media/oie_cable100_gbe_qsfp28.png[]
+
 a|
-    Part numbers X6585-R6 (112-00291), 3m
-+
-X6562-R6 (112-00196), 5m
+Ethernet data, cluster
+network
 a|
-image:../media/oie_cable_rj45.png[]
+100 GbE cable
+
 a|
-Management network and Ethernet data
+X66211B-1 (112-00573), 1m
+
+X66211B-2 (112-00574), 2m
+
+X66211B-5 (112-00576), 5m
 a|
-Storage
+
+image:../media/oie_cable100_gbe_qsfp28.png[]
+
 a|
-    X66031A (112-00436), 1m
-+
+Network,
+
+NVME storage,
+
+Ethernet data,
+
+cluster network
+
+a|
+Optical cables
+a|
+X66031A (112-00436), 1m
+
 X66032A (112-00437), 2m
-+
+
 X66033A (112-00438), 3m
 a|
-image:../media/oie_cable_mini_sas_hd_to_mini_sas_hd.png[]
+
+image:../media/oie_cable_fiber_lc_connector.gif[]
+
 a|
-Storage
+FC optical network
+a|
+Cat 6, RJ-45 (order dependent)
+a|
+Part numbers X6585-R6 (112-00291), 3m
+
+X6562-R6 (112-00196), 5m
+a|
+
+image:../media/oie_cable_rj45.png[]
+
+a|
+Management network and Ethernet data
 a|
 Micro-USB console cable
 a|
 Not applicable
 a|
-image:../media/oie_cable_micro_usb.gif[]
+
+image:../media/oie_cable_micro_usb.png[]
+
 a|
 Console connection during software setup on non-Windows or Mac laptop/console
 a|
@@ -133,16 +146,19 @@ Power cables
 a|
 Not applicable
 a|
+
 image:../media/oie_cable_power.png[]
+
 a|
+
 Powering up the system
 |===
 
-. Review the _NetApp ONTAP Confiuration Guide_ and collect the required information listed in that guide.
+. Review the _NetApp ONTAP Configuration Guide_ and collect the required information listed in that guide.
 +
 https://library.netapp.com/ecm/ecm_download_file/ECMLP2862613[ONTAP Configuration Guide]
 
-== Step 1: Install the hardware
+== Step 2: Install the hardware
 
 [.lead]
 You need to install your system in a 4-post rack or NetApp system cabinet, as applicable.
@@ -160,7 +176,7 @@ image::../media/drw_9000_cable_management_arms.png[]
 
 . Place the bezel on the front of the system.
 
-== Step 2: Cable controllers to your network
+== Step 3: Cable controllers to your network
 
 [.lead]
 You can cable the controllers to your network by using the two-node switchless cluster method or by using the cluster interconnect network.
@@ -178,11 +194,15 @@ image::../media/oie_cable_pull_tab_up.gif[]
 
 NOTE: As you insert the connector, you should feel it click into place; if you do not feel it click, remove it, turn it around and try again.
 
-. Use the animation to complete the cabling between the controllers and to the switches:
+. Use the animation or illustration to complete the cabling between the controllers and to the switches:
 +
-https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=7a55b98a-e8b8-41d5-821f-ac5b0032ead0[Cabling a two-node switchless cluster] https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=7a55b98a-e8b8-41d5-821f-ac5b0032ead0[Cabling a two-node switchless cluster]
+https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=7a55b98a-e8b8-41d5-821f-ac5b0032ead0[Cabling a two-node switchless cluster need animation request^]*****
++
 
-. To cable your storage, see link:install_detailed_guide.md#[Cabling controllers to drive shelves]
+image::../media/drw_a900_tnsc_network_cabling.png[]
+
++
+. To cable your storage, see link:install_detailed_guide.md#[Cabling controllers to drive shelves^]
 
 === Option 2: Switched cluster
 
@@ -197,18 +217,22 @@ image::../media/oie_cable_pull_tab_up.gif[]
 
 NOTE: As you insert the connector, you should feel it click into place; if you do not feel it click, remove it, turn it around and try again.
 
-. Use the animation to complete the cabling between the controllers and to the switches:
+. Use the animation or illustration to complete the cabling between the controllers and to the switches:
 +
-https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=6381b3f1-4ce5-4805-bd0a-ac5b0032f51d[Switched clsuter cabling] https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=6381b3f1-4ce5-4805-bd0a-ac5b0032f51d[Switche cluster cabling]
+https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=6381b3f1-4ce5-4805-bd0a-ac5b0032f51d[Switched cluster cabling^]
++
 
-. Cable your storage: link:install_detailed_guide.md#[Cabling controllers to drive shelves]
+image::../media/drw_a900_switched_network_cabling.png[]
 
-== Step 3: Cable controllers to drive shelves
++
+. Cable your storage: link:install_detailed_guide.md#[Cabling controllers to drive shelves^]
 
-=== Option 1: Cable the controllers to DS212C or DS224C drive shelves
+== Step 4: Cable controllers to drive shelves
+
+=== Option 1: Cable the controllers to DS224C drive shelves
 
 [.lead]
-You must cable the shelf-to-shelf connections, and then cable both controllers to the DS212C or DS224C drive shelves.
+You must cable the shelf-to-shelf connections, and then cable both controllers to the DS224C drive shelves.
 
 The cables are inserted into the drive shelf with the pull-tabs facing down, while the other end of the cable is inserted into the controller storage modules with the pull-tabs up.
 
@@ -218,70 +242,70 @@ image::../media/oie_cable_pull_tab_up.gif[]
 
 . Use the following animation to cable your drive shelves to your controllers.
 +
-NOTE: The examples use DS224C shelves. Cabling is similar with other supported SAS drive shelves.
-
- ** Cabling SAS shelves in FAS9000, AFF A700, and ASA AFF A700, ONTAP 9.7 and earlier:
-+
-https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=a312e09e-df56-47b3-9b5e-ab2300477f67[Cabling SAS storage - ONTAP 9.7 and earlier]https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=a312e09e-df56-47b3-9b5e-ab2300477f67[Cabling external storage - ONTAP 9.7 and earlier]
-
- ** Cabling SAS shelves in FAS9000, AFF A700, and ASA AFF A700, ONTAP 9.8 and later:
-+
-https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=61d23302-9526-4a2b-9335-ac5b0032eafd[Cabling SAS storage - ONTAP 9.8 and later]https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=61d23302-9526-4a2b-9335-ac5b0032eafd[Cabling SAS storage - ONTAP 9.8 and later]
+PANAPTO LINK HERE
 
 +
-If you have more than one drive shelf stack, see the _Installation and Cabling Guide_ for your drive shelf type.
+
+image::../media/drw_a900_SAS shelf_cabling.png[]
+
 +
-link:../com.netapp.doc.hw-ds-sas3-icg/home.html[Installing and cabling]
+If you have more than one drive shelf stack, see link:../com.netapp.doc.hw-ds-sas3-icg/home.html[Installing and cabling^] for your drive shelf type.
++
 
-. To complete setting up your system, see link:install_detailed_guide.md#[Completing system setup and configuration]
+. To complete setting up your system, see link:install_detailed_guide.md#[Completing system setup and configuration^]
 
-=== Option 2: Cable the controllers to a single NS224 drive shelf in AFF A700 and ASA AFF A700 systems running ONTAP 9.8 and later only
+=== Option 2: Cable the controllers to a single NS224 drive shelf in AFF A900
 
 [.lead]
-You must cable each controller to the NSM modules on the NS224 drive shelf on an AFF A700 or ASA AFF A700 running system ONTAP 9.8 or later.
+You must cable each controller to the NSM modules on the NS224 drive shelf on an AFF A900 system.
 
-* This task applies to AFF A700 and ASA AFF A700 running ONTAP 9.8 or later only.
-* The systems must have at least one X91148A module installed in slots 3 and/or 7 for each controller. The animation shows this module installed in both slots 3 and 7.
 * Be sure to check the illustration arrow for the proper cable connector pull-tab orientation. The cable pull-tab for the storage modules are up, while the pull tabs on the shelves are down.
 +
+
 image::../media/oie_cable_pull_tab_up.gif[]
 +
+
 image::../media/oie_cable_pull_tab_down.gif[]
 +
 NOTE: As you insert the connector, you should feel it click into place; if you do not feel it click, remove it, turn it around and try again.
 
-. Use the following animation to cable your controllers with two X91148A storage modules to a single NS224 drive shelf, or use the diagram to cable your controllers with one X91148A storage module to a single NS224 drive shelf.
+. Use the following animation or drawings to cable your controllers with two X91153A  storage modules to a single NS224 drive shelf, or use the diagram to cable your controllers with one X91153A  storage module to a single NS224 drive shelf.
 +
-https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=6520eb01-87b3-4520-9109-ac5b0032ea4e[Cabling a single NS224 shelf - ONTAP 9.8 and later] https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=6520eb01-87b3-4520-9109-ac5b0032ea4e[Cabling a single NSS shelf - ONTAP 9.8 and later]
+https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=6520eb01-87b3-4520-9109-ac5b0032ea4e[Cabling a single NS224 shelf ^]
 +
-image::../media/drw_ns224_a700_1shelf.png[]
 
-. To complete setting up your system, see link:install_detailed_guide.md#[Completing system setup and configuration].
+image::../media/drw_a900_NS224_one shelf_cabling.png[]
 
-=== Option 3: CCable the controllers to two NS224 drive shelves in AFF A700 and ASA AFF A700 systems running ONTAP 9.8 and later only
+. To complete setting up your system, see link:install_detailed_guide.md#[Completing system setup and configuration^].
+
+=== Option 3: Cable the controllers to two NS224 drive shelves in AFF A900
 
 [.lead]
-You must cable each controller to the NSM modules on the NS224 drive shelves on an AFF A700 or ASA AFF A700 running system ONTAP 9.8 or later.
+You must cable each controller to the NSM modules on the NS224 drive shelves.
 
-* This task applies to AFF A700 and ASA AFF A700 running ONTAP 9.8 or later only.
-* The systems must have two X91148A modules, per controller, installed in slots 3 and 7.
 * Be sure to check the illustration arrow for the proper cable connector pull-tab orientation. The cable pull-tab for the storage modules are up, while the pull tabs on the shelves are down.
 +
+
 image::../media/oie_cable_pull_tab_up.gif[]
-+
+
 image::../media/oie_cable_pull_tab_down.gif[]
-+
+
+
 NOTE: As you insert the connector, you should feel it click into place; if you do not feel it click, remove it, turn it around and try again.
 
 . Use the following animation or diagram to cable your controllers to two NS224 drive shelves.
 +
-https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=34098e39-73ad-45de-9af7-ac5b0032ea9a[Cabling two NS224 shelves - ONTAP 9.8 and later] https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=34098e39-73ad-45de-9af7-ac5b0032ea9a[Cabling two NS224 shelves - ONTAP 9.8 and later]
+https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=34098e39-73ad-45de-9af7-ac5b0032ea9a[Cabling two NS224 shelves^]
 +
-image::../media/drw_ns224_a700_2shelves.png[]
 
-. To complete setting up your system, see link:install_detailed_guide.md#[Completing system setup and configuration].
+image:../media/drw_a900_NS224_line_art_two shelf_cabling.png[]
 
-== Step 4: Complete system setup and configuration
++
+image::../media/drw_a900_NS224_two shelf_cabling.png[]
+
+. To complete setting up your system, see link:install_detailed_guide.md#[Completing system setup and configuration^].
+
+== Step 5: Complete system setup and configuration
 
 [.lead]
 You can complete the system setup and configuration using cluster discovery with only a connection to the switch and laptop, or by connecting directly to a controller in the system and then connecting to the management switch.
@@ -291,16 +315,52 @@ You can complete the system setup and configuration using cluster discovery with
 [.lead]
 If you have network discovery enabled on your laptop, you can complete system setup and configuration using automatic cluster discovery.
 
-. Use the following animation to set one or more drive shelf IDs:
+. Use the following animation or drawing  to set one or more drive shelf IDs:
 +
 If your system has NS224 drive shelves, the shelves are pre-set to shelf ID 00 and 01. If you want to change the shelf IDs, you must create a tool to insert into the hole where button is located.
 +
-https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=95a29da1-faa3-4ceb-8a0b-ac7600675aa6[Setting SAS or NVMe drive shelf IDs] https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=95a29da1-faa3-4ceb-8a0b-ac7600675aa6[Setting SAS or NVMe drive shelf IDs]
+https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=95a29da1-faa3-4ceb-8a0b-ac7600675aa6[Setting SAS or NVMe drive shelf IDs^]
+
++
+
+image::../media/drw_power-on_set_shelf_ID_set.png[]
++
+[cols="25h,~"]
+|===
+a|
+image:../media/legend_icon_01.png[] a|
+Remove the end cap.
+a|
+image:../media/legend_icon_02.png[]
+a|
+Press and hold shelf ID button until first digit blinks, then push to advance to 0-9.
+
+Note: The first digit continues to blink
+a|
+image:../media/legend_icon_03.png[]
+a|
+Press and hold shelf ID button until second digit blinks, then push to advance to 0-9.
+Note: The first digit stops blinking, and the second digit continues to blink.
+a|
+image:../media/legend_icon_04.png[]
+a|
+Replace the end cap.
+a|
+image:../media/legend_icon_05.png[]
+a|
+Wait 10 seconds for the Amber LED (!) to appear, then power-cycle the drive
+shelf to set shelf ID.
+
+|===
 
 . Plug the power cords into the controller power supplies, and then connect them to power sources on different circuits.
 . Turn on the power switches to both nodes.
 +
-https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=bb04eb23-aa0c-4821-a87d-ab2300477f8b[Turn on the power to the controllers] https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=bb04eb23-aa0c-4821-a87d-ab2300477f8b[Turn on the power to the controllers]
+https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=bb04eb23-aa0c-4821-a87d-ab2300477f8b[Turn on the power to the controllers^]
++
+
+image::../media/drw_a900_power-on.png[]
+
 +
 NOTE: Initial booting may take up to eight minutes.
 
@@ -310,7 +370,11 @@ See your laptop's online help for more information.
 
 . Use the following animation to connect your laptop to the Management switch.
 +
-https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=d61f983e-f911-4b76-8b3a-ab1b0066909b[Connecting your laptop to the Management switch] https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=d61f983e-f911-4b76-8b3a-ab1b0066909b[Connecting your laptop to the Management switch]
+https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=d61f983e-f911-4b76-8b3a-ab1b0066909b[Connecting your laptop to the Management switch^]
+
++
+image::../media/dwr_laptop_to_switch_only.png[]
+
 
 . Select an ONTAP icon listed to discover:
 +
@@ -323,29 +387,31 @@ image::../media/drw_autodiscovery_controler_select.png[]
 
 +
 NOTE: XXXXX is the system serial number for the target node.
+
 +
+
 System Manager opens.
 
 . Use System Manager guided setup to configure your system using the data you collected in the _NetApp ONTAP Configuration Guide_.
 +
-https://library.netapp.com/ecm/ecm_download_file/ECMLP2862613[ONTAP Configuration Guide]
+https://library.netapp.com/ecm/ecm_download_file/ECMLP2862613[ONTAP Configuration Guide^]
 
 . Set up your account and download Active IQ Config Advisor:
  .. Log in to your existing account or create an account.
 +
-https://mysupport.netapp.com/eservice/public/now.do[NetApp Support Registration]
+https://mysupport.netapp.com/eservice/public/now.do[NetApp Support Registration^]
 
  .. Register your system.
 +
-https://mysupport.netapp.com/eservice/registerSNoAction.do?moduleName=RegisterMyProduct[NetApp Product Registration]
+https://mysupport.netapp.com/eservice/registerSNoAction.do?moduleName=RegisterMyProduct[NetApp Product Registration^]
 
  .. Download Active IQ Config Advisor.
 +
-https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor[NetApp Downloads: Config Advisor]
+https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor[NetApp Downloads: Config Advisor^]
 . Verify the health of your system by running Config Advisor.
-. After you have completed the initial configuration, go to the https://www.netapp.com/data-management/oncommand-system-documentation/[ONTAP & ONTAP System Manager Documentation Resources] page for information about configuring additional features in ONTAP.
+. After you have completed the initial configuration, go to the https://www.netapp.com/data-management/oncommand-system-documentation/[ONTAP & ONTAP System Manager Documentation Resources^] page for information about configuring additional features in ONTAP.
 
-=== Option 2: If you are not using a Windows or Mac laptop
+=== Option 2: If network discovery is not enabled
 
 [.lead]
 If you are not using a Windows or Mac-based laptop or console or if auto discovery is not enabled, you must complete the configuration and setup using this task.
@@ -362,15 +428,51 @@ image::../media/drw_9000_cable_console_switch_controller.png[]
  .. Assign a TCP/IP address to the laptop or console, using one that is on the management subnet.
 . Use the following animation to set one or more drive shelf IDs:
 +
+
 If your system has NS224 drive shelves, the shelves are pre-set to shelf ID 00 and 01. If you want to change the shelf IDs, you must create a tool to insert into the hole where button is located.
 +
-https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=95a29da1-faa3-4ceb-8a0b-ac7600675aa6[Setting SAS or NVMe drive shelf IDs] https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=95a29da1-faa3-4ceb-8a0b-ac7600675aa6[Setting SAS or NVMe drive shelf IDs]
+https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=95a29da1-faa3-4ceb-8a0b-ac7600675aa6[Setting SAS or NVMe drive shelf IDs^]
+
++
+
+image::../media/drw_power-on_set_shelf_ID_set.png[]
++
+[cols="25h,~"]
+|===
+a|
+image:../media/legend_icon_01.png[] a|
+Remove the end cap.
+a|
+image:../media/legend_icon_02.png[]
+a|
+Press and hold shelf ID button until first digit blinks, then push to advance to 0-9.
+
+Note: The first digit continues to blink
+a|
+image:../media/legend_icon_03.png[]
+a|
+Press and hold shelf ID button until second digit blinks, then push to advance to 0-9.
+Note: The first digit stops blinking, and the second digit continues to blink.
+a|
+image:../media/legend_icon_04.png[]
+a|
+Replace the end cap.
+a|
+image:../media/legend_icon_05.png[]
+a|
+Wait 10 seconds for the Amber LED (!) to appear, then power-cycle the drive
+shelf to set shelf ID.
+
+|===
 
 . Plug the power cords into the controller power supplies, and then connect them to power sources on different circuits.
 . Turn on the power switches to both nodes.
 +
-https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=bb04eb23-aa0c-4821-a87d-ab2300477f8b[Turn on the power to the controllers] https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=bb04eb23-aa0c-4821-a87d-ab2300477f8b[Turn on the power to the controllers]
-+
+
+https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=bb04eb23-aa0c-4821-a87d-ab2300477f8b[Turn on the power to the controllers^]
+
+image::../media/drw_a900_power-on.png[]
+
 NOTE: Initial booting may take up to eight minutes.
 
 . Assign an initial node management IP address to one of the nodes.
@@ -397,22 +499,23 @@ NOTE: Check your laptop or console's online help if you do not know how to confi
 . Using System Manager on your laptop or console, configure your cluster:
  .. Point your browser to the node management IP address.
 +
-NOTE: The format for the address is https://x.x.x.x.
+NOTE: The format for the address is
++https://x.x.x.x+.
 
  .. Configure the system using the data you collected in the _NetApp ONTAP Configuration guide_.
 +
-https://library.netapp.com/ecm/ecm_download_file/ECMLP2862613[ONTAP Configuration Guide]
+https://library.netapp.com/ecm/ecm_download_file/ECMLP2862613[ONTAP Configuration Guide^]
 . Set up your account and download Active IQ Config Advisor:
  .. Log in to your existing account or create an account.
 +
-https://mysupport.netapp.com/eservice/public/now.do[NetApp Support Registration]
+https://mysupport.netapp.com/eservice/public/now.do[NetApp Support Registration^]
 
  .. Register your system.
 +
-https://mysupport.netapp.com/eservice/registerSNoAction.do?moduleName=RegisterMyProduct[NetApp Product Registration]
+https://mysupport.netapp.com/eservice/registerSNoAction.do?moduleName=RegisterMyProduct[NetApp Product Registration^]
 
  .. Download Active IQ Config Advisor.
 +
-https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor[NetApp Downloads: Config Advisor]
+https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor[NetApp Downloads: Config Advisor^]
 . Verify the health of your system by running Config Advisor.
-. After you have completed the initial configuration, go to the https://www.netapp.com/data-management/oncommand-system-documentation/[ONTAP & ONTAP System Manager Documentation Resources] page for information about configuring additional features in ONTAP.
+. After you have completed the initial configuration, go to the https://www.netapp.com/data-management/oncommand-system-documentation/[ONTAP & ONTAP System Manager Documentation Resources^] page for information about configuring additional features in ONTAP.
