@@ -356,7 +356,7 @@ shelf to set shelf ID.
 . Plug the power cords into the controller power supplies, and then connect them to power sources on different circuits.
 . Turn on the power switches to both nodes.
 +
-https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=bb04eb23-aa0c-4821-a87d-ab2300477f8b[Turn on the power to the controllers^]
+https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=a905e56e-c995-4704-9673-adfa0005a891[Turn on the power to the controllers^]
 +
 
 image::../media/drw_a900_power-on.png[]
