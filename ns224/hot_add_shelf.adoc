@@ -18,11 +18,11 @@ Your HA pair must meet certain requirements before hot-adding an NS224 drive she
 
 * Your platform model and version of ONTAP must support the NS224 shelf and drives you are hot-adding.
 +
-https://hwu.netapp.com[NetApp Hardware Universe]
+https://hwu.netapp.com[NetApp Hardware Universe^]
 
 * You must have the correct number and type of cables to connect the shelf.
 +
-https://hwu.netapp.com[NetApp Hardware Universe]
+https://hwu.netapp.com[NetApp Hardware Universe^]
 
 * Your HA pair must have enough available RoCE capable ports to support the number of shelves you are hot-adding.
 +
@@ -30,7 +30,7 @@ For each shelf you are hot-adding, you need a minimum of two RoCE capable ports 
 +
 If your HA pair does not have enough available RoCE capable ports, and your platform model supports the use of RoCE capable PCIe cards or I/O modules, you must have installed the additional cards or I/O modules into the correct controller slots, as supported by your platform model.
 +
-https://hwu.netapp.com[NetApp Hardware Universe]
+https://hwu.netapp.com[NetApp Hardware Universe^]
 +
 [NOTE]
 ====
@@ -40,19 +40,19 @@ Non-dedicated RoCE capable ports must be configured for storage use (not network
 ====
 * If you have an AFF A700 HA pair and you are hot-adding the initial NS224 drive shelf (no NS224 drive shelf exists in your HA pair), you must have installed a core dump module (X9170A, NVMe 1TB SSD) in each controller to support core dumps (store core files).
 +
-link:../fas9000/caching-module-and-core-dump-module-replace.html[Replace the caching module or add/replace a core dump module - AFF A700 and FAS9000]
+link:../fas9000/caching-module-and-core-dump-module-replace.html[Replace the caching module or add/replace a core dump module - AFF A700 and FAS9000^]
 
 * Your HA pair must have less than the maximum number of shelves supported, by at least the number of shelves you plan to hot-add.
 +
 You cannot have exceeded the maximum number of shelves supported by your HA pair after hot-adding shelves.
 +
-https://hwu.netapp.com[NetApp Hardware Universe]
+https://hwu.netapp.com[NetApp Hardware Universe^]
 
 * If you are hot-adding a shelf to an HA pair that already has an NS224 shelf, your HA pair cannot have any storage cabling error messages, and it must be cabled as multipath HA.
 +
 You can run Active IQ Config Advisor to view any storage cabling error messages and the corrective actions you should take.
 +
-https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor[NetApp Downloads: Config Advisor]
+https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor[NetApp Downloads: Config Advisor^]
 
 * You need a paper clip with one side straightened or a narrow tipped ballpoint pen.
 +
@@ -69,19 +69,19 @@ You should familiarize yourself with best practices and aspects about this proce
 +
 Having the current version of the DQP installed allows your system to recognize and use newly qualified drives. This avoids system event messages about having noncurrent drive information and prevention of drive partitioning because drives are not recognized. The DQP also notifies you of noncurrent drive firmware.
 +
-https://mysupport.netapp.com/NOW/download/tools/diskqual/[NetApp Downloads: Disk Qualification Package]
+https://mysupport.netapp.com/NOW/download/tools/diskqual/[NetApp Downloads: Disk Qualification Package^]
 
 * *Best practice:* The best practice is to run Active IQ Config Advisor before and after hot-adding a shelf.
 +
 Running Active IQ Config Advisor before hot-adding a shelf provides a snap shot of the existing shelf Ethernet (ENET) connectivity, verifies NVMe shelf module (NSM) firmware versions, and allows you to verify a shelf ID already in use in the HA pair. Running Active IQ Config Advisor after hot-adding a shelf allows you to verify shelves are cabled correctly and that shelf IDs are unique within the HA pair.
 +
-https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor[NetApp Downloads: Config Advisor]
+https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor[NetApp Downloads: Config Advisor^]
 
 * *Best practice:* The best practice is to have current versions of NVMe shelf module (NSM) firmware and drive firmware on your system before adding a new shelf.
 +
-https://mysupport.netapp.com/site/downloads/firmware/disk-shelf-firmware[NetApp Downloads: Disk Shelf Firmware]
+https://mysupport.netapp.com/site/downloads/firmware/disk-shelf-firmware[NetApp Downloads: Disk Shelf Firmware^]
 +
-https://mysupport.netapp.com/site/downloads/firmware/disk-drive-firmware[NetApp Downloads: Disk Drive Firmware]
+https://mysupport.netapp.com/site/downloads/firmware/disk-drive-firmware[NetApp Downloads: Disk Drive Firmware^]
 +
 NOTE: Do not revert firmware to a version that does not support your shelf and its components.
 
@@ -194,10 +194,10 @@ If your HA pair is running ONTAP 9.8 or later, the non-dedicated ports display `
 +
 If your HA pair is running ONTAP 9.7 or 9.6, the non-dedicated ports, which display `false` in the `Is Dedicated?` column, also display `enabled` in the `State` column.
 
-=== Prepare an AFF A700, AFF A800, or AFF A400, HA pair to hot-add a second shelf
+=== Prepare an AFF A700, AFF A800, or AFF A400 HA pair to hot-add a second shelf
 
 [.lead]
-If you have an AFF A700, AFF A800, or AFF A400, HA pair with one NS224 drive shelf that is cabled to one set of RoCE capable ports on each controller, you must recable the shelf (after you have installed the additional RoCE capable PCIe cards or I/O modules) across both sets of ports on each controller, before hot-adding the second shelf.
+If you have an AFF A700, AFF A800, or AFF A400 HA pair with one NS224 drive shelf that is cabled to one set of RoCE capable ports on each controller, you must recable the shelf (after you have installed the additional RoCE capable PCIe cards or I/O modules) across both sets of ports on each controller, before hot-adding the second shelf.
 
 .Before you begin
 
@@ -276,7 +276,7 @@ If needed, you can reference cabling illustrations showing an existing single sh
 +
 If any cabling errors are generated, follow the corrective actions provided.
 +
-https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor[NetApp Downloads: Config Advisor]
+https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor[NetApp Downloads: Config Advisor^]
 
 === Prepare to manually assign drive ownership for a hot-add
 
@@ -338,7 +338,7 @@ A shelf powers up when connected to a power source; it does not have power switc
 +
 More detailed instructions are available:
 +
-link:change-shelf-id.html[Change a shelf ID - NS224 shelves]
+link:change-shelf-id.html[Change a shelf ID - NS224 shelves^]
 
  .. Remove the left end cap and locate the small hole to the right of the LEDs.
  .. Insert the end of a paper clip or similar tool into the small hole to reach the shelf ID button.
@@ -421,7 +421,7 @@ image::../media/drw_ns224_aff250_fas500f_1shelf.gif[]
 +
 If any cabling errors are generated, follow the corrective actions provided.
 +
-https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor[NetApp Downloads: Config Advisor]
+https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor[NetApp Downloads: Config Advisor^]
 
 . If you disabled automatic drive assignment as part of the preparation for this procedure, you need to manually assign drive ownership and then reenable automatic drive assignment, if needed.
 +
@@ -502,7 +502,7 @@ image::../media/drw_ns224_a700_2shelves.png[]
 +
 If any cabling errors are generated, follow the corrective actions provided.
 +
-https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor[NetApp Downloads: Config Advisor]
+https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor[NetApp Downloads: Config Advisor^]
 
 . If you disabled automatic drive assignment as part of the preparation for this procedure, you need to manually assign drive ownership and then reenable automatic drive assignment, if needed.
 +
@@ -585,7 +585,7 @@ image::../media/drw_ns224_a800_2shelves.png[]
 +
 If any cabling errors are generated, follow the corrective actions provided.
 +
-https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor[NetApp Downloads: Config Advisor]
+https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor[NetApp Downloads: Config Advisor^]
 
 . If you disabled automatic drive assignment as part of the preparation for this procedure, you need to manually assign drive ownership and then reenable automatic drive assignment, if needed.
 +
@@ -662,7 +662,7 @@ image::../media/drw_ns224_a400_2shelves.png[]
 +
 If any cabling errors are generated, follow the corrective actions provided.
 +
-https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor[NetApp Downloads: Config Advisor]
+https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor[NetApp Downloads: Config Advisor^]
 
 . If you disabled automatic drive assignment as part of the preparation for this procedure, you need to manually assign drive ownership and then re enable automatic drive assignment, if needed.
 +
@@ -708,7 +708,7 @@ image::../media/drw_ns224_a320_2shelves_direct_attached.png[]
 +
 If any cabling errors are generated, follow the corrective actions provided.
 +
-https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor[NetApp Downloads: Config Advisor]
+https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor[NetApp Downloads: Config Advisor^]
 
 . If you disabled automatic drive assignment as part of the preparation for this procedure, you need to manually assign drive ownership and then re enable automatic drive assignment, if needed.
 +
