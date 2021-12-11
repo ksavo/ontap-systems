@@ -49,11 +49,11 @@ image::../media/drw_9000_remove_flashcache.gif[]
 +
 |===
 a|
-image:../media/legend_icon_01.gif[]
+image:../media/legend_icon_01.png[]
 a|
 Orange release button.
 a|
-image:../media/legend_icon_02.gif[]
+image:../media/legend_icon_02.png[]
 a|
 Caching module cam handle.
 |===
@@ -89,9 +89,9 @@ The 1TB cache core dump, X9170A, is only used in the AFF A700 systems. The core 
 image::../media/drw_9000_remove_flashcache.gif[]
 +
 |===
-| image:../media/legend_icon_01.gif[]| Orange release button.
+| image:../media/legend_icon_01.png[]| Orange release button.
 a|
-image:../media/legend_icon_02.gif[]
+image:../media/legend_icon_02.png[]
 a|
 Core dump module cam handle.
 |===

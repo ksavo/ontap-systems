@@ -18,10 +18,10 @@ image::../media/drw_a900_remove_replace_LED_mod.png[]
 
 |===
 a|
-image:../media/legend_icon_01.gif[] a|
+image:../media/legend_icon_01.png[] a|
 Locking button
 a|
-image:../media/legend_icon_02.gif[]
+image:../media/legend_icon_02.png[]
 a|
 USB LED module
 a|

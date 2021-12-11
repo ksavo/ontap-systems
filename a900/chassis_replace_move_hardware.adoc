@@ -27,7 +27,7 @@ image::../media/drw_a900_remove_install_PSU_module.png[]
 +
 |===
 a|
-image:../media/legend_icon_01.gif[] a|
+image:../media/legend_icon_01.png[] a|
 Locking button
 |===
 
@@ -48,8 +48,12 @@ image::../media/drw_a900_remove_install_fan.png[]
 +
 |===
 a|
-image:../media/legend_icon_01.gif[] a|
+image:../media/legend_icon_01.png[] a|
 Orange release button
+a|
+image:../media/legend_icon_02.png[]
+a|
+Slide fan in/out of chassis
 |===
 
 . Set the fan module aside.
@@ -68,10 +72,10 @@ image::../media/drw_a900_remove_PCM.png[]
 +
 |===
 a|
-image:../media/legend_icon_01.gif[] a|
+image:../media/legend_icon_01.png[] a|
 Cam handle release button
 a|
-image:../media/legend_icon_02.gif[]
+image:../media/legend_icon_02.png[]
 a|
 Cam handle
 |===
@@ -109,10 +113,10 @@ image:../media/drw_a900_remove_PCIe_module.png[]
 +
 |===
 a|
-image:../media/legend_icon_01.gif[] a|
+image:../media/legend_icon_01.png[] a|
 Lettered and numbered I/O cam latch
 a|
-image:../media/legend_icon_02.gif[]
+image:../media/legend_icon_02.png[]
 a|
 I/O cam latch completely unlocked
 |===
@@ -132,7 +136,7 @@ image::../media/drw_a900_remove_NV_battery.png[]
 +
 |===
 a|
-image:../media/legend_icon_01.gif[] a|
+image:../media/legend_icon_01.png[] a|
 DCPM module orange locking button
 |===
 

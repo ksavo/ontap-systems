@@ -25,10 +25,10 @@ image::../media/drw_a900_remove_PCM.png[]
 +
 |===
 a|
-image:../media/legend_icon_01.gif[] a|
+image:../media/legend_icon_01.png[] a|
 Cam handle release button
 a|
-image:../media/legend_icon_02.gif[]
+image:../media/legend_icon_02.png[]
 a|
 Cam handle
 |===
@@ -43,7 +43,7 @@ image::../media/drw_a900_PCM_open.png[]
 +
 |===
 a|
-image:../media/legend_icon_01.gif[] a|
+image:../media/legend_icon_01.png[] a|
 Controller module cover locking button
 |===
 
@@ -61,10 +61,10 @@ image::../media/drw_a900_remove_boot_dev.png[]
 +
 |===
 a|
-image:../media/legend_icon_01.gif[] a|
+image:../media/legend_icon_01.png[] a|
 Press release tab
 a|
-image:../media/legend_icon_02.gif[]
+image:../media/legend_icon_02.png[]
 a|
 Boot media
 |===

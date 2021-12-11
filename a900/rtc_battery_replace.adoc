@@ -32,10 +32,10 @@ image::../media/drw_9000_remove_pcm.svg[]
 +
 |===
 a|
-image:../media/legend_icon_01.gif[] a|
+image:../media/legend_icon_01.png[] a|
 Cam handle release button
 a|
-image:../media/legend_icon_02.gif[]
+image:../media/legend_icon_02.png[]
 a|
 Cam handle
 |===
@@ -50,7 +50,7 @@ image::../media/drw_9000_pcm_open.svg[]
 +
 |===
 a|
-image:../media/legend_icon_01.gif[] a|
+image:../media/legend_icon_01.png[] a|
 Controller module cover locking button
 |===
 
@@ -66,10 +66,10 @@ image::../media/drw_9000_remove_rtc_battery.svg[]
 +
 |===
 a|
-image:../media/legend_icon_01.gif[] a|
+image:../media/legend_icon_01.png[] a|
 RTC battery
 a|
-image:../media/legend_icon_02.gif[]
+image:../media/legend_icon_02.png[]
 a|
 RTC battery housing
 |===

@@ -22,12 +22,15 @@ IMPORTANT: You must replace the fan module within two minutes of removing it fro
 +
 IMPORTANT: The fan modules are short. Always support the bottom of the fan module with your free hand so that it does not suddenly drop free from the chassis and injure you.
 +
-image::../media/drw_9000_remove_install_fan.svg[]
+image::../media/drw_a900_remove_install_fan.png[]
 +
 |===
 a|
-image:../media/legend_icon_01.gif[] a|
+image:../media/legend_icon_01.png[] a|
 Orange release button
+a|
+image:../media/legend_icon_02.png[] a|
+Slide fan in/out of chassis
 |===
 
 . Set the fan module aside.

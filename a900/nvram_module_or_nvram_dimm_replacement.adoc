@@ -53,10 +53,10 @@ image::../media/drw_a900_move-remove_NVRAM_module.png[]
 +
 |===
 a|
-image:../media/legend_icon_01.gif[] a|
+image:../media/legend_icon_01.png[] a|
 Lettered and numbered I/O cam latch
 a|
-image:../media/legend_icon_02.gif[]
+image:../media/legend_icon_02.png[]
 a|
 I/O latch completely unlocked
 |===
@@ -66,10 +66,10 @@ image::../media/drw_a900_remove_NVRAM_module_contents.png[]
 +
 |===
 a|
-image:../media/legend_icon_01.gif[] a|
+image:../media/legend_icon_01.png[] a|
 Cover locking button
 a|
-image:../media/legend_icon_02.gif[]
+image:../media/legend_icon_02.png[]
 a|
 DIMM and DIMM ejector tabs
 |===
@@ -101,10 +101,10 @@ image::../media/drw_a900_move-remove_NVRAM_module.png[]
 +
 |===
 a|
-image:../media/legend_icon_01.gif[] a|
+image:../media/legend_icon_01.png[] a|
 Lettered and numbered I/O cam latch
 a|
-image:../media/legend_icon_02.gif[]
+image:../media/legend_icon_02.png[]
 a|
 I/O latch completely unlocked
 |===
@@ -114,10 +114,10 @@ image::../media/drw_a900_remove_NVRAM_module_contents.png[]
 +
 |===
 a|
-image:../media/legend_icon_01.gif[] a|
+image:../media/legend_icon_01.png[] a|
 Cover locking button
 a|
-image:../media/legend_icon_02.gif[]
+image:../media/legend_icon_02.png[]
 a|
 DIMM and DIMM ejector tabs
 |===

@@ -95,19 +95,25 @@ The I/O module disengages from the chassis and moves about 1/2 inch out of the I
  .. Remove the I/O module from the chassis by pulling on the pull tabs on the sides of the module face.
 +
 Make sure that you keep track of which slot the I/O module was in.
++
+https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=3a5b1f6e-15ec-40b4-bb2a-adf9016af7b6[Removing or replacing an I/O module^]
++
 
 image:../media/drw_a900_remove_PCIe_module.png[]
++
 
 |===
 a|
-image:../media/legend_icon_01.gif[] a|
+image:../media/legend_icon_01.png[]a|
 Lettered and numbered I/O cam latch
 a|
-image:../media/legend_icon_02.gif[]
+image:../media/legend_icon_02.png[]
 a|
 I/O cam latch completely unlocked
+
 |===
 
++
 . Install the I/O module into the target slot:
  .. Align the I/O module with the edges of the slot.
  .. Slide the I/O module into the slot until the lettered and numbered I/O cam latch begins to engage with the I/O cam pin.
