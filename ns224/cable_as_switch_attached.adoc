@@ -13,12 +13,12 @@ If you have a system in which the NS224 drive shelves need to be cabled as switc
 
 * Cable NS224 drive shelves through storage switches:
 +
-https://library.netapp.com/ecm/ecm_download_file/ECMLP2876580[Information for cabling switch-attached NS224 drive shelves]
+https://library.netapp.com/ecm/ecm_download_file/ECMLP2876580[Information for cabling switch-attached NS224 drive shelves^]
 
 * Install your storage switches:
 +
-https://docs.netapp.com/us-en/ontap-systems-switches/index.html[AFF and FAS Switch Documentation]
+https://docs.netapp.com/us-en/ontap-systems-switches/index.html[AFF and FAS Switch Documentation^]
 
 * Confirm supported hardware, such as storage switches and cables, for your platform model:
 +
-https://hwu.netapp.com[NetApp Hardware Universe]
+https://hwu.netapp.com[NetApp Hardware Universe^]
