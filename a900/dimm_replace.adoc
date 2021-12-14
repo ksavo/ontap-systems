@@ -30,9 +30,14 @@ To access components inside the controller, you must first remove the controller
 . If you are not already grounded, properly ground yourself.
 . Unplug the cables from the impaired controller module, and keep track of where the cables were connected.
 . Slide the orange button on the cam handle downward until it unlocks.
+
 +
+https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=256721fd-4c2e-40b3-841a-adf2000df5fa[Remove the controller^]
++
+
 image::../media/drw_a900_remove_PCM.png[]
 +
+[cols="1,1"]
 |===
 a|
 image:../media/legend_icon_01.png[] a|
@@ -51,6 +56,7 @@ Make sure that you support the bottom of the controller module as you slide it o
 +
 image::../media/drw_a900_PCM_open.png[]
 +
+[cols="1,1"]
 |===
 a|
 image:../media/legend_icon_01.png[] a|
@@ -73,8 +79,12 @@ image::../media/drw_9000_dimm_map.gif[]
 +
 IMPORTANT: Carefully hold the DIMM by the edges to avoid pressure on the components on the DIMM circuit board.
 +
-image::../media/drw_9000_replace_pcm_dimms.gif[]
 
+https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=db161030-298a-4ae4-b902-adf2000e2aa4[Replae DIMM^]
++
+image::../media/drw_9000_replace_pcm_dimms.gif[]
++
+[cols="1,1"]
 |===
 a|
 image:../media/legend_icon_01.png[] a|
@@ -111,6 +121,7 @@ For HA pairs with two controller modules in the same chassis, the sequence in wh
 +
 image::../media/drw_a900_PCM_open.png[]
 +
+[cols="1,1"]
 |===
 a|
 image:../media/legend_icon_01.png[] a|
@@ -118,7 +129,11 @@ Controller module cover locking button
 |===
 
 . Align the end of the controller module with the opening in the chassis, and then gently push the controller module halfway into the system.
+
 +
+https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=099237f3-d7f2-4749-86e2-adf2000df53c[Install controller]
++
+
 image::../media/drw_a900_remove_PCM.png[]
 +
 |===

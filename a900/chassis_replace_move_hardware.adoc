@@ -22,6 +22,10 @@ Removing the power supplies when replacing a chassis involves turning off, disco
 . Press and hold the orange button on the power supply handle, and then pull the power supply out of the chassis.
 +
 NOTE: When removing a power supply, always use two hands to support its weight.
+
++
+https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=6d0eee92-72e2-4da4-a4fa-adf9016b57ff[Remove/install PSU^]
+
 +
 image::../media/drw_a900_remove_install_PSU_module.png[]
 +
@@ -31,6 +35,7 @@ image:../media/legend_icon_01.png[] a|
 Locking button
 |===
 
++
 . Repeat the preceding steps for any remaining power supplies.
 
 == Step 2: Remove the fans
@@ -43,6 +48,10 @@ To remove the fan modules when replacing the chassis, you must perform a specifi
 . Press the orange button on the fan module and pull the fan module straight out of the chassis, making sure that you support it with your free hand.
 +
 NOTE: The fan modules are short. Always support the bottom of the fan module with your free hand so that it does not suddenly drop free from the chassis and injure you.
++
+
+https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=3c3c8d93-b48e-4554-87c8-adf9016af819[Remove/install fan^]
+
 +
 image::../media/drw_a900_remove_install_fan.png[]
 +
@@ -68,6 +77,9 @@ To replace the chassis, you must remove the controller module or modules from th
 . Unplug the cables from the impaired controller module, and keep track of where the cables were connected.
 . Slide the orange button on the cam handle downward until it unlocks.
 +
+
+https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=256721fd-4c2e-40b3-841a-adf2000df5fa[Remove the controller^]
++
 image::../media/drw_a900_remove_PCM.png[]
 +
 |===
@@ -89,7 +101,7 @@ Make sure that you support the bottom of the controller module as you slide it o
 == Step 4: Remove the I/O modules
 
 [.lead]
-To remove I/O modules from the old chassis, including the NVRAM modules, follow the specific sequence of steps. You do not have to remove the FlashCache module from the NVRAM module when moving it to a new chassis.
+To remove I/O modules from the old chassis, including the NVRAM modules, follow the specific sequence of steps. You do not have to remove the FlashCache module, if present, from the NVRAM module when moving it to a new chassis.
 
 . If you are not already grounded, properly ground yourself.
 . Unplug any cabling associated with the target I/O module.
@@ -108,6 +120,9 @@ The I/O module disengages from the chassis and moves about 1/2 inch out of the I
  .. Remove the I/O module from the chassis by pulling on the pull tabs on the sides of the module face.
 +
 Make sure that you keep track of which slot the I/O module was in.
++
+
+https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=3a5b1f6e-15ec-40b4-bb2a-adf9016af7b6[Remove/install I/O module]
 +
 image:../media/drw_a900_remove_PCIe_module.png[]
 +
@@ -131,6 +146,9 @@ You must remove the de-stage controller power modules from the old chassis in pr
 
 . If you are not already grounded, properly ground yourself.
 . Press the orange locking button on the module handle, and then slide the DCPM module out of the chassis.
++
+
+https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=ade18276-5dbc-4b91-9a0e-adf9016b4e55[Remove/install DCPM]
 +
 image::../media/drw_a900_remove_NV_battery.png[]
 +
@@ -165,6 +183,10 @@ NOTE: If the system is in a system cabinet, you might need to remove the rear ti
 
 [.lead]
 Once the new chassis is installed into the rack or cabinet, you must move the USB LED module from the old chassis to the new chassis.
+
+https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=eb715462-cc20-454f-bcf9-adf9016af84e9[Remove/install USB]
+
+image::../media/drw_a900_remove_replace_LED_mod.png[]
 
 . Locate the USB LED module on the front of the old chassis, directly under the power supply bays.
 . Press the black locking button on the right side of the module to release the module from the chassis, and then slide it out of the old chassis.

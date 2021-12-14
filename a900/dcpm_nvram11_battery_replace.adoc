@@ -26,9 +26,14 @@ The LED will be steady amber if the module is faulty.
 IMPORTANT: The DCPM module must be replaced in the chassis within five minutes of removal or the associated controller will shut down.
 
 . Press the terra-cotta locking button on the module handle, and then slide the DCPM module out of the chassis.
+
++
+https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=ade18276-5dbc-4b91-9a0e-adf9016b4e55[Remove/install DCPM]
+
 +
 image::../media/drw_9000_remove_nv_battery.svg[]
 +
+[cols="1,1"]
 |===
 a|
 image:../media/legend_icon_01.png[] a|
@@ -39,7 +44,7 @@ DCPM module terra-cotta locking button
 +
 NOTE: The module and slot are keyed. Do not force the module into the opening. If the module does not go in easily, realign the module and slide it into the chassis.
 +
-The Amber LED flashes four times upon insertion and the green LED also flashes if the battery is providing a voltage. If it does not flash, it will likely need to be replaced. 
+The Amber LED flashes four times upon insertion and the green LED also flashes if the battery is providing a voltage. If it does not flash, it will likely need to be replaced.
 
 == Step 2: Dispose of batteries
 

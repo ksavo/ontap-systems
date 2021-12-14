@@ -12,10 +12,15 @@ summary: 'You can replace an LED USB module without interrupting service.'
 The LED USB module provides connectivity to console ports and system status. Replacement of this module does not require tools and does not interrupt service.
 
 . Remove the old LED USB module:
+
 +
-image::../media/drw_a900_remove_replace_LED_mod.png[]
+https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=eb715462-cc20-454f-bcf9-adf9016af84e[Remove/install LED-USB module^]
+
 +
 
+image::../media/drw_a900_remove_replace_LED_mod.png[]
++
+[cols="1,1"]
 |===
 a|
 image:../media/legend_icon_01.png[] a|
