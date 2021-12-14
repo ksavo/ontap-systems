@@ -49,12 +49,10 @@ https://docs.netapp.com/us-en/ontap/disks-aggregates/index.html[Disks and aggreg
 
 * For a clustered ONTAP system that is greater than two-nodes, best practice is to have reassigned epsilon to an HA pair other than the one that is undergoing planned maintenance.
 +
-Reassigning epsilon minimizes the risk of unforeseen errors impacting all nodes in a clustered ONTAP system. You can use the following steps to reassign epsilon:
+Reassigning epsilon minimizes the risk of unforeseen errors impacting all nodes in a clustered ONTAP system. You can use the following steps to verify the node holding epsilon and reassign epsilon if needed:
 +
 . Set privilege level to advanced: `set -privilege advanced`
-. Verify the node in the HA pair that is undergoing maintenance does not hold epsilon.
-+
-The output shows `false` in the `Epsilon` column for the nodes not holding epsilon (for the node holding epsilon, the output shows `true`).
+. Verify the node in the HA pair that is undergoing maintenance shows `false` in the output `Epsilon` column (does not hold epsilon).
 . If the node shows `true`, then remove epsilon from the node: `cluster modify -node _node_name_ -epsilon false`
 . Assign epsilon to a node in another HA pair: `cluster modify -node _node_name_ -epsilon true`
 . Return to the admin privilege level: `set -privilege admin`
