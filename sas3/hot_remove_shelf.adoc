@@ -49,9 +49,15 @@ https://docs.netapp.com/us-en/ontap/disks-aggregates/index.html[Disks and aggreg
 
 * For a clustered ONTAP system that is greater than two-nodes, best practice is to have reassigned epsilon to an HA pair other than the one that is undergoing planned maintenance.
 +
-Reassigning epsilon minimizes the risk of unforeseen errors impacting all nodes in a clustered ONTAP system. Information about the role of quorum and epsilon, and the procedure for reassigning epsilon to another node in a cluster can be found in the _System Administration Reference_.
+Reassigning epsilon minimizes the risk of unforeseen errors impacting all nodes in a clustered ONTAP system. You can use the following steps to reassign epsilon:
 +
-http://mysupport.netapp.com/documentation/productlibrary/index.html?productID=62286[Find a System Administration Guide for your version of ONTAP 9]
+. Set privilege level to advanced: `set -privilege advanced`
+. Verify the node in the HA pair that is undergoing maintenance does not hold epsilon.
++
+The output shows `false` in the `Epsilon` column for the nodes not holding epsilon (for the node holding epsilon, the output shows `true`).
+. If the node shows `true`, then remove epsilon from the node: `cluster modify -node _node_name_ -epsilon false`
+. Assign epsilon to a node in another HA pair: `cluster modify -node _node_name_ -epsilon true`
+. Return to the admin privilege level: `set -privilege admin`
 
 * If you are hot-removing a disk shelf from a stack (but keeping the stack), you recable and verify one path at a time (path A then path B) to bypass the disk shelf you are removing so that you always maintain single-path connectivity from the controllers to the stack.
 +
