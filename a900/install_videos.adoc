@@ -1,10 +1,10 @@
 ---
 permalink: a900/install_videos.html
 sidebar: sidebar
-keywords: FAS9000 AFF A700
+keywords: AFF A900
 summary: 'There are two videos; one showing how to rack and cable your system and one showing an example of using the System Manager Guided Setup to perform initial system configuration.'
 ---
-= Video steps - AFF A700 and FAS9000
+= Video steps - AFF A900
 :icons: font
 :imagesdir: ../media/
 
@@ -15,10 +15,10 @@ There are two videos; one showing how to rack and cable your system and one show
 
 The following video shows how to install and cable your new system.
 
-https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=b46575d4-0475-48bd-8772-ac5d012a4e06[Installation and setup of an AFF A700 or FAS9000] https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=b46575d4-0475-48bd-8772-ac5d012a4e06[Installation and setup of an AFF A700 or FAS9000]
+https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=4c222e90-864b-4435-9405-adf200112f3e[AFF A900 Installation and setup instructions^]
 
 == Video two of two: Performing end-to-end software configuration
 
 The following video shows end-to-end software configuration for systems running ONTAP 9.2 and later.
 
-https://www.youtube.com/embed/WAE0afWhj1c?rel=0[NetApp video: Software configuration for vSphere NAS datastores for FAS/AFF systems running ONTAP 9.2]
+https://www.youtube.com/embed/WAE0afWhj1c?rel=0[NetApp video: Software configuration for vSphere NAS datastores for FAS/AFF systems running ONTAP 9.2^]
