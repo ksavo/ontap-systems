@@ -236,7 +236,7 @@ If needed, you can reference cabling illustrations showing an existing single sh
 <<Cable a hot-add shelf for an AFF A700 HA pair>>
 ====
 
- .. On controller A, move the cable from slot 3 port b to slot 7 port b.
+ .. On controller A, move the cable from slot 3 port b (e3b) to slot 7 port b (e7b).
  .. Repeat the same cable move on controller B.
 
 a|
@@ -251,7 +251,7 @@ If needed, you can reference cabling illustrations showing an existing single sh
 <<Cable a hot-add shelf for an AFF A800 HA pair>>
 ====
 
- .. On controller A, move the cable from slot 5 port 2 (e5b) to slot 3 port 2 (e3b).
+ .. On controller A, move the cable from slot 5 port b (e5b) to slot 3 port b (e3b).
  .. Repeat the same cable move on controller B.
 
 a|
@@ -264,7 +264,7 @@ If needed, you can reference cabling illustrations showing an existing single sh
 <<Cable a hot-add shelf for an AFF A400 HA pair>>
 ====
 
- .. On controller A, move the cable from port e0d to slot 5 Port 2 (e5b).
+ .. On controller A, move the cable from port e0d to slot 5 Port b (e5b).
  .. Repeat the same cable move on controller B.
 
 +
