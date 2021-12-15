@@ -383,7 +383,6 @@ image::../media/drw_ns224_back_ports.png[]
 
 === Cable a hot-add shelf for an AFF A900 HA pair
 
-[.lead]
 When additional storage is needed, you can hot-add up to three additional NS224 drive shelves (for a total of four shelves) to an AFF A900 HA pair.
 
 .Before you begin
@@ -403,7 +402,7 @@ When additional storage is needed, you can hot-add up to three additional NS224 
 .About this task
 * This procedure assumes that your HA pair has at least one existing NS224 shelf and that you are hot-adding up to three additional shelves.
 
-* If your HA pair has only one existing NS224 shelf, this procedure assumes that the shelf is cabled across two RoCE capable I/O modules on each controller.
+* If your HA pair has only one existing NS224 shelf, this procedure assumes that the shelf is cabled across two RoCE-capable I/O modules on each controller.
 
 .Steps
 
