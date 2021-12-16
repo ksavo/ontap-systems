@@ -402,7 +402,7 @@ When additional storage is needed, you can hot-add up to three additional NS224 
 .About this task
 * This procedure assumes that your HA pair has at least one existing NS224 shelf and that you are hot-adding up to three additional shelves.
 
-* If your HA pair has only one existing NS224 shelf, this procedure assumes that the shelf is cabled across two RoCE-capable I/O modules on each controller.
+* If your HA pair has only one existing NS224 shelf, this procedure assumes that the shelf is cabled across two RoCE-capable 100GbE I/O modules on each controller.
 
 .Steps
 
@@ -410,10 +410,10 @@ When additional storage is needed, you can hot-add up to three additional NS224 
 +
 Otherwise, go to the next step.
 +
- .. Cable shelf NSM A port e0a to controller A slot 2 port a (e2a).
- .. Cable shelf NSM A port e0b to controller B slot 10 port b (e10b).
- .. Cable shelf NSM B port e0a to controller B slot 2 port a (e2a).
- .. Cable shelf NSM B port e0b to controller A slot 10 port b (e10b).
+ .. Cable shelf NSM A port e0a to controller A slot 10 port a (e10a).
+ .. Cable shelf NSM A port e0b to controller B slot 2 port b (e2b).
+ .. Cable shelf NSM B port e0a to controller B slot 10 port a (e10a).
+ .. Cable shelf NSM B port e0b to controller A slot 2 port b (e2b).
 +
 The following illustration shows the second shelf cabling (and the first shelf).
 +
@@ -426,7 +426,7 @@ Otherwise, go to the next step.
 .. Cable shelf NSM A port e0a to controller A slot 1 port a (e1a).
 .. Cable shelf NSM A port e0b to controller B slot 11 port b (e11b).
 .. Cable shelf NSM B port e0a to controller B slot 1 port a (e1a).
-.. Cable shelf NSM B port e0b to controller A slot 1 port b (e1b).
+.. Cable shelf NSM B port e0b to controller A slot 11 port b (e11b).
 +
 The following illustration shows the third shelf cabling.
 +
