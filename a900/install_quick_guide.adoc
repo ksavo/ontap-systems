@@ -1,15 +1,15 @@
 ---
 permalink: a900/install_quick_guide.html
 sidebar: sidebar
-keywords: FAS9000 AFF A700
-summary: 'This guide gives graphic instructions for a typical installation of your system from racking and cabling, through initial system bring-up.'
+keywords: AFF A900
+summary: 'This topic gives graphic instructions for a typical installation of your system from racking and cabling, through initial system bring-up.'
 ---
-= Quick steps - AFF A700 and FAS9000
+= Quick steps - AFF A900
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-This guide gives graphic instructions for a typical installation of your system from racking and cabling, through initial system bring-up. Use this guide if you are familiar with installing NetApp systems.
+This topic gives graphic instructions for a typical installation of your system from racking and cabling, through initial system bring-up. Use this content if you are familiar with installing NetApp systems.
 
 Access the _Installation and Setup Instructions_ PDF poster:
 

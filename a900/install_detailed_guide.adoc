@@ -2,25 +2,25 @@
 permalink: a900/install_detailed_guide.html
 sidebar: sidebar
 keywords: AFF A900
-summary: 'This guide gives detailed step-by-step instructions for installing a typical NetApp system.'
+summary: 'This a gives detailed step-by-step instructions for installing a typical NetApp system.'
 ---
-= Detailed guide - AFF 900
+= Detailed steps - AFF 900
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-This guide gives detailed step-by-step instructions for installing a typical NetApp system. Use this guide if you want more detailed installation instructions.
+This article gives detailed step-by-step instructions for installing a typical NetApp system. Use this article if you want more detailed installation instructions.
 
 == Step 1: Prepare for installation
 
-[.lead]
 To install your system, you need to create an account on the NetApp Support Site, register your system, and get license keys. You also need to inventory the appropriate number and type of cables for your system and collect specific network information.
 
-You need to have access to the Hardware Universe for information about site requirements as well as additional information on your configured system. You might also want to have access to the Release Notes for your version of ONTAP for more information about this system.
+.Before you begin
 
-https://hwu.netapp.com[NetApp Hardware Universe]
+[.lead]
+You need to have access to the https://hwu.netapp.com[NetApp Hardware Universe^] for information about site requirements as well as additional information on your configured system.
 
-http://mysupport.netapp.com/documentation/productlibrary/index.html?productID=62286[Find the Release Notes for your version of ONTAP 9^]
+You might also want to have access to the http://mysupport.netapp.com/documentation/productlibrary/index.html?productID=62286[ONTAP 9 Release Notes^] for your version of ONTAP for more information about this system.
 
 You need to provide the following at your site:
 
@@ -28,6 +28,7 @@ You need to provide the following at your site:
 * Phillips #2 screwdriver
 * Additional networking cables to connect your system to your network switch and laptop or console with a Web browser
 
+.Steps
 . Unpack the contents of all boxes.
 . Record the system serial number from the controllers.
 +

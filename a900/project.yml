@@ -7,12 +7,12 @@ homepage:
           url: /install-ip/index.html
     - title: Install and setup
       links:
-        - title: Quick guide
+        - title: Quick steps
           url: /a900/install_quick_guide.html
           entries:
           - title: Videos
             url: /a900/install_videos.html
-          - title: Detailed guide
+          - title: Detailed steps
             url: /a900/install_detailed_guide.html
     - title: Maintain
       links:
