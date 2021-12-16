@@ -24,7 +24,7 @@ Because the system ID is derived from the NVRAM module, if replacing the module,
 * You must replace the failed component with a replacement FRU component you received from your provider.
 * You cannot change any disks or disk shelves as part of this procedure.
 
-*Steps*
+.Steps
 
 == Step 1: Shut down the impaired controller
 
