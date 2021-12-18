@@ -29,7 +29,7 @@ To access components inside the controller, you must first remove the controller
 . Slide the orange button on the cam handle downward until it unlocks.
 +
 
-https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=256721fd-4c2e-40b3-841a-adf2000df5fa[Remove the controller^]
+https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=256721fd-4c2e-40b3-841a-adf2000df5fa[Animation--Remove the controller^]
 +
 
 image::../media/drw_9000_remove_pcm.png[]
@@ -71,7 +71,7 @@ To replace the RTC battery, you must locate the failed battery in the controller
 . Locate the RTC battery.
 +
 
-https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=1bb4d8d4-5040-471c-9593-adf2000df48d[Replace RTC battery^]
+https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=1bb4d8d4-5040-471c-9593-adf2000df48d[Animation--Replace RTC battery^]
 +
 
 image::../media/drw_9000_remove_rtc_battery.png[]
