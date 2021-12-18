@@ -1,18 +1,18 @@
 ---
 permalink: a250/install-quick-guide.html
 sidebar: sidebar
-keywords: aff, a250, aff a250, guide, graphic, instruction, installation, system, rack, cable, cabling, system, bring-up, netapp, system, quick guide
-summary: This guide gives graphic instructions for a typical installation of your system from racking and cabling, through initial system bring-up. Use this guide if you are familiar with installing NetApp systems.
+keywords: aff a250, graphic, instruction, installation, system, rack, cable, bring-up,
+summary: This section gives graphic instructions for a typical installation of your system from racking and cabling, through initial system bring-up. Use this section if you are familiar with installing NetApp systems.
 ---
-= Quick guide - AFF A250
+= Quick steps - AFF A250
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-This guide gives graphic instructions for a typical installation of your system from racking and cabling, through initial system bring-up. Use this guide if you are familiar with installing NetApp systems.
+This section gives graphic instructions for a typical installation of your system from racking and cabling, through initial system bring-up. Use this section if you are familiar with installing NetApp systems.
 
 Access the _Installation and Setup Instructions_ PDF poster:
 
-* English: https://library.netapp.com/ecm/ecm_download_file/ECMLP2870798[AFF A250 Installation and Setup Instructions]
-* Japanese: https://library.netapp.com/ecm/ecm_download_file/ECMLP2874690[AFF A250 Systems Installation and Setup Instructions]
-* Chinese: https://library.netapp.com/ecm/ecm_download_file/ECMLP2874693[AFF A250 Systems Installation and Setup Instructions]
+* English: https://library.netapp.com/ecm/ecm_download_file/ECMLP2870798[AFF A250 Installation and Setup Instructions^]
+* Japanese: https://library.netapp.com/ecm/ecm_download_file/ECMLP2874690[AFF A250 Systems Installation and Setup Instructions^]
+* Chinese: https://library.netapp.com/ecm/ecm_download_file/ECMLP2874693[AFF A250 Systems Installation and Setup Instructions^]
