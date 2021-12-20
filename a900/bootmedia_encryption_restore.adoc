@@ -81,7 +81,7 @@ The system boots to Waiting for giveback... prompt.
 +
 NOTE: Terminating CIFS can cause loss of data.
 
- ** If the command fails because the partner "not ready", wait 5 minutes for the NVMEMs to synchronize.
+ ** If the command fails because the partner "not ready", wait 5 minutes for the NVRAMs to synchronize.
  ** If the command fails because of an NDMP, SnapMirror, or SnapVault process, disable the process. See the appropriate content for more information.
 . Once the giveback completes, check the failover and giveback status with the storage failover show and storage failover show-giveback commands.
 +
