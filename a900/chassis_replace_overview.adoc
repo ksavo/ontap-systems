@@ -15,7 +15,6 @@ To replace the chassis, you must remove the power supplies, fans, controller mod
 
 All other components in the system must be functioning properly; if not, you must contact technical support.
 
-*About this task*
-
+.About this task
 * You can use this procedure with all versions of ONTAP supported by your system.
 * This procedure is disruptive. For a two-node cluster, you will have a complete service outage and a partial outage in a multi-node cluster.
