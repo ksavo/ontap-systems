@@ -9,6 +9,9 @@ summary: 'You must review the prerequisites for the replacement procedure and se
 :imagesdir: ../media/
 
 [.lead]
+To replace the chassis, you must move the bezel, controller modules, and NVMe drives from the impaired chassis to the replacement chassis, and then remove the impaired chassis from the equipment rack or system cabinet and install the replacement chassis in its place.
+
+.Before you begin
 You must review the prerequisites for the replacement procedure and select the correct one for your version of the ONTAP operating system.
 
 * All drive shelves must be working properly.
