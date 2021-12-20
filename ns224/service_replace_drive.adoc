@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: ns224, shelves, shelf, ns224 shelves, fail, replace, drive, nondisruptive, i/o, hot-swap, hot-swap a drive
 summary: You can replace a failed drive nondisruptively in an NS224 drive shelf that is powered on, and while I/O is in progress.
 ---
-= Hot-swap a drive - NS224 shelves
+= Hot-swap a drive -- NS224 shelves
 :icons: font
 :imagesdir: ../media/
 
@@ -49,7 +49,7 @@ https://mysupport.netapp.com/site/downloads/firmware/disk-shelf-firmware[NetApp 
 https://mysupport.netapp.com/site/downloads/firmware/disk-drive-firmware[NetApp Downloads: Disk Drive Firmware^]
 ====
 
-* Drive firmware is automatically updated (nondisruptively) on new drives that have non current firmware versions.
+* Drive firmware is automatically updated (nondisruptively) on new drives that have non-current firmware versions.
 +
 NOTE: Drive firmware checks occur every two minutes.
 

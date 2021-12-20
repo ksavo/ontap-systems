@@ -42,7 +42,7 @@ indexpage:
         - title: NVRAM module and/or NVRAM DIMMs
           url: /nvram-module-or-nvram-dimm-replacement.html
         - title: Power supply
-          url: /power-supply-swapout.html
+          url: /power-supply-swap-out.html
         - title: RTC battery
           url: /rtc-battery-replace.html
         - title: X91148A module

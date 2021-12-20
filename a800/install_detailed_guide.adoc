@@ -1,26 +1,25 @@
 ---
 permalink: a800/install-detailed-guide.html
 sidebar: sidebar
-keywords: aff a800, detailed installation guide
-summary: This guide gives detailed step-by-step instructions for installing an AFF A800 system.
+keywords: aff a800, detailed installation content
+summary: This section gives detailed step-by-step instructions for installing an AFF A800 system.
 ---
-= Detailed guide - AFF A800
+= Detailed steps - AFF A800
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-This guide gives detailed step-by-step instructions for installing an AFF A800 system.
+This section gives detailed step-by-step instructions for installing an AFF A800 system.
 
 == Step 1: Prepare for installation
 
-[.lead]
 To install your AFF A800 system, you need to create an account and register the system. You also need to inventory the appropriate number and type of cables for your system and collect specific network information.
 
 You need to have access to the Hardware Universe for information about site requirements as well as additional information on your configured system. You might also want to have access to the Release Notes for your version of ONTAP for more information about this system.
 
-https://hwu.netapp.com[NetApp Hardware Universe]
+https://hwu.netapp.com[NetApp Hardware Universe^]
 
-http://mysupport.netapp.com/documentation/productlibrary/index.html?productID=62286[Find the Release Notes for your version of ONTAP 9]
+http://mysupport.netapp.com/documentation/productlibrary/index.html?productID=62286[Find the Release Notes for your version of ONTAP 9^]
 
 You need to provide the following at your site:
 
@@ -37,12 +36,12 @@ image::../media/drw_ssn_label.png[]
  .. Log in to your existing account or create an account.
  .. Register your system.
 +
-https://mysupport.netapp.com/eservice/registerSNoAction.do?moduleName=RegisterMyProduct[NetApp Product Registration]
+https://mysupport.netapp.com/eservice/registerSNoAction.do?moduleName=RegisterMyProduct[NetApp Product Registration^]
 . Inventory and make a note of the number and types of cables you received.
 +
 The following table identifies the types of cables you might receive. If you receive a cable not listed in the table, see the Hardware Universe to locate the cable and identify its use.
 +
-https://hwu.netapp.com[NetApp Hardware Universe]
+https://hwu.netapp.com[NetApp Hardware Universe^]
 +
 [options="header" cols="1,2,1,2"]
 |===
@@ -125,16 +124,15 @@ Powering up the system
 
 . Download and complete the _Cluster configuration worksheet_.
 +
-https://library.netapp.com/ecm/ecm_download_file/ECMLP2839002[Cluster Configuration Worksheet]
+https://library.netapp.com/ecm/ecm_download_file/ECMLP2839002[Cluster Configuration Worksheet^]
 
 == Step 2: Install the hardware
 
-[.lead]
 You need to install your system in a 4-post rack or NetApp system cabinet, as applicable.
 
 . Install the rail kits, as needed.
 +
-link:../com.netapp.doc.hw-rail-superrail/home.html[Installing SuperRail into a four-post rack]
+link:../com.netapp.doc.hw-rail-superrail/home.html[Installing SuperRail into a four-post rack^]
 
 . Install and secure your system using the instructions included with the rail kit.
 +
@@ -150,17 +148,14 @@ image::../media/drw_affa800_install_cable_mgmt.png[]
 
 == Step 3: Cable controllers
 
-[.lead]
 There is required cabling for your platform's cluster using the two-node switchless cluster method or the cluster interconnect network method. There is optional cabling to the Fibre Channel or iSCSI host networks or direct-attached storage. This cabling is not exclusive; you can have cable to a host network and storage.
 
 === Required cabling: Cable controllers to a cluster
 
-[.lead]
 Cable the controllers to a cluster by using the two-node switchless cluster method or by using the cluster interconnect network.
 
 ==== Option 1: Cable a two-node switchless cluster
 
-[.lead]
 Management network ports on the controllers are connected to switches. The HA interconnect and cluster interconnect ports are cabled on both controllers.
 
 Contact your network administrator for information about connecting the system to the switches.
@@ -173,7 +168,7 @@ NOTE: As you insert the connector, you should feel it click into place; if you d
 
 . Use the animation or the step-by step instructions to complete the cabling between the controllers and to the switches:
 +
-https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=edc42447-f721-4cbe-b080-ab0c0123a139[Cabling a two-node switchless cluster]
+https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=edc42447-f721-4cbe-b080-ab0c0123a139[Cabling a two-node switchless cluster^]
 +
 [options="header" cols="1,2"]
 |===
@@ -216,7 +211,6 @@ DO NOT plug in the power cords at this point.
 
 ==== Option 2: Cable a switched cluster
 
-[.lead]
 Cluster interconnect and management network ports on the controllers are connected to switches while the HA interconnect ports are cabled on both controllers.
 
 Contact your network administrator for information about connecting the system to the switches.
@@ -229,7 +223,7 @@ NOTE: As you insert the connector, you should feel it click into place; if you d
 
 . Use the animation or the step-by step instructions to complete the cabling between the controllers and to the switches:
 +
-https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=49e48140-4c5a-4395-a7d7-ab0c0123a10e[Cabling a switched cluster]
+https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=49e48140-4c5a-4395-a7d7-ab0c0123a10e[Cabling a switched cluster^]
 +
 [options="header" cols="1,2"]
 |===
@@ -271,12 +265,10 @@ DO NOT plug in the power cords at this point.
 
 === Optional cabling: Cable configuration-dependent options
 
-[.lead]
 You have configuration-dependent optional cabling to the Fibre Channel or iSCSI host networks or direct-attached storage. This cabling is not exclusive; you can have cabling to a host network and storage.
 
 ==== Option 1: Cable to a Fibre Channel host network
 
-[.lead]
 Fibre Channel ports on the controllers are connected to Fibre Channel host network switches.
 
 Contact your network administrator for information about connecting the system to the switches.
@@ -312,7 +304,6 @@ To complete setting up your system, see link:install-detailed-guide.html#step-4-
 
 ==== Option 2: Cable to a 10GbE host network
 
-[.lead]
 10GbE ports on the controllers are connected to 10GbE host network switches.
 
 Contact your network administrator for information about connecting the system to the switches.
@@ -348,7 +339,6 @@ To complete setting up your system, see link:install-detailed-guide.html#step-4-
 
 ==== Option 3: Cable the controllers to a single drive shelf
 
-[.lead]
 You must cable each controller to the NSM modules on the NS224 drive shelf.
 
 Be sure to check the illustration arrow for the proper cable connector pull-tab orientation.
@@ -359,7 +349,7 @@ NOTE: As you insert the connector, you should feel it click into place; if you d
 
 . Use the animation or the step-by-step instructions to cable your controller modules to a single shelf.
 +
-https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=09dade4f-00bd-4d41-97d7-ab0c0123a0b4[Cabling the controllers to a single drive shelf]
+https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=09dade4f-00bd-4d41-97d7-ab0c0123a0b4[Cabling the controllers to a single drive shelf^]
 +
 [options="header" cols="1,2"]
 |===
@@ -378,7 +368,6 @@ Cable controller B to the shelf:    image:../media/drw_affa800_1shelf_cabling_b.
 
 ==== Option 4: Cable the controllers to two drive shelves
 
-[.lead]
 You must cable each controller to the NSM modules on both NS224 drive shelves.
 
 Be sure to check the illustration arrow for the proper cable connector pull-tab orientation.
@@ -389,7 +378,7 @@ NOTE: As you insert the connector, you should feel it click into place; if you d
 
 . Use the following animation or the written steps to cable your controllers to two drive shelves.
 +
-https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=fe50ac38-9375-4e6b-85af-ab0c0123a0e0[Cabling the controllers to two drive shelves]
+https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=fe50ac38-9375-4e6b-85af-ab0c0123a0e0[Cabling the controllers to two drive shelves^]
 +
 [options="header" cols="1,2"]
 |===
@@ -408,12 +397,10 @@ Cable controller B to the shelves:    image:../media/drw_affa800_2shelf_cabling_
 
 == Step 4: Complete system setup and configuration
 
-[.lead]
 Complete the system setup and configuration using cluster discovery with only a connection to the switch and laptop, or by connecting directly to a controller in the system and then connecting to the management switch.
 
 === Option 1: Complete system setup and configuration if network discovery is enabled
 
-[.lead]
 If you have network discovery enabled on your laptop, you can complete system setup and configuration using automatic cluster discovery.
 
 . Plug the power cords into the controller power supplies, and then connect them to power sources on different circuits.
@@ -426,7 +413,7 @@ See your laptop's online help for more information.
 
 . Use the following animation to connect your laptop to the Management switch.
 +
-https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=d61f983e-f911-4b76-8b3a-ab1b0066909b[Connecting your laptop to the Management switch]
+https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=d61f983e-f911-4b76-8b3a-ab1b0066909b[Connecting your laptop to the Management switch^]
 
 . Select an ONTAP icon listed to discover:
 +
@@ -443,14 +430,13 @@ System Manager opens.
 
 . Use System Manager guided setup to configure your system using the data you collected in the _NetApp ONTAP Configuration Guide_.
 +
-https://library.netapp.com/ecm/ecm_download_file/ECMLP2862613[ONTAP Configuration Guide]
+https://library.netapp.com/ecm/ecm_download_file/ECMLP2862613[ONTAP Configuration content^]
 
 . Verify the health of your system by running Config Advisor.
-. After you have completed the initial configuration, go to the https://www.netapp.com/data-management/oncommand-system-documentation/[ONTAP & ONTAP System Manager Documentation Resources] page for information about configuring additional features in ONTAP.
+. After you have completed the initial configuration, go to the https://www.netapp.com/data-management/oncommand-system-documentation/[ONTAP & ONTAP System Manager Documentation Resources^] page for information about configuring additional features in ONTAP.
 
 === Option 2: Complete system setup and configuration if network discovery is not enabled
 
-[.lead]
 If network discovery is not enabled on your laptop, you must complete the configuration and setup using this task.
 
 . Cable and configure your laptop or console:
@@ -500,6 +486,6 @@ NOTE: The format for the address is +https://x.x.x.x+.
 
  .. Configure the system using the data you collected in the _NetApp ONTAP Configuration guide_.
 +
-https://library.netapp.com/ecm/ecm_download_file/ECMLP2862613[ONTAP Configuration Guide]
+https://library.netapp.com/ecm/ecm_download_file/ECMLP2862613[ONTAP Configuration content^]
 . Verify the health of your system by running Config Advisor.
-. After you have completed the initial configuration, go to the https://www.netapp.com/data-management/oncommand-system-documentation/[ONTAP & ONTAP System Manager Documentation Resources] page for information about configuring additional features in ONTAP.
+. After you have completed the initial configuration, go to the https://www.netapp.com/data-management/oncommand-system-documentation/[ONTAP & ONTAP System Manager Documentation Resources^] page for information about configuring additional features in ONTAP.
