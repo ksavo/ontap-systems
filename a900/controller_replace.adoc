@@ -105,7 +105,7 @@ IMPORTANT: Carefully hold the DIMM by the edges to avoid pressure on the compone
 https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=30337552-b10f-4146-9bdb-adf2000df5bd[Animation--Move components to replacement controller^]
 +
 
-image::../media/drw_9000_replace_pcm_dimms.svg[]
+image::../media/drw_a900_replace_pcm_dimms.png[]
 +
 [cols="1,1"]
 |===
