@@ -30,7 +30,7 @@ indexpage:
         - title: DIMM
           url: /dimm-replace.html
         - title: Fan
-          url: /fan-replace.html
+          url: /fan-swap-out.html
         - title: NVDIMM
           url: /dimm-replace.html
         - title: NVDIMM battery
@@ -38,7 +38,7 @@ indexpage:
         - title: PCIe or mezzanine card
           url: /pci-cards-and-risers-replace.html
         - title: Power supply
-          url: /power-supply-swapout.html
+          url: /power-supply-replace.html
         - title: RTC battery
           url: /rtc-battery-replace.html
     - title: Learn
