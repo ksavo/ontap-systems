@@ -17,14 +17,12 @@ You replace the real-time clock (RTC) battery in the controller module so that y
 
 == Step 1: Shut down the impaired controller
 
-[.lead]
 include::../_include/shutdown_most_frus.adoc[]
 
 . If the system has only one controller module in the chassis, turn off the power supplies, and then unplug the impaired node's power cords from the power source.
 
 == Step 2: Open the system
 
-[.lead]
 To access components inside the controller, you must first remove the controller module from the system and then remove the cover on the controller module.
 
 .Steps
@@ -48,7 +46,6 @@ image::../media/drw_2600_opening_pcm_cover.png[]
 
 == Step 3: Replace the RTC battery
 
-[.lead]
 To replace the RTC battery, locate it inside the controller and follow the specific sequence of steps.
 
 .Steps
@@ -68,7 +65,6 @@ NOTE: Note the polarity of the battery as you remove it from the holder. The bat
 
 == Step 4: Reinstall the controller module and set time/date after RTC battery replacement
 
-[.lead]
 After you replace a component within the controller module, you must reinstall the controller module in the system chassis, reset the time and date on the controller, and then boot it.
 
 .Steps
@@ -103,5 +99,4 @@ NOTE: Do not use excessive force when sliding the controller module into the cha
 
 == Step 5: Return the failed part to NetApp
 
-[.lead]
 include::../_include/complete_rma.adoc[]

@@ -8,6 +8,4 @@ summary: You can use the worksheet to gather and record your site-specific IP ad
 :icons: font
 :imagesdir: ../media/
 
-You can use the worksheet to gather and record your site-specific IP addresses and other information required when configuring an ONTAP cluster.
-
-link:https://library.netapp.com/ecm/ecm_download_file/ECMLP2839002[Cluster Configuration Worksheet]
+You can use the link:https://library.netapp.com/ecm/ecm_download_file/ECMLP2839002[Cluster Configuration Worksheet^] to gather and record your site-specific IP addresses and other information required when configuring an ONTAP cluster.
