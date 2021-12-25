@@ -11,11 +11,11 @@ summary: 'You must replace a DIMM in the controller module when your system regi
 [.lead]
 You must replace a DIMM in the controller module when your system registers an increasing number of correctable error correction codes (ECC); failure to do so causes a system panic.
 
+.Before you begin
+
 All other components in the system must be functioning properly; if not, you must contact technical support.
 
 You must replace the failed component with a replacement FRU component you received from your provider.
-
-.Steps
 
 == Step 1: Shut down the impaired node
 
@@ -30,7 +30,7 @@ include::../_include/shutdown_most_frus.adoc[]
 === Option 2: Controller is in a MetroCluster
 
 [.lead]
-include::../_include/shutdown_any_mcc_supported[]
+include::../_include/shutdown_any_mcc_supported.adoc[]
 
 == Step 2: Open the controller module
 
@@ -83,7 +83,7 @@ To replace the DIMMs, locate them inside the controller and follow the specific 
 +
 NOTE: Each system memory DIMM has an LED located on the board next to each DIMM slot. The LED for the faulty blinks every two seconds.
 +
-image::../media/drw_a900_DIMM_map.gif[]
+image::../media/drw_a900_DIMM_map.png[]
 
 . Eject the DIMM from its slot by slowly pushing apart the two DIMM ejector tabs on either side of the DIMM, and then slide the DIMM out of the slot.
 +
@@ -194,9 +194,9 @@ All commands in the diagnostic procedures are issued from the node where the com
 +
 After you issue the command, you should wait until the system stops at the LOADER prompt.
 +
-IMPORTANT: During the boot process, you can safely respond `y` to prompts:
+IMPORTANT: During the boot process, you can safely respond `y` to prompts.
 
-  *** A prompt warning that when entering Maintenance mode in an HA configuration, you must ensure that the healthy node remains down.
+  *** If a prompt appears warning that when entering Maintenance mode in an HA configuration, you must ensure that the healthy node remains down.
 . At the LOADER prompt, access the special drivers specifically designed for system-level diagnostics to function properly: `boot_diags`
 +
 During the boot process, you can safely respond `y` to the prompts until the Maintenance mode prompt (*>) appears.
@@ -221,12 +221,12 @@ The following default response is displayed:
 +
 SLDIAG: No log messages are present.
 
- .. Exit Maintenance mode: `halt`
+.. Exit Maintenance mode: `halt`
 +
 The node displays the LOADER prompt.
 
- .. Boot the node from the LOADER prompt: `bye`
- .. Return the node to normal operation:
+.. Boot the node from the LOADER prompt: `bye`
+.. Return the node to normal operation:
 +
 |===
 |===

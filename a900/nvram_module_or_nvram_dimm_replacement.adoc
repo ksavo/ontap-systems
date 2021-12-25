@@ -13,8 +13,10 @@ The NVRAM module consists of the NVRAM11 and DIMMs. You can replace a failed NVR
 
 To replace and NVRAM DIMM, you must remove the NVRAMmodule from th chassis, replace the failed DIMM in the module, and then reinstall the NVRAM module.
 
+.About this task
 Because the system ID is derived from the NVRAM module, if replacing the module, disks belonging to the system are reassigned to a new system ID.
 
+.Before you begin
 * All disk shelves must be working properly.
 * If your system is in an HA pair, the partner node must be able to take over the node associated with the NVRAM module that is being replaced.
 * This procedure uses the following terminology:
@@ -138,8 +140,11 @@ I/O latch completely unlocked
 
 . Set the NVRAM module on a stable surface and remove the cover from the NVRAM module by pushing down on the blue locking button on the cover, and then, while holding down the blue button, slide the lid off the NVRAM module.
 +
+
 image::../media/drw_a900_remove_NVRAM_module_contents.png[]
+
 +
+[cols='1,1']
 |===
 a|
 image:../media/legend_icon_01.png[] a|
@@ -237,7 +242,7 @@ If you are prompted to override the system ID due to a system ID mismatch, you s
 +
 NOTE: If the giveback is vetoed, you can consider overriding the vetoes.
 +
-http://mysupport.netapp.com/documentation/productlibrary/index.html?productID=62286[Find the High-Availability Configuration Guide for your version of ONTAP 9]
+For more information, see the https://docs.netapp.com/us-en/ontap/high-availability/ha_manual_giveback.html#if-giveback-is-interrupted[Manual giveback commands^] topic to override the veto.
 
  .. After the giveback has been completed, confirm that the HA pair is healthy and that takeover is possible: storage failover show
 +
@@ -269,7 +274,7 @@ This is required if both of the following are true:
  ** The MetroCluster configuration is in a switchover state.
  ** The replacement node is the current owner of the disks on the disaster site.
 +
-https://docs.netapp.com/us-en/ontap-metrocluster/manage/concept_understanding_mcc_data_protection_and_disaster_recovery.html#disk-ownership-changes-during-ha-takeover-and-metrocluster-switchover-in-a-four-node-metrocluster-configuration[Disk ownership changes during HA takeover and MetroCluster switchover in a four-node MetroCluster configuration]
+See https://docs.netapp.com/us-en/ontap-metrocluster/manage/concept_understanding_mcc_data_protection_and_disaster_recovery.html#disk-ownership-changes-during-ha-takeover-and-metrocluster-switchover-in-a-four-node-metrocluster-configuration[Disk ownership changes during HA takeover and MetroCluster switchover in a four-node MetroCluster configuration] for more information.
 
 . If your system is in a MetroCluster configuration, verify that each node is configured: `metrocluster node show - fields configuration-state`
 +

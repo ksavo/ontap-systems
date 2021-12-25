@@ -69,7 +69,7 @@ If you are prompted to override the system ID due to a system ID mismatch, you s
 +
 NOTE: If the giveback is vetoed, you can consider overriding the vetoes.
 +
-For more information, find the https://docs.netapp.com/us-en/ontap/high-availability/ha_manual_giveback.html#if-giveback-is-interrupted[Manual giveback commands^] topic to override the veto.
+For more information, see the https://docs.netapp.com/us-en/ontap/high-availability/ha_manual_giveback.html#if-giveback-is-interrupted[Manual giveback commands^] topic to override the veto.
 
  .. After the giveback has been completed, confirm that the HA pair is healthy and that takeover is possible: storage failover show
 +

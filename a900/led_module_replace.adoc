@@ -8,9 +8,13 @@ summary: 'You can replace an LED USB module without interrupting service.'
 :icons: font
 :imagesdir: ../media/
 
+
 [.lead]
 The LED USB module provides connectivity to console ports and system status. Replacement of this module does not require tools and does not interrupt service.
 
+== Step 1: Replace the LED USB module
+
+.Steps
 . Remove the old LED USB module:
 
 +
@@ -42,4 +46,5 @@ a|
 +
 There is an audible click when the module is secure and connected to the midplane.
 
+== Step 2: Return the failed component
 include::../_include/complete_rma_step.adoc[]
