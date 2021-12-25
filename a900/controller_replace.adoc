@@ -21,7 +21,7 @@ To access components inside the controller, you must first remove the controller
 . Slide the orange button on the cam handle downward until it unlocks.
 
 +
-https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=256721fd-4c2e-40b3-841a-adf2000df5fa[Animation--Remove the controller^]
+https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=256721fd-4c2e-40b3-841a-adf2000df5fa[Animation -- Remove the controller^]
 
 +
 image::../media/drw_a900_remove_PCM.png[]
@@ -61,7 +61,7 @@ You must locate the boot media and follow the directions to remove it from the o
 . Lift the black air duct at the back of the controller module and then locate the boot media using the following illustration or the FRU map on the controller module:
 
 +
-https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=30337552-b10f-4146-9bdb-adf2000df5bd[Animation--Move components to replacement controller^]
+https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=30337552-b10f-4146-9bdb-adf2000df5bd[Animation -- Move components to replacement controller^]
 +
 
 image::../media/drw_a900_remove_boot_dev.png[]
@@ -102,9 +102,6 @@ To move the DIMMs, locate and move them from the old controller into the replace
 IMPORTANT: Carefully hold the DIMM by the edges to avoid pressure on the components on the DIMM circuit board.
 
 +
-https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=30337552-b10f-4146-9bdb-adf2000df5bd[Animation--Move components to replacement controller^]
-+
-
 image::../media/drw_a900_replace_pcm_dimms.png[]
 +
 [cols="1,1"]
@@ -148,7 +145,7 @@ NOTE: The system might update system firmware when it boots. Do not abort this p
 . Align the end of the controller module with the opening in the chassis, and then gently push the controller module halfway into the system.
 
 +
-https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=099237f3-d7f2-4749-86e2-adf2000df53c[Animation--Install controller]
+https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=099237f3-d7f2-4749-86e2-adf2000df53c[Animation -- Install controller]
 +
 image::../media/drw_a900_remove_PCM.png[]
 +
@@ -182,32 +179,3 @@ The controller module begins to boot as soon as it is fully seated in the chassi
  .. Interrupt the boot process by pressing `Ctrl-C` when you see Press Ctrl-C for Boot Menu.
 
 .. Select the option to boot to LOADER.
-////
-.. From the healthy node, check to see if Onboard Key Manager (OKM) is configured: `security key-manager onboard show-backup`
-+
-If you see: `Error: show failed: Onboard key management is not configured for the admin Vserver. Use the "security key-manager
-      onboard enable" command to configure onboard key management.`
-Onboard Key Manager is not configured and you can
-select the option to boot to LOADER from the displayed boot menu.
-
-.. If OKM is enabled, select Option 10 from the Boot Menu.
-+
-You will see the following ouptut:
-+
-` -------------BEGIN BACKUP---------- TmV0QXBwIEtleSBCbG9iAAEBAAAEAAAAcAEAAAAAAACCPESPAAAAACEAAAAAAAAA
-QAAAAAAAAAAU6/F6AAAAAFPMGJ/LzijV+ma+2Gji744SyuJIz7WJVZQoTygpH6X6
-'
-.
-.
-----------------END BACKUP---------`
-
-... Confirm that TPM is in use: `LOADER> printenv  bootarg.use.tpm`
-
-... Reboot the replacement node and check the output.
-+
-IMPORTANT: You must contact Customer Support if you see the following messages during the node reboot:
-+
-`[....:crypto.ssal.failed:ALERT] : SSAL Unseal operation failed:  SSAL Unseal operation failed.``
-+
-``[....:crypto.okmrecovery.failed: ERROR: Import of the onboard key hierarchy failed: failed to import key.hierarchy. Additional information: error: ssal unseal failed.``
-////
