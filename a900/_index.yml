@@ -17,7 +17,7 @@ indexpage:
           url: https://docs.netapp.com/us-en/ontap-metrocluster/install-ip/index.html
     - title: Maintain
       links:
-        - title: I/O module add_io_module
+        - title: I/O module add
           url: /add_io_module.html
         - title: Boot media
           url: /bootmedia-replace-overview.html
@@ -32,7 +32,7 @@ indexpage:
         - title: Fan
           url: /fan-replace.html
         - title: I/O module
-          url: /pci-cards-and-risers-replace.html  
+          url: /pci-cards-and-risers-replace.html
         - title: LED-USB module
           url: /led_module_replace.html
         - title: NVDIMM
