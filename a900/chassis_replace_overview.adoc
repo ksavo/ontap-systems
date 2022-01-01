@@ -9,8 +9,7 @@ summary: 'All other components in the system must be functioning properly; if no
 :imagesdir: ../media/
 
 [.lead]
-*Before you begin*
-
+.Before you begin
 To replace the chassis, you must remove the power supplies, fans, controller modules, I/O modules, DCPM modules, and USB LED module from the impaired chassis, remove the impaired chassis from the equipment rack or system cabinet, install the replacement chassis in its place, and then install the components into the replacement chassis.
 
 All other components in the system must be functioning properly; if not, you must contact technical support.

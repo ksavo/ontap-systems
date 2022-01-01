@@ -25,6 +25,8 @@ indexpage:
           url: /controller-replace-overview.html
         - title: DIMM
           url: /dimm-replace.html
+        - title: Destage power controler module
+          url: /dcpm_NVRAM11_battery_replace.html
         - title: Fan
           url: /fan-replace.html
         - title: NVDIMM
@@ -37,6 +39,7 @@ indexpage:
           url: /power-supply-replace.html
         - title: RTC battery
           url: /rtc-battery-replace.html
+
     - title: Learn
       links:
         - title: Replacing an internal disk drive video

@@ -13,8 +13,7 @@ Swapping out a power supply involves turning off, disconnecting, and removing th
 
 All other components in the system must be functioning properly; if not, you must contact technical support.
 
-*About this task*
-
+.About this task
 * The power supplies are redundant and hot-swappable.
 * This procedure is written for replacing one power supply at a time.
 +
