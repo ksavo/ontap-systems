@@ -102,7 +102,7 @@ https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=3a5b1f6e-15ec-40b
 
 image:../media/drw_a900_remove_PCIe_module.png[]
 +
-[cols="1,1"]
+[cols="25h,~,~"]
 |===
 
 a|
@@ -129,7 +129,7 @@ I/O cam latch completely unlocked
 
 . If you added:
 +
-[options="header" cols="1,2"]
+[options="header" cols="25h,~,~"]
 |===
 | If I/O module is a...| Then...
 a|
