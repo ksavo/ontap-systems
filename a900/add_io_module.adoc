@@ -101,22 +101,26 @@ https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=3a5b1f6e-15ec-40b
 +
 
 image:../media/drw_a900_remove_PCIe_module.png[]
-+
-[cols="25h,~,~"]
-|===
 
++
+
+[cols="25h,~"]
+
+|===
 a|
 image::../media/legend_icon_01.png[]
 a|
 Lettered and numbered I/O cam latch
 a|
 image:../media/legend_icon_02.png[]
+
 a|
+
 I/O cam latch completely unlocked
 
 |===
 
-+
+
 . Install the I/O module into the target slot:
  .. Align the I/O module with the edges of the slot.
  .. Slide the I/O module into the slot until the lettered and numbered I/O cam latch begins to engage with the I/O cam pin.
