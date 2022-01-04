@@ -18,7 +18,7 @@ To access components inside the controller, you must first remove the controller
 
 . If you are not already grounded, properly ground yourself.
 . Unplug the cables from the impaired controller module, and keep track of where the cables were connected.
-. Slide the orange button on the cam handle downward until it unlocks.
+. Slide the twrra cotta button on the cam handle downward until it unlocks.
 
 +
 https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=256721fd-4c2e-40b3-841a-adf2000df5fa[Animation -- Remove the controller^]
@@ -27,7 +27,7 @@ https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=256721fd-4c2e-40b
 image::../media/drw_a900_remove_PCM.png[]
 
 +
-[cols="1,1"]
+[cols="10,90"]
 |===
 a|
 image:../media/legend_icon_01.png[] a|
@@ -46,7 +46,7 @@ Make sure that you support the bottom of the controller module as you slide it o
 . Place the controller module lid-side up on a stable, flat surface, press the blue button on the cover, slide the cover to the back of the controller module, and then swing the cover up and lift it off of the controller module.
 +
 image::../media/drw_a900_pcm_open.png[]
-[cols="1,1"]
+[cols="10,90"]
 |===
 a|
 image:../media/legend_icon_01.png[] a|
@@ -66,7 +66,7 @@ https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=30337552-b10f-414
 
 image::../media/drw_a900_remove_boot_dev.png[]
 +
-[cols="1,1"]
+[cols="10,90"]
 |===
 a|
 image:../media/legend_icon_01.png[] a|
@@ -104,7 +104,7 @@ IMPORTANT: Carefully hold the DIMM by the edges to avoid pressure on the compone
 +
 image::../media/drw_a900_replace_pcm_dimms.png[]
 +
-[cols="1,1"]
+[cols="10,90"]
 |===
 a|
 image:../media/legend_icon_01.png[] a|
@@ -149,7 +149,7 @@ https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=099237f3-d7f2-474
 +
 image::../media/drw_a900_remove_PCM.png[]
 +
-[cols="1,1"]
+[cols="10,90"]
 |===
 a|
 image:../media/legend_icon_01.png[] a|

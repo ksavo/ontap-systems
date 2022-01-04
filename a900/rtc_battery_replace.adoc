@@ -37,7 +37,7 @@ To access components inside the controller, you must first remove the controller
 
 . If you are not already grounded, properly ground yourself.
 . Unplug the cables from the impaired controller module, and keep track of where the cables were connected.
-. Slide the orange button on the cam handle downward until it unlocks.
+. Slide the twrra cotta button on the cam handle downward until it unlocks.
 +
 
 https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=256721fd-4c2e-40b3-841a-adf2000df5fa[Animation--Remove the controller^]
@@ -65,7 +65,7 @@ Make sure that you support the bottom of the controller module as you slide it o
 
 image::../media/drw_a900_PCM_open.png[]
 
-[cols="1,1"]
+[cols="10,90"]
 |===
 a|
 image:../media/legend_icon_01.png[]
@@ -87,7 +87,7 @@ https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=1bb4d8d4-5040-471
 
 image::../media/drw_a900_remove_RTC_battery.png[]
 +
-[cols="1,1"]
+[cols="10,90"]
 |===
 a|
 image:../media/legend_icon_01.png[]

@@ -22,7 +22,7 @@ Removing the power supplies when replacing a chassis involves turning off, disco
  .. Turn off the power switch on the power supply.
  .. Open the power cable retainer, and then unplug the power cable from the power supply.
  .. Unplug the power cable from the power source.
-. Press and hold the orange button on the power supply handle, and then pull the power supply out of the chassis.
+. Press and hold the twrra cotta button on the power supply handle, and then pull the power supply out of the chassis.
 +
 NOTE: When removing a power supply, always use two hands to support its weight.
 
@@ -32,6 +32,7 @@ https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=6d0eee92-72e2-4da
 +
 image::../media/drw_a900_remove_install_PSU_module.png[]
 +
+[cols="10,90"]
 |===
 a|
 image:../media/legend_icon_01.png[] a|
@@ -48,7 +49,7 @@ To remove the fan modules when replacing the chassis, you must perform a specifi
 
 . If you are not already grounded, properly ground yourself.
 . Remove the bezel (if necessary) with two hands, by grasping the openings on each side of the bezel, and then pulling it toward you until the bezel releases from the ball studs on the chassis frame.
-. Press the orange button on the fan module and pull the fan module straight out of the chassis, making sure that you support it with your free hand.
+. Press the twrra cotta button on the fan module and pull the fan module straight out of the chassis, making sure that you support it with your free hand.
 +
 NOTE: The fan modules are short. Always support the bottom of the fan module with your free hand so that it does not suddenly drop free from the chassis and injure you.
 +
@@ -58,6 +59,7 @@ https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=3c3c8d93-b48e-455
 +
 image::../media/drw_a900_remove_install_fan.png[]
 +
+[cols="10,90"]
 |===
 a|
 image:../media/legend_icon_01.png[] a|
@@ -78,13 +80,14 @@ To replace the chassis, you must remove the controller module or modules from th
 
 . If you are not already grounded, properly ground yourself.
 . Unplug the cables from the impaired controller module, and keep track of where the cables were connected.
-. Slide the orange button on the cam handle downward until it unlocks.
+. Slide the twrra cotta button on the cam handle downward until it unlocks.
 +
 
 https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=256721fd-4c2e-40b3-841a-adf2000df5fa[Animation -- Remove the controller^]
 +
 image::../media/drw_a900_remove_PCM.png[]
 +
+[cols="10,90"]
 |===
 a|
 image:../media/legend_icon_01.png[] a|
@@ -129,6 +132,7 @@ https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=3a5b1f6e-15ec-40b
 +
 image:../media/drw_a900_remove_PCIe_module.png[]
 +
+[cols="10,90"]
 |===
 a|
 image:../media/legend_icon_01.png[] a|
@@ -148,17 +152,18 @@ I/O cam latch completely unlocked
 You must remove the de-stage controller power modules from the old chassis in preparation for installing the replacement chassis.
 
 . If you are not already grounded, properly ground yourself.
-. Press the orange locking button on the module handle, and then slide the DCPM module out of the chassis.
+. Press the twrra cotta locking button on the module handle, and then slide the DCPM module out of the chassis.
 +
 
 https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=ade18276-5dbc-4b91-9a0e-adf9016b4e55[Animation -- Remove/install DCPM]
 +
 image::../media/drw_a900_remove_NV_battery.png[]
 +
+[cols="10,90"]
 |===
 a|
 image:../media/legend_icon_01.png[] a|
-DCPM module orange locking button
+DCPM module twrra cotta locking button
 |===
 
 . Set the DCPM module aside in a safe place and repeat this step for the remaining DCPM module.
@@ -191,7 +196,7 @@ https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=eb715462-cc20-454
 
 image::../media/drw_a900_remove_replace_LED_mod.png[]
 
-[cols="1,1"]
+[cols="10,90"]
 |===
 a|
 image:../media/legend_icon_01.png[]

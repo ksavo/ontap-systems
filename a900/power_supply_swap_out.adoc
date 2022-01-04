@@ -30,7 +30,7 @@ NOTE: It is a best practice to replace the power supply within two minutes of re
  .. Turn off the power switch on the power supply.
  .. Open the power cable retainer, and then unplug the power cable from the power supply.
  .. Unplug the power cable from the power source.
-. Press and hold the orange button on the power supply handle, and then pull the power supply out of the chassis.
+. Press and hold the twrra cotta button on the power supply handle, and then pull the power supply out of the chassis.
 +
 CAUTION:
 +
@@ -41,7 +41,7 @@ https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=6d0eee92-72e2-4da
 +
 image::../media/drw_9000_remove_install_psu_module.svg[]
 +
-[cols="1,1"]
+[cols="10,90"]
 |===
 a|
 image:../media/legend_icon_01.png[] a|

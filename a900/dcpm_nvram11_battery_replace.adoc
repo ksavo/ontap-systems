@@ -33,7 +33,7 @@ https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=ade18276-5dbc-4b9
 +
 image::../media/drw_9000_remove_nv_battery.svg[]
 +
-[cols="1,1"]
+[cols="10,90"]
 |===
 a|
 image:../media/legend_icon_01.png[] a|

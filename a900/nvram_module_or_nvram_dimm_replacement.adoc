@@ -66,7 +66,7 @@ https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=3a5b1f6e-15ec-40b
 
 image::../media/drw_a900_move-remove_NVRAM_module.png[]
 +
-[cols="1,1"]
+[cols="10,90"]
 |===
 a|
 image:../media/legend_icon_01.png[] a|
@@ -86,7 +86,7 @@ https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=6eb2d864-9d35-4a2
 image::../media/drw_a900_remove_NVRAM_module_contents.png[]
 +
 
-[cols="1,1"]
+[cols="10,90"]
 |===
 a|
 image:../media/legend_icon_01.png[] a|
@@ -127,7 +127,7 @@ https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=0ae4e603-c22b-493
 image::../media/drw_a900_move-remove_NVRAM_module.png[]
 +
 
-[cols="1,1"]
+[cols="10,90"]
 |===
 a|
 image:../media/legend_icon_01.png[] a|
@@ -144,7 +144,7 @@ I/O latch completely unlocked
 image::../media/drw_a900_remove_NVRAM_module_contents.png[]
 
 +
-[cols='1,1']
+[cols="10,90"]
 |===
 a|
 image:../media/legend_icon_01.png[] a|
