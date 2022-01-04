@@ -38,8 +38,9 @@ image::../media/drw_ssn_label.png[]
 +
 The following table identifies the types of cables you might receive. If you receive a cable not listed in the table, see the Hardware Universe to locate the cable and identify its use.
 +
-https://hwu.netapp.com[NetApp Hardware Universe]
+https://hwu.netapp.com[NetApp Hardware Universe^]
 +
+[col="1,2"]
 |===
 | Type of cable...| Part number and length| Connector type| For...
 a|
@@ -62,11 +63,8 @@ X66250-2 (112-00342), 2m
 X66250-5 (112-00344), 5m
 
 X66250-15 (112-00346), 15m
-
 a|
-
 image:../media/oie_cable_sfp_gbe_copper.png[]
-
 a|
 FC optical network cable
 a|
@@ -78,15 +76,12 @@ X66100-3 (112-00543), 3m
 
 X66100-5 (112-00544), 5m
 a|
-
 image:../media/oie_cable100_gbe_qsfp28.png[]
-
 a|
 Ethernet data, cluster
 network
 a|
 100 GbE cable
-
 a|
 X66211B-1 (112-00573), 1m
 
@@ -94,9 +89,7 @@ X66211B-2 (112-00574), 2m
 
 X66211B-5 (112-00576), 5m
 a|
-
 image:../media/oie_cable100_gbe_qsfp28.png[]
-
 a|
 Network,
 
@@ -105,7 +98,6 @@ NVME storage,
 Ethernet data,
 
 cluster network
-
 a|
 Optical cables
 a|
@@ -115,9 +107,7 @@ X66032A (112-00437), 2m
 
 X66033A (112-00438), 3m
 a|
-
 image:../media/oie_cable_fiber_lc_connector.gif[]
-
 a|
 FC optical network
 a|
@@ -127,9 +117,7 @@ Part numbers X6585-R6 (112-00291), 3m
 
 X6562-R6 (112-00196), 5m
 a|
-
 image:../media/oie_cable_rj45.png[]
-
 a|
 Management network and Ethernet data
 a|
@@ -137,9 +125,7 @@ Micro-USB console cable
 a|
 Not applicable
 a|
-
 image:../media/oie_cable_micro_usb.png[]
-
 a|
 Console connection during software setup on non-Windows or Mac laptop/console
 a|
@@ -147,11 +133,8 @@ Power cables
 a|
 Not applicable
 a|
-
 image:../media/oie_cable_power.png[]
-
 a|
-
 Powering up the system
 |===
 
@@ -204,7 +187,13 @@ https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=7a55b98a-e8b8-41d5
 
 image::../media/drw_a900_tnsc_network_cabling.png[]
 
-+
+[col="10,90"]
+|===
+a|
+image::../image/oie_legend_icon_1_lg.png[]
+a|
+|===
+
 . To cable your storage, see link:install_detailed_guide.md#[Cabling controllers to drive shelves^]
 
 === Option 2: Switched cluster
