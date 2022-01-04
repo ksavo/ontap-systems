@@ -133,7 +133,7 @@ I/O cam latch completely unlocked
 
 . If you added:
 +
-[options="header" cols="25h,~,~"]
+[options="header" cols="1,2"]
 |===
 | If I/O module is a...| Then...
 a|
