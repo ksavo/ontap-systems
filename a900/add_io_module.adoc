@@ -104,7 +104,7 @@ image:../media/drw_a900_remove_PCIe_module.png[]
 
 +
 
-[cols="10%,90%~"]
+[cols="10,90"]
 
 |===
 a|
