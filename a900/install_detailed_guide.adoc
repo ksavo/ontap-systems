@@ -176,7 +176,7 @@ You must have contacted your network administrator for information about connect
 
 Be sure to check the direction of the cable pull-tabs when inserting the cables in the ports. Cable pull-tabs are up for all networking module ports.
 
-image::../media/oie_cable_pull_tab_up.gif[]
+image::../media/oie_cable_pull_tab_up.png[]
 
 NOTE: As you insert the connector, you should feel it click into place; if you do not feel it click, remove it, turn it around and try again.
 
@@ -189,11 +189,11 @@ image::../media/drw_a900_tnsc_network_cabling.png[]
 
 +
 
-[options="header" col="20,90"]
+[options="header" col="1,2"]
 |===
 |Step|Perform on each controller
 a|
-image:../image/media/oie_legend_icon_1_lg.png[]
+image:../media/oie_legend_icon_1_lg.png[]
 a|
 Cable cluster interconnect ports:
 
@@ -223,8 +223,19 @@ B4 (e4b) and slot A8 and B8 (e8b) to
 the host switch.
 
 image::../media/oie_cable_sfp_gbe_copper.png[]
+
 a|
 image::../media/oie_legend_icon_4_dr.png[]
+a|
+Cable 32 Gb FC onnecions:
+
+Cable ports in slot A5 and B5 (5a,
+5b, 5c, and 5d) and slot A7 and B7
+(7a, 7b, 7c, and 7d) to the
+32 Gb FC network switches.
+
+image:../media/oie_cable_sfp_gbe_copper.png[]
+
 |===
 
 . To cable your storage, see link:install_detailed_guide.md#[Cabling controllers to drive shelves^]
@@ -240,7 +251,7 @@ You must have contacted your network administrator for information about connect
 
 Be sure to check the direction of the cable pull-tabs when inserting the cables in the ports. Cable pull-tabs are up for all networking module ports.
 
-image::../media/oie_cable_pull_tab_up.gif[]
+image::../media/oie_cable_pull_tab_up.png[]
 
 NOTE: As you insert the connector, you should feel it click into place; if you do not feel it click, remove it, turn it around and try again.
 
@@ -266,10 +277,10 @@ You must cable each controller to the NSM modules on the NS224 drive shelf on an
 * Be sure to check the illustration arrow for the proper cable connector pull-tab orientation. The cable pull-tab for the storage modules are up, while the pull tabs on the shelves are down.
 +
 
-image::../media/oie_cable_pull_tab_up.gif[]
+image::../media/oie_cable_pull_tab_up.png[]
 +
 
-image::../media/oie_cable_pull_tab_down.gif[]
+image::../media/oie_cable_pull_tab_down.png[]
 +
 NOTE: As you insert the connector, you should feel it click into place; if you do not feel it click, remove it, turn it around and try again.
 
@@ -292,9 +303,9 @@ You must cable each controller to the NSM modules on the NS224 drive shelves.
 * Be sure to check the illustration arrow for the proper cable connector pull-tab orientation. The cable pull-tab for the storage modules are up, while the pull tabs on the shelves are down.
 +
 
-image::../media/oie_cable_pull_tab_up.gif[]
+image::../media/oie_cable_pull_tab_up.png[]
 
-image::../media/oie_cable_pull_tab_down.gif[]
+image::../media/oie_cable_pull_tab_down.png[]
 
 
 NOTE: As you insert the connector, you should feel it click into place; if you do not feel it click, remove it, turn it around and try again.
