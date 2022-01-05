@@ -187,14 +187,24 @@ https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=7a55b98a-e8b8-41d5
 
 image::../media/drw_a900_tnsc_network_cabling.png[]
 
-[col="10,90"]
+[options="header" col="20,90"]
 |===
+|Step|Perform on each contoller
 a|
-image::../image/oie_legend_icon_1_lg.png[]
+image:../image/media/oie_legend_icon_1_lg.png[]
 a|
 Cable cluster interconnect ports:
 ** slot A4 and B4 (e4a)
 ** slot A8 and B8 (e8a)
+
+image:../media/oie_cable100_gbe_qsfp28.png[]
+
+a|
+image::../media/oie_legend_icon_2_lp.png[]
+a|
+Cable controller management (wrench) ports.
+
+image::../media/oie_cable_rj45.png[]
 
 |===
 

@@ -15,10 +15,10 @@ You can choose from different content formats to guide you through installing an
 +
 A printable PDF of step-by-step instructions with live links to additional content.
 
-* link:../a900/install_videos.html[Video steps]
+* link:../a900/install_videos.html[Video steps^]
 +
 Video step-by-step instructions.
 
-* link:../a900/install_detailed_guide.html[Detailed steps]
+* link:../a900/install_detailed_guide.html[Detailed steps^]
 +
 Online step-by-step instructions with live links to additional content.
