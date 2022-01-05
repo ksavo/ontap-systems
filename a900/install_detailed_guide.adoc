@@ -189,7 +189,7 @@ image::../media/drw_a900_tnsc_network_cabling.png[]
 
 +
 
-[options="header" col="1,2"]
+[options="header" col="10,90"]
 |===
 |Step|Perform on each controller
 a|
@@ -197,17 +197,17 @@ image:../media/oie_legend_icon_1_lg.png[]
 a|
 Cable cluster interconnect ports:
 
-** slot A4 and B4 (e4a)
-** slot A8 and B8 (e8a)
+** Slot A4 and B4 (e4a)
+** Slot A8 and B8 (e8a)
 
 image:../media/oie_cable100_gbe_qsfp28.png[]
 
 a|
-image::../media/oie_legend_icon_2_lp.png[]
+
 a|
 Cable controller management (wrench) ports.
 
-image::../media/oie_cable_rj45.png[]
+image::../media/oie_cable_rj45.png[RJ5 cable]
 
 a|
 image::../media/oie_legend_icon_3_o.png[]
@@ -227,7 +227,7 @@ image::../media/oie_cable_sfp_gbe_copper.png[]
 a|
 image::../media/oie_legend_icon_4_dr.png[]
 a|
-Cable 32 Gb FC onnecions:
+Cable 32 Gb FC connecions:
 
 Cable ports in slot A5 and B5 (5a,
 5b, 5c, and 5d) and slot A7 and B7
@@ -263,6 +263,59 @@ https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=6381b3f1-4ce5-4805
 image::../media/drw_a900_switched_network_cabling.png[]
 
 +
+
+[options="header" col="1,2"]
+|===
+|Step|Perform on each controller
+a|
+image:../media/oie_legend_icon_1_lg.png[]
+a|
+Cable cluster
+interconnect a ports:
+
+** Slot A4 and B4 (e4a) to the cluster network switch.
+** Slot A8 and B8 (e8a) to the
+cluster network switch.
+
+image:../media/oie_cable100_gbe_qsfp28.png[]
+
+a|
+image::../media/oie_legend_icon_2_lp.png[]
+a|
+Cable controller management (wrench) ports.
+
+image::../media/oie_cable_rj45.png[]
+
+a|
+image::../media/oie_legend_icon_3_o.png[]
+a|
+
+Cable 25GbE network switches:
+
+** Ports in slot A3 and B3 (e3a and e3c)
+and slot A9 and B9 (e9a and e9c) to the
+25 GbE network switches.
+** Cable host‐side b ports in slot A4 and
+B4 (e4b) and slot A8 and B8 (e8b) to
+the host switch.
+
+image::../media/oie_cable_sfp_gbe_copper.png[]
+
+a|
+image::../media/oie_legend_icon_4_dr.png[]
+a|
+Cable 32 Gb FC connecions:
+
+Cable ports in slot A5 and B5 (5a,
+5b, 5c, and 5d) and slot A7 and B7
+(7a, 7b, 7c, and 7d) to the
+32 Gb FC network switches.
+
+image:../media/oie_cable_sfp_gbe_copper.png[]
+
+|===
+
+
 . Cable your storage: link:install_detailed_guide.md#[Cabling controllers to drive shelves^]
 
 == Step 4: Cable controllers to drive shelves
