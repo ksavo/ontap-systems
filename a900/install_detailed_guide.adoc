@@ -192,6 +192,10 @@ image::../media/drw_a900_tnsc_network_cabling.png[]
 a|
 image::../image/oie_legend_icon_1_lg.png[]
 a|
+Cable cluster interconnect ports:
+** slot A4 and B4 (e4a)
+** slot A8 and B8 (e8a)
+
 |===
 
 . To cable your storage, see link:install_detailed_guide.md#[Cabling controllers to drive shelves^]

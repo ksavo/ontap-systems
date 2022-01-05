@@ -71,6 +71,7 @@ https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=c5080658-765e-4d2
 +
 image::../media/drw_a900_remove_boot_dev.png[]
 +
+[cols="10,90"]
 |===
 a|
 image:../media/legend_icon_01.png[] a|
