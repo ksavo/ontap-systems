@@ -187,13 +187,16 @@ https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=7a55b98a-e8b8-41d5
 
 image::../media/drw_a900_tnsc_network_cabling.png[]
 
++
+
 [options="header" col="20,90"]
 |===
-|Step|Perform on each contoller
+|Step|Perform on each controller
 a|
 image:../image/media/oie_legend_icon_1_lg.png[]
 a|
 Cable cluster interconnect ports:
+
 ** slot A4 and B4 (e4a)
 ** slot A8 and B8 (e8a)
 
@@ -206,6 +209,22 @@ Cable controller management (wrench) ports.
 
 image::../media/oie_cable_rj45.png[]
 
+a|
+image::../media/oie_legend_icon_3_o.png[]
+a|
+
+Cable 25GbE network switches:
+
+** Ports in slot A3 and B3 (e3a and e3c)
+and slot A9 and B9 (e9a and e9c) to the
+25 GbE network switches.
+** Cable host‐side b ports in slot A4 and
+B4 (e4b) and slot A8 and B8 (e8b) to
+the host switch.
+
+image::../media/oie_cable_sfp_gbe_copper.png[]
+a|
+image::../media/oie_legend_icon_4_dr.png[]
 |===
 
 . To cable your storage, see link:install_detailed_guide.md#[Cabling controllers to drive shelves^]
