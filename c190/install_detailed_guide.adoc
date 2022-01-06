@@ -129,7 +129,7 @@ image::../media/drw_cable_management_arm_install.png[]
 
 You can cable the controllers to your network by using the two-node switchless cluster method or by using the cluster interconnect network.
 
-=== Option 1: Cable a two node switchless cluster, unified configuration
+=== Option 1: Cable a two-node switchless cluster, unified configuration
 
 UTA2 ports and management ports on the controller modules are connected to switches. The cluster interconnect ports are cabled on both controller modules.
 
@@ -143,7 +143,7 @@ NOTE: As you insert the connector, you should feel it click into place; if you d
 
 NOTE: If connecting to an optical switch, insert the SFP into the controller port before cabling to the port.
 
-. Use the illustration or the step-by step instructions to complete the cabling between the controllers and to the switches:
+. Use the illustration or the step-by-step instructions to complete the cabling between the controllers and to the switches:
 +
 image::../media/drw_c190_tnsc_unified_network_cabling_animated_gif.png[]
 +
@@ -176,7 +176,7 @@ a|
 DO NOT plug in the power cords at this point.
 |===
 
-. To complete setting up your system, see link:install-detailed-guide.html#step-4-complete-system-setup-and-configuration[Step 4: Completing system setup and configuration].
+. To complete setting up your system, see link:install-detailed-guide.html#step-4-complete-system-setup-and-configuration[Step 4: Complete system setup and configuration].
 
 === Option 2: Cable switched cluster, unified configuration
 
@@ -192,7 +192,7 @@ NOTE: As you insert the connector, you should feel it click into place; if you d
 
 NOTE: If connecting to an optical switch, insert the SFP into the controller port before cabling to the port.
 
-. Use the illustration or the step-by step instructions to complete the cabling between the controllers and the switches:
+. Use the illustration or the step-by-step instructions to complete the cabling between the controllers and the switches:
 +
 image::../media/drw_c190_switched_unified_network_cabling_animated_gif.png[]
 +
@@ -223,7 +223,7 @@ a|
 DO NOT plug in the power cords at this point.
 |===
 
-. To complete setting up your system, see link:install-detailed-guide.html#step-4-complete-system-setup-and-configuration[Step 4: Completing system setup and configuration].
+. To complete setting up your system, see link:install-detailed-guide.html#step-4-complete-system-setup-and-configuration[Step 4: Complete system setup and configuration].
 
 === Option 3: Cable a two node switchless cluster, Ethernet configuration
 
@@ -237,7 +237,7 @@ image::../media/oie_cable_pull_tab_down.png[]
 
 NOTE: As you insert the connector, you should feel it click into place; if you do not feel it click, remove it, turn it around and try again.
 
-. Use the illustration or the step-by step instructions to complete the cabling between the controllers and to the switches:
+. Use the illustration or the step-by-step instructions to complete the cabling between the controllers and to the switches:
 +
 image::../media/drw_c190_tnsc_ethernet_network_cabling_animated_gif.png[]
 +
@@ -270,7 +270,7 @@ a|
 DO NOT plug in the power cords at this point.
 |===
 
-. To complete setting up your system, see link:install-detailed-guide.html#step-4-complete-system-setup-and-configuration[Step 4: Completing system setup and configuration].
+. To complete setting up your system, see link:install-detailed-guide.html#step-4-complete-system-setup-and-configuration[Step 4: Complete system setup and configuration].
 
 === Option 4: Cable a switched cluster, Ethernet configuration
 
@@ -284,7 +284,7 @@ image::../media/oie_cable_pull_tab_down.png[]
 
 NOTE: As you insert the connector, you should feel it click into place; if you do not feel it click, remove it, turn it around and try again.
 
-. Use the illustration or the step-by step instructions to complete the cabling between the controllers and the switches:
+. Use the illustration or the step-by-step instructions to complete the cabling between the controllers and the switches:
 +
 image::../media/drw_c190_switched_ethernet_network_cabling_animated.png[]
 +
@@ -315,7 +315,7 @@ a|
 DO NOT plug in the power cords at this point.
 |===
 
-. To complete setting up your system, see link:install-detailed-guide.html#step-4-complete-system-setup-and-configuration[Step 4: Completing system setup and configuration].
+. To complete setting up your system, see link:install-detailed-guide.html#step-4-complete-system-setup-and-configuration[Step 4: Complete system setup and configuration].
 
 == Step 4: Complete system setup and configuration
 
@@ -330,7 +330,7 @@ If you have network discovery enabled on your laptop, you can complete system se
 +
 image::../media/drw_turn_on_power_switches_to_psus.png[]
 +
-NOTE: Initial booting may take up to eight minutes.
+NOTE: Initial booting may take up to eight minutes..
 
 . Make sure that your laptop has network discovery enabled.
 +
@@ -345,8 +345,8 @@ link:https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=d61f983e-f911
 image::../media/drw_autodiscovery_controler_select.png[]
 
  .. Open File Explorer.
- .. Click network in the left pane.
- .. Right click and select refresh.
+ .. Click *Network* in the left pane.
+ .. Right-click and select *refresh*.
  .. Double-click either ONTAP icon and accept any certificates displayed on your screen.
 +
 NOTE: XXXXX is the system serial number for the target node.
@@ -382,7 +382,7 @@ image::../media/drw_client_to_mgmt_subnet_fas2700_affa220.png[]
 +
 image::../media/drw_turn_on_power_switches_to_psus.png[]
 +
-NOTE: Initial booting may take up to eight minutes.
+NOTE: Initial booting may take up to eight minutes..
 
 . Assign an initial node management IP address to one of the nodes.
 +

@@ -160,9 +160,9 @@ image::../media/oie_cable_pull_tab_up.png[]
 
 NOTE: As you insert the connector, you should feel it click into place; if you do not feel it click, remove it, turn it around and try again.
 
-. Use the animation or the step-by step instructions to complete the cabling between the controllers and to the switches:
+. Use the animation or the step-by-step instructions to complete the cabling between the controllers and to the switches:
 +
-link:https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=edc42447-f721-4cbe-b080-ab0c0123a139[Cabling a two-node switchless cluster^]
+link:https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=edc42447-f721-4cbe-b080-ab0c0123a139[Cable a two-node switchless cluster^]
 +
 [options="header" cols="1,2"]
 |===
@@ -201,7 +201,7 @@ DO NOT plug in the power cords at this point.
  ** <<Option 3: Connect to a single direct-attached NS224 drive shelf>>
  ** <<Option 4: Connect to two direct-attached NS224 drive shelves>>
 
-. To complete setting up your system, see link:install-detailed-guide.html#step-4-complete-system-setup-and-configuration[Step 4: Completing system setup and configuration].
+. To complete setting up your system, see link:install-detailed-guide.html#step-4-complete-system-setup-and-configuration[Step 4: Complete system setup and configuration].
 
 ==== Option 2: Cable a switched cluster
 
@@ -215,7 +215,7 @@ image::../media/oie_cable_pull_tab_up.png[]
 
 NOTE: As you insert the connector, you should feel it click into place; if you do not feel it click, remove it, turn it around and try again.
 
-. Use the animation or the step-by step instructions to complete the cabling between the controllers and to the switches:
+. Use the animation or the step-by-step instructions to complete the cabling between the controllers and to the switches:
 +
 link:https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=49e48140-4c5a-4395-a7d7-ab0c0123a10e[Cabling a switched cluster^]
 +
@@ -255,7 +255,7 @@ DO NOT plug in the power cords at this point.
  ** <<Option 3: Connect to a single direct-attached NS224 drive shelf>>
  ** <<Option 4: Connect to two direct-attached NS224 drive shelves>>
 
-. To complete setting up your system, see link:install-detailed-guide.html#step-4-complete-system-setup-and-configuration[Step 4: Completing system setup and configuration].
+. To complete setting up your system, see link:install-detailed-guide.html#step-4-complete-system-setup-and-configuration[Step 4: Complete system setup and configuration].
 
 === Optional cabling: Cable configuration-dependent options
 
@@ -292,7 +292,7 @@ To perform other optional cabling, choose from:
 a|
 3
 a|
-To complete setting up your system, see link:install-detailed-guide.html#step-4-complete-system-setup-and-configuration[Step 4: Completing system setup and configuration].
+To complete setting up your system, see link:install-detailed-guide.html#step-4-complete-system-setup-and-configuration[Step 4: Complete system setup and configuration].
 
 |===
 
@@ -327,7 +327,7 @@ To perform other optional cabling, choose from:
 a|
 3
 a|
-To complete setting up your system, see link:install-detailed-guide.html#step-4-complete-system-setup-and-configuration[Step 4: Completing system setup and configuration].
+To complete setting up your system, see link:install-detailed-guide.html#step-4-complete-system-setup-and-configuration[Step 4: Complete system setup and configuration].
 
 |===
 
@@ -351,14 +351,14 @@ link:https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=09dade4f-00bd
 a|
 image:../media/oie_legend_icon_1_mb.png[]
 a|
-Cable controller A to the shelf    image:../media/drw_affa800_1shelf_cabling_a.png[]
+Cable controller A to the shelf:    image:../media/drw_affa800_1shelf_cabling_a.png[]
 a|
 image:../media/oie_legend_icon_2_lo.png[]
 a|
 Cable controller B to the shelf:    image:../media/drw_affa800_1shelf_cabling_b.png[]
 |===
 
-. To complete setting up your system, see link:install-detailed-guide.html#step-4-complete-system-setup-and-configuration[Step 4: Completing system setup and configuration].
+. To complete setting up your system, see link:install-detailed-guide.html#step-4-complete-system-setup-and-configuration[Step 4: Complete system setup and configuration].
 
 ==== Option 4: Cable the controllers to two drive shelves
 
@@ -388,7 +388,7 @@ a|
 Cable controller B to the shelves:    image:../media/drw_affa800_2shelf_cabling_b.png[]
 |===
 
-. To complete setting up your system, see link:install-detailed-guide.html#step-4-complete-system-setup-and-configuration[Step 4: Completing system setup and configuration].
+. To complete setting up your system, see link:install-detailed-guide.html#step-4-complete-system-setup-and-configuration[Step 4: Complete system setup and configuration].
 
 == Step 4: Complete system setup and configuration
 
@@ -400,7 +400,7 @@ If you have network discovery enabled on your laptop, you can complete system se
 
 . Plug the power cords into the controller power supplies, and then connect them to power sources on different circuits.
 +
-The system begins to boot. Initial booting may take up to eight minutes
+The system begins to boot. Initial booting may take up to eight minutes.
 
 . Make sure that your laptop has network discovery enabled.
 +
@@ -415,8 +415,8 @@ link:https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=d61f983e-f911
 image::../media/drw_autodiscovery_controler_select.png[]
 
  .. Open File Explorer.
- .. Click network in the left pane.
- .. Right click and select refresh.
+ .. Click *Network* in the left pane.
+ .. Right-click and select *refresh*.
  .. Double-click either ONTAP icon and accept any certificates displayed on your screen.
 +
 NOTE: XXXXX is the system serial number for the target node.
@@ -448,7 +448,7 @@ image::../media/drw_client_mgmt_subnet_affa800.png[]
  .. Assign a TCP/IP address to the laptop or console, using one that is on the management subnet.
 . Plug the power cords into the controller power supplies, and then connect them to power sources on different circuits.
 +
-The system begins to boot. Initial booting may take up to eight minutes
+The system begins to boot. Initial booting may take up to eight minutes.
 
 . Assign an initial node management IP address to one of the nodes.
 +
