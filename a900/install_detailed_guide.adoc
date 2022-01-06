@@ -208,27 +208,33 @@ a|
 Cable controller management (wrench) ports.
 
 image::../media/oie_cable_rj45.png[]
-`^RJ45 cable^`
-`~RJ~`
+
 a|
 image::../media/oie_legend_icon_3_o.png[]
 a|
 
-Cable 25GbE network switches:
+Cable 25 GbE network switches:
 
-** Ports in slot A3 and B3 (e3a and e3c)
+Ports in slot A3 and B3 (e3a and e3c)
 and slot A9 and B9 (e9a and e9c) to the
 25 GbE network switches.
+
+image::../media/oie_cable_sfp_gbe_copper.png[]
+
+
+40GbE host network switches:
+
+
 ** Cable host‐side b ports in slot A4 and
 B4 (e4b) and slot A8 and B8 (e8b) to
 the host switch.
 
-image::../media/oie_cable_sfp_gbe_copper.png[]
+image:../media/oie_cable100_gbe_qsfp28.png[]
 
 a|
 image::../media/oie_legend_icon_4_dr.png[]
 a|
-Cable 32 Gb FC connecions:
+Cable 32 Gb FC connections:
 
 Cable ports in slot A5 and B5 (5a,
 5b, 5c, and 5d) and slot A7 and B7
@@ -293,14 +299,21 @@ a|
 
 Cable 25GbE network switches:
 
-** Ports in slot A3 and B3 (e3a and e3c)
+Ports in slot A3 and B3 (e3a and e3c)
 and slot A9 and B9 (e9a and e9c) to the
 25 GbE network switches.
+
+image::../media/oie_cable_sfp_gbe_copper.png[]
+
+
+40GbE host network switches:
+
+
 ** Cable host‐side b ports in slot A4 and
 B4 (e4b) and slot A8 and B8 (e8b) to
 the host switch.
 
-image::../media/oie_cable_sfp_gbe_copper.png[]
+image:../media/oie_cable100_gbe_qsfp28.png[]
 
 a|
 image::../media/oie_legend_icon_4_dr.png[]
