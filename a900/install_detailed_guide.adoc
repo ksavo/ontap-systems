@@ -203,12 +203,13 @@ Cable cluster interconnect ports:
 image:../media/oie_cable100_gbe_qsfp28.png[]
 
 a|
-
+image:../media/oie_legend_icon_2_lp.png[]
 a|
 Cable controller management (wrench) ports.
 
-image::../media/oie_cable_rj45.png[RJ5 cable]
-
+image::../media/oie_cable_rj45.png[]
+`^RJ45 cable^`
+`~RJ~`
 a|
 image::../media/oie_legend_icon_3_o.png[]
 a|
