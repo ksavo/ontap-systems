@@ -8,6 +8,4 @@ summary: The following video shows end-to-end software configuration for systems
 :icons: font
 :imagesdir: ../media/
 
-The following video shows end-to-end software configuration for systems running ONTAP 9.2.
-
-link:https://youtu.be/WAE0afWhj1c[AFF A200 Setup Video]
+The link:https://youtu.be/WAE0afWhj1c[AFF A200 Setup Video^] shows end-to-end software configuration for systems running ONTAP 9.2.

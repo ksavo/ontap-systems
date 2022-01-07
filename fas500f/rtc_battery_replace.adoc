@@ -16,22 +16,18 @@ You replace the real-time clock (RTC) battery in the controller module so that y
 
 == Step 1: Shut down the impaired controller
 
-[.lead]
 You can shut down or take over the impaired controller using different procedures, depending on the storage system hardware configuration.
 
 === Option 1: Most configurations
 
-[.lead]
 include::../_include/shutdown_most_frus.adoc[]
 
 === Option 2: Controller is in a MetroCluster
 
-[.lead]
 include::../_include/shutdown_any_mcc_supported.adoc[]
 
 == Step 2: Remove the controller module
 
-[.lead]
 You must remove the controller module from the chassis when you replace a component inside the controller module.
 
 Make sure that you label the cables so that you know where they came from.
@@ -76,12 +72,11 @@ image::../media/drw_a250_remove_airduct_cover.png[]
 
 == Step 3: Replace the RTC battery
 
-[.lead]
 To replace the RTC battery, locate it inside the controller and follow the specific sequence of steps.
 
 You can use the following video or the tabulated steps to replace the RTC battery:
 
-https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=6ed27f71-d3a7-4cee-8d9f-ac5b016c982d[Replacing the RTC battery]
+https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=6ed27f71-d3a7-4cee-8d9f-ac5b016c982d[Replacing the RTC battery^]
 
 . Locate the RTC battery between the heatsink and the midplane and remove it exactly as shown in the graphic.
 +
@@ -168,5 +163,4 @@ The controller module should be fully inserted and flush with the edges of the c
 
 == Step 5: Complete the replacement process
 
-[.lead]
 include::../_include/complete_rma.adoc[]

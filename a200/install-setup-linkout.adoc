@@ -8,6 +8,4 @@ summary: You can use the PDF poster to install and set up your new system. The P
 :icons: font
 :imagesdir: ../media/
 
-You can use the PDF poster to install and set up your new system. The PDF poster provides step-by-step instructions with live links to additional content.
-
-link:https://library.netapp.com/ecm/ecm_download_file/ECMLP2573725[AFF A200 Installation and Setup Instructions]
+You can use the link:https://library.netapp.com/ecm/ecm_download_file/ECMLP2573725[AFF A200 Installation and Setup Instructions^] poster to install and set up your new system. The PDF poster provides step-by-step instructions with live links to additional content.

@@ -1,7 +1,7 @@
 ---
 permalink: a250/bootmedia-recovery-image-boot-non-2n-mcc.html
 sidebar: sidebar
-keywords: aff a250, aff, a250, boot, ontap, image, usb, drive, restore, file, system, environmental, variable, recovery, image, boot the recovery image
+keywords: aff a250, boot the recovery image
 summary: You must boot the ONTAP image from the USB drive, restore the file system, and verify the environmental variables.
 ---
 = Boot the recovery image - AFF A250
