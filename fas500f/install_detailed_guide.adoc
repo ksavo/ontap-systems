@@ -37,7 +37,6 @@ https://mysupport.netapp.com/eservice/registerSNoAction.do?moduleName=RegisterMy
 . Inventory and make a note of the number and types of cables you received.
 +
 The following table identifies the types of cables you might receive. If you receive a cable not listed in the table, see the link:https://hwu.netapp.com[NetApp Hardware Universe^] to locate the cable and identify its use.
-
 [options="header" cols="1,2,1,2"]
 |===
 | Type of cable...| Part number and length| Connector type| For...
@@ -217,7 +216,6 @@ DO NOT plug in the power cords at this point.
 
 === Optional cabling: Cable configuration-dependent options
 
-[.lead]
 You have configuration-dependent optional cabling to the Fibre Channel or iSCSI host networks or direct-attached storage. This cabling is not exclusive; you can have cabling to a host network and storage.
 
 ==== Option 1: Cable to a Fibre Channel host network
@@ -260,7 +258,6 @@ To complete setting up your system, see link:install-detailed-guide.html#step-4-
 
 ==== Option 2: Cable to a 25GbE data or host network
 
-[.lead]
 25GbE ports on the controllers are connected to 25GbE data or host network switches.
 
 Contact your network administrator for information about connecting the system to the switches.

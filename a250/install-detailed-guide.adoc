@@ -39,7 +39,6 @@ link:https://mysupport.netapp.com/eservice/registerSNoAction.do?moduleName=Regis
 . Inventory and make a note of the number and types of cables you received.
 +
 The following table identifies the types of cables you might receive. If you receive a cable not listed in the table, see the link:https://hwu.netapp.com[NetApp Hardware Universe^] to locate the cable and identify its use.
-
 +
 [options="header" cols="1,2,1,2"]
 |===
@@ -405,6 +404,5 @@ NOTE: The format for the address is +https://x.x.x.x+.
 
  .. Configure the system using the data you collected in the link:https://library.netapp.com/ecm/ecm_download_file/ECMLP2862613[ONTAP Configuration Guide^].
 +
-
 . Verify the health of your system by running Config Advisor.
 . After you have completed the initial configuration, go to the link:https://www.netapp.com/data-management/oncommand-system-documentation/[ONTAP & ONTAP System Manager Documentation Resources^] page for information about configuring additional features in ONTAP.

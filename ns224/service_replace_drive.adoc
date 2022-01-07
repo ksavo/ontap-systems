@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: ns224, shelves, shelf, ns224 shelves, fail, replace, drive, nondisruptive, i/o, hot-swap, hot-swap a drive
 summary: You can replace a failed drive nondisruptively in an NS224 drive shelf that is powered on, and while I/O is in progress.
 ---
-= Hot-swap a drive - NS224 shelves
+= Hot-swap a drive -- NS224 shelves
 :icons: font
 :imagesdir: ../media/
 
@@ -15,13 +15,13 @@ You can replace a failed drive nondisruptively in an NS224 drive shelf that is p
 
 * The drive that you are installing must be supported by the NS224 shelf.
 +
-https://hwu.netapp.com[NetApp Hardware Universe]
+https://hwu.netapp.com[NetApp Hardware Universe^]
 
 * If SED authentication is enabled, you must use the SED replacement instructions in the ONTAP documentation.
 +
 Instructions in the ONTAP documentation describe additional steps you must perform before and after replacing an SED.
 +
-https://docs.netapp.com/us-en/ontap/encryption-at-rest/index.html[NetApp encryption overview with the CLI]
+https://docs.netapp.com/us-en/ontap/encryption-at-rest/index.html[NetApp encryption overview with the CLI^]
 
 * All other components in the system must be functioning properly; if not, contact technical support.
 * Verify that the drive you are removing is failed.
@@ -36,7 +36,7 @@ NOTE: Depending on the drive type and capacity, it can take up to several hours 
 +
 Having the current version of the DQP installed allows your system to recognize and use newly qualified drives. This avoids system event messages about having noncurrent drive information and prevention of drive partitioning because drives are not recognized. The DQP also notifies you of noncurrent drive firmware.
 +
-https://mysupport.netapp.com/NOW/download/tools/diskqual/[NetApp Downloads: Disk Qualification Package]
+https://mysupport.netapp.com/NOW/download/tools/diskqual/[NetApp Downloads: Disk Qualification Package^]
 
 * *Best practice:* The best practice is to have current versions of NVMe shelf module (NSM) firmware and drive firmware on your system before replacing FRU components.
 +
@@ -44,12 +44,12 @@ https://mysupport.netapp.com/NOW/download/tools/diskqual/[NetApp Downloads: Disk
 ====
 Do not revert firmware to a version that does not support your shelf and its components.
 
-https://mysupport.netapp.com/site/downloads/firmware/disk-shelf-firmware[NetApp Downloads: Disk Shelf Firmware]
+https://mysupport.netapp.com/site/downloads/firmware/disk-shelf-firmware[NetApp Downloads: Disk Shelf Firmware^]
 
-https://mysupport.netapp.com/site/downloads/firmware/disk-drive-firmware[NetApp Downloads: Disk Drive Firmware]
+https://mysupport.netapp.com/site/downloads/firmware/disk-drive-firmware[NetApp Downloads: Disk Drive Firmware^]
 ====
 
-* Drive firmware is automatically updated (nondisruptively) on new drives that have non current firmware versions.
+* Drive firmware is automatically updated (nondisruptively) on new drives that have non-current firmware versions.
 +
 NOTE: Drive firmware checks occur every two minutes.
 
@@ -61,11 +61,11 @@ A shelf has three location LEDs: one on the operator display panel and one on ea
 
 * When you unpack the replacement drive, save all packing materials for use when you return the failed drive.
 +
-If you need the RMA number or additional help with the replacement procedure, contact technical support at https://mysupport.netapp.com/site/global/dashboard[NetApp Support], 888-463-8277 (North America), 00-800-44-638277 (Europe), or +800-800-80-800 (Asia/Pacific).
+If you need the RMA number or additional help with the replacement procedure, contact technical support at https://mysupport.netapp.com/site/global/dashboard[NetApp Support^], 888-463-8277 (North America), 00-800-44-638277 (Europe), or +800-800-80-800 (Asia/Pacific).
 
 * The following video provides an overview of the physical removal and insertion portions of the drive hot-swap procedure.
 +
-https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=733011a7-e03a-41b0-8723-aa840133bf25[Hot-swapping a drive in an NS224 drive shelf]
+https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=733011a7-e03a-41b0-8723-aa840133bf25[Hot-swapping a drive in an NS224 drive shelf^]
 
 .Steps
 
