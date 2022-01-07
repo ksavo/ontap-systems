@@ -1,7 +1,7 @@
 ---
 permalink: a250/bootmedia-encryption-preshutdown-checks.html
 sidebar: sidebar
-keywords: aff a250, aff, a250, shut, down, impair, node, check, status, onboard, encryption, keys, status, automatic, giveback, ontap, system, shutdown, check, Check onboard encryption keys as needed
+keywords: aff a250, check onboard encryption keys as needed
 summary: Prior to shutting down the impaired node and checking the status of the onboard encryption keys, you must check the status of the impaired node, disable automatic giveback, and check what version of ONTAP the system is running.
 ---
 = Check onboard encryption keys as needed - AFF A250
@@ -14,7 +14,7 @@ include::../_include/encryption_steps_before_shutdown.adoc[]
  ** If <lno-DARE> is not displayed in the command output, and the system is running ONTAP 9.6 or later, go to the next section.
 
  . If the impaired node is part of an HA configuration, disable automatic giveback from the healthy node: `storage failover modify -node local -auto-giveback false` or `storage failover modify -node local -auto-giveback-after-panic false`
- 
+
 == Check NVE or NSE on systems running ONTAP 9.6 and later
 
 [.lead]
