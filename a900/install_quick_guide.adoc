@@ -13,4 +13,4 @@ This topic gives graphic instructions for a typical installation of your system 
 
 Access the _Installation and Setup Instructions_ PDF poster:
 
-link:../meida/PDF/December_2021_Rev-1_AFFA900_ISI.pdf[AFF A900 Installation and Setup Instructions^]
+link:../media/PDF/December_2021_Rev-1_AFFA900_ISI.pdf[AFF A900 Installation and Setup Instructions^]
