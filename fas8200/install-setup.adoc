@@ -15,11 +15,11 @@ For most configurations, you can choose from different content formats.
 +
 A printable PDF of step-by-step instructions with live links to additional content.
 
-* link:https://youtu.be/WAE0afWhj1c[Video steps]
+* link:https://youtu.be/WAE0afWhj1c[Video steps^]
 +
 Video step-by-step instructions.
 
 For MetroCluster configurations, see either:
 
-* https://docs.netapp.com/us-en/ontap-metrocluster/install-ip/index.html[Install MetroCluster IP configuration]
-* https://docs.netapp.com/us-en/ontap-metrocluster/install-fc/index.html[Install MetroCluster Fabric-Attached configuration]
+* https://docs.netapp.com/us-en/ontap-metrocluster/install-ip/index.html[Install MetroCluster IP configuration^]
+* https://docs.netapp.com/us-en/ontap-metrocluster/install-fc/index.html[Install MetroCluster Fabric-Attached configuration^]
