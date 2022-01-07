@@ -351,10 +351,43 @@ NOTE: As you insert the connector, you should feel it click into place; if you d
 
 . Use the following animation or drawings to cable your controllers to a single NS224 drive shelf.
 +
+
 https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=6520eb01-87b3-4520-9109-ac5b0032ea4e[Animation--Cabling a single NS224 shelf ^]
 +
 
 image::../media/drw_a900_NS224_one shelf_cabling.png[]
++
+
+[options="header" col="1,2"]
+
+|===
+|Step|Perform on each controller
+a|
+
+image:../media/oie_legend_icon_1_mb.png[]
+
+a|
+
+** Connect controller A port e2a to port e0a on NSM A on the shelf.
+
+** Connect controller A port e10b to port e0b on NSM B on the shelf.
+
+image:../media/oie_cable100_gbe_qsfp28.png[]
+
+100 GbE cable
+a|
+
+image:../media/oie_legend_icon_2_lo.png[]
+|
+
+** Connect controller B port e2a to port e0a on NSM B on the shelf.
+
+** Connect controller B port e10b to port e0b on NSM A on the shelf.
+
+image:../media/oie_cable100_gbe_qsfp28.png[]
+
+100 GbE cable
+|===
 
 . To complete setting up your system, see link:install_detailed_guide.md#[Completing system setup and configuration^].
 
@@ -377,13 +410,48 @@ NOTE: As you insert the connector, you should feel it click into place; if you d
 
 . Use the following animation or diagram to cable your controllers to two NS224 drive shelves.
 +
+
 https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=34098e39-73ad-45de-9af7-ac5b0032ea9a[Animation--Cabling two NS224 shelves^]
 +
 
 image:../media/drw_a900_NS224_line_art_two shelf_cabling.png[]
-
 +
+
 image::../media/drw_a900_NS224_two shelf_cabling.png[]
+
+[options="header" col="1,2"]
+
+|===
+|Step|Perform on each controller
+a|
+
+image:../media/oie_legend_icon_1_mb.png[]
+
+a|
+
+** Connect controller A port e2a to NSM A e0a on shelf 1.
+** Connect controller A port e10b to NSM B e0b on shelf 1.
+** Connect controller A port e2b to NSM B e0b on shelf 2.
+** Connect controller A port e10a to NSM A e0a on shelf 2.
+
+image:../media/oie_cable100_gbe_qsfp28.png[]
+
+100 GbE cable
+a|
+
+image:../media/oie_legend_icon_2_lo.png[]
+a|
+
+** Connect controller B port e2a to NSM B e0a on shelf 1.
+** Connect controller B port e10b to NSM A e0b on shelf 1.
+** Connect controller B port e2b to NSM A e0b on shelf 2.
+** Connect controller B port e10a to NSM B e0a on shelf 2.
+
+image:../media/oie_cable100_gbe_qsfp28.png[]
+
+100 GbE cable
+
+|===
 
 . To complete setting up your system, see link:install_detailed_guide.md#[Completing system setup and configuration^].
 
