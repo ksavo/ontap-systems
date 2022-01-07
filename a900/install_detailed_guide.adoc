@@ -224,8 +224,7 @@ image::../media/oie_cable_sfp_gbe_copper.png[]
 
 40GbE host network switches:
 
-
-** Cable host‐side b ports in slot A4 and
+Cable host‐side b ports in slot A4 and
 B4 (e4b) and slot A8 and B8 (e8b) to
 the host switch.
 
@@ -308,8 +307,7 @@ image::../media/oie_cable_sfp_gbe_copper.png[]
 
 40GbE host network switches:
 
-
-** Cable host‐side b ports in slot A4 and
+Cable host‐side b ports in slot A4 and
 B4 (e4b) and slot A8 and B8 (e8b) to
 the host switch.
 
