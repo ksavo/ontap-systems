@@ -411,7 +411,7 @@ When viewed from the rear of the platform chassis, the RoCE-capable card port on
  +
 The following illustration shows the shelf cabling when completed.
 +
-image::../media/drw_ns224_aff250_fas500f_1shelf.gif[]
+image::../media/drw_ns224_aff250_fas500f_1shelf.png[]
 . Verify that the hot-added shelf is cabled correctly.
 +
 If any cabling errors are generated, follow the corrective actions provided.
