@@ -107,7 +107,7 @@ X66032A (112-00437), 2m
 
 X66033A (112-00438), 3m
 a|
-image:../media/oie_cable_fiber_lc_connector.gif[]
+image:../media/oie_cable_fiber_lc_connector.png[]
 a|
 FC optical network
 a|
