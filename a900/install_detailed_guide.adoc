@@ -387,7 +387,7 @@ image:../media/oie_cable100_gbe_qsfp28.png[]
 100 GbE cable
 |===
 
-. To complete setting up your system, see <<Complete system setup and configuration>>.
+. To complete setting up your system, see  <<Step 5: Complete system setup and configuration>>.
 
 === Option 2: Cable the controllers to two NS224 drive shelves in AFF A900
 
@@ -454,7 +454,7 @@ image:../media/oie_cable100_gbe_qsfp28.png[]
 
 |===
 
-. To complete setting up your system, see <<Complete system setup and configuration>>.
+. To complete setting up your system, see <<Step 5: Complete system setup and configuration>>.
 
 == Step 5: Complete system setup and configuration
 
@@ -543,9 +543,8 @@ NOTE: XXXXX is the system serial number for the target node.
 
 System Manager opens.
 
-. Use System Manager guided setup to configure your system using the data you collected in the _NetApp ONTAP Configuration Guide_.
-+
-https://library.netapp.com/ecm/ecm_download_file/ECMLP2862613[ONTAP Configuration Guide^]
+. Use System Manager guided setup to configure your system using the data you collected in the https://library.netapp.com/ecm/ecm_download_file/ECMLP2862613[ONTAP Configuration Guide^].
+
 
 . Set up your account and download Active IQ Config Advisor:
  .. Log in to your existing account or create an account.
