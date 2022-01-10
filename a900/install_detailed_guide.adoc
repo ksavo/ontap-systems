@@ -138,9 +138,7 @@ a|
 Powering up the system
 |===
 
-. Review the _NetApp ONTAP Configuration Guide_ and collect the required information listed in that guide.
-+
-https://library.netapp.com/ecm/ecm_download_file/ECMLP2862613[ONTAP Configuration Guide]
+. Review the https://library.netapp.com/ecm/ecm_download_file/ECMLP2862613[ONTAP Configuration Guide^] and collect the required information listed in that guide.
 
 == Step 2: Install the hardware
 
@@ -182,7 +180,7 @@ NOTE: As you insert the connector, you should feel it click into place; if you d
 
 . Use the animation or illustration to complete the cabling between the controllers and to the switches:
 +
-https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=7a55b98a-e8b8-41d5-821f-ac5b0032ead0[Animation -- Cabling a two-node switchless cluster need animation request^]
+https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=7a55b98a-e8b8-41d5-821f-ac5b0032ead0[Animation -- Cabling a two-node switchless cluster^]
 +
 
 image::../media/drw_a900_tnsc_network_cabling.png[]
@@ -244,7 +242,7 @@ image:../media/oie_cable_sfp_gbe_copper.png[]
 
 |===
 
-. To cable your storage, see link:install_detailed_guide.md#[Cabling controllers to drive shelves^]
+. To cable your storage, see <<Step 4: Cable controllers to drive shelves>>.
 
 === Option 2: Switched cluster
 
@@ -263,7 +261,7 @@ NOTE: As you insert the connector, you should feel it click into place; if you d
 
 . Use the animation or illustration to complete the cabling between the controllers and to the switches:
 +
-https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=6381b3f1-4ce5-4805-bd0a-ac5b0032f51d[Animation--Switched cluster cabling^]
+https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=6381b3f1-4ce5-4805-bd0a-ac5b0032f51d[Animation--Cabling a switched cluster^]
 +
 
 image::../media/drw_a900_switched_network_cabling.png[]
@@ -328,7 +326,7 @@ image:../media/oie_cable_sfp_gbe_copper.png[]
 |===
 
 
-. Cable your storage: link:install_detailed_guide.md#[Cabling controllers to drive shelves^]
+. To cable your storage, see <<Step 4: Cable controllers to drive shelves>>.
 
 == Step 4: Cable controllers to drive shelves
 
@@ -389,7 +387,7 @@ image:../media/oie_cable100_gbe_qsfp28.png[]
 100 GbE cable
 |===
 
-. To complete setting up your system, see link:install_detailed_guide.md#[Completing system setup and configuration^].
+. To complete setting up your system, see <<Complete system setup and configuration>>.
 
 === Option 2: Cable the controllers to two NS224 drive shelves in AFF A900
 
@@ -456,7 +454,7 @@ image:../media/oie_cable100_gbe_qsfp28.png[]
 
 |===
 
-. To complete setting up your system, see link:install_detailed_guide.md#[Completing system setup and configuration^].
+. To complete setting up your system, see <<Complete system setup and configuration>>.
 
 == Step 5: Complete system setup and configuration
 
