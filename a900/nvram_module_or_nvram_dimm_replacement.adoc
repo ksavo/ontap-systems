@@ -61,7 +61,7 @@ The NVRAM module disengages from the chassis and moves out a few inches.
  .. Remove the NVRAM module from the chassis by pulling on the pull tabs on the sides of the module face.
 +
 
-https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=6eb2d864-9d35-4a23-b6c2-adf9016b359f[Animation--Remove/install NVRAM module^]
+https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=6eb2d864-9d35-4a23-b6c2-adf9016b359f[Animation--Replace the NVRM module^]
 +
 
 image::../media/drw_a900_move-remove_NVRAM_module.png[]
@@ -78,9 +78,6 @@ I/O latch completely unlocked
 |===
 . Set the NVRAM module on a stable surface and remove the cover from the NVRAM module by pushing down on the blue locking button on the cover, and then, while holding down the blue button, slide the lid off the NVRAM module.
 
-+
-
-https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=6eb2d864-9d35-4a23-b6c2-adf9016b359f[Animation--Replace NVRAM module^]
 +
 
 image::../media/drw_a900_remove_NVRAM_module_contents.png[]
