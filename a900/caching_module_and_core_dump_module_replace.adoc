@@ -67,7 +67,7 @@ a|
 Caching module cam handle.
 |===
 
- .. Press the twrra cotta release button on the front of the caching module.
+ .. Press the terra cotta release button on the front of the caching module.
 +
 IMPORTANT: Do not use the numbered and lettered I/O cam latch to eject the caching module. The numbered and lettered I/O cam latch ejects the entire NVRAM10 module and not the caching module.
 
@@ -106,7 +106,7 @@ Core dump module cam handle.
 |===
 
  .. Locate the failed module by the amber Attention LED on the front of the module.
- .. Press the twrra cotta release button on the front of the core dump module.
+ .. Press the terra cotta release button on the front of the core dump module.
 +
 IMPORTANT: Do not use the numbered and lettered I/O cam latch to eject the core dump module. The numbered and lettered I/O cam latch ejects the entire NVRAM10 module and not the core dump module.
 

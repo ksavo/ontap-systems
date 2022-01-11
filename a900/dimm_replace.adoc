@@ -39,7 +39,7 @@ To access components inside the controller, you must first remove the controller
 
 . If you are not already grounded, properly ground yourself.
 . Unplug the cables from the impaired controller module, and keep track of where the cables were connected.
-. Slide the twrra cotta button on the cam handle downward until it unlocks.
+. Slide the terra cotta button on the cam handle downward until it unlocks.
 
 +
 https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=256721fd-4c2e-40b3-841a-adf2000df5fa[Animation--Remove the controller^]
@@ -141,7 +141,7 @@ Controller module cover locking button
 . Align the end of the controller module with the opening in the chassis, and then gently push the controller module halfway into the system.
 
 +
-https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=099237f3-d7f2-4749-86e2-adf2000df53c[Animation--Install controller]
+https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=099237f3-d7f2-4749-86e2-adf2000df53c[Animation--Install controller^]
 +
 
 image::../media/drw_a900_remove_PCM.png[]
@@ -157,8 +157,6 @@ a|
 Cam handle
 |===
 
-
-
 +
 NOTE: Do not completely insert the controller module in the chassis until instructed to do so.
 
@@ -167,8 +165,8 @@ NOTE: Do not completely insert the controller module in the chassis until instru
 NOTE: You will connect the rest of the cables to the controller module later in this procedure.
 
 . Complete the reinstallation of the controller module:
- .. If you have not already done so, reinstall the cable management device.
- .. Firmly push the controller module into the chassis until it meets the midplane and is fully seated.
+.. If you have not already done so, reinstall the cable management device.
+.. Firmly push the controller module into the chassis until it meets the midplane and is fully seated.
 +
 The locking latches rise when the controller module is fully seated.
 +
@@ -176,9 +174,9 @@ IMPORTANT: Do not use excessive force when sliding the controller module into th
 +
 The controller module begins to boot as soon as it is fully seated in the chassis. Be prepared to interrupt the boot process.
 
- .. Rotate the locking latches upward, tilting them so that they clear the locking pins, and then lower them into the locked position.
- .. Interrupt the boot process by pressing `Ctrl-C` when you see Press Ctrl-C for Boot Menu.
- .. Select the option to boot to Maintenance mode from the displayed menu.
+.. Rotate the locking latches upward, tilting them so that they clear the locking pins, and then lower them into the locked position.
+.. Interrupt the boot process by pressing `Ctrl-C` when you see Press Ctrl-C for Boot Menu.
+.. Select the option to boot to Maintenance mode from the displayed menu.
 
 == Step 5: Run system-level diagnostics
 
@@ -190,8 +188,8 @@ Your system must be at the LOADER prompt to start System Level Diagnostics.
 All commands in the diagnostic procedures are issued from the node where the component is being replaced.
 
 . If the node to be serviced is not at the LOADER prompt, perform the following steps:
- .. Select the Maintenance mode option from the displayed menu.
- .. After the node boots to Maintenance mode, halt the node: `halt`
+.. Select the Maintenance mode option from the displayed menu.
+.. After the node boots to Maintenance mode, halt the node: `halt`
 +
 After you issue the command, you should wait until the system stops at the LOADER prompt.
 +
@@ -258,7 +256,7 @@ The controller module boots up when fully seated.
 +
 After you issue the command, wait until the system stops at the LOADER prompt.
 
- .. Rerun the system-level diagnostic test.
+.. Rerun the system-level diagnostic test.
 
 +
 |===

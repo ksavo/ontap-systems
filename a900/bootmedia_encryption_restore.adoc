@@ -11,9 +11,8 @@ summary: 'Once environment variables are checked, you must complete steps specif
 Once environment variables are checked, you must complete steps specific to systems that have Onboard Key Manager (OKM), NetApp Storage Encryption (NSE) or NetApp Volume Encryption (NVE) enabled.
 
 . Determine which section you should use to restore your OKM, NSE, or NVE configurations:If NSE or NVE are enabled along with Onboard Key Manager you must restore settings you captured at the beginning of this procedure.
- ** If NSE or NVE are enabled and Onboard Key Manager is enabled, go to link:bootmedia_encryption_restore.html#restore-nve-or-nse-when-onboard-key-manager-is-enabled[Restore NVE or NSE when Onboard Key Manager is enabled].
-  ** If NSE or NVE are enabled for ONTAP 9.6, go to
-link:bootmedia_encryption_restore.html#restore-NSE/NVE-on-systems-running-ONTAP-9.6-and-later[Restore NSE/NVE on systems running ONTAP 9.6 and later].
+ ** If NSE or NVE are enabled and Onboard Key Manager is enabled, go to <<Restore NVE or NSE when Onboard Key Manager is enabled>>.
+  ** If NSE or NVE are enabled for ONTAP 9.6, go to <<Restore NSE/NVE on systems running ONTAP 9.6 and later>>.
 
 == Restore NVE or NSE when Onboard Key Manager is enabled
 

@@ -18,7 +18,7 @@ To access components inside the controller, you must first remove the controller
 
 . If you are not already grounded, properly ground yourself.
 . Unplug the cables from the impaired controller module, and keep track of where the cables were connected.
-. Slide the twrra cotta button on the cam handle downward until it unlocks.
+. Slide the terra cotta button on the cam handle downward until it unlocks.
 
 +
 https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=256721fd-4c2e-40b3-841a-adf2000df5fa[Animation -- Remove the controller^]

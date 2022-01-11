@@ -19,7 +19,7 @@ To access components inside the controller, you must first remove the controller
 .Steps
 . If you are not already grounded, properly ground yourself.
 . Unplug the cables from the impaired controller module, and keep track of where the cables were connected.
-. Slide the twrra cotta button on the cam handle downward until it unlocks.
+. Slide the terra cotta button on the cam handle downward until it unlocks.
 
 +
 https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=256721fd-4c2e-40b3-841a-adf2000df5fa[Animation -- Remove the controller^]
@@ -113,7 +113,7 @@ You can install the system image to the replacement boot media using a USB flash
 . Align the end of the controller module with the opening in the chassis, and then gently push the controller module halfway into the system.
 . Recable the controller module, as needed.
 . Insert the USB flash drive into the USB slot on the controller module.
-
++
 Make sure that you install the USB flash drive in the slot labeled for USB devices, and not in the USB console port.
 
 . Push the controller module all the way into the system, making sure that the cam handle clears the USB flash drive, firmly push the cam handle to finish seating the controller module, and then push the cam handle to the closed position.
@@ -124,7 +124,7 @@ The node begins to boot as soon as it is completely installed into the chassis.
 +
 If you miss this message, press Ctrl-C, select the option to boot to Maintenance mode, and then halt the node to boot to LOADER.
 
-. Although the environment variables and bootargs are retained, you should check that all required boot environment variables and bootargs are properly set for your system type and configuration using the `printenv bootarg name` command and correct any errors using the `setenv variable-name <value\>` command.
+. Although the environment variables and bootargs are retained, you should check that all required boot environment variables and bootargs are properly set for your system type and configuration using the `printenv bootarg name` command and correct any errors using the `setenv variable-name <value>` command.
  .. Check the boot environment variables:
   *** bootarg.init.boot_clustered
   *** partner-sysid

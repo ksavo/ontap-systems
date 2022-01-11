@@ -53,7 +53,7 @@ The I/O module disengages from the chassis and moves about 1/2 inch out of the I
 Make sure that you keep track of which slot the I/O module was in.
 +
 
-https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=3a5b1f6e-15ec-40b4-bb2a-adf9016af7b6[Animation--Remove/install I/O module]
+https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=3a5b1f6e-15ec-40b4-bb2a-adf9016af7b6[Animation--Remove/install I/O module^]
 +
 
 image:../media/drw_a900_remove_PCIe_module.png[]
@@ -79,7 +79,7 @@ I/O cam latch completely unlocked
 [.lead]
 After you replace a PCIe module, you must reboot the controller module.
 
-. If the node is at the LOADER prompt, boot the node. Respond `y` if you see a prompt warning of a system ID mismatch and then asking to override the system ID, and then enter `bye` when the override completes. 
+. If the node is at the LOADER prompt, boot the node. Respond `y` if you see a prompt warning of a system ID mismatch and then asking to override the system ID, and then enter `bye` when the override completes.
 . If your system is configured to support 10 GbE cluster interconnect and data connections on 40 GbE NICs or onboard ports, convert these ports to 10 GbE connections by using the nicadmin convert command from Maintenance mode.
 +
 NOTE: Be sure to exit Maintenance mode after completing the conversion.
