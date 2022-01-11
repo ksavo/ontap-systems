@@ -112,7 +112,7 @@ NOTE: Note the polarity of the battery as you remove it from the holder. The bat
 == Step 4: Reinstall the controller module and set time/date
 
 [.lead]
-After you replace a component within the controller module, you must reinstall the controller module in the system chassis, reset the time and date on the controller, and then boot it.
+After you replace a component within the controller module, you must reinstall the controller module in the system chassis, reset the time and date, if the controller has been left out of the chassis for too long, and then boot it.
 
 . If you have not already done so, close the air duct or controller module cover.
 . Align the end of the controller module with the opening in the chassis, and then gently push the controller module halfway into the system.

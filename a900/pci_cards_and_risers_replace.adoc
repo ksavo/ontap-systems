@@ -40,15 +40,15 @@ To replace an I/O module, locate it within the chassis and follow the specific s
 Make sure that you label the cables so that you know where they came from.
 
 . Remove the target I/O module from the chassis:
- .. Depress the lettered and numbered cam button.
+.. Depress the lettered and numbered cam button.
 +
 The cam button moves away from the chassis.
 
- .. Rotate the cam latch down until it is in a horizontal position.
+.. Rotate the cam latch down until it is in a horizontal position.
 +
 The I/O module disengages from the chassis and moves about 1/2 inch out of the I/O slot.
 
- .. Remove the I/O module from the chassis by pulling on the pull tabs on the sides of the module face.
+.. Remove the I/O module from the chassis by pulling on the pull tabs on the sides of the module face.
 +
 Make sure that you keep track of which slot the I/O module was in.
 +
@@ -79,7 +79,7 @@ I/O cam latch completely unlocked
 [.lead]
 After you replace a PCIe module, you must reboot the controller module.
 
-. If the node is at the LOADER prompt, boot the node, responding `y` if you see a prompt warning of a system ID mismatch and asking to override the system ID: `bye`
+. If the node is at the LOADER prompt, boot the node. Respond `y` if you see a prompt warning of a system ID mismatch and then asking to override the system ID, and then enter `bye` when the override completes. 
 . If your system is configured to support 10 GbE cluster interconnect and data connections on 40 GbE NICs or onboard ports, convert these ports to 10 GbE connections by using the nicadmin convert command from Maintenance mode.
 +
 NOTE: Be sure to exit Maintenance mode after completing the conversion.
