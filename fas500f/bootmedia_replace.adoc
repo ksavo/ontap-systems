@@ -2,7 +2,7 @@
 permalink: fas500f/bootmedia-replace.html
 sidebar: sidebar
 keywords: fas500f, replace the boot media
-summary: 'You locate the failed boot media in the controller module by removing the air duct on the controller module before you can replace the boot media.'
+summary: "You locate the failed boot media in the controller module by removing the air duct on the controller module before you can replace the boot media."
 ---
 = Remove the controller module, replace the boot media and transfer the boot image to the boot media - FAS500f
 :icons: font

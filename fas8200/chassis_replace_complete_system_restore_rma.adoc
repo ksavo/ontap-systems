@@ -8,9 +8,11 @@ summary: "You must verify the HA state of the chassis and run System-Level diagn
 :icons: font
 :imagesdir: ../media/
 
+[.lead]
+You must verify the HA state of the chassis and run System-Level diagnostics, switch back aggregates, and return the failed part to NetApp, as described in the RMA instructions shipped with the kit.
+
 == Step 1: Verify and set the HA state of the chassis
 
-[.lead]
 You must verify the HA state of the chassis, and, if necessary, update the state to match your system configuration.
 
 . In Maintenance mode, from either controller module, display the HA state of the local controller module and chassis: `ha-config show`
@@ -50,7 +52,6 @@ Exit Maintenance mode: `halt`    The LOADER prompt appears.
 
 == Step 2: Run system-level diagnostics
 
-[.lead]
 After installing a new chassis, you should run interconnect diagnostics.
 
 Your system must be at the LOADER prompt to start System Level Diagnostics.
@@ -150,10 +151,8 @@ Determine the cause of the problem.
 
 == Step 3: Switch back aggregates in a two-node MetroCluster configuration
 
-[.lead]
 include::../_include/2n_mcc_switchback.adoc[]
 
 == Step 4: Return the failed part to NetApp
 
-[.lead]
 include::../_include/complete_rma.adoc[]
