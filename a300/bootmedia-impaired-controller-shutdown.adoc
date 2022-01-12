@@ -2,11 +2,14 @@
 permalink: a300/bootmedia-impaired-controller-shutdown.html
 sidebar: sidebar
 keywords: aff a300, shut down the impaired controller
-summary: You can shut down or take over the impaired controller using different procedures, depending on the storage system hardware configuration.
+summary: "You can shut down or take over the impaired controller using different procedures, depending on the storage system hardware configuration."
 ---
 = Shut down the impaired controller - AFF A300
 :icons: font
 :imagesdir: ../media/
+
+[.lead]
+You can shut down or take over the impaired controller using different procedures, depending on the storage system hardware configuration.
 
 == Option 1: Most configurations
 

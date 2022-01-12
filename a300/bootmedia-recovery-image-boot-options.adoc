@@ -2,7 +2,7 @@
 permalink: a300/bootmedia-recovery-image-boot-options.html
 sidebar: sidebar
 keywords: aff a300, boot the recovery image
-summary: The procedure for booting the impaired node from the recovery image depends on whether the system is in a two-node MetroCluster configuration.
+summary: "The procedure for booting the impaired node from the recovery image depends on whether the system is in a two-node MetroCluster configuration."
 ---
 = Boot the recovery image - AFF A300
 :icons: font
