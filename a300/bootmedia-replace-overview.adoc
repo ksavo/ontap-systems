@@ -2,7 +2,11 @@
 permalink: a300/bootmedia-replace-overview.html
 sidebar: sidebar
 keywords: aff a300, replace the boot media
+<<<<<<< HEAD
 summary: 'The boot media stores a primary and secondary set of system \(boot image\) files that the system uses when it boots. Depending on your network configuration, you can perform either a nondisruptive or disruptive replacement.'
+=======
+summary: "The boot media stores a primary and secondary set of system \(boot image\) files that the system uses when it boots. Depending on your network configuration, you can perform either a nondisruptive or disruptive replacement."
+>>>>>>> 96cde16f4845a8e79e75ddcaf8ac5a1b1cff8157
 ---
 = Replace the boot media - AFF A300
 :icons: font
