@@ -44,7 +44,7 @@ The console connection shows that the node drops to the LOADER prompt when the t
 +
 NOTE: Make sure that any unused I/O slots have blanks installed to prevent possible thermal issues.
 
-. From the  LOADER prompt, boot controller A. `boot_ontap`
+. Reboot the node from the LOADER prompt: _bye_
 . Give back the node from the partner node. `storage failover giveback -ofnode target_node_name`
 . Enable automatic giveback if it was disabled: `storage failover modify -node local -auto-giveback true`
 . If you are using slots 3 and/or 7 for networking, use the `storage port modify -node __<node name>__ -port __<port name>__ -mode network` command to convert the slot for networking use.
@@ -126,7 +126,7 @@ I/O cam latch completely unlocked
 .. Push the I/O cam latch all the way up to lock the module in place.
 . Repeat the remove and install steps to replace additional modules for controller A.
 . If the replacement I/O module is a NIC, cable the module or modules to the data switches.
-. From the  LOADER prompt, boot controller A. `boot_ontap`
+. Reboot the node from the LOADER prompt: _bye_
 . Give back the node from the partner node. `storage failover giveback -ofnode target_node_name`
 . Enable automatic giveback if it was disabled: `storage failover modify -node local -auto-giveback true`
 

@@ -74,12 +74,12 @@ I/O cam latch completely unlocked
 . Install the replacement I/O module into the chassis by gently sliding the I/O module into the slot until the lettered and numbered I/O cam latch begins to engage with the I/O cam pin, and then push the I/O cam latch all the way up to lock the module in place.
 . Recable the I/O module, as needed.
 
-== Step 3: Reboot the controller after PCIe module replacement
+== Step 3: Reboot the controller after I/O module replacement
 
 [.lead]
-After you replace a PCIe module, you must reboot the controller module.
+After you replace an I/O module, you must reboot the controller module.
 
-. If the node is at the LOADER prompt, boot the node. Respond `y` if you see a prompt warning of a system ID mismatch and then asking to override the system ID, and then enter `bye` when the override completes.
+. From the LOADER prompt, reboot the node: _bye_
 . If your system is configured to support 10 GbE cluster interconnect and data connections on 40 GbE NICs or onboard ports, convert these ports to 10 GbE connections by using the nicadmin convert command from Maintenance mode.
 +
 NOTE: Be sure to exit Maintenance mode after completing the conversion.
