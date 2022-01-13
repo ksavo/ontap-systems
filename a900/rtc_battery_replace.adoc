@@ -14,10 +14,21 @@ You replace the real-time clock (RTC) battery in the controller module so that y
 * You can use this procedure with all versions of ONTAP supported by your system
 * All other components in the system must be functioning properly; if not, you must contact technical support.
 
-== Step 1: Shut down the impaired controller
+== Step 1: Shut down the impaired node
+
+[.lead]
+You can shut down or take over the impaired controller using different procedures, depending on the storage system hardware configuration.
+
+=== Option 1: Most configurations
 
 [.lead]
 include::../_include/shutdown_most_frus.adoc[]
+
+=== Option 2: Controller is in a MetroCluster
+
+[.lead]
+include::../_include/shutdown_any_mcc_supported.adoc[]
+
 
 == Step 2: Open the controller
 
@@ -26,16 +37,22 @@ To access components inside the controller, you must first remove the controller
 
 . If you are not already grounded, properly ground yourself.
 . Unplug the cables from the impaired controller module, and keep track of where the cables were connected.
-. Slide the orange button on the cam handle downward until it unlocks.
+. Slide the terra cotta button on the cam handle downward until it unlocks.
 +
-image::../media/drw_9000_remove_pcm.svg[]
+
+https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=256721fd-4c2e-40b3-841a-adf2000df5fa[Animation--Remove the controller^]
 +
+
+image::../media/drw_a900_remove_PCM.png[]
++
+[cols="10,90"]
 |===
 a|
-image:../media/legend_icon_01.gif[] a|
+image:../media/legend_icon_01.png[]
+a|
 Cam handle release button
 a|
-image:../media/legend_icon_02.gif[]
+image:../media/legend_icon_02.png[]
 a|
 Cam handle
 |===
@@ -45,12 +62,14 @@ Cam handle
 Make sure that you support the bottom of the controller module as you slide it out of the chassis.
 
 . Place the controller module lid-side up on a stable, flat surface, press the blue button on the cover, slide the cover to the back of the controller module, and then swing the cover up and lift it off of the controller module.
-+
-image::../media/drw_9000_pcm_open.svg[]
-+
+
+image::../media/drw_a900_PCM_open.png[]
+
+[cols="10,90"]
 |===
 a|
-image:../media/legend_icon_01.gif[] a|
+image:../media/legend_icon_01.png[]
+a|
 Controller module cover locking button
 |===
 
@@ -62,14 +81,20 @@ To replace the RTC battery, you must locate the failed battery in the controller
 . If you are not already grounded, properly ground yourself.
 . Locate the RTC battery.
 +
-image::../media/drw_9000_remove_rtc_battery.svg[]
+
+https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=1bb4d8d4-5040-471c-9593-adf2000df48d[Animation--Replace RTC battery^]
 +
+
+image::../media/drw_a900_remove_RTC_battery.png[]
++
+[cols="10,90"]
 |===
 a|
-image:../media/legend_icon_01.gif[] a|
+image:../media/legend_icon_01.png[]
+a|
 RTC battery
 a|
-image:../media/legend_icon_02.gif[]
+image:../media/legend_icon_02.png[]
 a|
 RTC battery housing
 |===
@@ -87,7 +112,7 @@ NOTE: Note the polarity of the battery as you remove it from the holder. The bat
 == Step 4: Reinstall the controller module and set time/date
 
 [.lead]
-After you replace a component within the controller module, you must reinstall the controller module in the system chassis, reset the time and date on the controller, and then boot it.
+After you replace the RTC battery, you must reinstall the controller module. If the RTC battery has been left out of the controller module for more than 10 minutes, you may have to reset the time and date.
 
 . If you have not already done so, close the air duct or controller module cover.
 . Align the end of the controller module with the opening in the chassis, and then gently push the controller module halfway into the system.

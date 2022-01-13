@@ -12,31 +12,38 @@ indexpage:
     - title: Install and setup
       links:
         - title: Most configurations
-          url: /install-setup.html
+          url: /install_setup.html
         - title: MetroCluster IP configurations
-          url: https://docs.netapp.com/us-en/ontap-metrocluster/install-ip/index.html
+          url: https://docs.netapp.com/us-en/ontap-metrocluster/install-ip/concept_considerations_differences.html
+        - title: MetroCluster Fiber Channel configurations
+          url: https://docs.netapp.com/us-en/ontap-metrocluster/install-fc/concept_considerations_differences.html
     - title: Maintain
       links:
+        - title: Add I/O module
+          url: /add_io_module.html
         - title: Boot media
-          url: /bootmedia-replace-overview.html
+          url: /bootmedia_replace_overview.html
         - title: Chassis
-          url: /chassis-replace-overview.html
+          url: /chassis_replace_overview.html
         - title: Controller module
-          url: /controller-replace-overview.html
+          url: /controller_replace_overview.html
         - title: DIMM
-          url: /dimm-replace.html
+          url: /dimm_replace.html
+        - title: Destage power controler module
+          url: /dcpm_NVRAM11_battery_replace.html
         - title: Fan
-          url: /fan-replace.html
-        - title: NVDIMM
-          url: /nvdimm-replace.html
-        - title: NVDIMM battery
-          url: /nvdimm-battery-replace.html
-        - title: PCIe card
-          url: /pci-cards-and-risers-replace.html
+          url: /fan-swap-out.html
+        - title: I/O module
+          url: /pci_cards_and_risers_replace.html
+        - title: LED-USB module
+          url: /led_module_replace.html
+        - title: NVRAM  module and NVRAM DIMM
+          url: /nvram-module-or-nvram-dimm-replacement.html
         - title: Power supply
-          url: /power-supply-replace.html
+          url: /power-supply-swap-out.html
         - title: RTC battery
-          url: /rtc-battery-replace.html
+          url: /rtc_battery_replace.html
+
     - title: Learn
       links:
         - title: Replacing an internal disk drive video

@@ -1,5 +1,5 @@
 ---
-permalink: a900/power_supply_swap_out.html
+permalink: a900/power-supply-swap-out.html
 sidebar: sidebar
 keywords:
 summary: 'Swapping out a power supply involves turning off, disconnecting, and removing the old power supply and installing, connecting, and turning on the replacement power supply.'
@@ -13,8 +13,7 @@ Swapping out a power supply involves turning off, disconnecting, and removing th
 
 All other components in the system must be functioning properly; if not, you must contact technical support.
 
-*About this task*
-
+.About this task
 * The power supplies are redundant and hot-swappable.
 * This procedure is written for replacing one power supply at a time.
 +
@@ -23,7 +22,7 @@ NOTE: It is a best practice to replace the power supply within two minutes of re
 * The number of power supplies in the system depends on the model.
 * Power supplies are auto-ranging.
 
-*Steps*
+.Steps
 
 . Identify the power supply you want to replace, based on console error messages or through the LEDs on the power supplies.
 . If you are not already grounded, properly ground yourself.
@@ -31,17 +30,21 @@ NOTE: It is a best practice to replace the power supply within two minutes of re
  .. Turn off the power switch on the power supply.
  .. Open the power cable retainer, and then unplug the power cable from the power supply.
  .. Unplug the power cable from the power source.
-. Press and hold the orange button on the power supply handle, and then pull the power supply out of the chassis.
+. Press and hold the terra cotta button on the power supply handle, and then pull the power supply out of the chassis.
 +
 CAUTION:
 +
 When removing a power supply, always use two hands to support its weight.
 +
+https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=6d0eee92-72e2-4da4-a4fa-adf9016b57ff[Animation--Remove/install PSU^]
+
++
 image::../media/drw_9000_remove_install_psu_module.svg[]
 +
+[cols="10,90"]
 |===
 a|
-image:../media/legend_icon_01.gif[] a|
+image:../media/legend_icon_01.png[] a|
 Locking button
 |===
 

@@ -8,20 +8,29 @@ summary: 'You can replace an LED USB module without interrupting service.'
 :icons: font
 :imagesdir: ../media/
 
+
 [.lead]
 The LED USB module provides connectivity to console ports and system status. Replacement of this module does not require tools and does not interrupt service.
 
+== Step 1: Replace the LED USB module
+
+.Steps
 . Remove the old LED USB module:
+
 +
-image::../media/drw_a900_remove_replace_LED_mod.png[]
+https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=eb715462-cc20-454f-bcf9-adf9016af84e[Animation--Remove/install LED-USB module^]
+
 +
 
+image::../media/drw_a900_remove_replace_LED_mod.png[]
++
+[cols="10,90"]
 |===
 a|
-image:../media/legend_icon_01.gif[] a|
+image:../media/legend_icon_01.png[] a|
 Locking button
 a|
-image:../media/legend_icon_02.gif[]
+image:../media/legend_icon_02.png[]
 a|
 USB LED module
 a|
@@ -37,4 +46,5 @@ a|
 +
 There is an audible click when the module is secure and connected to the midplane.
 
+== Step 2: Return the failed component
 include::../_include/complete_rma_step.adoc[]

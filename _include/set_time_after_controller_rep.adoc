@@ -4,7 +4,7 @@ You should check the time and date on the replacement controller module against 
 It is important that you apply the commands in the steps on the correct systems:
 
 * The _replacement_ node is the new node that replaced the impaired node as part of this procedure.
-* The _healthy_ node is the HA partner of the _replacement_ node
+* The _healthy_ node is the HA partner of the _replacement_ node.
 
 .Steps
 . If the _replacement_ node is not at the LOADER prompt, halt the system to the LOADER prompt.
