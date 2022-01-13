@@ -21,6 +21,9 @@ You must verify the `HA` state of the controller module and, if necessary, updat
 
 . In Maintenance mode from the replacement controller module, verify that all components display the same `HA` state: `ha-config show`
 +
+
+[options="header" cols="1,2"]
+
 |===
 | If your system is in...| The HA state for all components should be...
 a|
@@ -72,6 +75,9 @@ The controller module devices and ports displayed can be any one or more of the 
 
 . Run diagnostics as desired.
 +
+
+[options="header" cols="1,2"]
+
 |===
 | If you want to run diagnostic tests on...| Then...
 a|
@@ -130,6 +136,9 @@ System-level diagnostics returns you to the prompt if there are no test failures
 
 . Proceed based on the result of the preceding step:
 +
+
+[options="header" cols="1,2"]
+
 |===
 | If the system-level diagnostics tests...| Then...
 a|

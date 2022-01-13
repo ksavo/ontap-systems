@@ -20,14 +20,17 @@ Once environment variables are checked, you must complete steps specific to syst
 . Use the boot_ontap command at the LOADER prompt to boot the node.
 . Check the console output:
 +
+
+[options="header" cols="1,2"]
+
 |===
 | If the console displays...| Then...
 a|
-*The LOADER prompt*
+The LOADER prompt
 a|
 Boot the node to the boot menu: `boot_ontap menu`
 a|
-*Waiting for giveback....*
+Waiting for giveback....
 a|
 
  .. Enter `Ctrl-C` at the prompt
@@ -112,14 +115,17 @@ If any interfaces are listed as `false`, revert those interfaces back to their h
 . Use the boot_ontap command at the LOADER prompt to boot the node.
 . Check the console output:
 +
+
+[options="header" cols="1,2"]
+
 |===
 | If the console displays...| Then...
 a|
-*The login prompt*
+The login prompt
 a|
 Go to step 7.
 a|
-*Waiting for giveback...*
+Waiting for giveback...
 a|
 
  .. Log into the partner node.

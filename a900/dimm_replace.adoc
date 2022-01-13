@@ -207,6 +207,9 @@ System-level diagnostics returns you to the prompt if there are no test failures
 
 . Proceed based on the result of the preceding step:
 +
+
+[options="header" cols="1,2"]
+
 |===
 | If the system-level diagnostics tests...| Then...
 a|
@@ -228,6 +231,10 @@ The node displays the LOADER prompt.
 .. Return the node to normal operation:
 +
 |===
++
+
+[options="header" cols="1,2"]
+
 |===
 | If your node is in...| Then...
 a|
