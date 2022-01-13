@@ -4,14 +4,14 @@ sidebar: sidebar
 keywords: fas2700, move the controller module hardware
 summary: "To replace the controller module hardware, you must remove the impaired node, move FRU components to the replacement controller module, install the replacement controller module in the chassis, and then boot the system to Maintenance mode."
 ---
-= Move the controller module hardware - AFF A220 and FAS2700
+= Replace controller module  - AFF A220 and FAS2700
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
 To replace the controller module hardware, you must remove the impaired node, move FRU components to the replacement controller module, install the replacement controller module in the chassis, and then boot the system to Maintenance mode.
 
-== Step 1: Open the system
+== Step 1: Remove controller module 
 
 [.lead]
 To replace the controller module, you must first remove the old controller module from the chassis.
