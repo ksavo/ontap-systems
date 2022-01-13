@@ -8,6 +8,9 @@ summary: "Move the fans, hard drives, and controller module or modules from the 
 :icons: font
 :imagesdir: ../media/
 
+[.lead]
+Move the fans, hard drives, and controller module or modules from the impaired chassis to the new chassis, and swap out the impaired chassis from the equipment rack or system cabinet with the new chassis of the same model as the impaired chassis.
+
 == Step 1: Remove the power supplies
 
 .Steps
@@ -36,7 +39,6 @@ Locking button
 
 == Step 2: Remove the fans
 
-[.lead]
 To remove the fan modules when replacing the chassis, you must perform a specific sequence of tasks.
 
 .Steps
@@ -60,7 +62,6 @@ Orange release button
 
 == Step 3: Remove the controller module
 
-[.lead]
 To replace the chassis, you must remove the controller module or modules from the old chassis.
 
 .Steps
@@ -91,7 +92,6 @@ Make sure that you support the bottom of the controller module as you slide it o
 
 .Steps
 
-[.lead]
 To remove I/O modules from the old chassis, including the NVRAM modules, follow the specific sequence of steps. You do not have to remove the FlashCache module from the NVRAM module when moving it to a new chassis.
 
 . Unplug any cabling associated with the target I/O module.
@@ -130,7 +130,6 @@ I/O cam latch completely unlocked
 
 .Steps
 
-[.lead]
 You must remove the de-stage controller power modules from the old chassis in preparation for installing the replacement chassis.
 
 . Press the orange locking button on the module handle, and then slide the DCPM module out of the chassis.
@@ -150,7 +149,6 @@ DCPM module orange locking button
 
 .Steps
 
-[.lead]
 You must remove the existing chassis from the equipment rack or system cabinet before you can install the replacement chassis.
 
 . Remove the screws from the chassis mount points.
@@ -170,7 +168,6 @@ NOTE: If the system is in a system cabinet, you might need to remove the rear ti
 
 .Steps
 
-[.lead]
 Once the new chassis is installed into the rack or cabinet, you must move the USB LED module from the old chassis to the new chassis.
 
 . Locate the USB LED module on the front of the old chassis, directly under the power supply bays.
@@ -181,7 +178,6 @@ Once the new chassis is installed into the rack or cabinet, you must move the US
 
 .Steps
 
-[.lead]
 Once the replacement chassis is installed into the rack or system cabinet, you must reinstall the de-stage controller power modules into it.
 
 . Align the end of the DCPM module with the chassis opening, and then gently slide it into the chassis until it clicks into place.
@@ -194,7 +190,6 @@ NOTE: The module and slot are keyed. Do not force the module into the opening. I
 
 .Steps
 
-[.lead]
 To install the fan modules when replacing the chassis, you must perform a specific sequence of tasks.
 
 . Align the edges of the replacement fan module with the opening in the chassis, and then slide it into the chassis until it snaps into place.
@@ -208,7 +203,6 @@ When inserted into a live system, the amber Attention LED flashes four times whe
 
 .Steps
 
-[.lead]
 To install I/O modules, including the NVRAM/FlashCache modules from the old chassis, follow the specific sequence of steps.
 
 You must have the chassis installed so that you can install the I/O modules into the corresponding slots in the new chassis.
@@ -223,7 +217,6 @@ NOTE: If the old chassis has blank I/O panels, move them to the replacement chas
 
 .Steps
 
-[.lead]
 Installing the power supplies when replacing a chassis involves installing the power supplies into the replacement chassis, and connecting to the power source.
 
 . Using both hands, support and align the edges of the power supply with the opening in the system chassis, and then gently push the power supply into the chassis until it locks into place.
@@ -242,7 +235,6 @@ NOTE: Only connect the power cable to the power supply. Do not connect the power
 
 .Steps
 
-[.lead]
 After you install the controller module and any other components into the new chassis, boot it to a state where you can run the interconnect diagnostic test.
 
 . Align the end of the controller module with the opening in the chassis, and then gently push the controller module halfway into the system.
