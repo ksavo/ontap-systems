@@ -14,7 +14,9 @@ indexpage:
         - title: Most configurations
           url: /install_setup.html
         - title: MetroCluster IP configurations
-          url: https://docs.netapp.com/us-en/ontap_metrocluster/install_ip/index.html
+          url: https://docs.netapp.com/us-en/ontap-metrocluster/install-ip/concept_considerations_differences.html
+        - title: MetroCluster Fiber Channel configurations
+          url: https://docs.netapp.com/us-en/ontap-metrocluster/install-fc/concept_considerations_differences.html
     - title: Maintain
       links:
         - title: Add I/O module
