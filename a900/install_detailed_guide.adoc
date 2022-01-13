@@ -40,7 +40,8 @@ The following table identifies the types of cables you might receive. If you rec
 +
 https://hwu.netapp.com[NetApp Hardware Universe^]
 +
-[col="1,2"]
+[options="header" cols="1,2,2,2"]
+
 |===
 | Type of cable...| Part number and length| Connector type| For...
 a|
@@ -187,7 +188,8 @@ image::../media/drw_a900_tnsc_network_cabling.png[]
 
 +
 
-[options="header" col="10,90"]
+[options="header" col="25h,~"]
+
 |===
 |Step|Perform on each controller
 a|
@@ -268,7 +270,8 @@ image::../media/drw_a900_switched_network_cabling.png[]
 
 +
 
-[options="header" col="1,2"]
+[options="header" col="25h,~"]
+
 |===
 |Step|Perform on each controller
 a|
@@ -356,7 +359,7 @@ https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=6520eb01-87b3-4520
 image::../media/drw_a900_NS224_one shelf_cabling.png[]
 +
 
-[options="header" col="1,2"]
+[options="header" col="25h,~"]
 
 |===
 |Step|Perform on each controller
@@ -419,7 +422,7 @@ image:../media/drw_a900_NS224_line_art_two shelf_cabling.png[]
 image::../media/drw_a900_NS224_two shelf_cabling.png[]
 +
 
-[options="header" col="1,2"]
+[options="header" col="25h,~"]
 
 |===
 |Step|Perform on each controller
