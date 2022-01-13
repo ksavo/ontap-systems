@@ -12,37 +12,35 @@ indexpage:
     - title: Install and setup
       links:
         - title: Most configurations
-          url: /install-setup.html
+          url: /install_setup.html
         - title: MetroCluster IP configurations
-          url: https://docs.netapp.com/us-en/ontap-metrocluster/install-ip/index.html
+          url: https://docs.netapp.com/us-en/ontap_metrocluster/install_ip/index.html
     - title: Maintain
       links:
         - title: Add I/O module
           url: /add_io_module.html
         - title: Boot media
-          url: /bootmedia-replace-overview.html
+          url: /bootmedia_replace_overview.html
         - title: Chassis
-          url: /chassis-replace-overview.html
+          url: /chassis_replace_overview.html
         - title: Controller module
-          url: /controller-replace-overview.html
+          url: /controller_replace_overview.html
         - title: DIMM
-          url: /dimm-replace.html
+          url: /dimm_replace.html
         - title: Destage power controler module
           url: /dcpm_NVRAM11_battery_replace.html
         - title: Fan
           url: /fan-replace.html
         - title: I/O module
-          url: /pci-cards-and-risers-replace.html
+          url: /pci_cards_and_risers_replace.html
         - title: LED-USB module
           url: /led_module_replace.html
         - title: NVRAM  module and NVRAM DIMM
-          url: /nvdimm-replace.html
-        - title: I/O module
-          url: /pci-cards-and-risers-replace.html
+          url: /nvdimm_replace.html
         - title: Power supply
-          url: /power-supply-replace.html
+          url: /power_supply_replace.html
         - title: RTC battery
-          url: /rtc-battery-replace.html
+          url: /rtc_battery_replace.html
 
     - title: Learn
       links:
