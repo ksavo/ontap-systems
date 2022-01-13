@@ -17,7 +17,7 @@ To replace the boot media, you must remove the impaired controller module, insta
 [.lead]
 To access components inside the controller module, you must remove the controller module from the chassis.
 
-You can use the following animations or the written steps to remove the controller module from the chassis.
+You can use the following animation, illustration, or the written steps to remove the controller module from the chassis.
 
 https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=ca74d345-e213-4390-a599-aae10019ec82[Removing the controller module]
 
@@ -62,7 +62,7 @@ Although the contents of the boot media is encrypted, it is a best practice to e
 
 NOTE: You must log into the NetApp Support Site to display the _Statement of Volatility_ for your system.
 
-You can use the following animation or the written steps to replace the boot media.
+You can use the following animation, illustrations, or the written steps to replace the boot media.
 
 https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=e0825a97-c57d-47d7-b87d-aad9012efa12[Replacing the boot media]
 

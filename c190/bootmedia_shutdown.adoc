@@ -1,7 +1,7 @@
 ---
 permalink: c190/bootmedia-shutdown.html
 sidebar: sidebar
-keywords: aff c190, shut, down, node, nve, nse, impaired
+keywords: aff c190, shut down the node
 summary: 'After completing the NVE or NSE tasks, you need to complete the shutdown of the impaired node.'
 ---
 = Shut down the node - AFF C190

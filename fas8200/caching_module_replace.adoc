@@ -23,23 +23,22 @@ The output should display the caching module status as erased.
 
 == Step 1: Shut down the impaired controller
 
-[.lead]
 You can shut down or take over the impaired controller using different procedures, depending on the storage system hardware configuration.
 
 === Option 1: Most configurations
 
-[.lead]
 include::../_include/shutdown_most_frus.adoc[]
 
+=== Option 2: Controller is in a MetroCluster
 
-=== Option 2: Two-node MetroCluster configurations
+include::../_include/shutdown_any_mcc_supported.adoc[]
 
-[.lead]
+=== Option 3: Controller is in a two-node MetroCluster
+
 include::../_include/shutdown_2n_mcc.adoc[]
 
 == Step 2: Open the controller module
 
-[.lead]
 To access components inside the controller, you must first remove the controller module from the system and then remove the cover on the controller module.
 
 . If you are not already grounded, properly ground yourself.
@@ -71,7 +70,6 @@ Make sure that you support the bottom of the controller module as you slide it o
 
 == Step 3: Replace or add a caching module
 
-[.lead]
 To replace or add a caching module referred to as the M.2 PCIe card on the label on your controller, locate the slots inside the controller and follow the specific sequence of steps.
 
 Your storage system must meet certain criteria depending on your situation:
@@ -98,7 +96,6 @@ If necessary, remove the caching module and reseat it into the socket.
 
 == Step 4: Reinstall the controller
 
-[.lead]
 After you replace a component within the controller module, you must reinstall the controller module in the system chassis and boot it to a state where you can run diagnostic tests on the replaced component.
 
 . Align the end of the controller module with the opening in the chassis, and then gently push the controller module halfway into the system.
@@ -125,7 +122,6 @@ NOTE: Do not use excessive force when sliding the controller module into the cha
 
 == Step 5: Run system-level diagnostics
 
-[.lead]
 After installing a new caching module, you should run diagnostics.
 
 Your system must be at the LOADER prompt to start System Level Diagnostics.
@@ -223,10 +219,8 @@ After you issue the command, wait until the system stops at the LOADER prompt.
 
 == Step 6: Switch back aggregates in a two-node MetroCluster configuration
 
-[.lead]
 include::../_include/2n_mcc_switchback.adoc[]
 
 == Step 7: Complete the replacement process
 
-[.lead]
 include::../_include/complete_rma.adoc[]

@@ -1,25 +1,21 @@
 ---
 permalink: c190/install-detailed-guide.html
 sidebar: sidebar
-keywords: aff c190, detailed installation guide
-summary: "This guide gives detailed step-by-step instructions for installing a AFF C190 system."
+keywords: aff c190, detailed installation
+summary: "This section gives detailed step-by-step instructions for installing a AFF C190 system."
 ---
-= Detailed guide - AFF C190
+= Detailed steps - AFF C190
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-This guide gives detailed step-by-step instructions for installing a AFF C190 system.
+This section gives detailed step-by-step instructions for installing a AFF C190 system.
 
 == Step 1: Prepare for installation
 
 To install your AFF C190 system, you need to create an account and register the system. You also need to inventory the appropriate number and type of cables for your system and collect specific network information.
 
-You need to have access to the Hardware Universe for information about site requirements as well as additional information on your configured system. You might also want to have access to the Release Notes for your version of ONTAP for more information about this system.
-
-https://hwu.netapp.com[NetApp Hardware Universe]
-
-http://mysupport.netapp.com/documentation/productlibrary/index.html?productID=62286[Find the Release Notes for your version of ONTAP 9]
+You need to have access to the link:https://hwu.netapp.com[NetApp Hardware Universe^] (HWU) for information about site requirements as well as additional information on your configured system. You might also want to have access to the link:http://mysupport.netapp.com/documentation/productlibrary/index.html?productID=62286[Release Notes for your version of ONTAP^] for more information about this system.
 
 You need to provide the following at your site:
 
@@ -36,20 +32,15 @@ image::../media/drw_ssn_label.png[]
 
 . Set up your account:
  .. Log in to your existing account or create an account.
-+
-link:https://mysupport.netapp.com/eservice/public/now.do[NetApp Support Registration]
  .. Register your system.
 +
-https://mysupport.netapp.com/eservice/registerSNoAction.do?moduleName=RegisterMyProduct[NetApp Product Registration]
-. Download and install Config Advisor on your laptop.
-+
-https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor[NetApp Downloads: Config Advisor]
+link:https://mysupport.netapp.com/eservice/registerSNoAction.do?moduleName=RegisterMyProduct[NetApp Product Registration]
+
+. Download and install link:https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor[NetApp Downloads: Config Advisor^] on your laptop.
 
 . Inventory and make a note of the number and types of cables you received.
 +
-The following table identifies the types of cables you might receive. If you receive a cable not listed in the table, see the Hardware Universe to locate the cable and identify its use.
-+
-https://hwu.netapp.com[NetApp Hardware Universe]
+The following table identifies the types of cables you might receive. If you receive a cable not listed in the table, see the link:https://hwu.netapp.com[NetApp Hardware Universe^] to locate the cable and identify its use.
 +
 [options="header" cols="1,2,1,2"]
 |===
@@ -81,7 +72,7 @@ X6536-R6 (112-00090), 5m
 
 X6554-R6(112-00189), 15m
 a|
-image:../media/oie_sfp_optical.png[] +
+image:../media/oie_sfp_optical.png[]
 
 image::../media/oie_cable_fiber_lc_connector.png[]
 a|
@@ -114,13 +105,10 @@ a|
 Powering up the system
 |===
 
-. Download and complete the _Cluster configuration worksheet_.
-+
-https://library.netapp.com/ecm/ecm_download_file/ECMLP2839002[Cluster Configuration Worksheet]
+. Download and complete the link:https://library.netapp.com/ecm/ecm_download_file/ECMLP2839002[Cluster Configuration Worksheet^].
 
 == Step 2: Install the hardware
 
-[.lead]
 You need to install your system in a 4-post rack or NetApp system cabinet, as applicable.
 
 . Install the rail kits, as needed.
@@ -138,12 +126,10 @@ image::../media/drw_cable_management_arm_install.png[]
 
 == Step 3: Cable controllers to your network
 
-[.lead]
 You can cable the controllers to your network by using the two-node switchless cluster method or by using the cluster interconnect network.
 
-=== Option 1: Cable a two node switchless cluster, unified configuration
+=== Option 1: Cable a two-node switchless cluster, unified configuration
 
-[.lead]
 UTA2 ports and management ports on the controller modules are connected to switches. The cluster interconnect ports are cabled on both controller modules.
 
 Contact your network administrator for information about connecting the system to the switches.
@@ -156,7 +142,7 @@ NOTE: As you insert the connector, you should feel it click into place; if you d
 
 NOTE: If connecting to an optical switch, insert the SFP into the controller port before cabling to the port.
 
-. Use the animation or the step-by step instructions to complete the cabling between the controllers and to the switches:
+. Use the illustration or the step-by-step instructions to complete the cabling between the controllers and to the switches:
 +
 image::../media/drw_c190_tnsc_unified_network_cabling_animated_gif.png[]
 +
@@ -189,11 +175,10 @@ a|
 DO NOT plug in the power cords at this point.
 |===
 
-. To complete setting up your system, see link:install-detailed-guide.html#step-4-complete-system-setup-and-configuration[Step4: Completing system setup and configuration].
+. To complete setting up your system, see link:install-detailed-guide.html#step-4-complete-system-setup-and-configuration[Step 4: Complete system setup and configuration].
 
 === Option 2: Cable switched cluster, unified configuration
 
-[.lead]
 UTA2 ports and management ports on the controller modules are connected to switches. The cluster interconnect ports are cabled to the cluster interconnect switches.
 
 Contact your network administrator for information about connecting the system to the switches.
@@ -206,7 +191,7 @@ NOTE: As you insert the connector, you should feel it click into place; if you d
 
 NOTE: If connecting to an optical switch, insert the SFP into the controller port before cabling to the port.
 
-. Use the animation or the step-by step instructions to complete the cabling between the controllers and the switches:
+. Use the illustration or the step-by-step instructions to complete the cabling between the controllers and the switches:
 +
 image::../media/drw_c190_switched_unified_network_cabling_animated_gif.png[]
 +
@@ -237,11 +222,10 @@ a|
 DO NOT plug in the power cords at this point.
 |===
 
-. To complete setting up your system, see link:install-detailed-guide.html#step-4-complete-system-setup-and-configuration[Step4: Completing system setup and configuration].
+. To complete setting up your system, see link:install-detailed-guide.html#step-4-complete-system-setup-and-configuration[Step 4: Complete system setup and configuration].
 
 === Option 3: Cable a two node switchless cluster, Ethernet configuration
 
-[.lead]
 RJ45 ports and management ports on the controller modules are connected to switches. The cluster interconnect ports are cabled on both controller modules.
 
 Contact your network administrator for information about connecting the system to the switches.
@@ -252,7 +236,7 @@ image::../media/oie_cable_pull_tab_down.png[]
 
 NOTE: As you insert the connector, you should feel it click into place; if you do not feel it click, remove it, turn it around and try again.
 
-. Use the animation or the step-by step instructions to complete the cabling between the controllers and to the switches:
+. Use the illustration or the step-by-step instructions to complete the cabling between the controllers and to the switches:
 +
 image::../media/drw_c190_tnsc_ethernet_network_cabling_animated_gif.png[]
 +
@@ -285,11 +269,10 @@ a|
 DO NOT plug in the power cords at this point.
 |===
 
-. To complete setting up your system, see link:install-detailed-guide.html#step-4-complete-system-setup-and-configuration[Step4: Completing system setup and configuration].
+. To complete setting up your system, see link:install-detailed-guide.html#step-4-complete-system-setup-and-configuration[Step 4: Complete system setup and configuration].
 
 === Option 4: Cable a switched cluster, Ethernet configuration
 
-[.lead]
 RJ45 ports and management ports on the controller modules are connected to switches. The cluster interconnect ports are cabled to the cluster interconnect switches.
 
 Contact your network administrator for information about connecting the system to the switches.
@@ -300,7 +283,7 @@ image::../media/oie_cable_pull_tab_down.png[]
 
 NOTE: As you insert the connector, you should feel it click into place; if you do not feel it click, remove it, turn it around and try again.
 
-. Use the animation or the step-by step instructions to complete the cabling between the controllers and the switches:
+. Use the illustration or the step-by-step instructions to complete the cabling between the controllers and the switches:
 +
 image::../media/drw_c190_switched_ethernet_network_cabling_animated.png[]
 +
@@ -331,16 +314,14 @@ a|
 DO NOT plug in the power cords at this point.
 |===
 
-. To complete setting up your system, see link:install-detailed-guide.html#step-4-complete-system-setup-and-configuration[Step4: Completing system setup and configuration].
+. To complete setting up your system, see link:install-detailed-guide.html#step-4-complete-system-setup-and-configuration[Step 4: Complete system setup and configuration].
 
 == Step 4: Complete system setup and configuration
 
-[.lead]
 Complete the system setup and configuration using cluster discovery with only a connection to the switch and laptop, or by connecting directly to a controller in the system and then connecting to the management switch.
 
 === Option 1: Complete system setup and configuration if network discovery is enabled
 
-[.lead]
 If you have network discovery enabled on your laptop, you can complete system setup and configuration using automatic cluster discovery.
 
 . Plug the power cords into the controller power supplies, and then connect them to power sources on different circuits.
@@ -348,7 +329,7 @@ If you have network discovery enabled on your laptop, you can complete system se
 +
 image::../media/drw_turn_on_power_switches_to_psus.png[]
 +
-NOTE: Initial booting may take up to eight minutes.
+NOTE: Initial booting may take up to eight minutes..
 
 . Make sure that your laptop has network discovery enabled.
 +
@@ -356,33 +337,29 @@ See your laptop's online help for more information.
 
 . Use the following animation to connect your laptop to the Management switch.
 +
-https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=d61f983e-f911-4b76-8b3a-ab1b0066909b[Connecting your laptop to the Management switch]
+link:https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=d61f983e-f911-4b76-8b3a-ab1b0066909b[Connecting your laptop to the Management switch^]
 
 . Select an ONTAP icon listed to discover:
 +
 image::../media/drw_autodiscovery_controler_select.png[]
 
  .. Open File Explorer.
- .. Click network in the left pane.
- .. Right click and select refresh.
+ .. Click *Network* in the left pane.
+ .. Right-click and select *refresh*.
  .. Double-click either ONTAP icon and accept any certificates displayed on your screen.
 +
 NOTE: XXXXX is the system serial number for the target node.
 +
 System Manager opens.
 
-. Use System Manager guided setup to configure your system using the data you collected in the _NetApp ONTAP Configuration Guide_.
-+
-https://library.netapp.com/ecm/ecm_download_file/ECMLP2862613[ONTAP Configuration Guide]
-
+. Use System Manager guided setup to configure your system using the data you collected in the link:https://library.netapp.com/ecm/ecm_download_file/ECMLP2862613[ONTAP Configuration Guide^].
 . Verify the health of your system by running Config Advisor.
-. After you have completed the initial configuration, go to the https://www.netapp.com/data-management/oncommand-system-documentation/[ONTAP & ONTAP System Manager Documentation Resources] page for information about configuring additional features in ONTAP.
+. After you have completed the initial configuration, go to the link:https://www.netapp.com/data-management/oncommand-system-documentation/[ONTAP & ONTAP System Manager Documentation Resources^] page for information about configuring additional features in ONTAP.
 +
 NOTE: The default port configuration for Unified configuration systems is CNA mode; if connecting to an FC host network, you have to modify the ports for FC mode.
 
 === Option 2: Complete system setup and configuration if network discovery is not enabled
 
-[.lead]
 If network discovery is not enabled on your laptop, you must complete the configuration and setup using this task.
 
 . Cable and configure your laptop or console:
@@ -404,7 +381,7 @@ image::../media/drw_client_to_mgmt_subnet_fas2700_affa220.png[]
 +
 image::../media/drw_turn_on_power_switches_to_psus.png[]
 +
-NOTE: Initial booting may take up to eight minutes.
+NOTE: Initial booting may take up to eight minutes..
 
 . Assign an initial node management IP address to one of the nodes.
 +
@@ -433,8 +410,8 @@ NOTE: Check your laptop or console's online help if you do not know how to confi
 +
 NOTE: The format for the address is +https://x.x.x.x+.
 
- .. Configure the system using the data you collected in the link:https://library.netapp.com/ecm/ecm_download_file/ECMLP2862613[NetApp ONTAP Configuration Guide].
+ .. Configure the system using the data you collected in the link:https://library.netapp.com/ecm/ecm_download_file/ECMLP2862613[ONTAP Configuration Guide^].
 . Verify the health of your system by running Config Advisor.
-. After you have completed the initial configuration, go to the https://www.netapp.com/data-management/oncommand-system-documentation/[ONTAP & ONTAP System Manager Documentation Resources] page for information about configuring additional features in ONTAP.
+. After you have completed the initial configuration, go to the link:https://www.netapp.com/data-management/oncommand-system-documentation/[ONTAP & ONTAP System Manager Documentation Resources^] page for information about configuring additional features in ONTAP.
 +
 NOTE: The default port configuration for Unified configuration systems is CNA mode; if connecting to an FC host network, you have to modify the ports for FC mode.

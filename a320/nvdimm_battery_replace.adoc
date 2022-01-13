@@ -13,12 +13,22 @@ To replace the NVDIMM battery, you must remove the controller module, remove the
 
 All other components in the system must be functioning properly; if not, you must contact technical support.
 
-== Shut down the node
+== Step 1: Shut down the node
+
+[.lead]
+You can shut down or take over the impaired controller using different procedures, depending on the storage system hardware configuration.
+
+=== Option 1: Most configurations
 
 [.lead]
 include::../_include/shutdown_most_frus.adoc[]
 
-== Remove the controller module
+=== Option 2: Controller is in a MetroCluster
+
+[.lead]
+include::../_include/shutdown_any_mcc_supported.adoc[]
+
+== Step 2: Remove the controller module
 
 [.lead]
 To access components inside the controller module, you must remove the controller module from the chassis.
@@ -44,7 +54,7 @@ The latching mechanism hook should be nearly vertical and should be clear of the
  .. Gently pull the controller module a few inches toward you so that you can grasp the controller module sides.
  .. Using both hands, gently pull the controller module out of the chassis and set it on a flat, stable surface.
 
-== Replace the NVDIMM battery
+== Step 3: Replace the NVDIMM battery
 
 [.lead]
 To replace the NVDIMM battery, you must remove the failed battery from the controller module and install the replacement battery into the controller module.
@@ -58,7 +68,7 @@ image::../media/drw_a320_nvbat_move_animated_gif.png[]
 . Align the battery module with the opening for the battery, and then gently push the battery into slot until it locks into place.
 . Plug the battery plug back into the controller module, and then close the air duct.
 
-== Install the controller module
+== Step 4: Install the controller module
 
 [.lead]
 After you have replaced the component in the controller module, you must re-install the controller module into the chassis, and then boot it to Maintenance mode.
@@ -89,7 +99,7 @@ The controller module begins to boot as soon as it is fully seated in the chassi
  .. If you have not already done so, reinstall the cable management device.
  .. Interrupt the normal boot process by pressing `Ctrl-C`.
 
-== Run diagnostics
+== Step 5: Run diagnostics
 
 [.lead]
 After you have replaced a component in your system, you should run diagnostic tests on that component.
@@ -109,7 +119,7 @@ After you issue the command, you should wait until the system stops at the LOADE
  ** If the scan show problems, correct the issue, and then rerun the scan.
  ** If the scan reported no failures, select Reboot from the menu to reboot the system.
 
-== Restore the controller module to operation after running diagnostics
+== Step 6: Restore the controller module to operation after running diagnostics
 
 [.lead]
 After completing diagnostics, you must recable the system, give back the controller module, and then reenable automatic giveback.
@@ -121,7 +131,7 @@ If you removed the media converters (QSFPs or SFPs), remember to reinstall them 
 . Return the node to normal operation by giving back its storage: `storage failover giveback -ofnode _impaired_node_name_`
 . If automatic giveback was disabled, reenable it: `storage failover modify -node local -auto-giveback true`
 
-== Return the failed part to NetApp
+== Step 7: Return the failed part to NetApp
 
 [.lead]
 include::../_include/complete_rma.adoc[]

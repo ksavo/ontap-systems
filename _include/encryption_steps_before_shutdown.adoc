@@ -1,15 +1,13 @@
 Prior to shutting down the impaired node and checking the status of the onboard encryption keys, you must check the status of the impaired node, disable automatic giveback, and check what version of ONTAP the system is running.
 
-If you have a cluster with more than two nodes, it must be in quorum. If the cluster is not in quorum or a healthy node shows false for eligibility and health, you must correct the issue before shutting down the impaired node.
-
-http://docs.netapp.com/ontap-9/topic/com.netapp.doc.dot-cm-sag/home.html[ONTAP 9 System Administration Reference]
+If you have a cluster with more than two nodes, it must be in quorum. If the cluster is not in quorum or a healthy node shows false for eligibility and health, you must correct the issue before shutting down the impaired node; see the link:https://docs.netapp.com/us-en/ontap/encryption-at-rest/index.html[NetApp Encryption overview with the CLI].
 
 .Steps
 
 . Check the status of the impaired node:
  ** If the impaired node is at the login prompt, log in as `admin`.
  ** If the impaired node is at the LOADER prompt and is part of HA configuration, log in as `admin` on the healthy node.
- ** If the impaired node is in a standalone configuration and at LOADER prompt, contact NetApp Support. http://mysupport.netapp.com/[mysupport.netapp.com]
+ ** If the impaired node is in a standalone configuration and at LOADER prompt, contact link:http://mysupport.netapp.com/[mysupport.netapp.com].
 . If AutoSupport is enabled, suppress automatic case creation by invoking an AutoSupport message: `system node autosupport invoke -node * -type all -message MAINT=number_of_hours_downh`
 +
 The following AutoSupport message suppresses automatic case creation for two hours: `cluster1:*> system node autosupport invoke -node * -type all -message MAINT=2h`

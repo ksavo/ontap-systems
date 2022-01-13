@@ -1,7 +1,7 @@
 ---
 permalink: c190/bootmedia-complete-rma.html
 sidebar: sidebar
-keywords: aff c190, complete, replacement, process, replace, return, failed, rma, instructions
+keywords: aff c190, replace boot media, rma
 summary: 'After you replace the part, you can return the failed part to NetApp, as described in the RMA instructions shipped with the kit.'
 ---
 = Return the failed part to NetApp - AFF C190

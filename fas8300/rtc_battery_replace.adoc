@@ -23,8 +23,14 @@ You can shut down or take over the impaired controller using different procedure
 
 include::../_include/shutdown_most_frus.adoc[]
 
-=== Option 2: Controllers are in a two-node MetroCluster
+=== Option 2: Controller is in a MetroCluster
 
+[.lead]
+include::../_include/shutdown_any_mcc_supported.adoc[]
+
+=== Option 3: Controller is in a two-node MetroCluster
+
+[.lead]
 include::../_include/shutdown_2n_mcc.adoc[]
 
 == Step 2: Remove the controller module
@@ -32,7 +38,7 @@ include::../_include/shutdown_2n_mcc.adoc[]
 [.lead]
 To access components inside the controller module, you must remove the controller module from the chassis.
 
-You can use the following animation, drawing, or the written steps to remove the controller module from the chassis.
+You can use the following animation, illustration, or the written steps to remove the controller module from the chassis.
 
 https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=75b6fa91-96b9-4323-b156-aae10007c9a5[Removing the controller module]
 
@@ -61,7 +67,7 @@ Make sure that you support the bottom of the controller module as you slide it o
 [.lead]
 You need to locate the RTC battery inside the controller module, and then follow the specific sequence of steps. See the FRU map inside the controller module for the location of the RTC battery.
 
-You can use the following animation, drawing, or the written steps to replace the RTC battery.
+You can use the following animation, illustration, or the written steps to replace the RTC battery.
 
 https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=80fe7a9b-de6f-46e0-a18b-aadb0157263d[Replacing the RTC battery]
 
@@ -88,7 +94,7 @@ NOTE: Note the polarity of the battery as you remove it from the holder. The bat
 [.lead]
 After you replace a component within the controller module, you must reinstall the controller module in the system chassis, reset the time and date on the controller, and then boot it.
 
-You can use the following animation, drawing, or the written steps to install the controller module in the chassis.
+You can use the following animation, illustration, or the written steps to install the controller module in the chassis.
 
 https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=9249fdb8-1522-437d-9280-aae10007c97b[Installing the controller module]
 
