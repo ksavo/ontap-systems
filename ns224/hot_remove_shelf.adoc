@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: ns224, shelves, shelf, ns224 shelves, drive, aggregate, ha, pair, serving, data, i/o, hot-remove an ns224
 summary: You can hot-remove an NS224 drive shelf that has had the aggregates removed from the drives, in an HA pair that is up and serving data \(I/O is in progress\).
 ---
-= Hot-remove a shelf - NS224 shelves
+= Hot-remove a shelf -- NS224 shelves
 :icons: font
 :imagesdir: ../media/
 
@@ -31,7 +31,7 @@ Removing ownership information from a spare drive allows the drive to be properl
 +
 The procedure for removing ownership from drives can be found in the disks and aggregates content:
 +
-https://docs.netapp.com/us-en/ontap/disks-aggregates/index.html[Disks and aggregates overview]
+https://docs.netapp.com/us-en/ontap/disks-aggregates/index.html[Disks and aggregates overview^]
 
 NOTE: The procedure requires you to disable automatic drive assignment. You reenable automatic drive assignment at the end of this procedure (after you have hot-removed the shelf).
 
@@ -113,7 +113,7 @@ You can enter the command on either controller module.
 +
 NOTE: The non-dedicated ports configured for storage use are displayed in the output as follows:
 If your HA pair is running ONTAP 9.8 or later, the non-dedicated ports display `storage` in the `Mode` column.
-If your HA pair is running ONTAP 9.7 or 9.6, the non-dedicated ports, which display `false` in the `Is Dedicated?`` column, also display `enabled` in the `State` column.
+If your HA pair is running ONTAP 9.7 or 9.6, the non-dedicated ports, which display `false` in the `Is Dedicated?` column, also display `enabled` in the `State` column.
 
  .. Complete the set of steps applicable to the version of ONTAP your HA pair is running:
 +
@@ -124,41 +124,41 @@ a|
 ONTAP 9.8 or later
 a|
 
-  ... Reconfigure the non-dedicated ports for networking use, on the first controller module: `storage port modify -node _node name_ -port _port name_ -mode network`
+  .. Reconfigure the non-dedicated ports for networking use, on the first controller module: `storage port modify -node _node name_ -port _port name_ -mode network`
 +
 You must run this command for each port you are reconfiguring.
 
-  ... Repeat the above step to reconfigure the ports on the second controller module.
-  ... Go to substep 8c to verify all port changes.
+  .. Repeat the above step to reconfigure the ports on the second controller module.
+  .. Go to substep 8c to verify all port changes.
 
 a|
 ONTAP 9.7
 a|
 
-  ... Reconfigure the non-dedicated ports for networking use, on the first controller module: `storage port disable -node _node name_ -port _port name_`
+  .. Reconfigure the non-dedicated ports for networking use, on the first controller module: `storage port disable -node _node name_ -port _port name_`
 +
 You must run this command for each port you are reconfiguring.
 
-  ... Repeat the above step to reconfigure the ports on the second controller module.
-  ... Go to substep 8c to verify all port changes.
+  .. Repeat the above step to reconfigure the ports on the second controller module.
+  .. Go to substep 8c to verify all port changes.
 
 a|
 A version of ONTAP 9.6
 a|
 
-  ... Reconfigure the RoCE capable ports for networking use, on the first controller module: `storage port disable -node _node name_ -port _port name_`
+  .. Reconfigure the RoCE capable ports for networking use, on the first controller module: `storage port disable -node _node name_ -port _port name_`
 +
 You must run this command for each port you are reconfiguring.
 
-  ... Reboot the controller module to make the port changes take effect:
+  .. Reboot the controller module to make the port changes take effect:
 +
 `system node reboot -node _node name_ -reason _reason_ for the reboot`
 +
 NOTE: The reboot must complete before you proceed to the next step. The reboot can take up to 15 minutes.
 
-  ... Reconfigure the ports on the second controller module, by repeating the first step.
-  ... Reboot the second controller to make the port changes take effect, by repeating the second step.
-  ... Go to substep 8c to verify all port changes.
+  .. Reconfigure the ports on the second controller module, by repeating the first step (a).
+  .. Reboot the second controller to make the port changes take effect, by repeating the second step (b).
+  .. Go to substep 8c to verify all port changes.
 
 +
 |===
@@ -169,4 +169,4 @@ You can enter the command on either controller module.
 +
 If your HA pair is running ONTAP 9.8 or later, the non-dedicated ports display `network` in the `Mode` column.
 +
-If your HA pair is running ONTAP 9.7 or 9.6, the non-dedicated ports, which display `false` in the `Is Dedicated?`` column, also display `disabled` in the `State` column.
+If your HA pair is running ONTAP 9.7 or 9.6, the non-dedicated ports, which display `false` in the `Is Dedicated?` column, also display `disabled` in the `State` column.

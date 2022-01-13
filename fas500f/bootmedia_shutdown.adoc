@@ -1,7 +1,7 @@
 ---
 permalink: fas500f/bootmedia-shutdown.html
 sidebar: sidebar
-keywords: fas500f, shut, down, node, nve, nse, impaired
+keywords: fas500f, shutdown
 summary: 'After completing the NVE or NSE tasks, you need to complete the shutdown of the impaired node.'
 ---
 = Shut down the node - FAS500f

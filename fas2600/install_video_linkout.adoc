@@ -10,4 +10,4 @@ summary: The following video shows end-to-end software configuration for systems
 
 The following video shows end-to-end software configuration for systems running ONTAP 9.2.
 
-link:https://youtu.be/WAE0afWhj1c[AFF FAS2600 Setup Video]
+link:https://youtu.be/WAE0afWhj1c[AFF FAS2600 Setup Video^]

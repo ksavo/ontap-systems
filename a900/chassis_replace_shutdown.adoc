@@ -1,0 +1,10 @@
+---
+permalink: a900/chassis_replace_shutdown.html
+sidebar: sidebar
+keywords: aff a900, shutdown the controllers
+summary: "To replace the chassis, you must shutdown the controllers."
+---
+
+= Shutdown the impaired controller - AFF A900
+
+include::../_include/shutdown_chassis.adoc[]
