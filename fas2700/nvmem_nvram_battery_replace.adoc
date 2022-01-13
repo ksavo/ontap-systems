@@ -52,10 +52,10 @@ When the impaired node shows Waiting for giveback..., press Ctrl-C, and then res
 
 . If the system has only one controller module in the chassis, turn off the power supplies, and then unplug the impaired node's power cords from the power source.
 
-=== Option 2: Controller is in a two-node MetroCluster configuration
+=== Option 2: Controller is in a MetroCluster
 
 [.lead]
-include::../_include/shutdown_2n_mcc.adoc[]
+include::../_include/shutdown_any_mcc_supported.adoc[]
 
 == Step 2: Open the system
 
@@ -100,7 +100,7 @@ NOTE: The NVRAM LED blinks while destaging contents to the flash memory when you
 This typically occurs during an uncontrolled shutdown after ONTAP has successfully booted.
 . Locate the NVMEM battery in the controller module.
 +
-image::../media/drw_2600_nvmem_batt_replace_animated_gif.png[]
+image::../media/drw_2600_nvmem_batt_repl_animated_gif.png[]
 
 . Locate the battery plug and squeeze the clip on the face of the battery plug to release the plug from the socket, and then unplug the battery cable from the socket.
 . Remove the battery from the controller module and set it aside.

@@ -14,12 +14,22 @@ To replace a PCIe card, you must disconnect the cables from the cards, remove th
 * You can use this procedure with all versions of ONTAP supported by your system
 * All other components in the system must be functioning properly; if not, you must contact technical support.
 
-== Shut down the impaired node
+== Step 1: Shut down the impaired node
+
+[.lead]
+You can shut down or take over the impaired controller using different procedures, depending on the storage system hardware configuration.
+
+=== Option 1: Most configurations
 
 [.lead]
 include::../_include/shutdown_most_frus.adoc[]
 
-== Remove the controller module
+=== Option 2: Controller is in a MetroCluster
+
+[.lead]
+include::../_include/shutdown_any_mcc_supported.adoc[]
+
+== Step 2: Remove the controller module
 
 [.lead]
 To access components inside the controller module, you must remove the controller module from the chassis.
@@ -28,7 +38,7 @@ To access components inside the controller module, you must remove the controlle
 . Unplug the controller module power supply from the power source.
 . Loosen the hook and loop strap binding the cables to the cable management device, and then unplug the system cables and SFPs (if needed) from the controller module, keeping track of where the cables were connected.
 +
-image::../media/drw_a320_cable_management_arms.png[]
+image::../media/drw_a320_controller_cable_unplug_animated_gif.png[]
 +
 Leave the cables in the cable management device so that when you reinstall the cable management device, the cables are organized.
 
@@ -45,7 +55,7 @@ The latching mechanism hook should be nearly vertical and should be clear of the
  .. Gently pull the controller module a few inches toward you so that you can grasp the controller module sides.
  .. Using both hands, gently pull the controller module out of the chassis and set it on a flat, stable surface.
 
-== Replace a PCIe card
+== Step 3: Replace a PCIe card
 
 [.lead]
 You must remove the PCIe riser containing the failed PCIe card from the controller module, remove the failed PCIe card from the riser, install the replacement PCIe card in the riser, and then reinstall the riser into the controller module.
@@ -69,7 +79,7 @@ image::../media/drw_a320_pci_card_replace_animated_gif.png[]
  .. Apply even downward pressure to seat the riser straight down into the socket on the controller module.
  .. Reinstall the PCIe riser cover on the controller module.
 
-== Install the controller module
+== Sep 4: Install the controller module
 
 [.lead]
 After you have replaced the component in the controller module, you must re-install the controller module into the chassis, and then boot it to Maintenance mode.
@@ -100,7 +110,7 @@ The controller module begins to boot as soon as it is fully seated in the chassi
  .. If you have not already done so, reinstall the cable management device.
  .. Interrupt the normal boot process by pressing `Ctrl-C`.
 
-== Restore the controller module to operation
+== Step 5: Restore the controller module to operation
 
 [.lead]
 After completing diagnostics, you must recable the system, give back the controller module, and then reenable automatic giveback.
@@ -112,7 +122,7 @@ If you removed the media converters (QSFPs or SFPs), remember to reinstall them 
 . Return the node to normal operation by giving back its storage: `storage failover giveback -ofnode _impaired_node_name_`
 . If automatic giveback was disabled, reenable it: `storage failover modify -node local -auto-giveback true`
 
-== Return the failed part to NetApp
+== Step 6: Return the failed part to NetApp
 
 [.lead]
 include::../_include/complete_rma.adoc[]
