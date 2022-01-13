@@ -1,5 +1,5 @@
 ---
-permalink: a900/nvram_module_or_nvram_dimm_replacement.html
+permalink: a900/nvram-module-or-nvram-dimm-replacement.html
 sidebar: sidebar
 keywords:
 summary: 'The NVRAM module consists of the NVRAM11 and DIMMs and up to two NVMe SSD Flash Cache modules (FlashCache or caching modules) per NVRAM module.'

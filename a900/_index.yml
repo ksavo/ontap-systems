@@ -30,15 +30,15 @@ indexpage:
         - title: Destage power controler module
           url: /dcpm_NVRAM11_battery_replace.html
         - title: Fan
-          url: /fan-replace.html
+          url: /fan-swap-out.html
         - title: I/O module
           url: /pci_cards_and_risers_replace.html
         - title: LED-USB module
           url: /led_module_replace.html
         - title: NVRAM  module and NVRAM DIMM
-          url: /nvdimm_replace.html
+          url: /nvram-module-or-nvram-dimm-replacement.html
         - title: Power supply
-          url: /power_supply_replace.html
+          url: /power-supply-swap-out.html
         - title: RTC battery
           url: /rtc_battery_replace.html
 
