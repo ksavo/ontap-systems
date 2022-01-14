@@ -23,7 +23,9 @@ IMPORTANT: You must replace the fan module within two minutes of removing it fro
 IMPORTANT: The fan modules are short. Always support the bottom of the fan module with your free hand so that it does not suddenly drop free from the chassis and injure you.
 
 +
+
 https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=3c3c8d93-b48e-4554-87c8-adf9016af819[Animation--Remove/install fan^]
+
 +
 
 image::../media/drw_a900_remove_install_fan.png[]
