@@ -40,4 +40,4 @@ NOTE: You must perform a clean system shutdown before replacing the chassis to a
 
 . Where applicable, halt the second node to avoid a possible quorum error message in an HA pair configuration: `system node halt -node _second_node_name_ -ignore-quorum-warnings true -skip-lif-migration-before-shutdown true`
 +
-Answer `y` when prompted.
+Answer `y` when prompted. 

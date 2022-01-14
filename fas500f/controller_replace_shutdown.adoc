@@ -11,7 +11,7 @@ summary: To shut down the impaired controller module, you must determine the sta
 [.lead]
 * If you are using NetApp Storage Encryption, you must have reset the MSID using the instructions in the "`Returning SEDs to unprotected mode`" section of the _ONTAP 9 NetApp Encryption Power Guide_.
 +
-https://docs.netapp.com/ontap-9/topic/com.netapp.doc.pow-nve/home.html[ONTAP 9 NetApp Encryption Power Guide]
+https://docs.netapp.com/ontap-9/topic/com.netapp.doc.pow-nve/home.html[ONTAP 9 NetApp Encryption Power content^]
 
 * If you have a SAN system, you must have checked event messages (event log show) for impaired node SCSI blade.
 +
@@ -19,4 +19,12 @@ Each SCSI-blade process should be in quorum with the other nodes in the cluster.
 
 * If you have a MetroCluster configuration, you must have confirmed that the MetroCluster Configuration State is configured and that the nodes are in an enabled and normal state (metrocluster node show).
 
+=== Option 1: Most configurations
+
+[.lead]
 include::../_include/shutdown_most_frus.adoc[]
+
+=== Option 2: Controller is in a MetroCluster
+
+[.lead]
+include::../_include/shutdown_any_mcc_supported.adoc[]

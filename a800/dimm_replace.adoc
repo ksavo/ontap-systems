@@ -17,14 +17,18 @@ You must replace the failed component with a replacement FRU component you recei
 
 == Step 1: Shut down the impaired controller
 
-[.lead]
 You can shut down or take over the impaired controller using different procedures, depending on the storage system hardware configuration.
+
+=== Option 1: Most configurations
 
 include::../_include/recable_system_after_controller_rep.adoc[]
 
+=== Option 2: Controller is in a MetroCluster
+
+include::../_include/shutdown_any_mcc_supported.adoc[]
+
 == Step 2: Remove the controller module
 
-[.lead]
 You must remove the controller module from the chassis when you replace the controller module or replace a component inside the controller module.
 
 . If you are not already grounded, properly ground yourself.
@@ -79,7 +83,6 @@ Rotate air duct towards fan modules
 
 == Step 3: Replace a DIMM
 
-[.lead]
 To replace a DIMM, you must locate it in the controller module using the DIMM map label on top of the air duct or locating it using the LED next to the DIMM, and then replace it following the specific sequence of steps.
 
 . When removing a DIMM, unlock the locking latch on the applicable riser, and then remove the riser.
@@ -123,7 +126,6 @@ NOTE: Visually inspect the DIMM to verify that it is evenly aligned and fully in
 
 == Step 4: Reinstall the controller module and booting the system
 
-[.lead]
 After you replace a FRU in the controller module, you must reinstall the controller module and reboot it.
 
 . If you have not already done so, close the air duct:
@@ -167,7 +169,6 @@ The controller module begins to boot as soon as it is fully seated in the chassi
 
 == Step 5: Run diagnostics
 
-[.lead]
 After you have replaced a component in your system, you should run diagnostic tests on that component.
 
 Your system must be at the LOADER prompt to start diagnostics.
@@ -187,5 +188,4 @@ After you issue the command, you should wait until the system stops at the LOADE
 
 == Step 6: Return the failed part to NetApp
 
-[.lead]
 include::../_include/complete_rma.adoc[]

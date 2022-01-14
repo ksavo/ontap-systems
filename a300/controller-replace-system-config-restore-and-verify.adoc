@@ -30,11 +30,11 @@ The HA state should be the same for all components.
 +
 The value for HA-state can be one of the following:
 
-  *** ha
-  *** mcc
-  *** mcc-2n
-  *** mccip
-  *** non-ha
+  *** `ha`
+  *** `mcc`
+  *** `mcc-2n`
+  *** `mccip`
+  *** `non-ha`
 
   . If the displayed system state of the controller module does not match your system configuration, set the `HA` state for the controller module: `ha-config modify controller ha-state`
   . Confirm that the setting has changed: `ha-config show`

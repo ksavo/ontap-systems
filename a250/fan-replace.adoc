@@ -14,12 +14,18 @@ To replace a fan, remove the failed fan module and replace it with a new fan mod
 
 == Step 1: Shut down the impaired node
 
-[.lead]
+You can shut down or take over the impaired controller using different procedures, depending on the storage system hardware configuration.
+
+=== Option 1: Most configurations
+
 include::../_include/shutdown_most_frus.adoc[]
+
+=== Option 2: System is in a MetroCluster
+
+include::../_include/shutdown_any_mcc_supported.adoc[]
 
 == Step 2: Remove the controller module
 
-[.lead]
 You must remove the controller module from the chassis when you replace a component inside the controller module.
 
 Make sure that you label the cables so that you know where they came from.
@@ -67,7 +73,7 @@ To replace a fan, remove the failed fan module and replace it with a new fan mod
 
 Use the following video or the tabulated steps to replace a fan:
 
-https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=ccfa6665-2c2b-4571-ae79-ac5b015c19fc[Replacing a fan]
+link:https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=ccfa6665-2c2b-4571-ae79-ac5b015c19fc[Replacing a fan^]
 
 . Identify the fan module that you must replace by checking the console error messages or by locating the lit LED for the fan module on the motherboard.
 . Remove the fan module by pinching the side of the fan module, and then lifting the fan module straight out of the controller module.
@@ -85,7 +91,6 @@ Fan module
 
 == Step 4: Reinstall the controller module
 
-[.lead]
 After you replace a component within the controller module, you must reinstall the controller module in the system chassis and boot it.
 
 . Close the controller module cover and tighten the thumbscrew.
@@ -120,5 +125,4 @@ The controller module should be fully inserted and flush with the edges of the c
 
 == Step 5: Return the failed part to NetApp
 
-[.lead]
 include::../_include/complete_rma.adoc[]

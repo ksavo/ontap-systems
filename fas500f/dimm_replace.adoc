@@ -17,12 +17,18 @@ You must replace the failed component with a replacement FRU component you recei
 
 == Step 1: Shut down the impaired controller
 
-[.lead]
+You can shut down or take over the impaired controller using different procedures, depending on the storage system hardware configuration.
+
+=== Option 1: Most configurations
+
 include::../_include/shutdown_most_frus.adoc[]
+
+=== Option 2: Controller is in a MetroCluster
+
+include::../_include/shutdown_any_mcc_supported.adoc[]
 
 == Step 2: Remove the controller module
 
-[.lead]
 You must remove the controller module from the chassis when you replace a component inside the controller module.
 
 Make sure that you label the cables so that you know where they came from.
@@ -67,12 +73,11 @@ image::../media/drw_a250_remove_airduct_cover.png[]
 
 == Step 3: Replace a DIMM
 
-[.lead]
 To replace a DIMM, you must locate it in the controller module using the DIMM map label on top of the air duct or locating it using the LED next to the DIMM, and then replace it following the specific sequence of steps.
 
 You can use the following video or the tabulated steps to replace a DIMM:
 
-https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=fa6b8107-86fb-4332-aa57-ac5b01605e52[Replacing a DIMM]
+link:https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=fa6b8107-86fb-4332-aa57-ac5b01605e52[Replacing a DIMM^]
 
 . Replace the impaired DIMM on your controller module.
 +
@@ -97,10 +102,9 @@ The DIMMs fit tightly in the socket. If not, reinsert the DIMM to realign it wit
 
 == Step 4: Install the controller module
 
-[.lead]
 After you have replaced the component in the controller module, you must re-install the controller module into the chassis, and then boot it to Maintenance mode.
 
-You can use the following animation or the written steps to install the replacement controller module in the chassis.
+You can use the following illustration or the written steps to install the replacement controller module in the chassis.
 
 . If you have not already done so, install the air duct.
 +
@@ -137,7 +141,6 @@ NOTE: You will connect the rest of the cables to the controller module later in 
 
 == Step 5: Run diagnostics
 
-[.lead]
 After you have replaced a component in your system, you should run diagnostic tests on that component.
 
 Your system must be at the LOADER prompt to start diagnostics.
@@ -157,5 +160,4 @@ After you issue the command, you should wait until the system stops at the LOADE
 
 == Step 6: Return the failed part to NetApp
 
-[.lead]
 include::../_include/complete_rma.adoc[]

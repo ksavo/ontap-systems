@@ -7,7 +7,7 @@ Before shutting down the impaired node, you need to check whether the system has
 If any volumes are listed in the output, NVE is configured and you need to verify the NVE configuration. If no volumes are listed, check whether NSE is configured.
 
 . Check whether NSE is configured: `storage encryption disk show`
- ** If the command output list the drive details with Mode & Key ID information, NSE is configured and you need to verify the NSE configuration.
+ ** If the command output lists the drive details with Mode & Key ID information, NSE is configured and you need to verify the NSE configuration.
  ** If NVE and NSE are not configured, it's safe to shut down the impaired node.
 
 === Verify NVE configuration
@@ -26,7 +26,7 @@ http://mysupport.netapp.com/[mysupport.netapp.com]
  .. Verify that the `Restored` column displays `yes` for all authentication keys and that all key managers display `available`: `security key-manager query`
  .. Shut down the impaired node.
 . If you saw the message This command is not supported when onboard key management is enabled, display the keys stored in the onboard key manager: `security key-manager key show -detail`
- .. If the `Restored` column displays `yes` manually backup the onboard key management information:
+ .. If the `Restored` column displays `yes` manually back up the onboard key management information:
   * Go to advanced privilege mode and enter `y` when prompted to continue: `set -priv advanced`
   * Enter the command to display the OKM backup information:  `security key-manager backup show`
   * Copy the contents of the backup information to a separate file or your log file. You'll need it in disaster scenarios where you might need to manually recover OKM.
@@ -60,7 +60,7 @@ http://mysupport.netapp.com/[mysupport.netapp.com]
  .. Verify that the `Restored` column displays `yes` for all authentication keys and that all key managers display `available`: `security key-manager query`
  .. Shut down the impaired node.
 . If you saw the message This command is not supported when onboard key management is enabled, display the keys stored in the onboard key manager: `security key-manager key show -detail`
- .. If the `Restored` column displays `yes`, manually backup the onboard key management information:
+ .. If the `Restored` column displays `yes`, manually back up the onboard key management information:
   * Go to advanced privilege mode and enter `y` when prompted to continue: `set -priv advanced`
   * Enter the command to display the OKM backup information:  `security key-manager backup show`
   * Copy the contents of the backup information to a separate file or your log file. You'll need it in disaster scenarios where you might need to manually recover OKM.
@@ -79,4 +79,4 @@ NOTE: Make sure that OKM information is saved in your log file. This information
 
   * Copy the contents of the backup information to a separate file or your log. You'll need it in disaster scenarios where you might need to manually recover OKM.
   * Return to admin mode: `set -priv admin`
-  * You can safely shutdown the node.
+  * You can safely shut down the node.

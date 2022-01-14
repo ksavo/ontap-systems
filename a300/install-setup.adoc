@@ -1,0 +1,25 @@
+---
+permalink: a300/install-setup.html
+sidebar: sidebar
+keywords: aff a300, install, setup, initial configuration
+summary: 'Install and set up your system.'
+---
+= Start here: Choose your installation and setup experience
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+For most configurations, you can choose from different content formats.
+
+* link:https://library.netapp.com/ecm/ecm_download_file/ECMLP2469722[Quick steps]
++
+A printable PDF of step-by-step instructions with live links to additional content.
+
+* link:https://youtu.be/WAE0afWhj1c[Video steps]
++
+Video step-by-step instructions.
+
+For MetroCluster configurations, see either:
+
+* https://docs.netapp.com/us-en/ontap-metrocluster/install-ip/index.html[Install MetroCluster IP configuration]
+* https://docs.netapp.com/us-en/ontap-metrocluster/install-fc/index.html[Install MetroCluster Fabric-Attached configuration]

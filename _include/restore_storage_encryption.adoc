@@ -2,10 +2,8 @@ After replacing the controller module or NVRAM module for a storage system that 
 
 .Step
 
-. Restore Storage or Volume Encryption functionality by using the appropriate procedure in the _NetApp Encryption Power Guide_.
-+
-https://docs.netapp.com/ontap-9/topic/com.netapp.doc.pow-nve/home.html[ONTAP 9 NetApp Encryption Power Guide]
-+
+Restore Storage or Volume Encryption functionality by using the appropriate procedure in https://docs.netapp.com/us-en/ontap/encryption-at-rest/index.html[NetApp Encryption overview with the CLI].
+
 Use one of the following procedures, depending on whether you are using onboard or external key management:
 
  ** "`Restoring onboard key management encryption keys`"
