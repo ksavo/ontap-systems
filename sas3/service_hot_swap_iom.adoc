@@ -55,10 +55,6 @@ A disk shelf has three location LEDs: one on the operator display panel and one 
 
 * If needed, you can refer to the Monitoring disk shelf LEDs section for information about the meaning and location of disk shelf LEDs on the operator display panel and FRU components.
 
-* For reference, the IOM12 and IOM12B are differentia looks like the following:
-+
-image::../media/drw_iom12.gif[]
-
 .Steps
 
 . Properly ground yourself.
