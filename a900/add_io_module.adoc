@@ -143,7 +143,7 @@ a|
 Storage module
 a|
 Install and cable your NS224 shelves, as described in
-https://docs.netapp.com/platstor/topic/com.netapp.doc.hw-ds-nvme-hotadd/GUID-B215753F-F3E6-4FA0-A1E1-B9390B19AD94.html[Hot-adding an NS224 drive shelf].
+https://docs.netapp.com/us-en/ontap-systems/ns224/hot-add-shelf.html[Hot-adding an NS224 drive shelf].
 a|
 +
 |===

@@ -379,7 +379,7 @@ image:../media/oie_cable100_gbe_qsfp28.png[]
 a|
 
 image:../media/oie_legend_icon_2_lo.png[]
-|
+a|
 
 ** Connect controller B port e2a to port e0a on NSM B on the shelf.
 
@@ -388,6 +388,7 @@ image:../media/oie_legend_icon_2_lo.png[]
 image:../media/oie_cable100_gbe_qsfp28.png[]
 
 100 GbE cable
+
 |===
 
 . To complete setting up your system, see  <<Step 5: Complete system setup and configuration>>.

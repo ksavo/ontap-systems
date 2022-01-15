@@ -160,6 +160,9 @@ The node displays the LOADER prompt.
  .. Return the node to normal operation:
 +
 |===
+
+[options="header" cols="1,2"]
+
 |===
 | If your node is in...| Then...
 a|
