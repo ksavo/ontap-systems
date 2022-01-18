@@ -1,0 +1,50 @@
+---
+permalink: a900/led_module_replace.html
+sidebar: sidebar
+keywords: LED USB module,replacing,hot-swapping,LED USB module,non-disruptive replacement,LED USB module
+summary: 'You can replace an LED USB module without interrupting service.'
+---
+= Replace an LED USB module - AFF A900
+:icons: font
+:imagesdir: ../media/
+
+
+[.lead]
+The LED USB module provides connectivity to console ports and system status. Replacement of this module does not require tools and does not interrupt service.
+
+== Step 1: Replace the LED USB module
+
+.Steps
+. Remove the old LED USB module:
+
++
+https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=eb715462-cc20-454f-bcf9-adf9016af84e[Animation--Remove/install LED-USB module^]
+
++
+
+image::../media/drw_a900_remove_replace_LED_mod.png[]
++
+[cols="10,90"]
+|===
+a|
+image:../media/legend_icon_01.png[] a|
+Locking button
+a|
+image:../media/legend_icon_02.png[]
+a|
+USB LED module
+a|
+|===
+
+ .. With the bezel removed, locate the LED USB module at the front of the chassis, on the bottom left side.
+ .. Slide the latch to partially eject the module.
+ .. Pull the module out of the bay to disconnect it from the midplane. Do not leave the slot empty.
+
+. Install the new LED USB module:
+ .. Align the module to the bay with the notch in the corner of the module positioned near the slider latch on the chassis. The bay will prevent you from installing the module upside down.
+ .. Push the module into the bay until it is fully seated flush with the chassis.
++
+There is an audible click when the module is secure and connected to the midplane.
+
+== Step 2: Return the failed component
+include::../_include/complete_rma_step.adoc[]

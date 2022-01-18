@@ -1,0 +1,22 @@
+---
+permalink: a900/controller_replace_shutdown.html
+sidebar: sidebar
+keywords: AFF A900
+summary: 'To shut down the impaired node, you must determine the status of the node and, if necessary, take over the node so that the healthy node continues to serve data from the impaired node storage.'
+---
+= Shut down the impaired node - AFF A900
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You can shut down or take over the impaired controller using different procedures, depending on the storage system hardware configuration.
+
+== Option 1: Most configurations
+
+[.lead]
+include::../_include/shutdown_most_frus.adoc[]
+
+== Option 2: Controller is in a MetroCluster
+
+[.lead]
+include::../_include/shutdown_any_mcc_supported.adoc[]
