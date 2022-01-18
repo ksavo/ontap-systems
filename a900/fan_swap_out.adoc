@@ -1,5 +1,5 @@
 ---
-permalink: a900/fan-swap-out.html
+permalink: a900/fan_swap_out.html
 sidebar: sidebar
 keywords:
 summary: 'To swap out a fan module without interrupting service, you must perform a specific sequence of tasks.'
