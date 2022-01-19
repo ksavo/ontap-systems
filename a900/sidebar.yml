@@ -1,5 +1,6 @@
 section: a900
 title: AFF A900 systems
+url: /a900/index.html
 entries:
   - title: Install and setup
     entries:
@@ -59,7 +60,7 @@ entries:
       - title: Recable the system
         url: /a900/controller_replace_recable_reassign_disks.html
       - title: Complete system restoration
-        url: /a900/controller_replace_complete_system_restoration.html
+        url: /a900/controller_replace_complete_system_restoration_rma.html
       # END controller module replacement
       # START DIMM replace
     - title: DIMM

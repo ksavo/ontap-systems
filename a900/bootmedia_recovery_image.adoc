@@ -18,6 +18,9 @@ The image is downloaded from the USB flash drive.
 . When prompted, either enter the name of the image or accept the default image displayed inside the brackets on your screen.
 . Restore the var file system:
 +
+
+[options="header" cols="1,2"]
+
 |===
 | If your system has...| Then...
 a|
@@ -78,14 +81,17 @@ If you are prompted to continue with the update, press `y`.
  ** If your system does not have onboard keymanager, NSE or NVE configured, complete the steps in this section.
 . From the LOADER prompt, enter the boot_ontap command.
 +
+
+[options="header" cols="1,2"]
+
 |===
 | If you see...| Then...
 a|
-*The login prompt*
+The login prompt
 a|
 Go to the next Step.
 a|
-*Waiting for giveback...*
+Waiting for giveback...
 a|
 
  .. Log into the partner node.

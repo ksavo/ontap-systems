@@ -2,25 +2,25 @@
 permalink: a900/install_detailed_guide.html
 sidebar: sidebar
 keywords: AFF A900
-summary: 'This guide gives detailed step-by-step instructions for installing a typical NetApp system.'
+summary: 'This a gives detailed step-by-step instructions for installing a typical NetApp system.'
 ---
-= Detailed guide - AFF 900
+= Detailed steps - AFF 900
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-This guide gives detailed step-by-step instructions for installing a typical NetApp system. Use this guide if you want more detailed installation instructions.
+This article gives detailed step-by-step instructions for installing a typical NetApp system. Use this article if you want more detailed installation instructions.
 
 == Step 1: Prepare for installation
 
-[.lead]
 To install your system, you need to create an account on the NetApp Support Site, register your system, and get license keys. You also need to inventory the appropriate number and type of cables for your system and collect specific network information.
 
-You need to have access to the Hardware Universe for information about site requirements as well as additional information on your configured system. You might also want to have access to the Release Notes for your version of ONTAP for more information about this system.
+.Before you begin
 
-https://hwu.netapp.com[NetApp Hardware Universe]
+[.lead]
+You need to have access to the https://hwu.netapp.com[NetApp Hardware Universe^] for information about site requirements as well as additional information on your configured system.
 
-http://mysupport.netapp.com/documentation/productlibrary/index.html?productID=62286[Find the Release Notes for your version of ONTAP 9^]
+You might also want to have access to the http://mysupport.netapp.com/documentation/productlibrary/index.html?productID=62286[ONTAP 9 Release Notes^] for your version of ONTAP for more information about this system.
 
 You need to provide the following at your site:
 
@@ -28,6 +28,7 @@ You need to provide the following at your site:
 * Phillips #2 screwdriver
 * Additional networking cables to connect your system to your network switch and laptop or console with a Web browser
 
+.Steps
 . Unpack the contents of all boxes.
 . Record the system serial number from the controllers.
 +
@@ -37,8 +38,10 @@ image::../media/drw_ssn_label.png[]
 +
 The following table identifies the types of cables you might receive. If you receive a cable not listed in the table, see the Hardware Universe to locate the cable and identify its use.
 +
-https://hwu.netapp.com[NetApp Hardware Universe]
+https://hwu.netapp.com[NetApp Hardware Universe^]
 +
+[options="header" cols="1,2,2,2"]
+
 |===
 | Type of cable...| Part number and length| Connector type| For...
 a|
@@ -61,11 +64,8 @@ X66250-2 (112-00342), 2m
 X66250-5 (112-00344), 5m
 
 X66250-15 (112-00346), 15m
-
 a|
-
 image:../media/oie_cable_sfp_gbe_copper.png[]
-
 a|
 FC optical network cable
 a|
@@ -77,15 +77,12 @@ X66100-3 (112-00543), 3m
 
 X66100-5 (112-00544), 5m
 a|
-
 image:../media/oie_cable100_gbe_qsfp28.png[]
-
 a|
 Ethernet data, cluster
 network
 a|
 100 GbE cable
-
 a|
 X66211B-1 (112-00573), 1m
 
@@ -93,9 +90,7 @@ X66211B-2 (112-00574), 2m
 
 X66211B-5 (112-00576), 5m
 a|
-
 image:../media/oie_cable100_gbe_qsfp28.png[]
-
 a|
 Network,
 
@@ -104,7 +99,6 @@ NVME storage,
 Ethernet data,
 
 cluster network
-
 a|
 Optical cables
 a|
@@ -114,9 +108,7 @@ X66032A (112-00437), 2m
 
 X66033A (112-00438), 3m
 a|
-
-image:../media/oie_cable_fiber_lc_connector.gif[]
-
+image:../media/oie_cable_fiber_lc_connector.png[]
 a|
 FC optical network
 a|
@@ -126,9 +118,7 @@ Part numbers X6585-R6 (112-00291), 3m
 
 X6562-R6 (112-00196), 5m
 a|
-
 image:../media/oie_cable_rj45.png[]
-
 a|
 Management network and Ethernet data
 a|
@@ -136,9 +126,7 @@ Micro-USB console cable
 a|
 Not applicable
 a|
-
 image:../media/oie_cable_micro_usb.png[]
-
 a|
 Console connection during software setup on non-Windows or Mac laptop/console
 a|
@@ -146,17 +134,12 @@ Power cables
 a|
 Not applicable
 a|
-
 image:../media/oie_cable_power.png[]
-
 a|
-
 Powering up the system
 |===
 
-. Review the _NetApp ONTAP Configuration Guide_ and collect the required information listed in that guide.
-+
-https://library.netapp.com/ecm/ecm_download_file/ECMLP2862613[ONTAP Configuration Guide]
+. Review the https://library.netapp.com/ecm/ecm_download_file/ECMLP2862613[ONTAP Configuration Guide^] and collect the required information listed in that guide.
 
 == Step 2: Install the hardware
 
@@ -186,124 +169,296 @@ You can cable the controllers to your network by using the two-node switchless c
 [.lead]
 Management network, data network, and management ports on the controllers are connected to switches. The cluster interconnect ports are cabled on both controllers.
 
+.Before you begin
+
 You must have contacted your network administrator for information about connecting the system to the switches.
 
 Be sure to check the direction of the cable pull-tabs when inserting the cables in the ports. Cable pull-tabs are up for all networking module ports.
 
-image::../media/oie_cable_pull_tab_up.gif[]
+image::../media/oie_cable_pull_tab_up.png[]
 
 NOTE: As you insert the connector, you should feel it click into place; if you do not feel it click, remove it, turn it around and try again.
 
 . Use the animation or illustration to complete the cabling between the controllers and to the switches:
 +
-https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=7a55b98a-e8b8-41d5-821f-ac5b0032ead0[Cabling a two-node switchless cluster need animation request^]*****
+https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=7a55b98a-e8b8-41d5-821f-ac5b0032ead0[Animation -- Cabling a two-node switchless cluster^]
 +
 
 image::../media/drw_a900_tnsc_network_cabling.png[]
 
 +
-. To cable your storage, see link:install_detailed_guide.md#[Cabling controllers to drive shelves^]
+
+[options="header" col="25h,~"]
+
+|===
+|Step|Perform on each controller
+a|
+image:../media/oie_legend_icon_1_lg.png[]
+a|
+Cable cluster interconnect ports:
+
+** Slot A4 and B4 (e4a)
+** Slot A8 and B8 (e8a)
+
+image:../media/oie_cable100_gbe_qsfp28.png[]
+
+a|
+image:../media/oie_legend_icon_2_lp.png[]
+a|
+Cable controller management (wrench) ports.
+
+image::../media/oie_cable_rj45.png[]
+
+a|
+image::../media/oie_legend_icon_3_o.png[]
+a|
+
+Cable 25 GbE network switches:
+
+Ports in slot A3 and B3 (e3a and e3c)
+and slot A9 and B9 (e9a and e9c) to the
+25 GbE network switches.
+
+image::../media/oie_cable_sfp_gbe_copper.png[]
+
+
+40GbE host network switches:
+
+Cable host‐side b ports in slot A4 and
+B4 (e4b) and slot A8 and B8 (e8b) to
+the host switch.
+
+image:../media/oie_cable100_gbe_qsfp28.png[]
+
+a|
+image::../media/oie_legend_icon_4_dr.png[]
+a|
+Cable 32 Gb FC connections:
+
+Cable ports in slot A5 and B5 (5a,
+5b, 5c, and 5d) and slot A7 and B7
+(7a, 7b, 7c, and 7d) to the
+32 Gb FC network switches.
+
+image:../media/oie_cable_sfp_gbe_copper.png[]
+
+|===
+
+. To cable your storage, see <<Step 4: Cable controllers to drive shelves>>.
 
 === Option 2: Switched cluster
 
 [.lead]
 Management network, data network, and management ports on the controllers are connected to switches. The cluster interconnect and HA ports are cabled on to the cluster/HA switch.
 
+.Before you begin
+
 You must have contacted your network administrator for information about connecting the system to the switches.
 
 Be sure to check the direction of the cable pull-tabs when inserting the cables in the ports. Cable pull-tabs are up for all networking module ports.
 
-image::../media/oie_cable_pull_tab_up.gif[]
+image::../media/oie_cable_pull_tab_up.png[]
 
 NOTE: As you insert the connector, you should feel it click into place; if you do not feel it click, remove it, turn it around and try again.
 
 . Use the animation or illustration to complete the cabling between the controllers and to the switches:
 +
-https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=6381b3f1-4ce5-4805-bd0a-ac5b0032f51d[Switched cluster cabling^]
+https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=6381b3f1-4ce5-4805-bd0a-ac5b0032f51d[Animation--Cabling a switched cluster^]
 +
 
 image::../media/drw_a900_switched_network_cabling.png[]
 
 +
-. Cable your storage: link:install_detailed_guide.md#[Cabling controllers to drive shelves^]
+
+[options="header" col="25h,~"]
+
+|===
+|Step|Perform on each controller
+a|
+image:../media/oie_legend_icon_1_lg.png[]
+a|
+Cable cluster
+interconnect a ports:
+
+** Slot A4 and B4 (e4a) to the cluster network switch.
+** Slot A8 and B8 (e8a) to the
+cluster network switch.
+
+image:../media/oie_cable100_gbe_qsfp28.png[]
+
+a|
+image::../media/oie_legend_icon_2_lp.png[]
+a|
+Cable controller management (wrench) ports.
+
+image::../media/oie_cable_rj45.png[]
+
+a|
+image::../media/oie_legend_icon_3_o.png[]
+a|
+
+Cable 25GbE network switches:
+
+Ports in slot A3 and B3 (e3a and e3c)
+and slot A9 and B9 (e9a and e9c) to the
+25 GbE network switches.
+
+image::../media/oie_cable_sfp_gbe_copper.png[]
+
+
+40GbE host network switches:
+
+Cable host‐side b ports in slot A4 and
+B4 (e4b) and slot A8 and B8 (e8b) to
+the host switch.
+
+image:../media/oie_cable100_gbe_qsfp28.png[]
+
+a|
+image::../media/oie_legend_icon_4_dr.png[]
+a|
+Cable 32 Gb FC connecions:
+
+Cable ports in slot A5 and B5 (5a,
+5b, 5c, and 5d) and slot A7 and B7
+(7a, 7b, 7c, and 7d) to the
+32 Gb FC network switches.
+
+image:../media/oie_cable_sfp_gbe_copper.png[]
+
+|===
+
+
+. To cable your storage, see <<Step 4: Cable controllers to drive shelves>>.
 
 == Step 4: Cable controllers to drive shelves
 
-=== Option 1: Cable the controllers to DS224C drive shelves
-
-[.lead]
-You must cable the shelf-to-shelf connections, and then cable both controllers to the DS224C drive shelves.
-
-The cables are inserted into the drive shelf with the pull-tabs facing down, while the other end of the cable is inserted into the controller storage modules with the pull-tabs up.
-
-image::../media/oie_cable_pull_tab_down.gif[]
-
-image::../media/oie_cable_pull_tab_up.gif[]
-
-. Use the following animation to cable your drive shelves to your controllers.
-+
-PANAPTO LINK HERE
-
-+
-
-image::../media/drw_a900_SAS shelf_cabling.png[]
-
-+
-If you have more than one drive shelf stack, see link:../com.netapp.doc.hw-ds-sas3-icg/home.html[Installing and cabling^] for your drive shelf type.
-+
-
-. To complete setting up your system, see link:install_detailed_guide.md#[Completing system setup and configuration^]
-
-=== Option 2: Cable the controllers to a single NS224 drive shelf in AFF A900
+=== Option 1: Cable the controllers to a single NS224 drive shelf in AFF A900
 
 [.lead]
 You must cable each controller to the NSM modules on the NS224 drive shelf on an AFF A900 system.
 
+.Before you begin
+
 * Be sure to check the illustration arrow for the proper cable connector pull-tab orientation. The cable pull-tab for the storage modules are up, while the pull tabs on the shelves are down.
 +
 
-image::../media/oie_cable_pull_tab_up.gif[]
+image::../media/oie_cable_pull_tab_up.png[]
 +
 
-image::../media/oie_cable_pull_tab_down.gif[]
+image::../media/oie_cable_pull_tab_down.png[]
 +
 NOTE: As you insert the connector, you should feel it click into place; if you do not feel it click, remove it, turn it around and try again.
 
-. Use the following animation or drawings to cable your controllers with two X91153A  storage modules to a single NS224 drive shelf, or use the diagram to cable your controllers with one X91153A  storage module to a single NS224 drive shelf.
+. Use the following animation or drawings to cable your controllers to a single NS224 drive shelf.
 +
-https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=6520eb01-87b3-4520-9109-ac5b0032ea4e[Cabling a single NS224 shelf ^]
+
+https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=6520eb01-87b3-4520-9109-ac5b0032ea4e[Animation--Cabling a single NS224 shelf ^]
 +
 
 image::../media/drw_a900_NS224_one shelf_cabling.png[]
++
 
-. To complete setting up your system, see link:install_detailed_guide.md#[Completing system setup and configuration^].
+[options="header" col="25h,~"]
 
-=== Option 3: Cable the controllers to two NS224 drive shelves in AFF A900
+|===
+|Step|Perform on each controller
+a|
+
+image:../media/oie_legend_icon_1_mb.png[]
+
+a|
+
+** Connect controller A port e2a to port e0a on NSM A on the shelf.
+
+** Connect controller A port e10b to port e0b on NSM B on the shelf.
+
+image:../media/oie_cable100_gbe_qsfp28.png[]
+
+100 GbE cable
+a|
+
+image:../media/oie_legend_icon_2_lo.png[]
+a|
+
+** Connect controller B port e2a to port e0a on NSM B on the shelf.
+
+** Connect controller B port e10b to port e0b on NSM A on the shelf.
+
+image:../media/oie_cable100_gbe_qsfp28.png[]
+
+100 GbE cable
+
+|===
+
+. To complete setting up your system, see  <<Step 5: Complete system setup and configuration>>.
+
+=== Option 2: Cable the controllers to two NS224 drive shelves in AFF A900
 
 [.lead]
 You must cable each controller to the NSM modules on the NS224 drive shelves.
 
+.Before you begin
+
 * Be sure to check the illustration arrow for the proper cable connector pull-tab orientation. The cable pull-tab for the storage modules are up, while the pull tabs on the shelves are down.
 +
 
-image::../media/oie_cable_pull_tab_up.gif[]
+image::../media/oie_cable_pull_tab_up.png[]
 
-image::../media/oie_cable_pull_tab_down.gif[]
+image::../media/oie_cable_pull_tab_down.png[]
 
 
 NOTE: As you insert the connector, you should feel it click into place; if you do not feel it click, remove it, turn it around and try again.
 
 . Use the following animation or diagram to cable your controllers to two NS224 drive shelves.
+
 +
-https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=34098e39-73ad-45de-9af7-ac5b0032ea9a[Cabling two NS224 shelves^]
+
+https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=34098e39-73ad-45de-9af7-ac5b0032ea9a[Animation--Cabling two NS224 shelves^]
 +
 
 image:../media/drw_a900_NS224_line_art_two shelf_cabling.png[]
++
+
+image::../media/drw_a900_NS224_two shelf_cabling.png[]
++
+
+[options="header" col="25h,~"]
+
+|===
+|Step|Perform on each controller
+a|
+
+image:../media/oie_legend_icon_1_mb.png[]
+
+a|
+
+** Connect controller A port e2a to NSM A e0a on shelf 1.
+** Connect controller A port e10b to NSM B e0b on shelf 1.
+** Connect controller A port e2b to NSM B e0b on shelf 2.
+** Connect controller A port e10a to NSM A e0a on shelf 2.
 
 +
-image::../media/drw_a900_NS224_two shelf_cabling.png[]
+image:../media/oie_cable100_gbe_qsfp28.png[]
 
-. To complete setting up your system, see link:install_detailed_guide.md#[Completing system setup and configuration^].
+100 GbE cable
+a|
+
+image:../media/oie_legend_icon_2_lo.png[]
+a|
+
+** Connect controller B port e2a to NSM B e0a on shelf 1.
+** Connect controller B port e10b to NSM A e0b on shelf 1.
+** Connect controller B port e2b to NSM A e0b on shelf 2.
+** Connect controller B port e10a to NSM B e0a on shelf 2.
+
+image:../media/oie_cable100_gbe_qsfp28.png[]
+
+100 GbE cable
+
+|===
+
+. To complete setting up your system, see <<Step 5: Complete system setup and configuration>>.
 
 == Step 5: Complete system setup and configuration
 
@@ -317,9 +472,9 @@ If you have network discovery enabled on your laptop, you can complete system se
 
 . Use the following animation or drawing  to set one or more drive shelf IDs:
 +
-If your system has NS224 drive shelves, the shelves are pre-set to shelf ID 00 and 01. If you want to change the shelf IDs, you must create a tool to insert into the hole where button is located.
+The NS224 shelves are pre-set to shelf ID 00 and 01. If you want to change the shelf IDs, you must create a tool to insert into the hole where button is located.
 +
-https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=95a29da1-faa3-4ceb-8a0b-ac7600675aa6[Setting SAS or NVMe drive shelf IDs^]
+https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=95a29da1-faa3-4ceb-8a0b-ac7600675aa6[Animation--Setting SAS or NVMe drive shelf IDs^]
 
 +
 
@@ -356,7 +511,7 @@ shelf to set shelf ID.
 . Plug the power cords into the controller power supplies, and then connect them to power sources on different circuits.
 . Turn on the power switches to both nodes.
 +
-https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=bb04eb23-aa0c-4821-a87d-ab2300477f8b[Turn on the power to the controllers^]
+https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=a905e56e-c995-4704-9673-adfa0005a891[Animation--Turn on the power to the controllers^]
 +
 
 image::../media/drw_a900_power-on.png[]
@@ -370,7 +525,7 @@ See your laptop's online help for more information.
 
 . Use the following animation to connect your laptop to the Management switch.
 +
-https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=d61f983e-f911-4b76-8b3a-ab1b0066909b[Connecting your laptop to the Management switch^]
+https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=d61f983e-f911-4b76-8b3a-ab1b0066909b[Animation--Connecting your laptop to the Management switch^]
 
 +
 image::../media/dwr_laptop_to_switch_only.png[]
@@ -392,9 +547,8 @@ NOTE: XXXXX is the system serial number for the target node.
 
 System Manager opens.
 
-. Use System Manager guided setup to configure your system using the data you collected in the _NetApp ONTAP Configuration Guide_.
-+
-https://library.netapp.com/ecm/ecm_download_file/ECMLP2862613[ONTAP Configuration Guide^]
+. Use System Manager guided setup to configure your system using the data you collected in the https://library.netapp.com/ecm/ecm_download_file/ECMLP2862613[ONTAP Configuration Guide^].
+
 
 . Set up your account and download Active IQ Config Advisor:
  .. Log in to your existing account or create an account.
@@ -421,7 +575,7 @@ If you are not using a Windows or Mac-based laptop or console or if auto discove
 +
 NOTE: See your laptop or console's online help for how to configure the console port.
 
- .. Connect the console cable to the laptop or console using the console cable that came with your system, and then connect the laptop to the management switch on the management subnet .
+ .. Connect the console cable to the laptop or console using the console cable that came with your system, and then connect the laptop to the management switch on the management subnet.
 +
 image::../media/drw_9000_cable_console_switch_controller.png[]
 
@@ -429,9 +583,9 @@ image::../media/drw_9000_cable_console_switch_controller.png[]
 . Use the following animation to set one or more drive shelf IDs:
 +
 
-If your system has NS224 drive shelves, the shelves are pre-set to shelf ID 00 and 01. If you want to change the shelf IDs, you must create a tool to insert into the hole where button is located.
+The NS224 shelves are pre-set to shelf ID 00 and 01. If you want to change the shelf IDs, you must create a tool to insert into the hole where button is located.
 +
-https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=95a29da1-faa3-4ceb-8a0b-ac7600675aa6[Setting SAS or NVMe drive shelf IDs^]
+https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=95a29da1-faa3-4ceb-8a0b-ac7600675aa6[Animation--Setting SAS or NVMe drive shelf IDs^]
 
 +
 
@@ -469,7 +623,7 @@ shelf to set shelf ID.
 . Turn on the power switches to both nodes.
 +
 
-https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=bb04eb23-aa0c-4821-a87d-ab2300477f8b[Turn on the power to the controllers^]
+https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=bb04eb23-aa0c-4821-a87d-ab2300477f8b[Animation--Turn on the power to the controllers^]
 
 image::../media/drw_a900_power-on.png[]
 

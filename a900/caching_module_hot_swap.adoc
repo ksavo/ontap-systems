@@ -63,16 +63,16 @@ image::../media/drw_9000_remove_flashcache.gif[]
 +
 |===
 a|
-image:../media/legend_icon_01.gif[]
+image:../media/legend_icon_01.png[]
 a|
 Orange release button.
 a|
-image:../media/legend_icon_02.gif[]
+image:../media/legend_icon_02.png[]
 a|
 Caching module cam handle.
 |===
 
- .. Press the orange release button on the front of the caching module.
+ .. Press the terra cotta release button on the front of the caching module.
 +
 IMPORTANT: Do not use the numbered and lettered I/O cam latch to eject the caching module. The numbered and lettered I/O cam latch ejects the entire NVRAM10 module and not the caching module.
 

@@ -11,16 +11,26 @@ summary: 'You must replace a DIMM in the controller module when your system regi
 [.lead]
 You must replace a DIMM in the controller module when your system registers an increasing number of correctable error correction codes (ECC); failure to do so causes a system panic.
 
+.Before you begin
+
 All other components in the system must be functioning properly; if not, you must contact technical support.
 
 You must replace the failed component with a replacement FRU component you received from your provider.
 
-*Steps*
-
 == Step 1: Shut down the impaired node
 
 [.lead]
+You can shut down or take over the impaired controller using different procedures, depending on the storage system hardware configuration.
+
+=== Option 1: Most configurations
+
+[.lead]
 include::../_include/shutdown_most_frus.adoc[]
+
+=== Option 2: Controller is in a MetroCluster
+
+[.lead]
+include::../_include/shutdown_any_mcc_supported.adoc[]
 
 == Step 2: Open the controller module
 
@@ -29,16 +39,21 @@ To access components inside the controller, you must first remove the controller
 
 . If you are not already grounded, properly ground yourself.
 . Unplug the cables from the impaired controller module, and keep track of where the cables were connected.
-. Slide the orange button on the cam handle downward until it unlocks.
+. Slide the terra cotta button on the cam handle downward until it unlocks.
+
 +
+https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=256721fd-4c2e-40b3-841a-adf2000df5fa[Animation--Remove the controller^]
++
+
 image::../media/drw_a900_remove_PCM.png[]
 +
+[cols="10,90"]
 |===
 a|
-image:../media/legend_icon_01.gif[] a|
+image:../media/legend_icon_01.png[] a|
 Cam handle release button
 a|
-image:../media/legend_icon_02.gif[]
+image:../media/legend_icon_02.png[]
 a|
 Cam handle
 |===
@@ -51,9 +66,10 @@ Make sure that you support the bottom of the controller module as you slide it o
 +
 image::../media/drw_a900_PCM_open.png[]
 +
+[cols="10,90"]
 |===
 a|
-image:../media/legend_icon_01.gif[] a|
+image:../media/legend_icon_01.png[] a|
 Controller module cover locking button
 |===
 
@@ -67,20 +83,24 @@ To replace the DIMMs, locate them inside the controller and follow the specific 
 +
 NOTE: Each system memory DIMM has an LED located on the board next to each DIMM slot. The LED for the faulty blinks every two seconds.
 +
-image::../media/drw_9000_dimm_map.gif[]
+image::../media/drw_a900_DIMM_map.png[]
 
 . Eject the DIMM from its slot by slowly pushing apart the two DIMM ejector tabs on either side of the DIMM, and then slide the DIMM out of the slot.
 +
 IMPORTANT: Carefully hold the DIMM by the edges to avoid pressure on the components on the DIMM circuit board.
 +
-image::../media/drw_9000_replace_pcm_dimms.gif[]
 
+https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=db161030-298a-4ae4-b902-adf2000e2aa4[Animation--Replace DIMM^]
++
+image::../media/drw_a900_replace_PCM_dimms.png[]
++
+[cols="10,90"]
 |===
 a|
-image:../media/legend_icon_01.gif[] a|
+image:../media/legend_icon_01.png[] a|
 DIMM ejector tabs
 a|
-image:../media/legend_icon_02.gif[]
+image:../media/legend_icon_02.png[]
 a|
 DIMM
 |===
@@ -111,27 +131,31 @@ For HA pairs with two controller modules in the same chassis, the sequence in wh
 +
 image::../media/drw_a900_PCM_open.png[]
 +
+[cols="10,90"]
 |===
 a|
-image:../media/legend_icon_01.gif[] a|
+image:../media/legend_icon_01.png[] a|
 Controller module cover locking button
 |===
 
 . Align the end of the controller module with the opening in the chassis, and then gently push the controller module halfway into the system.
+
 +
+https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=099237f3-d7f2-4749-86e2-adf2000df53c[Animation--Install controller^]
++
+
 image::../media/drw_a900_remove_PCM.png[]
 +
+[cols="10,90"]
 |===
 a|
-image:../media/legend_icon_01.gif[] a|
+image:../media/legend_icon_01.png[] a|
 Cam handle release button
 a|
-image:../media/legend_icon_02.gif[]
+image:../media/legend_icon_02.png[]
 a|
 Cam handle
 |===
-
-
 
 +
 NOTE: Do not completely insert the controller module in the chassis until instructed to do so.
@@ -141,8 +165,8 @@ NOTE: Do not completely insert the controller module in the chassis until instru
 NOTE: You will connect the rest of the cables to the controller module later in this procedure.
 
 . Complete the reinstallation of the controller module:
- .. If you have not already done so, reinstall the cable management device.
- .. Firmly push the controller module into the chassis until it meets the midplane and is fully seated.
+.. If you have not already done so, reinstall the cable management device.
+.. Firmly push the controller module into the chassis until it meets the midplane and is fully seated.
 +
 The locking latches rise when the controller module is fully seated.
 +
@@ -150,9 +174,9 @@ IMPORTANT: Do not use excessive force when sliding the controller module into th
 +
 The controller module begins to boot as soon as it is fully seated in the chassis. Be prepared to interrupt the boot process.
 
- .. Rotate the locking latches upward, tilting them so that they clear the locking pins, and then lower them into the locked position.
- .. Interrupt the boot process by pressing `Ctrl-C` when you see Press Ctrl-C for Boot Menu.
- .. Select the option to boot to Maintenance mode from the displayed menu.
+.. Rotate the locking latches upward, tilting them so that they clear the locking pins, and then lower them into the locked position.
+.. Interrupt the boot process by pressing `Ctrl-C` when you see Press Ctrl-C for Boot Menu.
+.. Select the option to boot to Maintenance mode from the displayed menu.
 
 == Step 5: Run system-level diagnostics
 
@@ -164,14 +188,14 @@ Your system must be at the LOADER prompt to start System Level Diagnostics.
 All commands in the diagnostic procedures are issued from the node where the component is being replaced.
 
 . If the node to be serviced is not at the LOADER prompt, perform the following steps:
- .. Select the Maintenance mode option from the displayed menu.
- .. After the node boots to Maintenance mode, halt the node: `halt`
+.. Select the Maintenance mode option from the displayed menu.
+.. After the node boots to Maintenance mode, halt the node: `halt`
 +
 After you issue the command, you should wait until the system stops at the LOADER prompt.
 +
-IMPORTANT: During the boot process, you can safely respond `y` to prompts:
+IMPORTANT: During the boot process, you can safely respond `y` to prompts.
 
-  *** A prompt warning that when entering Maintenance mode in an HA configuration, you must ensure that the healthy node remains down.
+  *** If a prompt appears warning that when entering Maintenance mode in an HA configuration, you must ensure that the healthy node remains down.
 . At the LOADER prompt, access the special drivers specifically designed for system-level diagnostics to function properly: `boot_diags`
 +
 During the boot process, you can safely respond `y` to the prompts until the Maintenance mode prompt (*>) appears.
@@ -183,6 +207,9 @@ System-level diagnostics returns you to the prompt if there are no test failures
 
 . Proceed based on the result of the preceding step:
 +
+
+[options="header" cols="1,2"]
+
 |===
 | If the system-level diagnostics tests...| Then...
 a|
@@ -196,14 +223,18 @@ The following default response is displayed:
 +
 SLDIAG: No log messages are present.
 
- .. Exit Maintenance mode: `halt`
+.. Exit Maintenance mode: `halt`
 +
 The node displays the LOADER prompt.
 
- .. Boot the node from the LOADER prompt: `bye`
- .. Return the node to normal operation:
+.. Boot the node from the LOADER prompt: `bye`
+.. Return the node to normal operation:
 +
 |===
++
+
+[options="header" cols="1,2"]
+
 |===
 | If your node is in...| Then...
 a|
@@ -232,7 +263,7 @@ The controller module boots up when fully seated.
 +
 After you issue the command, wait until the system stops at the LOADER prompt.
 
- .. Rerun the system-level diagnostic test.
+.. Rerun the system-level diagnostic test.
 
 +
 |===

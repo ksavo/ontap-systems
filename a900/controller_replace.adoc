@@ -11,6 +11,10 @@ summary: 'To replace the controller module hardware, you must remove the impaire
 [.lead]
 To replace the controller module hardware, you must remove the impaired node, move FRU components to the replacement controller module, install the replacement controller module in the chassis, and then boot the system to Maintenance mode.
 
+The following animation shows the whole process of moving components from the impaired to the replacement controller.
+
+https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=30337552-b10f-4146-9bdb-adf2000df5bd[Animation -- Move components to replacement controller^]
+
 == Step 1: Open the controller module
 
 [.lead]
@@ -18,19 +22,26 @@ To access components inside the controller, you must first remove the controller
 
 . If you are not already grounded, properly ground yourself.
 . Unplug the cables from the impaired controller module, and keep track of where the cables were connected.
-. Slide the orange button on the cam handle downward until it unlocks.
+. Slide the terra cotta button on the cam handle downward until it unlocks.
+
++
+https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=256721fd-4c2e-40b3-841a-adf2000df5fa[Animation -- Remove the controller^]
+
 +
 image::../media/drw_a900_remove_PCM.png[]
+
 +
+[cols="10,90"]
 |===
 a|
-image:../media/legend_icon_01.svg[] a|
+image:../media/legend_icon_01.png[] a|
 Cam handle release button
 a|
-image:../media/legend_icon_02.svg[]
+image:../media/legend_icon_02.png[]
 a|
 Cam handle
 |===
+
 
 . Rotate the cam handle so that it completely disengages the controller module from the chassis, and then slide the controller module out of the chassis.
 +
@@ -38,11 +49,13 @@ Make sure that you support the bottom of the controller module as you slide it o
 
 . Place the controller module lid-side up on a stable, flat surface, press the blue button on the cover, slide the cover to the back of the controller module, and then swing the cover up and lift it off of the controller module.
 +
-image::../media/drw_a900_pcm_open.png[]
-+
+
+image::../media/drw_a900_PCM_open.png[]
+
+[cols="10,90"]
 |===
 a|
-image:../media/legend_icon_01.svg[] a|
+image:../media/legend_icon_01.png[] a|
 Controller module cover locking button
 |===
 
@@ -51,19 +64,23 @@ Controller module cover locking button
 [.lead]
 You must locate the boot media and follow the directions to remove it from the old controller and insert it in the new controller.
 
-. Lift the black air duct at the back of the controller module and then locate the boot media using the following illustration or the FRU map on the controller module:
+. Locate the boot media using the following illustration or the FRU map on the controller module:
+
 +
+
 image::../media/drw_a900_remove_boot_dev.png[]
 +
+[cols="10,90"]
 |===
 a|
-image:../media/legend_icon_01.svg[] a|
+image:../media/legend_icon_01.png[] a|
 Press release tab
 a|
-image:../media/legend_icon_02.svg[]
+image:../media/legend_icon_02.png[]
 a|
 Boot media
 |===
++
 
 . Press the blue button on the boot media housing to release the boot media from its housing, and then gently pull it straight out of the boot media socket.
 +
@@ -87,15 +104,17 @@ To move the DIMMs, locate and move them from the old controller into the replace
 . Eject the DIMM from its slot by slowly pushing apart the two DIMM ejector tabs on either side of the DIMM, and then slide the DIMM out of the slot.
 +
 IMPORTANT: Carefully hold the DIMM by the edges to avoid pressure on the components on the DIMM circuit board.
+
 +
-image::../media/drw_9000_replace_pcm_dimms.svg[]
+image::../media/drw_a900_replace_PCM_dimms.png[]
 +
+[cols="10,90"]
 |===
 a|
-image:../media/legend_icon_01.svg[] a|
+image:../media/legend_icon_01.png[] a|
 DIMM ejector tabs
 a|
-image:../media/legend_icon_02.svg[]
+image:../media/legend_icon_02.png[]
 a|
 DIMM
 |===
@@ -128,15 +147,19 @@ NOTE: The system might update system firmware when it boots. Do not abort this p
 . If you are not already grounded, properly ground yourself.
 . If you have not already done so, replace the cover on the controller module.
 . Align the end of the controller module with the opening in the chassis, and then gently push the controller module halfway into the system.
+
++
+https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=099237f3-d7f2-4749-86e2-adf2000df53c[Animation -- Install controller]
 +
 image::../media/drw_a900_remove_PCM.png[]
 +
+[cols="10,90"]
 |===
 a|
-image:../media/legend_icon_01.svg[] a|
+image:../media/legend_icon_01.png[] a|
 Cam handle release button
 a|
-image:../media/legend_icon_02.svg[]
+image:../media/legend_icon_02.png[]
 a|
 Cam handle
 |===
@@ -160,32 +183,3 @@ The controller module begins to boot as soon as it is fully seated in the chassi
  .. Interrupt the boot process by pressing `Ctrl-C` when you see Press Ctrl-C for Boot Menu.
 
 .. Select the option to boot to LOADER.
-////
-.. From the healthy node, check to see if Onboard Key Manager (OKM) is configured: `security key-manager onboard show-backup`
-+
-If you see: `Error: show failed: Onboard key management is not configured for the admin Vserver. Use the "security key-manager
-      onboard enable" command to configure onboard key management.`
-Onboard Key Manager is not configured and you can
-select the option to boot to LOADER from the displayed boot menu.
-
-.. If OKM is enabled, select Option 10 from the Boot Menu.
-+
-You will see the following ouptut:
-+
-` -------------BEGIN BACKUP---------- TmV0QXBwIEtleSBCbG9iAAEBAAAEAAAAcAEAAAAAAACCPESPAAAAACEAAAAAAAAA
-QAAAAAAAAAAU6/F6AAAAAFPMGJ/LzijV+ma+2Gji744SyuJIz7WJVZQoTygpH6X6
-'
-.
-.
-----------------END BACKUP---------`
-
-... Confirm that TPM is in use: `LOADER> printenv  bootarg.use.tpm`
-
-... Reboot the replacement node and check the output.
-+
-IMPORTANT: You must contact Customer Support if you see the following messages during the node reboot:
-+
-`[....:crypto.ssal.failed:ALERT] : SSAL Unseal operation failed:  SSAL Unseal operation failed.``
-+
-``[....:crypto.okmrecovery.failed: ERROR: Import of the onboard key hierarchy failed: failed to import key.hierarchy. Additional information: error: ssal unseal failed.``
-////
