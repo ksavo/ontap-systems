@@ -30,6 +30,8 @@ image::../media/drw_iom12.gif[]
 The IOM12B module is distinguished by a blue stripe and "IOM12B" label and looks like the following:
 +
 image::../media/drw_iom12b.png[]
++
+image::../media/Stoat.png[]
 
 * For multipathed (multipath HA or multipath) and quad-pathed (quad-path HA or quad-path) configurations, you can hot-swap a shelf IOM (nondisruptively replace a shelf IOM in a system that is powered on and serving data--I/O is in progress).
 * For FAS2600 series and FAS2700 single-path HA configurations, you must perform a takeover and giveback operation to replace a shelf IOM in a system that is powered on and serving data--I/O is in progress.

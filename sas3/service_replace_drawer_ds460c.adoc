@@ -39,6 +39,8 @@ image::../media/28_dwg_e2860_de460c_front_no_callouts.gif[]
 The DCM2 drive drawer is distinguished by a blue stripe and "DCM2" label, and looks like the following:
 +
 image::../media/drw_dcm2.png[]
++
+image::../media/Stoat.png[]
 
 == Removing the cable chains
 
