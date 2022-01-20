@@ -2,13 +2,16 @@
 permalink: fas8200/bootmedia-encryption-preshutdown-checks.html
 sidebar: sidebar
 keywords: fas8200, pre-shutdown checks for onboard encryption keys
-summary: 'Prior to shutting down the impaired node and checking the status of the onboard encryption keys, you must check the status of the impaired node, disable automatic giveback, and check what version of ONTAP the system is running.'
+summary: "Prior to shutting down the impaired node and checking the status of the onboard encryption keys, you must check the status of the impaired node, disable automatic giveback, and check what version of ONTAP the system is running."
 ---
 = Check onboard encryption keys as needed - FAS8200
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
+
+Prior to shutting down the impaired node and checking the status of the onboard encryption keys, you must check the status of the impaired node, disable automatic giveback, and check what version of ONTAP the system is running.
+
 include::../_include/encryption_steps_before_shutdown.adoc[]
 ** If <lno-DARE> is not displayed in the command output, and the system is running ONTAP 9.5, go to <<Option 1: Checking NVE or NSE on systems running ONTAP 9.5 and earlier>>.
  ** If <lno-DARE> is not displayed in the command output, and the system is running ONTAP 9.6 or later, go to <<Option 2: Checking NVE or NSE on systems running ONTAP 9.6 and later>>.

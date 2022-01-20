@@ -60,7 +60,7 @@ When the impaired node shows Waiting for giveback..., press Ctrl-C, and then res
 
 . If the system has only one controller module in the chassis, turn off the power supplies, and then unplug the impaired node's power cords from the power source.
 
-== Step 2: Open the system
+== Step 2: Remove controller module 
 
 To access components inside the controller, you must first remove the controller module from the system and then remove the cover on the controller module.
 

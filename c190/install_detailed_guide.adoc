@@ -17,6 +17,7 @@ To install your AFF C190 system, you need to create an account and register the 
 
 You need to have access to the link:https://hwu.netapp.com[NetApp Hardware Universe^] (HWU) for information about site requirements as well as additional information on your configured system. You might also want to have access to the link:http://mysupport.netapp.com/documentation/productlibrary/index.html?productID=62286[Release Notes for your version of ONTAP^] for more information about this system.
 
+.What you need
 You need to provide the following at your site:
 
 * Rack space for the storage system
@@ -32,12 +33,8 @@ image::../media/drw_ssn_label.png[]
 
 . Set up your account:
  .. Log in to your existing account or create an account.
- .. Register your system.
-+
-link:https://mysupport.netapp.com/eservice/registerSNoAction.do?moduleName=RegisterMyProduct[NetApp Product Registration]
-
+ .. Register (link:https://mysupport.netapp.com/eservice/registerSNoAction.do?moduleName=RegisterMyProduct[NetApp Product Registration^]) your system.
 . Download and install link:https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor[NetApp Downloads: Config Advisor^] on your laptop.
-
 . Inventory and make a note of the number and types of cables you received.
 +
 The following table identifies the types of cables you might receive. If you receive a cable not listed in the table, see the link:https://hwu.netapp.com[NetApp Hardware Universe^] to locate the cable and identify its use.
@@ -111,6 +108,7 @@ Powering up the system
 
 You need to install your system in a 4-post rack or NetApp system cabinet, as applicable.
 
+.Steps
 . Install the rail kits, as needed.
 . Install and secure your system using the instructions included with the rail kit.
 +
@@ -132,6 +130,7 @@ You can cable the controllers to your network by using the two-node switchless c
 
 UTA2 ports and management ports on the controller modules are connected to switches. The cluster interconnect ports are cabled on both controller modules.
 
+.Before you begin
 Contact your network administrator for information about connecting the system to the switches.
 
 Be sure to check the illustration arrow for the proper cable connector pull-tab orientation.
@@ -142,11 +141,12 @@ NOTE: As you insert the connector, you should feel it click into place; if you d
 
 NOTE: If connecting to an optical switch, insert the SFP into the controller port before cabling to the port.
 
+.Steps
 . Use the illustration or the step-by-step instructions to complete the cabling between the controllers and to the switches:
 +
 image::../media/drw_c190_tnsc_unified_network_cabling_animated_gif.png[]
 +
-[options="header" cols="1,2"]
+[options="header" cols="10,90"]
 |===
 | Step| Perform on each controller
 a|
@@ -181,6 +181,7 @@ DO NOT plug in the power cords at this point.
 
 UTA2 ports and management ports on the controller modules are connected to switches. The cluster interconnect ports are cabled to the cluster interconnect switches.
 
+.Before you begin
 Contact your network administrator for information about connecting the system to the switches.
 
 Be sure to check the illustration arrow for the proper cable connector pull-tab orientation.
@@ -191,11 +192,12 @@ NOTE: As you insert the connector, you should feel it click into place; if you d
 
 NOTE: If connecting to an optical switch, insert the SFP into the controller port before cabling to the port.
 
+.Steps
 . Use the illustration or the step-by-step instructions to complete the cabling between the controllers and the switches:
 +
 image::../media/drw_c190_switched_unified_network_cabling_animated_gif.png[]
 +
-[options="header" cols="1,2"]
+[options="header" cols="10,90"]
 |===
 | Step| Perform on each controller module
 a|
@@ -228,6 +230,7 @@ DO NOT plug in the power cords at this point.
 
 RJ45 ports and management ports on the controller modules are connected to switches. The cluster interconnect ports are cabled on both controller modules.
 
+.Before you begin
 Contact your network administrator for information about connecting the system to the switches.
 
 Be sure to check the illustration arrow for the proper cable connector pull-tab orientation.
@@ -236,11 +239,12 @@ image::../media/oie_cable_pull_tab_down.png[]
 
 NOTE: As you insert the connector, you should feel it click into place; if you do not feel it click, remove it, turn it around and try again.
 
+.Steps
 . Use the illustration or the step-by-step instructions to complete the cabling between the controllers and to the switches:
 +
 image::../media/drw_c190_tnsc_ethernet_network_cabling_animated_gif.png[]
 +
-[options="header" cols="1,2"]
+[options="header" cols="10,90"]
 |===
 | Step| Perform on each controller
 a|
@@ -275,6 +279,7 @@ DO NOT plug in the power cords at this point.
 
 RJ45 ports and management ports on the controller modules are connected to switches. The cluster interconnect ports are cabled to the cluster interconnect switches.
 
+.Before you begin
 Contact your network administrator for information about connecting the system to the switches.
 
 Be sure to check the illustration arrow for the proper cable connector pull-tab orientation.
@@ -283,11 +288,12 @@ image::../media/oie_cable_pull_tab_down.png[]
 
 NOTE: As you insert the connector, you should feel it click into place; if you do not feel it click, remove it, turn it around and try again.
 
+.Steps
 . Use the illustration or the step-by-step instructions to complete the cabling between the controllers and the switches:
 +
 image::../media/drw_c190_switched_ethernet_network_cabling_animated.png[]
 +
-[options="header" cols="1,2"]
+[options="header" cols="10,90"]
 |===
 | Step| Perform on each controller module
 a|
@@ -324,6 +330,7 @@ Complete the system setup and configuration using cluster discovery with only a 
 
 If you have network discovery enabled on your laptop, you can complete system setup and configuration using automatic cluster discovery.
 
+.Steps
 . Plug the power cords into the controller power supplies, and then connect them to power sources on different circuits.
 . Turn on the power switches to both nodes.
 +
@@ -335,9 +342,7 @@ NOTE: Initial booting may take up to eight minutes..
 +
 See your laptop's online help for more information.
 
-. Use the following animation to connect your laptop to the Management switch.
-+
-link:https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=d61f983e-f911-4b76-8b3a-ab1b0066909b[Connecting your laptop to the Management switch^]
+. Use the animation (link:https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=d61f983e-f911-4b76-8b3a-ab1b0066909b[Connecting your laptop to the Management switch^]) to connect your laptop to the Management switch.
 
 . Select an ONTAP icon listed to discover:
 +
