@@ -18,7 +18,7 @@ You replace the real-time clock (RTC) battery in the controller module so that y
 
 include::../_include/shutdown_most_frus.adoc[]
 
-== Step 2: Open the system
+== Step 2: Remove controller module 
 
 To access components inside the controller module, you must first remove the controller module from the system, and then remove the cover on the controller module.
 
