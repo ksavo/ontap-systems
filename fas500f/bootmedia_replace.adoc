@@ -1,20 +1,18 @@
 ---
 permalink: fas500f/bootmedia-replace.html
 sidebar: sidebar
-keywords: fas500f, replace, failed, boot, media, controller, module
-summary: 'You locate the failed boot media in the controller module by removing the air duct on the controller module before you can replace the boot media.'
+keywords: fas500f, replace the boot media
+summary: "You locate the failed boot media in the controller module by removing the air duct on the controller module before you can replace the boot media."
 ---
 = Remove the controller module, replace the boot media and transfer the boot image to the boot media - FAS500f
 :icons: font
 :imagesdir: ../media/
 
+[.lead]
 To replace the boot media, you must remove the impaired controller module, install the replacement boot media, and transfer the boot image to a USB flash drive.
 
 == Step 1: Remove the controller module
-:icons: font
-:imagesdir: ../media/
 
-[.lead]
 You must remove the controller module from the chassis when you replace a component inside the controller module.
 
 Make sure that you label the cables so that you know where they came from.
@@ -59,10 +57,7 @@ image::../media/drw_a250_remove_airduct_cover.png[]
 
 
 == Step 2: Replace the boot media
-:icons: font
-:imagesdir: ../media/
 
-[.lead]
 You locate the failed boot media in the controller module by removing the air duct on the controller module before you can replace the boot media.
 
 You need a #1 magnetic Phillips head screw driver to remove the screw that holds the boot media in-place. Due to the space constraints within the controller module, you should also have a magnet to transfer the screw on to so that you do not loose it.
@@ -93,10 +88,7 @@ Lift the boot media out of the controller module.
 NOTE: Do not apply force when tightening the screw on the boot media; you might crack it.
 
 == Step 3: Transfer the boot image to the boot media
-:icons: font
-:imagesdir: ../media/
 
-[.lead]
 The replacement boot media that you installed is without a boot image so you need to transfer a boot image using a USB flash drive.
 
 * You must have a USB flash drive, formatted to MBR/FAT32, with at least 4GB capacity

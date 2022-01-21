@@ -17,17 +17,14 @@ link:https://youtu.be/bVJ92AIMyoQ[AFF FAS2600 NVMEM battery replacement video]
 
 == Step 1: Shut down the impaired controller
 
-[.lead]
 You can shut down or take over the impaired controller using different procedures, depending on the storage system hardware configuration.
 
-[.lead]
 include::../_include/shutdown_most_frus.adoc[]
 
 . If the system has only one controller module in the chassis, turn off the power supplies, and then unplug the impaired node's power cords from the power source.
 
-== Step 2: Open the system
+== Step 2: Remove controller module 
 
-[.lead]
 To access components inside the controller, you must first remove the controller module from the system and then remove the cover on the controller module.
 
 . If you are not already grounded, properly ground yourself.
@@ -50,7 +47,6 @@ image::../media/drw_2600_opening_pcm_cover.png[]
 
 == Step 3: Replace the NVMEM battery
 
-[.lead]
 To replace the NVMEM battery in your system, you must remove the failed NVMEM battery from the system and replace it with a new NVMEM battery.
 
 . Check the NVMEM LED:
@@ -79,7 +75,6 @@ image::../media/drw_2600_nvmem_batt_repl_animated_gif.png[]
 
 == Step 4: Reinstall the controller module
 
-[.lead]
 After you replace components in the controller module, reinstall it into the chassis.
 
 . If you have not already done so, replace the cover on the controller module.
@@ -136,7 +131,6 @@ NOTE: If you miss the prompt and the controller module boots to ONTAP, enter `ha
 
 == Step 5: Run system-level diagnostics
 
-[.lead]
 After installing a new NVMEM battery, you should run diagnostics.
 
 Your system must be at the LOADER prompt to start System Level Diagnostics.
@@ -236,5 +230,4 @@ After you issue the command, wait until the system stops at the LOADER prompt.
 
 == Step 6: Return the failed part to NetApp
 
-[.lead]
 include::../_include/complete_rma.adoc[]

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: ns224, shelves, shelf, ns224 shelves, boot, media, run, ontap, nvme, module, nsm, firmware, version, nondisruptive, i/o
 summary: When the boot media fails on an NS224 drive shelf in an HA pair that is running ONTAP 9.7 or later, or the shelf is running NVMe shelf module \(NSM\) firmware version 1.1x or later, you can replace the boot media. Replacing the boot media can be done nondisruptively, while the drive shelf is powered on, and I/O is in progress.
 ---
-= Replace the boot media - NS224 shelves
+= Replace the boot media -- NS224 shelves
 :icons: font
 :imagesdir: ../media/
 
@@ -13,7 +13,7 @@ When the boot media fails on an NS224 drive shelf in an HA pair that is running 
 
 .Before you begin
 
-* Your HA pair must already be running ONTAP 9.7 or later, which has the minimum supported version of NSM firmware, or your HA pair must already been running a version of ONTAP 9.6 with NSM firmware version 1.1x or later.
+* Your HA pair must already be running ONTAP 9.7 or later, which has the minimum supported version of NSM firmware, or your HA pair must already be running a version of ONTAP 9.6 with NSM firmware version 1.1x or later.
 +
 You can enter the `storage shelf show -module` command at the console of either controller to verify the version of NSM firmware on your shelf.
 +
@@ -21,7 +21,7 @@ You can enter the `storage shelf show -module` command at the console of either 
 ====
 If your shelf is not running NSM firmware version 1.1x or later, you cannot replace the boot media, you must replace the NSM module.
 
-link:service-replace-nsm100.html[Replace an NSM module - NS224 shelves]
+link:service-replace-nsm100.html[Replace an NSM module - NS224 shelves^]
 ====
 * You need a Phillips #1 screwdriver.
 +
@@ -29,7 +29,7 @@ The screw used to secure the boot media to the board requires a Phillips #1 scre
 
 * The shelf's partner NSM module must be up and running, and be cabled correctly so that your shelf maintains connectivity when you remove the NSM module with the failed FRU (target NSM module).
 +
-https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor[NetApp Downloads: Config Advisor]
+https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor[NetApp Downloads: Config Advisor^]
 
 * All other components in the system must be functioning properly.
 
@@ -49,9 +49,9 @@ This allows enough time for ONTAP to process the NSM removal event.
 ====
 Do not revert firmware to a version that does not support your shelf and its components.
 
-https://mysupport.netapp.com/site/downloads/firmware/disk-shelf-firmware[NetApp Downloads: Disk Shelf Firmware]
+https://mysupport.netapp.com/site/downloads/firmware/disk-shelf-firmware[NetApp Downloads: Disk Shelf Firmware^]
 
-https://mysupport.netapp.com/site/downloads/firmware/disk-drive-firmware[NetApp Downloads: Disk Drive Firmware]
+https://mysupport.netapp.com/site/downloads/firmware/disk-drive-firmware[NetApp Downloads: Disk Drive Firmware^]
 ====
 
 * If needed, you can turn on the shelf's location (blue) LEDs to aid in physically locating the affected shelf: `storage shelf location-led modify -shelf-name _shelf_name_ -led-status on`
@@ -62,11 +62,11 @@ A shelf has three location LEDs: one on the operator display panel and one on ea
 
 * After replacing the boot media, you can return the failed part to NetApp as described in the RMA instructions shipped with the kit.
 +
-If you need the RMA number or additional help with the replacement procedure, contact technical support at https://mysupport.netapp.com/site/global/dashboard[NetApp Support], 888-463-8277 (North America), 00-800-44-638277 (Europe), or +800-800-80-800 (Asia/Pacific).
+If you need the RMA number or additional help with the replacement procedure, contact technical support at https://mysupport.netapp.com/site/global/dashboard[NetApp Support^], 888-463-8277 (North America), 00-800-44-638277 (Europe), or +800-800-80-800 (Asia/Pacific).
 
 * You can use the following video or the written steps to replace the boot media.
 +
-https://netapp.hosted.panopto.com/Panopto/Pages/Embed.aspx?id=20ed85f9-1f80-4e0e-9219-ab4600070d8a[Replacing the boot media in an NS224 drive shelf]
+https://netapp.hosted.panopto.com/Panopto/Pages/Embed.aspx?id=20ed85f9-1f80-4e0e-9219-ab4600070d8a[Replacing the boot media in an NS224 drive shelf^]
 
 .Steps
 
@@ -151,4 +151,4 @@ If the fault LEDs remain on, the boot media might not be seated correctly or the
 +
 If any cabling errors are generated, follow the corrective actions provided.
 +
-https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor[NetApp Downloads: Config Advisor]
+https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor[NetApp Downloads: Config Advisor^]

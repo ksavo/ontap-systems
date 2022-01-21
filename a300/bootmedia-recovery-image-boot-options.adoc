@@ -1,8 +1,8 @@
 ---
 permalink: a300/bootmedia-recovery-image-boot-options.html
 sidebar: sidebar
-keywords: aff a300, aff, a300, procedure, boot, impair, node, recovery, image, system, two-node, metrocluster, configruation, boot the recovery image
-summary: The procedure for booting the impaired node from the recovery image depends on whether the system is in a two-node MetroCluster configuration.
+keywords: aff a300, boot the recovery image
+summary: "The procedure for booting the impaired node from the recovery image depends on whether the system is in a two-node MetroCluster configuration."
 ---
 = Boot the recovery image - AFF A300
 :icons: font
@@ -12,7 +12,7 @@ summary: The procedure for booting the impaired node from the recovery image dep
 The procedure for booting the impaired node from the recovery image depends on whether the system is in a two-node MetroCluster configuration.
 
 == Option 1: Most systems
-[.lead]
+
 You must boot the ONTAP image from the USB drive, restore the file system, and verify the environmental variables.
 
 This procedure applies to systems that are not in a two-node MetroCluster configuration.
@@ -88,5 +88,5 @@ If any interfaces are listed as "false", revert those interfaces back to their h
 . Restore automatic giveback if you disabled it by using the `storage failover modify -node local -auto-giveback true` command.
 
 == Option 2: Controller is in a two-node MetroCluster
-[.lead]
+
 include::../_include/2n_mcc_boot_recovery_image.adoc[]

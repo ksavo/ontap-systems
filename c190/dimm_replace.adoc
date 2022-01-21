@@ -17,12 +17,10 @@ You must replace the failed component with a replacement FRU component you recei
 
 == Step 1: Shut down the impaired controller
 
-[.lead]
 include::../_include/shutdown_most_frus.adoc[]
 
-== Step 2: Open the system
+== Step 2: Remove controller module 
 
-[.lead]
 To access components inside the controller module, you must first remove the controller module from the system, and then remove the cover on the controller module.
 
 . If you are not already grounded, properly ground yourself.
@@ -45,7 +43,6 @@ image::../media/drw_2600_opening_pcm_cover.png[]
 
 == Step 3: Replace the DIMMs
 
-[.lead]
 To replace the DIMMs, you need to locate them inside the controller module, and then follow the specific sequence of steps.
 
 If you are replacing a DIMM, you need to remove it after you have unplugged the NVMEM battery from the controller module.
@@ -99,7 +96,6 @@ Make sure that the plug locks down onto the controller module.
 
 == Step 4: Reinstall the controller module
 
-[.lead]
 After you replace components in the controller module, you must reinstall it into the chassis.
 
 . If you have not already done so, replace the cover on the controller module.
@@ -128,7 +124,6 @@ NOTE: If you miss the prompt and the controller module boots to ONTAP, enter `ha
 
 == Step 5: Run system-level diagnostics
 
-[.lead]
 After installing a new DIMM, you should run diagnostics.
 
 Your system must be at the LOADER prompt to start System Level Diagnostics.
@@ -221,5 +216,4 @@ After you issue the command, wait until the system stops at the LOADER prompt.
 
 == Step 6: Return the failed part to NetApp
 
-[.lead]
 include::../_include/complete_rma.adoc[]
