@@ -21,13 +21,13 @@ All other components in the system--including the other shelf IOM--must be funct
 +
 NOTE: This procedure is for like-for-like shelf IOM hot-swaps or replacements. This means you can only replace an IOM12 module with another IOM12 module or replace an IOM12B module with another IOM12B module. (Your shelf can have two IOM12 modules or have two IOM12B modules.)
 
-* The IOM12 module and the IOM12B module can be distinguished by their appearance:
+* The IOM12 modules and the IOM12B modules can be distinguished by their appearance:
 +
-The IOM12 module looks like the following:
+The IOM12 modules looks like the following:
 +
 image::../media/drw_iom12.gif[]
 +
-The IOM12B module is distinguished by a blue stripe and "IOM12B" label and looks like the following:
+The IOM12B modules are distinguished by a blue stripe and "IOM12B" label, and look like the following:
 +
 image::../media/iom12b.png[]
 
