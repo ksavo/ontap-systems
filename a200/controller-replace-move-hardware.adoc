@@ -151,8 +151,9 @@ The controller module begins to boot as soon as it is fully seated in the chassi
 
  .. With the cam handle in the open position, firmly push the controller module in until it meets the midplane and is fully seated, and then close the cam handle to the locked position.
 +
-NOTE: Do not use excessive force when sliding the controller module into the chassis to avoid damaging the connectors.
+CAUTION: Do not use excessive force when sliding the controller module into the chassis to avoid damaging the connectors.
 +
+
 The controller begins to boot as soon as it is seated in the chassis.
 
  .. If you have not already done so, reinstall the cable management device.

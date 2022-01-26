@@ -22,7 +22,7 @@ include::../_include/shutdown_most_frus.adoc[]
 
 . If the system has only one controller module in the chassis, turn off the power supplies, and then unplug the impaired node's power cords from the power source.
 
-== Step 2: Remove controller module 
+== Step 2: Remove controller module
 
 To access components inside the controller, you must first remove the controller module from the system and then remove the cover on the controller module.
 
@@ -126,7 +126,7 @@ The controller module begins to boot as soon as it is fully seated in the chassi
 
  .. With the cam handle in the open position, firmly push the controller module in until it meets the midplane and is fully seated, and then close the cam handle to the locked position.
 +
-NOTE: Do not use excessive force when sliding the controller module into the chassis to avoid damaging the connectors.
+CAUTION: Do not use excessive force when sliding the controller module into the chassis to avoid damaging the connectors.
 +
 The controller begins to boot as soon as it is seated in the chassis.
 

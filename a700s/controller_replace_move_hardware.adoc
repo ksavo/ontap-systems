@@ -338,9 +338,7 @@ You must move the power supply and power supply blank from the impaired controll
 . If you are not already grounded, properly ground yourself.
 . Rotate the cam handle such that it can be used to pull power supply out of the controller module while pressing the locking tab.
 +
-*CAUTION:*
-+
-The power supply is short. Always use two hands to support it when removing it from the controller module so that it does not suddenly swing free from the controller module and injure you.
+CAUTION: The power supply is short. Always use two hands to support it when removing it from the controller module so that it does not suddenly swing free from the controller module and injure you.
 +
 image::../media/drw_a700s_replace_psu.gif[]
 +
