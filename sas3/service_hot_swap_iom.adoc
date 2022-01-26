@@ -27,7 +27,7 @@ The IOM12 modules are distinguished by an "IOM12" label:
 +
 image::../media/drw_iom12.gif[]
 +
-The IOM12B modules are distinguished by a blue stripe and "IOM12B" label:
+The IOM12B modules are distinguished by a blue stripe and an "IOM12B" label:
 +
 image::../media/iom12b.png[]
 
