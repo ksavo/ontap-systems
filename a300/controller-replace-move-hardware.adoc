@@ -13,7 +13,6 @@ To replace the controller module hardware, you must remove the impaired node, mo
 
 == Step 1: Open the controller module
 
-[.lead]
 To replace the controller module, you must first remove the old controller module from the chassis.
 
 . If you are not already grounded, properly ground yourself.
@@ -46,7 +45,6 @@ Make sure that you support the bottom of the controller module as you slide it o
 
 == Step 2: Move the boot device
 
-[.lead]
 You must locate the boot media and follow the directions to remove it from the old controller and insert it in the new controller.
 
 . Locate the boot media using the following illustration or the FRU map on the controller module:
@@ -66,7 +64,6 @@ If necessary, remove the boot media and reseat it into the socket.
 
 == Step 3: Move the NVMEM battery
 
-[.lead]
 To move the NVMEM battery from the old controller module to the new controller module, you must perform a specific sequence of steps.
 
 . Check the NVMEM LED:
@@ -100,7 +97,6 @@ NVMEM battery pack
 
 == Step 4: Move the DIMMs
 
-[.lead]
 To move the DIMMs, locate and move them from the old controller into the replacement controller and follow the specific sequence of steps.
 
 . Locate the DIMMs on your controller module.
@@ -128,7 +124,6 @@ NOTE: Visually inspect the DIMM to verify that it is evenly aligned and fully in
 
 == Step 5: Move a PCIe card
 
-[.lead]
 To move PCIe cards, locate and move them from the old controller into the replacement controller and follow the specific sequence of steps.
 
 You must have the new controller module ready so that you can move the PCIe cards directly from the old controller module to the corresponding slots in the new one.
@@ -163,7 +158,6 @@ Be sure that you properly align the card in the slot and exert even pressure on 
 
 == Step 6: Install the controller
 
-[.lead]
 After you install the components from the old controller module into the new controller module, you must install the new controller module into the system chassis and boot the operating system.
 
 For HA pairs with two controller modules in the same chassis, the sequence in which you install the controller module is especially important because it attempts to reboot as soon as you completely seat it in the chassis.

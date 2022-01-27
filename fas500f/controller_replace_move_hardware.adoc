@@ -200,7 +200,7 @@ NOTE: Do not apply force when tightening the screw on the mezzanine card; you mi
 == Step 7: Move the NV battery
 
 [.lead]
-When replacing the controller module, you must move the NV battery from the impaired controller module to the replacement controller module
+When replacing the controller module, you must move the NV battery from the impaired controller module to the replacement controller module.
 
 . Locate and move the NVMEM battery from your impaired controller module to the replacement controller module.
 +

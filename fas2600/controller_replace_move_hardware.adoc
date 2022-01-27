@@ -13,9 +13,8 @@ To replace the controller module, you must remove the impaired node, move FRU co
 
 link:https://youtu.be/fF7G5uLxtPw[AFF FAS2600 controller replacement video]
 
-== Step 1: Remove controller module 
+== Step 1: Remove controller module
 
-[.lead]
 To replace the controller module, you must first remove the old controller module from the chassis.
 
 .Steps
@@ -40,7 +39,6 @@ image::../media/drw_2600_opening_pcm_cover.png[]
 
 == Step 2: Move the boot media
 
-[.lead]
 You must locate the boot media and follow the directions to remove it from the old controller module and insert it in the new controller module.
 
 .Steps
@@ -61,7 +59,6 @@ If necessary, remove the boot media and reseat it into the socket.
 
 == Step 3: Move the NVMEM battery
 
-[.lead]
 To move the NVMEM battery from the old controller module to the new controller module, you must perform a specific sequence of steps.
 
 .Steps
@@ -90,7 +87,6 @@ image::../media/drw_2600_nvmem_battery_move_animated_gif.png[]
 
 == Step 4: Move the DIMMs
 
-[.lead]
 To move the DIMMs, you must follow the directions to locate and move them from the old controller module into the replacement controller module.
 
 You must have the new controller module ready so that you can move the DIMMs directly from the impaired controller module to the corresponding slots in the replacement controller module.
@@ -124,7 +120,6 @@ Make sure that the plug locks down onto the controller module.
 
 == Step 5: Move the caching module
 
-[.lead]
 To move a caching module referred to as the M.2 PCIe card on the label on your controller, locate and move it from the old controller into the replacement controller and follow the specific sequence of steps.
 
 You must have the new controller module ready so that you can move the caching module directly from the old controller module to the corresponding slot in the new one. All other components in the storage system must be functioning properly; if not, you must contact technical support.
@@ -147,7 +142,6 @@ If necessary, remove the caching module and reseat it into the socket.
 
 == Step 6: Install the controller
 
-[.lead]
 After you install the components from the old controller module into the new controller module, you must install the new controller module into the system chassis and boot the operating system.
 
 For HA pairs with two controller modules in the same chassis, the sequence in which you install the controller module is especially important because it attempts to reboot as soon as you completely seat it in the chassis.
