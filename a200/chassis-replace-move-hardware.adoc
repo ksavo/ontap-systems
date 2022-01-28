@@ -24,14 +24,15 @@ Move the power supply from the old chassis to the replacement chassis.
 . Squeeze the latch on the power supply cam handle, and then open the cam handle to fully release the power supply from the mid plane.
 . Use the cam handle to slide the power supply out of the system.
 +
-*CAUTION:* When removing a power supply, always use two hands to support its weight.
+CAUTION: When removing a power supply, always use two hands to support its weight.
++
 
 . Repeat the preceding steps for any remaining power supplies.
 . Using both hands, support and align the edges of the power supply with the opening in the system chassis, and then gently push the power supply into the chassis using the cam handle.
 +
 The power supplies are keyed and can only be installed one way.
 +
-NOTE: Do not use excessive force when sliding the power supply into the system. You can damage the connector.
+CAUTION: Do not use excessive force when sliding the power supply into the system. You can damage the connector.
 
 . Close the cam handle so that the latch clicks into the locked position and the power supply is fully seated.
 . Reconnect the power cable and secure it to the power supply using the power cable locking mechanism.
@@ -121,7 +122,7 @@ a|
 
  .. With the cam handle in the open position, firmly push the controller module in until it meets the midplane and is fully seated, and then close the cam handle to the locked position.
 +
-NOTE: Do not use excessive force when sliding the controller module into the chassis to avoid damaging the connectors.
+CAUTION: Do not use excessive force when sliding the controller module into the chassis to avoid damaging the connectors.
 
  .. If you have not already done so, reinstall the cable management device.
  .. Bind the cables to the cable management device with the hook and loop strap.
@@ -133,7 +134,7 @@ a|
 
  .. With the cam handle in the open position, firmly push the controller module in until it meets the midplane and is fully seated, and then close the cam handle to the locked position.
 +
-NOTE: Do not use excessive force when sliding the controller module into the chassis to avoid damaging the connectors.
+CAUTION: Do not use excessive force when sliding the controller module into the chassis to avoid damaging the connectors.
 
  .. If you have not already done so, reinstall the cable management device.
  .. Bind the cables to the cable management device with the hook and loop strap.

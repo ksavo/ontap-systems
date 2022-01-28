@@ -207,7 +207,7 @@ This procedure applies only to systems running ONTAP in an HA pair.
 
 .Steps
 . If the replacement node is in Maintenance mode (showing the `*>` prompt, exit Maintenance mode and go to the LOADER prompt: `halt`
-. From the LOADER prompt on the replacement node, boot the node, entering `y` if you are prompted to override the system ID due to a system ID mismatch:
+. From the LOADER prompt on the replacement node, boot the node, entering `y` if you are prompted to override the system ID due to a system ID mismatch.
 . Wait until the Waiting for giveback... message is displayed on the replacement node console and then, from the healthy node, verify that the new partner system ID has been automatically assigned: `storage failover show`
 +
 In the command output, you should see a message that the system ID has changed on the impaired node, showing the correct old and new IDs. In the following example, node2 has undergone replacement and has a new system ID of 151759706.
@@ -228,7 +228,7 @@ node2             node1             -            Waiting for giveback (HA mailbo
 You can respond `Y` when prompted to continue into advanced mode. The advanced mode prompt appears (*>).
 
  .. Save any coredumps: `system node run -node local-node-name partner savecore`
- .. Wait for savecore command to complete before issuing the giveback.
+ .. Wait for the `savecore`command to complete before issuing the giveback.
 +
 You can enter the following command to monitor the progress of the savecore command: `system node run -node local-node-name partner savecore -s`
 

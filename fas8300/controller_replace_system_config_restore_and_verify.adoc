@@ -13,12 +13,10 @@ After completing the hardware replacement and booting to Maintenance mode, you v
 
 == Step 1: Set and verify system time after replacing the controller
 
-[.lead]
 include::../_include/set_time_after_controller_rep.adoc[]
 
 == Step 2:  Verify and set the HA state of the controller module
 
-[.lead]
 You must verify the `HA` state of the controller module and, if necessary, update the state to match your system configuration.
 
 . In Maintenance mode from the new controller module, verify that all components display the same `HA` state: `ha-config show`
@@ -41,7 +39,6 @@ The value for `HA-state` can be one of the following:
 
 == Step 3: Run diagnostics
 
-[.lead]
 After you have replaced a component in your system, you should run diagnostic tests on that component.
 
 Your system must be at the LOADER prompt to start diagnostics.
