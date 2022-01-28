@@ -60,7 +60,7 @@ image::../media/drw_a250_remove_airduct_cover.png[]
 
 You locate the failed boot media in the controller module by removing the air duct on the controller module before you can replace the boot media.
 
-You need a #1 magnetic Phillips head screw driver to remove the screw that holds the boot media in-place. Due to the space constraints within the controller module, you should also have a magnet to transfer the screw on to so that you do not loose it.
+You need a #1 magnetic Phillips head screwdriver to remove the screw that holds the boot media in place. Due to the space constraints within the controller module, you should also have a magnet to transfer the screw on to so that you do not loose it.
 
 You can use the following video or the tabulated steps to replace the boot media:
 
@@ -80,10 +80,10 @@ a|
 Lift the boot media out of the controller module.
 |===
 
- .. Using the #1 magnetic screw driver remove the screw from the impaired boot media, and set it aside safely on the magnet.
- .. Gently lift the impaired boot media directly out of the socket and set it aside.
- .. Remove the replacement boot media from the antistatic shipping bag and align it into place on the controller module.
- .. Using the #1 magnetic screw driver insert and tighten the screw on the boot media.
+. Using the #1 magnetic screwdriver, remove the screw from the impaired boot media, and set it aside safely on the magnet.
+. Gently lift the impaired boot media directly out of the socket and set it aside.
+. Remove the replacement boot media from the antistatic shipping bag and align it into place on the controller module.
+. Using the #1 magnetic screwdriver insert and tighten the screw on the boot media.
 +
 NOTE: Do not apply force when tightening the screw on the boot media; you might crack it.
 
@@ -101,8 +101,8 @@ The replacement boot media that you installed is without a boot image so you nee
 .Steps
 
 . Download and copy the appropriate service image from the NetApp Support Site to the USB flash drive.
- .. Download the service image to your work space on your laptop.
- .. Unzip the service image.
+. Download the service image to your work space on your laptop.
+. Unzip the service image.
 +
 NOTE: If you are extracting the contents using Windows, do not use WinZip to extract the netboot image. Use another extraction tool, such as 7-Zip or WinRAR.
 +
@@ -111,11 +111,11 @@ There are two folders in the unzipped service image file:
   *** `boot`
   *** `efi`
 
- .. Copy the `efi` folder to the top directory on the USB flash drive.
+. Copy the `efi` folder to the top directory on the USB flash drive.
 +
 The USB flash drive should have the efi folder and the same Service Image (BIOS) version of what the impaired controller is running.
 
- .. Remove the USB flash drive from your laptop.
+. Remove the USB flash drive from your laptop.
 . If you have not already done so, install the air duct.
 +
 image::../media/drw_a250_install_airduct_cover.png[]
@@ -141,29 +141,29 @@ Thumbscrew
 Make sure that you install the USB flash drive in the slot labeled for USB devices, and not in the USB console port.
 
 . Push the controller module all the way into the chassis:
- .. Place your index fingers through the finger holes from the inside of the latching mechanism.
- .. Press your thumbs down on the orange tabs on top of the latching mechanism and gently push the controller module over the stop.
- .. Release your thumbs from the top of the latching mechanisms and continue pushing until the latching mechanisms snap into place.
+. Place your index fingers through the finger holes from the inside of the latching mechanism.
+. Press your thumbs down on the orange tabs on top of the latching mechanism and gently push the controller module over the stop.
+. Release your thumbs from the top of the latching mechanisms and continue pushing until the latching mechanisms snap into place.
 +
 The controller module begins to boot as soon as it is fully seated in the chassis. Be prepared to interrupt the boot process.
 
 +
 The controller module should be fully inserted and flush with the edges of the chassis.
 . Although the environment variables and bootargs are retained, you should check that all required boot environment variables and bootargs are properly set for your system type and configuration using the `printenv bootarg name` command and correct any errors using the `setenv variable-name <value>` command.
-.. Check the boot environment variables:
+. Check the boot environment variables:
  *** `bootarg.init.boot_clustered`
  *** `partner-sysid`
  *** `bootarg.init.switchless_cluster.enable`
-.. If External Key Manager is enabled, check the bootarg values, listed in the `kenv` ASUP output:
+. If External Key Manager is enabled, check the bootarg values, listed in the `kenv` ASUP output:
  *** `bootarg.storageencryption.support <value>`
  *** `bootarg.keymanager.support <value>`
  *** `kmip.init.interface <value>`
  *** `kmip.init.ipaddr <value>`
  *** `kmip.init.netmask <value>`
  *** `kmip.init.gateway <value>`
-.. If Onboard Key Manager is enabled, check the bootarg values, listed in the `kenv` ASUP output:
+. If Onboard Key Manager is enabled, check the bootarg values, listed in the `kenv` ASUP output:
  *** `bootarg.storageencryption.support <value>`
  *** `bootarg.keymanager.support <value>`
  *** `bootarg.onboard_keymanager <value>`
- .. Save the environment variables you changed with the `*savenv*` command
- .. Confirm your changes using the `*printenv _variable-name_*` command.
+. Save the environment variables you changed with the `*savenv*` command
+. Confirm your changes using the `*printenv _variable-name_*` command.

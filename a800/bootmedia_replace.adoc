@@ -71,7 +71,7 @@ Rotate air duct towards fan modules
 
 You locate the failed boot media in the controller module by removing Riser 3 on the controller module before you can replace the boot media.
 
-You need a Phillips head screw driver to remove the screw that holds the boot media in-place.
+You need a Phillips head screwdriver to remove the screw that holds the boot media in place.
 
 . Locate the boot media:
 +

@@ -163,7 +163,7 @@ NOTE: As you insert the connector, you should feel it click into place; if you d
 
 .Steps
 . Use the animation (link:https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=edc42447-f721-4cbe-b080-ab0c0123a139[Cable a two-node switchless cluster^]) or the step-by-step instructions to complete the cabling between the controllers and to the switches:
-
++
 [options="header" cols="10,90"]
 |===
 | Step| Perform on each controller module
@@ -218,7 +218,7 @@ NOTE: As you insert the connector, you should feel it click into place; if you d
 
 .Steps
 . Use the animation (link:https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=49e48140-4c5a-4395-a7d7-ab0c0123a10e[Cabling a switched cluster^]) or the step-by-step instructions to complete the cabling between the controllers and to the switches:
-
++
 [options="header" cols="10,90"]
 |===
 | Step| Perform on each controller module
@@ -346,7 +346,7 @@ NOTE: As you insert the connector, you should feel it click into place; if you d
 
 .Steps
 . Use the animation (link:https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=09dade4f-00bd-4d41-97d7-ab0c0123a0b4[Cabling the controllers to a single drive shelf^] or the step-by-step instructions to cable your controller modules to a single shelf.
-
++
 [options="header" cols="10,90"]
 |===
 | Step| Perform on each controller module
@@ -375,7 +375,7 @@ NOTE: As you insert the connector, you should feel it click into place; if you d
 
 .Steps
 . Use the following animation (link:https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=fe50ac38-9375-4e6b-85af-ab0c0123a0e0[Cabling the controllers to two drive shelves^]) or the written steps to cable your controllers to two drive shelves.
-
++
 [options="header" cols="10,90"]
 |===
 | Step| Perform on each controller module
