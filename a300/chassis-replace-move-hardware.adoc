@@ -48,9 +48,8 @@ Power cable locking mechanism
 
 . Use the cam handle to slide the power supply out of the system.
 +
-*CAUTION:*
+CAUTION: When removing a power supply, always use two hands to support its weight.
 +
-When removing a power supply, always use two hands to support its weight.
 
 . Repeat the preceding steps for any remaining power supplies.
 . Using both hands, support and align the edges of the power supply with the opening in the system chassis, and then gently push the power supply into the chassis using the cam handle.
@@ -95,9 +94,8 @@ Fan module Attention LED
 
 . Pull the fan module straight out from the chassis, making sure that you support it with your free hand so that it does not swing out of the chassis.
 +
-*CAUTION:*
+CAUTION: The fan modules are short. Always support the bottom of the fan module with your free hand so that it does not suddenly drop free from the chassis and injure you.
 +
-The fan modules are short. Always support the bottom of the fan module with your free hand so that it does not suddenly drop free from the chassis and injure you.
 
 . Set the fan module aside.
 . Repeat the preceding steps for any remaining fan modules.
