@@ -4,16 +4,15 @@ sidebar: sidebar
 keywords: fas2700, move the controller module hardware
 summary: "To replace the controller module hardware, you must remove the impaired node, move FRU components to the replacement controller module, install the replacement controller module in the chassis, and then boot the system to Maintenance mode."
 ---
-= Move the controller module hardware - AFF A220 and FAS2700
+= Replace controller module  - AFF A220 and FAS2700
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
 To replace the controller module hardware, you must remove the impaired node, move FRU components to the replacement controller module, install the replacement controller module in the chassis, and then boot the system to Maintenance mode.
 
-== Step 1: Open the system
+== Step 1: Remove controller module
 
-[.lead]
 To replace the controller module, you must first remove the old controller module from the chassis.
 
 . If you are not already grounded, properly ground yourself.
@@ -37,7 +36,6 @@ image::../media/drw_2600_opening_pcm_cover.png[]
 
 == Step 2: Move the NVMEM battery
 
-[.lead]
 To move the NVMEM battery from the old controller module to the new controller module, you must perform a specific sequence of steps.
 
 . Check the NVMEM LED:
@@ -65,7 +63,6 @@ image::../media/drw_2600_nvmem_battery_move_animated_gif.png[]
 
 == Step 3: Move the boot media
 
-[.lead]
 You must locate the boot media and follow the directions to remove it from the old controller module and insert it in the new controller module.
 
 . Locate the boot media using the following illustration or the FRU map on the controller module:
@@ -85,7 +82,6 @@ If necessary, remove the boot media and reseat it into the socket.
 
 == Step 4: Move the DIMMs
 
-[.lead]
 To move the DIMMs, you must follow the directions to locate and move them from the old controller module into the replacement controller module.
 
 You must have the new controller module ready so that you can move the DIMMs directly from the impaired controller module to the corresponding slots in the replacement controller module.
@@ -118,7 +114,6 @@ Make sure that the plug locks down onto the controller module.
 
 == Step 5: Move a caching module, if present
 
-[.lead]
 If your AFF A220 or FAS2700 system has a caching module, you need to move the caching module from the old controller module to the replacement controller module. The caching module is referred to as the "`M.2 PCIe card`" on the controller module label.
 
 You must have the new controller module ready so that you can move the caching module directly from the old controller module to the corresponding slot in the new one. All other components in the storage system must be functioning properly; if not, you must contact technical support.
@@ -140,7 +135,6 @@ If necessary, remove the caching module and reseat it into the socket.
 
 == Step 6: Install the controller
 
-[.lead]
 After you install the components from the old controller module into the new controller module, you must install the new controller module into the system chassis and boot the operating system.
 
 For HA pairs with two controller modules in the same chassis, the sequence in which you install the controller module is especially important because it attempts to reboot as soon as you completely seat it in the chassis.
