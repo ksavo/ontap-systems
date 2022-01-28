@@ -41,7 +41,7 @@ You must confirm the system ID change when you boot the _replacement_ node and t
 This procedure applies only to systems running ONTAP in an HA pair.
 
 . If the _replacement_ node is in Maintenance mode (showing the `*>` prompt, exit Maintenance mode and go to the LOADER prompt: `halt`
-. From the LOADER prompt on the _replacement_ node, boot the node, entering `y` if you are prompted to override the system ID due to a system ID mismatch:
+. From the LOADER prompt on the _replacement_ node, boot the node, entering `y` if you are prompted to override the system ID due to a system ID mismatch.
 . Wait until the `Waiting for giveback...` message is displayed on the _replacement_ node console and then, from the healthy node, verify that the new partner system ID has been automatically assigned: storage failover show
 +
 In the command output, you should see a message that the system ID has changed on the impaired node, showing the correct old and new IDs. In the following example, node2 has undergone replacement and has a new system ID of 151759706.
@@ -62,7 +62,7 @@ node2             node1             -            Waiting for giveback (HA mailbo
 You can respond `Y` when prompted to continue into advanced mode. The advanced mode prompt appears (*>).
 
  .. Save any coredumps: `system node run -node _local-node-name_ partner savecore`
- .. Wait for savecore command to complete before issuing the giveback.
+ .. Wait for the `savecore`command to complete before issuing the giveback.
 +
 You can enter the following command to monitor the progress of the savecore command: `system node run -node _local-node-name_ partner savecore -s`
 
@@ -70,7 +70,7 @@ You can enter the following command to monitor the progress of the savecore comm
 . Give back the node:
  .. From the healthy node, give back the replaced node's storage: `storage failover giveback -ofnode _replacement_node_name_`
 +
-the _replacement_ node takes back its storage and completes booting.
+The _replacement_ node takes back its storage and completes booting.
 +
 If you are prompted to override the system ID due to a system ID mismatch, you should enter `y`.
 +
@@ -80,8 +80,8 @@ http://mysupport.netapp.com/documentation/productlibrary/index.html?productID=62
 
  .. After the giveback has been completed, confirm that the HA pair is healthy and that takeover is possible: `storage failover show`
 +
-The output from the `storage failover show` command. should not include the System ID changed on partner message.
-. Verify that the disks were assigned correctly: storage disk show -ownership
+The output from the `storage failover show` command should not include the System ID changed on partner message.
+. Verify that the disks were assigned correctly: `storage disk show -ownership`
 +
 The disks belonging to the _replacement_ node should show the new system ID. In the following example, the disks owned by node1 now show the new system ID, 1873775277:
 +
