@@ -1,10 +1,10 @@
 Before shutting down the impaired node, you need to verify whether the system has either NetApp Volume Encryption (NVE) or NetApp Storage Encryption (NSE) enabled. If so, you need to verify the configuration.
 
-. Verify whether NVE is configured for any volumes in the cluster: `volume show -is-encrypted true`
+. Verify whether NVE is in use for any volumes in the cluster: `volume show -is-encrypted true`
 +
-If any volumes are listed in the output, NVE is configured and you need to verify the NVE configuration. If no volumes are listed, check whether NSE is configured.
+If any volumes are listed in the output, NVE is configured and you need to verify the NVE configuration. If no volumes are listed, check whether NSE is configured and in use.
 
-. Verify whether NSE is configured: `storage encryption disk show`
+. Verify whether NSE is configured and in use: `storage encryption disk show`
  ** If the command output lists the drive details with Mode & Key ID information, NSE is configured and you need to verify the NSE configuration.
  ** If no disks are shown, NSE is not configured.
  ** If NVE and NSE are not configured, it's safe to shut down the impaired node.
