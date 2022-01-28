@@ -32,11 +32,11 @@ NOTE: This procedure is for like-for-like drive drawer replacements. This means 
 
 * The DCM drive drawers and the DCM2 drive drawers can be distinguished by their appearance:
 +
-The DCM drive drawers looks like the following:
+The DCM drive drawers look like the following:
 +
 image::../media/28_dwg_e2860_de460c_front_no_callouts.gif[]
 +
-The DCM2 drive drawers are distinguished by a blue stripe and "DCM2" label, and look like the following:
+The DCM2 drive drawers are distinguished by a blue stripe and "DCM2" label:
 +
 image::../media/dcm2.png[]
 
