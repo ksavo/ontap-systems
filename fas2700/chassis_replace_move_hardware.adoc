@@ -8,9 +8,11 @@ summary: "Move the power supplies, hard drives, and controller module or modules
 :icons: font
 :imagesdir: ../media/
 
+[.lead]
+Move the power supplies, hard drives, and controller module or modules from the impaired chassis to the new chassis, and swap out the impaired chassis from the equipment rack or system cabinet with the new chassis of the same model as the impaired chassis.
+
 == Step 1: Move a power supply
 
-[.lead]
 Moving out a power supply when replacing a chassis involves turning off, disconnecting, and removing the power supply from the old chassis and installing and connecting it on the replacement chassis.
 
 . If you are not already grounded, properly ground yourself.
@@ -21,7 +23,8 @@ Moving out a power supply when replacing a chassis involves turning off, disconn
 . Squeeze the latch on the power supply cam handle, and then open the cam handle to fully release the power supply from the mid plane.
 . Use the cam handle to slide the power supply out of the system.
 +
-*CAUTION:* When removing a power supply, always use two hands to support its weight.
+CAUTION: When removing a power supply, always use two hands to support its weight.
++
 
 . Repeat the preceding steps for any remaining power supplies.
 . Using both hands, support and align the edges of the power supply with the opening in the system chassis, and then gently push the power supply into the chassis using the cam handle.
@@ -37,7 +40,6 @@ NOTE: Only connect the power cable to the power supply. Do not connect the power
 
 == Step 2: Remove the controller module
 
-[.lead]
 Remove the controller module or modules from the old chassis.
 
 . Loosen the hook and loop strap binding the cables to the cable management device, and then unplug the system cables and SFPs (if needed) from the controller module, keeping track of where the cables were connected.
@@ -56,7 +58,6 @@ image::../media/drw_2240_x_opening_cam_latch.png[]
 
 == Step 3: Move drives to the new chassis
 
-[.lead]
 You need to move the drives from each bay opening in the old chassis to the same bay opening in the new chassis.
 
 . Gently remove the bezel from the front of the system.
@@ -83,7 +84,6 @@ Be sure to close the cam handle slowly so that it aligns correctly with the fron
 
 == Step 4: Replace a chassis from within the equipment rack or system cabinet
 
-[.lead]
 You must remove the existing chassis from the equipment rack or system cabinet before you can install the replacement chassis.
 
 . Remove the screws from the chassis mount points.
@@ -96,7 +96,6 @@ You must remove the existing chassis from the equipment rack or system cabinet b
 
 == Step 5: Install the controller
 
-[.lead]
 After you install the controller module and any other components into the new chassis, boot it to a state where you can run the interconnect diagnostic test.
 
 For HA pairs with two controller modules in the same chassis, the sequence in which you install the controller module is especially important because it attempts to reboot as soon as you completely seat it in the chassis.

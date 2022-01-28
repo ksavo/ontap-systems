@@ -3,7 +3,6 @@ permalink: a250/install-detailed-guide.html
 sidebar: sidebar
 keywords: aff a250, detailed installation
 summary: This section gives detailed step-by-step instructions for installing an AFF A250 system.
-
 ---
 = Detailed steps - AFF A250
 :icons: font
@@ -20,12 +19,14 @@ You need to have access to the link:https://hwu.netapp.com[NetApp Hardware Unive
 
 NOTE: Customers with specific power requirements must check HWU for their configuration options.
 
+.What you need
 You need to provide the following at your site:
 
 * Rack space for the storage system
 * Phillips #2 screwdriver
 * Additional networking cables to connect your system to your network switch and laptop or console with a Web browser
 
+.Steps
 . Unpack the contents of all boxes.
 . Record the system serial number from the controllers.
 +
@@ -33,9 +34,8 @@ image::../media/drw_ssn_label.png[]
 
 . Set up your account:
  .. Log in to your existing account or create an account.
- .. Register your system.
-+
-link:https://mysupport.netapp.com/eservice/registerSNoAction.do?moduleName=RegisterMyProduct[NetApp Product Registration^]
+ .. Register (link:https://mysupport.netapp.com/eservice/registerSNoAction.do?moduleName=RegisterMyProduct[NetApp Product Registration^]) your system.
+. Download and install link:https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor[NetApp Downloads: Config Advisor^] on your laptop.
 . Inventory and make a note of the number and types of cables you received.
 +
 The following table identifies the types of cables you might receive. If you receive a cable not listed in the table, see the link:https://hwu.netapp.com[NetApp Hardware Universe^] to locate the cable and identify its use.
@@ -113,6 +113,7 @@ Powering up the system
 
 You need to install your system in a 4-post rack or NetApp system cabinet, as applicable.
 
+.Steps
 . Install the rail kits, as needed.
 . Install and secure your system using the instructions included with the rail kit.
 +
@@ -135,6 +136,7 @@ Cable the controllers to a cluster by using the two-node switchless cluster meth
 
 The management, Fibre Channel, and data or host network ports on the controller modules are connected to switches. The cluster interconnect ports are cabled on both controller modules.
 
+.Before you begin
 Contact your network administrator for information about connecting the system to the switches.
 
 Be sure to check the illustration arrow for the proper cable connector pull-tab orientation.
@@ -143,11 +145,10 @@ image::../media/oie_cable_pull_tab_down.png[]
 
 NOTE: As you insert the connector, you should feel it click into place; if you do not feel it click, remove it, turn it around and try again.
 
-. Use the animation or the step-by-step instructions to complete the cabling between the controllers and to the switches:
+.Steps
+. Use the animation (link:https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=beec3966-0a01-473c-a5de-ac68017fbf29[Cable a two-node switchless cluster^]) or the step-by-step instructions to complete the cabling between the controllers and to the switches:
 +
-link:https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=beec3966-0a01-473c-a5de-ac68017fbf29[Cable a two-node switchless cluster^]
-+
-[options="header" cols="1,2"]
+[options="header" cols="10,90"]
 
 |===
 | Step| Perform on each controller
@@ -171,13 +172,13 @@ image:../media/oie_legend_icon_attn_symbol.png[]
 a|
 DO NOT plug in the power cords at this point.
 |===
-
 . To complete setting up your system, see link:install-detailed-guide.html#step-4-complete-system-setup-and-configuration[Step 4: Complete system setup and configuration].
 
 ==== Option 2: Cable a switched cluster
 
 All ports on the controllers are connected to switches; cluster interconnect, management, Fibre Channel, and data or host network switches.
 
+.Before you begin
 Contact your network administrator for information about connecting the system to the switches.
 
 Be sure to check the illustration arrow for the proper cable connector pull-tab orientation.
@@ -186,11 +187,10 @@ image::../media/oie_cable_pull_tab_down.png[]
 
 NOTE: As you insert the connector, you should feel it click into place; if you do not feel it click, remove it, turn it around and try again.
 
-. Use the animation or the step-by-step instructions to complete the cabling between the controllers and to the switches:
+.Steps
+. Use the animation (link:https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=bf6759dc-4cbf-488e-982e-ac68017fbef8[Cabling a switched cluster^]) or the step-by-step instructions to complete the cabling between the controllers and to the switches:
 +
-link:https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=bf6759dc-4cbf-488e-982e-ac68017fbef8[Cabling a switched cluster^]
-+
-[options="header" cols="1,2"]
+[options="header" cols="10,90"]
 |===
 | Step| Perform on each controller
 a|
@@ -213,7 +213,6 @@ image:../media/oie_legend_icon_attn_symbol.png[]
 a|
 DO NOT plug in the power cords at this point.
 |===
-
 . To complete setting up your system, see link:install-detailed-guide.html#step-4-complete-system-setup-and-configuration[Step 4: Complete system setup and configuration].
 
 === Optional cabling: Cable configuration-dependent options
@@ -224,6 +223,7 @@ You have configuration-dependent optional cabling to the Fibre Channel or iSCSI 
 
 Fibre Channel ports on the controllers are connected to Fibre Channel host network switches.
 
+.Before you begin
 Contact your network administrator for information about connecting the system to the switches.
 
 Be sure to check the illustration arrow for the proper cable connector pull-tab orientation.
@@ -232,7 +232,7 @@ image::../media/oie_cable_pull_tab_up.png[]
 
 NOTE: As you insert the connector, you should feel it click into place; if you do not feel it click, remove it, turn it around and try again.
 
-[options="header" cols="1,2"]
+[options="header" cols="10,90"]
 |===
 | Step| Perform on each controller module
 a|
@@ -259,6 +259,7 @@ To complete setting up your system, see link:install-detailed-guide.html#step-4-
 
 25GbE ports on the controllers are connected to 25GbE data or host network switches.
 
+.Before you begin
 Contact your network administrator for information about connecting the system to the switches.
 
 Be sure to check the illustration arrow for the proper cable connector pull-tab orientation.
@@ -267,7 +268,7 @@ image::../media/oie_cable_pull_tab_up.png[]
 
 NOTE: As you insert the connector, you should feel it click into place; if you do not feel it click, remove it, turn it around and try again.
 
-[options="header" cols="1,2"]
+[options="header" cols="10,90"]
 |===
 | Step| Perform on each controller module
 a|
@@ -294,17 +295,16 @@ To complete setting up your system, see link:install-detailed-guide.html#step-4-
 
 Cable each controller to the NSM modules on the NS224 drive shelf.
 
+.Before you begin
 Be sure to check the illustration arrow for the proper cable connector pull-tab orientation.
 
 image::../media/oie_cable_pull_tab_up.png[]
 
 NOTE: As you insert the connector, you should feel it click into place; if you do not feel it click, remove it, turn it around and try again.
 
-. Use the animation or the step-by-step instructions to cable your controller modules to a single shelf.
+. Use the animation (link:https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=3f92e625-a19c-4d10-9028-ac68017fbf57[Cabling the controllers to a single NS224^]) or the step-by-step instructions to cable your controller modules to a single shelf.
 +
-link:https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=3f92e625-a19c-4d10-9028-ac68017fbf57[Cabling the controllers to a single NS224^]
-+
-[options="header" cols="1,2"]
+[options="header" cols="10,90"]
 |===
 | Step| Perform on each controller module
 a|
@@ -316,7 +316,6 @@ image:../media/oie_legend_icon_2_lo.png[]
 a|
 Cable controller B to the shelf:    image:../media/drw_affa250_1shelf_cabling_b.png[]
 |===
-
 . To complete setting up your system, see link:install-detailed-guide.html#step-4-complete-system-setup-and-configuration[Step 4: Complete system setup and configuration].
 
 == Step 4: Complete system setup and configuration
@@ -327,6 +326,7 @@ Complete the system setup and configuration using cluster discovery with only a 
 
 If you have network discovery enabled on your laptop, you can complete system setup and configuration using automatic cluster discovery.
 
+.Steps
 . Plug the power cords into the controller power supplies, and then connect them to power sources on different circuits.
 +
 The system begins to boot. Initial booting may take up to eight minutes.
@@ -335,9 +335,7 @@ The system begins to boot. Initial booting may take up to eight minutes.
 +
 See your laptop's online help for more information.
 
-. Use the following animation to connect your laptop to the Management switch.
-+
-link:https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=d61f983e-f911-4b76-8b3a-ab1b0066909b[Connecting your laptop to the Management switch^]
+. Use the animation (link:https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=d61f983e-f911-4b76-8b3a-ab1b0066909b[Connecting your laptop to the Management switch^]) to connect your laptop to the Management switch.
 
 . Select an ONTAP icon listed to discover:
 +
@@ -349,11 +347,10 @@ image::../media/drw_autodiscovery_controler_select.png[]
  .. Double-click either ONTAP icon and accept any certificates displayed on your screen.
 +
 NOTE: XXXXX is the system serial number for the target node.
+
 +
 System Manager opens.
-
 . Use System Manager guided setup to configure your system using the data you collected in the link:https://library.netapp.com/ecm/ecm_download_file/ECMLP2862613[ONTAP Configuration Guide^].
-
 . Verify the health of your system by running Config Advisor.
 . After you have completed the initial configuration, go to the link:https://www.netapp.com/data-management/oncommand-system-documentation/[ONTAP & ONTAP System Manager Documentation Resources^] page for information about configuring additional features in ONTAP.
 
@@ -361,6 +358,7 @@ System Manager opens.
 
 If network discovery is not enabled on your laptop, you must complete the configuration and setup using this task.
 
+.Steps
 . Cable and configure your laptop or console:
  .. Set the console port on the laptop or console to 115,200 baud with N-8-1.
 +

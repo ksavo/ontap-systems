@@ -19,7 +19,7 @@ You must replace the failed component with a replacement FRU component you recei
 
 include::../_include/shutdown_most_frus.adoc[]
 
-== Step 2: Open the system
+== Step 2: Remove controller module 
 
 To access components inside the controller module, you must first remove the controller module from the system, and then remove the cover on the controller module.
 

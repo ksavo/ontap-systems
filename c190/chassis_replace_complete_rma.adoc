@@ -8,9 +8,11 @@ summary: "You must verify the HA state of the chassis and run System-Level diagn
 :icons: font
 :imagesdir: ../media/
 
+[.lead]
+You must verify the HA state of the chassis and run System-Level diagnostics.
+
 == Step 1: Verify and setting the HA state of the chassis
 
-[.lead]
 You must verify the HA state of the chassis, and, if necessary, update the state to match your system configuration.
 
 . In Maintenance mode, from either controller module, display the HA state of the local controller module and chassis:
@@ -57,7 +59,6 @@ The LOADER prompt appears.
 
 == Step 2: Run system-level diagnostics
 
-[.lead]
 After installing a new chassis, you should run interconnect diagnostics.
 
 Your system must be at the LOADER prompt to start System Level Diagnostics.
@@ -179,5 +180,4 @@ Determine the cause of the problem.
 
 == Step 3: Return the failed part to NetApp
 
-[.lead]
 include::../_include/complete_rma.adoc[]

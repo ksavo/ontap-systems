@@ -8,6 +8,9 @@ summary: "You must verify the HA state of the chassis, run diagnostics, and retu
 :icons: font
 :imagesdir: ../media/
 
+[.lead]
+You must verify the HA state of the chassis, run diagnostics, and return the failed part to NetApp, as described in the RMA instructions shipped with the kit.
+
 == Step 1: Verify and set the HA state of the chassis
 
 [.lead]
@@ -33,7 +36,6 @@ The value for HA-state can be one of the following:
 
 == Step 2: Run diagnostics
 
-[.lead]
 After you have replaced a component in your system, you should run diagnostic tests on that component.
 
 Your system must be at the LOADER prompt to start diagnostics.
@@ -54,5 +56,4 @@ After you issue the command, you should wait until the system stops at the LOADE
 
 == Step 3: Return the failed part to NetApp
 
-[.lead]
 include::../_include/complete_rma.adoc[]

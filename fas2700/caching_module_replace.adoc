@@ -71,7 +71,7 @@ When the impaired node shows Waiting for giveback..., press Ctrl-C, and then res
 [.lead]
 include::../_include/shutdown_any_mcc_supported.adoc[]
 
-== Step 2: Open the system
+== Step 2: Remove controller module 
 
 [.lead]
 To access components inside the controller, you must first remove the controller module from the system and then remove the cover on the controller module.
