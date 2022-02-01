@@ -127,7 +127,7 @@ NOTE: If the giveback is vetoed, you can consider overriding the vetoes.
 +
 http://docs.netapp.com/ontap-9/topic/com.netapp.doc.dot-cm-hacg/home.html[ONTAP 9 High-Availability Configuration Guide]
 
- .. Monitor the progress of the giveback operation by using the storage failover show-giveback command.
+ .. Monitor the progress of the giveback operation by using the `storage failover show`-giveback command.
  .. After the giveback operation is complete, confirm that the HA pair is healthy and that takeover is possible by using the `storage failover show` command.
  .. Restore automatic giveback if you disabled it using the storage failover modify command.
 

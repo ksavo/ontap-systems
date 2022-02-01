@@ -83,10 +83,10 @@ a|
 Lift the boot media out of the controller module.
 |===
 
-. Using the #1 magnetic screwdriver remove the screw from the impaired boot media, and set it aside safely on the magnet.
+. Using the #1 magnetic screwdriver, remove the screw from the impaired boot media, and set it aside safely on the magnet.
 . Gently lift the impaired boot media directly out of the socket and set it aside.
 . Remove the replacement boot media from the antistatic shipping bag and align it into place on the controller module.
-. Using the #1 magnetic screwdriver insert and tighten the screw on the boot media.
+. Using the #1 magnetic screwdriver, insert and tighten the screw on the boot media.
 +
 NOTE: Do not apply force when tightening the screw on the boot media; you might crack it.
 
