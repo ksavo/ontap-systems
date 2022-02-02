@@ -24,7 +24,7 @@ You can shut down or take over the impaired controller using different procedure
 
 include::../_include/shutdown_most_frus.adoc[]
 
-=== Option 2: Systems is in a MetroCluster
+=== Option 2: System in a MetroCluster
 
 include::../_include/shutdown_any_mcc_supported.adoc[]
 
@@ -39,7 +39,7 @@ Make sure that you label the cables so that you know where they came from.
 . Release the power cable retainers, and then unplug the cables from the power supplies.
 . Insert your forefinger into the latching mechanism on either side of the controller module, press the lever with your thumb, and gently pull the controller a few inches out of the chassis.
 +
-NOTE: If you have difficulty removing the controller module, place your index fingers through the finger holes from the inside (by crossing your arms)
+NOTE: If you have difficulty removing the controller module, place your index fingers through the finger holes from the inside (by crossing your arms).
 +
 image::../media/drw_a250_pcm_remove_install.png[]
 +
@@ -90,22 +90,22 @@ NOTE: The fault LED located on the board next to each DIMM blinks every two seco
 +
 image::../media/drw_a250_dimm_replace.png[]
 
- .. Note the orientation of the DIMM in the socket so that you can insert the replacement DIMM in the proper orientation.
- .. Slowly push apart the DIMM ejector tabs on either side of the DIMM, and slide the DIMM out of the slot.
- .. Leave DIMM ejector tabs on the connector in the open position.
- .. Remove the replacement DIMM from the antistatic shipping bag, hold the DIMM by the corners, and align it to the slot.
+. Note the orientation of the DIMM in the socket so that you can insert the replacement DIMM in the proper orientation.
+. Slowly push apart the DIMM ejector tabs on either side of the DIMM, and slide the DIMM out of the slot.
+. Leave DIMM ejector tabs on the connector in the open position.
+. Remove the replacement DIMM from the antistatic shipping bag, hold the DIMM by the corners, and align it to the slot.
 +
 NOTE: Hold the DIMM by the edges to avoid pressure on the components on the DIMM circuit board.
 
- .. Insert the replacement DIMM squarely into the slot.
+. Insert the replacement DIMM squarely into the slot.
 +
 The DIMMs fit tightly in the socket. If not, reinsert the DIMM to realign it with the socket.
 
- .. Visually inspect the DIMM to verify that it is evenly aligned and fully inserted into the socket.
+. Visually inspect the DIMM to verify that it is evenly aligned and fully inserted into the socket.
 
 == Step 4: Install the controller module
 
-After you have replaced the component in the controller module, you must re-install the controller module into the chassis, and then boot it to Maintenance mode.
+After you have replaced the component in the controller module, you must reinstall the controller module into the chassis, and then boot it to Maintenance mode.
 
 You can use the following illustrations or the written steps to install the replacement controller module in the chassis.
 
