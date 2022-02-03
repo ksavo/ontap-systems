@@ -10,7 +10,7 @@ settings:
 
 sidebar:
   entries:
-    - title: ONTAP Systems docs
+    - title: ONTAP systems docs
       url: "/index.html"
     - title: Release Notes
       entries:
