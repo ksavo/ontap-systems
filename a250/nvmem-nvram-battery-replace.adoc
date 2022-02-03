@@ -65,10 +65,10 @@ a|
 Controller module cover.
 |===
 
-== Step 3: Replace the NV battery
+== Step 3: Replace the NVMEM battery
 
 [.lead]
-To replace the NV battery, you must remove the failed battery from the controller module and install the replacement battery into the controller module.
+To replace the NVMEM battery, you must remove the failed battery from the controller module and install the replacement battery into the controller module.
 
 Use the following video or the tabulated steps to replace the NVMEM battery:
 
@@ -98,12 +98,12 @@ a|
 Lift the battery out of the holder and controller module.
 |===
 
- .. Locate the battery plug and squeeze the clip on the face of the battery plug to release the plug from the socket.
- .. Grasp the battery and press the blue locking tab marked PUSH, and then lift the battery out of the holder and controller module and set it aside.
- .. Remove the replacement NV battery from the antistatic shipping bag and align it to the battery holder.
- .. Insert the replacement NV battery plug into the socket.
- .. Slide the battery pack down along the sheet metal side wall until the support tabs on the side wall hook into the slots on the battery pack, and the battery pack latch engages and clicks into the opening on the side wall.
- .. Press firmly down on the battery pack to make sure that it is locked into place.
+. Locate the battery plug and squeeze the clip on the face of the battery plug to release the plug from the socket.
+. Grasp the battery and press the blue locking tab marked PUSH, and then lift the battery out of the holder and controller module and set it aside.
+. Remove the replacement NV battery from the antistatic shipping bag and align it to the battery holder.
+. Insert the replacement NV battery plug into the socket.
+. Slide the battery pack down along the sheet metal side wall until the support tabs on the side wall hook into the slots on the battery pack, and the battery pack latch engages and clicks into the opening on the side wall.
+. Press firmly down on the battery pack to make sure that it is locked into place.
 
 == Step 4: Install the controller module
 

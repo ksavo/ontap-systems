@@ -137,9 +137,9 @@ a|
 Lift the boot media out of the impaired controller module.
 |===
 
- .. Using the #1 magnetic screw driver remove the screw from the boot media, and set it aside safely on the magnet.
+ .. Using the #1 magnetic screwdriver, remove the screw from the boot media, and set it aside safely on the magnet.
  .. Gently lift the boot media directly out of the socket and align it into place in the replacement controller module.
- .. Using the #1 magnetic screw driver insert and tighten the screw on the boot media.
+ .. Using the #1 magnetic screwdriver, insert and tighten the screw on the boot media.
 +
 NOTE: Do not apply force when tightening the screw on the boot media; you might crack it.
 
@@ -195,10 +195,10 @@ Move the mezzanine card.
 Make sure that you label the cables so that you know where they came from.
 
  .. Remove any SFP or QSFP modules that might be in the mezzanine card and set it aside.
- .. Using the #1 magnetic screw driver remove the screws from the face of the impaired controller module and from the mezzanine card, and set them aside safely on the magnet.
+ .. Using the #1 magnetic screwdriver, remove the screws from the face of the impaired controller module and from the mezzanine card, and set them aside safely on the magnet.
  .. Gently lift the mezzanine card out of the socket and move it to the same position in the replacement controller.
  .. Gently align the mezzanine card into place in the replacement controller.
- .. Using the #1 magnetic screw driver insert and tighten the screws on the face of the replacement controller module and on the mezzanine card.
+ .. Using the #1 magnetic screwdriver, insert and tighten the screws on the face of the replacement controller module and on the mezzanine card.
 +
 NOTE: Do not apply force when tightening the screw on the mezzanine card; you might crack it.
 
