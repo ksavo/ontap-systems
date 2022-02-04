@@ -212,6 +212,7 @@ image:../media/drw_c190_u_mgmt_cbling.png[]
 a|
 image:../media/oie_legend_icon_attn_symbol.png[]
 a|
+DO NOT plug in the power cords at this point.
 |===
 
 . To cable your storage, see link:install_detailed_guide.md#[Cabling controllers to drive shelves]
