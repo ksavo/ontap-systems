@@ -100,7 +100,7 @@ Make sure that you label the cables so that you know where they came from.
 . Remove any SFP or QSFP modules that might be in the impaired mezzanine card and set it aside.
 . Using the #1 magnetic screwdriver, remove the screws from the face of the controller module and set them aside safely on the magnet.
 . Using the #1 magnetic screwdriver, loosen the screw on the impaired mezzanine card.
-. Using the #1 magnetic screwdriver,Gently lift the impaired mezzanine card directly out of the socket and set it aside.
+. Using the #1 magnetic screwdriver, gently lift the impaired mezzanine card directly out of the socket and set it aside.
 . Remove the replacement mezzanine card from the antistatic shipping bag and align it to the inside face of the controller module.
 . Gently align the replacement mezzanine card into place.
 . Using the #1 magnetic screwdriver, insert and tighten the screws on the face of the controller module and on the mezzanine card.
@@ -109,7 +109,7 @@ NOTE: Do not apply force when tightening the screw on the mezzanine card; you mi
 
 . Insert any SFP or QSFP modules that were removed from the impaired mezzanine card to the replacement mezzanine card.
 
-=== Option 1: Install a mezzanine card:
+=== Option 2: Install a mezzanine card:
 You install a new mezzanine card if your system does not have one.
 . Using the #1 magnetic screwdriver, remove the screws from the face of the controller module and the faceplate covering the mezzanine card slot, and set them aside safely on the magnet.
 . Remove the mezzanine card from the antistatic shipping bag and align it to the inside face of the controller module.

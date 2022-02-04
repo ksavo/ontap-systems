@@ -13,12 +13,10 @@ You must complete a series of tasks before restoring your system to full operati
 
 == Step 1: Recable the system
 
-[.lead]
 include::../_include/recable_system_after_controller_rep.adoc[]
 
 == Step 2: Reassign disks
 
-[.lead]
 If the storage system is in an HA pair, the system ID of the new controller module is automatically assigned to the disks when the giveback occurs at the end of the procedure. In a stand-alone system, you must manually reassign the ID to the disks.
 
 You must use the correct procedure for your configuration:
@@ -38,7 +36,6 @@ a|
 
 === Option 1: Verify the system ID change on an HA system
 
-[.lead]
 You must confirm the system ID change when you boot the _replacement_ node and then verify that the change was implemented.
 
 This procedure applies only to systems running ONTAP in an HA pair.
@@ -65,7 +62,7 @@ node2             node1             -            Waiting for giveback (HA mailbo
 You can respond `Y` when prompted to continue into advanced mode. The advanced mode prompt appears (*>).
 
  .. Save any coredumps: `system node run -node _local-node-name_ partner savecore`
- .. Wait for savecore command to complete before issuing the giveback.
+ .. Wait for the `savecore`command to complete before issuing the giveback.
 +
 You can enter the following command to monitor the progress of the savecore command: `system node run -node _local-node-name_ partner savecore -s`
 
@@ -103,5 +100,4 @@ Disk  Aggregate Home  Owner  DR Home  Home ID    Owner ID  DR Home ID Reserver  
 
 === Option 2: Manually reassign the system ID on systems in a two-node MetroCluster configuration
 
-[.lead]
 include::../_include/2n_mcc_reassign_sysid.adoc[]

@@ -65,15 +65,14 @@ image::../media/drw_a250_remove_airduct_cover.png[]
 [.lead]
 You must move the power supply from the impaired controller module to the replacement controller module when you replace a controller module.
 
-. Disconnect the power supply:
- .. Open the power cable retainer, and then unplug the power cable from the power supply.
- .. Unplug the power cable from the power source.
+. Disconnect the power supply.
+. Open the power cable retainer, and then unplug the power cable from the power supply.
+. Unplug the power cable from the power source.
 . Rotate the cam handle such that it can be used to pull power supply out of the controller module while pressing the locking tab.
 +
-*CAUTION:*
+CAUTION: Do not use excessive force when sliding the controller module into the chassis to avoid damaging the connectors.
 +
-The power supply is short. Always use two hands to support it when removing it from the controller module so that it does not suddenly swing free from the controller module and injure you.
-+
+
 image::../media/drw_a250_replace_psu.png[]
 +
 |===
@@ -116,7 +115,7 @@ Fan module
 [.lead]
 There is one boot media device in the AFF A250 under the air duct in the controller module. You must move it from the impaired controller module to the replacement controller module.
 
-You need a #1 magnetic Phillips head screw driver to remove the screw that holds the boot media in-place. Due to the space constraints within the controller module, you should also have a magnet to transfer the screw on to so that you do not lose it.
+You need a #1 magnetic Phillips head screwdriver to remove the screw that holds the boot media in place. Due to the space constraints within the controller module, you should also have a magnet to transfer the screw on to so that you do not lose it.
 
 . Locate and move the boot media from the impaired controller module to the replacement controller module.
 +
@@ -143,23 +142,22 @@ NOTE: Do not apply force when tightening the screw on the boot media; you might 
 [.lead]
 To move the DIMMs, locate and move them from the impaired controller into the replacement controller and follow the specific sequence of steps.
 
-. Move the DIMMs from the impaired controller module to the replacement controller module:
 +
 image::../media/drw_a250_dimm_replace.png[]
 +
 IMPORTANT: Install each DIMM into the same slot it occupied in the impaired controller module.
 
- .. Slowly push apart the DIMM ejector tabs on either side of the DIMM, and slide the DIMM out of the slot.
+. Slowly push apart the DIMM ejector tabs on either side of the DIMM, and slide the DIMM out of the slot.
 +
 IMPORTANT: Hold the DIMM by the edges to avoid pressure on the components on the DIMM circuit board.
 
- .. Locate the corresponding DIMM slot on the replacement controller module.
- .. Make sure that the DIMM ejector tabs on the DIMM socket are in the open position, and then insert the DIMM squarely into the socket.
+. Locate the corresponding DIMM slot on the replacement controller module.
+. Make sure that the DIMM ejector tabs on the DIMM socket are in the open position, and then insert the DIMM squarely into the socket.
 +
 The DIMMs fit tightly in the socket. If not, reinsert the DIMM to realign it with the socket.
 
- .. Visually inspect the DIMM to verify that it is evenly aligned and fully inserted into the socket.
- .. Repeat these substeps for the remaining DIMM.
+. Visually inspect the DIMM to verify that it is evenly aligned and fully inserted into the socket.
+. Repeat these steps for the remaining DIMM.
 
 == Step 6: Move a mezzanine card
 
@@ -184,7 +182,7 @@ a|
 Move the mezzanine card.
 |===
 
- .. Unplug any cabling associated with the mezzanine card.
+. Unplug any cabling associated with the mezzanine card.
 +
 Make sure that you label the cables so that you know where they came from.
 
@@ -196,13 +194,13 @@ Make sure that you label the cables so that you know where they came from.
 +
 NOTE: Do not apply force when tightening the screw on the mezzanine card; you might crack it.
 
- .. Repeat these substeps if there is another mezzanine card in the impaired controller module.
- .. Insert the SFP or QSFP modules that were removed onto the mezzanine card.
+. Repeat these steps if there is another mezzanine card in the impaired controller module.
+. Insert the SFP or QSFP modules that were removed onto the mezzanine card.
 
 == Step 7: Move the NV battery
 
 [.lead]
-When replacing the controller module, you must move the NV battery from the impaired controller module to the replacement controller module
+When replacing the controller module, you must move the NV battery from the impaired controller module to the replacement controller module.
 
 . Locate and move the NVMEM battery from your impaired controller module to the replacement controller module.
 +
@@ -226,12 +224,12 @@ a|
 Lift the battery out of the holder and controller module.
 |===
 
- .. Locate the battery plug and squeeze the clip on the face of the battery plug to release the plug from the socket.
- .. Grasp the battery and press the blue locking tab marked PUSH, and then lift the battery out of the holder and controller module.
- .. Locate the corresponding NV battery holder on the replacement controller module and align the NV battery to the battery holder.
- .. Insert the NV battery plug into the socket.
- .. Slide the battery pack down along the sheet metal side wall until the support tabs on the side wall hook into the slots on the battery pack, and the battery pack latch engages and clicks into the opening on the side wall.
- .. Press firmly down on the battery pack to make sure that it is locked into place.
+. Locate the battery plug and squeeze the clip on the face of the battery plug to release the plug from the socket.
+. Grasp the battery and press the blue locking tab marked PUSH, and then lift the battery out of the holder and controller module.
+. Locate the corresponding NV battery holder on the replacement controller module and align the NV battery to the battery holder.
+. Insert the NV battery plug into the socket.
+. Slide the battery pack down along the sheet metal side wall until the support tabs on the side wall hook into the slots on the battery pack, and the battery pack latch engages and clicks into the opening on the side wall.
+. Press firmly down on the battery pack to make sure that it is locked into place.
 
 == Step 8: Install the controller module
 
@@ -266,12 +264,12 @@ NOTE: Do not completely insert the controller module in the chassis until instru
 +
 NOTE: You will connect the rest of the cables to the controller module later in this procedure.
 
-. Insert the controller module into the chassis:
- .. Ensure the latching mechanism arms are locked in the fully extended position.
- .. Using both hands, align and gently slide the controller module into the latching mechanism arms until it stops.
- .. Place your index fingers through the finger holes from the inside of the latching mechanism.
- .. Press your thumbs down on the orange tabs on top of the latching mechanism and gently push the controller module over the stop.
- .. Release your thumbs from the top of the latching mechanisms and continue pushing until the latching mechanisms snap into place.
+. Insert the controller module into the chassis.
+. Ensure the latching mechanism arms are locked in the fully extended position.
+. Using both hands, align and gently slide the controller module into the latching mechanism arms until it stops.
+. Place your index fingers through the finger holes from the inside of the latching mechanism.
+. Press your thumbs down on the orange tabs on top of the latching mechanism and gently push the controller module over the stop.
+. Release your thumbs from the top of the latching mechanisms and continue pushing until the latching mechanisms snap into place.
 +
 The controller module begins to boot as soon as it is fully seated in the chassis. Be prepared to interrupt the boot process.
 

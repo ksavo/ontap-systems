@@ -43,7 +43,7 @@ node2             node1             -            Waiting for giveback (HA mailbo
 You can respond `Y` when prompted to continue into advanced mode. The advanced mode prompt appears (*>).
 
  .. Save any coredumps: `system node run -node _local-node-name_ partner savecore`
- .. Wait for savecore command to complete before issuing the giveback.
+ .. Wait for the `savecore`command to complete before issuing the giveback.
 +
 You can enter the following command to monitor the progress of the savecore command: `system node run -node _local-node-name_ partner savecore -s`
 
@@ -87,7 +87,7 @@ The MetroCluster configuration takes a few minutes after the replacement to retu
 This is required if both of the following are true:
 
  ** The MetroCluster configuration is in a switchover state.
- ** the _replacement_ node is the current owner of the disks on the disaster site.
+ ** The _replacement_ node is the current owner of the disks on the disaster site.
 +
 https://docs.netapp.com/us-en/ontap-metrocluster/manage/concept_understanding_mcc_data_protection_and_disaster_recovery.html#disk-ownership-changes-during-ha-takeover-and-metrocluster-switchover-in-a-four-node-metrocluster-configuration[Disk ownership changes during HA takeover and MetroCluster switchover in a four-node MetroCluster configuration]
 

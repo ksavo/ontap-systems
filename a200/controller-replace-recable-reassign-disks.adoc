@@ -13,17 +13,14 @@ Continue the replacement procedure by re-cabling the storage and confirming disk
 
 == Step 1: Re-cable the system
 
-[.lead]
 include::../_include/recable_system_after_controller_rep.adoc[]
 
 == Step 2: Reassign disks
 
-[.lead]
 If the storage system is in an HA pair, the system ID of the new controller module is automatically assigned to the disks when the giveback occurs at the end of the procedure. In a stand-alone system, you must manually reassign the ID to the disks. You must use the correct procedure for your configuration.
 
 === Option 1: Verify the system ID change on an HA system
 
-[.lead]
 You must confirm the system ID change when you boot the _replacement_ node and then verify that the change was implemented.
 
 .About this task
@@ -31,7 +28,7 @@ This procedure applies only to systems running ONTAP in an HA pair.
 
 .Steps
 . If the _replacement_ node is in Maintenance mode (showing the `*>` prompt, exit Maintenance mode and go to the LOADER prompt: `halt`
-. From the LOADER prompt on the _replacement_ node, boot the node, entering `y` if you are prompted to override the system ID due to a system ID mismatch:``boot_ontap``
+. From the LOADER prompt on the _replacement_ node, boot the node, entering `y` if you are prompted to override the system ID due to a system ID mismatch.``boot_ontap``
 . Wait until the `Waiting for giveback...` message is displayed on the _replacement_ node console and then, from the healthy node, verify that the new partner system ID has been automatically assigned: `storage failover show`
 +
 In the command output, you should see a message that the system ID has changed on the impaired node, showing the correct old and new IDs. In the following example, node2 has undergone replacement and has a new system ID of 151759706.
@@ -52,7 +49,7 @@ node2             node1             -            Waiting for giveback (HA mailbo
 You can respond `Y` when prompted to continue into advanced mode. The advanced mode prompt appears (*>).
 
  .. Save any coredumps: `system node run -node _local-node-name_ partner savecore`
- .. Wait for savecore command to complete before issuing the giveback.
+ .. Wait for the `savecore`command to complete before issuing the giveback.
 +
 You can enter the following command to monitor the progress of the savecore command: `system node run -node _local-node-name_ partner savecore -s`
 
@@ -92,5 +89,4 @@ Disk  Aggregate Home  Owner  DR Home  Home ID    Owner ID  DR Home ID Reserver  
 
 === Option 2: Manually reassign the system ID on a stand-alone system in ONTAP
 
-[.lead]
 include::../_include/standalone_reassign_sysid.adoc[]

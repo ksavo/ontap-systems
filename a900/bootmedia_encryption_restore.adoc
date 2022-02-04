@@ -77,7 +77,7 @@ The system boots to Waiting for giveback... prompt.
 
 . Move the console cable to the partner node and log in as admin.
 . Confirm the target node is ready for giveback with the `storage failover show` command.
-. Give back only the CFO aggregates with the storage failover giveback -fromnode local -only-cfo-aggregates true command.
+. Give back only the CFO aggregates with the `storage failover giveback -fromnode local -only-cfo-aggregates true` command.
  ** If the command fails because of a failed disk, physically disengage the failed disk, but leave the disk in the slot until a replacement is received.
  ** If the command fails because of an open CIFS session, check with the customer how to close out CIFS sessions.
 +
@@ -85,7 +85,7 @@ NOTE: Terminating CIFS can cause loss of data.
 
  ** If the command fails because the partner "not ready", wait 5 minutes for the NVRAMs to synchronize.
  ** If the command fails because of an NDMP, SnapMirror, or SnapVault process, disable the process. See the appropriate content for more information.
-. Once the giveback completes, check the failover and giveback status with the `storage failover show` and `storage failover show`-giveback commands.
+. Once the giveback completes, check the failover and giveback status with the `storage failover show` and `storage failover show-giveback` commands.
 +
 Only the CFO aggregates (root aggregate and CFO style data aggregates) will be shown.
 
@@ -97,7 +97,7 @@ NOTE: If the `Restored` column = anything other than `yes/true`, contact Custome
 
  .. Wait 10 minutes for the key to synchronize across the cluster.
 . Move the console cable to the partner node.
-. Give back the target node using the storage failover giveback -fromnode local command.
+. Give back the target node using the `storage failover giveback -fromnode local` command.
 . Check the giveback status, 3 minutes after it reports complete, using the `storage failover show` command.
 +
 If giveback is not complete after 20 minutes, contact Customer Support.

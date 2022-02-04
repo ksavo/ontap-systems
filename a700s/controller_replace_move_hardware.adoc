@@ -13,7 +13,6 @@ To replace the controller module hardware, you must remove the impaired node, mo
 
 == Step 1: Remove the controller module
 
-[.lead]
 You must remove the controller module from the chassis when you replace the controller module or replace a component inside the controller module.
 
 . If you are not already grounded, properly ground yourself.
@@ -67,7 +66,6 @@ Air duct
 
 == Step 2: Move the NVRAM card
 
-[.lead]
 As part of the controller replacement process, you must remove the NVRAM card from Riser 1 in the impaired controller module and install the card into Riser 1 of the replacement controller module. You should only reinstall Riser 1 into the replacement controller module after you have moved the DIMMs from the impaired controller module to the replacement controller module.
 
 . Remove the NVRAM riser, Riser 1, from the controller module:
@@ -118,7 +116,6 @@ NOTE: Make sure that the card is completely and squarely seated into the riser s
 
 == Step 3: Move PCIe cards
 
-[.lead]
 As part of the controller replacement process, you must remove both PCIe riser modules, Riser 2 (the middle riser) and Riser 3 (riser on the far right) from the impaired controller module, remove the PCIe cards from the riser modules, and install them in the same riser modules in the replacement controller module. You will install the riser modules into the replacement controller module once the DIMMs have been moved to the replacement controller module.
 
 . Remove the PCIe riser from the controller module:
@@ -164,7 +161,6 @@ NOTE: Make sure that the card is completely and squarely seated into the riser s
 
 == Step 4: Move the boot media
 
-[.lead]
 There are two boot media devices in the AFF A700s, a primary and a secondary or backup boot media. You must move them from the impaired node to the _replacement_ node and install them into their respective slots in the _replacement_ node.
 
 The boot media are located under Riser 2, the middle PCIe riser module. This PCIe module must be removed to gain access to the boot media.
@@ -209,7 +205,6 @@ Do not over-tighten the screw or you might damage the boot media.
 
 == Step 5: Move the fans
 
-[.lead]
 You must move the fans from the impaired controller module to the replacement module when replacing a failed controller module.
 
 . Remove the fan module by pinching the locking tabs on the side of the fan module, and then lifting the fan module straight out of the controller module.
@@ -275,7 +270,6 @@ NOTE: Visually inspect the DIMM to verify that it is evenly aligned and fully in
 
 == Step 7: Install the NVRAM module
 
-[.lead]
 To install the NVRAM module, you must follow the specific sequence of steps.
 
 . Install the riser into the controller module:
@@ -289,7 +283,6 @@ When locked, the locking latch is flush with the top of the riser and the riser 
 
 == Step 8: Move the NVRAM battery
 
-[.lead]
 When replacing the controller module, you must move the NVRAM battery from the impaired controller module to the replacement controller module
 
 . Locate the NVRAM battery on the left side of the riser module, Riser 1.
@@ -316,7 +309,6 @@ Blue NVRAM battery locking tab
 
 == Step 9: Install a PCIe riser
 
-[.lead]
 To install a PCIe riser, you must follow a specific sequence of steps.
 
 . If you are not already grounded, properly ground yourself.
@@ -332,15 +324,12 @@ When locked, the locking latch is flush with the top of the riser and the riser 
 
 == Step 10: Move the power supply
 
-[.lead]
 You must move the power supply and power supply blank from the impaired controller module to the replacement controller module when you replace a controller module.
 
 . If you are not already grounded, properly ground yourself.
 . Rotate the cam handle such that it can be used to pull power supply out of the controller module while pressing the locking tab.
 +
-*CAUTION:*
-+
-The power supply is short. Always use two hands to support it when removing it from the controller module so that it does not suddenly swing free from the controller module and injure you.
+CAUTION: The power supply is short. Always use two hands to support it when removing it from the controller module so that it does not suddenly swing free from the controller module and injure you.
 +
 image::../media/drw_a700s_replace_psu.gif[]
 +
@@ -365,7 +354,6 @@ NOTE: To avoid damaging the internal connector, do not use excessive force when 
 
 == Step 11: Install the controller module
 
-[.lead]
 After all the components have been moved from the impaired controller module to the replacement controller module, you must install the replacement controller module into the chassis and then boot it to Maintenance mode.
 
 . If you are not already grounded, properly ground yourself.

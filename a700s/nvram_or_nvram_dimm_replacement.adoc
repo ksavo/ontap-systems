@@ -207,7 +207,7 @@ node2             node1             -            Waiting for giveback (HA mailbo
 You can respond `Y` when prompted to continue into advanced mode. The advanced mode prompt appears (*>).
 
  .. Save any coredumps: `system node run -node _local-node-name_ partner savecore`
- .. Wait for savecore command to complete before issuing the giveback.
+ .. Wait for the `savecore`command to complete before issuing the giveback.
 +
 You can enter the following command to monitor the progress of the savecore command: `system node run -node _local-node-name_ partner savecore -s`
 

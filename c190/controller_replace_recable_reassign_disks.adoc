@@ -13,12 +13,10 @@ Continue the replacement procedure by recabling the storage and confirming disk 
 
 == Step 1: Recable the system
 
-[.lead]
 include::../_include/recable_system_after_controller_rep.adoc[]
 
 == Step 2: Verifying the system ID change on an HA system
 
-[.lead]
 If the storage system is in an HA pair, the system ID of the new controller module is automatically assigned to the disks when the giveback occurs at the end of the procedure. You must confirm the system ID change when you boot the _replacement_ node and then verify that the change was implemented.
 
 This procedure applies only to systems running ONTAP in an HA pair.
@@ -26,7 +24,7 @@ This procedure applies only to systems running ONTAP in an HA pair.
 . If the _replacement_ node is in Maintenance mode (showing the `*>` prompt, exit Maintenance mode and go to the LOADER prompt:
 +
 `*halt*`
-. From the LOADER prompt on the _replacement_ node, boot the node, entering `*y*` if you are prompted to override the system ID due to a system ID mismatch:
+. From the LOADER prompt on the _replacement_ node, boot the node, entering `*y*` if you are prompted to override the system ID due to a system ID mismatch.
 . Wait until the `Waiting for giveback...` message is displayed on the _replacement_ node console and then, from the healthy node, verify that the new partner system ID has been automatically assigned:
 +
 `*`storage failover show`*`
@@ -53,7 +51,7 @@ You can respond `*Y*` when prompted to continue into advanced mode. The advanced
  .. Save any coredumps:
 +
 `*system node run -node _local-node-name_ partner savecore*`
- .. Wait for savecore command to complete before issuing the giveback.
+ .. Wait for the `savecore`command to complete before issuing the giveback.
 +
 You can enter the following command to monitor the progress of the savecore command:
 +

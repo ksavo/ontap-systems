@@ -25,7 +25,7 @@ If the storage system is in an HA pair, the system ID of the new controller modu
 This procedure applies only to systems running ONTAP in an HA pair.
 
 . If the _replacement_ node is in Maintenance mode (showing the `*>` prompt, exit Maintenance mode and go to the LOADER prompt: `halt`
-. From the LOADER prompt on the _replacement_ node, boot the node, entering `y` if you are prompted to override the system ID due to a system ID mismatch:``boot_ontap``
+. From the LOADER prompt on the _replacement_ node, boot the node, entering `y` if you are prompted to override the system ID due to a system ID mismatch.``boot_ontap``
 . Wait until the `Waiting for giveback...` message is displayed on the _replacement_ node console and then, from the healthy node, verify that the new partner system ID has been automatically assigned: `storage failover show`
 +
 In the command output, you should see a message that the system ID has changed on the impaired node, showing the correct old and new IDs. In the following example, node2 has undergone replacement and has a new system ID of 151759706.
@@ -46,7 +46,7 @@ node2             node1             -            Waiting for giveback (HA mailbo
 You can respond `Y` when prompted to continue into advanced mode. The advanced mode prompt appears (*>).
 
  .. Save any coredumps: `system node run -node _local-node-name_ partner savecore`
- .. Wait for savecore command to complete before issuing the giveback.
+ .. Wait for the `savecore`command to complete before issuing the giveback.
 +
 You can enter the following command to monitor the progress of the savecore command: `system node run -node _local-node-name_ partner savecore -s`
 
@@ -90,7 +90,7 @@ The MetroCluster configuration takes a few minutes after the replacement to retu
 This is required if both of the following are true:
 
  ** The MetroCluster configuration is in a switchover state.
- ** the _replacement_ node is the current owner of the disks on the disaster site.
+ ** The _replacement_ node is the current owner of the disks on the disaster site.
 +
 https://docs.netapp.com/us-en/ontap-metrocluster/manage/concept_understanding_mcc_data_protection_and_disaster_recovery.html#disk-ownership-changes-during-ha-takeover-and-metrocluster-switchover-in-a-four-node-metrocluster-configuration[Disk ownership changes during HA takeover and MetroCluster switchover in a four-node MetroCluster configuration]
 
