@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: aff a320, move the controller module hardware
 summary: "To replace the controller module hardware, you must remove the impaired node, move FRU components to the replacement controller module, install the replacement controller module in the chassis, and then boot the system to Maintenance mode."
 ---
-= Move the controller module hardware - AFF A320
+= Replace controller module  - AFF A320
 :icons: font
 :imagesdir: ../media/
 
@@ -13,7 +13,6 @@ To replace the controller module hardware, you must remove the impaired node, mo
 
 == Step 1: Remove the controller module
 
-[.lead]
 To access components inside the controller module, you must remove the controller module from the chassis.
 
 You can use the following images or the written steps to remove the controller module from the chassis.
@@ -44,14 +43,13 @@ The latching mechanism hook should be nearly vertical and should be clear of the
 
 == Step 2: Move the power supplies
 
-[.lead]
 You must move the power supply from the impaired controller module to the replacement controller module when you replace a controller module.
 
 . Rotate the cam handle such that it can be used to pull power supply out of the controller module while pressing the blue locking tab.
+
 +
-*CAUTION:*
+CAUTION: The power supply is short. Always use two hands to support it when removing it from the controller module so that it does not suddenly swing free from the controller module and injure you.
 +
-The power supply is short. Always use two hands to support it when removing it from the controller module so that it does not suddenly swing free from the controller module and injure you.
 
 . Move the power supply to the new controller module, and then install it.
 . Using both hands, support and align the edges of the power supply with the opening in the controller module, and then gently push the power supply into the controller module until the locking tab clicks into place.
@@ -62,7 +60,6 @@ NOTE: To avoid damaging the internal connector, do not use excessive force when 
 
 == Step 3: Move the NVDIMM battery
 
-[.lead]
 To move the NVDIMM battery from the impaired controller module to the replacement controller module, you must perform a specific sequence of steps.
 
 You can use the following illustration or the written steps to move the NVDIMM battery from the impaired controller module to the replacement controller module.
@@ -79,7 +76,6 @@ NOTE: Do not plug the battery cable back into the motherboard until instructed t
 
 == Step 4: Move the boot media
 
-[.lead]
 You must locate the boot media, and then follow the directions to remove it from the impaired controller module and insert it into the replacement controller module.
 
 You can use the following illustration or the written steps to move the boot media from the impaired controller module to the replacement controller module.
@@ -102,7 +98,6 @@ If necessary, remove the boot media and reseat it into the socket.
 
 == Step 5: Move the DIMMs
 
-[.lead]
 You need to locate the DIMMs, and then move them from the impaired controller module to the replacement controller module.
 
 You must have the new controller module ready so that you can move the DIMMs directly from the impaired controller module to the corresponding slots in the replacement controller module.
@@ -155,7 +150,6 @@ Make sure that the plug locks down onto the controller module.
 
 == Step 6: Move the PCIe risers
 
-[.lead]
 You must move the PCIe risers, with the PCIe cards installed in them, from the impaired controller module to the replacement controller module.
 
 You can use the following illustration or the written steps to move the PCIe risers from the impaired controller module to the replacement controller module.
@@ -179,7 +173,6 @@ The riser should seat smoothly with little resistence. Reseat the riser in the b
 
 == Step 7: Install the controller module
 
-[.lead]
 After all of the components have been moved from the impaired controller module to the replacement controller module, you must install the replacement controller module into the chassis, and then boot it to Maintenance mode.
 
 You can use the following illustration or the written steps to install the replacement controller module in the chassis.
