@@ -1,10 +1,10 @@
 ---
-permalink: a900/fan_swap_out.html
+permalink: fas9500/fan_swap_out.html
 sidebar: sidebar
 keywords:
 summary: 'To swap out a fan module without interrupting service, you must perform a specific sequence of tasks.'
 ---
-= Swap out a fan - AFF A900
+= Swap out a fan - FAS9500
 :icons: font
 :imagesdir: ../media/
 

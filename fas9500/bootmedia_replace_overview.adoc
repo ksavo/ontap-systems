@@ -1,10 +1,10 @@
 ---
-permalink: a900/bootmedia_replace_overview.html
+permalink: fas9500/bootmedia_replace_overview.html
 sidebar: sidebar
-keywords: AFF A900
+keywords: FAS9500
 summary: 'The boot media stores a primary and secondary set of system \(boot image\) files that the system uses when it boots. Depending on your network configuration, you can perform either a nondisruptive or disruptive replacement.'
 ---
-= Replace the boot media - AFF A900
+= Replace the boot media - FAS9500
 :icons: font
 :imagesdir: ../media/
 [.include]

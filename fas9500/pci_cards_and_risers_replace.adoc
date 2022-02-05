@@ -1,10 +1,10 @@
 ---
-permalink: a900/pci_cards_and_risers_replace.html
+permalink: fas9500/pci_cards_and_risers_replace.html
 sidebar: sidebar
 keywords:
 summary: 'To replace an I/O module, you must perform a specific sequence of tasks.'
 ---
-= Replace an I/O module - AFF A900
+= Replace an I/O module - FAS9500
 :icons: font
 :imagesdir: ../media/
 

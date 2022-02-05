@@ -1,10 +1,10 @@
 ---
-permalink: a900/install_videos.html
+permalink: fas9500/install_videos.html
 sidebar: sidebar
-keywords: AFF A900
+keywords: FAS9500
 summary: 'There are two videos: one showing how to rack and cable your system and one showing an example of using the System Manager Guided Setup to perform initial system configuration.'
 ---
-= Video steps - AFF A900
+= Video steps - FAS9500
 :icons: font
 :imagesdir: ../media/
 

@@ -1,10 +1,10 @@
 ---
-permalink: a900/controller_replace_overview.html
+permalink: fas9500/controller_replace_overview.html
 sidebar: sidebar
-keywords: AFF A900
+keywords: FAS9500
 summary: 'You must review the prerequisites for the replacement procedure and select the correct one for your version of the ONTAP operating system.'
 ---
-= Replace the controller module - AFF A900
+= Replace the controller module - FAS9500
 :icons: font
 :imagesdir: ../media/
 

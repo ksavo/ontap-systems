@@ -1,10 +1,10 @@
 ---
-permalink: a900/install_quick_guide.html
+permalink: fas9500/install_quick_guide.html
 sidebar: sidebar
-keywords: AFF A900
+keywords: FAS9500
 summary: 'This topic gives graphic instructions for a typical installation of your system from racking and cabling, through initial system bring-up.'
 ---
-= Quick steps - AFF A900
+= Quick steps - FAS9500
 :icons: font
 :imagesdir: ../media/
 

@@ -1,10 +1,10 @@
 ---
-permalink: a900/chassis_replace_complete_system_restore_rma.html
+permalink: fas9500/chassis_replace_complete_system_restore_rma.html
 sidebar: sidebar
-keywords: aff a900, verify and set HA state, run diagnostics, complete the replacement process
+keywords: aff fas9500, verify and set HA state, run diagnostics, complete the replacement process
 summary: "You must verify the HA state of the chassis, run diagnostics, and return the failed part to NetApp, as described in the RMA instructions shipped with the kit."
 ---
-= Restoring and verifying the configuration - AFF A900
+= Restoring and verifying the configuration - FAS9500
 :icons: font
 :imagesdir: ../media/
 

@@ -1,10 +1,10 @@
 ---
-permalink: a900/bootmedia_impaired_controller_shutdown.html
+permalink: fas9500/bootmedia_impaired_controller_shutdown.html
 sidebar: sidebar
 keywords:
 summary: 'You can shut down or take over the impaired controller using different procedures, depending on the storage system hardware configuration.'
 ---
-= Shut down the impaired controller - AFF A900
+= Shut down the impaired controller - FAS9500
 :icons: font
 :imagesdir: ../media/
 

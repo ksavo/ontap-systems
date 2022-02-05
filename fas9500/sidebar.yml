@@ -1,94 +1,94 @@
-section: a900
-title: AFF A900 systems
-url: /a900/index.html
+section: fas9500
+title: FAS9500 systems
+url: /fas9500/index.html
 entries:
   - title: Install and setup
     entries:
     - title: Choose install and setup experience
-      url: /a900/install_setup.html
+      url: /fas9500/install_setup.html
     - title: Quick steps
-      url: /a900/install_quick_guide.html
+      url: /fas9500/install_quick_guide.html
     - title: Video steps
-      url: /a900/install_videos.html
+      url: /fas9500/install_videos.html
     - title: Detailed steps
-      url: /a900/install_detailed_guide.html
+      url: /fas9500/install_detailed_guide.html
   - title: Maintain
     entries:
 # START Add I/O module
     - title: Add I/O module
-      url: /a900/add_io_module.html
+      url: /fas9500/add_io_module.html
 # END Add I/O module
       # START boot media
     - title: Boot media
       entries:
       - title: Overview
-        url: /a900/bootmedia_replace_overview.html
+        url: /fas9500/bootmedia_replace_overview.html
       - title: Pre-shutdown checks for onboard encryption keys
-        url: /a900/bootmedia_encryption_preshutdown_checks.html
+        url: /fas9500/bootmedia_encryption_preshutdown_checks.html
       - title: Shut down the impaired controller
-        url: /a900/bootmedia_impaired_controller_shutdown.html
+        url: /fas9500/bootmedia_impaired_controller_shutdown.html
       - title: Transfer the boot image and replace the failed boot media
-        url: /a900/bootmedia_replace.html
+        url: /fas9500/bootmedia_replace.html
       - title: Boot the recovery image
-        url: /a900/bootmedia_recovery_image.html
+        url: /fas9500/bootmedia_recovery_image.html
       - title: Post boot media replacement steps for OKM, NSE, and NVE
-        url: /a900/bootmedia_encryption_restore.html
+        url: /fas9500/bootmedia_encryption_restore.html
       - title: Return the failed part to NetApp
-        url: /a900/bootmedia_complete_rma.html
+        url: /fas9500/bootmedia_complete_rma.html
         # END boot media
     - title: Chassis
       entries:
       - title: Overview
-        url: /a900/chassis_replace_overview.html
+        url: /fas9500/chassis_replace_overview.html
       - title: Shut down the impaired controller
-        url: /a900/chassis_replace_shutdown.html
+        url: /fas9500/chassis_replace_shutdown.html
       - title: Replace the hardware
-        url: /a900/chassis_replace_move_hardware.html
+        url: /fas9500/chassis_replace_move_hardware.html
       - title: Restoring and verifying configuration
-        url: /a900/chassis_replace_complete_system_restore_rma.html
+        url: /fas9500/chassis_replace_complete_system_restore_rma.html
       # START controller module replacement
     - title: Controller module
       entries:
       - title: Overview
-        url: /a900/controller_replace_overview.html
+        url: /fas9500/controller_replace_overview.html
       - title: Shut down the impaired controller
-        url: /a900/controller_replace_shutdown.html
+        url: /fas9500/controller_replace_shutdown.html
       - title: Replace the controller module hardware
-        url: /a900/controller_replace.html
+        url: /fas9500/controller_replace.html
       - title: Restore and verify the system configuration
-        url: /a900/controller_replace_system_config_restore_and_verify.html
+        url: /fas9500/controller_replace_system_config_restore_and_verify.html
       - title: Recable the system
-        url: /a900/controller_replace_recable_reassign_disks.html
+        url: /fas9500/controller_replace_recable_reassign_disks.html
       - title: Complete system restoration
-        url: /a900/controller_replace_complete_system_restoration_rma.html
+        url: /fas9500/controller_replace_complete_system_restoration_rma.html
       # END controller module replacement
       # START DIMM replace
     - title: DIMM
-      url: /a900/dimm_replace.html
+      url: /fas9500/dimm_replace.html
       # END DIMM replace
       # START DCPM battery replacement
     - title: Destage control power module
-      url: /a900/dcpm_NVRAM11_battery_replace.html
+      url: /fas9500/dcpm_NVRAM11_battery_replace.html
       # END DCPM battery replacement
       # START Fan
     - title: Fan
-      url: /a900/fan_swap_out.html
+      url: /fas9500/fan_swap_out.html
       # END fan
       # START I/O module replace
     - title: I/O module
-      url: /a900/pci_cards_and_risers_replace.html
+      url: /fas9500/pci_cards_and_risers_replace.html
       # END I/O module replace
   # START LED USB
     - title: LED USB module
-      url: /a900/led_module_replace.html
+      url: /fas9500/led_module_replace.html
   # END LED USB
       # START NVRAM module and/or NVRAM DIMMs replace
     - title: NVRAM module and/or NVRAM DIMMs
-      url: /a900/nvram_module_or_nvram_dimm_replacement.html
+      url: /fas9500/nvram_module_or_nvram_dimm_replacement.html
       # END NVRAM module and/or NVRAM DIMMs replace
       # START Power supply replacement
     - title: Power supply
-      url: /a900/power_supply_swap_out.html
+      url: /fas9500/power_supply_swap_out.html
       # END Power supply replace
     - title: RTC battery
-      url: /a900/rtc_battery_replace.html
+      url: /fas9500/rtc_battery_replace.html

@@ -1,10 +1,10 @@
 ---
-permalink: a900/controller_replace.html
+permalink: fas9500/controller_replace.html
 sidebar: sidebar
-keywords: AFF A900, open controller, download service image to USB drive, transfer boot image, USB drive, service image
+keywords: FAS9500, open controller, download service image to USB drive, transfer boot image, USB drive, service image
 summary: 'To replace the controller module hardware, you must remove the impaired node, move FRU components to the replacement controller module, install the replacement controller module in the chassis, and then boot the system to Maintenance mode.'
 ---
-= Replace the controller module hardware - AFF A900
+= Replace the controller module hardware - FAS9500
 :icons: font
 :imagesdir: ../media/
 

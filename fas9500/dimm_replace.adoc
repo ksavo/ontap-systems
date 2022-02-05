@@ -1,10 +1,10 @@
 ---
-permalink: a900/dimm_replace.html
+permalink: fas9500/dimm_replace.html
 sidebar: sidebar
 keywords:
 summary: 'You must replace a DIMM in the controller module when your system registers an increasing number of correctable error correction codes (ECC); failure to do so causes a system panic.'
 ---
-= Replace a DIMM - AFF A900
+= Replace a DIMM - FAS9500
 :icons: font
 :imagesdir: ../media/
 

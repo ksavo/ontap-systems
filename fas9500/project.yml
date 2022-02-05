@@ -8,13 +8,13 @@ homepage:
     - title: Install and setup
       links:
         - title: Quick steps
-          url: /a900/install_quick_guide.html
+          url: /fas9500/install_quick_guide.html
           entries:
           - title: Videos
-            url: /a900/install_videos.html
+            url: /fas9500/install_videos.html
           - title: Detailed steps
-            url: /a900/install_detailed_guide.html
+            url: /fas9500/install_detailed_guide.html
     - title: Maintain
       links:
         - title: Boot media
-          url: /a900/bootmedia_replace.html
+          url: /fas9500/bootmedia_replace.html

@@ -1,10 +1,10 @@
 ---
-permalink: a900/power_supply_swap_out.html
+permalink: fas9500/power_supply_swap_out.html
 sidebar: sidebar
 keywords:
 summary: 'Swapping out a power supply involves turning off, disconnecting, and removing the old power supply and installing, connecting, and turning on the replacement power supply.'
 ---
-= Swap out a power supply - AFF A900
+= Swap out a power supply - FAS9500
 :icons: font
 :imagesdir: ../media/
 

@@ -1,10 +1,10 @@
 ---
-permalink: a900/install_detailed_guide.html
+permalink: fas9500/install_detailed_guide.html
 sidebar: sidebar
-keywords: AFF A900
+keywords: FAS9500
 summary: 'This a gives detailed step-by-step instructions for installing a typical NetApp system.'
 ---
-= Detailed steps - AFF 900
+= Detailed steps - FAS9500
 :icons: font
 :imagesdir: ../media/
 
@@ -333,7 +333,7 @@ image:../media/oie_cable_sfp_gbe_copper.png[]
 
 == Step 4: Cable controllers to drive shelves
 
-=== Option 1: Cable the controllers to a single NS224 drive shelf in AFF A900
+=== Option 1: Cable the controllers to a single NS224 drive shelf in FAS9500
 
 [.lead]
 You must cable each controller to the NSM modules on the NS224 drive shelf on an AFF A900 system.
@@ -393,7 +393,7 @@ image:../media/oie_cable100_gbe_qsfp28.png[]
 
 . To complete setting up your system, see  <<Step 5: Complete system setup and configuration>>.
 
-=== Option 2: Cable the controllers to two NS224 drive shelves in AFF A900
+=== Option 2: Cable the controllers to two NS224 drive shelves in FAS9500
 
 [.lead]
 You must cable each controller to the NSM modules on the NS224 drive shelves.
