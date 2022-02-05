@@ -23,7 +23,8 @@ You can shut down or take over the impaired controller using different procedure
 
 include::../_include/shutdown_most_frus.adoc[]
 
-[.lead]
+=== Option 2: System in a MetroCluster
+
 include::../_include/shutdown_any_mcc_supported.adoc[]
 
 == Step 2: Remove the controller module
@@ -37,7 +38,7 @@ Make sure that you label the cables so that you know where they came from.
 . Release the power cable retainers, and then unplug the cables from the power supplies.
 . Insert your forefinger into the latching mechanism on either side of the controller module, press the lever with your thumb, and gently pull the controller a few inches out of the chassis.
 +
-NOTE: If you have difficulty removing the controller module, place your index fingers through the finger holes from the inside (by crossing your arms)
+NOTE: If you have difficulty removing the controller module, place your index fingers through the finger holes from the inside (by crossing your arms).
 +
 image::../media/drw_a250_pcm_remove_install.png[]
 +
@@ -68,7 +69,7 @@ Controller module cover.
 
 == Step 3: Replace or install a mezzanine card
 
-To replace a mezzanine card, you must remove the impaired card and install the replacement card; to install a mezzanine card, you must remove the face plate and install the new card.
+To replace a mezzanine card, you must remove the impaired card and install the replacement card; to install a mezzanine card, you must remove the faceplate and install the new card.
 
 Use the following video or the tabulated steps to replace a mezzanine card:
 
@@ -99,11 +100,11 @@ Make sure that you label the cables so that you know where they came from.
 
  .. Remove any SFP or QSFP modules that might be in the impaired mezzanine card and set it aside.
  .. Using the #1 magnetic screwdriver, remove the screws from the face of the controller module and set them aside safely on the magnet.
- .. Using the #1 magnetic screwdriver loosen the screw on the impaired mezzanine card.
- .. Gently lift the impaired mezzanine card directly out of the socket and set it aside
+ .. Using the #1 magnetic screwdriver, loosen the screw on the impaired mezzanine card.
+ .. Using the #1 magnetic screwdriver, gently lift the impaired mezzanine card directly out of the socket and set it aside. 
  .. Remove the replacement mezzanine card from the antistatic shipping bag and align it to the inside face of the controller module.
  .. Gently align the replacement mezzanine card into place.
- .. Using the #1 magnetic screwdriver insert and tighten the screws on the face of the controller module and on the mezzanine card.
+ .. Using the #1 magnetic screwdriver, insert and tighten the screws on the face of the controller module and on the mezzanine card.
 +
 NOTE: Do not apply force when tightening the screw on the mezzanine card; you might crack it.
 
@@ -114,7 +115,7 @@ NOTE: Do not apply force when tightening the screw on the mezzanine card; you mi
  .. Using the #1 magnetic screwdriver, remove the screws from the face of the controller module and the faceplate covering the mezzanine card slot, and set them aside safely on the magnet.
  .. Remove the mezzanine card from the antistatic shipping bag and align it to the inside face of the controller module.
  .. Gently align the mezzanine card into place.
- .. Using the #1 magnetic screwdriver insert and tighten the screws on the face of the controller module and on the mezzanine card.
+ .. Using the #1 magnetic screwdriver, insert and tighten the screws on the face of the controller module and on the mezzanine card.
 +
 NOTE: Do not apply force when tightening the screw on the mezzanine card; you might crack it.
 
