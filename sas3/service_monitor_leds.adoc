@@ -279,7 +279,7 @@ The power is turned off.
 When the drive drawer is open, an attention LED can be seen in front of each drive.
 
 image::../media/2860_dwg_amber_on_drive.gif[]
-
+[cols="10,90"]
 |===
 a|
 image:../media/legend_icon_01.png[]|

@@ -36,7 +36,7 @@ Make sure that you label the cables so that you know where they came from.
 . Release the power cable retainers, and then unplug the cables from the power supplies.
 . Insert your forefinger into the latching mechanism on either side of the controller module, press the lever with your thumb, and gently pull the controller a few inches out of the chassis.
 +
-NOTE: If you have difficulty removing the controller module, place your index fingers through the finger holes from the inside (by crossing your arms)
+NOTE: If you have difficulty removing the controller module, place your index fingers through the finger holes from the inside (by crossing your arms).
 +
 image::../media/drw_a250_pcm_remove_install.png[]
 +
@@ -65,10 +65,10 @@ a|
 Controller module cover.
 |===
 
-== Step 3: Replace the NV battery
+== Step 3: Replace the NVMEM battery
 
 [.lead]
-To replace the NV battery, you must remove the failed battery from the controller module and install the replacement battery into the controller module.
+To replace the NVMEM battery, you must remove the failed battery from the controller module and install the replacement battery into the controller module.
 
 Use the following video or the tabulated steps to replace the NVMEM battery:
 
@@ -98,16 +98,16 @@ a|
 Lift the battery out of the holder and controller module.
 |===
 
- .. Locate the battery plug and squeeze the clip on the face of the battery plug to release the plug from the socket.
- .. Grasp the battery and press the blue locking tab marked PUSH, and then lift the battery out of the holder and controller module and set it aside.
- .. Remove the replacement NV battery from the antistatic shipping bag and align it to the battery holder.
- .. Insert the replacement NV battery plug into the socket.
- .. Slide the battery pack down along the sheet metal side wall until the support tabs on the side wall hook into the slots on the battery pack, and the battery pack latch engages and clicks into the opening on the side wall.
- .. Press firmly down on the battery pack to make sure that it is locked into place.
+. Locate the battery plug and squeeze the clip on the face of the battery plug to release the plug from the socket.
+. Grasp the battery and press the blue locking tab marked PUSH, and then lift the battery out of the holder and controller module and set it aside.
+. Remove the replacement NV battery from the antistatic shipping bag and align it to the battery holder.
+. Insert the replacement NV battery plug into the socket.
+. Slide the battery pack down along the sheet metal side wall until the support tabs on the side wall hook into the slots on the battery pack, and the battery pack latch engages and clicks into the opening on the side wall.
+. Press firmly down on the battery pack to make sure that it is locked into place.
 
 == Step 4: Install the controller module
 
-After you have replaced the component in the controller module, you must re-install the controller module into the chassis, and then boot it to Maintenance mode.
+After you have replaced the component in the controller module, you must reinstall the controller module into the chassis, and then boot it to Maintenance mode.
 
 You can use the following illustration or the written steps to install the replacement controller module in the chassis.
 
