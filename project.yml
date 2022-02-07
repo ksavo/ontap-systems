@@ -18,7 +18,6 @@ sidebar:
     - section: a320
     - section: a400
     - section: fas9000
-    - section: fas9500
     - section: a700s
     - section: a800
     - section: a900
@@ -27,6 +26,7 @@ sidebar:
     - section: fas500f
     - section: fas8200
     - section: fas8300
+    - section: fas9500
     - section: platform-supplemental
     - section: ns224
     - section: sas3
