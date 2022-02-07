@@ -25,5 +25,7 @@ Press Ctrl-C, and then respond `y`.
 a|
 System prompt or password prompt (enter system password)
 a|
-Take over or halt the impaired node: `storage failover takeover -ofnode _impaired_node_name_`    When the impaired node shows Waiting for giveback..., press Ctrl-C, and then respond `y`.
+Take over or halt the impaired node from the healthy node: `storage failover takeover -ofnode _impaired_node_name_`
++
+When the impaired node shows Waiting for giveback..., press Ctrl-C, and then respond `y`.
 |===

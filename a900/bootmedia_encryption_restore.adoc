@@ -86,7 +86,7 @@ NOTE: Terminating CIFS can cause loss of data.
 
  ** If the command fails because the partner "not ready", wait 5 minutes for the NVRAMs to synchronize.
  ** If the command fails because of an NDMP, SnapMirror, or SnapVault process, disable the process. See the appropriate content for more information.
-. Once the giveback completes, check the failover and giveback status with the `storage failover show` and storage failover show-giveback commands.
+. Once the giveback completes, check the failover and giveback status with the `storage failover show` and `storage failover show-giveback` commands.
 +
 Only the CFO aggregates (root aggregate and CFO style data aggregates) will be shown.
 
@@ -130,7 +130,7 @@ Waiting for giveback...
 a|
 
  .. Log into the partner node.
- .. Confirm the target node is ready for giveback with the storage failover show command.
+ .. Confirm the target node is ready for giveback with the `storage failover show` command.
 
 +
 |===
@@ -143,6 +143,7 @@ NOTE: Terminating CIFS can cause loss of data.
 
  ** If the command fails because the partner is "not ready", wait 5 minutes for the NVMEMs to synchronize.
  ** If the command fails because of an NDMP, SnapMirror, or SnapVault process, disable the process. See the appropriate content for more information.
+
 . Wait 3 minutes and check the failover status with the storage failover show command.
 . At the clustershell prompt, enter the `net int show -is-home false` command to list the logical interfaces that are not on their home node and port.
 +
