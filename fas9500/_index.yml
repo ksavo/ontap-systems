@@ -25,6 +25,8 @@ indexpage:
           url: /bootmedia_replace_overview.html
         - title: Chassis
           url: /chassis_replace_overview.html
+        - title: Caching module hot-swap
+          url: /caching_module_hot_swap.html
         - title: Controller module
           url: /controller_replace_overview.html
         - title: DIMM
