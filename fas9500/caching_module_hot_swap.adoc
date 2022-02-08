@@ -1,5 +1,5 @@
 ---
-permalink: fas9500/caching-module-hot-swap.html
+permalink: fas9500/caching_module_hot_swap.html
 sidebar: sidebar
 keywords: aff a700, fas9000, hot swap, replace, FlashCache
 summary: "The NVMe SSD FlashCache modules (FlashCache or caching modules) are located in the front of the NVRAM10 module in Slot 6 of FAS9000 systems only. Beginning with ONTAP 9.4, you can hot-swap the caching module of the same capacity from the same or different supported vendor."
