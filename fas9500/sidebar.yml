@@ -36,8 +36,8 @@ entries:
       - title: Return the failed part to NetApp
         url: /fas9500/bootmedia_complete_rma.html
         # END boot media
-      - title: Caching module 
-        url: /fas9500/caching_module_hot_swap.html
+    - title: Caching module
+      url: /fas9500/caching_module_hot_swap.html
     - title: Chassis
       entries:
       - title: Overview
