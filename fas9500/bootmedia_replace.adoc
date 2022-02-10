@@ -46,7 +46,11 @@ Make sure that you support the bottom of the controller module as you slide it o
 
 . Place the controller module lid-side up on a stable, flat surface, press the blue button on the cover, slide the cover to the back of the controller module, and then swing the cover up and lift it off of the controller module.
 +
+<<<<<<< HEAD
 image::../media/drw_9500_PCM_open_source.png[Alternative text",pdfwidth=100%]
+=======
+image::../media/drw_9500_PCM_open_source.png[Alternative text",pdfwidth=50%]
+>>>>>>> 3de5e926cf6402dc452ba97e3b38457038652621
 +
 [cols="10,90"]
 |===
@@ -69,7 +73,11 @@ You must locate the boot media in the controller and follow the directions to re
 https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=c5080658-765e-4d29-8456-adf2000e1495[Animation -- replace boot media^]
 
 +
+<<<<<<< HEAD
 image::../media/drw_9500_remove_boot_dev_source.png[Alternative text",pdfwidth=100%]
+=======
+image::../media/drw_9500_remove_boot_dev_source.png[Alternative text",pdfwidth=50%]
+>>>>>>> 3de5e926cf6402dc452ba97e3b38457038652621
 +
 [cols="10,90"]
 |===
