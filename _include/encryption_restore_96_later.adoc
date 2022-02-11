@@ -73,7 +73,7 @@ NOTE: Terminating CIFS can cause loss of data.
 
  ** If the command fails because the partner "not ready", wait 5 minutes for the NVMEMs to synchronize.
  ** If the command fails because of an NDMP, SnapMirror, or SnapVault process, disable the process. See the appropriate Documentation Center for more information.
-. Once the giveback completes, check the failover and giveback status with the `storage failover show` and `storage failover show-giveback` commands.
+. Once the giveback completes, check the failover and giveback status with the `storage failover show` and ``storage failover show`-giveback` commands.
 +
 Only the CFO aggregates (root aggregate and CFO style data aggregates) will be shown.
 

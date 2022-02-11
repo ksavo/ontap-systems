@@ -23,13 +23,13 @@ If the storage system is in an HA pair, the system ID of the new controller modu
 This procedure applies only to systems running ONTAP in an HA pair.
 
 . If the _replacement_ node is in Maintenance mode (showing the `*>` prompt, exit Maintenance mode and go to the LOADER prompt: `halt`
-. From the LOADER prompt on the _replacement_ node, boot the node, entering `y` if you are prompted to override the system ID due to a system ID mismatch.``boot_ontap``
+. From the LOADER prompt on the _replacement_ node, boot the node, entering `y` if you are prompted to override the system ID due to a system ID mismatch:``boot_ontap``
 . Wait until the `Waiting for giveback...` message is displayed on the _replacement_ node console and then, from the healthy node, verify that the new partner system ID has been automatically assigned: `storage failover show`
 +
 In the command output, you should see a message that the system ID has changed on the impaired node, showing the correct old and new IDs. In the following example, node2 has undergone replacement and has a new system ID of 151759706.
 +
 ----
-node1> storage failover show
+node1> `storage failover show`
                                     Takeover
 Node              Partner           Possible     State Description
 ------------      ------------      --------     -------------------------------------
@@ -68,7 +68,7 @@ The output from the `storage failover show` command should not include the Syste
 The disks belonging to the _replacement_ node should show the new system ID. In the following example, the disks owned by node1 now show the new system ID, 1873775277:
 +
 ----
-node1> storage disk show -ownership
+node1> `storage disk show -ownership`
 
 Disk  Aggregate Home  Owner  DR Home  Home ID    Owner ID  DR Home ID Reserver  Pool
 ----- ------    ----- ------ -------- -------    -------    -------  ---------  ---
