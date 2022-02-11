@@ -1,0 +1,134 @@
+---
+permalink: fas9500/chassis_replace_complete_system_restore_rma.html
+sidebar: sidebar
+keywords: aff fas9500, verify and set HA state, run diagnostics, complete the replacement process
+summary: "You must verify the HA state of the chassis, run diagnostics, and return the failed part to NetApp, as described in the RMA instructions shipped with the kit."
+---
+= Restoring and verifying the configuration - FAS9500
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+
+To complete the chassis replacement, you must complete specific tasks.
+
+== Step 1: Verifying and setting the HA state of the chassis
+
+[.lead]
+You must verify the HA state of the chassis, and, if necessary, update the state to match your system configuration.
+
+. In Maintenance mode, from either controller module, display the HA state of the local controller module and chassis: `ha-config show`
++
+The HA state should be the same for all components.
+
+. If the displayed system state for the chassis does not match your system configuration:
+ .. Set the HA state for the chassis: `ha-config modify chassis _ha-state_`
++
+The value for HA-state can be one of the following:
+
+  *** ha
+  *** non-ha
+
+. Confirm that the setting has changed: `ha-config show`
+. If you have not already done so, recable the rest of your system.
+
+== Step 2: Run system-level diagnostics
+
+[.lead]
+After installing a new chassis, you should run interconnect diagnostics.
+
+.Before you begin
+Your system must be at the LOADER prompt to start System Level Diagnostics.
+
+All commands in the diagnostic procedures are issued from the node where the component is being replaced.
+
+. If the node to be serviced is not at the LOADER prompt, perform the following steps:
+ .. Select the Maintenance mode option from the displayed menu.
+ .. After the node boots to Maintenance mode, halt the node: `halt`
++
+After you issue the command, you should wait until the system stops at the LOADER prompt.
++
+NOTE: During the boot process, you can safely respond `y` to prompts:
+. Repeat the previous step on the second node if you are in an HA configuration.
++
+NOTE: Both controllers must be in Maintenance mode to run the interconnect test.
+
+. At the LOADER prompt, access the special drivers specifically designed for system-level diagnostics to function properly: `boot_diags`
++
+During the boot process, you can safely respond `y` to the prompts until the Maintenance mode prompt (*>) appears.
+
+. Enable the interconnect diagnostics tests from the Maintenance mode prompt: `sldiag device modify -dev interconnect -sel enable`
++
+The interconnect tests are disabled by default and must be enabled to run separately.
+
+. Run the interconnect diagnostics test from the Maintenance mode prompt: `sldiag device run -dev interconnect`
++
+You only need to run the interconnect test from one controller.
+
+. Verify that no hardware problems resulted from the replacement of the chassis: `sldiag device status -dev interconnect -long -state failed`
++
+System-level diagnostics returns you to the prompt if there are no test failures, or lists the full status of failures resulting from testing the component.
+
+. Proceed based on the result of the preceding step.
+
+[options="header"]
+|===
+| If the system-level diagnostics tests...| Then...
+a|
+Were completed without any failures
+a|
+
+ .. Clear the status logs: `sldiag device clearstatus`
+ .. Verify that the log was cleared: `sldiag device status`
++
+The following default response is displayed:
++
+----
+SLDIAG: No log messages are present.
+----
+
+ .. Exit Maintenance mode on both controllers: `halt`
++
+The system displays the LOADER prompt.
++
+NOTE: You must exit Maintenance mode on both controllers before proceeding any further.
+
+ .. Enter the following command on both controllers at the LOADER prompt: `bye`
+ .. Return the node to normal operation.
++
+|===
+
+[options="header"]
+|===
+| If your system is running ONTAP...| Then...
+a|
+With two nodes in the cluster
+a|
+Issue these commands: `node::> cluster ha modify -configured true``node::> storage failover modify -node node0 -enabled true`
+a|
+With more than two nodes in the cluster
+a|
+Issue this command:``node::> storage failover modify -node node0 -enabled true``
+a|
+In a stand-alone configuration
+a|
+You have no further steps in this particular task.
+ You have completed system-level diagnostics.
+
+a|
+Resulted in some test failures
+a|
+Determine the cause of the problem.
+
+ .. Exit Maintenance mode: `halt`
+ .. Perform a clean shutdown, and then disconnect the power supplies.
+ .. Verify that you have observed all of the considerations identified for running system-level diagnostics, that cables are securely connected, and that hardware components are properly installed in the storage system.
+ .. Reconnect the power supplies, and then power on the storage system.
+ .. Rerun the system-level diagnostics test.
+
++
+|===
+== Step 3: Return the failed part to NetApp
+
+[.lead]
+include::../_include/complete_rma.adoc[]
