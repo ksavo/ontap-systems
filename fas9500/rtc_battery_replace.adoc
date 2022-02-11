@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords:
 summary: ''
 ---
-= Replacing the real-time clock battery - s
+= Replacing the real-time clock battery - FAS9500
 :icons: font
 :imagesdir: ../media/
 

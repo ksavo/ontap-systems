@@ -6,5 +6,5 @@ Restore Storage or Volume Encryption functionality by using the appropriate proc
 
 Use one of the following procedures, depending on whether you are using onboard or external key management:
 
- ** "`Restoring onboard key management encryption keys`"
- ** "`Restoring external key management encryption keys`"
+ ** https://docs.netapp.com/us-en/ontap/encryption-at-rest/restore-onboard-key-management-encryption-keys-task.html[Restoring onboard key management encryption keys]
+ ** https://docs.netapp.com/us-en/ontap/encryption-at-rest/restore-external-encryption-keys-93-later-task.html[Restoring external key management encryption keys] 
