@@ -27,7 +27,7 @@ https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=256721fd-4c2e-40b
 +
 image::../media/drw_9500_remove_PCM_source.png["Alternative text",pdfwidth=50%]
 +
-image::../media/drw_9500_remove_PCM_source.svg[SVG test graphic]
+image::../media/drw_9500_remove_PCM_source.svg[]
 +
 [cols="10,90"]
 |===
@@ -50,7 +50,7 @@ Make sure that you support the bottom of the controller module as you slide it o
 +
 image::../media/drw_9500_PCM_open_source.png[Alternative text",pdfwidth=50%]
 +
-image::../media/drw_9500_PCM_open_source.svg[SVG test graphic]
+image::../media/drw_9500_PCM_open_source.svg[]
 
 [cols="10,90"]
 |===
@@ -77,7 +77,7 @@ https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=c5080658-765e-4d2
 
 image::../media/drw_9500_remove_boot_dev_source.png[Alternative text",pdfwidth=50%]
 +
-image::../media/drw_9500_remove_boot_dev_source.svg[SVG test graphic]
+image::../media/drw_9500_remove_boot_dev_source.svg[]
 
 +
 [cols="10,90"]
