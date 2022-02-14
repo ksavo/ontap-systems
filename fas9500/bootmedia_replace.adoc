@@ -27,6 +27,8 @@ https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=256721fd-4c2e-40b
 +
 image::../media/drw_9500_remove_PCM_source.png["Alternative text",pdfwidth=50%]
 +
+image::../media/drw_9500_remove_PCM_source.svg[SVG test graphic]
++
 [cols="10,90"]
 |===
 a|
@@ -47,6 +49,8 @@ Make sure that you support the bottom of the controller module as you slide it o
 . Place the controller module lid-side up on a stable, flat surface, press the blue button on the cover, slide the cover to the back of the controller module, and then swing the cover up and lift it off of the controller module.
 +
 image::../media/drw_9500_PCM_open_source.png[Alternative text",pdfwidth=50%]
++
+image::../media/drw_9500_PCM_open_source.svg[SVG test graphic]
 
 [cols="10,90"]
 |===
@@ -71,6 +75,8 @@ https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=c5080658-765e-4d2
 +
 
 image::../media/drw_9500_remove_boot_dev_source.png[Alternative text",pdfwidth=50%]
++
+image::../media/drw_9500_remove_boot_dev_source.svg[SVG test graphic]
 
 +
 [cols="10,90"]
