@@ -55,7 +55,8 @@ image::../media/drw_9500_PCM_open_source.svg[SVG test graphic]
 [cols="10,90"]
 |===
 a|
-image:../media/legend_icon_01.png[] a|
+image:../media/legend_icon_01.png[]
+a|
 Controller module cover locking button
 |===
 
