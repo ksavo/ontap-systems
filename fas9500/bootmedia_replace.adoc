@@ -25,9 +25,9 @@ To access components inside the controller, you must first remove the controller
 https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=256721fd-4c2e-40b3-841a-adf2000df5fa[Animation -- Remove the controller^]
 
 +
-image::../media/drw_9500_remove_PCM_source.png["base"]
+image::../media/drw_9500_remove_PCM_source.png[width=400px]
 +
-image::../media/drw_9500_remove_PCM_source.svg["base"]
+image::../media/drw_9500_remove_PCM_source.svg[width=450px]
 +
 [cols="10,90"]
 |===
