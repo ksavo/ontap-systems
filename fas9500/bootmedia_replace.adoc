@@ -25,7 +25,7 @@ To access components inside the controller, you must first remove the controller
 https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=256721fd-4c2e-40b3-841a-adf2000df5fa[Animation -- Remove the controller^]
 
 +
-image::../media/drw_9500_remove_PCM_source.png["Alternative text",pdfwidth=50%]
+image::../media/drw_9500_remove_PCM_source.png["base"]
 +
 image::../media/drw_9500_remove_PCM_source.svg["base"]
 +
@@ -48,7 +48,7 @@ Make sure that you support the bottom of the controller module as you slide it o
 
 . Place the controller module lid-side up on a stable, flat surface, press the blue button on the cover, slide the cover to the back of the controller module, and then swing the cover up and lift it off of the controller module.
 +
-image::../media/drw_9500_PCM_open_source.png[Alternative text",pdfwidth=50%]
+image::../media/drw_9500_PCM_open_source.png[Alternative text",width=500px ]
 +
 image::../media/drw_9500_PCM_open_source.svg["500 pixels wide",width=500px]
 
@@ -75,7 +75,7 @@ https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=c5080658-765e-4d2
 
 +
 
-image::../media/drw_9500_remove_boot_dev_source.png[Alternative text",widt=500px, pdfwidth=6in]
+image::../media/drw_9500_remove_boot_dev_source.png[Alternative text",width=500px, pdfwidth=6in]
 +
 image::../media/drw_9500_remove_boot_dev_source.svg["PDFwidth @50%",width=500px, pdfwidth=6in]
 
