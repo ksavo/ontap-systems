@@ -241,7 +241,7 @@ image:../media/oie_cable100_gbe_qsfp28.png[]
 a|
 image::../media/oie_legend_icon_4_dr.png[]
 
-image::../media/oie_legend_icon_4_dr.png[width=30px]
+image::../media/oie_legend_icon_4_dr.svg[width=30px]
 a|
 Cable 32 Gb FC connections:
 
