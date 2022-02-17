@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: fas2700, aff a220, replace, boot, media, controller, module, fru map
 summary: 'You must locate the boot media in the controller and follow the directions to replace it.'
 ---
-= Remove the controller module, replace the boot media and transfer the boot image to the boot media - AFF A220 and FAS2700
+= Replace the boot media - AFF A220 and FAS2700
 :icons: font
 :imagesdir: ../media/
 
