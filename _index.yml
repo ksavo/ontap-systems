@@ -27,6 +27,8 @@ indexpage:
           url: /a700s/index.html
         - title: AFF A800
           url: /a800/index.html
+        - title: AFF A900
+          url: /a900/index.html
     - title: FAS systems
       links:
         - title: FAS500f

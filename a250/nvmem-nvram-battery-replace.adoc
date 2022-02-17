@@ -15,21 +15,18 @@ All other components in the system must be functioning properly; if not, you mus
 
 == Step 1: Shut down the impaired controller
 
-[.lead]
 You can shut down or take over the impaired controller using different procedures, depending on the storage system hardware configuration.
 
 === Option 1: Most configurations
-[.lead]
+
 include::../_include/shutdown_most_frus.adoc[]
 
 === Option 2: System is in a MetroCluster
 
-[.lead]
 include::../_include/shutdown_any_mcc_supported.adoc[]
 
 == Step 2: Remove the controller module
 
-[.lead]
 You must remove the controller module from the chassis when you replace a component inside the controller module.
 
 Make sure that you label the cables so that you know where they came from.
@@ -39,7 +36,7 @@ Make sure that you label the cables so that you know where they came from.
 . Release the power cable retainers, and then unplug the cables from the power supplies.
 . Insert your forefinger into the latching mechanism on either side of the controller module, press the lever with your thumb, and gently pull the controller a few inches out of the chassis.
 +
-NOTE: If you have difficulty removing the controller module, place your index fingers through the finger holes from the inside (by crossing your arms)
+NOTE: If you have difficulty removing the controller module, place your index fingers through the finger holes from the inside (by crossing your arms).
 +
 image::../media/drw_a250_pcm_remove_install.png[]
 +
@@ -68,14 +65,14 @@ a|
 Controller module cover.
 |===
 
-== Step 3: Replace the NV battery
+== Step 3: Replace the NVMEM battery
 
 [.lead]
-To replace the NV battery, you must remove the failed battery from the controller module and install the replacement battery into the controller module.
+To replace the NVMEM battery, you must remove the failed battery from the controller module and install the replacement battery into the controller module.
 
 Use the following video or the tabulated steps to replace the NVMEM battery:
 
-https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=89f6d5c3-1a5b-4500-8ba8-ac5b01653050[Replacing the NVMEM battery]
+link:https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=89f6d5c3-1a5b-4500-8ba8-ac5b01653050[Replacing the NVMEM battery^]
 
 . Locate and replace the impaired NVMEM battery on your controller module.
 +
@@ -101,17 +98,16 @@ a|
 Lift the battery out of the holder and controller module.
 |===
 
- .. Locate the battery plug and squeeze the clip on the face of the battery plug to release the plug from the socket.
- .. Grasp the battery and press the blue locking tab marked PUSH, and then lift the battery out of the holder and controller module and set it aside.
- .. Remove the replacement NV battery from the antistatic shipping bag and align it to the battery holder.
- .. Insert the replacement NV battery plug into the socket.
- .. Slide the battery pack down along the sheet metal side wall until the support tabs on the side wall hook into the slots on the battery pack, and the battery pack latch engages and clicks into the opening on the side wall.
- .. Press firmly down on the battery pack to make sure that it is locked into place.
+. Locate the battery plug and squeeze the clip on the face of the battery plug to release the plug from the socket.
+. Grasp the battery and press the blue locking tab marked PUSH, and then lift the battery out of the holder and controller module and set it aside.
+. Remove the replacement NV battery from the antistatic shipping bag and align it to the battery holder.
+. Insert the replacement NV battery plug into the socket.
+. Slide the battery pack down along the sheet metal side wall until the support tabs on the side wall hook into the slots on the battery pack, and the battery pack latch engages and clicks into the opening on the side wall.
+. Press firmly down on the battery pack to make sure that it is locked into place.
 
 == Step 4: Install the controller module
 
-[.lead]
-After you have replaced the component in the controller module, you must re-install the controller module into the chassis, and then boot it to Maintenance mode.
+After you have replaced the component in the controller module, you must reinstall the controller module into the chassis, and then boot it to Maintenance mode.
 
 You can use the following illustration or the written steps to install the replacement controller module in the chassis.
 
@@ -146,7 +142,6 @@ NOTE: You will connect the rest of the cables to the controller module later in 
 
 == Step 5: Run diagnostics
 
-[.lead]
 After you have replaced a component in your system, you should run diagnostic tests on that component.
 
 Your system must be at the LOADER prompt to start diagnostics.
@@ -166,5 +161,4 @@ After you issue the command, you should wait until the system stops at the LOADE
 
 == Step 6: Return the failed part to NetApp
 
-[.lead]
 include::../_include/complete_rma.adoc[]

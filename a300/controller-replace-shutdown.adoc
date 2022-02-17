@@ -13,15 +13,12 @@ You can shut down or take over the impaired controller using different procedure
 
 == Option 1: Most configurations
 
-[.lead]
 include::../_include/shutdown_controller.adoc[]
 
 == Option 2: Controller is in a two-node MetroCluster configuration
 
-[.lead]
 include::../_include/shutdown_2n_mcc.adoc[]
 
 == Option 3: Controller is in a two-node MetroCluster
 
-[.lead]
 include::../_include/shutdown_2n_mcc.adoc[]

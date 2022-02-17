@@ -13,17 +13,16 @@ You must replace the caching module in the controller module when your system re
 
 * You must replace the failed component with a replacement FRU component you received from your provider.
 
-link:https://youtu.be/Rc-EQT-HAxU[AFF FAS2600 caching module replacement video]
+link:https://youtu.be/Rc-EQT-HAxU[AFF FAS2600 caching module replacement video^]
 
 == Step 1: Shut down the impaired controller
 
-[.lead]
 You can shut down or take over the impaired controller using different procedures, depending on the storage system hardware configuration.
 
 .About this task
 If you have a cluster with more than two nodes, it must be in quorum. If the cluster is not in quorum or a healthy node shows false for eligibility and health, you must correct the issue before shutting down the impaired node.
 
-http://docs.netapp.com/ontap-9/topic/com.netapp.doc.dot-cm-sag/home.html[ONTAP 9 System Administration Reference]
+http://docs.netapp.com/ontap-9/topic/com.netapp.doc.dot-cm-sag/home.html[ONTAP 9 System Administration Reference^]
 
 You might want to erase the contents of your caching module before replacing it.
 
@@ -61,9 +60,8 @@ When the impaired node shows Waiting for giveback..., press Ctrl-C, and then res
 
 . If the system has only one controller module in the chassis, turn off the power supplies, and then unplug the impaired node's power cords from the power source.
 
-== Step 2: Open the system
+== Step 2: Remove controller module 
 
-[.lead]
 To access components inside the controller, you must first remove the controller module from the system and then remove the cover on the controller module.
 
 . If you are not already grounded, properly ground yourself.
@@ -86,7 +84,6 @@ image::../media/drw_2600_opening_pcm_cover.png[]
 
 == Step 3: Replace a caching module
 
-[.lead]
 To replace a caching module referred to as the M.2 PCIe card on the label on your controller, locate the slot inside the controller and follow the specific sequence of steps.
 
 Your storage system must meet certain criteria depending on your situation:
@@ -112,7 +109,6 @@ If necessary, remove the caching module and reseat it into the socket.
 
 == Step 4: Reinstall the controller module
 
-[.lead]
 After you replace components in the controller module, reinstall it into the chassis.
 
 . If you have not already done so, replace the cover on the controller module.
@@ -168,7 +164,6 @@ NOTE: If you miss the prompt and the controller module boots to ONTAP, enter `ha
 
 == Step 5: Run system-level diagnostics
 
-[.lead]
 After installing a new caching module, you should run diagnostics.
 
 Your system must be at the LOADER prompt to start System Level Diagnostics.
@@ -191,10 +186,8 @@ During the boot process, you can safely respond `y` to the prompts until the Mai
 +
 System-level diagnostics returns you to the prompt if there are no test failures, or lists the full status of failures resulting from testing the component.
 
-[.lead]
 include::../_include/sldiags-proceed-step.adoc[]
 
 == Step 6: Return the failed part to NetApp
 
-[.lead]
 include::../_include/complete_rma.adoc[]

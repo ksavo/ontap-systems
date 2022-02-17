@@ -66,14 +66,14 @@ The system boots to Waiting for giveback... prompt.
 . Move the console cable to the partner node and login as "admin".
 . Confirm the target node is ready for giveback with the `storage failover show` command.
 . Giveback only the CFO aggregates with the `storage failover giveback -fromnode local -only-cfo-aggregates true` command.
- ** If the command fails because of a failed disk, physically dis-engage the failed disk, but leave the disk in the slot until a replacement is received.
+ ** If the command fails because of a failed disk, physically disengage the failed disk, but leave the disk in the slot until a replacement is received.
  ** If the command fails because of an open CIFS sessions, check with customer how to close out CIFS sessions.
 +
 NOTE: Terminating CIFS can cause loss of data.
 
  ** If the command fails because the partner "not ready", wait 5 minutes for the NVMEMs to synchronize.
  ** If the command fails because of an NDMP, SnapMirror, or SnapVault process, disable the process. See the appropriate Documentation Center for more information.
-. Once the giveback completes, check the failover and giveback status with the `storage failover show` and `storage failover show-giveback` commands.
+. Once the giveback completes, check the failover and giveback status with the `storage failover show` and ``storage failover show`-giveback` commands.
 +
 Only the CFO aggregates (root aggregate and CFO style data aggregates) will be shown.
 
@@ -122,7 +122,7 @@ a|
 |===
 
 . Move the console cable to the partner node and give back the target node storage using the `storage failover giveback -fromnode local -only-cfo-aggregates true local` command.
- ** If the command fails because of a failed disk, physically dis-engage the failed disk, but leave the disk in the slot until a replacement is received.
+ ** If the command fails because of a failed disk, physically disengage the failed disk, but leave the disk in the slot until a replacement is received.
  ** If the command fails because of an open CIFS sessions, check with customer how to close out CIFS sessions.
 +
 NOTE: Terminating CIFS can cause loss of data.

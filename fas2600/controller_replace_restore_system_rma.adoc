@@ -8,22 +8,21 @@ summary: "To restore your system to full operation, you must restore the NetApp 
 :icons: font
 :imagesdir: ../media/
 
-== Step 1: Install licenses for the _replacement_ node in ONTAP
-
 [.lead]
+To restore your system to full operation, you must restore the NetApp Storage Encryption configuration (if necessary), and install licenses for the new controller, and return the failed part to NetApp, as described in the RMA instructions shipped with the kit.
+
+== Step 1: Install licenses for the replacement node in ONTAP
+
 include::../_include/install_licenses.adoc[]
 
 == Step 2: Restore Storage and Volume Encryption functionality
 
-[.lead]
 include::../_include/restore_storage_encryption.adoc[]
 
 == Step 3: Verify LIFs and register the serial number
 
-[.lead]
 include::../_include/check_lifs_register_serial_number.adoc[]
 
 == Step 4: Return the failed part to NetApp
 
-[.lead]
 include::../_include/complete_rma.adoc[]
