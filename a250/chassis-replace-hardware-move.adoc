@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: a250, move, drives, install, controller
 summary: "You must move the power supplies, NVMe drives, and controller module or modules from the impaired chassis to the new chassis, and swap out the impaired chassis from the equipment rack or system cabinet with the new chassis of the same model as the impaired chassis."
 ---
-= Move hardware - AFF A250
+= Replace hardware - AFF A250
 :icons: font
 :imagesdir: ../media/
 
