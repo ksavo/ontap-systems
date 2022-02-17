@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: aff a400, aff, a400, procedure, boot, impair, node, recovery, image, system, two-node, metrocluster, configuration, boot the recovery image
 summary: The procedure for booting the impaired node from the recovery image depends on whether the system is in a two-node MetroCluster configuration.
 ---
-= Booting the recovery image - AFF A400
+= Boot the recovery image - AFF A400
 :icons: font
 :imagesdir: ../media/
 
