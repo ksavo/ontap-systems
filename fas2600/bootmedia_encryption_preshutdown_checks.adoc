@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: fas2600, shutdown, checks, onboard, encryption, keys, impaired node, disable, automatic, feedback
 summary: 'Prior to shutting down the impaired node and checking the status of the onboard encryption keys, you must check the status of the impaired node, disable automatic giveback, and check what version of ONTAP the system is running.'
 ---
-= Check onboard encryption keys as needed - FAS2600
+= Check onboard encryption keys - FAS2600
 :icons: font
 :imagesdir: ../media/
 

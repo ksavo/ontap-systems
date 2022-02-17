@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: aff c190, replace, boot, media, controller, module, fru map
 summary: 'You must locate the boot media in the controller module, and then follow the directions to replace it.'
 ---
-= Remove the controller module, replace the boot media and transfer the boot image to the boot media - AFF C190
+= Replace the boot media - AFF C190
 :icons: font
 :imagesdir: ../media/
 

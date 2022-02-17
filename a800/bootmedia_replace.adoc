@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: aff a800, aff, a800, locate, fail, boot, media, controller, module, removing, remove, riser, replace the boot media
 summary: You locate the failed boot media in the controller module by removing Riser 3 on the controller module before you can replace the boot media.
 ---
-= Remove the controller module, replace the boot media and transfer the boot image to the boot media - AFF A800
+= Replace the boot media - AFF A800
 :icons: font
 :imagesdir: ../media/
 
