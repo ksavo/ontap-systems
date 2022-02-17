@@ -1,0 +1,5465 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head class="at-element-marker">
+  <title>Replace the DCPM module - AFF A700 and FAS9000</title>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge,chrome=1">
+  <meta http-equiv="language" content="en">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta property="og:title" content="Replace the DCPM module - AFF A700 and FAS9000" />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="https://docs.netapp.com/us-en/ontap-systems/fas9000/dcpm-power-replace.html" />
+	<meta property="og:description" content="To replace the DCPM module in your system, you must remove the failed DCPM module from the system and then replace it with a new DCPM module." />
+  <meta property="og:image" content="https://docs.netapp.com/us-en/ontap-systems/images/logo-tophat-social.png" />
+  <meta property="og:image:alt" content="NetApp Logo" />
+  <meta name="format-detection" content="telephone=no">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="encoding" content="utf-8">
+  <meta http-equiv="nss-type" content="Product Documentation"/>
+  <meta http-equiv="nss-subtype" content="User Guide"/>
+  
+  <meta name="description" content="To replace the DCPM module in your system, you must remove the failed DCPM module from the system and then replace it with a new DCPM module.">
+  <meta name="keywords" content=" aff a700, fas9000, replace, dcpm, module, fail">
+  
+  
+
+  <!-- Icons -->
+  <link rel="icon" href="/us-en/ontap-systems/images/favicon.ico" type="image/x-icon">
+
+  <!-- RSS Feed -->
+  
+
+  <!-- CSS Definitions: NetApp CSS should be defined after generic css -->
+
+  <!-- Elastic Search -->
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/searchkit/0.10.0/theme.css">
+
+  <!-- Controls AsciiDoctor Admonition Blocks -->
+  <link rel="stylesheet" type="text/css" href="/us-en/ontap-systems/css/font-awesome.min.css">
+
+  <!-- Controls the shadow effect for search dropdown menu -->
+  <link rel="stylesheet" href="/us-en/ontap-systems/css/boxshadowproperties.css">
+
+  <!-- NetApp CSS controls the technical content -->
+  <link rel="stylesheet" type="text/css" href="/us-en/ontap-systems/css/netapp.css">
+
+  <!-- WWW CSS Content -->
+  <link rel="stylesheet" type="text/css" href="/us-en/ontap-systems/css/www-luci-dotcom.min.css">
+  <link rel="stylesheet" type="text/css" href="/us-en/ontap-systems/css/www-netapp-dotcom.css">
+  <link rel="stylesheet" href="/us-en/ontap-systems/css/www-netapp-library-critical.min.css" media="all" >
+  <link rel="stylesheet" href="/us-en/ontap-systems/css/www-netapp-library-non-critical.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <link rel="stylesheet" href="/us-en/ontap-systems/css/www-netapp-library-global-header-footer.min.css">
+
+  <!-- NetApp IE Customizations -->
+  <link rel="stylesheet" href='/us-en/ontap-systems/css/na-utility.css' type='text/css'>
+  <link rel="stylesheet" href='/us-en/ontap-systems/css/na-sidebar.css' type='text/css'>
+  <link rel='stylesheet' href='/us-en/ontap-systems/css/clouddocs.css' type='text/css'>
+  <link rel='stylesheet' href='/us-en/ontap-systems/css/na-pagenav.css' type='text/css'>
+
+  
+  <link rel="stylesheet" href="/us-en/ontap-systems/css/landing-page.css" type="text/css">
+  <link rel="stylesheet" href="/us-en/ontap-systems/css/tabbed-blocks.css" type="text/css">
+  <link rel="stylesheet" href='/us-en/ontap-systems/css/product-family.css' type="text/css">
+  
+
+  
+  <link rel='stylesheet' href='/us-en/ontap-systems/css/na-feature.css' type='text/css'>
+  
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+  <!-- Used to import Promise for IE. Required for SearchKit -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bluebird/3.3.5/bluebird.min.js"></script>
+  
+    <script src='/us-en/ontap-systems/js/na-search.js'></script>
+  
+
+  
+  <script src='/us-en/ontap-systems/js/na-pagenav.js'></script>
+  
+
+  <link rel='stylesheet' href='/us-en/ontap-systems/css/prism.css' type='text/css'>
+  <link rel='stylesheet' href='/us-en/ontap-systems/css/prism-netapp.css' type='text/css'>
+
+
+  <script src='/us-en/ontap-systems/js/na-utility.js'></script>
+  <script src='/us-en/ontap-systems/js/clouddocs.js'></script>
+  <script>
+  if (document.location.hostname === "docs.netapp.com") {
+    var head = document.getElementsByTagName('head')[0];
+    var adobe = document.createElement("script");
+    adobe.type = "text/javascript";
+    adobe.src = "//assets.adobedtm.com/60287eadf1ee/c284da483c83/launch-e9ff3acac59f.min.js";
+    head.appendChild(adobe);
+  }
+  </script>
+  <script src='/us-en/ontap-systems/js/jquery.navgoco.min.js'></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <script src='/us-en/ontap-systems/js/toc.js'></script>
+  <script src='/us-en/ontap-systems/js/customscripts.js'></script>
+
+  <script>
+      $(document).ready(function() {
+          
+          var collapseOnInit = true;
+          
+
+          var navSettings = {
+              "caretHtml": '',
+              "accordion": collapseOnInit,
+              "openClass": 'active', // open
+              "save": false, // leave false or nav highlighting doesn't work right
+              "cookie": {
+                  "name": 'navgoco',
+                  "expires": false,
+                  "path": '/'
+              },
+              "slide": {
+                  "duration": 400,
+                  "easing": 'swing'
+              }
+          };
+
+          // Initialize navgoco with default options
+          $("#mysidebar").navgoco(navSettings);
+          
+
+          $("#collapseAll").click(function(e) {
+              e.preventDefault();
+              $("#mysidebar").navgoco('toggle', false);
+          });
+
+          $("#expandAll").click(function(e) {
+              e.preventDefault();
+              $("#mysidebar").navgoco('toggle', true);
+          });
+
+      });
+
+  </script>
+  <script>
+      $(document).ready(function() {
+          $("#tg-sb-link").click(function() {
+              $("#tg-sb-sidebar").toggle();
+              $("#tg-sb-content").toggleClass('col-md-9');
+              $("#tg-sb-content").toggleClass('col-md-12');
+              $("#tg-sb-icon").toggleClass('fa-toggle-on');
+              $("#tg-sb-icon").toggleClass('fa-toggle-off');
+          });
+      });
+  </script><script async src="https://www.googletagmanager.com/gtag/js?id=UA-81697994-3"></script>
+  <script>
+  if (document.location.hostname === "docs.netapp.com") {
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-81697994-3');
+  }
+  </script>
+  <script src='/us-en/ontap-systems/js/version-dropdown.js'></script>
+  <script src='/us-en/ontap-systems/js/product-family.js'></script>
+  <script src='/us-en/ontap-systems/js/FileSaver.min.js'></script>
+  <script src='/us-en/ontap-systems/js/jszip-utils.min.js'></script>
+  <script src='/us-en/ontap-systems/js/jszip.min.js'></script>
+  <script src='/us-en/ontap-systems/js/pdf-ux.js'></script>
+</head>
+
+
+  <body class role="document">
+    <div id="page" class="n-off-canvas-menu">
+      <div class="n-off-canvas-menu__menu"><!--TODO: Add offcanvas code --></div>
+      <div class="n-off-canvas-menu__content-wrap">
+        <header class="site-header" id="banner">
+  <!-- Start top_hat -->
+  <div class="n-top-hat">
+    <div class="n-container">
+      <div class="n-top-hat__cross-property-nav">
+        <ul class="n-top-hat__list">
+          <li class="n-top-hat__list-item">
+            <a href="https://www.netapp.com/products-a-z/" class="n-top-hat__link">Product and Solutions</a>
+          </li>
+          <li class="n-top-hat__list-item">
+            <a href="https://www.netapp.com/support-and-training/netapp-university/" class="n-top-hat__link">Support and Training</a>
+          </li>
+          <li class="n-top-hat__list-item">
+            <a href="https://cloud.netapp.com" class="n-top-hat__link">Cloud Central</a>
+          </li>
+          <li class="n-top-hat__list-item">
+            <a href="https://community.netapp.com/" class="n-top-hat__link">Community</a>
+          </li>
+          <li class="n-top-hat__list-item">
+            <a href="https://blog.netapp.com/" class="n-top-hat__link">Blog</a>
+          </li>
+          <li class="n-top-hat__list-item">
+            <a href="https://customers.netapp.com/en/" class="n-top-hat__link">Customer Stories</a>
+          </li>
+          <li class="n-top-hat__list-item">
+            <a href="https://www.netapp.com/us/contact-us/index.aspx" target="_self" class="n-top-hat__link" data-ntap-ui="contact-us">Contact</a>
+          </li>
+        </ul>
+      </div>
+      <div class="n-top-hat__utils">
+        <ul class="n-top-hat__list">
+          <li class="n-top-hat__list-item">
+            <a href="https://www.netapp.com/us/contact-us/index.aspx" target="_self" class="n-top-hat__link" data-ntap-ui="contact-us">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!-- End top_hat -->
+
+  <!-- Start property bar -->
+  <style>
+    .n-property-navigation-bar__menus--desktop-experience .n-menu--mega__default-content__heading span {
+    color: #34B0FF;
+    }
+  </style>
+  <div class="n-property-bar " data-ntap-ui="sticky-nav">
+    <div class="n-property-bar__inner-wrap">
+      <div class="n-property-bar__menu-toggle">
+        <a href="#" class="n-property-bar__menu-toggle-link">
+          <span class="n-property-bar__menu-toggle-text">Menu</span>
+          <svg class="n-icon-bars n-property-bar__menu-toggle-icon" aria-labelledby="title">
+            <title>bars</title>
+            <use xlink:href="/us-en/ontap-systems/common/svg/sprite.svg#bars"></use>
+          </svg>
+        </a>
+      </div>
+      <div class="n-property-bar__property-mark ">
+        <a href="https://www.netapp.com" class="n-property-bar__property-link">
+          <div class="n-property-bar__logo">
+            <svg class="n-icon-netapp-mark n-icon-netapp-mark n-property-bar__netapp-mark-icon" aria-labelledby="title">
+              <title>netapp-mark</title>
+              <use xlink:href="/us-en/ontap-systems/common/svg/sprite.svg#netapp-mark"></use>
+            </svg>
+            <svg class="n-icon-netapp-logo n-property-bar__logo-svg" aria-labelledby="title">
+              <title>netapp-logo</title>
+              <use xlink:href="/us-en/ontap-systems/common/svg/sprite.svg#netapp-logo"></use>
+            </svg>
+          </div>
+        </a>
+      </div>
+
+      
+      <div class="search-property-bar">
+        <div id="search-demo-container" class="searchbox n-property-bar__search">
+          <div id="react-search" 
+          data-search-html="/us-en/ontap-systems/search.html"
+          data-type="widget" 
+          data-placeholder="Search Documentation" 
+          data-no-results-found="No results were found for {query}" 
+          data-did-you-mean="Search for {suggestion}." 
+          data-no-results-found-did-you-mean="No results found for {query}. Did you mean {suggestion}?" 
+          data-results-found="{hitCount} results found"  
+          data-sk-es-pf-indexes=""></div>
+          <button class="n-property-bar__search-toggle-button" type="button">
+            <svg class="n-icon-search n-property-bar__search-toggle-button-icon" aria-labelledby="title">
+              <title>search</title>
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/us-en/ontap-systems/common/svg/sprite.svg#search"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  <div class="n-property-bar__toolbar">
+    <!-- Start Language Selector --><div id="ie-i18n" class="n-property-bar__lang-selector">
+      <div id="ie-i18n-menu">
+      <span class="ie-i18n-lang">English</span>
+        <button class="ie-i18n-icon-container" type="button">
+          <svg class="n-globe__icon" aria-labelledby="title">
+            <title>globe</title>
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/us-en/ontap-systems/common/svg/sprite.svg#globe"></use>
+          </svg>
+        </button>
+      </div>
+      <div id="n-property-navigation-bar__menu--language-selector" class="ie-i18n-results-container n-menu n-menu--v3 n-menu--is-active" style="display: none;">
+        <div class="n-language-selector-menu">
+          <ul class="n-menu__list">
+            <li class="n-menu__list-column">
+              <ul class="n-menu__list"><li class="n-menu__list-item n-menu__list-item--level-1">
+                  <a href="https://docs.netapp.com/us-en/ontap-systems/fas9000/dcpm-power-replace.html" class="n-menu__header-text"><span translate="no" class="notranslate">English</span></a>
+                </li><li class="n-menu__list-item n-menu__list-item--level-1">
+                  <a href="https://docs.netapp.com/ja-jp/ontap-systems/fas9000/dcpm-power-replace.html" class="n-menu__header-text"><span translate="no" class="notranslate">日本語</span></a>
+                </li><li class="n-menu__list-item n-menu__list-item--level-1">
+                  <a href="https://docs.netapp.com/zh-cn/ontap-systems/fas9000/dcpm-power-replace.html" class="n-menu__header-text"><span translate="no" class="notranslate">简体中文</span></a>
+                </li><li class="n-menu__list-item n-menu__list-item--level-1">
+                  <a href="https://docs.netapp.com/ko-kr/ontap-systems/fas9000/dcpm-power-replace.html" class="n-menu__header-text"><span translate="no" class="notranslate">한국어</span></a>
+                </li></ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div><!-- End Language Selector -->
+
+    <div class="n-property-bar__cta"></div>
+  </div>
+  <script>
+    $(function(){
+        var currentLocalization = $('html').attr('lang');
+
+        var localizationsDictionary = {
+            "en-CA" : "https://www.netapp.com/search/index.aspx?for_cr=canada&",
+            "en-IN" : "https://www.netapp.com/search/index.aspx?for_cr=india&",
+            "nl-NL" : "https://www.netapp.com/search/index.aspx?for_cr=netherlands&",
+            "ru-RU" : "https://www.netapp.com/search/index.aspx?for_cr=russia&",
+            "sv-SE" : "https://www.netapp.com/search/index.aspx?for_cr=sweden&",
+            "it-IT" : "https://www.netapp.com/search/index.aspx?for_cr=italy&",
+            "he-IL" : "https://www.netapp.com/search/index.aspx?for_cr=israel&",
+            "ko-KR" : "https://www.netapp.com/search/index.aspx?for_cr=korea&",
+            "zh-TW" : "https://www.netapp.com/search/index.aspx?for_cr=taiwan&",
+            "en-GB" : "https://www.netapp.com/search/index.aspx?for_cr=unitedkingdom&",
+            "en-SG" : "https://www.netapp.com/search/index.aspx?for_cr=asean&",
+            "en-AU" : "https://www.netapp.com/search/index.aspx?for_cr=australia&",
+            "pt-BR" : "https://www.netapp.com/search/index.aspx?for_cr=brasil&",
+            "de-CH" : "https://www.netapp.com/search/index.aspx?for_cr=switzerland&",
+            "es-MX" : "https://www.netapp.com/search/index.aspx?for_cr=mexico&"
+        };
+
+        if($('html').hasClass('ntap-whitelisted') && localizationsDictionary.hasOwnProperty(currentLocalization)) {
+            $('.n-property-bar__property-link').attr('href', '/');
+        }
+    });
+  </script>
+  <!-- End property bar -->
+</header>
+
+
+        <main id="n-main-content" class="n-main-content">
+          <!-- Start Documentation Content -->
+<div class="ie-main">
+  <!-- Sidebar Column -->
+  
+  <div class="col-md-3" id="sidebar-height">
+      <div class="n-pdf-header">
+  <a id="toggleButtonPdf" class="n-pdf-button" type="button">
+    <img src="/us-en/ontap-systems/images/pdf.png" width="16" height="16"/>Available PDFs<span>
+    </span>
+  </a>
+</div>
+<div class="n-pdf-body-container">
+  <ul id="toggleContainerPdf" class="n-pdf-body" style="display:none;"><li class="pdf-ux-container">
+        <a target="_blank" href="/us-en/ontap-systems/pdfs/fullsite-sidebar/AFF_and_FAS_System_Documentation.pdf" >
+          <img src="/us-en/ontap-systems/images/pdf.png" width="16" height="16"/>PDF of this doc site</a>
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/us-en/ontap-systems/pdfs/sidebar/Release_Notes.pdf" 
+            
+          >
+            <img src="/us-en/ontap-systems/images/pdf.png" width="16" height="16"/>
+            Release Notes
+          </a>
+          
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/us-en/ontap-systems/pdfs/sidebar/AFF_A200_systems.pdf" 
+            
+          >
+            <img src="/us-en/ontap-systems/images/pdf.png" width="16" height="16"/>
+            AFF A200 systems
+          </a>
+          
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/us-en/ontap-systems/pdfs/sidebar/AFF_A200_Install_and_Setup.pdf" 
+            
+          >
+            <img src="/us-en/ontap-systems/images/pdf.png" width="16" height="16"/>
+            Install and setup
+          </a>
+          
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/us-en/ontap-systems/pdfs/sidebar/AFF_A200_Maintain.pdf" 
+            
+          >
+            <img src="/us-en/ontap-systems/images/pdf.png" width="16" height="16"/>
+            Maintain
+          </a>
+          
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/us-en/ontap-systems/pdfs/sidebar/AFF_A200_Boot_Media.pdf" 
+            
+          >
+            <img src="/us-en/ontap-systems/images/pdf.png" width="16" height="16"/>
+            Boot media
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/us-en/ontap-systems/pdfs/sidebar/AFF_A200_Chassis.pdf" 
+            
+          >
+            <img src="/us-en/ontap-systems/images/pdf.png" width="16" height="16"/>
+            Chassis
+          </a>
+          
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/us-en/ontap-systems/pdfs/sidebar/AFF_A200_Controller_Module.pdf" 
+            
+          >
+            <img src="/us-en/ontap-systems/images/pdf.png" width="16" height="16"/>
+            Controller module
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/us-en/ontap-systems/pdfs/sidebar/AFF_A220_and_FAS2700_systems.pdf" 
+            
+          >
+            <img src="/us-en/ontap-systems/images/pdf.png" width="16" height="16"/>
+            AFF A220 and FAS2700 systems
+          </a>
+          
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/us-en/ontap-systems/pdfs/sidebar/AFF_A220_and_FAS2700_Install_and_Setup.pdf" 
+            
+          >
+            <img src="/us-en/ontap-systems/images/pdf.png" width="16" height="16"/>
+            Install and setup
+          </a>
+          
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/us-en/ontap-systems/pdfs/sidebar/AFF_A220_and_FAS2700_Maintain.pdf" 
+            
+          >
+            <img src="/us-en/ontap-systems/images/pdf.png" width="16" height="16"/>
+            Maintain
+          </a>
+          
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/us-en/ontap-systems/pdfs/sidebar/AFF_A220_and_FAS2700_Boot_Media.pdf" 
+            
+          >
+            <img src="/us-en/ontap-systems/images/pdf.png" width="16" height="16"/>
+            Boot media
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/us-en/ontap-systems/pdfs/sidebar/AFF_A220_and_FAS2700_Chassis.pdf" 
+            
+          >
+            <img src="/us-en/ontap-systems/images/pdf.png" width="16" height="16"/>
+            Chassis
+          </a>
+          
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/us-en/ontap-systems/pdfs/sidebar/AFF_A220_and_FAS2700_Controller.pdf" 
+            
+          >
+            <img src="/us-en/ontap-systems/images/pdf.png" width="16" height="16"/>
+            Controller
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/us-en/ontap-systems/pdfs/sidebar/AFF_A250_systems.pdf" 
+            
+          >
+            <img src="/us-en/ontap-systems/images/pdf.png" width="16" height="16"/>
+            AFF A250 systems
+          </a>
+          
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/us-en/ontap-systems/pdfs/sidebar/AFF_A250_Install_and_Setup.pdf" 
+            
+          >
+            <img src="/us-en/ontap-systems/images/pdf.png" width="16" height="16"/>
+            Install and setup
+          </a>
+          
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/us-en/ontap-systems/pdfs/sidebar/AFF_A250_Maintain.pdf" 
+            
+          >
+            <img src="/us-en/ontap-systems/images/pdf.png" width="16" height="16"/>
+            Maintain
+          </a>
+          
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/us-en/ontap-systems/pdfs/sidebar/AFF_A250_Boot_Media.pdf" 
+            
+          >
+            <img src="/us-en/ontap-systems/images/pdf.png" width="16" height="16"/>
+            Boot media
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/us-en/ontap-systems/pdfs/sidebar/AFF_A250_Chassis.pdf" 
+            
+          >
+            <img src="/us-en/ontap-systems/images/pdf.png" width="16" height="16"/>
+            Chassis
+          </a>
+          
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/us-en/ontap-systems/pdfs/sidebar/AFF_A250_Controller_Module.pdf" 
+            
+          >
+            <img src="/us-en/ontap-systems/images/pdf.png" width="16" height="16"/>
+            Controller
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/us-en/ontap-systems/pdfs/sidebar/AFF_A300_systems.pdf" 
+            
+          >
+            <img src="/us-en/ontap-systems/images/pdf.png" width="16" height="16"/>
+            AFF A300 systems
+          </a>
+          
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/us-en/ontap-systems/pdfs/sidebar/AFF_A300_Install_and_Setup.pdf" 
+            
+          >
+            <img src="/us-en/ontap-systems/images/pdf.png" width="16" height="16"/>
+            Install and setup
+          </a>
+          
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/us-en/ontap-systems/pdfs/sidebar/AFF_A300_Maintain.pdf" 
+            
+          >
+            <img src="/us-en/ontap-systems/images/pdf.png" width="16" height="16"/>
+            Maintain
+          </a>
+          
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/us-en/ontap-systems/pdfs/sidebar/AFF_A300_Boot_Media.pdf" 
+            
+          >
+            <img src="/us-en/ontap-systems/images/pdf.png" width="16" height="16"/>
+            Boot media
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/us-en/ontap-systems/pdfs/sidebar/AFF_A300_Chassis.pdf" 
+            
+          >
+            <img src="/us-en/ontap-systems/images/pdf.png" width="16" height="16"/>
+            Chassis
+          </a>
+          
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/us-en/ontap-systems/pdfs/sidebar/AFF_A300_Controller_Module.pdf" 
+            
+          >
+            <img src="/us-en/ontap-systems/images/pdf.png" width="16" height="16"/>
+            Controller module
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/us-en/ontap-systems/pdfs/sidebar/AFF_A320_systems.pdf" 
+            
+          >
+            <img src="/us-en/ontap-systems/images/pdf.png" width="16" height="16"/>
+            AFF A320 systems
+          </a>
+          
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/us-en/ontap-systems/pdfs/sidebar/AFF_A320_Install_and_Setup.pdf" 
+            
+          >
+            <img src="/us-en/ontap-systems/images/pdf.png" width="16" height="16"/>
+            Install and setup
+          </a>
+          
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/us-en/ontap-systems/pdfs/sidebar/AFF_A320_Maintain.pdf" 
+            
+          >
+            <img src="/us-en/ontap-systems/images/pdf.png" width="16" height="16"/>
+            Maintain
+          </a>
+          
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/us-en/ontap-systems/pdfs/sidebar/AFF_A320_Boot_Media.pdf" 
+            
+          >
+            <img src="/us-en/ontap-systems/images/pdf.png" width="16" height="16"/>
+            Boot media
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/us-en/ontap-systems/pdfs/sidebar/AFF_A320_Chassis.pdf" 
+            
+          >
+            <img src="/us-en/ontap-systems/images/pdf.png" width="16" height="16"/>
+            Chassis
+          </a>
+          
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/us-en/ontap-systems/pdfs/sidebar/AFF_A320_Controller_Module.pdf" 
+            
+          >
+            <img src="/us-en/ontap-systems/images/pdf.png" width="16" height="16"/>
+            Controller module
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/us-en/ontap-systems/pdfs/sidebar/AFF_A400_systems.pdf" 
+            
+          >
+            <img src="/us-en/ontap-systems/images/pdf.png" width="16" height="16"/>
+            AFF A400 systems
+          </a>
+          
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/us-en/ontap-systems/pdfs/sidebar/AFF_A400_Install_and_Setup.pdf" 
+            
+          >
+            <img src="/us-en/ontap-systems/images/pdf.png" width="16" height="16"/>
+            Install and setup
+          </a>
+          
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/us-en/ontap-systems/pdfs/sidebar/AFF_A400_Maintain.pdf" 
+            
+          >
+            <img src="/us-en/ontap-systems/images/pdf.png" width="16" height="16"/>
+            Maintain
+          </a>
+          
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/us-en/ontap-systems/pdfs/sidebar/AFF_A400_Boot_Media.pdf" 
+            
+          >
+            <img src="/us-en/ontap-systems/images/pdf.png" width="16" height="16"/>
+            Boot media
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/us-en/ontap-systems/pdfs/sidebar/AFF_A400_Chassis.pdf" 
+            
+          >
+            <img src="/us-en/ontap-systems/images/pdf.png" width="16" height="16"/>
+            Chassis
+          </a>
+          
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/us-en/ontap-systems/pdfs/sidebar/AFF_A400_Controller_Module.pdf" 
+            
+          >
+            <img src="/us-en/ontap-systems/images/pdf.png" width="16" height="16"/>
+            Controller module
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/us-en/ontap-systems/pdfs/sidebar/AFF_A700_and_FAS9000_systems.pdf" 
+            
+          >
+            <img src="/us-en/ontap-systems/images/pdf.png" width="16" height="16"/>
+            AFF A700 and FAS9000 systems
+          </a>
+          
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/us-en/ontap-systems/pdfs/sidebar/AFF_A700_and_FAS9000_Install_and_Setup.pdf" 
+            
+          >
+            <img src="/us-en/ontap-systems/images/pdf.png" width="16" height="16"/>
+            Install and setup
+          </a>
+          
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/us-en/ontap-systems/pdfs/sidebar/AFF_A700_and_FAS9000_Maintain.pdf" 
+            
+          >
+            <img src="/us-en/ontap-systems/images/pdf.png" width="16" height="16"/>
+            Maintain
+          </a>
+          
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/us-en/ontap-systems/pdfs/sidebar/AFF_A700_and_FAS9000_Boot_Media.pdf" 
+            
+          >
+            <img src="/us-en/ontap-systems/images/pdf.png" width="16" height="16"/>
+            Boot media
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/us-en/ontap-systems/pdfs/sidebar/AFF_A700_and_FAS9000_Chassis.pdf" 
+            
+          >
+            <img src="/us-en/ontap-systems/images/pdf.png" width="16" height="16"/>
+            Chassis
+          </a>
+          
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/us-en/ontap-systems/pdfs/sidebar/AFF_A700_and_FAS9000_Controller.pdf" 
+            
+          >
+            <img src="/us-en/ontap-systems/images/pdf.png" width="16" height="16"/>
+            Controller module
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/us-en/ontap-systems/pdfs/sidebar/AFF_A700_and_FAS9000_X91148A_Module.pdf" 
+            
+          >
+            <img src="/us-en/ontap-systems/images/pdf.png" width="16" height="16"/>
+            X91148A module
+          </a>
+          
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/us-en/ontap-systems/pdfs/sidebar/AFF_A700s_systems.pdf" 
+            
+          >
+            <img src="/us-en/ontap-systems/images/pdf.png" width="16" height="16"/>
+            AFF A700s systems
+          </a>
+          
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/us-en/ontap-systems/pdfs/sidebar/AFF_A700s_Install_and_Setup.pdf" 
+            
+          >
+            <img src="/us-en/ontap-systems/images/pdf.png" width="16" height="16"/>
+            Install and setup
+          </a>
+          
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/us-en/ontap-systems/pdfs/sidebar/AFF_A700s_Maintain.pdf" 
+            
+          >
+            <img src="/us-en/ontap-systems/images/pdf.png" width="16" height="16"/>
+            Maintain
+          </a>
+          
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/us-en/ontap-systems/pdfs/sidebar/AFF_A700s_Boot_Media.pdf" 
+            
+          >
+            <img src="/us-en/ontap-systems/images/pdf.png" width="16" height="16"/>
+            Boot media
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/us-en/ontap-systems/pdfs/sidebar/AFF_A700s_Chassis.pdf" 
+            
+          >
+            <img src="/us-en/ontap-systems/images/pdf.png" width="16" height="16"/>
+            Chassis
+          </a>
+          
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/us-en/ontap-systems/pdfs/sidebar/AFF_A700s_Controller.pdf" 
+            
+          >
+            <img src="/us-en/ontap-systems/images/pdf.png" width="16" height="16"/>
+            Controller
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/us-en/ontap-systems/pdfs/sidebar/Fan.pdf" 
+            
+          >
+            <img src="/us-en/ontap-systems/images/pdf.png" width="16" height="16"/>
+            Fan
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/us-en/ontap-systems/pdfs/sidebar/AFF_A800_systems.pdf" 
+            
+          >
+            <img src="/us-en/ontap-systems/images/pdf.png" width="16" height="16"/>
+            AFF A800 systems
+          </a>
+          
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/us-en/ontap-systems/pdfs/sidebar/AFF_A800_Install_and_Setup.pdf" 
+            
+          >
+            <img src="/us-en/ontap-systems/images/pdf.png" width="16" height="16"/>
+            Install and setup
+          </a>
+          
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/us-en/ontap-systems/pdfs/sidebar/AFF_A800_Maintain.pdf" 
+            
+          >
+            <img src="/us-en/ontap-systems/images/pdf.png" width="16" height="16"/>
+            Maintain
+          </a>
+          
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/us-en/ontap-systems/pdfs/sidebar/AFF_A800_Boot_Media.pdf" 
+            
+          >
+            <img src="/us-en/ontap-systems/images/pdf.png" width="16" height="16"/>
+            Boot media
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/us-en/ontap-systems/pdfs/sidebar/AFF_A800_Chassis.pdf" 
+            
+          >
+            <img src="/us-en/ontap-systems/images/pdf.png" width="16" height="16"/>
+            Chassis
+          </a>
+          
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/us-en/ontap-systems/pdfs/sidebar/AFF_A800_Controller_Module.pdf" 
+            
+          >
+            <img src="/us-en/ontap-systems/images/pdf.png" width="16" height="16"/>
+            Controller
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/us-en/ontap-systems/pdfs/sidebar/AFF_A900_systems.pdf" 
+            
+          >
+            <img src="/us-en/ontap-systems/images/pdf.png" width="16" height="16"/>
+            AFF A900 systems
+          </a>
+          
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/us-en/ontap-systems/pdfs/sidebar/Install_and_setup.pdf" 
+            
+          >
+            <img src="/us-en/ontap-systems/images/pdf.png" width="16" height="16"/>
+            Install and setup
+          </a>
+          
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/us-en/ontap-systems/pdfs/sidebar/Maintain.pdf" 
+            
+          >
+            <img src="/us-en/ontap-systems/images/pdf.png" width="16" height="16"/>
+            Maintain
+          </a>
+          
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/us-en/ontap-systems/pdfs/sidebar/Boot_media.pdf" 
+            
+          >
+            <img src="/us-en/ontap-systems/images/pdf.png" width="16" height="16"/>
+            Boot media
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/us-en/ontap-systems/pdfs/sidebar/Chassis.pdf" 
+            
+          >
+            <img src="/us-en/ontap-systems/images/pdf.png" width="16" height="16"/>
+            Chassis
+          </a>
+          
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/us-en/ontap-systems/pdfs/sidebar/Controller_module.pdf" 
+            
+          >
+            <img src="/us-en/ontap-systems/images/pdf.png" width="16" height="16"/>
+            Controller module
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/us-en/ontap-systems/pdfs/sidebar/AFF_C190_systems.pdf" 
+            
+          >
+            <img src="/us-en/ontap-systems/images/pdf.png" width="16" height="16"/>
+            AFF C190 systems
+          </a>
+          
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/us-en/ontap-systems/pdfs/sidebar/AFF_C190_Install_and_Setup.pdf" 
+            
+          >
+            <img src="/us-en/ontap-systems/images/pdf.png" width="16" height="16"/>
+            Install and setup
+          </a>
+          
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/us-en/ontap-systems/pdfs/sidebar/AFF_C190_Maintain.pdf" 
+            
+          >
+            <img src="/us-en/ontap-systems/images/pdf.png" width="16" height="16"/>
+            Maintain
+          </a>
+          
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/us-en/ontap-systems/pdfs/sidebar/AFF_C190_Boot_Media.pdf" 
+            
+          >
+            <img src="/us-en/ontap-systems/images/pdf.png" width="16" height="16"/>
+            Boot media
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/us-en/ontap-systems/pdfs/sidebar/AFF_C190_Chassis.pdf" 
+            
+          >
+            <img src="/us-en/ontap-systems/images/pdf.png" width="16" height="16"/>
+            Chassis
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/us-en/ontap-systems/pdfs/sidebar/AFF_C190_Controller_Module.pdf" 
+            
+          >
+            <img src="/us-en/ontap-systems/images/pdf.png" width="16" height="16"/>
+            Controller
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/us-en/ontap-systems/pdfs/sidebar/FAS2600_systems.pdf" 
+            
+          >
+            <img src="/us-en/ontap-systems/images/pdf.png" width="16" height="16"/>
+            FAS2600 systems
+          </a>
+          
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/us-en/ontap-systems/pdfs/sidebar/FAS2600_Install_and_Setup.pdf" 
+            
+          >
+            <img src="/us-en/ontap-systems/images/pdf.png" width="16" height="16"/>
+            Install and setup
+          </a>
+          
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/us-en/ontap-systems/pdfs/sidebar/FAS2600_Maintain.pdf" 
+            
+          >
+            <img src="/us-en/ontap-systems/images/pdf.png" width="16" height="16"/>
+            Maintain
+          </a>
+          
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/us-en/ontap-systems/pdfs/sidebar/FAS2600_Boot_Media.pdf" 
+            
+          >
+            <img src="/us-en/ontap-systems/images/pdf.png" width="16" height="16"/>
+            Boot media
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/us-en/ontap-systems/pdfs/sidebar/FAS2600_Chassis.pdf" 
+            
+          >
+            <img src="/us-en/ontap-systems/images/pdf.png" width="16" height="16"/>
+            Chassis
+          </a>
+          
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/us-en/ontap-systems/pdfs/sidebar/FAS2600_Controller_Module.pdf" 
+            
+          >
+            <img src="/us-en/ontap-systems/images/pdf.png" width="16" height="16"/>
+            Controller module
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/us-en/ontap-systems/pdfs/sidebar/FAS500f_systems.pdf" 
+            
+          >
+            <img src="/us-en/ontap-systems/images/pdf.png" width="16" height="16"/>
+            FAS500f systems
+          </a>
+          
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/us-en/ontap-systems/pdfs/sidebar/FAS500f_Install_and_Setup.pdf" 
+            
+          >
+            <img src="/us-en/ontap-systems/images/pdf.png" width="16" height="16"/>
+            Install and setup
+          </a>
+          
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/us-en/ontap-systems/pdfs/sidebar/FAS500f_Maintain.pdf" 
+            
+          >
+            <img src="/us-en/ontap-systems/images/pdf.png" width="16" height="16"/>
+            Maintain
+          </a>
+          
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/us-en/ontap-systems/pdfs/sidebar/FAS500f_Boot_Media.pdf" 
+            
+          >
+            <img src="/us-en/ontap-systems/images/pdf.png" width="16" height="16"/>
+            Boot media
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/us-en/ontap-systems/pdfs/sidebar/FAS500f_Chassis.pdf" 
+            
+          >
+            <img src="/us-en/ontap-systems/images/pdf.png" width="16" height="16"/>
+            Chassis
+          </a>
+          
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/us-en/ontap-systems/pdfs/sidebar/FAS500f_Controller_Module.pdf" 
+            
+          >
+            <img src="/us-en/ontap-systems/images/pdf.png" width="16" height="16"/>
+            Controller
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/us-en/ontap-systems/pdfs/sidebar/FAS8200_systems.pdf" 
+            
+          >
+            <img src="/us-en/ontap-systems/images/pdf.png" width="16" height="16"/>
+            FAS8200 systems
+          </a>
+          
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/us-en/ontap-systems/pdfs/sidebar/FAS8200_Install_and_Setup.pdf" 
+            
+          >
+            <img src="/us-en/ontap-systems/images/pdf.png" width="16" height="16"/>
+            Install and setup
+          </a>
+          
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/us-en/ontap-systems/pdfs/sidebar/FAS8200_Maintain.pdf" 
+            
+          >
+            <img src="/us-en/ontap-systems/images/pdf.png" width="16" height="16"/>
+            Maintain
+          </a>
+          
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/us-en/ontap-systems/pdfs/sidebar/FAS8200_Boot_Media.pdf" 
+            
+          >
+            <img src="/us-en/ontap-systems/images/pdf.png" width="16" height="16"/>
+            Boot media
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/us-en/ontap-systems/pdfs/sidebar/FAS8200_Chassis.pdf" 
+            
+          >
+            <img src="/us-en/ontap-systems/images/pdf.png" width="16" height="16"/>
+            Chassis
+          </a>
+          
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/us-en/ontap-systems/pdfs/sidebar/FAS8200_Controller_Module.pdf" 
+            
+          >
+            <img src="/us-en/ontap-systems/images/pdf.png" width="16" height="16"/>
+            Controller
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/us-en/ontap-systems/pdfs/sidebar/FAS8300_and_FAS8700_systems.pdf" 
+            
+          >
+            <img src="/us-en/ontap-systems/images/pdf.png" width="16" height="16"/>
+            FAS8300 and FAS8700 systems
+          </a>
+          
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/us-en/ontap-systems/pdfs/sidebar/AFF_FAS8300_and_FAS8700_Install_and_Setup.pdf" 
+            
+          >
+            <img src="/us-en/ontap-systems/images/pdf.png" width="16" height="16"/>
+            Install and setup
+          </a>
+          
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/us-en/ontap-systems/pdfs/sidebar/AFF_FAS8300_and_FAS8700_Maintain.pdf" 
+            
+          >
+            <img src="/us-en/ontap-systems/images/pdf.png" width="16" height="16"/>
+            Maintain
+          </a>
+          
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/us-en/ontap-systems/pdfs/sidebar/AFF_FAS8300_and_FAS8700_Boot_Media.pdf" 
+            
+          >
+            <img src="/us-en/ontap-systems/images/pdf.png" width="16" height="16"/>
+            Boot media
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/us-en/ontap-systems/pdfs/sidebar/AFF_FAS8300_and_FAS8700_Chassis.pdf" 
+            
+          >
+            <img src="/us-en/ontap-systems/images/pdf.png" width="16" height="16"/>
+            Chassis
+          </a>
+          
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/us-en/ontap-systems/pdfs/sidebar/AFF_FAS8300_and_FAS8700_Controller.pdf" 
+            
+          >
+            <img src="/us-en/ontap-systems/images/pdf.png" width="16" height="16"/>
+            Controller
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/us-en/ontap-systems/pdfs/sidebar/Other_platform_procedures.pdf" 
+            
+          >
+            <img src="/us-en/ontap-systems/images/pdf.png" width="16" height="16"/>
+            Other platform procedures
+          </a>
+          
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/us-en/ontap-systems/pdfs/sidebar/System_level_diagnostics.pdf" 
+            
+          >
+            <img src="/us-en/ontap-systems/images/pdf.png" width="16" height="16"/>
+            System-level diagnostics
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/us-en/ontap-systems/pdfs/sidebar/42U_1280_mm_System_Cabinet.pdf" 
+            
+          >
+            <img src="/us-en/ontap-systems/images/pdf.png" width="16" height="16"/>
+            42U 1280 mm System Cabinet
+          </a>
+          
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/us-en/ontap-systems/pdfs/sidebar/Prepare_to_install_cabinet.pdf" 
+            
+          >
+            <img src="/us-en/ontap-systems/images/pdf.png" width="16" height="16"/>
+            Prepare to install cabinet
+          </a>
+          
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/us-en/ontap-systems/pdfs/sidebar/Install_cabinet.pdf" 
+            
+          >
+            <img src="/us-en/ontap-systems/images/pdf.png" width="16" height="16"/>
+            Install cabinet
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/us-en/ontap-systems/pdfs/sidebar/Reverse_cabinet_front_door.pdf" 
+            
+          >
+            <img src="/us-en/ontap-systems/images/pdf.png" width="16" height="16"/>
+            Reverse cabinet front door
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/us-en/ontap-systems/pdfs/sidebar/Swap_out_internal_disk_drive.pdf" 
+            
+          >
+            <img src="/us-en/ontap-systems/images/pdf.png" width="16" height="16"/>
+            Swap out internal disk drive
+          </a>
+          
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/us-en/ontap-systems/pdfs/sidebar/Hot_swap_embedded_drive.pdf" 
+            
+          >
+            <img src="/us-en/ontap-systems/images/pdf.png" width="16" height="16"/>
+            Hot-swap embedded drive
+          </a>
+          
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/us-en/ontap-systems/pdfs/sidebar/All_SAN_Array_systems.pdf" 
+            
+          >
+            <img src="/us-en/ontap-systems/images/pdf.png" width="16" height="16"/>
+            All SAN Array systems
+          </a>
+          
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/us-en/ontap-systems/pdfs/sidebar/Hardware_upgrade.pdf" 
+            
+          >
+            <img src="/us-en/ontap-systems/images/pdf.png" width="16" height="16"/>
+            Hardware upgrade
+          </a>
+          
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/us-en/ontap-systems/pdfs/sidebar/NS224_shelves.pdf" 
+            
+          >
+            <img src="/us-en/ontap-systems/images/pdf.png" width="16" height="16"/>
+            NS224 shelves
+          </a>
+          
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/us-en/ontap-systems/pdfs/sidebar/NS224_Shelves_Install_and_Cable.pdf" 
+            
+          >
+            <img src="/us-en/ontap-systems/images/pdf.png" width="16" height="16"/>
+            Install and cable
+          </a>
+          
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/us-en/ontap-systems/pdfs/sidebar/NS224_shelf_maintain.pdf" 
+            
+          >
+            <img src="/us-en/ontap-systems/images/pdf.png" width="16" height="16"/>
+            Maintain
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/us-en/ontap-systems/pdfs/sidebar/SAS_shelves_with_IOM12_modules.pdf" 
+            
+          >
+            <img src="/us-en/ontap-systems/images/pdf.png" width="16" height="16"/>
+            SAS shelves with IOM12 modules
+          </a>
+          
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/us-en/ontap-systems/pdfs/sidebar/Shelves_with_IOM12_Modules_Install_and_Cable.pdf" 
+            
+          >
+            <img src="/us-en/ontap-systems/images/pdf.png" width="16" height="16"/>
+            Install and cable
+          </a>
+          
+
+
+
+
+
+
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/us-en/ontap-systems/pdfs/sidebar/SAS_cabling_rules__worksheets__and_examples.pdf" 
+            
+          >
+            <img src="/us-en/ontap-systems/images/pdf.png" width="16" height="16"/>
+            SAS cabling rules, worksheets, and examples
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/us-en/ontap-systems/pdfs/sidebar/Shelves_with_IOM12_Modules_Maintain.pdf" 
+            
+          >
+            <img src="/us-en/ontap-systems/images/pdf.png" width="16" height="16"/>
+            Maintain
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/us-en/ontap-systems/pdfs/sidebar/Other_platform__shelf_and_switch_models.pdf" 
+            
+          >
+            <img src="/us-en/ontap-systems/images/pdf.png" width="16" height="16"/>
+            Other platform, shelf and switch models
+          </a>
+          
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+
+</li></ul>
+  <div class="zip-pdf-link-container" style="display: none;">   
+    <a href="#" id="zipPdf">
+      <img src="/us-en/ontap-systems/images/pdf-zip.png" width="16" height="16"/>
+      <pre>Collection of separate PDF docs<span class="zip-size"></span></pre>
+    </a><div id="zip-link-popup" class="hide">
+    <div class="inner-modal">
+        <div class="downloading-progress">
+            <div class="spinner"></div>
+            <h1>Creating your file...</h1>
+            <div>This may take a few minutes. Thanks for your patience.</div>
+            <button class="cancel-download-btn" type="button">Cancel</button>
+        </div>
+        <div class="download-complete hide">
+            <div class="done-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M20.285 2l-11.285 11.567-5.286-5.011-3.714 3.716 9 8.728 15-15.285z"/></svg>
+            </div>
+            <div>Your file is ready</div>
+            <button class="cancel-download-btn" type="button">OK</button>
+        </div>
+    </div>
+</div>
+<script>
+    $(".cancel-download-btn").click(function(){
+        $("#zip-link-popup").addClass("hide");
+        $("#zip-link-popup .downloading-progress").removeClass("hide");
+        $("#zip-link-popup .download-complete").addClass("hide");
+    });
+</script></div>
+</div>
+<script>
+  $("#toggleContainerPdf li.active:last-child").parents('ul.subfolders').toggle('display');
+  $("#toggleButtonPdf").click(function () {
+    $("#toggleContainerPdf").toggle('display');
+    $(".n-pdf-body-container .zip-pdf-link-container").toggle('display');
+  });
+</script><div class="sidebar-nav-container">
+  <ul id="mysidebar" class="nav"><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/index.html">
+        AFF and FAS system docs
+      </a></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> Release Notes</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/whats-new.html">
+        What's new
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/rel-notes.html">
+        Release notes
+      </a></li></ul></li><li class="subfolders "><a href="/us-en/ontap-systems/a200/index.html">
+        <div class="na-navbar-padding"> AFF A200 systems</div>
+      </a>
+      <ul><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> Install and setup</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/a200/install-worksheet-linkout.html">
+        Cluster configuration worksheet
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/a200/install-setup.html">
+        Choose install and setup experience
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/a200/install-setup-linkout.html">
+        Quick steps
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/a200/install-video-linkout.html">
+        Video steps
+      </a></li></ul></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> Maintain</div>
+      </a>
+      <ul><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> Boot media</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/a200/bootmedia-replace-overview.html">
+        Overview
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/a200/bootmedia-encryption-preshutdown-checks.html">
+        Check onboard encryption keys
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/a200/bootmedia-shutdown.html">
+        Shut down impaired controller
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/a200/bootmedia-replace.html">
+        Replace boot media
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/a200/bootmedia-recovery-image-boot-non-2n-mcc.html">
+        Boot recovery image
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/a200/bootmedia-encryption-restore.html">
+        Restore OKM, NSE, and NVE
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/a200/bootmedia-complete-rma.html">
+        Return failed part to NetApp
+      </a></li></ul></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> Chassis</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/a200/chassis-replace-overview.html">
+        Overview
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/a200/chassis-replace-shutdown.html">
+        Shut down impaired controller
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/a200/chassis-replace-move-hardware.html">
+        Replace hardware
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/a200/chassis-replace-complete-system-restore-rma.html">
+        Restore configuration
+      </a></li></ul></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> Controller module</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/a200/controller-replace-overview.html">
+        Overview
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/a200/controller-replace-shutdown.html">
+        Shut down impaired controller
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/a200/controller-replace-move-hardware.html">
+        Replace hardware
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/a200/controller-replace-system-config-restore-and-verify.html">
+        Restore configuration
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/a200/controller-replace-recable-reassign-disks.html">
+        Recable system
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/a200/controller-replace-restore-system-rma.html">
+        Complete system restoration
+      </a></li></ul></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/a200/dimm-replace.html">
+        DIMM
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/a200/nvmem-nvram-battery-replace.html">
+        NVMEM battery
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/a200/power-supply-swap-out.html">
+        Power supply
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/a200/rtc-battery-replace.html">
+        Real-time clock battery
+      </a></li></ul></li></ul></li><li class="subfolders "><a href="/us-en/ontap-systems/fas2700/index.html">
+        <div class="na-navbar-padding"> AFF A220 and FAS2700 systems</div>
+      </a>
+      <ul><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> Install and setup</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/fas2700/install-setup.html">
+        Choose install and setup experience
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/fas2700/install-quick-guide.html">
+        Quick steps
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/fas2700/install-videos.html">
+        Videos steps
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/fas2700/install-detailed-guide.html">
+        Detailed steps
+      </a></li></ul></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> Maintain</div>
+      </a>
+      <ul><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> Boot media</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/fas2700/bootmedia-replace-overview.html">
+        Overview
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/fas2700/bootmedia-encryption-preshutdown-checks.html">
+        Check onboard encryption keys
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/fas2700/bootmedia-impaired-controller-shutdown.html">
+        Shut down impaired controller
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/fas2700/bootmedia-replace.html">
+        Replace boot image
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/fas2700/bootmedia-recovery-image-boot-non-2n-mcc.html">
+        Boot recovery image
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/fas2700/bootmedia-encryption-restore.html">
+        Restore OKM, NSE, and NVE
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/fas2700/bootmedia-complete-rma.html">
+        Return failed part to NetApp
+      </a></li></ul></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/fas2700/caching-module-replace.html">
+        Caching module
+      </a></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> Chassis</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/fas2700/chassis-replace-overview.html">
+        Overview
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/fas2700/chassis-replace-shutdown.html">
+        Shut down impaired controller
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/fas2700/chassis-replace-move-hardware.html">
+        Replace hardware
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/fas2700/chassis-replace-complete-system-restore-rma.html">
+        Restore configuration
+      </a></li></ul></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> Controller</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/fas2700/controller-replace-overview.html">
+        Overview
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/fas2700/controller-replace-shutdown.html">
+        Shut down node
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/fas2700/controller-replace-move-hardware.html">
+        Replace controller hardware
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/fas2700/controller-replace-system-config-restore-and-verify.html">
+        Restore system configuration
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/fas2700/controller-replace-recable-reassign-disks.html">
+        Recable system
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/fas2700/controller-replace-restore-system-rma.html">
+        Complete system restoration
+      </a></li></ul></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/fas2700/dimm-replace.html">
+        DIMM
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/fas2700/nvmem-nvram-battery-replace.html">
+        NVMEM battery
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/fas2700/power-supply-swap-out.html">
+        Power supply
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/fas2700/rtc-battery-replace.html">
+        Real-time clock battery
+      </a></li></ul></li></ul></li><li class="subfolders "><a href="/us-en/ontap-systems/a250/index.html">
+        <div class="na-navbar-padding"> AFF A250 systems</div>
+      </a>
+      <ul><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> Install and setup</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/a250/install-setup.html">
+        Choose install and setup experience
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/a250/install-quick-guide.html">
+        Quick steps
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/a250/install-videos.html">
+        Video steps
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/a250/install-detailed-guide.html">
+        Detailed steps
+      </a></li></ul></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> Maintain</div>
+      </a>
+      <ul><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> Boot media</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/a250/bootmedia-replace-overview.html">
+        Overview
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/a250/bootmedia-encryption-preshutdown-checks.html">
+        Check onboard encryption keys
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/a250/bootmedia-shutdown.html">
+        Shut down impaired controller
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/a250/bootmedia-replace.html">
+        Replace boot media
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/a250/bootmedia-recovery-image-boot-non-2n-mcc.html">
+        Boot recovery image
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/a250/bootmedia-encryption-restore.html">
+        Restore OKM, NSE, and NVE
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/a250/bootmedia-complete-rma.html">
+        Return failed part to NetApp
+      </a></li></ul></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> Chassis</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/a250/chassis-replace-overview.html">
+        Overview
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/a250/chassis-replace-shutdown.html">
+        Shut down impaired controller
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/a250/chassis-replace-move-hardware.html">
+        Replace hardware
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/a250/chassis-replace-complete-system-restore-rma.html">
+        Complete replacement
+      </a></li></ul></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> Controller</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/a250/controller-replace-overview.html">
+        Overview
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/a250/controller-replace-shutdown.html">
+        Shut down impaired controller
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/a250/controller-replace-move-hardware.html">
+        Replace controller module
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/a250/controller-replace-system-config-restore-and-verify.html">
+        Restore system configuration
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/a250/controller-replace-recable-reassign-disks.html">
+        Recable system
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/a250/controller-replace-restore-system-rma.html">
+        Complete system restoration
+      </a></li></ul></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/a250/dimm-replace.html">
+        DIMM
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/a250/fan-replace.html">
+        Fan
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/a250/mezzanine-replace.html">
+        Mezzanine card
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/a250/nvmem-nvram-battery-replace.html">
+        NVMEM battery
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/a250/power-supply-replace.html">
+        Power supply
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/a250/rtc-battery-replace.html">
+        Real-time clock battery
+      </a></li></ul></li></ul></li><li class="subfolders "><a href="/us-en/ontap-systems/a300/index.html">
+        <div class="na-navbar-padding"> AFF A300 systems</div>
+      </a>
+      <ul><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> Install and setup</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/a300/install-worksheet-linkout.html">
+        Cluster configuration worksheet
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/a300/install-setup.html">
+        Choose install and setup experience
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/a300/install-setup-linkout.html">
+        Quick steps
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/a300/install-video-linkout.html">
+        Video steps
+      </a></li></ul></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> Maintain</div>
+      </a>
+      <ul><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> Boot media</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/a300/bootmedia-replace-overview.html">
+        Overview
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/a300/bootmedia-encryption-preshutdown-checks.html">
+        Check onboard encryption keys
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/a300/bootmedia-impaired-controller-shutdown.html">
+        Shut down impaired controller
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/a300/bootmedia-replace.html">
+        Replace boot media
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/a300/bootmedia-recovery-image-boot-options.html">
+        Boot recovery image
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/a300/bootmedia-2n-mcc-switchback.html">
+        Switch back MetroCluster configuration
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/a300/bootmedia-encryption-restore.html">
+        Restore OKM, NSE, and NVE
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/a300/bootmedia-complete-rma.html">
+        Return failed part to NetApp
+      </a></li></ul></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> Chassis</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/a300/chassis-replace-overview.html">
+        Overview
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/a300/chassis-replace-shutdown.html">
+        Shut down impaired controller
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/a300/chassis-replace-move-hardware.html">
+        Replace hardware
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/a300/chassis-replace-complete-system-restore-rma.html">
+        Restore configuration
+      </a></li></ul></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> Controller module</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/a300/controller-replace-overview.html">
+        Overview
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/a300/controller-replace-shutdown.html">
+        Shut down impaired controller
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/a300/controller-replace-move-hardware.html">
+        Replace controller module
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/a300/controller-replace-system-config-restore-and-verify.html">
+        Restore system configuration
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/a300/controller-replace-recable-reassign-disks.html">
+        Recable system
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/a300/controller-replace-restore-system-rma.html">
+        Complete replacement
+      </a></li></ul></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/a300/dimm-replace.html">
+        DIMM
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/a300/fan-swap-out.html">
+        Fan
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/a300/nvmem-nvram-battery-replace.html">
+        NVMEM battery
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/a300/pci-cards-and-risers-replace.html">
+        PCIe card
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/a300/power-supply-swap-out.html">
+        Power supply
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/a300/rtc-battery-replace.html">
+        Real-time clock battery
+      </a></li></ul></li></ul></li><li class="subfolders "><a href="/us-en/ontap-systems/a320/index.html">
+        <div class="na-navbar-padding"> AFF A320 systems</div>
+      </a>
+      <ul><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> Install and setup</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/a320/install-setup.html">
+        Choose install and setup experience
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/a320/install-quick-guide.html">
+        Quick steps
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/a320/install-videos.html">
+        Videos steps
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/a320/install-detailed-guide.html">
+        Detailed steps
+      </a></li></ul></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> Maintain</div>
+      </a>
+      <ul><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> Boot media</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/a320/bootmedia-replace-overview.html">
+        Overview
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/a320/bootmedia-encryption-preshutdown-checks.html">
+        Check onboard encryption keys
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/a320/bootmedia-shutdown.html">
+        Shut down impaired controller
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/a320/bootmedia-replace.html">
+        Replace boot media
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/a320/bootmedia-recovery-image-boot-non-2n-mcc.html">
+        Boot recovery image
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/a320/bootmedia-encryption-restore.html">
+        Restore OKM, NSE, and NVE
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/a320/bootmedia-complete-rma.html">
+        Return failed part to NetApp
+      </a></li></ul></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> Chassis</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/a320/chassis-replace-overview.html">
+        Overview
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/a320/chassis-replace-shutdown.html">
+        Shut down impaired controller
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/a320/chassis-replace-move-hardware.html">
+        Replace hardware
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/a320/chassis-replace-complete-system-restore-rma.html">
+        Complete replacement
+      </a></li></ul></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> Controller module</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/a320/controller-replace-overview.html">
+        Overview
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/a320/controller-replace-shutdown.html">
+        Shut down impaired controller
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/a320/controller-replace-move-hardware.html">
+        Replace controller module
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/a320/controller-replace-system-config-restore-and-verify.html">
+        Restore system configuration
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/a320/controller-repalce-recable-reassign-disks.html">
+        Recable system
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/a320/controller-replace-complete-system-restoration.html">
+        Complete system restoration
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/a320/controller-replace-complete-rma.html">
+        Complete replacement
+      </a></li></ul></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/a320/dimm-replace.html">
+        DIMM
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/a320/fan-swap-out.html">
+        Fan
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/a320/nvdimm-replace.html">
+        NVDIMM
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/a320/nvdimm-battery-replace.html">
+        NVDIMM battery
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/a320/pci-cards-and-risers-replace.html">
+        PCIe card
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/a320/power-supply-replace.html">
+        Power supply
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/a320/rtc-battery-replace.html">
+        Real-time clock battery
+      </a></li></ul></li></ul></li><li class="subfolders "><a href="/us-en/ontap-systems/a400/index.html">
+        <div class="na-navbar-padding"> AFF A400 systems</div>
+      </a>
+      <ul><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> Install and setup</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/a400/install-setup.html">
+        Choose install and setup experience
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/a400/install-quick-guide.html">
+        Quick steps
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/a400/install-videos.html">
+        Videos steps
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/a400/install-detailed-guide.html">
+        Detailed steps
+      </a></li></ul></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> Maintain</div>
+      </a>
+      <ul><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> Boot media</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/a400/bootmedia-replace-overview.html">
+        Overview
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/a400/bootmedia-encryption-preshutdown-checks.html">
+        Check onboard encryption keys
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/a400/bootmedia-impaired-controller-shutdown.html">
+        Shut down impaired controller
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/a400/bootmedia-replace.html">
+        Replace boot media
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/a400/bootmedia-recovery-image-boot-options.html">
+        Boot recovery image
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/a400/bootmedia-2n-mcc-switchback.html">
+        Switch back MetroCluster config
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/a400/bootmedia-encryption-restore.html">
+        Restore OKM, NSE, and NVE
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/a400/bootmedia-complete-rma.html">
+        Return failed part to NetApp
+      </a></li></ul></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> Chassis</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/a400/chassis-replace-overview.html">
+        Overview
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/a400/chassis-replace-shutdown.html">
+        Shut down impaired controller
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/a400/chassis-replace-move-hardware.html">
+        Replace hardware
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/a400/chassis-replace-complete-system-restore-rma.html">
+        Complete replacement
+      </a></li></ul></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> Controller module</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/a400/controller-replace-overview.html">
+        Overview
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/a400/controller-replace-shutdown.html">
+        Shut down impaired controller
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/a400/controller-replace-move-hardware.html">
+        Replace controller module
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/a400/controller-replace-system-config-restore-and-verify.html">
+        Restore system configuration
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/a400/controller-replace-recable-reassign-disks.html">
+        Recable the system
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/a400/controller-replace-restore-system-rma.html">
+        Complete system restoration
+      </a></li></ul></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/a400/dimm-replace.html">
+        DIMM
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/a400/fan-swap-out.html">
+        Fan
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/a400/nvdimm-battery-replace.html">
+        NVDIMM battery
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/a400/nvdimm-replace.html">
+        NVDIMM
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/a400/pci-cards-and-risers-replace.html">
+        PCIe or mezzanine card
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/a400/power-supply-replace.html">
+        Power supply
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/a400/rtc-battery-replace.html">
+        Real-time clock battery
+      </a></li></ul></li></ul></li><li class="subfolders "><a href="/us-en/ontap-systems/fas9000/index.html">
+        <div class="na-navbar-padding"> AFF A700 and FAS9000 systems</div>
+      </a>
+      <ul><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> Install and setup</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/fas9000/install-setup.html">
+        Choose install and setup experience
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/fas9000/install-quick-guide.html">
+        Quick steps
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/fas9000/install-videos.html">
+        Video steps
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/fas9000/install-detailed-guide.html">
+        Detailed steps
+      </a></li></ul></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> Maintain</div>
+      </a>
+      <ul><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> Boot media</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/fas9000/bootmedia-replace-overview.html">
+        Overview
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/fas9000/bootmedia-encryption-preshutdown-checks.html">
+        Check onboard encryption keys
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/fas9000/bootmedia-impaired-controller-shutdown.html">
+        Shut down impaired controller
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/fas9000/bootmedia-replace.html">
+        Replace boot image
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/fas9000/bootmedia-recovery-image-boot-options.html">
+        Boot recovery image
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/fas9000/bootmedia-2n-mcc-switchback.html">
+        Switch back MetroCluster config
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/fas9000/bootmedia-encryption-restore.html">
+        Restore OKM, NSE, and NVE
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/fas9000/bootmedia-complete-rma.html">
+        Return failed part to NetApp
+      </a></li></ul></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/fas9000/caching-module-and-core-dump-module-replace.html">
+        Caching module
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/fas9000/caching-module-hot-swap.html">
+        Caching module (hot-swap)
+      </a></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> Chassis</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/fas9000/chassis-replace-overview.html">
+        Overview
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/fas9000/chassis-replace-shutdown.html">
+        Shut down impaired controller
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/fas9000/chassis-replace-move-hardware.html">
+        Replace hardware
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/fas9000/chassis-replace-complete-system-restore-rma.html">
+        Complete replacement
+      </a></li></ul></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> Controller module</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/fas9000/controller-replace-overview.html">
+        Overview
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/fas9000/controller-replace-shutdown.html">
+        Shut down impaired controller
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/fas9000/controller-replace.html">
+        Replace controller module
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/fas9000/controller-replace-system-config-restore-and-verify.html">
+        Restore system configuration
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/fas9000/controller-replace-recable-reassign-disks.html">
+        Recable system
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/fas9000/controller-replace-complete-system-restoration.html">
+        Complete system restoration
+      </a></li></ul></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/fas9000/dcpm-nvram10-battery-replace.html">
+        DCPM
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/fas9000/dimm-replace.html">
+        DIMM
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/fas9000/fan-swap-out.html">
+        Fan
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/fas9000/pci-cards-and-risers-replace.html">
+        I/O module
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/fas9000/led-module-replace.html">
+        LED USB module
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/fas9000/nvram-module-or-nvram-dimm-replacement.html">
+        NVRAM
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/fas9000/power-supply-swap-out.html">
+        Power supply
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/fas9000/rtc-battery-replace.html">
+        RTC battery
+      </a></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> X91148A module</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/fas9000/x91148a-module-install-overview.html">
+        Overview
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/fas9000/x91148a-modules-with-open-slots-add.html">
+        AFF A700 system with open slots
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/fas9000/x91148a-modules-with-no-open-slots-add.html">
+        AFF A700 system no open slots
+      </a></li></ul></li></ul></li></ul></li><li class="subfolders "><a href="/us-en/ontap-systems/a700s/index.html">
+        <div class="na-navbar-padding"> AFF A700s systems</div>
+      </a>
+      <ul><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> Install and setup</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/a700s/install-worksheet-linkout.html">
+        Cluster configuration worksheet
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/a700s/install-setup.html">
+        Choose install and setup experience
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/a700s/install-setup-linkout.html">
+        Quick steps
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/a700s/install-video-linkout.html">
+        Video steps
+      </a></li></ul></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> Maintain</div>
+      </a>
+      <ul><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> Boot media</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/a700s/bootmedia-replace-overview.html">
+        Overview
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/a700s/bootmedia-encryption-preshutdown-checks.html">
+        Check onboard encryption
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/a700s/bootmedia-shutdown.html">
+        Shut down node
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/a700s/bootmedia-replace.html">
+        Replace boot media
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/a700s/bootmedia-transfer-boot-image.html">
+        Transfer boot image
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/a700s/bootmedia-recovery-image-boot-non-2n-mcc.html">
+        Boot recovery image
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/a700s/bootmedia-encryption-restore.html">
+        Restore OKM, NSE, and NVE
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/a700s/bootmedia-complete-rma.html">
+        Return failed part to NetApp
+      </a></li></ul></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> Chassis</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/a700s/chassis-replace-overview.html">
+        Overview
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/a700s/chassis-replace-shutdown.html">
+        Shut down impaired controller
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/a700s/chassis-replace-move-hardware.html">
+        Replace hardware
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/a700s/chassis-replace-complete-system-restore-rma.html">
+        Complete replacement
+      </a></li></ul></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> Controller</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/a700s/controller-replace-overview.html">
+        Overview
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/a700s/controller-replace-shutdown.html">
+        Shut down impaired controller
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/a700s/controller-replace-move-hardware.html">
+        Replace controller module
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/a700s/controller-replace-system-config-restore-and-verify.html">
+        Restore system configuration
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/a700s/controller-replace-recable-reassign-disks.html">
+        Recable system
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/a700s/controller-replace-restore-system-rma.html">
+        Complete replacement process
+      </a></li></ul></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/a700s/dimm-replace.html">
+        DIMM
+      </a></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> Fan</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/a700s/fan-impaired-controller-shutdown.html">
+        Shut down impaired node
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/a700s/fan-controller-remove.html">
+        Remove controller module
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/a700s/fan-replace.html">
+        Fan
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/a700s/fan-controller-reinstall-pcie-rtc.html">
+        Reinstall controller module
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/a700s/fan-complete-rma.html">
+        Return failed part to NetApp
+      </a></li></ul></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/a700s/nvmem-nvram-battery-replace.html">
+        NVRAM battery
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/a700s/nvram-or-nvram-dimm-replacement.html">
+        NVRAM
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/a700s/pci-cards-and-risers-replace.html">
+        PCIe card
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/a700s/power-supply-swap-out.html">
+        Power supply
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/a700s/rtc-battery-replace.html">
+        Real-time clock battery
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/a700s/system-level-diags-linkout.html">
+        System-level diagnostics
+      </a></li></ul></li></ul></li><li class="subfolders "><a href="/us-en/ontap-systems/a800/index.html">
+        <div class="na-navbar-padding"> AFF A800 systems</div>
+      </a>
+      <ul><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> Install and setup</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/a800/install-setup.html">
+        Choose install and setup experience
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/a800/install-quick-guide.html">
+        Quick steps
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/a800/install-videos.html">
+        Video steps
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/a800/install-detailed-guide.html">
+        Detailed steps
+      </a></li></ul></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> Maintain</div>
+      </a>
+      <ul><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> Boot media</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/a800/bootmedia-replace-overview.html">
+        Overview
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/a800/bootmedia-encryption-preshutdown-checks.html">
+        Check onboard encryption keys
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/a800/bootmedia-shutdown.html">
+        Shut down impaired controller
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/a800/bootmedia-replace.html">
+        Replace boot image
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/a800/bootmedia-recovery-image-boot-non-2n-mcc.html">
+        Boot recovery image
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/a800/bootmedia-encryption-restore.html">
+        Restore OKM, NSE, and NVE
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/a800/bootmedia-complete-rma.html">
+        Return failed part to NetApp
+      </a></li></ul></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> Chassis</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/a800/chassis-replace-overview.html">
+        Overview
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/a800/chassis-replace-shutdown.html">
+        Shut down impaired controller
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/a800/chassis-replace-move-hardware.html">
+        Replace hardware
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/a800/chassis-replace-complete-system-restore-rma.html">
+        Complete replacement
+      </a></li></ul></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> Controller</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/a800/controller-replace-overview.html">
+        Overview
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/a800/controller-replace-shutdown.html">
+        Shut down impaired controller
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/a800/controller-replace-move-hardware.html">
+        Replace controller module
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/a800/controller-replace-system-config-restore-and-verify.html">
+        Restore system configuration
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/a800/controller-replace-recable-reassign-disks.html">
+        Recable system
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/a800/controller-replace-restore-system-rma.html">
+        Complete replacement
+      </a></li></ul></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/a800/dimm-replace.html">
+        DIMM
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/a800/fan-replace.html">
+        Fan
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/a800/nvdimm-replace.html">
+        NVDIMM
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/a800/nvdimm-battery-replace.html">
+        NVDIMM battery
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/a800/pci-cards-and-risers-replace.html">
+        PCIe card
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/a800/power-supply-replace.html">
+        Power supply
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/a800/rtc-battery-replace.html">
+        Real-time clock battery
+      </a></li></ul></li></ul></li><li class="subfolders "><a href="/us-en/ontap-systems/a900/index.html">
+        <div class="na-navbar-padding"> AFF A900 systems</div>
+      </a>
+      <ul><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> Install and setup</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/a900/install_setup.html">
+        Choose install and setup experience
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/a900/install_quick_guide.html">
+        Quick steps
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/a900/install_videos.html">
+        Video steps
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/a900/install_detailed_guide.html">
+        Detailed steps
+      </a></li></ul></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> Maintain</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/a900/add_io_module.html">
+        Add I/O module
+      </a></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> Boot media</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/a900/bootmedia_replace_overview.html">
+        Overview
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/a900/bootmedia_encryption_preshutdown_checks.html">
+        Pre-shutdown checks for onboard encryption keys
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/a900/bootmedia_impaired_controller_shutdown.html">
+        Shut down the impaired controller
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/a900/bootmedia_replace.html">
+        Transfer the boot image and replace the failed boot media
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/a900/bootmedia_recovery_image.html">
+        Boot the recovery image
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/a900/bootmedia_encryption_restore.html">
+        Post boot media replacement steps for OKM, NSE, and NVE
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/a900/bootmedia_complete_rma.html">
+        Return the failed part to NetApp
+      </a></li></ul></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> Chassis</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/a900/chassis_replace_overview.html">
+        Overview
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/a900/chassis_replace_shutdown.html">
+        Shut down the impaired controller
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/a900/chassis_replace_move_hardware.html">
+        Replace the hardware
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/a900/chassis_replace_complete_system_restore_rma.html">
+        Restoring and verifying configuration
+      </a></li></ul></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> Controller module</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/a900/controller_replace_overview.html">
+        Overview
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/a900/controller_replace_shutdown.html">
+        Shut down the impaired controller
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/a900/controller_replace.html">
+        Replace the controller module hardware
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/a900/controller_replace_system_config_restore_and_verify.html">
+        Restore and verify the system configuration
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/a900/controller_replace_recable_reassign_disks.html">
+        Recable the system
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/a900/controller_replace_complete_system_restoration_rma.html">
+        Complete system restoration
+      </a></li></ul></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/a900/dimm_replace.html">
+        DIMM
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/a900/dcpm_NVRAM11_battery_replace.html">
+        Destage control power module
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/a900/fan_swap_out.html">
+        Fan
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/a900/pci_cards_and_risers_replace.html">
+        I/O module
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/a900/led_module_replace.html">
+        LED USB module
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/a900/nvram_module_or_nvram_dimm_replacement.html">
+        NVRAM module and/or NVRAM DIMMs
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/a900/power_supply_swap_out.html">
+        Power supply
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/a900/rtc_battery_replace.html">
+        RTC battery
+      </a></li></ul></li></ul></li><li class="subfolders "><a href="/us-en/ontap-systems/c190/index.html">
+        <div class="na-navbar-padding"> AFF C190 systems</div>
+      </a>
+      <ul><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> Install and setup</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/c190/install-setup.html">
+        Choose install and setup experience
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/c190/install-quick-guide.html">
+        Quick steps
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/c190/install-videos.html">
+        Video steps
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/c190/install-detailed-guide.html">
+        Detailed steps
+      </a></li></ul></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> Maintain</div>
+      </a>
+      <ul><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> Boot media</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/c190/bootmedia-replace-overview.html">
+        Overview
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/c190/bootmedia-encryption-preshutdown-checks.html">
+        Check onboard encryption keys
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/c190/bootmedia-shutdown.html">
+        Shut down impaired controller
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/c190/bootmedia-replace.html">
+        Replace boot media
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/c190/bootmedia-recovery-image-boot-non-2n-mcc.html">
+        Boot recovery image
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/c190/bootmedia-encryption-restore.html">
+        Restore OKM, NSE, and NVE
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/c190/bootmedia-complete-rma.html">
+        Return failed part to NetApp
+      </a></li></ul></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> Chassis</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/c190/chassis-replace-overview.html">
+        Overview
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/c190/chassis-replace-shutdown.html">
+        Shut down impaired controller
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/c190/chassis-replace-move-hardware.html">
+        Replace hardware
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/c190/chassis-replace-restore-and-verify.html">
+        Restore configuration
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/c190/chassis-replace-complete-rma.html">
+        Complete replacement
+      </a></li></ul></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> Controller</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/c190/controller-replace-overview.html">
+        Overview
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/c190/controller-replace-shutdown.html">
+        Shut down impaired controller
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/c190/controller-replace-move-hardware.html">
+        Replace controller module
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/c190/controller-replace-system-config-restore-and-verify.html">
+        Restore system configuration
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/c190/controller-replace-recable-reassign-disks.html">
+        Recable system
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/c190/controller-replace-restore-system-rma.html">
+        Complete system restoration
+      </a></li></ul></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/c190/dimm-replace.html">
+        DIMM
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/c190/nvmem-nvram-battery-replace.html">
+        NVMEM battery
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/c190/power-supply-swap-out.html">
+        Power supply
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/c190/rtc-battery-replace.html">
+        Real-time clock battery
+      </a></li></ul></li></ul></li><li class="subfolders "><a href="/us-en/ontap-systems/fas2600/index.html">
+        <div class="na-navbar-padding"> FAS2600 systems</div>
+      </a>
+      <ul><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> Install and setup</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/fas2600/install-worksheet-linkout.html">
+        Cluster configuration worksheet
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/fas2600/install-setup.html">
+        Choose install and setup experience
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/fas2600/install-setup-linkout.html">
+        Quick steps
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/fas2600/install-video-linkout.html">
+        Video steps
+      </a></li></ul></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> Maintain</div>
+      </a>
+      <ul><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> Boot media</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/fas2600/bootmedia-replace-overview.html">
+        Overview
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/fas2600/bootmedia-encryption-preshutdown-checks.html">
+        Check onboard encryption keys
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/fas2600/bootmedia-shutdown.html">
+        Shut down impaired controller
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/fas2600/bootmedia-replace.html">
+        Replace boot media
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/fas2600/bootmedia-recovery-image-boot-non-2n-mcc.html">
+        Boot recovery image
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/fas2600/bootmedia-encryption-restore.html">
+        Restore OKM, NSE, and NVE
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/fas2600/bootmedia-complete-rma.html">
+        Return failed part to NetApp
+      </a></li></ul></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/fas2600/caching-module-replace.html">
+        Caching module
+      </a></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> Chassis</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/fas2600/chassis-replace-overview.html">
+        Overview
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/fas2600/chassis-replace-shutdown.html">
+        Shut down impaired controller
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/fas2600/chassis-replace-move-hardware.html">
+        Replace hardware
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/fas2600/chassis-replace-complete-system-restore-rma.html">
+        Restore system configuration
+      </a></li></ul></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> Controller module</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/fas2600/controller-replace-overview.html">
+        Overview
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/fas2600/controller-replace-shutdown.html">
+        Shut down impaired controller
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/fas2600/controller-replace-move-hardware.html">
+        Replace controller module
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/fas2600/controller-replace-system-config-restore-and-verify.html">
+        Restore system configuration
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/fas2600/controller-replace-recable-reassign-disks.html">
+        Recable system
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/fas2600/controller-replace-restore-system-rma.html">
+        Complete system restoration
+      </a></li></ul></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/fas2600/dimm-replace.html">
+        DIMM
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/fas2600/nvmem-nvram-battery-replace.html">
+        NVMEM battery
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/fas2600/power-supply-swap-out.html">
+        Power supply
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/fas2600/rtc-battery-replace.html">
+        Real-time clock battery
+      </a></li></ul></li></ul></li><li class="subfolders "><a href="/us-en/ontap-systems/fas500f/index.html">
+        <div class="na-navbar-padding"> FAS500f systems</div>
+      </a>
+      <ul><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> Install and setup</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/fas500f/install-setup.html">
+        Choose install and setup experience
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/fas500f/install-quick-guide.html">
+        Quick steps
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/fas500f/install-videos.html">
+        Video steps
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/fas500f/install-detailed-guide.html">
+        Detailed steps
+      </a></li></ul></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> Maintain</div>
+      </a>
+      <ul><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> Boot media</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/fas500f/bootmedia-replace-overview.html">
+        Overview
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/fas500f/bootmedia-encryption-preshutdown-checks.html">
+        Check onboard encryption keys
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/fas500f/bootmedia-shutdown.html">
+        Shut down node
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/fas500f/bootmedia-replace.html">
+        Replace boot image
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/fas500f/bootmedia-recovery-image-boot-non-2n-mcc.html">
+        Boot recovery image
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/fas500f/bootmedia-encryption-restore.html">
+        Restore OKM, NSE, and NVE
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/fas500f/bootmedia-complete-rma.html">
+        Return failed part to NetApp
+      </a></li></ul></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> Chassis</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/fas500f/chassis-replace-overview.html">
+        Overview
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/fas500f/chassis-replace-shutdown.html">
+        Shut down impaired controller
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/fas500f/chassis-replace-move-hardware.html">
+        Replace hardware
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/fas500f/chassis-replace-complete-system-restore-rma.html">
+        Complete replacement
+      </a></li></ul></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> Controller</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/fas500f/controller-replace-overview.html">
+        Overview
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/fas500f/controller-replace-shutdown.html">
+        Shut down impaired controller
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/fas500f/controller-replace-move-hardware.html">
+        Replace controller module
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/fas500f/controller-replace-system-config-restore-and-verify.html">
+        Restore system configuration
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/fas500f/controller-replace-recable-reassign-disks.html">
+        Recable system
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/fas500f/controller-replace-restore-system-rma.html">
+        Complete system restoration
+      </a></li></ul></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/fas500f/dimm-replace.html">
+        DIMM
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/fas500f/fan-replace.html">
+        Fan
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/fas500f/mezzanine-replace.html">
+        Mezzanine card
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/fas500f/nvmem-battery-replace.html">
+        NVMEM battery
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/fas500f/power-supply-replace.html">
+        Power supply
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/fas500f/rtc-battery-replace.html">
+        Real-time clock battery
+      </a></li></ul></li></ul></li><li class="subfolders "><a href="/us-en/ontap-systems/fas8200/index.html">
+        <div class="na-navbar-padding"> FAS8200 systems</div>
+      </a>
+      <ul><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> Install and setup</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/fas8200/install-worksheet-linkout.html">
+        Cluster configuration worksheet
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/fas8200/install-setup.html">
+        Choose install and setup experience
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/fas8200/install-setup-linkout.html">
+        Quick steps
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/fas8200/install-video-linkout.html">
+        Video steps
+      </a></li></ul></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> Maintain</div>
+      </a>
+      <ul><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> Boot media</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/fas8200/bootmedia-replace-overview.html">
+        Overview
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/fas8200/bootmedia-encryption-preshutdown-checks.html">
+        Check onboard encryption keys
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/fas8200/bootmedia-impaired-controller-shutdown.html">
+        Shut down impaired controller
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/fas8200/bootmedia-replace.html">
+        Replace boot media
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/fas8200/bootmedia-recovery-image-boot-options.html">
+        Boot recovery image
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/fas8200/bootmedia-2n-mcc-switchback.html">
+        Switch back MetroCluster config
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/fas8200/bootmedia-encryption-restore.html">
+        Restore OKM, NSE, and NVE
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/fas8200/bootmedia-complete-rma.html">
+        Return failed part to NetApp
+      </a></li></ul></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/fas8200/caching-module-replace.html">
+        Caching module
+      </a></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> Chassis</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/fas8200/chassis-replace-overview.html">
+        Overview
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/fas8200/chassis-replace-shutdown.html">
+        Shut down impaired controller
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/fas8200/chassis-replace-move-hardware.html">
+        Replace hardware
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/fas8200/chassis-replace-complete-system-restore-rma.html">
+        Restore configuration
+      </a></li></ul></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> Controller</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/fas8200/controller-replace-overview.html">
+        Overview
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/fas8200/controller-replace-shutdown.html">
+        Shut down impaired controller
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/fas8200/controller-replace-move-hardware.html">
+        Replace controller module
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/fas8200/controller-replace-system-config-restore-and-verify.html">
+        Restore system configuration
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/fas8200/controller-replace-recable-reassign-disks.html">
+        Recable system
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/fas8200/controller-replace-restore-system-rma.html">
+        Complete system restoration
+      </a></li></ul></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/fas8200/dimm-replace.html">
+        DIMM
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/fas8200/fan-swap-out.html">
+        Fan
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/fas8200/nvmem-nvram-battery-replace.html">
+        NVMEM battery
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/fas8200/pci-cards-and-risers-replace.html">
+        PCIe card
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/fas8200/power-supply-swap-out.html">
+        Power supply
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/fas8200/rtc-battery-replace.html">
+        Real-time clock battery
+      </a></li></ul></li></ul></li><li class="subfolders "><a href="/us-en/ontap-systems/fas8300/index.html">
+        <div class="na-navbar-padding"> FAS8300 and FAS8700 systems</div>
+      </a>
+      <ul><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> Install and setup</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/fas8300/install-setup.html">
+        Choose install and setup experience
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/fas8300/install-quick-guide.html">
+        Quick steps
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/fas8300/install-videos.html">
+        Video steps
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/fas8300/install-detailed-guide.html">
+        Detailed steps
+      </a></li></ul></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> Maintain</div>
+      </a>
+      <ul><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> Boot media</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/fas8300/bootmedia-replace-overview.html">
+        Overview
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/fas8300/bootmedia-encryption-preshutdown-checks.html">
+        Check onboard encryption keys
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/fas8300/bootmedia-impaired-controller-shutdown.html">
+        Shut down impaired controller
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/fas8300/bootmedia-replace.html">
+        Replace boot image
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/fas8300/bootmedia-recovery-image-boot-options.html">
+        Boot recovery image
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/fas8300/bootmedia-2n-mcc-switchback.html">
+        Switch back MetroCluster config
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/fas8300/bootmedia-encryption-restore.html">
+        Restore OKM, NSE, and NVE
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/fas8300/bootmedia-complete-rma.html">
+        Return failed part to NetApp
+      </a></li></ul></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/fas8300/caching-module-replace.html">
+        Caching module
+      </a></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> Chassis</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/fas8300/chassis-replace-overview.html">
+        Overview
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/fas8300/chassis-replace-shutdown.html">
+        Shut down impaired controller
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/fas8300/chassis-replace-move-hardware.html">
+        Replace hardware
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/fas8300/chassis-replace-complete-system-restore-rma.html">
+        Complete replacement
+      </a></li></ul></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> Controller</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/fas8300/controller-replace-overview.html">
+        Overview
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/fas8300/controller-replace-shutdown.html">
+        Shut down impaired controller
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/fas8300/controller-replace-move-hardware.html">
+        Replace controller module
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/fas8300/controller-replace-system-config-restore-and-verify.html">
+        Restore system configuration
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/fas8300/controller-replace-recable-reassign-disks.html">
+        Recable system
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/fas8300/controller-replace-restore-system-rma.html">
+        Complete replacement
+      </a></li></ul></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/fas8300/dimm-replace.html">
+        DIMM
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/fas8300/fan-swap-out.html">
+        Fan
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/fas8300/nvdimm-replace.html">
+        NVDIMM
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/fas8300/nvdimm-battery-replace.html">
+        NVDIMM battery
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/fas8300/pci-cards-and-risers-replace.html">
+        PCIe or mezzanine card
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/fas8300/power-supply-replace.html">
+        Power supply
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/fas8300/rtc-battery-replace.html">
+        Real-time clock battery
+      </a></li></ul></li></ul></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> Other platform procedures</div>
+      </a>
+      <ul><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> System-level diagnostics</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/platform-supplemental/sldiag-introduction.html">
+        Introduction
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/platform-supplemental/sldiag-requirements.html">
+        Requirements
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/platform-supplemental/sldiag-use-cli-help.html">
+        How to use command-line help
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/platform-supplemental/sldiag-system-installation-diagnostics.html">
+        Run system install diagnostics
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/platform-supplemental/sldiag-system-panic-diagnostics.html">
+        Run system panic diagnostics
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/platform-supplemental/sldiag-slow-system-diagnostics.html">
+        Run slow system response diagnostics
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/platform-supplemental/sldiag-hardware-installation-diagnostics.html">
+        Run hardware install diagnostics
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/platform-supplemental/sldiag-device-failure-diagnostics.html">
+        Run device failure diagnostics
+      </a></li></ul></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/platform-supplemental/superrail-install.html">
+        SuperRail kit
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/platform-supplemental/telco-installation-instructions.html">
+        AFF A700/FAS9000 two-post rail kit
+      </a></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> 42U 1280 mm System Cabinet</div>
+      </a>
+      <ul><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> Prepare to install cabinet</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/platform-supplemental/42u-1280mm-features.html">
+        Cabinet features
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/platform-supplemental/42u-1280mm-required-tools.html">
+        Required tools/equipment
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/platform-supplemental/42u-1280mm-space-and-dimensions.html">
+        Space requirements and cabinet dimensions
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/platform-supplemental/42u-1280mm-supported-pdu-types-and-specifications.html">
+        Supported PDU types and specs
+      </a></li></ul></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/platform-supplemental/42u-1280mm-unpack.html">
+        Unpack system cabinet
+      </a></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> Install cabinet</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/platform-supplemental/42u-1280mm-install.html">
+        Overview
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/platform-supplemental/42u-1280mm-install-cabinet-interconnect-kit.html">
+        Install cabinet interconnect kit
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/platform-supplemental/42u-1280mm-install-bolt-down-kit.html">
+        Install bolt-down kit
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/platform-supplemental/42u-1280mm-install-additional-rails.html">
+        Install support rails
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/platform-supplemental/42u-1280mm-install-equipment.html">
+        Install equipment
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/platform-supplemental/42u-1280mm-power-on.html">
+        Power on cabinet
+      </a></li></ul></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/platform-supplemental/42u-1280mm-replace-pdus.html">
+        Replace PDUs
+      </a></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> Reverse cabinet front door</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/platform-supplemental/42u-1280mm-reverse-front-door.html">
+        What you need
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/platform-supplemental/42u-1280mm-remove-illuminated-badge.html">
+        Remove illuminated badge
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/platform-supplemental/42u-1280mm-remove-door.html">
+        Remove cabinet door
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/platform-supplemental/42u-1280mm-move-badge-ps-and-cabling.html">
+        Move badge power supply and cabling
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/platform-supplemental/42u-1280mm-reverse-hinge-and-lock.html">
+        Reverse door hinge and lock catch
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/platform-supplemental/42u-1280mm-reinstall-door-and-badge.html">
+        Reinstall door and illuminated badge
+      </a></li></ul></li></ul></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> Swap out internal disk drive</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/platform-supplemental/drive-video.html">
+        Video overview
+      </a></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> Hot-swap embedded drive</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/platform-supplemental/drive-hotswap.html">
+        Which procedure to use
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/platform-supplemental/drive-hotswap-drive.html">
+        Hot-swap SSD
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/platform-supplemental/drive-hotswap-sas.html">
+        Hot-swap HDD
+      </a></li></ul></li></ul></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> All SAN Array systems</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/platform-supplemental/all-san-array.html">
+        Set up and maintain
+      </a></li></ul></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> Hardware upgrade</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/platform-supplemental/upgrade-linkout.html">
+        Upgrade procedures
+      </a></li></ul></li></ul></li><li class="subfolders "><a href="/us-en/ontap-systems/ns224/index.html">
+        <div class="na-navbar-padding"> NS224 shelves</div>
+      </a>
+      <ul><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> Install and cable</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/ns224/hot-add-shelf.html">
+        Hot-add a shelf
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/ns224/change-shelf-id.html">
+        Change a shelf ID
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/ns224/cable-as-switch-attached.html">
+        Cable shelves as switch-attached storage
+      </a></li></ul></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> Maintain</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/ns224/service-replace-boot-media.html">
+        Boot media
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/ns224/service-replace-dimm.html">
+        DIMM
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/ns224/service-replace-drive.html">
+        Drive
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/ns224/service-replace-fan.html">
+        Fan
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/ns224/hot-remove-shelf.html">
+        Hot-remove shelf
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/ns224/service-replace-nsm100.html">
+        NSM module
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/ns224/service-replace-power-supply.html">
+        Power supply
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/ns224/service-replace-rtc-battery.html">
+        Real-time clock battery
+      </a></li></ul></li></ul></li><li class="subfolders "><a href="/us-en/ontap-systems/sas3/index.html">
+        <div class="na-navbar-padding"> SAS shelves with IOM12 modules</div>
+      </a>
+      <ul><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> Install and cable</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/sas3/install-new-system.html">
+        Install and cable shelves for new system
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/sas3/install-hot-add-shelf.html">
+        Hot-add shelf
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/sas3/iom12-hot-add-mix.html">
+        Hot-add IOM12 shelves to a stack of IOM6 shelves
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/sas3/install-change-shelf-id.html">
+        Change shelf ID
+      </a></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> SAS cabling rules, worksheets, and examples</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/sas3/overview-cabling-rules-examples.html">
+        Overview
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/sas3/install-cabling-rules.html">
+        SAS cabling rules
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/sas3/install-cabling-worksheets-examples-multipath.html">
+        Cabling worksheets and examples for common multipath HA configurations
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/sas3/install-cabling-worksheets-examples-fas2600.html">
+        Cabling worksheets and examples for common AFF A200, AFF A220, FAS2600 series and FAS2700 configurations
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/sas3/install-worksheets-examples-quadpath.html">
+        Cabling worksheet and example for a quad-path HA configuration with two quad-port SAS HBAs
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/sas3/install-cabling-worksheet-template-multipath.html">
+        Cabling worksheet template for multipathed connectivity
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/sas3/install-cabling-worksheet-template-quadpath.html">
+        Cabling worksheet template for quad-pathed connectivity
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/sas3/install-cabling-worksheets-how-to-read-multipath.html">
+        How to read worksheet to cable for multipathed connectivity
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/sas3/install-cabling-worksheets-how-to-read-quadpath.html">
+        How to read worksheet to cable for quad-pathed connectivity
+      </a></li></ul></li></ul></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> Maintain</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/sas3/service-hot-swap-drive-ds224c-ds212c.html">
+        Disk drive in DS224C or DS212C shelf
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/sas3/service-hot-swap-drive-ds460c.html">
+        Disk drive in DS460C shelf
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/sas3/service-replace-drawer-ds460c.html">
+        Drive drawer in DS460C shelf
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/sas3/service-replace-fan-ds460c.html">
+        Fan module in DS460C shelf
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/sas3/hot-remove-shelf.html">
+        Hot-remove shelf
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/sas3/service-hot-swap-iom.html">
+        IOM12 module
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/sas3/service-hot-swap-power-supply.html">
+        Power supply
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/sas3/service-monitor-leds.html">
+        Shelf LED status conditions
+      </a></li></ul></li></ul></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> Other platform, shelf and switch models</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/other/platform-linkout.html">
+        Other platform models
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/other/shelf-linkout.html">
+        Other shelf models
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/other/switch-linkout.html">
+        Other switch models
+      </a></li></ul></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/legal-notices.html">
+        Legal notices
+      </a></li></ul>
+</div>
+<script>
+  window.onscroll = () => {
+    const value = -40 - (document.body.scrollHeight - (window.innerHeight + document.scrollingElement.scrollTop));
+    
+    document.getElementById("sidebar-height").style.bottom = Math.max(0,value) + "px";
+};
+</script>
+<!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
+<script>$("li.active").parents('li').toggleClass("active");</script>
+
+  </div>
+  
+
+  <div class="ie-content-pane n-doc__component-detail-content n-doc__component-detail-content--show-code">
+    <!-- Begin of page container -->
+    <article class="page-content">
+      <div class="ie-utility">
+  <div class="ie-menu">
+    <div class="n-breadcrumb">
+      <ul class="n-breadcrumb__list">
+        <li class="n-breadcrumb__list-item">
+          <a href="https://www.netapp.com">Home</a>
+        </li>
+        <li class="n-breadcrumb__list-item">
+          <a href="https://docs.netapp.com">Documentation</a>
+        </li>
+        
+
+        <li class="n-breadcrumb__list-item">
+          <a href="/us-en/ontap-systems/">ONTAP&nbsp;Systems</a>
+        </li>
+        <li class="n-breadcrumb__list-item">
+          Replace the DCPM module - AFF A700 and FAS9000
+        </li>
+      </ul>
+    </div>
+    <div style="clear: both"></div><!-- Main needs to have height -->
+  </div>
+</div>
+
+      <div class="n-doc__component-detail-heading-wrap">
+  <h1 class="n-doc__component-detail-heading">Replace the DCPM module - AFF A700 and FAS9000</h1>
+</div>
+
+
+<p class="page-details">
+  
+    
+    <time datetime="2021-10-22 04:31:08 +0000">10/22/2021</time>
+    
+  
+
+<span>Contributors
+  <a target="_blank" href="https://github.com/dougthomp">
+    <img  class="avatar avatar-small"
+          alt="dougthomp"
+          width="20" height="20"
+          src="https://avatars.githubusercontent.com/u/76076341?v=4"
+          style="border-radius: 50%;"/>
+  </a>
+  
+  <a target="_blank" href="https://github.com/netapp-martyh">
+    <img  class="avatar avatar-small"
+          alt="netapp-martyh"
+          width="20" height="20"
+          src="https://avatars.githubusercontent.com/u/66496079?v=4"
+          style="border-radius: 50%;"/>
+  </a>
+  
+</span>
+
+
+</p>
+
+
+<div class="paragraph lead">
+<p>To replace the DCPM module in your system, you must remove the failed DCPM module from the system and then replace it with a new DCPM module.</p>
+</div>
+<div class="olist arabic">
+<div class="title">Steps</div>
+<ol class="arabic">
+<li>
+<p>If you are not already grounded, properly ground yourself.</p>
+</li>
+<li>
+<p>Remove the bezel on the front of the system and set it aside.</p>
+</li>
+<li>
+<p>Locate the failed DCPM module in the front of the system by looking for the Attention LED on the module.</p>
+<div class="paragraph">
+<p>The LED will be steady amber if the module is faulty.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<img src="/us-en/ontap-systems/images/note.svg" alt="Note">
+</td>
+<td class="content">
+The DCPM module must be replaced in the chassis within five minutes of removal or the associated controller will shut down.
+</td>
+</tr>
+</table>
+</div>
+</li>
+<li>
+<p>Press the orange locking button on the module handle, and then slide the DCPM module out of the chassis.</p>
+<div class="imageblock">
+<div class="content">
+<img src="../media/drw_9000_remove_nv_battery.png" alt="drw 9000 remove nv battery">
+</div>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 25%;">
+<col style="width: 75%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="../media/legend_icon_01.png" alt="legend icon 01"></span></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>DCPM module orange locking button</p>
+</div></div></td>
+</tr>
+</tbody>
+</table>
+</li>
+<li>
+<p>Align the end of the DCPM module with the chassis opening, and then gently slide it into the chassis until it clicks into place.</p>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<img src="/us-en/ontap-systems/images/note.svg" alt="Note">
+</td>
+<td class="content">
+The module and slot are keyed. Do not force the module into the opening. If the module does not go in easily, realign the module and slide it into the chassis.
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>The DCPM module LED lights when the module is fully seated into the chassis.</p>
+</div>
+</li>
+</ol>
+</div>
+
+    </article>
+    <!-- Page Container -->
+  </div>
+
+  
+  <!-- Start Page Toolbar -->
+  <div class="page-nav-toolbar">
+    <div id="version-dropdown"></div>
+    <div class="page-nav-contribute"  >
+      <a target="_blank" href="https://github.com/NetAppDocs/ontap-systems/issues/new?body=Page%3A%20[Replace the DCPM module - AFF A700 and FAS9000](https://docs.netapp.com/us-en/ontap-systems/fas9000/dcpm-power-replace.html)" class="page-nav-contribute-link" role="button"><img src="/us-en/ontap-systems/images/discuss-sm.svg" class="github-icon" />Request doc changes</a>
+      <a target="_blank" href="https://github.com/NetAppDocs/ontap-systems/blob/main/fas9000/dcpm_power_replace.adoc" class="page-nav-contribute-link" role="button"><img src="/us-en/ontap-systems/images/edit-sm.svg" class="github-icon" />Edit this page</a>
+      <a target="_blank" href="https://docs.netapp.com/us-en/contribute/" class="page-nav-contribute-link"  ><img src="/us-en/ontap-systems/images/article-sm.svg" class="github-icon" />Learn how to contribute</a>
+    </div>
+    <div class="page-nav-container">
+      <nav class="page-nav-fixed">
+        <div class="page-nav-title">ON THIS PAGE</div>
+        <div class="page-nav-links">
+          <ul class="page-nav-inner" id="page-menu"></ul>
+        </div>
+      </nav>
+    </div>
+  </div>
+  
+  <div style="clear: both"></div><!-- Main needs to have height -->
+</div>
+
+        </main>
+
+        <footer class="n-footer">
+  <div class="n-footer__bottom">
+    <div class="n-container">
+      <div class="n-footer__bottom-left">
+
+        <div class="n-footer__copyright">
+          <ul class="n-footer__copyright-list">
+            <li class="n-footer__copyright-link">
+            <a href="https://www.netapp.com/us/legal/copyright.aspx">© 2022 NetApp, Inc.</a>
+            </li>
+
+</ul>
+</div>
+<div class="n-footer__social-links">
+<ul class="n-footer__social-link-list">
+<li class="n-footer__social-link-list-item">
+<a class="n-footer__social-link" data-ntap-social="follow-blog" href="https://blog.netapp.com" target="_blank" title="blog" alt="blog">
+<span class="n-footer__social-link-text">blog</span>
+<svg class="n-icon-blog n-footer__social-link-icon" aria-labelledby="title">
+  <title>blog@</title>
+  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/us-en/ontap-systems/common/svg/sprite.svg#blog"></use>
+</svg>
+
+</a>
+</li>
+<li class="n-footer__social-link-list-item">
+<a class="n-footer__social-link" data-ntap-social="follow-community" href="https://community.netapp.com/" target="_blank" title="community" alt="community">
+<span class="n-footer__social-link-text">community</span>
+<svg class="n-icon-community n-footer__social-link-icon" aria-labelledby="title">
+<title>community@</title>
+<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/us-en/ontap-systems/common/svg/sprite.svg#comments"></use>
+</svg>
+
+</a>
+</li>
+<li class="n-footer__social-link-list-item">
+<a class="n-footer__social-link" data-ntap-social="follow-twitter" href="https://twitter.com/netapp" target="_blank" title="twitter" alt="twitter">
+<span class="n-footer__social-link-text">twitter</span>
+<svg class="n-icon-twitter n-footer__social-link-icon" aria-labelledby="title">
+<title>twitter@</title>
+<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/us-en/ontap-systems/common/svg/sprite.svg#twitter"></use>
+</svg>
+
+</a>
+</li>
+<li class="n-footer__social-link-list-item">
+<a class="n-footer__social-link" data-ntap-social="follow-facebook" href="https://www.facebook.com/NetApp" target="_blank" title="facebook" alt="facebook">
+<span class="n-footer__social-link-text">facebook</span>
+<svg class="n-icon-facebook n-footer__social-link-icon" aria-labelledby="title">
+<title>facebook@</title>
+<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/us-en/ontap-systems/common/svg/sprite.svg#facebook"></use>
+</svg>
+
+</a>
+</li>
+<li class="n-footer__social-link-list-item">
+<a class="n-footer__social-link" data-ntap-social="follow-linkedin" href="https://www.linkedin.com/company/netapp" target="_blank" title="linkedin" alt="linkedin">
+<span class="n-footer__social-link-text">linkedin</span>
+<svg class="n-icon-linkedin n-footer__social-link-icon" aria-labelledby="title">
+<title>linkedin@</title>
+<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/us-en/ontap-systems/common/svg/sprite.svg#linkedin"></use>
+</svg>
+
+</a>
+</li>
+<li class="n-footer__social-link-list-item">
+<a class="n-footer__social-link" data-ntap-social="follow-youtube" href="https://www.youtube.com/user/NetAppTV" target="_blank" title="youtube" alt="youtube">
+<span class="n-footer__social-link-text">youtube</span>
+<svg class="n-icon-youtube n-footer__social-link-icon" aria-labelledby="title">
+<title>youtube@</title>
+<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/us-en/ontap-systems/common/svg/sprite.svg#youtube"></use>
+</svg>
+
+</a>
+</li>
+<li class="n-footer__social-link-list-item">
+<a class="n-footer__social-link" data-ntap-social="follow-slideshare" href="https://www.slideshare.net/NetApp" target="_blank" title="slideshare" alt="slideshare">
+<span class="n-footer__social-link-text">slideshare</span>
+<svg class="n-icon-slideshare n-footer__social-link-icon" aria-labelledby="title">
+<title>slideshare@</title>
+<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/us-en/ontap-systems/common/svg/sprite.svg#slideshare"></use>
+</svg>
+
+</a>
+</li>
+</ul>
+</div>
+
+</div>
+<div class="n-footer__bottom-right">
+  <p class="n-footer__fine-print">Have feedback for our website?<a target="_self" href="javascript:netapp_mailto()" class="n-footer__copyright">Let us know</a>
+  <a href="https://docs.netapp.com/us-en/announcements/" class="n-footer__copyright">Announcements</a>
+  </p>
+</div>
+</div>
+</div>
+</footer>
+
+      </div>
+
+      <!-- Elasticsearch JS -->
+      <script type="text/javascript" src='/us-en/ontap-systems/js/bundle.js'></script>
+
+      <!-- Syntax Highlighting -->
+      <script type="text/javascript" src='/us-en/ontap-systems/js/prism.js'></script>
+      <script type="text/javascript" src='/us-en/ontap-systems/js/prism-curl.js'></script>
+    </div>
+    <script>
+      document.body.offsetWidth=1903;
+      cookieLaw = {}
+      cookieLaw.euCountry = "US";
+      cookieLaw.invoke = function(){return false;}
+    </script>
+    <script src='/us-en/ontap-systems/js/www-ntap.js'></script>
+    <script src='/us-en/ontap-systems/js/tabbed-blocks.js'></script>
+  </body>
+
+  
+</html>
