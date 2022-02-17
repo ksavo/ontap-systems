@@ -9,7 +9,7 @@ settings:
 
 sidebar:
   entries:
-    - title: Home
+    - title: AFF and FAS system docs
       url: "/index.html"
     - section: a200
     - section: fas2700
