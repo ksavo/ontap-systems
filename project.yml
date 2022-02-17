@@ -6,11 +6,17 @@ settings:
   prod:
     pdf_enabled: true
     harmony_enabled: true
-
+    langs: "us-en,ja-jp,zh-cn,ko-kr"
 sidebar:
   entries:
-    - title: Home
+    - title: ONTAP systems docs
       url: "/index.html"
+    - title: Release Notes
+      entries:
+        - title: What's new
+          url: /whats-new.html
+        - title: Release notes
+          url: /rel-notes.html
     - section: a200
     - section: fas2700
     - section: a250
