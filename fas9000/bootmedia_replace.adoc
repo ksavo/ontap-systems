@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: aff a700, fas9000, open, controller, module, system, access, component
 summary: "To access components inside the controller, you must first remove the controller module from the system and then remove the cover on the controller module."
 ---
-= Remove the controller module, replace the boot media and transfer the boot image to the boot media - AFF A700 and FAS9000
+= Replace the boot media - AFF A700 and FAS9000
 :icons: font
 :imagesdir: ../media/
 
