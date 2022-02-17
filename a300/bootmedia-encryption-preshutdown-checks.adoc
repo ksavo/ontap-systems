@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: aff a300, aff, a300, prior, shut, down, impair, node, check, status, encryption, key, status, giveback, ontap, pre-shutdown, pre-shutdown checks for onboard encryption keys
 summary: Prior to shutting down the impaired node and checking the status of the onboard encryption keys, you must check the status of the impaired node, disable automatic giveback, and check what version of ONTAP the system is running.
 ---
-= Check onboard encryption keys as needed - AFF A300
+= Check onboard encryption keys - AFF A300
 :icons: font
 :imagesdir: ../media/
 
