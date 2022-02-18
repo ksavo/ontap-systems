@@ -14,4 +14,4 @@ To replace the chassis, you must move the fans and controller modules from the i
 All other components in the system must be functioning properly; if not, you must contact technical support.
 
 * You can use this procedure with all versions of ONTAP supported by your system.
-* This procedure is disruptive. For a two-node cluster, you will have a complete service outage and a partial outage in a multi-node cluster.
+* This procedure is disruptive. For a two-node cluster, you will have a complete service outage and a partial outage in a multinode cluster.

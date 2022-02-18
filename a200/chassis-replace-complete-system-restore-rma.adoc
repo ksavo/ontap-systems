@@ -31,7 +31,6 @@ The value for HA-state can be one of the following:
 
 == Step 2: Running system-level diagnostics
 
-[.lead]
 After installing a new chassis, you should run interconnect diagnostics.
 
 .What you'll need
@@ -128,5 +127,4 @@ Determine the cause of the problem.
 
 == Step 3: Return the failed part to NetApp
 
-[.lead]
 include::../_include/complete_rma.adoc[]

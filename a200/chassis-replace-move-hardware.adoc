@@ -8,9 +8,11 @@ summary: "Move the power supplies, hard drives, and controller module or modules
 :icons: font
 :imagesdir: ../media/
 
+[.lead]
+Move the power supplies, hard drives, and controller module or modules from the impaired chassis to the new chassis, and swap out the impaired chassis from the equipment rack or system cabinet with the new chassis of the same model as the impaired chassis.
+
 == Step 1: Move the power supply
 
-[.lead]
 Move the power supply from the old chassis to the replacement chassis.
 
 .Steps
@@ -22,14 +24,15 @@ Move the power supply from the old chassis to the replacement chassis.
 . Squeeze the latch on the power supply cam handle, and then open the cam handle to fully release the power supply from the mid plane.
 . Use the cam handle to slide the power supply out of the system.
 +
-*CAUTION:* When removing a power supply, always use two hands to support its weight.
+CAUTION: When removing a power supply, always use two hands to support its weight.
++
 
 . Repeat the preceding steps for any remaining power supplies.
 . Using both hands, support and align the edges of the power supply with the opening in the system chassis, and then gently push the power supply into the chassis using the cam handle.
 +
 The power supplies are keyed and can only be installed one way.
 +
-NOTE: Do not use excessive force when sliding the power supply into the system. You can damage the connector.
+CAUTION: Do not use excessive force when sliding the power supply into the system. You can damage the connector.
 
 . Close the cam handle so that the latch clicks into the locked position and the power supply is fully seated.
 . Reconnect the power cable and secure it to the power supply using the power cable locking mechanism.
@@ -38,7 +41,6 @@ NOTE: Only connect the power cable to the power supply. Do not connect the power
 
 == Step 2: Remove the controller module
 
-[.lead]
 Remove the controller module or modules from the old chassis.
 
 .Steps
@@ -58,7 +60,6 @@ image::../media/drw_2240_x_opening_cam_latch.png[]
 
 == Step 3: Move drives to the new chassis
 
-[.lead]
 Move the drives from each bay opening in the old chassis to the same bay opening in the new chassis.
 
 .Steps
@@ -79,13 +80,12 @@ The cam handle engages and begins to rotate upward.
 
 . Firmly push the drive the rest of the way into the chassis, and then lock the cam handle by pushing it up and against the drive holder.
 +
-Be sure to close the cam handle slowly so that it aligns correctly with the front of the drive carrier. It click when it is secure.
+Be sure to close the cam handle slowly so that it aligns correctly with the front of the drive carrier. It clicks when it is secure.
 
 . Repeat the process for the remaining drives in the system.
 
 == Step 4: Replace a chassis from within the equipment rack or system cabinet
 
-[.lead]
 You must remove the existing chassis from the equipment rack or system cabinet before you can install the replacement chassis.
 
 .Steps
@@ -99,7 +99,6 @@ You must remove the existing chassis from the equipment rack or system cabinet b
 
 == Step 5: Install the controller
 
-[.lead]
 After you install the controller module and any other components into the new chassis, boot it to a state where you can run the interconnect diagnostic test.
 
 .About this task
@@ -123,7 +122,7 @@ a|
 
  .. With the cam handle in the open position, firmly push the controller module in until it meets the midplane and is fully seated, and then close the cam handle to the locked position.
 +
-NOTE: Do not use excessive force when sliding the controller module into the chassis to avoid damaging the connectors.
+CAUTION: Do not use excessive force when sliding the controller module into the chassis to avoid damaging the connectors.
 
  .. If you have not already done so, reinstall the cable management device.
  .. Bind the cables to the cable management device with the hook and loop strap.
@@ -135,7 +134,7 @@ a|
 
  .. With the cam handle in the open position, firmly push the controller module in until it meets the midplane and is fully seated, and then close the cam handle to the locked position.
 +
-NOTE: Do not use excessive force when sliding the controller module into the chassis to avoid damaging the connectors.
+CAUTION: Do not use excessive force when sliding the controller module into the chassis to avoid damaging the connectors.
 
  .. If you have not already done so, reinstall the cable management device.
  .. Bind the cables to the cable management device with the hook and loop strap.

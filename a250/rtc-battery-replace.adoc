@@ -16,22 +16,18 @@ You replace the real-time clock (RTC) battery in the controller module so that y
 
 == Step 1: Shut down the impaired controller
 
-[.lead]
 You can shut down or take over the impaired controller using different procedures, depending on the storage system hardware configuration.
 
 === Option 1: Most configurations
 
-[.lead]
 include::../_include/shutdown_most_frus.adoc[]
 
 === Option 2: System is in a MetroCluster
 
-[.lead]
 include::../_include/shutdown_any_mcc_supported.adoc[]
 
 == Step 2: Remove the controller module
 
-[.lead]
 You must remove the controller module from the chassis when you replace a component inside the controller module.
 
 Make sure that you label the cables so that you know where they came from.
@@ -41,7 +37,7 @@ Make sure that you label the cables so that you know where they came from.
 . Release the power cable retainers, and then unplug the cables from the power supplies.
 . Insert your forefinger into the latching mechanism on either side of the controller module, press the lever with your thumb, and gently pull the controller a few inches out of the chassis.
 +
-NOTE: If you have difficulty removing the controller module, place your index fingers through the finger holes from the inside (by crossing your arms)
+NOTE: If you have difficulty removing the controller module, place your index fingers through the finger holes from the inside (by crossing your arms).
 +
 image::../media/drw_a250_pcm_remove_install.png[]
 +
@@ -75,12 +71,11 @@ image::../media/drw_a250_remove_airduct_cover.png[]
 
 == Step 3: Replace the RTC battery
 
-[.lead]
 To replace the RTC battery, locate it inside the controller and follow the specific sequence of steps.
 
 Use the following video or the tabulated steps to replace the RTC battery:
 
-https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=6ed27f71-d3a7-4cee-8d9f-ac5b016c982d[Replacing the RTC battery]
+https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=6ed27f71-d3a7-4cee-8d9f-ac5b016c982d[Replacing the RTC battery^]
 
 . Locate the RTC battery between the heatsink and the midplane and remove it exactly as shown in the graphic.
 +
@@ -89,11 +84,13 @@ image::../media/drw_a250_remove_rtc_batt.png[]
 |===
 a|
 image:../media/legend_icon_01.png[]|
-Gently pull tab away from the battery housing.    *Attention:* Pulling it away aggressively might displace the tab.
+Gently pull tab away from the battery housing.
+*Attention:* Pulling it away aggressively might displace the tab.
 a|
 image:../media/legend_icon_02.png[]
 a|
-Lift the battery up.    *Note:* Make a note of the polarity of the battery.
+Lift the battery up.
+*Note:* Make a note of the polarity of the battery.
 a|
 image:../media/legend_icon_03.png[]
 a|
@@ -113,15 +110,18 @@ With positive polarity face up, slide the battery under the tab of the battery h
 a|
 image:../media/legend_icon_02.png[]
 a|
-Push the battery gently into place and make sure the tab secures it to the housing.    *Attention:* Pushing it in aggressively might cause the battery to eject out again.
+Push the battery gently into place and make sure the tab secures it to the housing.
 +
+*CAUTION:*
++
+Pushing it in aggressively might cause the battery to eject out again.
+
 |===
 
 . Visually inspect the battery to make sure that it is completely installed into the holder and that the polarity is correct.
 
 == Step 4: Reinstall the controller module and setting time/date after RTC battery replacement
 
-[.lead]
 After you replace a component within the controller module, you must reinstall the controller module in the system chassis, reset the time and date on the controller, and then boot it.
 
 . If you have not already done so, close the air duct or controller module cover.
@@ -159,5 +159,4 @@ The controller module should be fully inserted and flush with the edges of the c
 
 == Step 5: Return the failed part to NetApp
 
-[.lead]
 include::../_include/complete_rma.adoc[]

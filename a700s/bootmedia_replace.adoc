@@ -73,7 +73,7 @@ Air duct
 [.lead]
 You must locate the failed boot media in the controller module by removing the middle PCIe module on the controller module, locate the failed boot media by the lit LED near the boot media, and then replace the boot media.
 
-You need a Phillips head screw driver to remove the screw that holds the boot media in-place.
+You need a Phillips head screwdriver to remove the screw that holds the boot media in place.
 
 . If you are not already grounded, properly ground yourself.
 . Locate the boot media:

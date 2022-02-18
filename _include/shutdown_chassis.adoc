@@ -1,9 +1,7 @@
 You must shut down the node or nodes in the chassis prior to moving them to the new chassis.
 
 .About this task
-* If you have a cluster with more than two nodes, it must be in quorum. If the cluster is not in quorum or a healthy node shows `false` for eligibility and health, you must correct the issue before shutting down the impaired node.
-+
-http://docs.netapp.com/ontap-9/topic/com.netapp.doc.dot-cm-sag/home.html[_ONTAP 9 System Administration Reference_]
+* If you have a cluster with more than two nodes, it must be in quorum. If the cluster is not in quorum or a healthy node shows `false` for eligibility and health, you must correct the issue before shutting down the impaired node; see the link:https://docs.netapp.com/us-en/ontap/system-admin/index.html[Administration overview with the CLI^].
 
 * If AutoSupport is enabled, suppress automatic case creation by invoking an AutoSupport message: `system node autosupport invoke -node * -type all -message MAINT=number_of_hours_downh`
 +
@@ -36,8 +34,8 @@ Warning: This operation will cause node "node-name" to be marked as unhealthy. U
 Do you want to continue? {y|n}:
 ----
 +
-NOTE: You must perform a clean system shutdown before replacing the chassis to avoid losing unwritten data in the nonvolatile memory (NVMEM). If the NVMEM LED is flashing, there is content in the NVMEM that has not been saved to disk. You need to reboot the node and start from the beginning of this procedure. If repeated attempts to cleanly shut down the node fail, be aware that you might lose any data that was not saved to disk.
+NOTE: You must perform a clean system shutdown before replacing the chassis to avoid losing unwritten data in the nonvolatile memory (NVMEM/NVRAM). Depending on your system, if the NVMEM/NVRAM LED is flashing, there is content in the NVMEM/NVRAM that has not been saved to disk. You need to reboot the node and start from the beginning of this procedure. If repeated attempts to cleanly shut down the node fail, be aware that you might lose any data that was not saved to disk.
 
 . Where applicable, halt the second node to avoid a possible quorum error message in an HA pair configuration: `system node halt -node _second_node_name_ -ignore-quorum-warnings true -skip-lif-migration-before-shutdown true`
 +
-Answer `y` when prompted. 
+Answer `y` when prompted.

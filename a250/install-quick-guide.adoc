@@ -1,15 +1,15 @@
 ---
 permalink: a250/install-quick-guide.html
 sidebar: sidebar
-keywords: aff a250, graphic, instruction, installation, system, rack, cable, bring-up,
-summary: This section gives graphic instructions for a typical installation of your system from racking and cabling, through initial system bring-up. Use this section if you are familiar with installing NetApp systems.
+keywords: aff a250,  quick steps
+summary: This section gives graphic instructions for a typical installation of your system from racking and cabling, through initial system bring-up. Use this guide if you are familiar with installing NetApp systems.
 ---
 = Quick steps - AFF A250
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-This section gives graphic instructions for a typical installation of your system from racking and cabling, through initial system bring-up. Use this section if you are familiar with installing NetApp systems.
+This section gives graphic instructions for a typical installation of your system from racking and cabling, through initial system bring-up. Use this guide if you are familiar with installing NetApp systems.
 
 Access the _Installation and Setup Instructions_ PDF poster:
 

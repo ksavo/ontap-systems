@@ -16,22 +16,18 @@ You replace the real-time clock (RTC) battery in the controller module so that y
 
 == Step 1: Shut down the impaired controller
 
-[.lead]
 You can shut down or take over the impaired controller using different procedures, depending on the storage system hardware configuration.
 
 === Option 1: Most configurations
 
-[.lead]
 include::../_include/shutdown_most_frus.adoc[]
 
 === Option 2: Controller is in a MetroCluster
 
-[.lead]
 include::../_include/shutdown_any_mcc_supported.adoc[]
 
 == Step 2: Remove the controller module
 
-[.lead]
 You must remove the controller module from the chassis when you replace the controller module or replace a component inside the controller module.
 
 . If you are not already grounded, properly ground yourself.
@@ -84,7 +80,6 @@ Rotate air duct towards fan modules
 
 == Step 3: Remove the PCIe risers
 
-[.lead]
 You must remove one or more PCIe risers when replacing specific hardware components in the controller module.
 
 . Remove the PCIe riser from the controller module:
@@ -110,7 +105,6 @@ Riser 2 (middle riser) locking latch
 
 == Step 4: Replace the RTC battery
 
-[.lead]
 To replace the RTC battery, locate it inside the controller and follow the specific sequence of steps.
 
 . Locate the RTC battery under Riser 2.
@@ -142,7 +136,6 @@ NOTE: Note the polarity of the battery as you remove it from the holder. The bat
 
 == Step 5: Install the PCIe risers
 
-[.lead]
 You reinstall the PCIe risers after replacing the hardware components in the impaired controller.
 
 . Install the riser into the controller module:
@@ -156,7 +149,6 @@ When locked, the locking latch is flush with the top of the riser and the riser 
 
 == Step 6: Reinstall the controller module and setting time/date after RTC battery replacement
 
-[.lead]
 After you replace a component within the controller module, you must reinstall the controller module in the system chassis, reset the time and date on the controller, and then boot it.
 
 . If you have not already done so, close the air duct or controller module cover.
@@ -193,5 +185,4 @@ The controller module begins to boot as soon as it is fully seated in the chassi
 
 == Step 7: Return the failed part to NetApp
 
-[.lead]
 include::../_include/complete_rma.adoc[]

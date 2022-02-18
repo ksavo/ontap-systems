@@ -1,6 +1,6 @@
 To shut down the impaired node, you must determine the status of the node and, if necessary, take over the node so that the healthy node continues to serve data from the impaired node storage.
 
-If you have a cluster with more than two nodes, it must be in quorum. If the cluster is not in quorum or a healthy node shows false for eligibility and health, you must correct the issue before shutting down the impaired node; see the https://docs.netapp.com/us-en/ontap/system-admin/index.html[Administration overview with the CLI].
+If you have a cluster with more than two nodes, it must be in quorum. If the cluster is not in quorum or a healthy node shows false for eligibility and health, you must correct the issue before shutting down the impaired node; see the link:https://docs.netapp.com/us-en/ontap/system-admin/index.html[Administration overview with the CLI^].
 
 .Steps
 
@@ -17,7 +17,7 @@ The following AutoSupport message suppresses automatic case creation for two hou
 a|
 The LOADER prompt
 a|
-Go to the next step.
+Go to Remove controller module..
 a|
 Waiting for giveback...
 a|
@@ -25,5 +25,7 @@ Press Ctrl-C, and then respond `y`.
 a|
 System prompt or password prompt (enter system password)
 a|
-Take over or halt the impaired node: `storage failover takeover -ofnode _impaired_node_name_`    When the impaired node shows Waiting for giveback..., press Ctrl-C, and then respond `y`.
+Take over or halt the impaired node from the healthy node: `storage failover takeover -ofnode _impaired_node_name_`
++
+When the impaired node shows Waiting for giveback..., press Ctrl-C, and then respond `y`.
 |===
