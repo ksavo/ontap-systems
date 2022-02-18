@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: fas500f, replace the boot media
 summary: "You locate the failed boot media in the controller module by removing the air duct on the controller module before you can replace the boot media."
 ---
-= Remove the controller module, replace the boot media and transfer the boot image to the boot media - FAS500f
+= Replace the boot media - FAS500f
 :icons: font
 :imagesdir: ../media/
 
@@ -149,21 +149,3 @@ The controller module begins to boot as soon as it is fully seated in the chassi
 
 +
 The controller module should be fully inserted and flush with the edges of the chassis.
-. Although the environment variables and bootargs are retained, you should check that all required boot environment variables and bootargs are properly set for your system type and configuration using the `printenv bootarg name` command and correct any errors using the `setenv variable-name <value>` command.
-. Check the boot environment variables:
- *** `bootarg.init.boot_clustered`
- *** `partner-sysid`
- *** `bootarg.init.switchless_cluster.enable`
-. If External Key Manager is enabled, check the bootarg values, listed in the `kenv` ASUP output:
- *** `bootarg.storageencryption.support <value>`
- *** `bootarg.keymanager.support <value>`
- *** `kmip.init.interface <value>`
- *** `kmip.init.ipaddr <value>`
- *** `kmip.init.netmask <value>`
- *** `kmip.init.gateway <value>`
-. If Onboard Key Manager is enabled, check the bootarg values, listed in the `kenv` ASUP output:
- *** `bootarg.storageencryption.support <value>`
- *** `bootarg.keymanager.support <value>`
- *** `bootarg.onboard_keymanager <value>`
-. Save the environment variables you changed with the `*savenv*` command
-. Confirm your changes using the `*printenv _variable-name_*` command.

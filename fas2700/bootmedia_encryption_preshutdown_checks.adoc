@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: fas2700, aff a220, shutdown, checks, onboard, encryption, keys, impaired node, disable, automatic, feedback
 summary: 'Prior to shutting down the impaired node and checking the status of the onboard encryption keys, you must check the status of the impaired node, disable automatic giveback, and check what version of ONTAP the system is running.'
 ---
-= Check onboard encryption keys as needed - AFF A220 and FAS2700
+= Check onboard encryption keys - AFF A220 and FAS2700
 :icons: font
 :imagesdir: ../media/
 

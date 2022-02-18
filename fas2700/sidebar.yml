@@ -52,7 +52,7 @@ entries:
       entries:
         - title: Overview
           url: /fas2700/controller-replace-overview.html
-        - title: Shut down node
+        - title: Shut down impaired controller
           url: /fas2700/controller-replace-shutdown.html
         - title: Replace controller hardware
           url: /fas2700/controller-replace-move-hardware.html

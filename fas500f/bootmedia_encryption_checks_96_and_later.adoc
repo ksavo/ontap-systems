@@ -1,0 +1,14 @@
+---
+permalink: fas500f/bootmedia-encryption-checks-96-and-later.html
+sidebar: sidebar
+keywords: fas500f, check, nve, nse, systems, ontap 9.6, netapp volume encryption, netapp storage encryption, verify, enable, impaired node
+summary: 'Before shutting down the impaired node, you need to check whether the system has either NetApp Volume Encryption \(NVE\) or NetApp Storage Encryption \(NSE\) enabled. If so, you need to verify the configuration.'
+---
+= Check onboard encryption keys - FAS500f
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+include::../_include/encryption_steps_before_shutdown.adoc[]
+[.lead]
+include::../_include/encryption_check_96_later.adoc[]
