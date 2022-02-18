@@ -21,7 +21,7 @@ NOTE: Cooling is integrated with the power supply, so you must replace the power
 * The number of power supplies in the system depends on the model.
 * Power supplies are auto-ranging.
 
-link:https://youtu.be/fTOMwENNi9M[AFF FAS2600 power supply replacement video]
+link:https://youtu.be/fTOMwENNi9M[AFF FAS2600 power supply replacement video^]
 
 . Identify the power supply you want to replace, based on console error messages or through the LEDs on the power supplies.
 . If you are not already grounded, properly ground yourself.
@@ -35,7 +35,8 @@ image::../media/drw_2600_psu_repl_animated_gif.png[]
 
 . Use the cam handle to slide the power supply out of the system.
 +
-*CAUTION:* When removing a power supply, always use two hands to support its weight.
+CAUTION: When removing a power supply, always use two hands to support its weight.
++
 
 . Make sure that the on/off switch of the new power supply is in the Off position.
 . Using both hands, support and align the edges of the power supply with the opening in the system chassis, and then gently push the power supply into the chassis using the cam handle.

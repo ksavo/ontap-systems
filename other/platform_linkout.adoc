@@ -8,7 +8,7 @@ summary: You can use these links for other AFF and FAS models.
 :icons: font
 :imagesdir: ../media/
 
-link:http://library-clnt.dmz.netapp.com/documentation/productlibrary/index.html?productID=62082[AFF 8000 Series documentation]
+link:http://mysupport.netapp.com/documentation/productlibrary/index.html?productID=62082[AFF 8000 Series documentation]
 
 link:http://mysupport.netapp.com/documentation/productlibrary/index.html?productID=61630[FAS8000 Series documentation]
 

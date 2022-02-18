@@ -1,20 +1,20 @@
 ---
 permalink: fas500f/bootmedia-shutdown.html
 sidebar: sidebar
-keywords: fas500f, shut, down, node, nve, nse, impaired
-summary: 'After completing the NVE or NSE tasks, you need to complete the shutdown of the impaired node.'
+keywords: fas500f, shutdown
+summary: After completing the NVE or NSE tasks, you need to complete the shutdown of the impaired node.
 ---
 = Shut down the node - FAS500f
 :icons: font
 :imagesdir: ../media/
+
+[.lead]
+After completing the NVE or NSE tasks, you need to complete the shutdown of the impaired node.
 
 == Option 1: Most configurations
 
 include::../_include/shutdown_bootmedia.adoc[]
 
 == Option 2: Controller is in a MetroCluster
-
-[.lead]
-After completing the NVE or NSE tasks, you need to complete the shutdown of the impaired node.
 
 include::../_include/shutdown_any_mcc_supported.adoc[]

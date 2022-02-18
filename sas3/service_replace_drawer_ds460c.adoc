@@ -64,6 +64,7 @@ The figure shows the handle for the fan module extended and released from the or
 +
 image::../media/28_dwg_e2860_de460c_fan_canister_handle_with_callout.gif[]
 +
+[cols="10,90"]
 |===
 a|
 image:../media/legend_icon_01.png[]|
@@ -77,6 +78,7 @@ The figure shows the right side of the drive shelf with the fan module removed. 
 +
 image::../media/2860_dwg_full_back_view_chain_connectors.gif[]
 +
+[cols="10,90"]
 |===
 a|
 image:../media/legend_icon_01.png[]|
@@ -98,6 +100,7 @@ The top cable chain is attached to drive drawer 1. The bottom cable chain is att
 +
 image::../media/2860_dwg_vertical_ring_for_chain.gif[]
 +
+[cols="10,90"]
 |===
 a|
 image:../media/legend_icon_01.png[]|
@@ -113,6 +116,7 @@ The figure shows the horizontal connector on the right and the cable chain disco
 +
 image::../media/2860_dwg_horiz_ring_for_chain.gif[]
 +
+[cols="10,90"]
 |===
 a|
 image:../media/legend_icon_01.png[]|
@@ -176,6 +180,7 @@ NOTE: *Possible loss of data access:* Magnetic fields can destroy all data on th
 +
 image::../media/92_pht_de6600_drive_drawer_release_lever.gif[]
 +
+[cols="10,90"]
 |===
 a|
 image:../media/legend_icon_01.png[]|
@@ -206,6 +211,7 @@ The lock-out tumbler assembly is a safety feature that prevents you from being a
 +
 image::../media/92_pht_de6600_lock_out_tumbler_detail.gif[]
 +
+[cols="10,90"]
 |===
 a|
 image:../media/legend_icon_01.png[]|
@@ -244,6 +250,7 @@ The figure shows the right side view of a drive, showing the location of the rai
 +
 image::../media/28_dwg_e2860_de460c_drive_cru.gif[]
 +
+[cols="10,90"]
 |===
 a|
 image:../media/legend_icon_01.png[]|
@@ -325,6 +332,7 @@ The figure shows the guide rail on the left side for the second drive drawer in 
 +
 image::../media/2860_dwg_guide_rail.gif[]
 +
+[cols="10,90"]
 |===
 a|
 image:../media/legend_icon_01.png[]|
