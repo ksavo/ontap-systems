@@ -149,25 +149,30 @@ Make sure that you install the USB flash drive in the slot labeled for USB devic
 . Release your thumbs from the top of the latching mechanisms and continue pushing until the latching mechanisms snap into place.
 +
 The controller module begins to boot as soon as it is fully seated in the chassis. Be prepared to interrupt the boot process.
-
 +
 The controller module should be fully inserted and flush with the edges of the chassis.
-. Although the environment variables and bootargs are retained, you should check that all required boot environment variables and bootargs are properly set for your system type and configuration using the `printenv bootarg name` command and correct any errors using the `setenv variable-name <value>` command.
-. Check the boot environment variables:
-  *** `bootarg.init.boot_clustered`
-  *** `partner-sysid`
-  *** `bootarg.init.san_optimized` for All SAN Array
-  *** `bootarg.init.switchless_cluster.enable`
-. If External Key Manager is enabled, check the bootarg values, listed in the `kenv` ASUP output:
-  *** `bootarg.storageencryption.support _value_`
-  *** `bootarg.keymanager.support _value_`
-  *** `kmip.init.interface _value_`
-  *** `kmip.init.ipaddr _value_`
-  *** `kmip.init.netmask _value_`
-  *** `kmip.init.gateway _value_`
-. If Onboard Key Manager is enabled, check the bootarg values, listed in the `kenv` ASUP output:
-  *** `bootarg.storageencryption.support _value_`
-  *** `bootarg.keymanager.support _value_`
-  *** `bootarg.onboard_keymanager _value_`
-. Save the environment variables you changed with the `savenv` command
-. Confirm your changes using the `printenv _variable-name_` command.
+
+. Interrupt the boot process to stop at the LOADER prompt by pressing Ctrl-C when you see Starting AUTOBOOT press Ctrl-C to abort....
++
+If you miss this message, press Ctrl-C, select the option to boot to Maintenance mode, and then halt the node to boot to LOADER.
+
+. For systems with one controller in the chassis, reconnect the power and turn on the power supplies.
++
+The system begins to boot and stops at the LOADER prompt.
+
+. Set your network connection type at the LOADER prompt:
+ ** If you are configuring DHCP: `ifconfig e0a -auto`
++
+NOTE: The target port you configure is the target port you use to communicate with the impaired node from the healthy node during var file system restore with a network connection. You can also use the e0M port in this command.
+
+ ** If you are configuring manual connections: `ifconfig e0a -addr=filer_addr -mask=netmask -gw=gateway-dns=dns_addr-domain=dns_domain`
+  *** `filer_addr` is the IP address of the storage system.
+  *** `netmask` is the network mask of the management network that is connected to the HA partner.
+  *** `gateway` is the gateway for the network.
+  *** `dns_addr` is the IP address of a name server on your network.
+  *** `dns_domain` is the Domain Name System (DNS) domain name.
++
+If you use this optional parameter, you do not need a fully qualified domain name in the netboot server URL. You need only the server's host name.
+
++
+NOTE: Other parameters might be necessary for your interface. You can enter `help ifconfig` at the firmware prompt for details.
