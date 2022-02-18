@@ -4,6 +4,10 @@ sidebar: sidebar
 keywords: fas8200, shut, down, impaired, controller, take, over
 summary: 'You can shut down or take over the impaired controller using different procedures, depending on the storage system hardware configuration.'
 ---
+= Shut down the impaired controller - FAS8200
+:icons: font
+:imagesdir: ../media/
+
 == Option 1: Most systems
 
 [.lead]
