@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: aff a200, locate, boot, media, controller, direction, replace
 summary: You must locate the boot media in the controller and follow the directions to replace it.
 ---
-= Remove the controller module, replace the boot media and transfer the boot image to the boot media - AFF A200
+= Replace the boot media - AFF A200
 :icons: font
 :imagesdir: ../media/
 

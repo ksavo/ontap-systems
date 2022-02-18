@@ -61,11 +61,9 @@ entries:
         - title: Restore system configuration
           url: /a320/controller-replace-system-config-restore-and-verify.html
         - title: Recable system
-          url: /a320/controller-repalce-recable-reassign-disks.html
+          url: /a320/controller-replace-recable-reassign-disks.html
         - title: Complete system restoration
-          url: /a320/controller-replace-complete-system-restoration.html
-        - title: Complete replacement
-          url: /a320/controller-replace-complete-rma.html
+          url: /a320/controller-replace-restore-system-rma.html
       # END controller module replacement
       # START dimm replacement
     - title: DIMM
