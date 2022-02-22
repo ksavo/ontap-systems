@@ -1260,8 +1260,6 @@
 
 
 
-
-
           
         </li>
       </ul>
@@ -3324,11 +3322,11 @@
         <li class="pdf-ux-container">
           <a target="_blank" 
             
-              href="/us-en/ontap-systems/pdfs/sidebar/42U_1280_mm_System_Cabinet.pdf" 
+              href="/us-en/ontap-systems/pdfs/sidebar/42U_1280_mm_system_cabinet.pdf" 
             
           >
             <img src="/us-en/ontap-systems/images/pdf.png" width="16" height="16"/>
-            42U 1280 mm System Cabinet
+            42U 1280 mm system cabinet
           </a>
           
 
@@ -3966,7 +3964,7 @@
       <ul><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/fas2700/controller-replace-overview.html">
         Overview
       </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/fas2700/controller-replace-shutdown.html">
-        Shut down node
+        Shut down impaired controller
       </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/fas2700/controller-replace-move-hardware.html">
         Replace controller hardware
       </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/fas2700/controller-replace-system-config-restore-and-verify.html">
@@ -4185,12 +4183,10 @@
         Replace controller module
       </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/a320/controller-replace-system-config-restore-and-verify.html">
         Restore system configuration
-      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/a320/controller-repalce-recable-reassign-disks.html">
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/a320/controller-replace-recable-reassign-disks.html">
         Recable system
-      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/a320/controller-replace-complete-system-restoration.html">
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/a320/controller-replace-restore-system-rma.html">
         Complete system restoration
-      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/a320/controller-replace-complete-rma.html">
-        Complete replacement
       </a></li></ul></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/a320/dimm-replace.html">
         DIMM
       </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/a320/fan-swap-out.html">
@@ -5006,7 +5002,7 @@
       </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/platform-supplemental/telco-installation-instructions.html">
         AFF A700/FAS9000 two-post rail kit
       </a></li><li class="subfolders "><a href="#">
-        <div class="na-navbar-padding"> 42U 1280 mm System Cabinet</div>
+        <div class="na-navbar-padding"> 42U 1280 mm system cabinet</div>
       </a>
       <ul><li class="subfolders "><a href="#">
         <div class="na-navbar-padding"> Prepare to install cabinet</div>
@@ -5223,7 +5219,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-02-22 07:51:38 +0000">02/22/2022</time>
+    <time datetime="2022-02-22 22:04:13 +0000">02/22/2022</time>
     
   
 
@@ -5474,82 +5470,6 @@ Do not twist or pull the boot media straight up, because this could damage the s
 <p>Interrupt the boot process to stop at the LOADER prompt by pressing Ctrl-C when you see Starting AUTOBOOT press Ctrl-C to abort&#8230;&#8203;.</p>
 <div class="paragraph">
 <p>If you miss this message, press Ctrl-C, select the option to boot to Maintenance mode, and then halt the node to boot to LOADER.</p>
-</div>
-</li>
-<li>
-<p>Although the environment variables and bootargs are retained, you should check that all required boot environment variables and bootargs are properly set for your system type and configuration using the <code>printenv bootarg name</code> command and correct any errors using the <code>setenv variable-name &lt;value&gt;</code> command.</p>
-<div class="olist loweralpha">
-<ol class="loweralpha" type="a">
-<li>
-<p>Check the boot environment variables:</p>
-<div class="ulist">
-<ul>
-<li>
-<p>bootarg.init.boot_clustered</p>
-</li>
-<li>
-<p>partner-sysid</p>
-</li>
-<li>
-<p>bootarg.init.flash_optimized for AFF</p>
-</li>
-<li>
-<p>bootarg.init.san_optimized for AFF</p>
-</li>
-<li>
-<p>bootarg.init.switchless_cluster.enable</p>
-</li>
-</ul>
-</div>
-</li>
-<li>
-<p>If External Key Manager is enabled, check the bootarg values, listed in the <code>kenv</code> ASUP output:</p>
-<div class="ulist">
-<ul>
-<li>
-<p>bootarg.storageencryption.support &lt;value&gt;</p>
-</li>
-<li>
-<p>bootarg.keymanager.support &lt;value&gt;</p>
-</li>
-<li>
-<p>kmip.init.interface &lt;value&gt;</p>
-</li>
-<li>
-<p>kmip.init.ipaddr &lt;value&gt;</p>
-</li>
-<li>
-<p>kmip.init.netmask &lt;value&gt;</p>
-</li>
-<li>
-<p>kmip.init.gateway &lt;value&gt;</p>
-</li>
-</ul>
-</div>
-</li>
-<li>
-<p>If Onboard Key Manager is enabled, check the bootarg values, listed in the <code>kenv</code> ASUP output:</p>
-<div class="ulist">
-<ul>
-<li>
-<p>bootarg.storageencryption.support &lt;value&gt;</p>
-</li>
-<li>
-<p>bootarg.keymanager.support &lt;value&gt;</p>
-</li>
-<li>
-<p>bootarg.onboard_keymanager &lt;value&gt;</p>
-</li>
-</ul>
-</div>
-</li>
-<li>
-<p>Save the environment variables you changed with the <code>savenv</code> command</p>
-</li>
-<li>
-<p>Confirm your changes using the <code>printenv variable-name</code> command.</p>
-</li>
-</ol>
 </div>
 </li>
 <li>
