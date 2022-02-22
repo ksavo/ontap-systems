@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: aff a700s, aff, a700s, shut, down, impair, node, check, status, onboard, encryption, keys, status, disable, automatic, giveback, ontap, pre-shutdown, pre-shutdown checks for onboard encyption keys
 summary: Prior to shutting down the impaired node and checking the status of the onboard encryption keys, you must check the status of the impaired node, disable automatic giveback, and check what version of ONTAP the system is running.
 ---
-= Check onboard encryption keys as needed - AFF A700s
+= Check onboard encryption keys - AFF A700s
 :icons: font
 :imagesdir: ../media/
 

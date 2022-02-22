@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: aff c190, move the components
 summary: "To replace the controller module hardware, you must remove the impaired node, move FRU components to the replacement controller module, install the replacement controller module in the chassis, and then boot the system to Maintenance mode."
 ---
-= Replace controller module  - AFF C190
+= Replace the controller module hardware - AFF C190
 :icons: font
 :imagesdir: ../media/
 

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: ns224, shelves, shelf, ns224 shelves, hot-add, ha, pair, requirement, preparation, applicable, complete, drive, hot-add an ns224 drive shelf
 summary: You can hot-add an NS224 drive shelf after your HA pair meets certain requirements, and after the preparation tasks applicable to your HA pair are completed.
 ---
-= Hot-add - NS224 shelves
+= Hot-add NS224 shelves
 :icons: font
 :imagesdir: ../media/
 

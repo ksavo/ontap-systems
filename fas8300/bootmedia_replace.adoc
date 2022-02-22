@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: fas8300, fas8300, locate, boot, media, controller, module, fre, map, direction, replace, replace the boot media
 summary: You must locate the boot media in the controller module \(see the FRU map on the controller module\), and then follow the directions to replace it.
 ---
-= Remove the controller module, replace the boot media and transfer the boot image to the boot media - FAS8300 and FAS8700
+= Replace the boot media - FAS8300 and FAS8700
 :icons: font
 :imagesdir: ../media/
 
@@ -171,26 +171,6 @@ The controller module begins to boot as soon as it is fully seated in the chassi
 +
 If you miss this message, press Ctrl-C, select the option to boot to Maintenance mode, and then `halt` the node to boot to LOADER.
 
-. Although the environment variables and bootargs are retained, you should check that all required boot environment variables and bootargs are properly set for your system type and configuration using the `printenv bootarg name` command and correct any errors using the `setenv _variable-name_ <value>` command.
- .. Check the boot environment variables:
- *** `bootarg.init.boot_clustered`
- *** `partner-sysid`
- *** `bootarg.init.flash_optimized` for AFF C190/AFF A220 (All Flash FAS)
- *** `bootarg.init.san_optimized` for AFF A220 and All SAN Array
- *** `bootarg.init.switchless_cluster.enable`
- .. If External Key Manager is enabled, check the bootarg values, listed in the `kenv` ASUP output:
- *** `bootarg.storageencryption.support _<value>_`
- *** `bootarg.keymanager.support _<<value>>_`
- *** `kmip.init.interface _<value>_`
- *** `kmip.init.ipaddr _<value>_`
- *** `kmip.init.netmask _<value>_`
- *** `kmip.init.gateway _<value>_`
- .. If Onboard Key Manager is enabled, check the bootarg values, listed in the `kenv` ASUP output:
- *** `bootarg.storageencryption.support _<value>_`
- *** `bootarg.keymanager.support _<value>`_
- *** `bootarg.onboard_keymanager _<value>_`
- .. Save the environment variables you changed with the `savenv` command
- .. Confirm your changes using the `printenv _variable-name_` command.
 . If the controller is in a stretch or fabric-attached MetroCluster, you must restore the FC adapter configuration:
  .. Boot to Maintenance mode: `boot_ontap maint`
  .. Set the MetroCluster ports as initiators: `ucadmin modify -m fc -t _initiator adapter_name_`

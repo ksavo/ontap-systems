@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: fas2700, aff a220, replace, boot, media, controller, module, fru map
 summary: 'You must locate the boot media in the controller and follow the directions to replace it.'
 ---
-= Remove the controller module, replace the boot media and transfer the boot image to the boot media - AFF A220 and FAS2700
+= Replace the boot media - AFF A220 and FAS2700
 :icons: font
 :imagesdir: ../media/
 
@@ -114,24 +114,3 @@ If you use this optional parameter, you do not need a fully qualified domain nam
 
 +
 NOTE: Other parameters might be necessary for your interface. You can enter `help ifconfig` at the firmware prompt for details.
-
-. Although the environment variables and bootargs are retained, you should check that all required boot environment variables and bootargs are properly set for your system type and configuration using the `printenv bootarg name` command and correct any errors using the `setenv variable-name <value>` command.
-.. Check the boot environment variables:
- *** `bootarg.init.boot_clustered`
- *** `partner-sysid`
- *** `bootarg.init.flash_optimized` for AFF C190/AFF A220 (All Flash FAS)
- *** `bootarg.init.san_optimized` for AFF A220 and All SAN Array
- *** `bootarg.init.switchless_cluster.enable`
-.. If External Key Manager is enabled, check the bootarg values, listed in the `kenv` ASUP output:
- *** `bootarg.storageencryption.support <value>`
- *** `bootarg.keymanager.support <value>`
- *** `kmip.init.interface <value>`
- *** `kmip.init.ipaddr <value>`
- *** `kmip.init.netmask <value>`
- *** `kmip.init.gateway <value>`
-.. If Onboard Key Manager is enabled, check the bootarg values, listed in the `kenv` ASUP output:
- *** `bootarg.storageencryption.support <value>`
- *** `bootarg.keymanager.support <value>`
- *** `bootarg.onboard_keymanager <value>`
- .. Save the environment variables you changed with the `savenv` command
- .. Confirm your changes using the `printenv _variable-name_` command.
