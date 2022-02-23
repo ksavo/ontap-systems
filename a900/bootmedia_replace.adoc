@@ -9,7 +9,7 @@ summary: 'You must remove and open the controller module, locate and replace the
 [.lead]
 You must remove and open the controller module, locate and replace the boot media in the controller, and then transfer the image to the replacement boot media.
 
-== Step 1: Open the controller module
+== Step 1: Remove the controller module
 :icons: font
 :imagesdir: ../media/
 
