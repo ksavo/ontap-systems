@@ -1,7 +1,7 @@
 After completing the NVE or NSE tasks, you need to complete the shutdown of the impaired node.
 
 .Steps
-. Take the impaired node to the LOADER prompt:
+.. Take the impaired node to the LOADER prompt:
 +
 [options="header" cols="1,2"]
 |===
