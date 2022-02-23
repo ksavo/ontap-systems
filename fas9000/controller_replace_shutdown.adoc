@@ -13,12 +13,12 @@ You can shut down or take over the impaired controller using different procedure
 
 == Option 1: Most systems
 
-include::../_include/shutdown_most_frus.adoc[]
+include::../_include/shutdown_most_frus_no_PCM_remove.adoc[]
 
 === Option 2: Controller is in a MetroCluster
 
 [.lead]
-include::../_include/shutdown_any_mcc_supported.adoc[]
+include::../_include/shutdown_any_mcc_supported_no_PCM_remove.adoc[]
 
 === Option 3: Controller is in a two-node MetroCluster
 

@@ -17,7 +17,7 @@ The following AutoSupport message suppresses automatic case creation for two hou
 a|
 The LOADER prompt
 a|
-Go to Remove controller module.
+Go to the next Step.
 a|
 Waiting for giveback...
 a|
@@ -28,5 +28,6 @@ a|
 Take over or halt the impaired node from the healthy node: `storage failover takeover -ofnode _impaired_node_name_`
 
 When the impaired node shows Waiting for giveback..., press Ctrl-C, and then respond `y`.
+
 
 |===
