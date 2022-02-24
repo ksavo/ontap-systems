@@ -2,7 +2,7 @@
 permalink: fas9000/controller-replace-shutdown.html
 sidebar: sidebar
 keywords: aff a700, fas9000, shut, down, impaired, node, controller, two, node, metrocluster
-summary: "To shut down the impaired node, you must determine the status of the node and, if necessary, take over the node so that the healthy node continues to serve data from the impaired node storage." 
+summary: "To shut down the impaired node, you must determine the status of the node and, if necessary, take over the node so that the healthy node continues to serve data from the impaired node storage."
 ---
 = Shut down the impaired controller
 :icons: font
@@ -10,6 +10,21 @@ summary: "To shut down the impaired node, you must determine the status of the n
 
 [.lead]
 You can shut down or take over the impaired controller using different procedures, depending on the storage system hardware configuration.
+
+[{tabs}]
+===
++
+--
+Most systems::
+$ Testing this
+[source,console]
+---
+--
+Metrocluster::
++
+$ More stuff.
+---
+===
 
 == Option 1: Most systems
 
