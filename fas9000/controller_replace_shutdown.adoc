@@ -11,21 +11,6 @@ summary: "To shut down the impaired node, you must determine the status of the n
 [.lead]
 You can shut down or take over the impaired controller using different procedures, depending on the storage system hardware configuration.
 
-[{tabs}]
-===
-+
---
-Most systems::
-$ Testing this
-[source,console]
----
---
-Metrocluster::
-+
-$ More stuff.
----
-===
-
 == Option 1: Most systems
 
 include::../_include/shutdown_most_frus_no_PCM_remove.adoc[]
