@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: fas2600, move the components
 summary: "To replace the controller module hardware, you must remove the impaired node, move FRU components to the replacement controller module, install the replacement controller module in the chassis, and then boot the system to Maintenance mode."
 ---
-= Replace controller module  - FAS2600
+= Replace the controller module hardware - FAS2600
 :icons: font
 :imagesdir: ../media/
 

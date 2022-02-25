@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: fas8300, fas8700, replace, nvmem, battery, remove, controller, module, node, metrocluster, configuration, diagnostics, aggregate, configuration, reinstall, run, system, switch, shut, down
 summary: "You must replace the NVDIMM in the controller module when your system registers that the flash lifetime is almost at an end or that the identified NVDIMM is not healthy in general; failure to do so causes a system panic."
 ---
-= Replacing an NVDIMM - FAS8300 and FAS8700
+= Replace an NVDIMM - FAS8300 and FAS8700
 :icons: font
 :imagesdir: ../media/
 
@@ -108,7 +108,7 @@ NOTE: Visually inspect the NVDIMM to verify that it is evenly aligned and fully 
 == Step 4: Install the controller module
 
 [.lead]
-After you have replaced the component in the controller module, you must re-install the controller module into the chassis, and then boot it to Maintenance mode.
+After you have replaced the component in the controller module, you must reinstall the controller module into the chassis, and then boot it to Maintenance mode.
 
 You can use the following animation, illustration, or the written steps to install the controller module in the chassis.
 

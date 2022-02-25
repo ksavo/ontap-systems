@@ -1,0 +1,15 @@
+---
+sidebar: sidebar
+permalink: whats-new.html
+sidebar: sidebar
+keywords: new, features, fas, aff systems
+summary: 'Learn about the new features for FAS and AFF systems.'
+---
+= What's new for FAS and AFF systems
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+Learn about the new features for FAS and AFF systems.
+
+include::../_include/new-features.adoc[]

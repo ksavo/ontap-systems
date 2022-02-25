@@ -37,7 +37,7 @@ Make sure that you label the cables so that you know where they came from.
 . Release the power cable retainers, and then unplug the cables from the power supplies.
 . Insert your forefinger into the latching mechanism on either side of the controller module, press the lever with your thumb, and gently pull the controller a few inches out of the chassis.
 +
-NOTE: If you have difficulty removing the controller module, place your index fingers through the finger holes from the inside (by crossing your arms)
+NOTE: If you have difficulty removing the controller module, place your index fingers through the finger holes from the inside (by crossing your arms).
 +
 image::../media/drw_a250_pcm_remove_install.png[]
 +
@@ -110,8 +110,12 @@ With positive polarity face up, slide the battery under the tab of the battery h
 a|
 image:../media/legend_icon_02.png[]
 a|
-Push the battery gently into place and make sure the tab secures it to the housing.    *Attention:* Pushing it in aggressively might cause the battery to eject out again.
+Push the battery gently into place and make sure the tab secures it to the housing.
 +
+*CAUTION:*
++
+Pushing it in aggressively might cause the battery to eject out again.
+
 |===
 
 . Visually inspect the battery to make sure that it is completely installed into the holder and that the polarity is correct.

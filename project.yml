@@ -6,11 +6,16 @@ settings:
   prod:
     pdf_enabled: true
     harmony_enabled: true
-
 sidebar:
   entries:
-    - title: Home
+    - title: AFF and FAS system docs
       url: "/index.html"
+    - title: Release Notes
+      entries:
+        - title: What's new
+          url: /whats-new.html
+        - title: Release notes
+          url: /rel-notes.html
     - section: a200
     - section: fas2700
     - section: a250
