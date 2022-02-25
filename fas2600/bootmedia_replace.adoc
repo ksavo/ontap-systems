@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: fas2600, locate, boot, media, controller, direction, replace
 summary: 'You must locate the boot media in the controller and follow the directions to replace it.'
 ---
-= Remove the controller module, replace the boot media and transfer the boot image to the boot media - FAS2600
+= Replace the boot media - FAS2600
 :icons: font
 :imagesdir: ../media/
 
@@ -85,24 +85,6 @@ If you miss this message, press Ctrl-C, select the option to boot to Maintenance
 +
 The system begins to boot and stops at the LOADER prompt.
 
-. Although the environment variables and bootargs are retained, you should check that all required boot environment variables and bootargs are properly set for your system type and configuration using the `printenv bootarg name` command and correct any errors using the `setenv variable-name <value>` command.
-.. Check the boot environment variables:
- *** `bootarg.init.boot_clustered`
- *** `partner-sysid`
- *** `bootarg.init.switchless_cluster.enable`
-.. If External Key Manager is enabled, check the bootarg values, listed in the `kenv` ASUP output:
- *** `bootarg.storageencryption.support <value>`
- *** `bootarg.keymanager.support <value>`
- *** `kmip.init.interface <value>`
- *** `kmip.init.ipaddr <value>`
- *** `kmip.init.netmask <value>`
- *** `kmip.init.gateway <value>`
-.. If Onboard Key Manager is enabled, check the bootarg values, listed in the `kenv` ASUP output:
- *** `bootarg.storageencryption.support <value>`
- *** `bootarg.keymanager.support <value>`
- *** `bootarg.onboard_keymanager <value>`
- .. Save the environment variables you changed with the `savenv` command
- .. Confirm your changes using the `printenv _variable-name_` command.
 . Set your network connection type at the LOADER prompt:
  ** If you are configuring DHCP: `ifconfig e0a -auto`
 +

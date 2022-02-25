@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: fas500f, check onboard encryption keys as needed
 summary: "Prior to shutting down the impaired node and checking the status of the onboard encryption keys, you must check the status of the impaired node, disable automatic giveback, and check what version of ONTAP the system is running."
 ---
-= Check onboard encryption keys as needed - FAS500f
+= Check onboard encryption keys - FAS500f
 :icons: font
 :imagesdir: ../media/
 
