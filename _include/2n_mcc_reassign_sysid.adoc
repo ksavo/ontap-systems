@@ -14,7 +14,7 @@ You must be sure to issue the commands in this procedure on the correct node:
 +
 You must enter `Y` when prompted to override the system ID due to a system ID mismatch.
 
-. View the old system IDs from the healthy node: `metrocluster node show -fields node-systemid,dr-partner-systemid`
+. View the old system IDs from the healthy node: ``metrocluster node show -fields node-systemid`,dr-partner-systemid`
 +
 In this example, the Node_B_1 is the old node, with the old system ID of 118073209:
 +

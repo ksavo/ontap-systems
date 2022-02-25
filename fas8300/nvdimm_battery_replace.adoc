@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: fas8300, fas8700, nvdimm, battery, remove, controller, module, node, metrocluster, configuration, diagnostics, aggregate, configuration, reinstall, run, system, switch, shut, down
 summary: "To replace the NVDIMM battery, you must remove the controller module, remove the battery, replace the battery, and then reinstall the controller module."
 ---
-= Replacing the NVDIMM battery - FAS8300 and FAS8700
+= Replace the NVDIMM battery - FAS8300 and FAS8700
 :icons: font
 :imagesdir: ../media/
 
@@ -89,7 +89,7 @@ image::../media/drw_A400_nvdimm-batt.png[]
 == Step 4: Install the controller module
 
 [.lead]
-After you have replaced the component in the controller module, you must re-install the controller module into the chassis, and then boot it to Maintenance mode.
+After you have replaced the component in the controller module, you must reinstall the controller module into the chassis, and then boot it to Maintenance mode.
 
 You can use the following animation, illustration, or the written steps to install the controller module in the chassis.
 

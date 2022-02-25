@@ -129,7 +129,7 @@ The riser raises up slightly from the controller module.
 == Step 5: Install the controller module
 
 [.lead]
-After you have replaced the component in the controller module, you must re-install the controller module into the chassis, and then boot it to Maintenance mode.
+After you have replaced the component in the controller module, you must reinstall the controller module into the chassis, and then boot it to Maintenance mode.
 
 You can use the following animation, illustration, or the written steps to install the controller module in the chassis.
 

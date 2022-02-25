@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: aff a250, replace the boot media
 summary: You locate the failed boot media in the controller module by removing the air duct on the controller module before you can replace the boot media.
 ---
-= Remove the controller module, replace the boot media and transfer the boot image to the boot media - AFF A250
+= Replace the boot media - AFF A250
 :icons: font
 :imagesdir: ../media/
 
@@ -23,7 +23,7 @@ To access components inside the controller module, you must first remove the con
 . Release the power cable retainers, and then unplug the cables from the power supplies.
 . Insert your forefinger into the latching mechanism on either side of the controller module, press the lever with your thumb, and gently pull the controller a few inches out of the chassis.
 +
-NOTE: If you have difficulty removing the controller module, place your index fingers through the finger holes from the inside (by crossing your arms)
+NOTE: If you have difficulty removing the controller module, place your index fingers through the finger holes from the inside (by crossing your arms).
 +
 image::../media/drw_a250_pcm_remove_install.png[]
 +
@@ -86,7 +86,7 @@ Lift the boot media out of the controller module.
 . Using the #1 magnetic screwdriver, remove the screw from the impaired boot media, and set it aside safely on the magnet.
 . Gently lift the impaired boot media directly out of the socket and set it aside.
 . Remove the replacement boot media from the antistatic shipping bag and align it into place on the controller module.
-. Using the #1 magnetic screwdriver insert and tighten the screw on the boot media.
+. Using the #1 magnetic screwdriver, insert and tighten the screw on the boot media.
 +
 NOTE: Do not apply force when tightening the screw on the boot media; you might crack it.
 
@@ -149,25 +149,30 @@ Make sure that you install the USB flash drive in the slot labeled for USB devic
 . Release your thumbs from the top of the latching mechanisms and continue pushing until the latching mechanisms snap into place.
 +
 The controller module begins to boot as soon as it is fully seated in the chassis. Be prepared to interrupt the boot process.
-
 +
 The controller module should be fully inserted and flush with the edges of the chassis.
-. Although the environment variables and bootargs are retained, you should check that all required boot environment variables and bootargs are properly set for your system type and configuration using the `printenv bootarg name` command and correct any errors using the `setenv variable-name <value>` command.
-. Check the boot environment variables:
-  *** `bootarg.init.boot_clustered`
-  *** `partner-sysid`
-  *** `bootarg.init.san_optimized` for All SAN Array
-  *** `bootarg.init.switchless_cluster.enable`
-. If External Key Manager is enabled, check the bootarg values, listed in the `kenv` ASUP output:
-  *** `bootarg.storageencryption.support _value_`
-  *** `bootarg.keymanager.support _value_`
-  *** `kmip.init.interface _value_`
-  *** `kmip.init.ipaddr _value_`
-  *** `kmip.init.netmask _value_`
-  *** `kmip.init.gateway _value_`
-. If Onboard Key Manager is enabled, check the bootarg values, listed in the `kenv` ASUP output:
-  *** `bootarg.storageencryption.support _value_`
-  *** `bootarg.keymanager.support _value_`
-  *** `bootarg.onboard_keymanager _value_`
-. Save the environment variables you changed with the `savenv` command
-. Confirm your changes using the `printenv _variable-name_` command.
+
+. Interrupt the boot process to stop at the LOADER prompt by pressing Ctrl-C when you see Starting AUTOBOOT press Ctrl-C to abort....
++
+If you miss this message, press Ctrl-C, select the option to boot to Maintenance mode, and then halt the node to boot to LOADER.
+
+. For systems with one controller in the chassis, reconnect the power and turn on the power supplies.
++
+The system begins to boot and stops at the LOADER prompt.
+
+. Set your network connection type at the LOADER prompt:
+ ** If you are configuring DHCP: `ifconfig e0a -auto`
++
+NOTE: The target port you configure is the target port you use to communicate with the impaired node from the healthy node during var file system restore with a network connection. You can also use the e0M port in this command.
+
+ ** If you are configuring manual connections: `ifconfig e0a -addr=filer_addr -mask=netmask -gw=gateway-dns=dns_addr-domain=dns_domain`
+  *** `filer_addr` is the IP address of the storage system.
+  *** `netmask` is the network mask of the management network that is connected to the HA partner.
+  *** `gateway` is the gateway for the network.
+  *** `dns_addr` is the IP address of a name server on your network.
+  *** `dns_domain` is the Domain Name System (DNS) domain name.
++
+If you use this optional parameter, you do not need a fully qualified domain name in the netboot server URL. You need only the server's host name.
+
++
+NOTE: Other parameters might be necessary for your interface. You can enter `help ifconfig` at the firmware prompt for details.

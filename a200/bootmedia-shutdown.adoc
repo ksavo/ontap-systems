@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: aff a200, shut down the node
 summary: After completing the NVE or NSE tasks, you need to complete the shutdown of the impaired node.
 ---
-= Shut down the node - AFF A200
+= Shut down the impaired node - AFF A200
 :icons: font
 :imagesdir: ../media/
 

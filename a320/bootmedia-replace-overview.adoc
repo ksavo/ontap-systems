@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: aff, a320, locate, boot, media, controller, module, direction, replace, replace the boot media
 summary: You must locate the boot media in the controller module, and then follow the directions to replace it.
 ---
-= Replace the boot media - AFF A320
+= Overview of boot media replacement - AFF A320
 :icons: font
 :imagesdir: ../media/
 

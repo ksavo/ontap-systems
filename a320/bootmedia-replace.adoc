@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: aff, a320, aff a320, boot, media, store, primary, secondary, set, system, boot, image, file, replace, replace the boot media
 summary: The boot media stores a primary and secondary set of system \(boot image\) files that the system uses when it boots.
 ---
-= Remove the controller module, replace the boot media and transfer the boot image to the boot media - AFF A320
+= Replace the boot media - AFF A320
 :icons: font
 :imagesdir: ../media/
 
@@ -125,26 +125,6 @@ The controller module begins to boot as soon as it is fully seated in the chassi
 +
 If you miss this message, press Ctrl-C, select the option to boot to Maintenance mode, and then halt the node to boot to LOADER.
 
-. Although the environment variables and bootargs are retained, you should check that all required boot environment variables and bootargs are properly set for your system type and configuration using the `printenv bootarg name` command and correct any errors using the `setenv variable-name <value>` command.
-.. Check the boot environment variables:
- *** `bootarg.init.boot_clustered`
- *** `partner-sysid`
- *** `bootarg.init.flash_optimized` for AFF C190/AFF A220 (All Flash FAS)
- *** `bootarg.init.san_optimized` for AFF A220 and All SAN Array
- *** `bootarg.init.switchless_cluster.enable`
-.. If External Key Manager is enabled, check the bootarg values, listed in the `kenv` ASUP output:
- *** `bootarg.storageencryption.support <value>`
- *** `bootarg.keymanager.support <value>`
- *** `kmip.init.interface <value>`
- *** `kmip.init.ipaddr <value>`
- *** `kmip.init.netmask <value>`
- *** `kmip.init.gateway <value>`
-.. If Onboard Key Manager is enabled, check the bootarg values, listed in the `kenv` ASUP output:
- *** `bootarg.storageencryption.support <value>`
- *** `bootarg.keymanager.support <value>`
- *** `bootarg.onboard_keymanager <value>`
- .. Save the environment variables you changed with the `savenv` command
- .. Confirm your changes using the `printenv _variable-name_` command.
 . From the LOADER prompt, boot the recovery image from the USB flash drive: `boot_recovery`
 +
 The image is downloaded from the USB flash drive.
