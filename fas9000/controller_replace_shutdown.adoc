@@ -11,16 +11,34 @@ summary: "To shut down the impaired node, you must determine the status of the n
 [.lead]
 You can shut down or take over the impaired controller using different procedures, depending on the storage system hardware configuration.
 
+.Most systems
+[%collapsible]
+====
+
 == Option 1: Most systems
 
 include::../_include/shutdown_most_frus.adoc[]
+
+====
+
+.Controller is in a MetroCluster
+[%collapsible]
+====
 
 === Option 2: Controller is in a MetroCluster
 
 [.lead]
 include::../_include/shutdown_any_mcc_supported.adoc[]
 
+====
+
+.Controller is in a two-node MetroCluster
+[%collapsible]
+====
+
 === Option 3: Controller is in a two-node MetroCluster
 
 [.lead]
 include::../_include/shutdown_2n_mcc.adoc[]
+
+===
