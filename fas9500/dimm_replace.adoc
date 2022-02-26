@@ -22,21 +22,18 @@ You must replace the failed component with a replacement FRU component you recei
 [.lead]
 You can shut down or take over the impaired controller using different procedures, depending on the storage system hardware configuration.
 
-
 [role="tabbed-block"]
 ====
-
 .Most systems
+
 --
 [.lead]
-After completing the NVE or NSE tasks, you need to complete the shutdown of the impaired node.
 
 include::../_include/shutdown_most_frus.adoc[]
 --
 .Controller is in a MetroCluster
 --
 [.lead]
-After completing the NVE or NSE tasks, you need to complete the shutdown of the impaired node.
 
 include::../_include/shutdown_any_mcc_supported.adoc[]
 --
