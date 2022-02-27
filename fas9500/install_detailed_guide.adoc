@@ -188,7 +188,6 @@ image::../media/drw_a900_tnsc_network_cabling.png[]
 
 image::../media/drw_a900_tnsc_network_cabling.svg[width=600px]
 
-
 [options="header" col="10,90"]
 
 |===

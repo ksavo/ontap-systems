@@ -7,4 +7,4 @@ After replacing the controller module or NVRAM module for a storage system that 
 . Use one of the following procedures, depending on whether you are using onboard or external key management:
 
  ** https://docs.netapp.com/us-en/ontap/encryption-at-rest/restore-onboard-key-management-encryption-keys-task.html[Restoring onboard key management encryption keys]
- ** https://docs.netapp.com/us-en/ontap/encryption-at-rest/restore-external-encryption-keys-93-later-task.html[Restoring external key management encryption keys]
+ ** https://docs.netapp.com/us-en/ontap/encryption-at-rest/restore-external-encryption-keys-93-later-task.html[Restoring external key management encryption keys] 

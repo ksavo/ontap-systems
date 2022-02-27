@@ -72,13 +72,10 @@ You must locate the boot media in the controller and follow the directions to re
 
 +
 https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=c5080658-765e-4d29-8456-adf2000e1495[Animation -- replace boot media^]
-
 +
-
 image::../media/drw_9500_remove_boot_dev_source.png[]
 +
 image::../media/drw_9500_remove_boot_dev_source.svg[width=400px]
-
 +
 [cols="10,90"]
 |===

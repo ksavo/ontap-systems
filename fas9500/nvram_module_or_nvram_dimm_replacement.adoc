@@ -32,7 +32,6 @@ Because the system ID is derived from the NVRAM module, if replacing the module,
 [.lead]
 You can shut down or take over the impaired controller using different procedures, depending on the storage system hardware configuration.
 
-
 [role="tabbed-block"]
 ====
 

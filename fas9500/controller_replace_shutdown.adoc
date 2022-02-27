@@ -11,7 +11,6 @@ summary: 'To shut down the impaired node, you must determine the status of the n
 [.lead]
 You can shut down or take over the impaired controller using different procedures, depending on the storage system hardware configuration.
 
-
 [role="tabbed-block"]
 ====
 
