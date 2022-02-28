@@ -186,14 +186,16 @@ https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=7a55b98a-e8b8-41d5
 
 image::../media/drw_a900_tnsc_network_cabling.png[]
 
-+
+image::../media/drw_a900_tnsc_network_cabling.svg[width=600px]
 
-[options="header" col="25h,~"]
+[options="header" col="10,90"]
 
 |===
 |Step|Perform on each controller
 a|
 image:../media/oie_legend_icon_1_lg.png[]
+
+image:../media/oie_legend_icon_1_lg.svg[width=30px]
 a|
 Cable cluster interconnect ports:
 
@@ -204,6 +206,8 @@ image:../media/oie_cable100_gbe_qsfp28.png[]
 
 a|
 image:../media/oie_legend_icon_2_lp.png[]
+
+image:../media/oie_legend_icon_2_lp.svg[width=30px]
 a|
 Cable controller management (wrench) ports.
 
@@ -211,6 +215,8 @@ image::../media/oie_cable_rj45.png[]
 
 a|
 image::../media/oie_legend_icon_3_o.png[]
+
+image::../media/oie_legend_icon_3_o.svg[width=30px]
 a|
 
 Cable 25 GbE network switches:
@@ -232,6 +238,8 @@ image:../media/oie_cable100_gbe_qsfp28.png[]
 
 a|
 image::../media/oie_legend_icon_4_dr.png[]
+
+image::../media/oie_legend_icon_4_dr.svg[width=30px]
 a|
 Cable 32 Gb FC connections:
 

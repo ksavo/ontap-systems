@@ -15,7 +15,7 @@ The following animation shows the whole process of moving components from the im
 
 https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=30337552-b10f-4146-9bdb-adf2000df5bd[Animation -- Move components to replacement controller^]
 
-== Step 1: Open the controller module
+== Step 1: Remove the controller module
 
 [.lead]
 To access components inside the controller, you must first remove the controller module from the system and then remove the cover on the controller module.

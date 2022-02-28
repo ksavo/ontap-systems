@@ -22,17 +22,25 @@ You must replace the failed component with a replacement FRU component you recei
 [.lead]
 You can shut down or take over the impaired controller using different procedures, depending on the storage system hardware configuration.
 
-=== Option 1: Most configurations
+[role="tabbed-block"]
+====
+.Most systems
 
+--
 [.lead]
+
 include::../_include/shutdown_most_frus.adoc[]
-
-=== Option 2: Controller is in a MetroCluster
-
+--
+.Controller is in a MetroCluster
+--
 [.lead]
-include::../_include/shutdown_any_mcc_supported.adoc[]
 
-== Step 2: Open the controller module
+include::../_include/shutdown_any_mcc_supported.adoc[]
+--
+
+====
+
+== Step 2: Remove the controller module
 
 [.lead]
 To access components inside the controller, you must first remove the controller module from the system and then remove the cover on the controller module.
