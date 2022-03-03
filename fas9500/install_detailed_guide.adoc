@@ -191,7 +191,7 @@ image::../media/drw_a900_tnsc_network_cabling.svg[width=600px]
 [options="header" col="10,90"]
 
 |===
-|Step|Perform on each controller
+| Step| Perform on each controller
 a|
 image:../media/oie_legend_icon_1_lg.png[]
 
