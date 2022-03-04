@@ -8,6 +8,9 @@ summary: "To replace the chassis, you must shutdown the controllers."
 :icons: font
 :imagesdir: ../media/
 
+[.lead]
+Shut down or take over the impaired controller using the appropriate procedure for your configuration.
+
 == Option 1: Shut down the controllers when replacing a chassis
 
 [.lead]

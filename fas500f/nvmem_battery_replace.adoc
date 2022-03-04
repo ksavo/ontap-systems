@@ -15,7 +15,7 @@ All other components in the system must be functioning properly; if not, you mus
 
 == Step 1: Shut down the impaired controller
 
-You can shut down or take over the impaired controller using different procedures, depending on the storage system hardware configuration.
+Shut down or take over the impaired controller using the appropriate procedure for your configuration.
 
 === Option 1: Most configurations
 

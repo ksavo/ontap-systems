@@ -17,7 +17,7 @@ To replace a failed mezzanine card, you must remove the cables and any SFP or QS
 
 == Step 1: Shut down the impaired controller
 
-You can shut down or take over the impaired controller using different procedures, depending on the storage system hardware configuration.
+Shut down or take over the impaired controller using the appropriate procedure for your configuration.
 
 === Option 1: Most configurations
 
@@ -101,7 +101,7 @@ Make sure that you label the cables so that you know where they came from.
  .. Remove any SFP or QSFP modules that might be in the impaired mezzanine card and set it aside.
  .. Using the #1 magnetic screwdriver, remove the screws from the face of the controller module and set them aside safely on the magnet.
  .. Using the #1 magnetic screwdriver, loosen the screw on the impaired mezzanine card.
- .. Using the #1 magnetic screwdriver, gently lift the impaired mezzanine card directly out of the socket and set it aside. 
+ .. Using the #1 magnetic screwdriver, gently lift the impaired mezzanine card directly out of the socket and set it aside.
  .. Remove the replacement mezzanine card from the antistatic shipping bag and align it to the inside face of the controller module.
  .. Gently align the replacement mezzanine card into place.
  .. Using the #1 magnetic screwdriver, insert and tighten the screws on the face of the controller module and on the mezzanine card.

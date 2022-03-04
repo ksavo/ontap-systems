@@ -8,6 +8,9 @@ summary: 'You can shut down or take over the impaired controller using different
 :icons: font
 :imagesdir: ../media/
 
+[.lead]
+Shut down or take over the impaired controller using the appropriate procedure for your configuration.
+
 == Option 1: Most configurations
 
 [.lead]

@@ -13,7 +13,7 @@ To replace a fan, remove the failed fan module and replace it with a new fan mod
 
 == Step 1: Shut down the impaired node
 
-You can shut down or take over the impaired controller using different procedures, depending on the storage system hardware configuration.
+Shut down or take over the impaired controller using the appropriate procedure for your configuration.
 
 === Option 1: Most configurations
 
