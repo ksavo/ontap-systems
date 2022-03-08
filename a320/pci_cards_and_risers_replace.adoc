@@ -14,7 +14,7 @@ To replace a PCIe card, you must disconnect the cables from the cards, remove th
 * You can use this procedure with all versions of ONTAP supported by your system
 * All other components in the system must be functioning properly; if not, you must contact technical support.
 
-== Step 1: Shut down the impaired node
+== Step 1: Shut down the impaired controller
 
 [.lead]
 Shut down or take over the impaired controller using the appropriate procedure for your configuration.
@@ -119,7 +119,7 @@ After completing diagnostics, you must recable the system, give back the control
 +
 If you removed the media converters (QSFPs or SFPs), remember to reinstall them if you are using fiber optic cables.
 
-. Return the node to normal operation by giving back its storage: `storage failover giveback -ofnode _impaired_node_name_`
+. Return the controller to normal operation by giving back its storage: `storage failover giveback -ofnode _impaired_node_name_`
 . If automatic giveback was disabled, reenable it: `storage failover modify -node local -auto-giveback true`
 
 == Step 6: Return the failed part to NetApp

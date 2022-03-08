@@ -56,16 +56,16 @@ After installing a new chassis, you should run interconnect diagnostics.
 
 Your system must be at the LOADER prompt to start System Level Diagnostics.
 
-All commands in the diagnostic procedures are issued from the node where the component is being replaced.
+All commands in the diagnostic procedures are issued from the controller where the component is being replaced.
 
-. If the node to be serviced is not at the LOADER prompt, perform the following steps:
+. If the controller to be serviced is not at the LOADER prompt, perform the following steps:
  .. Select the Maintenance mode option from the displayed menu.
- .. After the node boots to Maintenance mode, halt the node: `halt`
+ .. After the controller boots to Maintenance mode, halt the controller: `halt`
 +
 After you issue the command, you should wait until the system stops at the LOADER prompt.
 +
 NOTE: During the boot process, you can safely respond `y` to prompts:
-. Repeat the previous step on the second node if you are in an HA configuration.
+. Repeat the previous step on the second controller if you are in an HA configuration.
 +
 NOTE: Both controllers must be in Maintenance mode to run the interconnect test.
 
@@ -110,7 +110,7 @@ The system displays the LOADER prompt.
 NOTE: You must exit Maintenance mode on both controllers before proceeding any further.
 
  .. Enter the following command on both controllers at the LOADER prompt: `bye`
- .. Return the node to normal operation:
+ .. Return the controller to normal operation:
 +
 |===
 +

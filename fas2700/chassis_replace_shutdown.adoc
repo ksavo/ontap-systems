@@ -1,7 +1,7 @@
 ---
 permalink: fas2700/chassis-replace-shutdown.html
 sidebar: sidebar
-keywords: fas2700, aff a220, replace, chassis, shut down, controller, metrocluster, power, supply, ha, state, node, configuration, switch, aggregates, replace, move, remove, swap
+keywords: fas2700, aff a220, replace, chassis, shut down, controller, metrocluster, power, supply, ha, state, controller, configuration, switch, aggregates, replace, move, remove, swap
 summary: "To replace the chassis, you must shutdown the controllers."
 ---
 = Shut down the controllers - AFF A220 and FAS2700

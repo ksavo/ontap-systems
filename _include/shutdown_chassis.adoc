@@ -1,7 +1,7 @@
-You must shut down the node or nodes in the chassis prior to moving them to the new chassis.
+You must shut down the controller or controller in the chassis prior to moving them to the new chassis.
 
 .About this task
-* If you have a cluster with more than two nodes, it must be in quorum. If the cluster is not in quorum or a healthy node shows `false` for eligibility and health, you must correct the issue before shutting down the impaired node; see the link:https://docs.netapp.com/us-en/ontap/system-admin/index.html[Administration overview with the CLI^].
+* If you have a cluster with more than two controllers, it must be in quorum. If the cluster is not in quorum or a healthy controller shows `false` for eligibility and health, you must correct the issue before shutting down the impaired controller; see the link:https://docs.netapp.com/us-en/ontap/system-admin/index.html[Administration overview with the CLI^].
 
 * If AutoSupport is enabled, suppress automatic case creation by invoking an AutoSupport message: `system node autosupport invoke -node * -type all -message MAINT=number_of_hours_downh`
 +
@@ -15,27 +15,27 @@ The following AutoSupport message suppresses automatic case creation for two hou
 |===
 | If your system is running clustered ONTAP with...| Then...
 a|
-Two nodes in the cluster
+Two controllers in the cluster
 a|
 `cluster ha modify -configured false` `storage failover modify -node node0 -enabled false`
 a|
-More than two nodes in the cluster
+More than two controllers in the cluster
 a|
 `storage failover modify -node node0 -enabled false`
 |===
 
-. Halt the node, pressing `y` when you are prompted to confirm the halt: `system node halt -node _node_name_`
+. Halt the controller, pressing `y` when you are prompted to confirm the halt: `system node halt -node _node_name_`
 +
 The confirmation message looks like the following:
 +
 ----
-Warning: This operation will cause node "node-name" to be marked as unhealthy. Unhealthy nodes do not participate in quorum voting. If the node goes out of service and one more node goes out of service there will be a data serving failure for the entire cluster. This will cause a client disruption. Use "cluster show" to verify cluster state. If possible bring other nodes online to improve the resiliency of this cluster.
+Warning: This operation will cause controller "node-name" to be marked as unhealthy. Unhealthy nodes do not participate in quorum voting. If the controller goes out of service and one more controller goes out of service there will be a data serving failure for the entire cluster. This will cause a client disruption. Use "cluster show" to verify cluster state. If possible bring other nodes online to improve the resiliency of this cluster.
 
 Do you want to continue? {y|n}:
 ----
 +
-NOTE: You must perform a clean system shutdown before replacing the chassis to avoid losing unwritten data in the nonvolatile memory (NVMEM/NVRAM). Depending on your system, if the NVMEM/NVRAM LED is flashing, there is content in the NVMEM/NVRAM that has not been saved to disk. You need to reboot the node and start from the beginning of this procedure. If repeated attempts to cleanly shut down the node fail, be aware that you might lose any data that was not saved to disk.
+NOTE: You must perform a clean system shutdown before replacing the chassis to avoid losing unwritten data in the nonvolatile memory (NVMEM/NVRAM). Depending on your system, if the NVMEM/NVRAM LED is flashing, there is content in the NVMEM/NVRAM that has not been saved to disk. You need to reboot the controller and start from the beginning of this procedure. If repeated attempts to cleanly shut down the controller fail, be aware that you might lose any data that was not saved to disk.
 
-. Where applicable, halt the second node to avoid a possible quorum error message in an HA pair configuration: `system node halt -node _second_node_name_ -ignore-quorum-warnings true -skip-lif-migration-before-shutdown true`
+. Where applicable, halt the second controller to avoid a possible quorum error message in an HA pair configuration: `system node halt -node _second_node_name_ -ignore-quorum-warnings true -skip-lif-migration-before-shutdown true`
 +
 Answer `y` when prompted.

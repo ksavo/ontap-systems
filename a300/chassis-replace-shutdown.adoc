@@ -11,7 +11,7 @@ summary: "To replace the chassis, you must shutdown the controllers."
 [.lead]
 To replace the chassis, you must shutdown the controllers.
 
-== Option 1: Shut down the node
+== Option 1: Shut down the controller
 
 include::../_include/shutdown_chassis.adoc[]
 
