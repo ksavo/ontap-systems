@@ -9,19 +9,26 @@ summary: 'You can shut down or take over the impaired controller using different
 :imagesdir: ../media/
 
 [.lead]
-To shut down the impaired controller, you must determine the status of the controller and, if necessary, take over the controller so that the healthy controller continues to serve data from the impaired controller storage.
+Shut down or take over the impaired controller using the appropriate procedure for your configuration.
+
+[role="tabbed-block"]
+====
 
 == Option 1: Most configurations
-
+--
 [.lead]
 After completing the NVE or NSE tasks, you need to complete the shutdown of the impaired controller.
 
 
-include::../_include/shutdown_most_frus.adoc[]
 
+
+include::../_include/shutdown_most_frus.adoc[]
+--
 == Option 2: Controller is in a MetroCluster
 
 [.lead]
 After completing the NVE or NSE tasks, you need to complete the shutdown of the impaired controller.
 
 include::../_include/shutdown_any_mcc_supported.adoc[]
+--
+====
