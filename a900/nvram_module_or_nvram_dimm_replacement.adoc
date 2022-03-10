@@ -32,15 +32,19 @@ Because the system ID is derived from the NVRAM module, if replacing the module,
 [.lead]
 Shut down or take over the impaired controller using the appropriate procedure for your configuration.
 
-=== Option 1: Most configurations
+[role="tabbed-block"]
+====
 
-[.lead]
-include::../_include/shutdown_most_frus_no_PCM_remove.adoc[]
+.Most systems
+--
+include::../_include/shutdown_most_frus.adoc[]
+--
+.Controller is in a MetroCluster
+--
+include::../_include/shutdown_any_mcc_supported.adoc[]
+--
 
-=== Option 2: Controller is in a MetroCluster
-
-[.lead]
-include::../_include/shutdown_any_mcc_supported_no_PCM_remove.adoc[]
+====
 
 == Step 2: Replace the NVRAM module
 
