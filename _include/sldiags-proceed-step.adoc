@@ -16,16 +16,16 @@ SLDIAG: No log messages are present.
 
  .. Exit Maintenance mode: `halt`
 +
-The node displays the LOADER prompt.
+The controller displays the LOADER prompt.
 
- .. Boot the node from the LOADER prompt: `bye`
- .. Return the node to normal operation:
+ .. Boot the controller from the LOADER prompt: `bye`
+ .. Return the controller to normal operation:
 +
-*If your node is in an HA pair*, perform a give back: `storage failover giveback -ofnode _replacement_node_name_`
+*If your controller is in an HA pair*, perform a give back: `storage failover giveback -ofnode _replacement_node_name_`
 +
 *Note:* If you disabled automatic giveback, re-enable it with the `storage failover modify` command.
 +
-*If your node is in a stand-alone configuration*, proceed to the next step. No action is required.
+*If your controller is in a stand-alone configuration*, proceed to the next step. No action is required.
 +
 You have completed system-level diagnostics.
 a|

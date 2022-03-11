@@ -50,11 +50,11 @@ Make sure that you reattach the power cable locking collar on the power cord.
 
 . Gently push the controller module all the way into the system until the controller module locking hooks begin to rise, firmly push on the locking hooks to finish seating the controller module, and then swing the locking hooks into the locked position over the pins on the controller module.
 +
-The node begins to boot as soon as it is completely installed into the chassis.
+The controller begins to boot as soon as it is completely installed into the chassis.
 
 . Interrupt the boot process by pressing Ctrl-C to stop at the LOADER prompt.
 +
-If you miss this message, press Ctrl-C, select the option to boot to Maintenance mode, and then halt the node to boot to LOADER.
+If you miss this message, press Ctrl-C, select the option to boot to Maintenance mode, and then halt the controller to boot to LOADER.
 
 . From the LOADER prompt, boot the recovery image from the secondary boot media: `boot_recovery`
 +
@@ -62,13 +62,13 @@ The image is downloaded from the secondary boot media.
 
 . When prompted, either enter the name of the image or accept the default image displayed inside the brackets on your screen.
 . After the image is installed, start the restoration process:
- .. Record the IP address of the impaired node that is displayed on the screen.
+ .. Record the IP address of the impaired controller that is displayed on the screen.
  .. Press `y` when prompted to restore the backup configuration.
  .. Press `y` when prompted to confirm that the backup procedure was successful.
-. From the partner node in advanced privilege level, start the configuration synchronization using the IP address recorded in the previous step: `system node restore-backup -node local -target-address _impaired_node_IP_address_`
+. From the partner controller in advanced privilege level, start the configuration synchronization using the IP address recorded in the previous step: `system node restore-backup -node local -target-address _impaired_node_IP_address_`
 . After the configuration synchronization is complete without errors, press `y` when prompted to confirm that the backup procedure was successful.
-. Press `y` when prompted whether to use the restored copy, and then press `y` when prompted to reboot the node.
-. Exit advanced privilege level on the healthy node.
+. Press `y` when prompted whether to use the restored copy, and then press `y` when prompted to reboot the controller.
+. Exit advanced privilege level on the healthy controller.
 
 == Option 2: Transfer the boot image to the boot media using a USB flash drive
 :icons: font
@@ -119,11 +119,11 @@ Make sure that you install the USB flash drive in the slot labeled for USB devic
 
 . Gently push the controller module all the way into the system until the controller module locking hooks begin to rise, firmly push on the locking hooks to finish seating the controller module, and then swing the locking hooks into the locked position over the pins on the controller module.
 +
-The node begins to boot as soon as it is completely installed into the chassis.
+The controller begins to boot as soon as it is completely installed into the chassis.
 
 . Interrupt the boot process by pressing Ctrl-C to stop at the LOADER prompt.
 +
-If you miss this message, press Ctrl-C, select the option to boot to Maintenance mode, and then halt the node to boot to LOADER.
+If you miss this message, press Ctrl-C, select the option to boot to Maintenance mode, and then halt the controller to boot to LOADER.
 
 . Although the environment variables and bootargs are retained, you should check that all required boot environment variables and bootargs are properly set for your system type and configuration using the `printenv bootarg name` command and correct any errors using the `setenv variable-name <value>` command.
 .. Check the boot environment variables:
@@ -151,23 +151,23 @@ The image is downloaded from the USB flash drive.
 
 . When prompted, either enter the name of the image or accept the default image displayed inside the brackets on your screen.
 . After the image is installed, start the restoration process:
- .. Record the IP address of the impaired node that is displayed on the screen.
+ .. Record the IP address of the impaired controller that is displayed on the screen.
  .. Press `y` when prompted to restore the backup configuration.
  .. Press `y` when prompted to confirm that the backup procedure was successful.
-. Press `y` when prompted whether to use the restored copy, and then press `y` when prompted to reboot the node.
-. From the partner node in advanced privilege level, start the configuration synchronization using the IP address recorded in the previous step: `system node restore-backup -node local -target-address _impaired_node_IP_address_`
+. Press `y` when prompted whether to use the restored copy, and then press `y` when prompted to reboot the controller.
+. From the partner controller in advanced privilege level, start the configuration synchronization using the IP address recorded in the previous step: `system node restore-backup -node local -target-address _impaired_node_IP_address_`
 . After the configuration synchronization is complete without errors, press `y` when prompted to confirm that the backup procedure was successful.
-. Press `y` when prompted whether to use the restored copy, and then press `y` when prompted to reboot the node.
+. Press `y` when prompted whether to use the restored copy, and then press `y` when prompted to reboot the controller.
 . Verify that the environmental variables are set as expected.
- .. Take the node to the LOADER prompt.
+ .. Take the controller to the LOADER prompt.
 +
-From the ONTAP prompt, you can issue the command system node halt -skip-lif-migration-before-shutdown true -ignore-quorum-warnings true -inhibit-takeover true.
+From the ONTAP prompt, you can issue the command 'system node halt -skip-lif-migration-before-shutdown true -ignore-quorum-warnings true -inhibit-takeover true'.
 
  .. Check the environment variable settings with the `printenv` command.
  .. If an environment variable is not set as expected, modify it with the `setenv __environment-variable-name__ __changed-value__` command.
  .. Save your changes using the `savenev` command.
- .. Reboot the node.
-. With the rebooted impaired node displaying the `Waiting for giveback...` message, perform a giveback from the healthy node:
+ .. Reboot the controller.
+. With the rebooted impaired controller displaying the `Waiting for giveback...` message, perform a giveback from the healthy controller:
 +
 [options="header" cols="1,2"]
 |===
@@ -175,11 +175,11 @@ From the ONTAP prompt, you can issue the command system node halt -skip-lif-migr
 a|
 An HA pair
 a|
-After the impaired node is displaying the `Waiting for giveback...` message, perform a giveback from the healthy node:
+After the impaired controller is displaying the `Waiting for giveback...` message, perform a giveback from the healthy controller:
 
- .. From the healthy node: `storage failover giveback -ofnode partner_node_name`
+ .. From the healthy controller: `storage failover giveback -ofnode partner_node_name`
 +
-The impaired node takes back its storage, finishes booting, and then reboots and is again taken over by the healthy node.
+The impaired controller takes back its storage, finishes booting, and then reboots and is again taken over by the healthy controller.
 +
 NOTE: If the giveback is vetoed, you can consider overriding the vetoes.
 +
@@ -192,4 +192,4 @@ http://docs.netapp.com/ontap-9/topic/com.netapp.doc.dot-cm-hacg/home.html[ONTAP 
 +
 |===
 
-. Exit advanced privilege level on the healthy node.
+. Exit advanced privilege level on the healthy controller.

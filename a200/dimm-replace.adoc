@@ -20,7 +20,7 @@ You must replace a DIMM in the controller module when your system registers an i
 
 include::../_include/shutdown_most_frus.adoc[]
 
-. If the system has only one controller module in the chassis, turn off the power supplies, and then unplug the impaired node's power cords from the power source.
+. If the system has only one controller module in the chassis, turn off the power supplies, and then unplug the impaired controller's power cords from the power source.
 
 == Step 2: Remove controller module
 
@@ -165,18 +165,18 @@ After installing a new DIMM, you should run diagnostics.
 Your system must be at the LOADER prompt to start System Level Diagnostics.
 
 .About this task
-All commands in the diagnostic procedures are issued from the node where the component is being replaced.
+All commands in the diagnostic procedures are issued from the controller where the component is being replaced.
 
 .Steps
-. If the node to be serviced is not at the LOADER prompt, perform the following steps:
+. If the controller to be serviced is not at the LOADER prompt, perform the following steps:
  .. Select the Maintenance mode option from the displayed menu.
- .. After the node boots to Maintenance mode, halt the node: `halt`
+ .. After the controller boots to Maintenance mode, halt the controller: `halt`
 +
 After you issue the command, you should wait until the system stops at the LOADER prompt.
 +
 NOTE: During the boot process, you can safely respond `y` to prompts:
 
-  *** A prompt warning that when entering Maintenance mode in an HA configuration, you must ensure that the healthy node remains down.
+  *** A prompt warning that when entering Maintenance mode in an HA configuration, you must ensure that the healthy controller remains down.
 . At the LOADER prompt, access the special drivers specifically designed for system-level diagnostics to function properly: `boot_diags`
 +
 During the boot process, you can safely respond `y` to the prompts until the Maintenance mode prompt (*>) appears.
@@ -205,16 +205,16 @@ SLDIAG: No log messages are present.
 
  .. Exit Maintenance mode: `halt`
 +
-The node displays the LOADER prompt.
+The controller displays the LOADER prompt.
 
- .. Boot the node from the LOADER prompt: `bye`
- .. Return the node to normal operation:
+ .. Boot the controller from the LOADER prompt: `bye`
+ .. Return the controller to normal operation:
 +
-*If your node is in an HA pair*, perform a give back: `storage failover giveback -ofnode _replacement_node_name_`
+*If your controller is in an HA pair*, perform a give back: `storage failover giveback -ofnode _replacement_node_name_`
 +
 NOTE: If you disabled automatic giveback, re-enable it with the `storage failover modify` command.
 +
-*If your node is in a stand-alone configuration*, proceed to the next step. No action is required.
+*If your controller is in a stand-alone configuration*, proceed to the next step. No action is required.
 +
 You have completed system-level diagnostics.
 a|

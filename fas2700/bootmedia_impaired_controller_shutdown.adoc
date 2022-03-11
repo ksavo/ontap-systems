@@ -8,6 +8,9 @@ summary: 'You can shut down or take over the impaired controller using different
 :icons: font
 :imagesdir: ../media/
 
+[.lead]
+Shut down or take over the impaired controller using the appropriate procedure for your configuration.
+
 == Option 1: Most configurations
 
 [.lead]
@@ -16,6 +19,6 @@ include::../_include/shutdown_bootmedia.adoc[]
 == Option 2: Controller is in a MetroCluster
 
 [.lead]
-After completing the NVE or NSE tasks, you need to complete the shutdown of the impaired node.
+After completing the NVE or NSE tasks, you need to complete the shutdown of the impaired controller.
 
 include::../_include/shutdown_any_mcc_supported.adoc[]

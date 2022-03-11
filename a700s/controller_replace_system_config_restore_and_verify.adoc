@@ -40,9 +40,9 @@ After you have replaced a component in your system, you should run diagnostic te
 
 Your system must be at the LOADER prompt to start diagnostics.
 
-All commands in the diagnostic procedures are issued from the node where the component is being replaced.
+All commands in the diagnostic procedures are issued from the controller where the component is being replaced.
 
-. If the node to be serviced is not at the LOADER prompt, reboot the node: `system node halt -node node_name`
+. If the controller to be serviced is not at the LOADER prompt, reboot the controller: `system node halt -node node_name`
 +
 After you issue the command, you should wait until the system stops at the LOADER prompt.
 
@@ -56,5 +56,5 @@ After you issue the command, you should wait until the system stops at the LOADE
 NOTE: During the boot process, you might see the following prompts:
 
   *** A prompt warning of a system ID mismatch and asking to override the system ID.
-  *** A prompt warning that when entering Maintenance mode in an HA configuration you must ensure that the healthy node remains down.
+  *** A prompt warning that when entering Maintenance mode in an HA configuration you must ensure that the healthy controller remains down.
 You can safely respond `y` to these prompts.

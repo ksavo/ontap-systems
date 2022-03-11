@@ -14,6 +14,6 @@ The boot media stores a primary and secondary set of system (boot image) files t
 You must have a USB flash drive, formatted to MBR/FAT32, with the appropriate amount of storage to hold the `image_xxx.tgz` file.
 
 * You must replace the failed component with a replacement FRU component you received from your provider.
-* It is important that you apply the commands in these steps on the correct node:
- ** The _impaired_ node is the node on which you are performing maintenance.
- ** The _healthy_ node is the HA partner of the impaired node.
+* It is important that you apply the commands in these steps on the correct controller:
+ ** The _impaired_ controller is the controller on which you are performing maintenance.
+ ** The _healthy_ controller is the HA partner of the impaired controller.

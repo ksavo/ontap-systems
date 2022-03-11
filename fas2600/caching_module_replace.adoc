@@ -20,7 +20,7 @@ link:https://youtu.be/Rc-EQT-HAxU[AFF FAS2600 caching module replacement video^]
 You can shut down or take over the impaired controller using different procedures, depending on the storage system hardware configuration.
 
 .About this task
-If you have a cluster with more than two nodes, it must be in quorum. If the cluster is not in quorum or a healthy node shows false for eligibility and health, you must correct the issue before shutting down the impaired node.
+If you have a cluster with more than two nodes, it must be in quorum. If the cluster is not in quorum or a healthy controller shows false for eligibility and health, you must correct the issue before shutting down the impaired controller.
 
 http://docs.netapp.com/ontap-9/topic/com.netapp.doc.dot-cm-sag/home.html[ONTAP 9 System Administration Reference^]
 
@@ -31,12 +31,12 @@ You might want to erase the contents of your caching module before replacing it.
  .. Verify that the data has been erased from the caching module: `system controller flash-cache secure-erase show -node node_name`
 +
 The output should display the caching module status as erased.
-. If the impaired node is part of an HA pair, disable automatic giveback from the console of the healthy node: `storage failover modify -node local -auto-giveback false`
-. Take the impaired node to the LOADER prompt:
+. If the impaired controller is part of an HA pair, disable automatic giveback from the console of the healthy controller: `storage failover modify -node local -auto-giveback false`
+. Take the impaired controller to the LOADER prompt:
 +
 [options="header" cols="1,2"]
 |===
-| If the impaired node is displaying...| Then...
+| If the impaired controller is displaying...| Then...
 a|
 The LOADER prompt
 a|
@@ -48,19 +48,19 @@ Press Ctrl-C, and then respond `y` when prompted.
 a|
 System prompt or password prompt (enter system password)
 a|
-Take over or halt the impaired node:
+Take over or halt the impaired controller:
 
- ** For an HA pair, take over the impaired node from the healthy node: `storage failover takeover -ofnode _impaired_node_name_`
+ ** For an HA pair, take over the impaired controller from the healthy controller: `storage failover takeover -ofnode _impaired_node_name_`
 +
-When the impaired node shows Waiting for giveback..., press Ctrl-C, and then respond `y`.
+When the impaired controller shows Waiting for giveback..., press Ctrl-C, and then respond `y`.
 
  ** For a stand-alone system: `system node halt _impaired_node_name_`
 
 |===
 
-. If the system has only one controller module in the chassis, turn off the power supplies, and then unplug the impaired node's power cords from the power source.
+. If the system has only one controller module in the chassis, turn off the power supplies, and then unplug the impaired controller's power cords from the power source.
 
-== Step 2: Remove controller module 
+== Step 2: Remove controller module
 
 To access components inside the controller, you must first remove the controller module from the system and then remove the cover on the controller module.
 
@@ -168,11 +168,11 @@ After installing a new caching module, you should run diagnostics.
 
 Your system must be at the LOADER prompt to start System Level Diagnostics.
 
-All commands in the diagnostic procedures are issued from the node where the component is being replaced.
+All commands in the diagnostic procedures are issued from the controller where the component is being replaced.
 
-. If the node to be serviced is not at the LOADER prompt, perform the following steps:
+. If the controller to be serviced is not at the LOADER prompt, perform the following steps:
  .. Select the Maintenance mode option from the displayed menu.
- .. After the node boots to Maintenance mode, halt the node: `halt`
+ .. After the controller boots to Maintenance mode, halt the controller: `halt`
 +
 After you issue the command, you should wait until the system stops at the LOADER prompt.
 +

@@ -1,7 +1,7 @@
 ---
 permalink: fas8300/nvdimm-battery-replace.html
 sidebar: sidebar
-keywords: fas8300, fas8700, nvdimm, battery, remove, controller, module, node, metrocluster, configuration, diagnostics, aggregate, configuration, reinstall, run, system, switch, shut, down
+keywords: fas8300, fas8700, nvdimm, battery, remove, controller, module, controller, metrocluster, configuration, diagnostics, aggregate, configuration, reinstall, run, system, switch, shut, down
 summary: "To replace the NVDIMM battery, you must remove the controller module, remove the battery, replace the battery, and then reinstall the controller module."
 ---
 = Replace the NVDIMM battery - FAS8300 and FAS8700
@@ -134,10 +134,10 @@ After you have replaced a component in your system, you should run diagnostic te
 
 Your system must be at the LOADER prompt to start diagnostics.
 
-All commands in the diagnostic procedures are issued from the node where the component is being replaced.
+All commands in the diagnostic procedures are issued from the controller where the component is being replaced.
 
 .Steps
-. If the node to be serviced is not at the LOADER prompt, reboot the node: `system node halt -node _node_name_`
+. If the controller to be serviced is not at the LOADER prompt, reboot the controller: `system node halt -node _node_name_`
 +
 After you issue the command, you should wait until the system stops at the LOADER prompt.
 
@@ -158,7 +158,7 @@ After completing diagnostics, you must recable the system, give back the control
 +
 If you removed the media converters (QSFPs or SFPs), remember to reinstall them if you are using fiber optic cables.
 
-. Return the node to normal operation by giving back its storage: `storage failover giveback -ofnode _impaired_node_name_`
+. Return the controller to normal operation by giving back its storage: `storage failover giveback -ofnode _impaired_node_name_`
 . If automatic giveback was disabled, reenable it: `storage failover modify -node local -auto-giveback true`
 
 == Step 7: Switch back aggregates in a two-node MetroCluster configuration

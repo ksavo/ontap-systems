@@ -79,11 +79,11 @@ Make sure that you install the USB flash drive in the slot labeled for USB devic
 
 . Push the controller module all the way into the system, making sure that the cam handle clears the USB flash drive, firmly push the cam handle to finish seating the controller module, push the cam handle to the closed position, and then tighten the thumbscrew.
 +
-The node begins to boot as soon as it is completely installed into the chassis.
+The controller begins to boot as soon as it is completely installed into the chassis.
 
 . Interrupt the boot process to stop at the LOADER prompt by pressing Ctrl-C when you see `Starting AUTOBOOT press Ctrl-C to abort....`
 +
-If you miss this message, press Ctrl-C, select the option to boot to Maintenance mode, and then `halt` the node to boot to LOADER.
+If you miss this message, press Ctrl-C, select the option to boot to Maintenance mode, and then `halt` the controller to boot to LOADER.
 
 . Boot the recovery image:
 +
@@ -97,7 +97,7 @@ The system boots to the boot menu and prompts you for the boot image name.
 +
 `*__image_name__.tgz*`
 +
-After `image_name.tgz` is installed, the system prompts you to restore the backup configuration (the `var` file system) from the healthy node.
+After `image_name.tgz` is installed, the system prompts you to restore the backup configuration (the `var` file system) from the healthy controller.
 
 . Restore the `var` file system:
 +
@@ -109,17 +109,17 @@ A network connection
 a|
 
  .. Press `*y*` when prompted to restore the backup configuration.
- .. Set the healthy node to advanced privilege level:
+ .. Set the healthy controller to advanced privilege level:
 +
 `*set -privilege advanced*`
  .. Run the restore backup command:
 +
 `*system node restore-backup -node local -target-address _impaired_node_IP_address_*`
- .. Return the node to admin level:
+ .. Return the controller to admin level:
 +
 `*set -privilege admin*`
  .. Press `*y*` when prompted to use the restored configuration.
- .. Press `*y*` when prompted to reboot the node.
+ .. Press `*y*` when prompted to reboot the controller.
 
 a|
 No network connection
@@ -134,14 +134,14 @@ If you are prompted to continue with the update, press `*y*`.
 |===
 
 . Verify that the environmental variables are set as expected.
- .. Take the node to the LOADER prompt.
+ .. Take the controller to the LOADER prompt.
 +
 From the ONTAP prompt, you can issue the command `system node halt -skip-lif-migration-before-shutdown true -ignore-quorum-warnings true -inhibit-takeover true`.
 
  .. Check the environment variable settings with the `printenv` command.
  .. If an environment variable is not set as expected, modify it with the `setenv _environment_variable_name changed_value_` command.
  .. Save your changes using the `saveenv` command.
- .. Reboot the node.
+ .. Reboot the controller.
 . The next step depends on your system configuration:
 +
 [options="header" cols="1,2"]
@@ -150,17 +150,17 @@ From the ONTAP prompt, you can issue the command `system node halt -skip-lif-mig
 a|
 A stand-alone configuration
 a|
-You can begin using your system after the node reboots.
+You can begin using your system after the controller reboots.
 a|
 An HA pair
 a|
-After the impaired node is displaying the `Waiting for Giveback...` message, perform a giveback from the healthy node:
+After the impaired controller is displaying the `Waiting for Giveback...` message, perform a giveback from the healthy controller:
 
- .. Perform a giveback from the healthy node:
+ .. Perform a giveback from the healthy controller:
 +
 `*storage failover giveback -ofnode _partner_node_name_*`
 +
-This initiates the process of returning ownership of the impaired node's aggregates and volumes from the healthy node back to the impaired node.
+This initiates the process of returning ownership of the impaired controller's aggregates and volumes from the healthy controller back to the impaired controller.
 +
 [NOTE]
 ====

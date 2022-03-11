@@ -13,10 +13,10 @@ To replace the NVDIMM battery, you must remove the controller module, remove the
 
 All other components in the system must be functioning properly; if not, you must contact technical support.
 
-== Step 1: Shut down the node
+== Step 1: Shut down the controller
 
 [.lead]
-You can shut down or take over the impaired controller using different procedures, depending on the storage system hardware configuration.
+Shut down or take over the impaired controller using the appropriate procedure for your configuration.
 
 === Option 1: Most configurations
 
@@ -106,9 +106,9 @@ After you have replaced a component in your system, you should run diagnostic te
 
 Your system must be at the LOADER prompt to start diagnostics.
 
-All commands in the diagnostic procedures are issued from the node where the component is being replaced.
+All commands in the diagnostic procedures are issued from the controller where the component is being replaced.
 
-. If the node to be serviced is not at the LOADER prompt, reboot the node: `system node halt -node node_name`
+. If the controller to be serviced is not at the LOADER prompt, reboot the controller: `system node halt -node node_name`
 +
 After you issue the command, you should wait until the system stops at the LOADER prompt.
 
@@ -128,7 +128,7 @@ After completing diagnostics, you must recable the system, give back the control
 +
 If you removed the media converters (QSFPs or SFPs), remember to reinstall them if you are using fiber optic cables.
 
-. Return the node to normal operation by giving back its storage: `storage failover giveback -ofnode _impaired_node_name_`
+. Return the controller to normal operation by giving back its storage: `storage failover giveback -ofnode _impaired_node_name_`
 . If automatic giveback was disabled, reenable it: `storage failover modify -node local -auto-giveback true`
 
 == Step 7: Return the failed part to NetApp
