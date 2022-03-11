@@ -73,7 +73,8 @@ image::../media/drw_a900_remove_boot_dev.png[]
 [cols="10,90"]
 |===
 a|
-image:../media/legend_icon_01.png[] a|
+image:../media/legend_icon_01.png[]
+a|
 Press release tab
 a|
 image:../media/legend_icon_02.png[]
