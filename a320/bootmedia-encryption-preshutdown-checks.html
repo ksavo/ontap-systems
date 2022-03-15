@@ -9,27 +9,18 @@
   <meta property="og:title" content="Check onboard encryption keys - AFF A320" />
 	<meta property="og:type" content="website" />
 	<meta property="og:url" content="https://docs.netapp.com/us-en/ontap-systems/a320/bootmedia-encryption-preshutdown-checks.html" />
-	<meta property="og:description" content="Prior to shutting down the impaired node and checking the status of the onboard encryption keys, you must check the status of the impaired node, disable auto..." />
+	<meta property="og:description" content="Prior to shutting down the impaired controller and checking the status of the onboard encryption keys, you must check the status of the impaired controller, ..." />
   <meta property="og:image" content="https://docs.netapp.com/us-en/ontap-systems/images/logo-tophat-social.png" />
   <meta property="og:image:alt" content="NetApp Logo" />
   <meta name="format-detection" content="telephone=no">
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   <meta http-equiv="encoding" content="utf-8">
   <meta http-equiv="nss-type" content="Product Documentation"/>
-  <meta http-equiv="nss-subtype" content="User Guide"/>
-  
-  <meta name="description" content="Prior to shutting down the impaired node and checking the status of the onboard encryption keys, you must check the status of the impaired node, disable auto...">
-  <meta name="keywords" content=" aff, a320, aff a320, shut, down, impair, node, check, status, onboard, encryption, kets, status, impair, node, disable, automatic, giveback, ontap, run, pre-shutdown, pre-shutdown checks for onboard encryption keys">
-  
-  
-
-  <!-- Icons -->
+  <meta http-equiv="nss-subtype" content="User Guide"/><meta name="description" content="Prior to shutting down the impaired controller and checking the status of the onboard encryption keys, you must check the status of the impaired controller, ...">
+  <meta name="keywords" content=" aff, a320, aff a320, shut, down, impair, controller, check, status, onboard, encryption, kets, status, impair, controller, disable, automatic, giveback, ontap, run, pre-shutdown, pre-shutdown checks for onboard encryption keys"><!-- Icons -->
   <link rel="icon" href="/us-en/ontap-systems/images/favicon.ico" type="image/x-icon">
 
-  <!-- RSS Feed -->
-  
-
-  <!-- CSS Definitions: NetApp CSS should be defined after generic css -->
+  <!-- RSS Feed --><!-- CSS Definitions: NetApp CSS should be defined after generic css -->
 
   <!-- Elastic Search -->
   <link rel="stylesheet" href="//cdn.jsdelivr.net/searchkit/0.10.0/theme.css">
@@ -59,27 +50,11 @@
   
   <link rel="stylesheet" href="/us-en/ontap-systems/css/landing-page.css" type="text/css">
   <link rel="stylesheet" href="/us-en/ontap-systems/css/tabbed-blocks.css" type="text/css">
-  <link rel="stylesheet" href='/us-en/ontap-systems/css/product-family.css' type="text/css">
-  
-
-  
-  <link rel='stylesheet' href='/us-en/ontap-systems/css/na-feature.css' type='text/css'>
-  
-
-
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <link rel='stylesheet' href='/us-en/ontap-systems/css/na-feature.css' type='text/css'><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
-  <!-- Used to import Promise for IE. Required for SearchKit -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/bluebird/3.3.5/bluebird.min.js"></script>
-  
-    <script src='/us-en/ontap-systems/js/na-search.js'></script>
-  
 
-  
-  <script src='/us-en/ontap-systems/js/na-pagenav.js'></script>
-  
-
-  <link rel='stylesheet' href='/us-en/ontap-systems/css/prism.css' type='text/css'>
+  <!-- Used for Product Family Page Sidebar Visibility --><!-- Used to import Promise for IE. Required for SearchKit -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bluebird/3.3.5/bluebird.min.js"></script><script src='/us-en/ontap-systems/js/na-search.js'></script><script src='/us-en/ontap-systems/js/na-pagenav.js'></script><link rel='stylesheet' href='/us-en/ontap-systems/css/prism.css' type='text/css'>
   <link rel='stylesheet' href='/us-en/ontap-systems/css/prism-netapp.css' type='text/css'>
 
 
@@ -97,9 +72,7 @@
   <script src='/us-en/ontap-systems/js/jquery.navgoco.min.js'></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
   <script src='/us-en/ontap-systems/js/toc.js'></script>
-  <script src='/us-en/ontap-systems/js/customscripts.js'></script>
-
-  <script>
+  <script src='/us-en/ontap-systems/js/customscripts.js'></script><script>
       $(document).ready(function() {
           
           var collapseOnInit = true;
@@ -158,7 +131,6 @@
   }
   </script>
   <script src='/us-en/ontap-systems/js/version-dropdown.js'></script>
-  <script src='/us-en/ontap-systems/js/product-family.js'></script>
   <script src='/us-en/ontap-systems/js/FileSaver.min.js'></script>
   <script src='/us-en/ontap-systems/js/jszip-utils.min.js'></script>
   <script src='/us-en/ontap-systems/js/jszip.min.js'></script>
@@ -171,6 +143,25 @@
       <div class="n-off-canvas-menu__menu"><!--TODO: Add offcanvas code --></div>
       <div class="n-off-canvas-menu__content-wrap">
         <header class="site-header" id="banner">
+  
+  <!-- Start Page Toolbar -->
+  <div class="page-nav-toolbar">
+    <div id="version-dropdown"></div>
+    <div class="page-nav-contribute"  >
+      <a target="_blank" href="https://github.com/NetAppDocs/ontap-systems/issues/new?body=Page%3A%20[Check onboard encryption keys - AFF A320](https://docs.netapp.com/us-en/ontap-systems/a320/bootmedia-encryption-preshutdown-checks.html)" class="page-nav-contribute-link" role="button"><img src="/us-en/ontap-systems/images/discuss-sm.svg" class="github-icon" />Request doc changes</a>
+      <a target="_blank" href="https://github.com/NetAppDocs/ontap-systems/blob/main/a320/bootmedia-encryption-preshutdown-checks.adoc" class="page-nav-contribute-link" role="button"><img src="/us-en/ontap-systems/images/edit-sm.svg" class="github-icon" />Edit this page</a>
+      <a target="_blank" href="https://docs.netapp.com/us-en/contribute/" class="page-nav-contribute-link"  ><img src="/us-en/ontap-systems/images/article-sm.svg" class="github-icon" />Learn how to contribute</a>
+    </div>
+    <div class="page-nav-container">
+      <nav class="page-nav-fixed">
+        <div class="page-nav-title">ON THIS PAGE</div>
+        <div class="page-nav-links">
+          <ul class="page-nav-inner" id="page-menu"></ul>
+        </div>
+      </nav>
+    </div>
+  </div>
+  
   <!-- Start top_hat -->
   <div class="n-top-hat">
     <div class="n-container">
@@ -5185,26 +5176,22 @@
   
 
   <div class="ie-content-pane n-doc__component-detail-content n-doc__component-detail-content--show-code">
-    <!-- Begin of page container -->
-    <article class="page-content">
+    <!-- Begin of page container --><article class="page-content">
       <div class="ie-utility">
   <div class="ie-menu">
     <div class="n-breadcrumb">
       <ul class="n-breadcrumb__list">
         <li class="n-breadcrumb__list-item">
-          <a href="https://www.netapp.com">Home</a>
+          <a href="https://docs.netapp.com">docs.netapp.com</a>
         </li>
-        <li class="n-breadcrumb__list-item">
-          <a href="https://docs.netapp.com">Documentation</a>
-        </li>
+        
+
         
 
         <li class="n-breadcrumb__list-item">
           <a href="/us-en/ontap-systems/">ONTAP&nbsp;Systems</a>
         </li>
-        <li class="n-breadcrumb__list-item">
-          Check onboard encryption keys - AFF A320
-        </li>
+
       </ul>
     </div>
     <div style="clear: both"></div><!-- Main needs to have height -->
@@ -5219,7 +5206,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-02-23 15:02:52 +0000">02/23/2022</time>
+    <time datetime="2022-03-15 18:54:10 +0000">03/15/2022</time>
     
   
 
@@ -5253,30 +5240,29 @@
 
 </p>
 
-
 <div id="preamble">
 <div class="sectionbody">
 <div class="paragraph lead">
-<p>Prior to shutting down the impaired node and checking the status of the onboard encryption keys, you must check the status of the impaired node, disable automatic giveback, and check the version of ONTAP that is running.</p>
+<p>Prior to shutting down the impaired controller and checking the status of the onboard encryption keys, you must check the status of the impaired controller, disable automatic giveback, and check the version of ONTAP that is running.</p>
 </div>
 <div class="paragraph">
-<p>If you have a cluster with more than two nodes, it must be in quorum. If the cluster is not in quorum or a healthy node shows false for eligibility and health, you must correct the issue before shutting down the impaired node; see the <a href="https://docs.netapp.com/us-en/ontap/encryption-at-rest/index.html">NetApp Encryption overview with the CLI</a>.</p>
+<p>If you have a cluster with more than two nodes, it must be in quorum. If the cluster is not in quorum or a healthy controller shows false for eligibility and health, you must correct the issue before shutting down the impaired controller; see the <a href="https://docs.netapp.com/us-en/ontap/encryption-at-rest/index.html">NetApp Encryption overview with the CLI</a>.</p>
 </div>
 <div class="olist arabic">
 <div class="title">Steps</div>
 <ol class="arabic">
 <li>
-<p>Check the status of the impaired node:</p>
+<p>Check the status of the impaired controller:</p>
 <div class="ulist">
 <ul>
 <li>
-<p>If the impaired node is at the login prompt, log in as <code>admin</code>.</p>
+<p>If the impaired controller is at the login prompt, log in as <code>admin</code>.</p>
 </li>
 <li>
-<p>If the impaired node is at the LOADER prompt and is part of HA configuration, log in as <code>admin</code> on the healthy node.</p>
+<p>If the impaired controller is at the LOADER prompt and is part of HA configuration, log in as <code>admin</code> on the healthy controller.</p>
 </li>
 <li>
-<p>If the impaired node is in a standalone configuration and at LOADER prompt, contact <a href="http://mysupport.netapp.com/">mysupport.netapp.com</a>.</p>
+<p>If the impaired controller is in a standalone configuration and at LOADER prompt, contact <a href="http://mysupport.netapp.com/">mysupport.netapp.com</a>.</p>
 </li>
 </ul>
 </div>
@@ -5288,7 +5274,7 @@
 </div>
 </li>
 <li>
-<p>Check the version of ONTAP the system is running on the impaired node if up, or on the partner node if the impaired node is down, using the <code>version -v</code> command:</p>
+<p>Check the version of ONTAP the system is running on the impaired controller if up, or on the partner controller if the impaired controller is down, using the <code>version -v</code> command:</p>
 <div class="ulist">
 <ul>
 <li>
@@ -5308,7 +5294,7 @@
 <h2 id="check-nve-or-nse-on-systems-running-ontap-9-6-and-later">Check NVE or NSE on systems running ONTAP 9.6 and later</h2>
 <div class="sectionbody">
 <div class="paragraph lead">
-<p>Before shutting down the impaired node, you need to verify whether the system has either NetApp Volume Encryption (NVE) or NetApp Storage Encryption (NSE) enabled. If so, you need to verify the configuration.</p>
+<p>Before shutting down the impaired controller, you need to verify whether the system has either NetApp Volume Encryption (NVE) or NetApp Storage Encryption (NSE) enabled. If so, you need to verify the configuration.</p>
 </div>
 <div class="olist arabic">
 <ol class="arabic">
@@ -5329,7 +5315,7 @@
 <p>If no disks are shown, NSE is not configured.</p>
 </li>
 <li>
-<p>If NVE and NSE are not configured, no drives are protected with NSE keys, it&#8217;s safe to shut down the impaired node.</p>
+<p>If NVE and NSE are not configured, no drives are protected with NSE keys, it&#8217;s safe to shut down the impaired controller.</p>
 </li>
 </ul>
 </div>
@@ -5360,7 +5346,7 @@ After the ONTAP 9.6 release, you may have additional key manager types.  The typ
 <div class="ulist">
 <ul>
 <li>
-<p>If the <code>Key Manager</code> type displays <code>external</code> and the <code>Restored</code> column displays <code>yes</code>, it&#8217;s safe to shut down the impaired node.</p>
+<p>If the <code>Key Manager</code> type displays <code>external</code> and the <code>Restored</code> column displays <code>yes</code>, it&#8217;s safe to shut down the impaired controller.</p>
 </li>
 <li>
 <p>If the <code>Key Manager</code> type displays <code>onboard</code> and the <code>Restored</code> column displays <code>yes</code>, you need to complete some additional steps.</p>
@@ -5389,7 +5375,7 @@ After the ONTAP 9.6 release, you may have additional key manager types.  The typ
 <p>Return to admin mode: <code>set -priv admin</code></p>
 </li>
 <li>
-<p>Shut down the impaired node.</p>
+<p>Shut down the impaired controller.</p>
 </li>
 </ol>
 </div>
@@ -5411,7 +5397,7 @@ After the ONTAP 9.6 release, you may have additional key manager types.  The typ
 <p>Verify that the <code>Restored</code> column equals <code>yes</code> for all authentication keys: <code>security key-manager key-query</code></p>
 </li>
 <li>
-<p>Shut down the impaired node.</p>
+<p>Shut down the impaired controller.</p>
 </li>
 </ol>
 </div>
@@ -5454,7 +5440,7 @@ Enter the customer&#8217;s onboard key management passphrase at the prompt. If t
 <p>Return to admin mode: <code>set -priv admin</code></p>
 </li>
 <li>
-<p>You can safely shut down the node.</p>
+<p>You can safely shut down the controller.</p>
 </li>
 </ol>
 </div>
@@ -5489,7 +5475,7 @@ After the ONTAP 9.6 release, you may have additional key manager types.  The typ
 <div class="ulist">
 <ul>
 <li>
-<p>If the <code>Key Manager</code> type displays <code>external</code> and the <code>Restored</code> column displays <code>yes</code>, it&#8217;s safe to shut down the impaired node.</p>
+<p>If the <code>Key Manager</code> type displays <code>external</code> and the <code>Restored</code> column displays <code>yes</code>, it&#8217;s safe to shut down the impaired controller.</p>
 </li>
 <li>
 <p>If the <code>Key Manager</code> type displays <code>onboard</code> and the <code>Restored</code> column displays <code>yes</code>, you need to complete some additional steps.</p>
@@ -5518,7 +5504,7 @@ After the ONTAP 9.6 release, you may have additional key manager types.  The typ
 <p>Return to admin mode: <code>set -priv admin</code></p>
 </li>
 <li>
-<p>You can safely shut down the node.</p>
+<p>You can safely shut down the controller.</p>
 </li>
 </ol>
 </div>
@@ -5540,7 +5526,7 @@ After the ONTAP 9.6 release, you may have additional key manager types.  The typ
 <p>Verify that the <code>Restored</code> column equals <code>yes</code> for all authentication keys: <code>security key-manager key-query</code></p>
 </li>
 <li>
-<p>You can safely shut down the node.</p>
+<p>You can safely shut down the controller.</p>
 </li>
 </ol>
 </div>
@@ -5577,7 +5563,7 @@ After the ONTAP 9.6 release, you may have additional key manager types.  The typ
 <p>Return to admin mode: <code>set -priv admin</code></p>
 </li>
 <li>
-<p>You can safely shut down the node.</p>
+<p>You can safely shut down the controller.</p>
 </li>
 </ol>
 </div>
@@ -5595,27 +5581,7 @@ After the ONTAP 9.6 release, you may have additional key manager types.  The typ
     <!-- Page Container -->
   </div>
 
-  
-  <!-- Start Page Toolbar -->
-  <div class="page-nav-toolbar">
-    <div id="version-dropdown"></div>
-    <div class="page-nav-contribute"  >
-      <a target="_blank" href="https://github.com/NetAppDocs/ontap-systems/issues/new?body=Page%3A%20[Check onboard encryption keys - AFF A320](https://docs.netapp.com/us-en/ontap-systems/a320/bootmedia-encryption-preshutdown-checks.html)" class="page-nav-contribute-link" role="button"><img src="/us-en/ontap-systems/images/discuss-sm.svg" class="github-icon" />Request doc changes</a>
-      <a target="_blank" href="https://github.com/NetAppDocs/ontap-systems/blob/main/a320/bootmedia-encryption-preshutdown-checks.adoc" class="page-nav-contribute-link" role="button"><img src="/us-en/ontap-systems/images/edit-sm.svg" class="github-icon" />Edit this page</a>
-      <a target="_blank" href="https://docs.netapp.com/us-en/contribute/" class="page-nav-contribute-link"  ><img src="/us-en/ontap-systems/images/article-sm.svg" class="github-icon" />Learn how to contribute</a>
-    </div>
-    <div class="page-nav-container">
-      <nav class="page-nav-fixed">
-        <div class="page-nav-title">ON THIS PAGE</div>
-        <div class="page-nav-links">
-          <ul class="page-nav-inner" id="page-menu"></ul>
-        </div>
-      </nav>
-    </div>
-  </div>
-  
-  <div style="clear: both"></div><!-- Main needs to have height -->
-</div>
+  <div style="clear: both"></div><!-- Main needs to have height --></div>
 
         </main>
 
@@ -5717,9 +5683,7 @@ After the ONTAP 9.6 release, you may have additional key manager types.  The typ
 </div>
 </footer>
 
-      </div>
-
-      <!-- Elasticsearch JS -->
+      </div><!-- Elasticsearch JS -->
       <script type="text/javascript" src='/us-en/ontap-systems/js/bundle.js'></script>
 
       <!-- Syntax Highlighting -->
@@ -5734,7 +5698,4 @@ After the ONTAP 9.6 release, you may have additional key manager types.  The typ
     </script>
     <script src='/us-en/ontap-systems/js/www-ntap.js'></script>
     <script src='/us-en/ontap-systems/js/tabbed-blocks.js'></script>
-  </body>
-
-  
-</html>
+  </body></html>

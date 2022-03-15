@@ -16,20 +16,11 @@
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   <meta http-equiv="encoding" content="utf-8">
   <meta http-equiv="nss-type" content="Product Documentation"/>
-  <meta http-equiv="nss-subtype" content="User Guide"/>
-  
-  <meta name="description" content="You must replace a DIMM in the controller module when your system registers an increasing number of correctable error correction codes (ECC); failure to do s...">
-  <meta name="keywords" content=" fas2700, aff, a220, replace, dimm, shut, down, impaired, controller, node, metrocluster, replace, system, reinstall, diagnostics, module, filed, part, aggregates,">
-  
-  
-
-  <!-- Icons -->
+  <meta http-equiv="nss-subtype" content="User Guide"/><meta name="description" content="You must replace a DIMM in the controller module when your system registers an increasing number of correctable error correction codes (ECC); failure to do s...">
+  <meta name="keywords" content=" fas2700, aff, a220, replace, dimm, shut, down, impaired, controller, controller, metrocluster, replace, system, reinstall, diagnostics, module, filed, part, aggregates,"><!-- Icons -->
   <link rel="icon" href="/us-en/ontap-systems/images/favicon.ico" type="image/x-icon">
 
-  <!-- RSS Feed -->
-  
-
-  <!-- CSS Definitions: NetApp CSS should be defined after generic css -->
+  <!-- RSS Feed --><!-- CSS Definitions: NetApp CSS should be defined after generic css -->
 
   <!-- Elastic Search -->
   <link rel="stylesheet" href="//cdn.jsdelivr.net/searchkit/0.10.0/theme.css">
@@ -59,27 +50,11 @@
   
   <link rel="stylesheet" href="/us-en/ontap-systems/css/landing-page.css" type="text/css">
   <link rel="stylesheet" href="/us-en/ontap-systems/css/tabbed-blocks.css" type="text/css">
-  <link rel="stylesheet" href='/us-en/ontap-systems/css/product-family.css' type="text/css">
-  
-
-  
-  <link rel='stylesheet' href='/us-en/ontap-systems/css/na-feature.css' type='text/css'>
-  
-
-
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <link rel='stylesheet' href='/us-en/ontap-systems/css/na-feature.css' type='text/css'><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
-  <!-- Used to import Promise for IE. Required for SearchKit -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/bluebird/3.3.5/bluebird.min.js"></script>
-  
-    <script src='/us-en/ontap-systems/js/na-search.js'></script>
-  
 
-  
-  <script src='/us-en/ontap-systems/js/na-pagenav.js'></script>
-  
-
-  <link rel='stylesheet' href='/us-en/ontap-systems/css/prism.css' type='text/css'>
+  <!-- Used for Product Family Page Sidebar Visibility --><!-- Used to import Promise for IE. Required for SearchKit -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bluebird/3.3.5/bluebird.min.js"></script><script src='/us-en/ontap-systems/js/na-search.js'></script><script src='/us-en/ontap-systems/js/na-pagenav.js'></script><link rel='stylesheet' href='/us-en/ontap-systems/css/prism.css' type='text/css'>
   <link rel='stylesheet' href='/us-en/ontap-systems/css/prism-netapp.css' type='text/css'>
 
 
@@ -97,9 +72,7 @@
   <script src='/us-en/ontap-systems/js/jquery.navgoco.min.js'></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
   <script src='/us-en/ontap-systems/js/toc.js'></script>
-  <script src='/us-en/ontap-systems/js/customscripts.js'></script>
-
-  <script>
+  <script src='/us-en/ontap-systems/js/customscripts.js'></script><script>
       $(document).ready(function() {
           
           var collapseOnInit = true;
@@ -158,7 +131,6 @@
   }
   </script>
   <script src='/us-en/ontap-systems/js/version-dropdown.js'></script>
-  <script src='/us-en/ontap-systems/js/product-family.js'></script>
   <script src='/us-en/ontap-systems/js/FileSaver.min.js'></script>
   <script src='/us-en/ontap-systems/js/jszip-utils.min.js'></script>
   <script src='/us-en/ontap-systems/js/jszip.min.js'></script>
@@ -171,6 +143,25 @@
       <div class="n-off-canvas-menu__menu"><!--TODO: Add offcanvas code --></div>
       <div class="n-off-canvas-menu__content-wrap">
         <header class="site-header" id="banner">
+  
+  <!-- Start Page Toolbar -->
+  <div class="page-nav-toolbar">
+    <div id="version-dropdown"></div>
+    <div class="page-nav-contribute"  >
+      <a target="_blank" href="https://github.com/NetAppDocs/ontap-systems/issues/new?body=Page%3A%20[Replace a DIMM - AFF A220 and FAS2700](https://docs.netapp.com/us-en/ontap-systems/fas2700/dimm-replace.html)" class="page-nav-contribute-link" role="button"><img src="/us-en/ontap-systems/images/discuss-sm.svg" class="github-icon" />Request doc changes</a>
+      <a target="_blank" href="https://github.com/NetAppDocs/ontap-systems/blob/main/fas2700/dimm_replace.adoc" class="page-nav-contribute-link" role="button"><img src="/us-en/ontap-systems/images/edit-sm.svg" class="github-icon" />Edit this page</a>
+      <a target="_blank" href="https://docs.netapp.com/us-en/contribute/" class="page-nav-contribute-link"  ><img src="/us-en/ontap-systems/images/article-sm.svg" class="github-icon" />Learn how to contribute</a>
+    </div>
+    <div class="page-nav-container">
+      <nav class="page-nav-fixed">
+        <div class="page-nav-title">ON THIS PAGE</div>
+        <div class="page-nav-links">
+          <ul class="page-nav-inner" id="page-menu"></ul>
+        </div>
+      </nav>
+    </div>
+  </div>
+  
   <!-- Start top_hat -->
   <div class="n-top-hat">
     <div class="n-container">
@@ -5185,26 +5176,22 @@
   
 
   <div class="ie-content-pane n-doc__component-detail-content n-doc__component-detail-content--show-code">
-    <!-- Begin of page container -->
-    <article class="page-content">
+    <!-- Begin of page container --><article class="page-content">
       <div class="ie-utility">
   <div class="ie-menu">
     <div class="n-breadcrumb">
       <ul class="n-breadcrumb__list">
         <li class="n-breadcrumb__list-item">
-          <a href="https://www.netapp.com">Home</a>
+          <a href="https://docs.netapp.com">docs.netapp.com</a>
         </li>
-        <li class="n-breadcrumb__list-item">
-          <a href="https://docs.netapp.com">Documentation</a>
-        </li>
+        
+
         
 
         <li class="n-breadcrumb__list-item">
           <a href="/us-en/ontap-systems/">ONTAP&nbsp;Systems</a>
         </li>
-        <li class="n-breadcrumb__list-item">
-          Replace a DIMM - AFF A220 and FAS2700
-        </li>
+
       </ul>
     </div>
     <div style="clear: both"></div><!-- Main needs to have height -->
@@ -5219,7 +5206,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-02-23 15:02:52 +0000">02/23/2022</time>
+    <time datetime="2022-03-15 18:54:10 +0000">03/15/2022</time>
     
   
 
@@ -5253,7 +5240,6 @@
 
 </p>
 
-
 <div id="preamble">
 <div class="sectionbody">
 <div class="paragraph lead">
@@ -5271,16 +5257,16 @@
 <h2 id="step-1-shut-down-the-impaired-controller">Step 1: Shut down the impaired controller</h2>
 <div class="sectionbody">
 <div class="paragraph lead">
-<p>You can shut down or take over the impaired controller using different procedures, depending on the storage system hardware configuration.</p>
+<p>Shut down or take over the impaired controller using the appropriate procedure for your configuration.</p>
 </div>
 <div class="sect2">
 <h3 id="option-1-most-configurations">Option 1: Most configurations</h3>
 <div class="paragraph lead">
-<p>To shut down the impaired node, you must determine the status of the node and, if necessary, take over the node so that the healthy node continues to serve data from the impaired node storage.</p>
+<p>To shut down the impaired controller, you must determine the status of the controller and, if necessary, take over the controller so that the healthy controller continues to serve data from the impaired controller storage.</p>
 </div>
 <div class="paragraph">
 <div class="title">About this task</div>
-<p>If you have a cluster with more than two nodes, it must be in quorum. If the cluster is not in quorum or a healthy node shows false for eligibility and health, you must correct the issue before shutting down the impaired node; see the <a href="https://docs.netapp.com/us-en/ontap/system-admin/index.html" target="_blank" rel="noopener">Administration overview with the CLI</a>.</p>
+<p>If you have a cluster with more than two nodes, it must be in quorum. If the cluster is not in quorum or a healthy controller shows false for eligibility and health, you must correct the issue before shutting down the impaired controller; see the <a href="https://docs.netapp.com/us-en/ontap/system-admin/index.html" target="_blank" rel="noopener">Administration overview with the CLI</a>.</p>
 </div>
 <div class="olist arabic">
 <div class="title">Steps</div>
@@ -5292,10 +5278,10 @@
 </div>
 </li>
 <li>
-<p>Disable automatic giveback from the console of the healthy node: <code>storage failover modify –node local -auto-giveback false</code></p>
+<p>Disable automatic giveback from the console of the healthy controller: <code>storage failover modify –node local -auto-giveback false</code></p>
 </li>
 <li>
-<p>Take the impaired node to the LOADER prompt:</p>
+<p>Take the impaired controller to the LOADER prompt:</p>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 33.3333%;">
@@ -5303,7 +5289,7 @@
 </colgroup>
 <thead>
 <tr>
-<th class="tableblock halign-left valign-top">If the impaired node is displaying&#8230;&#8203;</th>
+<th class="tableblock halign-left valign-top">If the impaired controller is displaying&#8230;&#8203;</th>
 <th class="tableblock halign-left valign-top">Then&#8230;&#8203;</th>
 </tr>
 </thead>
@@ -5329,14 +5315,10 @@
 <p>System prompt or password prompt (enter system password)</p>
 </div></div></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>Take over or halt the impaired node from the healthy node: <code>storage failover takeover -ofnode <em>impaired_node_name</em></code></p>
+<p>Take over or halt the impaired controller from the healthy controller: <code>storage failover takeover -ofnode <em>impaired_node_name</em></code></p>
 </div>
 <div class="paragraph">
-<p>+
-When the impaired node shows Waiting for giveback&#8230;&#8203;, press Ctrl-C, and then respond <code>y</code>.</p>
-</div>
-<div class="paragraph">
-<p>+</p>
+<p>When the impaired controller shows Waiting for giveback&#8230;&#8203;, press Ctrl-C, and then respond <code>y</code>.</p>
 </div></div></td>
 </tr>
 </tbody>
@@ -5348,10 +5330,10 @@ When the impaired node shows Waiting for giveback&#8230;&#8203;, press Ctrl-C, a
 <div class="title">Steps</div>
 <ol class="arabic">
 <li>
-<p>If the impaired node is part of an HA pair, disable automatic giveback from the console of the healthy node: <code>storage failover modify -node local -auto-giveback false</code></p>
+<p>If the impaired controller is part of an HA pair, disable automatic giveback from the console of the healthy controller: <code>storage failover modify -node local -auto-giveback false</code></p>
 </li>
 <li>
-<p>Take the impaired node to the LOADER prompt:</p>
+<p>Take the impaired controller to the LOADER prompt:</p>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 33.3333%;">
@@ -5359,7 +5341,7 @@ When the impaired node shows Waiting for giveback&#8230;&#8203;, press Ctrl-C, a
 </colgroup>
 <thead>
 <tr>
-<th class="tableblock halign-left valign-top">If the impaired node is displaying&#8230;&#8203;</th>
+<th class="tableblock halign-left valign-top">If the impaired controller is displaying&#8230;&#8203;</th>
 <th class="tableblock halign-left valign-top">Then&#8230;&#8203;</th>
 </tr>
 </thead>
@@ -5385,14 +5367,14 @@ When the impaired node shows Waiting for giveback&#8230;&#8203;, press Ctrl-C, a
 <p>System prompt or password prompt (enter system password)</p>
 </div></div></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>Take over or halt the impaired node:</p>
+<p>Take over or halt the impaired controller:</p>
 </div>
 <div class="ulist">
 <ul>
 <li>
-<p>For an HA pair, take over the impaired node from the healthy node: <code>storage failover takeover -ofnode <em>impaired_node_name</em></code></p>
+<p>For an HA pair, take over the impaired controller from the healthy controller: <code>storage failover takeover -ofnode <em>impaired_node_name</em></code></p>
 <div class="paragraph">
-<p>When the impaired node shows Waiting for giveback&#8230;&#8203;, press Ctrl-C, and then respond <code>y</code>.</p>
+<p>When the impaired controller shows Waiting for giveback&#8230;&#8203;, press Ctrl-C, and then respond <code>y</code>.</p>
 </div>
 </li>
 <li>
@@ -5405,7 +5387,7 @@ When the impaired node shows Waiting for giveback&#8230;&#8203;, press Ctrl-C, a
 </table>
 </li>
 <li>
-<p>If the system has only one controller module in the chassis, turn off the power supplies, and then unplug the impaired node&#8217;s power cords from the power source.</p>
+<p>If the system has only one controller module in the chassis, turn off the power supplies, and then unplug the impaired controller&#8217;s power cords from the power source.</p>
 </li>
 </ol>
 </div>
@@ -5425,12 +5407,12 @@ Do not use this procedure if your system is in a two-node MetroCluster configura
 </table>
 </div>
 <div class="paragraph">
-<p>To shut down the impaired node, you must determine the status of the node and, if necessary, take over the node so that the healthy node continues to serve data from the impaired node storage.</p>
+<p>To shut down the impaired controller, you must determine the status of the controller and, if necessary, take over the controller so that the healthy controller continues to serve data from the impaired controller storage.</p>
 </div>
 <div class="ulist">
 <ul>
 <li>
-<p>If you have a cluster with more than two nodes, it must be in quorum. If the cluster is not in quorum or a healthy node shows false for eligibility and health, you must correct the issue before shutting down the impaired node; see the <a href="https://docs.netapp.com/us-en/ontap/system-admin/index.html" target="_blank" rel="noopener">Administration overview with the CLI</a>.</p>
+<p>If you have a cluster with more than two nodes, it must be in quorum. If the cluster is not in quorum or a healthy controller shows false for eligibility and health, you must correct the issue before shutting down the impaired controller; see the <a href="https://docs.netapp.com/us-en/ontap/system-admin/index.html" target="_blank" rel="noopener">Administration overview with the CLI</a>.</p>
 </li>
 <li>
 <p>If you have a MetroCluster configuration, you must have confirmed that the MetroCluster Configuration State is configured and that the nodes are in an enabled and normal state (<code>metrocluster node show</code>).</p>
@@ -5447,10 +5429,10 @@ Do not use this procedure if your system is in a two-node MetroCluster configura
 </div>
 </li>
 <li>
-<p>Disable automatic giveback from the console of the healthy node: <code>storage failover modify –node local -auto-giveback false</code></p>
+<p>Disable automatic giveback from the console of the healthy controller: <code>storage failover modify –node local -auto-giveback false</code></p>
 </li>
 <li>
-<p>Take the impaired node to the LOADER prompt:</p>
+<p>Take the impaired controller to the LOADER prompt:</p>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 33.3333%;">
@@ -5458,7 +5440,7 @@ Do not use this procedure if your system is in a two-node MetroCluster configura
 </colgroup>
 <thead>
 <tr>
-<th class="tableblock halign-left valign-top">If the impaired node is displaying&#8230;&#8203;</th>
+<th class="tableblock halign-left valign-top">If the impaired controller is displaying&#8230;&#8203;</th>
 <th class="tableblock halign-left valign-top">Then&#8230;&#8203;</th>
 </tr>
 </thead>
@@ -5468,7 +5450,7 @@ Do not use this procedure if your system is in a two-node MetroCluster configura
 <p>The LOADER prompt</p>
 </div></div></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>Go to Remove controller module..</p>
+<p>Go to Remove controller module.</p>
 </div></div></td>
 </tr>
 <tr>
@@ -5484,14 +5466,10 @@ Do not use this procedure if your system is in a two-node MetroCluster configura
 <p>System prompt or password prompt (enter system password)</p>
 </div></div></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>Take over or halt the impaired node from the healthy node: <code>storage failover takeover -ofnode <em>impaired_node_name</em></code></p>
+<p>Take over or halt the impaired controller from the healthy controller: <code>storage failover takeover -ofnode <em>impaired_node_name</em></code></p>
 </div>
 <div class="paragraph">
-<p>+
-When the impaired node shows Waiting for giveback&#8230;&#8203;, press Ctrl-C, and then respond <code>y</code>.</p>
-</div>
-<div class="paragraph">
-<p>+</p>
+<p>When the impaired controller shows Waiting for giveback&#8230;&#8203;, press Ctrl-C, and then respond <code>y</code>.</p>
 </div></div></td>
 </tr>
 </tbody>
@@ -5857,20 +5835,20 @@ If you miss the prompt and the controller module boots to ONTAP, enter <code>hal
 <p>Your system must be at the LOADER prompt to start System Level Diagnostics.</p>
 </div>
 <div class="paragraph">
-<p>All commands in the diagnostic procedures are issued from the node where the component is being replaced.</p>
+<p>All commands in the diagnostic procedures are issued from the controller where the component is being replaced.</p>
 </div>
 <div class="olist arabic">
 <div class="title">Steps</div>
 <ol class="arabic">
 <li>
-<p>If the node to be serviced is not at the LOADER prompt, perform the following steps:</p>
+<p>If the controller to be serviced is not at the LOADER prompt, perform the following steps:</p>
 <div class="olist loweralpha">
 <ol class="loweralpha" type="a">
 <li>
 <p>Select the Maintenance mode option from the displayed menu.</p>
 </li>
 <li>
-<p>After the node boots to Maintenance mode, halt the node: <code>halt</code></p>
+<p>After the controller boots to Maintenance mode, halt the controller: <code>halt</code></p>
 <div class="paragraph">
 <p>After you issue the command, you should wait until the system stops at the LOADER prompt.</p>
 </div>
@@ -5889,7 +5867,7 @@ During the boot process, you can safely respond <code>y</code> to prompts:
 <div class="ulist">
 <ul>
 <li>
-<p>A prompt warning that when entering Maintenance mode in an HA configuration, you must ensure that the healthy node remains down.</p>
+<p>A prompt warning that when entering Maintenance mode in an HA configuration, you must ensure that the healthy controller remains down.</p>
 </li>
 </ul>
 </div>
@@ -5947,14 +5925,14 @@ During the boot process, you can safely respond <code>y</code> to prompts:
 <li>
 <p>Exit Maintenance mode: <code>halt</code></p>
 <div class="paragraph">
-<p>The node displays the LOADER prompt.</p>
+<p>The controller displays the LOADER prompt.</p>
 </div>
 </li>
 <li>
-<p>Boot the node from the LOADER prompt: <code>bye</code></p>
+<p>Boot the controller from the LOADER prompt: <code>bye</code></p>
 </li>
 <li>
-<p>Return the node to normal operation:</p>
+<p>Return the controller to normal operation:</p>
 </li>
 </ol>
 </div></div></td>
@@ -5968,7 +5946,7 @@ During the boot process, you can safely respond <code>y</code> to prompts:
 </colgroup>
 <thead>
 <tr>
-<th class="tableblock halign-left valign-top">If your node is in&#8230;&#8203;</th>
+<th class="tableblock halign-left valign-top">If your controller is in&#8230;&#8203;</th>
 <th class="tableblock halign-left valign-top">Then&#8230;&#8203;</th>
 </tr>
 </thead>
@@ -6175,27 +6153,7 @@ Remote: cluster_A configured      		normal</pre>
     <!-- Page Container -->
   </div>
 
-  
-  <!-- Start Page Toolbar -->
-  <div class="page-nav-toolbar">
-    <div id="version-dropdown"></div>
-    <div class="page-nav-contribute"  >
-      <a target="_blank" href="https://github.com/NetAppDocs/ontap-systems/issues/new?body=Page%3A%20[Replace a DIMM - AFF A220 and FAS2700](https://docs.netapp.com/us-en/ontap-systems/fas2700/dimm-replace.html)" class="page-nav-contribute-link" role="button"><img src="/us-en/ontap-systems/images/discuss-sm.svg" class="github-icon" />Request doc changes</a>
-      <a target="_blank" href="https://github.com/NetAppDocs/ontap-systems/blob/main/fas2700/dimm_replace.adoc" class="page-nav-contribute-link" role="button"><img src="/us-en/ontap-systems/images/edit-sm.svg" class="github-icon" />Edit this page</a>
-      <a target="_blank" href="https://docs.netapp.com/us-en/contribute/" class="page-nav-contribute-link"  ><img src="/us-en/ontap-systems/images/article-sm.svg" class="github-icon" />Learn how to contribute</a>
-    </div>
-    <div class="page-nav-container">
-      <nav class="page-nav-fixed">
-        <div class="page-nav-title">ON THIS PAGE</div>
-        <div class="page-nav-links">
-          <ul class="page-nav-inner" id="page-menu"></ul>
-        </div>
-      </nav>
-    </div>
-  </div>
-  
-  <div style="clear: both"></div><!-- Main needs to have height -->
-</div>
+  <div style="clear: both"></div><!-- Main needs to have height --></div>
 
         </main>
 
@@ -6297,9 +6255,7 @@ Remote: cluster_A configured      		normal</pre>
 </div>
 </footer>
 
-      </div>
-
-      <!-- Elasticsearch JS -->
+      </div><!-- Elasticsearch JS -->
       <script type="text/javascript" src='/us-en/ontap-systems/js/bundle.js'></script>
 
       <!-- Syntax Highlighting -->
@@ -6314,7 +6270,4 @@ Remote: cluster_A configured      		normal</pre>
     </script>
     <script src='/us-en/ontap-systems/js/www-ntap.js'></script>
     <script src='/us-en/ontap-systems/js/tabbed-blocks.js'></script>
-  </body>
-
-  
-</html>
+  </body></html>

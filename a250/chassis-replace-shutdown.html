@@ -16,20 +16,11 @@
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   <meta http-equiv="encoding" content="utf-8">
   <meta http-equiv="nss-type" content="Product Documentation"/>
-  <meta http-equiv="nss-subtype" content="User Guide"/>
-  
-  <meta name="description" content="To replace the chassis, you must shutdown the controllers.">
-  <meta name="keywords" content=" aff a250, shutdown the controllers">
-  
-  
-
-  <!-- Icons -->
+  <meta http-equiv="nss-subtype" content="User Guide"/><meta name="description" content="To replace the chassis, you must shutdown the controllers.">
+  <meta name="keywords" content=" aff a250, shutdown the controllers"><!-- Icons -->
   <link rel="icon" href="/us-en/ontap-systems/images/favicon.ico" type="image/x-icon">
 
-  <!-- RSS Feed -->
-  
-
-  <!-- CSS Definitions: NetApp CSS should be defined after generic css -->
+  <!-- RSS Feed --><!-- CSS Definitions: NetApp CSS should be defined after generic css -->
 
   <!-- Elastic Search -->
   <link rel="stylesheet" href="//cdn.jsdelivr.net/searchkit/0.10.0/theme.css">
@@ -59,27 +50,11 @@
   
   <link rel="stylesheet" href="/us-en/ontap-systems/css/landing-page.css" type="text/css">
   <link rel="stylesheet" href="/us-en/ontap-systems/css/tabbed-blocks.css" type="text/css">
-  <link rel="stylesheet" href='/us-en/ontap-systems/css/product-family.css' type="text/css">
-  
-
-  
-  <link rel='stylesheet' href='/us-en/ontap-systems/css/na-feature.css' type='text/css'>
-  
-
-
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <link rel='stylesheet' href='/us-en/ontap-systems/css/na-feature.css' type='text/css'><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
-  <!-- Used to import Promise for IE. Required for SearchKit -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/bluebird/3.3.5/bluebird.min.js"></script>
-  
-    <script src='/us-en/ontap-systems/js/na-search.js'></script>
-  
 
-  
-  <script src='/us-en/ontap-systems/js/na-pagenav.js'></script>
-  
-
-  <link rel='stylesheet' href='/us-en/ontap-systems/css/prism.css' type='text/css'>
+  <!-- Used for Product Family Page Sidebar Visibility --><!-- Used to import Promise for IE. Required for SearchKit -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bluebird/3.3.5/bluebird.min.js"></script><script src='/us-en/ontap-systems/js/na-search.js'></script><script src='/us-en/ontap-systems/js/na-pagenav.js'></script><link rel='stylesheet' href='/us-en/ontap-systems/css/prism.css' type='text/css'>
   <link rel='stylesheet' href='/us-en/ontap-systems/css/prism-netapp.css' type='text/css'>
 
 
@@ -97,9 +72,7 @@
   <script src='/us-en/ontap-systems/js/jquery.navgoco.min.js'></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
   <script src='/us-en/ontap-systems/js/toc.js'></script>
-  <script src='/us-en/ontap-systems/js/customscripts.js'></script>
-
-  <script>
+  <script src='/us-en/ontap-systems/js/customscripts.js'></script><script>
       $(document).ready(function() {
           
           var collapseOnInit = true;
@@ -158,7 +131,6 @@
   }
   </script>
   <script src='/us-en/ontap-systems/js/version-dropdown.js'></script>
-  <script src='/us-en/ontap-systems/js/product-family.js'></script>
   <script src='/us-en/ontap-systems/js/FileSaver.min.js'></script>
   <script src='/us-en/ontap-systems/js/jszip-utils.min.js'></script>
   <script src='/us-en/ontap-systems/js/jszip.min.js'></script>
@@ -171,6 +143,25 @@
       <div class="n-off-canvas-menu__menu"><!--TODO: Add offcanvas code --></div>
       <div class="n-off-canvas-menu__content-wrap">
         <header class="site-header" id="banner">
+  
+  <!-- Start Page Toolbar -->
+  <div class="page-nav-toolbar">
+    <div id="version-dropdown"></div>
+    <div class="page-nav-contribute"  >
+      <a target="_blank" href="https://github.com/NetAppDocs/ontap-systems/issues/new?body=Page%3A%20[Shut down the controllers - AFF A250](https://docs.netapp.com/us-en/ontap-systems/a250/chassis-replace-shutdown.html)" class="page-nav-contribute-link" role="button"><img src="/us-en/ontap-systems/images/discuss-sm.svg" class="github-icon" />Request doc changes</a>
+      <a target="_blank" href="https://github.com/NetAppDocs/ontap-systems/blob/main/a250/chassis-replace-shutdown.adoc" class="page-nav-contribute-link" role="button"><img src="/us-en/ontap-systems/images/edit-sm.svg" class="github-icon" />Edit this page</a>
+      <a target="_blank" href="https://docs.netapp.com/us-en/contribute/" class="page-nav-contribute-link"  ><img src="/us-en/ontap-systems/images/article-sm.svg" class="github-icon" />Learn how to contribute</a>
+    </div>
+    <div class="page-nav-container">
+      <nav class="page-nav-fixed">
+        <div class="page-nav-title">ON THIS PAGE</div>
+        <div class="page-nav-links">
+          <ul class="page-nav-inner" id="page-menu"></ul>
+        </div>
+      </nav>
+    </div>
+  </div>
+  
   <!-- Start top_hat -->
   <div class="n-top-hat">
     <div class="n-container">
@@ -5185,26 +5176,22 @@
   
 
   <div class="ie-content-pane n-doc__component-detail-content n-doc__component-detail-content--show-code">
-    <!-- Begin of page container -->
-    <article class="page-content">
+    <!-- Begin of page container --><article class="page-content">
       <div class="ie-utility">
   <div class="ie-menu">
     <div class="n-breadcrumb">
       <ul class="n-breadcrumb__list">
         <li class="n-breadcrumb__list-item">
-          <a href="https://www.netapp.com">Home</a>
+          <a href="https://docs.netapp.com">docs.netapp.com</a>
         </li>
-        <li class="n-breadcrumb__list-item">
-          <a href="https://docs.netapp.com">Documentation</a>
-        </li>
+        
+
         
 
         <li class="n-breadcrumb__list-item">
           <a href="/us-en/ontap-systems/">ONTAP&nbsp;Systems</a>
         </li>
-        <li class="n-breadcrumb__list-item">
-          Shut down the controllers - AFF A250
-        </li>
+
       </ul>
     </div>
     <div style="clear: both"></div><!-- Main needs to have height -->
@@ -5219,7 +5206,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-02-23 15:02:52 +0000">02/23/2022</time>
+    <time datetime="2022-03-15 18:54:10 +0000">03/15/2022</time>
     
   
 
@@ -5237,15 +5224,14 @@
 
 </p>
 
-
 <div class="paragraph lead">
-<p>You must shut down the node or nodes in the chassis prior to moving them to the new chassis.</p>
+<p>You must shut down the controller or controller in the chassis prior to moving them to the new chassis.</p>
 </div>
 <div class="ulist">
 <div class="title">About this task</div>
 <ul>
 <li>
-<p>If you have a cluster with more than two nodes, it must be in quorum. If the cluster is not in quorum or a healthy node shows <code>false</code> for eligibility and health, you must correct the issue before shutting down the impaired node; see the <a href="https://docs.netapp.com/us-en/ontap/system-admin/index.html" target="_blank" rel="noopener">Administration overview with the CLI</a>.</p>
+<p>If you have a cluster with more than two controllers, it must be in quorum. If the cluster is not in quorum or a healthy controller shows <code>false</code> for eligibility and health, you must correct the issue before shutting down the impaired controller; see the <a href="https://docs.netapp.com/us-en/ontap/system-admin/index.html" target="_blank" rel="noopener">Administration overview with the CLI</a>.</p>
 </li>
 <li>
 <p>If AutoSupport is enabled, suppress automatic case creation by invoking an AutoSupport message: <code>system node autosupport invoke -node * -type all -message MAINT=number_of_hours_downh</code></p>
@@ -5274,7 +5260,7 @@
 <tbody>
 <tr>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>Two nodes in the cluster</p>
+<p>Two controllers in the cluster</p>
 </div></div></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
 <p><code>cluster ha modify -configured false</code> <code>storage failover modify -node node0 -enabled false</code></p>
@@ -5282,7 +5268,7 @@
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>More than two nodes in the cluster</p>
+<p>More than two controllers in the cluster</p>
 </div></div></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
 <p><code>storage failover modify -node node0 -enabled false</code></p>
@@ -5292,13 +5278,13 @@
 </table>
 </li>
 <li>
-<p>Halt the node, pressing <code>y</code> when you are prompted to confirm the halt: <code>system node halt -node <em>node_name</em></code></p>
+<p>Halt the controller, pressing <code>y</code> when you are prompted to confirm the halt: <code>system node halt -node <em>node_name</em></code></p>
 <div class="paragraph">
 <p>The confirmation message looks like the following:</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre>Warning: This operation will cause node "node-name" to be marked as unhealthy. Unhealthy nodes do not participate in quorum voting. If the node goes out of service and one more node goes out of service there will be a data serving failure for the entire cluster. This will cause a client disruption. Use "cluster show" to verify cluster state. If possible bring other nodes online to improve the resiliency of this cluster.
+<pre>Warning: This operation will cause controller "node-name" to be marked as unhealthy. Unhealthy nodes do not participate in quorum voting. If the controller goes out of service and one more controller goes out of service there will be a data serving failure for the entire cluster. This will cause a client disruption. Use "cluster show" to verify cluster state. If possible bring other nodes online to improve the resiliency of this cluster.
 
 Do you want to continue? {y|n}:</pre>
 </div>
@@ -5310,14 +5296,14 @@ Do you want to continue? {y|n}:</pre>
 <img src="/us-en/ontap-systems/images/note.svg" alt="Note">
 </td>
 <td class="content">
-You must perform a clean system shutdown before replacing the chassis to avoid losing unwritten data in the nonvolatile memory (NVMEM/NVRAM). Depending on your system, if the NVMEM/NVRAM LED is flashing, there is content in the NVMEM/NVRAM that has not been saved to disk. You need to reboot the node and start from the beginning of this procedure. If repeated attempts to cleanly shut down the node fail, be aware that you might lose any data that was not saved to disk.
+You must perform a clean system shutdown before replacing the chassis to avoid losing unwritten data in the nonvolatile memory (NVMEM/NVRAM). Depending on your system, if the NVMEM/NVRAM LED is flashing, there is content in the NVMEM/NVRAM that has not been saved to disk. You need to reboot the controller and start from the beginning of this procedure. If repeated attempts to cleanly shut down the controller fail, be aware that you might lose any data that was not saved to disk.
 </td>
 </tr>
 </table>
 </div>
 </li>
 <li>
-<p>Where applicable, halt the second node to avoid a possible quorum error message in an HA pair configuration: <code>system node halt -node <em>second_node_name</em> -ignore-quorum-warnings true -skip-lif-migration-before-shutdown true</code></p>
+<p>Where applicable, halt the second controller to avoid a possible quorum error message in an HA pair configuration: <code>system node halt -node <em>second_node_name</em> -ignore-quorum-warnings true -skip-lif-migration-before-shutdown true</code></p>
 <div class="paragraph">
 <p>Answer <code>y</code> when prompted.</p>
 </div>
@@ -5329,27 +5315,7 @@ You must perform a clean system shutdown before replacing the chassis to avoid l
     <!-- Page Container -->
   </div>
 
-  
-  <!-- Start Page Toolbar -->
-  <div class="page-nav-toolbar">
-    <div id="version-dropdown"></div>
-    <div class="page-nav-contribute"  >
-      <a target="_blank" href="https://github.com/NetAppDocs/ontap-systems/issues/new?body=Page%3A%20[Shut down the controllers - AFF A250](https://docs.netapp.com/us-en/ontap-systems/a250/chassis-replace-shutdown.html)" class="page-nav-contribute-link" role="button"><img src="/us-en/ontap-systems/images/discuss-sm.svg" class="github-icon" />Request doc changes</a>
-      <a target="_blank" href="https://github.com/NetAppDocs/ontap-systems/blob/main/a250/chassis-replace-shutdown.adoc" class="page-nav-contribute-link" role="button"><img src="/us-en/ontap-systems/images/edit-sm.svg" class="github-icon" />Edit this page</a>
-      <a target="_blank" href="https://docs.netapp.com/us-en/contribute/" class="page-nav-contribute-link"  ><img src="/us-en/ontap-systems/images/article-sm.svg" class="github-icon" />Learn how to contribute</a>
-    </div>
-    <div class="page-nav-container">
-      <nav class="page-nav-fixed">
-        <div class="page-nav-title">ON THIS PAGE</div>
-        <div class="page-nav-links">
-          <ul class="page-nav-inner" id="page-menu"></ul>
-        </div>
-      </nav>
-    </div>
-  </div>
-  
-  <div style="clear: both"></div><!-- Main needs to have height -->
-</div>
+  <div style="clear: both"></div><!-- Main needs to have height --></div>
 
         </main>
 
@@ -5451,9 +5417,7 @@ You must perform a clean system shutdown before replacing the chassis to avoid l
 </div>
 </footer>
 
-      </div>
-
-      <!-- Elasticsearch JS -->
+      </div><!-- Elasticsearch JS -->
       <script type="text/javascript" src='/us-en/ontap-systems/js/bundle.js'></script>
 
       <!-- Syntax Highlighting -->
@@ -5468,7 +5432,4 @@ You must perform a clean system shutdown before replacing the chassis to avoid l
     </script>
     <script src='/us-en/ontap-systems/js/www-ntap.js'></script>
     <script src='/us-en/ontap-systems/js/tabbed-blocks.js'></script>
-  </body>
-
-  
-</html>
+  </body></html>

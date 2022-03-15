@@ -16,20 +16,11 @@
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   <meta http-equiv="encoding" content="utf-8">
   <meta http-equiv="nss-type" content="Product Documentation"/>
-  <meta http-equiv="nss-subtype" content="User Guide"/>
-  
-  <meta name="description" content="The NVRAM module consists of the NVRAM11 and DIMMs and up to two NVMe SSD Flash Cache modules (FlashCache or caching modules) per NVRAM module.">
-  <meta name="keywords" content=" ">
-  
-  
-
-  <!-- Icons -->
+  <meta http-equiv="nss-subtype" content="User Guide"/><meta name="description" content="The NVRAM module consists of the NVRAM11 and DIMMs and up to two NVMe SSD Flash Cache modules (FlashCache or caching modules) per NVRAM module.">
+  <meta name="keywords" content=" "><!-- Icons -->
   <link rel="icon" href="/us-en/ontap-systems/images/favicon.ico" type="image/x-icon">
 
-  <!-- RSS Feed -->
-  
-
-  <!-- CSS Definitions: NetApp CSS should be defined after generic css -->
+  <!-- RSS Feed --><!-- CSS Definitions: NetApp CSS should be defined after generic css -->
 
   <!-- Elastic Search -->
   <link rel="stylesheet" href="//cdn.jsdelivr.net/searchkit/0.10.0/theme.css">
@@ -59,27 +50,11 @@
   
   <link rel="stylesheet" href="/us-en/ontap-systems/css/landing-page.css" type="text/css">
   <link rel="stylesheet" href="/us-en/ontap-systems/css/tabbed-blocks.css" type="text/css">
-  <link rel="stylesheet" href='/us-en/ontap-systems/css/product-family.css' type="text/css">
-  
-
-  
-  <link rel='stylesheet' href='/us-en/ontap-systems/css/na-feature.css' type='text/css'>
-  
-
-
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <link rel='stylesheet' href='/us-en/ontap-systems/css/na-feature.css' type='text/css'><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
-  <!-- Used to import Promise for IE. Required for SearchKit -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/bluebird/3.3.5/bluebird.min.js"></script>
-  
-    <script src='/us-en/ontap-systems/js/na-search.js'></script>
-  
 
-  
-  <script src='/us-en/ontap-systems/js/na-pagenav.js'></script>
-  
-
-  <link rel='stylesheet' href='/us-en/ontap-systems/css/prism.css' type='text/css'>
+  <!-- Used for Product Family Page Sidebar Visibility --><!-- Used to import Promise for IE. Required for SearchKit -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bluebird/3.3.5/bluebird.min.js"></script><script src='/us-en/ontap-systems/js/na-search.js'></script><script src='/us-en/ontap-systems/js/na-pagenav.js'></script><link rel='stylesheet' href='/us-en/ontap-systems/css/prism.css' type='text/css'>
   <link rel='stylesheet' href='/us-en/ontap-systems/css/prism-netapp.css' type='text/css'>
 
 
@@ -97,9 +72,7 @@
   <script src='/us-en/ontap-systems/js/jquery.navgoco.min.js'></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
   <script src='/us-en/ontap-systems/js/toc.js'></script>
-  <script src='/us-en/ontap-systems/js/customscripts.js'></script>
-
-  <script>
+  <script src='/us-en/ontap-systems/js/customscripts.js'></script><script>
       $(document).ready(function() {
           
           var collapseOnInit = true;
@@ -158,7 +131,6 @@
   }
   </script>
   <script src='/us-en/ontap-systems/js/version-dropdown.js'></script>
-  <script src='/us-en/ontap-systems/js/product-family.js'></script>
   <script src='/us-en/ontap-systems/js/FileSaver.min.js'></script>
   <script src='/us-en/ontap-systems/js/jszip-utils.min.js'></script>
   <script src='/us-en/ontap-systems/js/jszip.min.js'></script>
@@ -171,6 +143,25 @@
       <div class="n-off-canvas-menu__menu"><!--TODO: Add offcanvas code --></div>
       <div class="n-off-canvas-menu__content-wrap">
         <header class="site-header" id="banner">
+  
+  <!-- Start Page Toolbar -->
+  <div class="page-nav-toolbar">
+    <div id="version-dropdown"></div>
+    <div class="page-nav-contribute"  >
+      <a target="_blank" href="https://github.com/NetAppDocs/ontap-systems/issues/new?body=Page%3A%20[Replace the NVRAM module and/or NVRAM DIMMs - AFF A900](https://docs.netapp.com/us-en/ontap-systems/a900/nvram_module_or_nvram_dimm_replacement.html)" class="page-nav-contribute-link" role="button"><img src="/us-en/ontap-systems/images/discuss-sm.svg" class="github-icon" />Request doc changes</a>
+      <a target="_blank" href="https://github.com/NetAppDocs/ontap-systems/blob/main/a900/nvram_module_or_nvram_dimm_replacement.adoc" class="page-nav-contribute-link" role="button"><img src="/us-en/ontap-systems/images/edit-sm.svg" class="github-icon" />Edit this page</a>
+      <a target="_blank" href="https://docs.netapp.com/us-en/contribute/" class="page-nav-contribute-link"  ><img src="/us-en/ontap-systems/images/article-sm.svg" class="github-icon" />Learn how to contribute</a>
+    </div>
+    <div class="page-nav-container">
+      <nav class="page-nav-fixed">
+        <div class="page-nav-title">ON THIS PAGE</div>
+        <div class="page-nav-links">
+          <ul class="page-nav-inner" id="page-menu"></ul>
+        </div>
+      </nav>
+    </div>
+  </div>
+  
   <!-- Start top_hat -->
   <div class="n-top-hat">
     <div class="n-container">
@@ -5185,26 +5176,22 @@
   
 
   <div class="ie-content-pane n-doc__component-detail-content n-doc__component-detail-content--show-code">
-    <!-- Begin of page container -->
-    <article class="page-content">
+    <!-- Begin of page container --><article class="page-content">
       <div class="ie-utility">
   <div class="ie-menu">
     <div class="n-breadcrumb">
       <ul class="n-breadcrumb__list">
         <li class="n-breadcrumb__list-item">
-          <a href="https://www.netapp.com">Home</a>
+          <a href="https://docs.netapp.com">docs.netapp.com</a>
         </li>
-        <li class="n-breadcrumb__list-item">
-          <a href="https://docs.netapp.com">Documentation</a>
-        </li>
+        
+
         
 
         <li class="n-breadcrumb__list-item">
           <a href="/us-en/ontap-systems/">ONTAP&nbsp;Systems</a>
         </li>
-        <li class="n-breadcrumb__list-item">
-          Replace the NVRAM module and/or NVRAM DIMMs - AFF A900
-        </li>
+
       </ul>
     </div>
     <div style="clear: both"></div><!-- Main needs to have height -->
@@ -5219,7 +5206,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-02-23 15:02:52 +0000">02/23/2022</time>
+    <time datetime="2022-03-15 18:54:10 +0000">03/15/2022</time>
     
   
 
@@ -5253,7 +5240,6 @@
 
 </p>
 
-
 <div id="preamble">
 <div class="sectionbody">
 <div class="paragraph lead">
@@ -5273,17 +5259,17 @@
 <p>All disk shelves must be working properly.</p>
 </li>
 <li>
-<p>If your system is in an HA pair, the partner node must be able to take over the node associated with the NVRAM module that is being replaced.</p>
+<p>If your system is in an HA pair, the partner controller must be able to take over the controller associated with the NVRAM module that is being replaced.</p>
 </li>
 <li>
 <p>This procedure uses the following terminology:</p>
 <div class="ulist">
 <ul>
 <li>
-<p>The impaired node is the node on which you are performing maintenance.</p>
+<p>The impaired controller is the controller on which you are performing maintenance.</p>
 </li>
 <li>
-<p>The healthy node is the HA partner of the impaired node.</p>
+<p>The healthy controller is the HA partner of the impaired controller.</p>
 </li>
 </ul>
 </div>
@@ -5302,20 +5288,23 @@
 </div>
 </div>
 <div class="sect1">
-<h2 id="step-1-shut-down-the-impaired-node">Step 1: Shut down the impaired node</h2>
+<h2 id="step-1-shut-down-the-impaired-controller">Step 1: Shut down the impaired controller</h2>
 <div class="sectionbody">
 <div class="paragraph lead">
 <div class="title">Steps</div>
-<p>You can shut down or take over the impaired controller using different procedures, depending on the storage system hardware configuration.</p>
+<p>Shut down or take over the impaired controller using the appropriate procedure for your configuration.</p>
 </div>
-<div class="sect2">
-<h3 id="option-1-most-configurations">Option 1: Most configurations</h3>
-<div class="paragraph lead">
-<p>To shut down the impaired node, you must determine the status of the node and, if necessary, take over the node so that the healthy node continues to serve data from the impaired node storage.</p>
+<div class="exampleblock tabbed-block">
+<div class="content">
+<div class="openblock">
+<div class="title">Most systems</div>
+<div class="content">
+<div class="paragraph">
+<p>To shut down the impaired controller, you must determine the status of the controller and, if necessary, take over the controller so that the healthy controller continues to serve data from the impaired controller storage.</p>
 </div>
 <div class="paragraph">
 <div class="title">About this task</div>
-<p>If you have a cluster with more than two nodes, it must be in quorum. If the cluster is not in quorum or a healthy node shows false for eligibility and health, you must correct the issue before shutting down the impaired node; see the <a href="https://docs.netapp.com/us-en/ontap/system-admin/index.html" target="_blank" rel="noopener">Administration overview with the CLI</a>.</p>
+<p>If you have a cluster with more than two nodes, it must be in quorum. If the cluster is not in quorum or a healthy controller shows false for eligibility and health, you must correct the issue before shutting down the impaired controller; see the <a href="https://docs.netapp.com/us-en/ontap/system-admin/index.html" target="_blank" rel="noopener">Administration overview with the CLI</a>.</p>
 </div>
 <div class="olist arabic">
 <div class="title">Steps</div>
@@ -5327,10 +5316,10 @@
 </div>
 </li>
 <li>
-<p>Disable automatic giveback from the console of the healthy node: <code>storage failover modify –node local -auto-giveback false</code></p>
+<p>Disable automatic giveback from the console of the healthy controller: <code>storage failover modify –node local -auto-giveback false</code></p>
 </li>
 <li>
-<p>Take the impaired node to the LOADER prompt:</p>
+<p>Take the impaired controller to the LOADER prompt:</p>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 33.3333%;">
@@ -5338,7 +5327,7 @@
 </colgroup>
 <thead>
 <tr>
-<th class="tableblock halign-left valign-top">If the impaired node is displaying&#8230;&#8203;</th>
+<th class="tableblock halign-left valign-top">If the impaired controller is displaying&#8230;&#8203;</th>
 <th class="tableblock halign-left valign-top">Then&#8230;&#8203;</th>
 </tr>
 </thead>
@@ -5364,14 +5353,10 @@
 <p>System prompt or password prompt (enter system password)</p>
 </div></div></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>Take over or halt the impaired node from the healthy node: <code>storage failover takeover -ofnode <em>impaired_node_name</em></code></p>
+<p>Take over or halt the impaired controller from the healthy controller: <code>storage failover takeover -ofnode <em>impaired_node_name</em></code></p>
 </div>
 <div class="paragraph">
-<p>+
-When the impaired node shows Waiting for giveback&#8230;&#8203;, press Ctrl-C, and then respond <code>y</code>.</p>
-</div>
-<div class="paragraph">
-<p>+</p>
+<p>When the impaired controller shows Waiting for giveback&#8230;&#8203;, press Ctrl-C, and then respond <code>y</code>.</p>
 </div></div></td>
 </tr>
 </tbody>
@@ -5380,9 +5365,11 @@ When the impaired node shows Waiting for giveback&#8230;&#8203;, press Ctrl-C, a
 </ol>
 </div>
 </div>
-<div class="sect2">
-<h3 id="option-2-controller-is-in-a-metrocluster">Option 2: Controller is in a MetroCluster</h3>
-<div class="admonitionblock note lead">
+</div>
+<div class="openblock">
+<div class="title">Controller is in a MetroCluster</div>
+<div class="content">
+<div class="admonitionblock note">
 <table>
 <tr>
 <td class="icon">
@@ -5395,12 +5382,12 @@ Do not use this procedure if your system is in a two-node MetroCluster configura
 </table>
 </div>
 <div class="paragraph">
-<p>To shut down the impaired node, you must determine the status of the node and, if necessary, take over the node so that the healthy node continues to serve data from the impaired node storage.</p>
+<p>To shut down the impaired controller, you must determine the status of the controller and, if necessary, take over the controller so that the healthy controller continues to serve data from the impaired controller storage.</p>
 </div>
 <div class="ulist">
 <ul>
 <li>
-<p>If you have a cluster with more than two nodes, it must be in quorum. If the cluster is not in quorum or a healthy node shows false for eligibility and health, you must correct the issue before shutting down the impaired node; see the <a href="https://docs.netapp.com/us-en/ontap/system-admin/index.html" target="_blank" rel="noopener">Administration overview with the CLI</a>.</p>
+<p>If you have a cluster with more than two nodes, it must be in quorum. If the cluster is not in quorum or a healthy controller shows false for eligibility and health, you must correct the issue before shutting down the impaired controller; see the <a href="https://docs.netapp.com/us-en/ontap/system-admin/index.html" target="_blank" rel="noopener">Administration overview with the CLI</a>.</p>
 </li>
 <li>
 <p>If you have a MetroCluster configuration, you must have confirmed that the MetroCluster Configuration State is configured and that the nodes are in an enabled and normal state (<code>metrocluster node show</code>).</p>
@@ -5417,10 +5404,10 @@ Do not use this procedure if your system is in a two-node MetroCluster configura
 </div>
 </li>
 <li>
-<p>Disable automatic giveback from the console of the healthy node: <code>storage failover modify –node local -auto-giveback false</code></p>
+<p>Disable automatic giveback from the console of the healthy controller: <code>storage failover modify –node local -auto-giveback false</code></p>
 </li>
 <li>
-<p>Take the impaired node to the LOADER prompt:</p>
+<p>Take the impaired controller to the LOADER prompt:</p>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 33.3333%;">
@@ -5428,7 +5415,7 @@ Do not use this procedure if your system is in a two-node MetroCluster configura
 </colgroup>
 <thead>
 <tr>
-<th class="tableblock halign-left valign-top">If the impaired node is displaying&#8230;&#8203;</th>
+<th class="tableblock halign-left valign-top">If the impaired controller is displaying&#8230;&#8203;</th>
 <th class="tableblock halign-left valign-top">Then&#8230;&#8203;</th>
 </tr>
 </thead>
@@ -5438,7 +5425,7 @@ Do not use this procedure if your system is in a two-node MetroCluster configura
 <p>The LOADER prompt</p>
 </div></div></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>Go to Remove controller module..</p>
+<p>Go to Remove controller module.</p>
 </div></div></td>
 </tr>
 <tr>
@@ -5454,20 +5441,19 @@ Do not use this procedure if your system is in a two-node MetroCluster configura
 <p>System prompt or password prompt (enter system password)</p>
 </div></div></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>Take over or halt the impaired node from the healthy node: <code>storage failover takeover -ofnode <em>impaired_node_name</em></code></p>
+<p>Take over or halt the impaired controller from the healthy controller: <code>storage failover takeover -ofnode <em>impaired_node_name</em></code></p>
 </div>
 <div class="paragraph">
-<p>+
-When the impaired node shows Waiting for giveback&#8230;&#8203;, press Ctrl-C, and then respond <code>y</code>.</p>
-</div>
-<div class="paragraph">
-<p>+</p>
+<p>When the impaired controller shows Waiting for giveback&#8230;&#8203;, press Ctrl-C, and then respond <code>y</code>.</p>
 </div></div></td>
 </tr>
 </tbody>
 </table>
 </li>
 </ol>
+</div>
+</div>
+</div>
 </div>
 </div>
 </div>
@@ -5796,7 +5782,7 @@ When the impaired node shows Waiting for giveback&#8230;&#8203;, press Ctrl-C, a
 <h2 id="step-6-reassigning-disks">Step 6: Reassigning disks</h2>
 <div class="sectionbody">
 <div class="paragraph lead">
-<p>You must confirm the system ID change when you boot the replacement node and then verify that the change was implemented.</p>
+<p>You must confirm the system ID change when you boot the replacement controller and then verify that the change was implemented.</p>
 </div>
 <div class="paragraph">
 <p>This procedure applies only to systems running ONTAP in an HA pair.</p>
@@ -5805,15 +5791,15 @@ When the impaired node shows Waiting for giveback&#8230;&#8203;, press Ctrl-C, a
 <div class="title">Steps</div>
 <ol class="arabic">
 <li>
-<p>If the replacement node is in Maintenance mode (showing the <code>*&gt;</code> prompt, exit Maintenance mode and go to the LOADER prompt: <code>halt</code></p>
+<p>If the replacement controller is in Maintenance mode (showing the <code>*&gt;</code> prompt, exit Maintenance mode and go to the LOADER prompt: <code>halt</code></p>
 </li>
 <li>
-<p>From the LOADER prompt on the replacement node, boot the node, entering <code>y</code> if you are prompted to override the system ID due to a system ID mismatch.</p>
+<p>From the LOADER prompt on the replacement controller, boot the controller, entering <code>y</code> if you are prompted to override the system ID due to a system ID mismatch.</p>
 </li>
 <li>
-<p>Wait until the Waiting for giveback&#8230;&#8203; message is displayed on the replacement node console and then, from the healthy node, verify that the new partner system ID has been automatically assigned: <code>storage failover show</code></p>
+<p>Wait until the Waiting for giveback&#8230;&#8203; message is displayed on the replacement controller console and then, from the healthy controller, verify that the new partner system ID has been automatically assigned: <code>storage failover show</code></p>
 <div class="paragraph">
-<p>In the command output, you should see a message that the system ID has changed on the impaired node, showing the correct old and new IDs. In the following example, node2 has undergone replacement and has a new system ID of 151759706.</p>
+<p>In the command output, you should see a message that the system ID has changed on the impaired controller, showing the correct old and new IDs. In the following example, node2 has undergone replacement and has a new system ID of 151759706.</p>
 </div>
 <div class="listingblock">
 <div class="content">
@@ -5828,7 +5814,7 @@ node2             node1             -            Waiting for giveback (HA mailbo
 </div>
 </li>
 <li>
-<p>From the healthy node, verify that any coredumps are saved:</p>
+<p>From the healthy controller, verify that any coredumps are saved:</p>
 <div class="olist loweralpha">
 <ol class="loweralpha" type="a">
 <li>
@@ -5853,13 +5839,13 @@ node2             node1             -            Waiting for giveback (HA mailbo
 </div>
 </li>
 <li>
-<p>Give back the node:</p>
+<p>Give back the controller:</p>
 <div class="olist loweralpha">
 <ol class="loweralpha" type="a">
 <li>
-<p>From the healthy node, give back the replaced node&#8217;s storage: <code>storage failover giveback -ofnode replacement_node_name</code></p>
+<p>From the healthy controller, give back the replaced controller&#8217;s storage: <code>storage failover giveback -ofnode replacement_node_name</code></p>
 <div class="paragraph">
-<p>The replacement node takes back its storage and completes booting.</p>
+<p>The replacement controller takes back its storage and completes booting.</p>
 </div>
 <div class="paragraph">
 <p>If you are prompted to override the system ID due to a system ID mismatch, you should enter <code>y</code>.</p>
@@ -5892,7 +5878,7 @@ If the giveback is vetoed, you can consider overriding the vetoes.
 <li>
 <p>Verify that the disks were assigned correctly: <code>storage disk show -ownership</code></p>
 <div class="paragraph">
-<p>The disks belonging to the replacement node should show the new system ID. In the following example, the disks owned by node1 now show the new system ID, 1873775277:</p>
+<p>The disks belonging to the replacement controller should show the new system ID. In the following example, the disks owned by node1 now show the new system ID, 1873775277:</p>
 </div>
 <div class="listingblock">
 <div class="content">
@@ -5909,13 +5895,13 @@ Disk  Aggregate Home  Owner  DR Home  Home ID    Owner ID  DR Home ID Reserver  
 </div>
 </li>
 <li>
-<p>If the system is in a MetroCluster configuration, monitor the status of the node: <code>metrocluster node show</code></p>
+<p>If the system is in a MetroCluster configuration, monitor the status of the controller: <code>metrocluster node show</code></p>
 <div class="paragraph">
-<p>The MetroCluster configuration takes a few minutes after the replacement to return to a normal state, at which time each node will show a configured state, with DR Mirroring enabled and a mode of normal. The <code>metrocluster node show -fields node-systemid</code> command output displays the old system ID until the MetroCluster configuration returns to a normal state.</p>
+<p>The MetroCluster configuration takes a few minutes after the replacement to return to a normal state, at which time each controller will show a configured state, with DR Mirroring enabled and a mode of normal. The <code>metrocluster node show -fields node-systemid</code> command output displays the old system ID until the MetroCluster configuration returns to a normal state.</p>
 </div>
 </li>
 <li>
-<p>If the node is in a MetroCluster configuration, depending on the MetroCluster state, verify that the DR home ID field shows the original owner of the disk if the original owner is a node on the disaster site.</p>
+<p>If the controller is in a MetroCluster configuration, depending on the MetroCluster state, verify that the DR home ID field shows the original owner of the disk if the original owner is a controller on the disaster site.</p>
 <div class="paragraph">
 <p>This is required if both of the following are true:</p>
 </div>
@@ -5925,7 +5911,7 @@ Disk  Aggregate Home  Owner  DR Home  Home ID    Owner ID  DR Home ID Reserver  
 <p>The MetroCluster configuration is in a switchover state.</p>
 </li>
 <li>
-<p>The replacement node is the current owner of the disks on the disaster site.</p>
+<p>The replacement controller is the current owner of the disks on the disaster site.</p>
 <div class="paragraph">
 <p>See <a href="https://docs.netapp.com/us-en/ontap-metrocluster/manage/concept_understanding_mcc_data_protection_and_disaster_recovery.html#disk-ownership-changes-during-ha-takeover-and-metrocluster-switchover-in-a-four-node-metrocluster-configuration">Disk ownership changes during HA takeover and MetroCluster switchover in a four-node MetroCluster configuration</a> for more information.</p>
 </div>
@@ -5934,7 +5920,7 @@ Disk  Aggregate Home  Owner  DR Home  Home ID    Owner ID  DR Home ID Reserver  
 </div>
 </li>
 <li>
-<p>If your system is in a MetroCluster configuration, verify that each node is configured: <code>metrocluster node show - fields configuration-state</code></p>
+<p>If your system is in a MetroCluster configuration, verify that each controller is configured: <code>metrocluster node show - fields configuration-state</code></p>
 <div class="listingblock">
 <div class="content">
 <pre>node1_siteA::&gt; metrocluster node show -fields configuration-state
@@ -5951,10 +5937,10 @@ dr-group-id            cluster node           configuration-state
 </div>
 </li>
 <li>
-<p>Verify that the expected volumes are present for each node: <code>vol show -node node-name</code></p>
+<p>Verify that the expected volumes are present for each controller: <code>vol show -node node-name</code></p>
 </li>
 <li>
-<p>If you disabled automatic takeover on reboot, enable it from the healthy node: <code>storage failover modify -node replacement-node-name -onreboot true</code></p>
+<p>If you disabled automatic takeover on reboot, enable it from the healthy controller: <code>storage failover modify -node replacement-node-name -onreboot true</code></p>
 </li>
 </ol>
 </div>
@@ -6002,27 +5988,7 @@ dr-group-id            cluster node           configuration-state
     <!-- Page Container -->
   </div>
 
-  
-  <!-- Start Page Toolbar -->
-  <div class="page-nav-toolbar">
-    <div id="version-dropdown"></div>
-    <div class="page-nav-contribute"  >
-      <a target="_blank" href="https://github.com/NetAppDocs/ontap-systems/issues/new?body=Page%3A%20[Replace the NVRAM module and/or NVRAM DIMMs - AFF A900](https://docs.netapp.com/us-en/ontap-systems/a900/nvram_module_or_nvram_dimm_replacement.html)" class="page-nav-contribute-link" role="button"><img src="/us-en/ontap-systems/images/discuss-sm.svg" class="github-icon" />Request doc changes</a>
-      <a target="_blank" href="https://github.com/NetAppDocs/ontap-systems/blob/main/a900/nvram_module_or_nvram_dimm_replacement.adoc" class="page-nav-contribute-link" role="button"><img src="/us-en/ontap-systems/images/edit-sm.svg" class="github-icon" />Edit this page</a>
-      <a target="_blank" href="https://docs.netapp.com/us-en/contribute/" class="page-nav-contribute-link"  ><img src="/us-en/ontap-systems/images/article-sm.svg" class="github-icon" />Learn how to contribute</a>
-    </div>
-    <div class="page-nav-container">
-      <nav class="page-nav-fixed">
-        <div class="page-nav-title">ON THIS PAGE</div>
-        <div class="page-nav-links">
-          <ul class="page-nav-inner" id="page-menu"></ul>
-        </div>
-      </nav>
-    </div>
-  </div>
-  
-  <div style="clear: both"></div><!-- Main needs to have height -->
-</div>
+  <div style="clear: both"></div><!-- Main needs to have height --></div>
 
         </main>
 
@@ -6124,9 +6090,7 @@ dr-group-id            cluster node           configuration-state
 </div>
 </footer>
 
-      </div>
-
-      <!-- Elasticsearch JS -->
+      </div><!-- Elasticsearch JS -->
       <script type="text/javascript" src='/us-en/ontap-systems/js/bundle.js'></script>
 
       <!-- Syntax Highlighting -->
@@ -6141,7 +6105,4 @@ dr-group-id            cluster node           configuration-state
     </script>
     <script src='/us-en/ontap-systems/js/www-ntap.js'></script>
     <script src='/us-en/ontap-systems/js/tabbed-blocks.js'></script>
-  </body>
-
-  
-</html>
+  </body></html>

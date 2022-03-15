@@ -16,20 +16,11 @@
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   <meta http-equiv="encoding" content="utf-8">
   <meta http-equiv="nss-type" content="Product Documentation"/>
-  <meta http-equiv="nss-subtype" content="User Guide"/>
-  
-  <meta name="description" content="Once environment variables are checked, you must complete steps specific to systems that have Onboard Key Manager (OKM), NetApp Storage Encryption (NSE) or N...">
-  <meta name="keywords" content=" aff a700, fas9000, post, boot, media, replacement, steps, okm, nse, nve">
-  
-  
-
-  <!-- Icons -->
+  <meta http-equiv="nss-subtype" content="User Guide"/><meta name="description" content="Once environment variables are checked, you must complete steps specific to systems that have Onboard Key Manager (OKM), NetApp Storage Encryption (NSE) or N...">
+  <meta name="keywords" content=" aff a700, fas9000, post, boot, media, replacement, steps, okm, nse, nve"><!-- Icons -->
   <link rel="icon" href="/us-en/ontap-systems/images/favicon.ico" type="image/x-icon">
 
-  <!-- RSS Feed -->
-  
-
-  <!-- CSS Definitions: NetApp CSS should be defined after generic css -->
+  <!-- RSS Feed --><!-- CSS Definitions: NetApp CSS should be defined after generic css -->
 
   <!-- Elastic Search -->
   <link rel="stylesheet" href="//cdn.jsdelivr.net/searchkit/0.10.0/theme.css">
@@ -59,27 +50,11 @@
   
   <link rel="stylesheet" href="/us-en/ontap-systems/css/landing-page.css" type="text/css">
   <link rel="stylesheet" href="/us-en/ontap-systems/css/tabbed-blocks.css" type="text/css">
-  <link rel="stylesheet" href='/us-en/ontap-systems/css/product-family.css' type="text/css">
-  
-
-  
-  <link rel='stylesheet' href='/us-en/ontap-systems/css/na-feature.css' type='text/css'>
-  
-
-
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <link rel='stylesheet' href='/us-en/ontap-systems/css/na-feature.css' type='text/css'><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
-  <!-- Used to import Promise for IE. Required for SearchKit -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/bluebird/3.3.5/bluebird.min.js"></script>
-  
-    <script src='/us-en/ontap-systems/js/na-search.js'></script>
-  
 
-  
-  <script src='/us-en/ontap-systems/js/na-pagenav.js'></script>
-  
-
-  <link rel='stylesheet' href='/us-en/ontap-systems/css/prism.css' type='text/css'>
+  <!-- Used for Product Family Page Sidebar Visibility --><!-- Used to import Promise for IE. Required for SearchKit -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bluebird/3.3.5/bluebird.min.js"></script><script src='/us-en/ontap-systems/js/na-search.js'></script><script src='/us-en/ontap-systems/js/na-pagenav.js'></script><link rel='stylesheet' href='/us-en/ontap-systems/css/prism.css' type='text/css'>
   <link rel='stylesheet' href='/us-en/ontap-systems/css/prism-netapp.css' type='text/css'>
 
 
@@ -97,9 +72,7 @@
   <script src='/us-en/ontap-systems/js/jquery.navgoco.min.js'></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
   <script src='/us-en/ontap-systems/js/toc.js'></script>
-  <script src='/us-en/ontap-systems/js/customscripts.js'></script>
-
-  <script>
+  <script src='/us-en/ontap-systems/js/customscripts.js'></script><script>
       $(document).ready(function() {
           
           var collapseOnInit = true;
@@ -158,7 +131,6 @@
   }
   </script>
   <script src='/us-en/ontap-systems/js/version-dropdown.js'></script>
-  <script src='/us-en/ontap-systems/js/product-family.js'></script>
   <script src='/us-en/ontap-systems/js/FileSaver.min.js'></script>
   <script src='/us-en/ontap-systems/js/jszip-utils.min.js'></script>
   <script src='/us-en/ontap-systems/js/jszip.min.js'></script>
@@ -171,6 +143,25 @@
       <div class="n-off-canvas-menu__menu"><!--TODO: Add offcanvas code --></div>
       <div class="n-off-canvas-menu__content-wrap">
         <header class="site-header" id="banner">
+  
+  <!-- Start Page Toolbar -->
+  <div class="page-nav-toolbar">
+    <div id="version-dropdown"></div>
+    <div class="page-nav-contribute"  >
+      <a target="_blank" href="https://github.com/NetAppDocs/ontap-systems/issues/new?body=Page%3A%20[Restore OKM, NSE, and NVE as needed - AFF A700 and FAS9000](https://docs.netapp.com/us-en/ontap-systems/fas9000/bootmedia-encryption-restore.html)" class="page-nav-contribute-link" role="button"><img src="/us-en/ontap-systems/images/discuss-sm.svg" class="github-icon" />Request doc changes</a>
+      <a target="_blank" href="https://github.com/NetAppDocs/ontap-systems/blob/main/fas9000/bootmedia_encryption_restore.adoc" class="page-nav-contribute-link" role="button"><img src="/us-en/ontap-systems/images/edit-sm.svg" class="github-icon" />Edit this page</a>
+      <a target="_blank" href="https://docs.netapp.com/us-en/contribute/" class="page-nav-contribute-link"  ><img src="/us-en/ontap-systems/images/article-sm.svg" class="github-icon" />Learn how to contribute</a>
+    </div>
+    <div class="page-nav-container">
+      <nav class="page-nav-fixed">
+        <div class="page-nav-title">ON THIS PAGE</div>
+        <div class="page-nav-links">
+          <ul class="page-nav-inner" id="page-menu"></ul>
+        </div>
+      </nav>
+    </div>
+  </div>
+  
   <!-- Start top_hat -->
   <div class="n-top-hat">
     <div class="n-container">
@@ -5185,26 +5176,22 @@
   
 
   <div class="ie-content-pane n-doc__component-detail-content n-doc__component-detail-content--show-code">
-    <!-- Begin of page container -->
-    <article class="page-content">
+    <!-- Begin of page container --><article class="page-content">
       <div class="ie-utility">
   <div class="ie-menu">
     <div class="n-breadcrumb">
       <ul class="n-breadcrumb__list">
         <li class="n-breadcrumb__list-item">
-          <a href="https://www.netapp.com">Home</a>
+          <a href="https://docs.netapp.com">docs.netapp.com</a>
         </li>
-        <li class="n-breadcrumb__list-item">
-          <a href="https://docs.netapp.com">Documentation</a>
-        </li>
+        
+
         
 
         <li class="n-breadcrumb__list-item">
           <a href="/us-en/ontap-systems/">ONTAP&nbsp;Systems</a>
         </li>
-        <li class="n-breadcrumb__list-item">
-          Restore OKM, NSE, and NVE as needed - AFF A700 and FAS9000
-        </li>
+
       </ul>
     </div>
     <div style="clear: both"></div><!-- Main needs to have height -->
@@ -5219,7 +5206,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-02-23 15:02:52 +0000">02/23/2022</time>
+    <time datetime="2022-03-15 18:54:10 +0000">03/15/2022</time>
     
   
 
@@ -5236,7 +5223,6 @@
 
 
 </p>
-
 
 <div id="preamble">
 <div class="sectionbody">
@@ -5271,10 +5257,10 @@
 <div class="title">Steps</div>
 <ol class="arabic">
 <li>
-<p>Connect the console cable to the target node.</p>
+<p>Connect the console cable to the target controller.</p>
 </li>
 <li>
-<p>Use the <code>boot_ontap</code> command at the LOADER prompt to boot the node.</p>
+<p>Use the <code>boot_ontap</code> command at the LOADER prompt to boot the controller.</p>
 </li>
 <li>
 <p>Check the console output:</p>
@@ -5295,7 +5281,7 @@
 <p>The LOADER prompt</p>
 </div></div></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>Boot the node to the boot menu: <code>boot_ontap menu</code></p>
+<p>Boot the controller to the boot menu: <code>boot_ontap menu</code></p>
 </div></div></td>
 </tr>
 <tr>
@@ -5308,7 +5294,7 @@
 <p>Enter <code>Ctrl-C</code> at the prompt</p>
 </li>
 <li>
-<p>At the message: Do you wish to halt this node rather than wait [y/n]? , enter: <code>y</code></p>
+<p>At the message: Do you wish to halt this controller rather than wait [y/n]? , enter: <code>y</code></p>
 </li>
 <li>
 <p>At the LOADER prompt, enter the <code>boot_ontap menu</code> command.</p>
@@ -5376,10 +5362,10 @@ AAAAAAAA</p>
 </div>
 </li>
 <li>
-<p>Move the console cable to the partner node and login as admin.</p>
+<p>Move the console cable to the partner controller and login as admin.</p>
 </li>
 <li>
-<p>Confirm the target node is ready for giveback with the <code>storage failover show</code> command.</p>
+<p>Confirm the target controller is ready for giveback with the <code>storage failover show</code> command.</p>
 </li>
 <li>
 <p>Give back only the CFO aggregates with the storage failover giveback <code>-fromnode local -only-cfo-aggregates true</code> command.</p>
@@ -5419,7 +5405,7 @@ Terminating CIFS can cause loss of data.
 </div>
 </li>
 <li>
-<p>Move the console cable to the target node.</p>
+<p>Move the console cable to the target controller.</p>
 </li>
 <li>
 <p>If you are running ONTAP 9.5 and earlier, run the key-manager setup wizard:</p>
@@ -5478,10 +5464,10 @@ If the <code>Restored</code> column = anything other than <code>yes/true</code>,
 </div>
 </li>
 <li>
-<p>Move the console cable to the partner node.</p>
+<p>Move the console cable to the partner controller.</p>
 </li>
 <li>
-<p>Give back the target node using the <code>storage failover giveback -fromnode local</code> command.</p>
+<p>Give back the target controller using the <code>storage failover giveback -fromnode local</code> command.</p>
 </li>
 <li>
 <p>Check the giveback status, 3 minutes after it reports complete, using the <code>storage failover show</code> command.</p>
@@ -5490,13 +5476,13 @@ If the <code>Restored</code> column = anything other than <code>yes/true</code>,
 </div>
 </li>
 <li>
-<p>At the clustershell prompt, enter the <code>net int show -is-home false</code> command to list the logical interfaces that are not on their home node and port.</p>
+<p>At the clustershell prompt, enter the <code>net int show -is-home false</code> command to list the logical interfaces that are not on their home controller and port.</p>
 <div class="paragraph">
 <p>If any interfaces are listed as <code>false</code>, revert those interfaces back to their home port using the <code>net int revert</code> command.</p>
 </div>
 </li>
 <li>
-<p>Move the console cable to the target node and run the <code>version -v</code> command to check the ONTAP versions.</p>
+<p>Move the console cable to the target controller and run the <code>version -v</code> command to check the ONTAP versions.</p>
 </li>
 <li>
 <p>Restore automatic giveback if you disabled it by using the <code>storage failover modify -node local -auto-giveback true</code> command.</p>
@@ -5512,10 +5498,10 @@ If the <code>Restored</code> column = anything other than <code>yes/true</code>,
 <div class="title">Steps</div>
 <ol class="arabic">
 <li>
-<p>Connect the console cable to the target node.</p>
+<p>Connect the console cable to the target controller.</p>
 </li>
 <li>
-<p>Use the <code>boot_ontap</code> command at the LOADER prompt to boot the node.</p>
+<p>Use the <code>boot_ontap</code> command at the LOADER prompt to boot the controller.</p>
 </li>
 <li>
 <p>Check the console output:</p>
@@ -5546,10 +5532,10 @@ If the <code>Restored</code> column = anything other than <code>yes/true</code>,
 <td class="tableblock halign-left valign-top"><div class="content"><div class="olist loweralpha">
 <ol class="loweralpha" type="a">
 <li>
-<p>Log into the partner node.</p>
+<p>Log into the partner controller.</p>
 </li>
 <li>
-<p>Confirm the target node is ready for giveback with the <code>storage failover show</code> command.</p>
+<p>Confirm the target controller is ready for giveback with the <code>storage failover show</code> command.</p>
 </li>
 </ol>
 </div></div></td>
@@ -5558,7 +5544,7 @@ If the <code>Restored</code> column = anything other than <code>yes/true</code>,
 </table>
 </li>
 <li>
-<p>Move the console cable to the partner node and give back the target node storage using the <code>storage failover giveback -fromnode local -only-cfo-aggregates true local</code> command.</p>
+<p>Move the console cable to the partner controller and give back the target controller storage using the <code>storage failover giveback -fromnode local -only-cfo-aggregates true local</code> command.</p>
 <div class="ulist">
 <ul>
 <li>
@@ -5592,13 +5578,13 @@ Terminating CIFS can cause loss of data.
 <p>Wait 3 minutes and check the failover status with the <code>storage failover show</code> command.</p>
 </li>
 <li>
-<p>At the clustershell prompt, enter the <code>net int show -is-home false</code> command to list the logical interfaces that are not on their home node and port.</p>
+<p>At the clustershell prompt, enter the <code>net int show -is-home false</code> command to list the logical interfaces that are not on their home controller and port.</p>
 <div class="paragraph">
 <p>If any interfaces are listed as <code>false</code>, revert those interfaces back to their home port using the <code>net int revert</code> command.</p>
 </div>
 </li>
 <li>
-<p>Move the console cable to the target node and run the version <code>-v command</code> to check the ONTAP versions.</p>
+<p>Move the console cable to the target controller and run the version <code>-v command</code> to check the ONTAP versions.</p>
 </li>
 <li>
 <p>Restore automatic giveback if you disabled it by using the <code>storage failover modify -node local -auto-giveback true</code> command.</p>
@@ -5651,10 +5637,10 @@ This command does not work if NVE (NetApp Volume Encryption) is configured
 </div>
 </li>
 <li>
-<p>Connect the console cable to the partner node.</p>
+<p>Connect the console cable to the partner controller.</p>
 </li>
 <li>
-<p>Give back the node using the <code>storage failover giveback -fromnode local</code> command.</p>
+<p>Give back the controller using the <code>storage failover giveback -fromnode local</code> command.</p>
 </li>
 <li>
 <p>Restore automatic giveback if you disabled it by using the <code>storage failover modify -node local -auto-giveback true</code> command.</p>
@@ -5670,10 +5656,10 @@ This command does not work if NVE (NetApp Volume Encryption) is configured
 <div class="title">Steps</div>
 <ol class="arabic">
 <li>
-<p>Connect the console cable to the target node.</p>
+<p>Connect the console cable to the target controller.</p>
 </li>
 <li>
-<p>Use the <code>boot_ontap</code> command at the LOADER prompt to boot the node.</p>
+<p>Use the <code>boot_ontap</code> command at the LOADER prompt to boot the controller.</p>
 </li>
 <li>
 <p>Check the console output:</p>
@@ -5704,10 +5690,10 @@ This command does not work if NVE (NetApp Volume Encryption) is configured
 <td class="tableblock halign-left valign-top"><div class="content"><div class="olist loweralpha">
 <ol class="loweralpha" type="a">
 <li>
-<p>Log into the partner node.</p>
+<p>Log into the partner controller.</p>
 </li>
 <li>
-<p>Confirm the target node is ready for giveback with the <code>storage failover show</code> command.</p>
+<p>Confirm the target controller is ready for giveback with the <code>storage failover show</code> command.</p>
 </li>
 </ol>
 </div></div></td>
@@ -5716,7 +5702,7 @@ This command does not work if NVE (NetApp Volume Encryption) is configured
 </table>
 </li>
 <li>
-<p>Move the console cable to the partner node and give back the target node storage using the <code>storage failover giveback -fromnode local -only-cfo-aggregates true local</code> command.</p>
+<p>Move the console cable to the partner controller and give back the target controller storage using the <code>storage failover giveback -fromnode local -only-cfo-aggregates true local</code> command.</p>
 <div class="ulist">
 <ul>
 <li>
@@ -5750,13 +5736,13 @@ Terminating CIFS can cause loss of data.
 <p>Wait 3 minutes and check the failover status with the <code>storage failover show</code> command.</p>
 </li>
 <li>
-<p>At the clustershell prompt, enter the <code>net int show -is-home false</code> command to list the logical interfaces that are not on their home node and port.</p>
+<p>At the clustershell prompt, enter the <code>net int show -is-home false</code> command to list the logical interfaces that are not on their home controller and port.</p>
 <div class="paragraph">
 <p>If any interfaces are listed as <code>false</code>, revert those interfaces back to their home port using the <code>net int revert</code> command.</p>
 </div>
 </li>
 <li>
-<p>Move the console cable to the target node and run the <code>version -v</code> command to check the ONTAP versions.</p>
+<p>Move the console cable to the target controller and run the <code>version -v</code> command to check the ONTAP versions.</p>
 </li>
 <li>
 <p>Restore automatic giveback if you disabled it by using the <code>storage failover modify -node local -auto-giveback true</code> command.</p>
@@ -5796,10 +5782,10 @@ If the command fails, contact Customer Support.
 </div>
 </li>
 <li>
-<p>Connect the console cable to the partner node.</p>
+<p>Connect the console cable to the partner controller.</p>
 </li>
 <li>
-<p>Give back the node using the <code>storage failover giveback -fromnode local</code> command.</p>
+<p>Give back the controller using the <code>storage failover giveback -fromnode local</code> command.</p>
 </li>
 <li>
 <p>Restore automatic giveback if you disabled it by using the <code>storage failover modify -node local -auto-giveback true</code> command.</p>
@@ -5813,27 +5799,7 @@ If the command fails, contact Customer Support.
     <!-- Page Container -->
   </div>
 
-  
-  <!-- Start Page Toolbar -->
-  <div class="page-nav-toolbar">
-    <div id="version-dropdown"></div>
-    <div class="page-nav-contribute"  >
-      <a target="_blank" href="https://github.com/NetAppDocs/ontap-systems/issues/new?body=Page%3A%20[Restore OKM, NSE, and NVE as needed - AFF A700 and FAS9000](https://docs.netapp.com/us-en/ontap-systems/fas9000/bootmedia-encryption-restore.html)" class="page-nav-contribute-link" role="button"><img src="/us-en/ontap-systems/images/discuss-sm.svg" class="github-icon" />Request doc changes</a>
-      <a target="_blank" href="https://github.com/NetAppDocs/ontap-systems/blob/main/fas9000/bootmedia_encryption_restore.adoc" class="page-nav-contribute-link" role="button"><img src="/us-en/ontap-systems/images/edit-sm.svg" class="github-icon" />Edit this page</a>
-      <a target="_blank" href="https://docs.netapp.com/us-en/contribute/" class="page-nav-contribute-link"  ><img src="/us-en/ontap-systems/images/article-sm.svg" class="github-icon" />Learn how to contribute</a>
-    </div>
-    <div class="page-nav-container">
-      <nav class="page-nav-fixed">
-        <div class="page-nav-title">ON THIS PAGE</div>
-        <div class="page-nav-links">
-          <ul class="page-nav-inner" id="page-menu"></ul>
-        </div>
-      </nav>
-    </div>
-  </div>
-  
-  <div style="clear: both"></div><!-- Main needs to have height -->
-</div>
+  <div style="clear: both"></div><!-- Main needs to have height --></div>
 
         </main>
 
@@ -5935,9 +5901,7 @@ If the command fails, contact Customer Support.
 </div>
 </footer>
 
-      </div>
-
-      <!-- Elasticsearch JS -->
+      </div><!-- Elasticsearch JS -->
       <script type="text/javascript" src='/us-en/ontap-systems/js/bundle.js'></script>
 
       <!-- Syntax Highlighting -->
@@ -5952,7 +5916,4 @@ If the command fails, contact Customer Support.
     </script>
     <script src='/us-en/ontap-systems/js/www-ntap.js'></script>
     <script src='/us-en/ontap-systems/js/tabbed-blocks.js'></script>
-  </body>
-
-  
-</html>
+  </body></html>
