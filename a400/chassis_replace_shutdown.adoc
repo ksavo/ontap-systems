@@ -8,12 +8,15 @@ summary: "To replace the chassis, you must shutdown the controllers."
 :icons: font
 :imagesdir: ../media/
 
+[.lead]
+Shut down or take over the impaired controller using the appropriate procedure for your configuration.
+
 == Option 1: Shut down the controllers when replacing a chassis
 
 [.lead]
 include::../_include/shutdown_chassis.adoc[]
 
-== Option 2: Shut down a node in a two-node MetroCluster configuration
+== Option 2: Shut down a controller in a two-node MetroCluster configuration
 
 [.lead]
 include::../_include/shutdown_2n_mcc.adoc[]

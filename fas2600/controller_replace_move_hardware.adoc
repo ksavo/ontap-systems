@@ -2,14 +2,14 @@
 permalink: fas2600/controller-replace-move-hardware.html
 sidebar: sidebar
 keywords: fas2600, move the components
-summary: "To replace the controller module hardware, you must remove the impaired node, move FRU components to the replacement controller module, install the replacement controller module in the chassis, and then boot the system to Maintenance mode."
+summary: "To replace the controller module hardware, you must remove the impaired controller, move FRU components to the replacement controller module, install the replacement controller module in the chassis, and then boot the system to Maintenance mode."
 ---
 = Replace the controller module hardware - FAS2600
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-To replace the controller module, you must remove the impaired node, move FRU components to the replacement controller module, install the replacement controller module in the chassis, and then boot the system to Maintenance mode.
+To replace the controller module, you must remove the impaired controller, move FRU components to the replacement controller module, install the replacement controller module in the chassis, and then boot the system to Maintenance mode.
 
 link:https://youtu.be/fF7G5uLxtPw[AFF FAS2600 controller replacement video]
 
@@ -204,5 +204,5 @@ NOTE: If you miss the prompt and the controller module boots to ONTAP, enter `ha
 *Important:* During the boot process, you might see the following prompts:
 
  ** A prompt warning of a system ID mismatch and asking to override the system ID.
- ** A prompt warning that when entering Maintenance mode in an HA configuration you must ensure that the healthy node remains down.
+ ** A prompt warning that when entering Maintenance mode in an HA configuration you must ensure that the healthy controller remains down.
 You can safely respond `y` to these prompts.

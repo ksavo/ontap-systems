@@ -19,7 +19,7 @@ You must replace the failed component with a replacement FRU component you recei
 == Step 1: Shut down the impaired controller
 
 [.lead]
-You can shut down or take over the impaired controller using different procedures, depending on the storage system hardware configuration.
+Shut down or take over the impaired controller using the appropriate procedure for your configuration.
 
 === Option 1: Most configurations
 
@@ -166,7 +166,7 @@ NOTE: Do not use excessive force when sliding the controller module into the cha
  .. Tighten the thumbscrew on the cam handle on back of the controller module.
  .. If you have not already done so, reinstall the cable management device.
  .. Bind the cables to the cable management device with the hook and loop strap.
- .. As each node starts the booting, press `Ctrl-C` to interrupt the boot process when you see the message `Press Ctrl-C for Boot Menu`.
+ .. As each controller starts the booting, press `Ctrl-C` to interrupt the boot process when you see the message `Press Ctrl-C for Boot Menu`.
  .. Select the option to boot to Maintenance mode from the displayed menu.
 
 == Step 5: Run system-level diagnostics
@@ -176,17 +176,17 @@ After installing a new DIMM, you should run diagnostics.
 
 Your system must be at the LOADER prompt to start System Level Diagnostics.
 
-All commands in the diagnostic procedures are issued from the node where the component is being replaced.
+All commands in the diagnostic procedures are issued from the controller where the component is being replaced.
 
-. If the node to be serviced is not at the LOADER prompt, perform the following steps:
+. If the controller to be serviced is not at the LOADER prompt, perform the following steps:
  .. Select the Maintenance mode option from the displayed menu.
- .. After the node boots to Maintenance mode, halt the node: `halt`
+ .. After the controller boots to Maintenance mode, halt the controller: `halt`
 +
 After you issue the command, you should wait until the system stops at the LOADER prompt.
 +
 NOTE: During the boot process, you can safely respond `y` to prompts:
 
-  *** A prompt warning that when entering Maintenance mode in an HA configuration, you must ensure that the healthy node remains down.
+  *** A prompt warning that when entering Maintenance mode in an HA configuration, you must ensure that the healthy controller remains down.
 . At the LOADER prompt, access the special drivers specifically designed for system-level diagnostics to function properly: `boot_diags`
 +
 During the boot process, you can safely respond `y` to the prompts until the Maintenance mode prompt (*>) appears.
@@ -214,16 +214,16 @@ SLDIAG: No log messages are present.
 
  .. Exit Maintenance mode: `halt`
 +
-The node displays the LOADER prompt.
+The controller displays the LOADER prompt.
 
- .. Boot the node from the LOADER prompt: `bye`
- .. Return the node to normal operation:
+ .. Boot the controller from the LOADER prompt: `bye`
+ .. Return the controller to normal operation:
 +
 |===
 +
 [options="header" cols="1,2"]
 |===
-| If your node is in...| Then...
+| If your controller is in...| Then...
 a|
 An HA pair
 a|

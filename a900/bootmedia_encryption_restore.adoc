@@ -16,8 +16,8 @@ Once environment variables are checked, you must complete steps specific to rest
 
 == Restore NVE or NSE when Onboard Key Manager is enabled
 
-. Connect the console cable to the target node.
-. Use the boot_ontap command at the LOADER prompt to boot the node.
+. Connect the console cable to the target controller.
+. Use the boot_ontap command at the LOADER prompt to boot the controller.
 . Check the console output:
 +
 
@@ -28,7 +28,7 @@ Once environment variables are checked, you must complete steps specific to rest
 a|
 The LOADER prompt
 a|
-Boot the node to the boot menu: `boot_ontap menu`
+Boot the controller to the boot menu: `boot_ontap menu`
 a|
 Waiting for giveback....
 a|
@@ -76,8 +76,8 @@ AAAAAAAA
 +
 The system boots to Waiting for giveback... prompt.
 
-. Move the console cable to the partner node and log in as admin.
-. Confirm the target node is ready for giveback with the `storage failover show` command.
+. Move the console cable to the partner controller and log in as admin.
+. Confirm the target controller is ready for giveback with the `storage failover show` command.
 . Give back only the CFO aggregates with the `storage failover giveback -fromnode local -only-cfo-aggregates true` command.
  ** If the command fails because of a failed disk, physically disengage the failed disk, but leave the disk in the slot until a replacement is received.
  ** If the command fails because of an open CIFS session, check with the customer how to close out CIFS sessions.
@@ -97,23 +97,23 @@ Only the CFO aggregates (root aggregate and CFO style data aggregates) will be s
 NOTE: If the `Restored` column = anything other than `yes/true`, contact Customer Support.
 
  .. Wait 10 minutes for the key to synchronize across the cluster.
-. Move the console cable to the partner node.
-. Give back the target node using the `storage failover giveback -fromnode local` command.
+. Move the console cable to the partner controller.
+. Give back the target controller using the `storage failover giveback -fromnode local` command.
 . Check the giveback status, three minutes after it reports complete, using the `storage failover show` command.
 +
 If giveback is not complete after 20 minutes, contact Customer Support.
 
-. At the clustershell prompt, enter the net int show -is-home false command to list the logical interfaces that are not on their home node and port.
+. At the clustershell prompt, enter the net int show -is-home false command to list the logical interfaces that are not on their home controller and port.
 +
 If any interfaces are listed as `false`, revert those interfaces back to their home port using the net int revert command.
 
-. Move the console cable to the target node and run the `version -v` command to check the ONTAP versions.
+. Move the console cable to the target controller and run the `version -v` command to check the ONTAP versions.
 . Restore automatic giveback if you disabled it by using the `storage failover modify -node local -auto-giveback true` command.
 
 == Restore NSE/NVE on systems running ONTAP 9.6 and later
 
-. Connect the console cable to the target node.
-. Use the boot_ontap command at the LOADER prompt to boot the node.
+. Connect the console cable to the target controller.
+. Use the boot_ontap command at the LOADER prompt to boot the controller.
 . Check the console output:
 +
 
@@ -129,13 +129,13 @@ a|
 Waiting for giveback...
 a|
 
- .. Log into the partner node.
- .. Confirm the target node is ready for giveback with the `storage failover show` command.
+ .. Log into the partner controller.
+ .. Confirm the target controller is ready for giveback with the `storage failover show` command.
 
 +
 |===
 
-. Move the console cable to the partner node and give back the target node storage using the storage failover giveback -fromnode local -only-cfo-aggregates true local command.
+. Move the console cable to the partner controller and give back the target controller storage using the storage failover giveback -fromnode local -only-cfo-aggregates true local command.
  ** If the command fails because of a failed disk, physically disengage the failed disk, but leave the disk in the slot until a replacement is received.
  ** If the command fails because of an open CIFS sessions, check with customer how to close out CIFS sessions.
 +
@@ -145,11 +145,11 @@ NOTE: Terminating CIFS can cause loss of data.
  ** If the command fails because of an NDMP, SnapMirror, or SnapVault process, disable the process. See the appropriate content for more information.
 
 . Wait 3 minutes and check the failover status with the storage failover show command.
-. At the clustershell prompt, enter the `net int show -is-home false` command to list the logical interfaces that are not on their home node and port.
+. At the clustershell prompt, enter the `net int show -is-home false` command to list the logical interfaces that are not on their home controller and port.
 +
 If any interfaces are listed as `false`, revert those interfaces back to their home port using the `net int revert` command.
 
-. Move the console cable to the target node and run the `version -v` command to check the ONTAP versions.
+. Move the console cable to the target controller and run the `version -v` command to check the ONTAP versions.
 . Restore automatic giveback if you disabled it by using the `storage failover modify -node local -auto-giveback true` command.
 . Use the `storage encryption disk show` at the clustershell prompt, to review the output.
 . Use the `security key-manager key-query` command to display the encryption and  authentication keys that are stored on the key management servers.
@@ -161,6 +161,6 @@ NOTE: If the command fails, contact Customer Support.
  ** If the `Key Manager type` = `onboard` and the `Restored` column = anything other than `yes/true`, use the security key-manager onboard sync command to re-sync the Key Manager type.
 +
 Use the `security key-manager key-query` command to verify that the `Restored` column = `yes/true` for all authentication keys.
-. Connect the console cable to the partner node.
-. Give back the node using the storage failover giveback -fromnode local command.
+. Connect the console cable to the partner controller.
+. Give back the controller using the storage failover giveback -fromnode local command.
 . Restore automatic giveback if you disabled it by using the `storage failover modify -node local -auto-giveback true` command.

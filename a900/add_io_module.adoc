@@ -28,9 +28,9 @@ You can add an I/O module into an empty module slot in your system as either a N
 
 . Shutdown controller A:
  .. Disable automatic giveback: `storage failover modify -node local -auto-giveback false`
- .. Take over the target node: `storage failover takeover -ofnode target_node_name`
+ .. Take over the target controller: `storage failover takeover -ofnode target_node_name`
 +
-The console connection shows that the node drops to the LOADER prompt when the take over is complete.
+The console connection shows that the controller drops to the LOADER prompt when the take over is complete.
 . If you are not already grounded, properly ground yourself.
 . Remove the target slot blanking cover:
  .. Depress the lettered and numbered cam button.
@@ -44,8 +44,8 @@ The console connection shows that the node drops to the LOADER prompt when the t
 +
 NOTE: Make sure that any unused I/O slots have blanks installed to prevent possible thermal issues.
 
-. Reboot the node from the LOADER prompt: _bye_
-. Give back the node from the partner node. `storage failover giveback -ofnode target_node_name`
+. Reboot the controller from the LOADER prompt: _bye_
+. Give back the controller from the partner controller. `storage failover giveback -ofnode target_node_name`
 . Enable automatic giveback if it was disabled: `storage failover modify -node local -auto-giveback true`
 . If you are using slots 3 and/or 7 for networking, use the `storage port modify -node __<node name>__ -port __<port name>__ -mode network` command to convert the slot for networking use.
 . Repeat these steps for controller B.
@@ -78,9 +78,9 @@ Use System Manager to permanently migrate the LIFs to different home ports, as d
 
 . Shut down controller A:
  .. Disable automatic giveback: `storage failover modify -node local -auto-giveback false`
- .. Take over the target node: `storage failover takeover -ofnode target_node_name`
+ .. Take over the target controller: `storage failover takeover -ofnode target_node_name`
 +
-The console connection shows that the node drops to the LOADER prompt when the take over is complete.
+The console connection shows that the controller drops to the LOADER prompt when the take over is complete.
 . If you are not already grounded, properly ground yourself.
 . Unplug any cabling on the target I/O module.
 . Remove the target I/O module from the chassis:
@@ -126,8 +126,8 @@ I/O cam latch completely unlocked
 .. Push the I/O cam latch all the way up to lock the module in place.
 . Repeat the remove and install steps to replace additional modules for controller A.
 . If the replacement I/O module is a NIC, cable the module or modules to the data switches.
-. Reboot the node from the LOADER prompt: _bye_
-. Give back the node from the partner node. `storage failover giveback -ofnode target_node_name`
+. Reboot the controller from the LOADER prompt: _bye_
+. Give back the controller from the partner controller. `storage failover giveback -ofnode target_node_name`
 . Enable automatic giveback if it was disabled: `storage failover modify -node local -auto-giveback true`
 
 . If you added:

@@ -41,9 +41,9 @@ The value for HA-state can be one of the following:
 
 You should run comprehensive or focused diagnostic tests for specific components and subsystems whenever you replace the controller.
 
-All commands in the diagnostic procedures are issued from the node where the component is being replaced.
+All commands in the diagnostic procedures are issued from the controller where the component is being replaced.
 
-. If the node to be serviced is not at the LOADER prompt, reboot the node: `halt`
+. If the controller to be serviced is not at the LOADER prompt, reboot the controller: `halt`
 +
 After you issue the command, you should wait until the system stops at the LOADER prompt.
 
@@ -117,7 +117,7 @@ After the test is complete, the following message is displayed:
 *> <SLDIAG:_ALL_TESTS_COMPLETED>
 ----
 
- .. Verify that there are no hardware problems on the node: `sldiag device status -long -state failed`
+ .. Verify that there are no hardware problems on the controller: `sldiag device status -long -state failed`
 +
 System-level diagnostics returns you to the prompt if there are no test failures, or lists the full status of failures resulting from testing the component.
 
