@@ -12,4 +12,4 @@ summary: "You replace an impaired chassis the new chassis of the same model as t
 All other components in the system must be functioning properly; if not, you must contact technical support.
 
 * You can use this procedure with all versions of ONTAP supported by your system.
-* This procedure is disruptive. For a two-node cluster, you will have a complete service outage and a partial outage in a multi-node cluster.
+* This procedure is disruptive. For a two-controller cluster, you will have a complete service outage and a partial outage in a multi-node cluster.

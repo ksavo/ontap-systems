@@ -2,20 +2,20 @@
 permalink: a900/controller_replace.html
 sidebar: sidebar
 keywords: AFF A900, open controller, download service image to USB drive, transfer boot image, USB drive, service image
-summary: 'To replace the controller module hardware, you must remove the impaired node, move FRU components to the replacement controller module, install the replacement controller module in the chassis, and then boot the system to Maintenance mode.'
+summary: 'To replace the controller module hardware, you must remove the impaired controller, move FRU components to the replacement controller module, install the replacement controller module in the chassis, and then boot the system to Maintenance mode.'
 ---
 = Replace the controller module hardware - AFF A900
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-To replace the controller module hardware, you must remove the impaired node, move FRU components to the replacement controller module, install the replacement controller module in the chassis, and then boot the system to Maintenance mode.
+To replace the controller module hardware, you must remove the impaired controller, move FRU components to the replacement controller module, install the replacement controller module in the chassis, and then boot the system to Maintenance mode.
 
 The following animation shows the whole process of moving components from the impaired to the replacement controller.
 
 https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=30337552-b10f-4146-9bdb-adf2000df5bd[Animation -- Move components to replacement controller^]
 
-== Step 1: Open the controller module
+== Step 1: Remove the controller module
 
 [.lead]
 To access components inside the controller, you must first remove the controller module from the system and then remove the cover on the controller module.

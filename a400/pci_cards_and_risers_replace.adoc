@@ -162,8 +162,8 @@ The controller module begins to boot as soon as it is fully seated in the chassi
 +
 NOTE: If your system stops at the boot menu, select the option to boot to LOADER.
 
- .. At the LOADER prompt, enter `bye` to reinitialize the PCIe cards and other components and let the node reboot.
-. Return the node to normal operation by giving back its storage: `storage failover giveback -ofnode _impaired_node_name_`
+ .. At the LOADER prompt, enter `bye` to reinitialize the PCIe cards and other components and let the controller reboot.
+. Return the controller to normal operation by giving back its storage: `storage failover giveback -ofnode _impaired_node_name_`
 . If automatic giveback was disabled, reenable it: `storage failover modify -node local -auto-giveback true`
 
 == Step 6: Restore the controller module to operation
@@ -175,7 +175,7 @@ To restore the controller, you must recable the system, give back the controller
 +
 If you removed the media converters (QSFPs or SFPs), remember to reinstall them if you are using fiber optic cables.
 
-. Return the node to normal operation by giving back its storage: `storage failover giveback -ofnode _impaired_node_name_`
+. Return the controller to normal operation by giving back its storage: `storage failover giveback -ofnode _impaired_node_name_`
 . If automatic giveback was disabled, reenable it: `storage failover modify -node local -auto-giveback true`
 
 == Step 7: Switch back aggregates in a two-node MetroCluster configuration

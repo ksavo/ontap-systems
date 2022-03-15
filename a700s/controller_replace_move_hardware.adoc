@@ -2,20 +2,20 @@
 permalink: a700s/controller-replace-move-hardware.html
 sidebar: sidebar
 keywords: aff a700s, move the controller module hardware
-summary: "To replace a controller module, you must remove the impaired node, move FRU components to the replacement controller module, install the replacement controller module in the chassis, and then boot the system to Maintenance mode."
+summary: "To replace a controller module, you must remove the impaired controller, move FRU components to the replacement controller module, install the replacement controller module in the chassis, and then boot the system to Maintenance mode."
 ---
 = Replace the ontroller module hardware - AFF A700s
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-To replace the controller module hardware, you must remove the impaired node, move FRU components to the replacement controller module, install the replacement controller module in the chassis, and then boot the system to Maintenance mode.
+To replace the controller module hardware, you must remove the impaired controller, move FRU components to the replacement controller module, install the replacement controller module in the chassis, and then boot the system to Maintenance mode.
 
 == Step 1: Remove the controller module
 
 You must remove the controller module from the chassis when you replace the controller module or replace a component inside the controller module.
 
-. If you are not already grounded, properly ground yourself.
+. If you are not already grounded, properlcontrolleround yourself.
 . Loosen the hook and loop strap binding the cables to the cable management device, and then unplug the system cables and SFPs (if needed) from the controller module, keeping track of where the cables were connected.
 +
 Leave the cables in the cable management device so that when you reinstall the cable management device, the cables are organized.
@@ -161,7 +161,7 @@ NOTE: Make sure that the card is completely and squarely seated into the riser s
 
 == Step 4: Move the boot media
 
-There are two boot media devices in the AFF A700s, a primary and a secondary or backup boot media. You must move them from the impaired node to the _replacement_ node and install them into their respective slots in the _replacement_ node.
+There are two boot media devices in the AFF A700s, a primary and a secondary or backup boot media. You must move them from the impaired controller to the _replacement_ controller and install them into their respective slots in the _replacement_ controller.
 
 The boot media are located under Riser 2, the middle PCIe riser module. This PCIe module must be removed to gain access to the boot media.
 

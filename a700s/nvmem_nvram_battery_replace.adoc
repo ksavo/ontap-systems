@@ -13,7 +13,7 @@ To replace an NVRAM battery in the system, you must remove the controller module
 
 All other components in the system must be functioning properly; if not, you must contact technical support.
 
-== Shut down the impaired node
+== Shut down the impaired controller
 
 [.lead]
 include::../_include/shutdown_most_frus.adoc[]
@@ -125,7 +125,7 @@ The controller module begins to boot as soon as it is fully seated in the chassi
 +
 NOTE: Be sure to exit Maintenance mode after completing the conversion.
 
-. Return the node to normal operation by giving back its storage: `storage failover giveback -ofnode _impaired_node_name_`
+. Return the controller to normal operation by giving back its storage: `storage failover giveback -ofnode _impaired_node_name_`
 . If automatic giveback was disabled, reenable it: `storage failover modify -node local -auto-giveback true`
 
 == Return the failed part to NetApp
