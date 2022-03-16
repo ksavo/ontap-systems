@@ -8,6 +8,9 @@ summary: After completing the NVE or NSE tasks, you need to complete the shutdow
 :icons: font
 :imagesdir: ../media/
 
+[.lead]
+After completing the NVE or NSE tasks, you need to complete the shutdown of the impaired node.  Shut down or take over the impaired controller using the appropriate procedure for your configuration.
+
 == Option 1: Most systems
 
 [.lead]
@@ -16,6 +19,4 @@ include::../_include/shutdown_bootmedia.adoc[]
 == Option 2: System is in a MetroCluster
 
 [.lead]
-After completing the NVE or NSE tasks, you need to complete the shutdown of the impaired node.
-
 include::../_include/shutdown_any_mcc_supported.adoc[]

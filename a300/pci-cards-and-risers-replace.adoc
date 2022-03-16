@@ -149,7 +149,7 @@ NOTE: Do not use excessive force when sliding the controller module into the cha
 +
 NOTE: Be sure to exit Maintenance mode after completing the conversion.
 
-. Return the node to normal operation:
+. Return the controller to normal operation:
 +
 [options="header", cols="1,2"]
 |===

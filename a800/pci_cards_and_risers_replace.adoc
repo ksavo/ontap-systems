@@ -16,7 +16,7 @@ To replace a PCIe card, you must disconnect the cables from the cards, remove th
 
 == Step 1: Shut down the impaired controller
 
-You can shut down or take over the impaired controller using different procedures, depending on the storage system hardware configuration.
+Shut down or take over the impaired controller using the appropriate procedure for your configuration.
 
 === Option 1: Most configurations
 
@@ -210,7 +210,7 @@ The controller module begins to boot as soon as it is fully seated in the chassi
 
  .. Rotate the locking latches upward, tilting them so that they clear the locking pins, and then lower them into the locked position.
  .. If you have not already done so, reinstall the cable management device.
-. Return the node to normal operation by giving back its storage: `storage failover giveback -ofnode _impaired_node_name_`
+. Return the controller to normal operation by giving back its storage: `storage failover giveback -ofnode _impaired_node_name_`
 . If automatic giveback was disabled, reenable it: `storage failover modify -node local -auto-giveback true`
 
 == Step 5: Return the failed part to NetApp

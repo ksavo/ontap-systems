@@ -1,19 +1,19 @@
-To shut down the impaired node, you must determine the status of the node and, if necessary, take over the node so that the healthy node continues to serve data from the impaired node storage.
+To shut down the impaired controller, you must determine the status of the controller and, if necessary, take over the controller so that the healthy controller continues to serve data from the impaired controller storage.
 
 .About this task
-If you have a cluster with more than two nodes, it must be in quorum. If the cluster is not in quorum or a healthy node shows false for eligibility and health, you must correct the issue before shutting down the impaired node; see the link:https://docs.netapp.com/us-en/ontap/system-admin/index.html[Administration overview with the CLI^].
+If you have a cluster with more than two nodes, it must be in quorum. If the cluster is not in quorum or a healthy controller shows false for eligibility and health, you must correct the issue before shutting down the impaired controller; see the link:https://docs.netapp.com/us-en/ontap/system-admin/index.html[Administration overview with the CLI^].
 
 .Steps
 . If AutoSupport is enabled, suppress automatic case creation by invoking an AutoSupport message: `system node autosupport invoke -node * -type all -message MAINT=number_of_hours_downh`
 +
 The following AutoSupport message suppresses automatic case creation for two hours: `cluster1:*> system node autosupport invoke -node * -type all -message MAINT=2h`
 
-. Disable automatic giveback from the console of the healthy node: `storage failover modify –node local -auto-giveback false`
-. Take the impaired node to the LOADER prompt:
+. Disable automatic giveback from the console of the healthy controller: `storage failover modify –node local -auto-giveback false`
+. Take the impaired controller to the LOADER prompt:
 +
 [options="header" cols="1,2"]
 |===
-| If the impaired node is displaying...| Then...
+| If the impaired controller is displaying...| Then...
 a|
 The LOADER prompt
 a|
@@ -25,9 +25,7 @@ Press Ctrl-C, and then respond `y` when prompted.
 a|
 System prompt or password prompt (enter system password)
 a|
-Take over or halt the impaired node from the healthy node: `storage failover takeover -ofnode _impaired_node_name_`
+Take over or halt the impaired controller from the healthy controller: `storage failover takeover -ofnode _impaired_node_name_`
 
-When the impaired node shows Waiting for giveback..., press Ctrl-C, and then respond `y`.
-
-
+When the impaired controller shows Waiting for giveback..., press Ctrl-C, and then respond `y`.
 |===

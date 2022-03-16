@@ -170,7 +170,7 @@ The controller module begins to boot as soon as it is fully seated in the chassi
  .. If you have not already done so, reinstall the cable management device.
 . Interrupt the boot process by pressing Ctrl-C to stop at the LOADER prompt.
 +
-If you miss this message, press Ctrl-C, select the option to boot to Maintenance mode, and then `halt` the node to boot to LOADER.
+If you miss this message, press Ctrl-C, select the option to boot to Maintenance mode, and then `halt` the controller to boot to LOADER.
 
 . If the controller is in a stretch or fabric-attached MetroCluster, you must restore the FC adapter configuration:
  .. Boot to Maintenance mode: `boot_ontap maint`
