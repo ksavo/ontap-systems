@@ -378,6 +378,7 @@ image::../media/drw_a900_NS224_one shelf_cabling.png[]
 [options="header" col="25h,~"]
 
 |===
+
 ************************
 |Step|Perform on each controller
 a|
