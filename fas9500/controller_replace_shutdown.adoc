@@ -9,7 +9,7 @@ summary: 'To shut down the impaired node, you must determine the status of the n
 :imagesdir: ../media/
 
 [.lead]
-You can shut down or take over the impaired controller using different procedures, depending on the storage system hardware configuration.
+Shut down or take over the impaired controller using the appropriate procedure for your configuration. 
 
 [role="tabbed-block"]
 ====

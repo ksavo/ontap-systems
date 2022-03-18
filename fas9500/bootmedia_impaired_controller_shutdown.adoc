@@ -25,6 +25,8 @@ include::../_include/shutdown_most_frus.adoc[]
 .Controller is in a MetroCluster
 --
 
+====
+
 [.lead]
 After completing the NVE or NSE tasks, you need to complete the shutdown of the impaired node.
 

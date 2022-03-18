@@ -17,7 +17,7 @@ To replace an I/O module, you must perform a specific sequence of tasks.
 == Step 1: Shut down the impaired node
 
 [.lead]
-You can shut down or take over the impaired controller using different procedures, depending on the storage system hardware configuration .
+Shut down or take over the impaired controller using the appropriate procedure for your configuration.
 
 [role="tabbed-block"]
 ====
