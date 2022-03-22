@@ -18,7 +18,7 @@ NOTE: If you need to or want to cold-swap the FlashCache module, follow the proc
 Your storage system must meet certain criteria depending on your situation:
 
 * It must have the appropriate operating system for the caching module you are installing.
-* The caching module must be functioning well enough to be seen by the system.  If the caching module is not functioning since the last booted, you cannot use this procedure and must use the cold-swap procedure.
+* The caching module must be functioning well enough to be seen by the system.  If the caching module is not functioning since the last boot, you cannot use this procedure and must use the cold-swap procedure.
 * It must support the caching capacity.
 * The replacement caching module must have the same capacity as the failed caching module, but can be from a different supported vendor.
 * All other components in the storage system must be functioning properly; if not, you must contact technical support.
