@@ -17,16 +17,16 @@ You replace the real-time clock (RTC) battery in the controller module so that y
 == Step 1: Shut down the impaired controller
 
 [.lead]
-You can shut down or take over the impaired controller using different procedures, depending on the storage system hardware configuration.
+Shut down or take over the impaired controller using one of the following options.
 
 [role="tabbed-block"]
 ====
 
-.Most systems
+.Option 1: Most systems
 --
 include::../_include/shutdown_most_frus.adoc[]
 --
-.Controller is in a MetroCluster
+.Option 2: Controller is in a MetroCluster
 --
 include::../_include/shutdown_any_mcc_supported.adoc[]
 --
@@ -146,6 +146,6 @@ IMPORTANT: Do not use excessive force when sliding the controller module into th
 . Return the controller to normal operation by giving back its storage: `storage failover giveback -ofnode impaired_node_name`
 . If automatic giveback was disabled, reenable it: `storage failover modify -node local -auto-giveback true`
 
-== Step 6: Return the failed part to NetApp
+== Step 5: Return the failed part to NetApp
 
 include::../_include/complete_rma.adoc[]
