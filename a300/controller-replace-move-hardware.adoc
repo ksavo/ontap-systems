@@ -1,4 +1,4 @@
-controller---
+---
 permalink: a300/controller-replace-move-hardware.html
 sidebar: sidebar
 keywords: aff a300, move the controller module hardware
