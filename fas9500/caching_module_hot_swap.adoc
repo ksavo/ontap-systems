@@ -11,13 +11,14 @@ summary: "The NVMe SSD FlashCache modules (FlashCache or caching modules) are lo
 [.lead]
 The NVMe SSD FlashCache modules (FlashCache or caching modules) are located in the front of the NVRAM11 module in Slot 6 of FAS9500 systems. You can hot-swap the caching module of the same capacity from the same or different supported vendor.
 
-NOTE: If you need to or want to cold-swap the FlashCache module, follow the procedures replacing an I/O module.
+NOTE: If you need to or want to cold-swap the FlashCache module, follow the procedures for replacing an I/O module.
 
 .Before you begin
 
 Your storage system must meet certain criteria depending on your situation:
 
 * It must have the appropriate operating system for the caching module you are installing.
+* The caching module must be functioning well enough to be seen by the system.  If the caching module is not functioning since the last boot, you cannot use this procedure and must use the cold-swap procedure.
 * It must support the caching capacity.
 * The replacement caching module must have the same capacity as the failed caching module, but can be from a different supported vendor.
 * All other components in the storage system must be functioning properly; if not, you must contact technical support.
@@ -51,7 +52,7 @@ image::../media/drw_9000_remove_flashcache.png[]
 |===
 a|
 image:../media/legend_icon_01.png[] a|
-Orange release button.
+Terra cotta release button.
 a|
 image:../media/legend_icon_02.png[]
 a|
