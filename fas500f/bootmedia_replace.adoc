@@ -1,4 +1,4 @@
- ---
+---
 permalink: fas500f/bootmedia-replace.html
 sidebar: sidebar
 keywords: fas500f, replace the boot media

@@ -1,4 +1,4 @@
-controller---
+---
 permalink: fas8200/bootmedia-encryption-preshutdown-checks.html
 sidebar: sidebar
 keywords: fas8200, pre-shutdown checks for onboard encryption keys
