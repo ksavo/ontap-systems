@@ -23,10 +23,10 @@ Each SCSI-blade process should be in quorum with the other nodes in the cluster.
 
 Shut down or take over the impaired controller using the appropriate procedure for your configuration.
 
-=== Option 1: Most configurations
+== Option 1: Most configurations
 
 include::../_include/shutdown_most_frus.adoc[]
 
-=== Option 2: Controller is in a MetroCluster
+== Option 2: Controller is in a MetroCluster
 
 include::../_include/shutdown_any_mcc_supported.adoc[]

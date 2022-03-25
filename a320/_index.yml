@@ -3,7 +3,7 @@ indexpage:
   tiles:
     - title: Get started 
       links:
-        - title: ONTAP Release notes
+        - title: ONTAP release notes
           url: https://library.netapp.com/ecm/ecm_download_file/ECMLP2492508
         - title: System data sheet
           url: https://www.netapp.com/pdf.html?item=/media/7828-ds-3582.pdf

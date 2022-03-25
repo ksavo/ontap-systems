@@ -20,16 +20,16 @@ You must replace the failed component with a replacement FRU component you recei
 == Step 1: Shut down the impaired controller
 
 [.lead]
-Shut down or take over the impaired controller using the appropriate procedure for your configuration.
+Shut down or take over the impaired controller using one of the following options.
 
 [role="tabbed-block"]
 ====
 
-.Most systems
+.Option 1: Most systems
 --
 include::../_include/shutdown_most_frus.adoc[]
 --
-.Controller is in a MetroCluster
+.Option 2: Controller is in a MetroCluster
 --
 include::../_include/shutdown_any_mcc_supported.adoc[]
 --
@@ -176,6 +176,7 @@ The locking latches rise when the controller module is fully seated.
 +
 IMPORTANT: Do not use excessive force when sliding the controller module into the chassis to avoid damaging the connectors.
 +
+
 The controller module begins to boot as soon as it is fully seated in the chassis. Be prepared to interrupt the boot process.
 
 .. Rotate the locking latches upward, tilting them so that they clear the locking pins, and then lower them into the locked position.
@@ -199,7 +200,7 @@ After you issue the command, you should wait until the system stops at the LOADE
 +
 IMPORTANT: During the boot process, you can safely respond `y` to prompts.
 
-  *** If a prompt appears warning that when entering Maintenance mode in an HA configuration, you must ensure that the healthy controller remains down.
+*** If a prompt appears warning that when entering Maintenance mode in an HA configuration, you must ensure that the healthy controller remains down.
 . At the LOADER prompt, access the special drivers specifically designed for system-level diagnostics to function properly: `boot_diags`
 +
 During the boot process, you can safely respond `y` to the prompts until the Maintenance mode prompt (*>) appears.
@@ -220,7 +221,7 @@ a|
 Were completed without any failures
 a|
 
- .. Clear the status logs: `sldiag device clearstatus`
+.. Clear the status logs: `sldiag device clearstatus`
  .. Verify that the log was cleared: `sldiag device status`
 +
 The following default response is displayed:
@@ -251,19 +252,19 @@ Resulted in some test failures
 a|
 Determine the cause of the problem:
 
- .. Exit Maintenance mode: `halt`
+.. Exit Maintenance mode: `halt`
 +
 After you issue the command, wait until the system stops at the LOADER prompt.
 
- .. Verify that you have observed all the considerations identified for running system-level diagnostics, that cables are securely connected, and that hardware components are properly installed in the storage system.
- .. Boot the controller module you are servicing, interrupting the boot by pressing `Ctrl-C` when prompted to get to the Boot menu:
-  *** If you have two controller modules in the chassis, fully seat the controller module you are servicing in the chassis.
+.. Verify that you have observed all the considerations identified for running system-level diagnostics, that cables are securely connected, and that hardware components are properly installed in the storage system.
+.. Boot the controller module you are servicing, interrupting the boot by pressing `Ctrl-C` when prompted to get to the Boot menu:
+*** If you have two controller modules in the chassis, fully seat the controller module you are servicing in the chassis.
 +
 The controller module boots up when fully seated.
 
-  *** If you have one controller module in the chassis, connect the power supplies, and then turn them on.
- .. Select Boot to maintenance mode from the menu.
- .. Exit Maintenance mode by entering the following command: `halt`
+*** If you have one controller module in the chassis, connect the power supplies, and then turn them on.
+.. Select Boot to maintenance mode from the menu.
+.. Exit Maintenance mode by entering the following command: `halt`
 +
 After you issue the command, wait until the system stops at the LOADER prompt.
 
