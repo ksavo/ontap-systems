@@ -1,0 +1,11 @@
+---
+permalink: fas9500/bootmedia_complete_rma.html
+sidebar: sidebar
+keywords:
+summary: 'After you replace the part, you can return the failed part to NetApp, as described in the RMA instructions shipped with the kit.'
+---
+= Return the failed part to NetApp - FAS9500
+:icons: font
+:imagesdir: ../media/
+
+include::../_include/complete_rma.adoc[]

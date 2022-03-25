@@ -1,0 +1,24 @@
+---
+permalink: fas9500/install_videos.html
+sidebar: sidebar
+keywords: FAS9500
+summary: 'There are two videos: one showing how to rack and cable your system and one showing an example of using the System Manager Guided Setup to perform initial system configuration.'
+---
+= Video steps - FAS9500
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+There are two videos; one showing how to rack and cable your system and one showing an example of using the System Manager Guided Setup to perform initial system configuration.
+
+== Video one of two: Hardware installation and cabling
+
+The following video shows how to install and cable your new system.
+
+https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=4c222e90-864b-4435-9405-adf200112f3e[Animation--FAS9500 Installation and setup instructions^]
+
+== Video two of two: Performing end-to-end software configuration
+
+The following video shows end-to-end software configuration for systems running ONTAP 9.2 and later.
+
+https://www.youtube.com/embed/WAE0afWhj1c?rel=0[NetApp video: Software configuration for vSphere NAS datastores for FAS/AFF systems running ONTAP 9.2^]
