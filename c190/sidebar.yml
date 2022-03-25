@@ -44,8 +44,6 @@ entries:
         url: /c190/chassis-replace-shutdown.html
       - title: Replace hardware
         url: /c190/chassis-replace-move-hardware.html
-      - title: Restore configuration
-        url: /c190/chassis-replace-restore-and-verify.html
       - title: Complete replacement
         url: /c190/chassis-replace-complete-rma.html
     - title: Controller
