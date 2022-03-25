@@ -37,7 +37,7 @@ The value for HA-state can be one of the following:
   . If the displayed system state of the controller module does not match your system configuration, set the `HA` state for the controller module: `ha-config modify controller ha-state`
   . Confirm that the setting has changed: `ha-config show`
 
-== Step 2: Run system-level diagnostics
+== Step 3: Run system-level diagnostics
 
 You should run comprehensive or focused diagnostic tests for specific components and subsystems whenever you replace the controller.
 
