@@ -5,7 +5,7 @@ indexpage:
         - title: ONTAP Release notes
           url: https://library.netapp.com/ecm/ecm_download_file/ECMLP2492508
         - title: New platform support
-          url: ./whats-new
+          url: /whats-new
     - title: Install and setup
       links:
         - title: All configurations
