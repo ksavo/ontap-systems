@@ -27,5 +27,5 @@ include::../_include/new-shelf-support.adoc[]
 == New hardware updates
 include::../_include/new-hardware-updates.adoc[]
 
-== New hardware enhancements
+== New hardware upgrade enhancements
 include::../_include/new-hardware-enhancements.adoc[]
