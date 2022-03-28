@@ -1,0 +1,10 @@
+
+
+[cols="2*",options="header"]
+|===
+| Shelves| Available beginning
+a|
+NS224
+a|
+ONTAP 9.6
+|===

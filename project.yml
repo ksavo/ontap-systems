@@ -1,6 +1,7 @@
 settings:
   search: ontap-systems
   name: "ONTAP Systems"
+  rss_page: /whats-new.html
   internal:
     pdf_enabled: true
   prod:
