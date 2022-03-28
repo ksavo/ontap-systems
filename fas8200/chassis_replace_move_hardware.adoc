@@ -158,7 +158,7 @@ NOTE: If the system is in a system cabinet, you might need to remove the rear ti
 . Secure the front of the chassis to the equipment rack or system cabinet, using the screws you removed from the old chassis.
 . If you have not already done so, install the bezel.
 
-== Step 4: Install the controller
+== Step 5: Install the controller
 
 After you install the controller module and any other components into the new chassis, boot it to a state where you can run the interconnect diagnostic test.
 
