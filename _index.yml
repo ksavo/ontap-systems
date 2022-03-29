@@ -21,7 +21,7 @@ indexpage:
           url: /platform-supplemental/sldiag-introduction.html
         - title: Requirements
           url: /platform-supplemental/sldiag-requirements.html
-        - title: Diagnostics CLI help
+        - title: CLI help
           url: /platform-supplemental/sldiag-use-cli-help.html
     - title: Explore more ONTAP docs
       links:
