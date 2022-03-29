@@ -6,7 +6,7 @@ indexpage:
         - title: ONTAP Release notes
           url: https://library.netapp.com/ecm/ecm_download_file/ECMLP2492508
         - title: New platform support
-          url: /whats-new
+          url: ./whats-new.html
         - title: System data sheet
           url: https://www.netapp.com/pdf.html?item=/media/7828-ds-3582.pdf
         - title: Storage data sheet
