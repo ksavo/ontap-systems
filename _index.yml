@@ -15,6 +15,14 @@ indexpage:
           url: https://docs.netapp.com/us-en/ontap-systems-upgrade/index.html
         - title: Upgrade for MetroCluster configurations
           url: https://docs.netapp.com/us-en/ontap-metrocluster/upgrade/index.html
+    - title: Diagnostics
+      links:
+        - title: Overview
+          url: /platform-supplemental/sldiag-introduction.html
+        - title: Requirements
+          url: /platform-supplemental/sldiag-requirements.html
+        - title: Diagnostics CLI help
+          url: /platform-supplemental/sldiag-use-cli-help.html
     - title: Explore more ONTAP docs
       links:
         - title: AFF and FAS switch docs
