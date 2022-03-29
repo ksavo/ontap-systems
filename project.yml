@@ -32,11 +32,11 @@ sidebar:
       - section: fas500f
       - section: fas2600
       - section: fas8200
+      - section: fas8300
       - section: fas9500
     - title: AFF and FAS systems
       entries:
         - section: fas2700
-        - section: fas8300
         - section: fas9000
     - section: platform-supplemental
     - title: Drive shelves
