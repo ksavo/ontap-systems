@@ -8,7 +8,7 @@ summary: You can use these links for other switch models.
 :icons: font
 :imagesdir: ../media/
 
-
+[.lead]
 You can use these links to find switch documentation.
 
 * link:https://docs.netapp.com/us-en/ontap-systems-switches[Broadcom-supported BES-53248 switches]
