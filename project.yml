@@ -71,7 +71,7 @@ sidebar:
           - title: Hot-swap HDD
             url: /platform-supplemental/drive-hotswap-sas.html
     - title: Switches
-      url:  other/switch-linkout.html
+      url:  /other/switch-linkout.html
     - title: Cabinet and rail kits
       entries:
         - title: SuperRail kit
