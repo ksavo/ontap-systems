@@ -20,6 +20,9 @@ sidebar:
       entries:
       - section: c190
       - section: a200
+      - title: AFF A220
+        entries:
+        - section: fas2700
       - section: a250
       - section: a300
       - section: a320
