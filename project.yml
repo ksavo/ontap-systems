@@ -21,6 +21,7 @@ sidebar:
       - section: c190
       - section: a200
       - title: AFF A220 systems
+        url: /fas2700/index.html
         entries:
           - title: Install and setup
             pdf-filename: AFF A220 Install and Setup
@@ -99,6 +100,7 @@ sidebar:
       - section: a320
       - section: a400
       - title: AFF A700 systems
+        url: /fas9000/index.html
         entries:
           - title: Install and setup
             pdf-filename: AFF A700 Install and Setup
@@ -201,6 +203,7 @@ sidebar:
       - section: fas500f
       - section: fas2600
       - title: FAS2700 systems
+        url: /fas2700/index.html
         entries:
           - title: Install and setup
             pdf-filename: FAS2700 Install and Setup
@@ -277,6 +280,7 @@ sidebar:
       - section: fas8200
       - section: fas8300
       - title: FAS9000 systems
+        url: /fas9000/index.html
         entries:
           - title: Install and setup
             pdf-filename: FAS9000 Install and Setup
@@ -372,6 +376,8 @@ sidebar:
               - title: AFF A700 system no open slots
                 url: /fas9000/x91148a-modules-with-no-open-slots-add.html
       - section: fas9500
+    - title: All SAN Array systems
+      url: /platform-supplemental/all-san-array.html
     - title: System-level diagnostics
       entries:
         - title: Introduction
@@ -456,7 +462,7 @@ sidebar:
               url: /platform-supplemental/42u-1280mm-reverse-hinge-and-lock.html
             - title: Reinstall door and illuminated badge
               url: /platform-supplemental/42u-1280mm-reinstall-door-and-badge.html
-    - title: Earlier models
-      url: "/other/earlier-models.html"
+    - title: Other models
+      url: "/other/other-models.html"
     - title: Legal notices
       url: "/legal-notices.html"

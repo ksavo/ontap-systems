@@ -1,13 +1,15 @@
 ---
-permalink: other/earlier-models.html
+permalink: other/other-models.html
 sidebar: sidebar
 keywords: aff 8000, fas8000, fas6200, fas3200, fas2500, fas2200
 summary: You can use these links to find documentation for other AFF and FAS platforms.
 ---
-= Earlier models
+= Other models
 :icons: font
 :imagesdir: ../media/
 
+[.lead]
+You can use these links to find documentation for other AFF and FAS platforms.
 
 == Platform models
 link:http://mysupport.netapp.com/documentation/productlibrary/index.html?productID=62082[AFF 8000 Series documentation]
