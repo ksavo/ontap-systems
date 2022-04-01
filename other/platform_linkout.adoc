@@ -2,7 +2,7 @@
 permalink: other/platform-linkout.html
 sidebar: sidebar
 keywords: aff 8000, fas8000, fas6200, fas3200, fas2500, fas2200
-summary: You can use these links for other AFF and FAS platforms.
+summary: You can use these links to find documentation for other AFF and FAS platforms.
 ---
 = Other platform models
 :icons: font

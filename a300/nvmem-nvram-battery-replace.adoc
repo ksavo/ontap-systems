@@ -3,7 +3,6 @@ permalink: a300/nvmem-nvram-battery-replace.html
 sidebar: sidebar
 keywords: aff a300, replace the nvmem battery
 summary: "To replace an NVMEM battery in the system, you must remove the controller module from the system, open it, replace the battery, and close and replace the controller module."
-
 ---
 = Replace the NVMEM battery - AFF A300
 :icons: font
@@ -195,6 +194,7 @@ a|
 Perform a give back: `storage failover giveback -ofnode replacement_node_name`
 
 NOTE: If you disabled automatic giveback, re-enable it with the storage failover modify command.
+
 a|
 A two-node MetroCluster configuration
 a|
@@ -235,12 +235,12 @@ After you issue the command, wait until the system stops at the LOADER prompt.
 +
 |===
 
-== Step 7 (two-node MetroCluster only): Switch back aggregates
+== Step 6: (two-node MetroCluster only): Switch back aggregates
 
 [.lead]
 include::../_include/2n_mcc_switchback.adoc[]
 
-== Step 8: Return the failed part to NetApp
+== Step 7: Return the failed part to NetApp
 
 [.lead]
 include::../_include/complete_rma.adoc[]

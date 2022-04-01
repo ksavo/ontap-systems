@@ -274,12 +274,12 @@ After you issue the command, wait until the system stops at the LOADER prompt.
 
 |===
 
-== Step 7: Switch back aggregates in a two-node MetroCluster configuration
+== Step 6: Switch back aggregates in a two-node MetroCluster configuration
 
 [.lead]
 include::../_include/2n_mcc_switchback.adoc[]
 
-== Step 8: Return the failed part to NetApp
+== Step 7: Return the failed part to NetApp
 
 [.lead]
 include::../_include/complete_rma.adoc[]

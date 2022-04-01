@@ -177,7 +177,7 @@ NOTE: As you insert the connector, you should feel it click into place; if you d
 +
 https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=80c4701e-8e4a-408e-96e6-ab1b00666d3f[Two-node switchless cluster cabling]
 +
-image::../media/drw_A400_TNSC-network-cabling.png[]
+image::../media/drw_fas8300_TNSC_network_cabling.png[]
 
 . Go to <<Step 4: Cable controllers to drive shelves>> for drive shelf cabling instructions.
 
@@ -201,7 +201,7 @@ NOTE: As you insert the connector, you should feel it click into place; if you d
 +
 https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=5893b7d4-6f67-4a64-ad89-ab1b006658d1[Switched cluster cabling]
 +
-image::../media/drw_a400_switched_network_cabling.png[]
+image::../media/drw_fas8300_switched_network_cabling.png[]
 
 . Go to <<Step 4: Cable controllers to drive shelves>> for drive shelf cabling instructions.
 
@@ -224,7 +224,7 @@ NOTE: As you insert the connector, you should feel it click into place; if you d
 +
 https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=46c0da0b-6842-449f-b28c-ab1b0066584b[Cabling the controllers to SAS drive shelves]
 +
-image::../media/drw_a400_three_ds224c_shelves.png[]
+image::../media/drw_fas8300_three-ds224c_shelves.png[]
 
 . Go to <<Step 5: Complete system setup and configuration>> to complete system setup and configuration.
 

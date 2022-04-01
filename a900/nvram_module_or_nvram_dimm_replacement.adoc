@@ -30,21 +30,18 @@ Because the system ID is derived from the NVRAM module, if replacing the module,
 == Step 1: Shut down the impaired controller
 
 [.lead]
-Shut down or take over the impaired controller using the appropriate procedure for your configuration.
+Shut down or take over the impaired controller using one of the following options.
 
 [role="tabbed-block"]
 ====
 
-.Most systems
---
-include::../_include/shutdown_most_frus.adoc[]
---
-.Controller is in a MetroCluster
---
-include::../_include/shutdown_any_mcc_supported.adoc[]
---
+[.lead]
+include::../_include/shutdown_most_frus_no_PCM_remove.adoc[]
 
-====
+=== Option 2: Controller is in a MetroCluster
+
+[.lead]
+include::../_include/shutdown_any_mcc_supported_no_PCM_remove.adoc[]
 
 == Step 2: Replace the NVRAM module
 
@@ -298,12 +295,12 @@ dr-group-id            cluster node           configuration-state
 . Verify that the expected volumes are present for each controller: `vol show -node node-name`
 . If you disabled automatic takeover on reboot, enable it from the healthy controller: `storage failover modify -node replacement-node-name -onreboot true`
 
-== Step 6: Restore Storage and Volume Encryption functionality
+== Step 7: Restore Storage and Volume Encryption functionality
 
 [.lead]
 include::../_include/restore_storage_encryption.adoc[]
 
-== Step 7: Return the failed part to NetApp
+== Step 8: Return the failed part to NetApp
 
 [.lead]
 include::../_include/complete_rma.adoc[]
