@@ -2,7 +2,7 @@
 permalink: a200/drive-replace.html
 sidebar: sidebar
 keywords: aff a200, replace the drives
-summary: You must replace a DIMM in the controller module when your system registers an increasing number of correctable error correction codes (ECC); failure to do so causes a system panic.
+summary: You must replace a drive when the platform logs a warning message to the system console indicating that a drive has failed. In addition, both the fault LED on the operator display panel and the fault LED on the failed drive are illuminated.
 
 ---
 = Replace SSD or HDD Drive - AFF A200
@@ -21,7 +21,7 @@ include::../_include/drive_hotswap_ssd.adoc[]
 --
 .Option 2: Replace HDD
 --
-include::../_include/drive_hotswap_hdd.adoc.adoc[]
+include::../_include/drive_hotswap_hdd.adoc[]
 --
 
 ====
