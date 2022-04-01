@@ -396,20 +396,10 @@ sidebar:
           url: /platform-supplemental/sldiag-hardware-installation-diagnostics.html
         - title: Run device failure diagnostics
           url: /platform-supplemental/sldiag-device-failure-diagnostics.html
-    - title: Drive shelves and disk drives
+    - title: Drive shelves
       entries:
         - section: ns224
         - section: sas3
-        - title: Hot swap internal disk drive
-          entries:
-          - title: Video overview
-            url: /platform-supplemental/drive-video.html
-          - title: Which procedure to use
-            url: /platform-supplemental/drive-hotswap.html
-          - title: Hot-swap SSD
-            url: /platform-supplemental/drive-hotswap-drive.html
-          - title: Hot-swap HDD
-            url: /platform-supplemental/drive-hotswap-sas.html
     - title: Switches
       url:  /other/switch-linkout.html
     - title: Cabinet and rail kits
