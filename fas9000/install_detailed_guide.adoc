@@ -183,7 +183,7 @@ Be sure to check the direction of the cable pull-tabs when inserting the cables 
 
 image::../media/oie_cable_pull_tab_up.png[]
 
-NOTE: As you insert the connector, you should feel it click into place; if you do not feel it click, remove it, turn it over and try again.
+NOTE: As you insert the connector, you should feel it click into place; if you do not feel it click, remove it, turn it around and try again.
 
 .Steps
 . Use the animation or illustration to complete the cabling between the controllers and to the switches:
@@ -205,7 +205,7 @@ Be sure to check the direction of the cable pull-tabs when inserting the cables 
 
 image::../media/oie_cable_pull_tab_up.png[]
 
-NOTE: As you insert the connector, you should feel it click into place; if you do not feel it click, remove it, turn it over and try again.
+NOTE: As you insert the connector, you should feel it click into place; if you do not feel it click, remove it, turn it around and try again.
 
 .Steps
 . Use the animation or illustration to complete the cabling between the controllers and to the switches:
@@ -269,7 +269,7 @@ image::../media/oie_cable_pull_tab_up.png[]
 +
 image::../media/oie_cable_pull_tab_down.png[]
 +
-NOTE: As you insert the connector, you should feel it click into place; if you do not feel it click, remove it, turn it over and try again.
+NOTE: As you insert the connector, you should feel it click into place; if you do not feel it click, remove it, turn it around and try again.
 
 .Steps
 . Use the following animation or illustrations to cable your controllers with two X91148A storage modules to a single NS224 drive shelf, or use the diagram to cable your controllers with one X91148A storage module to a single NS224 drive shelf.
@@ -295,7 +295,7 @@ image::../media/oie_cable_pull_tab_up.png[]
 +
 image::../media/oie_cable_pull_tab_down.png[]
 +
-NOTE: As you insert the connector, you should feel it click into place; if you do not feel it click, remove it, turn it over and try again.
+NOTE: As you insert the connector, you should feel it click into place; if you do not feel it click, remove it, turn it around and try again.
 
 .Steps
 . Use the following animation or illustrations to cable your controllers to two NS224 drive shelves.

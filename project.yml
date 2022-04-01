@@ -381,7 +381,6 @@ sidebar:
                 url: /fas9000/x91148a-modules-with-open-slots-add.html
               - title: AFF A700 system no open slots
                 url: /fas9000/x91148a-modules-with-no-open-slots-add.html
-      - section: fas9500
     - title: All SAN Array systems
       url: /platform-supplemental/all-san-array.html
     - title: System-level diagnostics
