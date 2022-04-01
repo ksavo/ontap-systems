@@ -63,6 +63,8 @@ entries:
         url: /c190/controller-replace-restore-system-rma.html
     - title: DIMM
       url: /c190/dimm-replace.html
+    - title: Drive
+      url: /c190/drive-replace.html
     - title: NVMEM battery
       url: /c190/nvmem-nvram-battery-replace.html
     - title: Power supply

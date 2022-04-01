@@ -63,6 +63,8 @@ entries:
         url: /fas500f/controller-replace-restore-system-rma.html
     - title: DIMM
       url: /fas500f/dimm-replace.html
+    - title: Drive
+      url: /fas500f/drive-replace.html
     - title: Fan
       url: /fas500f/fan-replace.html
     - title: Mezzanine card

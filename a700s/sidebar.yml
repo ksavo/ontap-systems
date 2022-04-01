@@ -64,6 +64,9 @@ entries:
     - title: DIMM
       pdf-filename: AFF A700s DIMM
       url: /a700s/dimm-replace.html
+    - title: Drive
+      pdf-filename: AFF A700s Drive
+      url: /a700s/drive-replace.html
     - title: Fan
       entries:
       - title: Shut down impaired node
