@@ -4,12 +4,20 @@ sidebar: sidebar
 keywords: stop, all, host, i/o activity, power, off, shelf, replacing, replace, drive, drawer, disk, replace a drive drawer in a ds460c disk shelf
 summary: You must stop all host I/O activity and power off the shelf before replacing the drive drawer.
 ---
-= Replacing a drive drawer in a DS460C disk shelf - shelves with IOM12/IOM12B modules
+= Replace a drive drawer in a DS460C disk shelf - shelves with IOM12 modules
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
 You must stop all host I/O activity and power off the shelf before replacing the drive drawer.
+
+Each of these 60-drive shelves has five drive drawers.
+
+image::../media/28_dwg_e2860_de460c_front_no_callouts.gif[]
+
+And each of the five drawers can hold up to 12 drives.
+
+image::../media/92_dwg_de6600_drawer_with_hdds_no_callouts.gif[]
 
 == Before you begin
 
@@ -24,23 +32,7 @@ NOTE: *Possible hardware damage:* To prevent electrostatic discharge damage to t
 * Flashlight
 * Permanent marker
 
-== About this task
-
-* This procedure applies to shelves having DCM drive drawers and shelves having DCM2 drive drawers.
-
-NOTE: This procedure is for like-for-like drive drawer replacements. This means you can only replace a DCM drive drawer with another DCM drive drawer or replace a DCM2 drive drawer with another DCM2 drive drawer. (Your shelf can have five DCM drive drawers or have five DCM2 drive drawers.)
-
-* The DCM drive drawers and the DCM2 drive drawers can be distinguished by their appearance:
-+
-The DCM drive drawers look like the following:
-+
-image::../media/28_dwg_e2860_de460c_front_no_callouts.gif[]
-+
-The DCM2 drive drawers are distinguished by a blue stripe and "DCM2" label:
-+
-image::../media/dcm2.png[]
-
-== Removing the cable chains
+== Remove the cable chains
 
 [.lead]
 Left and right cable chains for each drive drawer in the DS460C drive shelf allow the drawers to slide in and out. Before you can remove a drive drawer, you must remove both cable chains.
@@ -57,7 +49,7 @@ NOTE: *Possible hardware damage:* To prevent electrostatic discharge damage to t
 
 .About this task
 
-Each drive drawer has left and right cable chains. The ends of the cable chains slide into corresponding vertical and horizontal brackets inside the enclosure, as follows:
+Each drive drawer has left and right cable chains. The metal ends on the cable chains slide into corresponding vertical and horizontal brackets inside the enclosure, as follows:
 
 * The left and right vertical brackets connect the cable chain to the enclosure's midplane.
 * The left and right horizontal brackets connect the cable chain to the individual drawer.

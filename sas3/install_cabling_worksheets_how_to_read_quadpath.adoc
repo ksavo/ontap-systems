@@ -1,21 +1,21 @@
 ---
 permalink: sas3/install-cabling-worksheets-how-to-read-quadpath.html
 sidebar: sidebar
-keywords: example, guide, read, apply, complete, worksheet, stack, disk, shelves, shelf, iom12, iom12b, quad-pathed, connectivity, how to read a worksheet to cable controller-to-stack connections for quad-pathed connectivity
-summary: You can use this example to guide you through how to read and apply a completed worksheet to cable stacks of disk shelves with IOM12/IOM12B modules for quad-pathed connectivity.
+keywords: example, guide, read, apply, complete, worksheet, stack, disk, shelves, shelf, iom12, quad-pathed, connectivity, how to read a worksheet to cable controller-to-stack connections for quad-pathed connectivity
+summary: You can use this example to guide you through how to read and apply a completed worksheet to cable stacks of disk shelves with IOM12 modules for quad-pathed connectivity.
 ---
-= How to read a worksheet to cable controller-to-stack connections for quad-pathed connectivity - shelves with IOM12/IOM12B modules
+= How to read a worksheet to cable controller-to-stack connections for quad-pathed connectivity - shelves with IOM12 modules
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-You can use this example to guide you through how to read and apply a completed worksheet to cable stacks of disk shelves with IOM12/IOM12B modules for quad-pathed connectivity.
+You can use this example to guide you through how to read and apply a completed worksheet to cable stacks of disk shelves with IOM12 modules for quad-pathed connectivity.
 
 .About this task
 
 * This procedure references the following worksheet and cabling example to demonstrate how to read a worksheet to cable controller-to-stack connections.
 +
-The configuration used in this example is a quad-path HA configuration with two quad-port SAS HBAs on each controller and two stacks of disk shelves with IOM12/IOM12B modules.
+The configuration used in this example is a quad-path HA configuration with two quad-port SAS HBAs on each controller and two stacks of disk shelves with IOM12 modules.
 
 * If you have a single-controller configuration, skip substeps b and d for cabling to a second controller.
 * If needed, you can refer to link:install-cabling-rules.html[SAS cabling rules] for information about the controller slot numbering convention, shelf-to-shelf connectivity, and controller-to-shelf connectivity (including the use of port pairs).
