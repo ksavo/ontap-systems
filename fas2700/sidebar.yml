@@ -65,6 +65,9 @@ entries:
     - title: DIMM
       pdf-filename: AFF A220 and FAS2700 DIMM
       url: /fas2700/dimm-replace.html
+    - title: Drive
+      pdf-filename: AFF A220 and FAS2700 Drive
+      url: /fas2700/drive-replace.html
     - title: NVMEM battery
       pdf-filename: AFF A220 and FAS2700 NVMEM Battery
       url: /fas2700/nvmem-nvram-battery-replace.html

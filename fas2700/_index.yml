@@ -5,6 +5,8 @@ indexpage:
       links:
         - title: ONTAP Release notes
           url: https://library.netapp.com/ecm/ecm_download_file/ECMLP2492508
+        - title: What's new
+          url: ../whats-new.html
         - title: System data sheet
           url: https://www.netapp.com/media/8937-ds-3929.pdf
         - title: Storage data sheet

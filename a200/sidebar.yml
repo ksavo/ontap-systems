@@ -64,6 +64,9 @@ entries:
     - title: DIMM
       pdf-filename: AFF A200 DIMM
       url: /a200/dimm-replace.html
+    - title: Drive
+      pdf-filename: AFF A200 Drive
+      url: /a200/drive-replace.html
     - title: NVMEM battery
       pdf-filename: AFF A200 NVMEM Battery
       url: /a200/nvmem-nvram-battery-replace.html
