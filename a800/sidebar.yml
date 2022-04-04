@@ -63,6 +63,8 @@ entries:
           url: /a800/controller-replace-restore-system-rma.html
    - title: DIMM
      url: /a800/dimm-replace.html
+   - title: Drive
+     url: /a800/drive-replace.html
    - title: Fan
      url: /a800/fan-replace.html
    - title: NVDIMM

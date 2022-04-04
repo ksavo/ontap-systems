@@ -63,6 +63,8 @@ entries:
         url: /a250/controller-replace-restore-system-rma.html
     - title: DIMM
       url: /a250/dimm-replace.html
+    - title: Drive
+      url: /a250/drive-replace.html
     - title: Fan
       url: /a250/fan-replace.html
     - title: Mezzanine card
