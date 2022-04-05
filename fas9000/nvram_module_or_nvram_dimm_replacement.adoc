@@ -42,7 +42,7 @@ include::../_include/shutdown_most_frus.adoc[]
 include::../_include/shutdown_any_mcc_supported.adoc[]
 --
 
-.Option 3: Contrller is in a Two-node MetroCluster
+.Option 3: Controller is in a Two-node MetroCluster
 --
 [.lead]
 include::../_include/shutdown_2n_mcc.adoc[]
