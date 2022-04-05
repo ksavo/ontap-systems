@@ -31,7 +31,7 @@ You can shut down or take over the impaired controller using different procedure
 [role="tabbed-block"]
 ====
 
-.Option 1: Most configs
+.Option 1: Most systems
 --
 [.lead]
 include::../_include/shutdown_most_frus.adoc[]
