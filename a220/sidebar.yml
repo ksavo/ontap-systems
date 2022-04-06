@@ -6,13 +6,13 @@ entries:
       pdf-filename: AFF A220 Install and Setup
       entries:
       - title: Choose install and setup experience
-        url: ./fas2700/install-setup.html
+        url: /fas2700/install-setup.html
       - title: Quick steps
-        url: ./fas2700/install-quick-guide.html
+        url: /fas2700/install-quick-guide.html
       - title: Videos steps
-        url: ../fas2700/install-videos.html
+        url: /fas2700/install-videos.html
       - title: Detailed steps
-        url: ../fas2700/install-detailed-guide.html
+        url: /fas2700/install-detailed-guide.html
     - title: Maintain
       pdf-filename: AFF A220 Maintain
       entries:
