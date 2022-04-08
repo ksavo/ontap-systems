@@ -36,8 +36,7 @@ sidebar:
       - section: fas8200
       - section: fas8300
       - section: fas9000
-    - title: All SAN Array systems
-      url: /platform-supplemental/all-san-array.html
+    - section: allsan
     - title: System-level diagnostics
       entries:
         - title: Introduction
