@@ -1,8 +1,7 @@
 settings:
-  search: ontap-systems
   name: "ONTAP Systems"
   internal:
-    pdf_enabled: true
+    pdf_enabled: false
   prod:
     pdf_enabled: true
     harmony_enabled: true
@@ -10,31 +9,108 @@ sidebar:
   entries:
     - title: AFF and FAS system docs
       url: "/index.html"
-    - title: Release Notes
+    - title: Get started
       entries:
         - title: What's new
           url: /whats-new.html
         - title: Release notes
           url: /rel-notes.html
-    - section: a200
-    - section: fas2700
-    - section: a250
-    - section: a300
-    - section: a320
-    - section: a400
-    - section: fas9000
-    - section: a700s
-    - section: a800
-    - section: a900
-    - section: c190
-    - section: fas2600
-    - section: fas500f
-    - section: fas8200
-    - section: fas8300
-    - section: fas9500
-    - section: platform-supplemental
-    - section: ns224
-    - section: sas3
+    - title: AFF systems
+      entries:
+      - section: c190
+      - section: a200
+      - section: a220
+      - section: a250
+      - section: a300
+      - section: a320
+      - section: a400
+      - section: a700
+      - section: a700s
+      - section: a800
+      - section: a900
+    - title: FAS systems
+      entries:
+      - section: fas500f
+      - section: fas2600
+      - section: fas2700
+      - section: fas8200
+      - section: fas8300
+      - section: fas9000
+    - section: allsan
+    - section: upgrade
+    - title: System-level diagnostics
+      entries:
+        - title: Introduction
+          url: /platform-supplemental/sldiag-introduction.html
+        - title: Requirements
+          url: /platform-supplemental/sldiag-requirements.html
+        - title: How to use command-line help
+          url: /platform-supplemental/sldiag-use-cli-help.html
+        - title: Run system install diagnostics
+          url: /platform-supplemental/sldiag-system-installation-diagnostics.html
+        - title: Run system panic diagnostics
+          url: /platform-supplemental/sldiag-system-panic-diagnostics.html
+        - title: Run slow system response diagnostics
+          url: /platform-supplemental/sldiag-slow-system-diagnostics.html
+        - title: Run hardware install diagnostics
+          url: /platform-supplemental/sldiag-hardware-installation-diagnostics.html
+        - title: Run device failure diagnostics
+          url: /platform-supplemental/sldiag-device-failure-diagnostics.html
+    - title: Drive shelves
+      entries:
+        - section: ns224
+        - section: sas3
+    - section: switch
+    - title: Cabinet and rail kits
+      entries:
+        - title: SuperRail kit
+          url: /platform-supplemental/superrail-install.html
+        - title: AFF A700/FAS9000 two-post rail kit
+          url: /platform-supplemental/telco-installation-instructions.html
+        - title: 42U 1280 mm system cabinet
+          entries:
+          - title: Prepare to install cabinet
+            entries:
+            - title: Cabinet features
+              url: /platform-supplemental/42u-1280mm-features.html
+            - title: Required tools/equipment
+              url: /platform-supplemental/42u-1280mm-required-tools.html
+            - title: Space requirements and cabinet dimensions
+              url: /platform-supplemental/42u-1280mm-space-and-dimensions.html
+            - title: Supported PDU types and specs
+              url: /platform-supplemental/42u-1280mm-supported-pdu-types-and-specifications.html
+          - title: Unpack system cabinet
+            url: /platform-supplemental/42u-1280mm-unpack.html
+          - title: Install cabinet
+            entries:
+            - title: Overview
+              url: /platform-supplemental/42u-1280mm-install.html
+            - title: Install cabinet interconnect kit
+              url: /platform-supplemental/42u-1280mm-install-cabinet-interconnect-kit.html
+            - title: Install bolt-down kit
+              url: /platform-supplemental/42u-1280mm-install-bolt-down-kit.html
+            - title: Install support rails
+              url: /platform-supplemental/42u-1280mm-install-additional-rails.html
+            - title: Install equipment
+              url: /platform-supplemental/42u-1280mm-install-equipment.html
+            - title: Power on cabinet
+              url: /platform-supplemental/42u-1280mm-power-on.html
+          - title: Replace PDUs
+            url: /platform-supplemental/42u-1280mm-replace-pdus.html
+          - title: Reverse cabinet front door
+            entries:
+            - title: What you need
+              url: /platform-supplemental/42u-1280mm-reverse-front-door.html
+            - title: Remove illuminated badge
+              url: /platform-supplemental/42u-1280mm-remove-illuminated-badge.html
+            - title: Remove cabinet door
+              url: /platform-supplemental/42u-1280mm-remove-door.html
+            - title: Move badge power supply and cabling
+              url: /platform-supplemental/42u-1280mm-move-badge-ps-and-cabling.html
+            - title: Reverse door hinge and lock catch
+              url: /platform-supplemental/42u-1280mm-reverse-hinge-and-lock.html
+            - title: Reinstall door and illuminated badge
+              url: /platform-supplemental/42u-1280mm-reinstall-door-and-badge.html
     - section: other
     - title: Legal notices
       url: "/legal-notices.html"

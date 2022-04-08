@@ -5,6 +5,8 @@ indexpage:
       links:
         - title: ONTAP Release Notes
           url: https://library.netapp.com/ecm/ecm_download_file/ECMLP2492508
+        - title: What's new
+          url: /whats-new.html
     - title: AFF systems
       links:
         - title: AFF C190
@@ -45,8 +47,6 @@ indexpage:
           url: /fas8300/index.html
         - title: FAS9000
           url: /fas9000/index.html
-        - title: FAS9500
-          url: /fas9500/index.html
     - title: Drive shelves
       links:
         - title: NS224
@@ -76,7 +76,7 @@ indexpage:
         - title: Upgrade for most systems
           url: https://docs.netapp.com/us-en/ontap-systems-upgrade/index.html
         - title: Upgrade for systems in a MetroCluster configuration
-          url: https://docs.netapp.com/us-en/ontap-metrocluster/upgrade/index.html
+          url: https://docs.netapp.com/us-en/ontap-metrocluster/upgrade/concept_choosing_an_upgrade_method_mcc.html
     - title: More resources
       links:
         - title: ONTAP documentation

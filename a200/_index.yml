@@ -4,6 +4,8 @@ indexpage:
       links:
         - title: ONTAP Release notes
           url: https://library.netapp.com/ecm/ecm_download_file/ECMLP2492508
+        - title: What's new
+          url: ../whats-new.html
     - title: Install and setup
       links:
         - title: All configurations

@@ -5,6 +5,8 @@ indexpage:
       links:
         - title: ONTAP Release notes
           url: https://library.netapp.com/ecm/ecm_download_file/ECMLP2492508
+        - title: What's new
+          url: ../whats-new.html
         - title: Storage data sheet
           url: https://www.netapp.com/data-storage/disk-shelves-storage-media/
     - title: Install and setup
@@ -31,7 +33,7 @@ indexpage:
           url: /service-replace-fan-ds460c.html
         - title: Hot-remove a shelf
           url: /hot-remove-shelf.html
-        - title: IOM12/IOM12B module
+        - title: IOM12 module
           url: /service-hot-swap-iom.html
         - title: Power supply
           url: /service-hot-swap-power-supply.html

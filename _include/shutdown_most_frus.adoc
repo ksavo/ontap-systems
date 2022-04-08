@@ -28,4 +28,5 @@ a|
 Take over or halt the impaired controller from the healthy controller: `storage failover takeover -ofnode _impaired_node_name_`
 
 When the impaired controller shows Waiting for giveback..., press Ctrl-C, and then respond `y`.
+
 |===

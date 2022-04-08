@@ -68,23 +68,3 @@ entries:
         url: /platform-supplemental/42u-1280mm-reverse-hinge-and-lock.html
       - title: Reinstall door and illuminated badge
         url: /platform-supplemental/42u-1280mm-reinstall-door-and-badge.html
-  - title: Swap out internal disk drive
-    entries:
-    - title: Video overview
-      url: /platform-supplemental/drive-video.html
-    - title: Hot-swap embedded drive
-      entries:
-      - title: Which procedure to use
-        url: /platform-supplemental/drive-hotswap.html
-      - title: Hot-swap SSD
-        url: /platform-supplemental/drive-hotswap-drive.html
-      - title: Hot-swap HDD
-        url: /platform-supplemental/drive-hotswap-sas.html
-  - title: All SAN Array systems
-    entries:
-    - title: Set up and maintain
-      url: /platform-supplemental/all-san-array.html
-  - title: Hardware upgrade
-    entries:
-    - title: Upgrade procedures
-      url: /platform-supplemental/upgrade-linkout.html
