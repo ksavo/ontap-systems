@@ -76,7 +76,7 @@ indexpage:
         - title: Upgrade for most systems
           url: https://docs.netapp.com/us-en/ontap-systems-upgrade/index.html
         - title: Upgrade for systems in a MetroCluster configuration
-          url: https://docs.netapp.com/us-en/ontap-metrocluster/upgrade/index.html
+          url: https://docs.netapp.com/us-en/ontap-metrocluster/upgrade/concept_choosing_an_upgrade_method_mcc.html
     - title: More resources
       links:
         - title: ONTAP documentation
