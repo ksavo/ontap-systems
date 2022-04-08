@@ -37,6 +37,7 @@ sidebar:
       - section: fas8300
       - section: fas9000
     - section: allsan
+    - section: upgrade
     - title: System-level diagnostics
       entries:
         - title: Introduction
@@ -59,8 +60,7 @@ sidebar:
       entries:
         - section: ns224
         - section: sas3
-    - title: Switches
-      url:  /other/switch-linkout.html
+    - section: switch
     - title: Cabinet and rail kits
       entries:
         - title: SuperRail kit
@@ -111,7 +111,6 @@ sidebar:
               url: /platform-supplemental/42u-1280mm-reverse-hinge-and-lock.html
             - title: Reinstall door and illuminated badge
               url: /platform-supplemental/42u-1280mm-reinstall-door-and-badge.html
-    - title: Other models
-      url: "/other/other-models.html"
+    - section: other
     - title: Legal notices
       url: "/legal-notices.html"

@@ -1,0 +1,14 @@
+---
+permalink: upgrade/upgrade-linkout.html
+sidebar: sidebar
+keywords: hardware upgrade, arl, metrocluster config
+summary: Upgrade of AFF and FAS controller modules.
+---
+
+= Upgrade procedures
+:icons: font
+:imagesdir: ../media/
+
+For most AFF and FAS systems, you can follow the upgrade procedures https://docs.netapp.com/us-en/ontap-systems-upgrade/index.html[here].
+
+For systems in a MetroCluster configuration, follow the the upgrade procedures https://docs.netapp.com/us-en/ontap-metrocluster/upgrade/index.html[here].
