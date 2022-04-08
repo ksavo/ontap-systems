@@ -1,5 +1,5 @@
 ---
-permalink: platform-supplemental/all-san-array.html
+permalink: all-san/all-san-array.html
 sidebar: sidebar
 keywords: asa, all san array
 summary: All SAN array systems use the same documentation as the AFF systems.
