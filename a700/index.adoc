@@ -1,11 +1,11 @@
 ---
 layout: landing-page
 sidebar: sidebar
-permalink: fas9000/index.html
+permalink: a700/index.html
 summary: The storage system documentation lets you install, setup, and maintain your system.
 ---
 
-= FAS9000 System Documentation
+= AFF A700 System Documentation
 :hardbreaks:
 :linkattrs:
 :imagesdir: ./media/

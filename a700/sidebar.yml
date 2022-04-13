@@ -1,9 +1,9 @@
-section: fas9000
-title: FAS9000 systems
-url: /fas9000/index.html
+section: a700
+title: AFF A700 systems
+url: /a700/index.html
 entries:
     - title: Install and setup
-      pdf-filename: FAS9000 Install and Setup
+      pdf-filename: AFF A700 Install and Setup
       entries:
       - title: Choose install and setup experience
         url: /fas9000/install-setup.html
@@ -14,11 +14,11 @@ entries:
       - title: Detailed steps
         url: /fas9000/install-detailed-guide.html
     - title: Maintain
-      pdf-filename: FAS9000 Maintain
+      pdf-filename: AFF A700 Maintain
       entries:
         # START boot media
       - title: Boot media
-        pdf-filename: FAS9000 Boot Media
+        pdf-filename: AFF A700 Boot Media
         entries:
         - title: Overview
           url: /fas9000/bootmedia-replace-overview.html
@@ -42,7 +42,7 @@ entries:
       - title: Caching module (hot-swap)
         url: /fas9000/caching-module-hot-swap.html
       - title: Chassis
-        pdf-filename: FAS9000 Chassis
+        pdf-filename: AFF A700 Chassis
         entries:
         - title: Overview
           url: /fas9000/chassis-replace-overview.html
@@ -54,7 +54,7 @@ entries:
           url: /fas9000/chassis-replace-complete-system-restore-rma.html
       # START controller module replacement
       - title: Controller module
-        pdf-filename: FAS9000 Controller
+        pdf-filename: AFF A700 Controller
         entries:
         - title: Overview
           url: /fas9000/controller-replace-overview.html
@@ -87,7 +87,7 @@ entries:
         url: /fas9000/rtc-battery-replace.html
         # START X91148A module
       - title: X91148A module
-        pdf-filename: FAS9000 X91148A Module
+        pdf-filename: AFF A700 X91148A Module
         entries:
         - title: Overview
           url: /fas9000/x91148a-module-install-overview.html
@@ -95,4 +95,3 @@ entries:
           url: /fas9000/x91148a-modules-with-open-slots-add.html
         - title: AFF A700 system no open slots
           url: /fas9000/x91148a-modules-with-no-open-slots-add.html
-          # END X91148A module

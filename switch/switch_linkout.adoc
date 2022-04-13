@@ -1,5 +1,5 @@
 ---
-permalink: other/switch-linkout.html
+permalink: switch/switch-linkout.html
 sidebar: sidebar
 keywords: cisco, Nexus 5596, Nexus 3232C, Nexus 3132Q-V, CN1610, CN1601, Nexus 9336-FX2, Nexus 92300YC, BES-53248
 summary: You can use these links for other switch models.
