@@ -45,12 +45,52 @@
   <link rel="stylesheet" href='/us-en/ontap-systems/css/na-utility.css' type='text/css'>
   <link rel="stylesheet" href='/us-en/ontap-systems/css/na-sidebar.css' type='text/css'>
   <link rel='stylesheet' href='/us-en/ontap-systems/css/clouddocs.css' type='text/css'>
+  <link rel='stylesheet' href='/us-en/ontap-systems/css/custom-dropdown.css' type='text/css'>
   <link rel='stylesheet' href='/us-en/ontap-systems/css/na-pagenav.css' type='text/css'>
 
   
   <link rel="stylesheet" href="/us-en/ontap-systems/css/landing-page.css" type="text/css">
   <link rel="stylesheet" href="/us-en/ontap-systems/css/tabbed-blocks.css" type="text/css">
-  <link rel='stylesheet' href='/us-en/ontap-systems/css/na-feature.css' type='text/css'><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <!-- Canonical url -->
+  <link rel='stylesheet' href='/us-en/ontap-systems/css/na-feature.css' type='text/css'><!-- Top level site integrations --><script>
+    if (document.location.hostname === "docs.netapp.com") {
+      var head = document.getElementsByTagName('head')[0];
+      var onetrustConsent = document.createElement("script");
+      onetrustConsent.type = "text/javascript";
+      onetrustConsent.src = "https://cdn.cookielaw.org/consent/72570c5c-fe30-465f-b0e0-b77f7fb4ae34/OtAutoBlock.js";
+      head.appendChild(onetrustConsent);
+
+      var onetrustScript = document.createElement("script");
+      onetrustScript.type = "text/javascript";
+      onetrustScript.src = "https://cdn.cookielaw.org/scripttemplates/otSDKStub.js";
+      onetrustScript.charset = "UTF-8";
+      onetrustScript.dataset.documentLanguage = "true";
+      onetrustScript.dataset.domainScript = "72570c5c-fe30-465f-b0e0-b77f7fb4ae34";
+      head.appendChild(onetrustScript);
+    }
+
+    function OptanonWrapper() { }
+
+    if (document.location.hostname === "docs.netapp.com") {
+      var adobe = document.createElement("script");
+      adobe.type = "text/plain";
+      adobe.className = "optanon-category-C0002";
+      adobe.src = "//assets.adobedtm.com/60287eadf1ee/c284da483c83/launch-e9ff3acac59f.min.js";
+      head.appendChild(adobe);
+
+      var google = document.createElement("script");
+      google.type = "text/plain";
+      google.className = "optanon-category-C0002";
+      google.src = "https://www.googletagmanager.com/gtag/js?id=UA-81697994-3";
+      head.appendChild(google);
+
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-81697994-3');
+    }
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
 
   <!-- Used for Product Family Page Sidebar Visibility --><!-- Used to import Promise for IE. Required for SearchKit -->
@@ -60,15 +100,6 @@
 
   <script src='/us-en/ontap-systems/js/na-utility.js'></script>
   <script src='/us-en/ontap-systems/js/clouddocs.js'></script>
-  <script>
-  if (document.location.hostname === "docs.netapp.com") {
-    var head = document.getElementsByTagName('head')[0];
-    var adobe = document.createElement("script");
-    adobe.type = "text/javascript";
-    adobe.src = "//assets.adobedtm.com/60287eadf1ee/c284da483c83/launch-e9ff3acac59f.min.js";
-    head.appendChild(adobe);
-  }
-  </script>
   <script src='/us-en/ontap-systems/js/jquery.navgoco.min.js'></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
   <script src='/us-en/ontap-systems/js/toc.js'></script>
@@ -121,16 +152,8 @@
               $("#tg-sb-icon").toggleClass('fa-toggle-off');
           });
       });
-  </script><script async src="https://www.googletagmanager.com/gtag/js?id=UA-81697994-3"></script>
-  <script>
-  if (document.location.hostname === "docs.netapp.com") {
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'UA-81697994-3');
-  }
   </script>
-  <script src='/us-en/ontap-systems/js/version-dropdown.js'></script>
+  <script src='/us-en/ontap-systems/js/custom-dropdown.js'></script>
   <script src='/us-en/ontap-systems/js/FileSaver.min.js'></script>
   <script src='/us-en/ontap-systems/js/jszip-utils.min.js'></script>
   <script src='/us-en/ontap-systems/js/jszip.min.js'></script>
@@ -138,20 +161,15 @@
 </head>
 
 
-  <body class role="document">
+  <body class role="document" data-flavor="">
     <div id="page" class="n-off-canvas-menu">
       <div class="n-off-canvas-menu__menu"><!--TODO: Add offcanvas code --></div>
       <div class="n-off-canvas-menu__content-wrap">
         <header class="site-header" id="banner">
   
   <!-- Start Page Toolbar -->
-  <div class="page-nav-toolbar">
-    <div id="version-dropdown"></div>
-    <div class="page-nav-contribute"  >
-      <a target="_blank" href="https://github.com/NetAppDocs/ontap-systems/issues/new?body=Page%3A%20[Overview of boot media replacement - AFF A700 and FAS9000](https://docs.netapp.com/us-en/ontap-systems/fas9000/bootmedia-replace-overview.html)" class="page-nav-contribute-link" role="button"><img src="/us-en/ontap-systems/images/discuss-sm.svg" class="github-icon" />Request doc changes</a>
-      <a target="_blank" href="https://github.com/NetAppDocs/ontap-systems/blob/main/fas9000/bootmedia_replace_overview.adoc" class="page-nav-contribute-link" role="button"><img src="/us-en/ontap-systems/images/edit-sm.svg" class="github-icon" />Edit this page</a>
-      <a target="_blank" href="https://docs.netapp.com/us-en/contribute/" class="page-nav-contribute-link"  ><img src="/us-en/ontap-systems/images/article-sm.svg" class="github-icon" />Learn how to contribute</a>
-    </div>
+  
+  <div class="page-nav-toolbar"><div class="page-nav-contribute"><a target="_blank" href="https://github.com/NetAppDocs/ontap-systems/issues/new?body=Page%3A%20[Overview of boot media replacement - AFF A700 and FAS9000](https://docs.netapp.com/us-en/ontap-systems/fas9000/bootmedia-replace-overview.html)" class="page-nav-contribute-link" role="button"><img src="/us-en/ontap-systems/images/discuss-sm.svg" class="github-icon" />Request doc changes</a><a target="_blank" href="https://github.com/NetAppDocs/ontap-systems/blob/main/fas9000/bootmedia_replace_overview.adoc" class="page-nav-contribute-link" role="button"><img src="/us-en/ontap-systems/images/edit-sm.svg" class="github-icon" />Edit this page</a><a target="_blank" href="https://docs.netapp.com/us-en/contribute/" class="page-nav-contribute-link"  ><img src="/us-en/ontap-systems/images/article-sm.svg" class="github-icon" />Learn how to contribute</a></div>
     <div class="page-nav-container">
       <nav class="page-nav-fixed">
         <div class="page-nav-title">ON THIS PAGE</div>
@@ -161,6 +179,7 @@
       </nav>
     </div>
   </div>
+  
   
   <!-- Start top_hat -->
   <div class="n-top-hat">
@@ -244,7 +263,8 @@
           data-did-you-mean="Search for {suggestion}." 
           data-no-results-found-did-you-mean="No results found for {query}. Did you mean {suggestion}?" 
           data-results-found="{hitCount} results found"  
-          data-sk-es-pf-indexes=""></div>
+          data-sk-es-pf-indexes=""
+          data-flavor=""></div>
           <button class="n-property-bar__search-toggle-button" type="button">
             <svg class="n-icon-search n-property-bar__search-toggle-button-icon" aria-labelledby="title">
               <title>search</title>
@@ -333,6 +353,9 @@
 </div>
 <div class="n-pdf-body-container">
   <ul id="toggleContainerPdf" class="n-pdf-body" style="display:none;"><li class="pdf-ux-container">
+        
+        
+        
         <a target="_blank" href="/us-en/ontap-systems/pdfs/fullsite-sidebar/AFF_and_FAS_System_Documentation.pdf" >
           <img src="/us-en/ontap-systems/images/pdf.png" width="16" height="16"/>PDF of this doc site</a>
 
@@ -341,6 +364,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/us-en/ontap-systems/pdfs/sidebar/Get_started.pdf" 
@@ -367,6 +393,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/us-en/ontap-systems/pdfs/sidebar/AFF_systems.pdf" 
@@ -380,6 +409,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/us-en/ontap-systems/pdfs/sidebar/AFF_C190_systems.pdf" 
@@ -393,6 +425,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/us-en/ontap-systems/pdfs/sidebar/AFF_C190_Install_and_Setup.pdf" 
@@ -423,6 +458,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/us-en/ontap-systems/pdfs/sidebar/AFF_C190_Maintain.pdf" 
@@ -436,6 +474,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/us-en/ontap-systems/pdfs/sidebar/AFF_C190_Boot_Media.pdf" 
@@ -472,6 +513,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/us-en/ontap-systems/pdfs/sidebar/AFF_C190_Chassis.pdf" 
@@ -502,6 +546,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/us-en/ontap-systems/pdfs/sidebar/AFF_C190_Controller_Module.pdf" 
@@ -564,6 +611,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/us-en/ontap-systems/pdfs/sidebar/AFF_A200_systems.pdf" 
@@ -577,6 +627,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/us-en/ontap-systems/pdfs/sidebar/AFF_A200_Install_and_Setup.pdf" 
@@ -607,6 +660,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/us-en/ontap-systems/pdfs/sidebar/AFF_A200_Maintain.pdf" 
@@ -620,6 +676,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/us-en/ontap-systems/pdfs/sidebar/AFF_A200_Boot_Media.pdf" 
@@ -656,6 +715,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/us-en/ontap-systems/pdfs/sidebar/AFF_A200_Chassis.pdf" 
@@ -686,6 +748,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/us-en/ontap-systems/pdfs/sidebar/AFF_A200_Controller_Module.pdf" 
@@ -748,6 +813,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/us-en/ontap-systems/pdfs/sidebar/AFF_A220_systems.pdf" 
@@ -761,6 +829,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/us-en/ontap-systems/pdfs/sidebar/AFF_A220_Install_and_Setup.pdf" 
@@ -791,6 +862,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/us-en/ontap-systems/pdfs/sidebar/AFF_A220_Maintain.pdf" 
@@ -804,6 +878,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/us-en/ontap-systems/pdfs/sidebar/AFF_A220_Boot_Media.pdf" 
@@ -842,6 +919,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/us-en/ontap-systems/pdfs/sidebar/AFF_A220_and_FAS2700_Chassis.pdf" 
@@ -872,6 +952,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/us-en/ontap-systems/pdfs/sidebar/AFF_A220_Controller.pdf" 
@@ -934,6 +1017,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/us-en/ontap-systems/pdfs/sidebar/AFF_A250_systems.pdf" 
@@ -947,6 +1033,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/us-en/ontap-systems/pdfs/sidebar/AFF_A250_Install_and_Setup.pdf" 
@@ -977,6 +1066,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/us-en/ontap-systems/pdfs/sidebar/AFF_A250_Maintain.pdf" 
@@ -990,6 +1082,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/us-en/ontap-systems/pdfs/sidebar/AFF_A250_Boot_Media.pdf" 
@@ -1026,6 +1121,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/us-en/ontap-systems/pdfs/sidebar/AFF_A250_Chassis.pdf" 
@@ -1056,6 +1154,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/us-en/ontap-systems/pdfs/sidebar/AFF_A250_Controller_Module.pdf" 
@@ -1122,6 +1223,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/us-en/ontap-systems/pdfs/sidebar/AFF_A300_systems.pdf" 
@@ -1135,6 +1239,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/us-en/ontap-systems/pdfs/sidebar/AFF_A300_Install_and_Setup.pdf" 
@@ -1165,6 +1272,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/us-en/ontap-systems/pdfs/sidebar/AFF_A300_Maintain.pdf" 
@@ -1178,6 +1288,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/us-en/ontap-systems/pdfs/sidebar/AFF_A300_Boot_Media.pdf" 
@@ -1216,6 +1329,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/us-en/ontap-systems/pdfs/sidebar/AFF_A300_Chassis.pdf" 
@@ -1246,6 +1362,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/us-en/ontap-systems/pdfs/sidebar/AFF_A300_Controller_Module.pdf" 
@@ -1310,6 +1429,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/us-en/ontap-systems/pdfs/sidebar/AFF_A320_systems.pdf" 
@@ -1323,6 +1445,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/us-en/ontap-systems/pdfs/sidebar/AFF_A320_Install_and_Setup.pdf" 
@@ -1353,6 +1478,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/us-en/ontap-systems/pdfs/sidebar/AFF_A320_Maintain.pdf" 
@@ -1366,6 +1494,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/us-en/ontap-systems/pdfs/sidebar/AFF_A320_Boot_Media.pdf" 
@@ -1402,6 +1533,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/us-en/ontap-systems/pdfs/sidebar/AFF_A320_Chassis.pdf" 
@@ -1432,6 +1566,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/us-en/ontap-systems/pdfs/sidebar/AFF_A320_Controller_Module.pdf" 
@@ -1498,6 +1635,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/us-en/ontap-systems/pdfs/sidebar/AFF_A400_systems.pdf" 
@@ -1511,6 +1651,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/us-en/ontap-systems/pdfs/sidebar/AFF_A400_Install_and_Setup.pdf" 
@@ -1541,6 +1684,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/us-en/ontap-systems/pdfs/sidebar/AFF_A400_Maintain.pdf" 
@@ -1554,6 +1700,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/us-en/ontap-systems/pdfs/sidebar/AFF_A400_Boot_Media.pdf" 
@@ -1592,6 +1741,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/us-en/ontap-systems/pdfs/sidebar/AFF_A400_Chassis.pdf" 
@@ -1622,6 +1774,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/us-en/ontap-systems/pdfs/sidebar/AFF_A400_Controller_Module.pdf" 
@@ -1688,6 +1843,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/us-en/ontap-systems/pdfs/sidebar/AFF_A700_systems.pdf" 
@@ -1701,6 +1859,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/us-en/ontap-systems/pdfs/sidebar/AFF_A700_Install_and_Setup.pdf" 
@@ -1731,6 +1892,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/us-en/ontap-systems/pdfs/sidebar/AFF_A700_Maintain.pdf" 
@@ -1744,6 +1908,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/us-en/ontap-systems/pdfs/sidebar/AFF_A700_Boot_Media.pdf" 
@@ -1795,6 +1962,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/us-en/ontap-systems/pdfs/sidebar/AFF_A700_Chassis.pdf" 
@@ -1825,6 +1995,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/us-en/ontap-systems/pdfs/sidebar/AFF_A700_Controller.pdf" 
@@ -1875,6 +2048,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/us-en/ontap-systems/pdfs/sidebar/AFF_A700_X91148A_Module.pdf" 
@@ -1921,6 +2097,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/us-en/ontap-systems/pdfs/sidebar/AFF_A700s_systems.pdf" 
@@ -1934,6 +2113,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/us-en/ontap-systems/pdfs/sidebar/AFF_A700s_Install_and_Setup.pdf" 
@@ -1964,6 +2146,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/us-en/ontap-systems/pdfs/sidebar/AFF_A700s_Maintain.pdf" 
@@ -1977,6 +2162,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/us-en/ontap-systems/pdfs/sidebar/AFF_A700s_Boot_Media.pdf" 
@@ -2015,6 +2203,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/us-en/ontap-systems/pdfs/sidebar/AFF_A700s_Chassis.pdf" 
@@ -2045,6 +2236,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/us-en/ontap-systems/pdfs/sidebar/AFF_A700s_Controller.pdf" 
@@ -2083,6 +2277,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/us-en/ontap-systems/pdfs/sidebar/Fan.pdf" 
@@ -2145,6 +2342,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/us-en/ontap-systems/pdfs/sidebar/AFF_A800_systems.pdf" 
@@ -2158,6 +2358,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/us-en/ontap-systems/pdfs/sidebar/AFF_A800_Install_and_Setup.pdf" 
@@ -2188,6 +2391,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/us-en/ontap-systems/pdfs/sidebar/AFF_A800_Maintain.pdf" 
@@ -2201,6 +2407,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/us-en/ontap-systems/pdfs/sidebar/AFF_A800_Boot_Media.pdf" 
@@ -2237,6 +2446,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/us-en/ontap-systems/pdfs/sidebar/AFF_A800_Chassis.pdf" 
@@ -2267,6 +2479,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/us-en/ontap-systems/pdfs/sidebar/AFF_A800_Controller_Module.pdf" 
@@ -2335,6 +2550,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/us-en/ontap-systems/pdfs/sidebar/AFF_A900_systems.pdf" 
@@ -2348,6 +2566,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/us-en/ontap-systems/pdfs/sidebar/Install_and_setup.pdf" 
@@ -2378,6 +2599,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/us-en/ontap-systems/pdfs/sidebar/Maintain.pdf" 
@@ -2393,6 +2617,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/us-en/ontap-systems/pdfs/sidebar/Boot_media.pdf" 
@@ -2429,6 +2656,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/us-en/ontap-systems/pdfs/sidebar/Chassis.pdf" 
@@ -2459,6 +2689,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/us-en/ontap-systems/pdfs/sidebar/Controller_module.pdf" 
@@ -2536,6 +2769,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/us-en/ontap-systems/pdfs/sidebar/FAS_systems.pdf" 
@@ -2549,6 +2785,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/us-en/ontap-systems/pdfs/sidebar/FAS500f_systems.pdf" 
@@ -2562,6 +2801,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/us-en/ontap-systems/pdfs/sidebar/FAS500f_Install_and_Setup.pdf" 
@@ -2592,6 +2834,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/us-en/ontap-systems/pdfs/sidebar/FAS500f_Maintain.pdf" 
@@ -2605,6 +2850,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/us-en/ontap-systems/pdfs/sidebar/FAS500f_Boot_Media.pdf" 
@@ -2641,6 +2889,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/us-en/ontap-systems/pdfs/sidebar/FAS500f_Chassis.pdf" 
@@ -2671,6 +2922,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/us-en/ontap-systems/pdfs/sidebar/FAS500f_Controller_Module.pdf" 
@@ -2737,6 +2991,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/us-en/ontap-systems/pdfs/sidebar/FAS2600_systems.pdf" 
@@ -2750,6 +3007,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/us-en/ontap-systems/pdfs/sidebar/FAS2600_Install_and_Setup.pdf" 
@@ -2780,6 +3040,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/us-en/ontap-systems/pdfs/sidebar/FAS2600_Maintain.pdf" 
@@ -2793,6 +3056,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/us-en/ontap-systems/pdfs/sidebar/FAS2600_Boot_Media.pdf" 
@@ -2831,6 +3097,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/us-en/ontap-systems/pdfs/sidebar/FAS2600_Chassis.pdf" 
@@ -2861,6 +3130,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/us-en/ontap-systems/pdfs/sidebar/FAS2600_Controller_Module.pdf" 
@@ -2923,6 +3195,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/us-en/ontap-systems/pdfs/sidebar/FAS2700_systems.pdf" 
@@ -2936,6 +3211,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/us-en/ontap-systems/pdfs/sidebar/FAS2700_Install_and_Setup.pdf" 
@@ -2966,6 +3244,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/us-en/ontap-systems/pdfs/sidebar/FAS2700_Maintain.pdf" 
@@ -2979,6 +3260,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/us-en/ontap-systems/pdfs/sidebar/FAS2700_Boot_Media.pdf" 
@@ -3017,6 +3301,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/us-en/ontap-systems/pdfs/sidebar/FAS2700_Chassis.pdf" 
@@ -3047,6 +3334,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/us-en/ontap-systems/pdfs/sidebar/FAS2700_Controller.pdf" 
@@ -3109,6 +3399,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/us-en/ontap-systems/pdfs/sidebar/FAS8200_systems.pdf" 
@@ -3122,6 +3415,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/us-en/ontap-systems/pdfs/sidebar/FAS8200_Install_and_Setup.pdf" 
@@ -3152,6 +3448,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/us-en/ontap-systems/pdfs/sidebar/FAS8200_Maintain.pdf" 
@@ -3165,6 +3464,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/us-en/ontap-systems/pdfs/sidebar/FAS8200_Boot_Media.pdf" 
@@ -3205,6 +3507,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/us-en/ontap-systems/pdfs/sidebar/FAS8200_Chassis.pdf" 
@@ -3235,6 +3540,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/us-en/ontap-systems/pdfs/sidebar/FAS8200_Controller_Module.pdf" 
@@ -3299,6 +3607,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/us-en/ontap-systems/pdfs/sidebar/FAS8300_and_FAS8700_systems.pdf" 
@@ -3312,6 +3623,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/us-en/ontap-systems/pdfs/sidebar/AFF_FAS8300_and_FAS8700_Install_and_Setup.pdf" 
@@ -3342,6 +3656,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/us-en/ontap-systems/pdfs/sidebar/AFF_FAS8300_and_FAS8700_Maintain.pdf" 
@@ -3355,6 +3672,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/us-en/ontap-systems/pdfs/sidebar/AFF_FAS8300_and_FAS8700_Boot_Media.pdf" 
@@ -3395,6 +3715,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/us-en/ontap-systems/pdfs/sidebar/AFF_FAS8300_and_FAS8700_Chassis.pdf" 
@@ -3425,6 +3748,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/us-en/ontap-systems/pdfs/sidebar/AFF_FAS8300_and_FAS8700_Controller.pdf" 
@@ -3491,6 +3817,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/us-en/ontap-systems/pdfs/sidebar/FAS9000_systems.pdf" 
@@ -3504,6 +3833,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/us-en/ontap-systems/pdfs/sidebar/FAS9000_Install_and_Setup.pdf" 
@@ -3534,6 +3866,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/us-en/ontap-systems/pdfs/sidebar/FAS9000_Maintain.pdf" 
@@ -3547,6 +3882,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/us-en/ontap-systems/pdfs/sidebar/FAS9000_Boot_Media.pdf" 
@@ -3598,6 +3936,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/us-en/ontap-systems/pdfs/sidebar/FAS9000_Chassis.pdf" 
@@ -3628,6 +3969,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/us-en/ontap-systems/pdfs/sidebar/FAS9000_Controller.pdf" 
@@ -3678,6 +4022,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/us-en/ontap-systems/pdfs/sidebar/FAS9000_X91148A_Module.pdf" 
@@ -3732,9 +4079,14 @@
 
 
 
+
+
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/us-en/ontap-systems/pdfs/sidebar/System_level_diagnostics.pdf" 
@@ -3773,6 +4125,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/us-en/ontap-systems/pdfs/sidebar/Drive_shelves.pdf" 
@@ -3786,6 +4141,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/us-en/ontap-systems/pdfs/sidebar/NS224_shelves.pdf" 
@@ -3799,6 +4157,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/us-en/ontap-systems/pdfs/sidebar/NS224_Shelves_Install_and_Cable.pdf" 
@@ -3827,6 +4188,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/us-en/ontap-systems/pdfs/sidebar/NS224_shelf_maintain.pdf" 
@@ -3874,6 +4238,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/us-en/ontap-systems/pdfs/sidebar/SAS_shelves_with_IOM12_modules.pdf" 
@@ -3887,6 +4254,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/us-en/ontap-systems/pdfs/sidebar/Shelves_with_IOM12_Modules_Install_and_Cable.pdf" 
@@ -3908,6 +4278,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/us-en/ontap-systems/pdfs/sidebar/SAS_cabling_rules__worksheets__and_examples.pdf" 
@@ -3957,6 +4330,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/us-en/ontap-systems/pdfs/sidebar/Shelves_with_IOM12_Modules_Maintain.pdf" 
@@ -4015,6 +4391,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/us-en/ontap-systems/pdfs/sidebar/Cabinet_and_rail_kits.pdf" 
@@ -4032,6 +4411,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/us-en/ontap-systems/pdfs/sidebar/42U_1280_mm_system_cabinet.pdf" 
@@ -4045,6 +4427,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/us-en/ontap-systems/pdfs/sidebar/Prepare_to_install_cabinet.pdf" 
@@ -4077,6 +4462,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/us-en/ontap-systems/pdfs/sidebar/Install_cabinet.pdf" 
@@ -4113,6 +4501,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/us-en/ontap-systems/pdfs/sidebar/Reverse_cabinet_front_door.pdf" 
@@ -4354,7 +4745,7 @@
         Power supply
       </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/a200/rtc-battery-replace.html">
         Real-time clock battery
-      </a></li></ul></li></ul></li><li class="subfolders "><a href="/us-en/ontap-systems/fas2700/index.html">
+      </a></li></ul></li></ul></li><li class="subfolders "><a href="/us-en/ontap-systems/a220/index.html">
         <div class="na-navbar-padding"> AFF A220 systems</div>
       </a>
       <ul><li class="subfolders "><a href="#">
@@ -4724,7 +5115,7 @@
         Power supply
       </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/a400/rtc-battery-replace.html">
         Real-time clock battery
-      </a></li></ul></li></ul></li><li class="subfolders "><a href="/us-en/ontap-systems/fas9000/index.html">
+      </a></li></ul></li></ul></li><li class="subfolders "><a href="/us-en/ontap-systems/a700/index.html">
         <div class="na-navbar-padding"> AFF A700 systems</div>
       </a>
       <ul><li class="subfolders "><a href="#">
@@ -5526,8 +5917,10 @@
         AFF A700 system with open slots
       </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/fas9000/x91148a-modules-with-no-open-slots-add.html">
         AFF A700 system no open slots
-      </a></li></ul></li></ul></li></ul></li></ul></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/platform-supplemental/all-san-array.html">
-        All SAN Array systems
+      </a></li></ul></li></ul></li></ul></li></ul></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/all-san/all-san-array.html">
+        All SAN array systems
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/upgrade/upgrade-linkout.html">
+        Platform upgrade
       </a></li><li class="subfolders "><a href="#">
         <div class="na-navbar-padding"> System-level diagnostics</div>
       </a>
@@ -5635,7 +6028,7 @@
         Power supply
       </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/sas3/service-monitor-leds.html">
         Shelf LED status conditions
-      </a></li></ul></li></ul></li></ul></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/other/switch-linkout.html">
+      </a></li></ul></li></ul></li></ul></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/switch/switch-linkout.html">
         Switches
       </a></li><li class="subfolders "><a href="#">
         <div class="na-navbar-padding"> Cabinet and rail kits</div>
@@ -5708,6 +6101,7 @@
 <!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
 <script>$("li.active").parents('li').toggleClass("active");</script>
 
+
   </div>
   
 
@@ -5747,7 +6141,7 @@
   
 
 <span>Contributors
-  <a target="_blank" href="https://github.com/netapp-martyh">
+  <a target="_blank" class="ext-link-indicator" href="https://github.com/netapp-martyh">
     <img  class="avatar avatar-small"
           alt="netapp-martyh"
           width="20" height="20"
@@ -5755,7 +6149,7 @@
           style="border-radius: 50%;"/>
   </a>
   
-  <a target="_blank" href="https://github.com/netapp-jsnyder">
+  <a target="_blank" class="ext-link-indicator" href="https://github.com/netapp-jsnyder">
     <img  class="avatar avatar-small"
           alt="netapp-jsnyder"
           width="20" height="20"
@@ -5763,7 +6157,7 @@
           style="border-radius: 50%;"/>
   </a>
   
-  <a target="_blank" href="https://github.com/dougthomp">
+  <a target="_blank" class="ext-link-indicator" href="https://github.com/dougthomp">
     <img  class="avatar avatar-small"
           alt="dougthomp"
           width="20" height="20"
@@ -5831,98 +6225,122 @@
   <div class="n-footer__bottom">
     <div class="n-container">
       <div class="n-footer__bottom-left">
-
         <div class="n-footer__copyright">
           <ul class="n-footer__copyright-list">
             <li class="n-footer__copyright-link">
-            <a href="https://www.netapp.com/us/legal/copyright.aspx">© 2022 NetApp, Inc.</a>
+              <a href="https://www.netapp.com/us/legal/copyright.aspx">© 2022 NetApp, Inc.</a>
             </li>
-
-</ul>
-</div>
-<div class="n-footer__social-links">
-<ul class="n-footer__social-link-list">
-<li class="n-footer__social-link-list-item">
-<a class="n-footer__social-link" data-ntap-social="follow-blog" href="https://blog.netapp.com" target="_blank" title="blog" alt="blog">
-<span class="n-footer__social-link-text">blog</span>
-<svg class="n-icon-blog n-footer__social-link-icon" aria-labelledby="title">
-  <title>blog@</title>
-  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/us-en/ontap-systems/common/svg/sprite.svg#blog"></use>
-</svg>
-
-</a>
-</li>
-<li class="n-footer__social-link-list-item">
-<a class="n-footer__social-link" data-ntap-social="follow-community" href="https://community.netapp.com/" target="_blank" title="community" alt="community">
-<span class="n-footer__social-link-text">community</span>
-<svg class="n-icon-community n-footer__social-link-icon" aria-labelledby="title">
-<title>community@</title>
-<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/us-en/ontap-systems/common/svg/sprite.svg#comments"></use>
-</svg>
-
-</a>
-</li>
-<li class="n-footer__social-link-list-item">
-<a class="n-footer__social-link" data-ntap-social="follow-twitter" href="https://twitter.com/netapp" target="_blank" title="twitter" alt="twitter">
-<span class="n-footer__social-link-text">twitter</span>
-<svg class="n-icon-twitter n-footer__social-link-icon" aria-labelledby="title">
-<title>twitter@</title>
-<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/us-en/ontap-systems/common/svg/sprite.svg#twitter"></use>
-</svg>
-
-</a>
-</li>
-<li class="n-footer__social-link-list-item">
-<a class="n-footer__social-link" data-ntap-social="follow-facebook" href="https://www.facebook.com/NetApp" target="_blank" title="facebook" alt="facebook">
-<span class="n-footer__social-link-text">facebook</span>
-<svg class="n-icon-facebook n-footer__social-link-icon" aria-labelledby="title">
-<title>facebook@</title>
-<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/us-en/ontap-systems/common/svg/sprite.svg#facebook"></use>
-</svg>
-
-</a>
-</li>
-<li class="n-footer__social-link-list-item">
-<a class="n-footer__social-link" data-ntap-social="follow-linkedin" href="https://www.linkedin.com/company/netapp" target="_blank" title="linkedin" alt="linkedin">
-<span class="n-footer__social-link-text">linkedin</span>
-<svg class="n-icon-linkedin n-footer__social-link-icon" aria-labelledby="title">
-<title>linkedin@</title>
-<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/us-en/ontap-systems/common/svg/sprite.svg#linkedin"></use>
-</svg>
-
-</a>
-</li>
-<li class="n-footer__social-link-list-item">
-<a class="n-footer__social-link" data-ntap-social="follow-youtube" href="https://www.youtube.com/user/NetAppTV" target="_blank" title="youtube" alt="youtube">
-<span class="n-footer__social-link-text">youtube</span>
-<svg class="n-icon-youtube n-footer__social-link-icon" aria-labelledby="title">
-<title>youtube@</title>
-<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/us-en/ontap-systems/common/svg/sprite.svg#youtube"></use>
-</svg>
-
-</a>
-</li>
-<li class="n-footer__social-link-list-item">
-<a class="n-footer__social-link" data-ntap-social="follow-slideshare" href="https://www.slideshare.net/NetApp" target="_blank" title="slideshare" alt="slideshare">
-<span class="n-footer__social-link-text">slideshare</span>
-<svg class="n-icon-slideshare n-footer__social-link-icon" aria-labelledby="title">
-<title>slideshare@</title>
-<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/us-en/ontap-systems/common/svg/sprite.svg#slideshare"></use>
-</svg>
-
-</a>
-</li>
-</ul>
-</div>
-
-</div>
-<div class="n-footer__bottom-right">
-  <p class="n-footer__fine-print">Have feedback for our website?<a target="_self" href="javascript:netapp_mailto()" class="n-footer__copyright">Let us know</a>
-  <a href="https://docs.netapp.com/us-en/announcements/" class="n-footer__copyright">Announcements</a>
-  </p>
-</div>
-</div>
-</div>
+            <li class="n-footer__copyright-link">
+              <a href="https://www.netapp.com/company/legal/terms-of-use/">Terms of Use</a>
+            </li>
+            <li class="n-footer__copyright-link">
+              <a href="https://www.netapp.com/company/legal/privacy-policy/">Privacy Policy</a>
+            </li>
+            <li class="n-footer__copyright-link">
+              <a href="https://www.netapp.com/company/legal/cookie-policy/">Cookie Policy</a>
+            </li>
+            <li class="n-footer__copyright-link">
+              <a class="ot-sdk-show-settings">Cookie Settings</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="n-footer__bottom-right">
+        <div class="n-footer__copyright">
+          <ul class="n-footer__copyright-list">
+            <li class="n-footer__copyright-link">
+              <span class="n-footer__fine-print">Have feedback for our website?</span>
+              <a target="_self" href="javascript:netapp_mailto()">Let us know</a>
+            </li>
+            <li class="n-footer__copyright-link">
+              <a href="https://docs.netapp.com/us-en/announcements/">Announcements</a>
+            </li>
+          </ul>
+        </div>
+        <div class="n-footer__social-links">
+          <ul class="n-footer__social-link-list">
+            <li class="n-footer__social-link-list-item">
+              <a class="n-footer__social-link" data-ntap-social="follow-blog" href="https://blog.netapp.com"
+                target="_blank" title="blog" alt="blog">
+                <span class="n-footer__social-link-text">blog</span>
+                <svg class="n-icon-blog n-footer__social-link-icon" aria-labelledby="title">
+                  <title>blog@</title>
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xlink:href="/us-en/ontap-systems/common/svg/sprite.svg#blog"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="n-footer__social-link-list-item">
+              <a class="n-footer__social-link" data-ntap-social="follow-community" href="https://community.netapp.com/"
+                target="_blank" title="community" alt="community">
+                <span class="n-footer__social-link-text">community</span>
+                <svg class="n-icon-community n-footer__social-link-icon" aria-labelledby="title">
+                  <title>community@</title>
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xlink:href="/us-en/ontap-systems/common/svg/sprite.svg#comments"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="n-footer__social-link-list-item">
+              <a class="n-footer__social-link" data-ntap-social="follow-twitter" href="https://twitter.com/netapp"
+                target="_blank" title="twitter" alt="twitter">
+                <span class="n-footer__social-link-text">twitter</span>
+                <svg class="n-icon-twitter n-footer__social-link-icon" aria-labelledby="title">
+                  <title>twitter@</title>
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xlink:href="/us-en/ontap-systems/common/svg/sprite.svg#twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="n-footer__social-link-list-item">
+              <a class="n-footer__social-link" data-ntap-social="follow-facebook" href="https://www.facebook.com/NetApp"
+                target="_blank" title="facebook" alt="facebook">
+                <span class="n-footer__social-link-text">facebook</span>
+                <svg class="n-icon-facebook n-footer__social-link-icon" aria-labelledby="title">
+                  <title>facebook@</title>
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xlink:href="/us-en/ontap-systems/common/svg/sprite.svg#facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="n-footer__social-link-list-item">
+              <a class="n-footer__social-link" data-ntap-social="follow-linkedin"
+                href="https://www.linkedin.com/company/netapp" target="_blank" title="linkedin" alt="linkedin">
+                <span class="n-footer__social-link-text">linkedin</span>
+                <svg class="n-icon-linkedin n-footer__social-link-icon" aria-labelledby="title">
+                  <title>linkedin@</title>
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xlink:href="/us-en/ontap-systems/common/svg/sprite.svg#linkedin"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="n-footer__social-link-list-item">
+              <a class="n-footer__social-link" data-ntap-social="follow-youtube"
+                href="https://www.youtube.com/user/NetAppTV" target="_blank" title="youtube" alt="youtube">
+                <span class="n-footer__social-link-text">youtube</span>
+                <svg class="n-icon-youtube n-footer__social-link-icon" aria-labelledby="title">
+                  <title>youtube@</title>
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xlink:href="/us-en/ontap-systems/common/svg/sprite.svg#youtube"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="n-footer__social-link-list-item">
+              <a class="n-footer__social-link" data-ntap-social="follow-slideshare"
+                href="https://www.slideshare.net/NetApp" target="_blank" title="slideshare" alt="slideshare">
+                <span class="n-footer__social-link-text">slideshare</span>
+                <svg class="n-icon-slideshare n-footer__social-link-icon" aria-labelledby="title">
+                  <title>slideshare@</title>
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xlink:href="/us-en/ontap-systems/common/svg/sprite.svg#slideshare"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
 </footer>
 
       </div><!-- Elasticsearch JS -->
