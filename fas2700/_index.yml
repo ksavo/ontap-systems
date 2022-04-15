@@ -34,7 +34,7 @@ indexpage:
         - title: NVMEM battery
           url: /nvmem-battery-replace.html
         - title: Power supply
-          url: /power-supply-swapout.html
+          url: /power-supply-swap-out.html
         - title: RTC battery
           url: /rtc-battery-replace.html
     - title: Learn
