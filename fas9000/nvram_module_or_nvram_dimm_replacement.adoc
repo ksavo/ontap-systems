@@ -25,25 +25,24 @@ The NVRAM module consists of the NVRAM10 and DIMMs and up to two NVMe SSD Flash 
 == Step 1: Shut down the impaired controller
 
 [.lead]
-You can shut down or take over the impaired controller using different procedures, depending on the storage system hardware configuration.
-
+ Shut down or take over the impaired controller using one of the following options.
 
 [role="tabbed-block"]
 ====
 
-.Option 1: Most configs
+.Option 1: Most systems
 --
 [.lead]
 include::../_include/shutdown_most_frus.adoc[]
 --
 
-.Option 2: MetroCluster config
+.Option 2: Controller is in a MetroCluster
 --
 [.lead]
 include::../_include/shutdown_any_mcc_supported.adoc[]
 --
 
-.Option 3: Two-node MetroCluster
+.Option 3: Controller is in a Two-node MetroCluster
 --
 [.lead]
 include::../_include/shutdown_2n_mcc.adoc[]

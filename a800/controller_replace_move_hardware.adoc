@@ -311,7 +311,6 @@ NOTE: Do not completely insert the controller module in the chassis until instru
 +
 NOTE: You will connect the rest of the cables to the controller module later in this procedure.
 
-. Plug the power cables into the power supplies and reinstall the power cable retainers.
 . Complete the reinstallation of the controller module:
  .. Firmly push the controller module into the chassis until it meets the midplane and is fully seated.
 +
@@ -322,5 +321,7 @@ NOTE: Do not use excessive force when sliding the controller module into the cha
 The controller module begins to boot as soon as it is fully seated in the chassis. Be prepared to interrupt the boot process.
 
  .. Rotate the locking latches upward, tilting them so that they clear the locking pins, and then lower them into the locked position.
- .. If you have not already done so, reinstall the cable management device.
  .. Interrupt the normal boot process by pressing `Ctrl-C`.
+
+. Plug the system cables and transceiver modules into the controller module and reinstall the cable management device.
+. Plug the power cables into the power supplies and reinstall the power cable retainers.
