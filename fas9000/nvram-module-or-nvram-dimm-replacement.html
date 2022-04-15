@@ -6136,24 +6136,24 @@
 <p class="page-details">
   
     
-    <time datetime="2022-03-29 00:48:44 +0000">03/29/2022</time>
+    <time datetime="2022-04-05 23:53:11 +0000">04/05/2022</time>
     
   
 
 <span>Contributors
-  <a target="_blank" class="ext-link-indicator" href="https://github.com/netapp-martyh">
-    <img  class="avatar avatar-small"
-          alt="netapp-martyh"
-          width="20" height="20"
-          src="https://avatars.githubusercontent.com/u/66496079?v=4"
-          style="border-radius: 50%;"/>
-  </a>
-  
   <a target="_blank" class="ext-link-indicator" href="https://github.com/dougthomp">
     <img  class="avatar avatar-small"
           alt="dougthomp"
           width="20" height="20"
           src="https://avatars.githubusercontent.com/u/76076341?v=4"
+          style="border-radius: 50%;"/>
+  </a>
+  
+  <a target="_blank" class="ext-link-indicator" href="https://github.com/netapp-martyh">
+    <img  class="avatar avatar-small"
+          alt="netapp-martyh"
+          width="20" height="20"
+          src="https://avatars.githubusercontent.com/u/66496079?v=4"
           style="border-radius: 50%;"/>
   </a>
   
@@ -6223,13 +6223,15 @@
 <div class="sect1">
 <h2 id="step-1-shut-down-the-impaired-controller">Step 1: Shut down the impaired controller</h2>
 <div class="sectionbody">
-<div class="paragraph lead">
-<p>You can shut down or take over the impaired controller using different procedures, depending on the storage system hardware configuration.</p>
+<div class="literalblock lead">
+<div class="content">
+<pre>Shut down or take over the impaired controller using one of the following options.</pre>
+</div>
 </div>
 <div class="exampleblock tabbed-block">
 <div class="content">
 <div class="openblock">
-<div class="title">Option 1: Most configs</div>
+<div class="title">Option 1: Most systems</div>
 <div class="content">
 <div class="paragraph lead">
 <p>To shut down the impaired controller, you must determine the status of the controller and, if necessary, take over the controller so that the healthy controller continues to serve data from the impaired controller storage.</p>
@@ -6299,7 +6301,7 @@
 </div>
 </div>
 <div class="openblock">
-<div class="title">Option 2: MetroCluster config</div>
+<div class="title">Option 2: Controller is in a MetroCluster</div>
 <div class="content">
 <div class="admonitionblock note lead">
 <table>
@@ -6387,7 +6389,7 @@ Do not use this procedure if your system is in a two-node MetroCluster configura
 </div>
 </div>
 <div class="openblock">
-<div class="title">Option 3: Two-node MetroCluster</div>
+<div class="title">Option 3: Controller is in a Two-node MetroCluster</div>
 <div class="content">
 <div class="paragraph lead">
 <p>To shut down the impaired controller, you must determine the status of the controller and, if necessary, switch over the controller so that the healthy controller continues to serve data from the impaired controller storage.</p>
