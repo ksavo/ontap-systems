@@ -63,6 +63,8 @@ The node that holds epsilon shows `true` in the `Epsilon` column. (The nodes tha
 +
 NOTE: If you do not maintain single-path connectivity from the controllers to the stack when recabling the stack to bypass the disk shelf you are removing, you could fail the system with a multidisk panic.
 
+* *Possible shelf damage:* If you are removing a DS460C shelf and you are moving it to a different part of the data center or transporting it to a different location, remove the drives to avoid possible damage to the drive drawers and drives.
+
 .Steps
 
 . Verify that your system configuration is `Multi-Path HA`, `Multi-Path`, `Quad-path HA`, or `Quad-path`: `sysconfig`
