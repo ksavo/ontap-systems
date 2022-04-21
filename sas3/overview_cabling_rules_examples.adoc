@@ -22,7 +22,7 @@ To help you cable your SAS drive shelves with IOM12 modules to your storage syst
 *Cabling worksheets and examples*
 
 ** link:install-cabling-worksheets-examples-multipath.html[Common multipath HA configurations]
-** link:install-cabling-worksheets-examples-fas2600.html[Common AFF A200, AFF A220, FAS2600, and FAS2700 configurations]
+** link:install-cabling-worksheets-examples-fas2600.html[AFF and FAS platforms with onboard storage]
 ** link:install-worksheets-examples-quadpath.html[Quad-path HA configurations]
 
 *Cabling worksheet templates*

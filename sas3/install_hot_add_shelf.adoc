@@ -278,7 +278,7 @@ Cable the shelf-to-shelf connections as "`double-wide`" connectivity:        You
 
 .. Check the controller-to-stack cabling worksheets and cabling examples to see whether a completed worksheet exists for your configuration.
 +
-link:install-cabling-worksheets-examples-fas2600.html[Controller-to-stack cabling worksheets and cabling examples for common AFF A200, AFF A220, FAS2600 series and FAS2700 configurations]
+link:install-cabling-worksheets-examples-fas2600.html[Controller-to-stack cabling worksheets and cabling examples for AFF and FAS platforms with onboard storage]
 +
 link:install-cabling-worksheets-examples-multipath.html[Controller-to-stack cabling worksheets and cabling examples for common multipath HA configurations]
 +
