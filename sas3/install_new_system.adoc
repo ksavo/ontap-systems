@@ -1,7 +1,7 @@
 ---
 permalink: sas3/install-new-system.html
 sidebar: sidebar
-keywords: install, cabling, cable, disk, shelves, shelf, iom12, module, system, installation, system, ha, pair, single-controller, configuration, cabinet, rack, requirement, install and cable disk shelves with iom12 modules for a new system installation, requirements for installing and cabling disk shelves with iom12 modules for a new system installation, considerations for installing and cabling disk shelves with iom12 modules for a new system installation, install disk shelves with iom12 modules for a new system installation, cable disk shelves with iom12 modules for a new system installation
+keywords: install, cabling, cable, disk, shelves, shelf, iom12, module, system, installation, system, ha, pair, single-controller, configuration, cabinet, rack, requirement, install and cable disk shelves with iom12 modules for a new system installation, requirements for installing and cabling disk shelves with iom12 modules for a new system installation, considerations for installing and cabling disk shelves with iom12 modules for a new system installation, install disk shelves with iom12 modules for a new system installation, cable disk shelves with iom12 modules for a new system installation, DS460C, transport DS460C, move DS460C, remove drives from DS460C, DS460C drive handling
 summary: If your new system--HA pair or single-controller configuration--did not come installed in a cabinet, you must install and cable the disk shelves in a rack.
 ---
 = Install and cable shelves for a new system installation - shelves with IOM12 modules
@@ -82,6 +82,23 @@ Cables have a minimum bend radius. Cable manufacturer specifications define the 
 
 * Using Velcro wraps instead of tie-wraps to bundle and secure system cables allows for easier cable adjustments.
 
+=== DS460C drive handing considerations
+
+* The drives are packaged separately from the shelf chassis.
++
+You should take inventory of the drives along with the rest of the system equipment you received.
+
+* After you unpack the drives, you should save the packaging materials for future use.
++
+CAUTION: *Possible loss of data access:* If in the future you move the shelf to a different part of the data center or transport the shelf to a different location, you need to remove the drives from the drive drawers to avoid possible damage to the drive drawers and drives.
++
+NOTE: Keep disk drives in their ESD bag until you are ready to install them.
+
+
+* When handling the drives, always wear an ESD wrist strap grounded to an unpainted surface on your storage enclosure chassis to prevent static discharges.
++
+If a wrist strap is unavailable, touch an unpainted surface on your storage enclosure chassis before handling the disk drive.
+
 == Install disk shelves with IOM12 modules for a new system installation
 
 [.lead]
@@ -97,15 +114,24 @@ NOTE: Do not flange-mount the disk shelf into a telco-type rack; the disk shelf'
 +
 To make a disk shelf lighter and easier to maneuver, remove the power supplies and I/O modules (IOMs).
 +
-For DS460C disk shelves, you can also use the four detachable handles that shipped with your disk shelf. Handles (two on each side of the chassis) are installed by pushing up until they click into place. As you slide the disk shelf onto the rails, detach handles using the thumb latch.
+For DS460C disk shelves, although the drives are packaged separately, making the shelf lighter, an empty DS460C shelf weighs approximately 132 lb (60kg), exercise the following caution when moving a shelf.
 +
-It is recommended that you use a mechanical hoist or lift if you are moving a fully loaded DS460C disk shelf.
+CAUTION: It is recommended that you use a mechanized lift or four people using the lift handles to safely move an empty DS460C shelf.
 +
-NOTE: A fully loaded DS460C disk shelf can weigh approximately 247 lbs (112 kg).
+Your DS460C shipment was packaged with four detachable lift handles (two for each side). To use the lift handles, you install them by inserting the tabs of the handles into the slots in the side of the shelf and pushing up until they click into place. Then, as you slide the disk shelf onto the rails, you detach one set of handles at a time using the thumb latch. The following illustration shows how to attach a lift handle.
 +
 image::../media/drw_ds460c_handles.gif[]
 
-. If you are installing a DS460C disk shelf, install the components into the racked disk shelf; otherwise, go to the next step.
+. Reinstall any power supplies and IOMs you removed prior to installing your disk shelf into the rack.
+
+. If you are installing a DS460C disk shelf, install the drives into the drive drawers; otherwise, go to the next step.
++
+[NOTE]
+====
+Always wear an ESD wrist strap grounded to an unpainted surface on your storage enclosure chassis to prevent static discharges.
+
+If a wrist strap is unavailable, touch an unpainted surface on your storage enclosure chassis before handling the disk drive.
+====
 +
 If you purchased a partially populated disk shelf which does not have a drive in every drive slot, you must ensure that:
 
@@ -119,8 +145,8 @@ The following illustration shows how the drives are numbered from 0 to 11 in eac
 +
 image::../media/dwg_trafford_drawer_with_hdds_callouts.gif[]
 
- .. Reinstall any power supplies and IOMs you removed prior to installing your disk shelf into the rack.
  .. Open the top drawer of the shelf.
+ .. Remove a drive from its ESD bag.
  .. Raise the cam handle on the drive to vertical.
  .. Align the two raised buttons on each side of the drive carrier with the matching gap in the drive channel on the drive drawer.
 +
@@ -148,6 +174,7 @@ CAUTION: *Possible loss of data access:* Never slam the drawer shut. Push the dr
 
  .. Close the drive drawer by pushing both levers towards the center.
  .. Repeat these steps for each drawer in the disk shelf.
+ .. Attach the front bezel.
 
 . If you are adding multiple disk shelves, repeat this procedure for each disk shelf you are installing.
 +
@@ -201,7 +228,7 @@ Cable the shelf-to-shelf connections as "`double-wide`" connectivity:    You cab
 
 .. Check the controller-to-stack cabling worksheets and cabling examples to see whether a completed worksheet exists for your configuration.
 +
-link:install-cabling-worksheets-examples-fas2600.html[Controller-to-stack cabling worksheets and cabling examples for common AFF A200, AFF A220, FAS2600 series and FAS2700 configurations]
+link:install-cabling-worksheets-examples-fas2600.html[Controller-to-stack cabling worksheets and cabling examples for AFF and FAS platforms with onboard storage]
 +
 link:install-cabling-worksheets-examples-multipath.html[Controller-to-stack cabling worksheets and cabling examples for common multipath HA configurations]
 +
@@ -305,3 +332,28 @@ You can also run the `storage shelf show -fields shelf-id` command to see a list
 . Verify that in-band ACP was automatically enabled. `storage shelf acp show`
 +
 In the output, "`in-band`" is listed as "`active`" for each node.
+
+== Move or transport DS460C shelves
+
+[.lead]
+If in the future you move the shelf to a different part of the data center or transport the shelf to a different location, you need to remove the drives from the drive drawers to avoid possible damage to the drive drawers and drives.
+
+* If when you installed DS460C shelves as part of your new system installation, you saved the dive packaging materials, use these to repackage the drives before moving them.
++
+If you did not save the packing materials, you should place disk drives on cushioned surfaces. Never stack drives on top of each other.
+
+* Before handling drives, wear an ESD wrist strap grounded to an unpainted surface on your storage enclosure chassis.
++
+If a wrist strap is unavailable, touch an unpainted surface on your storage enclosure chassis before handling a drive.
+
+* You should take steps to handle drives carefully:
++
+** Always use two hands when removing, installing, or carrying a drive to support its weight.
++
+CAUTION: Do not place hands on the drive boards exposed on the underside of the drive carrier.
++
+** Be careful not to bump drives against other surfaces.
++
+** Drives should be kept away from magnetic devices.
++
+CAUTION: Magnetic fields can destroy all data on a drive and cause irreparable damage to the drive circuitry.
