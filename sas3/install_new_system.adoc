@@ -114,7 +114,7 @@ NOTE: Do not flange-mount the disk shelf into a telco-type rack; the disk shelf'
 +
 To make a disk shelf lighter and easier to maneuver, remove the power supplies and I/O modules (IOMs).
 +
-For DS460C disk shelves, although the drives are packaged separately, making the shelf lighter, an empty DS460C shelf weighs approximately 132 lb (60kg), exercise the following caution when moving a shelf.
+For DS460C disk shelves, although the drives are packaged separately, which makes the shelf lighter, an empty DS460C shelf still weighs approximately 132 lb (60kg); therefore, exercise the following caution when moving a shelf.
 +
 CAUTION: It is recommended that you use a mechanized lift or four people using the lift handles to safely move an empty DS460C shelf.
 +
