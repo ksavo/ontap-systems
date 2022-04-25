@@ -13,6 +13,8 @@ You can replace a failed power supply nondisruptively in an NS224 drive shelf th
 
 .About this task
 
+* Do not mix power supplies with different efficiency ratings. Always replace like for like.
+
 * If you are replacing more than one power supply, you must do so one at a time so that the shelf maintains power.
 * *Best practice:* The best practice is to replace the power supply within two minutes of removal from the NSM module.
 +

@@ -2,14 +2,14 @@
 permalink: sas3/hot-remove-shelf.html
 sidebar: sidebar
 keywords: hot-remove, disk, shelf, iom12, module, nondisruptive, module-nondisruptively, system, power, serving, data, i/o, progress, hot-remove, stack, shelves, hot-remove a disk shelf with iom12 modules
-summary: You can hot-remove a disk shelf with IOM12 modules (nondisruptively remove a disk shelf from a system that is powered on and serving data, meaning when I/O is in progress) when you need to move or replace the disk shelf. You can hot-remove one or more disk shelves from anywhere within a stack of disk shelves or remove a stack of disk shelves.
+summary: You can hot-remove a disk shelf with IOM12 modules (nondisruptively remove a disk shelf from a system that is powered on and I/O is in progress) when you need to move or replace the disk shelf. You can hot-remove one or more disk shelves from anywhere within a stack of disk shelves or remove a stack of disk shelves.
 ---
 = Hot-remove a shelf - shelves with IOM12 modules
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-You can hot-remove a disk shelf with IOM12 modules--nondisruptively remove a disk shelf from a system that is powered on and serving data (I/O is in progress)--when you need to move or replace the disk shelf. You can hot-remove one or more disk shelves from anywhere within a stack of disk shelves or remove a stack of disk shelves.
+You can hot-remove a disk shelf with IOM12 modules (nondisruptively remove a disk shelf from a system that is powered on and I/O is in progress) when you need to move or replace a disk shelf. You can hot-remove one or more disk shelves from anywhere within a stack of disk shelves or remove a stack of disk shelves.
 
 .Before you begin
 
@@ -26,7 +26,7 @@ You can download and run Active IQ Config Advisor to view any SAS cabling error 
 https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor[NetApp Downloads: Config Advisor]
 
 * HA pair configurations cannot be in a takeover state.
-* You must have removed all aggregates from the disk drives--the disk drives must be spares-- in the disk shelves you are removing.
+* You must have removed all aggregates from the disk drives (the disk drives must be spares) in the disk shelves you are removing.
 +
 NOTE: If you attempt this procedure with aggregates on the disk shelf you are removing, you could fail the system with a multidisk panic.
 +
@@ -63,6 +63,8 @@ The node that holds epsilon shows `true` in the `Epsilon` column. (The nodes tha
 +
 NOTE: If you do not maintain single-path connectivity from the controllers to the stack when recabling the stack to bypass the disk shelf you are removing, you could fail the system with a multidisk panic.
 
+* *Possible shelf damage:* If you are removing a DS460C shelf and you are moving it to a different part of the data center or transporting it to a different location, remove the drives to avoid possible damage to the drive drawers and drives.
+
 .Steps
 
 . Verify that your system configuration is `Multi-Path HA`, `Multi-Path`, `Quad-path HA`, or `Quad-path`: `sysconfig`
@@ -88,6 +90,7 @@ NOTE: If you have failed disk drives in the shelf you are removing, they have br
 +
 The following output shows disk drives on the disk shelf being removed (disk shelf 3) are in a correct state for removing the disk shelf. The aggregates are removed on all of the disk drives; therefore, a dash appears in the `Container Name` column for each disk drive. Ownership is also removed on all of the disk drives; therefore, a dash appears in the `Owner` column for each disk drive.
 
++
 ----
 cluster::> storage disk show -shelf 3
 
