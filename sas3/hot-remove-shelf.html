@@ -9,14 +9,14 @@
   <meta property="og:title" content="Hot-remove a shelf - shelves with IOM12 modules" />
 	<meta property="og:type" content="website" />
 	<meta property="og:url" content="https://docs.netapp.com/us-en/ontap-systems/sas3/hot-remove-shelf.html" />
-	<meta property="og:description" content="You can hot-remove a disk shelf with IOM12 modules (nondisruptively remove a disk shelf from a system that is powered on and serving data, meaning when I/O i..." />
+	<meta property="og:description" content="You can hot-remove a disk shelf with IOM12 modules (nondisruptively remove a disk shelf from a system that is powered on and I/O is in progress) when you nee..." />
   <meta property="og:image" content="https://docs.netapp.com/us-en/ontap-systems/images/logo-tophat-social.png" />
   <meta property="og:image:alt" content="NetApp Logo" />
   <meta name="format-detection" content="telephone=no">
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   <meta http-equiv="encoding" content="utf-8">
   <meta http-equiv="nss-type" content="Product Documentation"/>
-  <meta http-equiv="nss-subtype" content="User Guide"/><meta name="description" content="You can hot-remove a disk shelf with IOM12 modules (nondisruptively remove a disk shelf from a system that is powered on and serving data, meaning when I/O i...">
+  <meta http-equiv="nss-subtype" content="User Guide"/><meta name="description" content="You can hot-remove a disk shelf with IOM12 modules (nondisruptively remove a disk shelf from a system that is powered on and I/O is in progress) when you nee...">
   <meta name="keywords" content=" hot-remove, disk, shelf, iom12, module, nondisruptive, module-nondisruptively, system, power, serving, data, i/o, progress, hot-remove, stack, shelves, hot-remove a disk shelf with iom12 modules"><!-- Icons -->
   <link rel="icon" href="/us-en/ontap-systems/images/favicon.ico" type="image/x-icon">
 
@@ -6127,7 +6127,7 @@
 <p class="page-details">
   
     
-    <time datetime="2021-12-15 18:43:52 +0000">12/15/2021</time>
+    <time datetime="2022-04-19 06:10:05 +0000">04/19/2022</time>
     
   
 
@@ -6154,7 +6154,7 @@
 </p>
 
 <div class="paragraph lead">
-<p>You can hot-remove a disk shelf with IOM12 modules&#8212;&#8203;nondisruptively remove a disk shelf from a system that is powered on and serving data (I/O is in progress)--when you need to move or replace the disk shelf. You can hot-remove one or more disk shelves from anywhere within a stack of disk shelves or remove a stack of disk shelves.</p>
+<p>You can hot-remove a disk shelf with IOM12 modules (nondisruptively remove a disk shelf from a system that is powered on and I/O is in progress) when you need to move or replace a disk shelf. You can hot-remove one or more disk shelves from anywhere within a stack of disk shelves or remove a stack of disk shelves.</p>
 </div>
 <div class="ulist">
 <div class="title">Before you begin</div>
@@ -6190,7 +6190,7 @@ For a FAS2600 series single-controller system that has the external storage cabl
 <p>HA pair configurations cannot be in a takeover state.</p>
 </li>
 <li>
-<p>You must have removed all aggregates from the disk drives&#8212;&#8203;the disk drives must be spares-- in the disk shelves you are removing.</p>
+<p>You must have removed all aggregates from the disk drives (the disk drives must be spares) in the disk shelves you are removing.</p>
 <div class="admonitionblock note">
 <table>
 <tr>
@@ -6285,6 +6285,9 @@ If you do not maintain single-path connectivity from the controllers to the stac
 </table>
 </div>
 </li>
+<li>
+<p><strong>Possible shelf damage:</strong> If you are removing a DS460C shelf and you are moving it to a different part of the data center or transporting it to a different location, remove the drives to avoid possible damage to the drive drawers and drives.</p>
+</li>
 </ul>
 </div>
 <div class="olist arabic">
@@ -6341,9 +6344,6 @@ If you have failed disk drives in the shelf you are removing, they have broken i
 </tr>
 </table>
 </div>
-</li>
-</ol>
-</div>
 <div class="paragraph">
 <p>The following output shows disk drives on the disk shelf being removed (disk shelf 3) are in a correct state for removing the disk shelf. The aggregates are removed on all of the disk drives; therefore, a dash appears in the <code>Container Name</code> column for each disk drive. Ownership is also removed on all of the disk drives; therefore, a dash appears in the <code>Owner</code> column for each disk drive.</p>
 </div>
@@ -6365,8 +6365,7 @@ Disk         Size Shelf Bay Type   Type        Name       Owner
 ...</pre>
 </div>
 </div>
-<div class="olist arabic">
-<ol class="arabic">
+</li>
 <li>
 <p>Physically locate the disk shelves you are removing.</p>
 <div class="paragraph">
