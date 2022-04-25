@@ -1,17 +1,17 @@
 ---
 permalink: sas3/install-cabling-worksheets-examples-fas2600.html
 sidebar: sidebar
-keywords: complete, controller-to-stack, cabling, worksheet, cable, common, aff, a200, a220, fas2600, series, fas2700, configuration
-summary: You can use the completed controller-to-stack cabling worksheets and cabling examples to cable common AFF A200, AFF A220, FAS2600 series and FAS2700 configurations.
+keywords: controller-to-stack, cabling, worksheet, cable, aff, a200, a220, fas2600, fas2700, onboard, onboard storage
+summary: You can use the completed controller-to-stack cabling worksheets and cabling examples to cable AFF and FAS platforms with onboard storage, such as but not limited to AFF A200, AFF A220, FAS2600 series and FAS2700 platforms. This information does not apply to FAS25XX platforms.
 ---
-= Controller-to-stack cabling worksheets and cabling examples for common AFF A200, AFF A220, FAS2600 series and FAS2700 configurations - shelves with IOM12 modules
+= Controller-to-stack cabling worksheets and cabling examples for AFF and FAS platforms with onboard storage - shelves with IOM12 modules
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-You can use the completed controller-to-stack cabling worksheets and cabling examples to cable common AFF A200, AFF A220, FAS2600 series and FAS2700 configurations.
+You can use the completed controller-to-stack cabling worksheets and cabling examples to cable AFF and FAS platforms with onboard storage, such as but not limited to AFF A200, AFF A220, FAS2600 series and FAS2700 platforms. This information does not apply to FAS25XX platforms.
 
-* If needed, you can refer to link:install-cabling-rules.html[SAS cabling rules] for information about supported configurations, shelf-to-shelf connectivity, and controller-to-shelf connectivity (including AFF A200, AFF A220, FAS2600 series and FAS2700 port 0b same domain connectivity).
+* If needed, you can refer to link:install-cabling-rules.html[SAS cabling rules] for information about supported configurations, shelf-to-shelf connectivity, and controller-to-shelf connectivity.
 * Cabling examples show controller-to-stack cables as solid or dashed to distinguish controller 0b port connections from controller 0a port connections.
 +
 image::../media/drw_fas2600_controller_to_stack_cable_type_key.png[]
@@ -20,7 +20,7 @@ image::../media/drw_fas2600_controller_to_stack_cable_type_key.png[]
 +
 image::../media/drw_fas2600_cable_color_key.png[]
 
-== AFF A200, AFF A220, FAS2600 series and FAS2700 multipath HA configuration with one multi-shelf stack
+== AFF and FAS platforms with onboard storage in a multipath HA configuration with one multi-shelf stack
 
 The following worksheet and cabling example uses port pair 0a/0b:
 
