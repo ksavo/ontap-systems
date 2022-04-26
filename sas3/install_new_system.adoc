@@ -43,7 +43,7 @@ You must set shelf IDs so they are unique within the HA pair or single-controlle
 
 * Disk shelves containing the root aggregates can be identified by the labels on the disk shelf box and disk shelf chassis.
 +
-The labels show the stack number; for example, "`Loop or Stack #: 1 `" and "`Loop or Stack #: 2 `". Disk shelves that do not contain the root aggregates only show the disk shelf serial number is on the labels.
+The labels show the stack number; for example, *Loop or Stack #: 1* and *Loop or Stack #: 2*. Disk shelves that do not contain the root aggregates only show the disk shelf serial number is on the labels.
 
 * If at system setup and configuration, you do not configure the system to use automatic disk ownership assignment, you need to manually assign disk ownership.
 * In-band Alternate Control Path (ACP) is automatically enabled.
@@ -82,7 +82,7 @@ Cables have a minimum bend radius. Cable manufacturer specifications define the 
 
 * Using Velcro wraps instead of tie-wraps to bundle and secure system cables allows for easier cable adjustments.
 
-=== DS460C drive handing considerations
+=== DS460C drive handling considerations
 
 * The drives are packaged separately from the shelf chassis.
 +
@@ -90,7 +90,7 @@ You should take inventory of the drives along with the rest of the system equipm
 
 * After you unpack the drives, you should save the packaging materials for future use.
 +
-CAUTION: *Possible loss of data access:* If in the future you move the shelf to a different part of the data center or transport the shelf to a different location, you need to remove the drives from the drive drawers to avoid possible damage to the drive drawers and drives.
+CAUTION: *Possible loss of data access:* If in the future, you move the shelf to a different part of the data center or transport the shelf to a different location, you need to remove the drives from the drive drawers to avoid possible damage to the drive drawers and drives.
 +
 NOTE: Keep disk drives in their ESD bag until you are ready to install them.
 
@@ -336,11 +336,11 @@ In the output, "`in-band`" is listed as "`active`" for each node.
 == Move or transport DS460C shelves
 
 [.lead]
-If in the future you move the shelf to a different part of the data center or transport the shelf to a different location, you need to remove the drives from the drive drawers to avoid possible damage to the drive drawers and drives.
+If in the future, you move the shelf to a different part of the data center or transport the shelf to a different location, you need to remove the drives from the drive drawers to avoid possible damage to the drive drawers and drives.
 
-* If when you installed DS460C shelves as part of your new system installation, you saved the dive packaging materials, use these to repackage the drives before moving them.
+* If when you installed DS460C shelves as part of your new system installation, you saved the drive packaging materials, use these to repackage the drives before moving them.
 +
-If you did not save the packing materials, you should place disk drives on cushioned surfaces. Never stack drives on top of each other.
+If you did not save the packaging materials, you should place drives on cushioned surfaces or use alternate cushioned packaging. Never stack drives on top of each other.
 
 * Before handling drives, wear an ESD wrist strap grounded to an unpainted surface on your storage enclosure chassis.
 +
