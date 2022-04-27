@@ -14,12 +14,12 @@ You replace the real-time clock (RTC) battery in the controller module so that y
 * You can use this procedure with all versions of ONTAP supported by your system
 * All other components in the system must be functioning properly; if not, you must contact technical support.
 
-== Shut down the impaired controller
+== Step 1: Shut down the impaired controller
 
 [.lead]
-include::../_include/shutdown_most_frus.adoc[]
+include::../_include/shutdown_no_mcc.adoc[]
 
-== Remove the controller module
+== Step 2: Remove the controller module
 
 [.lead]
 You must remove the controller module from the chassis when you replace the controller module or replace a component inside the controller module.
@@ -73,7 +73,7 @@ a|
 Air duct
 |===
 
-== Replace the RTC battery
+== Step 3: Replace the RTC battery
 
 [.lead]
 To replace the RTC battery, locate it inside the controller and follow the specific sequence of steps.
@@ -103,7 +103,7 @@ NOTE: Note the polarity of the battery as you remove it from the holder. The bat
 . Note the polarity of the RTC battery, and then insert it into the holder by tilting the battery at an angle and pushing down.
 . Visually inspect the battery to make sure that it is completely installed into the holder and that the polarity is correct.
 
-== Reinstall the controller module and setting time/date after RTC battery replacement
+== Step 4: Reinstall the controller module and setting time/date after RTC battery replacement
 
 [.lead]
 After you replace a component within the controller module, you must reinstall the controller module in the system chassis, reset the time and date on the controller, and then boot it.
@@ -140,7 +140,7 @@ The controller module begins to boot as soon as it is fully seated in the chassi
 . Return the controller to normal operation by giving back its storage: `storage failover giveback -ofnode _impaired_node_name_`
 . If automatic giveback was disabled, reenable it: `storage failover modify -node local -auto-giveback true`
 
-== Return the failed part to NetApp
+== Step 5: Return the failed part to NetApp
 
 [.lead]
 include::../_include/complete_rma.adoc[]

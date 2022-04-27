@@ -69,18 +69,10 @@ entries:
       url: /a700s/drive-replace.html
     - title: Fan
       entries:
-      - title: Shut down impaired node
-        url: /a700s/fan-impaired-controller-shutdown.html
-      - title: Remove controller module
-        url: /a700s/fan-controller-remove.html
       - title: Fan
         pdf-filename: AFF A700s Fan
         url: /a700s/fan-replace.html
-      - title: Reinstall controller module
-        url: /a700s/fan-controller-reinstall-pcie-rtc.html
-      - title: Return failed part to NetApp
-        url: /a700s/fan-complete-rma.html
-    - title: NVRAM battery
+      - title: NVRAM battery
       pdf-filename: AFF A700s NVRAM Battery
       url: /a700s/nvmem-nvram-battery-replace.html
     - title: NVRAM

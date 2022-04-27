@@ -13,12 +13,12 @@ To replace an NVRAM battery in the system, you must remove the controller module
 
 All other components in the system must be functioning properly; if not, you must contact technical support.
 
-== Shut down the impaired controller
+== Step 1: Shut down the impaired controller
 
 [.lead]
-include::../_include/shutdown_most_frus.adoc[]
+include::../_include/shutdown_no_mcc.adoc[]
 
-== Remove the controller module
+== Step 2: Remove the controller module
 
 [.lead]
 You must remove the controller module from the chassis when you replace the controller module or replace a component inside the controller module.
@@ -52,7 +52,7 @@ Make sure that you support the bottom of the controller module as you slide it o
 
 . Set the controller module aside in a safe place.
 
-== Replace the NVRAM battery
+== Step 3: Replace the NVRAM battery
 
 [.lead]
 To replace the NVRAM battery, you must remove the failed NVRAM battery from the controller module and install the replacement NVRAM battery into the controller module.
@@ -78,7 +78,7 @@ Blue NVRAM battery locking tab
 . Slide the replacement battery pack down along the sheet metal side wall until the support tabs on the side wall hook into the slots on the battery pack, and the battery pack latch engages and locks into place.
 . Plug the battery plug into the riser socket and make sure that the plug locks into place.
 
-== Reinstall the controller module
+== Step 4: Reinstall the controller module
 
 [.lead]
 After you replace a component within the controller module, you must reinstall the controller module in the system chassis and boot it.
@@ -128,7 +128,7 @@ NOTE: Be sure to exit Maintenance mode after completing the conversion.
 . Return the controller to normal operation by giving back its storage: `storage failover giveback -ofnode _impaired_node_name_`
 . If automatic giveback was disabled, reenable it: `storage failover modify -node local -auto-giveback true`
 
-== Return the failed part to NetApp
+== Step 5: Return the failed part to NetApp
 
 [.lead]
 include::../_include/complete_rma.adoc[]
