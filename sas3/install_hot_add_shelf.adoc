@@ -307,6 +307,9 @@ Leave the other end of these cables connected to the controllers, or replace cab
 
  .. Cable the shelf-to-shelf connection(s) between IOM A of the disk shelf at the end of the stack and IOM A of the disk shelf you are hot-adding.
  .. Reconnect any cables that you removed in substep a to the same port(s) on IOM A of the disk shelf you are hot-adding; otherwise, go to the next substep.
+ +
+ Make sure that you wait at least 70 seconds between disconnecting the cable and reconnecting it.
+
  .. Verify that all cables are securely fastened.
  .. Repeat substeps a through d for IOM B; otherwise, go to Step 4.
 
@@ -326,6 +329,8 @@ a|
 . If you hot-added a disk shelf with mini-SAS HD SAS optical cables to a stack of disk shelves connected with SAS copper cables, replace the SAS copper cables; otherwise, go to the next step.
 +
 The stack must meet the requirements stated in the <<Requirements for hot-adding disk shelves with IOM12 modules>> section of this procedure.
++
+Replace cables one at a time and make sure that you wait at least 70 seconds between disconnecting a cable and connecting a new one.
 
 . Download and run Config Advisor to verify that your SAS connections are cabled correctly.
 +
