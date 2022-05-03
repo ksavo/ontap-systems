@@ -141,7 +141,6 @@ This ensures proper airflow in the disk shelf.
 
  ** In a shelf with 30 drives, the remaining ten drives are distributed evenly throughout the shelf in slots 1 and 10 of each drawer.
 The following illustration shows how the drives are numbered from 0 to 11 in each drive drawer within the shelf. Slots 0, 3, 6, 9, and, in a shelf containing 30 drives, slots 1 and 10 in each drawer must contain drives.
-
 +
 image::../media/dwg_trafford_drawer_with_hdds_callouts.gif[]
 
