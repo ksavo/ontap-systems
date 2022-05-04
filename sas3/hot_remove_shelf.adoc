@@ -63,7 +63,7 @@ The node that holds epsilon shows `true` in the `Epsilon` column. (The nodes tha
 +
 NOTE: If you do not maintain single-path connectivity from the controllers to the stack when recabling the stack to bypass the disk shelf you are removing, you could fail the system with a multidisk panic.
 
-* *Possible shelf damage:* If you are removing a DS460C shelf and you are moving it to a different part of the data center or transporting it to a different location, see the section, _Move or transport DS460C shelves_ at the end of this procedure.
+* *Possible shelf damage:* If you are removing a DS460C shelf and you are moving it to a different part of the data center or transporting it to a different location, see the section, <<Move or transport DS460C shelves>> at the end of this procedure.
 
 .Steps
 
@@ -223,10 +223,10 @@ Your DS460C shipment was packaged with four detachable lift handles (two for eac
 +
 image::../media/drw_ds460c_handles.gif[]
 +
-If you are moving the DS460C shelf to a different part of the data center or transporting it to a different location, see the following section, _Move or transport DS460C shelves_.
+If you are moving the DS460C shelf to a different part of the data center or transporting it to a different location, see the following section, <<Move or transport DS460C shelves>>.
 
 .Move or transport DS460C shelves
-
+[[ds460c]]
 [.lead]
 If you move a DS460C shelf to a different part of the data center or transport the shelf to a different location, you need to remove the drives from the drive drawers to avoid possible damage to the drive drawers and drives.
 
