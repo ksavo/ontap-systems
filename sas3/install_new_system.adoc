@@ -335,7 +335,7 @@ In the output, "`in-band`" is listed as "`active`" for each node.
 == Move or transport DS460C shelves
 
 [.lead]
-If in the future, you move the shelf to a different part of the data center or transport the shelf to a different location, you need to remove the drives from the drive drawers to avoid possible damage to the drive drawers and drives.
+If in the future, you move DS460C shelves to a different part of the data center or transport the shelves to a different location, you need to remove the drives from the drive drawers to avoid possible damage to the drive drawers and drives.
 
 * If when you installed DS460C shelves as part of your new system installation, you saved the drive packaging materials, use these to repackage the drives before moving them.
 +
