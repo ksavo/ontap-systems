@@ -30,7 +30,6 @@ NOTE: *Possible hardware damage:* To prevent electrostatic discharge damage to t
 * Replacement drive drawer
 * Replacement left and right cable chains
 * Flashlight
-* Permanent marker
 
 == Remove the cable chains
 
