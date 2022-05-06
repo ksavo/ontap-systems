@@ -245,6 +245,8 @@ Raised button on the right side of the drive.
 
  .. Lower the drive straight down, and then rotate the drive handle down until the drive snaps into place.
 +
+If you have a partially populated shelf, meaning that the drawer in which you are reinstalling drives has less than the 12 drives it supports, install the first four drives into the front slots (0, 3, 6, and 9).
++
 NOTE: *Risk of equipment malfunction:* To allow for proper air flow and prevent overheating, always install the first four drives into the front slots (0, 3, 6, and 9).
 +
 image::../media/92_dwg_de6600_install_or_remove_drive.gif[]

@@ -133,15 +133,16 @@ Always wear an ESD wrist strap grounded to an unpainted surface on your storage 
 If a wrist strap is unavailable, touch an unpainted surface on your storage enclosure chassis before handling the disk drive.
 ====
 +
-If you purchased a partially populated disk shelf which does not have a drive in every drive slot, you must ensure that:
+If you purchased a partially populated shelf, meaning that the shelf has less than the 60 drives it supports, for each drawer, install the drives as follows:
 
- ** The first four slots (0, 3, 6, and 9) are occupied in each drawer.
+** Install the first four drives into the front slots (0, 3, 6, and 9).
 +
-This ensures proper airflow in the disk shelf.
+NOTE: *Risk of equipment malfunction:* To allow for proper air flow and prevent overheating, always install the first four drives into the front slots (0, 3, 6, and 9).
 
- ** In a shelf with 30 drives, the remaining ten drives are distributed evenly throughout the shelf in slots 1 and 10 of each drawer.
-The following illustration shows how the drives are numbered from 0 to 11 in each drive drawer within the shelf. Slots 0, 3, 6, 9, and, in a shelf containing 30 drives, slots 1 and 10 in each drawer must contain drives.
-+
+** For the remaining drives, evenly distribute them across each drawer.
+
+The following illustration shows how the drives are numbered from 0 to 11 in each drive drawer within the shelf.
+
 image::../media/dwg_trafford_drawer_with_hdds_callouts.gif[]
 
  .. Open the top drawer of the shelf.
