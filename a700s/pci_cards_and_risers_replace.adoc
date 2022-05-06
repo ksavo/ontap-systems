@@ -17,7 +17,7 @@ To replace a PCIe card, you must disconnect the cables from the cards in the ris
 == Step 1: Shut down the impaired controller
 
 [.lead]
-include::../_include/shutdown_most_frus.adoc[]
+include::../_include/shutdown_no_mcc.adoc[]
 
 == Step 2: Remove the controller module
 

@@ -15,7 +15,7 @@ All other components in the system must be functioning properly; if not, you mus
 
 You must replace the failed component with a replacement FRU component you received from your provider.
 
-== Shut down the impaired controller
+== Step 1: Shut down the impaired controller
 
 [.lead]
 To shut down the impaired controller, you must determine the status of the controller and, if necessary, take over the controller so that the healthy controller continues to serve data from the impaired controller storage.
@@ -48,7 +48,7 @@ Take over or halt the impaired controller: `storage failover takeover -ofnode _i
 When the impaired controller shows `Waiting for giveback...`, press Ctrl-C, and then respond `y`.
 |===
 
-== Remove the controller module
+== Step 2: Remove the controller module
 
 [.lead]
 You must remove the controller module from the chassis when you replace the controller module or replace a component inside the controller module.
@@ -102,7 +102,7 @@ a|
 Air duct
 |===
 
-== Replace a DIMM
+== Step 3: Replace a DIMM
 
 [.lead]
 To replace a DIMM, you must locate it in the controller module using the DIMM map on the inside of the controller module or locating it using the LED next to the DIMM, and then replace it following the specific sequence of steps.
@@ -158,7 +158,7 @@ If you removed the NVRAM riser, Riser 1, make sure that you plug the NVRAM batte
 
 . Close the air duct.
 
-== Reinstall the controller module and booting the system
+== Step 4: Reinstall the controller module and booting the system
 
 [.lead]
 After you replace a FRU in the controller module, you must reinstall the controller module and reboot it.
@@ -189,7 +189,7 @@ The controller module begins to boot as soon as it is fully seated in the chassi
  .. Interrupt the boot process by pressing `Ctrl-C` when you see `Press Ctrl-C for Boot Menu`.
  .. Select the option to boot to Maintenance mode from the displayed menu.
 
-== Run diagnostics
+== Step 5: Run diagnostics
 
 [.lead]
 After you have replaced a component in your system, you should run diagnostic tests on that component.
@@ -210,7 +210,7 @@ After you issue the command, you should wait until the system stops at the LOADE
  ** If the test failed, correct the failure, and then rerun the test.
  ** If the test reported no failures, select Reboot from the menu to reboot the system.
 
-== Return the failed part to NetApp
+== Step 6:Return the failed part to NetApp
 
 [.lead]
 include::../_include/complete_rma.adoc[]
