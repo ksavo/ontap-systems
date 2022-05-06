@@ -1,7 +1,7 @@
 ---
 permalink: sas3/hot-remove-shelf.html
 sidebar: sidebar
-keywords: hot-remove, disk, shelf, iom12, module, nondisruptive, module-nondisruptively, system, power, serving, data, i/o, progress, hot-remove, stack, shelves, hot-remove a disk shelf with iom12 modules
+keywords: hot-remove, disk, shelf, iom12, module, nondisruptive, module-nondisruptively, system, power, serving, data, i/o, progress, hot-remove, stack, shelves, hot-remove a disk shelf with iom12 modules, DS460C, transport DS460C, move DS460C, remove drives from DS460C, DS460C drive handling
 summary: You can hot-remove a disk shelf with IOM12 modules (nondisruptively remove a disk shelf from a system that is powered on and I/O is in progress) when you need to move or replace the disk shelf. You can hot-remove one or more disk shelves from anywhere within a stack of disk shelves or remove a stack of disk shelves.
 ---
 = Hot-remove a shelf - shelves with IOM12 modules
@@ -63,7 +63,7 @@ The node that holds epsilon shows `true` in the `Epsilon` column. (The nodes tha
 +
 NOTE: If you do not maintain single-path connectivity from the controllers to the stack when recabling the stack to bypass the disk shelf you are removing, you could fail the system with a multidisk panic.
 
-* *Possible shelf damage:* If you are removing a DS460C shelf and you are moving it to a different part of the data center or transporting it to a different location, remove the drives to avoid possible damage to the drive drawers and drives.
+* *Possible shelf damage:* If you are removing a DS460C shelf and you are moving it to a different part of the data center or transporting it to a different location, see the section, <<Move or transport DS460C shelves>> at the end of this procedure.
 
 .Steps
 
@@ -215,10 +215,37 @@ For HA pair configurations, you run the command from the clustershell of both co
 +
 To make a disk shelf lighter and easier to maneuver, remove the power supplies and I/O modules (IOMs).
 +
-For DS460C disk shelves, you can also use the four detachable handles that shipped with your disk shelf. Handles (two on each side of the chassis) are installed by pushing up until they click into place. As you slide the disk shelf onto the rails, detach handles using the thumb latch.
+For DS460C disk shelves, a fully loaded shelf can weigh approximately 247 lbs (112 kg); therefore, exercise the following caution when removing a shelf from a rack or cabinet.
 +
-It is recommended that you use a mechanical hoist or lift if you are moving a fully loaded DS460C disk shelf.
+CAUTION: It is recommended that you use a mechanized lift or four people using the lift handles to safely move a DS460C shelf.
 +
-NOTE: A fully loaded DS460C disk shelf can weigh approximately 247 lbs (112 kg).
+Your DS460C shipment was packaged with four detachable lift handles (two for each side). To use the lift handles, you install them by inserting the tabs of the handles into the slots in the side of the shelf and pushing up until they click into place. Then, as you slide the disk shelf onto the rails, you detach one set of handles at a time using the thumb latch. The following illustration shows how to attach a lift handle.
 +
 image::../media/drw_ds460c_handles.gif[]
++
+If you are moving the DS460C shelf to a different part of the data center or transporting it to a different location, see the following section, <<Move or transport DS460C shelves>>.
+
+.Move or transport DS460C shelves
+[[ds460c]]
+[.lead]
+If you move a DS460C shelf to a different part of the data center or transport the shelf to a different location, you need to remove the drives from the drive drawers to avoid possible damage to the drive drawers and drives.
+
+* If when you installed DS460C shelves as part of your new system installation or shelf hot-add, you saved the drive packaging materials, use these to repackage the drives before moving them.
++
+If you did not save the packaging materials, you should place drives on cushioned surfaces or use alternate cushioned packaging. Never stack drives on top of each other.
+
+* Before handling drives, wear an ESD wrist strap grounded to an unpainted surface on your storage enclosure chassis.
++
+If a wrist strap is unavailable, touch an unpainted surface on your storage enclosure chassis before handling a drive.
+
+* You should take steps to handle drives carefully:
++
+** Always use two hands when removing, installing, or carrying a drive to support its weight.
++
+CAUTION: Do not place hands on the drive boards exposed on the underside of the drive carrier.
++
+** Be careful not to bump drives against other surfaces.
++
+** Drives should be kept away from magnetic devices.
++
+CAUTION: Magnetic fields can destroy all data on a drive and cause irreparable damage to the drive circuitry.

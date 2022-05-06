@@ -14,7 +14,7 @@ You can shut down or take over the impaired controller using different procedure
 == Option 1: Most systems
 
 [.lead]
-include::../_include/shutdown_controller.adoc[]
+include::../_include/shutdown_most_frus.adoc[]
 
 == Option 2: Controller is in a MetroCluster
 
