@@ -24,15 +24,16 @@ To replace a failed NVRAM card, you must remove the NVRAM riser, Riser 1, from t
 
 .Steps
 
-== Shut down the impaired controller
+== Step 1: Shut down the impaired controller
 
 [.lead]
-include::../_include/shutdown_most_frus.adoc[]
+include::../_include/shutdown_no_mcc.adoc[]
+
 * If you are using NetApp Storage Encryption, you must have reset the MSID using the instructions in the "`Returning SEDs to unprotected mode`" section of the _ONTAP 9 NetApp Encryption Power Guide_.
 +
 https://docs.netapp.com/ontap-9/topic/com.netapp.doc.pow-nve/home.html[ONTAP 9 NetApp Encryption Power Guide]
 
-== Remove the controller module
+== Step 2: Remove the controller module
 
 [.lead]
 You must remove the controller module from the chassis when you replace the controller module or replace a component inside the controller module.
@@ -87,7 +88,7 @@ a|
 Air duct
 |===
 
-== Remove the NVRAM card
+== Step 3: Remove the NVRAM card
 
 [.lead]
 Replacing the NVRAM consist of removing the NVRAM riser, Riser 1, from the controller module, disconnecting the NVRAM battery from the NVRAM card, removing the failed NVRAM card and installing the replacement NVRAM card, and then reinstalling the NVRAM riser back into the controller module.
@@ -147,7 +148,7 @@ When locked, the locking latch is flush with the top of the riser and the riser 
 
  .. Reinsert any SFP modules that were removed from the PCIe cards.
 
-== Reinstall the controller module and booting the system
+== Step 4: Reinstall the controller module and booting the system
 
 [.lead]
 After you replace a FRU in the controller module, you must reinstall the controller module and reboot it.
@@ -178,7 +179,7 @@ The controller module begins to boot as soon as it is fully seated in the chassi
  .. Interrupt the boot process by pressing `Ctrl-C` when you see `Press Ctrl-C for Boot Menu`.
  .. Select the option to boot to Maintenance mode from the displayed menu.
 
-== Verify the system ID change on an HA system
+== Step 5: Verify the system ID change on an HA system
 
 [.lead]
 You must confirm the system ID change when you boot the _replacement_ controller and then verify that the change was implemented.
@@ -245,12 +246,12 @@ Disk  Aggregate Home  Owner  DR Home  Home ID    Owner ID  DR Home ID Reserver  
 . Verify that the expected volumes are present for each controller: `vol show -node node-name`
 . If you disabled automatic takeover on reboot, enable it from the healthy controller: `storage failover modify -node replacement-node-name -onreboot true`
 
-== Restore Storage and Volume Encryption functionality
+== Step 6: Restore Storage and Volume Encryption functionality
 
 [.lead]
 include::../_include/restore_storage_encryption.adoc[]
 
-== Return the failed part to NetApp
+== Step 7: Return the failed part to NetApp
 
 [.lead]
 include::../_include/complete_rma.adoc[]
