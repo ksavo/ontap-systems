@@ -2267,39 +2267,6 @@
 
 
 
-    
-      <ul class="subfolders" style="display:none;">
-        <li class="pdf-ux-container">
-          
-          
-          
-          <a target="_blank" 
-            
-              href="/us-en/ontap-systems/pdfs/sidebar/Fan.pdf" 
-            
-          >
-            <img src="/us-en/ontap-systems/images/pdf.png" width="16" height="16"/>
-            Fan
-          </a>
-          
-
-
-
-
-
-
-
-
-
-
-
-          
-        </li>
-      </ul>
-    
-
-  
-
 
 
 
@@ -5265,20 +5232,9 @@
         DIMM
       </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/a700s/drive-replace.html">
         Drive
-      </a></li><li class="subfolders "><a href="#">
-        <div class="na-navbar-padding"> Fan</div>
-      </a>
-      <ul><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/a700s/fan-impaired-controller-shutdown.html">
-        Shut down impaired node
-      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/a700s/fan-controller-remove.html">
-        Remove controller module
       </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/a700s/fan-replace.html">
         Fan
-      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/a700s/fan-controller-reinstall-pcie-rtc.html">
-        Reinstall controller module
-      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/a700s/fan-complete-rma.html">
-        Return failed part to NetApp
-      </a></li></ul></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/a700s/nvmem-nvram-battery-replace.html">
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/a700s/nvmem-nvram-battery-replace.html">
         NVRAM battery
       </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/a700s/nvram-or-nvram-dimm-replacement.html">
         NVRAM
@@ -5991,7 +5947,7 @@
       </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/sas3/install-cabling-worksheets-examples-multipath.html">
         Cabling worksheets and examples for common multipath HA configurations
       </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/sas3/install-cabling-worksheets-examples-fas2600.html">
-        Cabling worksheets and examples for common AFF A200, AFF A220, FAS2600 series and FAS2700 configurations
+        Cabling worksheets and examples for AFF and FAS platforms with onboard storage
       </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/sas3/install-worksheets-examples-quadpath.html">
         Cabling worksheet and example for a quad-path HA configuration with two quad-port SAS HBAs
       </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/sas3/install-cabling-worksheet-template-multipath.html">
@@ -6129,7 +6085,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-03-08 00:47:32 +0000">03/08/2022</time>
+    <time datetime="2022-04-27 23:00:07 +0000">04/27/2022</time>
     
   
 
@@ -6187,20 +6143,19 @@
 <p>To shut down the impaired controller, you must determine the status of the controller and, if necessary, take over the controller so that the healthy controller continues to serve data from the impaired controller storage.</p>
 </div>
 <div class="paragraph">
-<div class="title">About this task</div>
 <p>If you have a cluster with more than two nodes, it must be in quorum. If the cluster is not in quorum or a healthy controller shows false for eligibility and health, you must correct the issue before shutting down the impaired controller; see the <a href="https://docs.netapp.com/us-en/ontap/system-admin/index.html" target="_blank" rel="noopener">Administration overview with the CLI</a>.</p>
 </div>
 <div class="olist arabic">
 <div class="title">Steps</div>
 <ol class="arabic">
 <li>
-<p>If AutoSupport is enabled, suppress automatic case creation by invoking an AutoSupport message: <code>system node autosupport invoke -node * -type all -message MAINT=number_of_hours_downh</code></p>
+<p>If AutoSupport is enabled, suppress automatic case creation by invoking an AutoSupport message: <code>system node autosupport invoke -node * -type all -message MAINT=_number_of_hours_down_h</code></p>
 <div class="paragraph">
 <p>The following AutoSupport message suppresses automatic case creation for two hours: <code>cluster1:*&gt; system node autosupport invoke -node * -type all -message MAINT=2h</code></p>
 </div>
 </li>
 <li>
-<p>Disable automatic giveback from the console of the healthy controller: <code>storage failover modify –node local -auto-giveback false</code></p>
+<p>If the impaired controller is part of an HA pair, disable automatic giveback from the console of the healthy controller: <code>storage failover modify -node local -auto-giveback false</code></p>
 </li>
 <li>
 <p>Take the impaired controller to the LOADER prompt:</p>
@@ -6221,7 +6176,7 @@
 <p>The LOADER prompt</p>
 </div></div></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>Go to Remove controller module.</p>
+<p>Go to Remove controller module..</p>
 </div></div></td>
 </tr>
 <tr>
@@ -6229,7 +6184,7 @@
 <p>Waiting for giveback&#8230;&#8203;</p>
 </div></div></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>Press Ctrl-C, and then respond <code>y</code> when prompted.</p>
+<p>Press Ctrl-C, and then respond <code>y</code>.</p>
 </div></div></td>
 </tr>
 <tr>
@@ -6240,7 +6195,8 @@
 <p>Take over or halt the impaired controller from the healthy controller: <code>storage failover takeover -ofnode <em>impaired_node_name</em></code></p>
 </div>
 <div class="paragraph">
-<p>When the impaired controller shows Waiting for giveback&#8230;&#8203;, press Ctrl-C, and then respond <code>y</code>.</p>
+<p>+
+When the impaired controller shows Waiting for giveback&#8230;&#8203;, press Ctrl-C, and then respond <code>y</code>.</p>
 </div></div></td>
 </tr>
 </tbody>

@@ -1569,7 +1569,7 @@
     <url>
       <loc>https://docs.netapp.com/us-en/ontap-systems/a300/controller-replace-shutdown.html</loc>
       
-      <lastmod>2022-03-04T23:23:02+00:00</lastmod>
+      <lastmod>2022-04-27T21:33:26+00:00</lastmod>
       
     </url>
   
@@ -1639,7 +1639,7 @@
     <url>
       <loc>https://docs.netapp.com/us-en/ontap-systems/a700s/controller-replace-move-hardware.html</loc>
       
-      <lastmod>2022-03-08T00:47:32+00:00</lastmod>
+      <lastmod>2022-04-28T19:03:00+00:00</lastmod>
       
     </url>
   
@@ -1926,7 +1926,7 @@
     <url>
       <loc>https://docs.netapp.com/us-en/ontap-systems/a700s/controller-replace-shutdown.html</loc>
       
-      <lastmod>2022-03-08T00:47:32+00:00</lastmod>
+      <lastmod>2022-04-27T23:00:07+00:00</lastmod>
       
     </url>
   
@@ -1947,14 +1947,14 @@
     <url>
       <loc>https://docs.netapp.com/us-en/ontap-systems/fas8200/controller-replace-shutdown.html</loc>
       
-      <lastmod>2021-11-03T05:20:15+00:00</lastmod>
+      <lastmod>2022-04-27T21:33:26+00:00</lastmod>
       
     </url>
   
     <url>
       <loc>https://docs.netapp.com/us-en/ontap-systems/fas2700/controller-replace-shutdown.html</loc>
       
-      <lastmod>2022-03-04T23:23:02+00:00</lastmod>
+      <lastmod>2022-04-27T21:33:26+00:00</lastmod>
       
     </url>
   
@@ -1982,7 +1982,7 @@
     <url>
       <loc>https://docs.netapp.com/us-en/ontap-systems/fas8300/controller-replace-shutdown.html</loc>
       
-      <lastmod>2021-11-03T05:20:15+00:00</lastmod>
+      <lastmod>2022-04-27T21:33:26+00:00</lastmod>
       
     </url>
   
@@ -2003,7 +2003,7 @@
     <url>
       <loc>https://docs.netapp.com/us-en/ontap-systems/a400/controller-replace-shutdown.html</loc>
       
-      <lastmod>2022-03-04T23:23:02+00:00</lastmod>
+      <lastmod>2022-04-27T21:33:26+00:00</lastmod>
       
     </url>
   
@@ -2150,7 +2150,7 @@
     <url>
       <loc>https://docs.netapp.com/us-en/ontap-systems/a700s/dimm-replace.html</loc>
       
-      <lastmod>2022-03-08T00:47:32+00:00</lastmod>
+      <lastmod>2022-04-27T23:00:07+00:00</lastmod>
       
     </url>
   
@@ -2330,13 +2330,6 @@
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/us-en/ontap-systems/a700s/fan-complete-rma.html</loc>
-      
-      <lastmod>2021-09-28T21:34:23+00:00</lastmod>
-      
-    </url>
-  
-    <url>
       <loc>https://docs.netapp.com/us-en/ontap-systems/a900/fan_complete_rma.html</loc>
       
       <lastmod>2021-08-16T23:57:35+00:00</lastmod>
@@ -2358,30 +2351,9 @@
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/us-en/ontap-systems/a700s/fan-controller-reinstall-pcie-rtc.html</loc>
-      
-      <lastmod>2022-03-08T00:47:32+00:00</lastmod>
-      
-    </url>
-  
-    <url>
-      <loc>https://docs.netapp.com/us-en/ontap-systems/a700s/fan-controller-remove.html</loc>
-      
-      <lastmod>2021-10-22T06:22:50+00:00</lastmod>
-      
-    </url>
-  
-    <url>
-      <loc>https://docs.netapp.com/us-en/ontap-systems/a700s/fan-impaired-controller-shutdown.html</loc>
-      
-      <lastmod>2022-03-08T00:47:32+00:00</lastmod>
-      
-    </url>
-  
-    <url>
       <loc>https://docs.netapp.com/us-en/ontap-systems/a700s/fan-replace.html</loc>
       
-      <lastmod>2021-10-22T06:22:50+00:00</lastmod>
+      <lastmod>2022-04-27T23:00:07+00:00</lastmod>
       
     </url>
   
@@ -2458,7 +2430,7 @@
     <url>
       <loc>https://docs.netapp.com/us-en/ontap-systems/sas3/hot-remove-shelf.html</loc>
       
-      <lastmod>2022-04-19T06:10:05+00:00</lastmod>
+      <lastmod>2022-05-04T17:31:49+00:00</lastmod>
       
     </url>
   
@@ -2836,14 +2808,14 @@
     <url>
       <loc>https://docs.netapp.com/us-en/ontap-systems/sas3/install-hot-add-shelf.html</loc>
       
-      <lastmod>2022-04-21T19:02:05+00:00</lastmod>
+      <lastmod>2022-05-06T05:24:19+00:00</lastmod>
       
     </url>
   
     <url>
       <loc>https://docs.netapp.com/us-en/ontap-systems/sas3/install-new-system.html</loc>
       
-      <lastmod>2021-10-18T21:27:10+00:00</lastmod>
+      <lastmod>2022-05-06T05:24:19+00:00</lastmod>
       
     </url>
   
@@ -2983,7 +2955,7 @@
     <url>
       <loc>https://docs.netapp.com/us-en/ontap-systems/fas8200/install-setup-linkout.html</loc>
       
-      <lastmod>2022-03-09T21:20:41+00:00</lastmod>
+      <lastmod>2022-05-05T14:54:39+00:00</lastmod>
       
     </url>
   
@@ -3235,7 +3207,7 @@
     <url>
       <loc>https://docs.netapp.com/us-en/ontap-systems/a700s/nvmem-nvram-battery-replace.html</loc>
       
-      <lastmod>2022-03-08T00:47:32+00:00</lastmod>
+      <lastmod>2022-04-27T23:00:07+00:00</lastmod>
       
     </url>
   
@@ -3284,7 +3256,7 @@
     <url>
       <loc>https://docs.netapp.com/us-en/ontap-systems/a700s/nvram-or-nvram-dimm-replacement.html</loc>
       
-      <lastmod>2022-03-08T00:47:32+00:00</lastmod>
+      <lastmod>2022-04-27T23:00:07+00:00</lastmod>
       
     </url>
   
@@ -3312,7 +3284,7 @@
     <url>
       <loc>https://docs.netapp.com/us-en/ontap-systems/a700s/pci-cards-and-risers-replace.html</loc>
       
-      <lastmod>2022-03-08T00:47:32+00:00</lastmod>
+      <lastmod>2022-04-27T23:00:07+00:00</lastmod>
       
     </url>
   
@@ -3515,7 +3487,7 @@
     <url>
       <loc>https://docs.netapp.com/us-en/ontap-systems/a700s/rtc-battery-replace.html</loc>
       
-      <lastmod>2022-03-08T00:47:32+00:00</lastmod>
+      <lastmod>2022-04-27T23:00:07+00:00</lastmod>
       
     </url>
   
@@ -3599,7 +3571,7 @@
     <url>
       <loc>https://docs.netapp.com/us-en/ontap-systems//search.html</loc>
       
-      <lastmod>2022-05-03T05:58:20+00:00</lastmod>
+      <lastmod>2022-05-06T13:46:06+00:00</lastmod>
       
     </url>
   
@@ -3655,7 +3627,7 @@
     <url>
       <loc>https://docs.netapp.com/us-en/ontap-systems/sas3/service-replace-drawer-ds460c.html</loc>
       
-      <lastmod>2022-02-18T15:36:54+00:00</lastmod>
+      <lastmod>2022-05-06T05:24:19+00:00</lastmod>
       
     </url>
   

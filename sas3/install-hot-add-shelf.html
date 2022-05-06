@@ -17,7 +17,7 @@
   <meta http-equiv="encoding" content="utf-8">
   <meta http-equiv="nss-type" content="Product Documentation"/>
   <meta http-equiv="nss-subtype" content="User Guide"/><meta name="description" content="You can hot-add one or more disk shelves with IOM12 modules to an existing stack of disk shelves with IOM12 modules or hot-add a stack of one or more disk sh...">
-  <meta name="keywords" content=" hot-add, disk, shelves, shelf, iom12, exist, stack, module, sas, hba, onboard, sas, port, controller"><!-- Icons -->
+  <meta name="keywords" content=" hot-add, disk, shelves, shelf, iom12, exist, stack, module, sas, hba, onboard, sas, port, controller, DS460C, transport DS460C, move DS460C, remove drives from DS460C, DS460C drive handling"><!-- Icons -->
   <link rel="icon" href="/us-en/ontap-systems/images/favicon.ico" type="image/x-icon">
 
   <!-- RSS Feed --><!-- CSS Definitions: NetApp CSS should be defined after generic css -->
@@ -2266,39 +2266,6 @@
 
 
 
-
-    
-      <ul class="subfolders" style="display:none;">
-        <li class="pdf-ux-container">
-          
-          
-          
-          <a target="_blank" 
-            
-              href="/us-en/ontap-systems/pdfs/sidebar/Fan.pdf" 
-            
-          >
-            <img src="/us-en/ontap-systems/images/pdf.png" width="16" height="16"/>
-            Fan
-          </a>
-          
-
-
-
-
-
-
-
-
-
-
-
-          
-        </li>
-      </ul>
-    
-
-  
 
 
 
@@ -5265,20 +5232,9 @@
         DIMM
       </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/a700s/drive-replace.html">
         Drive
-      </a></li><li class="subfolders "><a href="#">
-        <div class="na-navbar-padding"> Fan</div>
-      </a>
-      <ul><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/a700s/fan-impaired-controller-shutdown.html">
-        Shut down impaired node
-      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/a700s/fan-controller-remove.html">
-        Remove controller module
       </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/a700s/fan-replace.html">
         Fan
-      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/a700s/fan-controller-reinstall-pcie-rtc.html">
-        Reinstall controller module
-      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/a700s/fan-complete-rma.html">
-        Return failed part to NetApp
-      </a></li></ul></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/a700s/nvmem-nvram-battery-replace.html">
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/a700s/nvmem-nvram-battery-replace.html">
         NVRAM battery
       </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/a700s/nvram-or-nvram-dimm-replacement.html">
         NVRAM
@@ -5991,7 +5947,7 @@
       </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/sas3/install-cabling-worksheets-examples-multipath.html">
         Cabling worksheets and examples for common multipath HA configurations
       </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/sas3/install-cabling-worksheets-examples-fas2600.html">
-        Cabling worksheets and examples for common AFF A200, AFF A220, FAS2600 series and FAS2700 configurations
+        Cabling worksheets and examples for AFF and FAS platforms with onboard storage
       </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/sas3/install-worksheets-examples-quadpath.html">
         Cabling worksheet and example for a quad-path HA configuration with two quad-port SAS HBAs
       </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/sas3/install-cabling-worksheet-template-multipath.html">
@@ -6129,7 +6085,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-04-21 19:02:05 +0000">04/21/2022</time>
+    <time datetime="2022-05-06 05:24:19 +0000">05/06/2022</time>
     
   
 
@@ -6363,6 +6319,52 @@
 </ul>
 </div>
 </div>
+<div class="sect2">
+<h3 id="ds460c-drive-handling-considerations">DS460C drive handling considerations</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>The drives are packaged separately from the shelf chassis.</p>
+<div class="paragraph">
+<p>You should take inventory of the drives.</p>
+</div>
+</li>
+<li>
+<p>After you unpack the drives, you should save the packaging materials for future use.</p>
+<div class="admonitionblock caution">
+<table>
+<tr>
+<td class="icon">
+<img src="/us-en/ontap-systems/images/caution.svg" alt="Caution">
+</td>
+<td class="content">
+<strong>Possible loss of data access:</strong> If in the future, you move the shelf to a different part of the data center or transport the shelf to a different location, you need to remove the drives from the drive drawers to avoid possible damage to the drive drawers and drives.
+</td>
+</tr>
+</table>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<img src="/us-en/ontap-systems/images/note.svg" alt="Note">
+</td>
+<td class="content">
+Keep disk drives in their ESD bag until you are ready to install them.
+</td>
+</tr>
+</table>
+</div>
+</li>
+<li>
+<p>When handling the drives, always wear an ESD wrist strap grounded to an unpainted surface on your storage enclosure chassis to prevent static discharges.</p>
+<div class="paragraph">
+<p>If a wrist strap is unavailable, touch an unpainted surface on your storage enclosure chassis before handling the disk drive.</p>
+</div>
+</li>
+</ul>
+</div>
+</div>
 </div>
 </div>
 <div class="sect1">
@@ -6407,22 +6409,22 @@ Do not flange-mount the disk shelf into a telco-type rack; the disk shelf&#8217;
 <p>To make a disk shelf lighter and easier to maneuver, remove the power supplies and I/O modules (IOMs).</p>
 </div>
 <div class="paragraph">
-<p>For DS460C disk shelves, you can also use the four detachable handles that shipped with your disk shelf. Handles (two on each side of the chassis) are installed by pushing up until they click into place. As you slide the disk shelf onto the rails, detach handles using the thumb latch.</p>
+<p>For DS460C disk shelves, although the drives are packaged separately, which makes the shelf lighter, an empty DS460C shelf still weighs approximately 132 lb (60kg); therefore, exercise the following caution when moving a shelf.</p>
 </div>
-<div class="paragraph">
-<p>It is recommended that you use a mechanical hoist or lift if you are moving a fully loaded DS460C disk shelf.</p>
-</div>
-<div class="admonitionblock note">
+<div class="admonitionblock caution">
 <table>
 <tr>
 <td class="icon">
-<img src="/us-en/ontap-systems/images/note.svg" alt="Note">
+<img src="/us-en/ontap-systems/images/caution.svg" alt="Caution">
 </td>
 <td class="content">
-A fully loaded DS460C disk shelf can weigh approximately 247 lbs (112 kg).
+It is recommended that you use a mechanized lift or four people using the lift handles to safely move an empty DS460C shelf.
 </td>
 </tr>
 </table>
+</div>
+<div class="paragraph">
+<p>Your DS460C shipment was packaged with four detachable lift handles (two for each side). To use the lift handles, you install them by inserting the tabs of the handles into the slots in the side of the shelf and pushing up until they click into place. Then, as you slide the disk shelf onto the rails, you detach one set of handles at a time using the thumb latch. The following illustration shows how to attach a lift handle.</p>
 </div>
 <div class="imageblock">
 <div class="content">
@@ -6431,23 +6433,57 @@ A fully loaded DS460C disk shelf can weigh approximately 247 lbs (112 kg).
 </div>
 </li>
 <li>
-<p>If you are installing a DS460C disk shelf, install the components into the racked disk shelf; otherwise, go to the next step.</p>
+<p>Reinstall any power supplies and IOMs you removed prior to installing your disk shelf into the rack.</p>
+</li>
+<li>
+<p>If you are installing a DS460C disk shelf, install the drives into the drive drawers; otherwise, go to the next step.</p>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<img src="/us-en/ontap-systems/images/note.svg" alt="Note">
+</td>
+<td class="content">
 <div class="paragraph">
-<p>If you purchased a partially populated disk shelf which does not have a drive in every drive slot, you must ensure that:</p>
+<p>Always wear an ESD wrist strap grounded to an unpainted surface on your storage enclosure chassis to prevent static discharges.</p>
+</div>
+<div class="paragraph">
+<p>If a wrist strap is unavailable, touch an unpainted surface on your storage enclosure chassis before handling the disk drive.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>If you purchased a partially populated shelf, meaning that the shelf has less than the 60 drives it supports, for each drawer, install the drives as follows:</p>
 </div>
 <div class="ulist">
 <ul>
 <li>
-<p>The first four slots (0, 3, 6, and 9) are occupied in each drawer.</p>
-<div class="paragraph">
-<p>This ensures proper airflow in the disk shelf.</p>
+<p>Install the first four drives into the front slots (0, 3, 6, and 9).</p>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<img src="/us-en/ontap-systems/images/note.svg" alt="Note">
+</td>
+<td class="content">
+<strong>Risk of equipment malfunction:</strong> To allow for proper air flow and prevent overheating, always install the first four drives into the front slots (0, 3, 6, and 9).
+</td>
+</tr>
+</table>
 </div>
 </li>
 <li>
-<p>In a shelf with 30 drives, the remaining ten drives are distributed evenly throughout the shelf in slots 1 and 10 of each drawer.
-The following illustration shows how the drives are numbered from 0 to 11 in each drive drawer within the shelf. Slots 0, 3, 6, 9, and, in a shelf containing 30 drives, slots 1 and 10 in each drawer must contain drives.</p>
+<p>For the remaining drives, evenly distribute them across each drawer.</p>
 </li>
 </ul>
+</div>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>The following illustration shows how the drives are numbered from 0 to 11 in each drive drawer within the shelf.</p>
 </div>
 <div class="imageblock">
 <div class="content">
@@ -6457,10 +6493,10 @@ The following illustration shows how the drives are numbered from 0 to 11 in eac
 <div class="olist loweralpha">
 <ol class="loweralpha" type="a">
 <li>
-<p>Reinstall any power supplies and IOMs you removed prior to installing your disk shelf into the rack.</p>
+<p>Open the top drawer of the shelf.</p>
 </li>
 <li>
-<p>Open the top drawer of the shelf.</p>
+<p>Remove a drive from its ESD bag.</p>
 </li>
 <li>
 <p>Raise the cam handle on the drive to vertical.</p>
@@ -6530,26 +6566,24 @@ The following illustration shows how the drives are numbered from 0 to 11 in eac
 </li>
 <li>
 <p>Repeat these steps for each drawer in the disk shelf.</p>
-</li>
-</ol>
-</div>
-</li>
+<div class="olist arabic">
+<ol class="arabic">
 <li>
 <p>If you are adding multiple disk shelves, repeat the previous steps for each disk shelf you are installing.</p>
 </li>
 <li>
 <p>Connect the power supplies for each disk shelf:</p>
-<div class="olist loweralpha">
-<ol class="loweralpha" type="a">
+</li>
+</ol>
+</div>
+</li>
 <li>
 <p>Connect the power cords first to the disk shelves, securing them in place with the power cord retainer, and then connect the power cords to different power sources for resiliency.</p>
 </li>
 <li>
 <p>Turn on the power supplies for each disk shelf and wait for the disk drives to spin up.</p>
-</li>
-</ol>
-</div>
-</li>
+<div class="olist arabic">
+<ol class="arabic">
 <li>
 <p>Set the shelf ID for each disk shelf you are hot-adding to an ID that is unique within the HA pair or single-controller configuration.</p>
 <div class="paragraph">
@@ -6558,8 +6592,10 @@ The following illustration shows how the drives are numbered from 0 to 11 in eac
 <div class="paragraph">
 <p>You can use the following substeps to change shelf IDs, or for more detailed instructions, use <a href="install-change-shelf-id.html">Change a shelf ID</a>.</p>
 </div>
-<div class="olist loweralpha">
-<ol class="loweralpha" type="a">
+</li>
+</ol>
+</div>
+</li>
 <li>
 <p>If needed, verify shelf IDs already in use by running Config Advisor.</p>
 <div class="paragraph">
@@ -6583,9 +6619,6 @@ The following illustration shows how the drives are numbered from 0 to 11 in eac
 </li>
 <li>
 <p>Repeat substeps a through d for each disk shelf you are hot-adding.</p>
-</li>
-</ol>
-</div>
 </li>
 </ol>
 </div>
@@ -6778,7 +6811,9 @@ Firmware updates can take up to 30 minutes.
 <p>Cable the shelf-to-shelf connection(s) between IOM A of the disk shelf at the end of the stack and IOM A of the disk shelf you are hot-adding.</p>
 </li>
 <li>
-<p>Reconnect any cables that you removed in substep a to the same port(s) on IOM A of the disk shelf you are hot-adding; otherwise, go to the next substep.</p>
+<p>Reconnect any cables that you removed in substep a to the same port(s) on IOM A of the disk shelf you are hot-adding; otherwise, go to the next substep.
++
+Make sure that you wait at least 70 seconds between disconnecting the cable and reconnecting it.</p>
 </li>
 <li>
 <p>Verify that all cables are securely fastened.</p>
@@ -6817,6 +6852,9 @@ Firmware updates can take up to 30 minutes.
 <p>If you hot-added a disk shelf with mini-SAS HD SAS optical cables to a stack of disk shelves connected with SAS copper cables, replace the SAS copper cables; otherwise, go to the next step.</p>
 <div class="paragraph">
 <p>The stack must meet the requirements stated in the <a href="#requirements-for-hot-adding-disk-shelves-with-iom12-modules">Requirements for hot-adding disk shelves with IOM12 modules</a> section of this procedure.</p>
+</div>
+<div class="paragraph">
+<p>Replace cables one at a time and make sure that you wait at least 70 seconds between disconnecting a cable and connecting a new one.</p>
 </div>
 </li>
 <li>
@@ -6897,6 +6935,70 @@ Errors:
 </div>
 </li>
 </ol>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="move-or-transport-ds460c-shelves">Move or transport DS460C shelves</h2>
+<div class="sectionbody">
+<div class="paragraph lead">
+<p>If in the future, you move DS460C shelves to a different part of the data center or transport the shelves to a different location, you need to remove the drives from the drive drawers to avoid possible damage to the drive drawers and drives.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>If when you installed DS460C shelves as part of your shelf hot-add, you saved the drive packaging materials, use these to repackage the drives before moving them.</p>
+<div class="paragraph">
+<p>If you did not save the packaging materials, you should place drives on cushioned surfaces or use alternate cushioned packaging. Never stack drives on top of each other.</p>
+</div>
+</li>
+<li>
+<p>Before handling drives, wear an ESD wrist strap grounded to an unpainted surface on your storage enclosure chassis.</p>
+<div class="paragraph">
+<p>If a wrist strap is unavailable, touch an unpainted surface on your storage enclosure chassis before handling a drive.</p>
+</div>
+</li>
+<li>
+<p>You should take steps to handle drives carefully:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Always use two hands when removing, installing, or carrying a drive to support its weight.</p>
+<div class="admonitionblock caution">
+<table>
+<tr>
+<td class="icon">
+<img src="/us-en/ontap-systems/images/caution.svg" alt="Caution">
+</td>
+<td class="content">
+Do not place hands on the drive boards exposed on the underside of the drive carrier.
+</td>
+</tr>
+</table>
+</div>
+</li>
+<li>
+<p>Be careful not to bump drives against other surfaces.</p>
+</li>
+<li>
+<p>Drives should be kept away from magnetic devices.</p>
+<div class="admonitionblock caution">
+<table>
+<tr>
+<td class="icon">
+<img src="/us-en/ontap-systems/images/caution.svg" alt="Caution">
+</td>
+<td class="content">
+Magnetic fields can destroy all data on a drive and cause irreparable damage to the drive circuitry.
+</td>
+</tr>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</li>
+</ul>
 </div>
 </div>
 </div>

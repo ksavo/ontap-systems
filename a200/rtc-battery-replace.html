@@ -2276,39 +2276,6 @@
 
 
 
-    
-      <ul class="subfolders" style="display:none;">
-        <li class="pdf-ux-container">
-          
-          
-          
-          <a target="_blank" 
-            
-              href="/us-en/ontap-systems/pdfs/sidebar/Fan.pdf" 
-            
-          >
-            <img src="/us-en/ontap-systems/images/pdf.png" width="16" height="16"/>
-            Fan
-          </a>
-          
-
-
-
-
-
-
-
-
-
-
-
-          
-        </li>
-      </ul>
-    
-
-  
-
 
 
 
@@ -5265,20 +5232,9 @@
         DIMM
       </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/a700s/drive-replace.html">
         Drive
-      </a></li><li class="subfolders "><a href="#">
-        <div class="na-navbar-padding"> Fan</div>
-      </a>
-      <ul><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/a700s/fan-impaired-controller-shutdown.html">
-        Shut down impaired node
-      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/a700s/fan-controller-remove.html">
-        Remove controller module
       </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/a700s/fan-replace.html">
         Fan
-      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/a700s/fan-controller-reinstall-pcie-rtc.html">
-        Reinstall controller module
-      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/a700s/fan-complete-rma.html">
-        Return failed part to NetApp
-      </a></li></ul></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/a700s/nvmem-nvram-battery-replace.html">
+      </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/a700s/nvmem-nvram-battery-replace.html">
         NVRAM battery
       </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/a700s/nvram-or-nvram-dimm-replacement.html">
         NVRAM
@@ -5991,7 +5947,7 @@
       </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/sas3/install-cabling-worksheets-examples-multipath.html">
         Cabling worksheets and examples for common multipath HA configurations
       </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/sas3/install-cabling-worksheets-examples-fas2600.html">
-        Cabling worksheets and examples for common AFF A200, AFF A220, FAS2600 series and FAS2700 configurations
+        Cabling worksheets and examples for AFF and FAS platforms with onboard storage
       </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/sas3/install-worksheets-examples-quadpath.html">
         Cabling worksheet and example for a quad-path HA configuration with two quad-port SAS HBAs
       </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/sas3/install-cabling-worksheet-template-multipath.html">
@@ -6195,9 +6151,28 @@
 <div class="paragraph">
 <p>To shut down the impaired controller, you must determine the status of the controller and, if necessary, take over the controller so that the healthy controller continues to serve data from the impaired controller storage.</p>
 </div>
-<div class="paragraph">
+<div class="ulist">
 <div class="title">About this task</div>
+<ul>
+<li>
+<p>If you are using NetApp Storage Encryption, you must have reset the MSID using the instructions in the &#8220;Returning SEDs to unprotected mode&#8221; section of the <em>ONTAP 9 NetApp Encryption Power Guide</em>.</p>
+<div class="paragraph">
+<p><a href="https://docs.netapp.com/ontap-9/topic/com.netapp.doc.pow-nve/home.html">ONTAP 9 NetApp Encryption Power Guide</a></p>
+</div>
+</li>
+<li>
+<p>If you have a SAN system, you must have checked event messages (event log show) for impaired controller SCSI blade.</p>
+<div class="paragraph">
+<p>Each SCSI-blade process should be in quorum with the other nodes in the cluster. Any issues must be resolved before you proceed with the replacement.</p>
+</div>
+</li>
+<li>
 <p>If you have a cluster with more than two nodes, it must be in quorum. If the cluster is not in quorum or a healthy controller shows false for eligibility and health, you must correct the issue before shutting down the impaired controller; see the <a href="https://docs.netapp.com/us-en/ontap/system-admin/index.html" target="_blank" rel="noopener">Administration overview with the CLI</a>.</p>
+</li>
+<li>
+<p>If you have a MetroCluster configuration, you must have confirmed that the MetroCluster Configuration State is configured and that the nodes are in an enabled and normal state (<code>metrocluster node show</code>).</p>
+</li>
+</ul>
 </div>
 <div class="olist arabic">
 <div class="title">Steps</div>
