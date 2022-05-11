@@ -22,21 +22,21 @@ indexpage:
     - title: Maintain
       links:
         - title: Boot media
-          url: /bootmedia-replace-overview.html
+          url: ../fas2700/bootmedia-replace-overview.html
         - title: Caching module
-          url: /caching-module-replace.html
+          url: ../fas2700/caching-module-replace.html
         - title: Chassis
-          url: /chassis-replace-overview.html
+          url: ../fas2700/chassis-replace-overview.html
         - title: Controller module
-          url: /controller-replace-overview.html
+          url: ../fas2700/controller-replace-overview.html
         - title: DIMM
-          url: /dimm-replace.html
+          url: ../fas2700/dimm-replace.html
         - title: NVMEM battery
-          url: /nvram-nvmem-battery-replace.html
+          url: ../fas2700/nvram-nvmem-battery-replace.html
         - title: Power supply
-          url: /power-supply-swap-out.html
+          url: ../fas2700/power-supply-swap-out.html
         - title: RTC battery
-          url: /rtc-battery-replace.html
+          url: ../fas2700/rtc-battery-replace.html
     - title: Learn
       links:
         - title: Replacing an internal disk drive video
