@@ -24,33 +24,33 @@ indexpage:
     - title: Maintain
       links:
         - title: Boot media
-          url: /bootmedia-replace-overview.html
+          url: ../fas9000/bootmedia-replace-overview.html
         - title: Caching or core dump module
-          url: /caching-module-and-core-dump-module-replace.html
+          url: ../fas9000/caching-module-and-core-dump-module-replace.html
         - title: Caching module (hot-swap)
-          url: /caching-module-hot-swap.html
+          url: ../fas9000/caching-module-hot-swap.html
         - title: Chassis
-          url: /chassis-replace-overview.html
+          url: ../fas9000/chassis-replace-overview.html
         - title: Controller module
-          url: /controller-replace-overview.html
+          url: ../fas9000/controller-replace-overview.html
         - title: DCPM (with NVRAM10 battery)
-          url: /dcpm-nvram10-battery-replace.html
+          url: ../fas9000/dcpm-nvram10-battery-replace.html
         - title: DIMM
-          url: /dimm-replace.html
+          url: ../fas9000/dimm-replace.html
         - title: Fan
-          url: /fan-replace.html
+          url: ../fas9000/fan-swap-out.html
         - title: I/O module
-          url: /pci-cards-and-risers-replace.html
+          url: ../fas9000/pci-cards-and-risers-replace.html
         - title: LED USB module
-          url: /led-module-replace.html
-        - title: NVRAM module and/or NVRAM DIMMs
-          url: /nvram-module-or-nvram-dimm-replacement.html
+          url: ../fas9000/led-module-replace.html
+        - title: NVRAM module or NVRAM DIMMs
+          url: ../fas9000/nvram-module-or-nvram-dimm-replacement.html
         - title: Power supply
-          url: /power-supply-swap-out.html
+          url: ../fas9000/power-supply-swap-out.html
         - title: RTC battery
-          url: /rtc-battery-replace.html
+          url: ../fas9000/rtc-battery-replace.html
         - title: X91148A module
-          url: /x91148a-module-install-overview.html
+          url: ../fas9000/x91148a-module-install-overview.html
     - title: Add or remove shelves
       links:
         - title: NS224
