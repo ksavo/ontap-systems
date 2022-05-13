@@ -9,7 +9,7 @@ summary: You must stop all host I/O activity and power off the shelf before repl
 :imagesdir: ../media/
 
 [.lead]
-You must stop all host I/O activity and power off the shelf before replacing the drive drawer.
+TEST.You must stop all host I/O activity and power off the shelf before replacing the drive drawer.
 
 == Before you begin
 
