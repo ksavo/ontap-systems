@@ -38,7 +38,7 @@ indexpage:
         - title: NVDIMM
           url: /dimm-replace.html
         - title: NVDIMM battery
-          url: /nvmem-nvram-battery-replace.html
+          url: /nvdimm-battery-replace.html
         - title: PCIe or mezzanine card
           url: /pci-cards-and-risers-replace.html
         - title: Power supply

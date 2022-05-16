@@ -30,13 +30,13 @@ indexpage:
         - title: Controller module
           url: /controller-replace-overview.html
         - title: Fan
-          url: /fan-replace.html
+          url: /fan-swap-out.html
         - title: NV battery
           url: /nvmem-nvram-battery-replace.html
         - title: PCIe card
           url: /pci-cards-and-risers-replace.html
         - title: Power supply
-          url: /power-supply-swapout.html
+          url: /power-supply-swap-out.html
         - title: System DIMM
           url: /dimm-replace.html
         - title: RTC battery

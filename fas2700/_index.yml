@@ -32,7 +32,7 @@ indexpage:
         - title: DIMM
           url: /dimm-replace.html
         - title: NVMEM battery
-          url: /nvmem-battery-replace.html
+          url: /nvmem-nvram-battery-replace.html
         - title: Power supply
           url: /power-supply-swap-out.html
         - title: RTC battery
