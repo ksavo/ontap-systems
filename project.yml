@@ -1,13 +1,10 @@
-settings:
-  search: ontap-systems
+ettings:
   name: "ONTAP Systems"
   internal:
-    pdf_enabled: true
+    pdf_enabled: false
   prod:
     pdf_enabled: true
     harmony_enabled: true
-    langs: "us-en,ja-jp,zh-cn"
-
 sidebar:
   entries:
     - title: Home
