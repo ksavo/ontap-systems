@@ -182,7 +182,7 @@ NOTE: *Risk of equipment malfunction:* To allow for proper air flow and prevent 
 
 ** For the remaining drives, evenly distribute them across each drawer.
 
-The following illustration shows how the drives are numbered from 0 to 11 in each drive drawer within the shelf. 
+The following illustration shows how the drives are numbered from 0 to 11 in each drive drawer within the shelf.
 
 image::../media/dwg_trafford_drawer_with_hdds_callouts.gif[]
 
@@ -193,8 +193,8 @@ image::../media/dwg_trafford_drawer_with_hdds_callouts.gif[]
 +
 image::../media/28_dwg_e2860_de460c_drive_cru.gif[]
 +
+[cols="10,90"]
 |===
-a|
 image:../media/legend_icon_01.png[]|
 Raised button on the right side of the drive carrier
 |===
@@ -319,6 +319,9 @@ link:install-cabling-worksheet-template-quadpath.html[Controller-to-stack cablin
  .. Verify that all cables are securely fastened.
 . If you are hot-adding one or more disk shelves to an end--the logical first or last disk shelf--of an existing stack, complete the applicable substeps for your configuration; otherwise, go to the next step.
 +
+NOTE: Make sure that you wait at least 70 seconds between disconnecting a cable and reconnecting it, and if you are replacing a cable for a longer one.
++
+
 [cols="2*",options="header"]
 |===
 | If you are...| Then...
@@ -332,8 +335,6 @@ Leave the other end of these cables connected to the controllers, or replace cab
 
  .. Cable the shelf-to-shelf connection(s) between IOM A of the disk shelf at the end of the stack and IOM A of the disk shelf you are hot-adding.
  .. Reconnect any cables that you removed in substep a to the same port(s) on IOM A of the disk shelf you are hot-adding; otherwise, go to the next substep.
- +
- Make sure that you wait at least 70 seconds between disconnecting the cable and reconnecting it.
 
  .. Verify that all cables are securely fastened.
  .. Repeat substeps a through d for IOM B; otherwise, go to Step 4.
