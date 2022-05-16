@@ -18,17 +18,24 @@ To replace a PCIe card, you must perform a specific sequence of tasks.
 
 You can shut down or take over the impaired controller using different procedures, depending on the storage system hardware configuration.
 
-=== Option 1: Most configurations
+[role="tabbed-block"]
+====
+
+.Option 1: Most configurations
+--
+[.lead]
 
 include::../_include/shutdown_most_frus.adoc[]
+--
 
-=== Option 2: Controller is in a MetroCluster
-
-include::../_include/shutdown_any_mcc_supported.adoc[]
-
-=== Option 3: Controller is in a two-node MetroCluster
+.Option 2: Controller is in a two-node MetroCluster
+--
+[.lead]
 
 include::../_include/shutdown_2n_mcc.adoc[]
+--
+
+====
 
 == Step 2: Open the controller module
 
