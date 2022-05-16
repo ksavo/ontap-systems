@@ -32,14 +32,6 @@ NOTE: *Possible hardware damage:* To prevent electrostatic discharge damage to t
 * Flashlight
 * Permanent marker
 
-.About this task
-
-This procedure applies to shelves having DCM1 drive drawers and shelves having DCM2 drive drawers.
-
-NOTE: This procedure is for like-for-like drive drawer replacements. This means you can only replace a DCM1 drive drawer with another DCM1 drive drawer or replace a DCM2 drive drawer with another DCM2 drive drawer. (Your shelf can have five DCM1 drive drawers or have five DCM2 drive drawers.)
-
-NOTE: DCM2 drive drawers are distinguished by a blue stripe and "DCM2" label on the back.
-
 == Removing the cable chains
 
 [.lead]
