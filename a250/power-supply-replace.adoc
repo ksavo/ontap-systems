@@ -17,6 +17,8 @@ Replacing a power supply involves disconnecting the target power supply (PSU) fr
 NOTE: It is a best practice to replace the power supply within two minutes of removing it from the chassis. The system continues to function, but ONTAP sends messages to the console about the degraded power supply until the power supply is replaced.
 
 * Power supplies are auto-ranging.
++
+IMPORTANT: Do not mix PSUs with different efficiency ratings. Always replace like for like.
 
 Use the following video or the tabulated steps to replace the power supply:
 
