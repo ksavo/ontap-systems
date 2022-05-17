@@ -18,11 +18,6 @@ You must replace the failed component with a replacement FRU component you recei
 == Step 1: Shut down the impaired controller
 
 [.lead]
-Shut down or take over the impaired controller using the appropriate procedure for your configuration.
-
-=== Option 1: Most configurations
-
-[.lead]
 include::../_include/shutdown_most_frus.adoc[]
 
 .Steps
@@ -56,10 +51,6 @@ When the impaired controller shows Waiting for giveback..., press Ctrl-C, and th
 
 . If the system has only one controller module in the chassis, turn off the power supplies, and then unplug the impaired controller's power cords from the power source.
 
-=== Option 2: Controller is in a MetroCluster
-
-[.lead]
-include::../_include/shutdown_any_mcc_supported.adoc[]
 
 == Step 2: Remove controller module
 
