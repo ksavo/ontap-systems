@@ -17,7 +17,7 @@ You replace the real-time clock (RTC) battery in the controller module so that y
 
 == Step 1: Shut down the impaired controller
 
-include::../_include/shutdown_most_frus.adoc[]
+include::../_include/shutdown_no_mcc.adoc[]
 
 . If the system has only one controller module in the chassis, turn off the power supplies, and then unplug the impaired controller's power cords from the power source.
 
