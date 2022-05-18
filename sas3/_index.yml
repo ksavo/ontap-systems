@@ -39,8 +39,6 @@ indexpage:
           url: /service-hot-swap-power-supply.html
         - title: Shelf LED status conditions
           url: /service-monitor-leds.html
-        - title: RTC battery
-          url: /sas3/service-replace-rtc-battery.html
     - title: More resources
       links:
         - title: ONTAP documentation
