@@ -14,19 +14,19 @@ You can use the completed controller-to-stack cabling worksheets and cabling exa
 * If needed, you can refer to link:install-cabling-rules.html[SAS cabling rules] for information about supported configurations, shelf-to-shelf connectivity, and controller-to-shelf connectivity.
 * Cabling examples show controller-to-stack cables as solid or dashed to distinguish controller 0b port connections from controller 0a port connections.
 +
-image::../media/drw_fas2600_controller_to_stack_cable_type_key.png[]
+image::../media/adrw_fas2600_controller_to_stack_cable_type_key (002).png[]
 
 * Cabling examples show controller-to-stack connections and shelf-to-shelf connections in two different colors to distinguish connectivity through IOM A (domain A) and IOM B (domain B).
 +
-image::../media/drw_fas2600_cable_color_key.png[]
+image::../media/adrw_fas2600_cable_color_key (002).png[]
 
 == AFF and FAS platforms with onboard storage in a multipath HA configuration with one multi-shelf stack
 
 The following worksheet and cabling example uses port pair 0a/0b:
 
-image::../media/drw_fas2600_mpha_worksheet.png[]
+image::../media/adrw_fas2600_mpha_worksheet (002).png[]
 
-image::../media/drw_fas2600_mpha.png[]
+image::../media/adrw_fas2600_mpha (002).png[]
 
 == FAS2600 series multipath configuration with one multi-shelf stack
 
