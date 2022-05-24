@@ -179,7 +179,7 @@ endif::[]
 
 +
 
-image:../media/drw_9500_remove_PCM_source.svg[width=340]
+image::../media/drw_9500_remove_PCM_source.svg[width=340]
 
 +
 
