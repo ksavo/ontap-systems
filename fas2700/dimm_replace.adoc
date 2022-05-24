@@ -20,35 +20,6 @@ You must replace the failed component with a replacement FRU component you recei
 [.lead]
 include::../_include/shutdown_most_frus.adoc[]
 
-.Steps
-. If the impaired controller is part of an HA pair, disable automatic giveback from the console of the healthy controller: `storage failover modify -node local -auto-giveback false`
-. Take the impaired controller to the LOADER prompt:
-+
-[options="header" cols="1,2"]
-|===
-| If the impaired controller is displaying...| Then...
-a|
-The LOADER prompt
-a|
-Go to the next step.
-a|
-Waiting for giveback...
-a|
-Press Ctrl-C, and then respond `y` when prompted.
-a|
-System prompt or password prompt (enter system password)
-a|
-Take over or halt the impaired controller:
-
- ** For an HA pair, take over the impaired controller from the healthy controller: `storage failover takeover -ofnode _impaired_node_name_`
-+
-When the impaired controller shows Waiting for giveback..., press Ctrl-C, and then respond `y`.
-
- ** For a stand-alone system: `system node halt _impaired_node_name_`
-
-
-|===
-
 . If the system has only one controller module in the chassis, turn off the power supplies, and then unplug the impaired controller's power cords from the power source.
 
 
