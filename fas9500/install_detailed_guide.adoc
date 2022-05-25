@@ -380,7 +380,7 @@ You must cable the shelf-to-shelf connections, and then cable both controllers t
 
 Be sure to check the illustration arrow for the proper cable connector pull-tab orientation. The cable pull-tab for the storage modules are up, while the pull tabs on the shelves are down.
 
-image::../media/oie_cable_pull_tab_up.svg[width=340px]
+image::../media/oie_cable_pull_tab_up.svg[width=200px]
 
 
 image::../media/oie_cable_pull_tab_down.svg[width=200px]
@@ -495,7 +495,7 @@ ifdef::backend-pdf[]
 https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=a905e56e-c995-4704-9673-adfa0005a891[Animation - Turn on the power to the controllers]
 endif::[]
 
-image::../media/drw_9500_power-on.svg[width=370px]
+image::../media/drw_9500_power-on.svg[width=500px]
 
 
 NOTE: Initial booting may take up to eight minutes.
@@ -625,7 +625,7 @@ https://netapp.hosted.panopto.com/Panopto/Pages/https://netapp.hosted.panopto.co
 endif::[]
 
 
-image::../media/drw_9500_power-on.svg[width=340]
+image::../media/drw_9500_power-on.svg[width=500]
 
 NOTE: Initial booting may take up to eight minutes.
 
