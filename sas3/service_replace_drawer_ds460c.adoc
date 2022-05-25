@@ -190,7 +190,6 @@ Installing a drive drawer into a drive shelf entails sliding the drawer into the
 
 .Before you begin
 
-* You know where to install each drive.
 * You have obtained the following items:
  ** Replacement drive drawer
  ** Flashlight
