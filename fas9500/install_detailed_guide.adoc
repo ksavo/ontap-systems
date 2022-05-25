@@ -451,7 +451,7 @@ ifdef::backend-pdf[]
 https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=95a29da1-faa3-4ceb-8a0b-ac7600675aa6[Animation - Setting your shelf ID's]
 endif::[]
 
-image::../media/drw_power-on_set_shelf_ID_set.svg[width=370px]
+image::../media/drw_power-on_set_shelf_ID_set.svg[width=500px]
 
 
 [cols="20%,80%"]
@@ -580,7 +580,7 @@ https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=95a29da1-faa3-4ceb
 endif::[]
 
 
-image::../media/drw_power-on_set_shelf_ID_set.svg[width=370]
+image::../media/drw_power-on_set_shelf_ID_set.svg[width=500px]
 
 
 [cols="20%,80%"]
