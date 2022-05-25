@@ -9,7 +9,7 @@ summary: Your system configuration determines whether you can perform a nondisru
 :imagesdir: ../media/
 
 [.lead]
-Your system configuration determines whether you can perform a nondisruptive IOM12/IOM12B module hot-swap or a disruptive IOM12/IOM12B module replacement when an IOM12/IOM12B module fails.
+Your system configuration determines whether you can perform a nondisruptive shelf IOM hot-swap or a disruptive shelf IOM replacement when a shelf IOM fails.
 
 .Before you begin
 
