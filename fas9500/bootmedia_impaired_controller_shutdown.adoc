@@ -11,20 +11,11 @@ summary: 'You can shut down or take over the impaired controller using different
 [.lead]
 Shut down or take over the impaired controller using one of the following options.
 
-[role="tabbed-block"]
-====
-
-.Option 1: Most systems
---
 [.lead]
 After completing the NVE or NSE tasks, you need to complete the shutdown of the impaired node.
 
 include::../_include/shutdown_most_frus.adoc[]
---
-.Option 2: Controller is in a MetroCluster
---
 
-====
 
 [.lead]
 After completing the NVE or NSE tasks, you need to complete the shutdown of the impaired node.

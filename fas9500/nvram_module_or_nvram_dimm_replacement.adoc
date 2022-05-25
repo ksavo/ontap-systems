@@ -26,16 +26,10 @@ Because the system ID is derived from the NVRAM module, if replacing the module,
 * You must replace the failed component with a replacement FRU component you received from your provider.
 * You cannot change any disks or disk shelves as part of this procedure.
 
-.Steps
 == Step 1: Shut down the impaired node
 
 [.lead]
-Shut down or take over the impaired controller using the appropriate procedure for your configuration.
 
-.Most systems
-
---
-[.lead]
 include::../_include/shutdown_most_frus_no_PCM_remove.adoc[]
 
 == Step 2: Replace the NVRAM module
@@ -67,7 +61,7 @@ endif::[]
 
 +
 
-image:../media/drw_9500_move-remove_NVRAM_module.svg[width=340]
+image::../media/drw_9500_move-remove_NVRAM_module.svg[width=340]
 
 +
 
@@ -86,13 +80,13 @@ I/O latch completely unlocked
 
 +
 
-image:../media/drw_9500_remove_NVRAM_module_contents.svg[width=340]
+image::../media/drw_9500_remove_NVRAM_module_contents.svg[width=340]
 +
 
 [cols="20%,90%"]
 |===
 a|
-image:../media/legend_icon_01.svg[width=20]
+image::../media/legend_icon_01.svg[width=20]
  a|
 Cover locking button
 a|
@@ -135,7 +129,7 @@ endif::[]
 
 +
 
-image:../media/drw_9500_move-remove_NVRAM_module.svg[width=340]
+image::../media/drw_9500_move-remove_NVRAM_module.svg[width=340]
 
 +
 
@@ -154,7 +148,7 @@ I/O latch completely unlocked
 . Set the NVRAM module on a stable surface and remove the cover from the NVRAM module by pushing down on the blue locking button on the cover, and then, while holding down the blue button, slide the lid off the NVRAM module.
 +
 
-image:../media/drw_9500_remove_NVRAM_module_contents.svg[width=340]
+image::../media/drw_9500_remove_NVRAM_module_contents.svg[width=340]
 
 +
 [cols="20%,90%"]

@@ -346,7 +346,7 @@ Cable host‐side b ports in slot A4 and
 B4 (e4b) and slot A8 and B8 (e8b) to
 the host switch.
 
-image:../media/oie_cable100_gbe_qsfp28.svg[width=85px]
+image::../media/oie_cable100_gbe_qsfp28.svg[width=85px]
 
 a|
 image::../media/oie_legend_icon_4_dr.svg[width=30px]
