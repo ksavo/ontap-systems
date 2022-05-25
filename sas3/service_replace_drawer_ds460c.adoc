@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: stop, all, host, i/o activity, power, off, shelf, replacing, replace, drive, drawer, disk, replace a drive drawer in a ds460c disk shelf
 summary: You must stop all host I/O activity and power off the shelf before replacing the drive drawer.
 ---
-= Replacing a drive drawer in a DS460C disk shelf - shelves with IOM12/test modules
+= Replacing a drive drawer in a DS460C disk shelf - shelves with IOM12/IOM12B modules
 :icons: font
 :imagesdir: ../media/
 
