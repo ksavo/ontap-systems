@@ -30,7 +30,6 @@ NOTE: *Possible hardware damage:* To prevent electrostatic discharge damage to t
 * Replacement drive drawer
 * Replacement left and right cable chains
 * Flashlight
-* Permanent marker
 
 == Removing the cable chains
 
@@ -64,6 +63,7 @@ The figure shows the handle for the fan module extended and released from the or
 +
 image::../media/28_dwg_e2860_de460c_fan_canister_handle_with_callout.gif[]
 +
+[cols="10,90"]
 |===
 a|
 image:../media/legend_icon_01.png[]|
@@ -77,6 +77,7 @@ The figure shows the right side of the drive shelf with the fan module removed. 
 +
 image::../media/2860_dwg_full_back_view_chain_connectors.gif[]
 +
+[cols="10,90"]
 |===
 a|
 image:../media/legend_icon_01.png[]|
@@ -98,6 +99,7 @@ The top cable chain is attached to drive drawer 1. The bottom cable chain is att
 +
 image::../media/2860_dwg_vertical_ring_for_chain.gif[]
 +
+[cols="10,90"]
 |===
 a|
 image:../media/legend_icon_01.png[]|
@@ -113,6 +115,7 @@ The figure shows the horizontal connector on the right and the cable chain disco
 +
 image::../media/2860_dwg_horiz_ring_for_chain.gif[]
 +
+[cols="10,90"]
 |===
 a|
 image:../media/legend_icon_01.png[]|
@@ -139,25 +142,18 @@ The figure shows the orange ring on the horizontal bracket being pushed down so 
 == Removing a drive drawer
 
 [.lead]
-After removing the right and left cable chains, you can remove the drive drawer from the drive shelf. Removing a drive drawer entails sliding the drawer part of the way out, recording the locations of the drives, removing the drives, and removing the drive drawer.
+After removing the right and left cable chains, you can remove the drive drawer from the drive shelf. Removing a drive drawer entails sliding the drawer part of the way out, removing the drives, and removing the drive drawer.
 
 .Before you begin
 
 * You have removed the right and left cable chains for the drive drawer.
 * You have replaced the right and left fan modules.
-* You have obtained a permanent marker to note the exact location of each drive as you remove the drive from the drawer.
 
 .Steps
 
 . Remove the bezel from the front of the drive shelf.
 . Unlatch the drive drawer by pulling out on both levers.
 . Using the extended levers, carefully pull the drive drawer out until it stops. Do not completely remove the drive drawer from the drive shelf.
-. If logical unit numbers (LUNs) have already been created and assigned, use a permanent marker to note the exact location of each drive. For example, using the following drawing as a reference, write the appropriate slot number on the top of each drive.
-+
-image::../media/dwg_trafford_drawer_with_hdds_callouts.gif[]
-+
-NOTE: *Possible loss of data access:* Make sure to record the exact location of each drive before removing it.
-
 . Remove the drives from the drive drawer:
  .. Gently pull back the orange release latch that is visible on the center front of each drive. The following image shows the orange release latch for each of the drives.
 +
@@ -176,6 +172,7 @@ NOTE: *Possible loss of data access:* Magnetic fields can destroy all data on th
 +
 image::../media/92_pht_de6600_drive_drawer_release_lever.gif[]
 +
+[cols="10,90"]
 |===
 a|
 image:../media/legend_icon_01.png[]|
@@ -193,7 +190,6 @@ Installing a drive drawer into a drive shelf entails sliding the drawer into the
 
 .Before you begin
 
-* You know where to install each drive.
 * You have obtained the following items:
  ** Replacement drive drawer
  ** Flashlight
@@ -206,6 +202,7 @@ The lock-out tumbler assembly is a safety feature that prevents you from being a
 +
 image::../media/92_pht_de6600_lock_out_tumbler_detail.gif[]
 +
+[cols="10,90"]
 |===
 a|
 image:../media/legend_icon_01.png[]|
@@ -231,19 +228,14 @@ NOTE: *Risk of equipment damage:* Stop pushing the drive drawer if you feel exce
 . Follow these steps to reinstall the drives in the drive drawer:
  .. Unlatch the drive drawer by pulling out on both levers at the front of the drawer.
  .. Using the extended levers, carefully pull the drive drawer out until it stops. Do not completely remove the drive drawer from the drive shelf.
- .. Determine which drive to install in each slot by using the notes you made when removing the drives.
-+
-NOTE: *Possible loss of data access:* You must install each drive in its original location in the drive drawer.
-+
-image::../media/dwg_trafford_drawer_with_hdds_callouts.gif[]
-
- .. Raise the handle on the drive to vertical.
+ .. On the drive you are installing, raise the handle to vertical.
  .. Align the two raised buttons on each side of the drive with the notches on the drawer.
 +
 The figure shows the right side view of a drive, showing the location of the raised buttons.
 +
 image::../media/28_dwg_e2860_de460c_drive_cru.gif[]
 +
+[cols="10,90"]
 |===
 a|
 image:../media/legend_icon_01.png[]|
@@ -252,6 +244,10 @@ Raised button on the right side of the drive.
 
  .. Lower the drive straight down, and then rotate the drive handle down until the drive snaps into place.
 +
+If you have a partially populated shelf, meaning that the drawer in which you are reinstalling drives has less than the 12 drives it supports, install the first four drives into the front slots (0, 3, 6, and 9).
+
+NOTE: *Risk of equipment malfunction:* To allow for proper air flow and prevent overheating, always install the first four drives into the front slots (0, 3, 6, and 9).
+
 image::../media/92_dwg_de6600_install_or_remove_drive.gif[]
 
  .. Repeat these substeps to reinstall all of the drives.
@@ -325,6 +321,7 @@ The figure shows the guide rail on the left side for the second drive drawer in 
 +
 image::../media/2860_dwg_guide_rail.gif[]
 +
+[cols="10,90"]
 |===
 a|
 image:../media/legend_icon_01.png[]|
