@@ -215,6 +215,7 @@ CAUTION: *Possible loss of data access:* Never slam the drawer shut. Push the dr
 
  .. Close the drive drawer by pushing both levers towards the center.
  .. Repeat these steps for each drawer in the disk shelf.
+.. Attach the front bezel.
 
 . If you are adding multiple disk shelves, repeat the previous steps for each disk shelf you are installing.
 . Connect the power supplies for each disk shelf:
