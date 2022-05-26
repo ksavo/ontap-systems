@@ -179,7 +179,11 @@ image::../media/drw_9500_cable_management_arms.svg[width=340px]
 [.lead]
 You can cable the controllers to your network by using the two-node switchless cluster method or by using the cluster interconnect network.
 
-=== Option 1: Two-node switchless cluster
+[role="tabbed-block"]
+====
+
+.Option 1: Two-node switchless cluster
+--
 
 [.lead]
 Management network, data network, and management ports on the controllers are connected to switches. The cluster interconnect ports are cabled on both controllers.
@@ -274,7 +278,9 @@ management arms (not shown).
 
 . To cable your storage, see <<Step 4: Cable controllers to drive shelves>>.
 
-=== Option 2: Switched cluster
+--
+
+.Option 2: Switched cluster
 
 [.lead]
 Management network, data network, and management ports on the controllers are connected to switches. The cluster interconnect and HA ports are cabled on to the cluster/HA switch.
@@ -370,6 +376,9 @@ and connect them to different power sources
 management arms (not shown).
 
 . To cable your storage, see <<Step 4: Cable controllers to drive shelves>>.
+
+--
+====
 
 == Step 4: Cable controllers to drive shelves
 
