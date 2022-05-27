@@ -448,6 +448,9 @@ mini-SAS cable
 [.lead]
 You can complete the system setup and configuration using cluster discovery with only a connection to the switch and laptop, or by connecting directly to a controller in the system and then connecting to the management switch.
 
+[role="tabbed-block"]
+====
+
 .Option 1: If network discovery is enabled
 --
 
