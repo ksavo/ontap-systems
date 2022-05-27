@@ -6085,7 +6085,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-04-27 21:33:26 +0000">04/27/2022</time>
+    <time datetime="2022-05-16 23:01:16 +0000">05/16/2022</time>
     
   
 
@@ -6095,6 +6095,14 @@
           alt="dougthomp"
           width="20" height="20"
           src="https://avatars.githubusercontent.com/u/76076341?v=4"
+          style="border-radius: 50%;"/>
+  </a>
+  
+  <a target="_blank" class="ext-link-indicator" href="https://github.com/netapp-ivanad">
+    <img  class="avatar avatar-small"
+          alt="netapp-ivanad"
+          width="20" height="20"
+          src="https://avatars.githubusercontent.com/u/76115643?v=4"
           style="border-radius: 50%;"/>
   </a>
   
@@ -6119,17 +6127,15 @@
 
 </p>
 
-<div id="preamble">
-<div class="sectionbody">
 <div class="paragraph lead">
 <p>Shut down or take over the impaired controller using the appropriate procedure for your configuration.</p>
 </div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="option-1-most-configurations">Option 1: Most configurations</h2>
-<div class="sectionbody">
-<div class="paragraph">
+<div class="exampleblock tabbed-block">
+<div class="content">
+<div class="openblock">
+<div class="title">Option 1: Most configurations</div>
+<div class="content">
+<div class="paragraph lead">
 <p>To shut down the impaired controller, you must determine the status of the controller and, if necessary, take over the controller so that the healthy controller continues to serve data from the impaired controller storage.</p>
 </div>
 <div class="ulist">
@@ -6215,10 +6221,10 @@
 </div>
 </div>
 </div>
-<div class="sect1">
-<h2 id="option-2-controller-is-in-a-two-node-metrocluster-configuration">Option 2: Controller is in a two-node MetroCluster configuration</h2>
-<div class="sectionbody">
-<div class="paragraph">
+<div class="openblock">
+<div class="title">Option 2: Controller is in a two-node MetroCluster</div>
+<div class="content">
+<div class="paragraph lead">
 <p>To shut down the impaired controller, you must determine the status of the controller and, if necessary, switch over the controller so that the healthy controller continues to serve data from the impaired controller storage.</p>
 </div>
 <div class="ulist">
@@ -6347,137 +6353,6 @@ aggr_b2    227.1GB   227.1GB    0% online       0 mcc1-a2          raid_dp, mirr
 </ol>
 </div>
 </div>
-</div>
-<div class="sect1">
-<h2 id="option-3-controller-is-in-a-two-node-metrocluster">Option 3: Controller is in a two-node MetroCluster</h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p>To shut down the impaired controller, you must determine the status of the controller and, if necessary, switch over the controller so that the healthy controller continues to serve data from the impaired controller storage.</p>
-</div>
-<div class="ulist">
-<div class="title">About this task</div>
-<ul>
-<li>
-<p>If you are using NetApp Storage Encryption, you must have reset the MSID using the instructions in the "Return a FIPS drive or SED to unprotected mode" section of <a href="https://docs.netapp.com/us-en/ontap/encryption-at-rest/return-seds-unprotected-mode-task.html" target="_blank" rel="noopener">NetApp Encryption overview with the CLI</a>.</p>
-</li>
-<li>
-<p>You must leave the power supplies turned on at the end of this procedure to provide power to the healthy controller.</p>
-</li>
-</ul>
-</div>
-<div class="olist arabic">
-<div class="title">Steps</div>
-<ol class="arabic">
-<li>
-<p>Check the MetroCluster status to determine whether the impaired controller has automatically switched over to the healthy controller: <code>metrocluster show</code></p>
-</li>
-<li>
-<p>Depending on whether an automatic switchover has occurred, proceed according to the following table:</p>
-<table class="tableblock frame-all grid-all stretch">
-<colgroup>
-<col style="width: 33.3333%;">
-<col style="width: 66.6667%;">
-</colgroup>
-<thead>
-<tr>
-<th class="tableblock halign-left valign-top">If the impaired controller&#8230;&#8203;</th>
-<th class="tableblock halign-left valign-top">Then&#8230;&#8203;</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>Has automatically switched over</p>
-</div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>Proceed to the next step.</p>
-</div></div></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>Has not automatically switched over</p>
-</div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>Perform a planned switchover operation from the healthy controller: <code>metrocluster switchover</code></p>
-</div></div></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>Has not automatically switched over, you attempted switchover with the <code>metrocluster switchover</code> command, and the switchover was vetoed</p>
-</div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>Review the veto messages and, if possible, resolve the issue and try again. If you are unable to resolve the issue, contact technical support.</p>
-</div></div></td>
-</tr>
-</tbody>
-</table>
-</li>
-<li>
-<p>Resynchronize the data aggregates by running the <code>metrocluster heal -phase aggregates</code> command from the surviving cluster.</p>
-<div class="listingblock">
-<div class="content">
-<pre>controller_A_1::&gt; metrocluster heal -phase aggregates
-[Job 130] Job succeeded: Heal Aggregates is successful.</pre>
-</div>
-</div>
-<div class="paragraph">
-<p>If the healing is vetoed, you have the option of reissuing the <code>metrocluster heal</code> command with the <code>-override-vetoes</code> parameter. If you use this optional parameter, the system overrides any soft vetoes that prevent the healing operation.</p>
-</div>
-</li>
-<li>
-<p>Verify that the operation has been completed by using the metrocluster operation show command.</p>
-<div class="listingblock">
-<div class="content">
-<pre>controller_A_1::&gt; metrocluster operation show
-    Operation: heal-aggregates
-      State: successful
-Start Time: 7/25/2016 18:45:55
-   End Time: 7/25/2016 18:45:56
-     Errors: -</pre>
-</div>
-</div>
-</li>
-<li>
-<p>Check the state of the aggregates by using the <code>storage aggregate show</code> command.</p>
-<div class="listingblock">
-<div class="content">
-<pre>controller_A_1::&gt; storage aggregate show
-Aggregate     Size Available Used% State   #Vols  Nodes            RAID Status
---------- -------- --------- ----- ------- ------ ---------------- ------------
-...
-aggr_b2    227.1GB   227.1GB    0% online       0 mcc1-a2          raid_dp, mirrored, normal...</pre>
-</div>
-</div>
-</li>
-<li>
-<p>Heal the root aggregates by using the <code>metrocluster heal -phase root-aggregates</code> command.</p>
-<div class="listingblock">
-<div class="content">
-<pre>mcc1A::&gt; metrocluster heal -phase root-aggregates
-[Job 137] Job succeeded: Heal Root Aggregates is successful</pre>
-</div>
-</div>
-<div class="paragraph">
-<p>If the healing is vetoed, you have the option of reissuing the <code>metrocluster heal</code> command with the -override-vetoes parameter. If you use this optional parameter, the system overrides any soft vetoes that prevent the healing operation.</p>
-</div>
-</li>
-<li>
-<p>Verify that the heal operation is complete by using the <code>metrocluster operation show</code> command on the destination cluster:</p>
-<div class="listingblock">
-<div class="content">
-<pre>mcc1A::&gt; metrocluster operation show
-  Operation: heal-root-aggregates
-      State: successful
- Start Time: 7/29/2016 20:54:41
-   End Time: 7/29/2016 20:54:42
-     Errors: -</pre>
-</div>
-</div>
-</li>
-<li>
-<p>On the impaired controller module, disconnect the power supplies.</p>
-</li>
-</ol>
 </div>
 </div>
 </div>

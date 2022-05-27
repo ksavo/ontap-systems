@@ -6085,11 +6085,19 @@
 <p class="page-details">
   
     
-    <time datetime="2021-10-18 21:27:10 +0000">10/18/2021</time>
+    <time datetime="2022-05-25 00:19:56 +0000">05/25/2022</time>
     
   
 
 <span>Contributors
+  <a target="_blank" class="ext-link-indicator" href="https://github.com/netapp-lisa">
+    <img  class="avatar avatar-small"
+          alt="netapp-lisa"
+          width="20" height="20"
+          src="https://avatars.githubusercontent.com/u/77256372?v=4"
+          style="border-radius: 50%;"/>
+  </a>
+  
   <a target="_blank" class="ext-link-indicator" href="https://github.com/netapp-martyh">
     <img  class="avatar avatar-small"
           alt="netapp-martyh"
@@ -6103,14 +6111,6 @@
           alt="dougthomp"
           width="20" height="20"
           src="https://avatars.githubusercontent.com/u/76076341?v=4"
-          style="border-radius: 50%;"/>
-  </a>
-  
-  <a target="_blank" class="ext-link-indicator" href="https://github.com/netapp-lisa">
-    <img  class="avatar avatar-small"
-          alt="netapp-lisa"
-          width="20" height="20"
-          src="https://avatars.githubusercontent.com/u/77256372?v=4"
           style="border-radius: 50%;"/>
   </a>
   
@@ -6540,22 +6540,22 @@ The migration instructions provide the system requirements for IBACP.
 <p>To make a disk shelf lighter and easier to maneuver, remove the power supplies and I/O modules (IOMs).</p>
 </div>
 <div class="paragraph">
-<p>For DS460C disk shelves, you can also use the four detachable handles that shipped with your disk shelf. Handles (two on each side of the chassis) are installed by pushing up until they click into place. As you slide the disk shelf onto the rails, detach handles using the thumb latch.</p>
+<p>For DS460C disk shelves, although the drives are packaged separately, which makes the shelf lighter, an empty DS460C shelf still weighs approximately 132 lb (60kg); therefore, exercise the following caution when moving a shelf.</p>
 </div>
-<div class="paragraph">
-<p>It is recommended that you use a mechanical hoist or lift if you are moving a fully loaded DS460C disk shelf.</p>
-</div>
-<div class="admonitionblock note">
+<div class="admonitionblock caution">
 <table>
 <tr>
 <td class="icon">
-<img src="/us-en/ontap-systems/images/note.svg" alt="Note">
+<img src="/us-en/ontap-systems/images/caution.svg" alt="Caution">
 </td>
 <td class="content">
-A fully loaded DS460C disk shelf can weigh approximately 247 lbs (112 kg).
+It is recommended that you use a mechanized lift or four people using the lift handles to safely move an empty DS460C shelf.
 </td>
 </tr>
 </table>
+</div>
+<div class="paragraph">
+<p>Your DS460C shipment was packaged with four detachable lift handles (two for each side). To use the lift handles, you install them by inserting the tabs of the handles into the slots in the side of the shelf and pushing up until they click into place. Then, as you slide the disk shelf onto the rails, you detach one set of handles at a time using the thumb latch. The following illustration shows how to attach a lift handle.</p>
 </div>
 <div class="imageblock">
 <div class="content">
@@ -6564,25 +6564,57 @@ A fully loaded DS460C disk shelf can weigh approximately 247 lbs (112 kg).
 </div>
 </li>
 <li>
-<p>If you are installing a DS460C disk shelf, install the components into the racked disk shelf; otherwise, go to the next step.</p>
+<p>Reinstall any power supplies and IOMs you removed prior to installing your disk shelf into the rack.</p>
+</li>
+<li>
+<p>If you are installing a DS460C disk shelf, install the drives into the drive drawers; otherwise, go to the next step.</p>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<img src="/us-en/ontap-systems/images/note.svg" alt="Note">
+</td>
+<td class="content">
 <div class="paragraph">
-<p>If you purchased a partially populated disk shelf which does not have a drive in every drive slot, you must ensure that:</p>
+<p>Always wear an ESD wrist strap grounded to an unpainted surface on your storage enclosure chassis to prevent static discharges.</p>
+</div>
+<div class="paragraph">
+<p>If a wrist strap is unavailable, touch an unpainted surface on your storage enclosure chassis before handling the disk drive.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>If you purchased a partially populated shelf, meaning that the shelf has less than the 60 drives it supports, for each drawer, install the drives as follows:</p>
 </div>
 <div class="ulist">
 <ul>
 <li>
-<p>The first four slots (0, 3, 6, and 9) are occupied in each drawer.</p>
-<div class="paragraph">
-<p>This ensures proper airflow in the disk shelf.</p>
+<p>Install the first four drives into the front slots (0, 3, 6, and 9).</p>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<img src="/us-en/ontap-systems/images/note.svg" alt="Note">
+</td>
+<td class="content">
+<strong>Risk of equipment malfunction:</strong> To allow for proper air flow and prevent overheating, always install the first four drives into the front slots (0, 3, 6, and 9).
+</td>
+</tr>
+</table>
 </div>
 </li>
 <li>
-<p>In a shelf with 30 drives, the remaining ten drives are distributed evenly throughout the shelf in slots 1 and 10 of each drawer.</p>
-<div class="paragraph">
-<p>The following illustration shows how the drives are numbered from 0 to 11 in each drive drawer within the shelf. Slots 0, 3, 6, 9, and, in a shelf containing 30 drives, slots 1 and 10 in each drawer must contain drives.</p>
-</div>
+<p>For the remaining drives, evenly distribute them across each drawer.</p>
 </li>
 </ul>
+</div>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>The following illustration shows how the drives are numbered from 0 to 11 in each drive drawer within the shelf.</p>
 </div>
 <div class="imageblock">
 <div class="content">
@@ -6592,10 +6624,10 @@ A fully loaded DS460C disk shelf can weigh approximately 247 lbs (112 kg).
 <div class="olist loweralpha">
 <ol class="loweralpha" type="a">
 <li>
-<p>Reinstall any power supplies and IOMs you removed prior to installing your disk shelf into the rack.</p>
+<p>Open the top drawer of the shelf.</p>
 </li>
 <li>
-<p>Open the top drawer of the shelf.</p>
+<p>Remove a drive from its ESD bag.</p>
 </li>
 <li>
 <p>Raise the cam handle on the drive to vertical.</p>
@@ -6609,14 +6641,12 @@ A fully loaded DS460C disk shelf can weigh approximately 247 lbs (112 kg).
 </div>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
-<col style="width: 50%;">
-<col style="width: 50%;">
+<col style="width: 10%;">
+<col style="width: 90%;">
 </colgroup>
 <tbody>
 <tr>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p><span class="image"><img src="../media/legend_icon_01.png" alt="legend icon 01"></span></p>
-</div></div></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><span class="image"><img src="../media/legend_icon_01.png" alt="legend icon 01"></span></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Raised button on the right side of the drive carrier</p></td>
 </tr>
 </tbody>
@@ -6665,26 +6695,24 @@ A fully loaded DS460C disk shelf can weigh approximately 247 lbs (112 kg).
 </li>
 <li>
 <p>Repeat these steps for each drawer in the disk shelf.</p>
-</li>
-</ol>
-</div>
-</li>
+<div class="olist arabic">
+<ol class="arabic">
 <li>
 <p>If you are adding multiple disk shelves, repeat the previous steps for each disk shelf you are installing.</p>
 </li>
 <li>
 <p>Connect the power supplies for each disk shelf:</p>
-<div class="olist loweralpha">
-<ol class="loweralpha" type="a">
+</li>
+</ol>
+</div>
+</li>
 <li>
 <p>Connect the power cords first to the disk shelves, securing them in place with the power cord retainer, and then connect the power cords to different power sources for resiliency.</p>
 </li>
 <li>
 <p>Turn on the power supplies for each disk shelf and wait for the disk drives to spin up.</p>
-</li>
-</ol>
-</div>
-</li>
+<div class="olist arabic">
+<ol class="arabic">
 <li>
 <p>Set the shelf ID for each shelf you are hot-adding to an ID that is unique within the HA pair or single-controller configuration.</p>
 <div class="paragraph">
@@ -6693,8 +6721,10 @@ A fully loaded DS460C disk shelf can weigh approximately 247 lbs (112 kg).
 <div class="paragraph">
 <p>If you have a platform model with onboard storage, shelf IDs must be unique across the internal shelf and externally attached shelves. It is recommended that you set the internal shelf to 0. In MetroCluster IP configurations, only the external shelf names apply, and therefore the shelf names do not need to be unique.</p>
 </div>
-<div class="olist loweralpha">
-<ol class="loweralpha" type="a">
+</li>
+</ol>
+</div>
+</li>
 <li>
 <p>If needed, verify shelf IDs already in use by running Active IQ Config Advisor.</p>
 <div class="paragraph">
@@ -6727,9 +6757,6 @@ A fully loaded DS460C disk shelf can weigh approximately 247 lbs (112 kg).
 </li>
 <li>
 <p>Repeat substeps b through g for each shelf you are hot-adding.</p>
-</li>
-</ol>
-</div>
 </li>
 </ol>
 </div>
@@ -6861,6 +6888,18 @@ In a MetroCluster configuration, you cannot use the IOM B path.
 </li>
 <li>
 <p>If the IOM12 shelf you are hot-adding is the initial IOM12 shelf being added to the IOM6 stack, meaning no other IOM12 shelf exists in the IOM6 shelf stack, complete the applicable substeps.</p>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<img src="/us-en/ontap-systems/images/note.svg" alt="Note">
+</td>
+<td class="content">
+Make sure that you wait at least 70 seconds between disconnecting a cable and reconnecting it, and when you are replacing a cable for another one.
+</td>
+</tr>
+</table>
+</div>
 <div class="paragraph">
 <p>Otherwise, go to step 3.</p>
 </div>
@@ -7001,6 +7040,18 @@ In a MetroCluster configuration, you cannot use the IOM B path.
 </li>
 <li>
 <p>If the IOM12 shelf you are hot-adding is an additional IOM12 shelf to an existing mixed stack, meaning one or more IOM12 shelves already exists in the stack, complete the applicable substeps.</p>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<img src="/us-en/ontap-systems/images/note.svg" alt="Note">
+</td>
+<td class="content">
+Make sure that you wait at least 70 seconds between disconnecting a cable and reconnecting it, and if you are replacing a cable for a longer one.
+</td>
+</tr>
+</table>
+</div>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 50%;">
