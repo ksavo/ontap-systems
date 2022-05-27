@@ -281,6 +281,7 @@ management arms (not shown).
 --
 
 .Option 2: Switched cluster
+--
 
 [.lead]
 Management network, data network, and management ports on the controllers are connected to switches. The cluster interconnect and HA ports are cabled on to the cluster/HA switch.
