@@ -15,7 +15,7 @@ All other components in the system must be functioning properly; if not, you mus
 
 == Step 1: Shut down the impaired controller
 
-include::../_include/shutdown_most_frus.adoc[]
+include::../_include/shutdown_no_mcc.adoc[]
 
 == Step 2: Remove controller module
 
