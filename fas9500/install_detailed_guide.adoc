@@ -386,9 +386,13 @@ management arms (not shown).
 [.lead]
 You must cable the shelf-to-shelf connections, and then cable both controllers to the DS212C or DS224C drive shelves.
 
+NOTE: For more SAS cabling information and worksheets, see https://docs.netapp.com/us-en/ontap-systems/sas3/overview-cabling-rules-examples.html[SAS cabling rules, worksheets, and examples overview - shelves with IOM12 modules^]
+
 .Before you begin
 
-Be sure to check the illustration arrow for the proper cable connector pull-tab orientation. The cable pull-tab for the storage modules are up, while the pull tabs on the shelves are down.
+* Complete the SAS cabling worksheet for your system.  See https://docs.netapp.com/us-en/ontap-systems/sas3/overview-cabling-rules-examples.html[SAS cabling rules, worksheets, and examples overview - shelves with IOM12 modules^].
+
+* Be sure to check the illustration arrow for the proper cable connector pull-tab orientation. The cable pull-tab for the storage modules are up, while the pull tabs on the shelves are down.
 
 image::../media/oie_cable_pull_tab_up.svg[width=200px]
 
@@ -397,7 +401,7 @@ image::../media/oie_cable_pull_tab_down.svg[width=200px]
 
 NOTE: As you insert the connector, you should feel it click into place; if you do not feel it click, remove it, turn it over and try again.
 
-Use the following animation or drawings to cable your controllers to three (1 stack of one drive shelf and one stack of two drive shelves) DS224C drive shelves.
+. Use the following animation or drawings to cable your controllers to three (1 stack of one drive shelf and one stack of two drive shelves) DS224C drive shelves.
 
 ++++
 <div class="aspect-ratio"><iframe frameborder="1" height="400" scrolling="auto" src="https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=c958aae6-9d08-4d3d-a213-ae7c017040cd" width="711"> </iframe></div>
@@ -408,6 +412,7 @@ https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=c958aae6-9d08-4d3d
 endif::[]
 
 image::../media/drw_9500_sas_shelf_cabling.svg[align="center",width=670px]
+
 
 [options="header" cols="20%,80%"]
 
