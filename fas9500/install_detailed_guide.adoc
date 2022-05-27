@@ -440,13 +440,16 @@ mini-SAS cable
 
 . To complete setting up your system, see  <<Step 5: Complete system setup and configuration>>.
 
+[role="tabbed-block"]
+====
 
 == Step 5: Complete system setup and configuration
 
 [.lead]
 You can complete the system setup and configuration using cluster discovery with only a connection to the switch and laptop, or by connecting directly to a controller in the system and then connecting to the management switch.
 
-=== Option 1: If network discovery is enabled
+.Option 1: If network discovery is enabled
+--
 
 [.lead]
 If you have network discovery enabled on your laptop, you can complete system setup and configuration using automatic cluster discovery.
@@ -562,8 +565,10 @@ https://mysupport.netapp.com/eservice/registerSNoAction.do?moduleName=RegisterMy
 https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor[NetApp Downloads: Config Advisor^]
 . Verify the health of your system by running Config Advisor.
 . After you have completed the initial configuration, go to the https://www.netapp.com/data-management/oncommand-system-documentation/[ONTAP & ONTAP System Manager Documentation Resources^] page for information about configuring additional features in ONTAP.
+--
 
-=== Option 2: If network discovery is not enabled
+.Option 2: If network discovery is not enabled
+--
 
 [.lead]
 If you are not using a Windows or Mac-based laptop or console or if auto discovery is not enabled, you must complete the configuration and setup using this task.
@@ -685,3 +690,6 @@ https://mysupport.netapp.com/eservice/registerSNoAction.do?moduleName=RegisterMy
 https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor[NetApp Downloads: Config Advisor^]
 . Verify the health of your system by running Config Advisor.
 . After you have completed the initial configuration, go to the https://www.netapp.com/data-management/oncommand-system-documentation/[ONTAP & ONTAP System Manager Documentation Resources^] page for information about configuring additional features in ONTAP.
+--
+
+====
