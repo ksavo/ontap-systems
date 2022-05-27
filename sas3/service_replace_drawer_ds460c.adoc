@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: stop, all, host, i/o activity, power, off, shelf, replacing, replace, drive, drawer, disk, replace a drive drawer in a ds460c disk shelf
 summary: You must stop all host I/O activity and power off the shelf before replacing the drive drawer.
 ---
-= Replacing a drive drawer in a DS460C disk shelf - shelves with IOM12 modules
+= Replacing a drive drawer in a DS460C disk shelf - shelves with IOM12/IOM12B modules
 :icons: font
 :imagesdir: ../media/
 
@@ -31,6 +31,28 @@ NOTE: *Possible hardware damage:* To prevent electrostatic discharge damage to t
 * Replacement left and right cable chains
 * Flashlight
 * Permanent marker
+
+.About this task
+
+* 5/12 remove. This procedure applies to shelves having DCM drive drawers and shelves having DCM2 drive drawers.
+
+* 5/24. This procedure applies to shelves having DCM drive drawers and/or DCM2 drive drawers. (Drawers can also have two IOM12 or two IOM12B shelf modules.)
+
+NOTE: 5/24 I believe correct. When a DCM or DCM2 drive drawer fails, you receive a DCM or DCM2 drive drawer to replace it.
+
+NOTE: 5/12 Maybe. This procedure addresses like-for-like drive drawer replacements, meaning you can replace a DCM drive drawer with another DCM drive drawer or replace a DCM2 drive drawer with another DCM2 drive drawer. This procedure also addresses drive drawer upgrades, meaning you can replace a DCM drive drawer with a DCM2 drive drawer. And have to update shelf FW...
+
+NOTE: 5/12 remove. This procedure is for like-for-like drive drawer replacements. This means you can only replace a DCM drive drawer with another DCM drive drawer or replace a DCM2 drive drawer with another DCM2 drive drawer. (Your shelf can have five DCM drive drawers or have five DCM2 drive drawers.)
+
+* The DCM drive drawers and the DCM2 drive drawers can be distinguished by their appearance:
++
+The DCM drive drawers look like the following:
++
+image::../media/28_dwg_e2860_de460c_front_no_callouts.gif[]
++
+The DCM2 drive drawers are distinguished by a blue stripe and "DCM2" label:
++
+image::../media/dcm2.png[]
 
 == Removing the cable chains
 
