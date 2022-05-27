@@ -18,7 +18,7 @@ image::../media/drw_fas2600_controller_to_stack_cable_type_key.png[]
 
 * Cabling examples show controller-to-stack connections and shelf-to-shelf connections in two different colors to distinguish connectivity through IOM A (domain A) and IOM B (domain B).
 +
-image::../media/drw_fas2600_cable_color_keyT.png[]
+image::../media/drw_fas2600_cable_color_key.png[]
 
 == AFF and FAS platforms with onboard storage in a multipath HA configuration with one multi-shelf stack
 
