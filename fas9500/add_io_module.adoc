@@ -107,7 +107,7 @@ endif::[]
 
 +
 
-image:../media/drw_9500_remove_PCIe_module.svg[width=340]
+image::../media/drw_9500_remove_PCIe_module.svg[width=340]
 
 +
 
