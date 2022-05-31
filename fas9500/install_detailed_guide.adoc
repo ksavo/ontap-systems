@@ -202,7 +202,7 @@ NOTE: As you insert the connector, you should feel it click into place; if you d
 +
 
 ++++
-<div class="aspect-ratio"><iframe frameborder="1" height="400" scrolling="auto" src="https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=da08295f-ba8c-4de7-88c3-ae7c0170408d"> </iframe></div>
+<div class="aspect-ratio"><iframe frameborder="1" height="400" scrolling="auto" src="https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=da08295f-ba8c-4de7-88c3-ae7c0170408d" width="auto"> </iframe></div>
 ++++
 
 ifdef::backend-pdf[]
