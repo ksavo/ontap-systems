@@ -14,7 +14,7 @@ indexpage:
     - title: Install and setup
       links:
         - title: Most configurations
-          url: /install-setup.html
+          url: ../fas2700/install-setup.html
         - title: Fabric-attached MetroCluster configurations
           url: https://docs.netapp.com/us-en/ontap-metrocluster/install-fc/index.html
         - title: Stretch MetroCluster configurations
