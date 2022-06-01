@@ -308,6 +308,7 @@ NOTE: As you insert the connector, you should feel it click into place; if you d
 ifdef::backend-pdf[]
 https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=3ad3f118-8339-4683-865f-ae7c0170400c[Animation - Switched cluster cabling]
 endif::[]
+
 +
 
 image::../media/drw_9500_switched_network_cabling.svg[align="center",width=500px]
