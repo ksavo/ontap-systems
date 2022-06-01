@@ -72,7 +72,7 @@ image::../media/legend_icon_01.svg[width=20]
  a|
 Lettered and numbered I/O cam latch
 a|
-image:../media/legend_icon_02.svg[width=20]
+image::../media/legend_icon_02.svg[width=20]
 a|
 I/O latch completely unlocked
 |===
@@ -83,7 +83,7 @@ I/O latch completely unlocked
 image::../media/drw_9500_remove_NVRAM_module_contents.svg[width=340]
 +
 
-[cols="20%,90%"]
+[cols="20%,80%"]
 |===
 a|
 image::../media/legend_icon_01.svg[width=20]
@@ -133,7 +133,7 @@ image::../media/drw_9500_move-remove_NVRAM_module.svg[width=340]
 
 +
 
-[cols="20%,90%"]
+[cols="20%,80%"]
 |===
 a|
 image::../media/legend_icon_01.svg[width=20]
@@ -151,7 +151,7 @@ I/O latch completely unlocked
 image::../media/drw_9500_remove_NVRAM_module_contents.svg[width=340]
 
 +
-[cols="20%,90%"]
+[cols="20%,80%"]
 |===
 a|
 image::../media/legend_icon_01.svg[width=20]
@@ -241,7 +241,7 @@ You can respond `Y` when prompted to continue into advanced mode. The advanced m
  .. Save any coredumps: `system node run -node local-node-name partner savecore`
  .. Wait for the `savecore`command to complete before issuing the giveback.
 +
-You can enter the following command to monitor the progress of the savecore command: `system node run -node local-node-name partner savecore -s`
+You can enter the following command to monitor the progress of the `savecore` command: `system node run -node local-node-name partner savecore -s`
 
  .. Return to the admin privilege level: `set -privilege admin`
 . Give back the node:
@@ -255,7 +255,7 @@ NOTE: If the giveback is vetoed, you can consider overriding the vetoes.
 +
 For more information, see the https://docs.netapp.com/us-en/ontap/high-availability/ha_manual_giveback.html#if-giveback-is-interrupted[Manual giveback commands^] topic to override the veto.
 
- .. After the giveback has been completed, confirm that the HA pair is healthy and that takeover is possible: storage failover show
+ .. After the giveback has been completed, confirm that the HA pair is healthy and that takeover is possible: `storage failover show`
 +
 The output from the storage failover show command should not include the System ID changed on partner message.
 . Verify that the disks were assigned correctly: `storage disk show -ownership`
@@ -276,7 +276,7 @@ Disk  Aggregate Home  Owner  DR Home  Home ID    Owner ID  DR Home ID Reserver  
 
 . If the system is in a MetroCluster configuration, monitor the status of the node: `metrocluster node show`
 +
-The MetroCluster configuration takes a few minutes after the replacement to return to a normal state, at which time each node will show a configured state, with DR Mirroring enabled and a mode of normal. The metrocluster node show -fields node-systemid command output displays the old system ID until the MetroCluster configuration returns to a normal state.
+The MetroCluster configuration takes a few minutes after the replacement to return to a normal state, at which time each node will show a configured state, with DR Mirroring enabled and a mode of normal. The `metrocluster node show -fields node-systemid` command output displays the old system ID until the MetroCluster configuration returns to a normal state.
 
 . If the node is in a MetroCluster configuration, depending on the MetroCluster state, verify that the DR home ID field shows the original owner of the disk if the original owner is a node on the disaster site.
 +
@@ -285,7 +285,7 @@ This is required if both of the following are true:
  ** The MetroCluster configuration is in a switchover state.
  ** The replacement node is the current owner of the disks on the disaster site.
 +
-See https://docs.netapp.com/us-en/ontap-metrocluster/manage/concept_understanding_mcc_data_protection_and_disaster_recovery.html#disk-ownership-changes-during-ha-takeover-and-metrocluster-switchover-in-a-four-node-metrocluster-configuration[Disk ownership changes during HA takeover and MetroCluster switchover in a four-node MetroCluster configuration] for more information.
+See https://docs.netapp.com/us-en/ontap-metrocluster/manage/concept_understanding_mcc_data_protection_and_disaster_recovery.html#disk-ownership-changes-during-ha-takeover-and-metrocluster-switchover-in-a-four-node-metrocluster-configuration[Disk ownership changes during HA takeover and MetroCluster switchover in a four-node MetroCluster configuration^] for more information.
 
 . If your system is in a MetroCluster configuration, verify that each node is configured: `metrocluster node show - fields configuration-state`
 +

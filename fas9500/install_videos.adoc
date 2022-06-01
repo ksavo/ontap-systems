@@ -21,7 +21,7 @@ The following video shows how to install and cable your new system.
 ++++
 
 ifdef::backend-pdf[]
-https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=ab450621-9e1c-44a7-befa-ae7c01708d9e[Animation - Animated Installation and setup instructions - FAS9500]
+https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=ab450621-9e1c-44a7-befa-ae7c01708d9e[Animation - Animated Installation and setup instructions - FAS9500^]
 endif::[]
 
 
@@ -29,9 +29,9 @@ endif::[]
 
 The following video shows end-to-end software configuration for systems running ONTAP 9.6 and later.
 
-video::6WjyADPXDZ0k[youtube] 
+video::6WjyADPXDZ0[youtube]
 
 
 ifdef::backend-pdf[]
-https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=a905e56e-c995-4704-9673-adfa0005a891[Animation - NetApp video: Software configuration for vSphere NAS datastores for FAS/AFF systems running ONTAP 9.6 and later]
+video::6WjyADPXDZ0[Animation - NetApp video: Software configuration for vSphere NAS datastores for FAS/AFF systems running ONTAP 9.6 and later^]
 endif::[]

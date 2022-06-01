@@ -162,14 +162,11 @@ You need to install your system in a 4-post rack or NetApp system cabinet, as ap
 NOTE: You need to be aware of the safety concerns associated with the weight of the system.
 +
 The label on the left indicates an empty chassis, while the label on the right indicates a fully-populated system.
-
 +
-
 image::../media/drw_9500_lifting_icon.svg[width=340px]
 
 . Attach cable management devices (as shown).
 +
-
 image::../media/drw_9500_cable_management_arms.svg[width=340px]
 
 . Place the bezel on the front of the system.
@@ -200,6 +197,7 @@ NOTE: As you insert the connector, you should feel it click into place; if you d
 
 . Use the animation or illustration to complete the cabling between the controllers and to the switches:
 +
+
 ++++
 <div class="aspect-ratio"><iframe frameborder="1" height="400" scrolling="auto" src="https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=da08295f-ba8c-4de7-88c3-ae7c0170408d" width="711"> </iframe></div>
 ++++
@@ -223,20 +221,15 @@ Cable cluster interconnect ports:
 ** Slot A8 and B8 (e8a)
 
 image::../media/oie_cable100_gbe_qsfp28.svg[width=85px]
-
 a|
 image::../media/oie_legend_icon_2_lp.svg[width=30px]
-
 a|
 Cable controller management (wrench) ports.
 
 image::../media/oie_cable_rj45.svg[width=85px]
-
 a|
 image::../media/oie_legend_icon_3_o.svg[width=30px]
-
 a|
-
 Cable 32 Gb FC network switches:
 
 Ports in slot A3 and B3 (e3a and e3c)
@@ -253,10 +246,8 @@ B4 (e4b) and slot A8 and B8 (e8b) to
 the host switch.
 
 image::../media/oie_cable100_gbe_qsfp28.svg[width=85px]
-
 a|
 image::../media/oie_legend_icon_4_dr.svg[width=30px]
-
 a|
 Cable 25 GbE connections:
 
@@ -296,7 +287,6 @@ NOTE: As you insert the connector, you should feel it click into place; if you d
 
 . Use the animation or illustration to complete the cabling between the controllers and to the switches:
 +
-
 ++++
 <div class="aspect-ratio"><iframe frameborder="1" height="400" scrolling="auto" src="https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=3ad3f118-8339-4683-865f-ae7c0170400c" width="711"> </iframe></div>
 ++++
@@ -304,13 +294,9 @@ NOTE: As you insert the connector, you should feel it click into place; if you d
 ifdef::backend-pdf[]
 https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=3ad3f118-8339-4683-865f-ae7c0170400c[Animation - Switched cluster cabling]
 endif::[]
-
 +
-
 image::../media/drw_9500_switched_network_cabling.svg[align="center",width=500px]
-
 +
-
 [options="header" cols="20%,80%"]
 
 |===
@@ -327,18 +313,15 @@ interconnect a ports:
 cluster network switch.
 
 image::../media/oie_cable100_gbe_qsfp28.svg[width=85px]
-
 a|
 image::../media/oie_legend_icon_2_lp.svg[width=30px]
 a|
 Cable controller management (wrench) ports.
 
 image::../media/oie_cable_rj45.svg[width=85px]
-
 a|
 image::../media/oie_legend_icon_3_o.svg[width=30px]
 a|
-
 Cable 32 Gb FC network switches:
 
 Ports in slot A3 and B3 (e3a and e3c)
@@ -355,7 +338,6 @@ B4 (e4b) and slot A8 and B8 (e8b) to
 the host switch.
 
 image::../media/oie_cable100_gbe_qsfp28.svg[width=85px]
-
 a|
 image::../media/oie_legend_icon_4_dr.svg[width=30px]
 a|
@@ -397,14 +379,12 @@ NOTE: For more SAS cabling information and worksheets, see https://docs.netapp.c
 
 image::../media/oie_cable_pull_tab_up.svg[width=200px]
 
-
 image::../media/oie_cable_pull_tab_down.svg[width=200px]
 
 NOTE: As you insert the connector, you should feel it click into place; if you do not feel it click, remove it, turn it over and try again.
 
 . Use the following animation or drawings to cable your controllers to three (1 stack of one drive shelf and one stack of two drive shelves) DS224C drive shelves.
 +
-
 ++++
 <div class="aspect-ratio"><iframe frameborder="1" height="400" scrolling="auto" src="https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=c958aae6-9d08-4d3d-a213-ae7c017040cd" width="711"> </iframe></div>
 ++++
@@ -413,32 +393,24 @@ ifdef::backend-pdf[]
 https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=c958aae6-9d08-4d3d-a213-ae7c017040cd[Animation - Cabling your drive shelves]
 endif::[]
 +
-
 image::../media/drw_9500_sas_shelf_cabling.svg[align="center",width=670px]
-
 +
-
 [options="header" cols="20%,80%"]
 
 |===
 
 |Step|Perform on each controller
 a|
-
 image::../media/oie_legend_icon_1_mb.svg[width=30px]
-
 a|
-
 Connect drive shelf stack one to the controllers, using the graphic for reference.
 
 image::../media/oie_cable_mini_sas_hd_to_mini_sas_hd.svg[width=85px]
 
 mini-SAS cable
 a|
-
 image::../media/oie_legend_icon_2_t.svg[width=30px]
 a|
-
 Connect drive shelf stack two to the controllers, using the graphic for reference.
 
 image::../media/oie_cable_mini_sas_hd_to_mini_sas_hd.svg[width=85px]
@@ -465,23 +437,16 @@ You can complete the system setup and configuration using cluster discovery with
 If you have network discovery enabled on your laptop, you can complete system setup and configuration using automatic cluster discovery.
 
 . Use the following animation or drawing  to set one or more drive shelf IDs:
-
 +
-
 ++++
 <div class="aspect-ratio"><iframe frameborder="1" height="400" scrolling="auto" src="https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=95a29da1-faa3-4ceb-8a0b-ac7600675aa6" width="711"> </iframe></div>
 ++++
-
 ifdef::backend-pdf[]
 https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=95a29da1-faa3-4ceb-8a0b-ac7600675aa6[Animation - Setting your shelf ID's]
 endif::[]
-
 +
-
 image::../media/drw_power-on_set_shelf_ID_set.svg[width=500px]
-
 +
-
 [cols="20%,80%"]
 |===
 a|
@@ -519,20 +484,15 @@ shelf to set shelf ID.
 . Plug the power cords into the controller power supplies, and then connect them to power sources on different circuits.
 . Turn on the power switches to both nodes.
 +
-
 ++++
 <div class="aspect-ratio"><iframe frameborder="1" height="400" scrolling="auto" src="https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=a905e56e-c995-4704-9673-adfa0005a891" width="711"> </iframe></div>
 ++++
-
 ifdef::backend-pdf[]
 https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=a905e56e-c995-4704-9673-adfa0005a891[Animation - Turn on the power to the controllers]
 endif::[]
 +
-
 image::../media/drw_9500_power-on.svg[width=500px]
-
 +
-
 NOTE: Initial booting may take up to eight minutes.
 
 . Make sure that your laptop has network discovery enabled.
@@ -541,18 +501,14 @@ See your laptop's online help for more information.
 
 . Use the following animation to connect your laptop to the Management switch.
 +
-
 ++++
 <div class="aspect-ratio"><iframe frameborder="1" height="400" scrolling="auto" src="https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=d61f983e-f911-4b76-8b3a-ab1b0066909b" width="711"> </iframe></div>
 ++++
-
 ifdef::backend-pdf[]
 https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=d61f983e-f911-4b76-8b3a-ab1b0066909b[Animation - Connecting your laptop to the Management switch]
 endif::[]
-
 +
 image::../media/dwr_laptop_to_switch_only.svg[width=500px]
-
 
 . Select an ONTAP icon listed to discover:
 +
@@ -607,20 +563,15 @@ image::../media/drw_9500_cable_console_switch_controller.svg[width=500px]
  .. Assign a TCP/IP address to the laptop or console, using one that is on the management subnet.
 . Use the following animation to set one or more drive shelf IDs:
 +
-
 ++++
 <div class="aspect-ratio"><iframe frameborder="1" height="400" scrolling="auto" src="https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=95a29da1-faa3-4ceb-8a0b-ac7600675aa6" width="711"> </iframe></div>
 ++++
-
 ifdef::backend-pdf[]
 https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=95a29da1-faa3-4ceb-8a0b-ac7600675aa6[Animation - Setting your shelf ID's]
 endif::[]
 +
-
 image::../media/drw_power-on_set_shelf_ID_set.svg[width=500px]
-
 +
-
 [cols="20%,80%"]
 |===
 a|
@@ -635,22 +586,17 @@ Press and hold shelf ID button until first digit blinks, then push to advance to
 NOTE: The first digit continues to blink
 
 a|
-
 image::../media/legend_icon_03.svg[width=20]
 a|
-
 Press and hold shelf ID button until second digit blinks, then push to advance to 0-9.
 
 NOTE: The first digit stops blinking, and the second digit continues to blink.
 
 a|
-
 image::../media/legend_icon_04.svg[width=20]
 a|
-
 Replace the end cap.
 a|
-
 image::../media/legend_icon_05.svg[width=20]
 a|
 Wait 10 seconds for the Amber LED (!) to appear, then power-cycle the drive
@@ -662,26 +608,20 @@ shelf to set shelf ID.
 . Turn on the power switches to both nodes.
 
 +
-
 ++++
 
 <div class="aspect-ratio"><iframe frameborder="1" height="400" scrolling="auto" src="https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=a905e56e-c995-4704-9673-adfa0005a891" width="711"> </iframe></div>
 ++++
-
 ifdef::backend-pdf[]
 https://netapp.hosted.panopto.com/Panopto/Pages/https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=a905e56e-c995-4704-9673-adfa0005a891.aspx?id=a905e56e-c995-4704-9673-adfa0005a891[Animation - Turn on the power to the controllers]
 endif::[]
 +
-
 image::../media/drw_9500_power-on.svg[width=500]
-
 +
-
 NOTE: Initial booting may take up to eight minutes.
 
 . Assign an initial node management IP address to one of the nodes.
 +
-
 [options="header" cols="1,2"]
 
 |===
@@ -707,9 +647,7 @@ NOTE: Check your laptop or console's online help if you do not know how to confi
 
 . Using System Manager on your laptop or console, configure your cluster:
  .. Point your browser to the node management IP address.
-
 +
-
 NOTE: The format for the address is
 +https://x.x.x.x+.
 
