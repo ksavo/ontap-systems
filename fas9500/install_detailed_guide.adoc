@@ -294,11 +294,12 @@ NOTE: As you insert the connector, you should feel it click into place; if you d
 ifdef::backend-pdf[]
 https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=3ad3f118-8339-4683-865f-ae7c0170400c[Animation - Switched cluster cabling]
 endif::[]
+
 +
 image::../media/drw_9500_switched_network_cabling.svg[align="center",width=500px]
 +
-[options="header" cols="20%,80%"]
 
+[options="header" cols="20%,80%"]
 |===
 
 | Step| Perform on each controller
@@ -388,15 +389,15 @@ NOTE: As you insert the connector, you should feel it click into place; if you d
 ++++
 <div class="aspect-ratio"><iframe frameborder="1" height="400" scrolling="auto" src="https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=c958aae6-9d08-4d3d-a213-ae7c017040cd" width="711"> </iframe></div>
 ++++
-
 ifdef::backend-pdf[]
 https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=c958aae6-9d08-4d3d-a213-ae7c017040cd[Animation - Cabling your drive shelves]
 endif::[]
+
 +
 image::../media/drw_9500_sas_shelf_cabling.svg[align="center",width=670px]
 +
-[options="header" cols="20%,80%"]
 
+[options="header" cols="20%,80%"]
 |===
 
 |Step|Perform on each controller
@@ -444,9 +445,11 @@ If you have network discovery enabled on your laptop, you can complete system se
 ifdef::backend-pdf[]
 https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=95a29da1-faa3-4ceb-8a0b-ac7600675aa6[Animation - Setting your shelf ID's]
 endif::[]
+
 +
 image::../media/drw_power-on_set_shelf_ID_set.svg[width=500px]
 +
+
 [cols="20%,80%"]
 |===
 a|
@@ -490,9 +493,11 @@ shelf to set shelf ID.
 ifdef::backend-pdf[]
 https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=a905e56e-c995-4704-9673-adfa0005a891[Animation - Turn on the power to the controllers]
 endif::[]
+
 +
 image::../media/drw_9500_power-on.svg[width=500px]
 +
+
 NOTE: Initial booting may take up to eight minutes.
 
 . Make sure that your laptop has network discovery enabled.
@@ -507,8 +512,10 @@ See your laptop's online help for more information.
 ifdef::backend-pdf[]
 https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=d61f983e-f911-4b76-8b3a-ab1b0066909b[Animation - Connecting your laptop to the Management switch]
 endif::[]
+
 +
 image::../media/dwr_laptop_to_switch_only.svg[width=500px]
++
 
 . Select an ONTAP icon listed to discover:
 +
@@ -569,9 +576,11 @@ image::../media/drw_9500_cable_console_switch_controller.svg[width=500px]
 ifdef::backend-pdf[]
 https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=95a29da1-faa3-4ceb-8a0b-ac7600675aa6[Animation - Setting your shelf ID's]
 endif::[]
+
 +
 image::../media/drw_power-on_set_shelf_ID_set.svg[width=500px]
 +
+
 [cols="20%,80%"]
 |===
 a|
@@ -606,15 +615,14 @@ shelf to set shelf ID.
 
 . Plug the power cords into the controller power supplies, and then connect them to power sources on different circuits.
 . Turn on the power switches to both nodes.
-
 +
 ++++
-
 <div class="aspect-ratio"><iframe frameborder="1" height="400" scrolling="auto" src="https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=a905e56e-c995-4704-9673-adfa0005a891" width="711"> </iframe></div>
 ++++
 ifdef::backend-pdf[]
 https://netapp.hosted.panopto.com/Panopto/Pages/https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=a905e56e-c995-4704-9673-adfa0005a891.aspx?id=a905e56e-c995-4704-9673-adfa0005a891[Animation - Turn on the power to the controllers]
 endif::[]
+
 +
 image::../media/drw_9500_power-on.svg[width=500]
 +
@@ -623,9 +631,7 @@ NOTE: Initial booting may take up to eight minutes.
 . Assign an initial node management IP address to one of the nodes.
 +
 [options="header" cols="1,2"]
-
 |===
-
 
 | If the management network has DHCP...| Then...
 a|
