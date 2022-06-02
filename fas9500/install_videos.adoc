@@ -33,5 +33,5 @@ video::6WjyADPXDZ0[youtube]
 
 
 ifdef::backend-pdf[]
-video::6WjyADPXDZ0[Animation - NetApp video: Software configuration for vSphere NAS datastores for FAS/AFF systems running ONTAP 9.6 and later^]
+video::6WjyADPXDZ0[]
 endif::[]

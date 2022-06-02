@@ -290,7 +290,6 @@ NOTE: As you insert the connector, you should feel it click into place; if you d
 ++++
 <div class="aspect-ratio"><iframe frameborder="1" height="400" scrolling="auto" src="https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=3ad3f118-8339-4683-865f-ae7c0170400c" width="711"> </iframe></div>
 ++++
-
 ifdef::backend-pdf[]
 https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=3ad3f118-8339-4683-865f-ae7c0170400c[Animation - Switched cluster cabling]
 endif::[]

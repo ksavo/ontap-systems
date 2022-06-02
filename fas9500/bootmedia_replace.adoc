@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: FAS9500, replace, boot, media, controller, directions. replace boot media, transfer image
 summary: 'You must remove and open the controller module, locate and replace the boot media in the controller, and then transfer the image to the replacement boot media.'
 ---
-= Remove the controller, replace the boot media, and transfer the boot image - FAS9500
+. Remove the controller, replace the boot media, and transfer the boot image - FAS9500
 
 [.lead]
 You must remove and open the controller module, locate and replace the boot media in the controller, and then transfer the image to the replacement boot media.
@@ -21,20 +21,17 @@ To access components inside the controller, you must first remove the controller
 . Unplug the cables from the impaired controller module, and keep track of where the cables were connected.
 . Slide the terra cotta button on the cam handle downward until it unlocks.
 +
-
 ++++
 <div class="aspect-ratio"><iframe frameborder="1" height="400" scrolling="auto" src="https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=5e029a19-8acc-4fa1-be5d-ae78004b365a" width="711"> </iframe></div>
 ++++
-
 ifdef::backend-pdf[]
 https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=5e029a19-8acc-4fa1-be5d-ae78004b365a[Animation - Remove controller module]
 endif::[]
 
 +
-
 image::../media/drw_9500_remove_PCM_source.svg[width=340px]
-
 +
+
 [cols="20%,80%"]
 |===
 a|
@@ -75,11 +72,9 @@ You must locate the boot media in the controller and follow the directions to re
 .Steps
 . Lift the black air duct at the back of the controller module and then locate the boot media using the following illustration or the FRU map on the controller module:
 +
-
 ++++
 <div class="aspect-ratio"><iframe frameborder="1" height="400" scrolling="auto" src="https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=16df490c-f94f-498d-bb04-ae78004b3781" width="711"> </iframe></div>
 ++++
-
 ifdef::backend-pdf[]
 https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=16df490c-f94f-498d-bb04-ae78004b3781[Animation - Replace boot media^]
 endif::[]
@@ -87,6 +82,7 @@ endif::[]
 +
 image::../media/drw_9500_remove_boot_dev_source.svg[width=340px]
 +
+
 [cols="20%,90%"]
 |===
 a|
@@ -116,7 +112,7 @@ If necessary, remove the boot media and reseat it into the socket.
 :imagesdir: ../media/
 
 [.lead]
-You can install the system image to the replacement boot media using a USB flash drive with the image installed on it. However, you must restore the var file system during this procedure.
+You can install the system image to the replacement boot media using a USB flash drive with the image installed on it. However, you must restore the `var` file system during this procedure.
 
 .Before you begin
 * You must have a USB flash drive, formatted to FAT32, with at least 4GB capacity.
