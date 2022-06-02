@@ -315,7 +315,6 @@ IMPORTANT: Only connect the power cable to the power supply. Do not connect the 
 
 == Step 12: Install the controller
 
-[.lead]
 After you install the controller module and any other components into the new chassis, boot it to a state where you can run the interconnect diagnostic test.
 
 . If you are not already grounded, properly ground yourself.
