@@ -147,6 +147,7 @@ The I/O module disengages from the chassis and moves about 1/2 inch out of the I
  .. Remove the I/O module from the chassis by pulling on the pull tabs on the sides of the module face.
 +
 Make sure that you keep track of which slot the I/O module was in.
+
 +
 ++++
 <div class="aspect-ratio"><iframe frameborder="1" height="400" scrolling="auto" src="https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=0903b1f9-187b-4bb8-9548-ae9b0012bb21" width="711"> </iframe></div>
@@ -157,6 +158,7 @@ endif::[]
 
 +
 image::../media/drw_9500_remove_PCIe_module.svg[width=340]
+
 +
 
 [cols="20%,90%"]
@@ -182,11 +184,9 @@ You must remove the de-stage controller power modules from the old chassis in pr
 . If you are not already grounded, properly ground yourself.
 . Press the terra cotta locking button on the module handle, and then slide the DCPM module out of the chassis.
 +
-
 ++++
 <div class="aspect-ratio"><iframe frameborder="1" height="400" scrolling="auto" src="https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=c067cf9d-35b8-4fbe-9573-ae78004c2328" width="711"> </iframe></div>
 ++++
-
 ifdef::backend-pdf[]
 https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=c067cf9d-35b8-4fbe-9573-ae78004c2328[Animation - Remove/install DCPM^]
 endif::[]
@@ -194,6 +194,7 @@ endif::[]
 +
 image::../media/drw_9500_remove_NV_battery.svg[width=340]
 +
+
 [cols="20%,90%"]
 |===
 a|
