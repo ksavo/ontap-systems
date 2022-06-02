@@ -14,7 +14,6 @@ To replace the chassis, you must remove the components from the old chassis and 
 
 == Step 1: Remove the power supplies
 
-[.lead]
 Removing the power supplies when replacing a chassis involves turning off, disconnecting, and then removing the power supply from the old chassis.
 
 . If you are not already grounded, properly ground yourself.
@@ -51,7 +50,6 @@ Locking button
 
 == Step 2: Remove the fans
 
-[.lead]
 To remove the fan modules when replacing the chassis, you must perform a specific sequence of tasks.
 
 . If you are not already grounded, properly ground yourself.
@@ -89,7 +87,6 @@ Slide fan in/out of chassis
 
 == Step 3: Remove the controller module
 
-[.lead]
 To replace the chassis, you must remove the controller module or modules from the old chassis.
 
 . If you are not already grounded, properly ground yourself.
@@ -127,7 +124,6 @@ Make sure that you support the bottom of the controller module as you slide it o
 
 == Step 4: Remove the I/O modules
 
-[.lead]
 To remove I/O modules from the old chassis, including the NVRAM modules, follow the specific sequence of steps. You do not have to remove the FlashCache module, if present, from the NVRAM module when moving it to a new chassis.
 
 . If you are not already grounded, properly ground yourself.
@@ -178,7 +174,6 @@ I/O cam latch completely unlocked
 
 == Step 5: Remove the De-stage Controller Power Module
 
-[.lead]
 You must remove the de-stage controller power modules from the old chassis in preparation for installing the replacement chassis.
 
 . If you are not already grounded, properly ground yourself.
@@ -208,7 +203,6 @@ DCPM module terra cotta locking button
 
 == Step 6: Replace a chassis from within the equipment rack or system cabinet
 
-[.lead]
 You must remove the existing chassis from the equipment rack or system cabinet before you can install the replacement chassis.
 
 . Remove the screws from the chassis mount points.
@@ -226,7 +220,6 @@ NOTE: If the system is in a system cabinet, you might need to remove the rear ti
 
 == Step 7: Move the USB LED module to the new chassis
 
-[.lead]
 Once the new chassis is installed into the rack or cabinet, you must move the USB LED module from the old chassis to the new chassis.
 
 ++++
@@ -258,7 +251,6 @@ Slide out of chassis.
 
 == Step 8: Install the de-stage controller power module when replacing the chassis
 
-[.lead]
 Once the replacement chassis is installed into the rack or system cabinet, you must reinstall the de-stage controller power modules into it.
 
 . If you are not already grounded, properly ground yourself.
@@ -270,7 +262,6 @@ NOTE: The module and slot are keyed. Do not force the module into the opening. I
 
 == Step 9: Install fans into the chassis
 
-[.lead]
 To install the fan modules when replacing the chassis, you must perform a specific sequence of tasks.
 
 . If you are not already grounded, properly ground yourself.
@@ -283,7 +274,6 @@ When inserted into a live system, the amber Attention LED flashes four times whe
 
 == Step 10: Install I/O modules
 
-[.lead]
 To install I/O modules, including the NVRAM/FlashCache modules from the old chassis, follow the specific sequence of steps.
 
 You must have the chassis installed so that you can install the I/O modules into the corresponding slots in the new chassis.
@@ -297,7 +287,6 @@ NOTE: If the old chassis has blank I/O panels, move them to the replacement chas
 
 == Step 11: Install the power supplies
 
-[.lead]
 Installing the power supplies when replacing a chassis involves installing the power supplies into the replacement chassis, and connecting to the power source.
 
 . If you are not already grounded, properly ground yourself.
