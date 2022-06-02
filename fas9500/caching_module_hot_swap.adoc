@@ -44,7 +44,7 @@ The module has been successfully removed from service and powered off. It can no
 The NVMe slot status displays `powered-off` in the screen output for the caching module that needs replacing.
 
 +
-NOTE: See the https://docs.netapp.com/ontap-9/topic/com.netapp.nav.cr/home.html[Command man pages] for your version of ONTAP for more details.
+NOTE: See the https://docs.netapp.com/ontap-9/topic/com.netapp.nav.cr/home.html[Command man pages^] for your version of ONTAP for more details.
 . Remove the caching module:
 
 +

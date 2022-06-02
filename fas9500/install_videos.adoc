@@ -30,8 +30,3 @@ endif::[]
 The following video shows end-to-end software configuration for systems running ONTAP 9.6 and later.
 
 video::6WjyADPXDZ0[youtube]
-
-
-ifdef::backend-pdf[]
-video::6WjyADPXDZ0[]
-endif::[]

@@ -25,19 +25,19 @@ Removing the power supplies when replacing a chassis involves turning off, disco
 . Press and hold the terra cotta button on the power supply handle, and then pull the power supply out of the chassis.
 +
 NOTE: When removing a power supply, always use two hands to support its weight.
-+
 
++
 ++++
 <div class="aspect-ratio"><iframe frameborder="1" height="400" scrolling="auto" src="https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=590b3414-6ea5-42b2-b7f4-ae78004b86a4" width="711"> </iframe></div>
 ++++
-
 ifdef::backend-pdf[]
 https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=590b3414-6ea5-42b2-b7f4-ae78004b86a4[Animation - Remove/install PSU^]
 endif::[]
-+
 
++
 image::../media/drw_9500_remove_install_PSU_module.svg[width=340]
 +
+
 [cols="20%,90%"]
 |===
 a|
@@ -59,20 +59,19 @@ To remove the fan modules when replacing the chassis, you must perform a specifi
 . Press the terra cotta button on the fan module and pull the fan module straight out of the chassis, making sure that you support it with your free hand.
 +
 NOTE: The fan modules are short. Always support the bottom of the fan module with your free hand so that it does not suddenly drop free from the chassis and injure you.
-+
 
++
 ++++
 <div class="aspect-ratio"><iframe frameborder="1" height="400" scrolling="auto" src="https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=86b0ed39-1083-4b3a-9e9c-ae78004c2ffc" width="711"> </iframe></div>
 ++++
-
 ifdef::backend-pdf[]
 https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=86b0ed39-1083-4b3a-9e9c-ae78004c2ffc[Animation - Remove/install fan^]
 endif::[]
 
 +
-
 image::../media/drw_9500_remove_install_fan.svg[width=340]
 +
+
 [cols="20%,90%"]
 |===
 a|
@@ -97,11 +96,9 @@ To replace the chassis, you must remove the controller module or modules from th
 . Unplug the cables from the impaired controller module, and keep track of where the cables were connected.
 . Slide the terra cotta button on the cam handle downward until it unlocks.
 +
-
 ++++
 <div class="aspect-ratio"><iframe frameborder="1" height="400" scrolling="auto" src="https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=5e029a19-8acc-4fa1-be5d-ae78004b365a" width="711"> </iframe></div>
 ++++
-
 ifdef::backend-pdf[]
 https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=5e029a19-8acc-4fa1-be5d-ae78004b365a[Animation - Remove controller module]
 endif::[]
@@ -109,11 +106,11 @@ endif::[]
 +
 image::../media/drw_9500_remove_PCM.svg[width=340]
 +
+
 [cols="20%,80%"]
 |===
 a|
 image::../media/legend_icon_01.svg[width=20]
-
 a|
 Cam handle release button
 a|
@@ -151,17 +148,15 @@ The I/O module disengages from the chassis and moves about 1/2 inch out of the I
 +
 Make sure that you keep track of which slot the I/O module was in.
 +
-
 ++++
 <div class="aspect-ratio"><iframe frameborder="1" height="400" scrolling="auto" src="https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=0903b1f9-187b-4bb8-9548-ae9b0012bb21" width="711"> </iframe></div>
 ++++
-
 ifdef::backend-pdf[]
 https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=0903b1f9-187b-4bb8-9548-ae9b0012bb21[Animation - Remove/install I/O module^]
 endif::[]
+
 +
 image::../media/drw_9500_remove_PCIe_module.svg[width=340]
-
 +
 
 [cols="20%,90%"]
