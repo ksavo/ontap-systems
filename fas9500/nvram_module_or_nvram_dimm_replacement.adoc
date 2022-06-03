@@ -28,13 +28,11 @@ Because the system ID is derived from the NVRAM module, if replacing the module,
 
 == Step 1: Shut down the impaired node
 
-[.lead]
 
 include::../_include/shutdown_most_frus_no_PCM_remove.adoc[]
 
 == Step 2: Replace the NVRAM module
 
-[.lead]
 To replace the NVRAM module, locate it in slot 6 in the chassis and follow the specific sequence of steps.
 
 . If you are not already grounded, properly ground yourself.
@@ -103,7 +101,6 @@ DIMM and DIMM ejector tabs
 
 == Step 3: Replace a NVRAM DIMM
 
-[.lead]
 To replace NVRAM DIMMs in the NVRAM module, you must remove the NVRAM module, open the module, and then replace the target DIMM.
 
 . If you are not already grounded, properly ground yourself.
@@ -175,7 +172,6 @@ Each DIMM has an LED next to it that flashes when the DIMM has failed.
 
 == Step 4: Reboot the controller after FRU replacement
 
-[.lead]
 After you replace the FRU, you must reboot the controller module.
 
 . To boot ONTAP from the LOADER prompt, enter `bye`.
@@ -211,7 +207,6 @@ mccip
 
 == Step 6: Reassigning disks
 
-[.lead]
 You must confirm the system ID change when you boot the replacement node and then verify that the change was implemented.
 
 This procedure applies only to systems running ONTAP in an HA pair.
@@ -307,10 +302,8 @@ dr-group-id            cluster node           configuration-state
 
 == Step 6: Restore Storage and Volume Encryption functionality
 
-[.lead]
 include::../_include/restore_storage_encryption.adoc[]
 
 == Step 7: Return the failed part to NetApp
 
-[.lead]
 include::../_include/complete_rma.adoc[]

@@ -16,13 +16,10 @@ To replace an I/O module, you must perform a specific sequence of tasks.
 
 == Step 1: Shut down the impaired node
 
-[.lead]
-
 include::../_include/shutdown_most_frus_no_PCM_remove.adoc[]
 
 == Step 2: Replace I/O modules
 
-[.lead]
 To replace an I/O module, locate it within the chassis and follow the specific sequence of steps.
 
 . If you are not already grounded, properly ground yourself.
@@ -77,7 +74,6 @@ I/O cam latch completely unlocked
 
 == Step 3: Reboot the controller after I/O module replacement
 
-[.lead]
 After you replace an I/O module, you must reboot the controller module.
 
 . From the LOADER prompt, reboot the node: _bye_
@@ -91,5 +87,4 @@ NOTE: Be sure to exit Maintenance mode after completing the conversion.
 
 == Step 5: Return the failed part to NetApp
 
-[.lead]
 include::../_include/complete_rma.adoc[]

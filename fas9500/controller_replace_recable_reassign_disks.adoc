@@ -27,10 +27,8 @@ NOTE: The system ID and  disk assignment information reside in the NVRAM module,
 
 == Step 2: Reassign disks
 
-[.lead]
 If the storage system is in an HA pair, the system ID of the new controller module is automatically assigned to the disks when the giveback occurs at the end of the procedure. You must confirm the system ID change when you boot the _replacement_ node and then verify that the change was implemented.
 
-[.lead]
 This procedure applies only to systems running ONTAP in an HA pair.
 
 . If the _replacement_ node is in Maintenance mode (showing the `*>` prompt), exit Maintenance mode and go to the LOADER prompt: `halt`

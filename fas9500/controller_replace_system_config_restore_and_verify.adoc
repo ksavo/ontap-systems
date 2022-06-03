@@ -46,7 +46,6 @@ mccip
 
 == Step 3: Run system-level diagnostics
 
-[.lead]
 You should run comprehensive or focused diagnostic tests for specific components and subsystems whenever you replace the controller.
 
 All commands in the diagnostic procedures are issued from the node where the component is being replaced.

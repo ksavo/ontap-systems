@@ -16,12 +16,10 @@ You replace the real-time clock (RTC) battery in the controller module so that y
 
 == Step 1: Shut down the impaired node
 
-[.lead]
 include::../_include/shutdown_most_frus.adoc[]
 
 == Step 2: Remove the controller
 
-[.lead]
 To access components inside the controller, you must first remove the controller module from the system and then remove the cover on the controller module.
 
 . If you are not already grounded, properly ground yourself.
@@ -71,7 +69,6 @@ Controller module cover locking button
 
 == Step 3: Replace the RTC battery
 
-[.lead]
 To replace the RTC battery, you must locate the failed battery in the controller module, remove it from the holder, and then install the replacement battery in the holder.
 
 . If you are not already grounded, properly ground yourself.
@@ -114,7 +111,6 @@ NOTE: Note the polarity of the battery as you remove it from the holder. The bat
 
 == Step 4: Reinstall the controller module and set time/date
 
-[.lead]
 After you replace the RTC battery, you must reinstall the controller module. If the RTC battery has been left out of the controller module for more than 10 minutes, you may have to reset the time and date.
 
 . If you have not already done so, close the air duct or controller module cover.

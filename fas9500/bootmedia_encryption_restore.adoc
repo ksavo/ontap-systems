@@ -8,6 +8,7 @@ summary: 'Once environment variables are checked, you must complete steps specif
 :icons: font
 :imagesdir: ../media/
 
+[.lead]
 Once environment variables are checked, you must complete steps specific to restore  Onboard Key Manager (OKM), NetApp Storage Encryption (NSE) and NetApp Volume Encryption (NVE).
 
 . Determine which section you should use to restore your OKM, NSE, or NVE configurations: If NSE or NVE are enabled along with Onboard Key Manager you must restore settings you captured at the beginning of this procedure.
