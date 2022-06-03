@@ -150,7 +150,7 @@ For each disk shelf you are hot-adding, you install the disk shelf into a rack, 
 NOTE: If you are installing multiple disk shelves, you should install them from the bottom to the top of the rack for the best stability.
 +
 NOTE: Do not flange-mount the disk shelf into a telco-type rack; the disk shelf's weight can cause it to collapse in the rack under its own weight.
-
++
 . Install and secure the disk shelf onto the support brackets and rack using the installation flyer that came with the kit.
 +
 To make a disk shelf lighter and easier to maneuver, remove the power supplies and I/O modules (IOMs).
@@ -181,15 +181,15 @@ If you purchased a partially populated shelf, meaning that the shelf has less th
 NOTE: *Risk of equipment malfunction:* To allow for proper air flow and prevent overheating, always install the first four drives into the front slots (0, 3, 6, and 9).
 
 ** For the remaining drives, evenly distribute them across each drawer.
-
++
 The following illustration shows how the drives are numbered from 0 to 11 in each drive drawer within the shelf.
-
++
 image::../media/dwg_trafford_drawer_with_hdds_callouts.gif[]
-
- .. Open the top drawer of the shelf.
- .. Remove a drive from its ESD bag.
- .. Raise the cam handle on the drive to vertical.
- .. Align the two raised buttons on each side of the drive carrier with the matching gap in the drive channel on the drive drawer.
++
+.. Open the top drawer of the shelf.
+.. Remove a drive from its ESD bag.
+.. Raise the cam handle on the drive to vertical.
+.. Align the two raised buttons on each side of the drive carrier with the matching gap in the drive channel on the drive drawer.
 +
 image::../media/28_dwg_e2860_de460c_drive_cru.gif[]
 +
@@ -198,13 +198,14 @@ image::../media/28_dwg_e2860_de460c_drive_cru.gif[]
 image:../media/legend_icon_01.png[]|
 Raised button on the right side of the drive carrier
 |===
-
- .. Lower the drive straight down, and then rotate the cam handle down until the drive snaps into place under the orange release latch.
- .. Repeat the previous substeps for each drive in the drawer.
++
+.. Lower the drive straight down, and then rotate the cam handle down until the drive snaps into place under the orange release latch.
++
+.. Repeat the previous substeps for each drive in the drawer.
 +
 You must be sure that slots 0, 3, 6, and 9 in each drawer contain drives.
-
- .. Carefully push the drive drawer back into the enclosure.
++
+.. Carefully push the drive drawer back into the enclosure.
 +
 |===
 a|
@@ -212,11 +213,11 @@ image:../media/2860_dwg_e2860_de460c_gentle_close.gif[]
 a|
 CAUTION: *Possible loss of data access:* Never slam the drawer shut. Push the drawer in slowly to avoid jarring the drawer and causing damage to the storage array.
 |===
-
- .. Close the drive drawer by pushing both levers towards the center.
- .. Repeat these steps for each drawer in the disk shelf.
++
+.. Close the drive drawer by pushing both levers towards the center.
+.. Repeat these steps for each drawer in the disk shelf.
 .. Attach the front bezel.
-
++
 . If you are adding multiple disk shelves, repeat the previous steps for each disk shelf you are installing.
 . Connect the power supplies for each disk shelf:
  .. Connect the power cords first to the disk shelves, securing them in place with the power cord retainer, and then connect the power cords to different power sources for resiliency.

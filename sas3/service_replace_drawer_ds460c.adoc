@@ -1,7 +1,7 @@
 ---
 permalink: sas3/service-replace-drawer-ds460c.html
 sidebar: sidebar
-keywords: stop, all, host, i/o activity, power, off, shelf, replacing, replace, drive, drawer, disk, replace a drive drawer in a ds460c disk shelf
+keywords: i/o activity, power, off, shelf, replacing, replace, drive, drawer, disk, replace a drive drawer in a ds460c disk shelf
 summary: You must stop all host I/O activity and power off the shelf before replacing the drive drawer.
 ---
 = Replacing a drive drawer in a DS460C disk shelf - shelves with IOM12/IOM12B modules
@@ -267,16 +267,16 @@ Raised button on the right side of the drive.
  .. Lower the drive straight down, and then rotate the drive handle down until the drive snaps into place.
 +
 If you have a partially populated shelf, meaning that the drawer in which you are reinstalling drives has less than the 12 drives it supports, install the first four drives into the front slots (0, 3, 6, and 9).
-
++
 NOTE: *Risk of equipment malfunction:* To allow for proper air flow and prevent overheating, always install the first four drives into the front slots (0, 3, 6, and 9).
-
++
 image::../media/92_dwg_de6600_install_or_remove_drive.gif[]
 
  .. Repeat these substeps to reinstall all of the drives.
 . Slide the drawer back into the drive shelf by pushing it from the center and closing both levers.
 +
 NOTE: *Risk of equipment malfunction:* Make sure to completely close the drive drawer by pushing both levers. You must completely close the drive drawer to allow proper airflow and prevent overheating.
-
++
 . Attach the bezel to the front of the drive shelf.
 
 == Attaching the cable chains
