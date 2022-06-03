@@ -277,35 +277,27 @@
     </div>
   </div>
   <div class="n-property-bar__toolbar">
-    <!-- Start Language Selector --><div id="ie-i18n" class="n-property-bar__lang-selector">
-      <div id="ie-i18n-menu">
-      <span class="ie-i18n-lang">English</span>
-        <button class="ie-i18n-icon-container" type="button">
+    <!-- Start Language Selector --><div id="language-dropdown" class="custom-dropdown custom-dropdown-lang">
+      <div class="custom-dropdown-select custom-dropdown-select-lang">
+      <span class="lang-name">English</span>
           <svg class="n-globe__icon" aria-labelledby="title">
             <title>globe</title>
             <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/us-en/ontap-systems/common/svg/sprite.svg#globe"></use>
           </svg>
         </button>
       </div>
-      <div id="n-property-navigation-bar__menu--language-selector" class="ie-i18n-results-container n-menu n-menu--v3 n-menu--is-active" style="display: none;">
-        <div class="n-language-selector-menu">
-          <ul class="n-menu__list">
-            <li class="n-menu__list-column">
-              <ul class="n-menu__list"><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/us-en/ontap-systems/sas3/install-new-system.html" class="n-menu__header-text"><span translate="no" class="notranslate">English</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/ja-jp/ontap-systems/sas3/install-new-system.html" class="n-menu__header-text"><span translate="no" class="notranslate">日本語</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/ko-kr/ontap-systems/sas3/install-new-system.html" class="n-menu__header-text"><span translate="no" class="notranslate">한국어</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/zh-cn/ontap-systems/sas3/install-new-system.html" class="n-menu__header-text"><span translate="no" class="notranslate">简体中文</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/zh-tw/ontap-systems/sas3/install-new-system.html" class="n-menu__header-text"><span translate="no" class="notranslate">繁體中文</span></a>
-                </li></ul>
-            </li>
-          </ul>
-        </div>
-      </div>
+
+      <ul class="custom-dropdown-menu"><li>
+          <a href="https://docs.netapp.com/us-en/ontap-systems/sas3/install-new-system.html" target="_self"><span translate="no" class="notranslate">English</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/ja-jp/ontap-systems/sas3/install-new-system.html" target="_self"><span translate="no" class="notranslate">日本語</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/zh-cn/ontap-systems/sas3/install-new-system.html" target="_self"><span translate="no" class="notranslate">简体中文</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/zh-tw/ontap-systems/sas3/install-new-system.html" target="_self"><span translate="no" class="notranslate">繁體中文</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/ko-kr/ontap-systems/sas3/install-new-system.html" target="_self"><span translate="no" class="notranslate">한국어</span></a>
+        </li></ul>
     </div><!-- End Language Selector -->
 
     <div class="n-property-bar__cta"></div>
@@ -4552,7 +4544,7 @@
     $("#toggleContainerPdf").toggle('display');
     $(".n-pdf-body-container .zip-pdf-link-container").toggle('display');
   });
-</script><div class="sidebar-nav-container">
+</script><div class="sidebar-nav-container" id="mysidebardiv">
   <ul id="mysidebar" class="nav"><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/index.html">
         AFF and FAS system docs
       </a></li><li class="subfolders "><a href="#">
@@ -6085,7 +6077,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-05-27 15:37:26 +0000">05/27/2022</time>
+    <time datetime="2022-06-02 16:13:16 +0000">06/02/2022</time>
     
   
 
@@ -6394,8 +6386,7 @@ It is recommended that you use a mechanized lift or four people using the lift h
 <p>Always wear an ESD wrist strap grounded to an unpainted surface on your storage enclosure chassis to prevent static discharges.</p>
 </div>
 <div class="paragraph">
-<p>+
-If a wrist strap is unavailable, touch an unpainted surface on your storage enclosure chassis before handling the disk drive.</p>
+<p>If a wrist strap is unavailable, touch an unpainted surface on your storage enclosure chassis before handling the disk drive.</p>
 </div>
 </td>
 </tr>
@@ -6404,8 +6395,8 @@ If a wrist strap is unavailable, touch an unpainted surface on your storage encl
 <div class="paragraph">
 <p>If you purchased a partially populated shelf, meaning that the shelf has less than the 60 drives it supports, for each drawer, install the drives as follows:</p>
 </div>
-<div class="olist loweralpha">
-<ol class="loweralpha" type="a">
+<div class="ulist">
+<ul>
 <li>
 <p>Install the first four drives into the front slots (0, 3, 6, and 9).</p>
 <div class="admonitionblock note">
@@ -6431,7 +6422,8 @@ If a wrist strap is unavailable, touch an unpainted surface on your storage encl
 <img src="../media/dwg_trafford_drawer_with_hdds_callouts.gif" alt="dwg trafford drawer with hdds callouts">
 </div>
 </div>
-</li>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
 <li>
 <p>Open the top drawer of the shelf.</p>
 </li>
@@ -6509,6 +6501,9 @@ If a wrist strap is unavailable, touch an unpainted surface on your storage encl
 <p>Attach the front bezel.</p>
 </li>
 </ol>
+</div>
+</li>
+</ul>
 </div>
 </li>
 <li>
@@ -7067,4 +7062,5 @@ Magnetic fields can destroy all data on a drive and cause irreparable damage to 
     </script>
     <script src='/us-en/ontap-systems/js/www-ntap.js'></script>
     <script src='/us-en/ontap-systems/js/tabbed-blocks.js'></script>
+    <script src='/us-en/ontap-systems/js/sidebar.js'></script>
   </body></html>
