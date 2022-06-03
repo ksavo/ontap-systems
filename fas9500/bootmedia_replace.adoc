@@ -13,7 +13,6 @@ You must remove and open the controller module, locate and replace the boot medi
 :icons: font
 :imagesdir: ../media/
 
-[.lead]
 To access components inside the controller, you must first remove the controller module from the system and then remove the cover on the controller module.
 
 .Steps
@@ -63,10 +62,7 @@ Controller module cover locking button
 |===
 
 == Step 2: Replace the boot media
-:icons: font
-:imagesdir: ../media/
 
-[.lead]
 You must locate the boot media in the controller and follow the directions to replace it.
 
 .Steps
@@ -108,10 +104,7 @@ If necessary, remove the boot media and reseat it into the socket.
 . Reinstall the controller module lid by aligning the pins on the lid with the slots on the motherboard carrier, and then slide the lid into place.
 
 == Step 3: Transfer the boot image to the boot media
-:icons: font
-:imagesdir: ../media/
 
-[.lead]
 You can install the system image to the replacement boot media using a USB flash drive with the image installed on it. However, you must restore the `var` file system during this procedure.
 
 .Before you begin
@@ -173,6 +166,7 @@ If you use this optional parameter, you do not need a fully qualified domain nam
 
 +
 NOTE: Other parameters might be necessary for your interface. You can enter help ifconfig at the firmware prompt for details.
+
 . If the controller is in a stretch or fabric-attached MetroCluster, you must restore the FC adapter configuration:
  .. Boot to Maintenance mode: `boot_ontap maint`
  .. Set the MetroCluster ports as initiators: `ucadmin modify -m fc -t iniitator adapter_name`

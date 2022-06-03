@@ -20,14 +20,13 @@ Because the system ID is derived from the NVRAM module, if replacing the module,
 * All disk shelves must be working properly.
 * If your system is in an HA pair, the partner node must be able to take over the node associated with the NVRAM module that is being replaced.
 * This procedure uses the following terminology:
- ** The impaired node is the node on which you are performing maintenance.
- ** The healthy node is the HA partner of the impaired node.
+** The impaired node is the node on which you are performing maintenance.
+** The healthy node is the HA partner of the impaired node.
 * This procedure includes steps for automatically or manually reassigning disks to the controller module associated with the new NVRAM module. You must reassign the disks when directed to in the procedure. Completing the disk reassignment before giveback can cause issues.
 * You must replace the failed component with a replacement FRU component you received from your provider.
 * You cannot change any disks or disk shelves as part of this procedure.
 
 == Step 1: Shut down the impaired node
-
 
 include::../_include/shutdown_most_frus_no_PCM_remove.adoc[]
 
@@ -42,25 +41,21 @@ To replace the NVRAM module, locate it in slot 6 in the chassis and follow the s
 +
 The cam button moves away from the chassis.
 
- .. Rotate the cam latch down until it is in a horizontal position.
+.. Rotate the cam latch down until it is in a horizontal position.
 +
 The NVRAM module disengages from the chassis and moves out a few inches.
 
- .. Remove the NVRAM module from the chassis by pulling on the pull tabs on the sides of the module face.
+.. Remove the NVRAM module from the chassis by pulling on the pull tabs on the sides of the module face.
 +
-
 ++++
 <div class="aspect-ratio"><iframe frameborder="1" height="400" scrolling="auto" src="https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=228cbd14-4cb2-49b5-88f1-ae78004b9d84" width="711"> </iframe></div>
 ++++
-
 ifdef::backend-pdf[]
 https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=228cbd14-4cb2-49b5-88f1-ae78004b9d84[Animation - Replace the NVRAM module^]
 endif::[]
 
 +
-
 image::../media/drw_9500_move-remove_NVRAM_module.svg[width=340]
-
 +
 
 [cols="20%,90%"]
@@ -105,15 +100,15 @@ To replace NVRAM DIMMs in the NVRAM module, you must remove the NVRAM module, op
 
 . If you are not already grounded, properly ground yourself.
 . Remove the target NVRAM module from the chassis:
- .. Depress the lettered and numbered cam button.
+.. Depress the lettered and numbered cam button.
 +
 The cam button moves away from the chassis.
 
- .. Rotate the cam latch down until it is in a horizontal position.
+.. Rotate the cam latch down until it is in a horizontal position.
 +
 The NVRAM module disengages from the chassis and moves out a few inches.
 
- .. Remove the NVRAM module from the chassis by pulling on the pull tabs on the sides of the module face.
+.. Remove the NVRAM module from the chassis by pulling on the pull tabs on the sides of the module face.
 +
 ++++
 <div class="aspect-ratio"><iframe frameborder="1" height="400" scrolling="auto" src="https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=0ae4e603-c22b-4930-8070-adf2000e38b5" width="711"> </iframe></div>
@@ -273,8 +268,8 @@ The MetroCluster configuration takes a few minutes after the replacement to retu
 +
 This is required if both of the following are true:
 
- ** The MetroCluster configuration is in a switchover state.
- ** The replacement node is the current owner of the disks on the disaster site.
+** The MetroCluster configuration is in a switchover state.
+** The replacement node is the current owner of the disks on the disaster site.
 +
 See https://docs.netapp.com/us-en/ontap-metrocluster/manage/concept_understanding_mcc_data_protection_and_disaster_recovery.html#disk-ownership-changes-during-ha-takeover-and-metrocluster-switchover-in-a-four-node-metrocluster-configuration[Disk ownership changes during HA takeover and MetroCluster switchover in a four-node MetroCluster configuration^] for more information.
 

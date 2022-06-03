@@ -197,5 +197,4 @@ After you issue the command, wait until the system stops at the LOADER prompt.
 
  .. Rerun the system-level diagnostic test.
 
-+
 |===

@@ -81,6 +81,6 @@ NOTE: Be sure to exit Maintenance mode after completing the conversion.
 
 . If automatic giveback was disabled, reenable it: `storage failover modify -node local -auto-giveback true`
 
-== Step 5: Return the failed part to NetApp
+== Step 4: Return the failed part to NetApp
 
 include::../_include/complete_rma.adoc[]

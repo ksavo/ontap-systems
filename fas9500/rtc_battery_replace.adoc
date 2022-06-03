@@ -124,16 +124,16 @@ If you removed the media converters (QSFPs or SFPs), remember to reinstall them 
 +
 IMPORTANT: Do not use excessive force when sliding the controller module into the chassis to avoid damaging the connectors.
 
- .. If you have not already done so, reinstall the cable management device.
- .. Bind the cables to the cable management device with the hook and loop strap.
- .. Reconnect the power cables to the power supplies and to the power sources, and then turn on the power to start the boot process.
- .. Halt the controller at the LOADER prompt.
+.. If you have not already done so, reinstall the cable management device.
+.. Bind the cables to the cable management device with the hook and loop strap.
+.. Reconnect the power cables to the power supplies and to the power sources, and then turn on the power to start the boot process.
+.. Halt the controller at the LOADER prompt.
 . Reset the time and date on the controller:
- .. Check the date and time on the healthy node with the `show date` command.
- .. At the LOADER prompt on the target node, check the time and date.
- .. If necessary, modify the date with the `set date mm/dd/yyyy` command.
- .. If necessary, set the time, in GMT, using the `set time hh:mm:ss` command.
- .. Confirm the date and time on the target node.
+.. Check the date and time on the healthy node with the `show date` command.
+.. At the LOADER prompt on the target node, check the time and date.
+.. If necessary, modify the date with the `set date mm/dd/yyyy` command.
+.. If necessary, set the time, in GMT, using the `set time hh:mm:ss` command.
+.. Confirm the date and time on the target node.
 . At the LOADER prompt, enter `bye` to reinitialize the PCIe cards and other components and let the node reboot.
 . Return the node to normal operation by giving back its storage: `storage failover giveback -ofnode impaired_node_name`
 . If automatic giveback was disabled, reenable it: `storage failover modify -node local -auto-giveback true`

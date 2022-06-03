@@ -52,4 +52,5 @@ a|
 There is an audible click when the module is secure and connected to the midplane.
 
 == Step 2: Return the failed component
+
 include::../_include/complete_rma_step.adoc[]
