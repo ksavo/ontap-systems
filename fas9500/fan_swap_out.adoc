@@ -23,19 +23,17 @@ IMPORTANT: You must replace the fan module within two minutes of removing it fro
 IMPORTANT: The fan modules are short. Always support the bottom of the fan module with your free hand so that it does not suddenly drop free from the chassis and injure you.
 
 +
-
 ++++
 <div class="aspect-ratio"><iframe frameborder="1" height="400" scrolling="auto" src="https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=86b0ed39-1083-4b3a-9e9c-ae78004c2ffc" width="711"> </iframe></div>
 ++++
-
 ifdef::backend-pdf[]
 https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=86b0ed39-1083-4b3a-9e9c-ae78004c2ffc[Animation - Remove/install fan^]
 endif::[]
 
 +
-
 image::../media/drw_9500_remove_install_fan.svg[width=340]
 +
+
 [cols="20%,80%"]
 |===
 a|

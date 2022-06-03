@@ -30,16 +30,14 @@ To access components inside the controller, you must first remove the controller
 . Unplug the cables from the impaired controller module, and keep track of where the cables were connected.
 . Slide the terra cotta button on the cam handle downward until it unlocks.
 +
-
 ++++
 <div class="aspect-ratio"><iframe frameborder="1" height="400" scrolling="auto" src="https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=5e029a19-8acc-4fa1-be5d-ae78004b365a" width="711"> </iframe></div>
 ++++
-
 ifdef::backend-pdf[]
 https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=5e029a19-8acc-4fa1-be5d-ae78004b365a[Animation - Remove controller module]
 endif::[]
-+
 
++
 image::../media/drw_9500_remove_PCM.svg[width=340]
 +
 
@@ -80,6 +78,7 @@ To replace the DIMMs, locate them inside the controller and follow the specific 
 +
 NOTE: Each system memory DIMM has an LED located on the board next to each DIMM slot. The LED for the faulty blinks every two seconds.
 +
+
 image::../media/drw_9500_DIMM_map.svg[width=500px]
 
 . Eject the DIMM from its slot by slowly pushing apart the two DIMM ejector tabs on either side of the DIMM, and then slide the DIMM out of the slot.
@@ -147,16 +146,14 @@ Controller module cover locking button
 
 . Align the end of the controller module with the opening in the chassis, and then gently push the controller module halfway into the system.
 +
-
 ++++
 <div class="aspect-ratio"><iframe frameborder="1" height="400" scrolling="auto" src="https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=f2aa14b4-0d95-4109-b410-ae78004b35c9" width="711"> </iframe></div>
 ++++
-
 ifdef::backend-pdf[]
 https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=f2aa14b4-0d95-4109-b410-ae78004b35c9[Animation - Install controller^]
 endif::[]
-+
 
++
 image::../media/drw_9500_remove_PCM.svg[width=340]
 +
 
@@ -248,13 +245,15 @@ The node displays the LOADER prompt.
 +
 
 [options="header" cols="1,2"]
-
 |===
 | If your node is in...| Then...
 a|
 An HA pair
 a|
-Perform a give back: `storage failover giveback -ofnode replacement_node_name`        *Note:* If you disabled automatic giveback, re-enable it with the storage failover modify command.
+Perform a give back: `storage failover giveback -ofnode replacement_node_name`
+
+NOTE: If you disabled automatic giveback, re-enable it with the storage failover modify command.
+
 
 a|
 Resulted in some test failures

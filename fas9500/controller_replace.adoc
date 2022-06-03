@@ -13,11 +13,10 @@ To replace the controller module hardware, you must remove the impaired node, mo
 
 The following animation shows the whole process of moving components from the impaired to the replacement controller.
 
-
++
 ++++
 <div class="aspect-ratio"><iframe frameborder="1" height="400" scrolling="auto" src="https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=dc8d4acb-e061-45dd-8a0e-ae78004b6974" width="711"> </iframe></div>
 ++++
-
 ifdef::backend-pdf[]
 https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=dc8d4acb-e061-45dd-8a0e-ae78004b6974[Animation - Remove controller module]
 endif::[]
@@ -30,18 +29,15 @@ To access components inside the controller, you must first remove the controller
 . Unplug the cables from the impaired controller module, and keep track of where the cables were connected.
 . Slide the terra cotta button on the cam handle downward until it unlocks.
 +
-
 ++++
 <div class="aspect-ratio"><iframe frameborder="1" height="400" scrolling="auto" src="https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=5e029a19-8acc-4fa1-be5d-ae78004b365a" width="711"> </iframe></div>
 ++++
-
 ifdef::backend-pdf[]
 https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=5e029a19-8acc-4fa1-be5d-ae78004b365a[Animation - Remove controller module]
 endif::[]
+
 +
-
 image::../media/drw_9500_remove_PCM.svg[width=340]
-
 +
 
 [cols="20%,90%"]
@@ -99,6 +95,7 @@ Boot media
 
 . Press the blue button on the boot media housing to release the boot media from its housing, and then gently pull it straight out of the boot media socket.
 +
+
 NOTE: Do not twist or pull the boot media straight up, because this could damage the socket or the boot media.
 
 . Move the boot media to the new controller module, align the edges of the boot media with the socket housing, and then gently push it into the socket.
@@ -164,19 +161,15 @@ NOTE: The system might update system firmware when it boots. Do not abort this p
 . If you have not already done so, replace the cover on the controller module.
 . Align the end of the controller module with the opening in the chassis, and then gently push the controller module halfway into the system.
 +
-
 ++++
 <div class="aspect-ratio"><iframe frameborder="1" height="400" scrolling="auto" src="https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=f2aa14b4-0d95-4109-b410-ae78004b35c9" width="711"> </iframe></div>
 ++++
-
 ifdef::backend-pdf[]
 https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=f2aa14b4-0d95-4109-b410-ae78004b35c9[Animation - Install controller module]
 endif::[]
 
 +
-
 image::../media/drw_9500_remove_PCM_source.svg[width=340]
-
 +
 
 [cols="20%,80%"]
