@@ -19,30 +19,25 @@ You must replace the failed component with a replacement FRU component you recei
 
 == Step 1: Shut down the impaired node
 
-[.lead]
-
 include::../_include/shutdown_most_frus.adoc[]
 
 
 == Step 2: Remove the controller module
 
-[.lead]
 To access components inside the controller, you must first remove the controller module from the system and then remove the cover on the controller module.
 
 . If you are not already grounded, properly ground yourself.
 . Unplug the cables from the impaired controller module, and keep track of where the cables were connected.
 . Slide the terra cotta button on the cam handle downward until it unlocks.
 +
-
 ++++
 <div class="aspect-ratio"><iframe frameborder="1" height="400" scrolling="auto" src="https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=5e029a19-8acc-4fa1-be5d-ae78004b365a" width="711"> </iframe></div>
 ++++
-
 ifdef::backend-pdf[]
 https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=5e029a19-8acc-4fa1-be5d-ae78004b365a[Animation - Remove controller module]
 endif::[]
-+
 
++
 image::../media/drw_9500_remove_PCM.svg[width=340]
 +
 
@@ -76,7 +71,6 @@ Controller module cover locking button
 
 == Step 3: Replace the DIMMs
 
-[.lead]
 To replace the DIMMs, locate them inside the controller and follow the specific sequence of steps.
 
 . If you are not already grounded, properly ground yourself.
@@ -84,14 +78,13 @@ To replace the DIMMs, locate them inside the controller and follow the specific 
 +
 NOTE: Each system memory DIMM has an LED located on the board next to each DIMM slot. The LED for the faulty blinks every two seconds.
 +
+
 image::../media/drw_9500_DIMM_map.svg[width=500px]
 
 . Eject the DIMM from its slot by slowly pushing apart the two DIMM ejector tabs on either side of the DIMM, and then slide the DIMM out of the slot.
 +
 IMPORTANT: Carefully hold the DIMM by the edges to avoid pressure on the components on the DIMM circuit board.
-
 +
-
 ++++
 <div class="aspect-ratio"><iframe frameborder="1" height="400" scrolling="auto" src="https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=d62a4c7c-8296-4d60-9981-ae78004b36f7" width="711"> </iframe></div>
 ++++
@@ -99,8 +92,8 @@ IMPORTANT: Carefully hold the DIMM by the edges to avoid pressure on the compone
 ifdef::backend-pdf[]
 https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=d62a4c7c-8296-4d60-9981-ae78004b36f7[Animation - Replace DIMM^]
 endif::[]
-+
 
++
 image::../media/drw_9500_replace_PCM_dimms.svg[width=340]
 +
 
@@ -131,7 +124,6 @@ IMPORTANT: Visually inspect the DIMM to verify that it is evenly aligned and ful
 
 == Step 4: Install the controller
 
-[.lead]
 After you install the components into the controller module, you must install the controller module back into the system chassis and boot the operating system.
 
 For HA pairs with two controller modules in the same chassis, the sequence in which you install the controller module is especially important because it attempts to reboot as soon as you completely seat it in the chassis.
@@ -152,16 +144,14 @@ Controller module cover locking button
 
 . Align the end of the controller module with the opening in the chassis, and then gently push the controller module halfway into the system.
 +
-
 ++++
 <div class="aspect-ratio"><iframe frameborder="1" height="400" scrolling="auto" src="https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=f2aa14b4-0d95-4109-b410-ae78004b35c9" width="711"> </iframe></div>
 ++++
-
 ifdef::backend-pdf[]
 https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=f2aa14b4-0d95-4109-b410-ae78004b35c9[Animation - Install controller^]
 endif::[]
-+
 
++
 image::../media/drw_9500_remove_PCM.svg[width=340]
 +
 
@@ -200,7 +190,6 @@ The controller module begins to boot as soon as it is fully seated in the chassi
 
 == Step 5: Run system-level diagnostics
 
-[.lead]
 After installing a new DIMM, you should run diagnostics.
 
 Your system must be at the LOADER prompt to start System Level Diagnostics.
@@ -215,7 +204,7 @@ After you issue the command, you should wait until the system stops at the LOADE
 +
 IMPORTANT: During the boot process, you can safely respond `y` to prompts.
 
-  *** If a prompt appears warning that when entering Maintenance mode in an HA configuration, you must ensure that the healthy node remains down.
+*** If a prompt appears warning that when entering Maintenance mode in an HA configuration, you must ensure that the healthy node remains down.
 . At the LOADER prompt, access the special drivers specifically designed for system-level diagnostics to function properly: `boot_diags`
 +
 During the boot process, you can safely respond `y` to the prompts until the Maintenance mode prompt (*>) appears.
@@ -236,8 +225,8 @@ a|
 Were completed without any failures
 a|
 
- .. Clear the status logs: `sldiag device clearstatus`
- .. Verify that the log was cleared: `sldiag device status`
+.. Clear the status logs: `sldiag device clearstatus`
+.. Verify that the log was cleared: `sldiag device status`
 +
 The following default response is displayed:
 +
@@ -254,13 +243,15 @@ The node displays the LOADER prompt.
 +
 
 [options="header" cols="1,2"]
-
 |===
 | If your node is in...| Then...
 a|
 An HA pair
 a|
-Perform a give back: `storage failover giveback -ofnode replacement_node_name`        *Note:* If you disabled automatic giveback, re-enable it with the storage failover modify command.
+Perform a give back: `storage failover giveback -ofnode replacement_node_name`
+
+NOTE: If you disabled automatic giveback, re-enable it with the storage failover modify command.
+
 
 a|
 Resulted in some test failures
@@ -273,13 +264,13 @@ After you issue the command, wait until the system stops at the LOADER prompt.
 
  .. Verify that you have observed all the considerations identified for running system-level diagnostics, that cables are securely connected, and that hardware components are properly installed in the storage system.
  .. Boot the controller module you are servicing, interrupting the boot by pressing `Ctrl-C` when prompted to get to the Boot menu:
-  *** If you have two controller modules in the chassis, fully seat the controller module you are servicing in the chassis.
+*** If you have two controller modules in the chassis, fully seat the controller module you are servicing in the chassis.
 +
 The controller module boots up when fully seated.
 
-  *** If you have one controller module in the chassis, connect the power supplies, and then turn them on.
- .. Select Boot to maintenance mode from the menu.
- .. Exit Maintenance mode by entering the following command: `halt`
+*** If you have one controller module in the chassis, connect the power supplies, and then turn them on.
+.. Select Boot to maintenance mode from the menu.
+.. Exit Maintenance mode by entering the following command: `halt`
 +
 After you issue the command, wait until the system stops at the LOADER prompt.
 
@@ -290,5 +281,4 @@ After you issue the command, wait until the system stops at the LOADER prompt.
 
 == Step 6: Return the failed part to NetApp
 
-[.lead]
 include::../_include/complete_rma.adoc[]

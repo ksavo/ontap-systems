@@ -16,13 +16,10 @@ To replace an I/O module, you must perform a specific sequence of tasks.
 
 == Step 1: Shut down the impaired node
 
-[.lead]
-
 include::../_include/shutdown_most_frus_no_PCM_remove.adoc[]
 
 == Step 2: Replace I/O modules
 
-[.lead]
 To replace an I/O module, locate it within the chassis and follow the specific sequence of steps.
 
 . If you are not already grounded, properly ground yourself.
@@ -43,21 +40,17 @@ The I/O module disengages from the chassis and moves about 1/2 inch out of the I
 +
 Make sure that you keep track of which slot the I/O module was in.
 +
-
 ++++
 <div class="aspect-ratio"><iframe frameborder="1" height="400" scrolling="auto" src="https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=0903b1f9-187b-4bb8-9548-ae9b0012bb21" width="711"> </iframe></div>
 ++++
-
 ifdef::backend-pdf[]
 https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=0903b1f9-187b-4bb8-9548-ae9b0012bb21[Animation - Remove/install I/O module^]
 endif::[]
 
 +
-
 image::../media/drw_9500_remove_PCIe_module.svg[width=340]
-
-
 +
+
 [cols="20%,80%"]
 |===
 a|
@@ -77,7 +70,6 @@ I/O cam latch completely unlocked
 
 == Step 3: Reboot the controller after I/O module replacement
 
-[.lead]
 After you replace an I/O module, you must reboot the controller module.
 
 . From the LOADER prompt, reboot the node: _bye_
@@ -89,7 +81,6 @@ NOTE: Be sure to exit Maintenance mode after completing the conversion.
 
 . If automatic giveback was disabled, reenable it: `storage failover modify -node local -auto-giveback true`
 
-== Step 5: Return the failed part to NetApp
+== Step 4: Return the failed part to NetApp
 
-[.lead]
 include::../_include/complete_rma.adoc[]

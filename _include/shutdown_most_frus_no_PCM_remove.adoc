@@ -17,9 +17,9 @@ The following AutoSupport message suppresses automatic case creation for two hou
 a|
 The LOADER prompt
 a|
-Go to the next Step.
+Go to the next step.
 a|
-Waiting for giveback...
+`Waiting for giveback...`
 a|
 Press Ctrl-C, and then respond `y` when prompted.
 a|

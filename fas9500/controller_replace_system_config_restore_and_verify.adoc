@@ -46,7 +46,6 @@ mccip
 
 == Step 3: Run system-level diagnostics
 
-[.lead]
 You should run comprehensive or focused diagnostic tests for specific components and subsystems whenever you replace the controller.
 
 All commands in the diagnostic procedures are issued from the node where the component is being replaced.
@@ -168,7 +167,9 @@ The node displays the LOADER prompt.
 a|
 An HA pair
 a|
-Perform a give back: `storage failover giveback -ofnode replacement_node_name`        *Note:* If you disabled automatic giveback, re-enable it with the storage failover modify command.
+Perform a give back: `storage failover giveback -ofnode replacement_node_name`
+
+NOTE: If you disabled automatic giveback, re-enable it with the storage failover modify command.
 
 a|
 Resulted in some test failures
@@ -196,5 +197,4 @@ After you issue the command, wait until the system stops at the LOADER prompt.
 
  .. Rerun the system-level diagnostic test.
 
-+
 |===
