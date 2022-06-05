@@ -9,7 +9,7 @@ summary: 'There are two videos: one showing how to rack and cable your system an
 :imagesdir: ../media/
 
 [.lead]
-There are two videos; one showing how to rack and cable your system and one showing an example of using the System Manager Guided Setup to perform initial system configuration.
+There are two videos - one showing how to rack and cable your system and one showing an example of using the System Manager Guided Setup to perform initial system configuration.
 
 == Video one of two: Hardware installation and cabling
 
