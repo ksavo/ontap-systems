@@ -4,6 +4,10 @@
 |===
 | Platforms (with links to data sheets)| Available beginning
 a|
+https://hwu.netapp.com/ProductSpecs/Index[FAS9500]
+a|
+ONTAP 9.10.1P3 and 9.11.1
+a|
 https://www.netapp.com/pdf.html?item=/media/7828-ds-3582.pdf[AFF A900]
 a|
 ONTAP 9.10.1
