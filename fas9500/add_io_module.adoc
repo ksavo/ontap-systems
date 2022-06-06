@@ -81,11 +81,9 @@ The console connection shows that the node drops to the LOADER prompt when the t
 .. Depress the lettered and numbered cam button.
 +
 The cam button moves away from the chassis.
-
 .. Rotate the cam latch down until it is in a horizontal position.
 +
 The I/O module disengages from the chassis and moves about 1/2 inch out of the I/O slot.
-
 .. Remove the I/O module from the chassis by pulling on the pull tabs on the sides of the module face.
 +
 Make sure that you keep track of which slot the I/O module was in.
@@ -96,7 +94,6 @@ Make sure that you keep track of which slot the I/O module was in.
 ifdef::backend-pdf[]
 https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=0903b1f9-187b-4bb8-9548-ae9b0012bb21[Animation - Replacing an I/O module]
 endif::[]
-
 +
 image::../media/drw_9500_remove_PCIe_module.svg[width=340]
 +
