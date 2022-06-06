@@ -72,7 +72,7 @@ I/O cam latch completely unlocked
 After you replace an I/O module, you must reboot the controller module.
 
 . From the LOADER prompt, reboot the node: _bye_
-. If your system is configured to support 10 GbE cluster interconnect and data connections on 40 GbE NICs or onboard ports, convert these ports to 10 GbE connections by using the nicadmin convert command from Maintenance mode.
+. If your system is configured to support 10 GbE cluster interconnect and data connections on 40 GbE NICs or onboard ports, convert these ports to 10 GbE connections by using the `nicadmin convert` command from Maintenance mode.
 +
 NOTE: Be sure to exit Maintenance mode after completing the conversion.
 
