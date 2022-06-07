@@ -37,7 +37,7 @@ To replace the NVRAM module, locate it in slot 6 in the chassis and follow the s
 . If you are not already grounded, properly ground yourself.
 
 . Remove the target NVRAM module from the chassis:
- .. Depress the lettered and numbered cam button.
+.. Depress the lettered and numbered cam button.
 +
 The cam button moves away from the chassis.
 
@@ -53,8 +53,8 @@ The NVRAM module disengages from the chassis and moves out a few inches.
 ifdef::backend-pdf[]
 https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=228cbd14-4cb2-49b5-88f1-ae78004b9d84[Animation - Replace the NVRAM module^]
 endif::[]
-
 +
+
 image::../media/drw_9500_move-remove_NVRAM_module.svg[width=340]
 +
 
@@ -68,7 +68,9 @@ a|
 image::../media/legend_icon_02.svg[width=20]
 a|
 I/O latch completely unlocked
+
 |===
+
 . Set the NVRAM module on a stable surface and remove the cover from the NVRAM module by pushing down on the blue locking button on the cover, and then, while holding down the blue button, slide the lid off the NVRAM module.
 
 +
@@ -103,21 +105,19 @@ To replace NVRAM DIMMs in the NVRAM module, you must remove the NVRAM module, op
 .. Depress the lettered and numbered cam button.
 +
 The cam button moves away from the chassis.
-
 .. Rotate the cam latch down until it is in a horizontal position.
 +
 The NVRAM module disengages from the chassis and moves out a few inches.
-
 .. Remove the NVRAM module from the chassis by pulling on the pull tabs on the sides of the module face.
 +
 ++++
-<div class="aspect-ratio"><iframe frameborder="1" height="400" scrolling="auto" src="https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=0ae4e603-c22b-4930-8070-adf2000e38b5" width="711"> </iframe></div>
+<div class="aspect-ratio"><iframe frameborder="1" height="400" scrolling="auto" src="https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=228cbd14-4cb2-49b5-88f1-ae78004b9d84" width="711"> </iframe></div>
 ++++
 ifdef::backend-pdf[]
-https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=0ae4e603-c22b-4930-8070-adf2000e38b5[Animation - Replace NVRAM DIMM^]
+https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=228cbd14-4cb2-49b5-88f1-ae78004b9d84[Animation - Replace the NVRAM module^]
 endif::[]
-
 +
+
 image::../media/drw_9500_move-remove_NVRAM_module.svg[width=340]
 +
 
@@ -131,6 +131,7 @@ a|
 image::../media/legend_icon_02.svg[width=20]
 a|
 I/O latch completely unlocked
+
 |===
 
 . Set the NVRAM module on a stable surface and remove the cover from the NVRAM module by pushing down on the blue locking button on the cover, and then, while holding down the blue button, slide the lid off the NVRAM module.
@@ -291,10 +292,10 @@ dr-group-id            cluster node           configuration-state
 . Verify that the expected volumes are present for each node: `vol show -node node-name`
 . If you disabled automatic takeover on reboot, enable it from the healthy node: `storage failover modify -node replacement-node-name -onreboot true`
 
-== Step 6: Restore Storage and Volume Encryption functionality
+== Step 7: Restore Storage and Volume Encryption functionality
 
 include::../_include/restore_storage_encryption.adoc[]
 
-== Step 7: Return the failed part to NetApp
+== Step 8: Return the failed part to NetApp
 
 include::../_include/complete_rma.adoc[]

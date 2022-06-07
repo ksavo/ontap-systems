@@ -13,7 +13,6 @@ To replace the controller module hardware, you must remove the impaired node, mo
 
 The following animation shows the whole process of moving components from the impaired to the replacement controller.
 
-+
 ++++
 <div class="aspect-ratio"><iframe frameborder="1" height="400" scrolling="auto" src="https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=dc8d4acb-e061-45dd-8a0e-ae78004b6974" width="711"> </iframe></div>
 ++++
@@ -80,14 +79,15 @@ You must locate the boot media and follow the directions to remove it from the o
 
 image::../media/drw_9500_remove_boot_dev.svg[width=340]
 +
+
 [cols="20%,80%"]
 |===
 a|
-image::../media/legend_icon_01.svg[width=20]
+image:../media/legend_icon_01.svg[width=20]
 a|
 Press release tab
 a|
-image::../media/legend_icon_02.svg[width=20]
+image:../media/legend_icon_02.svg[width=20]
 a|
 Boot media
 |===
@@ -124,11 +124,11 @@ image::../media/drw_9500_replace_PCM_dimms.svg[width=340]
 [cols="20%,80%"]
 |===
 a|
-image::../media/legend_icon_01.svg[width=20]
+image:../media/legend_icon_01.svg[width=20]
  a|
 DIMM ejector tabs
 a|
-image::../media/legend_icon_02.svg[width=20]
+image:../media/legend_icon_02.svg[width=20]
 a|
 DIMM
 |===

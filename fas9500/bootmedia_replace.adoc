@@ -82,11 +82,11 @@ image::../media/drw_9500_remove_boot_dev_source.svg[width=340px]
 [cols="20%,90%"]
 |===
 a|
-image::../media/legend_icon_01.svg[width=20]
+image:../media/legend_icon_01.svg[width=20]
 a|
 Press release tab
 a|
-image::../media/legend_icon_02.svg[width=20]
+image:../media/legend_icon_02.svg[width=20]
 a|
 Boot media
 |===

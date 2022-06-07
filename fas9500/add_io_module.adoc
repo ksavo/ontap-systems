@@ -23,19 +23,19 @@ You can add an I/O module to your system by either replacing a NIC or storage ad
 You can add an I/O module into an empty module slot in your system as either a NIC or a storage module for the SAS storage shelves.
 
 . Shutdown controller A:
- .. Disable automatic giveback: `storage failover modify -node local -auto-giveback false`
- .. Take over the target node: `storage failover takeover -ofnode target_node_name`
+.. Disable automatic giveback: `storage failover modify -node local -auto-giveback false`
+.. Take over the target node: `storage failover takeover -ofnode target_node_name`
 +
 The console connection shows that the node drops to the LOADER prompt when the take over is complete.
 . If you are not already grounded, properly ground yourself.
 . Remove the target slot blanking cover:
- .. Depress the lettered and numbered cam button.
- .. Rotate the cam latch down until it is the open position.
- .. Remove the blanking cover.
+.. Depress the lettered and numbered cam button.
+.. Rotate the cam latch down until it is the open position.
+.. Remove the blanking cover.
 . Install the I/O module:
- .. Align the I/O module with the edges of the slot.
- .. Slide the I/O module into the slot until the lettered and numbered I/O cam latch begins to engage with the I/O cam pin.
- .. Push the I/O cam latch all the way up to lock the module in place.
+.. Align the I/O module with the edges of the slot.
+.. Slide the I/O module into the slot until the lettered and numbered I/O cam latch begins to engage with the I/O cam pin.
+.. Push the I/O cam latch all the way up to lock the module in place.
 . If the replacement I/O module is a NIC, cable the module to the data switches.
 +
 NOTE: Make sure that any unused I/O slots have blanks installed to prevent possible thermal issues.
@@ -45,7 +45,7 @@ NOTE: Make sure that any unused I/O slots have blanks installed to prevent possi
 . Enable automatic giveback if it was disabled: `storage failover modify -node local -auto-giveback true`
 . If you are using slots 3 and/or 7 for networking, use the `storage port modify -node __<node name>__ -port __<port name>__ -mode network` command to convert the slot for networking use.
 . Repeat these steps for controller B.
-. If you installed a storage I/O module, install and cable your SAS shelves, as described in https://docs.netapp.com/us-en/ontap-systems/sas3/install-hot-add-shelf.html[Hot-adding a SAS shelf].
+. If you installed a storage I/O module, install and cable your SAS shelves, as described in https://docs.netapp.com/us-en/ontap-systems/sas3/install-hot-add-shelf.html[Hot-adding a SAS shelf^].
 
 == Option 2: Add an I/O module in a system with no open slots
 
@@ -54,7 +54,6 @@ You must remove one or more existing NIC or storage modules in your system in or
 . If you are:
 +
 [options="header" cols="1,2"]
-
 |===
 | Replacing a...| Then...
 a|
@@ -72,8 +71,8 @@ Use System Manager to permanently migrate the LIFs to different home ports, as d
 |===
 
 . Shut down controller A:
- .. Disable automatic giveback: `storage failover modify -node local -auto-giveback false`
- .. Take over the target node: `storage failover takeover -ofnode target_node_name`
+.. Disable automatic giveback: `storage failover modify -node local -auto-giveback false`
+.. Take over the target node: `storage failover takeover -ofnode target_node_name`
 +
 The console connection shows that the node drops to the LOADER prompt when the take over is complete.
 . If you are not already grounded, properly ground yourself.
@@ -82,11 +81,9 @@ The console connection shows that the node drops to the LOADER prompt when the t
 .. Depress the lettered and numbered cam button.
 +
 The cam button moves away from the chassis.
-
 .. Rotate the cam latch down until it is in a horizontal position.
 +
 The I/O module disengages from the chassis and moves about 1/2 inch out of the I/O slot.
-
 .. Remove the I/O module from the chassis by pulling on the pull tabs on the sides of the module face.
 +
 Make sure that you keep track of which slot the I/O module was in.
@@ -97,8 +94,8 @@ Make sure that you keep track of which slot the I/O module was in.
 ifdef::backend-pdf[]
 https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=0903b1f9-187b-4bb8-9548-ae9b0012bb21[Animation - Replacing an I/O module]
 endif::[]
-
 +
+
 image::../media/drw_9500_remove_PCIe_module.svg[width=340]
 +
 
