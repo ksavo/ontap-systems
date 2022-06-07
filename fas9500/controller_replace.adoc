@@ -39,7 +39,7 @@ endif::[]
 image::../media/drw_9500_remove_PCM.svg[width=340]
 +
 
-[cols="20%,90%"]
+[cols="20%,80%"]
 |===
 a|
 image::../media/legend_icon_01.svg[width=20]
@@ -49,6 +49,7 @@ a|
 image::../media/legend_icon_02.svg[width=20]
 a|
 Cam handle
+
 |===
 
 
@@ -61,12 +62,13 @@ Make sure that you support the bottom of the controller module as you slide it o
 
 image::../media/drw_9500_PCM_open.svg[width=340]
 
-[cols="20%,90%"]
+[cols="20%,80%"]
 |===
 a|
 image::../media/legend_icon_01.svg[width=20]
  a|
 Controller module cover locking button
+
 |===
 
 == Step 2: Move the boot media
@@ -83,13 +85,14 @@ image::../media/drw_9500_remove_boot_dev.svg[width=340]
 [cols="20%,80%"]
 |===
 a|
-image:../media/legend_icon_01.svg[width=20]
+image::../media/legend_icon_01.svg[width=20]
 a|
 Press release tab
 a|
-image:../media/legend_icon_02.svg[width=20]
+image::../media/legend_icon_02.svg[width=20]
 a|
 Boot media
+
 |===
 +
 
@@ -124,13 +127,14 @@ image::../media/drw_9500_replace_PCM_dimms.svg[width=340]
 [cols="20%,80%"]
 |===
 a|
-image:../media/legend_icon_01.svg[width=20]
+image::../media/legend_icon_01.svg[width=20]
  a|
 DIMM ejector tabs
 a|
-image:../media/legend_icon_02.svg[width=20]
+image::../media/legend_icon_02.svg[width=20]
 a|
 DIMM
+
 |===
 
 . Locate the slot where you are installing the DIMM.
