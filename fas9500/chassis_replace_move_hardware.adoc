@@ -40,7 +40,7 @@ image:../media/drw_9500_remove_install_PSU_module.svg[width=340]
 [cols="20%,90%"]
 |===
 a|
-image::../media/legend_icon_01.svg[width=20]
+image:../media/legend_icon_01.svg[width=20]
 a|
 Locking button
 |===
