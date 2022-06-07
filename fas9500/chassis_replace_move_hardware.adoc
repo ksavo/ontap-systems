@@ -34,15 +34,16 @@ https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=590b3414-6ea5-42b
 endif::[]
 
 +
-image:../media/drw_9500_remove_install_PSU_module.svg[width=340]
+image::../media/drw_9500_remove_install_PSU_module.svg[width=340]
 +
 
 [cols="20%,90%"]
 |===
 a|
-image:../media/legend_icon_01.svg[width=20]
+image::../media/legend_icon_01.svg[width=20]
 a|
 Locking button
+
 |===
 
 +
@@ -164,6 +165,7 @@ a|
 image::../media/legend_icon_02.svg[width=20]
 a|
 I/O cam latch completely unlocked
+
 |===
 +
 . Set the I/O module aside.
@@ -193,6 +195,7 @@ a|
 image::../media/legend_icon_01.svg[width=20]
 a|
 DCPM module terra cotta locking button
+
 |===
 
 . Set the DCPM module aside in a safe place and repeat this step for the remaining DCPM module.
@@ -239,6 +242,7 @@ a|
 image::../media/legend_icon_02.svg[width=20]
 a|
 Slide out of chassis.
+
 |===
 
 . Locate the USB LED module on the front of the old chassis, directly under the power supply bays.

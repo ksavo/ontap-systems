@@ -50,6 +50,7 @@ a|
 image::../media/legend_icon_02.svg[width=20]
 a|
 Cam handle
+
 |===
 
 . Rotate the cam handle so that it completely disengages the controller module from the chassis, and then slide the controller module out of the chassis.
@@ -99,13 +100,14 @@ image::../media/drw_9500_replace_PCM_dimms.svg[width=340]
 [cols="10,90"]
 |===
 a|
-image:../media/legend_icon_01.svg[width=20]
+image::../media/legend_icon_01.svg[width=20]
  a|
 DIMM ejector tabs
 a|
-image:../media/legend_icon_02.svg[width=20]
+image::../media/legend_icon_02.svg[width=20]
 a|
 DIMM
+
 |===
 
 . Remove the replacement DIMM from the antistatic shipping bag, hold the DIMM by the corners, and align it to the slot.
