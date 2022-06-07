@@ -99,6 +99,7 @@ DIMM and DIMM ejector tabs
 == Step 3: Replace a NVRAM DIMM
 
 To replace NVRAM DIMMs in the NVRAM module, you must remove the NVRAM module, open the module, and then replace the target DIMM.
+
 . If you are not already grounded, properly ground yourself.
 . Remove the target NVRAM module from the chassis:
 .. Depress the lettered and numbered cam button.
@@ -115,6 +116,7 @@ The NVRAM module disengages from the chassis and moves out a few inches.
 ifdef::backend-pdf[]
 https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=228cbd14-4cb2-49b5-88f1-ae78004b9d84[Animation - Replace the NVRAM module^]
 endif::[]
++
 
 image::../media/drw_9500_move-remove_NVRAM_module.svg[width=340]
 +
