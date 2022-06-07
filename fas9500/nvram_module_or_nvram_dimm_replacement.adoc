@@ -53,8 +53,8 @@ The NVRAM module disengages from the chassis and moves out a few inches.
 ifdef::backend-pdf[]
 https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=228cbd14-4cb2-49b5-88f1-ae78004b9d84[Animation - Replace the NVRAM module^]
 endif::[]
-
 +
+
 image::../media/drw_9500_move-remove_NVRAM_module.svg[width=340]
 +
 
@@ -97,27 +97,23 @@ DIMM and DIMM ejector tabs
 == Step 3: Replace a NVRAM DIMM
 
 To replace NVRAM DIMMs in the NVRAM module, you must remove the NVRAM module, open the module, and then replace the target DIMM.
-
 . If you are not already grounded, properly ground yourself.
 . Remove the target NVRAM module from the chassis:
 .. Depress the lettered and numbered cam button.
 +
 The cam button moves away from the chassis.
-
 .. Rotate the cam latch down until it is in a horizontal position.
 +
 The NVRAM module disengages from the chassis and moves out a few inches.
-
 .. Remove the NVRAM module from the chassis by pulling on the pull tabs on the sides of the module face.
-+
+
 ++++
-<div class="aspect-ratio"><iframe frameborder="1" height="400" scrolling="auto" src="https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=0ae4e603-c22b-4930-8070-adf2000e38b5" width="711"> </iframe></div>
+<div class="aspect-ratio"><iframe frameborder="1" height="400" scrolling="auto" src="https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=228cbd14-4cb2-49b5-88f1-ae78004b9d84" width="711"> </iframe></div>
 ++++
 ifdef::backend-pdf[]
-https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=0ae4e603-c22b-4930-8070-adf2000e38b5[Animation - Replace NVRAM DIMM^]
+https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=228cbd14-4cb2-49b5-88f1-ae78004b9d84[Animation - Replace the NVRAM module^]
 endif::[]
 
-+
 image::../media/drw_9500_move-remove_NVRAM_module.svg[width=340]
 +
 
