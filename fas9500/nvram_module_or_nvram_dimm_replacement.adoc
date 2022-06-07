@@ -37,7 +37,7 @@ To replace the NVRAM module, locate it in slot 6 in the chassis and follow the s
 . If you are not already grounded, properly ground yourself.
 
 . Remove the target NVRAM module from the chassis:
- .. Depress the lettered and numbered cam button.
+.. Depress the lettered and numbered cam button.
 +
 The cam button moves away from the chassis.
 
@@ -68,7 +68,9 @@ a|
 image::../media/legend_icon_02.svg[width=20]
 a|
 I/O latch completely unlocked
+
 |===
+
 . Set the NVRAM module on a stable surface and remove the cover from the NVRAM module by pushing down on the blue locking button on the cover, and then, while holding down the blue button, slide the lid off the NVRAM module.
 
 +
@@ -106,7 +108,7 @@ The cam button moves away from the chassis.
 +
 The NVRAM module disengages from the chassis and moves out a few inches.
 .. Remove the NVRAM module from the chassis by pulling on the pull tabs on the sides of the module face.
-
++
 ++++
 <div class="aspect-ratio"><iframe frameborder="1" height="400" scrolling="auto" src="https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=228cbd14-4cb2-49b5-88f1-ae78004b9d84" width="711"> </iframe></div>
 ++++
@@ -127,6 +129,7 @@ a|
 image::../media/legend_icon_02.svg[width=20]
 a|
 I/O latch completely unlocked
+
 |===
 
 . Set the NVRAM module on a stable surface and remove the cover from the NVRAM module by pushing down on the blue locking button on the cover, and then, while holding down the blue button, slide the lid off the NVRAM module.
