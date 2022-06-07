@@ -46,7 +46,6 @@ Locking button
 
 |===
 
-+
 . Repeat the preceding steps for any remaining power supplies.
 
 == Step 2: Remove the fans
@@ -221,13 +220,14 @@ NOTE: If the system is in a system cabinet, you might need to remove the rear ti
 == Step 7: Move the USB LED module to the new chassis
 
 Once the new chassis is installed into the rack or cabinet, you must move the USB LED module from the old chassis to the new chassis.
-+
+
 ++++
 <div class="aspect-ratio"><iframe frameborder="1" height="400" scrolling="auto" src="https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=bc46a3e8-6541-444e-973b-ae78004bf153" width="711"> </iframe></div>
 ++++
 ifdef::backend-pdf[]
 https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=bc46a3e8-6541-444e-973b-ae78004bf153[Animation - Remove/install USB module^]
 endif::[]
+
 
 image::../media/drw_9500_remove_replace_LED_mod.svg[width=340]
 
