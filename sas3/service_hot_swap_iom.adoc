@@ -13,7 +13,7 @@ Your system configuration determines whether you can perform a nondisruptive she
 
 .Before you begin
 
-All other components in the system--including the other IOM12 module--must be functioning properly.
+All other components in the system--including the other IOM12/IOM12B module--must be functioning properly.
 
 .About this task
 * This procedure applies to shelves having IOM12 modules and shelves having IOM12B modules.
@@ -29,6 +29,8 @@ image::../media/drw_iom12.gif[]
 The IOM12B modules are distinguished by a blue stripe and an "IOM12B" label:
 +
 image::../media/iom12b.png[]
+
+* If you have a DS460C shelf and you are replacing a failed IOM that results in having a combination of IOM12 modules and any number of DCM2 drive drawers, you must upgrade the IOM12 FW to version 0300 or later?
 
 * For multipathed (multipath HA or multipath) and quad-pathed (quad-path HA or quad-path) configurations, you can hot-swap a shelf IOM (nondisruptively replace a shelf IOM in a system that is powered on and serving data--I/O is in progress).
 * For FAS2600 series and FAS2700 single-path HA configurations, you must perform a takeover and giveback operation to replace a shelf IOM in a system that is powered on and serving data--I/O is in progress.
