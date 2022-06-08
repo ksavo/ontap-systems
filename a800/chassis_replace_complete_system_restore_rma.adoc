@@ -13,7 +13,6 @@ You must verify the HA state of the chassis, run diagnostics, and return the fai
 
 == Step 1: Verify and set the HA state of the chassis
 
-[.lead]
 You must verify the HA state of the chassis, and, if necessary, update the state to match your system configuration.
 
 . In Maintenance mode, from either controller module, display the HA state of the local controller module and chassis: `ha-config show`

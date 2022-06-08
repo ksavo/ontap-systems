@@ -1,13 +1,13 @@
 Prior to shutting down the impaired controller and checking the status of the onboard encryption keys, you must check the status of the impaired controller, disable automatic giveback, and check the version of ONTAP that is running.
 
-If you have a cluster with more than two nodes, it must be in quorum. If the cluster is not in quorum or a healthy controller shows false for eligibility and health, you must correct the issue before shutting down the impaired controller; see the link:https://docs.netapp.com/us-en/ontap/encryption-at-rest/index.html[NetApp Encryption overview with the CLI].
+If you have a cluster with more than two nodes, it must be in quorum. If the cluster is not in quorum or a healthy controller shows false for eligibility and health, you must correct the issue before shutting down the impaired controller; see the link:https://docs.netapp.com/us-en/ontap/encryption-at-rest/index.html[NetApp Encryption overview with the CLI^].
 
 .Steps
 
 . Check the status of the impaired controller:
  ** If the impaired controller is at the login prompt, log in as `admin`.
  ** If the impaired controller is at the LOADER prompt and is part of HA configuration, log in as `admin` on the healthy controller.
- ** If the impaired controller is in a standalone configuration and at LOADER prompt, contact link:http://mysupport.netapp.com/[mysupport.netapp.com].
+ ** If the impaired controller is in a standalone configuration and at LOADER prompt, contact link:http://mysupport.netapp.com/[mysupport.netapp.com^].
 . If AutoSupport is enabled, suppress automatic case creation by invoking an AutoSupport message: `system node autosupport invoke -node * -type all -message MAINT=number_of_hours_downh`
 +
 The following AutoSupport message suppresses automatic case creation for two hours: `cluster1:*> system node autosupport invoke -node * -type all -message MAINT=2h`

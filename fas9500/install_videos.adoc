@@ -1,0 +1,32 @@
+---
+permalink: fas9500/install_videos.html
+sidebar: sidebar
+keywords: FAS9500
+summary: 'There are two videos: one showing how to rack and cable your system and one showing an example of using the System Manager Guided Setup to perform initial system configuration.'
+---
+= Video steps - FAS9500
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+There are two videos - one showing how to rack and cable your system and one showing an example of using the System Manager Guided Setup to perform initial system configuration.
+
+== Video one of two: Hardware installation and cabling
+
+The following video shows how to install and cable your new system.
+
+
+++++
+<div class="aspect-ratio"><iframe frameborder="1" height="400" scrolling="auto" src="https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=ab450621-9e1c-44a7-befa-ae7c01708d9e" width="711"> </iframe></div>
+++++
+
+ifdef::backend-pdf[]
+https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=ab450621-9e1c-44a7-befa-ae7c01708d9e[Animation - Animated Installation and setup instructions - FAS9500^]
+endif::[]
+
+
+== Video two of two: Performing end-to-end software configuration
+
+The following video shows end-to-end software configuration for systems running ONTAP 9.6 and later.
+
+video::6WjyADPXDZ0[youtube]

@@ -1,7 +1,8 @@
 settings:
+  search: ontap-systems
   name: "ONTAP Systems"
   internal:
-    pdf_enabled: false
+    pdf_enabled: true
   prod:
     pdf_enabled: true
     harmony_enabled: true
@@ -36,6 +37,7 @@ sidebar:
       - section: fas8200
       - section: fas8300
       - section: fas9000
+      - section: fas9500
     - section: allsan
     - section: upgrade
     - title: System-level diagnostics
