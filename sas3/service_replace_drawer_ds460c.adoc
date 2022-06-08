@@ -33,15 +33,11 @@ NOTE: *Possible hardware damage:* To prevent electrostatic discharge damage to t
 
 .About this task
 
-* 5/12 remove. This procedure applies to shelves having DCM drive drawers and shelves having DCM2 drive drawers.
+* This procedure applies to shelves having DCM drive drawers and/or DCM2 drive drawers. (Drawers can also have two IOM12 or two IOM12B shelf modules.)
 
-* 5/24. This procedure applies to shelves having DCM drive drawers and/or DCM2 drive drawers. (Drawers can also have two IOM12 or two IOM12B shelf modules.)
+NOTE: When a DCM or DCM2 drive drawer fails, you receive a DCM or DCM2 drive drawer to replace it.
 
-NOTE: 5/24 I believe correct. When a DCM or DCM2 drive drawer fails, you receive a DCM or DCM2 drive drawer to replace it.
-
-NOTE: 5/12 Maybe. This procedure addresses like-for-like drive drawer replacements, meaning you can replace a DCM drive drawer with another DCM drive drawer or replace a DCM2 drive drawer with another DCM2 drive drawer. This procedure also addresses drive drawer upgrades, meaning you can replace a DCM drive drawer with a DCM2 drive drawer. And have to update shelf FW...
-
-NOTE: 5/12 remove. This procedure is for like-for-like drive drawer replacements. This means you can only replace a DCM drive drawer with another DCM drive drawer or replace a DCM2 drive drawer with another DCM2 drive drawer. (Your shelf can have five DCM drive drawers or have five DCM2 drive drawers.)
+NOTE: If you replace a failed drive drawer that results in having a combination of IOM12 modules and any number of DCM2 drive drawers, you must upgrade the IOM12 FW to version 0300 or later. The IOM12 FW upgrade can be done before or after replacing a drive drawer. This procedure has you upgrade the FW before... 
 
 * The DCM drive drawers and the DCM2 drive drawers can be distinguished by their appearance:
 +
