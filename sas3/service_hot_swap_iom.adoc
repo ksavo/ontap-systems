@@ -57,7 +57,7 @@ A disk shelf has three location LEDs: one on the operator display panel and one 
 .Steps
 
 . Properly ground yourself.
-. Unpack the new shelf IOM, and set it on a level surface near the disk shelf.
+. Unpack the new shelf IOM and set it on a level surface near the disk shelf.
 +
 Save all packaging materials for use when returning the failed shelf IOM.
 

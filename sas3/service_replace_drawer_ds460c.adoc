@@ -58,7 +58,22 @@ Before you replace a drive drawer you must make sure to update IOM12 FW if neede
 Current versions of firmware can be found on the NetApp Support Site.
 +
 https://mysupport.netapp.com/site/downloads/firmware/disk-shelf-firmware[NetApp Downloads: Disk Shelf Firmware]
-. Stop all host I/O activity on the shelf.
+. Remove all aggregates from the disk drives (the disk drives must be spares).
++
+NOTE: If you attempt this procedure with aggregates on the disk shelf you are removing, you could fail the system with a multidisk panic.
++
+You can use the `storage aggregate offline -aggregate _aggregate_name_` command and then the `storage aggregate delete -aggregate _aggregate_name_` command.
+. Verify that the disk drives in the disk shelves you are removing have no aggregates (are spares) and ownership is removed:
+ .. Enter the following command from the clustershell of either controller: `storage disk show -shelf _shelf_number_`
+ .. Check the output to verify that there are no aggregates on the disk drives in the disk shelves you are removing.
++
+Disk drives with no aggregates have a dash in the `Container Name` column.
+
+ .. Check the output to verify that ownership is removed from the disk drives on the disk shelves you are removing.
++
+Disk drives with no ownership have a dash in the `Owner` column.
++
+NOTE: If you have failed disk drives in the shelf you are removing, they have broken in the `Container Type` column. (Failed disk drive do not have ownership.)
 . Power off the shelf.
 
 == Remove the cable chains
