@@ -81,13 +81,7 @@ image::../media/drw_9500_DIMM_map.svg[width=500px]
 IMPORTANT: Carefully hold the DIMM by the edges to avoid pressure on the components on the DIMM circuit board.
 
 +
-++++
-<div class="aspect-ratio"><iframe frameborder="1" height="400" scrolling="auto" src="https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=d62a4c7c-8296-4d60-9981-ae78004b36f7" width="711"> </iframe></div>
-++++
-ifdef::backend-pdf[]
-https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=d62a4c7c-8296-4d60-9981-ae78004b36f7[Animation - Replace DIMM^]
-endif::[]
-
+video::d62a4c7c-8296-4d60-9981-ae78004b36f7[panopto, title="Animation - Replace DIMM"]
 +
 image::../media/drw_9500_replace_PCM_dimms.svg[width=340px]
 +
@@ -140,13 +134,7 @@ Controller module cover locking button
 
 . Align the end of the controller module with the opening in the chassis, and then gently push the controller module halfway into the system.
 +
-++++
-<div class="aspect-ratio"><iframe frameborder="1" height="400" scrolling="auto" src="https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=f2aa14b4-0d95-4109-b410-ae78004b35c9" width="711"> </iframe></div>
-++++
-ifdef::backend-pdf[]
-https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=f2aa14b4-0d95-4109-b410-ae78004b35c9[Animation - Install controller^]
-endif::[]
-
+video::f2aa14b4-0d95-4109-b410-ae78004b35c9[panopto, title="Animation - Install controller"]
 +
 image::../media/drw_9500_remove_PCM.svg[width=340px]
 +
@@ -154,11 +142,11 @@ image::../media/drw_9500_remove_PCM.svg[width=340px]
 [cols="20%,80%"]
 |===
 a|
-image:../media/legend_icon_01.svg[width=20px]
+image::../media/legend_icon_01.svg[width=20px]
  a|
 Cam handle release button
 a|
-image:../media/legend_icon_02.svg[width=20px]
+image::../media/legend_icon_02.svg[width=20px]
 a|
 Cam handle
 |===
@@ -247,7 +235,6 @@ a|
 Perform a give back: `storage failover giveback -ofnode replacement_node_name`
 
 NOTE: If you disabled automatic giveback, re-enable it with the storage failover modify command.
-
 
 a|
 Resulted in some test failures
