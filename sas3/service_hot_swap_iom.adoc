@@ -13,7 +13,7 @@ Your system configuration determines whether you can perform a nondisruptive she
 
 .Before you begin
 
-All other components in the system--including the other IOM12 module--must be functioning properly.
+All other components in the system--including the other IOM12/IOM12B module--must be functioning properly.
 
 .About this task
 * This procedure applies to shelves having IOM12 modules and shelves having IOM12B modules.
@@ -57,7 +57,7 @@ A disk shelf has three location LEDs: one on the operator display panel and one 
 .Steps
 
 . Properly ground yourself.
-. Unpack the new shelf IOM, and set it on a level surface near the disk shelf.
+. Unpack the new shelf IOM and set it on a level surface near the disk shelf.
 +
 Save all packaging materials for use when returning the failed shelf IOM.
 

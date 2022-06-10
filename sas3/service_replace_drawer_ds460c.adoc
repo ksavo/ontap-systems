@@ -1,23 +1,15 @@
 ---
 permalink: sas3/service-replace-drawer-ds460c.html
 sidebar: sidebar
-keywords: i/o activity, power, off, shelf, replacing, replace, drive, drawer, disk, replace a drive drawer in a ds460c disk shelf
+keywords: i/o activity, power, off, shelf, replacing, replace, drive, drawer, disk, replace a drive drawer in a ds460c disk shelf, dcm2, dcm
 summary: You must stop all host I/O activity and power off the shelf before replacing the drive drawer.
 ---
-= Replacing a drive drawer in a DS460C disk shelf - shelves with IOM12/IOM12B modules
+= Replace a drive drawer in a DS460C disk shelf - shelves with IOM12/IOM12B modules
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
 You must stop all host I/O activity and power off the shelf before replacing the drive drawer.
-
-Each of these 60-drive shelves has five drive drawers.
-
-image::../media/28_dwg_e2860_de460c_front_no_callouts.gif[]
-
-And each of the five drawers can hold up to 12 drives.
-
-image::../media/92_dwg_de6600_drawer_with_hdds_no_callouts.gif[]
 
 .Before you begin
 
@@ -33,15 +25,16 @@ NOTE: *Possible hardware damage:* To prevent electrostatic discharge damage to t
 
 .About this task
 
-* 5/12 remove. This procedure applies to shelves having DCM drive drawers and shelves having DCM2 drive drawers.
+* This procedure applies to shelves having DCM drive drawers and/or DCM2 drive drawers. (Drawers can also have two IOM12 or two IOM12B shelf modules.)
++
+When a DCM or DCM2 drive drawer fails, you receive a DCM or DCM2 drive drawer to replace it.
 
-* 5/24. This procedure applies to shelves having DCM drive drawers and/or DCM2 drive drawers. (Drawers can also have two IOM12 or two IOM12B shelf modules.)
+[NOTE]
+====
+If when you replace a failed drive drawer, it results in the shelf having a combination of IOM12 modules and any number of DCM2 drive drawers, you must upgrade the IOM12 FW to version 0300 or later. The IOM12 modules require a version of FW supported with DCM2 drive drawers.
 
-NOTE: 5/24 I believe correct. When a DCM or DCM2 drive drawer fails, you receive a DCM or DCM2 drive drawer to replace it.
-
-NOTE: 5/12 Maybe. This procedure addresses like-for-like drive drawer replacements, meaning you can replace a DCM drive drawer with another DCM drive drawer or replace a DCM2 drive drawer with another DCM2 drive drawer. This procedure also addresses drive drawer upgrades, meaning you can replace a DCM drive drawer with a DCM2 drive drawer. And have to update shelf FW...
-
-NOTE: 5/12 remove. This procedure is for like-for-like drive drawer replacements. This means you can only replace a DCM drive drawer with another DCM drive drawer or replace a DCM2 drive drawer with another DCM2 drive drawer. (Your shelf can have five DCM drive drawers or have five DCM2 drive drawers.)
+The IOM12 FW upgrade can be done before or after replacing a drive drawer. This procedure has you upgrade the FW as part of the preparation for the drawer replacement procedure.
+====
 
 * The DCM drive drawers and the DCM2 drive drawers can be distinguished by their appearance:
 +
@@ -53,7 +46,37 @@ The DCM2 drive drawers are distinguished by a blue stripe and "DCM2" label:
 +
 image::../media/dcm2.png[]
 
-== Removing the cable chains
+== Prepare to replace a drive drawer
+
+[.Lead]
+Before you replace a drive drawer you must make sure to update IOM12 FW if needed, and then stop all host I/O activity and power off the shelf.
+
+.steps
+. Determine if when you replace the failed drive drawer, it will result in the shelf having a combination of IOM12 modules and any number of DCM2 drive drawers.
+. If the shelf will have a combination of IOM12 modules and any number of DCM2 drive drawers, you must upgrade the IOM12 FW to version 0300 or later; otherwise, go to the next step.
++
+Current versions of firmware can be found on the NetApp Support Site.
++
+https://mysupport.netapp.com/site/downloads/firmware/disk-shelf-firmware[NetApp Downloads: Disk Shelf Firmware]
+. Stop all host I/O activity by removing all aggregates from the disk drives (the disk drives must be spares).
++
+NOTE: If you attempt this procedure with aggregates on the disk shelf you are removing, you could fail the system with a multidisk panic.
++
+You can use the `storage aggregate offline -aggregate _aggregate_name_` command and then the `storage aggregate delete -aggregate _aggregate_name_` command.
+. Verify that the disk drives in the disk shelves you are removing have no aggregates (are spares) and ownership is removed:
+ .. Enter the following command from the clustershell of either controller: `storage disk show -shelf _shelf_number_`
+ .. Check the output to verify that there are no aggregates on the disk drives in the disk shelves you are removing.
++
+Disk drives with no aggregates have a dash in the `Container Name` column.
+
+ .. Check the output to verify that ownership is removed from the disk drives on the disk shelves you are removing.
++
+Disk drives with no ownership have a dash in the `Owner` column.
++
+NOTE: If you have failed disk drives in the shelf you are removing, they have broken in the `Container Type` column. (Failed disk drive do not have ownership.)
+. Power off the shelf.
+
+== Remove the cable chains
 
 [.lead]
 Left and right cable chains for each drive drawer in the DS460C drive shelf allow the drawers to slide in and out. Before you can remove a drive drawer, you must remove both cable chains.
@@ -161,7 +184,7 @@ The figure shows the orange ring on the horizontal bracket being pushed down so 
  .. To unplug the cable chain, pull your finger toward you approximately 1 inch (2.5 cm), but leave the cable chain connector within the vertical bracket.
 . Disconnect the left cable chain from the horizontal bracket, and pull the entire cable chain out of the drive shelf.
 
-== Removing a drive drawer
+== Remove a drive drawer
 
 [.lead]
 After removing the right and left cable chains, you can remove the drive drawer from the drive shelf. Removing a drive drawer entails sliding the drawer part of the way out, removing the drives, and removing the drive drawer.
@@ -205,7 +228,7 @@ Drive drawer release lever
  .. While holding both release levers, pull the drive drawer toward you.
  .. Remove the drive drawer from the drive shelf.
 
-== Installing a drive drawer
+== Install a drive drawer
 
 [.lead]
 Installing a drive drawer into a drive shelf entails sliding the drawer into the empty slot, installing the drives, and replacing the front bezel.
@@ -279,7 +302,7 @@ NOTE: *Risk of equipment malfunction:* Make sure to completely close the drive d
 +
 . Attach the bezel to the front of the drive shelf.
 
-== Attaching the cable chains
+== Attach the cable chains
 
 [.lead]
 The final step in installing a drive drawer is attaching the left and right cable chains to the drive shelf. When attaching a cable chain, reverse the order you used when disconnecting the cable chain. You must insert the chain's horizontal connector into the horizontal bracket in the enclosure before inserting the chain's vertical connector into the vertical bracket in the enclosure.
