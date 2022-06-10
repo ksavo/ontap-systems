@@ -58,7 +58,7 @@ Before you replace a drive drawer you must make sure to update IOM12 FW if neede
 Current versions of firmware can be found on the NetApp Support Site.
 +
 https://mysupport.netapp.com/site/downloads/firmware/disk-shelf-firmware[NetApp Downloads: Disk Shelf Firmware]
-. Remove all aggregates from the disk drives (the disk drives must be spares).
+. Stop all host I/O activity by removing all aggregates from the disk drives (the disk drives must be spares).
 +
 NOTE: If you attempt this procedure with aggregates on the disk shelf you are removing, you could fail the system with a multidisk panic.
 +
