@@ -29,7 +29,7 @@ To access components inside the controller, you must first remove the controller
 . Unplug the cables from the impaired controller module, and keep track of where the cables were connected.
 . Slide the terra cotta button on the cam handle downward until it unlocks.
 
-video::5e029a19-8acc-4fa1-be5d-ae78004b365a[panopto]
+video::5e029a19-8acc-4fa1-be5d-ae78004b365a[panopto, "Animation - Remove the PCM"]
 
 
 image::../media/drw_9500_remove_PCM.svg[width=340px]
@@ -80,7 +80,7 @@ image::../media/drw_9500_DIMM_map.svg[width=500px]
 IMPORTANT: Carefully hold the DIMM by the edges to avoid pressure on the components on the DIMM circuit board.
 
 +
-video::d62a4c7c-8296-4d60-9981-ae78004b36f7[panopto, title=""]
+video::d62a4c7c-8296-4d60-9981-ae78004b36f7[panopto, title="Animation - Replace DIMMs"]
 +
 image::../media/drw_9500_replace_PCM_dimms.svg[width=340px]
 +
@@ -132,7 +132,7 @@ Controller module cover locking button
 
 . Align the end of the controller module with the opening in the chassis, and then gently push the controller module halfway into the system.
 +
-video::f2aa14b4-0d95-4109-b410-ae78004b35c9[panopto, title="***Animation - Install controller"]
+video::f2aa14b4-0d95-4109-b410-ae78004b35c9[panopto, title="Animation - Install controller"]
 +
 image::../media/drw_9500_remove_PCM.svg[width=340px]
 +

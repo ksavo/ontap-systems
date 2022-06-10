@@ -80,29 +80,17 @@ After you replace a PCIe module, you must reboot the controller module.
 .Steps
 
 . From the LOADER prompt, reboot the node: _bye_
+NOTE: This reinitializes the PCIe cards and other components and reboot the node.
+
 . If your system is configured to support 10 GbE cluster interconnect and data connections on 40 GbE NICs or onboard ports, convert these ports to 10 GbE connections by using the `nicadmin convert` command from Maintenance mode.
 +
 NOTE: Be sure to exit Maintenance mode after completing the conversion.
 
 . Return the node to normal operation:
-+
-[options="header", cols="1,3"]
-|===
-| If your system is in...| Issue this command from the partner's console...
-a|
-An HA pair
-a|
 `storage failover giveback -ofnode _impaired_node_name_`
-a|
-A two-node MetroCluster configuration
-a|
-Proceed to the next step.
-
-The MetroCluster switchback procedure is done in the next task in the replacement process.
-
-|===
-
 . If automatic giveback was disabled, reenable it: `storage failover modify -node local -auto-giveback true`
+
+NOTE: If your system is in a two-node MetroCluster configuration, you must switch back the aggregates as described in the next step.
 
 == Step 4: Switch back aggregates in a two-node MetroCluster configuration
 
