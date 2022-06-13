@@ -1,17 +1,17 @@
 ---
 permalink: sas3/install-new-system.html
 sidebar: sidebar
-keywords: install, cabling, cable, disk, shelves, shelf, iom12, module, system, installation, system, ha, pair, single-controller, configuration, cabinet, rack, requirement, install and cable disk shelves with iom12 modules for a new system installation, requirements for installing and cabling disk shelves with iom12 modules for a new system installation, considerations for installing and cabling disk shelves with iom12 modules for a new system installation, install disk shelves with iom12 modules for a new system installation, cable disk shelves with iom12 modules for a new system installation, DS460C, transport DS460C, move DS460C, remove drives from DS460C, DS460C drive handling
+keywords: install, cabling, cable, disk, shelves, shelf, iom12, module, system, installation, system, ha, pair, single-controller, configuration, cabinet, rack, requirement, install and cable disk shelves with iom12 modules for a new system installation, requirements for installing and cabling disk shelves with iom12 modules for a new system installation, considerations for installing and cabling disk shelves with iom12 modules for a new system installation, install disk shelves with iom12 modules for a new system installation, cable disk shelves with iom12 modules for a new system installation, DS460C, transport DS460C, move DS460C, remove drives from DS460C, DS460C drive handling, iom12b
 summary: If your new system--HA pair or single-controller configuration--did not come installed in a cabinet, you must install and cable the disk shelves in a rack.
 ---
-= Install and cable shelves for a new system installation - shelves with IOM12 modules
+= Install and cable shelves for a new system installation - shelves with IOM12/IOM12B modules
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
 If your new system--HA pair or single-controller configuration--did not come installed in a cabinet, you can install and cable the disk shelves in a rack.
 
-== Requirements for installing and cabling disk shelves with IOM12 modules for a new system installation
+== Requirements for installing and cabling disk shelves with IOM12/IOM12B modules for a new system installation
 
 [.lead]
 You must meet certain requirements before installing and cabling the disk shelves.
@@ -28,14 +28,14 @@ link:../index.html[AFF and FAS System Documentation]
 * If you are using mini-SAS HD SAS optical cables, you must have met the rules in link:install-cabling-rules.html#mini-sas-hd-sas-optical-cable-rules[Mini-SAS HD SAS optical cable rules].
 
 
-== Considerations for installing and cabling disk shelves with IOM12 modules for a new system installation
+== Considerations for installing and cabling disk shelves with IOM12/IOM12B modules for a new system installation
 
 [.lead]
 You should familiarize yourself with aspects and best practices about this procedure before installing and cabling the disk shelves.
 
 === General considerations
 
-* Disk shelves with IOM12 modules are shipped with shelf IDs preset to 00.
+* Disk shelves with IOM12/IOM12B modules are shipped with shelf IDs preset to 00.
 +
 NOTE: If you have an HA pair with at least two stacks, the disk shelf containing the root aggregates for the second stack has the shelf ID preset to 10.
 +
@@ -99,7 +99,7 @@ NOTE: Keep disk drives in their ESD bag until you are ready to install them.
 +
 If a wrist strap is unavailable, touch an unpainted surface on your storage enclosure chassis before handling the disk drive.
 
-== Install disk shelves with IOM12 modules for a new system installation
+== Install disk shelves with IOM12/IOM12B modules for a new system installation
 
 [.lead]
 You install the disk shelves in a rack using the rack mount kits that came with the disk shelves.
@@ -180,7 +180,7 @@ CAUTION: *Possible loss of data access:* Never slam the drawer shut. Push the dr
 
 NOTE: Do not power on the disk shelves at this time.
 
-== Cable disk shelves with IOM12 modules for a new system installation
+== Cable disk shelves with IOM12/IOM12B modules for a new system installation
 
 [.lead]
 You cable disk shelf SAS connections--shelf-to-shelf (as applicable) and controller-to-shelf--to establish storage connectivity for the system.
