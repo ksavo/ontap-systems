@@ -221,7 +221,6 @@ Your DS460C shipment was packaged with four detachable lift handles (two for eac
 image::../media/drw_ds460c_handles.gif[]
 
 . Reinstall any power supplies and IOMs you removed prior to installing your disk shelf into the rack.
-
 . If you are installing a DS460C disk shelf, install the drives into the drive drawers; otherwise, go to the next step.
 +
 [NOTE]
@@ -257,10 +256,12 @@ Raised button on the right side of the drive carrier
 |===
 
 .. Lower the drive straight down, and then rotate the cam handle down until the drive snaps into place under the orange release latch.
++
 .. Repeat the previous substeps for each drive in the drawer.
 +
 You must be sure that slots 0, 3, 6, and 9 in each drawer contain drives.
- .. Carefully push the drive drawer back into the enclosure.
++
+.. Carefully push the drive drawer back into the enclosure.
 +
 |===
 a|
@@ -269,35 +270,35 @@ a|
 CAUTION: *Possible loss of data access:* Never slam the drawer shut. Push the drawer in slowly to avoid jarring the drawer and causing damage to the storage array.
 |===
 
- .. Close the drive drawer by pushing both levers towards the center.
- .. Repeat these steps for each drawer in the disk shelf.
-
+.. Close the drive drawer by pushing both levers towards the center.
+.. Repeat these steps for each drawer in the disk shelf.
+.. Attach the front bezel.
 . If you are adding multiple disk shelves, repeat the previous steps for each disk shelf you are installing.
 . Connect the power supplies for each disk shelf:
- .. Connect the power cords first to the disk shelves, securing them in place with the power cord retainer, and then connect the power cords to different power sources for resiliency.
- .. Turn on the power supplies for each disk shelf and wait for the disk drives to spin up.
+.. Connect the power cords first to the disk shelves, securing them in place with the power cord retainer, and then connect the power cords to different power sources for resiliency.
+.. Turn on the power supplies for each disk shelf and wait for the disk drives to spin up.
 . Set the shelf ID for each shelf you are hot-adding to an ID that is unique within the HA pair or single-controller configuration.
 +
 A valid shelf ID is 00 through 99. It is recommended that you set the shelf IDs so that IOM6 shelves use lower numbers (1 - 9) and IOM12 shelves use higher numbers (10 and greater).
 +
 If you have a platform model with onboard storage, shelf IDs must be unique across the internal shelf and externally attached shelves. It is recommended that you set the internal shelf to 0. In MetroCluster IP configurations, only the external shelf names apply, and therefore the shelf names do not need to be unique.
 
- .. If needed, verify shelf IDs already in use by running Active IQ Config Advisor.
+.. If needed, verify shelf IDs already in use by running Active IQ Config Advisor.
 +
 https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor[NetApp Downloads: Config Advisor]
 +
 You can also run the `storage shelf show -fields shelf-id` command to see a list of shelf IDs already in use (and duplicates if present) in your system.
 
- .. Access the shelf ID button behind the left end cap.
- .. Change the first number of the shelf ID by pressing and holding the orange button until the first number on the digital display blinks, which can take up to three seconds.
- .. Press the button to advance the number until you reach the desired number.
- .. Repeat substeps c and d for the second number.
- .. Exit the programming mode by pressing and holding the button until the second number stops blinking, which can take up to three seconds.
- .. Power cycle the shelf to make the shelf ID take effect.
+.. Access the shelf ID button behind the left end cap.
+.. Change the first number of the shelf ID by pressing and holding the orange button until the first number on the digital display blinks, which can take up to three seconds.
+.. Press the button to advance the number until you reach the desired number.
+.. Repeat substeps c and d for the second number.
+.. Exit the programming mode by pressing and holding the button until the second number stops blinking, which can take up to three seconds.
+.. Power cycle the shelf to make the shelf ID take effect.
 +
 You must turn off both power switches, wait 10 seconds, and then turn them back on to complete the power cycle.
 
- .. Repeat substeps b through g for each shelf you are hot-adding.
+.. Repeat substeps b through g for each shelf you are hot-adding.
 
 == Cable shelves for a hot-add
 

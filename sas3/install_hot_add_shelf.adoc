@@ -224,7 +224,7 @@ CAUTION: *Possible loss of data access:* Never slam the drawer shut. Push the dr
  .. Turn on the power supplies for each disk shelf and wait for the disk drives to spin up.
 . Set the shelf ID for each disk shelf you are hot-adding to an ID that is unique within the HA pair or single-controller configuration.
 +
-If you have a system with an internal disk shelf, shelf IDs must be unique across the internal disk shelf and externally attached disk shelves.
+If you have a platform model with an internal disk shelf, shelf IDs must be unique across the internal disk shelf and externally attached disk shelves.
 +
 You can use the following substeps to change shelf IDs, or for more detailed instructions, use link:install-change-shelf-id.html[Change a shelf ID].
 

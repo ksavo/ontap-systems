@@ -14,7 +14,7 @@ indexpage:
         - title: AFF A200
           url: /a200/index.html
         - title: AFF A220
-          url: /a220/index.html
+          url: /fas2700/index.html
         - title: AFF A250
           url: /a250/index.html
         - title: AFF A300
@@ -24,7 +24,7 @@ indexpage:
         - title: AFF A400
           url: /a400/index.html
         - title: AFF A700
-          url: /a700/index.html
+          url: /fas9000/index.html
         - title: AFF A700s
           url: /a700s/index.html
         - title: AFF A800
@@ -47,6 +47,8 @@ indexpage:
           url: /fas8300/index.html
         - title: FAS9000
           url: /fas9000/index.html
+        - title: FAS9500
+          url: /fas9500/index.html
     - title: Drive shelves
       links:
         - title: NS224
