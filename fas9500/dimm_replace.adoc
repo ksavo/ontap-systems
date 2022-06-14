@@ -29,17 +29,7 @@ To access components inside the controller, you must first remove the controller
 . Unplug the cables from the impaired controller module, and keep track of where the cables were connected.
 . Slide the terra cotta button on the cam handle downward until it unlocks.
 +
-*Embedded code from Panopto:*
-+
-++++
-<div class="aspect-ratio"><iframe src="https://netapp.hosted.panopto.com/Panopto/Pages/Embed.aspx?id=5e029a19-8acc-4fa1-be5d-ae78004b365a&autoplay=false&offerviewer=true&showtitle=false&showbrand=true&captions=false&interactivity=all" height="405" width="720" style="border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe></div>
-++++
-+
-This is just a paragraph of buffering between the two animations
-+
-*Coding from tools:*
-+
-video::5e029a19-8acc-4fa1-be5d-ae78004b365a[panopto, title="Remove the controller"]
+video::5e029a19-8acc-4fa1-be5d-ae78004b365a[panopto, title="Animation - Remove the controller"]
 +
 image::../media/drw_9500_remove_PCM.svg[width=340px]
 +
