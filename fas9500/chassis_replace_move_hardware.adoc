@@ -26,13 +26,7 @@ Removing the power supplies when replacing a chassis involves turning off, disco
 NOTE: When removing a power supply, always use two hands to support its weight.
 
 +
-++++
-<div class="aspect-ratio"><iframe frameborder="1" height="400" scrolling="auto" src="https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=590b3414-6ea5-42b2-b7f4-ae78004b86a4" width="711"> </iframe></div>
-++++
-ifdef::backend-pdf[]
-https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=590b3414-6ea5-42b2-b7f4-ae78004b86a4[Animation - Remove/install PSU^]
-endif::[]
-
+video::590b3414-6ea5-42b2-b7f4-ae78004b86a4[panopto, title="Animation - Remove/install PSU"]
 +
 image::../media/drw_9500_remove_install_PSU_module.svg[width=340]
 +
@@ -59,13 +53,7 @@ To remove the fan modules when replacing the chassis, you must perform a specifi
 NOTE: The fan modules are short. Always support the bottom of the fan module with your free hand so that it does not suddenly drop free from the chassis and injure you.
 
 +
-++++
-<div class="aspect-ratio"><iframe frameborder="1" height="400" scrolling="auto" src="https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=86b0ed39-1083-4b3a-9e9c-ae78004c2ffc" width="711"> </iframe></div>
-++++
-ifdef::backend-pdf[]
-https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=86b0ed39-1083-4b3a-9e9c-ae78004c2ffc[Animation - Remove/install fan^]
-endif::[]
-
+video::86b0ed39-1083-4b3a-9e9c-ae78004c2ffc[panopto, title="Animation - Remove/install fan"]
 +
 image::../media/drw_9500_remove_install_fan.svg[width=340]
 +
@@ -93,13 +81,7 @@ To replace the chassis, you must remove the controller module or modules from th
 . Unplug the cables from the impaired controller module, and keep track of where the cables were connected.
 . Slide the terra cotta button on the cam handle downward until it unlocks.
 +
-++++
-<div class="aspect-ratio"><iframe frameborder="1" height="400" scrolling="auto" src="https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=5e029a19-8acc-4fa1-be5d-ae78004b365a" width="711"> </iframe></div>
-++++
-ifdef::backend-pdf[]
-https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=5e029a19-8acc-4fa1-be5d-ae78004b365a[Animation - Remove controller module]
-endif::[]
-
+video::5e029a19-8acc-4fa1-be5d-ae78004b365a[panopto, title="Animation - Remove controller module"]
 +
 image::../media/drw_9500_remove_PCM.svg[width=340]
 +
@@ -136,20 +118,15 @@ Make sure that you label the cables so that you know where they came from.
 +
 The cam button moves away from the chassis.
 
- .. Rotate the cam latch down until it is in a horizontal position.
+.. Rotate the cam latch down until it is in a horizontal position.
 +
 The I/O module disengages from the chassis and moves about 1/2 inch out of the I/O slot.
 
- .. Remove the I/O module from the chassis by pulling on the pull tabs on the sides of the module face.
+.. Remove the I/O module from the chassis by pulling on the pull tabs on the sides of the module face.
 +
 Make sure that you keep track of which slot the I/O module was in.
 +
-++++
-<div class="aspect-ratio"><iframe frameborder="1" height="400" scrolling="auto" src="https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=0903b1f9-187b-4bb8-9548-ae9b0012bb21" width="711"> </iframe></div>
-++++
-ifdef::backend-pdf[]
-https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=0903b1f9-187b-4bb8-9548-ae9b0012bb21[Animation - Remove/install I/O module^]
-endif::[]
+video::0903b1f9-187b-4bb8-9548-ae9b0012bb21[panopto, title="Animation - Remove/install I/O module"]
 +
 image::../media/drw_9500_remove_PCIe_module.svg[width=340]
 +
@@ -177,13 +154,7 @@ You must remove the de-stage controller power modules from the old chassis in pr
 . If you are not already grounded, properly ground yourself.
 . Press the terra cotta locking button on the module handle, and then slide the DCPM module out of the chassis.
 +
-++++
-<div class="aspect-ratio"><iframe frameborder="1" height="400" scrolling="auto" src="https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=c067cf9d-35b8-4fbe-9573-ae78004c2328" width="711"> </iframe></div>
-++++
-ifdef::backend-pdf[]
-https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=c067cf9d-35b8-4fbe-9573-ae78004c2328[Animation - Remove/install DCPM^]
-endif::[]
-
+video::c067cf9d-35b8-4fbe-9573-ae78004c2328[panopto. title="Animation - Remove/install DCPM"]
 +
 image::../media/drw_9500_remove_NV_battery.svg[width=340]
 +
@@ -221,16 +192,9 @@ NOTE: If the system is in a system cabinet, you might need to remove the rear ti
 
 Once the new chassis is installed into the rack or cabinet, you must move the USB LED module from the old chassis to the new chassis.
 
-++++
-<div class="aspect-ratio"><iframe frameborder="1" height="400" scrolling="auto" src="https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=bc46a3e8-6541-444e-973b-ae78004bf153" width="711"> </iframe></div>
-++++
-ifdef::backend-pdf[]
-https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=bc46a3e8-6541-444e-973b-ae78004bf153[Animation - Remove/install USB module^]
-endif::[]
-
+video::bc46a3e8-6541-444e-973b-ae78004bf153[panopto, title="Animation - Remove/install USB module"]
 
 image::../media/drw_9500_remove_replace_LED_mod.svg[width=340]
-
 
 [cols="20%,80%"]
 |===

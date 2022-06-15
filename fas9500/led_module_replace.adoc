@@ -17,13 +17,7 @@ The LED USB module provides connectivity to console ports and system status. Rep
 .Steps
 . Remove the old LED USB module:
 +
-++++
-<div class="aspect-ratio"><iframe frameborder="1" height="400" scrolling="auto" src="https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=bc46a3e8-6541-444e-973b-ae78004bf153" width="711"> </iframe></div>
-++++
-ifdef::backend-pdf[]
-https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=bc46a3e8-6541-444e-973b-ae78004bf153[Animation - Remove/install LED-USB module^]
-endif::[]
-
+video::bc46a3e8-6541-444e-973b-ae78004bf153[panopto, title="Animation - Remove/install LED-USB module"]
 +
 image::../media/drw_9500_remove_replace_LED_mod.svg[width=340]
 +
