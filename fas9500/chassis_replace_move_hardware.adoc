@@ -25,6 +25,7 @@ Removing the power supplies when replacing a chassis involves turning off, disco
 . Press and hold the terra cotta button on the power supply handle, and then pull the power supply out of the chassis.
 +
 NOTE: When removing a power supply, always use two hands to support its weight.
+
 +
 video::590b3414-6ea5-42b2-b7f4-ae78004b86a4[panopto, title="Animation - Remove/install PSU"]
 +
