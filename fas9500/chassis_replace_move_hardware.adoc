@@ -147,7 +147,7 @@ You must remove the de-stage controller power modules from the old chassis in pr
 . If you are not already grounded, properly ground yourself.
 . Press the terra cotta locking button on the module handle, and then slide the DCPM module out of the chassis.
 +
-video::c067cf9d-35b8-4fbe-9573-ae78004c2328[panopto. title="Animation - Remove/install DCPM"]
+video::c067cf9d-35b8-4fbe-9573-ae78004c2328[panopto, title="Animation - Remove/install DCPM"]
 +
 image::../media/drw_9500_remove_NV_battery.svg[width=340]
 +
