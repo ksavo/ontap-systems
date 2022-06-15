@@ -51,7 +51,6 @@ To remove the fan modules when replacing the chassis, you must perform a specifi
 . Press the terra cotta button on the fan module and pull the fan module straight out of the chassis, making sure that you support it with your free hand.
 +
 NOTE: The fan modules are short. Always support the bottom of the fan module with your free hand so that it does not suddenly drop free from the chassis and injure you.
-
 +
 video::86b0ed39-1083-4b3a-9e9c-ae78004c2ffc[panopto, title="Animation - Remove/install fan"]
 +
