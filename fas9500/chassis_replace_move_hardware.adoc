@@ -9,7 +9,6 @@ summary: 'All other components in the system must be functioning properly; if no
 :icons: font
 :imagesdir: ../media/
 
-[.lead]
 To replace the chassis, you must remove the components from the old chassis and install them in the replacement chassis.
 
 == Step 1: Remove the power supplies
