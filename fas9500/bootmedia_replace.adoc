@@ -20,7 +20,7 @@ To access components inside the controller, you must first remove the controller
 . Unplug the cables from the impaired controller module, and keep track of where the cables were connected.
 . Slide the terra cotta button on the cam handle downward until it unlocks.
 +
-video::5e029a19-8acc-4fa1-be5d-ae78004b365a[panopto. title="Animation - Remove controller module"]
+video::5e029a19-8acc-4fa1-be5d-ae78004b365a[panopto, title="Animation - Remove controller module"]
 +
 image::../media/drw_9500_remove_PCM_source.svg[width=340px]
 +
