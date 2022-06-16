@@ -103,7 +103,6 @@ a|
 image::../media/legend_icon_02.svg[width=20]
 a|
 I/O cam latch completely unlocked
-
 |===
 
 . Install the I/O module into the target slot:
