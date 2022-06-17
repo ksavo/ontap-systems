@@ -6,5 +6,7 @@ summary: "To replace the chassis, you must shutdown the controllers."
 ---
 
 = Shutdown the impaired controller - FAS9500
+:icons: font
+:imagesdir: ../media/
 
 include::../_include/shutdown_chassis.adoc[]
