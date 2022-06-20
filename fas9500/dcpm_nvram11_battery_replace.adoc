@@ -28,13 +28,7 @@ IMPORTANT: The DCPM module must be replaced in the chassis within five minutes o
 . Press the terra cotta locking button on the module handle, and then slide the DCPM module out of the chassis.
 
 +
-++++
-<div class="aspect-ratio"><iframe frameborder="1" height="400" scrolling="auto" src="https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=c067cf9d-35b8-4fbe-9573-ae78004c2328" width="711"> </iframe></div>
-++++
-ifdef::backend-pdf[]
-https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=c067cf9d-35b8-4fbe-9573-ae78004c2328[Animation - Remove/install DCPM^]
-endif::[]
-
+video::c067cf9d-35b8-4fbe-9573-ae78004c2328[panopto, title="Animation - Remove/install DCPM"]
 +
 image::../media/drw_9500_remove_NV_battery.svg[width=340]
 +

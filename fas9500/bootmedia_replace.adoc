@@ -20,13 +20,7 @@ To access components inside the controller, you must first remove the controller
 . Unplug the cables from the impaired controller module, and keep track of where the cables were connected.
 . Slide the terra cotta button on the cam handle downward until it unlocks.
 +
-++++
-<div class="aspect-ratio"><iframe frameborder="1" height="400" scrolling="auto" src="https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=5e029a19-8acc-4fa1-be5d-ae78004b365a" width="711"> </iframe></div>
-++++
-ifdef::backend-pdf[]
-https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=5e029a19-8acc-4fa1-be5d-ae78004b365a[Animation - Remove controller module]
-endif::[]
-
+video::5e029a19-8acc-4fa1-be5d-ae78004b365a[panopto, title="Animation - Remove controller module"]
 +
 image::../media/drw_9500_remove_PCM_source.svg[width=340px]
 +
@@ -68,13 +62,7 @@ You must locate the boot media in the controller and follow the directions to re
 .Steps
 . Lift the black air duct at the back of the controller module and then locate the boot media using the following illustration or the FRU map on the controller module:
 +
-++++
-<div class="aspect-ratio"><iframe frameborder="1" height="400" scrolling="auto" src="https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=16df490c-f94f-498d-bb04-ae78004b3781" width="711"> </iframe></div>
-++++
-ifdef::backend-pdf[]
-https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=16df490c-f94f-498d-bb04-ae78004b3781[Animation - Replace boot media^]
-endif::[]
-
+video::16df490c-f94f-498d-bb04-ae78004b3781[panopto, title="Animation - Replace boot media"]
 +
 image::../media/drw_9500_remove_boot_dev_source.svg[width=340px]
 +
@@ -115,7 +103,6 @@ You can install the system image to the replacement boot media using a USB flash
 * If your system is a stand-alone system you do not need a network connection, but you must perform an additional reboot when restoring the var file system.
 
 .Steps
-
 . Align the end of the controller module with the opening in the chassis, and then gently push the controller module halfway into the system.
 . Recable the controller module, as needed.
 . Insert the USB flash drive into the USB slot on the controller module.

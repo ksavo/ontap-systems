@@ -5,17 +5,16 @@ keywords:
 summary: 'You can add an I/O module to your system, by either replacing an existing I/O module with a new I/O module in a fully populated system, or by adding a new I/O module into an empty slot in the chassis.'
 ---
 = Add an I/O module - FAS9500
+:icons: font
+:imagesdir: ../media/
 
+[.lead]
 You can add an I/O module to your system by either replacing a NIC or storage adapter with a new one in a fully-populated system, or by adding a new NIC or storage adapter into an empty chassis slot in your system.
 
 .Before you begin
-
 * Check the https://hwu.netapp.com/[NetApp Hardware Universe] to make sure that the new I/O module is compatible with your system and version of ONTAP you're running.
-
 * If multiple slots are available, check the slot priorities in https://hwu.netapp.com/[NetApp Hardware Universe]  and use the best one available for your I/O module.
-
 * To non-disruptively add an I/O module, you must take over the target controller, remove the slot blanking cover in the target slot or remove an existing I/O module, add the new or replacement I/O module, and then giveback the target controller.
-
 * Make sure that all other components are functioning properly.
 
 == Option 1: Add the I/O module to a system with open slots
@@ -88,17 +87,10 @@ The I/O module disengages from the chassis and moves about 1/2 inch out of the I
 +
 Make sure that you keep track of which slot the I/O module was in.
 +
-++++
-<div class="aspect-ratio"><iframe frameborder="1" height="400" scrolling="auto" src="https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=0903b1f9-187b-4bb8-9548-ae9b0012bb21" width="711"> </iframe></div>
-++++
-ifdef::backend-pdf[]
-https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=0903b1f9-187b-4bb8-9548-ae9b0012bb21[Animation - Replacing an I/O module]
-endif::[]
+video::0903b1f9-187b-4bb8-9548-ae9b0012bb21[panopto, title="Animation - Replacing an I/O module"]
 +
-
-image::../media/drw_9500_remove_PCIe_module.svg[width=340]
+image::../media/drw_9500_remove_PCIe_module.svg[width=340px]
 +
-
 [cols="20%,80%"]
 |===
 a|
@@ -109,7 +101,6 @@ a|
 image::../media/legend_icon_02.svg[width=20]
 a|
 I/O cam latch completely unlocked
-
 |===
 
 . Install the I/O module into the target slot:

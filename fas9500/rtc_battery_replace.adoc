@@ -26,13 +26,7 @@ To access components inside the controller, you must first remove the controller
 . Unplug the cables from the impaired controller module, and keep track of where the cables were connected.
 . Slide the terra cotta button on the cam handle downward until it unlocks.
 +
-++++
-<div class="aspect-ratio"><iframe frameborder="1" height="400" scrolling="auto" src="https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=5e029a19-8acc-4fa1-be5d-ae78004b365a" width="711"> </iframe></div>
-++++
-ifdef::backend-pdf[]
-https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=5e029a19-8acc-4fa1-be5d-ae78004b365a[Animation - Remove controller module^]
-endif::[]
-
+video::5e029a19-8acc-4fa1-be5d-ae78004b365a[panopto, title="Animation - Remove controller module"]
 +
 image::../media/drw_9500_remove_PCM.svg[width=340]
 +
@@ -72,13 +66,7 @@ To replace the RTC battery, you must locate the failed battery in the controller
 . If you are not already grounded, properly ground yourself.
 . Locate the RTC battery.
 +
-++++
-<div class="aspect-ratio"><iframe frameborder="1" height="400" scrolling="auto" src="https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=3b977f96-3ebb-4b11-9703-ae78004b4add" width="711"> </iframe></div>
-++++
-ifdef::backend-pdf[]
-https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=3b977f96-3ebb-4b11-9703-ae78004b4add[Animation - Replace RTC battery^]
-endif::[]
-
+video::3b977f96-3ebb-4b11-9703-ae78004b4add[panopto, title="Animation - Replace RTC battery"]
 +
 image::../media/drw_9500_remove_RTC_battery.svg[width=340]
 +
