@@ -6369,7 +6369,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-06-06 20:50:47 +0000">06/06/2022</time>
+    <time datetime="2022-06-16 19:18:46 +0000">06/16/2022</time>
     
   
 
@@ -6520,7 +6520,12 @@
 <div class="paragraph">
 <p>Make sure that you keep track of which slot the I/O module was in.</p>
 </div>
-<div class="aspect-ratio"><iframe frameborder="1" height="400" scrolling="auto" src="https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=0903b1f9-187b-4bb8-9548-ae9b0012bb21" width="711"> </iframe></div>
+<div class="videoblock">
+<div class="title">Animation - Remove/install I/O module</div>
+<div class="content">
+<iframe frameborder="0"  src="https://netapp.hosted.panopto.com/Panopto/Pages/Embed.aspx?id=0903b1f9-187b-4bb8-9548-ae9b0012bb21" allowfullscreen allow="autoplay"> </iframe>
+</div>
+</div>
 <div class="imageblock">
 <div class="content">
 <img src="../media/drw_9500_remove_PCIe_module.svg" alt="drw 9500 remove PCIe module" width="340">
@@ -6578,9 +6583,11 @@
 <p>After you replace an I/O module, you must reboot the controller module.</p>
 </div>
 <div class="olist arabic">
+<div class="title">Steps</div>
 <ol class="arabic">
 <li>
-<p>From the LOADER prompt, reboot the node: <em>bye</em></p>
+<p>From the LOADER prompt, reboot the node: <em>bye</em>
+NOTE: This reinitializes the PCIe cards and other components and reboot the node.</p>
 </li>
 <li>
 <p>If your system is configured to support 10 GbE cluster interconnect and data connections on 40 GbE NICs or onboard ports, convert these ports to 10 GbE connections by using the <code>nicadmin convert</code> command from Maintenance mode.</p>

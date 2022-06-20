@@ -6378,7 +6378,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-05-16 23:46:59 +0000">05/16/2022</time>
+    <time datetime="2022-06-10 13:59:04 +0000">06/10/2022</time>
     
   
 
@@ -6406,7 +6406,7 @@
 
 <div id="preamble">
 <div class="sectionbody">
-<div class="paragraph lead">
+<div class="paragraph">
 <p>To replace an I/O module, you must perform a specific sequence of tasks.</p>
 </div>
 <div class="ulist">
@@ -6424,7 +6424,7 @@
 <div class="sect1">
 <h2 id="step-1-shut-down-the-impaired-controller">Step 1: Shut down the impaired controller</h2>
 <div class="sectionbody">
-<div class="paragraph lead">
+<div class="paragraph">
 <p>You can shut down or take over the impaired controller using different procedures, depending on the storage system hardware configuration.</p>
 </div>
 <div class="exampleblock tabbed-block">
@@ -6432,7 +6432,7 @@
 <div class="openblock">
 <div class="title">Option 1: Most configurations</div>
 <div class="content">
-<div class="paragraph lead">
+<div class="paragraph">
 <p>To shut down the impaired controller, you must determine the status of the controller and, if necessary, take over the controller so that the healthy controller continues to serve data from the impaired controller storage.</p>
 </div>
 <div class="ulist">
@@ -6521,7 +6521,7 @@
 <div class="openblock">
 <div class="title">Option 2: Controller is in a two-node MetroCluster</div>
 <div class="content">
-<div class="paragraph lead">
+<div class="paragraph">
 <p>To shut down the impaired controller, you must determine the status of the controller and, if necessary, switch over the controller so that the healthy controller continues to serve data from the impaired controller storage.</p>
 </div>
 <div class="ulist">
@@ -6658,7 +6658,7 @@ aggr_b2    227.1GB   227.1GB    0% online       0 mcc1-a2          raid_dp, mirr
 <div class="sect1">
 <h2 id="step-2-replace-io-modules">Step 2: Replace I/O modules</h2>
 <div class="sectionbody">
-<div class="paragraph lead">
+<div class="paragraph">
 <p>To replace an I/O module, locate it within the chassis and follow the specific sequence of steps.</p>
 </div>
 <div class="olist arabic">
@@ -6743,14 +6743,15 @@ aggr_b2    227.1GB   227.1GB    0% online       0 mcc1-a2          raid_dp, mirr
 <div class="sect1">
 <h2 id="step-3-reboot-the-controller-after-pcie-module-replacement">Step 3: Reboot the controller after PCIe module replacement</h2>
 <div class="sectionbody">
-<div class="paragraph lead">
+<div class="paragraph">
 <p>After you replace a PCIe module, you must reboot the controller module.</p>
 </div>
 <div class="olist arabic">
 <div class="title">Steps</div>
 <ol class="arabic">
 <li>
-<p>If the node is at the LOADER prompt, boot the node, responding <code>y</code> if you see a prompt warning of a system ID mismatch and asking to override the system ID: <code>bye</code></p>
+<p>From the LOADER prompt, reboot the node: <em>bye</em>
+NOTE: This reinitializes the PCIe cards and other components and reboot the node.</p>
 </li>
 <li>
 <p>If your system is configured to support 10 GbE cluster interconnect and data connections on 40 GbE NICs or onboard ports, convert these ports to 10 GbE connections by using the <code>nicadmin convert</code> command from Maintenance mode.</p>
@@ -6768,52 +6769,32 @@ Be sure to exit Maintenance mode after completing the conversion.
 </div>
 </li>
 <li>
-<p>Return the node to normal operation:</p>
-<table class="tableblock frame-all grid-all stretch">
-<colgroup>
-<col style="width: 25%;">
-<col style="width: 75%;">
-</colgroup>
-<thead>
-<tr>
-<th class="tableblock halign-left valign-top">If your system is in&#8230;&#8203;</th>
-<th class="tableblock halign-left valign-top">Issue this command from the partner&#8217;s console&#8230;&#8203;</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>An HA pair</p>
-</div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p><code>storage failover giveback -ofnode <em>impaired_node_name</em></code></p>
-</div></div></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>A two-node MetroCluster configuration</p>
-</div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>Proceed to the next step.</p>
-</div>
-<div class="paragraph">
-<p>The MetroCluster switchback procedure is done in the next task in the replacement process.</p>
-</div></div></td>
-</tr>
-</tbody>
-</table>
+<p>Return the node to normal operation:
+<code>storage failover giveback -ofnode <em>impaired_node_name</em></code></p>
 </li>
 <li>
 <p>If automatic giveback was disabled, reenable it: <code>storage failover modify -node local -auto-giveback true</code></p>
 </li>
 </ol>
 </div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<img src="/us-en/ontap-systems/images/note.svg" alt="Note">
+</td>
+<td class="content">
+If your system is in a two-node MetroCluster configuration, you must switch back the aggregates as described in the next step.
+</td>
+</tr>
+</table>
+</div>
 </div>
 </div>
 <div class="sect1">
 <h2 id="step-4-switch-back-aggregates-in-a-two-node-metrocluster-configuration">Step 4: Switch back aggregates in a two-node MetroCluster configuration</h2>
 <div class="sectionbody">
-<div class="paragraph lead">
+<div class="paragraph">
 <p>After you have completed the FRU replacement in a two-node MetroCluster configuration, you can perform the MetroCluster switchback operation. This returns the configuration to its normal operating state, with the sync-source storage virtual machines (SVMs) on the formerly impaired site now active and serving data from the local disk pools.</p>
 </div>
 <div class="paragraph">
@@ -6888,7 +6869,7 @@ Remote: cluster_A configured      		normal</pre>
 <div class="sect1">
 <h2 id="step-5-return-the-failed-part-to-netapp">Step 5: Return the failed part to NetApp</h2>
 <div class="sectionbody">
-<div class="paragraph lead">
+<div class="paragraph">
 <p>Return the failed part to NetApp, as described in the RMA instructions shipped with the kit. See the <a href="https://mysupport.netapp.com/site/info/rma">Part Return &amp; Replacements</a> page for further information.</p>
 </div>
 </div>
