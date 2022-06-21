@@ -162,7 +162,8 @@ image::../media/oie_cable_pull_tab_up.png[]
 NOTE: As you insert the connector, you should feel it click into place; if you do not feel it click, remove it, turn it around and try again.
 
 .Steps
-. Use the animation (link:https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=edc42447-f721-4cbe-b080-ab0c0123a139[Cable a two-node switchless cluster^]) or the step-by-step instructions to complete the cabling between the controllers and to the switches:
+. Use the animation or the tabulated steps to complete the cabling between the controllers and the switches:
+video::edc42447-f721-4cbe-b080-ab0c0123a139[panopto, title="Cable a two-node switchless cluster"]
 +
 [options="header" cols="10,90"]
 |===
@@ -217,7 +218,8 @@ image::../media/oie_cable_pull_tab_up.png[]
 NOTE: As you insert the connector, you should feel it click into place; if you do not feel it click, remove it, turn it around and try again.
 
 .Steps
-. Use the animation (link:https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=49e48140-4c5a-4395-a7d7-ab0c0123a10e[Cabling a switched cluster^]) or the step-by-step instructions to complete the cabling between the controllers and to the switches:
+. Use the animation or the tabulated steps to complete the cabling between the controllers and the switches:
+video::49e48140-4c5a-4395-a7d7-ab0c0123a10e[panopto, title="Cabling a switched cluster"]
 +
 [options="header" cols="10,90"]
 |===
@@ -344,8 +346,9 @@ image::../media/oie_cable_pull_tab_up.png[]
 
 NOTE: As you insert the connector, you should feel it click into place; if you do not feel it click, remove it, turn it around and try again.
 
-.Steps
-. Use the animation (link:https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=09dade4f-00bd-4d41-97d7-ab0c0123a0b4[Cabling the controllers to a single drive shelf^] or the step-by-step instructions to cable your controller modules to a single shelf.
+Use the animation or the tabulated steps to cable your controllers to a single shelf:
+
+video::09dade4f-00bd-4d41-97d7-ab0c0123a0b4[panopto, title="Cabling the controllers to a single drive shelf"]
 +
 [options="header" cols="10,90"]
 |===
@@ -360,7 +363,7 @@ a|
 Cable controller B to the shelf:    image:../media/drw_affa800_1shelf_cabling_b.png[]
 |===
 
-. To complete setting up your system, see link:install-detailed-guide.html#step-4-complete-system-setup-and-configuration[Step 4: Complete system setup and configuration].
+To complete setting up your system, see link:install-detailed-guide.html#step-4-complete-system-setup-and-configuration[Step 4: Complete system setup and configuration].
 
 ==== Option 4: Cable the controllers to two drive shelves
 
@@ -373,8 +376,9 @@ image::../media/oie_cable_pull_tab_up.png[]
 
 NOTE: As you insert the connector, you should feel it click into place; if you do not feel it click, remove it, turn it around and try again.
 
-.Steps
-. Use the following animation (link:https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=fe50ac38-9375-4e6b-85af-ab0c0123a0e0[Cabling the controllers to two drive shelves^]) or the written steps to cable your controllers to two drive shelves.
+Use the animation or the tabulated steps to cable your controllers to two drive shelves:
+
+video::fe50ac38-9375-4e6b-85af-ab0c0123a0e0[panopto, title="Cabling the controllers to two drive shelves"]
 +
 [options="header" cols="10,90"]
 |===
@@ -389,7 +393,7 @@ a|
 Cable controller B to the shelves:    image:../media/drw_affa800_2shelf_cabling_b.png[]
 |===
 
-. To complete setting up your system, see link:install-detailed-guide.html#step-4-complete-system-setup-and-configuration[Step 4: Complete system setup and configuration].
+To complete setting up your system, see link:install-detailed-guide.html#step-4-complete-system-setup-and-configuration[Step 4: Complete system setup and configuration].
 
 == Step 4: Complete system setup and configuration
 
@@ -408,7 +412,9 @@ The system begins to boot. Initial booting may take up to eight minutes.
 +
 See your laptop's online help for more information.
 
-. Use the following animation (link:https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=d61f983e-f911-4b76-8b3a-ab1b0066909b[Connecting your laptop to the Management switch^]) to connect your laptop to the Management switch.
+. Use the animation to connect your laptop to the Management switch:
++
+video::d61f983e-f911-4b76-8b3a-ab1b0066909b[panopto, title="Connecting your laptop to the Management switch"]
 
 . Select an ONTAP icon listed to discover:
 +
