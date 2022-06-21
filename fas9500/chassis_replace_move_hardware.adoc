@@ -14,42 +14,36 @@ To replace the chassis, you must remove the components from the old chassis and 
 
 == Step 1: Remove the power supplies
 
+[.lead]
 Removing the power supplies when replacing a chassis involves turning off, disconnecting, and then removing the power supply from the old chassis.
 
 . If you are not already grounded, properly ground yourself.
 . Turn off the power supply and disconnect the power cables:
- .. Turn off the power switch on the power supply.
- .. Open the power cable retainer, and then unplug the power cable from the power supply.
- .. Unplug the power cable from the power source.
+.. Turn off the power switch on the power supply.
+.. Open the power cable retainer, and then unplug the power cable from the power supply.
+.. Unplug the power cable from the power source.
 . Press and hold the terra cotta button on the power supply handle, and then pull the power supply out of the chassis.
 +
 NOTE: When removing a power supply, always use two hands to support its weight.
 
 +
-++++
-<div class="aspect-ratio"><iframe frameborder="1" height="400" scrolling="auto" src="https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=590b3414-6ea5-42b2-b7f4-ae78004b86a4" width="711"> </iframe></div>
-++++
-ifdef::backend-pdf[]
-https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=590b3414-6ea5-42b2-b7f4-ae78004b86a4[Animation - Remove/install PSU^]
-endif::[]
-
+video::590b3414-6ea5-42b2-b7f4-ae78004b86a4[panopto, title="Animation - Remove/install PSU"]
 +
 image::../media/drw_9500_remove_install_PSU_module.svg[width=340]
 +
-
 [cols="20%,80%"]
 |===
 a|
 image::../media/legend_icon_01.svg[width=20]
 a|
 Locking button
-
 |===
 
 . Repeat the preceding steps for any remaining power supplies.
 
 == Step 2: Remove the fans
 
+[.lead]
 To remove the fan modules when replacing the chassis, you must perform a specific sequence of tasks.
 
 . If you are not already grounded, properly ground yourself.
@@ -57,27 +51,19 @@ To remove the fan modules when replacing the chassis, you must perform a specifi
 . Press the terra cotta button on the fan module and pull the fan module straight out of the chassis, making sure that you support it with your free hand.
 +
 NOTE: The fan modules are short. Always support the bottom of the fan module with your free hand so that it does not suddenly drop free from the chassis and injure you.
-
 +
-++++
-<div class="aspect-ratio"><iframe frameborder="1" height="400" scrolling="auto" src="https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=86b0ed39-1083-4b3a-9e9c-ae78004c2ffc" width="711"> </iframe></div>
-++++
-ifdef::backend-pdf[]
-https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=86b0ed39-1083-4b3a-9e9c-ae78004c2ffc[Animation - Remove/install fan^]
-endif::[]
-
+video::86b0ed39-1083-4b3a-9e9c-ae78004c2ffc[panopto, title="Animation - Remove/install fan"]
 +
 image::../media/drw_9500_remove_install_fan.svg[width=340]
 +
-
 [cols="20%,80%"]
 |===
 a|
-image::../media/legend_icon_01.svg[width=20]
+image:../media/legend_icon_01.svg[width=20]
 a|
 Terra cotta release button
 a|
-image::../media/legend_icon_02.svg[width=20]
+image:../media/legend_icon_02.svg[width=20]
 a|
 Slide fan in/out of chassis
 |===
@@ -87,31 +73,25 @@ Slide fan in/out of chassis
 
 == Step 3: Remove the controller module
 
+[.lead]
 To replace the chassis, you must remove the controller module or modules from the old chassis.
 
 . If you are not already grounded, properly ground yourself.
 . Unplug the cables from the impaired controller module, and keep track of where the cables were connected.
 . Slide the terra cotta button on the cam handle downward until it unlocks.
 +
-++++
-<div class="aspect-ratio"><iframe frameborder="1" height="400" scrolling="auto" src="https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=5e029a19-8acc-4fa1-be5d-ae78004b365a" width="711"> </iframe></div>
-++++
-ifdef::backend-pdf[]
-https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=5e029a19-8acc-4fa1-be5d-ae78004b365a[Animation - Remove controller module]
-endif::[]
-
+video::5e029a19-8acc-4fa1-be5d-ae78004b365a[panopto, title="Animation - Remove controller module"]
 +
 image::../media/drw_9500_remove_PCM.svg[width=340]
 +
-
 [cols="20%,80%"]
 |===
 a|
-image::../media/legend_icon_01.svg[width=20]
+image:../media/legend_icon_01.svg[width=20]
 a|
 Cam handle release button
 a|
-image::../media/legend_icon_02.svg[width=20]
+image:../media/legend_icon_02.svg[width=20]
 a|
 Cam handle
 |===
@@ -119,41 +99,32 @@ Cam handle
 . Rotate the cam handle so that it completely disengages the controller module from the chassis, and then slide the controller module out of the chassis.
 +
 Make sure that you support the bottom of the controller module as you slide it out of the chassis.
-
 . Set the controller module aside in a safe place, and repeat these steps if you have another controller module in the chassis.
 
 == Step 4: Remove the I/O modules
 
+[.lead]
 To remove I/O modules from the old chassis, including the NVRAM modules, follow the specific sequence of steps. You do not have to remove the FlashCache module, if present, from the NVRAM module when moving it to a new chassis.
 
 . If you are not already grounded, properly ground yourself.
 . Unplug any cabling associated with the target I/O module.
 +
 Make sure that you label the cables so that you know where they came from.
-
 . Remove the target I/O module from the chassis:
- .. Depress the lettered and numbered cam button.
+.. Depress the lettered and numbered cam button.
 +
 The cam button moves away from the chassis.
-
- .. Rotate the cam latch down until it is in a horizontal position.
+.. Rotate the cam latch down until it is in a horizontal position.
 +
 The I/O module disengages from the chassis and moves about 1/2 inch out of the I/O slot.
-
- .. Remove the I/O module from the chassis by pulling on the pull tabs on the sides of the module face.
+.. Remove the I/O module from the chassis by pulling on the pull tabs on the sides of the module face.
 +
 Make sure that you keep track of which slot the I/O module was in.
 +
-++++
-<div class="aspect-ratio"><iframe frameborder="1" height="400" scrolling="auto" src="https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=0903b1f9-187b-4bb8-9548-ae9b0012bb21" width="711"> </iframe></div>
-++++
-ifdef::backend-pdf[]
-https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=0903b1f9-187b-4bb8-9548-ae9b0012bb21[Animation - Remove/install I/O module^]
-endif::[]
+video::0903b1f9-187b-4bb8-9548-ae9b0012bb21[panopto, title="Animation - Remove/install I/O module"]
 +
 image::../media/drw_9500_remove_PCIe_module.svg[width=340]
 +
-
 [cols="20%,80%"]
 |===
 a|
@@ -164,44 +135,36 @@ a|
 image::../media/legend_icon_02.svg[width=20]
 a|
 I/O cam latch completely unlocked
-
 |===
-+
+
 . Set the I/O module aside.
 . Repeat the preceding step for the remaining I/O modules in the old chassis.
 
 == Step 5: Remove the De-stage Controller Power Module
 
+[.lead]
 You must remove the de-stage controller power modules from the old chassis in preparation for installing the replacement chassis.
 
 . If you are not already grounded, properly ground yourself.
 . Press the terra cotta locking button on the module handle, and then slide the DCPM module out of the chassis.
 +
-++++
-<div class="aspect-ratio"><iframe frameborder="1" height="400" scrolling="auto" src="https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=c067cf9d-35b8-4fbe-9573-ae78004c2328" width="711"> </iframe></div>
-++++
-ifdef::backend-pdf[]
-https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=c067cf9d-35b8-4fbe-9573-ae78004c2328[Animation - Remove/install DCPM^]
-endif::[]
-
+video::c067cf9d-35b8-4fbe-9573-ae78004c2328[panopto, title="Animation - Remove/install DCPM"]
 +
 image::../media/drw_9500_remove_NV_battery.svg[width=340]
 +
-
 [cols="20%,80%"]
 |===
 a|
 image::../media/legend_icon_01.svg[width=20]
 a|
 DCPM module terra cotta locking button
-
 |===
 
 . Set the DCPM module aside in a safe place and repeat this step for the remaining DCPM module.
 
-
 == Step 6: Replace a chassis from within the equipment rack or system cabinet
 
+[.lead]
 You must remove the existing chassis from the equipment rack or system cabinet before you can install the replacement chassis.
 
 . Remove the screws from the chassis mount points.
@@ -219,18 +182,12 @@ NOTE: If the system is in a system cabinet, you might need to remove the rear ti
 
 == Step 7: Move the USB LED module to the new chassis
 
+[.lead]
 Once the new chassis is installed into the rack or cabinet, you must move the USB LED module from the old chassis to the new chassis.
 
-++++
-<div class="aspect-ratio"><iframe frameborder="1" height="400" scrolling="auto" src="https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=bc46a3e8-6541-444e-973b-ae78004bf153" width="711"> </iframe></div>
-++++
-ifdef::backend-pdf[]
-https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=bc46a3e8-6541-444e-973b-ae78004bf153[Animation - Remove/install USB module^]
-endif::[]
-
+video::bc46a3e8-6541-444e-973b-ae78004bf153[panopto, title="Animation - Remove/install USB module"]
 
 image::../media/drw_9500_remove_replace_LED_mod.svg[width=340]
-
 
 [cols="20%,80%"]
 |===
@@ -239,10 +196,9 @@ image::../media/legend_icon_01.svg[width=20]
 a|
 Eject the module.
 a|
-image::../media/legend_icon_02.svg[width=20]
+image:../media/legend_icon_02.svg[width=20]
 a|
 Slide out of chassis.
-
 |===
 
 . Locate the USB LED module on the front of the old chassis, directly under the power supply bays.
@@ -262,18 +218,19 @@ NOTE: The module and slot are keyed. Do not force the module into the opening. I
 
 == Step 9: Install fans into the chassis
 
+[.lead]
 To install the fan modules when replacing the chassis, you must perform a specific sequence of tasks.
 
 . If you are not already grounded, properly ground yourself.
 . Align the edges of the replacement fan module with the opening in the chassis, and then slide it into the chassis until it snaps into place.
 +
 When inserted into a live system, the amber Attention LED flashes four times when the fan module is successfully inserted into the chassis.
-
 . Repeat these steps for the remaining fan modules.
 . Align the bezel with the ball studs, and then gently push the bezel onto the ball studs.
 
 == Step 10: Install I/O modules
 
+[.lead]
 To install I/O modules, including the NVRAM/FlashCache modules from the old chassis, follow the specific sequence of steps.
 
 You must have the chassis installed so that you can install the I/O modules into the corresponding slots in the new chassis.
@@ -287,6 +244,7 @@ NOTE: If the old chassis has blank I/O panels, move them to the replacement chas
 
 == Step 11: Install the power supplies
 
+[.lead]
 Installing the power supplies when replacing a chassis involves installing the power supplies into the replacement chassis, and connecting to the power source.
 
 . If you are not already grounded, properly ground yourself.
@@ -304,6 +262,7 @@ IMPORTANT: Only connect the power cable to the power supply. Do not connect the 
 
 == Step 12: Install the controller
 
+[.lead]
 After you install the controller module and any other components into the new chassis, boot it to a state where you can run the interconnect diagnostic test.
 
 . If you are not already grounded, properly ground yourself.
@@ -321,8 +280,8 @@ The controller module begins to boot as soon as it is fully seated in the chassi
 
 . Repeat the preceding steps to install the second controller into the new chassis.
 . Boot each node to Maintenance mode:
- .. As each node starts the booting, press `Ctrl-C` to interrupt the boot process when you see the message Press Ctrl-C for Boot Menu.
+.. As each node starts the booting, press `Ctrl-C` to interrupt the boot process when you see the message Press Ctrl-C for Boot Menu.
 +
 NOTE: If you miss the prompt and the controller modules boot to ONTAP, enter `halt`, and then at the LOADER prompt enter `boot_ontap`, press `Ctrl-C` when prompted, and then repeat this step.
 
- .. From the boot menu, select the option for Maintenance mode.
+.. From the boot menu, select the option for Maintenance mode.
