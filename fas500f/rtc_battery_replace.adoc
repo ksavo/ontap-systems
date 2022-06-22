@@ -68,7 +68,7 @@ To replace the RTC battery, locate it inside the controller and follow the speci
 
 You can use the following video or the tabulated steps to replace the RTC battery:
 
-https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=6ed27f71-d3a7-4cee-8d9f-ac5b016c982d[Replacing the RTC battery^]
+video::6ed27f71-d3a7-4cee-8d9f-ac5b016c982d[panopto, title="Replacing the RTC battery"]
 
 . Locate the RTC battery between the heatsink and the midplane and remove it exactly as shown in the graphic.
 +

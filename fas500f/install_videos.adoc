@@ -15,7 +15,7 @@ There are two videos - one showing how to rack and cable your system and one sho
 
 The following video shows how to install and cable your new system.
 
-https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=1f975061-b285-411b-b2d7-ac680185a0d1[Installation and Setup of a FAS500f^]
+video::1f975061-b285-411b-b2d7-ac680185a0d1[panopto, title="Installation and Setup of a FAS500f"]
 
 == Video two of two: Performing end-to-end software configuration
 
