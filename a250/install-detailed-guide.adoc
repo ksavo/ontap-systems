@@ -145,9 +145,10 @@ image::../media/oie_cable_pull_tab_down.png[]
 
 NOTE: As you insert the connector, you should feel it click into place; if you do not feel it click, remove it, turn it around and try again.
 
-.Steps
-. Use the animation (link:https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=beec3966-0a01-473c-a5de-ac68017fbf29[Cable a two-node switchless cluster^]) or the step-by-step instructions to complete the cabling between the controllers and to the switches:
-+
+Use the animation or the tabulated steps to complete the cabling between the controllers and the switches:
+
+video::beec3966-0a01-473c-a5de-ac68017fbf29[panopto, title="Cable a two-node switchless cluster"]
+
 [options="header" cols="10,90"]
 
 |===
@@ -172,7 +173,8 @@ image:../media/oie_legend_icon_attn_symbol.png[]
 a|
 DO NOT plug in the power cords at this point.
 |===
-. To complete setting up your system, see link:install-detailed-guide.html#step-4-complete-system-setup-and-configuration[Step 4: Complete system setup and configuration].
+
+To complete setting up your system, see link:install-detailed-guide.html#step-4-complete-system-setup-and-configuration[Step 4: Complete system setup and configuration].
 
 ==== Option 2: Cable a switched cluster
 
@@ -187,9 +189,9 @@ image::../media/oie_cable_pull_tab_down.png[]
 
 NOTE: As you insert the connector, you should feel it click into place; if you do not feel it click, remove it, turn it around and try again.
 
-.Steps
-. Use the animation (link:https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=bf6759dc-4cbf-488e-982e-ac68017fbef8[Cabling a switched cluster^]) or the step-by-step instructions to complete the cabling between the controllers and to the switches:
-+
+Use the animation or the tabulated steps to complete the cabling between the controllers and the switches:
+video::bf6759dc-4cbf-488e-982e-ac68017fbef8[panopto, title="Cabling a switched cluster"]
+
 [options="header" cols="10,90"]
 |===
 | Step| Perform on each controller
@@ -213,7 +215,8 @@ image:../media/oie_legend_icon_attn_symbol.png[]
 a|
 DO NOT plug in the power cords at this point.
 |===
-. To complete setting up your system, see link:install-detailed-guide.html#step-4-complete-system-setup-and-configuration[Step 4: Complete system setup and configuration].
+
+To complete setting up your system, see link:install-detailed-guide.html#step-4-complete-system-setup-and-configuration[Step 4: Complete system setup and configuration].
 
 === Optional cabling: Cable configuration-dependent options
 
@@ -302,8 +305,10 @@ image::../media/oie_cable_pull_tab_up.png[]
 
 NOTE: As you insert the connector, you should feel it click into place; if you do not feel it click, remove it, turn it around and try again.
 
-. Use the animation (link:https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=3f92e625-a19c-4d10-9028-ac68017fbf57[Cabling the controllers to a single NS224^]) or the step-by-step instructions to cable your controller modules to a single shelf.
-+
+Use the animation or the tabulated steps to complete the cabling between the controllers and the single shelf:
+
+video::3f92e625-a19c-4d10-9028-ac68017fbf57[panopto, title="Cabling the controllers to a single NS224"]
+
 [options="header" cols="10,90"]
 |===
 | Step| Perform on each controller module
@@ -316,7 +321,8 @@ image:../media/oie_legend_icon_2_lo.png[]
 a|
 Cable controller B to the shelf:    image:../media/drw_affa250_1shelf_cabling_b.png[]
 |===
-. To complete setting up your system, see link:install-detailed-guide.html#step-4-complete-system-setup-and-configuration[Step 4: Complete system setup and configuration].
+
+To complete setting up your system, see link:install-detailed-guide.html#step-4-complete-system-setup-and-configuration[Step 4: Complete system setup and configuration].
 
 == Step 4: Complete system setup and configuration
 
@@ -335,7 +341,9 @@ The system begins to boot. Initial booting may take up to eight minutes.
 +
 See your laptop's online help for more information.
 
-. Use the animation (link:https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=d61f983e-f911-4b76-8b3a-ab1b0066909b[Connecting your laptop to the Management switch^]) to connect your laptop to the Management switch.
+. Use the animation to connect your laptop to the Management switch:
++
+video::d61f983e-f911-4b76-8b3a-ab1b0066909b[panopto, title="Connecting your laptop to the Management switch"]
 
 . Select an ONTAP icon listed to discover:
 +

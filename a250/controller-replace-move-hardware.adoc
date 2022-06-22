@@ -20,7 +20,7 @@ Make sure that you label the cables so that you know where they came from.
 
 Use the following video or the tabulated steps to replace a controller module:
 
-https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=ab0ebe6b-e891-489c-aab4-ac5b015c8f01[Replacing a controller module]
+video::ab0ebe6b-e891-489c-aab4-ac5b015c8f01[panopto, title="Replacing a controller module"]
 
 . If you are not already grounded, properly ground yourself.
 . Unplug the controller module power supplies from the source.
