@@ -344,7 +344,7 @@ See your laptop's online help for more information.
 
 . Use the animation to connect your laptop to the Management switch:
 +
-video::d61f983e-f911-4b76-8b3a-ab1b0066909b[panopto, title="Connecting your laptop to the Management switch"]
+video::d61f983e-f911-4b76-8b3a-ab1b0066909b[panopto, title="Animation - Connect your laptop to the Management switch"]
 
 . Select an ONTAP icon listed to discover:
 +
