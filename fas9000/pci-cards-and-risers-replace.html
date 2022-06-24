@@ -6109,7 +6109,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-06-10 13:59:04 +0000">06/10/2022</time>
+    <time datetime="2022-06-20 17:19:20 +0000">06/20/2022</time>
     
   
 
@@ -6481,8 +6481,19 @@ aggr_b2    227.1GB   227.1GB    0% online       0 mcc1-a2          raid_dp, mirr
 <div class="title">Steps</div>
 <ol class="arabic">
 <li>
-<p>From the LOADER prompt, reboot the node: <em>bye</em>
-NOTE: This reinitializes the PCIe cards and other components and reboot the node.</p>
+<p>From the LOADER prompt, reboot the node: <em>bye</em></p>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<img src="/us-en/ontap-systems/images/note.svg" alt="Note">
+</td>
+<td class="content">
+This reinitializes the PCIe cards and other components and reboots the node.
+</td>
+</tr>
+</table>
+</div>
 </li>
 <li>
 <p>If your system is configured to support 10 GbE cluster interconnect and data connections on 40 GbE NICs or onboard ports, convert these ports to 10 GbE connections by using the <code>nicadmin convert</code> command from Maintenance mode.</p>
