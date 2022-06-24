@@ -17,7 +17,7 @@ To access components inside the controller module, you must remove the controlle
 
 You can use the following , illustration, or the written steps to remove the controller module from the chassis.
 
-https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=ca74d345-e213-4390-a599-aae10019ec82[Removing the controller module]
+video::ca74d345-e213-4390-a599-aae10019ec82[panopto, title="Animation - Remove the controller module"]
 
 . If you are not already grounded, properly ground yourself.
 . Release the power cable retainers, and then unplug the cables from the power supplies.
