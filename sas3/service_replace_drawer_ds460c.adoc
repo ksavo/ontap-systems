@@ -52,7 +52,7 @@ image::../media/dcm2.png[]
 Before you replace a drive drawer you must make sure to update IOM12 FW if needed, move all of the data from the aggregates residing on the disk drives, offline and delete the aggregates, and power off the shelf.
 
 .steps
-. Determine if when you replace the failed drive drawer, it will result in the shelf having a combination of IOM12 modules and any number of DCM2 drive drawers.
+. Determine if when you replace the failed drive drawer, it results in the shelf having a combination of IOM12 modules and any number of DCM2 drive drawers.
 . If the shelf will have a combination of IOM12 modules and any number of DCM2 drive drawers, you must upgrade the IOM12 FW to version 0300 or later; otherwise, go to the next step.
 +
 Current versions of firmware can be found on the NetApp Support Site.
@@ -60,9 +60,13 @@ Current versions of firmware can be found on the NetApp Support Site.
 https://mysupport.netapp.com/site/downloads/firmware/disk-shelf-firmware[NetApp Downloads: Disk Shelf Firmware]
 . Move all of the data from the aggregates residing on the disk drives.
 +
-NOTE: If you attempt this procedure with aggregates on the disk shelf you are removing, you could cause a system disruption with a multidisk panic.
+Data includes, but is not limited to, volumes and LUNs.
++
+NOTE: If you attempt this procedure with aggregates on the disk shelf, you could cause a system disruption with a multidisk panic.
 
 . Offine and delete the aggregates to allow the disk drives to become spares:
++
+Commands can be entered from the clustershell of either controller.
 +
 `storage aggregate offline -aggregate _aggregate_name_`
 +
