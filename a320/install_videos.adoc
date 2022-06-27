@@ -15,10 +15,10 @@ There are two videos; one showing how to rack and cable your system and one show
 
 The following video shows how to install and cable your new system.
 
-https://www.youtube.com/embed/lLuiL0js7dI?rel=0[NetApp video: AFF A320 Installation and setup]
+video::lLuiL0js7dI?[youtube]
 
 == Video two of two: Performing end-to-end software configuration
 
 The following video shows end-to-end software configuration for systems running ONTAP 9.2 and later.
 
-https://www.youtube.com/embed/WAE0afWhj1c?rel=0[NetApp video: Software configuration for vSphere NAS datastores for FAS/AFF systems running ONTAP 9.2]
+video::WAE0afWhj1c?[youtube]

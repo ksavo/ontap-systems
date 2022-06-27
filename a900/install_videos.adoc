@@ -22,4 +22,4 @@ video::4c222e90-864b-4435-9405-adf200112f3e[panopto, title="Animation - AFF A900
 
 The following video shows end-to-end software configuration for systems running ONTAP 9.2 and later.
 
-https://www.youtube.com/embed/WAE0afWhj1c?rel=0[NetApp video: Software configuration for vSphere NAS datastores for FAS/AFF systems running ONTAP 9.2^]
+video::WAE0afWhj1c?[youtube]

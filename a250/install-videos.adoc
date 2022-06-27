@@ -21,4 +21,4 @@ video::fe6876d5-9332-4b2e-89be-ac6900027ba5[panopto, title="Installation and Set
 
 The following video shows end-to-end software configuration for systems running ONTAP 9.2 and later.
 
-link:https://www.youtube.com/embed/WAE0afWhj1c?rel=0[NetApp video: Software configuration for vSphere NAS datastores for FAS/AFF systems running ONTAP 9.2^]
+video::WAE0afWhj1c?[youtube]
