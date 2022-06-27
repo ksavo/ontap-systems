@@ -17,7 +17,7 @@ To access components inside the controller module, you must remove the controlle
 
 You can use the following animation, illustration, or the written steps to remove the controller module from the chassis.
 
-https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=75b6fa91-96b9-4323-b156-aae10007c9a5[Removing the controller module]
+video::75b6fa91-96b9-4323-b156-aae10007c9a5[panopto, title="Animation - Remove the controller module"]
 
 . If you are not already grounded, properly ground yourself.
 . Release the power cable retainers, and then unplug the cables from the power supplies.
@@ -56,7 +56,7 @@ You must move the power supply from the impaired controller module to the replac
 
 You can use the following animation, illustration, or the written steps to move the power supplies to the replacement controller module.
 
-https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=92060115-1967-475b-b517-aad9012f130c[Moving the power supplies]
+video::92060115-1967-475b-b517-aad9012f130c[panopto, title="Animation - Move the power supplies"]
 
 image::../media/drw_A400_psu.png[]
 
@@ -79,7 +79,7 @@ To move the NVDIMM battery from the impaired controller module to the replacemen
 
 You can use the following animation, illustration, or the written steps to move the NVDIMM battery from the impaired controller module to the replacement controller module.
 
-https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=94d115b2-b02a-4234-805c-aad9012f204c[Moving the NVDIMM battery]
+video::94d115b2-b02a-4234-805c-aad9012f204c[panopto, title="Animation - Move the NVDIMM battery"]
 
 . Open the air duct:
  .. Press the locking tabs on the sides of the air duct in toward the middle of the controller module.
@@ -101,7 +101,7 @@ You must locate the boot media, and then follow the directions to remove it from
 
 You can use the following animation, illustration, or the written steps to move the boot media from the impaired controller module to the replacement controller module.
 
-https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=2a14099c-85de-4a84-867c-aad9012efac8[Moving the boot media]
+video::2a14099c-85de-4a84-867c-aad9012efac8[panopto, title="Animation - Move the boot media"]
 
 image::../media/drw_A400_Replace-boot_media.png[]
 
@@ -126,13 +126,13 @@ You can use the following animations, illustrations. or the written steps to mov
 
 Moving PCIe riser 1 and 2 (left and middle risers):
 
-https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=f4ee1d4d-6029-4fe6-a063-aad9012f170b[Moving PCI risers 1 and 2]
+video::f4ee1d4d-6029-4fe6-a063-aad9012f170b[panopto, title="Animation - Move PCI risers 1 and 2"]
 
 image::../media/drw_A400_Replace-PCIe-cards.png[]
 
 Moving the mezzanine card and riser 3 (right riser):
 
-https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=b0c3b575-3434-4e00-a421-aad9012f2e9e[Moving the mezzanine card and riser 3]
+video::b0c3b575-3434-4e00-a421-aad9012f2e9e[panopto, title="Animation - Move the mezzanine card and riser 3"]
 
 image::../media/drw_A400_Replace-mezz-card.png[]
 
@@ -162,7 +162,7 @@ You must move the caching modules from the impaired controller modules to the re
 
 You can use the following animation, illustration, or the written steps to move caching modules to the new controller module.
 
-https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=d6a43902-0e78-40c3-a2bd-aad9012f5b94[Moving the caching modules]
+video::d6a43902-0e78-40c3-a2bd-aad9012f5b94[panopto, title="Animation - Move the caching modules"]
 
 image::../media/drw_A400_Replace-flashcache.png[]
 
@@ -183,7 +183,7 @@ You must have the new controller module ready so that you can move the DIMMs dir
 
 You can use the following animation, illustration, or the written steps to move the DIMMs from the impaired controller module to the replacement controller module.
 
-https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=717b52fa-f236-4f3d-b07d-aad9012f51a3[Moving the DIMMs]
+video::717b52fa-f236-4f3d-b07d-aad9012f51a3[panopto, title="Animation - Move the DIMMs"]
 
 image::../media/drw_A400_Replace-NVDIMM-DIMM.png[]
 
@@ -216,7 +216,7 @@ After all of the components have been moved from the impaired controller module 
 
 You can use the following animation, illustration, or the written steps to install the replacement controller module in the chassis.
 
-https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=9249fdb8-1522-437d-9280-aae10007c97b[Installing the controller module]
+video::9249fdb8-1522-437d-9280-aae10007c97b[panopto, title="Animation - Install the controller module"]
 
 image::../media/drw_A400_Install_controller_source.png[]
 
