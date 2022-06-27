@@ -20,7 +20,8 @@ IMPORTANT: Do not mix PSUs with different efficiency ratings. Always replace lik
 
 You can use the following animation, illustration, or the written steps to replace the power supply.
 
-https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=60567649-288a-48b7-bc90-aae100199959[Replacing a power supply]
+video::60567649-288a-48b7-bc90-aae100199959[panopto, title="Animation - Replace a power supply"]
+
 
 image::../media/drw_A400_psu.png[]
 

@@ -48,7 +48,7 @@ To access components inside the controller module, you must remove the controlle
 
 You can use the following animations, illustration, or the written steps to remove the controller module from the chassis.
 
-https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=ca74d345-e213-4390-a599-aae10019ec82[Removing the controller module]
+video::ca74d345-e213-4390-a599-aae10019ec82[panopto, title="Animation - Remove the controller module"]
 
 image::../media/drw_A400_Remove_controller.png[]
 
@@ -76,7 +76,7 @@ You need to locate the RTC battery inside the controller module, and then follow
 
 You can use the following animation, illustration, or the written steps to replace the RTC battery.
 
-https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=80fe7a9b-de6f-46e0-a18b-aadb0157263d[Replacing the RTC battery]
+video::80fe7a9b-de6f-46e0-a18b-aadb0157263d[panopto, title="Animation - Replace the RTC battery"]
 
 image::../media/drw_A400_rtc-batt.png[]
 
@@ -102,7 +102,7 @@ After you replace a component within the controller module, you must reinstall t
 
 You can use the following animation, illustration, or the written steps to install the controller module in the chassis.
 
-https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=0310fe80-b129-4685-8fef-ab19010e720a[Installing the controller module]
+video::0310fe80-b129-4685-8fef-ab19010e720a[panopto, title="Animation - Install the controller module"]
 
 image::../media/drw_A400_Install_controller_source.png[]
 

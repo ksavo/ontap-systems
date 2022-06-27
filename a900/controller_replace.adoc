@@ -13,7 +13,7 @@ To replace the controller module hardware, you must remove the impaired controll
 
 The following animation shows the whole process of moving components from the impaired to the replacement controller.
 
-https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=30337552-b10f-4146-9bdb-adf2000df5bd[Animation -- Move components to replacement controller^]
+video::30337552-b10f-4146-9bdb-adf2000df5bd[panopto, title="Animation - Move components to replacement controller"]
 
 == Step 1: Remove the controller module
 
@@ -25,7 +25,7 @@ To access components inside the controller, you must first remove the controller
 . Slide the terra cotta button on the cam handle downward until it unlocks.
 
 +
-https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=256721fd-4c2e-40b3-841a-adf2000df5fa[Animation -- Remove the controller^]
+video::256721fd-4c2e-40b3-841a-adf2000df5fa[panopto, title="Animation - Remove the controller"]
 
 +
 image::../media/drw_a900_remove_PCM.png[]
@@ -149,7 +149,8 @@ NOTE: The system might update system firmware when it boots. Do not abort this p
 . Align the end of the controller module with the opening in the chassis, and then gently push the controller module halfway into the system.
 
 +
-https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=099237f3-d7f2-4749-86e2-adf2000df53c[Animation -- Install controller]
+video::099237f3-d7f2-4749-86e2-adf2000df53c[panopto, title="Animation - Install controller"]
+
 +
 image::../media/drw_a900_remove_PCM.png[]
 +

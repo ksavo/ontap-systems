@@ -22,8 +22,7 @@ To access components inside the controller, you must first remove the controller
 . Slide the terra cotta button on the cam handle downward until it unlocks.
 
 +
-https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=256721fd-4c2e-40b3-841a-adf2000df5fa[Animation -- Remove the controller^]
-
+video::256721fd-4c2e-40b3-841a-adf2000df5fa[panopto, title="Animation - Remove the controller"]
 +
 image::../media/drw_a900_remove_PCM.png[]
 +
@@ -66,8 +65,7 @@ You must locate the boot media in the controller and follow the directions to re
 . Lift the black air duct at the back of the controller module and then locate the boot media using the following illustration or the FRU map on the controller module:
 
 +
-https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=c5080658-765e-4d29-8456-adf2000e1495[Animation -- replace boot media^]
-
+video::c5080658-765e-4d29-8456-adf2000e1495[panopto, title="Animation - Replace boot media"]
 +
 image::../media/drw_a900_remove_boot_dev.png[]
 +
