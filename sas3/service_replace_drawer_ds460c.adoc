@@ -2,14 +2,14 @@
 permalink: sas3/service-replace-drawer-ds460c.html
 sidebar: sidebar
 keywords: i/o activity, power, off, shelf, replacing, replace, drive, drawer, disk, replace a drive drawer in a ds460c disk shelf, dcm2, dcm
-summary: Replacing a drive drawer in a shelf requires you to move all of the data from the aggregates residing on the disk drives, offline and delete the aggregates, and power off the shelf.
+summary: Replacing a drive drawer in a shelf requires you to either halt the entire storage system (HA pair), which allows you to keep data aggregates on the shelf, or you have the option to keep the HA pair up and running, which requires you to move all of the data from the data aggregates residing on the disk drives, and offline and delete the data aggregates. However, if the shelf contains a root aggregate, you must halt the HA pair.
 ---
 = Replace a drive drawer in a DS460C disk shelf - shelves with IOM12/IOM12B modules
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-Replacing a drive drawer in a shelf requires you to move all of the data from the data aggregates residing on the disk drives, offline and delete the data aggregates, and power off the shelf. However, if the shelf contains a root aggregate, you must halt the entire storage system (HA pair).
+Replacing a drive drawer in a shelf requires you to either halt the entire storage system (HA pair), which allows you to keep data aggregates on the shelf, or you have the option to keep the HA pair up and running, which requires you to move all of the data from the data aggregates residing on the disk drives, and offline and delete the data aggregates. However, if the shelf contains a root aggregate, you must halt the HA pair.
 
 .Before you begin
 
@@ -49,7 +49,7 @@ image::../media/dcm2.png[]
 == Prepare to replace a drive drawer
 
 [.Lead]
-Before you replace a drive drawer you must make sure to update IOM12 FW if needed, move all of the data from the data aggregates residing on the disk drives, offline and delete the data aggregates, and power off the shelf. However, if the shelf contains a root aggregate, you must halt the entire storage system (HA pair).
+Before you replace a drive drawer, you must make sure to update IOM12 FW if needed, and either halt the HA pair, which allows you to keep data aggregates on the shelf, or you have the option to keep the HA pair up and running, which requires you to move all of the data from the data aggregates residing on the disk drives, and offline and delete the data aggregates. However, if the shelf contains a root aggregate, you must halt the HA pair. Lastly, you must power off the shelf.
 
 .steps
 . Determine if when you replace the failed drive drawer, it results in the shelf having a combination of IOM12 modules and any number of DCM2 drive drawers.
@@ -58,29 +58,30 @@ Before you replace a drive drawer you must make sure to update IOM12 FW if neede
 Current versions of firmware can be found on the NetApp Support Site.
 +
 https://mysupport.netapp.com/site/downloads/firmware/disk-shelf-firmware[NetApp Downloads: Disk Shelf Firmware]
-. If the shelf contains the root aggregate from either controller in the HA pair, complete the following substeps; otherwise, go to the next step.
+. If the shelf contains the root aggregate from either controller in the HA pair, or if you chose to halt the HA pair (instead of keeping the HA pair up and running) complete the following substeps; otherwise, go to the next step.
 +
 NOTE: Data aggregates can remain on the shelf when halting the HA pair.
 
 .. Halt both controllers in the HA pair.
 .. Power off the shelf.
 .. Go to the section, <<Remove the cable chains>>.
-. Move all of the data from the data aggregates residing on the disk drives.
+. If you chose to keep the HA pair up and running, complete the following substeps:
+.. Move all of the data from the data aggregates residing on the disk drives.
 +
 Data includes, but is not limited to, volumes and LUNs.
 +
 NOTE: If you attempt this procedure with aggregates on the disk shelf, you could cause a system disruption with a multidisk panic.
 
-. Offine and delete the aggregates to allow the disk drives to become spares:
+.. Offine and delete the aggregates to allow the disk drives to become spares:
 +
 Commands can be entered from the clustershell of either controller.
 +
 `storage aggregate offline -aggregate _aggregate_name_`
 +
 `storage aggregate delete -aggregate _aggregate_name_`
-. Verify that the disk drives have no aggregates (are spares):
- .. Enter the following command from the clustershell of either controller: `storage disk show -shelf _shelf_number_`
- .. Check the output to verify that there are no aggregates on the disk drives.
+.. Verify that the disk drives have no aggregates (are spares):
+ ... Enter the following command from the clustershell of either controller: `storage disk show -shelf _shelf_number_`
+ ... Check the output to verify that there are no aggregates on the disk drives.
 +
 Disk drives with no aggregates have a dash in the `Container Name` column.
 +
