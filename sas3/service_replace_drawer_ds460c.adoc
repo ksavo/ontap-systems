@@ -58,7 +58,7 @@ Before you replace a drive drawer, you must make sure to update IOM12 FW if need
 Current versions of firmware can be found on the NetApp Support Site.
 +
 https://mysupport.netapp.com/site/downloads/firmware/disk-shelf-firmware[NetApp Downloads: Disk Shelf Firmware]
-. If the shelf contains the root aggregate from either controller in the HA pair, or if you chose to halt the HA pair (instead of keeping the HA pair up and running) complete the following substeps; otherwise, go to the next step.
+. If the shelf contains the root aggregate from either controller in the HA pair, or if you chose to halt the HA pair (instead of keeping the HA pair up and running), complete the following substeps; otherwise, go to the next step.
 +
 NOTE: Data aggregates can remain on the shelf when halting the HA pair.
 
@@ -86,7 +86,7 @@ Commands can be entered from the clustershell of either controller.
 Disk drives with no aggregates have a dash in the `Container Name` column.
 +
 NOTE: If you have failed disk drives in the shelf, `broken` appears in the `Container Type` column.
-. Power off the shelf.
+.. Power off the shelf.
 
 == Remove the cable chains
 
@@ -95,7 +95,7 @@ Left and right cable chains for each drive drawer in the DS460C drive shelf allo
 
 .Before you begin
 
-* You have halted your HA pair or you have moved all of the data from the data aggregates residing on the disk drives, and offlined and deleted the data aggregates to allow the disk drives to become spares.
+* You have completed the <<Prepare to replace a drive drawer>> steps so that your HA pair is halted  or you have moved all of the data from the data aggregates residing on the disk drives, and offlined and deleted the data aggregates to allow the disk drives to become spares.
 * You have powered off the shelf.
 
 * You have obtained the following items:
