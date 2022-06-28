@@ -9,7 +9,7 @@ summary: Replacing a drive drawer in a shelf requires you to move all of the dat
 :imagesdir: ../media/
 
 [.lead]
-Replacing a drive drawer in a shelf requires you to move all of the data from the aggregates residing on the disk drives, offline and delete the aggregates, and power off the shelf.
+Replacing a drive drawer in a shelf requires you to move all of the data from the data aggregates residing on the disk drives, offline and delete the data aggregates, and power off the shelf. However, if the shelf contains a root aggregate, you must halt the entire storage system (HA pair).
 
 .Before you begin
 
@@ -49,7 +49,7 @@ image::../media/dcm2.png[]
 == Prepare to replace a drive drawer
 
 [.Lead]
-Before you replace a drive drawer you must make sure to update IOM12 FW if needed, move all of the data from the aggregates residing on the disk drives, offline and delete the aggregates, and power off the shelf.
+Before you replace a drive drawer you must make sure to update IOM12 FW if needed, move all of the data from the data aggregates residing on the disk drives, offline and delete the data aggregates, and power off the shelf. However, if the shelf contains a root aggregate, you must halt the entire storage system (HA pair).
 
 .steps
 . Determine if when you replace the failed drive drawer, it results in the shelf having a combination of IOM12 modules and any number of DCM2 drive drawers.
@@ -58,7 +58,14 @@ Before you replace a drive drawer you must make sure to update IOM12 FW if neede
 Current versions of firmware can be found on the NetApp Support Site.
 +
 https://mysupport.netapp.com/site/downloads/firmware/disk-shelf-firmware[NetApp Downloads: Disk Shelf Firmware]
-. Move all of the data from the aggregates residing on the disk drives.
+. If the shelf contains the root aggregate from either controller in the HA pair, complete the following substeps; otherwise, go to the next step.
++
+NOTE: Data aggregates can remain on the shelf when halting the HA pair.
+
+.. Halt both controllers in the HA pair.
+.. Power off the shelf.
+.. Go to the section, <<Remove the cable chains>>.
+. Move all of the data from the data aggregates residing on the disk drives.
 +
 Data includes, but is not limited to, volumes and LUNs.
 +
@@ -87,7 +94,9 @@ Left and right cable chains for each drive drawer in the DS460C drive shelf allo
 
 .Before you begin
 
-* You have moved all of the data from the aggregates residing on the disk drives, offlined and deleted the aggregates to allow the disk drives to become spares, and powered off the shelf.
+* You have halted your HA pair or you have moved all of the data from the data aggregates residing on the disk drives, and offlined and deleted the data aggregates to allow the disk drives to become spares.
+* You have powered off the shelf.
+
 * You have obtained the following items:
  ** Antistatic protection
 +
@@ -409,3 +418,5 @@ Guide rail
 . Reapply power:
  .. Turn on both power switches on the drive shelf.
  .. Confirm that both fans come on and that the amber LED on the back of the fans is off.
+ . If you had halted the HA pair, boot ONTAP on both controllers; otherwise go to the next step.
+ . If you had moved data off the shelf and deleted the data aggregates, you can now use the spare disks in the shelf for aggregate creation or expansion.
