@@ -47,7 +47,7 @@ If you need the RMA number or additional help with the replacement procedure, co
 
 * You can use the following video or the written steps to replace a DIMM.
 +
-https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=eef28b10-ed93-4aa7-bfce-aa86002f20a2[Replacing a DIMM in an NS224 drive shelf^]
+video::eef28b10-ed93-4aa7-bfce-aa86002f20a2[panopto, title="Animation - Replace a DIMM in an NS224 drive shelf"]
 
 .Steps
 

@@ -15,7 +15,7 @@ There are two videos - one showing how to rack and cable your system and one sho
 
 The following video shows how to install and cable your new system.
 
-video::fe034f33-a4bf-4834-9004-ab1f014a2787[panopto, title="Animation - Installation and Setup of an AFF C190"]
+video::fe034f33-a4bf-4834-9004-ab1f014a2787[panopto, title="Animation - Install and Setup of an AFF C190"]
 
 == Video two of two: Performing end-to-end software configuration
 
