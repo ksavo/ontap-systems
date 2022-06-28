@@ -9,6 +9,6 @@ summary: Upgrade of AFF and FAS controller modules.
 :icons: font
 :imagesdir: ../media/
 
-For most AFF and FAS systems, follow the upgrade procedures found on the https://docs.netapp.com/us-en/ontap-systems-upgrade/index.html[Upgrade AFF and FAS Systems Doc site].
+For most AFF and FAS systems, follow the upgrade procedures found on the https://docs.netapp.com/us-en/ontap-systems-upgrade/index.html[Upgrade AFF and FAS Systems Doc site^].
 
-For systems in a MetroCluster configuration, follow the the upgrade procedures found on the https://docs.netapp.com/us-en/ontap-metrocluster/upgrade/concept_choosing_an_upgrade_method_mcc.html[ONTAP MetroCluster Doc site].
+For systems in a MetroCluster configuration, follow the the upgrade procedures found on the https://docs.netapp.com/us-en/ontap-metrocluster/upgrade/concept_choosing_an_upgrade_method_mcc.html[ONTAP MetroCluster Doc site^].
