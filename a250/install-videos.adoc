@@ -15,7 +15,7 @@ There are two videos - one showing how to rack and cable your system and one sho
 
 The following video shows how to install and cable your new system.
 
-video::fe6876d5-9332-4b2e-89be-ac6900027ba5[panopto, title="Installation and Setup of an AFF A250"]
+video::fe6876d5-9332-4b2e-89be-ac6900027ba5[panopto, title="Animation - Installation and Setup of an AFF A250"]
 
 == Video two of two: Performing end-to-end software configuration
 

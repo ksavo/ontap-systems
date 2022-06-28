@@ -64,7 +64,7 @@ To replace the NVMEM battery, you must remove the failed battery from the contro
 
 Use the following video or the tabulated steps to replace the NVMEM battery:
 
-video::89f6d5c3-1a5b-4500-8ba8-ac5b01653050[panopto, title="Replacing the NVMEM battery"]
+video::89f6d5c3-1a5b-4500-8ba8-ac5b01653050[panopto, title="Animation - Replace the NVMEM battery"]
 
 . Locate and replace the impaired NVMEM battery on your controller module.
 +
