@@ -69,6 +69,7 @@ video::6eb2d864-9d35-4a23-b6c2-adf9016b359f[panopto, title="Animation - Replace 
 +
 
 image::../media/drw_a900_move-remove_NVRAM_module.png[]
+
 +
 [cols="10,90"]
 |===
@@ -126,8 +127,8 @@ video::0ae4e603-c22b-4930-8070-adf2000e38b5[panopto, title="Animation - Replace 
 +
 
 image::../media/drw_a900_move-remove_NVRAM_module.png[]
-+
 
++
 [cols="10,90"]
 |===
 a|

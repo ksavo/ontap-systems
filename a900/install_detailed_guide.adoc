@@ -359,6 +359,7 @@ video::6520eb01-87b3-4520-9109-ac5b0032ea4e[panopto, title="Animation - Cable a 
 +
 
 image::../media/drw_a900_NS224_one shelf_cabling.png[]
+
 +
 
 [options="header" col="25h,~"]
