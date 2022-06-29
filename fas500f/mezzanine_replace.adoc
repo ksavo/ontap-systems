@@ -103,6 +103,7 @@ NOTE: Do not apply force when tightening the screw on the mezzanine card; you mi
 
 === Option 2: Install a mezzanine card:
 You install a new mezzanine card if your system does not have one.
+
 . Using the #1 magnetic screwdriver, remove the screws from the face of the controller module and the faceplate covering the mezzanine card slot, and set them aside safely on the magnet.
 . Remove the mezzanine card from the antistatic shipping bag and align it to the inside face of the controller module.
 . Gently align the mezzanine card into place.
