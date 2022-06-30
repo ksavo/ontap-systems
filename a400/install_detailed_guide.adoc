@@ -307,6 +307,7 @@ image::../media/drw_autodiscovery_controler_select.png[]
  .. Double-click either ONTAP icon and accept any certificates displayed on your screen.
 +
 NOTE: XXXXX is the system serial number for the target node.
+
 +
 System Manager opens.
 
@@ -346,8 +347,12 @@ NOTE: See your laptop or console's online help for how to configure the console 
 +
 video::c600f366-4d30-481a-89d9-ab1b0066589b[panopto, title="Animation - Set drive shelf IDs"]
 
-If your system has NS224 drive shelves, the shelves are pre-set to shelf ID 00 and 01. If you want to change the shelf IDs, you must create a tool to insert into the hole where button is located.
 +
+
+If your system has NS224 drive shelves, the shelves are pre-set to shelf ID 00 and 01. If you want to change the shelf IDs, you must create a tool to insert into the hole where button is located.
+
++
+
 video::c600f366-4d30-481a-89d9-ab1b0066589b[panopto, title="Animation - Set drive shelf IDs"]
 
 . Plug the power cords into the controller power supplies, and then connect them to power sources on different circuits.

@@ -103,10 +103,8 @@ a|
 image:../media/legend_icon_02.png[]
 a|
 Push the battery gently into place and make sure the tab secures it to the housing.
-+
-*CAUTION:*
-+
-Pushing it in aggressively might cause the battery to eject out again.
+
+CAUTION: Pushing it in aggressively might cause the battery to eject out again.
 
 |===
 

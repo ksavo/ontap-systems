@@ -171,7 +171,9 @@ The boot media are located under Riser 2, the middle PCIe riser module. This PCI
 
 +
 image::../media/drw_a700s_boot_media_replace.png[]
+
 +
+
 [cols="1,4"]
 |===
 a|
@@ -364,7 +366,9 @@ After all the components have been moved from the impaired controller module to 
 
 +
 image::../media/drw_a700s_close_air_duct.png[]
+
 +
+
 |===
 a|
 image:../media/legend_icon_01.png[]|
