@@ -349,7 +349,8 @@ NOTE: As you insert the connector, you should feel it click into place; if you d
 Use the animation or the tabulated steps to cable your controllers to a single shelf:
 
 video::09dade4f-00bd-4d41-97d7-ab0c0123a0b4[panopto, title="Animation - Cable the controllers to a single drive shelf"]
-+
+
+
 [options="header" cols="10,90"]
 |===
 | Step| Perform on each controller module
@@ -379,7 +380,7 @@ NOTE: As you insert the connector, you should feel it click into place; if you d
 Use the animation or the tabulated steps to cable your controllers to two drive shelves:
 
 video::fe50ac38-9375-4e6b-85af-ab0c0123a0e0[panopto, title="Animation - Cable the controllers to two drive shelves"]
-+
+
 [options="header" cols="10,90"]
 |===
 | Step| Perform on each controller module
