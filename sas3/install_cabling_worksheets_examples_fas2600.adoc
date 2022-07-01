@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: controller-to-stack, cabling, worksheet, aff, a200, a220, fas2600, fas2700, onboard storage
 summary: You can use the completed controller-to-stack cabling worksheets and cabling examples to cable AFF and FAS platforms with onboard storage, such as but not limited to AFF A200, AFF A220, FAS2600 series and FAS2700 platforms. This information does not apply to FAS25XX platforms.
 ---
-= Controller-to-stack cabling worksheets and cabling examples for AFF and FAS platforms with onboard storage - shelves with IOM12 modules
+= Controller-to-stack cabling worksheets and cabling examples for AFF and FAS platforms with onboard storage - shelves with IOM12/IOM12B modules
 :icons: font
 :imagesdir: ../media/
 

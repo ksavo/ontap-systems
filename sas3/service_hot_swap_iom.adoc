@@ -1,27 +1,40 @@
 ---
 permalink: sas3/service-hot-swap-iom.html
 sidebar: sidebar
-keywords: system, configuration, whether, perform, nondisruptive, iom12, module, hot-swap, disruptive, replacement, hot-swap or replace an iom12 module
-summary: Your system configuration determines whether you can perform a nondisruptive IOM12 module hot-swap or a disruptive IOM12 module replacement when an IOM12 module fails.
+keywords: system, configuration, whether, perform, nondisruptive, iom12, module, hot-swap, disruptive, replacement, hot-swap or replace an iom12/iom12b module, iom12b
+summary: Your system configuration determines whether you can perform a nondisruptive IOM12/IOM12B module hot-swap or a disruptive IOM12/IOM12B module replacement when an IOM12/IOM12B module fails.
 ---
-= Hot-swap or replace an IOM12 module - shelves with IOM12 modules
+= Hot-swap or replace an IOM12/IOM12B module - shelves with IOM12/IOM12B modules
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-Your system configuration determines whether you can perform a nondisruptive IOM12 module hot-swap or a disruptive IOM12 module replacement when an IOM12 module fails.
+Your system configuration determines whether you can perform a nondisruptive shelf IOM hot-swap or a disruptive shelf IOM replacement when a shelf IOM fails.
 
 .Before you begin
 
-All other components in the system--including the other IOM12 module--must be functioning properly.
+All other components in the system--including the other IOM12/IOM12B module--must be functioning properly.
 
 .About this task
-
-* For multipathed (multipath HA or multipath) and quad-pathed (quad-path HA or quad-path) configurations, you can hot-swap an IOM12 module (nondisruptively replace an IOM12 module in a system that is powered on and serving data--I/O is in progress).
-* For FAS2600 series and FAS2700 single-path HA configurations, you must perform a takeover and giveback operation to replace an IOM12 module in a system that is powered on and serving data--I/O is in progress.
-* For FAS2600 series single-path configurations, you must halt your system to replace an IOM12 module.
+* This procedure applies to shelves having IOM12 modules and shelves having IOM12B modules.
 +
-NOTE: If you attempt to hot-swap an IOM12 module on a disk shelf with a single-path connection, you will lose all access to the disk drives on the disk shelf as well as any disk shelves beneath. You could also bring down your entire system.
+NOTE: This procedure is for like-for-like shelf IOM hot-swaps or replacements. This means you can only replace an IOM12 module with another IOM12 module or replace an IOM12B module with another IOM12B module. (Your shelf can have two IOM12 modules or have two IOM12B modules.)
+
+* The IOM12 modules and the IOM12B modules can be distinguished by their appearance:
++
+The IOM12 modules are distinguished by an "IOM12" label:
++
+image::../media/drw_iom12.gif[]
++
+The IOM12B modules are distinguished by a blue stripe and an "IOM12B" label:
++
+image::../media/iom12b.png[]
+
+* For multipathed (multipath HA or multipath) and quad-pathed (quad-path HA or quad-path) configurations, you can hot-swap a shelf IOM (nondisruptively replace a shelf IOM in a system that is powered on and serving data--I/O is in progress).
+* For FAS2600 series and FAS2700 series single-path HA configurations, you must perform a takeover and giveback operation to replace a shelf IOM in a system that is powered on and serving data--I/O is in progress.
+* For FAS2600 series single-path configurations, you must halt your system to replace a shelf IOM.
++
+NOTE: If you attempt to hot-swap a shelf IOM on a disk shelf with a single-path connection, you will lose all access to the disk drives in the disk shelf as well as any disk shelves beneath. You could also bring down your entire system.
 
 * The best practice is to have the current versions of disk shelf (IOM) firmware and disk drive firmware on your system before adding new disk shelves, shelf FRU components, or SAS cables.
 +
@@ -31,24 +44,24 @@ https://mysupport.netapp.com/site/downloads/firmware/disk-shelf-firmware[NetApp 
 +
 https://mysupport.netapp.com/site/downloads/firmware/disk-drive-firmware[NetApp Downloads: Disk Drive Firmware]
 
-* Disk shelf (IOM) firmware is automatically updated (nondisruptively) on a new IOM12 module with a non current firmware version.
+* Disk shelf (IOM) firmware is automatically updated (nondisruptively) on a new shelf IOM with a non-current firmware version.
 +
-IOM firmware checks occur every ten minutes. An IOM firmware update can take up to 30 minutes.
+Shelf IOM firmware checks occur every ten minutes. An IOM firmware update can take up to 30 minutes.
 
 * If needed, you can turn on the disk shelf's location (blue) LEDs to aid in physically locating the affected disk shelf: `storage shelf location-led modify -shelf-name _shelf_name_ -led-status on`
 +
-A disk shelf has three location LEDs: one on the operator display panel and one on each IOM12 module. Location LEDs remain illuminated for 30 minutes. You can turn them off by entering the same command, but using the off option.
+A disk shelf has three location LEDs: one on the operator display panel and one on each shelf IOM. Location LEDs remain illuminated for 30 minutes. You can turn them off by entering the same command, but using the off option.
 
 * If needed, you can refer to the Monitoring disk shelf LEDs section for information about the meaning and location of disk shelf LEDs on the operator display panel and FRU components.
 
 .Steps
 
 . Properly ground yourself.
-. Unpack the new IOM12 module, and set it on a level surface near the disk shelf.
+. Unpack the new shelf IOM and set it on a level surface near the disk shelf.
 +
-Save all packaging materials for use when returning the failed IOM12 module.
+Save all packaging materials for use when returning the failed shelf IOM.
 
-. Physically identify the failed IOM12 module from the system console warning message and the illuminated attention (amber) LED on the failed IOM12 module.
+. Physically identify the failed shelf IOM from the system console warning message and the illuminated attention (amber) LED on the failed shelf IOM.
 . Perform one of the following actions based on the type of configuration you have:
 +
 [cols="2*",options="header"]
@@ -59,10 +72,10 @@ Multipath HA, multipath, quad-path HA, or quad-path configuration
 a|
 Go to the next step.
 a|
-FAS2600 series and FAS2700 single-path HA configuration
+FAS2600 series and FAS2700 series single-path HA configuration
 a|
 
- .. Determine the target node (the node the failed IOM12 module belongs to).
+ .. Determine the target node (the node the failed shelf IOM belongs to).
 +
 IOM A belongs to Controller 1. IOM B belongs to Controller 2.
 
@@ -78,29 +91,29 @@ a|
 +
 |===
 
-. Disconnect the cabling from the IOM12 module that you are removing.
+. Disconnect the cabling from the shelf IOM that you are removing.
 +
-Make note of the IOM12 module ports each cable is connected to.
+Make note of the shelf IOM ports each cable is connected to.
 
-. Press the orange latch on the IOM12 module cam handle until it releases, and then open the cam handle fully to release the IOM12 module from the mid plane.
+. Press the orange latch on the shelf IOM cam handle until it releases, and then open the cam handle fully to release the shelf IOM from the mid plane.
 +
 image::../media/drw_iom_latch.png[]
 +
 image::../media/drw_iom_open.png[]
 
-. Use the cam handle to slide the IOM12 module out of the disk shelf.
+. Use the cam handle to slide the shelf IOM out of the disk shelf.
 +
-When handling an IOM12 module, always use two hands to support its weight.
+When handling a shelf IOM, always use two hands to support its weight.
 
-. Wait at least 70 seconds after removing the IOM12 module before you install the new IOM12 module.
+. Wait at least 70 seconds after removing the shelf IOM before you install the new shelf IOM.
 +
 Waiting at least 70 seconds enables the driver to register the shelf ID correctly.
 
-. Using two hands, with the cam handle of the new IOM12 module in the open position, support and align the edges of the new IOM12 module with the opening in the disk shelf, and then firmly push the new IOM12 module until it meets the mid plane.
+. Using two hands, with the cam handle of the new shelf IOM in the open position, support and align the edges of the new shelf IOM with the opening in the disk shelf, and then firmly push the new shelf IOM until it meets the mid plane.
 +
-NOTE: Do not use excessive force when sliding the IOM12 module into the disk shelf; you might damage the connectors.
+NOTE: Do not use excessive force when sliding the shelf IOM into the disk shelf; you might damage the connectors.
 
-. Close the cam handle so that the latch clicks into the locked position and the IOM12 module is fully seated.
+. Close the cam handle so that the latch clicks into the locked position and the shelf IOM is fully seated.
 . Reconnect the cabling.
 +
 The SAS cable connectors are keyed; when oriented correctly into an IOM port, the connector clicks into place and the IOM port LNK LED illuminates green. You insert a SAS cable connector into an IOM port with the pull tab oriented down (on the underside of the connector).
@@ -115,7 +128,7 @@ Multipath HA, multipath, quad-path HA, or quad-path configuration
 a|
 Go to the next step.
 a|
-FAS2600 series and FAS2700 single-path HA configuration
+FAS2600 series and FAS2700 series single-path HA configuration
 a|
 Give back the target node: `storage failover giveback -fromnode partner_HA_node`
 a|
@@ -124,7 +137,7 @@ a|
 Reboot your system.
 |===
 
-. Verify that the IOM12 module port links have been established.
+. Verify that the shelf IOM port links have been established.
 +
 For each module port that you cabled, the LNK (green) LED illuminates when one or more of the four SAS lanes have established a link (with either an adapter or another disk shelf).
 

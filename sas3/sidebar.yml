@@ -1,15 +1,15 @@
 section: sas3
-title: SAS shelves with IOM12 modules
+title: SAS shelves with IOM12/IOM12B modules
 url: /sas3/index.html
 entries:
   - title: Install and cable
-    pdf-filename: Shelves with IOM12 Modules Install and Cable
+    pdf-filename: Shelves with IOM12/IOM2B Modules Install and Cable
     entries:
     - title: Install and cable shelves for new system
       url: /sas3/install-new-system.html
     - title: Hot-add shelf
       url: /sas3/install-hot-add-shelf.html
-    - title: Hot-add IOM12 shelves to a stack of IOM6 shelves
+    - title: Hot-add IOM12/IOM12B shelves to a stack of IOM6 shelves
       url: /sas3/iom12-hot-add-mix.html
     - title: Change shelf ID
       url: /sas3/install-change-shelf-id.html
@@ -34,7 +34,7 @@ entries:
       - title: How to read worksheet to cable for quad-pathed connectivity
         url: /sas3/install-cabling-worksheets-how-to-read-quadpath.html
   - title: Maintain
-    pdf-filename: Shelves with IOM12 Modules Maintain
+    pdf-filename: Shelves with IOM12/IOM12B Modules Maintain
     entries:
     - title: Disk drive in DS224C or DS212C shelf
       url: /sas3/service-hot-swap-drive-ds224c-ds212c.html
@@ -46,7 +46,7 @@ entries:
       url: /sas3/service-replace-fan-ds460c.html
     - title: Hot-remove shelf
       url: /sas3/hot-remove-shelf.html
-    - title: IOM12 module
+    - title: IOM12/IOM12B module
       url: /sas3/service-hot-swap-iom.html
     - title: Power supply
       url: /sas3/service-hot-swap-power-supply.html

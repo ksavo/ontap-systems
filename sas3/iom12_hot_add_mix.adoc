@@ -1,24 +1,24 @@
 ---
 permalink: sas3/iom12-hot-add-mix.html
 sidebar: sidebar
-keywords: additional, storage, hot-add, iom12, shelves, shelf, sas, shelves, shelf, module, iom6, mix, stack, hot-add iom12 shelves to a stack of iom6 shelves
-summary: When additional storage is needed, you can hot-add IOM12 shelves (SAS shelves with IOM12 modules) to a stack of IOM6 shelves (SAS shelves with IOM6 modules), meaning you can mix a stack.
+keywords: additional, storage, hot-add, iom12, shelves, shelf, sas, shelves, shelf, module, iom6, mix, stack, hot-add iom12 shelves to a stack of iom6 shelves, iom12b
+summary: When additional storage is needed, you can hot-add IOM12/IOM12B shelves (SAS shelves with IOM12/IOM12B modules) to a stack of IOM6 shelves (SAS shelves with IOM6 modules), meaning you can mix a stack.
 ---
-= Hot-add IOM12 shelves to a stack of IOM6 shelves
+= Hot-add IOM12/IOM12B shelves to a stack of IOM6 shelves
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-When additional storage is needed, you can hot-add IOM12 shelves (SAS shelves with IOM12 modules) to a stack of IOM6 shelves (SAS shelves with IOM6 modules), meaning you can mix a stack.
+When additional storage is needed, you can hot-add IOM12/IOM12B shelves (SAS shelves with IOM12/IOM12B modules) to a stack of IOM6 shelves (SAS shelves with IOM6 modules), meaning you can mix a stack.
 
 == Requirements for a hot-add
 
 [.lead]
-Your HA pair, single-controller or stretch MetroCluster configuration (system) must meet certain requirements before hot-adding IOM12 shelves to a stack of IOM6 shelves.
+Your HA pair, single-controller or stretch MetroCluster configuration (system) must meet certain requirements before hot-adding IOM12/IOM12B shelves to a stack of IOM6 shelves.
 
 NOTE: For bridge-attached MetroCluster configurations, see <<Requirements for a hot-add in bridge-attached MetroCluster configurations>>.
 
-* Your system and version of ONTAP must support a mix of IOM6 shelves and IOM12 shelves in the same stack (a mixed stack).
+* Your system and version of ONTAP must support a mix of IOM6 shelves and IOM12/IOM12B shelves in the same stack (a mixed stack).
 +
 You can verify support by using one of the following methods:
 
@@ -48,7 +48,7 @@ NOTE: If the IOM6 shelf stack is cabled with any SAS optical cables, you cannot 
 
 * Your system must have less than the maximum number of drives supported, by at least the number of drives capable of being installed in the IOM12 shelves you are hot-adding.
 +
-You cannot have exceeded the maximum number of drives supported for your system after hot-adding IOM12 shelves.
+You cannot have exceeded the maximum number of drives supported for your system after hot-adding IOM12/IOM12B shelves.
 +
 https://hwu.netapp.com[NetApp Hardware Universe]
 
@@ -58,20 +58,20 @@ You must correct any cabling errors using the corrective actions provided by the
 +
 https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor[NetApp Downloads: Config Advisor]
 
-* You must have ordered and received the IOM12 shelves and appropriate number and types of SAS copper cables.
+* You must have ordered and received the IOM12/IOM12B shelves and appropriate number and types of SAS copper cables.
 +
 IOM12 shelves use mini-SAS HD connectors. IOM6 shelves use QSFP connectors.
 
 == Requirements for a hot-add in bridge-attached MetroCluster configurations
 
 [.lead]
-If you are hot-adding IOM12 shelves to a stack of IOM6 shelves that is attached using a pair of ATTO FibreBridge bridges in a MetroCluster configuration, the system must meet certain requirements.
+If you are hot-adding IOM12/IOM12B shelves to a stack of IOM6 shelves that is attached using a pair of ATTO FibreBridge bridges in a MetroCluster configuration, the system must meet certain requirements.
 
 * If bridge SAS ports are available in the current configuration, you should add the IOM12 shelves as a separate stack.
 +
-Use all bridge ports before mixing IOM12 and IOM6 modules in a stack.
+Use all bridge ports before mixing IOM12/IOM12B and IOM6 modules in a stack.
 
-* Your system and version of ONTAP must support a mix of IOM6 shelves and IOM12 shelves in the same stack (a mixed stack).
+* Your system and version of ONTAP must support a mix of IOM6 shelves and IOM12/IOM12B shelves in the same stack (a mixed stack).
 +
 You can verify support by using one of the following methods:
 
@@ -91,31 +91,31 @@ https://docs.netapp.com/us-en/ontap-metrocluster/install-stretch/index.html[Inst
 +
 https://docs.netapp.com/us-en/ontap-metrocluster/install-fc/index.html[Installing and Configuring a fabric-attached MetroCluster Configuration]
 
-* The stack of IOM6 shelves, to which you are hot-adding an IOM12 shelf, must be cabled with SAS copper cables (for all shelf-to-shelf and controller-to-stack connections).
+* The stack of IOM6 shelves, to which you are hot-adding an IOM12/IOM12B shelf, must be cabled with SAS copper cables (for all shelf-to-shelf and controller-to-stack connections).
 +
 SAS optical cables are not supported in a mixed stack.
 +
-NOTE: If the IOM6 shelf stack is cabled with any SAS optical cables, you cannot hot-add an IOM12 shelf. Contact your NetApp sales representative.
+NOTE: If the IOM6 shelf stack is cabled with any SAS optical cables, you cannot hot-add an IOM12/IOM12B shelf. Contact your NetApp sales representative.
 
 * Your configuration must have less than the maximum number of drives supported for a bridge port.
-* You must have ordered and received the IOM12 shelves and appropriate number and types of SAS copper cables.
+* You must have ordered and received the IOM12/IOM12B shelves and appropriate number and types of SAS copper cables.
 +
-IOM12 shelves use mini-SAS HD connectors. IOM6 shelves use QSFP connectors.
+IOM12/IOM12B shelves use mini-SAS HD connectors. IOM6 shelves use QSFP connectors.
 
 * The bridge must be running firmware version 3.16/4.16 and later.
 
 == Considerations for a hot-add
 
 [.lead]
-You should familiarize yourself with aspects and best practices about this procedure before hot-adding IOM12 shelves to a stack of IOM6 shelves.
+You should familiarize yourself with aspects and best practices about this procedure before hot-adding IOM12/IOM12B shelves to a stack of IOM6 shelves.
 
 === General considerations
 
-* It is highly recommended that the IOM12 shelves you are hot-adding are running firmware version 0260 or later, before you cable them to your system.
+* It is highly recommended that the IOM12/IOM12B shelves you are hot-adding are running firmware version 0260 or later, before you cable them to your system.
 +
 Having a supported version of shelf firmware protects against storage stack access issues if you cabled the hot-added shelf to the stack incorrectly.
 +
-After you download the IOM12 shelf firmware to your shelves, verify the firmware version is 0260 or later by entering the `storage shelf show -module` command at the console of either controller.
+After you download the IOM12/IOM12B shelf firmware to your shelves, verify the firmware version is 0260 or later by entering the `storage shelf show -module` command at the console of either controller.
 
 * Nondisruptive stack consolidation is not supported.
 +
@@ -303,7 +303,7 @@ You must turn off both power switches, wait 10 seconds, and then turn them back 
 == Cable shelves for a hot-add
 
 [.lead]
-How you cable an IOM12 shelf to a stack of IOM6 shelves depends on whether the IOM12 shelf is the initial IOM12 shelf, meaning no other IOM12 shelf exists in the stack, or whether it is an additional IOM12 shelf to an existing mixed stack, meaning one or more IOM12 shelves already exists in the stack. It also depends on whether the stack has multipath HA, multipath, single-path HA, or single-path connectivity.
+How you cable an IOM12/IOM12B shelf to a stack of IOM6 shelves depends on whether the IOM12 shelf is the initial IOM12/IOM12B shelf, meaning no other IOM12 shelf exists in the stack, or whether it is an additional IOM12/IOM12B shelf to an existing mixed stack, meaning one or more IOM12/IOM12B shelves already exists in the stack. It also depends on whether the stack has multipath HA, multipath, single-path HA, or single-path connectivity.
 
 .Before you begin
 
@@ -321,44 +321,44 @@ How you cable an IOM12 shelf to a stack of IOM6 shelves depends on whether the I
 
 .About this task
 
-* You always hot-add IOM12 shelves to the logical last shelf in a stack to maintain a single speed transition within the stack.
+* You always hot-add IOM12/IOM12B shelves to the logical last shelf in a stack to maintain a single speed transition within the stack.
 +
-By hot-adding IOM12 shelves to the logical last shelf in a stack, the IOM6 shelves remain grouped together and the IOM12 shelves remain grouped together so that there is a single speed transition between the two groups of shelves.
+By hot-adding IOM12/IOM12B shelves to the logical last shelf in a stack, the IOM6 shelves remain grouped together and the IOM12/IOM12B shelves remain grouped together so that there is a single speed transition between the two groups of shelves.
 +
 For example:
 +
-** In an HA pair, a single speed transition within a stack having two IOM6 shelves and two IOM12 shelves is depicted as:
+** In an HA pair, a single speed transition within a stack having two IOM6 shelves and two IOM12/IOM12B shelves is depicted as:
 +
- Controller <-> IOM6 <-> IOM6 <---> IOM12 <-> IOM12 <-> Controller
+ Controller <-> IOM6 <-> IOM6 <---> IOM12IOM12B <-> IOM12/IOM12B <-> Controller
 +
 ** In an HA pair with onboard IOM12E storage, a single speed transition within a stack having two IOM12 shelves and two IOM6 shelves is depicted as:
 +
- IOM12E 0b <-> IOM12 <-> IOM12 <---> IOM6 <-> IOM6 <-> IOM12E 0a
+ IOM12E 0b <-> IOM12/IOM12B <-> IOM12/IOM12B <---> IOM6 <-> IOM6 <-> IOM12E 0a
 +
-The onboard storage port 0b is the port from the internal storage (expander) and because it connects to the hot-added IOM12 shelf (the last shelf in the stack), the group of IOM12 shelves is kept together and a single transition is maintained through the stack and onboard IOM12E storage.
+The onboard storage port 0b is the port from the internal storage (expander) and because it connects to the hot-added IOM12/IOM12B shelf (the last shelf in the stack), the group of IOM12/IOM12B shelves is kept together and a single transition is maintained through the stack and onboard IOM12E storage.
 +
 * Only a single speed transition is supported in a mixed stack. You cannot have additional speed transitions. For example, you cannot have two speed transitions within a stack, which is depicted as:
 +
- Controller <-> IOM6 <-> IOM6 <---> IOM12 <-> IOM12 <---> IOM6 <-> Controller
+ Controller <-> IOM6 <-> IOM6 <---> IOM12/IOM12B <-> IOM12/IOM12B <---> IOM6 <-> Controller
 +
 * You can hot-add IOM6 shelves to a mixed stack. However, you must hot-add them to the side of the stack with the IOM6 shelves (existing group of IOM6 shelves) in order to maintain the single speed transition in the stack.
 +
-* You cable IOM12 shelves by connecting the SAS ports on the IOM A path first, and then repeat the cabling steps for the IOM B path, as applicable to your stack connectivity.
+* You cable IOM12/IOM12B shelves by connecting the SAS ports on the IOM A path first, and then repeat the cabling steps for the IOM B path, as applicable to your stack connectivity.
 +
 NOTE: In a MetroCluster configuration, you cannot use the IOM B path.
 
-* The initial IOM12 shelf (the IOM12 shelf connecting to the logical last IOM6 shelf) always connects to the IOM6 shelf circle ports (not square ports).
+* The initial IOM12/IOM12B shelf (the IOM12 shelf connecting to the logical last IOM6 shelf) always connects to the IOM6 shelf circle ports (not square ports).
 * The SAS cable connectors are keyed; when oriented correctly into a SAS port, the connector clicks into place.
 +
 For shelves, you insert a SAS cable connector with the pull tab oriented down (on the underside of the connector). For controllers, the orientation of SAS ports can vary depending on the platform model; therefore, the correct orientation of the SAS cable connector varies.
 
-* You can reference the following illustration for cabling IOM12 shelves to an IOM6 shelf stack in a configuration that is not using FC-to-SAS bridges.
+* You can reference the following illustration for cabling IOM12/IOM12B shelves to an IOM6 shelf stack in a configuration that is not using FC-to-SAS bridges.
 +
 This illustration is specific to a stack with multipath HA connectivity; however, the cabling concept can be applied to stacks with multipath, single-path HA, single-path connectivity, and stretch MetroCluster configurations.
 +
 image::../media/drw_sas2_sas3_mixed_stack.png[]
 
-* You can reference the following illustration for cabling IOM12 shelves to an IOM6 shelf stack in a bridge-attached MetroCluster configuration. image:../media/hot_adding_iom12_shelves_to_iom6_stack_in_bridge_attached_config.png[]
+* You can reference the following illustration for cabling IOM12/IOM12B shelves to an IOM6 shelf stack in a bridge-attached MetroCluster configuration. image:../media/hot_adding_iom12_shelves_to_iom6_stack_in_bridge_attached_config.png[]
 
 .Steps
 
@@ -366,7 +366,7 @@ image::../media/drw_sas2_sas3_mixed_stack.png[]
 +
 Depending on your platform model and stack connectivity (multipath HA, multipath, single-path HA, or single-path), the logical last shelf is the shelf having controller-to-stack connections from controller SAS ports B and D, or it is the shelf having no connections to any controllers (because the controller-to-stack connectivity is to the logical top of the stack, through the controller SAS ports A and C).
 
-. If the IOM12 shelf you are hot-adding is the initial IOM12 shelf being added to the IOM6 stack, meaning no other IOM12 shelf exists in the IOM6 shelf stack, complete the applicable substeps.
+. If the IOM12/IOM12B shelf you are hot-adding is the initial IOM12/IOM12B shelf being added to the IOM6 stack, meaning no other IOM12/IOM12B shelf exists in the IOM6 shelf stack, complete the applicable substeps.
 +
 NOTE: Make sure that you wait at least 70 seconds between disconnecting a cable and reconnecting it, and when you are replacing a cable for another one.
 +
@@ -387,11 +387,11 @@ Put the cable aside. It is no longer needed.
 +
 Otherwise; go to substep e.
 
- .. Cable the shelf-to-shelf connection between the last IOM6 shelf IOM A circle port (from substep a) to the new IOM12 shelf IOM A port 1.
+ .. Cable the shelf-to-shelf connection between the last IOM6 shelf IOM A circle port (from substep a) to the new IOM12/IOM12B shelf IOM A port 1.
 +
 Use a SAS copper QSFP-to-Mini-SAS HD cable.
 
- .. If you are hot-adding another IOM12 shelf, cable the shelf-to-shelf connection between the IOM12 shelf IOM A port 3, of the shelf you just cabled, and the next IOM12 shelf IOM A port 1.
+ .. If you are hot-adding another IOM12/IOM12B shelf, cable the shelf-to-shelf connection between the IOM12/IOM12B shelf IOM A port 3, of the shelf you just cabled, and the next IOM12/IOM12B shelf IOM A port 1.
 +
 Use a SAS copper Mini-SAS HD-to-Mini-SAS HD cable.
 +
@@ -421,7 +421,7 @@ Otherwise; go to substep e.
 +
 Use a SAS copper QSFP-to-Mini-SAS HD cable.
 
- .. If you are hot-adding another IOM12 shelf, cable the shelf-to-shelf connection between the IOM12 shelf IOM A port 3, of the shelf you just cabled, and the next IOM12 shelf IOM A port 1.
+ .. If you are hot-adding another IOM12/IOM12B shelf, cable the shelf-to-shelf connection between the IOM12/IOM12B shelf IOM A port 3, of the shelf you just cabled, and the next IOM12/IOM12B shelf IOM A port 1.
 +
 Use a SAS copper Mini-SAS HD-to-Mini-SAS HD cable.
 +
@@ -438,19 +438,19 @@ a|
 Single-path HA or single-path with no controller connectivity to the logical last shelf
 a|
 
- .. Cable the shelf-to-shelf connection between the last IOM6 shelf IOM A circle port and the new IOM12 shelf IOM A port 1.
+ .. Cable the shelf-to-shelf connection between the last IOM6 shelf IOM A circle port and the new IOM12/IOM12B shelf IOM A port 1.
 +
 Use a SAS copper QSFP-to-Mini-SAS HD cable.
 
  .. Repeat the above substep for IOM B.
- .. If you are hot-adding another IOM12 shelf, repeat substeps a and b.
+ .. If you are hot-adding another IOM12/IOM12B shelf, repeat substeps a and b.
 +
 Otherwise, go to step 4.
 
 +
 |===
 
-. If the IOM12 shelf you are hot-adding is an additional IOM12 shelf to an existing mixed stack, meaning one or more IOM12 shelves already exists in the stack, complete the applicable substeps.
+. If the IOM12/IOM12B shelf you are hot-adding is an additional IOM12/IOM12B shelf to an existing mixed stack, meaning one or more IOM12/IOM12B shelves already exists in the stack, complete the applicable substeps.
 +
 NOTE: Make sure that you wait at least 70 seconds between disconnecting a cable and reconnecting it, and if you are replacing a cable for a longer one.
 +
@@ -461,14 +461,14 @@ a|
 Multipath HA or multipath, or single-path HA with controller connectivity to the logical last shelf, or bridge-attached connectivity in a MetroCluster configuration
 a|
 
- .. Move the controller-to-stack cable from the last IOM12 shelf IOM A port 3 to the same port on the new last IOM12 shelf.
- .. If you are hot-adding one IOM12 shelf, cable the shelf-to-shelf connection between the old last IOM12 shelf IOM A port 3 to the new last IOM12 shelf IOM A port 1.
+ .. Move the controller-to-stack cable from the last IOM12/IOM12B shelf IOM A port 3 to the same port on the new last IOM12/IOM12B shelf.
+ .. If you are hot-adding one IOM12/IOM12B shelf, cable the shelf-to-shelf connection between the old last IOM12/IOM12B shelf IOM A port 3 to the new last IOM12/IOM12B shelf IOM A port 1.
 +
 Use a SAS copper Mini-SAS HD-to-Mini-SAS HD cable.
 +
 Otherwise, go to the next substep.
 
- .. If you are hot-adding more than one IOM12 shelf, cable the shelf-to-shelf connection between the old last IOM12 shelf IOM A port 3 and the next IOM12 shelf IOM A port 1, and then repeat this for any additional IOM12 shelves.
+ .. If you are hot-adding more than one IOM12/IOM12B shelf, cable the shelf-to-shelf connection between the old last IOM12/IOM12B shelf IOM A port 3 and the next IOM12/IOM12B shelf IOM A port 1, and then repeat this for any additional IOM12/IOM12B shelves.
 +
 Use additional SAS copper Mini-SAS HD-to-Mini-SAS HD cables.
 +
@@ -482,24 +482,24 @@ a|
 Bridge-attached connectivity in a MetroCluster configuration
 a|
 
- .. Move the bottom bridge-to-stack cable from the old last IOM12 shelf to the same port on the new last IOM12 shelf.
- .. Cable the shelf-to-shelf connection between the old last IOM12 shelf IOM A port 3 and the next IOM12 shelf IOM A port 1, and then repeat this for any additional IOM12 shelves.
+ .. Move the bottom bridge-to-stack cable from the old last IOM12/IOM12B shelf to the same port on the new last IOM12/IOM12B shelf.
+ .. Cable the shelf-to-shelf connection between the old last IOM12/IOM12B shelf IOM A port 3 and the next IOM12/IOM12B shelf IOM A port 1, and then repeat this for any additional IOM12/IOM12B shelves.
 +
 Use a SAS copper Mini-SAS HD-to-Mini-SAS HD cable.
 
- .. Cable the shelf-to-shelf connection between the old last IOM12 shelf IOM B port 3 and the next IOM12 shelf IOM B port 1, and then repeat this for any additional IOM12 shelves.
+ .. Cable the shelf-to-shelf connection between the old last IOM12/IOM12B shelf IOM B port 3 and the next IOM12/IOM12B shelf IOM B port 1, and then repeat this for any additional IOM12/IOM12B shelves.
  .. Go to step 4.
 
 a|
 Single-path HA or single-path with no controller connectivity to the logical last shelf
 a|
 
- .. Cable the shelf-to-shelf connection between the last IOM12 shelf IOM A port 3 and the new last IOM12 shelf IOM A port 1.
+ .. Cable the shelf-to-shelf connection between the last IOM12/IOM12B shelf IOM A port 3 and the new last IOM12/IOM12B shelf IOM A port 1.
 +
 Use a SAS copper Mini-SAS HD-to-Mini-SAS HD cable.
 
  .. Repeat the above substep for IOM B.
- .. If you are hot-adding another IOM12 shelf, repeat substeps a and b.
+ .. If you are hot-adding another IOM12/IOM12B shelf, repeat substeps a and b.
 +
 Otherwise, go to step 4.
 
@@ -523,7 +523,7 @@ NOTE: All MetroCluster configurations require manual drive assignment.
 == Complete the hot-add
 
 [.lead]
-If you disabled automatic drive assignment as part of the preparation for hot-adding the IOM12 shelves to the stack of IOM6 shelves, you need to manually assign drive ownership and then reenable automatic drive assignment if needed.
+If you disabled automatic drive assignment as part of the preparation for hot-adding the IOM12/IOM12B shelves to the stack of IOM6 shelves, you need to manually assign drive ownership and then reenable automatic drive assignment if needed.
 
 .Before you begin
 
