@@ -31,10 +31,10 @@ The IOM12B modules are distinguished by a blue stripe and an "IOM12B" label:
 image::../media/iom12b.png[]
 
 * For multipathed (multipath HA or multipath) and quad-pathed (quad-path HA or quad-path) configurations, you can hot-swap a shelf IOM (nondisruptively replace a shelf IOM in a system that is powered on and serving data--I/O is in progress).
-* For FAS2600 series and FAS2700 single-path HA configurations, you must perform a takeover and giveback operation to replace a shelf IOM in a system that is powered on and serving data--I/O is in progress.
+* For FAS2600 series and FAS2700 series single-path HA configurations, you must perform a takeover and giveback operation to replace a shelf IOM in a system that is powered on and serving data--I/O is in progress.
 * For FAS2600 series single-path configurations, you must halt your system to replace a shelf IOM.
 +
-NOTE: If you attempt to hot-swap a shelf IOM on a disk shelf with a single-path connection, you will lose all access to the disk drives on the disk shelf as well as any disk shelves beneath. You could also bring down your entire system.
+NOTE: If you attempt to hot-swap a shelf IOM on a disk shelf with a single-path connection, you will lose all access to the disk drives in the disk shelf as well as any disk shelves beneath. You could also bring down your entire system.
 
 * The best practice is to have the current versions of disk shelf (IOM) firmware and disk drive firmware on your system before adding new disk shelves, shelf FRU components, or SAS cables.
 +
@@ -44,7 +44,7 @@ https://mysupport.netapp.com/site/downloads/firmware/disk-shelf-firmware[NetApp 
 +
 https://mysupport.netapp.com/site/downloads/firmware/disk-drive-firmware[NetApp Downloads: Disk Drive Firmware]
 
-* Disk shelf (IOM) firmware is automatically updated (nondisruptively) on a new shelf IOM with a non current firmware version.
+* Disk shelf (IOM) firmware is automatically updated (nondisruptively) on a new shelf IOM with a non-current firmware version.
 +
 Shelf IOM firmware checks occur every ten minutes. An IOM firmware update can take up to 30 minutes.
 
@@ -72,7 +72,7 @@ Multipath HA, multipath, quad-path HA, or quad-path configuration
 a|
 Go to the next step.
 a|
-FAS2600 series and FAS2700 single-path HA configuration
+FAS2600 series and FAS2700 series single-path HA configuration
 a|
 
  .. Determine the target node (the node the failed shelf IOM belongs to).
@@ -128,7 +128,7 @@ Multipath HA, multipath, quad-path HA, or quad-path configuration
 a|
 Go to the next step.
 a|
-FAS2600 series and FAS2700 single-path HA configuration
+FAS2600 series and FAS2700 series single-path HA configuration
 a|
 Give back the target node: `storage failover giveback -fromnode partner_HA_node`
 a|

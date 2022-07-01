@@ -2,14 +2,14 @@
 permalink: sas3/service-replace-drawer-ds460c.html
 sidebar: sidebar
 keywords: i/o activity, power, off, shelf, replacing, replace, drive, drawer, disk, replace a drive drawer in a ds460c disk shelf, dcm2, dcm
-summary: You must stop all host I/O activity and power off the shelf before replacing the drive drawer.
+summary: Replacing a drive drawer in a shelf requires you to either halt the entire storage system (HA pair), which allows you to keep data aggregates on the shelf, or you have the option to keep the HA pair up and running, which requires you to move all of the data from the data aggregates residing on the disk drives, and offline and delete the data aggregates. However, if the shelf contains a root aggregate, you must halt the HA pair.
 ---
 = Replace a drive drawer in a DS460C disk shelf - shelves with IOM12/IOM12B modules
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-You must stop all host I/O activity and power off the shelf before replacing the drive drawer.
+Replacing a drive drawer in a shelf requires you to either halt the entire storage system (HA pair), which allows you to keep data aggregates on the shelf, or you have the option to keep the HA pair up and running, which requires you to move all of the data from the data aggregates residing on the disk drives, and offline and delete the data aggregates. However, if the shelf contains a root aggregate, you must halt the HA pair.
 
 .Before you begin
 
@@ -25,13 +25,13 @@ NOTE: *Possible hardware damage:* To prevent electrostatic discharge damage to t
 
 .About this task
 
-* This procedure applies to shelves having DCM drive drawers and/or DCM2 drive drawers. (Drawers can also have two IOM12 or two IOM12B shelf modules.)
+* This procedure applies to shelves having DCM drive drawers and/or DCM2 drive drawers. (Shelves will also have two IOM12 modules or two IOM12B modules.)
 +
 When a DCM or DCM2 drive drawer fails, you receive a DCM or DCM2 drive drawer to replace it.
 
 [NOTE]
 ====
-If when you replace a failed drive drawer, it results in the shelf having a combination of IOM12 modules and any number of DCM2 drive drawers, you must upgrade the IOM12 FW to version 0300 or later. The IOM12 modules require a version of FW supported with DCM2 drive drawers.
+If when you replace a failed drive drawer, it results in the shelf having a combination of IOM12 modules and any number of DCM2 drive drawers, you must upgrade the IOM12 FW to version 0300 or later because the IOM12 modules require a version of FW that supports DCM2 drive drawers.
 
 The IOM12 FW upgrade can be done before or after replacing a drive drawer. This procedure has you upgrade the FW as part of the preparation for the drawer replacement procedure.
 ====
@@ -49,32 +49,46 @@ image::../media/dcm2.png[]
 == Prepare to replace a drive drawer
 
 [.Lead]
-Before you replace a drive drawer you must make sure to update IOM12 FW if needed, and then stop all host I/O activity and power off the shelf.
+Before you replace a drive drawer, you must make sure to update IOM12 FW if needed, and either halt the HA pair, which allows you to keep data aggregates on the shelf, or you have the option to keep the HA pair up and running, which requires you to move all of the data from the data aggregates residing on the disk drives, and offline and delete the data aggregates. However, if the shelf contains a root aggregate, you must halt the HA pair. Lastly, you must power off the shelf.
 
 .steps
-. Determine if when you replace the failed drive drawer, it will result in the shelf having a combination of IOM12 modules and any number of DCM2 drive drawers.
+. Determine if when you replace the failed drive drawer, it results in the shelf having a combination of IOM12 modules and any number of DCM2 drive drawers.
 . If the shelf will have a combination of IOM12 modules and any number of DCM2 drive drawers, you must upgrade the IOM12 FW to version 0300 or later; otherwise, go to the next step.
 +
 Current versions of firmware can be found on the NetApp Support Site.
 +
 https://mysupport.netapp.com/site/downloads/firmware/disk-shelf-firmware[NetApp Downloads: Disk Shelf Firmware]
-. Stop all host I/O activity by removing all aggregates from the disk drives (the disk drives must be spares).
+. If the shelf contains the root aggregate from either controller in the HA pair, or if you chose to halt the HA pair (instead of keeping the HA pair up and running), complete the following substeps; otherwise, go to the next step.
 +
-NOTE: If you attempt this procedure with aggregates on the disk shelf you are removing, you could fail the system with a multidisk panic.
-+
-You can use the `storage aggregate offline -aggregate _aggregate_name_` command and then the `storage aggregate delete -aggregate _aggregate_name_` command.
-. Verify that the disk drives in the disk shelves you are removing have no aggregates (are spares) and ownership is removed:
- .. Enter the following command from the clustershell of either controller: `storage disk show -shelf _shelf_number_`
- .. Check the output to verify that there are no aggregates on the disk drives in the disk shelves you are removing.
-+
-Disk drives with no aggregates have a dash in the `Container Name` column.
+NOTE: Data aggregates can remain on the shelf when halting the HA pair.
 
- .. Check the output to verify that ownership is removed from the disk drives on the disk shelves you are removing.
+.. Halt both controllers in the HA pair.
+.. Verify that your HA pair halted by checking the storage system console.
+.. Power off the shelf.
+.. Go to the section, <<Remove the cable chains>>.
+. If you chose to keep the HA pair up and running, complete the following substeps:
 +
-Disk drives with no ownership have a dash in the `Owner` column.
+NOTE: If you attempt to replace a drawer with aggregates on the disk shelf, you could cause a system disruption with a multidisk panic.
+
+.. Move all of the data from the data aggregates residing on the disk drives.
 +
-NOTE: If you have failed disk drives in the shelf you are removing, they have broken in the `Container Type` column. (Failed disk drive do not have ownership.)
-. Power off the shelf.
+Data includes, but is not limited to, volumes and LUNs.
+
+.. Offine and delete the aggregates to allow the disk drives to become spares:
++
+Commands can be entered from the clustershell of either controller.
++
+`storage aggregate offline -aggregate _aggregate_name_`
++
+`storage aggregate delete -aggregate _aggregate_name_`
+.. Verify that the disk drives have no aggregates (are spares):
+ ... Enter the following command from the clustershell of either controller: `storage disk show -shelf _shelf_number_`
+ ... Check the output to verify that the drisk drives are spares.
++
+Disk drives that are spares show `spare` in the `Container Type` column.
++
+NOTE: If you have failed disk drives in the shelf, `broken` appears in the `Container Type` column.
+.. Power off the shelf.
 
 == Remove the cable chains
 
@@ -83,7 +97,9 @@ Left and right cable chains for each drive drawer in the DS460C drive shelf allo
 
 .Before you begin
 
-* You have stopped host I/O activity and powered off the shelf.
+* You have completed the <<Prepare to replace a drive drawer>> steps so that your HA pair is halted  or you have moved all of the data from the data aggregates residing on the disk drives, and offlined and deleted the data aggregates to allow the disk drives to become spares.
+* You have powered off the shelf.
+
 * You have obtained the following items:
  ** Antistatic protection
 +
@@ -305,7 +321,7 @@ NOTE: *Risk of equipment malfunction:* Make sure to completely close the drive d
 == Attach the cable chains
 
 [.lead]
-The final step in installing a drive drawer is attaching the left and right cable chains to the drive shelf. When attaching a cable chain, reverse the order you used when disconnecting the cable chain. You must insert the chain's horizontal connector into the horizontal bracket in the enclosure before inserting the chain's vertical connector into the vertical bracket in the enclosure.
+The final step in installing a drive drawer is attaching the replacement left and right cable chains to the drive shelf. When attaching a cable chain, reverse the order you used when disconnecting the cable chain. You must insert the chain's horizontal connector into the horizontal bracket in the enclosure before inserting the chain's vertical connector into the vertical bracket in the enclosure.
 
 .Before you begin
 
@@ -405,3 +421,9 @@ Guide rail
 . Reapply power:
  .. Turn on both power switches on the drive shelf.
  .. Confirm that both fans come on and that the amber LED on the back of the fans is off.
+ . If you had halted the HA pair, boot ONTAP on both controllers; otherwise go to the next step.
+ . If you had moved data off the shelf and deleted the data aggregates, you can now use the spare disks in the shelf for aggregate creation or expansion.
++
+https://docs.netapp.com/us-en/ontap/disks-aggregates/aggregate-creation-workflow-concept.html[Aggregate creation workflow]
++
+https://docs.netapp.com/us-en/ontap/disks-aggregates/aggregate-expansion-workflow-concept.html[Aggregate expansion workflow]
