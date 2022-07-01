@@ -1,24 +1,24 @@
 ---
 permalink: sas3/install-hot-add-shelf.html
 sidebar: sidebar
-keywords: hot-add, disk, shelves, shelf, iom12, exist, stack, module, sas, hba, onboard, sas, port, controller, DS460C, transport DS460C, move DS460C, remove drives from DS460C, DS460C drive handling
-summary: You can hot-add one or more disk shelves with IOM12 modules to an existing stack of disk shelves with IOM12 modules or hot-add a stack of one or more disk shelves with IOM12 modules directly to a SAS HBA or an onboard SAS port on the controller.
+keywords: hot-add, disk, shelves, shelf, iom12, exist, stack, module, sas, hba, onboard, sas, port, controller, DS460C, transport DS460C, move DS460C, remove drives from DS460C, DS460C drive handling, iom12b
+summary: You can hot-add one or more disk shelves with IOM12/IOM12B modules to an existing stack of disk shelves with IOM12/IOM12B modules or hot-add a stack of one or more disk shelves with IOM12/IOM12B modules directly to a SAS HBA or an onboard SAS port on the controller.
 ---
-= Hot-add a shelf - shelves with IOM12 modules
+= Hot-add a shelf - shelves with IOM12/IOM12B modules
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-You can hot-add one or more disk shelves with IOM12 modules to an existing stack of disk shelves with IOM12 modules or hot-add a stack of one or more disk shelves with IOM12 modules directly to a SAS HBA or an onboard SAS port on the controller.
+You can hot-add one or more disk shelves with IOM12/IOM12B modules to an existing stack of disk shelves with IOM12/IOM12B modules or hot-add a stack of one or more disk shelves with IOM12/IOM12B modules directly to a SAS HBA or an onboard SAS port on the controller.
 
 .About this task
 
-You cannot use this procedure to mix a stack: hot-add a shelf with IOM12 modules to a stack of shelves that has IOM6 modules. If you need to mix a stack, use link:iom12-hot-add-mix.html[Hot-add IOM12 shelves to a stack of IOM6 shelves].
+You cannot use this procedure to mix a stack: hot-add a shelf with IOM12/IOM12B modules to a stack of shelves that has IOM6 modules. If you need to mix a stack, use link:iom12-hot-add-mix.html[Hot-add IOM12 shelves to a stack of IOM6 shelves].
 
-== Requirements for hot-adding disk shelves with IOM12 modules
+== Requirements for hot-adding disk shelves with IOM12/IOM12B modules
 
 [.lead]
-Your system must meet certain requirements before hot-adding disk shelves with IOM12 modules.
+Your system must meet certain requirements before hot-adding disk shelves with IOM12/IOM12B modules.
 
 === State of your system
 
@@ -55,22 +55,22 @@ https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor[NetApp 
 +
 After hot-adding the disk shelf, you must replace the SAS copper cables for the rest of the shelf-to-shelf connections in the stack and the controller-to-stack connections so that the stack meets the rules in link:install-cabling-rules.html#mini-sas-hd-sas-optical-cable-rules[Mini-SAS HD SAS optical cable rules]. This means that you must have ordered the appropriate number of mini-SAS HD SAS optical cables.
 
-== Considerations for hot-adding disk shelves with IOM12 modules
+== Considerations for hot-adding disk shelves with IOM12/IOM12B modules
 
 [.lead]
 You should familiarize yourself with aspects and best practices about this procedure before hot-adding disk shelves.
 
 === General considerations
 
-* If you are hot-adding a disk shelf with IOM12 modules to an existing stack (of disk shelves with IOM12 modules), you can hot-add the disk shelf to either end--the logical first or last disk shelf--of the stack.
+* If you are hot-adding a disk shelf with IOM12/IOM12B modules to an existing stack (of disk shelves with IOM12/IOM12B modules), you can hot-add the disk shelf to either end--the logical first or last disk shelf--of the stack.
 +
 For single-path HA and single-path configurations, as applicable to AFF A200, AFF A220, FAS2600 series, and FAS2700 systems, you hot-add disk shelves to the end of the stack that does not have controller connections.
 
-* Disk shelves with IOM12 modules must be in their own unique stack; they cannot be added to a stack that has shelves with IOM6 modules or IOM3 modules.
+* Disk shelves with IOM12/IOM12B modules must be in their own unique stack; they cannot be added to a stack that has shelves with IOM6 modules or IOM3 modules.
 +
-This procedure does not address mixing a stack: hot-adding a shelf with IOM12 modules to a stack of shelves with IOM6 modules.
+This procedure does not address mixing a stack: hot-adding a shelf with IOM12/IOM12B modules to a stack of shelves with IOM6 modules.
 
-* A system can have multipathed and quad-pathed stacks of disk shelves with IOM12 modules.
+* A system can have multipathed and quad-pathed stacks of disk shelves with IOM12/IOM12B modules.
 +
 If you have an HA pair, ONTAP shows the system configuration as "`multipath HA`". If you have a single-controller configuration, ONTAP shows the system configuration as "`multipath`".
 
@@ -138,7 +138,7 @@ NOTE: Keep disk drives in their ESD bag until you are ready to install them.
 +
 If a wrist strap is unavailable, touch an unpainted surface on your storage enclosure chassis before handling the disk drive.
 
-== Installing disk shelves with IOM12 modules for a hot-add
+== Installing disk shelves with IOM12/IOM12B modules for a hot-add
 
 [.lead]
 For each disk shelf you are hot-adding, you install the disk shelf into a rack, connect the power cords, power on the disk shelf, and set the disk shelf ID before cabling the SAS connections.
@@ -242,7 +242,7 @@ The shelf ID blinks and the operator display panel amber LED blinks until you po
 
  .. Repeat substeps a through d for each disk shelf you are hot-adding.
 
-== Cabling disk shelves with IOM12 modules for a hot-add
+== Cabling disk shelves with IOM12/IOM12B modules for a hot-add
 
 [.lead]
 You cable the SAS connections--shelf-to-shelf and controller-to-stack--as applicable for hot-added disk shelves so they have connectivity to the system.
