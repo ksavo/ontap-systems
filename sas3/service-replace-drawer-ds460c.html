@@ -1,23 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
   <head class="at-element-marker">
-  <title>Replacing a drive drawer in a DS460C disk shelf - shelves with IOM12 modules</title>
+  <title>Replace a drive drawer in a DS460C disk shelf - shelves with IOM12/IOM12B modules</title>
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge,chrome=1">
   <meta http-equiv="language" content="en">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta property="og:title" content="Replacing a drive drawer in a DS460C disk shelf - shelves with IOM12 modules" />
+  <meta property="og:title" content="Replace a drive drawer in a DS460C disk shelf - shelves with IOM12/IOM12B modules" />
 	<meta property="og:type" content="website" />
 	<meta property="og:url" content="https://docs.netapp.com/us-en/ontap-systems/sas3/service-replace-drawer-ds460c.html" />
-	<meta property="og:description" content="You must stop all host I/O activity and power off the shelf before replacing the drive drawer." />
+	<meta property="og:description" content="Replacing a drive drawer in a shelf requires you to either halt the entire storage system (HA pair), which allows you to keep data aggregates on the shelf, o..." />
   <meta property="og:image" content="https://docs.netapp.com/us-en/ontap-systems/images/logo-tophat-social.png" />
   <meta property="og:image:alt" content="NetApp Logo" />
   <meta name="format-detection" content="telephone=no">
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   <meta http-equiv="encoding" content="utf-8">
   <meta http-equiv="nss-type" content="Product Documentation"/>
-  <meta http-equiv="nss-subtype" content="User Guide"/><meta name="description" content="You must stop all host I/O activity and power off the shelf before replacing the drive drawer.">
-  <meta name="keywords" content=" i/o activity, power, off, shelf, replacing, replace, drive, drawer, disk, replace a drive drawer in a ds460c disk shelf"><!-- Icons -->
+  <meta http-equiv="nss-subtype" content="User Guide"/><meta name="description" content="Replacing a drive drawer in a shelf requires you to either halt the entire storage system (HA pair), which allows you to keep data aggregates on the shelf, o...">
+  <meta name="keywords" content=" i/o activity, power, off, shelf, replacing, replace, drive, drawer, disk, replace a drive drawer in a ds460c disk shelf, dcm2, dcm"><!-- Icons -->
   <link rel="icon" href="/us-en/ontap-systems/images/favicon.ico" type="image/x-icon">
 
   <!-- RSS Feed --><!-- CSS Definitions: NetApp CSS should be defined after generic css -->
@@ -169,7 +169,7 @@
   
   <!-- Start Page Toolbar -->
   
-  <div class="page-nav-toolbar"><div class="page-nav-contribute"><a target="_blank" href="https://github.com/NetAppDocs/ontap-systems/issues/new?body=Page%3A%20[Replacing a drive drawer in a DS460C disk shelf - shelves with IOM12 modules](https://docs.netapp.com/us-en/ontap-systems/sas3/service-replace-drawer-ds460c.html)" class="page-nav-contribute-link" role="button"><img src="/us-en/ontap-systems/images/discuss-sm.svg" alt="" class="github-icon" />Request doc changes</a><a target="_blank" href="https://github.com/NetAppDocs/ontap-systems/blob/main/sas3/service_replace_drawer_ds460c.adoc" class="page-nav-contribute-link" role="button"><img src="/us-en/ontap-systems/images/edit-sm.svg" alt="" class="github-icon" />Edit this page</a><a target="_blank" href="https://docs.netapp.com/us-en/contribute/" class="page-nav-contribute-link"  ><img src="/us-en/ontap-systems/images/article-sm.svg" alt="" class="github-icon" />Learn how to contribute</a></div>
+  <div class="page-nav-toolbar"><div class="page-nav-contribute"><a target="_blank" href="https://github.com/NetAppDocs/ontap-systems/issues/new?body=Page%3A%20[Replace a drive drawer in a DS460C disk shelf - shelves with IOM12/IOM12B modules](https://docs.netapp.com/us-en/ontap-systems/sas3/service-replace-drawer-ds460c.html)" class="page-nav-contribute-link" role="button"><img src="/us-en/ontap-systems/images/discuss-sm.svg" alt="" class="github-icon" />Request doc changes</a><a target="_blank" href="https://github.com/NetAppDocs/ontap-systems/blob/main/sas3/service_replace_drawer_ds460c.adoc" class="page-nav-contribute-link" role="button"><img src="/us-en/ontap-systems/images/edit-sm.svg" alt="" class="github-icon" />Edit this page</a><a target="_blank" href="https://docs.netapp.com/us-en/contribute/" class="page-nav-contribute-link"  ><img src="/us-en/ontap-systems/images/article-sm.svg" alt="" class="github-icon" />Learn how to contribute</a></div>
     <div class="page-nav-container">
       <nav class="page-nav-fixed">
         <div class="page-nav-title">ON THIS PAGE</div>
@@ -4164,11 +4164,11 @@
           
           <a target="_blank" 
             
-              href="/us-en/ontap-systems/pdfs/sidebar/SAS_shelves_with_IOM12_modules.pdf" 
+              href="/us-en/ontap-systems/pdfs/sidebar/SAS_shelves_with_IOM12_IOM12B_modules.pdf" 
             
           >
             <img src="/us-en/ontap-systems/images/pdf.png" alt="" width="16" height="16"/>
-            SAS shelves with IOM12 modules
+            SAS shelves with IOM12/IOM12B modules
           </a>
           
 
@@ -4180,7 +4180,7 @@
           
           <a target="_blank" 
             
-              href="/us-en/ontap-systems/pdfs/sidebar/Shelves_with_IOM12_Modules_Install_and_Cable.pdf" 
+              href="/us-en/ontap-systems/pdfs/sidebar/Shelves_with_IOM12_IOM2B_Modules_Install_and_Cable.pdf" 
             
           >
             <img src="/us-en/ontap-systems/images/pdf.png" alt="" width="16" height="16"/>
@@ -4252,7 +4252,7 @@
           
           <a target="_blank" 
             
-              href="/us-en/ontap-systems/pdfs/sidebar/Shelves_with_IOM12_Modules_Maintain.pdf" 
+              href="/us-en/ontap-systems/pdfs/sidebar/Shelves_with_IOM12_IOM12B_Modules_Maintain.pdf" 
             
           >
             <img src="/us-en/ontap-systems/images/pdf.png" alt="" width="16" height="16"/>
@@ -5946,7 +5946,7 @@
       </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/ns224/service-replace-rtc-battery.html">
         Real-time clock battery
       </a></li></ul></li></ul></li><li class="subfolders "><a href="/us-en/ontap-systems/sas3/index.html">
-        <div class="na-navbar-padding"> SAS shelves with IOM12 modules</div>
+        <div class="na-navbar-padding"> SAS shelves with IOM12/IOM12B modules</div>
       </a>
       <ul><li class="subfolders "><a href="#">
         <div class="na-navbar-padding"> Install and cable</div>
@@ -5956,7 +5956,7 @@
       </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/sas3/install-hot-add-shelf.html">
         Hot-add shelf
       </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/sas3/iom12-hot-add-mix.html">
-        Hot-add IOM12 shelves to a stack of IOM6 shelves
+        Hot-add IOM12/IOM12B shelves to a stack of IOM6 shelves
       </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/sas3/install-change-shelf-id.html">
         Change shelf ID
       </a></li><li class="subfolders "><a href="#">
@@ -5994,7 +5994,7 @@
       </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/sas3/hot-remove-shelf.html">
         Hot-remove shelf
       </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/sas3/service-hot-swap-iom.html">
-        IOM12 module
+        IOM12/IOM12B module
       </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/sas3/service-hot-swap-power-supply.html">
         Power supply
       </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/sas3/service-monitor-leds.html">
@@ -6100,14 +6100,14 @@
 </div>
 
       <div class="n-doc__component-detail-heading-wrap">
-  <h1 class="n-doc__component-detail-heading">Replacing a drive drawer in a DS460C disk shelf - shelves with IOM12 modules</h1>
+  <h1 class="n-doc__component-detail-heading">Replace a drive drawer in a DS460C disk shelf - shelves with IOM12/IOM12B modules</h1>
 </div>
 
 
 <p class="page-details">
   
     
-    <time datetime="2022-05-27 19:39:36 +0000">05/27/2022</time>
+    <time datetime="2022-07-01 01:30:51 +0000">07/01/2022</time>
     
   
 
@@ -6144,23 +6144,7 @@
 <div id="preamble">
 <div class="sectionbody">
 <div class="paragraph lead">
-<p>You must stop all host I/O activity and power off the shelf before replacing the drive drawer.</p>
-</div>
-<div class="paragraph">
-<p>Each of these 60-drive shelves has five drive drawers.</p>
-</div>
-<div class="imageblock">
-<div class="content">
-<img src="../media/28_dwg_e2860_de460c_front_no_callouts.gif" alt="28 dwg e2860 de460c front no callouts">
-</div>
-</div>
-<div class="paragraph">
-<p>And each of the five drawers can hold up to 12 drives.</p>
-</div>
-<div class="imageblock">
-<div class="content">
-<img src="../media/92_dwg_de6600_drawer_with_hdds_no_callouts.gif" alt="92 dwg de6600 drawer with hdds no callouts">
-</div>
+<p>Replacing a drive drawer in a shelf requires you to either halt the entire storage system (HA pair), which allows you to keep data aggregates on the shelf, or you have the option to keep the HA pair up and running, which requires you to move all of the data from the data aggregates residing on the disk drives, and offline and delete the data aggregates. However, if the shelf contains a root aggregate, you must halt the HA pair.</p>
 </div>
 <div class="paragraph">
 <div class="title">Before you begin</div>
@@ -6194,10 +6178,185 @@
 </li>
 </ul>
 </div>
+<div class="ulist">
+<div class="title">About this task</div>
+<ul>
+<li>
+<p>This procedure applies to shelves having DCM drive drawers and/or DCM2 drive drawers. (Shelves will also have two IOM12 modules or two IOM12B modules.)</p>
+<div class="paragraph">
+<p>When a DCM or DCM2 drive drawer fails, you receive a DCM or DCM2 drive drawer to replace it.</p>
+</div>
+</li>
+</ul>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<img src="/us-en/ontap-systems/images/note.svg" alt="Note">
+</td>
+<td class="content">
+<div class="paragraph">
+<p>If when you replace a failed drive drawer, it results in the shelf having a combination of IOM12 modules and any number of DCM2 drive drawers, you must upgrade the IOM12 FW to version 0300 or later because the IOM12 modules require a version of FW that supports DCM2 drive drawers.</p>
+</div>
+<div class="paragraph">
+<p>The IOM12 FW upgrade can be done before or after replacing a drive drawer. This procedure has you upgrade the FW as part of the preparation for the drawer replacement procedure.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>The DCM drive drawers and the DCM2 drive drawers can be distinguished by their appearance:</p>
+<div class="paragraph">
+<p>The DCM drive drawers look like the following:</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../media/28_dwg_e2860_de460c_front_no_callouts.gif" alt="28 dwg e2860 de460c front no callouts">
+</div>
+</div>
+<div class="paragraph">
+<p>The DCM2 drive drawers are distinguished by a blue stripe and "DCM2" label:</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../media/dcm2.png" alt="dcm2">
+</div>
+</div>
+</li>
+</ul>
+</div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="removing-the-cable-chains">Removing the cable chains</h2>
+<h2 id="prepare-to-replace-a-drive-drawer">Prepare to replace a drive drawer</h2>
+<div class="sectionbody">
+<div class="paragraph Lead">
+<p>Before you replace a drive drawer, you must make sure to update IOM12 FW if needed, and either halt the HA pair, which allows you to keep data aggregates on the shelf, or you have the option to keep the HA pair up and running, which requires you to move all of the data from the data aggregates residing on the disk drives, and offline and delete the data aggregates. However, if the shelf contains a root aggregate, you must halt the HA pair. Lastly, you must power off the shelf.</p>
+</div>
+<div class="olist arabic">
+<div class="title">steps</div>
+<ol class="arabic">
+<li>
+<p>Determine if when you replace the failed drive drawer, it results in the shelf having a combination of IOM12 modules and any number of DCM2 drive drawers.</p>
+</li>
+<li>
+<p>If the shelf will have a combination of IOM12 modules and any number of DCM2 drive drawers, you must upgrade the IOM12 FW to version 0300 or later; otherwise, go to the next step.</p>
+<div class="paragraph">
+<p>Current versions of firmware can be found on the NetApp Support Site.</p>
+</div>
+<div class="paragraph">
+<p><a href="https://mysupport.netapp.com/site/downloads/firmware/disk-shelf-firmware">NetApp Downloads: Disk Shelf Firmware</a></p>
+</div>
+</li>
+<li>
+<p>If the shelf contains the root aggregate from either controller in the HA pair, or if you chose to halt the HA pair (instead of keeping the HA pair up and running), complete the following substeps; otherwise, go to the next step.</p>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<img src="/us-en/ontap-systems/images/note.svg" alt="Note">
+</td>
+<td class="content">
+Data aggregates can remain on the shelf when halting the HA pair.
+</td>
+</tr>
+</table>
+</div>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p>Halt both controllers in the HA pair.</p>
+</li>
+<li>
+<p>Verify that your HA pair halted by checking the storage system console.</p>
+</li>
+<li>
+<p>Power off the shelf.</p>
+</li>
+<li>
+<p>Go to the section, <a href="#remove-the-cable-chains">Remove the cable chains</a>.</p>
+</li>
+</ol>
+</div>
+</li>
+<li>
+<p>If you chose to keep the HA pair up and running, complete the following substeps:</p>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<img src="/us-en/ontap-systems/images/note.svg" alt="Note">
+</td>
+<td class="content">
+If you attempt to replace a drawer with aggregates on the disk shelf, you could cause a system disruption with a multidisk panic.
+</td>
+</tr>
+</table>
+</div>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p>Move all of the data from the data aggregates residing on the disk drives.</p>
+<div class="paragraph">
+<p>Data includes, but is not limited to, volumes and LUNs.</p>
+</div>
+</li>
+<li>
+<p>Offine and delete the aggregates to allow the disk drives to become spares:</p>
+<div class="paragraph">
+<p>Commands can be entered from the clustershell of either controller.</p>
+</div>
+<div class="paragraph">
+<p><code>storage aggregate offline -aggregate <em>aggregate_name</em></code></p>
+</div>
+<div class="paragraph">
+<p><code>storage aggregate delete -aggregate <em>aggregate_name</em></code></p>
+</div>
+</li>
+<li>
+<p>Verify that the disk drives have no aggregates (are spares):</p>
+<div class="olist lowerroman">
+<ol class="lowerroman" type="i">
+<li>
+<p>Enter the following command from the clustershell of either controller: <code>storage disk show -shelf <em>shelf_number</em></code></p>
+</li>
+<li>
+<p>Check the output to verify that the drisk drives are spares.</p>
+<div class="paragraph">
+<p>Disk drives that are spares show <code>spare</code> in the <code>Container Type</code> column.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<img src="/us-en/ontap-systems/images/note.svg" alt="Note">
+</td>
+<td class="content">
+If you have failed disk drives in the shelf, <code>broken</code> appears in the <code>Container Type</code> column.
+</td>
+</tr>
+</table>
+</div>
+</li>
+</ol>
+</div>
+</li>
+<li>
+<p>Power off the shelf.</p>
+</li>
+</ol>
+</div>
+</li>
+</ol>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="remove-the-cable-chains">Remove the cable chains</h2>
 <div class="sectionbody">
 <div class="paragraph lead">
 <p>Left and right cable chains for each drive drawer in the DS460C drive shelf allow the drawers to slide in and out. Before you can remove a drive drawer, you must remove both cable chains.</p>
@@ -6206,7 +6365,10 @@
 <div class="title">Before you begin</div>
 <ul>
 <li>
-<p>You have stopped host I/O activity and powered off the shelf.</p>
+<p>You have completed the <a href="#prepare-to-replace-a-drive-drawer">Prepare to replace a drive drawer</a> steps so that your HA pair is halted  or you have moved all of the data from the data aggregates residing on the disk drives, and offlined and deleted the data aggregates to allow the disk drives to become spares.</p>
+</li>
+<li>
+<p>You have powered off the shelf.</p>
 </li>
 <li>
 <p>You have obtained the following items:</p>
@@ -6451,7 +6613,7 @@
 </div>
 </div>
 <div class="sect1">
-<h2 id="removing-a-drive-drawer">Removing a drive drawer</h2>
+<h2 id="remove-a-drive-drawer">Remove a drive drawer</h2>
 <div class="sectionbody">
 <div class="paragraph lead">
 <p>After removing the right and left cable chains, you can remove the drive drawer from the drive shelf. Removing a drive drawer entails sliding the drawer part of the way out, removing the drives, and removing the drive drawer.</p>
@@ -6563,7 +6725,7 @@
 </div>
 </div>
 <div class="sect1">
-<h2 id="installing-a-drive-drawer">Installing a drive drawer</h2>
+<h2 id="install-a-drive-drawer">Install a drive drawer</h2>
 <div class="sectionbody">
 <div class="paragraph lead">
 <p>Installing a drive drawer into a drive shelf entails sliding the drawer into the empty slot, installing the drives, and replacing the front bezel.</p>
@@ -6748,10 +6910,10 @@
 </div>
 </div>
 <div class="sect1">
-<h2 id="attaching-the-cable-chains">Attaching the cable chains</h2>
+<h2 id="attach-the-cable-chains">Attach the cable chains</h2>
 <div class="sectionbody">
 <div class="paragraph lead">
-<p>The final step in installing a drive drawer is attaching the left and right cable chains to the drive shelf. When attaching a cable chain, reverse the order you used when disconnecting the cable chain. You must insert the chain&#8217;s horizontal connector into the horizontal bracket in the enclosure before inserting the chain&#8217;s vertical connector into the vertical bracket in the enclosure.</p>
+<p>The final step in installing a drive drawer is attaching the replacement left and right cable chains to the drive shelf. When attaching a cable chain, reverse the order you used when disconnecting the cable chain. You must insert the chain&#8217;s horizontal connector into the horizontal bracket in the enclosure before inserting the chain&#8217;s vertical connector into the vertical bracket in the enclosure.</p>
 </div>
 <div class="ulist">
 <div class="title">Before you begin</div>
@@ -7002,6 +7164,18 @@
 <p>Confirm that both fans come on and that the amber LED on the back of the fans is off.</p>
 </li>
 </ol>
+</div>
+</li>
+<li>
+<p>If you had halted the HA pair, boot ONTAP on both controllers; otherwise go to the next step.</p>
+</li>
+<li>
+<p>If you had moved data off the shelf and deleted the data aggregates, you can now use the spare disks in the shelf for aggregate creation or expansion.</p>
+<div class="paragraph">
+<p><a href="https://docs.netapp.com/us-en/ontap/disks-aggregates/aggregate-creation-workflow-concept.html">Aggregate creation workflow</a></p>
+</div>
+<div class="paragraph">
+<p><a href="https://docs.netapp.com/us-en/ontap/disks-aggregates/aggregate-expansion-workflow-concept.html">Aggregate expansion workflow</a></p>
 </div>
 </li>
 </ol>
