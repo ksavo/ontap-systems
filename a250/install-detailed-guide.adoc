@@ -190,6 +190,7 @@ image::../media/oie_cable_pull_tab_down.png[]
 NOTE: As you insert the connector, you should feel it click into place; if you do not feel it click, remove it, turn it around and try again.
 
 Use the animation or the tabulated steps to complete the cabling between the controllers and the switches:
+
 video::bf6759dc-4cbf-488e-982e-ac68017fbef8[panopto, title="Animation - Cable a switched cluster"]
 
 [options="header" cols="10,90"]
