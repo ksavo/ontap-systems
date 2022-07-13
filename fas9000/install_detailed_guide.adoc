@@ -188,7 +188,7 @@ NOTE: As you insert the connector, you should feel it click into place; if you d
 .Steps
 . Use the animation or illustration to complete the cabling between the controllers and to the switches:
 +
-https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=7a55b98a-e8b8-41d5-821f-ac5b0032ead0[Cabling a two-node switchless cluster]
+video::7a55b98a-e8b8-41d5-821f-ac5b0032ead0[panopto, title="Animation - Cable a two-node switchless cluster"]
 
 image::../media/drw_9000_TNSC_composite_cabling.png[]
 
@@ -210,7 +210,7 @@ NOTE: As you insert the connector, you should feel it click into place; if you d
 .Steps
 . Use the animation or illustration to complete the cabling between the controllers and to the switches:
 +
-https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=6381b3f1-4ce5-4805-bd0a-ac5b0032f51d[Switched cluster cabling]
+video::6381b3f1-4ce5-4805-bd0a-ac5b0032f51d[panopto, title="Animation - Switched cluster cabling"]
 
 image:../media/drw_9000_switched_cluster_cabling.png[]
 
@@ -238,13 +238,14 @@ NOTE: The examples use DS224C shelves. Cabling is similar with other supported S
 +
  ** Cabling SAS shelves in FAS9000, AFF A700, and ASA AFF A700, ONTAP 9.7 and earlier:
 +
-https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=a312e09e-df56-47b3-9b5e-ab2300477f67[Cabling SAS storage - ONTAP 9.7 and earlier]
+video::a312e09e-df56-47b3-9b5e-ab2300477f67[panopto, title="Animation - Cable SAS storage - ONTAP 9.7 and earlier"]
+
 +
 image:../media/SAS_storage_ONTAP_9.7_and_earlier.png[]
 +
  ** Cabling SAS shelves in FAS9000, AFF A700, and ASA AFF A700, ONTAP 9.8 and later:
 +
-https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=61d23302-9526-4a2b-9335-ac5b0032eafd[Cabling SAS storage - ONTAP 9.8 and later]
+video::61d23302-9526-4a2b-9335-ac5b0032eafd[panopto, title="Animation - Cable SAS storage - ONTAP 9.8 and later"]
 +
 image:../media/SAS_storage_ONTAP_9.8_and_later.png[]
 +
@@ -274,7 +275,7 @@ NOTE: As you insert the connector, you should feel it click into place; if you d
 .Steps
 . Use the following animation or illustrations to cable your controllers with two X91148A storage modules to a single NS224 drive shelf, or use the diagram to cable your controllers with one X91148A storage module to a single NS224 drive shelf.
 +
-https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=6520eb01-87b3-4520-9109-ac5b0032ea4e[Cabling a single NS224 shelf - ONTAP 9.8 and later]
+video::6520eb01-87b3-4520-9109-ac5b0032ea4e[panopto, title="Animation - Cable a single NS224 shelf - ONTAP 9.8 and later"]
 +
 image::../media/drw_ns224_a700_1shelf.png[]
 +
@@ -300,7 +301,8 @@ NOTE: As you insert the connector, you should feel it click into place; if you d
 .Steps
 . Use the following animation or illustrations to cable your controllers to two NS224 drive shelves.
 +
-https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=34098e39-73ad-45de-9af7-ac5b0032ea9a[Cabling two NS224 shelves - ONTAP 9.8 and later]
+video::34098e39-73ad-45de-9af7-ac5b0032ea9a[panopto, title="Animation - Cable two NS224 shelves - ONTAP 9.8 and later"]
+
 +
 image::../media/drw_ns224_a700_2shelves.png[]
 +
@@ -323,12 +325,14 @@ If you have network discovery enabled on your laptop, you can complete system se
 +
 If your system has NS224 drive shelves, the shelves are pre-set to shelf ID 00 and 01. If you want to change the shelf IDs, you must create a tool to insert into the hole where button is located.
 +
-https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=95a29da1-faa3-4ceb-8a0b-ac7600675aa6[Setting SAS or NVMe drive shelf IDs]
+video::95a29da1-faa3-4ceb-8a0b-ac7600675aa6[panopto, title="Animation - Set SAS or NVMe drive shelf IDs"]
+
 
 . Plug the power cords into the controller power supplies, and then connect them to power sources on different circuits.
 . Turn on the power switches to both nodes.
 +
-https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=bb04eb23-aa0c-4821-a87d-ab2300477f8b[Turn on the power to the controllers]
+video::bb04eb23-aa0c-4821-a87d-ab2300477f8b[panopto, title="Animation - Turn on the power to the controllers"]
+
 +
 NOTE: Initial booting may take up to eight minutes.
 
@@ -338,7 +342,8 @@ See your laptop's online help for more information.
 
 . Use the following animation to connect your laptop to the Management switch.
 +
-https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=d61f983e-f911-4b76-8b3a-ab1b0066909b[Connecting your laptop to the Management switch]
+video::d61f983e-f911-4b76-8b3a-ab1b0066909b[panopto, title="Animation - Connect your laptop to the Management switch"]
+
 
 . Select an ONTAP icon listed to discover:
 +
@@ -392,12 +397,13 @@ image::../media/drw_9000_cable_console_switch_controller.png[]
 +
 If your system has NS224 drive shelves, the shelves are pre-set to shelf ID 00 and 01. If you want to change the shelf IDs, you must create a tool to insert into the hole where button is located.
 +
-https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=95a29da1-faa3-4ceb-8a0b-ac7600675aa6[Setting SAS or NVMe drive shelf IDs]
+video::95a29da1-faa3-4ceb-8a0b-ac7600675aa6[panopto, title="Animation - Set SAS or NVMe drive shelf IDs"]
 
 . Plug the power cords into the controller power supplies, and then connect them to power sources on different circuits.
 . Turn on the power switches to both nodes.
 +
-https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=bb04eb23-aa0c-4821-a87d-ab2300477f8b[Turn on the power to the controllers]
+video::bb04eb23-aa0c-4821-a87d-ab2300477f8b[panopto, title="Animation - Turn on the power to the controllers"]
+
 +
 NOTE: Initial booting may take up to eight minutes.
 

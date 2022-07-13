@@ -15,7 +15,7 @@ NOTE: You must replace the fan module within two minutes of removing it from the
 
 You can use the following animation, illustration, or the written steps to hot-swap a fan module.
 
-https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=ae59d53d-7746-402c-bd6b-aad9012efa89[Replacing a fan]
+video::ae59d53d-7746-402c-bd6b-aad9012efa89[panopto, title="Animation - Replace a fan"]
 
 image::../media/drw_A400_Replace_fan.png[]
 

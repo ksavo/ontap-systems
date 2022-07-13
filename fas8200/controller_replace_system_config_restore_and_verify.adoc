@@ -81,7 +81,7 @@ _dev_name_ can be any one of the ports and devices identified in the preceding s
 
  .. Examine the output and, if applicable, select only the tests that you want to run: `sldiag device modify -dev _dev_name_ -selection only`
 +
--selection only disables all other tests that you do not want to run for the device.
+`-selection` only disables all other tests that you do not want to run for the device.
 
  .. Run the selected tests: `sldiag device run -dev _dev_name_`
 +

@@ -18,7 +18,7 @@ NOTE: It is a best practice to replace the power supply within two minutes of re
 
 You can use the following video or the tabulated steps to replace the power supply:
 
-video::86487f5e-20ff-43e6-99ae-ac5b015c1aa5[panopto, title="Replacing the power supply"]
+video::86487f5e-20ff-43e6-99ae-ac5b015c1aa5[panopto, title="Animation - Replace the power supply"]
 
 . If you are not already grounded, properly ground yourself.
 . Identify the power supply you want to replace, based on console error messages or through the red Fault LED on the power supply.
