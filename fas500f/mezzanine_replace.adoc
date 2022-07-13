@@ -64,7 +64,7 @@ To replace a mezzanine card, you must remove the impaired card and install the r
 
 You can use the following video or the tabulated steps to replace a mezzanine card:
 
-video::d8e7d4d9-8d28-4be1-809b-ac5b01643676[panopto, title="Replacing a mezzanine card"]
+video::d8e7d4d9-8d28-4be1-809b-ac5b01643676[panopto, title="Animation - Replace a mezzanine card"]
 
 === Option 1: Replace a mezzanine card:
 . Locate and replace the impaired mezzanine card on your controller module.
@@ -103,6 +103,7 @@ NOTE: Do not apply force when tightening the screw on the mezzanine card; you mi
 
 === Option 2: Install a mezzanine card:
 You install a new mezzanine card if your system does not have one.
+
 . Using the #1 magnetic screwdriver, remove the screws from the face of the controller module and the faceplate covering the mezzanine card slot, and set them aside safely on the magnet.
 . Remove the mezzanine card from the antistatic shipping bag and align it to the inside face of the controller module.
 . Gently align the mezzanine card into place.

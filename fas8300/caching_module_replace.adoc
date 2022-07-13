@@ -81,7 +81,7 @@ To access components inside the controller module, you must remove the controlle
 
 You can use the following animation, illustration, or the written steps to remove the controller module from the chassis.
 
-https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=75b6fa91-96b9-4323-b156-aae10007c9a5[Removing the controller module]
+video::75b6fa91-96b9-4323-b156-aae10007c9a5[panopto, title="Animation - Remove the controller module"]
 
 image::../media/drw_A400_Remove_controller.png[]
 
@@ -120,7 +120,7 @@ NOTE: You must log into the NetApp Support Site to display the _Statement of Vol
 
 You can use the following animation, illustration, or the written steps to replace a caching module.
 
-https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=d5f75ac5-b4f3-4b49-984b-aad9012f0c8e[Replacing the caching module]
+video::d5f75ac5-b4f3-4b49-984b-aad9012f0c8e[panopto, title="Animation - Replace the caching module "]
 
 image::../media/drw_8300_Replace-flashcache.png[]
 
@@ -154,7 +154,7 @@ After you have replaced the component in the controller module, you must reinsta
 
 You can use the following animation, illustration, or the written steps to install the controller module in the chassis.
 
-https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=9249fdb8-1522-437d-9280-aae10007c97b[Installing the controller module]
+video::9249fdb8-1522-437d-9280-aae10007c97b[panopto, title="Animation - Install the controller module "]
 
 image::../media/drw_A400_Install_controller_source.png[]
 

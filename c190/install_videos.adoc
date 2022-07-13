@@ -15,10 +15,10 @@ There are two videos - one showing how to rack and cable your system and one sho
 
 The following video shows how to install and cable your new system.
 
-video::fe034f33-a4bf-4834-9004-ab1f014a2787[panopto, title="Installation and Setup of an AFF C190"]
+video::fe034f33-a4bf-4834-9004-ab1f014a2787[panopto, title="Animation - Install and Setup of an AFF C190"]
 
 == Video two of two: Performing end-to-end software configuration
 
 The following video shows end-to-end software configuration for systems running ONTAP 9.2 and later.
 
-https://www.youtube.com/embed/WAE0afWhj1c?rel=0[NetApp video: Software configuration for vSphere NAS datastores for FAS/AFF systems running ONTAP 9.2^]
+video::WAE0afWhj1c?[youtube]

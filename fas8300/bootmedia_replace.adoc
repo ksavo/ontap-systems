@@ -19,7 +19,7 @@ To access components inside the controller module, you must remove the controlle
 
 You can use the following animation, illustration, or the written steps to remove the controller module from the chassis.
 
-https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=ca74d345-e213-4390-a599-aae10019ec82[Removing the controller module]
+video::ca74d345-e213-4390-a599-aae10019ec82[panopto, title="Animation - Remove the controller module"]
 
 .Steps
 . If you are not already grounded, properly ground yourself.
@@ -64,7 +64,7 @@ NOTE: You must log into the NetApp Support Site to display the _Statement of Vol
 
 You can use the following animation, illustrations, or the written steps to replace the boot media.
 
-https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=e0825a97-c57d-47d7-b87d-aad9012efa12[Replacing the boot media]
+video::e0825a97-c57d-47d7-b87d-aad9012efa12[panopto, title="Animation - Replace the boot media "]
 
 .Steps
 . Open the air duct:

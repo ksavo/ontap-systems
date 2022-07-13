@@ -164,7 +164,9 @@ NOTE: As you insert the connector, you should feel it click into place; if you d
 .Steps
 . Use the animation or the tabulated steps to complete the cabling between the controllers and the switches:
 +
+
 video::edc42447-f721-4cbe-b080-ab0c0123a139[panopto, title="Animation - Cable a two-node switchless cluster"]
+
 +
 [options="header" cols="10,90"]
 |===
@@ -221,7 +223,9 @@ NOTE: As you insert the connector, you should feel it click into place; if you d
 .Steps
 . Use the animation or the tabulated steps to complete the cabling between the controllers and the switches:
 +
+
 video::49e48140-4c5a-4395-a7d7-ab0c0123a10e[panopto, title="Animation - Cable a switched cluster"]
+
 +
 [options="header" cols="10,90"]
 |===
