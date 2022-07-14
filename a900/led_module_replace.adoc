@@ -18,7 +18,7 @@ The LED USB module provides connectivity to console ports and system status. Rep
 . Remove the old LED USB module:
 
 +
-https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=eb715462-cc20-454f-bcf9-adf9016af84e[Animation--Remove/install LED-USB module^]
+video::eb715462-cc20-454f-bcf9-adf9016af84e[panopto, title="Animation - Remove/install LED-USB module"]
 
 +
 

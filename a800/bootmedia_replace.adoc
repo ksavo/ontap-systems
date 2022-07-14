@@ -130,11 +130,16 @@ The replacement boot media that you installed is without a boot image so you nee
  . Download and copy the appropriate service image from the NetApp Support Site to the USB flash drive.
   .. Download the service image to your work space on your laptop.
   .. Unzip the service image.
- +
++
+
 NOTE: If you are extracting the contents using Windows, do not use WinZip to extract the netboot image. Use another extraction tool, such as 7-Zip or WinRAR.
- +
- There are two folders in the unzipped service image file:
- +
+
++
+
+There are two folders in the unzipped service image file:
+
++
+
    *** boot
    *** efi
 
@@ -164,18 +169,18 @@ Risers
 
  . Align the end of the controller module with the opening in the chassis, and then gently push the controller module halfway into the system.
  . Reinstall the cable management device and recable the system, as needed.
- +
- When recabling, remember to reinstall the media converters (SFPs or QSFPs) if they were removed.
++
+When recabling, remember to reinstall the media converters (SFPs or QSFPs) if they were removed.
 
  . Plug the power cable into the power supply and reinstall the power cable retainer.
  . Insert the USB flash drive into the USB slot on the controller module.
- +
- Make sure that you install the USB flash drive in the slot labeled for USB devices, and not in the USB console port.
++
+Make sure that you install the USB flash drive in the slot labeled for USB devices, and not in the USB console port.
 
  . Gently push the controller module all the way into the system until the controller module locking hooks begin to rise, firmly push on the locking hooks to finish seating the controller module, and then swing the locking hooks into the locked position over the pins on the controller module.
- +
- The controller begins to boot as soon as it is completely installed into the chassis.
++
+The controller begins to boot as soon as it is completely installed into the chassis.
 
  . Interrupt the boot process by pressing Ctrl-C to stop at the LOADER prompt.
- +
- If you miss this message, press Ctrl-C, select the option to boot to Maintenance mode, and then halt the controller to boot to LOADER.
++
+If you miss this message, press Ctrl-C, select the option to boot to Maintenance mode, and then halt the controller to boot to LOADER.

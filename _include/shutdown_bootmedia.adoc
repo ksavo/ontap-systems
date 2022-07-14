@@ -23,6 +23,6 @@ When the impaired controller shows Waiting for giveback..., press Ctrl-C, and th
 
 |===
 
-. From the LOADER prompt, enter: `printenv` to capture all boot environmental variables. Save the output to your log file.
+.. From the LOADER prompt, enter: `printenv` to capture all boot environmental variables. Save the output to your log file.
 +
 NOTE: This command may not work if the boot device is corrupted or non-functional.

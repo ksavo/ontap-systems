@@ -45,6 +45,7 @@ a|
 . When prompted to enter the backup data, paste the backup data you captured at the beginning of this section, when asked. Paste the output of `security key-manager backup show` OR `security key-manager onboard show-backup` command.
 +
 NOTE: The data is output from either `security key-manager backup show` or security key-manager onboard show-backup` command.
+
 +
 Example of backup data:
 +
@@ -68,7 +69,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 H4nPQM0nrDRYRa9SCv8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAAAAA
-+
+
 ---------------------------END BACKUP---------------------------
 ====
 

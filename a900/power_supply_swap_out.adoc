@@ -38,7 +38,7 @@ CAUTION:
 +
 When removing a power supply, always use two hands to support its weight.
 +
-https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=6d0eee92-72e2-4da4-a4fa-adf9016b57ff[Animation--Remove/install PSU^]
+video::6d0eee92-72e2-4da4-a4fa-adf9016b57ff[panopto, title="Animation - Remove/install PSU"]
 
 +
 image::../media/drw_9000_remove_install_psu_module.svg[]

@@ -42,8 +42,8 @@ To access components inside the controller, you must first remove the controller
 . Unplug the cables from the impaired controller module, and keep track of where the cables were connected.
 . Slide the terra cotta button on the cam handle downward until it unlocks.
 +
+video::256721fd-4c2e-40b3-841a-adf2000df5fa[panopto, title="Animation - Remove the controller"]
 
-https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=256721fd-4c2e-40b3-841a-adf2000df5fa[Animation--Remove the controller^]
 +
 
 image::../media/drw_a900_remove_PCM.png[]
@@ -84,8 +84,8 @@ To replace the RTC battery, you must locate the failed battery in the controller
 . If you are not already grounded, properly ground yourself.
 . Locate the RTC battery.
 +
+video::1bb4d8d4-5040-471c-9593-adf2000df48d[panopto, title="Animation - Replace RTC battery"]
 
-https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=1bb4d8d4-5040-471c-9593-adf2000df48d[Animation--Replace RTC battery^]
 +
 
 image::../media/drw_a900_remove_RTC_battery.png[]

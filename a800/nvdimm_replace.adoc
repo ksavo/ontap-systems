@@ -57,7 +57,9 @@ Make sure that you support the bottom of the controller module as you slide it o
 
 +
 image::../media/drw_a800_open_air_duct.png[]
+
 +
+
 [cols="1,4"]
 |===
 a|

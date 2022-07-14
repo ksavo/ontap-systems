@@ -181,7 +181,8 @@ NOTE: As you insert the connector, you should feel it click into place; if you d
 
 . Use the animation or illustration to complete the cabling between the controllers and to the switches:
 +
-https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=7a55b98a-e8b8-41d5-821f-ac5b0032ead0[Animation -- Cabling a two-node switchless cluster^]
+video::7a55b98a-e8b8-41d5-821f-ac5b0032ead0[panopto, title="Animation - Cable a two-node switchless cluster"]
+
 +
 
 image::../media/drw_a900_tnsc_network_cabling.png[]
@@ -263,7 +264,8 @@ NOTE: As you insert the connector, you should feel it click into place; if you d
 
 . Use the animation or illustration to complete the cabling between the controllers and to the switches:
 +
-https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=6381b3f1-4ce5-4805-bd0a-ac5b0032f51d[Animation--Cabling a switched cluster^]
+video::6381b3f1-4ce5-4805-bd0a-ac5b0032f51d[panopto, title="Animation - Cable a switched cluster"]
+
 +
 
 image::../media/drw_a900_switched_network_cabling.png[]
@@ -352,11 +354,12 @@ NOTE: As you insert the connector, you should feel it click into place; if you d
 
 . Use the following animation or drawings to cable your controllers to a single NS224 drive shelf.
 +
+video::6520eb01-87b3-4520-9109-ac5b0032ea4e[panopto, title="Animation - Cable a single NS224 shelf"]
 
-https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=6520eb01-87b3-4520-9109-ac5b0032ea4e[Animation--Cabling a single NS224 shelf ^]
 +
 
 image::../media/drw_a900_NS224_one shelf_cabling.png[]
+
 +
 
 [options="header" col="25h,~"]
@@ -413,8 +416,8 @@ NOTE: As you insert the connector, you should feel it click into place; if you d
 . Use the following animation or diagram to cable your controllers to two NS224 drive shelves.
 
 +
+video::34098e39-73ad-45de-9af7-ac5b0032ea9a[panopto, title="Animation - Cable two NS224 shelves"]
 
-https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=34098e39-73ad-45de-9af7-ac5b0032ea9a[Animation--Cabling two NS224 shelves^]
 +
 
 image:../media/drw_a900_NS224_line_art_two shelf_cabling.png[]
@@ -474,7 +477,7 @@ If you have network discovery enabled on your laptop, you can complete system se
 +
 The NS224 shelves are pre-set to shelf ID 00 and 01. If you want to change the shelf IDs, you must create a tool to insert into the hole where button is located.
 +
-https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=95a29da1-faa3-4ceb-8a0b-ac7600675aa6[Animation--Setting SAS or NVMe drive shelf IDs^]
+video::95a29da1-faa3-4ceb-8a0b-ac7600675aa6[panopto, title="Animation - Set SAS or NVMe drive shelf IDs"]
 
 +
 
@@ -511,7 +514,8 @@ shelf to set shelf ID.
 . Plug the power cords into the controller power supplies, and then connect them to power sources on different circuits.
 . Turn on the power switches to both nodes.
 +
-https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=a905e56e-c995-4704-9673-adfa0005a891[Animation--Turn on the power to the controllers^]
+video::a905e56e-c995-4704-9673-adfa0005a891[panopto, title="Animation - Turn on the power to the controllers"]
+
 +
 
 image::../media/drw_a900_power-on.png[]
@@ -525,7 +529,7 @@ See your laptop's online help for more information.
 
 . Use the following animation to connect your laptop to the Management switch.
 +
-https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=d61f983e-f911-4b76-8b3a-ab1b0066909b[Animation--Connecting your laptop to the Management switch^]
+video::d61f983e-f911-4b76-8b3a-ab1b0066909b[panopto, title="Animation - Connect your laptop to the Management switch"]
 
 +
 image::../media/dwr_laptop_to_switch_only.png[]
@@ -585,7 +589,7 @@ image::../media/drw_9000_cable_console_switch_controller.png[]
 
 The NS224 shelves are pre-set to shelf ID 00 and 01. If you want to change the shelf IDs, you must create a tool to insert into the hole where button is located.
 +
-https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=95a29da1-faa3-4ceb-8a0b-ac7600675aa6[Animation--Setting SAS or NVMe drive shelf IDs^]
+video::95a29da1-faa3-4ceb-8a0b-ac7600675aa6[panopto, title="Animation - Set SAS or NVMe drive shelf IDs"]
 
 +
 
@@ -622,8 +626,7 @@ shelf to set shelf ID.
 . Plug the power cords into the controller power supplies, and then connect them to power sources on different circuits.
 . Turn on the power switches to both nodes.
 +
-
-https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=bb04eb23-aa0c-4821-a87d-ab2300477f8b[Animation--Turn on the power to the controllers^]
+video::bb04eb23-aa0c-4821-a87d-ab2300477f8b[panopto, title="Animation - Turn on the power to the controllers"]
 
 image::../media/drw_a900_power-on.png[]
 

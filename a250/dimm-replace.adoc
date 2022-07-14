@@ -72,7 +72,7 @@ To replace a DIMM, you must locate it in the controller module using the DIMM ma
 
 Use the following video or the tabulated steps to replace a DIMM:
 
-video::fa6b8107-86fb-4332-aa57-ac5b01605e52[panopto, title="Replacing a DIMM"]
+video::fa6b8107-86fb-4332-aa57-ac5b01605e52[panopto, title="Animation - Replace a DIMM"]
 
 . Replace the impaired DIMM on your controller module.
 +
