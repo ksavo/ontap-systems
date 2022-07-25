@@ -17,7 +17,7 @@ To replace the chassis, you must remove the controller modules from the old chas
 
 You can use the following video or the tabulated steps to replace the chassis; it assumes the removal and replacement of the bezel:
 
-video::1f859217-fede-491a-896e-ac5b015c1a36[panopto, title="Replacing the chassis"]
+video::1f859217-fede-491a-896e-ac5b015c1a36[panopto, title="Animation - Replace the chassis"]
 
 . If you are not already grounded, properly ground yourself.
 . Unplug the controller module power supplies from the source.

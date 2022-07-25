@@ -32,4 +32,4 @@ When replacing several disk drives, you must wait one minute between the removal
 
 Replace the failed drive by selecting the option appropriate to the drives that your platform supports.
 
-You may also choose to watch the https://www.youtube.com/embed/Ziqg9HL8oYQ?rel=0[Replace failed drive video^] that shows an overview of the embedded drive replacement procedure.
+You may also choose to watch the https://www.youtube.com/embed/Ziqg9HL8oYQ?rel=0[_Replace failed drive video_^] that shows an overview of the embedded drive replacement procedure.

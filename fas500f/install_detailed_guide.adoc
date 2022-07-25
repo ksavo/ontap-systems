@@ -144,7 +144,7 @@ NOTE: As you insert the connector, you should feel it click into place; if you d
 
 Use the animation or the tabulated steps to complete the cabling between the controllers and the switches:
 
-video::beec3966-0a01-473c-a5de-ac68017fbf29[panopto, title="Cable a two-node switchless cluster"]
+video::beec3966-0a01-473c-a5de-ac68017fbf29[panopto, title="Animation - Cable a two-node switchless cluster"]
 
 [options="header" cols="10,90"]
 |===
@@ -188,7 +188,8 @@ image::../media/oie_cable_pull_tab_down.png[]
 NOTE: As you insert the connector, you should feel it click into place; if you do not feel it click, remove it, turn it around and try again.
 
 Use the animation or the tabulated steps to complete the cabling between the controllers and the switches:
-video::bf6759dc-4cbf-488e-982e-ac68017fbef8[panopto, title="Cabling a switched cluster"]
+
+video::bf6759dc-4cbf-488e-982e-ac68017fbef8[panopto, title="Animation - Cable a switched cluster"]
 
 [options="header" cols="10,90"]
 |===
@@ -233,7 +234,7 @@ image::../media/oie_cable_pull_tab_up.png[]
 
 NOTE: As you insert the connector, you should feel it click into place; if you do not feel it click, remove it, turn it around and try again.
 
-+
+
 [options="header" cols="10,90"]
 |===
 | Step| Perform on each controller module
@@ -309,7 +310,7 @@ NOTE: As you insert the connector, you should feel it click into place; if you d
 
 Use the animation or the tabulated steps to complete the cabling between the controllers and the single shelf:
 
-video::3f92e625-a19c-4d10-9028-ac68017fbf57[panopto, title="Cabling the controllers to a single NS224"]
+video::3f92e625-a19c-4d10-9028-ac68017fbf57[panopto, title="Animation - Cable the controllers to a single NS224"]
 
 [options="header" cols="10,90"]
 |===
@@ -343,7 +344,7 @@ See your laptop's online help for more information.
 
 . Use the animation to connect your laptop to the Management switch:
 +
-video::d61f983e-f911-4b76-8b3a-ab1b0066909b[panopto, title="Connecting your laptop to the Management switch"]
+video::d61f983e-f911-4b76-8b3a-ab1b0066909b[panopto, title="Animation - Connect your laptop to the Management switch"]
 
 . Select an ONTAP icon listed to discover:
 +

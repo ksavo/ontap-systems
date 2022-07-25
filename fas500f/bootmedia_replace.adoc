@@ -64,7 +64,7 @@ You need a #1 magnetic Phillips head screwdriver to remove the screw that holds 
 
 You can use the following video or the tabulated steps to replace the boot media:
 
-video::7c2cad51-dd95-4b07-a903-ac5b015c1a6d[panopto, title="Replacing the boot media"]
+video::7c2cad51-dd95-4b07-a903-ac5b015c1a6d[panopto, title="Animation - Replace the boot media"]
 
 . Locate and replace the impaired boot media from the controller module.
 +

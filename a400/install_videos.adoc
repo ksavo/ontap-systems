@@ -21,4 +21,4 @@ video::6cbbcb96-fe92-4040-a004-ab2001624dd7[panopto, title="Animation - AFF A400
 
 The following video shows end-to-end software configuration for systems running ONTAP 9.2 and later.
 
-video::WAE0afWhj1c?rel=0[youtube]
+video::WAE0afWhj1c?[youtube]

@@ -455,10 +455,10 @@ Otherwise, you are done with this procedure.
 +
 <<Complete the hot-add>>
 
-=== Cable a hot-add shelf for a FAS500f, AFF A250, or ASA A250HA pair
+=== Cable a hot-add shelf for a FAS500f or AFF A250 HA pair
 
 [.lead]
-When additional storage is needed, you can hot-add an NS224 drive shelf to a FAS500f, AFF A250, or ASA A250HA pair.
+When additional storage is needed, you can hot-add an NS224 drive shelf to a FAS500f or AFF A250 HA pair.
 
 .Before you begin
 

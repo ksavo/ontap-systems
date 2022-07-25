@@ -12,4 +12,4 @@ summary: All SAN array systems use the same documentation as the AFF systems.
 [.lead]
 You can use the AFF documentation with your ASA system. The information for AFF models applies to the corresponding ASA system. For example, all cabling and other information for the AFF A400 system also applies to the ASA AFF A400 system.
 
-https://docs.netapp.com/us-en/ontap/task_asa_software_configuration.html[All SAN Array Software Configuration]
+https://docs.netapp.com/us-en/ontap/task_asa_software_configuration.html[All SAN Array Software Configuration^]

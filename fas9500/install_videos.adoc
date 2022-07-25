@@ -15,7 +15,7 @@ There are two videos - one showing how to rack and cable your system and one sho
 
 The following video shows how to install and cable your new system.
 
-video::ab450621-9e1c-44a7-befa-ae7c01708d9e[panopto, title="Animation - FAS9500 installation and setup instructions (ISI)"]
+video::ab450621-9e1c-44a7-befa-ae7c01708d9e[panopto, title="Animation - FAS9500 install and setup instructions (ISI)"]
 
 == Video two of two: Performing end-to-end software configuration
 

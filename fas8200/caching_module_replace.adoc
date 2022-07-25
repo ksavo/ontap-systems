@@ -13,10 +13,11 @@ summary: "You must replace the caching module in the controller module when your
 You must replace the caching module in the controller module when your system registers a single AutoSupport (ASUP) message that the module has gone offline; failure to do so results in performance degradation.
 
 You might want to erase the contents of your caching module before replacing it.
-. Although data on the caching module is encrypted, you might want to erase any data from the impaired caching module and verify that the caching module has no data:
- .. Erase the data on the caching module: `system controller flash-cache secure-erase run`
- .. Verify that the data has been erased from the caching module: `system controller flash-cache secure-erase show -node node_name`
-+
+
+* Although data on the caching module is encrypted, you might want to erase any data from the impaired caching module and verify that the caching module has no data:
+* Erase the data on the caching module: `system controller flash-cache secure-erase run`
+* Verify that the data has been erased from the caching module: `system controller flash-cache secure-erase show -node node_name`
+
 The output should display the caching module status as erased.
 
 * You must replace the failed component with a replacement FRU component you received from your provider.

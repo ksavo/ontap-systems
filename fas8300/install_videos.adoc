@@ -15,10 +15,10 @@ There are two videos; one showing how to rack and cable your system and one show
 
 The following video shows how to install and cable your new system.
 
-https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=05d5d8a7-4753-4546-9ddb-ab2001624e04[FAS8300 and FAS8700 Installation and setup instructions] 
+video::05d5d8a7-4753-4546-9ddb-ab2001624e04[panopto, title="Animation - FAS8300 and FAS8700 Install and setup instructions"]
 
 == Video two of two: Performing end-to-end software configuration
 
 The following video shows end-to-end software configuration for systems running ONTAP 9.2 and later.
 
-https://www.youtube.com/embed/WAE0afWhj1c?rel=0[NetApp video: Software configuration for vSphere NAS datastores for FAS/AFF systems running ONTAP 9.2]
+video::WAE0afWhj1c?[youtube]

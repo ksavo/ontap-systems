@@ -15,10 +15,10 @@ There are two videos; one showing how to rack and cable your system and one show
 
 The following video shows how to install and cable your new system.
 
-https://netapp.hosted.panopto.com/Panopto/Pages/embed.aspx?id=b46575d4-0475-48bd-8772-ac5d012a4e06[Installation and setup of an AFF A700 or FAS9000]
+video::b46575d4-0475-48bd-8772-ac5d012a4e06[panopto, title="Animation - Install and setup of an AFF A700 or FAS9000"]
 
 == Video two of two: Performing end-to-end software configuration
 
 The following video shows end-to-end software configuration for systems running ONTAP 9.2 and later.
 
-https://www.youtube.com/embed/WAE0afWhj1c?rel=0[NetApp video: Software configuration for vSphere NAS datastores for FAS/AFF systems running ONTAP 9.2]
+video::WAE0afWhj1c?[youtube]
