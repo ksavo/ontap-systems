@@ -5486,7 +5486,7 @@
       </a></li></ul></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/fas2600/dimm-replace.html">
         DIMM
       </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/fas2600/drive-replace.html">
-        DIMM
+        Drive
       </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/fas2600/nvmem-nvram-battery-replace.html">
         NVMEM battery
       </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/fas2600/power-supply-swap-out.html">
@@ -6234,9 +6234,6 @@
 <ol class="arabic">
 <li>
 <p>Display the key IDs of the authentication keys that are stored on the key management servers: <code>security key-manager key-query</code></p>
-</li>
-</ol>
-</div>
 <div class="admonitionblock note">
 <table>
 <tr>
@@ -6262,8 +6259,10 @@ After the ONTAP 9.6 release, you may have additional key manager types.  The typ
 </li>
 <li>
 <p>If the <code>Key Manager</code> type displays <code>onboard</code> and the <code>Restored</code> column displays anything other than <code>yes</code>, you need to complete some additional steps.</p>
-<div class="olist arabic">
-<ol class="arabic">
+</li>
+</ul>
+</div>
+</li>
 <li>
 <p>If the <code>Key Manager</code> type displays <code>onboard</code> and the <code>Restored</code> column displays <code>yes</code>, manually back up the OKM information:</p>
 <div class="olist loweralpha">
@@ -6353,9 +6352,6 @@ Enter the customer&#8217;s onboard key management passphrase at the prompt. If t
 </li>
 </ol>
 </div>
-</li>
-</ul>
-</div>
 </div>
 <div class="sect2">
 <h3 id="verify-nse-configuration">Verify NSE configuration</h3>
@@ -6363,9 +6359,6 @@ Enter the customer&#8217;s onboard key management passphrase at the prompt. If t
 <ol class="arabic">
 <li>
 <p>Display the key IDs of the authentication keys that are stored on the key management servers: <code>security key-manager key-query -key-type NSE-AK</code></p>
-</li>
-</ol>
-</div>
 <div class="admonitionblock note">
 <table>
 <tr>
@@ -6391,8 +6384,10 @@ After the ONTAP 9.6 release, you may have additional key manager types.  The typ
 </li>
 <li>
 <p>If the <code>Key Manager</code> type displays <code>external</code> and the <code>Restored</code> column displays anything other than <code>yes</code>, you need to complete some additional steps.</p>
-<div class="olist arabic">
-<ol class="arabic">
+</li>
+</ul>
+</div>
+</li>
 <li>
 <p>If the <code>Key Manager</code> type displays <code>onboard</code> and the <code>Restored</code> column displays <code>yes</code>, manually back up the OKM information:</p>
 <div class="olist loweralpha">
@@ -6475,9 +6470,6 @@ After the ONTAP 9.6 release, you may have additional key manager types.  The typ
 </div>
 </li>
 </ol>
-</div>
-</li>
-</ul>
 </div>
 </div>
 </div>

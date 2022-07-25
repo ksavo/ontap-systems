@@ -5486,7 +5486,7 @@
       </a></li></ul></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/fas2600/dimm-replace.html">
         DIMM
       </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/fas2600/drive-replace.html">
-        DIMM
+        Drive
       </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/fas2600/nvmem-nvram-battery-replace.html">
         NVMEM battery
       </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/fas2600/power-supply-swap-out.html">
@@ -6109,7 +6109,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-05-16 23:46:59 +0000">05/16/2022</time>
+    <time datetime="2022-07-12 13:13:38 +0000">07/12/2022</time>
     
   
 
@@ -6149,14 +6149,23 @@
 <p>You must replace the caching module in the controller module when your system registers a single AutoSupport (ASUP) message that the module has gone offline; failure to do so results in performance degradation.</p>
 </div>
 <div class="paragraph">
-<p>You might want to erase the contents of your caching module before replacing it.
-. Although data on the caching module is encrypted, you might want to erase any data from the impaired caching module and verify that the caching module has no data:
- .. Erase the data on the caching module: <code>system controller flash-cache secure-erase run</code>
- .. Verify that the data has been erased from the caching module: <code>system controller flash-cache secure-erase show -node node_name</code></p>
+<p>You might want to erase the contents of your caching module before replacing it.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Although data on the caching module is encrypted, you might want to erase any data from the impaired caching module and verify that the caching module has no data:</p>
+</li>
+<li>
+<p>Erase the data on the caching module: <code>system controller flash-cache secure-erase run</code></p>
+</li>
+<li>
+<p>Verify that the data has been erased from the caching module: <code>system controller flash-cache secure-erase show -node node_name</code></p>
+</li>
+</ul>
 </div>
 <div class="paragraph">
-<p>+
-The output should display the caching module status as erased.</p>
+<p>The output should display the caching module status as erased.</p>
 </div>
 <div class="ulist">
 <ul>

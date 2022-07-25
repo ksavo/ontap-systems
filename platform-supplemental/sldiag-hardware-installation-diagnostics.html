@@ -5486,7 +5486,7 @@
       </a></li></ul></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/fas2600/dimm-replace.html">
         DIMM
       </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/fas2600/drive-replace.html">
-        DIMM
+        Drive
       </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/fas2600/nvmem-nvram-battery-replace.html">
         NVMEM battery
       </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/fas2600/power-supply-swap-out.html">
@@ -6109,7 +6109,7 @@
 <p class="page-details">
   
     
-    <time datetime="2021-10-21 00:40:57 +0000">10/21/2021</time>
+    <time datetime="2022-07-12 11:50:11 +0000">07/12/2022</time>
     
   
 
@@ -6323,31 +6323,31 @@ TEST END --------------------------------------------</pre>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
 <p>There are no hardware problems and your storage system returns to the prompt.</p>
 </div>
-<div class="olist loweralpha">
-<ol class="loweralpha" type="a">
+<div class="olist arabic">
+<ol class="arabic">
 <li>
-<p>Clear the status logs by entering the following command: `sldiag device clearstatus [-dev devtype</p>
+<p>Clear the status logs by entering the following command: <code>sldiag device clearstatus [-dev <em>devtype</em>|mb|slotslotnum]</code></p>
+</li>
+<li>
+<p>Verify that the log is cleared by entering the following command: <code>sldiag device status [-dev <em>devtype</em>|mb|slotslotnum]</code></p>
+<div class="paragraph">
+<p>The following default response is displayed:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>SLDIAG: No log messages are present.</pre>
+</div>
+</div>
+</li>
+<li>
+<p>Exit Maintenance mode by entering the following command: <code>halt</code></p>
+</li>
+<li>
+<p>Enter the following command at the Loader prompt to boot the storage system: <code>boot_ontap</code>
+You have completed system-level diagnostics.</p>
 </li>
 </ol>
 </div></div></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">mb</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">slotslotnum]`
- .. Verify that the log is cleared by entering the following command: `sldiag device status [-dev devtype</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">mb</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">slotslotnum]`
-+
-The following default response is displayed:
-+
-----
-SLDIAG: No log messages are present.
-----</p>
-<p class="tableblock"> .. Exit Maintenance mode by entering the following command: <code>halt</code>
- .. Enter the following command at the Loader prompt to boot the storage system: <code>boot_ontap</code>
-You have completed system-level diagnostics.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
@@ -6356,8 +6356,8 @@ You have completed system-level diagnostics.</p></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
 <p>Determine the cause of the problem.</p>
 </div>
-<div class="olist loweralpha">
-<ol class="loweralpha" type="a">
+<div class="olist arabic">
+<ol class="arabic">
 <li>
 <p>Exit Maintenance mode by entering the following command: <code>halt</code></p>
 </li>
@@ -6369,9 +6369,6 @@ You have completed system-level diagnostics.</p></td>
 </li>
 <li>
 <p>Reconnect the power supplies and power on the storage system.</p>
-</li>
-<li>
-<p>Repeat Steps 1 through 6 of <em>Running hardware installation diagnostics</em>.</p>
 </li>
 </ol>
 </div></div></td>

@@ -5486,7 +5486,7 @@
       </a></li></ul></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/fas2600/dimm-replace.html">
         DIMM
       </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/fas2600/drive-replace.html">
-        DIMM
+        Drive
       </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/fas2600/nvmem-nvram-battery-replace.html">
         NVMEM battery
       </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/fas2600/power-supply-swap-out.html">
@@ -6109,7 +6109,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-03-08 00:47:32 +0000">03/08/2022</time>
+    <time datetime="2022-07-01 10:37:05 +0000">07/01/2022</time>
     
   
 
@@ -6442,12 +6442,22 @@
 <p>Download the service image to your work space on your laptop.</p>
 </li>
 <li>
-<p>Unzip the service image.
-<br>
-NOTE: If you are extracting the contents using Windows, do not use WinZip to extract the netboot image. Use another extraction tool, such as 7-Zip or WinRAR.
-<br>
- There are two folders in the unzipped service image file:
-<br></p>
+<p>Unzip the service image.</p>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<img src="/us-en/ontap-systems/images/note.svg" alt="Note">
+</td>
+<td class="content">
+If you are extracting the contents using Windows, do not use WinZip to extract the netboot image. Use another extraction tool, such as 7-Zip or WinRAR.
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>There are two folders in the unzipped service image file:</p>
+</div>
 <div class="ulist">
 <ul>
 <li>
@@ -6519,27 +6529,31 @@ The USB flash drive should have the efi folder and the same Service Image (BIOS)
 <p>Align the end of the controller module with the opening in the chassis, and then gently push the controller module halfway into the system.</p>
 </li>
 <li>
-<p>Reinstall the cable management device and recable the system, as needed.
-+
-When recabling, remember to reinstall the media converters (SFPs or QSFPs) if they were removed.</p>
+<p>Reinstall the cable management device and recable the system, as needed.</p>
+<div class="paragraph">
+<p>When recabling, remember to reinstall the media converters (SFPs or QSFPs) if they were removed.</p>
+</div>
 </li>
 <li>
 <p>Plug the power cable into the power supply and reinstall the power cable retainer.</p>
 </li>
 <li>
-<p>Insert the USB flash drive into the USB slot on the controller module.
-+
-Make sure that you install the USB flash drive in the slot labeled for USB devices, and not in the USB console port.</p>
+<p>Insert the USB flash drive into the USB slot on the controller module.</p>
+<div class="paragraph">
+<p>Make sure that you install the USB flash drive in the slot labeled for USB devices, and not in the USB console port.</p>
+</div>
 </li>
 <li>
-<p>Gently push the controller module all the way into the system until the controller module locking hooks begin to rise, firmly push on the locking hooks to finish seating the controller module, and then swing the locking hooks into the locked position over the pins on the controller module.
-+
-The controller begins to boot as soon as it is completely installed into the chassis.</p>
+<p>Gently push the controller module all the way into the system until the controller module locking hooks begin to rise, firmly push on the locking hooks to finish seating the controller module, and then swing the locking hooks into the locked position over the pins on the controller module.</p>
+<div class="paragraph">
+<p>The controller begins to boot as soon as it is completely installed into the chassis.</p>
+</div>
 </li>
 <li>
-<p>Interrupt the boot process by pressing Ctrl-C to stop at the LOADER prompt.
-+
-If you miss this message, press Ctrl-C, select the option to boot to Maintenance mode, and then halt the controller to boot to LOADER.</p>
+<p>Interrupt the boot process by pressing Ctrl-C to stop at the LOADER prompt.</p>
+<div class="paragraph">
+<p>If you miss this message, press Ctrl-C, select the option to boot to Maintenance mode, and then halt the controller to boot to LOADER.</p>
+</div>
 </li>
 </ol>
 </div>

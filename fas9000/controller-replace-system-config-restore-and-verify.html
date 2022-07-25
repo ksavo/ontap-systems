@@ -5488,7 +5488,7 @@
       </a></li></ul></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/fas2600/dimm-replace.html">
         DIMM
       </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/fas2600/drive-replace.html">
-        DIMM
+        Drive
       </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/fas2600/nvmem-nvram-battery-replace.html">
         NVMEM battery
       </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/ontap-systems/fas2600/power-supply-swap-out.html">
@@ -6111,7 +6111,7 @@
 <p class="page-details">
   
     
-    <time datetime="2021-10-29 22:25:03 +0000">10/29/2021</time>
+    <time datetime="2022-07-12 06:21:29 +0000">07/12/2022</time>
     
   
 
@@ -6342,9 +6342,10 @@
 </div>
 </li>
 <li>
-<p>Examine the output and, if applicable, select only the tests that you want to run: <code>sldiag device modify -dev <em>dev_name</em> -selection only</code>
-<code>+
-`-selection only</code> disables all other tests that you do not want to run for the device.</p>
+<p>Examine the output and, if applicable, select only the tests that you want to run: <code>sldiag device modify -dev <em>dev_name</em> -selection only</code></p>
+<div class="paragraph">
+<p><code>-selection only</code> disables all other tests that you do not want to run for the device.</p>
+</div>
 </li>
 <li>
 <p>Run the selected tests: <code>sldiag device run -dev <em>dev_name</em></code></p>
