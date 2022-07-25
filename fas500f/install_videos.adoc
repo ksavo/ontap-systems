@@ -15,10 +15,10 @@ There are two videos - one showing how to rack and cable your system and one sho
 
 The following video shows how to install and cable your new system.
 
-video::1f975061-b285-411b-b2d7-ac680185a0d1[panopto, title="Installation and Setup of a FAS500f"]
+video::1f975061-b285-411b-b2d7-ac680185a0d1[panopto, title="Animation - Install and Setup of a FAS500f"]
 
 == Video two of two: Performing end-to-end software configuration
 
 The following video shows end-to-end software configuration for systems running ONTAP 9.2 and later.
 
-https://www.youtube.com/embed/WAE0afWhj1c?rel=0[NetApp video: Software configuration for vSphere NAS datastores for FAS/AFF systems running ONTAP 9.2^]
+video::WAE0afWhj1c?[youtube]

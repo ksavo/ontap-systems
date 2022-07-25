@@ -93,7 +93,7 @@ a|
 +
 `*sldiag device modify -dev _dev_name_ -selection only*`
 +
--selection only disables all other tests that you do not want to run for the device.
+``-selection only` disables all other tests that you do not want to run for the device.
 
  .. Run the selected tests:
 +

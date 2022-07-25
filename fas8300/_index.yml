@@ -8,7 +8,7 @@ indexpage:
         - title: What's new
           url: ../whats-new.html
         - title: System data sheet
-          url: https://www.netapp.com/pdf.html?item=/media/7828-ds-3582.pdf
+          url: https://hwu.netapp.com/ProductSpecs/Index
         - title: Storage data sheet
           url: https://www.netapp.com/data-storage/disk-shelves-storage-media/
         - title: TR-4539-NetApp All Flash FAS solution for VMware Horizon View

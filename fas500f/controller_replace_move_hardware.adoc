@@ -20,7 +20,7 @@ Make sure that you label the cables so that you know where they came from.
 
 You can use the following video or the tabulated steps to replace a controller module:
 
-video::ab0ebe6b-e891-489c-aab4-ac5b015c8f01[panopto, title="Replacing a controller module"]
+video::ab0ebe6b-e891-489c-aab4-ac5b015c8f01[panopto, title="Animation - Replace a controller module"]
 
 . If you are not already grounded, properly ground yourself.
 . Unplug the controller module power supplies from the source.
@@ -142,9 +142,8 @@ NOTE: Do not apply force when tightening the screw on the boot media; you might 
 [.lead]
 To move the DIMMs, locate and move them from the impaired controller into the replacement controller and follow the specific sequence of steps.
 
-+
 image::../media/drw_a250_dimm_replace.png[]
-+
+
 IMPORTANT: Install each DIMM into the same slot it occupied in the impaired controller module.
 
 . Slowly push apart the DIMM ejector tabs on either side of the DIMM, and slide the DIMM out of the slot.

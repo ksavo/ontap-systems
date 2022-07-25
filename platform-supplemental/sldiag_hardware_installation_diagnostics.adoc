@@ -114,8 +114,9 @@ Were completed without any failures
 a|
 There are no hardware problems and your storage system returns to the prompt.
 
- .. Clear the status logs by entering the following command: `sldiag device clearstatus [-dev devtype|mb|slotslotnum]`
- .. Verify that the log is cleared by entering the following command: `sldiag device status [-dev devtype|mb|slotslotnum]`
+. Clear the status logs by entering the following command: `sldiag device clearstatus [-dev _devtype_\|mb\|slotslotnum]`
+
+. Verify that the log is cleared by entering the following command: `sldiag device status [-dev _devtype_\|mb\|slotslotnum]`
 +
 The following default response is displayed:
 +
@@ -123,8 +124,8 @@ The following default response is displayed:
 SLDIAG: No log messages are present.
 ----
 
- .. Exit Maintenance mode by entering the following command: `halt`
- .. Enter the following command at the Loader prompt to boot the storage system: `boot_ontap`
+ . Exit Maintenance mode by entering the following command: `halt`
+ . Enter the following command at the Loader prompt to boot the storage system: `boot_ontap`
 You have completed system-level diagnostics.
 
 a|
@@ -132,11 +133,10 @@ Resulted in some test failures
 a|
 Determine the cause of the problem.
 
- .. Exit Maintenance mode by entering the following command: `halt`
- .. Perform a clean shutdown and disconnect the power supplies.
- .. Verify that you have observed all the considerations identified for running system-level diagnostics, that cables are securely connected, and that hardware components are properly installed in the storage system.
- .. Reconnect the power supplies and power on the storage system.
- .. Repeat Steps 1 through 6 of _Running hardware installation diagnostics_.
+ . Exit Maintenance mode by entering the following command: `halt`
+ . Perform a clean shutdown and disconnect the power supplies.
+ . Verify that you have observed all the considerations identified for running system-level diagnostics, that cables are securely connected, and that hardware components are properly installed in the storage system.
+ . Reconnect the power supplies and power on the storage system.
 
 +
 |===

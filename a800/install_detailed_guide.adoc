@@ -164,7 +164,9 @@ NOTE: As you insert the connector, you should feel it click into place; if you d
 .Steps
 . Use the animation or the tabulated steps to complete the cabling between the controllers and the switches:
 +
-video::edc42447-f721-4cbe-b080-ab0c0123a139[panopto, title="Cable a two-node switchless cluster"]
+
+video::edc42447-f721-4cbe-b080-ab0c0123a139[panopto, title="Animation - Cable a two-node switchless cluster"]
+
 +
 [options="header" cols="10,90"]
 |===
@@ -221,7 +223,9 @@ NOTE: As you insert the connector, you should feel it click into place; if you d
 .Steps
 . Use the animation or the tabulated steps to complete the cabling between the controllers and the switches:
 +
-video::49e48140-4c5a-4395-a7d7-ab0c0123a10e[panopto, title="Cabling a switched cluster"]
+
+video::49e48140-4c5a-4395-a7d7-ab0c0123a10e[panopto, title="Animation - Cable a switched cluster"]
+
 +
 [options="header" cols="10,90"]
 |===
@@ -350,8 +354,9 @@ NOTE: As you insert the connector, you should feel it click into place; if you d
 
 Use the animation or the tabulated steps to cable your controllers to a single shelf:
 
-video::09dade4f-00bd-4d41-97d7-ab0c0123a0b4[panopto, title="Cabling the controllers to a single drive shelf"]
-+
+video::09dade4f-00bd-4d41-97d7-ab0c0123a0b4[panopto, title="Animation - Cable the controllers to a single drive shelf"]
+
+
 [options="header" cols="10,90"]
 |===
 | Step| Perform on each controller module
@@ -380,8 +385,8 @@ NOTE: As you insert the connector, you should feel it click into place; if you d
 
 Use the animation or the tabulated steps to cable your controllers to two drive shelves:
 
-video::fe50ac38-9375-4e6b-85af-ab0c0123a0e0[panopto, title="Cabling the controllers to two drive shelves"]
-+
+video::fe50ac38-9375-4e6b-85af-ab0c0123a0e0[panopto, title="Animation - Cable the controllers to two drive shelves"]
+
 [options="header" cols="10,90"]
 |===
 | Step| Perform on each controller module
@@ -416,7 +421,7 @@ See your laptop's online help for more information.
 
 . Use the animation to connect your laptop to the Management switch:
 +
-video::d61f983e-f911-4b76-8b3a-ab1b0066909b[panopto, title="Connecting your laptop to the Management switch"]
+video::d61f983e-f911-4b76-8b3a-ab1b0066909b[panopto, title="Animation - Connect your laptop to the Management switch"]
 
 . Select an ONTAP icon listed to discover:
 +

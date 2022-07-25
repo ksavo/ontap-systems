@@ -27,7 +27,7 @@ Removing the power supplies when replacing a chassis involves turning off, disco
 NOTE: When removing a power supply, always use two hands to support its weight.
 
 +
-https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=6d0eee92-72e2-4da4-a4fa-adf9016b57ff[Animation -- Remove/install PSU^]
+video::6d0eee92-72e2-4da4-a4fa-adf9016b57ff[panopto, title="Animation - Remove/install PSU"]
 
 +
 image::../media/drw_a900_remove_install_PSU_module.png[]
@@ -52,9 +52,9 @@ To remove the fan modules when replacing the chassis, you must perform a specifi
 . Press the terra cotta button on the fan module and pull the fan module straight out of the chassis, making sure that you support it with your free hand.
 +
 NOTE: The fan modules are short. Always support the bottom of the fan module with your free hand so that it does not suddenly drop free from the chassis and injure you.
-+
 
-https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=3c3c8d93-b48e-4554-87c8-adf9016af819[Animation -- Remove/install fan^]
++
+video::3c3c8d93-b48e-4554-87c8-adf9016af819[panopto, title="Animation - Remove/install fan"]
 
 +
 image::../media/drw_a900_remove_install_fan.png[]
@@ -83,7 +83,8 @@ To replace the chassis, you must remove the controller module or modules from th
 . Slide the terra cotta button on the cam handle downward until it unlocks.
 +
 
-https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=256721fd-4c2e-40b3-841a-adf2000df5fa[Animation -- Remove the controller^]
+video::256721fd-4c2e-40b3-841a-adf2000df5fa[panopto, title="Animation - Remove the controller"]
+
 +
 image::../media/drw_a900_remove_PCM.png[]
 +
@@ -127,11 +128,13 @@ The I/O module disengages from the chassis and moves about 1/2 inch out of the I
 +
 Make sure that you keep track of which slot the I/O module was in.
 +
+video::3a5b1f6e-15ec-40b4-bb2a-adf9016af7b6[panopto, title="Animation - Remove/install I/O module"]
 
-https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=3a5b1f6e-15ec-40b4-bb2a-adf9016af7b6[Animation -- Remove/install I/O module^]
 +
 image:../media/drw_a900_remove_PCIe_module.png[]
+
 +
+
 [cols="10,90"]
 |===
 a|
@@ -155,7 +158,8 @@ You must remove the de-stage controller power modules from the old chassis in pr
 . Press the terra cotta locking button on the module handle, and then slide the DCPM module out of the chassis.
 +
 
-https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=ade18276-5dbc-4b91-9a0e-adf9016b4e55[Animation -- Remove/install DCPM^]
+video::ade18276-5dbc-4b91-9a0e-adf9016b4e55[panopto, title="Animation - Remove/install DCPM"]
+
 +
 image::../media/drw_a900_remove_NV_battery.png[]
 +
@@ -192,7 +196,7 @@ NOTE: If the system is in a system cabinet, you might need to remove the rear ti
 [.lead]
 Once the new chassis is installed into the rack or cabinet, you must move the USB LED module from the old chassis to the new chassis.
 
-https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=eb715462-cc20-454f-bcf9-adf9016af84e[Animation -- Remove/install USB^]
+video::eb715462-cc20-454f-bcf9-adf9016af84e[panopto, title="Animation - Remove/install USB"]
 
 image::../media/drw_a900_remove_replace_LED_mod.png[]
 

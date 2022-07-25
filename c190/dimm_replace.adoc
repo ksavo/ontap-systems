@@ -182,8 +182,8 @@ a|
 A stand-alone configuration
 a|
 Proceed to the next step.         No action is required.
-+
- You have completed system-level diagnostics.
+
+You have completed system-level diagnostics.
 
 a|
 Resulted in some test failures

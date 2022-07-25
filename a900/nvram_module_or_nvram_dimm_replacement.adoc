@@ -64,11 +64,12 @@ The NVRAM module disengages from the chassis and moves out a few inches.
 
  .. Remove the NVRAM module from the chassis by pulling on the pull tabs on the sides of the module face.
 +
+video::6eb2d864-9d35-4a23-b6c2-adf9016b359f[panopto, title="Animation - Replace the NVRAM module"]
 
-https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=6eb2d864-9d35-4a23-b6c2-adf9016b359f[Animation--Replace the NVRAM module^]
 +
 
 image::../media/drw_a900_move-remove_NVRAM_module.png[]
+
 +
 [cols="10,90"]
 |===
@@ -121,13 +122,13 @@ The NVRAM module disengages from the chassis and moves out a few inches.
 
  .. Remove the NVRAM module from the chassis by pulling on the pull tabs on the sides of the module face.
 +
+video::0ae4e603-c22b-4930-8070-adf2000e38b5[panopto, title="Animation - Replace NVRAM DIMM"]
 
-https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=0ae4e603-c22b-4930-8070-adf2000e38b5[Animation--Replace NVRAM DIMM^]
 +
 
 image::../media/drw_a900_move-remove_NVRAM_module.png[]
-+
 
++
 [cols="10,90"]
 |===
 a|
