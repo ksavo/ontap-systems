@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: aff a700s, move the controller module hardware
 summary: "To replace a controller module, you must remove the impaired controller, move FRU components to the replacement controller module, install the replacement controller module in the chassis, and then boot the system to Maintenance mode."
 ---
-= Replace the ontroller module hardware - AFF A700s
+= Replace the controller module hardware - AFF A700s
 :icons: font
 :imagesdir: ../media/
 
