@@ -12,7 +12,7 @@ summary: 'Install and set up your system.'
 For most configurations, you can choose from different content formats.
 
 * link:https://library.netapp.com/ecm/ecm_download_file/ECMLP2316769[Quick steps]
-//updated ECM number
+//2022-05-12 updated ECM number
 +
 A printable PDF of step-by-step instructions with live links to additional content.
 
