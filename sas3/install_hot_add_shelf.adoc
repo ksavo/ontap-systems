@@ -242,14 +242,14 @@ The shelf ID blinks and the operator display panel amber LED blinks until you po
 
  .. Repeat substeps a through d for each disk shelf you are hot-adding.
 
-== Cabling disk shelves with IOM12/IOM12B modules for a hot-add
+== Cable disk shelves with IOM12/IOM12B modules for a hot-add
 
 [.lead]
 You cable the SAS connections--shelf-to-shelf and controller-to-stack--as applicable for hot-added disk shelves so they have connectivity to the system.
 
 .Before you begin
 
-You must have met the requirements in link:install-hot-add-shelf.html#requirements-for-hot-adding-disk-shelves-with-iom12iom12b-modules[Requirements for hot-adding disk shelves with IOM12 modules] and installed, powered on, and set shelf IDs for each disk shelf as instructed in link:install-hot-add-shelf.html#installing-disk-shelves-with-iom12iom12b-modules-for-a-hot-add[install disk shelves with IOM12 modules for a hot-add].
+You must have met the requirements in link:install-hot-add-shelf.html#requirements-for-hot-adding-disk-shelves-with-iom12iom12b-modules[Requirements for hot-adding disk shelves with IOM12 modules] and installed, powered on, and set shelf IDs for each disk shelf as instructed in link:install-hot-add-shelf.html#install-disk-shelves-with-iom12iom12b-modules-for-a-hot-add[Install disk shelves with IOM12 modules for a hot-add].
 
 .About this task
 
