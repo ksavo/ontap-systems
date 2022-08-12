@@ -138,7 +138,7 @@ NOTE: Keep disk drives in their ESD bag until you are ready to install them.
 +
 If a wrist strap is unavailable, touch an unpainted surface on your storage enclosure chassis before handling the disk drive.
 
-== Installing disk shelves with IOM12/IOM12B modules for a hot-add
+== Install disk shelves with IOM12/IOM12B modules for a hot-add
 
 [.lead]
 For each disk shelf you are hot-adding, you install the disk shelf into a rack, connect the power cords, power on the disk shelf, and set the disk shelf ID before cabling the SAS connections.
@@ -242,14 +242,14 @@ The shelf ID blinks and the operator display panel amber LED blinks until you po
 
  .. Repeat substeps a through d for each disk shelf you are hot-adding.
 
-== Cabling disk shelves with IOM12/IOM12B modules for a hot-add
+== Cable disk shelves with IOM12/IOM12B modules for a hot-add
 
 [.lead]
 You cable the SAS connections--shelf-to-shelf and controller-to-stack--as applicable for hot-added disk shelves so they have connectivity to the system.
 
 .Before you begin
 
-You must have met the requirements in <<Requirements for hot-adding disk shelves with IOM12 modules>> and installed, powered on, and set shelf IDs for each disk shelf as instructed in <<Installing disk shelves with IOM12 modules for a hot-add>>.
+You must have met the requirements in link:install-hot-add-shelf.html#requirements-for-hot-adding-disk-shelves-with-iom12iom12b-modules[Requirements for hot-adding disk shelves with IOM12 modules] and installed, powered on, and set shelf IDs for each disk shelf as instructed in link:install-hot-add-shelf.html#install-disk-shelves-with-iom12iom12b-modules-for-a-hot-add[Install disk shelves with IOM12 modules for a hot-add].
 
 .About this task
 
