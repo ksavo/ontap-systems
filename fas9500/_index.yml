@@ -76,6 +76,8 @@ indexpage:
           url: https://docs.netapp.com/us-en/ontap/
         - title: NetApp Hardware Universe
           url: https://hwu.netapp.com/home/index
+        - title: NetApp Active IQ Digital Advisor
+          url: https://docs.netapp.com/us-en/active-iq/index.html          
         - title: NetApp Active IQ Config Advisor
           url: https://mysupport.netapp.com/site/tools/tool-eula/activeiq-configadvisor
         - title: NetApp Interoperability Matrix Tool
