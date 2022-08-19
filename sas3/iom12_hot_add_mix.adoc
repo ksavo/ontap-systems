@@ -122,6 +122,9 @@ After you download the IOM12/IOM12B shelf firmware to your shelves, verify the f
 You cannot use this procedure to hot-add disk shelves that were hot-removed from another stack in the same system when the system is powered on and serving data (I/O is in progress).
 
 * You can use this procedure to hot-add disk shelves that were hot-removed within the same MetroCluster system if the affected shelf has mirrored aggregates.
+* When you hot-add shelves with IOM12 modules to a stack of shelves with IOM6 modules, the performance of the entire stack operates at 6 Gbps (runs at the lowest common speed).
++
+If the shelves you are hot-adding are shelves that have been upgraded from IOM3 or IOM6 modules to IOM12 modules, the stack operates at 12 Gbps; however, the shelf backplane and disk capabilities can limit disk performance to 3 Gbps or 6 Gbps.
 * After you have cabled a hot-added shelf, ONTAP recognizes the shelf:
  ** Drive ownership is assigned if automatic drive assignment is enabled.
  ** Shelf (IOM) firmware and drive firmware should be updated automatically, if needed.
@@ -347,7 +350,7 @@ The onboard storage port 0b is the port from the internal storage (expander) and
 +
 NOTE: In a MetroCluster configuration, you cannot use the IOM B path.
 
-* The initial IOM12/IOM12B shelf (the IOM12 shelf connecting to the logical last IOM6 shelf) always connects to the IOM6 shelf circle ports (not square ports).
+* The initial IOM12/IOM12B shelf (the shelf connecting to the logical last IOM6 shelf) always connects to the IOM6 shelf circle ports (not square ports).
 * The SAS cable connectors are keyed; when oriented correctly into a SAS port, the connector clicks into place.
 +
 For shelves, you insert a SAS cable connector with the pull tab oriented down (on the underside of the connector). For controllers, the orientation of SAS ports can vary depending on the platform model; therefore, the correct orientation of the SAS cable connector varies.
