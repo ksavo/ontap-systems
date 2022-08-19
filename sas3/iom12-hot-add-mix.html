@@ -6113,7 +6113,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-06-13 15:50:59 +0000">06/13/2022</time>
+    <time datetime="2022-08-18 19:04:20 +0000">08/18/2022</time>
     
   
 
@@ -6366,6 +6366,12 @@ If the IOM6 shelf stack is cabled with any SAS optical cables, you cannot hot-ad
 </li>
 <li>
 <p>You can use this procedure to hot-add disk shelves that were hot-removed within the same MetroCluster system if the affected shelf has mirrored aggregates.</p>
+</li>
+<li>
+<p>When you hot-add shelves with IOM12 modules to a stack of shelves with IOM6 modules, the performance of the entire stack operates at 6 Gbps (runs at the lowest common speed).</p>
+<div class="paragraph">
+<p>If the shelves you are hot-adding are shelves that have been upgraded from IOM3 or IOM6 modules to IOM12 modules, the stack operates at 12 Gbps; however, the shelf backplane and disk capabilities can limit disk performance to 3 Gbps or 6 Gbps.</p>
+</div>
 </li>
 <li>
 <p>After you have cabled a hot-added shelf, ONTAP recognizes the shelf:</p>
@@ -6884,7 +6890,7 @@ In a MetroCluster configuration, you cannot use the IOM B path.
 </div>
 </li>
 <li>
-<p>The initial IOM12/IOM12B shelf (the IOM12 shelf connecting to the logical last IOM6 shelf) always connects to the IOM6 shelf circle ports (not square ports).</p>
+<p>The initial IOM12/IOM12B shelf (the shelf connecting to the logical last IOM6 shelf) always connects to the IOM6 shelf circle ports (not square ports).</p>
 </li>
 <li>
 <p>The SAS cable connectors are keyed; when oriented correctly into a SAS port, the connector clicks into place.</p>
