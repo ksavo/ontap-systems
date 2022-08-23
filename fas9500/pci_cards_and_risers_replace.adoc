@@ -62,11 +62,12 @@ I/O cam latch completely unlocked
 . Install the replacement I/O module into the chassis by gently sliding the I/O module into the slot until the lettered and numbered I/O cam latch begins to engage with the I/O cam pin, and then push the I/O cam latch all the way up to lock the module in place.
 . Recable the I/O module, as needed.
 
-== Step 3: Reboot the controller after I/O module replacement
+== Step 3: Reboot the BMC and controller after I/O module replacement
 
-After you replace an I/O module, you must reboot the controller module.
+After you replace an I/O module, you must reboot the BMC and controller module.
 
 .Steps
+. From the LOADER prompt, reboot the BMC: _sp reset_
 . From the LOADER prompt, reboot the node: _bye_
 NOTE: This reinitializes the PCIe cards and other components and reboot the node.
 
