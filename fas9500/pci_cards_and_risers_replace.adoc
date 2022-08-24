@@ -67,8 +67,9 @@ I/O cam latch completely unlocked
 After you replace an I/O module, you must reboot the BMC and controller module.
 
 .Steps
-. From the LOADER prompt, reboot the BMC: _sp reset_
-. From the LOADER prompt, reboot the node: _bye_
+. From the LOADER prompt, reboot the BMC: `sp reset`
+. From the LOADER prompt, reboot the node: `bye`
+
 NOTE: This reinitializes the PCIe cards and other components and reboot the node.
 
 . If your system is configured to support 10 GbE cluster interconnect and data connections on 40 GbE NICs or onboard ports, convert these ports to 10 GbE connections by using the `nicadmin convert` command from Maintenance mode.
