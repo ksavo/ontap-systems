@@ -8,8 +8,19 @@
     <description>The latest updates from NetApp Documentation</description>
     <language>en-us</language>
     <ttl>60</ttl>
-    <pubDate>Fri, 19 Aug 2022 17:07:07 +0000</pubDate>
-    <lastBuildDate>Fri, 19 Aug 2022 17:07:07 +0000</lastBuildDate>
+    <pubDate>Wed, 24 Aug 2022 20:29:25 +0000</pubDate>
+    <lastBuildDate>Wed, 24 Aug 2022 20:29:25 +0000</lastBuildDate>
+    
+    
+    
+    <item>
+      <title>What&amp;#8217;s new for FAS and AFF systems (28 Mar 2022)</title>
+      <pubDate>Mon, 28 Mar 2022 18:32:49 +0000</pubDate>
+      <link>https://docs.netapp.com/us-en/ontap-systems/whats-new.html?time=1648492369</link>
+      <guid isPermaLink="false">Mon, 28 Mar 2022 18:32:49 +0000</guid>
+      <description><![CDATA[ Learn about the new features for FAS and AFF systems. ]]></description>
+    </item>
+    
     
   </channel>
 </rss>
