@@ -94,7 +94,7 @@ NOTE: Be sure to exit Maintenance mode after completing the conversion.
 . Return the node to normal operation:
 `storage failover giveback -ofnode _impaired_node_name_`
 . If automatic giveback was disabled, reenable it: `storage failover modify -node local -auto-giveback true`
-
++
 NOTE: If your system is in a two-node MetroCluster configuration, you must switch back the aggregates as described in the next step.
 
 == Step 4: Switch back aggregates in a two-node MetroCluster configuration
