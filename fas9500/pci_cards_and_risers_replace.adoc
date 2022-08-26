@@ -31,11 +31,9 @@ Make sure that you label the cables so that you know where they came from.
 .. Depress the lettered and numbered cam button.
 +
 The cam button moves away from the chassis.
-
 .. Rotate the cam latch down until it is in a horizontal position.
 +
 The I/O module disengages from the chassis and moves about 1/2 inch out of the I/O slot.
-
 .. Remove the I/O module from the chassis by pulling on the pull tabs on the sides of the module face.
 +
 Make sure that you keep track of which slot the I/O module was in.
@@ -66,9 +64,15 @@ I/O cam latch completely unlocked
 
 After you replace an I/O module, you must reboot the controller module.
 
+NOTE: If the new I/O module is not the same model as the failed module, you must first reboot the BMC.
+
 .Steps
-. From the LOADER prompt, reboot the node: _bye_
-NOTE: This reinitializes the PCIe cards and other components and reboot the node.
+. Reboot the BMC if the replacement module is not the same model as the old module:
+.. From the LOADER prompt, change to advanced privilege mode: `priv set advanced`
+.. Reboot the BMC: `sp reboot`
+. From the LOADER prompt, reboot the node: `bye`
++
+NOTE: This reinitializes the PCIe cards and other components and reboots the node.
 
 . If your system is configured to support 10 GbE cluster interconnect and data connections on 40 GbE NICs or onboard ports, convert these ports to 10 GbE connections by using the `nicadmin convert` command from Maintenance mode.
 +
