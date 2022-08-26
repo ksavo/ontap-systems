@@ -73,13 +73,17 @@ a|I/O cam latch completely unlocked
 . Install the replacement I/O module into the chassis by gently sliding the I/O module into the slot until the lettered and numbered I/O cam latch begins to engage with the I/O cam pin, and then push the I/O cam latch all the way up to lock the module in place.
 . Recable the I/O module, as needed.
 
-== Step 3: Reboot the controller after PCIe module replacement
+== Step 3: Reboot the controller after I/O module replacement
 
-After you replace a PCIe module, you must reboot the controller module.
+After you replace an I/O module, you must reboot the controller module.
+
+NOTE: If the new I/O module is not the same model as the failed module, you must first reboot the BMC.
 
 .Steps
-
-. From the LOADER prompt, reboot the node: _bye_
+. Reboot the BMC if the replacement module is not the same model as the old module:
+.. From the LOADER prompt, change to advanced privilege mode: `priv set advanced`
+.. Reboot the BMC: `sp reboot`
+. From the LOADER prompt, reboot the node: `bye`
 +
 NOTE: This reinitializes the PCIe cards and other components and reboots the node.
 
@@ -90,7 +94,7 @@ NOTE: Be sure to exit Maintenance mode after completing the conversion.
 . Return the node to normal operation:
 `storage failover giveback -ofnode _impaired_node_name_`
 . If automatic giveback was disabled, reenable it: `storage failover modify -node local -auto-giveback true`
-
++
 NOTE: If your system is in a two-node MetroCluster configuration, you must switch back the aggregates as described in the next step.
 
 == Step 4: Switch back aggregates in a two-node MetroCluster configuration
