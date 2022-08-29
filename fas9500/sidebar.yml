@@ -3,6 +3,7 @@ title: FAS9500 systems
 url: /fas9500/index.html
 entries:
   - title: Install and setup
+    pdf-filename: FAS9500 Install and Setup
     entries:
     - title: Choose install and setup experience
       url: /fas9500/install_setup.html
@@ -13,6 +14,7 @@ entries:
     - title: Detailed steps
       url: /fas9500/install_detailed_guide.html
   - title: Maintain
+    pdf-filename: FAS9500 Maintain
     entries:
 # START Add I/O module
     - title: Add I/O module
@@ -20,6 +22,7 @@ entries:
 # END Add I/O module
       # START boot media
     - title: Boot media
+      pdf-filename: FAS9500 Boot Media
       entries:
       - title: Overview
         url: /fas9500/bootmedia_replace_overview.html
@@ -39,6 +42,7 @@ entries:
     - title: Caching module
       url: /fas9500/caching_module_hot_swap.html
     - title: Chassis
+      pdf-filename: FAS9500 Chassis
       entries:
       - title: Overview
         url: /fas9500/chassis_replace_overview.html
@@ -50,6 +54,7 @@ entries:
         url: /fas9500/chassis_replace_complete_system_restore_rma.html
       # START controller module replacement
     - title: Controller module
+      pdf-filename: FAS9500 Controller Module
       entries:
       - title: Overview
         url: /fas9500/controller_replace_overview.html
