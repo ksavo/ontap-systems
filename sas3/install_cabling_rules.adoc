@@ -27,13 +27,13 @@ You should avoid deviating from the rules; deviations might reduce reliability, 
 == Configuration rules
 
 [.lead]
-Disk shelves with IOM12 modules are supported in specific types of HA pair and single-controller configurations.
+Disk shelves with IOM12 modules are supported on specific types of HA pair and single-controller configurations.
 
 NOTE: The FAS25XX platforms are not addressed in this content.
 
 * HA pair configurations must be cabled as multipath HA or quad-path HA configurations with the following exceptions:
- ** Platforms with internal storage, including FAS2600 series, AFF A200, FAS2700 series, AFF A220, and later (with external shelves), can be cabled as single-path HA configurations to support connectivity to an external SAS tape backup device.
- ** Platforms with internal storage, including FAS2600 series, AFF A200, FAS2700 series, AFF A220, and later (with external shelves), do not support quad-path HA connectivity.
+ ** Platforms with internal storage, including FAS2600 series, AFF A200, FAS2700 series, AFF A220, and later, can be cabled as single-path HA configurations to support connectivity to an external SAS tape backup device.
+ ** Platforms with internal storage, including FAS2600 series, AFF A200, FAS2700 series, AFF A220, and later, do not support quad-path HA connectivity.
 * Single-controller configurations must be cabled as multipath or quad-path configurations, with the following exceptions:
  ** FAS2600 series single-controller configurations (with external disk shelves) can be cabled as single-path configurations.
 +
@@ -88,9 +88,7 @@ image::../media/drw_shelf_to_shelf_double_wide.gif[]
 == Controller-to-stack connection rules
 
 [.lead]
-You can correctly cable the SAS connections from each controller to each stack in an HA pair or in a single-controller configuration by understanding that SAS disk shelves use software-based disk ownership, how controller ports A/C and B/D are connected to stacks, how controller ports A/C and B/D are organized into port pairs, and how platforms with onboard storage have their controller ports connected to stacks.
-
-FAS25XX platforms are not addressed in this content.
+You can correctly cable the SAS connections from each controller to each stack in an HA pair or in a single-controller configuration by understanding that SAS disk shelves use software-based disk ownership, how controller ports A/C and B/D are connected to stacks, how controller ports A/C and B/D are organized into port pairs, and how platforms with internal storage have their controller ports connected to stacks.
 
 === SAS disk shelf software-based disk ownership rule
 
