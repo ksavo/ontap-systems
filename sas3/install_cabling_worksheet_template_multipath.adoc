@@ -13,9 +13,9 @@ By completing the worksheet template, you can define the controller SAS port pai
 
 .Before you begin
 
-Your HA pair or single-controller configuration cannot be an AFF A200, AFF A220, FAS2600 series or FAS2700 system. If you have one of these configurations, use the following:
+If you have a platform with internal storage, including FAS2600 series, AFF A200, FAS2700 series, AFF A220, and later, use the following (these platforms use a unique worksheet):
 
-link:install-cabling-worksheets-examples-fas2600.html[Controller-to-stack cabling worksheets and cabling examples for common AFF A200, AFF A220, FAS2600 series and FAS2700 configurations]
+link:install-cabling-worksheets-examples-fas2600.html[Controller-to-stack cabling worksheets and cabling examples for platforms with internal storage]
 
 .About this task
 

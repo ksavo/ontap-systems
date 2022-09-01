@@ -21,7 +21,7 @@ entries:
         url: /sas3/install-cabling-rules.html
       - title: Cabling worksheets and examples for common multipath HA configurations
         url: /sas3/install-cabling-worksheets-examples-multipath.html
-      - title: Cabling worksheets and examples for AFF and FAS platforms with onboard storage
+      - title: Cabling worksheets and examples for platforms with internal storage
         url: /sas3/install-cabling-worksheets-examples-fas2600.html
       - title: Cabling worksheet and example for a quad-path HA configuration with two quad-port SAS HBAs
         url: /sas3/install-worksheets-examples-quadpath.html
