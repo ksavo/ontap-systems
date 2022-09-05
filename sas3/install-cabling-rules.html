@@ -9478,11 +9478,11 @@
         Cabling worksheets and examples for common multipath HA configurations
       </a></li><li 
       data-pdf-exists="true" 
-      data-pdf-filename="Cabling worksheets and examples for AFF and FAS platforms with onboard storage"
+      data-pdf-filename="Cabling worksheets and examples for platforms with internal storage"
       data-li-level="5#" 
       class=" "
     ><a class="na-navbar-padding" href="/us-en/ontap-systems/sas3/install-cabling-worksheets-examples-fas2600.html">
-        Cabling worksheets and examples for AFF and FAS platforms with onboard storage
+        Cabling worksheets and examples for platforms with internal storage
       </a></li><li 
       data-pdf-exists="true" 
       data-pdf-filename="Cabling worksheet and example for a quad-path HA configuration with two quad-port SAS HBAs"
@@ -9841,7 +9841,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-05-25 01:46:39 +0000">05/25/2022</time>
+    <time datetime="2022-08-30 02:08:33 +0000">08/30/2022</time>
     
   
 
@@ -9923,7 +9923,19 @@ The SAS cabling rules regarding controller slot numbering rules, shelf-to-shelf 
 <h2 id="configuration-rules">Configuration rules</h2>
 <div class="sectionbody">
 <div class="paragraph lead">
-<p>Disk shelves with IOM12 modules are supported in specific types of HA pair and single-controller configurations.</p>
+<p>Disk shelves with IOM12 modules are supported on specific types of HA pair and single-controller configurations.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<img src="/us-en/ontap-systems/images/note.svg" alt="Note">
+</td>
+<td class="content">
+The FAS25XX platforms are not addressed in this content.
+</td>
+</tr>
+</table>
 </div>
 <div class="ulist">
 <ul>
@@ -9932,10 +9944,10 @@ The SAS cabling rules regarding controller slot numbering rules, shelf-to-shelf 
 <div class="ulist">
 <ul>
 <li>
-<p>AFF A200, AFF A220, FAS2600 series and FAS2700HA pair configurations (with external disk shelves) can be cabled as single-path HA configurations to support connectivity to an external SAS tape backup device.</p>
+<p>Platforms with internal storage, including FAS2600 series, AFF A200, FAS2700 series, AFF A220, and later, can be cabled as single-path HA configurations to support connectivity to an external SAS tape backup device.</p>
 </li>
 <li>
-<p>AFF A200, AFF A220, FAS2600 series and FAS2700HA pair configurations do not support quad-path HA connectivity.</p>
+<p>Platforms with internal storage, including FAS2600 series, AFF A200, FAS2700 series, AFF A220, and later, do not support quad-path HA connectivity.</p>
 </li>
 </ul>
 </div>
@@ -10060,7 +10072,7 @@ For example, slot 0 with two ports is referred to as 0a and 0b. Slot 1 with four
 <h2 id="controller-to-stack-connection-rules">Controller-to-stack connection rules</h2>
 <div class="sectionbody">
 <div class="paragraph lead">
-<p>You can correctly cable the SAS connections from each controller to each stack in an HA pair or in a single-controller configuration by understanding that SAS disk shelves use software-based disk ownership, how controller ports A/C and B/D are connected to stacks, how controller ports A/C and B/D are organized into port pairs, and how AFF A200, AFF A220, FAS2600 series and FAS2700 system ports 0b and 0a are connected to stacks.</p>
+<p>You can correctly cable the SAS connections from each controller to each stack in an HA pair or in a single-controller configuration by understanding that SAS disk shelves use software-based disk ownership, how controller ports A/C and B/D are connected to stacks, how controller ports A/C and B/D are organized into port pairs, and how platforms with internal storage have their controller ports connected to stacks.</p>
 </div>
 <div class="sect2">
 <h3 id="sas-disk-shelf-software-based-disk-ownership-rule">SAS disk shelf software-based disk ownership rule</h3>
@@ -10072,7 +10084,7 @@ For example, slot 0 with two ports is referred to as 0a and 0b. Slot 1 with four
 </div>
 </div>
 <div class="sect2">
-<h3 id="controller-a-and-c-port-connection-rules-for-non-aff-a200-aff-a220-fas2600-series-and-fas2700-configurations">Controller A and C port connection rules (for non AFF A200, AFF A220, FAS2600 series and FAS2700 configurations)</h3>
+<h3 id="controller-a-and-c-port-connection-rules-for-platforms-without-internal-storage">Controller A and C port connection rules (for platforms without internal storage)</h3>
 <div class="ulist">
 <ul>
 <li>
@@ -10105,7 +10117,7 @@ For example, slot 0 with two ports is referred to as 0a and 0b. Slot 1 with four
 </div>
 </div>
 <div class="sect2">
-<h3 id="controller-b-and-d-port-connection-rules-for-non-aff-a200-aff-a220-fas2600-series-and-fas2700-configurations">Controller B and D port connection rules (for non AFF A200, AFF A220, FAS2600 series and FAS2700 configurations)</h3>
+<h3 id="controller-b-and-d-port-connection-rules-for-platforms-without-internal-storage">Controller B and D port connection rules (for platforms without internal storage)</h3>
 <div class="ulist">
 <ul>
 <li>
@@ -10141,7 +10153,7 @@ For example, slot 0 with two ports is referred to as 0a and 0b. Slot 1 with four
 </div>
 </div>
 <div class="sect2">
-<h3 id="port-pair-connection-rules-for-non-aff-a200-aff-a220-fas2600-series-and-fas2700-configurations">Port pair connection rules (for non AFF A200, AFF A220, FAS2600 series and FAS2700 configurations)</h3>
+<h3 id="port-pair-connection-rules-for-platforms-without-internal-storage">Port pair connection rules (for platforms without internal storage)</h3>
 <div class="paragraph">
 <p>Controller SAS ports A, B, C, and D are organized into port pairs using a method that leverages all of the SAS ports for system resiliency and consistency when cabling controller-to-stack connections in HA pair and single-controller configurations.</p>
 </div>
@@ -10257,9 +10269,21 @@ When you have more port pairs than you need to cable the stacks in your system, 
 </div>
 </div>
 <div class="sect2">
-<h3 id="aff-a200-aff-a220-fas2600-series-and-fas2700-controller-0b-and-0a-port-connection-rules-to-external-disk-shelves">AFF A200, AFF A220, FAS2600 series and FAS2700 controller 0b and 0a port connection rules to external disk shelves</h3>
+<h3 id="controller-0b-and-0a-port-connection-rules-for-platforms-with-internal-storage">Controller 0b and 0a port connection rules for platforms with internal storage</h3>
 <div class="paragraph">
-<p>The AFF A200, AFF A220, FAS2600 series and FAS2700 systems have a unique set of connection rules because each controller must maintain same domain connectivity between the internal storage (port 0b) and the stack. This means that when a controller is located in slot A of the chassis (controller 1) it is in domain A (IOM A) and therefore port 0b must connect to IOM A in the stack. When a controller is located in slot B of the chassis (controller 2) it is in domain B (IOM B) and therefore port 0b must connect to IOM B in the stack.</p>
+<p>Platforms with internal storage, including FAS2600 series, AFF A200, FAS2700 series, AFF A220, and later, have a unique set of connection rules because each controller must maintain same domain connectivity between the internal storage (port 0b) and the stack. This means that when a controller is located in slot A of the chassis (controller 1) it is in domain A (IOM A) and therefore port 0b must connect to IOM A in the stack. When a controller is located in slot B of the chassis (controller 2) it is in domain B (IOM B) and therefore port 0b must connect to IOM B in the stack.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<img src="/us-en/ontap-systems/images/note.svg" alt="Note">
+</td>
+<td class="content">
+FAS25XX platforms are not addressed in this content.
+</td>
+</tr>
+</table>
 </div>
 <div class="admonitionblock note">
 <table>
@@ -10322,7 +10346,7 @@ If you do not connect the 0b port to the correct domain (cross-connect domains),
 </ul>
 </div>
 <div class="paragraph">
-<p>The following illustration highlights internal storage port (0b) domain connectivity for a AFF A200, AFF A220, FAS2600 series and FAS2700 multipath HA configuration:</p>
+<p>The following illustration highlights internal storage port (0b) domain connectivity for a FAS2600 series, AFF A200, FAS2700 series, AFF A220, and later multipath HA configuration:</p>
 </div>
 <div class="imageblock">
 <div class="content">

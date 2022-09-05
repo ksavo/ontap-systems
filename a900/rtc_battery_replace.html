@@ -9478,11 +9478,11 @@
         Cabling worksheets and examples for common multipath HA configurations
       </a></li><li 
       data-pdf-exists="true" 
-      data-pdf-filename="Cabling worksheets and examples for AFF and FAS platforms with onboard storage"
+      data-pdf-filename="Cabling worksheets and examples for platforms with internal storage"
       data-li-level="5#" 
       class=" "
     ><a class="na-navbar-padding" href="/us-en/ontap-systems/sas3/install-cabling-worksheets-examples-fas2600.html">
-        Cabling worksheets and examples for AFF and FAS platforms with onboard storage
+        Cabling worksheets and examples for platforms with internal storage
       </a></li><li 
       data-pdf-exists="true" 
       data-pdf-filename="Cabling worksheet and example for a quad-path HA configuration with two quad-port SAS HBAs"
@@ -9841,7 +9841,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-06-27 10:01:04 +0000">06/27/2022</time>
+    <time datetime="2022-09-02 01:02:06 +0000">09/02/2022</time>
     
   
 
@@ -9932,6 +9932,18 @@
 </li>
 <li>
 <p>Disable automatic giveback from the console of the healthy controller: <code>storage failover modify –node local -auto-giveback false</code></p>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<img src="/us-en/ontap-systems/images/note.svg" alt="Note">
+</td>
+<td class="content">
+When you see <em>Do you want to disable auto-giveback?</em>, enter <code>y</code>.
+</td>
+</tr>
+</table>
+</div>
 </li>
 <li>
 <p>Take the impaired controller to the LOADER prompt:</p>
@@ -10302,6 +10314,23 @@ Do not use excessive force when sliding the controller module into the chassis t
 </ol>
 </div>
 </li>
+</ol>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<img src="/us-en/ontap-systems/images/note.svg" alt="Note">
+</td>
+<td class="content">
+If your system stops at the boot menu, select the option for "Reboot node" and respond y when prompted,
+then boot to LOADER by pressing <code>Ctrl-C</code>.
+</td>
+</tr>
+</table>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
 <li>
 <p>Reset the time and date on the controller:</p>
 <div class="olist loweralpha">
