@@ -72,7 +72,7 @@ This procedure does not address mixing a stack: hot-adding a shelf with IOM12/IO
 
 * A system can have multipathed and quad-pathed stacks of disk shelves with IOM12/IOM12B modules.
 +
-If you have an HA pair, ONTAP shows the system configuration as "`multipath HA`". If you have a single-controller configuration, ONTAP shows the system configuration as "`multipath`".
+If you have an HA pair, ONTAP shows the system configuration as `multipath HA`. If you have a single-controller configuration, ONTAP shows the system configuration as `multipath`.
 
 * This procedure assumes your configuration is using in-band ACP.
 +
@@ -88,7 +88,8 @@ You cannot use this procedure to hot-add disk shelves that were hot-removed from
 +
 Having the current version of the DQP installed allows your system to recognize and utilize newly qualified disk drives; therefore, avoiding system event messages about having non-current disk drive information. You also avoid the possible prevention of disk partitioning because disk drives are not recognized. The DQP also notifies you of non-current disk drive firmware.
 +
-https://mysupport.netapp.com/NOW/download/tools/diskqual/[NetApp Downloads: Disk Qualification Package]
+//30 aug 2022, BURT 1491809: correct the DQP link
+https://mysupport.netapp.com/site/downloads/firmware/disk-drive-firmware/download/DISKQUAL/ALL/qual_devices.zip[NetApp Downloads: Disk Qualification Package^]
 
 * The best practice is to run Config Advisor before and after hot-adding a disk shelf.
 +
