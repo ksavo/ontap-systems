@@ -27,11 +27,13 @@ You should avoid deviating from the rules; deviations might reduce reliability, 
 == Configuration rules
 
 [.lead]
-Disk shelves with IOM12 modules are supported in specific types of HA pair and single-controller configurations.
+Disk shelves with IOM12 modules are supported on specific types of HA pair and single-controller configurations.
+
+NOTE: The FAS25XX platforms are not addressed in this content.
 
 * HA pair configurations must be cabled as multipath HA or quad-path HA configurations with the following exceptions:
- ** AFF A200, AFF A220, FAS2600 series and FAS2700HA pair configurations (with external disk shelves) can be cabled as single-path HA configurations to support connectivity to an external SAS tape backup device.
- ** AFF A200, AFF A220, FAS2600 series and FAS2700HA pair configurations do not support quad-path HA connectivity.
+ ** Platforms with internal storage, including FAS2600 series, AFF A200, FAS2700 series, AFF A220, and later, can be cabled as single-path HA configurations to support connectivity to an external SAS tape backup device.
+ ** Platforms with internal storage, including FAS2600 series, AFF A200, FAS2700 series, AFF A220, and later, do not support quad-path HA connectivity.
 * Single-controller configurations must be cabled as multipath or quad-path configurations, with the following exceptions:
  ** FAS2600 series single-controller configurations (with external disk shelves) can be cabled as single-path configurations.
 +
@@ -86,7 +88,7 @@ image::../media/drw_shelf_to_shelf_double_wide.gif[]
 == Controller-to-stack connection rules
 
 [.lead]
-You can correctly cable the SAS connections from each controller to each stack in an HA pair or in a single-controller configuration by understanding that SAS disk shelves use software-based disk ownership, how controller ports A/C and B/D are connected to stacks, how controller ports A/C and B/D are organized into port pairs, and how AFF A200, AFF A220, FAS2600 series and FAS2700 system ports 0b and 0a are connected to stacks.
+You can correctly cable the SAS connections from each controller to each stack in an HA pair or in a single-controller configuration by understanding that SAS disk shelves use software-based disk ownership, how controller ports A/C and B/D are connected to stacks, how controller ports A/C and B/D are organized into port pairs, and how platforms with internal storage have their controller ports connected to stacks.
 
 === SAS disk shelf software-based disk ownership rule
 
@@ -94,7 +96,7 @@ SAS disk shelves use software-based disk ownership (not hardware-based disk owne
 
 SAS disk shelves should never be cabled using the hardware-based disk ownership scheme.
 
-=== Controller A and C port connection rules (for non AFF A200, AFF A220, FAS2600 series and FAS2700 configurations)
+=== Controller A and C port connection rules (for platforms without internal storage)
 
 * A and C ports are always the primary paths to a stack.
 * A and C ports always connect to the logical first disk shelf in a stack.
@@ -109,7 +111,7 @@ The following illustration highlights how controller ports A and C connect in a 
 
 image::../media/drw_controller_to_stack_rules_ports_a_and_c_example.gif[]
 
-=== Controller B and D port connection rules (for non AFF A200, AFF A220, FAS2600 series and FAS2700 configurations)
+=== Controller B and D port connection rules (for platforms without internal storage)
 
 * B and D ports are always the secondary paths to a stack.
 * B and D ports always connect to the logical last disk shelf in a stack.
@@ -125,7 +127,7 @@ The following illustration highlights how controller ports B and D connect in a 
 
 image::../media/drw_controller_to_stack_rules_ports_b_and_d_example.gif[]
 
-=== Port pair connection rules (for non AFF A200, AFF A220, FAS2600 series and FAS2700 configurations)
+=== Port pair connection rules (for platforms without internal storage)
 
 Controller SAS ports A, B, C, and D are organized into port pairs using a method that leverages all of the SAS ports for system resiliency and consistency when cabling controller-to-stack connections in HA pair and single-controller configurations.
 
@@ -178,9 +180,11 @@ link:install-cabling-worksheet-template-multipath.html[Controller-to-stack cabli
 
 link:install-cabling-worksheet-template-quadpath.html[Controller-to-stack cabling worksheet template for quad-pathed connectivity]
 
-=== AFF A200, AFF A220, FAS2600 series and FAS2700 controller 0b and 0a port connection rules to external disk shelves
+=== Controller 0b and 0a port connection rules for platforms with internal storage
 
-The AFF A200, AFF A220, FAS2600 series and FAS2700 systems have a unique set of connection rules because each controller must maintain same domain connectivity between the internal storage (port 0b) and the stack. This means that when a controller is located in slot A of the chassis (controller 1) it is in domain A (IOM A) and therefore port 0b must connect to IOM A in the stack. When a controller is located in slot B of the chassis (controller 2) it is in domain B (IOM B) and therefore port 0b must connect to IOM B in the stack.
+Platforms with internal storage, including FAS2600 series, AFF A200, FAS2700 series, AFF A220, and later, have a unique set of connection rules because each controller must maintain same domain connectivity between the internal storage (port 0b) and the stack. This means that when a controller is located in slot A of the chassis (controller 1) it is in domain A (IOM A) and therefore port 0b must connect to IOM A in the stack. When a controller is located in slot B of the chassis (controller 2) it is in domain B (IOM B) and therefore port 0b must connect to IOM B in the stack.
+
+NOTE: FAS25XX platforms are not addressed in this content.
 
 NOTE: If you do not connect the 0b port to the correct domain (cross-connect domains), you expose your system to resiliency issues that prevent you from performing nondisruptive procedures safely.
 
@@ -197,7 +201,7 @@ NOTE: If you do not connect the 0b port to the correct domain (cross-connect dom
  ** Port 0a always connects to the logical first disk shelf in a stack.
  ** Port 0a always connect to disk shelf IOM port 1.
 
-The following illustration highlights internal storage port (0b) domain connectivity for a AFF A200, AFF A220, FAS2600 series and FAS2700 multipath HA configuration:
+The following illustration highlights internal storage port (0b) domain connectivity for a FAS2600 series, AFF A200, FAS2700 series, AFF A220, and later multipath HA configuration:
 
 image::../media/drw_fas2600_mpha_domain_example.png[]
 

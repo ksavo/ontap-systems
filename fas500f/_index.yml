@@ -8,7 +8,7 @@ indexpage:
         - title: What's new
           url: ../whats-new.html
         - title: System data sheet
-          url: https://www.netapp.com/ru/media/7819-ds-4020.pdf
+          url: https://www.netapp.com/pdf.html?item=/media/7819-ds-4020.pdf
         - title: Storage data sheet
           url: https://www.netapp.com/data-storage/disk-shelves-storage-media/
     - title: Install and setup

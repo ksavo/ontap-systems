@@ -145,7 +145,8 @@ NOTE: Do not revert firmware to a version that does not support your shelf and i
 +
 Having the current version of the DQP installed allows your system to recognize and use newly qualified drives. This avoids system event messages about having noncurrent drive information and prevention of drive partitioning because drives are not recognized. The DQP also notifies you of noncurrent drive firmware.
 +
-https://mysupport.netapp.com/NOW/download/tools/diskqual/[NetApp Downloads: Disk Qualification Package]
+//30 aug 2022, BURT 1491809: correct the DQP link
+https://mysupport.netapp.com/site/downloads/firmware/disk-drive-firmware/download/DISKQUAL/ALL/qual_devices.zip[NetApp Downloads: Disk Qualification Package^]
 
 * *Best practice:* The best practice is to run Active IQ Config Advisor before and after hot-adding a shelf.
 +
