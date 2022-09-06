@@ -39,7 +39,13 @@ The console connection shows that the node drops to the LOADER prompt when the t
 +
 NOTE: Make sure that any unused I/O slots have blanks installed to prevent possible thermal issues.
 
-. Reboot the node from the LOADER prompt: _bye_
+. Reboot the BMC and then rebot the node:
+.. From the LOADER prompt, change to advanced privilege mode: `priv set advanced`
+.. Reboot the BMC: `sp reboot`
+. From the LOADER prompt, reboot the node: `bye`
++
+NOTE: This reinitializes the PCIe cards and other components and reboots the node.
+
 . Give back the node from the partner node. `storage failover giveback -ofnode target_node_name`
 . Enable automatic giveback if it was disabled: `storage failover modify -node local -auto-giveback true`
 . If you are using slots 3 and/or 7 for networking, use the `storage port modify -node __<node name>__ -port __<port name>__ -mode network` command to convert the slot for networking use.
