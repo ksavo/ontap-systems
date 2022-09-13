@@ -39,10 +39,7 @@ The console connection shows that the node drops to the LOADER prompt when the t
 +
 NOTE: Make sure that any unused I/O slots have blanks installed to prevent possible thermal issues.
 
-. Reboot the BMC and then reboot the node:
-.. From the LOADER prompt, change to advanced privilege mode: `priv set advanced`
-.. Reboot the BMC: `sp reboot`
-. From the LOADER prompt, reboot the node: `bye`
+. Reboot the controller from the LOADER prompt: _bye_
 +
 NOTE: This reinitializes the PCIe cards and other components and reboots the node.
 
