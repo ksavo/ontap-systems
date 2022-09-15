@@ -45,6 +45,9 @@ The console connection shows that the controller drops to the LOADER prompt when
 NOTE: Make sure that any unused I/O slots have blanks installed to prevent possible thermal issues.
 
 . Reboot the controller from the LOADER prompt: _bye_
++
+NOTE: This reinitializes the PCIe cards and other components and reboots the node.
+
 . Give back the controller from the partner controller. `storage failover giveback -ofnode target_node_name`
 . Enable automatic giveback if it was disabled: `storage failover modify -node local -auto-giveback true`
 . If you are using slots 3 and/or 7 for networking, use the `storage port modify -node __<node name>__ -port __<port name>__ -mode network` command to convert the slot for networking use.
@@ -126,7 +129,13 @@ I/O cam latch completely unlocked
 .. Push the I/O cam latch all the way up to lock the module in place.
 . Repeat the remove and install steps to replace additional modules for controller A.
 . If the replacement I/O module is a NIC, cable the module or modules to the data switches.
-. Reboot the controller from the LOADER prompt: _bye_
+. Reboot the BMC and then reboot the node:
+.. From the LOADER prompt, change to advanced privilege mode: `priv set advanced`
+.. Reboot the BMC: `sp reboot`
+. From the LOADER prompt, reboot the node: `bye`
++
+NOTE: This reinitializes the PCIe cards and other components and reboots the node.
+
 . Give back the controller from the partner controller. `storage failover giveback -ofnode target_node_name`
 . Enable automatic giveback if it was disabled: `storage failover modify -node local -auto-giveback true`
 
