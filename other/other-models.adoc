@@ -1,7 +1,7 @@
 ---
 permalink: other/other-models.html
 sidebar: sidebar
-keywords: aff 8000, fas8000, fas6200, fas3200, fas2500, fas2200, ds4243, ds2246, ds4486
+keywords: aff 8000, fas8000, fas6200, fas3200, fas2500, ds4243, ds2246, ds4486
 summary: You can use these links to find documentation for other AFF and FAS systems.
 ---
 = Other models
@@ -9,20 +9,14 @@ summary: You can use these links to find documentation for other AFF and FAS sys
 :imagesdir: ../media/
 
 [.lead]
-You can use these links to find documentation for other AFF and FAS platforms.
+You can use these links to find documentation for other AFF and FAS platforms. Documentation for AFF and FAS systems that have reached the end of hardware support are available for customer use in the link:https://mysupport.netapp.com/documentation/productsatoz/index.html?archive=true[Archive].
 
 == Platform models
 link:http://mysupport.netapp.com/documentation/productlibrary/index.html?productID=62082[AFF 8000 Series documentation]
 
 link:http://mysupport.netapp.com/documentation/productlibrary/index.html?productID=61630[FAS8000 Series documentation]
 
-link:http://mysupport.netapp.com/documentation/productlibrary/index.html?productID=30429[FAS6200 Series documentation]
-
-link:http://mysupport.netapp.com/documentation/productlibrary/index.html?productID=30425[FAS3200 Series documentation]
-
 link:http://mysupport.netapp.com/documentation/productlibrary/index.html?productID=61617[FAS2500 Series documentation]
-
-link:https://mysupport.netapp.com/documentation/productlibrary/index.html?productID=61397[FAS2200 Series documentation]
 
 == Shelf models
 link:http://mysupport.netapp.com/documentation/docweb/index.html?productID=30410[DS2246 disk shelf documentation]
