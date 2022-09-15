@@ -9841,7 +9841,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-06-28 06:49:17 +0000">06/28/2022</time>
+    <time datetime="2022-09-13 18:55:32 +0000">09/13/2022</time>
     
   
 
@@ -9966,7 +9966,19 @@ Make sure that any unused I/O slots have blanks installed to prevent possible th
 </div>
 </li>
 <li>
-<p>Reboot the node from the LOADER prompt: <em>bye</em></p>
+<p>Reboot the controller from the LOADER prompt: <em>bye</em></p>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<img src="/us-en/ontap-systems/images/note.svg" alt="Note">
+</td>
+<td class="content">
+This reinitializes the PCIe cards and other components and reboots the node.
+</td>
+</tr>
+</table>
+</div>
 </li>
 <li>
 <p>Give back the node from the partner node. <code>storage failover giveback -ofnode target_node_name</code></p>
@@ -10142,10 +10154,36 @@ Make sure that any unused I/O slots have blanks installed to prevent possible th
 <p>Repeat the remove and install steps to replace additional modules for controller A.</p>
 </li>
 <li>
-<p>If the replacement I/O module is a NIC, cable the module or modules to the data switches.</p>
+<p>If the replacement I/O module is a NIC, cable the
+module or modules to the data switches.</p>
 </li>
 <li>
-<p>Reboot the node from the LOADER prompt: <em>bye</em></p>
+<p>Reboot the BMC and then reboot the node:</p>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p>From the LOADER prompt, change to advanced privilege mode: <code>priv set advanced</code></p>
+</li>
+<li>
+<p>Reboot the BMC: <code>sp reboot</code></p>
+</li>
+</ol>
+</div>
+</li>
+<li>
+<p>From the LOADER prompt, reboot the node: <code>bye</code></p>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<img src="/us-en/ontap-systems/images/note.svg" alt="Note">
+</td>
+<td class="content">
+This reinitializes the PCIe cards and other components and reboots the node.
+</td>
+</tr>
+</table>
+</div>
 </li>
 <li>
 <p>Give back the node from the partner node. <code>storage failover giveback -ofnode target_node_name</code></p>
