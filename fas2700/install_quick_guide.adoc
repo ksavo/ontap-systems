@@ -13,4 +13,4 @@ This guide gives graphic instructions for a typical installation of your system 
 
 Access the _Installation and Setup Instructions_ PDF poster:
 
-https://library.netapp.com/ecm/ecm_download_file/ECMLP2842666[AFF A220/FAS2700 Systems Installation and Setup Instructions]
+link:../media/PDF/215-13080_E0_AFFA220_FAS2700_ISI.pdf[AFF A220/FAS2700 Systems Installation and Setup Instructions^]

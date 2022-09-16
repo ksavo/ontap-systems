@@ -13,4 +13,4 @@ This guide gives graphic instructions for a typical installation of your system 
 
 Access the _Installation and Setup Instructions_ PDF poster:
 
-https://library.netapp.com/ecm/ecm_download_file/ECMLP2853946[AFF A320 Systems Installation and Setup Instructions]
+link:../media/PDF/215-14058_A0_A320_ISI.pdf[AFF A320 Installation and Setup Instructions^]

@@ -9,4 +9,4 @@ summary: This section gives graphic instructions for a typical installation of y
 :imagesdir: ../media/
 
 [.lead]
-This guide gives graphic instructions for a typical installation of your system from racking and cabling, through initial system bring-up. Use the link:https://library.netapp.com/ecm/ecm_download_file/ECMLP2842668[AFF A800 Systems Installation and Setup Instructions^] if you are familiar with installing NetApp systems.
+This guide gives graphic instructions for a typical installation of your system from racking and cabling, through initial system bring-up. Use the link:../media/PDF/215-13082_2022-08_us-en_AFFA800_ISI.pdf[AFF A800 Installation and Setup Instructions^] if you are familiar with installing NetApp systems.
