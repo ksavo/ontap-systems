@@ -8,4 +8,4 @@ summary: You can use the PDF poster to install and set up your new system. The P
 :icons: font
 :imagesdir: ../media/
 
-You can use the PDF poster to install and set up your new system. The link:https://library.netapp.com/ecm/ecm_download_file/ECMLP2316768[AFF FAS2600 Installation and Setup Instructions^] provides step-by-step instructions with live links to additional content.
+You can use the PDF poster to install and set up your new system. The link:../media/PDF/FAS26xx_ISI_215-15014_A0.pdf[FAS2600 Installation and Setup Instructions^] provides step-by-step instructions with live links to additional content.

@@ -10,4 +10,4 @@ summary: You can use the PDF poster to install and set up your new system. The P
 
 You can use the PDF poster to install and set up your new system. The PDF poster provides step-by-step instructions with live links to additional content.
 
-link:https://library.netapp.com/ecm/ecm_download_file/ECMLP2469722[AFF A300 Installation and Setup Instructions]
+link:../media/PDF/AFF-A300_ISI_210-06657+B0_web.pdf[AFF A300 Installation and Setup Instructions^]

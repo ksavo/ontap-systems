@@ -13,4 +13,4 @@ This guide gives graphic instructions for a typical installation of your system 
 
 Access the _Installation and Setup Instructions_ PDF poster:
 
-https://library.netapp.com/ecm/ecm_download_file/ECMLP2858856[FAS8300 and FAS8700 Installation and Setup Instructions]
+link:../media/PDF/215-14512_2021-02_en-us_FAS8300orFAS8700_ISI.pdf[FAS8300 and FAS8700 Installation and Setup Instructions^]
