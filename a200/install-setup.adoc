@@ -11,7 +11,7 @@ summary: 'Install and set up your system.'
 [.lead]
 You can choose from different content formats to guide you through installing and setting up your new storage system.
 
-* link:https://library.netapp.com/ecm/ecm_download_file/ECMLP2573725[Quick steps^]
+* link:../media/PDF/210-06711+C0_AFFA200_ISI_web.pdf[AFF A200 Installation and Setup Instructions^]
 +
 A printable PDF of step-by-step instructions with live links to additional content.
 

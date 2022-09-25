@@ -65,7 +65,7 @@ image::../media/drw_a250_remove_airduct_cover.png[]
 
 == Step 3: Replace a DIMM
 
-To replace a DIMM, you must locate it in the controller module using the DIMM map label on top of the air duct or locating it using the LED next to the DIMM, and then replace it following the specific sequence of steps.
+To replace a DIMM, you must locate it in the controller module using the DIMM map label on top of the air duct and then replace it following the specific sequence of steps.
 
 You can use the following video or the tabulated steps to replace a DIMM:
 
@@ -74,8 +74,6 @@ video::fa6b8107-86fb-4332-aa57-ac5b01605e52[panopto, title="Animation - Replace 
 . Replace the impaired DIMM on your controller module.
 +
 The DIMMs are in slot 3 or 1 on the motherboard. Slot 2 and 4 are left empty. Do not attempt to install DIMMs into these slots.
-+
-NOTE: The fault LED located on the board next to each DIMM blinks every two seconds.
 +
 image::../media/drw_a250_dimm_replace.png[]
 
