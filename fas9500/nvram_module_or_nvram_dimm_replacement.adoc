@@ -140,8 +140,6 @@ DIMM and DIMM ejector tabs
 
 . Locate the DIMM to be replaced inside the NVRAM module, and then remove it by pressing down on the DIMM locking tabs and lifting the DIMM out of the socket.
 +
-Each DIMM has an LED next to it that flashes when the DIMM has failed.
-
 . Install the replacement DIMM by aligning the DIMM with the socket and gently pushing the DIMM into the socket until the locking tabs lock in place.
 . Close the cover on the module.
 . Install the NVRAM module into the chassis:
