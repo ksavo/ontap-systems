@@ -131,7 +131,7 @@ image::../media/drw_8300_Replace-flashcache.png[]
  .. Slide the air duct toward the back of the controller module, and then rotate it upward to its completely open position.
 . Using the FRU map on the controller module, locate the failed caching module and remove it:
 +
-Depending on your configuration, there may be zero, one, or two caching modules in the controller module. The failed caching module's LED is lit.
+Depending on your configuration, there may be zero, one, or two caching modules in the controller module.  Use the FRU map inside the controller module to help locate the caching module. 
 
  .. Press the blue release tab.
 +
