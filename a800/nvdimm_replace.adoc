@@ -77,9 +77,7 @@ Rotate air duct towards fan modules
 
 == Step 3: Replace the NVDIMM
 
-To replace the NVDIMM, you must locate it in the controller module using the NVDIMM map label on top of the air duct or locating it using the LED next to the NVDIMM, and then replace it following the specific sequence of steps.
-
-NOTE: The NVDIMM LEDs blinks while destaging contents when you halt the system. After the destage is complete, the LED turns off.
+To replace the NVDIMM, you must locate it in the controller module using the NVDIMM map label on top of the air duct, and then replace it following the specific sequence of steps.
 
 . If you are removing or moving an NVDIMM, unlock the locking latch on the riser, and then remove the applicable riser.
 +

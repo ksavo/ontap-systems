@@ -69,7 +69,7 @@ Make sure that you support the bottom of the controller module as you slide it o
 == Step 3: Replace system DIMMs
 
 [.lead]
-Replacing a system DIMM involves identifying the target DIMM through the associated error message, locating the target DIMM using the FRU map on the air duct or the lit LED on the motherboard, and then replacing the DIMM.
+Replacing a system DIMM involves identifying the target DIMM through the associated error message, locating the target DIMM using the FRU map on the air duct, and then replacing the DIMM.
 
 You can use the following animation, illustration, or the written steps to replace a system DIMM.
 

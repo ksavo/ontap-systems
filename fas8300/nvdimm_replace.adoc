@@ -69,7 +69,7 @@ Make sure that you support the bottom of the controller module as you slide it o
 == Step 3: Replace the NVDIMM
 
 [.lead]
-To replace the NVDIMM, you must locate it in the controller module using the FRU map on top of the air duct or locate the Attention LED using the FRU Map on the top of the slot 1 riser.
+To replace the NVDIMM, you must locate it in the controller module using the FRU map on top of the air duct the FRU Map on the top of the slot 1 riser.
 
 * The NVDIMM LED blinks while destaging contents when you halt the system. After the destage is complete, the LED turns off.
 * Although the contents of the NVDIMM is encrypted, it is a best practice to erase the contents of the NVDIMM before replacing it. For more information, see the https://mysupport.netapp.com/info/web/ECMP1132988.html[Statement of Volatility] on the NetApp Support Site.
