@@ -11,7 +11,7 @@ summary: You can use these links for other switch models.
 [.lead]
 You can use these links to find switch documentation.
 
-* link:https://docs.netapp.com/us-en/ontap-systems-switches[Broadcom-supported BES-53248 switches^]
+* link:https://docs.netapp.com/us-en/ontap-systems-switches[Broadcom-supported BES-53248^]
 * link:https://docs.netapp.com/us-en/ontap-systems-switches[Nexus 9336C-FX2 cluster switches^]
 * link:https://docs.netapp.com/us-en/ontap-systems-switches[9336C-FX2 shared switches^]
 * link:https://docs.netapp.com/us-en/ontap-systems-switches[Nexus 92300YC cluster switches^]
