@@ -143,6 +143,17 @@
               $("#mysidebar").navgoco('toggle', true);
           });
 
+          $(".sidebar-nav-container").on("scroll", function() {
+            $.cookie("sidebarScroll", $(".sidebar-nav-container").scrollTop(), {
+              path    : "/us-en/ontap-systems"  
+            });
+          });
+          $(function() {
+            if ($.cookie("sidebarScroll")) {
+              $(".sidebar-nav-container").scrollTop($.cookie("sidebarScroll"));
+            }
+          });
+
       });
 
   </script>
@@ -4519,7 +4530,7 @@
     ><a href="#">
         <div class="na-navbar-padding"> Get started</div>
       </a>
-      <ul>
+      <ul style="display: none;">
         <li 
       data-pdf-exists="true" 
       data-pdf-filename="What's new"
@@ -4542,7 +4553,7 @@
     ><a href="#">
         <div class="na-navbar-padding"> AFF systems</div>
       </a>
-      <ul>
+      <ul style="display: none;">
         <li 
       data-pdf-exists="true" 
       data-pdf-filename="AFF C190 systems"
@@ -4551,7 +4562,7 @@
     ><a href="/us-en/ontap-systems/c190/index.html">
         <div class="na-navbar-padding"> AFF C190 systems</div>
       </a>
-      <ul>
+      <ul style="display: none;">
         <li 
       data-pdf-exists="true" 
       data-pdf-filename="AFF C190 Install and Setup"
@@ -4560,7 +4571,7 @@
     ><a href="#">
         <div class="na-navbar-padding"> Install and setup</div>
       </a>
-      <ul>
+      <ul style="display: none;">
         <li 
       data-pdf-exists="true" 
       data-pdf-filename="Choose install and setup experience"
@@ -4597,7 +4608,7 @@
     ><a href="#">
         <div class="na-navbar-padding"> Maintain</div>
       </a>
-      <ul>
+      <ul style="display: none;">
         <li 
       data-pdf-exists="true" 
       data-pdf-filename="AFF C190 Boot Media"
@@ -4606,7 +4617,7 @@
     ><a href="#">
         <div class="na-navbar-padding"> Boot media</div>
       </a>
-      <ul>
+      <ul style="display: none;">
         <li 
       data-pdf-exists="true" 
       data-pdf-filename="Overview"
@@ -4664,7 +4675,7 @@
     ><a href="#">
         <div class="na-navbar-padding"> Chassis</div>
       </a>
-      <ul>
+      <ul style="display: none;">
         <li 
       data-pdf-exists="true" 
       data-pdf-filename="Overview"
@@ -4701,7 +4712,7 @@
     ><a href="#">
         <div class="na-navbar-padding"> Controller</div>
       </a>
-      <ul>
+      <ul style="display: none;">
         <li 
       data-pdf-exists="true" 
       data-pdf-filename="Overview"
@@ -4787,7 +4798,7 @@
     ><a href="/us-en/ontap-systems/a200/index.html">
         <div class="na-navbar-padding"> AFF A200 systems</div>
       </a>
-      <ul>
+      <ul style="display: none;">
         <li 
       data-pdf-exists="true" 
       data-pdf-filename="AFF A200 Install and Setup"
@@ -4796,7 +4807,7 @@
     ><a href="#">
         <div class="na-navbar-padding"> Install and setup</div>
       </a>
-      <ul>
+      <ul style="display: none;">
         <li 
       data-pdf-exists="true" 
       data-pdf-filename="Cluster configuration worksheet"
@@ -4833,7 +4844,7 @@
     ><a href="#">
         <div class="na-navbar-padding"> Maintain</div>
       </a>
-      <ul>
+      <ul style="display: none;">
         <li 
       data-pdf-exists="true" 
       data-pdf-filename="AFF A200 Boot Media"
@@ -4842,7 +4853,7 @@
     ><a href="#">
         <div class="na-navbar-padding"> Boot media</div>
       </a>
-      <ul>
+      <ul style="display: none;">
         <li 
       data-pdf-exists="true" 
       data-pdf-filename="Overview"
@@ -4900,7 +4911,7 @@
     ><a href="#">
         <div class="na-navbar-padding"> Chassis</div>
       </a>
-      <ul>
+      <ul style="display: none;">
         <li 
       data-pdf-exists="true" 
       data-pdf-filename="Overview"
@@ -4937,7 +4948,7 @@
     ><a href="#">
         <div class="na-navbar-padding"> Controller module</div>
       </a>
-      <ul>
+      <ul style="display: none;">
         <li 
       data-pdf-exists="true" 
       data-pdf-filename="Overview"
@@ -5023,7 +5034,7 @@
     ><a href="/us-en/ontap-systems/a220/index.html">
         <div class="na-navbar-padding"> AFF A220 systems</div>
       </a>
-      <ul>
+      <ul style="display: none;">
         <li 
       data-pdf-exists="true" 
       data-pdf-filename="AFF A220 Install and Setup"
@@ -5032,7 +5043,7 @@
     ><a href="#">
         <div class="na-navbar-padding"> Install and setup</div>
       </a>
-      <ul>
+      <ul style="display: none;">
         <li 
       data-pdf-exists="true" 
       data-pdf-filename="Choose install and setup experience"
@@ -5069,7 +5080,7 @@
     ><a href="#">
         <div class="na-navbar-padding"> Maintain</div>
       </a>
-      <ul>
+      <ul style="display: none;">
         <li 
       data-pdf-exists="true" 
       data-pdf-filename="AFF A220 Boot Media"
@@ -5078,7 +5089,7 @@
     ><a href="#">
         <div class="na-navbar-padding"> Boot media</div>
       </a>
-      <ul>
+      <ul style="display: none;">
         <li 
       data-pdf-exists="true" 
       data-pdf-filename="Overview"
@@ -5143,7 +5154,7 @@
     ><a href="#">
         <div class="na-navbar-padding"> Chassis</div>
       </a>
-      <ul>
+      <ul style="display: none;">
         <li 
       data-pdf-exists="true" 
       data-pdf-filename="Overview"
@@ -5180,7 +5191,7 @@
     ><a href="#">
         <div class="na-navbar-padding"> Controller</div>
       </a>
-      <ul>
+      <ul style="display: none;">
         <li 
       data-pdf-exists="true" 
       data-pdf-filename="Overview"
@@ -5266,7 +5277,7 @@
     ><a href="/us-en/ontap-systems/a250/index.html">
         <div class="na-navbar-padding"> AFF A250 systems</div>
       </a>
-      <ul>
+      <ul style="display: none;">
         <li 
       data-pdf-exists="true" 
       data-pdf-filename="AFF A250 Install and Setup"
@@ -5275,7 +5286,7 @@
     ><a href="#">
         <div class="na-navbar-padding"> Install and setup</div>
       </a>
-      <ul>
+      <ul style="display: none;">
         <li 
       data-pdf-exists="true" 
       data-pdf-filename="Choose install and setup experience"
@@ -5312,7 +5323,7 @@
     ><a href="#">
         <div class="na-navbar-padding"> Maintain</div>
       </a>
-      <ul>
+      <ul style="display: none;">
         <li 
       data-pdf-exists="true" 
       data-pdf-filename="AFF A250 Boot Media"
@@ -5321,7 +5332,7 @@
     ><a href="#">
         <div class="na-navbar-padding"> Boot media</div>
       </a>
-      <ul>
+      <ul style="display: none;">
         <li 
       data-pdf-exists="true" 
       data-pdf-filename="Overview"
@@ -5379,7 +5390,7 @@
     ><a href="#">
         <div class="na-navbar-padding"> Chassis</div>
       </a>
-      <ul>
+      <ul style="display: none;">
         <li 
       data-pdf-exists="true" 
       data-pdf-filename="Overview"
@@ -5416,7 +5427,7 @@
     ><a href="#">
         <div class="na-navbar-padding"> Controller</div>
       </a>
-      <ul>
+      <ul style="display: none;">
         <li 
       data-pdf-exists="true" 
       data-pdf-filename="Overview"
@@ -5516,7 +5527,7 @@
     ><a href="/us-en/ontap-systems/a300/index.html">
         <div class="na-navbar-padding"> AFF A300 systems</div>
       </a>
-      <ul>
+      <ul style="display: none;">
         <li 
       data-pdf-exists="true" 
       data-pdf-filename="AFF A300 Install and Setup"
@@ -5525,7 +5536,7 @@
     ><a href="#">
         <div class="na-navbar-padding"> Install and setup</div>
       </a>
-      <ul>
+      <ul style="display: none;">
         <li 
       data-pdf-exists="true" 
       data-pdf-filename="Cluster configuration worksheet"
@@ -5562,7 +5573,7 @@
     ><a href="#">
         <div class="na-navbar-padding"> Maintain</div>
       </a>
-      <ul>
+      <ul style="display: none;">
         <li 
       data-pdf-exists="true" 
       data-pdf-filename="AFF A300 Boot Media"
@@ -5571,7 +5582,7 @@
     ><a href="#">
         <div class="na-navbar-padding"> Boot media</div>
       </a>
-      <ul>
+      <ul style="display: none;">
         <li 
       data-pdf-exists="true" 
       data-pdf-filename="Overview"
@@ -5636,7 +5647,7 @@
     ><a href="#">
         <div class="na-navbar-padding"> Chassis</div>
       </a>
-      <ul>
+      <ul style="display: none;">
         <li 
       data-pdf-exists="true" 
       data-pdf-filename="Overview"
@@ -5673,7 +5684,7 @@
     ><a href="#">
         <div class="na-navbar-padding"> Controller module</div>
       </a>
-      <ul>
+      <ul style="display: none;">
         <li 
       data-pdf-exists="true" 
       data-pdf-filename="Overview"
@@ -5766,7 +5777,7 @@
     ><a href="/us-en/ontap-systems/a320/index.html">
         <div class="na-navbar-padding"> AFF A320 systems</div>
       </a>
-      <ul>
+      <ul style="display: none;">
         <li 
       data-pdf-exists="true" 
       data-pdf-filename="AFF A320 Install and Setup"
@@ -5775,7 +5786,7 @@
     ><a href="#">
         <div class="na-navbar-padding"> Install and setup</div>
       </a>
-      <ul>
+      <ul style="display: none;">
         <li 
       data-pdf-exists="true" 
       data-pdf-filename="Choose install and setup experience"
@@ -5812,7 +5823,7 @@
     ><a href="#">
         <div class="na-navbar-padding"> Maintain</div>
       </a>
-      <ul>
+      <ul style="display: none;">
         <li 
       data-pdf-exists="true" 
       data-pdf-filename="AFF A320 Boot Media"
@@ -5821,7 +5832,7 @@
     ><a href="#">
         <div class="na-navbar-padding"> Boot media</div>
       </a>
-      <ul>
+      <ul style="display: none;">
         <li 
       data-pdf-exists="true" 
       data-pdf-filename="Overview"
@@ -5879,7 +5890,7 @@
     ><a href="#">
         <div class="na-navbar-padding"> Chassis</div>
       </a>
-      <ul>
+      <ul style="display: none;">
         <li 
       data-pdf-exists="true" 
       data-pdf-filename="Overview"
@@ -5916,7 +5927,7 @@
     ><a href="#">
         <div class="na-navbar-padding"> Controller module</div>
       </a>
-      <ul>
+      <ul style="display: none;">
         <li 
       data-pdf-exists="true" 
       data-pdf-filename="Overview"
@@ -6016,7 +6027,7 @@
     ><a href="/us-en/ontap-systems/a400/index.html">
         <div class="na-navbar-padding"> AFF A400 systems</div>
       </a>
-      <ul>
+      <ul style="display: none;">
         <li 
       data-pdf-exists="true" 
       data-pdf-filename="AFF A400 Install and Setup"
@@ -6025,7 +6036,7 @@
     ><a href="#">
         <div class="na-navbar-padding"> Install and setup</div>
       </a>
-      <ul>
+      <ul style="display: none;">
         <li 
       data-pdf-exists="true" 
       data-pdf-filename="Choose install and setup experience"
@@ -6062,7 +6073,7 @@
     ><a href="#">
         <div class="na-navbar-padding"> Maintain</div>
       </a>
-      <ul>
+      <ul style="display: none;">
         <li 
       data-pdf-exists="true" 
       data-pdf-filename="AFF A400 Boot Media"
@@ -6071,7 +6082,7 @@
     ><a href="#">
         <div class="na-navbar-padding"> Boot media</div>
       </a>
-      <ul>
+      <ul style="display: none;">
         <li 
       data-pdf-exists="true" 
       data-pdf-filename="Overview"
@@ -6136,7 +6147,7 @@
     ><a href="#">
         <div class="na-navbar-padding"> Chassis</div>
       </a>
-      <ul>
+      <ul style="display: none;">
         <li 
       data-pdf-exists="true" 
       data-pdf-filename="Overview"
@@ -6173,7 +6184,7 @@
     ><a href="#">
         <div class="na-navbar-padding"> Controller module</div>
       </a>
-      <ul>
+      <ul style="display: none;">
         <li 
       data-pdf-exists="true" 
       data-pdf-filename="Overview"
@@ -6273,7 +6284,7 @@
     ><a href="/us-en/ontap-systems/a700/index.html">
         <div class="na-navbar-padding"> AFF A700 systems</div>
       </a>
-      <ul>
+      <ul style="display: none;">
         <li 
       data-pdf-exists="true" 
       data-pdf-filename="AFF A700 Install and Setup"
@@ -6282,7 +6293,7 @@
     ><a href="#">
         <div class="na-navbar-padding"> Install and setup</div>
       </a>
-      <ul>
+      <ul style="display: none;">
         <li 
       data-pdf-exists="true" 
       data-pdf-filename="Choose install and setup experience"
@@ -6319,7 +6330,7 @@
     ><a href="#">
         <div class="na-navbar-padding"> Maintain</div>
       </a>
-      <ul>
+      <ul style="display: none;">
         <li 
       data-pdf-exists="true" 
       data-pdf-filename="AFF A700 Boot Media"
@@ -6328,7 +6339,7 @@
     ><a href="#">
         <div class="na-navbar-padding"> Boot media</div>
       </a>
-      <ul>
+      <ul style="display: none;">
         <li 
       data-pdf-exists="true" 
       data-pdf-filename="Overview"
@@ -6407,7 +6418,7 @@
     ><a href="#">
         <div class="na-navbar-padding"> Chassis</div>
       </a>
-      <ul>
+      <ul style="display: none;">
         <li 
       data-pdf-exists="true" 
       data-pdf-filename="Overview"
@@ -6444,7 +6455,7 @@
     ><a href="#">
         <div class="na-navbar-padding"> Controller module</div>
       </a>
-      <ul>
+      <ul style="display: none;">
         <li 
       data-pdf-exists="true" 
       data-pdf-filename="Overview"
@@ -6551,7 +6562,7 @@
     ><a href="#">
         <div class="na-navbar-padding"> X91148A module</div>
       </a>
-      <ul>
+      <ul style="display: none;">
         <li 
       data-pdf-exists="true" 
       data-pdf-filename="Overview"
@@ -6581,7 +6592,7 @@
     ><a href="/us-en/ontap-systems/a700s/index.html">
         <div class="na-navbar-padding"> AFF A700s systems</div>
       </a>
-      <ul>
+      <ul style="display: none;">
         <li 
       data-pdf-exists="true" 
       data-pdf-filename="AFF A700s Install and Setup"
@@ -6590,7 +6601,7 @@
     ><a href="#">
         <div class="na-navbar-padding"> Install and setup</div>
       </a>
-      <ul>
+      <ul style="display: none;">
         <li 
       data-pdf-exists="true" 
       data-pdf-filename="Cluster configuration worksheet"
@@ -6627,7 +6638,7 @@
     ><a href="#">
         <div class="na-navbar-padding"> Maintain</div>
       </a>
-      <ul>
+      <ul style="display: none;">
         <li 
       data-pdf-exists="true" 
       data-pdf-filename="AFF A700s Boot Media"
@@ -6636,7 +6647,7 @@
     ><a href="#">
         <div class="na-navbar-padding"> Boot media</div>
       </a>
-      <ul>
+      <ul style="display: none;">
         <li 
       data-pdf-exists="true" 
       data-pdf-filename="Overview"
@@ -6701,7 +6712,7 @@
     ><a href="#">
         <div class="na-navbar-padding"> Chassis</div>
       </a>
-      <ul>
+      <ul style="display: none;">
         <li 
       data-pdf-exists="true" 
       data-pdf-filename="Overview"
@@ -6738,7 +6749,7 @@
     ><a href="#">
         <div class="na-navbar-padding"> Controller</div>
       </a>
-      <ul>
+      <ul style="display: none;">
         <li 
       data-pdf-exists="true" 
       data-pdf-filename="Overview"
@@ -6852,7 +6863,7 @@
     ><a href="/us-en/ontap-systems/a800/index.html">
         <div class="na-navbar-padding"> AFF A800 systems</div>
       </a>
-      <ul>
+      <ul style="display: none;">
         <li 
       data-pdf-exists="true" 
       data-pdf-filename="AFF A800 Install and Setup"
@@ -6861,7 +6872,7 @@
     ><a href="#">
         <div class="na-navbar-padding"> Install and setup</div>
       </a>
-      <ul>
+      <ul style="display: none;">
         <li 
       data-pdf-exists="true" 
       data-pdf-filename="Choose install and setup experience"
@@ -6898,7 +6909,7 @@
     ><a href="#">
         <div class="na-navbar-padding"> Maintain</div>
       </a>
-      <ul>
+      <ul style="display: none;">
         <li 
       data-pdf-exists="true" 
       data-pdf-filename="AFF A800 Boot Media"
@@ -6907,7 +6918,7 @@
     ><a href="#">
         <div class="na-navbar-padding"> Boot media</div>
       </a>
-      <ul>
+      <ul style="display: none;">
         <li 
       data-pdf-exists="true" 
       data-pdf-filename="Overview"
@@ -6965,7 +6976,7 @@
     ><a href="#">
         <div class="na-navbar-padding"> Chassis</div>
       </a>
-      <ul>
+      <ul style="display: none;">
         <li 
       data-pdf-exists="true" 
       data-pdf-filename="Overview"
@@ -7002,7 +7013,7 @@
     ><a href="#">
         <div class="na-navbar-padding"> Controller</div>
       </a>
-      <ul>
+      <ul style="display: none;">
         <li 
       data-pdf-exists="true" 
       data-pdf-filename="Overview"
@@ -7109,7 +7120,7 @@
     ><a href="/us-en/ontap-systems/a900/index.html">
         <div class="na-navbar-padding"> AFF A900 systems</div>
       </a>
-      <ul>
+      <ul style="display: none;">
         <li 
       data-pdf-exists="true" 
       data-pdf-filename="AFF A900 Install and Setup"
@@ -7118,7 +7129,7 @@
     ><a href="#">
         <div class="na-navbar-padding"> Install and setup</div>
       </a>
-      <ul>
+      <ul style="display: none;">
         <li 
       data-pdf-exists="true" 
       data-pdf-filename="Choose install and setup experience"
@@ -7155,7 +7166,7 @@
     ><a href="#">
         <div class="na-navbar-padding"> Maintain</div>
       </a>
-      <ul>
+      <ul style="display: none;">
         <li 
       data-pdf-exists="true" 
       data-pdf-filename="Add I/O module"
@@ -7171,7 +7182,7 @@
     ><a href="#">
         <div class="na-navbar-padding"> Boot media</div>
       </a>
-      <ul>
+      <ul style="display: none;">
         <li 
       data-pdf-exists="true" 
       data-pdf-filename="Overview"
@@ -7229,7 +7240,7 @@
     ><a href="#">
         <div class="na-navbar-padding"> Chassis</div>
       </a>
-      <ul>
+      <ul style="display: none;">
         <li 
       data-pdf-exists="true" 
       data-pdf-filename="Overview"
@@ -7266,7 +7277,7 @@
     ><a href="#">
         <div class="na-navbar-padding"> Controller module</div>
       </a>
-      <ul>
+      <ul style="display: none;">
         <li 
       data-pdf-exists="true" 
       data-pdf-filename="Overview"
@@ -7373,7 +7384,7 @@
     ><a href="#">
         <div class="na-navbar-padding"> FAS systems</div>
       </a>
-      <ul>
+      <ul style="display: none;">
         <li 
       data-pdf-exists="true" 
       data-pdf-filename="FAS500f systems"
@@ -7382,7 +7393,7 @@
     ><a href="/us-en/ontap-systems/fas500f/index.html">
         <div class="na-navbar-padding"> FAS500f systems</div>
       </a>
-      <ul>
+      <ul style="display: none;">
         <li 
       data-pdf-exists="true" 
       data-pdf-filename="FAS500f Install and Setup"
@@ -7391,7 +7402,7 @@
     ><a href="#">
         <div class="na-navbar-padding"> Install and setup</div>
       </a>
-      <ul>
+      <ul style="display: none;">
         <li 
       data-pdf-exists="true" 
       data-pdf-filename="Choose install and setup experience"
@@ -7428,7 +7439,7 @@
     ><a href="#">
         <div class="na-navbar-padding"> Maintain</div>
       </a>
-      <ul>
+      <ul style="display: none;">
         <li 
       data-pdf-exists="true" 
       data-pdf-filename="FAS500f Boot Media"
@@ -7437,7 +7448,7 @@
     ><a href="#">
         <div class="na-navbar-padding"> Boot media</div>
       </a>
-      <ul>
+      <ul style="display: none;">
         <li 
       data-pdf-exists="true" 
       data-pdf-filename="Overview"
@@ -7495,7 +7506,7 @@
     ><a href="#">
         <div class="na-navbar-padding"> Chassis</div>
       </a>
-      <ul>
+      <ul style="display: none;">
         <li 
       data-pdf-exists="true" 
       data-pdf-filename="Overview"
@@ -7532,7 +7543,7 @@
     ><a href="#">
         <div class="na-navbar-padding"> Controller</div>
       </a>
-      <ul>
+      <ul style="display: none;">
         <li 
       data-pdf-exists="true" 
       data-pdf-filename="Overview"
@@ -7632,7 +7643,7 @@
     ><a href="/us-en/ontap-systems/fas2600/index.html">
         <div class="na-navbar-padding"> FAS2600 systems</div>
       </a>
-      <ul>
+      <ul style="display: none;">
         <li 
       data-pdf-exists="true" 
       data-pdf-filename="FAS2600 Install and Setup"
@@ -7641,7 +7652,7 @@
     ><a href="#">
         <div class="na-navbar-padding"> Install and setup</div>
       </a>
-      <ul>
+      <ul style="display: none;">
         <li 
       data-pdf-exists="true" 
       data-pdf-filename="Cluster configuration worksheet"
@@ -7678,7 +7689,7 @@
     ><a href="#">
         <div class="na-navbar-padding"> Maintain</div>
       </a>
-      <ul>
+      <ul style="display: none;">
         <li 
       data-pdf-exists="true" 
       data-pdf-filename="FAS2600 Boot Media"
@@ -7687,7 +7698,7 @@
     ><a href="#">
         <div class="na-navbar-padding"> Boot media</div>
       </a>
-      <ul>
+      <ul style="display: none;">
         <li 
       data-pdf-exists="true" 
       data-pdf-filename="Overview"
@@ -7752,7 +7763,7 @@
     ><a href="#">
         <div class="na-navbar-padding"> Chassis</div>
       </a>
-      <ul>
+      <ul style="display: none;">
         <li 
       data-pdf-exists="true" 
       data-pdf-filename="Overview"
@@ -7789,7 +7800,7 @@
     ><a href="#">
         <div class="na-navbar-padding"> Controller module</div>
       </a>
-      <ul>
+      <ul style="display: none;">
         <li 
       data-pdf-exists="true" 
       data-pdf-filename="Overview"
@@ -7875,7 +7886,7 @@
     ><a href="/us-en/ontap-systems/fas2700/index.html">
         <div class="na-navbar-padding"> FAS2700 systems</div>
       </a>
-      <ul>
+      <ul style="display: none;">
         <li 
       data-pdf-exists="true" 
       data-pdf-filename="FAS2700 Install and Setup"
@@ -7884,7 +7895,7 @@
     ><a href="#">
         <div class="na-navbar-padding"> Install and setup</div>
       </a>
-      <ul>
+      <ul style="display: none;">
         <li 
       data-pdf-exists="true" 
       data-pdf-filename="Choose install and setup experience"
@@ -7921,7 +7932,7 @@
     ><a href="#">
         <div class="na-navbar-padding"> Maintain</div>
       </a>
-      <ul>
+      <ul style="display: none;">
         <li 
       data-pdf-exists="true" 
       data-pdf-filename="FAS2700 Boot Media"
@@ -7930,7 +7941,7 @@
     ><a href="#">
         <div class="na-navbar-padding"> Boot media</div>
       </a>
-      <ul>
+      <ul style="display: none;">
         <li 
       data-pdf-exists="true" 
       data-pdf-filename="Overview"
@@ -7995,7 +8006,7 @@
     ><a href="#">
         <div class="na-navbar-padding"> Chassis</div>
       </a>
-      <ul>
+      <ul style="display: none;">
         <li 
       data-pdf-exists="true" 
       data-pdf-filename="Overview"
@@ -8032,7 +8043,7 @@
     ><a href="#">
         <div class="na-navbar-padding"> Controller</div>
       </a>
-      <ul>
+      <ul style="display: none;">
         <li 
       data-pdf-exists="true" 
       data-pdf-filename="Overview"
@@ -8118,7 +8129,7 @@
     ><a href="/us-en/ontap-systems/fas8200/index.html">
         <div class="na-navbar-padding"> FAS8200 systems</div>
       </a>
-      <ul>
+      <ul style="display: none;">
         <li 
       data-pdf-exists="true" 
       data-pdf-filename="FAS8200 Install and Setup"
@@ -8127,7 +8138,7 @@
     ><a href="#">
         <div class="na-navbar-padding"> Install and setup</div>
       </a>
-      <ul>
+      <ul style="display: none;">
         <li 
       data-pdf-exists="true" 
       data-pdf-filename="Cluster configuration worksheet"
@@ -8164,7 +8175,7 @@
     ><a href="#">
         <div class="na-navbar-padding"> Maintain</div>
       </a>
-      <ul>
+      <ul style="display: none;">
         <li 
       data-pdf-exists="true" 
       data-pdf-filename="FAS8200 Boot Media"
@@ -8173,7 +8184,7 @@
     ><a href="#">
         <div class="na-navbar-padding"> Boot media</div>
       </a>
-      <ul>
+      <ul style="display: none;">
         <li 
       data-pdf-exists="true" 
       data-pdf-filename="Overview"
@@ -8245,7 +8256,7 @@
     ><a href="#">
         <div class="na-navbar-padding"> Chassis</div>
       </a>
-      <ul>
+      <ul style="display: none;">
         <li 
       data-pdf-exists="true" 
       data-pdf-filename="Overview"
@@ -8282,7 +8293,7 @@
     ><a href="#">
         <div class="na-navbar-padding"> Controller</div>
       </a>
-      <ul>
+      <ul style="display: none;">
         <li 
       data-pdf-exists="true" 
       data-pdf-filename="Overview"
@@ -8375,7 +8386,7 @@
     ><a href="/us-en/ontap-systems/fas8300/index.html">
         <div class="na-navbar-padding"> FAS8300 and FAS8700 systems</div>
       </a>
-      <ul>
+      <ul style="display: none;">
         <li 
       data-pdf-exists="true" 
       data-pdf-filename="AFF FAS8300 and FAS8700 Install and Setup"
@@ -8384,7 +8395,7 @@
     ><a href="#">
         <div class="na-navbar-padding"> Install and setup</div>
       </a>
-      <ul>
+      <ul style="display: none;">
         <li 
       data-pdf-exists="true" 
       data-pdf-filename="Choose install and setup experience"
@@ -8421,7 +8432,7 @@
     ><a href="#">
         <div class="na-navbar-padding"> Maintain</div>
       </a>
-      <ul>
+      <ul style="display: none;">
         <li 
       data-pdf-exists="true" 
       data-pdf-filename="AFF FAS8300 and FAS8700 Boot Media"
@@ -8430,7 +8441,7 @@
     ><a href="#">
         <div class="na-navbar-padding"> Boot media</div>
       </a>
-      <ul>
+      <ul style="display: none;">
         <li 
       data-pdf-exists="true" 
       data-pdf-filename="Overview"
@@ -8502,7 +8513,7 @@
     ><a href="#">
         <div class="na-navbar-padding"> Chassis</div>
       </a>
-      <ul>
+      <ul style="display: none;">
         <li 
       data-pdf-exists="true" 
       data-pdf-filename="Overview"
@@ -8539,7 +8550,7 @@
     ><a href="#">
         <div class="na-navbar-padding"> Controller</div>
       </a>
-      <ul>
+      <ul style="display: none;">
         <li 
       data-pdf-exists="true" 
       data-pdf-filename="Overview"
@@ -8639,7 +8650,7 @@
     ><a href="/us-en/ontap-systems/fas9000/index.html">
         <div class="na-navbar-padding"> FAS9000 systems</div>
       </a>
-      <ul>
+      <ul style="display: none;">
         <li 
       data-pdf-exists="true" 
       data-pdf-filename="FAS9000 Install and Setup"
@@ -8648,7 +8659,7 @@
     ><a href="#">
         <div class="na-navbar-padding"> Install and setup</div>
       </a>
-      <ul>
+      <ul style="display: none;">
         <li 
       data-pdf-exists="true" 
       data-pdf-filename="Choose install and setup experience"
@@ -8685,7 +8696,7 @@
     ><a href="#">
         <div class="na-navbar-padding"> Maintain</div>
       </a>
-      <ul>
+      <ul style="display: none;">
         <li 
       data-pdf-exists="true" 
       data-pdf-filename="FAS9000 Boot Media"
@@ -8694,7 +8705,7 @@
     ><a href="#">
         <div class="na-navbar-padding"> Boot media</div>
       </a>
-      <ul>
+      <ul style="display: none;">
         <li 
       data-pdf-exists="true" 
       data-pdf-filename="Overview"
@@ -8773,7 +8784,7 @@
     ><a href="#">
         <div class="na-navbar-padding"> Chassis</div>
       </a>
-      <ul>
+      <ul style="display: none;">
         <li 
       data-pdf-exists="true" 
       data-pdf-filename="Overview"
@@ -8810,7 +8821,7 @@
     ><a href="#">
         <div class="na-navbar-padding"> Controller module</div>
       </a>
-      <ul>
+      <ul style="display: none;">
         <li 
       data-pdf-exists="true" 
       data-pdf-filename="Overview"
@@ -8917,7 +8928,7 @@
     ><a href="#">
         <div class="na-navbar-padding"> X91148A module</div>
       </a>
-      <ul>
+      <ul style="display: none;">
         <li 
       data-pdf-exists="true" 
       data-pdf-filename="Overview"
@@ -8947,7 +8958,7 @@
     ><a href="/us-en/ontap-systems/fas9500/index.html">
         <div class="na-navbar-padding"> FAS9500 systems</div>
       </a>
-      <ul>
+      <ul style="display: none;">
         <li 
       data-pdf-exists="true" 
       data-pdf-filename="FAS9500 Install and Setup"
@@ -8956,7 +8967,7 @@
     ><a href="#">
         <div class="na-navbar-padding"> Install and setup</div>
       </a>
-      <ul>
+      <ul style="display: none;">
         <li 
       data-pdf-exists="true" 
       data-pdf-filename="Choose install and setup experience"
@@ -8993,7 +9004,7 @@
     ><a href="#">
         <div class="na-navbar-padding"> Maintain</div>
       </a>
-      <ul>
+      <ul style="display: none;">
         <li 
       data-pdf-exists="true" 
       data-pdf-filename="Add I/O module"
@@ -9009,7 +9020,7 @@
     ><a href="#">
         <div class="na-navbar-padding"> Boot media</div>
       </a>
-      <ul>
+      <ul style="display: none;">
         <li 
       data-pdf-exists="true" 
       data-pdf-filename="Overview"
@@ -9074,7 +9085,7 @@
     ><a href="#">
         <div class="na-navbar-padding"> Chassis</div>
       </a>
-      <ul>
+      <ul style="display: none;">
         <li 
       data-pdf-exists="true" 
       data-pdf-filename="Overview"
@@ -9111,7 +9122,7 @@
     ><a href="#">
         <div class="na-navbar-padding"> Controller module</div>
       </a>
-      <ul>
+      <ul style="display: none;">
         <li 
       data-pdf-exists="true" 
       data-pdf-filename="Overview"
@@ -9232,7 +9243,7 @@
     ><a href="#">
         <div class="na-navbar-padding"> System-level diagnostics</div>
       </a>
-      <ul>
+      <ul style="display: none;">
         <li 
       data-pdf-exists="true" 
       data-pdf-filename="Introduction"
@@ -9297,7 +9308,7 @@
     ><a href="#">
         <div class="na-navbar-padding"> Drive shelves</div>
       </a>
-      <ul>
+      <ul style="display: none;">
         <li 
       data-pdf-exists="true" 
       data-pdf-filename="NS224 shelves"
@@ -9306,7 +9317,7 @@
     ><a href="/us-en/ontap-systems/ns224/index.html">
         <div class="na-navbar-padding"> NS224 shelves</div>
       </a>
-      <ul>
+      <ul style="display: none;">
         <li 
       data-pdf-exists="true" 
       data-pdf-filename="NS224 Shelves Install and Cable"
@@ -9315,7 +9326,7 @@
     ><a href="#">
         <div class="na-navbar-padding"> Install and cable</div>
       </a>
-      <ul>
+      <ul style="display: none;">
         <li 
       data-pdf-exists="true" 
       data-pdf-filename="Hot-add a shelf"
@@ -9345,7 +9356,7 @@
     ><a href="#">
         <div class="na-navbar-padding"> Maintain</div>
       </a>
-      <ul>
+      <ul style="display: none;">
         <li 
       data-pdf-exists="true" 
       data-pdf-filename="Boot media"
@@ -9410,7 +9421,7 @@
     ><a href="/us-en/ontap-systems/sas3/index.html">
         <div class="na-navbar-padding"> SAS shelves with IOM12/IOM12B modules</div>
       </a>
-      <ul>
+      <ul style="display: none;">
         <li 
       data-pdf-exists="true" 
       data-pdf-filename="Shelves with IOM12/IOM2B Modules Install and Cable"
@@ -9419,7 +9430,7 @@
     ><a href="#">
         <div class="na-navbar-padding"> Install and cable</div>
       </a>
-      <ul>
+      <ul style="display: none;">
         <li 
       data-pdf-exists="true" 
       data-pdf-filename="Install and cable shelves for new system"
@@ -9456,7 +9467,7 @@
     ><a href="#">
         <div class="na-navbar-padding"> SAS cabling rules, worksheets, and examples</div>
       </a>
-      <ul>
+      <ul style="display: none;">
         <li 
       data-pdf-exists="true" 
       data-pdf-filename="Overview"
@@ -9528,7 +9539,7 @@
     ><a href="#">
         <div class="na-navbar-padding"> Maintain</div>
       </a>
-      <ul>
+      <ul style="display: none;">
         <li 
       data-pdf-exists="true" 
       data-pdf-filename="Disk drive in DS224C or DS212C shelf"
@@ -9600,7 +9611,7 @@
     ><a href="#">
         <div class="na-navbar-padding"> Cabinet and rail kits</div>
       </a>
-      <ul>
+      <ul style="display: none;">
         <li 
       data-pdf-exists="true" 
       data-pdf-filename="SuperRail kit"
@@ -9623,7 +9634,7 @@
     ><a href="#">
         <div class="na-navbar-padding"> 42U 1280 mm system cabinet</div>
       </a>
-      <ul>
+      <ul style="display: none;">
         <li 
       data-pdf-exists="true" 
       data-pdf-filename="Prepare to install cabinet"
@@ -9632,7 +9643,7 @@
     ><a href="#">
         <div class="na-navbar-padding"> Prepare to install cabinet</div>
       </a>
-      <ul>
+      <ul style="display: none;">
         <li 
       data-pdf-exists="true" 
       data-pdf-filename="Cabinet features"
@@ -9676,7 +9687,7 @@
     ><a href="#">
         <div class="na-navbar-padding"> Install cabinet</div>
       </a>
-      <ul>
+      <ul style="display: none;">
         <li 
       data-pdf-exists="true" 
       data-pdf-filename="Overview"
@@ -9734,7 +9745,7 @@
     ><a href="#">
         <div class="na-navbar-padding"> Reverse cabinet front door</div>
       </a>
-      <ul>
+      <ul style="display: none;">
         <li 
       data-pdf-exists="true" 
       data-pdf-filename="What you need"
@@ -9802,6 +9813,7 @@
 </script>
 <!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
 <script>$("li.active").parents('li').toggleClass("active");</script>
+<script>$("#mysidebar li.active").parents('ul').css("display","block");</script>
 
 
   </div>
@@ -10111,7 +10123,7 @@
                 <div class="ie-feature-block__section">
                   
                   
-                  <a class="ie-feature-block__link" target="_blank" href="https://docs.netapp.com/us-en/ontap-systems-switches/switch-cisco-3232c/index.html">Cisco 3232C switches</a>
+                  <a class="ie-feature-block__link" target="_blank" href="https://docs.netapp.com/us-en/ontap-systems-switches/switch-cisco-3232c/index.html">Cisco 3232C</a>
                 </div>
               
             
@@ -10143,7 +10155,15 @@
                 <div class="ie-feature-block__section">
                   
                   
-                  <a class="ie-feature-block__link" target="_blank" href="https://docs.netapp.com/us-en/ontap-systems-switches/switch-netapp-cn1610/index.html">NetApp CN1610 switches</a>
+                  <a class="ie-feature-block__link" target="_blank" href="https://docs.netapp.com/us-en/ontap-systems-switches/switch-netapp-cn1610/index.html">NetApp CN1610</a>
+                </div>
+              
+            
+              
+                <div class="ie-feature-block__section">
+                  
+                  
+                  <a class="ie-feature-block__link" target="_blank" href="https://docs.netapp.com/us-en/ontap-systems-switches/switch-nvidia-sn2100/sn2100-overview.html">NVIDIA SN2100</a>
                 </div>
               
             
