@@ -105,7 +105,7 @@ Air duct
 == Step 3: Replace a DIMM
 
 [.lead]
-To replace a DIMM, you must locate it in the controller module using the DIMM map on the inside of the controller module or locating it using the LED next to the DIMM, and then replace it following the specific sequence of steps.
+To replace a DIMM, you must locate it in the controller module using the DIMM map on the inside of the controller module, and then replace it following the specific sequence of steps.
 
 . If you are not already grounded, properly ground yourself.
 . Remove the applicable riser.
