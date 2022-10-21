@@ -56,7 +56,7 @@ If you are replacing a DIMM, you need to remove it after you have unplugged the 
 
 .Steps
 . If you are not already grounded, properly ground yourself.
-. Check the NVMEM LED on the controller module.
+. Check the NVMEM LED on the back of controller module.
 +
 You must perform a clean system shutdown before replacing system components to avoid losing unwritten data in the nonvolatile memory (NVMEM). The LED is located on the back of the controller module. Look for the following icon:
 +
