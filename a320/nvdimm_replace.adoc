@@ -49,9 +49,7 @@ The latching mechanism hook should be nearly vertical and should be clear of the
 == Step 3: Replace the NVDIMM
 
 [.lead]
-To replace the NVDIMM, you must locate it in the controller module using the NVDIMM map label on top of the air duct or locating it using the LED next to the NVDIMM, and then replace it following the specific sequence of steps.
-
-NOTE: The NVDIMM LED blinks while destaging contents when you halt the system. After the destage is complete, the LED turns off.
+To replace the NVDIMM, you must locate it in the controller module using the NVDIMM map label on top of the air duct, and then replace it following the specific sequence of steps.
 
 image::../media/drw_a320_nvdimm_replace_animated_gif.png[]
 
