@@ -15,17 +15,13 @@ To complete the replacement procedure and restore your system to full operation,
 
 include::../_include/install_licenses_mcc.adoc[]
 
-== Step 2: Restoring Storage and Volume Encryption functionality
-
-include::../_include/restore_storage_encryption.adoc[]
-
-== Step 3: Verifying LIFs and registering the serial number
+== Step 2: Verifying LIFs and registering the serial number
 
 include::../_include/check_lifs_register_serial_number.adoc[]
 
-== Step 4 (MetroCluster only): Switching back aggregates in a two-node MetroCluster configuration
+== Step 3: (MetroCluster only): Switching back aggregates in a two-node MetroCluster configuration
 
 include::../_include/2n_mcc_switchback.adoc[]
 
-== Return the failed part to NetApp
+== Step 4: Return the failed part to NetApp
 include::../_include/complete_rma.adoc[]
